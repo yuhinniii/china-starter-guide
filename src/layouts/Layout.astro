@@ -60,7 +60,7 @@ const navItems = isZH
         </div>
         <div class="flex items-center gap-3">
           <!-- Language Switcher -->
-          <a href={Astro.url.pathname.replace(/^\/en/, '/zh').replace(/^\/zh/, '/en')}
+          <a href={isZH ? Astro.url.pathname.replace(/^\/zh/, '/en') : Astro.url.pathname.replace(/^\/en/, '/zh')}
              class="text-xs px-2 py-1 rounded border border-gray-200 dark:border-gray-700 text-gray-500 hover:text-brand-600 no-underline">
             {isZH ? 'EN' : '中文'}
           </a>

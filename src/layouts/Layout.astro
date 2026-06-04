@@ -5,20 +5,26 @@ const base = isZH ? '/zh' : '/en';
 const navItems = isZH
   ? [
       { label: '首页', href: '/zh/' },
-      { label: '支付指南', href: '/zh/payment/' },
-      { label: '交通指南', href: '/zh/transport/' },
-      { label: '实用APP', href: '/zh/apps/' },
-      { label: '城市指南', href: '/zh/cities/' },
-      { label: '旅游贴士', href: '/zh/tips/' },
+      { label: '行前准备', href: '/zh/prepare/' },
+      { label: '支付', href: '/zh/payment/' },
+      { label: '交通', href: '/zh/transport/' },
+      { label: '生活', href: '/zh/life/' },
+      { label: '医疗', href: '/zh/medical/' },
+      { label: '城市', href: '/zh/cities/' },
+      { label: '贴士', href: '/zh/tips/' },
+      { label: '搜索', href: '/zh/search/' },
       { label: '关于', href: '/zh/about/' },
     ]
   : [
       { label: 'Home', href: '/en/' },
+      { label: 'Prepare', href: '/en/prepare/' },
       { label: 'Payment', href: '/en/payment/' },
       { label: 'Transport', href: '/en/transport/' },
-      { label: 'Apps', href: '/en/apps/' },
+      { label: 'Life', href: '/en/life/' },
+      { label: 'Medical', href: '/en/medical/' },
       { label: 'Cities', href: '/en/cities/' },
-      { label: 'Travel Tips', href: '/en/tips/' },
+      { label: 'Tips', href: '/en/tips/' },
+      { label: 'Search', href: '/en/search/' },
       { label: 'About', href: '/en/about/' },
     ];
 ---
@@ -81,7 +87,8 @@ const navItems = isZH
       <div class="max-w-5xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
         <span>© 2026 China Starter Guide</span>
         <div class="flex gap-4">
-          <a href={isZH ? '/zh/about/' : '/en/about/'} class="hover:text-brand-600 no-underline">About</a>
+        <a href={isZH ? '/zh/about/' : '/en/about/'} class="hover:text-brand-600 no-underline">About</a>
+          <a href={isZH ? '/zh/privacy/' : '/en/privacy/'} class="hover:text-brand-600 no-underline">Privacy</a>
           <a href={isZH ? '/zh/contact/' : '/en/contact/'} class="hover:text-brand-600 no-underline">Contact</a>
         </div>
       </div>

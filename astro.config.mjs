@@ -4,7 +4,7 @@ import sitemap from '@astrojs/sitemap';
 import mdx from '@astrojs/mdx';
 
 export default defineConfig({
-  site: 'https://china-starter-guide.pages.dev',
+  site: 'https://china-starter-guide-3sn.pages.dev',
   output: 'static',
   i18n: {
     defaultLocale: 'en',

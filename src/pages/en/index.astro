@@ -7,15 +7,15 @@ const description = 'Everything you need to know before coming to China: payment
 <Layout title={title} description={description} lang="en">
   <!-- Hero -->
   <section class="text-center py-20 px-4">
-    <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-gray-900 dark:text-gray-50 mb-6">
+    <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-gray-900  ">
       Clear, Current Guidance for<br/><span class="text-brand-600">First-Time Foreigners Visiting China</span>
     </h1>
-    <p class="text-lg md:text-xl text-gray-500 dark:text-gray-400 max-w-2xl mx-auto mb-8 leading-relaxed">
+    <p class="text-lg md:text-xl text-gray-500  ">
       Start with the essentials, then follow the guides that match your trip.
     </p>
     <div class="flex flex-wrap justify-center gap-4">
       <a href="/en/prepare/" class="bg-brand-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-brand-700 transition no-underline">Get Started</a>
-      <a href="/en/about/" class="border border-gray-300 dark:border-gray-700 px-6 py-3 rounded-lg font-medium hover:border-brand-600 hover:text-brand-600 transition no-underline">About This Site</a>
+      <a href="/en/about/" class="border border-gray-300  :border-brand-600 hover:text-brand-600 transition no-underline">About This Site</a>
     </div>
   </section>
 
@@ -28,9 +28,9 @@ const description = 'Everything you need to know before coming to China: payment
         { href: '/en/transport/', title: 'Transport', desc: 'High-speed rail, metro, local travel basics.' },
         { href: '/en/medical/', title: 'Medical', desc: 'Clinics, hospitals, emergency care.' },
       ].map(card => (
-        <a href={card.href} class="group block p-5 rounded-2xl bg-gray-50 dark:bg-gray-900 hover:bg-brand-50 dark:hover:bg-brand-950 border border-gray-100 dark:border-gray-800 hover:border-brand-200 dark:hover:border-brand-800 transition-all duration-200 no-underline">
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100 group-hover:text-brand-600 dark:group-hover:text-brand-400 mb-1">{card.title}</h3>
-          <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">{card.desc}</p>
+        <a href={card.href} class="group block p-5 rounded-2xl bg-gray-50  :bg-brand-50 dark:hover:bg-brand-950 border border-gray-100  :border-brand-200 dark:hover:border-brand-800 transition-all duration-200 no-underline">
+          <h3 class="text-lg font-semibold text-gray-900  :text-brand-600 dark:group-hover:text-brand-400 mb-1">{card.title}</h3>
+          <p class="text-sm text-gray-500  ">{card.desc}</p>
         </a>
       ))}
     </div>
@@ -38,8 +38,8 @@ const description = 'Everything you need to know before coming to China: payment
 
   <!-- Top 5 Guides for First-Timers -->
   <section class="max-w-5xl mx-auto px-4 py-12">
-    <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-2">Top 5 Guides for First-Timers</h2>
-    <p class="text-gray-500 dark:text-gray-400 mb-8 text-sm">Start here if this is your first trip to China.</p>
+    <h2 class="text-2xl font-bold text-gray-900  ">Top 5 Guides for First-Timers</h2>
+    <p class="text-gray-500  ">Start here if this is your first trip to China.</p>
     <div class="space-y-4">
       {[
         { title: 'First Time in China: A Step-by-Step Guide', desc: 'What to prepare before you fly, how to reduce stress, and what to expect on arrival.', href: '#', tag: 'Prepare' },
@@ -49,11 +49,11 @@ const description = 'Everything you need to know before coming to China: payment
         { title: 'Seeing a Doctor in China as a Foreigner', desc: 'Pharmacy, clinic, or hospital — how to choose and what to expect.', href: '#', tag: 'Medical' },
       ].map((g, i) => (
         <a href={g.href} class="group flex items-start gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-900 transition no-underline">
-          <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-brand-100 dark:bg-brand-900 text-brand-700 dark:text-brand-300 text-sm font-bold flex items-center justify-center">{i + 1}</span>
+          <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-brand-100  :text-brand-300 text-sm font-bold flex items-center justify-center">{i + 1}</span>
           <div>
-            <span class="text-xs font-medium text-brand-600 dark:text-brand-400 uppercase tracking-wide">{g.tag}</span>
-            <h3 class="text-base font-semibold text-gray-900 dark:text-gray-100 group-hover:text-brand-600 dark:group-hover:text-brand-400">{g.title}</h3>
-            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">{g.desc}</p>
+            <span class="text-xs font-medium text-brand-600  ">{g.tag}</span>
+            <h3 class="text-base font-semibold text-gray-900  :text-brand-600 dark:group-hover:text-brand-400">{g.title}</h3>
+            <p class="text-sm text-gray-500  ">{g.desc}</p>
           </div>
         </a>
       ))}
@@ -61,24 +61,24 @@ const description = 'Everything you need to know before coming to China: payment
   </section>
 
   <!-- Scenario-Based Quick Links -->
-  <section class="max-w-5xl mx-auto px-4 py-12 border-t border-gray-100 dark:border-gray-900">
-    <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-2">Pick Your Situation</h2>
-    <p class="text-gray-500 dark:text-gray-400 mb-8 text-sm">Jump to the guides that match where you are right now.</p>
+  <section class="max-w-5xl mx-auto px-4 py-12 border-t border-gray-100  ">
+    <h2 class="text-2xl font-bold text-gray-900  ">Pick Your Situation</h2>
+    <p class="text-gray-500  ">Jump to the guides that match where you are right now.</p>
     <div class="flex flex-wrap gap-3">
       {[
         'Check visa & entry rules', 'Set up payments in advance', 'Set up phone & internet', 'Set up transport', 'Prepare hotel stay', 'Plan your first 72 hours', 'Prepare safety & emergency steps', 'Handle food & daily survival', 'Plan train travel', 'Choose the right medical path',
       ].map(label => (
-        <span class="text-sm px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-700">Coming soon</span>
+        <span class="text-sm px-4 py-2 rounded-full bg-gray-100  :text-gray-300 border border-gray-200  ">Coming soon</span>
       ))}
     </div>
   </section>
 
   <!-- Latest Verified Guides -->
-  <section class="max-w-5xl mx-auto px-4 py-12 border-t border-gray-100 dark:border-gray-900">
+  <section class="max-w-5xl mx-auto px-4 py-12 border-t border-gray-100  ">
     <div class="flex items-center justify-between mb-8">
       <div>
-        <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-1">Recently Updated Guides</h2>
-        <p class="text-gray-500 dark:text-gray-400 text-sm">Last verified: June 2026</p>
+        <h2 class="text-2xl font-bold text-gray-900  ">Recently Updated Guides</h2>
+        <p class="text-gray-500  ">Last verified: June 2026</p>
       </div>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -88,9 +88,9 @@ const description = 'Everything you need to know before coming to China: payment
         { title: 'Guangzhou & Shenzhen for First-Time Visitors', tag: 'City' },
         { title: 'How Many Cities Should You Visit in China?', tag: 'Planning' },
       ].map(g => (
-        <a href="#" class="block p-5 rounded-2xl bg-gray-50 dark:bg-gray-900 hover:bg-brand-50 dark:hover:bg-brand-950 border border-gray-100 dark:border-gray-800 transition no-underline">
-          <span class="text-xs font-medium text-brand-600 dark:text-brand-400 uppercase tracking-wide">{g.tag}</span>
-          <h3 class="text-base font-semibold text-gray-900 dark:text-gray-100 mt-1">{g.title}</h3>
+        <a href="#" class="block p-5 rounded-2xl bg-gray-50  :bg-brand-50 dark:hover:bg-brand-950 border border-gray-100  ">
+          <span class="text-xs font-medium text-brand-600  ">{g.tag}</span>
+          <h3 class="text-base font-semibold text-gray-900  ">{g.title}</h3>
           <p class="text-xs text-gray-400 mt-2">Coming soon</p>
         </a>
       ))}

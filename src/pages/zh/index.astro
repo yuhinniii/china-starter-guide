@@ -7,15 +7,15 @@ const description = '来华前必知的一切：支付、交通、应用、城�
 <Layout title={title} description={description} lang="zh">
   <!-- Hero -->
   <section class="text-center py-20 px-4">
-    <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-gray-900 dark:text-gray-50 mb-6">
+    <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-gray-900  ">
       清晰、实时的<br/><span class="text-brand-600">首次来华外国人指南</span>
     </h1>
-    <p class="text-lg md:text-xl text-gray-500 dark:text-gray-400 max-w-2xl mx-auto mb-8 leading-relaxed">
+    <p class="text-lg md:text-xl text-gray-500  ">
       从必备步骤开始，然后选择符合你行程的指南。
     </p>
     <div class="flex flex-wrap justify-center gap-4">
       <a href="/zh/prepare/" class="bg-brand-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-brand-700 transition no-underline">开始准备</a>
-      <a href="/zh/about/" class="border border-gray-300 dark:border-gray-700 px-6 py-3 rounded-lg font-medium hover:border-brand-600 hover:text-brand-600 transition no-underline">关于本站</a>
+      <a href="/zh/about/" class="border border-gray-300  :border-brand-600 hover:text-brand-600 transition no-underline">关于本站</a>
     </div>
   </section>
 
@@ -28,9 +28,9 @@ const description = '来华前必知的一切：支付、交通、应用、城�
         { href: '/zh/transport/', title: '交通出行', desc: '高铁、地铁、本地出行基础。' },
         { href: '/zh/medical/', title: '医疗指南', desc: '诊所、医院、急诊、费用说明。' },
       ].map(card => (
-        <a href={card.href} class="group block p-5 rounded-2xl bg-gray-50 dark:bg-gray-900 hover:bg-brand-50 dark:hover:bg-brand-950 border border-gray-100 dark:border-gray-800 hover:border-brand-200 dark:hover:border-brand-800 transition-all duration-200 no-underline">
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100 group-hover:text-brand-600 dark:group-hover:text-brand-400 mb-1">{card.title}</h3>
-          <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">{card.desc}</p>
+        <a href={card.href} class="group block p-5 rounded-2xl bg-gray-50  :bg-brand-50 dark:hover:bg-brand-950 border border-gray-100  :border-brand-200 dark:hover:border-brand-800 transition-all duration-200 no-underline">
+          <h3 class="text-lg font-semibold text-gray-900  :text-brand-600 dark:group-hover:text-brand-400 mb-1">{card.title}</h3>
+          <p class="text-sm text-gray-500  ">{card.desc}</p>
         </a>
       ))}
     </div>
@@ -38,8 +38,8 @@ const description = '来华前必知的一切：支付、交通、应用、城�
 
   <!-- Top 5 Guides -->
   <section class="max-w-5xl mx-auto px-4 py-12">
-    <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-2">新手必看5大指南</h2>
-    <p class="text-gray-500 dark:text-gray-400 mb-8 text-sm">如果是首次来中国，从这里开始。</p>
+    <h2 class="text-2xl font-bold text-gray-900  ">新手必看5大指南</h2>
+    <p class="text-gray-500  ">如果是首次来中国，从这里开始。</p>
     <div class="space-y-4">
       {[
         { title: '首次来华：外国人分步指南', desc: '出发前准备什么、如何减轻压力、落地后预期。', href: '#', tag: '行前准备' },
@@ -49,11 +49,11 @@ const description = '来华前必知的一切：支付、交通、应用、城�
         { title: '外国人在中国看医生', desc: '药店、诊所、医院——如何选择，以及预期是什么。', href: '#', tag: '医疗' },
       ].map((g, i) => (
         <a href={g.href} class="group flex items-start gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-900 transition no-underline">
-          <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-brand-100 dark:bg-brand-900 text-brand-700 dark:text-brand-300 text-sm font-bold flex items-center justify-center">{i + 1}</span>
+          <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-brand-100  :text-brand-300 text-sm font-bold flex items-center justify-center">{i + 1}</span>
           <div>
-            <span class="text-xs font-medium text-brand-600 dark:text-brand-400 uppercase tracking-wide">{g.tag}</span>
-            <h3 class="text-base font-semibold text-gray-900 dark:text-gray-100 group-hover:text-brand-600 dark:group-hover:text-brand-400">{g.title}</h3>
-            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">{g.desc}</p>
+            <span class="text-xs font-medium text-brand-600  ">{g.tag}</span>
+            <h3 class="text-base font-semibold text-gray-900  :text-brand-600 dark:group-hover:text-brand-400">{g.title}</h3>
+            <p class="text-sm text-gray-500  ">{g.desc}</p>
           </div>
         </a>
       ))}
@@ -61,24 +61,24 @@ const description = '来华前必知的一切：支付、交通、应用、城�
   </section>
 
   <!-- Scenario-Based Quick Links -->
-  <section class="max-w-5xl mx-auto px-4 py-12 border-t border-gray-100 dark:border-gray-900">
-    <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-2">按你的行程阶段选择</h2>
-    <p class="text-gray-500 dark:text-gray-400 mb-8 text-sm">跳转到符合你当前需求的指南。</p>
+  <section class="max-w-5xl mx-auto px-4 py-12 border-t border-gray-100  ">
+    <h2 class="text-2xl font-bold text-gray-900  ">按你的行程阶段选择</h2>
+    <p class="text-gray-500  ">跳转到符合你当前需求的指南。</p>
     <div class="flex flex-wrap gap-3">
       {[
         '检查签证和入境规则', '提前设置支付方式', '设置手机和网络', '设置交通方式', '准备酒店入住', '规划落地后72小时', '准备安全和应急步骤', '处理饮食和日常生存', '规划火车出行', '选择正确就医路径',
       ].map(label => (
-        <span class="text-sm px-4 py-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-700">即将上线</span>
+        <span class="text-sm px-4 py-2 rounded-full bg-gray-100  :text-gray-300 border border-gray-200  ">即将上线</span>
       ))}
     </div>
   </section>
 
   <!-- Recently Updated Guides -->
-  <section class="max-w-5xl mx-auto px-4 py-12 border-t border-gray-100 dark:border-gray-900">
+  <section class="max-w-5xl mx-auto px-4 py-12 border-t border-gray-100  ">
     <div class="flex items-center justify-between mb-8">
       <div>
-        <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-1">近期更新指南</h2>
-        <p class="text-gray-500 dark:text-gray-400 text-sm">最近核验时间：2026年6月</p>
+        <h2 class="text-2xl font-bold text-gray-900  ">近期更新指南</h2>
+        <p class="text-gray-500  ">最近核验时间：2026年6月</p>
       </div>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -88,9 +88,9 @@ const description = '来华前必知的一切：支付、交通、应用、城�
         { title: '广州和深圳：首次访客指南', tag: '城市' },
         { title: '中国行程应该去几个城市？', tag: '规划' },
       ].map(g => (
-        <a href="#" class="block p-5 rounded-2xl bg-gray-50 dark:bg-gray-900 hover:bg-brand-50 dark:hover:bg-brand-950 border border-gray-100 dark:border-gray-800 transition no-underline">
-          <span class="text-xs font-medium text-brand-600 dark:text-brand-400 uppercase tracking-wide">{g.tag}</span>
-          <h3 class="text-base font-semibold text-gray-900 dark:text-gray-100 mt-1">{g.title}</h3>
+        <a href="#" class="block p-5 rounded-2xl bg-gray-50  :bg-brand-50 dark:hover:bg-brand-950 border border-gray-100  ">
+          <span class="text-xs font-medium text-brand-600  ">{g.tag}</span>
+          <h3 class="text-base font-semibold text-gray-900  ">{g.title}</h3>
           <p class="text-xs text-gray-400 mt-2">即将上线</p>
         </a>
       ))}

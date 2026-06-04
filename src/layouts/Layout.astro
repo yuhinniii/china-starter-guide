@@ -41,31 +41,23 @@ const navItems = isZH
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
-    <script is:inline>
-      // Theme toggle
-      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark');
-      }
-    </script>
   </head>
-  <body class="bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 font-sans antialiased">
+  <body class="bg-white text-gray-900 font-sans antialiased">
     <!-- Nav -->
-    <nav class="sticky top-0 z-50 bg-white/80 dark:bg-gray-950/80 backdrop-blur-md border-b border-gray-100 dark:border-gray-900">
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
       <div class="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
         <a href={base} class="text-lg font-bold text-brand-600 no-underline">{isZH ? '中国入门指南' : 'China Starter Guide'}</a>
         <div class="hidden md:flex items-center gap-5 text-sm">
           {navItems.map(item => (
-            <a href={item.href} class="text-gray-600 dark:text-gray-300 hover:text-brand-600 dark:hover:text-brand-400 no-underline transition-colors">{item.label}</a>
+            <a href={item.href} class="text-gray-600 hover:text-brand-600 no-underline transition-colors">{item.label}</a>
           ))}
         </div>
         <div class="flex items-center gap-3">
           <!-- Language Switcher -->
           <a href={isZH ? Astro.url.pathname.replace(/^\/zh/, '/en') : Astro.url.pathname.replace(/^\/en/, '/zh')}
-             class="text-xs px-2 py-1 rounded border border-gray-200 dark:border-gray-700 text-gray-500 hover:text-brand-600 no-underline">
+             class="text-xs px-2 py-1 rounded border border-gray-200 text-gray-500 hover:text-brand-600 no-underline">
             {isZH ? 'EN' : '中文'}
           </a>
-          <!-- Theme Toggle -->
-          <button id="theme-toggle" class="text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 text-lg" aria-label="Toggle theme">🌙</button>
           <!-- Mobile menu -->
           <button id="mobile-menu-btn" class="md:hidden text-gray-500 text-xl" aria-label="Menu">☰</button>
         </div>
@@ -73,7 +65,7 @@ const navItems = isZH
       <!-- Mobile menu -->
       <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 flex flex-col gap-2 text-sm">
         {navItems.map(item => (
-          <a href={item.href} class="text-gray-600 dark:text-gray-300 hover:text-brand-600 no-underline py-1">{item.label}</a>
+          <a href={item.href} class="text-gray-600 hover:text-brand-600 no-underline py-1">{item.label}</a>
         ))}
       </div>
     </nav>
@@ -83,7 +75,7 @@ const navItems = isZH
     </main>
 
     <!-- Footer -->
-    <footer class="border-t border-gray-100 dark:border-gray-900 mt-16">
+    <footer class="border-t border-gray-100 mt-16">
       <div class="max-w-5xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
         <span>© 2026 China Starter Guide</span>
         <div class="flex gap-4">
@@ -95,23 +87,6 @@ const navItems = isZH
     </footer>
 
     <script is:inline>
-      // Theme toggle - runs after DOM ready
-      function initTheme() {
-        const btn = document.getElementById('theme-toggle');
-        if (!btn) return;
-
-        // Set initial icon
-        const isDarkNow = document.documentElement.classList.contains('dark');
-        btn.textContent = isDarkNow ? '☀️' : '🌙';
-
-        btn.addEventListener('click', () => {
-          document.documentElement.classList.toggle('dark');
-          const isDark = document.documentElement.classList.contains('dark');
-          localStorage.theme = isDark ? 'dark' : 'light';
-          btn.textContent = isDark ? '☀️' : '🌙';
-        });
-      }
-
       // Mobile menu
       function initMobileMenu() {
         const btn = document.getElementById('mobile-menu-btn');
@@ -123,9 +98,8 @@ const navItems = isZH
       }
 
       if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', () => { initTheme(); initMobileMenu(); });
+        document.addEventListener('DOMContentLoaded', () => { initMobileMenu(); });
       } else {
-        initTheme();
         initMobileMenu();
       }
     </script>

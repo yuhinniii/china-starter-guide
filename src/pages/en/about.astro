@@ -5,29 +5,100 @@ const description = 'Why we built this guide and who it is for.';
 ---
 
 <Layout title={title} description={description} lang="en">
-  <article class="max-w-3xl mx-auto">
-    <header class="py-12 text-center">
-      <div class="text-sm text-brand-600 font-medium mb-2">ABOUT</div>
-      <h1 class="text-3xl md:text-4xl font-bold text-gray-900  ">About This Guide</h1>
+  <article class="max-w-3xl mx-auto py-12">
+    <!-- Header -->
+    <header class="text-center mb-16">
+      <div class="text-sm text-brand-600 font-medium tracking-wide uppercase mb-3">About</div>
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
+        About China Starter Guide
+      </h1>
+      <p class="text-lg text-gray-500 max-w-2xl mx-auto leading-relaxed">
+        An independent resource helping international visitors prepare for and navigate China.
+      </p>
     </header>
-    <div class="prose prose-gray  ">
-      <p>China Starter Guide is a practical, no-nonsense resource for foreigners planning to visit, live, or work in China.</p>
-      <h2>What Makes This Different</h2>
-      <ul>
-        <li>Written from a foreigner's perspective — not a tourism board</li>
-        <li>Constantly updated — China changes fast</li>
-        <li>Actionable steps — not just vague advice</li>
-        <li>Covers real problems — payment, apps, transport</li>
-      </ul>
-      <h2>Who This Is For</h2>
-      <ul>
-        <li>First-time tourists</li>
-        <li>Business travelers</li>
-        <li>Expats moving to China</li>
-        <li>Digital nomads</li>
-      </ul>
-      <h2>Stay Updated</h2>
-      <p>China's tech and policy landscape changes rapidly. We update our guides regularly to keep information accurate and useful.</p>
+
+    <!-- Main Content -->
+    <div class="prose prose-gray max-w-none">
+      <p class="text-lg leading-relaxed text-gray-700">
+        China Starter Guide is an independent resource that helps international visitors prepare for and navigate travel in China.
+      </p>
+
+      <p class="text-lg leading-relaxed text-gray-700">
+        Whether you're visiting for tourism, business, study, or a short stay, finding reliable information about China can be difficult. Rules, apps, payments, transportation, and everyday services often work differently from what many travelers expect.
+      </p>
+
+      <div class="bg-brand-50 border-l-4 border-brand-500 pl-6 py-5 my-10 rounded-r-xl">
+        <p class="text-xl font-semibold text-brand-700 m-0">
+          Our goal is simple: make China easier to understand and easier to navigate.
+        </p>
+      </div>
+
+      <p class="text-lg leading-relaxed text-gray-700">
+        We create practical guides and useful tools based on real questions from travelers and first-time visitors. Every resource is designed to save time, reduce confusion, and help people travel with confidence.
+      </p>
+
+      <hr class="my-12 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">What to Expect</h2>
+
+      <div class="grid md:grid-cols-3 gap-6 not-prose mb-12">
+        <div class="p-6 rounded-2xl bg-gray-50 border border-gray-100">
+          <div class="text-brand-600 text-2xl mb-3">📙</div>
+          <h3 class="font-semibold text-gray-900 mb-2">No Travel Marketing</h3>
+          <p class="text-sm text-gray-500 leading-relaxed m-0">Just clear, useful information — no sponsored picks or fluff.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-gray-50 border border-gray-100">
+          <div class="text-brand-600 text-2xl mb-3">⚡</div>
+          <h3 class="font-semibold text-gray-900 mb-2">No Unnecessary Complexity</h3>
+          <p class="text-sm text-gray-500 leading-relaxed m-0">Straight answers to real questions, without the jargon.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-gray-50 border border-gray-100">
+          <div class="text-brand-600 text-2xl mb-3">✅</div>
+          <h3 class="font-semibold text-gray-900 mb-2">Practical & Actionable</h3>
+          <p class="text-sm text-gray-500 leading-relaxed m-0">Every guide is designed so you can actually use it on the ground.</p>
+        </div>
+      </div>
+
+      <hr class="my-12 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Who This Is For</h2>
+      <div class="grid md:grid-cols-2 gap-4 not-prose mb-12">
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-gray-50">
+          <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-brand-100 text-brand-700 text-sm font-bold flex items-center justify-center">1</span>
+          <div>
+            <p class="font-medium text-gray-900 m-0">First-time tourists</p>
+            <p class="text-sm text-gray-500 m-0">Visiting China for the first time and need the basics.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-gray-50">
+          <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-brand-100 text-brand-700 text-sm font-bold flex items-center justify-center">2</span>
+          <div>
+            <p class="font-medium text-gray-900 m-0">Business travelers</p>
+            <p class="text-sm text-gray-500 m-0">Short trips with limited time to figure things out.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-gray-50">
+          <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-brand-100 text-brand-700 text-sm font-bold flex items-center justify-center">3</span>
+          <div>
+            <p class="font-medium text-gray-900 m-0">Students & researchers</p>
+            <p class="text-sm text-gray-500 m-0">Staying for a semester or longer and need to settle in.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-gray-50">
+          <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-brand-100 text-brand-700 text-sm font-bold flex items-center justify-center">4</span>
+          <div>
+            <p class="font-medium text-gray-900 m-0">Short-term visitors</p>
+            <p class="text-sm text-gray-500 m-0">Transit, layovers, or quick trips with specific needs.</p>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-12 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">Stay Updated</h2>
+      <p class="text-lg leading-relaxed text-gray-700">
+        China's tech and policy landscape changes rapidly. We update our guides regularly to keep information accurate and useful. Follow us or check back often for the latest updates.
+      </p>
     </div>
   </article>
 </Layout>

@@ -1,0 +1,33 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const title = '关于 — 中国入门指南';
+const description = '为什么做这个指南，以及它适合谁。';
+---
+
+<Layout title={title} description={description} lang="zh">
+  <article class="max-w-3xl mx-auto">
+    <header class="py-12 text-center">
+      <div class="text-sm text-brand-600 font-medium mb-2">关于</div>
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">关于本指南</h1>
+    </header>
+    <div class="prose prose-gray dark:prose-invert max-w-none">
+      <p>中国入门指南是一个实用、不废话的资源，为计划来华旅行、生活或工作的外国人准备。</p>
+      <h2>有什么不同</h2>
+      <ul>
+        <li>从外国人的视角写作——不是旅游局口吻</li>
+        <li>持续更新——中国变化很快</li>
+        <li>可执行步骤——不是空泛建议</li>
+        <li>覆盖真实问题——支付、APP、交通</li>
+      </ul>
+      <h2>适合人群</h2>
+      <ul>
+        <li>首次来华游客</li>
+        <li>商务旅客</li>
+        <li>移居中国的外国人</li>
+        <li>数字游民</li>
+      </ul>
+      <h2>保持更新</h2>
+      <p>中国的科技和政策环境变化迅速。我们定期更新指南，确保信息准确有用。</p>
+    </div>
+  </article>
+</Layout>

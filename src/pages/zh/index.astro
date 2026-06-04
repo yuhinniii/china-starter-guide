@@ -1,0 +1,42 @@
+---
+import Layout from '../../layouts/Layout.astro';
+const title = '中国入门指南 — 来华旅行与生活完整攻略';
+const description = '来华必备：支付、交通、APP、城市指南、旅游贴士，一站式解决你的所有问题。';
+---
+
+<Layout title={title} description={description} lang="zh">
+  <section class="text-center py-20 px-4">
+    <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-gray-900 dark:text-gray-50 mb-6">
+      你的中国<br/><span class="text-brand-600">入门完整指南</span>
+    </h1>
+    <p class="text-lg md:text-xl text-gray-500 dark:text-gray-400 max-w-2xl mx-auto mb-8 leading-relaxed">
+      来华必备：支付、交通、APP、城市指南、旅游贴士，一站式解决你的所有问题。实用、最新、新手友好。
+    </p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="/zh/payment/" class="bg-brand-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-brand-700 transition no-underline">开始探索</a>
+      <a href="/zh/about/" class="border border-gray-300 dark:border-gray-700 px-6 py-3 rounded-lg font-medium hover:border-brand-600 hover:text-brand-600 transition no-underline">了解更多</a>
+    </div>
+  </section>
+
+  <section class="grid grid-cols-1 md:grid-cols-3 gap-6 py-16">
+    {[
+      { emoji: '💳', title: '支付指南', desc: '外国人如何开通支付宝和微信支付，一步一步教你。' },
+      { emoji: '🚄', title: '交通指南', desc: '高铁、地铁、滴滴打车，教你轻松在中国城市出行。' },
+      { emoji: '📱', title: '必备APP', desc: '真正需要下载的APP，附非中文用户设置教程。' },
+      { emoji: '🏙️', title: '城市指南', desc: '北京、上海、深圳、成都等城市的真实生活指南。' },
+      { emoji: '🧳', title: '旅游贴士', desc: '手机卡、VPN、酒店预订，出发前没人告诉你的事。' },
+      { emoji: '🤝', title: '文化与礼仪', desc: '在中国会遇到的习俗差异，如何避免尴尬。' },
+    ].map(item => (
+      <div class="bg-gray-50 dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-2xl p-6 hover:shadow-medium hover:-translate-y-1 transition-all duration-200">
+        <div class="text-3xl mb-3">{item.emoji}</div>
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2">{item.title}</h3>
+        <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">{item.desc}</p>
+      </div>
+    ))}
+  </section>
+
+  <section class="py-12 border-t border-gray-100 dark:border-gray-900">
+    <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6">最新文章</h2>
+    <p class="text-gray-400 text-sm">文章即将上线，敬请期待！</p>
+  </section>
+</Layout>

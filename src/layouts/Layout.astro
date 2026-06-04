@@ -95,19 +95,38 @@ const navItems = isZH
     </footer>
 
     <script is:inline>
-      // Theme toggle
-      document.getElementById('theme-toggle')?.addEventListener('click', () => {
-        const isDark = document.documentElement.classList.toggle('dark');
-        localStorage.theme = isDark ? 'dark' : 'light';
-        document.getElementById('theme-toggle').textContent = isDark ? '☀️' : '🌙';
-      });
+      // Theme toggle - runs after DOM ready
+      function initTheme() {
+        const btn = document.getElementById('theme-toggle');
+        if (!btn) return;
+
+        // Set initial icon
+        const isDarkNow = document.documentElement.classList.contains('dark');
+        btn.textContent = isDarkNow ? '☀️' : '🌙';
+
+        btn.addEventListener('click', () => {
+          document.documentElement.classList.toggle('dark');
+          const isDark = document.documentElement.classList.contains('dark');
+          localStorage.theme = isDark ? 'dark' : 'light';
+          btn.textContent = isDark ? '☀️' : '🌙';
+        });
+      }
+
       // Mobile menu
-      document.getElementById('mobile-menu-btn')?.addEventListener('click', () => {
-        document.getElementById('mobile-menu').classList.toggle('hidden');
-      });
-      // Set initial icon
-      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.getElementById('theme-toggle').textContent = '☀️';
+      function initMobileMenu() {
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        if (!btn || !menu) return;
+        btn.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+        });
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', () => { initTheme(); initMobileMenu(); });
+      } else {
+        initTheme();
+        initMobileMenu();
       }
     </script>
   </body>

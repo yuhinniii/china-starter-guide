@@ -1,28 +1,93 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+const title = '隐私政策 — 中国入门指南';
+const description = '我们如何处理您的信息并保护您的隐私。';
 ---
 
-<Layout title="隐私政策 - 中国入门指南" lang="zh">
-  <div class="max-w-3xl mx-auto px-4 py-16">
-    <h1 class="text-4xl font-bold mb-8">隐私政策</h1>
-    <div class="space-y-6 text-gray-700  ">
-      <p><strong>生效日期：</strong>2026年6月1日</p>
+<Layout title={title} description={description} lang="zh">
+  <article class="max-w-3xl mx-auto py-12">
+    <!-- Header -->
+    <header class="text-center mb-12">
+      <div class="text-sm text-brand-600 font-medium tracking-wide uppercase mb-3">法律</div>
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
+        隐私政策
+      </h1>
+      <p class="text-sm text-gray-400">最后更新：2026年6月</p>
+    </header>
 
-      <h2 class="text-2xl font-semibold mt-8 mb-4">1. 我们收集的信息</h2>
-      <p>本网站是静态网站。我们不收集、不存储、不处理任何访客的个人信息。我们不使用 Cookie 进行追踪。</p>
+    <div class="prose prose-gray max-w-none">
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        China Starter Guide 尊重您的隐私，并致力于保护您主动向我们提供的信息。
+      </p>
 
-      <h2 class="text-2xl font-semibold mt-8 mb-4">2. 分析统计</h2>
-      <p>我们可能使用注重隐私的分析工具（如 Umami 或 GoatCounter），不收集个人数据，不使用 Cookie。不追踪或存储任何个人信息。</p>
+      <hr class="my-10 border-gray-200" />
 
-      <h2 class="text-2xl font-semibold mt-8 mb-4">3. 外部链接</h2>
-      <p>本网站包含指向外部网站的链接（如支付宝、微信或预订平台）。我们不负责这些网站的隐私实践。</p>
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">我们收集的信息</h2>
 
-      <h2 class="text-2xl font-semibold mt-8 mb-4">4. 联系方式</h2>
-      <p>如果你对本隐私政策有任何疑问，请通过以下方式联系我们：<a href="mailto:contact@chinastarterguide.com" class="text-brand-600 hover:underline">contact@chinastarterguide.com</a></p>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        当您访问本网站时，我们可能会自动收集少量非个人信息，例如浏览器类型、设备信息、访问页面以及网站使用情况等数据。
+      </p>
 
-      <hr class="border-gray-200  " />
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        如果您主动与我们联系，我们可能会收集您自愿提供的信息，例如姓名和电子邮箱地址。
+      </p>
 
-      <p class="text-sm text-gray-500">本隐私政策刻意保持简洁，因为我们不收集你的数据。</p>
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">信息的使用方式</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        我们收集的信息主要用于：
+      </p>
+
+      <div class="bg-gray-50 border border-gray-100 rounded-xl p-6 mb-6 not-prose">
+        <ul class="list-disc pl-5 space-y-2 text-gray-700 m-0">
+          <li>改进网站内容和用户体验</li>
+          <li>了解访客如何使用网站资源</li>
+          <li>回复用户咨询和反馈</li>
+          <li>维护和优化网站服务</li>
+        </ul>
+      </div>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        我们不会出售或出租您的个人信息。
+      </p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">Cookie</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        本网站可能使用 Cookie 及类似技术，以改善用户体验并帮助我们了解访客如何使用网站内容。
+      </p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        您可以通过浏览器设置管理或禁用 Cookie。
+      </p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">数据安全</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        我们会采取合理措施保护所收集的信息，但互联网传输和电子存储方式无法保证绝对安全。
+      </p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">政策更新</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        我们可能会不定期更新本隐私政策。任何修改都会在本页面公布，并更新最近修订日期。
+      </p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">联系我们</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        如果您对本隐私政策有任何疑问，请通过网站的<a href="/zh/contact/" class="text-brand-600 hover:underline">联系页面</a>与我们联系。
+      </p>
     </div>
-  </div>
+  </article>
 </Layout>

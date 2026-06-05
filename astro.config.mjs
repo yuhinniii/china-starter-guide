@@ -25,6 +25,11 @@ export default defineConfig({
     }),
   ],
   vite: {
+    resolve: {
+      alias: {
+        '@layouts': '/src/layouts',
+      },
+    },
     ssr: {
       noExternal: ['sharp'],
     },

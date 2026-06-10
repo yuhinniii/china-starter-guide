@@ -1,5 +1,6 @@
 ---
 const { title, description = 'Your ultimate guide to traveling, living and working in China', lang = 'en' } = Astro.props;
+const currentPath = Astro.url.pathname;
 const isZH = lang === 'zh';
 const base = isZH ? '/zh' : '/en';
 const navItems = isZH
@@ -27,6 +28,11 @@ const navItems = isZH
       { label: 'Search', href: '/en/search/' },
       { label: 'About', href: '/en/about/' },
     ];
+
+const isActive = (href) => {
+  if (href === base + '/') return currentPath === base + '/' || currentPath === base + '/index/';
+  return currentPath.startsWith(href);
+};
 ---
 
 <html lang={lang}>
@@ -48,9 +54,15 @@ const navItems = isZH
       <div class="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
         <a href={base} class="text-lg font-bold text-brand-600 no-underline">{isZH ? '中国入门指南' : 'China Starter Guide'}</a>
         <div class="hidden md:flex items-center gap-5 text-sm">
-          {navItems.map(item => (
-            <a href={item.href} class="text-gray-600 hover:text-brand-600 no-underline transition-colors">{item.label}</a>
-          ))}
+          {navItems.map(item => {
+            const active = isActive(item.href);
+            return (
+              <a href={item.href}
+                 class={`no-underline transition-colors${active ? ' text-brand-600 font-semibold' : ' text-gray-600 hover:text-brand-600'}`}>
+                {item.label}
+              </a>
+            );
+          })}
         </div>
         <div class="flex items-center gap-3">
           <!-- Language Switcher -->
@@ -64,9 +76,15 @@ const navItems = isZH
       </div>
       <!-- Mobile menu -->
       <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 flex flex-col gap-2 text-sm">
-        {navItems.map(item => (
-          <a href={item.href} class="text-gray-600 hover:text-brand-600 no-underline py-1">{item.label}</a>
-        ))}
+        {navItems.map(item => {
+          const active = isActive(item.href);
+          return (
+            <a href={item.href}
+               class={`no-underline py-1${active ? ' text-brand-600 font-semibold' : ' text-gray-600 hover:text-brand-600'}`}>
+              {item.label}
+            </a>
+          );
+        })}
       </div>
     </nav>
 

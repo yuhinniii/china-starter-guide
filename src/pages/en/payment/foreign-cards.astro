@@ -5,16 +5,30 @@ const description = 'Where Visa and Mastercard actually work in China, ATM withd
 ---
 
 <Layout title={title} description={description} lang="en">
-  <article class="max-w-3xl mx-auto py-12">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <!-- Header -->
     <header class="mb-12">
-      <a href="/en/payment/" class="text-sm text-brand-600 hover:underline inline-flex items-center gap-1 mb-4">← Payment</a>
-      <div class="text-sm text-brand-600 font-medium tracking-wide uppercase mb-3">Payment</div>
-      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
-        Can You Use Foreign Credit Cards in China? A Realistic Look
+      <p class="text-sm text-gray-500 mb-3">💳 Payment</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        Can You Use Foreign Credit Cards in China?
       </h1>
+      <p class="text-xl text-gray-600 mb-6">A realistic look at where your Visa or Mastercard will work.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Last updated: June 11, 2026</span>
+        <span>⏱️ 4 min read</span>
+      </div>
     </header>
 
-    <div class="prose prose-gray max-w-none">
+    <!-- Quick Answer Box -->
+    <div class="bg-gradient-to-r from-orange-50 to-amber-50 border-l-4 border-orange-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-orange-900 mb-4">🎯 Quick Answer</h2>
+      <p class="text-lg text-orange-800 leading-relaxed">
+        <strong>Don't rely on your physical credit card as your main payment method in China.</strong> Foreign Visa/Mastercard works at international hotels, luxury malls, and airports — but most daily places (restaurants, taxis, shops) won't accept it. Use Alipay or WeChat Pay instead.
+      </p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="prose prose-lg max-w-none">
       <p class="text-lg leading-relaxed text-gray-700 mb-6">
         Let me be direct with you: <strong>do not rely on your physical credit card as your main way to pay in China.</strong>
       </p>
@@ -23,30 +37,32 @@ const description = 'Where Visa and Mastercard actually work in China, ATM withd
         I'm not saying it won't work. It will — in some places. But China's payment ecosystem is built around QR codes and mobile apps, and your foreign-issued Visa or Mastercard is just not part of that system in the way you'd expect. Setting up <a href="/en/payment/setup-alipay/" class="text-brand-600 hover:underline">Alipay</a> or <a href="/en/payment/setup-wechat/" class="text-brand-600 hover:underline">WeChat Pay</a> is the smarter move.
       </p>
 
-      <hr class="my-10 border-gray-200" />
+      <hr class="border-gray-200 my-12" />
 
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">Where Your Foreign Card Actually Works</h2>
+      <h2 class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">💳</span> Where Your Foreign Card Actually Works
+      </h2>
 
       <p class="text-lg leading-relaxed text-gray-700 mb-6">Here's the honest picture:</p>
 
-      <div class="space-y-4 mb-8">
-        <div class="bg-green-50 border border-green-100 rounded-2xl p-5 not-prose">
+      <div class="grid md:grid-cols-2 gap-4 mb-8 not-prose">
+        <div class="bg-green-50 border border-green-200 rounded-2xl p-5">
           <h3 class="text-sm font-bold text-green-800 uppercase tracking-wide mb-2">✅ Yes, works</h3>
           <ul class="text-sm text-green-700 space-y-1">
             <li>• International hotel chains (Hilton, Marriott, InterContinental)</li>
             <li>• High-end department stores and luxury malls</li>
             <li>• Major international airports</li>
-            <li>• Some international restaurants (the kind that cater to expats)</li>
+            <li>• Some international restaurants</li>
           </ul>
         </div>
 
-        <div class="bg-red-50 border border-red-100 rounded-2xl p-5 not-prose">
+        <div class="bg-red-50 border border-red-200 rounded-2xl p-5">
           <h3 class="text-sm font-bold text-red-800 uppercase tracking-wide mb-2">❌ Probably won't work</h3>
           <ul class="text-sm text-red-700 space-y-1">
-            <li>• Your neighborhood restaurant or street food stall</li>
+            <li>• Neighborhood restaurants and street food stalls</li>
             <li>• Taxis and ride-hailing (Didi uses WeChat/Alipay only)</li>
             <li>• Local shops, convenience stores, supermarkets</li>
-            <li>• Anywhere that only accepts UnionPay (which is most places)</li>
+            <li>• Anywhere that only accepts UnionPay (most places)</li>
           </ul>
         </div>
       </div>
@@ -55,59 +71,40 @@ const description = 'Where Visa and Mastercard actually work in China, ATM withd
         The frustrating part is that many Chinese merchants have POS machines, but those machines are configured for <strong>UnionPay</strong> — China's domestic card network. Your foreign Visa or Mastercard can't connect to the UnionPay network. So even when a terminal is sitting right there, your card might get declined.
       </p>
 
-      <hr class="my-10 border-gray-200" />
+      <hr class="border-gray-200 my-12" />
 
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">ATM Withdrawals</h2>
-
-      <p class="text-lg leading-relaxed text-gray-700 mb-6">
-        You can use your foreign card at ATMs in China to withdraw cash. The machines that accept foreign cards usually have Visa, Mastercard, Cirrus, or Plus logos on them. But there are costs:
-      </p>
-
-      <ul class="list-disc pl-6 space-y-3 text-gray-700 mb-6">
-        <li><strong>Your bank's foreign transaction fee</strong> (typically 1–3%)</li>
-        <li><strong>The ATM operator's fee</strong> (varies, usually ¥10–30 per withdrawal)</li>
-        <li><strong>A bad exchange rate</strong> if the ATM offers to do the conversion for you</li>
-      </ul>
+      <h2 class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🏧</span> Using ATMs
+      </h2>
 
       <p class="text-lg leading-relaxed text-gray-700 mb-6">
-        <strong>Always choose to be charged in CNY (RMB)</strong>, not your home currency. That way your bank handles the conversion, which almost always gives you a better rate.
+        ATMs are a different story. Most ATMs at Bank of China, ICBC, and China Construction Bank accept foreign Visa and Mastercard for cash withdrawals. The fees aren't great (typically ¥15–30 per withdrawal plus your bank's foreign transaction fee), but it works when you need cash.
       </p>
 
-      <hr class="my-10 border-gray-200" />
+      <hr class="border-gray-200 my-12" />
 
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">What About UnionPay?</h2>
+      <h2 class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">💡</span> The Bottom Line
+      </h2>
 
-      <p class="text-lg leading-relaxed text-gray-700 mb-6">
-        If you happen to have a UnionPay card issued by a bank outside China — congratulations, you'll have an easier time. UnionPay is accepted almost everywhere in China, including at merchants who won't take Visa or Mastercard.
-      </p>
-
-      <p class="text-lg leading-relaxed text-gray-700 mb-6">
-        But if you're like most travelers, your main cards are Visa or Mastercard.
-      </p>
-
-      <hr class="my-10 border-gray-200" />
-
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">The Bottom Line</h2>
-
-      <ol class="list-decimal pl-6 space-y-4 text-gray-700 mb-8">
-        <li><strong>Set up Alipay or WeChat Pay before you travel.</strong> Link your foreign card to the app. Then use the app to pay everywhere. This is the way.</li>
-        <li><strong>Keep your physical card as a backup</strong> for hotels and big-ticket items, but don't count on it for daily use.</li>
-        <li><strong>Carry some cash</strong> — about ¥500–1000. You'll need it for tiny vendors, emergencies, or when your mobile payment doesn't go through.</li>
-        <li><strong>Never choose DCC.</strong> Always pay in RMB when given the option.</li>
-      </ol>
-
-      <hr class="my-10 border-gray-200" />
-
-      <div class="bg-brand-50 border border-brand-100 rounded-2xl p-6 not-prose">
-        <h3 class="font-bold text-gray-900 mb-3">Related guides</h3>
-        <ul class="space-y-2">
-          <li><a href="/en/payment/setup-alipay/" class="text-sm text-brand-600 hover:underline">How to Set Up Alipay →</a></li>
-          <li><a href="/en/payment/setup-wechat/" class="text-sm text-brand-600 hover:underline">How to Set Up WeChat Pay →</a></li>
-          <li><a href="/en/payment/payment-guide/" class="text-sm text-brand-600 hover:underline">Back to the payment overview →</a></li>
-        </ul>
+      <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-8 not-prose">
+        <p class="text-gray-700">Bring your credit card as a backup, but set up mobile payments as your primary method. You'll have a much smoother trip.</p>
       </div>
     </div>
 
-    <p class="text-xs text-gray-400 mt-8">Last updated: June 11, 2026</p>
+    <!-- Related Guides -->
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose mt-12">
+      <h3 class="text-2xl font-bold text-gray-900 mb-6">📚 Related Guides</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/en/payment/payment-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">How to Pay in China</p>
+          <p class="text-sm text-gray-600">Complete payment overview</p>
+        </a>
+        <a href="/en/payment/setup-alipay/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">How to Set Up Alipay</p>
+          <p class="text-sm text-gray-600">Step-by-step setup guide</p>
+        </a>
+      </div>
+    </div>
   </article>
 </Layout>

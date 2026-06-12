@@ -1,10 +1,11 @@
 ---
-layout: ../../layouts/Layout.astro
-title: "Emergency Numbers & What to Do If You Need Help in China"
-description: "Emergency numbers in China: 110 (police), 120 (ambulance), 119 (fire). Also: embassy contacts, lost passport steps, and emergency phrases."
+import Layout from '@layouts/Layout.astro';
+const title = "Emergency Numbers & What to Do If You Need Help in China";
+const description = "Emergency numbers in China: 110 (police), 120 (ambulance), 119 (fire). Also: embassy contacts, lost passport steps, and emergency phrases.";
 ---
 
-<article class="max-w-4xl mx-auto px-6 py-12">
+<Layout title={title} description={description} lang="en">
+  <article class="max-w-4xl mx-auto px-6 py-12">
   <!-- Header -->
   <header class="mb-12">
     <p class="text-sm text-gray-500 mb-3">🛡️ Tips for China Travel</p>
@@ -290,3 +291,4 @@ description: "Emergency numbers in China: 110 (police), 120 (ambulance), 119 (fi
     </div>
   </div>
 </article>
+</Layout>

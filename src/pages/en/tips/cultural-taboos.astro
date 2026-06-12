@@ -1,10 +1,11 @@
 ---
-layout: ../../layouts/Layout.astro
-title: "Cultural Dos and Don'ts in China — A Practical Guide"
-description: "Chinese cultual etiquette guide for foreigners: chopstick rules, gift giving, saving face, photography rules, and what not to do in China."
+import Layout from '@layouts/Layout.astro';
+const title = "Cultural Dos and Don'ts in China — A Practical Guide";
+const description = "Chinese cultual etiquette guide for foreigners: chopstick rules, gift giving, saving face, photography rules, and what not to do in China.";
 ---
 
-<article class="max-w-4xl mx-auto px-6 py-12">
+<Layout title={title} description={description} lang="en">
+  <article class="max-w-4xl mx-auto px-6 py-12">
   <!-- Header -->
   <header class="mb-12">
     <p class="text-sm text-gray-500 mb-3">🛡️ Tips for China Travel</p>
@@ -225,3 +226,4 @@ description: "Chinese cultual etiquette guide for foreigners: chopstick rules, g
     </div>
   </div>
 </article>
+</Layout>

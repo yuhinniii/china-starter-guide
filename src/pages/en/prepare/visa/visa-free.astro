@@ -5,233 +5,176 @@ const description = 'Check if your country is eligible for visa-free entry to Ch
 ---
 
 <Layout title={title} description={description} lang="en">
-  <article class="max-w-3xl mx-auto py-12">
+  <article class="max-w-4xl mx-auto px-6 py-12">
     <!-- Header -->
     <header class="mb-12">
-      <a href="/en/prepare/visa/" class="text-sm text-brand-600 hover:underline inline-flex items-center gap-1 mb-4">← Visa & Entry</a>
-      <div class="text-sm text-brand-600 font-medium tracking-wide uppercase mb-3">Entry & Visa</div>
-      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
+      <p class="text-sm text-gray-500 mb-3">📋 Entry & Visa</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
         China Visa-Free Countries List (2026)
       </h1>
-      <p class="text-lg text-gray-400">
-        Want to know if you need a visa to visit China?
-      </p>
+      <p class="text-xl text-gray-600 mb-6">Check if your country qualifies for visa-free entry to China.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Last updated: June 11, 2026</span>
+        <span>⏱️ 5 min read</span>
+      </div>
     </header>
 
-    <div class="prose prose-gray max-w-none">
+    <!-- Quick Answer Box -->
+    <div class="bg-gradient-to-r from-green-50 to-emerald-50 border-l-4 border-green-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-green-900 mb-4">🎯 Quick Answer</h2>
+      <p class="text-lg text-green-800 leading-relaxed">
+        <strong>Citizens of 50 countries can enter China visa-free for up to 30 days.</strong> If your country is on the list, you don't need any advance paperwork — just a valid passport. The policy covers tourism, business, family visits, and short-term cultural exchanges.
+      </p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="prose prose-lg max-w-none">
       <p class="text-lg leading-relaxed text-gray-700 mb-6">
         Check the list below. If your country is included in China's visa-free policy, you can enter China without applying for a tourist visa in advance — for up to 30 days per entry.
       </p>
 
-      <hr class="my-10 border-gray-200" />
+      <hr class="border-gray-200 my-12" />
 
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">Who Can Enter China Visa-Free?</h2>
+      <h2 class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🌍</span> Who Can Enter China Visa-Free?
+      </h2>
 
       <p class="text-lg leading-relaxed text-gray-700 mb-6">
         Citizens holding ordinary passports from the countries listed below can enter China without a visa for:
       </p>
 
-      <div class="bg-gray-50 border border-gray-100 rounded-2xl p-6 mb-8 not-prose">
-        <ul class="list-disc pl-5 space-y-1 text-gray-700 m-0">
+      <div class="bg-green-50 border border-green-200 rounded-2xl p-6 mb-8 not-prose">
+        <ul class="list-disc pl-5 space-y-1 text-gray-700">
           <li>Tourism</li>
           <li>Business visits</li>
           <li>Family visits</li>
           <li>Short-term cultural exchanges</li>
         </ul>
-        <p class="text-gray-700 mt-4 mb-0 font-medium">
+        <p class="text-gray-700 mt-4 font-medium">
           Maximum stay: Up to 30 calendar days per visit.
         </p>
       </div>
 
-      <hr class="my-10 border-gray-200" />
+      <hr class="border-gray-200 my-12" />
 
-      <h2 class="text-2xl font-bold text-gray-900 mb-6">Europe (40 countries)</h2>
+      <h2 class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🇪🇺</span> Europe (40 countries)
+      </h2>
 
-      <div class="bg-gray-50 border border-gray-100 rounded-2xl p-6 mb-8 not-prose">
-        <p class="text-sm text-gray-500 mb-3 font-medium">Ordinary passport holders only</p>
-        <div class="flex flex-wrap gap-2">
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Albania</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Austria</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Belgium</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Bosnia and Herzegovina</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Bulgaria</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Croatia</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Cyprus</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Czech Republic</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Denmark</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Estonia</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Finland</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">France</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Germany</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Greece</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Hungary</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Iceland</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Ireland</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Italy</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Latvia</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Liechtenstein</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Lithuania</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Luxembourg</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Malta</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Monaco</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Montenegro</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Netherlands</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">North Macedonia</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Norway</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Poland</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Portugal</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Romania</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Russia</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Serbia</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Slovakia</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Slovenia</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Spain</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Sweden</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Switzerland</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Ukraine</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">United Kingdom</span>
-        </div>
+      <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-8 not-prose">
+        <ul class="list-disc pl-5 space-y-1 text-gray-700">
+          <li>France</li>
+          <li>Germany</li>
+          <li>Italy</li>
+          <li>Netherlands</li>
+          <li>Spain</li>
+          <li>Portugal</li>
+          <li>Switzerland</li>
+          <li>Ireland</li>
+          <li>Austria</li>
+          <li>Belgium</li>
+          <li>Luxembourg</li>
+          <li>Denmark</li>
+          <li>Sweden</li>
+          <li>Norway</li>
+          <li>Finland</li>
+          <li>Iceland</li>
+          <li>Greece</li>
+          <li>Poland</li>
+          <li>Czech Republic</li>
+          <li>Hungary</li>
+          <li>Slovakia</li>
+          <li>Slovenia</li>
+          <li>Estonia</li>
+          <li>Latvia</li>
+          <li>Lithuania</li>
+          <li>Croatia</li>
+          <li>Romania</li>
+          <li>Bulgaria</li>
+          <li>Cyprus</li>
+          <li>Malta</li>
+          <li>Monaco</li>
+          <li>San Marino</li>
+          <li>Andorra</li>
+          <li>Liechtenstein</li>
+          <li>North Macedonia</li>
+          <li>Bosnia and Herzegovina</li>
+          <li>Montenegro</li>
+          <li>Serbia</li>
+          <li>Albania</li>
+          <li>Russia</li>
+        </ul>
       </div>
 
-      <h2 class="text-2xl font-bold text-gray-900 mb-6">North America (1 country)</h2>
+      <hr class="border-gray-200 my-12" />
 
-      <div class="bg-gray-50 border border-gray-100 rounded-2xl p-6 mb-8 not-prose">
-        <div class="flex flex-wrap gap-2">
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Canada</span>
-        </div>
+      <h2 class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🌏</span> Asia (8 countries)
+      </h2>
+
+      <div class="bg-purple-50 border border-purple-200 rounded-2xl p-6 mb-8 not-prose">
+        <ul class="list-disc pl-5 space-y-1 text-gray-700">
+          <li>Singapore</li>
+          <li>Malaysia</li>
+          <li>Thailand</li>
+          <li>Japan</li>
+          <li>South Korea</li>
+          <li>Brunei</li>
+          <li>United Arab Emirates</li>
+          <li>Qatar</li>
+        </ul>
       </div>
 
-      <h2 class="text-2xl font-bold text-gray-900 mb-6">Oceania (2 countries)</h2>
+      <hr class="border-gray-200 my-12" />
 
-      <div class="bg-gray-50 border border-gray-100 rounded-2xl p-6 mb-8 not-prose">
-        <div class="flex flex-wrap gap-2">
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Australia</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">New Zealand</span>
-        </div>
+      <h2 class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🌎</span> Americas & Oceania (2 countries)
+      </h2>
+
+      <div class="bg-orange-50 border border-orange-200 rounded-2xl p-6 mb-8 not-prose">
+        <ul class="list-disc pl-5 space-y-1 text-gray-700">
+          <li>Australia</li>
+          <li>New Zealand</li>
+        </ul>
       </div>
 
-      <h2 class="text-2xl font-bold text-gray-900 mb-6">Asia (9 countries)</h2>
+      <hr class="border-gray-200 my-12" />
 
-      <div class="bg-gray-50 border border-gray-100 rounded-2xl p-6 mb-8 not-prose">
-        <div class="flex flex-wrap gap-2">
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Bahrain</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Brunei</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Japan</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Kuwait</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Malaysia*</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Oman</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Qatar</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Saudi Arabia</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Singapore*</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">South Korea</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">United Arab Emirates</span>
+      <h2 class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">❓</span> Frequently Asked Questions
+      </h2>
+
+      <div class="space-y-6 mb-8 not-prose">
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-gray-900 mb-2">How long can I stay visa-free?</h3>
+          <p class="text-gray-700 leading-relaxed">Up to 30 calendar days per entry. If you need a longer stay, you'll need to apply for a visa or leave and re-enter.</p>
         </div>
-        <p class="text-sm text-gray-500 mt-4 mb-0">*Singapore and Malaysia: Each stay cannot exceed 30 days, with a maximum of 90 days within any 180 days.</p>
-      </div>
 
-      <h2 class="text-2xl font-bold text-gray-900 mb-6">South America (3 countries)</h2>
-
-      <div class="bg-gray-50 border border-gray-100 rounded-2xl p-6 mb-8 not-prose">
-        <div class="flex flex-wrap gap-2">
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Argentina</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Brazil</span>
-          <span class="inline-block px-3 py-1 bg-white rounded-lg text-sm text-gray-700 border border-gray-200">Chile</span>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-gray-900 mb-2">Can I work or study visa-free?</h3>
+          <p class="text-gray-700 leading-relaxed">No. Visa-free entry is for tourism, business visits, family visits, and short-term cultural exchanges only. If you plan to work or study, you need the appropriate visa.</p>
         </div>
-      </div>
 
-      <hr class="my-10 border-gray-200" />
-
-      <div class="bg-brand-50 border-l-2 border-brand-300 pl-5 py-3 my-8 not-prose">
-        <p class="text-gray-600 m-0 italic text-sm">
-          <strong>Note:</strong> Policies can change. Always confirm with official government sources or the nearest Chinese embassy/consulate before traveling.
-        </p>
-      </div>
-
-      <hr class="my-10 border-gray-200" />
-
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">How Long Can You Stay?</h2>
-
-      <p class="text-lg leading-relaxed text-gray-700 mb-2">
-        <strong>Simple answer:</strong> Up to 30 calendar days per visit.
-      </p>
-
-      <p class="text-lg leading-relaxed text-gray-700 mb-6">
-        <strong>How it's calculated:</strong> The count starts at midnight on the day after your arrival.
-      </p>
-
-      <hr class="my-10 border-gray-200" />
-
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">What Do You Need to Enter Visa-Free?</h2>
-
-      <p class="text-lg leading-relaxed text-gray-700 mb-6">
-        Even without a visa, you'll still need:
-      </p>
-
-      <div class="space-y-4 mb-8 not-prose">
-        <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-xl border border-gray-100">
-          <span class="flex-shrink-0 w-6 h-6 rounded-full bg-brand-100 text-brand-700 text-sm flex items-center justify-center font-bold">✅</span>
-          <div>
-            <p class="font-medium text-gray-900 m-0">A valid passport</p>
-            <p class="text-sm text-gray-500 m-0">With more than 6 months remaining validity</p>
-          </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-semibold text-gray-900 mb-2">What if my country isn't on the list?</h3>
+          <p class="text-gray-700 leading-relaxed">Check if you qualify for the 240-hour visa-free transit policy. If not, you'll need to apply for a standard L-type Tourist Visa.</p>
         </div>
-        <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-xl border border-gray-100">
-          <span class="flex-shrink-0 w-6 h-6 rounded-full bg-brand-100 text-brand-700 text-sm flex items-center justify-center font-bold">✅</span>
-          <div>
-            <p class="font-medium text-gray-900 m-0">Proof of onward or return travel</p>
-            <p class="text-sm text-gray-500 m-0">Airline tickets or itinerary (if requested)</p>
-          </div>
-        </div>
-        <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-xl border border-gray-100">
-          <span class="flex-shrink-0 w-6 h-6 rounded-full bg-brand-100 text-brand-700 text-sm flex items-center justify-center font-bold">✅</span>
-          <div>
-            <p class="font-medium text-gray-900 m-0">Accommodation information</p>
-            <p class="text-sm text-gray-500 m-0">Hotel bookings or address where you'll stay (if requested)</p>
-          </div>
-        </div>
-        <div class="flex items-start gap-3 p-4 bg-gray-50 rounded-xl border border-gray-100">
-          <span class="flex-shrink-0 w-6 h-6 rounded-full bg-brand-100 text-brand-700 text-sm flex items-center justify-center font-bold">✅</span>
-          <div>
-            <p class="font-medium text-gray-900 m-0">Evidence of permitted purpose</p>
-            <p class="text-sm text-gray-500 m-0">Proof that your trip matches tourism, business, family visit, or cultural exchange</p>
-          </div>
-        </div>
-      </div>
-
-      <p class="text-gray-700 mb-6 italic">
-        <strong>Heads up:</strong> Border officers may ask to see these documents, so keep them handy.
-      </p>
-
-      <hr class="my-10 border-gray-200" />
-
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">What If Your Country Isn't on the List?</h2>
-
-      <p class="text-lg leading-relaxed text-gray-700 mb-6">
-        Don't worry — you might still have options:
-      </p>
-
-      <div class="grid md:grid-cols-2 gap-4 mb-8 not-prose">
-        <a href="/en/prepare/visa/visa-guide/" class="block p-5 bg-gray-50 border border-gray-100 rounded-2xl hover:border-brand-200 hover:shadow-sm transition-all">
-          <p class="font-semibold text-gray-900 mb-1">Option 1: 240-Hour Visa-Free Transit Policy</p>
-          <p class="text-sm text-gray-500 m-0">For transiting to a third country or region</p>
-        </a>
-        <a href="/en/prepare/visa/visa-guide/" class="block p-5 bg-gray-50 border border-gray-100 rounded-2xl hover:border-brand-200 hover:shadow-sm transition-all">
-          <p class="font-semibold text-gray-900 mb-1">Option 2: Chinese Tourist Visa (L-type)</p>
-          <p class="text-sm text-gray-500 m-0">Standard visa application process</p>
-        </a>
-      </div>
-
-      <p class="text-lg leading-relaxed text-gray-700 mb-6">
-        Want to know more? Check out:
-      </p>
-
-      <div class="space-y-2 mb-8 not-prose">
-        <a href="/en/prepare/visa/visa-guide/" class="inline-flex items-center gap-1 text-sm text-brand-600 font-medium hover:underline">China Visa Types Complete Guide 2026: Which Visa Do You Need? →</a><br/>
-        <a href="/en/prepare/visa/transit-240/" class="inline-flex items-center gap-1 text-sm text-brand-600 font-medium hover:underline">China 240-Hour Visa-Free Transit Explained →</a><br/>
-        <a href="/en/prepare/visa/apply-l-visa/" class="inline-flex items-center gap-1 text-sm text-brand-600 font-medium hover:underline">How to Apply for China Tourist Visa (L-Type) →</a>
       </div>
     </div>
 
-    <p class="text-xs text-gray-400 mt-8">Last updated: June 11, 2026</p>
+    <!-- Related Guides -->
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose">
+      <h3 class="text-2xl font-bold text-gray-900 mb-6">📚 Related Guides</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/en/prepare/visa/visa-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">China Visa Types Complete Guide</p>
+          <p class="text-sm text-gray-600">All visa options explained</p>
+        </a>
+        <a href="/en/prepare/visa/transit-240/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">240-Hour Visa-Free Transit Explained</p>
+          <p class="text-sm text-gray-600">10-day transit without a visa</p>
+        </a>
+      </div>
+    </div>
   </article>
 </Layout>

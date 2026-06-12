@@ -5,16 +5,30 @@ const description = 'Common payment failure reasons for foreign travelers in Chi
 ---
 
 <Layout title={title} description={description} lang="en">
-  <article class="max-w-3xl mx-auto py-12">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <!-- Header -->
     <header class="mb-12">
-      <a href="/en/payment/" class="text-sm text-brand-600 hover:underline inline-flex items-center gap-1 mb-4">← Payment</a>
-      <div class="text-sm text-brand-600 font-medium tracking-wide uppercase mb-3">Payment</div>
-      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
+      <p class="text-sm text-gray-500 mb-3">💳 Payment</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
         What to Do When Your Payment Fails in China
       </h1>
+      <p class="text-xl text-gray-600 mb-6">Don't panic — most payment failures are easy to fix.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Last updated: June 11, 2026</span>
+        <span>⏱️ 4 min read</span>
+      </div>
     </header>
 
-    <div class="prose prose-gray max-w-none">
+    <!-- Quick Answer Box -->
+    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-red-900 mb-4">🎯 Quick Answer</h2>
+      <p class="text-lg text-red-800 leading-relaxed">
+        <strong>Payment failures are common for foreign users.</strong> Most are caused by daily limits, bank fraud blocks, or network issues. Try switching to cash, using a different app, or connecting to WiFi. If nothing works, wait a few hours and try again.
+      </p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="prose prose-lg max-w-none">
       <p class="text-lg leading-relaxed text-gray-700 mb-6">
         It's going to happen at some point. You're at a shop, you scan the QR code, the app spins for a moment, and then — error. Payment failed.
       </p>
@@ -23,82 +37,83 @@ const description = 'Common payment failure reasons for foreign travelers in Chi
         Don't panic. Payment failures in China are common for foreign users, and most of the time it's a simple fix.
       </p>
 
-      <hr class="my-10 border-gray-200" />
+      <hr class="border-gray-200 my-12" />
 
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">Why It Happened</h2>
+      <h2 class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🔍</span> Why It Happened
+      </h2>
 
-      <div class="space-y-4 mb-8">
-        <div class="bg-gray-50 border border-gray-100 rounded-2xl p-5 not-prose">
-          <h3 class="font-semibold text-gray-900 mb-2">1. You hit the daily limit</h3>
-          <p class="text-gray-700 text-sm">Both Alipay Tour Pass and WeChat Pay have limits on how much you can spend. If you've been shopping, you might have hit the ceiling.</p>
-          <p class="text-gray-700 text-sm mt-2"><strong>Fix:</strong> Wait until the next day — daily limits reset. If you need more info on limits, check our <a href="/en/payment/setup-alipay/" class="text-brand-600 hover:underline">Alipay</a> or <a href="/en/payment/setup-wechat/" class="text-brand-600 hover:underline">WeChat Pay</a> guides.</p>
+      <div class="space-y-4 mb-8 not-prose">
+        <div class="bg-blue-50 border border-blue-200 rounded-2xl p-5">
+          <h3 class="font-semibold text-gray-900 mb-2 text-lg">1. You hit the daily limit</h3>
+          <p class="text-gray-700 text-sm">Both Alipay and WeChat Pay have limits on how much you can spend. If you've been shopping, you might have hit the ceiling.</p>
+          <p class="text-gray-700 text-sm mt-2"><strong>Fix:</strong> Wait until the next day — daily limits reset.</p>
         </div>
 
-        <div class="bg-gray-50 border border-gray-100 rounded-2xl p-5 not-prose">
-          <h3 class="font-semibold text-gray-900 mb-2">2. Your bank blocked the transaction</h3>
+        <div class="bg-green-50 border border-green-200 rounded-2xl p-5">
+          <h3 class="font-semibold text-gray-900 mb-2 text-lg">2. Your bank blocked the transaction</h3>
           <p class="text-gray-700 text-sm">Your bank sees a charge coming from China and thinks it's fraud.</p>
-          <p class="text-gray-700 text-sm mt-2"><strong>Fix:</strong> Check your notifications — your bank usually sends an SMS or push notification asking if it's you. Approve it and try again. For next time, notify your bank before you travel.</p>
+          <p class="text-gray-700 text-sm mt-2"><strong>Fix:</strong> Check your notifications — your bank usually sends an SMS asking if it's you. Approve it and try again. Notify your bank before you travel to avoid this.</p>
         </div>
 
-        <div class="bg-gray-50 border border-gray-100 rounded-2xl p-5 not-prose">
-          <h3 class="font-semibold text-gray-900 mb-2">3. The merchant's WiFi is flaky</h3>
-          <p class="text-gray-700 text-sm">Free WiFi in small shops can be slow or unstable.</p>
-          <p class="text-gray-700 text-sm mt-2"><strong>Fix:</strong> Switch to your mobile data. Most Chinese SIM cards and eSIMs have fast data, and paying over your own connection is more secure anyway.</p>
+        <div class="bg-purple-50 border border-purple-200 rounded-2xl p-5">
+          <h3 class="font-semibold text-gray-900 mb-2 text-lg">3. Network issue</h3>
+          <p class="text-gray-700 text-sm">Your VPN might have disconnected, or the merchant's internet is slow.</p>
+          <p class="text-gray-700 text-sm mt-2"><strong>Fix:</strong> Check your VPN, toggle airplane mode on/off, or ask the merchant if they can try again.</p>
         </div>
 
-        <div class="bg-gray-50 border border-gray-100 rounded-2xl p-5 not-prose">
-          <h3 class="font-semibold text-gray-900 mb-2">4. The QR code expired</h3>
-          <p class="text-gray-700 text-sm">Restaurants and chain stores often generate a new code for each order that has a time limit.</p>
-          <p class="text-gray-700 text-sm mt-2"><strong>Fix:</strong> Ask the server to generate a new QR code. Or try scanning again — sometimes it just needed a fresh attempt.</p>
-        </div>
-
-        <div class="bg-gray-50 border border-gray-100 rounded-2xl p-5 not-prose">
-          <h3 class="font-semibold text-gray-900 mb-2">5. The merchant only accepts Chinese bank transfers</h3>
-          <p class="text-gray-700 text-sm">Some small vendors, especially in rural areas or traditional markets, only accept payments from Chinese bank accounts. Your foreign card won't work here even through Alipay.</p>
-          <p class="text-gray-700 text-sm mt-2"><strong>Fix:</strong> Use cash. This is why we recommend keeping ¥100–200 in small bills on you.</p>
+        <div class="bg-orange-50 border border-orange-200 rounded-2xl p-5">
+          <h3 class="font-semibold text-gray-900 mb-2 text-lg">4. Merchant doesn't accept international cards</h3>
+          <p class="text-gray-700 text-sm">Some smaller vendors have payment accounts that only work with Chinese bank cards.</p>
+          <p class="text-gray-700 text-sm mt-2"><strong>Fix:</strong> Use cash, or ask if they accept WeChat Pay (sometimes that works when Alipay doesn't).</p>
         </div>
       </div>
 
-      <hr class="my-10 border-gray-200" />
+      <hr class="border-gray-200 my-12" />
 
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">Step-by-Step: What to Do Right Now</h2>
+      <h2 class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">✅</span> Quick Troubleshooting Checklist
+      </h2>
 
-      <ol class="list-decimal pl-6 space-y-4 text-gray-700 mb-8">
-        <li><strong>Don't keep trying</strong> — the same error will happen again. Stop and switch methods.</li>
-        <li><strong>Check your balance</strong> — make sure you haven't hit a limit.</li>
-        <li><strong>Try the other app</strong> — if Alipay failed, try WeChat Pay. If neither works...</li>
-        <li><strong>Pull out cash</strong> — this is why you carry cash.</li>
-        <li><strong>Ask the merchant</strong> — show them your phone and say "不能付" (<em>bù néng fù</em> — "can't pay"). They might try scanning your QR code instead.</li>
-        <li><strong>Connect to your own data</strong> — if you were on WiFi, switch to mobile data.</li>
-      </ol>
-
-      <hr class="my-10 border-gray-200" />
-
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">Proactive Things You Can Do</h2>
-
-      <p class="text-lg leading-relaxed text-gray-700 mb-6">Before you leave for China:</p>
-
-      <ul class="list-disc pl-6 space-y-3 text-gray-700 mb-6">
-        <li>Set up both <a href="/en/payment/setup-alipay/" class="text-brand-600 hover:underline">Alipay</a> and <a href="/en/payment/setup-wechat/" class="text-brand-600 hover:underline">WeChat Pay</a> (two is safer than one)</li>
-        <li>Withdraw ¥500–1000 in cash from an ATM after you arrive</li>
-        <li>Download your bank's app so you can approve transactions quickly</li>
-      </ul>
-
-      <p class="text-lg leading-relaxed text-gray-700 mb-6">
-        If you've tried everything and still can't pay, find the nearest <strong>Bank of China</strong> ATM — they're usually the most foreigner-friendly — and withdraw more cash. Then sort out the app issue later at your hotel.
-      </p>
-
-      <hr class="my-10 border-gray-200" />
-
-      <div class="bg-brand-50 border border-brand-100 rounded-2xl p-6 not-prose">
-        <h3 class="font-bold text-gray-900 mb-3">Related guides</h3>
-        <ul class="space-y-2">
-          <li><a href="/en/payment/payment-guide/" class="text-sm text-brand-600 hover:underline">Back to the payment overview →</a></li>
-          <li><a href="/en/payment/foreign-cards/" class="text-sm text-brand-600 hover:underline">Using foreign credit cards in China →</a></li>
-        </ul>
+      <div class="bg-gray-50 rounded-2xl p-8 mb-8 not-prose">
+        <ol class="space-y-4">
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">1</span>
+            <div><strong>Switch to the other app</strong> — If Alipay fails, try WeChat Pay (or vice versa)</div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">2</span>
+            <div><strong>Use cash</strong> — Always carry ¥500–1000 in small bills as backup</div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">3</span>
+            <div><strong>Connect to WiFi</strong> — Ask the merchant for their WiFi; sometimes cellular data is the issue</div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">4</span>
+            <div><strong>Restart the app</strong> — Close and reopen Alipay or WeChat</div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">5</span>
+            <div><strong>Wait and retry</strong> — Some issues resolve themselves after a few minutes</div>
+          </li>
+        </ol>
       </div>
     </div>
 
-    <p class="text-xs text-gray-400 mt-8">Last updated: June 11, 2026</p>
+    <!-- Related Guides -->
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose mt-12">
+      <h3 class="text-2xl font-bold text-gray-900 mb-6">📚 Related Guides</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/en/payment/payment-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">How to Pay in China</p>
+          <p class="text-sm text-gray-600">Complete payment overview</p>
+        </a>
+        <a href="/en/payment/setup-alipay/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">How to Set Up Alipay</p>
+          <p class="text-sm text-gray-600">Step-by-step setup guide</p>
+        </a>
+      </div>
+    </div>
   </article>
 </Layout>

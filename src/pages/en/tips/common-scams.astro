@@ -1,10 +1,11 @@
 ---
-layout: ../../layouts/Layout.astro
-title: "Common Scams in China & How to Avoid Them"
-description: "Don't let scammers ruin your China trip. Here are the most common tourist scams in China and exactly how to avoid them."
+import Layout from '@layouts/Layout.astro';
+const title = "Common Scams in China & How to Avoid Them";
+const description = "Don't let scammers ruin your China trip. Here are the most common tourist scams in China and exactly how to avoid them.";
 ---
 
-<article class="max-w-4xl mx-auto px-6 py-12">
+<Layout title={title} description={description} lang="en">
+  <article class="max-w-4xl mx-auto px-6 py-12">
   <!-- Header -->
   <header class="mb-12">
     <p class="text-sm text-gray-500 mb-3">🛡️ Tips for China Travel</p>
@@ -211,3 +212,4 @@ description: "Don't let scammers ruin your China trip. Here are the most common 
     </div>
   </div>
 </article>
+</Layout>

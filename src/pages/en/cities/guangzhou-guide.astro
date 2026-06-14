@@ -1,0 +1,83 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = "Guangzhou Travel Guide: Food Capital of China";
+const description = "Explore Guangzhou — China's food capital with world-famous dim sum, Cantonese culture, and easy access to Hong Kong.";
+---
+
+<Layout title={title} description={description} lang="en">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🏙️ Guangzhou</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">Guangzhou Travel Guide: Food Capital of China</h1>
+      <p class="text-xl text-gray-600 mb-6">Explore Guangzhou — China's food capital with world-famous dim sum, Cantonese culture, and easy access to Hong Kong.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500"><span>📅 Last updated: June 14, 2026</span><span>⏱️ 7 min read</span></div>
+    </header>
+
+    <div class="bg-gradient-to-r from-green-50 to-teal-50 border-l-4 border-green-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-green-900 mb-4">⚡ Quick Answer</h2>
+      <p class="text-lg text-green-800 leading-relaxed">If you eat to live in Beijing, you <strong>live to eat in Guangzhou</strong>. This southern city is widely regarded as <strong>China's food capital</strong>, and the cradle of Cantonese cuisine — arguably the most famous Chinese cuisine in the world. Beyond the food, Guangzhou offers subtropical greenery, a relaxed pace, and proximity to both Shenzhen and Hong Kong.</p>
+    </div>
+
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 In This Guide</h3>
+      <ul class="space-y-3">
+        <li><a href="#why-visit" class="text-blue-600 hover:underline">🥟 Why Visit Guangzhou?</a></li>
+        <li><a href="#how-many-days" class="text-blue-600 hover:underline">📅 How Many Days Do You Need?</a></li>
+        <li><a href="#attractions" class="text-blue-600 hover:underline">🎯 Top Attractions</a></li>
+        <li><a href="#getting-around" class="text-blue-600 hover:underline">🚇 Getting Around</a></li>
+        <li><a href="#where-to-stay" class="text-blue-600 hover:underline">🏨 Where to Stay</a></li>
+        <li><a href="#what-to-eat" class="text-blue-600 hover:underline">🍜 What to Eat</a></li>
+      </ul>
+    </nav>
+
+    <h2 id="why-visit" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🥟 Why Visit Guangzhou?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-12">Guangzhou has been a trading port for over 1,000 years. It's where Cantonese cuisine — dim sum, roasted meats, slow-cooked soups — was perfected and exported worldwide. The city has a subtropical climate (warm year-round), a vibrant riverfront, and a distinctly Cantonese culture that feels different from the north. It's also the gateway to the Pearl River Delta: Shenzhen is 30 minutes by high-speed rail, and Hong Kong is about an hour.</p>
+
+    <h2 id="how-many-days" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📅 How Many Days Do You Need?</h2>
+    <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700 mb-12">
+      <li><strong>2–3 days (standard):</strong> Dim sum, Canton Tower, Shamian Island, and a food tour</li>
+      <li><strong>4–5 days (comfortable):</strong> Add Chimelong Safari Park, Kaiping Diaolou, or cross to Shenzhen</li>
+      <li><strong>5+ days (extended):</strong> Combine with Shenzhen and Hong Kong for a complete Pearl River Delta trip</li>
+    </ul>
+
+    <h2 id="attractions" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎯 Top Attractions</h2>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">Canton Tower (广州塔)</h3><p class="text-gray-700">The iconic "Supermodel" tower is 600 meters tall. Go up for panoramic views of the city, or eat at the rotating restaurant. The light show at night is spectacular.</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">Shamian Island (沙面岛)</h3><p class="text-gray-700">A former British and French concession with colonial architecture, tree-lined boulevards, and a relaxed park atmosphere.</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">Chen Clan Ancestral Hall (陈家祠)</h3><p class="text-gray-700">A stunning Qing-era ancestral temple with intricate wood carvings, pottery, and embroidery.</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">Yuexiu Park (越秀公园)</h3><p class="text-gray-700">The city's largest park, home to the Five Rams Statue — the symbol of Guangzhou.</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12"><h3 class="text-xl font-bold text-gray-900 mb-2">Beijing Road (北京路)</h3><p class="text-gray-700">A pedestrian shopping street with a glass floor revealing ancient Song Dynasty road layers underneath.</p></div>
+
+    <h2 id="getting-around" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🚇 Getting Around</h2>
+    <ul class="list-disc pl-6 space-y-3 text-lg text-gray-700 mb-12">
+      <li><strong>Subway:</strong> Guangzhou's metro has 16 lines and reaches all major attractions. English signs everywhere. Check the <a href="/en/transport/metro-bus/" class="text-blue-600 hover:underline">Metro & Bus Guide for Major Chinese Cities</a> for an overview.</li>
+      <li><strong>Didi:</strong> Cheap and widely available. A ride across the city center costs about 30–50 RMB. See <a href="/en/transport/didi/" class="text-blue-600 hover:underline">How to Use Didi in China as a Foreigner</a> for setup and tips.</li>
+      <li><strong>Pearl River Ferry:</strong> A scenic way to cross the river. Ferries run regularly between piers on both sides.</li>
+      <li><strong>High-speed rail:</strong> Guangzhou South Station connects to Shenzhen (30 min), Hong Kong (1 hour), and Zhuhai/Macau (1 hour). Read the <a href="/en/transport/high-speed-rail/" class="text-blue-600 hover:underline">How to Book and Ride China High-Speed Rail</a> for booking instructions.</li>
+    </ul>
+
+    <h2 id="where-to-stay" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏨 Where to Stay</h2>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">Liwan District (荔湾区) — Best for food lovers</h3><p class="text-gray-700">The heart of old Guangzhou. Stay here for authentic Cantonese restaurants and morning tea houses.</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">Tianhe District (天河区) — Best for modern travelers</h3><p class="text-gray-700">The new CBD has shopping malls, international hotels, and excellent metro connections.</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12"><h3 class="text-xl font-bold text-gray-900 mb-2">Haizhu District (海珠区) — Best for river views</h3><p class="text-gray-700">Across the Pearl River from the city center. Quieter, with great views of the Canton Tower.</p></div>
+
+    <h2 id="what-to-eat" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🍜 What to Eat</h2>
+    <ul class="list-disc pl-6 space-y-3 text-lg text-gray-700 mb-12">
+      <li><strong>Dim Sum (点心)</strong> — Har gow, siu mai, char siu bao, and cheung fun. Morning tea culture (yum cha) is a must-experience.</li>
+      <li><strong>White Cut Chicken — Bai Qie Ji (白切鸡)</strong> — Poached chicken served cold with ginger-scallion oil.</li>
+      <li><strong>Roast Goose — Shao E (烧鹅)</strong> — Crispy-skinned roast goose with plum sauce.</li>
+      <li><strong>Wonton Noodles — Yun Tun Mian (云吞面)</strong> — Thin egg noodles with shrimp-and-pork wontons.</li>
+      <li><strong>Claypot Rice — Bao Zai Fan (煲仔饭)</strong> — Rice cooked in a clay pot with Chinese sausage or chicken.</li>
+      <li><strong>Double Skin Milk — Shuang Pi Nai (双皮奶)</strong> — A silky, sweet milk pudding from Shunde.</li>
+      <li><strong>Herbal Tea — Liang Cha (凉茶)</strong> — A bitter medicinal tea locals swear by.</li>
+    </ul>
+
+    <div class="not-prose mt-16">
+      <h2 class="text-2xl font-bold text-gray-900 mb-8">📚 Related Guides</h2>
+      <div class="space-y-4">
+        <a href="/en/cities/city-select/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🗺️ <strong>How Many Days in China?</strong> — Plan your full itinerary</a>
+        <a href="/en/cities/shenzhen-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🤖 <strong>Shenzhen Travel Guide</strong> — Just 30 minutes away</a>
+        <a href="/en/payment/payment-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">💳 <strong>How to Pay in China</strong> — Guangzhou is fully cashless</a>
+      </div>
+    </div>
+  </article>
+</Layout>

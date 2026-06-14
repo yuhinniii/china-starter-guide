@@ -1,0 +1,91 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = "China City Guides — Beijing, Shanghai, Guangzhou, Shenzhen & Chengdu";
+const description = "Plan your China trip with our city guides. Find the best attractions, food, transport tips, and itinerary suggestions for China's top cities.";
+---
+
+<Layout title={title} description={description} lang="en">
+  <section class="max-w-6xl mx-auto px-6 py-16">
+    <!-- Header -->
+    <header class="mb-16 text-center">
+      <p class="text-sm text-gray-500 mb-3">🏙️ City Guides</p>
+      <h1 class="text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
+        China City Guides
+      </h1>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Which Chinese city should you visit? Here are our detailed guides to China's top destinations — from the imperial grandeur of Beijing to the laid-back charm of Chengdu.
+      </p>
+    </header>
+
+    <!-- Quick Overview -->
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-16 not-prose">
+      <h2 class="text-2xl font-bold text-blue-900 mb-4">🎯 Start Here</h2>
+      <p class="text-lg text-blue-800 leading-relaxed">
+        Not sure which city to visit? Check out <a href="/en/cities/city-select/" class="text-blue-600 underline">How Many Days Do You Need in China?</a> first — it helps you plan your itinerary based on your available time and interests.
+      </p>
+    </div>
+
+    <!-- Article Directory -->
+    <div class="space-y-6 mb-16 not-prose">
+      <!-- Article 1 - City Select -->
+      <a href="/en/cities/city-select/" class="group flex items-start gap-4 p-6 rounded-xl bg-white border border-gray-200 hover:shadow-lg hover:border-blue-300 transition no-underline">
+        <span class="flex-shrink-0 w-12 h-12 rounded-xl bg-purple-100 flex items-center justify-center text-2xl">🗺️</span>
+        <div class="flex-1">
+          <span class="text-xs font-medium text-purple-600">Planning</span>
+          <h2 class="text-xl font-bold text-gray-900 group-hover:text-purple-600 transition">How Many Days Do You Need in China? Itinerary by Trip Length</h2>
+          <p class="text-gray-600 mt-1">Plan the perfect trip — from a 3-day whirlwind to a 3-week adventure with city-by-city recommendations.</p>
+        </div>
+      </a>
+
+      <!-- Article 2 - Beijing -->
+      <a href="/en/cities/beijing-guide/" class="group flex items-start gap-4 p-6 rounded-xl bg-white border border-gray-200 hover:shadow-lg hover:border-red-300 transition no-underline">
+        <span class="flex-shrink-0 w-12 h-12 rounded-xl bg-red-100 flex items-center justify-center text-2xl">🏛️</span>
+        <div class="flex-1">
+          <span class="text-xs font-medium text-red-600">Beijing</span>
+          <h2 class="text-xl font-bold text-gray-900 group-hover:text-red-600 transition">Beijing Travel Guide: What to See, Eat, and Know</h2>
+          <p class="text-gray-600 mt-1">Forbidden City, Great Wall, hutongs, Peking duck, and essential Beijing travel tips.</p>
+        </div>
+      </a>
+
+      <!-- Article 3 - Shanghai -->
+      <a href="/en/cities/shanghai-guide/" class="group flex items-start gap-4 p-6 rounded-xl bg-white border border-gray-200 hover:shadow-lg hover:border-yellow-300 transition no-underline">
+        <span class="flex-shrink-0 w-12 h-12 rounded-xl bg-yellow-100 flex items-center justify-center text-2xl">🌆</span>
+        <div class="flex-1">
+          <span class="text-xs font-medium text-yellow-600">Shanghai</span>
+          <h2 class="text-xl font-bold text-gray-900 group-hover:text-yellow-600 transition">Shanghai Travel Guide: The Most Foreigner-Friendly City</h2>
+          <p class="text-gray-600 mt-1">The Bund, Shanghai Tower, French Concession, xiaolongbao, and navigating the world's largest metro.</p>
+        </div>
+      </a>
+
+      <!-- Article 4 - Guangzhou -->
+      <a href="/en/cities/guangzhou-guide/" class="group flex items-start gap-4 p-6 rounded-xl bg-white border border-gray-200 hover:shadow-lg hover:border-green-300 transition no-underline">
+        <span class="flex-shrink-0 w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center text-2xl">🥟</span>
+        <div class="flex-1">
+          <span class="text-xs font-medium text-green-600">Guangzhou</span>
+          <h2 class="text-xl font-bold text-gray-900 group-hover:text-green-600 transition">Guangzhou Travel Guide: Food Capital of China</h2>
+          <p class="text-gray-600 mt-1">Dim sum, Canton Tower, Shamian Island, and the gateway to Hong Kong and Macau.</p>
+        </div>
+      </a>
+
+      <!-- Article 5 - Shenzhen -->
+      <a href="/en/cities/shenzhen-guide/" class="group flex items-start gap-4 p-6 rounded-xl bg-white border border-gray-200 hover:shadow-lg hover:border-cyan-300 transition no-underline">
+        <span class="flex-shrink-0 w-12 h-12 rounded-xl bg-cyan-100 flex items-center justify-center text-2xl">🤖</span>
+        <div class="flex-1">
+          <span class="text-xs font-medium text-cyan-600">Shenzhen</span>
+          <h2 class="text-xl font-bold text-gray-900 group-hover:text-cyan-600 transition">Shenzhen Travel Guide: Tech Hub Next to Hong Kong</h2>
+          <p class="text-gray-600 mt-1">China's Silicon Valley, coastal cycling, seafood, and a 15-minute train to Hong Kong.</p>
+        </div>
+      </a>
+
+      <!-- Article 6 - Chengdu -->
+      <a href="/en/cities/chengdu-guide/" class="group flex items-start gap-4 p-6 rounded-xl bg-white border border-gray-200 hover:shadow-lg hover:border-orange-300 transition no-underline">
+        <span class="flex-shrink-0 w-12 h-12 rounded-xl bg-orange-100 flex items-center justify-center text-2xl">🐼</span>
+        <div class="flex-1">
+          <span class="text-xs font-medium text-orange-600">Chengdu</span>
+          <h2 class="text-xl font-bold text-gray-900 group-hover:text-orange-600 transition">Chengdu Travel Guide: Pandas, Spicy Food & Slow Life</h2>
+          <p class="text-gray-600 mt-1">Giant pandas, Sichuan hotpot, tea houses, and gateway to Jiuzhaigou and Mount Emei.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+</Layout>

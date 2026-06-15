@@ -5,31 +5,42 @@ const description = 'High-speed rail, metro, Didi, taxis, and shared bikes — h
 ---
 
 <Layout title={title} description={description} lang="en">
-  <article class="max-w-3xl mx-auto py-12">
+  <article class="max-w-4xl mx-auto px-6 py-12">
     <header class="mb-12">
-      <a href="/en/transport/" class="text-sm text-brand-600 hover:underline inline-flex items-center gap-1 mb-4">← Transport</a>
-      <div class="text-sm text-brand-600 font-medium tracking-wide uppercase mb-3">Transport</div>
-      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
+      <p class="text-sm text-gray-500 mb-3">🚄 Getting Around</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
         How to Get Around China: The Complete Transport Guide
       </h1>
+      <p class="text-xl text-gray-600 mb-6">High-speed rail, metro, Didi, taxis, and shared bikes — how to choose the right transport for every situation.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Last updated: June 2026</span>
+        <span>⏱️ 5 min read</span>
+      </div>
     </header>
+
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-blue-900 mb-4">🎯 Quick Answer</h2>
+      <p class="text-lg text-blue-800 leading-relaxed">
+        China's transport system is one of the most efficient in the world. <strong>High-speed rail</strong> is the best option between cities. <strong>Metro</strong> is fastest within cities. <strong>DiDi</strong> is most convenient for door-to-door trips. Everything can be paid with Alipay or WeChat Pay — no cash needed.
+      </p>
+    </div>
+
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 In This Guide</h3>
+      <ul class="space-y-3">
+        <li><a href="#high-speed-rail" class="text-blue-600 hover:underline">🚄 High-Speed Rail</a></li>
+        <li><a href="#metro" class="text-blue-600 hover:underline">🚇 Metro</a></li>
+        <li><a href="#didi" class="text-blue-600 hover:underline">🚗 DiDi</a></li>
+        <li><a href="#taxis" class="text-blue-600 hover:underline">🚕 Taxis</a></li>
+        <li><a href="#flights" class="text-blue-600 hover:underline">✈️ Domestic Flights</a></li>
+        <li><a href="#bikes" class="text-blue-600 hover:underline">🚲 Shared Bikes</a></li>
+        <li><a href="#payment" class="text-blue-600 hover:underline">💳 Payment for Transport</a></li>
+      </ul>
+    </nav>
 
     <div class="prose prose-gray max-w-none">
 
-      <p class="text-lg leading-relaxed text-gray-700 mb-6">China’s transport system can feel overwhelming before you arrive — but once you’re on the ground, it’s actually one of the most efficient and traveler-friendly in the world.</p>
-
-      <p class="text-lg leading-relaxed text-gray-700 mb-6">The key is knowing which option fits each situation. Here’s the short version:</p>
-
-      <ul class="space-y-2 text-gray-700 mb-8">
-        <li><strong>Between cities:</strong> High-speed rail (best) or domestic flights (for long distances)</li>
-        <li><strong>Within a city:</strong> Metro (fastest) or DiDi (most convenient)</li>
-        <li><strong>From the airport:</strong> Metro or bus (cheap) or DiDi/taxi (door-to-door)</li>
-        <li><strong>Short trips:</strong> DiDi, taxi, or shared bikes</li>
-      </ul>
-
-      <hr class="my-10 border-gray-200" />
-
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">High-Speed Rail</h2>
+      <h2 id="high-speed-rail" class="text-2xl font-bold text-gray-900 mb-4">🚄 High-Speed Rail</h2>
 
       <p class="text-lg leading-relaxed text-gray-700 mb-6">China’s high-speed rail connects all major cities. Trains are clean, punctual and smooth, and second-class seats match airline premium economy comfort. Pick high-speed rail if you want to watch roadside scenery and experience a stable, fast ride.</p>
 
@@ -45,7 +56,7 @@ const description = 'High-speed rail, metro, Didi, taxis, and shared bikes — h
 
       <h2 class="text-2xl font-bold text-gray-900 mb-4">DiDi</h2>
 
-      <p class="text-lg leading-relaxed text-gray-700 mb-6">DiDi is China’s equivalent of Uber, and it’s widely used. You can book a ride through the DiDi app or through the mini-programs inside Alipay and WeChat. It works with international credit cards linked to Alipay/WeChat Pay. This is your best option for door-to-door trips, especially with luggage or in bad weather. See our <a href="/en/transport/didi/" class="text-brand-600 hover:underline">full DiDi setup guide</a> for step-by-step instructions.</p>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">DiDi is China’s equivalent of Uber, and it’s widely used. You can book a ride through the DiDi app or through the mini-programs inside Alipay and WeChat. It works with international credit cards linked to Alipay/WeChat Pay. This is your best option for door-to-door trips, especially with luggage or in bad weather. See our <a href="/en/transport/didi/" class="text-blue-600 hover:underline">full DiDi setup guide</a> for step-by-step instructions.</p>
 
       <hr class="my-10 border-gray-200" />
 
@@ -73,18 +84,16 @@ const description = 'High-speed rail, metro, Didi, taxis, and shared bikes — h
 
       <hr class="my-10 border-gray-200" />
 
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">Related Guides</h2>
+      <h2 id="related" class="text-2xl font-bold text-gray-900 mb-6 mt-12">📚 Related Guides</h2>
 
-      <ul class="space-y-2 text-gray-700">
-        <li><a href="/en/transport/airport-to-city/" class="text-brand-600 hover:underline">From Airport to City</a> — what to do when you land</li>
-        <li><a href="/en/transport/high-speed-rail/" class="text-brand-600 hover:underline">How to Book and Ride High-Speed Rail</a> — step-by-step booking guide</li>
-        <li><a href="/en/transport/didi/" class="text-brand-600 hover:underline">How to Use DiDi in China</a> — set up ride-hailing without a Chinese number</li>
-        <li><a href="/en/transport/metro-bus/" class="text-brand-600 hover:underline">Metro & Bus Guide</a> — navigating city transit</li>
-        <li><a href="/en/payment/setup-alipay/" class="text-brand-600 hover:underline">How to Set Up Alipay</a> — pay for all transport with one app</li>
-      </ul>
+      <div class="space-y-4 not-prose">
+        <a href="/en/transport/airport-to-city/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🛬 <strong>From Airport to City</strong> — what to do when you land</a>
+        <a href="/en/transport/high-speed-rail/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>How to Book and Ride China High-Speed Rail</strong> — step-by-step booking guide</a>
+        <a href="/en/transport/didi/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚗 <strong>How to Use DiDi in China as a Foreigner</strong> — set up ride-hailing without a Chinese number</a>
+        <a href="/en/transport/metro-bus/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚇 <strong>Metro & Bus Guide for Major Chinese Cities</strong> — navigating city transit</a>
+        <a href="/en/payment/setup-alipay/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">💳 <strong>How to Set Up Alipay as a Foreigner</strong> — pay for all transport with one app</a>
+      </div>
 
     </div>
-
-    <p class="text-xs text-gray-400 mt-8">Last updated: June 11, 2026</p>
   </article>
 </Layout>

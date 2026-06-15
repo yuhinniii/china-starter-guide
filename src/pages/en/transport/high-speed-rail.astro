@@ -5,22 +5,39 @@ const description = 'Step-by-step guide to booking tickets, navigating the stati
 ---
 
 <Layout title={title} description={description} lang="en">
-  <article class="max-w-3xl mx-auto py-12">
+  <article class="max-w-4xl mx-auto px-6 py-12">
     <header class="mb-12">
-      <a href="/en/transport/" class="text-sm text-brand-600 hover:underline inline-flex items-center gap-1 mb-4">← Transport</a>
-      <div class="text-sm text-brand-600 font-medium tracking-wide uppercase mb-3">Transport</div>
-      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
+      <p class="text-sm text-gray-500 mb-3">🚄 Trains</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
         How to Book and Ride China High-Speed Rail
       </h1>
+      <p class="text-xl text-gray-600 mb-6">Step-by-step guide to booking tickets, navigating the station, and riding high-speed trains in China.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Last updated: June 2026</span>
+        <span>⏱️ 6 min read</span>
+      </div>
     </header>
+
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-blue-900 mb-4">🎯 Quick Answer</h2>
+      <p class="text-lg text-blue-800 leading-relaxed">
+        Book tickets on <strong>Trip.com</strong> (easiest for foreigners) or <strong>12306</strong> (official). Second class is perfectly comfortable. Arrive 30–40 minutes early — your <strong>passport is your ticket</strong>, so keep it handy. Boarding is smooth: security check → waiting hall → gate → platform. Stations have English signs throughout.
+      </p>
+    </div>
+
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 In This Guide</h3>
+      <ul class="space-y-3">
+        <li><a href="#booking" class="text-blue-600 hover:underline">🎫 Booking Your Ticket</a></li>
+        <li><a href="#classes" class="text-blue-600 hover:underline">💺 Ticket Classes</a></li>
+        <li><a href="#station" class="text-blue-600 hover:underline">🚉 At the Station</a></li>
+        <li><a href="#onboard" class="text-blue-600 hover:underline">🚄 Onboard Tips</a></li>
+      </ul>
+    </nav>
 
     <div class="prose prose-gray max-w-none">
 
-      <p class="text-lg leading-relaxed text-gray-700 mb-6">China’s high-speed rail network is the largest in the world, connecting nearly every major city. For travelers, it’s often the best way to get between cities — faster than flying when you factor in airport travel time, and far more comfortable than a bus.</p>
-
-      <hr class="my-10 border-gray-200" />
-
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">Booking Your Ticket</h2>
+      <h2 id="booking" class="text-2xl font-bold text-gray-900 mb-4">🎫 Booking Your Ticket</h2>
 
       <p class="text-lg leading-relaxed text-gray-700 mb-6">You have three options:</p>
 
@@ -66,23 +83,21 @@ const description = 'Step-by-step guide to booking tickets, navigating the stati
         <li>Station and train announcements are broadcast in both Chinese and English.</li>
       </ul>
 
-      <div class="bg-brand-50 border border-brand-100 rounded-2xl p-6 not-prose">
+      <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 not-prose">
         <p class="text-gray-700"><strong>Important:</strong> Your passport is your ticket. Keep it handy for checks at the station entrance, boarding gate, and sometimes on the train. Don’t put it in your checked luggage.</p>
       </div>
 
       <hr class="my-10 border-gray-200" />
 
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">Related Guides</h2>
+      <h2 id="related" class="text-2xl font-bold text-gray-900 mb-6 mt-12">📚 Related Guides</h2>
 
-      <ul class="space-y-2 text-gray-700">
-        <li><a href="/en/transport/transport-guide/" class="text-brand-600 hover:underline">How to Get Around China</a> — the complete transport guide</li>
-        <li><a href="/en/transport/airport-to-city/" class="text-brand-600 hover:underline">From Airport to City</a> — what to do when you land</li>
-        <li><a href="/en/transport/didi/" class="text-brand-600 hover:underline">How to Use DiDi</a> — set up ride-hailing</li>
-        <li><a href="/en/transport/metro-bus/" class="text-brand-600 hover:underline">Metro & Bus Guide</a> — navigating city transit</li>
-      </ul>
+      <div class="space-y-4 not-prose">
+        <a href="/en/transport/transport-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>How to Get Around China</strong> — the complete transport guide</a>
+        <a href="/en/transport/airport-to-city/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🛬 <strong>From Airport to City</strong> — what to do when you land</a>
+        <a href="/en/transport/didi/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚗 <strong>How to Use DiDi in China as a Foreigner</strong> — set up ride-hailing</a>
+        <a href="/en/transport/metro-bus/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚇 <strong>Metro & Bus Guide for Major Chinese Cities</strong> — navigating city transit</a>
+      </div>
 
     </div>
-
-    <p class="text-xs text-gray-400 mt-8">Last updated: June 11, 2026</p>
   </article>
 </Layout>

@@ -1,34 +1,50 @@
 ---
 import Layout from '@layouts/Layout.astro';
 const title = 'How to Use Didi in China as a Foreigner';
-const description = 'Set up and use DiDi (China’s Uber) without a Chinese phone number. Ride options, payment, and tips.';
+const description = 'Set up and use DiDi (China\'s Uber) without a Chinese phone number. Ride options, payment, and tips.';
 ---
 
 <Layout title={title} description={description} lang="en">
-  <article class="max-w-3xl mx-auto py-12">
+  <article class="max-w-4xl mx-auto px-6 py-12">
     <header class="mb-12">
-      <a href="/en/transport/" class="text-sm text-brand-600 hover:underline inline-flex items-center gap-1 mb-4">← Transport</a>
-      <div class="text-sm text-brand-600 font-medium tracking-wide uppercase mb-3">Transport</div>
-      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
+      <p class="text-sm text-gray-500 mb-3">🚗 Ride-Hailing</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
         How to Use Didi in China as a Foreigner
       </h1>
+      <p class="text-xl text-gray-600 mb-6">Set up and use DiDi (China's Uber) without a Chinese phone number. Ride options, payment, and tips.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Last updated: June 2026</span>
+        <span>⏱️ 5 min read</span>
+      </div>
     </header>
+
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-blue-900 mb-4">🎯 Quick Answer</h2>
+      <p class="text-lg text-blue-800 leading-relaxed">
+        You can use DiDi <strong>without a Chinese phone number</strong>. The easiest way is through the Alipay or WeChat mini-program — open the app, search for DiDi, and book a ride. Payment goes through Alipay/WeChat automatically. The standalone DiDi app also has an English version.
+      </p>
+    </div>
+
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 In This Guide</h3>
+      <ul class="space-y-3">
+        <li><a href="#alipay" class="text-blue-600 hover:underline">📱 Method 1: Through Alipay or WeChat (Easiest)</a></li>
+        <li><a href="#app" class="text-blue-600 hover:underline">📲 Method 2: Download the DiDi App</a></li>
+        <li><a href="#rides" class="text-blue-600 hover:underline">🚘 Ride Types</a></li>
+        <li><a href="#tips" class="text-blue-600 hover:underline">💡 Tips for Using DiDi</a></li>
+        <li><a href="#uber" class="text-blue-600 hover:underline">🔀 What About Uber?</a></li>
+      </ul>
+    </nav>
 
     <div class="prose prose-gray max-w-none">
 
-      <p class="text-lg leading-relaxed text-gray-700 mb-6">DiDi is China’s equivalent of Uber. Practically everyone uses it, and as a traveler, it will be your best friend for door-to-door trips.</p>
+      <h2 id="alipay" class="text-2xl font-bold text-gray-900 mb-4">📱 Method 1: Through Alipay or WeChat (Easiest)</h2>
 
-      <p class="text-lg leading-relaxed text-gray-700 mb-6">Good news: you can use DiDi without a Chinese phone number. Here’s how.</p>
-
-      <hr class="my-10 border-gray-200" />
-
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">Method 1: Through Alipay or WeChat (Easiest)</h2>
-
-      <p class="text-lg leading-relaxed text-gray-700 mb-6">If you already have Alipay set up (see the <a href="/en/payment/setup-alipay/" class="text-brand-600 hover:underline">Alipay setup guide</a>):</p>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">If you already have Alipay set up (see the <a href="/en/payment/setup-alipay/" class="text-blue-600 hover:underline">Alipay setup guide</a>):</p>
 
       <ol class="list-decimal pl-6 space-y-4 text-gray-700 mb-8">
         <li>Open Alipay or WeChat</li>
-        <li>Scroll down to “Mini Programs” (or search for “DiDi”)</li>
+        <li>Scroll down to "Mini Programs" (or search for "DiDi")</li>
         <li>Tap the DiDi mini-program</li>
         <li>Allow location access</li>
         <li>Set your pickup and destination, choose a ride type, and confirm.</li>
@@ -38,15 +54,15 @@ const description = 'Set up and use DiDi (China’s Uber) without a Chinese phon
 
       <hr class="my-10 border-gray-200" />
 
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">Method 2: Download the DiDi App</h2>
+      <h2 id="app" class="text-2xl font-bold text-gray-900 mb-4">📲 Method 2: Download the DiDi App</h2>
 
-      <p class="text-lg leading-relaxed text-gray-700 mb-6">The DiDi app has an English version. Download it from your app store (search “DiDi Rider”). You can register with an international phone number and switch the interface to English in settings.</p>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">The DiDi app has an English version. Download it from your app store (search "DiDi Rider"). You can register with an international phone number and switch the interface to English in settings.</p>
 
       <p class="text-lg leading-relaxed text-gray-700 mb-6">Payment methods: Alipay, WeChat Pay, Visa/Mastercard (add in-app).</p>
 
       <hr class="my-10 border-gray-200" />
 
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">Ride Types</h2>
+      <h2 id="rides" class="text-2xl font-bold text-gray-900 mb-4">🚘 Ride Types</h2>
 
       <ul class="space-y-2 text-gray-700 mb-8">
         <li><strong>Express (快车):</strong> Standard ride, cheapest. Comparable to UberX.</li>
@@ -58,10 +74,10 @@ const description = 'Set up and use DiDi (China’s Uber) without a Chinese phon
 
       <hr class="my-10 border-gray-200" />
 
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">Tips for Using DiDi</h2>
+      <h2 id="tips" class="text-2xl font-bold text-gray-900 mb-4">💡 Tips for Using DiDi</h2>
 
       <ul class="space-y-2 text-gray-700 mb-8">
-        <li><strong>Set your pickup accurately:</strong> Drag the pin on the map to exactly where you’re standing. Drivers often can’t find you if the pin is off.</li>
+        <li><strong>Set your pickup accurately:</strong> Drag the pin on the map to exactly where you're standing. Drivers often can't find you if the pin is off.</li>
         <li><strong>Check the license plate:</strong> Match the plate number in the app to the car.</li>
         <li><strong>Use the in-app chat:</strong> It has built-in translation for communicating with your driver.</li>
         <li><strong>Be patient:</strong> In busy areas, your driver might be a few minutes away.</li>
@@ -70,26 +86,19 @@ const description = 'Set up and use DiDi (China’s Uber) without a Chinese phon
 
       <hr class="my-10 border-gray-200" />
 
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">What About Uber?</h2>
+      <h2 id="uber" class="text-2xl font-bold text-gray-900 mb-4">🔀 What About Uber?</h2>
 
-      <p class="text-lg leading-relaxed text-gray-700 mb-6">Uber sold its China operations to DiDi in 2016. The Uber app still works in China but only for international travelers, and driver availability is limited. DiDi is the default ride-hailing service — you’ll get faster pickups and better coverage.</p>
-
-      <div class="bg-brand-50 border border-brand-100 rounded-2xl p-6 not-prose">
-        <p class="text-gray-700"><strong>Summary:</strong> Use DiDi through Alipay or WeChat — no extra app, no Chinese phone number, payment handled automatically. It’s the most convenient way to get around.</p>
-      </div>
-
-      <hr class="my-10 border-gray-200" />
-
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">Related Guides</h2>
-
-      <ul class="space-y-2 text-gray-700">
-        <li><a href="/en/transport/transport-guide/" class="text-brand-600 hover:underline">How to Get Around China</a> — the complete transport guide</li>
-        <li><a href="/en/transport/airport-to-city/" class="text-brand-600 hover:underline">From Airport to City</a> — getting to your hotel</li>
-        <li><a href="/en/payment/setup-alipay/" class="text-brand-600 hover:underline">How to Set Up Alipay</a> — pay for DiDi rides</li>
-      </ul>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Uber sold its China operations to DiDi in 2016. The Uber app still works in China but only for international travelers, and driver availability is limited. DiDi is the default ride-hailing service — you'll get faster pickups and better coverage.</p>
 
     </div>
 
-    <p class="text-xs text-gray-400 mt-8">Last updated: June 11, 2026</p>
+    <div class="not-prose mt-16">
+      <h2 class="text-2xl font-bold text-gray-900 mb-8">📚 Related Guides</h2>
+      <div class="space-y-4">
+        <a href="/en/transport/transport-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>How to Get Around China</strong> — the complete transport guide</a>
+        <a href="/en/transport/airport-to-city/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🛬 <strong>From Airport to City</strong> — getting to your hotel</a>
+        <a href="/en/payment/setup-alipay/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">💳 <strong>How to Set Up Alipay as a Foreigner</strong> — pay for DiDi rides</a>
+      </div>
+    </div>
   </article>
 </Layout>

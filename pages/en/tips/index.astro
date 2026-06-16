@@ -1,0 +1,90 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = "China Travel Tips — Safety, Scams, Emergency, Culture";
+const description = "Practical tips for traveling in China: safety guide, common scams, emergency numbers, and cultural etiquette.";
+---
+
+<Layout title={title} description={description} lang="en">
+  <section class="max-w-6xl mx-auto px-6 py-16">
+    <!-- Header -->
+    <header class="mb-16 text-center">
+      <p class="text-sm text-gray-500 mb-3">🛡️ Travel Tips</p>
+      <h1 class="text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
+        China Travel Tips
+      </h1>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Practical advice from a local — safety, scams, emergency contacts, and cultural etiquette.
+      </p>
+    </header>
+
+    <!-- Quick Overview -->
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-16 not-prose">
+      <h2 class="text-2xl font-bold text-blue-900 mb-4">🎯 Quick Overview</h2>
+      <p class="text-lg text-blue-800 leading-relaxed">
+        China is <strong>very safe</strong> for tourists, but like anywhere, you should know the common scams, emergency numbers, and a few cultural dos and don'ts. This section covers everything you need to know.
+      </p>
+    </div>
+
+    <!-- Article Directory -->
+    <div class="space-y-6 mb-16 not-prose">
+      <!-- Article 1 -->
+      <a href="/en/tips/is-china-safe/" class="group flex items-start gap-4 p-6 rounded-xl bg-white border border-gray-200 hover:shadow-lg hover:border-green-300 transition no-underline">
+        <span class="flex-shrink-0 w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center text-2xl">🛡️</span>
+        <div class="flex-1">
+          <span class="text-xs font-medium text-green-600">Safety</span>
+          <h2 class="text-xl font-bold text-gray-900 group-hover:text-green-600 transition">Is it safe to travel to China?</h2>
+          <p class="text-gray-600 mt-1">Honest take from a local. Violent crime is extremely rare. Why China feels so safe — and what you should actually watch for.</p>
+          <p class="text-xs text-gray-400 mt-2">⏱️ 8 min read</p>
+        </div>
+      </a>
+
+      <!-- Article 2 -->
+      <a href="/en/tips/common-scams/" class="group flex items-start gap-4 p-6 rounded-xl bg-white border border-gray-200 hover:shadow-lg hover:border-red-300 transition no-underline">
+        <span class="flex-shrink-0 w-12 h-12 rounded-xl bg-red-100 flex items-center justify-center text-2xl">⚠️</span>
+        <div class="flex-1">
+          <span class="text-xs font-medium text-red-600">Scams</span>
+          <h2 class="text-xl font-bold text-gray-900 group-hover:text-red-600 transition">Common Scams in China & How to Avoid Them</h2>
+          <p class="text-gray-600 mt-1">Don't let scammers ruin your trip. Here's how to spot and avoid the most common tourist scams in China.</p>
+          <p class="text-xs text-gray-400 mt-2">⏱️ 6 min read</p>
+        </div>
+      </a>
+
+      <!-- Article 3 -->
+      <a href="/en/tips/emergency-numbers/" class="group flex items-start gap-4 p-6 rounded-xl bg-white border border-gray-200 hover:shadow-lg hover:border-blue-300 transition no-underline">
+        <span class="flex-shrink-0 w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center text-2xl">📞</span>
+        <div class="flex-1">
+          <span class="text-xs font-medium text-blue-600">Emergency</span>
+          <h2 class="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition">Emergency Numbers & What to Do If You Need Help</h2>
+          <p class="text-gray-600 mt-1">110 (police), 120 (ambulance), 119 (fire) — plus embassy contacts, lost passport steps, and emergency phrases.</p>
+          <p class="text-xs text-gray-400 mt-2">⏱️ 7 min read</p>
+        </div>
+      </a>
+
+      <!-- Article 4 -->
+      <a href="/en/tips/cultural-taboos/" class="group flex items-start gap-4 p-6 rounded-xl bg-white border border-gray-200 hover:shadow-lg hover:border-purple-300 transition no-underline">
+        <span class="flex-shrink-0 w-12 h-12 rounded-xl bg-purple-100 flex items-center justify-center text-2xl">🏮</span>
+        <div class="flex-1">
+          <span class="text-xs font-medium text-purple-600">Culture</span>
+          <h2 class="text-xl font-bold text-gray-900 group-hover:text-purple-600 transition">Cultural Dos and Don'ts in China</h2>
+          <p class="text-gray-600 mt-1">Chopstick rules, gift giving, saving face, photography rules — practical cultural tips that will make your trip smoother.</p>
+          <p class="text-xs text-gray-400 mt-2">⏱️ 6 min read</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- Related Links -->
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose">
+      <h3 class="text-2xl font-bold text-gray-900 mb-6">📚 Related Guides</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/en/payment/payment-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">💳 How to Pay in China</p>
+          <p class="text-sm text-gray-600">Alipay, WeChat Pay, and everything about money</p>
+        </a>
+        <a href="/en/transport/didi/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">🚗 How to Use Didi in China</p>
+          <p class="text-sm text-gray-600">China's Uber equivalent — safe and cheap</p>
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

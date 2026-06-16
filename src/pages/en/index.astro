@@ -130,4 +130,139 @@ const description = 'Everything you need to know before coming to China: payment
       </div>
     </div>
   </section>
+
+  <!-- Visa Checker Tool -->
+  <section class="max-w-5xl mx-auto px-4 pb-16">
+    <div class="border-t border-gray-100 pt-12">
+      <div class="max-w-2xl mx-auto">
+        <h2 class="text-2xl font-bold text-gray-900 mb-2 text-center">Visa Checker</h2>
+        <p class="text-gray-500 text-center mb-8">Not sure if you need a visa? Pick your nationality — we'll tell you.</p>
+
+        <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100">
+          <label for="visa-country" class="block text-sm font-medium text-gray-700 mb-2">Your nationality</label>
+          <select id="visa-country" class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-brand-500 text-base appearance-none cursor-pointer">
+            <option value="">— Select your country —</option>
+            <optgroup label="Visa-Free Entry">
+              <option value="SG">Singapore</option>
+              <option value="AE">United Arab Emirates</option>
+              <option value="QA">Qatar</option>
+              <option value="BH">Bahrain</option>
+              <option value="KW">Kuwait</option>
+              <option value="OM">Oman</option>
+              <option value="BN">Brunei</option>
+              <option value="AM">Armenia</option>
+              <option value="RS">Serbia</option>
+              <option value="BY">Belarus</option>
+              <option value="MV">Maldives</option>
+              <option value="SC">Seychelles</option>
+              <option value="MU">Mauritius</option>
+              <option value="FJ">Fiji</option>
+              <option value="BS">Bahamas</option>
+              <option value="BB">Barbados</option>
+              <option value="AG">Antigua & Barbuda</option>
+              <option value="GD">Grenada</option>
+              <option value="DM">Dominica</option>
+              <option value="EC">Ecuador</option>
+              <option value="SR">Suriname</option>
+              <option value="SM">San Marino</option>
+            </optgroup>
+            <optgroup label="Common Travelers (240h Transit)">
+              <option value="US">United States</option>
+              <option value="GB">United Kingdom</option>
+              <option value="CA">Canada</option>
+              <option value="AU">Australia</option>
+              <option value="NZ">New Zealand</option>
+              <option value="JP">Japan</option>
+              <option value="KR">South Korea</option>
+              <option value="FR">France</option>
+              <option value="DE">Germany</option>
+              <option value="IT">Italy</option>
+              <option value="ES">Spain</option>
+              <option value="NL">Netherlands</option>
+              <option value="CH">Switzerland</option>
+              <option value="SE">Sweden</option>
+              <option value="NO">Norway</option>
+              <option value="DK">Denmark</option>
+              <option value="FI">Finland</option>
+              <option value="IE">Ireland</option>
+              <option value="BE">Belgium</option>
+              <option value="AT">Austria</option>
+              <option value="PT">Portugal</option>
+              <option value="GR">Greece</option>
+              <option value="PL">Poland</option>
+              <option value="CZ">Czech Republic</option>
+              <option value="HU">Hungary</option>
+              <option value="IL">Israel</option>
+              <option value="MY">Malaysia</option>
+            </optgroup>
+            <optgroup label="Other">
+              <option value="IN">India</option>
+              <option value="PH">Philippines</option>
+              <option value="ID">Indonesia</option>
+              <option value="TH">Thailand</option>
+              <option value="VN">Vietnam</option>
+              <option value="PK">Pakistan</option>
+              <option value="BD">Bangladesh</option>
+              <option value="NG">Nigeria</option>
+              <option value="ZA">South Africa</option>
+              <option value="BR">Brazil</option>
+              <option value="MX">Mexico</option>
+              <option value="RU">Russia</option>
+              <option value="TR">Turkey</option>
+              <option value="OTHER">Other country</option>
+            </optgroup>
+          </select>
+
+          <div id="visa-result" class="mt-6"></div>
+        </div>
+
+        <p class="text-xs text-gray-400 text-center mt-4">Visa policies change. Always verify with your local Chinese embassy before booking.</p>
+      </div>
+    </div>
+  </section>
+
+  <script is:inline>
+    const countrySelect = document.getElementById('visa-country');
+    const resultDiv = document.getElementById('visa-result');
+
+    const visaFree = ['SG','AE','QA','BH','KW','OM','BN','AM','RS','BY','MV','SC','MU','FJ','BS','BB','AG','GD','DM','EC','SR','SM'];
+    const transit240 = ['US','GB','CA','AU','NZ','JP','KR','FR','DE','IT','ES','NL','CH','SE','NO','DK','FI','IE','BE','AT','PT','GR','PL','CZ','HU','IL','MY'];
+    const countryNames = {
+      'SG':'Singapore','AE':'UAE','QA':'Qatar','BH':'Bahrain','KW':'Kuwait','OM':'Oman',
+      'BN':'Brunei','AM':'Armenia','RS':'Serbia','BY':'Belarus','MV':'Maldives','SC':'Seychelles',
+      'MU':'Mauritius','FJ':'Fiji','BS':'Bahamas','BB':'Barbados','AG':'Antigua & Barbuda',
+      'GD':'Grenada','DM':'Dominica','EC':'Ecuador','SR':'Suriname','SM':'San Marino',
+      'US':'the United States','GB':'the United Kingdom','CA':'Canada','AU':'Australia','NZ':'New Zealand',
+      'JP':'Japan','KR':'South Korea','FR':'France','DE':'Germany','IT':'Italy','ES':'Spain',
+      'NL':'the Netherlands','CH':'Switzerland','SE':'Sweden','NO':'Norway','DK':'Denmark',
+      'FI':'Finland','IE':'Ireland','BE':'Belgium','AT':'Austria','PT':'Portugal','GR':'Greece',
+      'PL':'Poland','CZ':'the Czech Republic','HU':'Hungary','IL':'Israel','MY':'Malaysia',
+      'IN':'India','PH':'the Philippines','ID':'Indonesia','TH':'Thailand','VN':'Vietnam',
+      'PK':'Pakistan','BD':'Bangladesh','NG':'Nigeria','ZA':'South Africa','BR':'Brazil',
+      'MX':'Mexico','RU':'Russia','TR':'Turkey'
+    };
+
+    countrySelect.addEventListener('change', function() {
+      const val = this.value;
+      if (!val) {
+        resultDiv.innerHTML = '';
+        return;
+      }
+
+      const name = countryNames[val] || 'your country';
+
+      if (val === 'OTHER') {
+        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-orange-50 border border-orange-200"><p class="text-orange-800 font-semibold mb-2">You\'ll likely need a visa.</p><p class="text-orange-700 text-sm mb-3">Most travelers need a visa to enter China. Check the full guide for your options.</p><a href="/en/prepare/visa/visa-guide/" class="inline-block text-sm font-medium text-orange-700 underline hover:no-underline">Read the visa guide \u2192</a></div>';
+        return;
+      }
+
+      if (visaFree.includes(val)) {
+        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-green-50 border border-green-200"><p class="text-green-800 font-semibold mb-1">Good news! Citizens of ' + name + ' can enter China <span class="underline">visa-free</span>.</p><p class="text-green-700 text-sm mb-3">You can stay up to 30 days without applying for a visa.</p><a href="/en/prepare/visa/visa-free/" class="inline-block text-sm font-medium text-green-700 underline hover:no-underline">See visa-free countries list \u2192</a></div>';
+      } else if (transit240.includes(val)) {
+        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-blue-50 border border-blue-200"><p class="text-blue-800 font-semibold mb-1">You can use the <span class="underline">240-hour transit</span> policy.</p><p class="text-blue-700 text-sm mb-3">Citizens of ' + name + ' can transit through China for up to 10 days without a visa \u2014 great for short trips or layovers.</p><div class="flex flex-wrap gap-2"><a href="/en/prepare/visa/transit-240/" class="text-sm font-medium text-blue-700 underline hover:no-underline">How transit works \u2192</a><span class="text-blue-300 mx-1">|</span><a href="/en/prepare/visa/apply-l-visa/" class="text-sm font-medium text-blue-700 underline hover:no-underline">Apply for an L visa \u2192</a></div></div>';
+      } else {
+        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-orange-50 border border-orange-200"><p class="text-orange-800 font-semibold mb-1">You\'ll need a visa.</p><p class="text-orange-700 text-sm mb-3">Citizens of ' + name + ' need to apply for a tourist visa (L-type) before traveling to China.</p><a href="/en/prepare/visa/apply-l-visa/" class="inline-block text-sm font-medium text-orange-700 underline hover:no-underline">How to apply for an L visa \u2192</a></div>';
+      }
+    });
+  </script>
 </Layout>

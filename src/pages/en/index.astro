@@ -36,32 +36,8 @@ const description = 'Everything you need to know before coming to China: payment
     </div>
   </section>
 
-  <!-- Top 5 Guides for First-Timers -->
-  <section class="max-w-5xl mx-auto px-4 py-12">
-    <h2 class="text-2xl font-bold text-gray-900  ">Top 5 Guides for First-Timers</h2>
-    <p class="text-gray-500  ">Start here if this is your first trip to China.</p>
-    <div class="space-y-4">
-      {[
-        { title: 'China Visa Types Complete Guide 2026: Which Visa Do You Need?', desc: 'Compare visa-free entry, 240-hour transit, and tourist visa options to find what fits your trip.', href: '/en/prepare/visa/visa-guide/', tag: 'Prepare' },
-        { title: 'How to Pay in China: Complete Guide for Foreign Visitors', desc: 'Mobile wallets, foreign cards, cash backup, QR codes, transport payment, and what to do if payment fails.', href: '/en/payment/payment-guide/', tag: 'Payment' },
-        { title: 'Is it safe to travel to China?', desc: 'What the actual safety situation is, common scams, emergency numbers, and cultural taboos.', href: '/en/tips/is-china-safe/', tag: 'Tips' },
-        { title: 'From Airport to City in China: What Usually Works Best', desc: 'Metro, taxi, and ride-hailing — how to choose and avoid bad decisions on arrival.', href: '/en/transport/airport-to-city/', tag: 'Transport' },
-        { title: 'Seeing a Doctor in China: Clinics, Hospitals & Insurance', desc: 'Pharmacy, clinic, or hospital — how to choose and what to expect.', href: '/en/medical/seeing-a-doctor/', tag: 'Medical' },
-      ].map((g, i) => (
-        <a href={g.href} class="group flex items-start gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-900 transition no-underline">
-          <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-brand-100  :text-brand-300 text-sm font-bold flex items-center justify-center">{i + 1}</span>
-          <div>
-            <span class="text-xs font-medium text-brand-600  ">{g.tag}</span>
-            <h3 class="text-base font-semibold text-gray-900  :text-brand-600 dark:group-hover:text-brand-400">{g.title}</h3>
-            <p class="text-sm text-gray-500  ">{g.desc}</p>
-          </div>
-        </a>
-      ))}
-    </div>
-  </section>
-
   <!-- Your Trip: Step by Step -->
-  <section class="max-w-5xl mx-auto px-4 py-12 border-t border-gray-100">
+  <section class="max-w-5xl mx-auto px-4 py-12">
     <h2 class="text-2xl font-bold text-gray-900 mb-2">Your Trip, Step by Step</h2>
     <p class="text-gray-500 mb-10">Follow your stage — each one links to the guides you'll actually need.</p>
 

@@ -22,14 +22,56 @@ import Layout from '@layouts/Layout.astro';
     const input = document.getElementById('search-input');
     const results = document.getElementById('search-results');
     const pages = [
-      { title: 'Payment Guide', url: '/en/payment/', desc: 'How to pay in China — Alipay, WeChat Pay, cash, and card.' },
-      { title: 'Transport Guide', url: '/en/transport/', desc: 'Trains, metro, taxis, and ride-hailing apps.' },
-      { title: 'Essential Apps', url: '/en/apps/', desc: 'Must-have apps for living and traveling in China.' },
-      { title: 'City Guides', url: '/en/cities/', desc: 'Beijing, Shanghai, Guangzhou, Shenzhen and more.' },
-      { title: 'Travel Tips', url: '/en/tips/', desc: 'Practical advice for a smoother trip.' },
-      { title: 'Prepare Before Arrival', url: '/en/prepare/', desc: 'Visa, documents, and first-72-hours planning.' },
-      { title: 'Medical Care', url: '/en/medical/', desc: 'How to see a doctor and what it costs.' },
-      { title: 'About', url: '/en/about/', desc: 'About this site and contact information.' },
+      // Section overviews
+      { title: 'Prepare — Before You Arrive', url: '/en/prepare/', desc: 'Visa, documents, essential setup before you fly.', keywords: 'overview section' },
+      { title: 'Payment Guide', url: '/en/payment/', desc: 'How to pay in China — all payment options overview.', keywords: 'overview section money' },
+      { title: 'Transport Guide', url: '/en/transport/', desc: 'Trains, metro, taxis, ride-hailing in China.', keywords: 'overview section getting around' },
+      { title: 'Travel Tips', url: '/en/tips/', desc: 'Safety, scams, emergencies, and cultural etiquette.', keywords: 'overview section safety advice' },
+      { title: 'Life in China', url: '/en/life/', desc: 'Apps, SIM cards, VPN, packing, and Chinese phrases.', keywords: 'overview section daily living' },
+      { title: 'Medical Care', url: '/en/medical/', desc: 'Clinics, hospitals, travel insurance for foreigners.', keywords: 'overview section health doctor' },
+
+      // Prepare
+      { title: 'China Visa Types Complete Guide 2026', url: '/en/prepare/visa/visa-guide/', desc: 'Which visa do you need? Compare visa-free, 240-hour transit, and L-type tourist visa.', keywords: 'visa type tourist L transit free' },
+      { title: 'China Visa-Free Countries List 2026', url: '/en/prepare/visa/visa-free/', desc: 'Complete list of countries eligible for visa-free entry to China.', keywords: 'visa free entry countries exempt' },
+      { title: '240-Hour Visa-Free Transit Explained', url: '/en/prepare/visa/transit-240/', desc: 'How to use China\'s 240-hour (10-day) transit without visa policy.', keywords: 'transit visa free 240 hour 10 day stopover' },
+      { title: 'How to Apply for China Tourist Visa (L-Type)', url: '/en/prepare/visa/apply-l-visa/', desc: 'Step-by-step L visa application process, documents, and fees.', keywords: 'apply tourist L visa application process documents' },
+
+      // Payment
+      { title: 'How to Pay in China: Complete Guide for Visitors', url: '/en/payment/payment-guide/', desc: 'Alipay, WeChat Pay, foreign cards, and cash — complete overview.', keywords: 'alipay wechat pay cash credit card mobile wallet qr' },
+      { title: 'How to Set Up Alipay as a Foreigner', url: '/en/payment/setup-alipay/', desc: 'Step-by-step Alipay setup with a foreign credit card.', keywords: 'alipay setup foreign card bind tour pass' },
+      { title: 'How to Set Up WeChat Pay as a Foreigner', url: '/en/payment/setup-wechat/', desc: 'Connect your foreign card to WeChat Pay.', keywords: 'wechat pay setup foreign card bind wallet' },
+      { title: 'Can You Use Foreign Credit Cards in China?', url: '/en/payment/foreign-cards/', desc: 'Where Visa, Mastercard, and Amex work — and where they don\'t.', keywords: 'foreign credit card visa mastercard amex international' },
+      { title: 'China Tipping Culture: Do You Need to Tip?', url: '/en/payment/tipping/', desc: 'Tipping etiquette in China — when and how much to tip.', keywords: 'tip gratuity service charge etiquette custom' },
+      { title: 'What to Do When Your Payment Fails in China', url: '/en/payment/payment-fails/', desc: 'Common payment failure reasons and how to fix them.', keywords: 'payment fail error fix solution card problem' },
+
+      // Transport
+      { title: 'How to Get Around China: Complete Transport Guide', url: '/en/transport/transport-guide/', desc: 'Overview of all transport options in China.', keywords: 'overview getting around train metro bus taxi' },
+      { title: 'From Airport to City in China', url: '/en/transport/airport-to-city/', desc: 'Metro, Didi, taxi, or bus — how to choose and what to expect.', keywords: 'airport to city arrival transfer metro taxi didi bus' },
+      { title: 'How to Book and Ride China High-Speed Rail', url: '/en/transport/high-speed-rail/', desc: 'Complete guide to China\'s high-speed trains — booking, stations, classes.', keywords: 'high speed train bullet railway booking ticket station' },
+      { title: 'Metro & Bus Guide for Major Chinese Cities', url: '/en/transport/metro-bus/', desc: 'Subway and bus systems in Beijing, Shanghai, Guangzhou, Shenzhen.', keywords: 'metro subway bus public transport city card' },
+      { title: 'How to Use Didi in China as a Foreigner', url: '/en/transport/didi/', desc: 'Set up and use Didi — China\'s Uber — with English interface.', keywords: 'didi ride hailing taxi uber app english' },
+
+      // Tips
+      { title: 'Is it safe to travel to China?', url: '/en/tips/is-china-safe/', desc: 'Honest take from a local on safety, crime, and what to watch for.', keywords: 'safety safe crime theft security dangerous' },
+      { title: 'Common Scams in China & How to Avoid Them', url: '/en/tips/common-scams/', desc: 'Spot and avoid the most common tourist scams in China.', keywords: 'scam fraud cheat trick avoid tourist trap' },
+      { title: 'Emergency Numbers & Help', url: '/en/tips/emergency-numbers/', desc: '110, 120, 119 — plus embassy contacts and emergency phrases.', keywords: 'emergency number police ambulance fire embassy contact' },
+      { title: 'Cultural Dos and Don\'ts in China', url: '/en/tips/cultural-taboos/', desc: 'Chopstick rules, gift giving, saving face, photography tips.', keywords: 'culture etiquette taboo do don\'t custom manners' },
+
+      // Life
+      { title: 'Your China Trip Survival Kit', url: '/en/life/survival-kit/', desc: 'Pre-departure checklist — apps, SIM, VPN, packing, language.', keywords: 'checklist prep before travel survival kit essentials' },
+      { title: '10 Essential Apps for Traveling in China', url: '/en/life/essential-apps/', desc: 'Must-have apps for payment, transport, translation, and food.', keywords: 'app essential must-have wechat alipay didi gaode translate' },
+      { title: 'Best SIM Card & eSIM for Tourists in China', url: '/en/life/sim-card-guide/', desc: 'Compare eSIM providers, airport SIM cards, and data plans.', keywords: 'sim card esim data plan mobile internet airalo holafly' },
+      { title: 'Best VPNs for Traveling in China 2026', url: '/en/life/vpn-guide/', desc: 'What VPNs work in China, how to set up before you arrive.', keywords: 'vpn internet blocked firewall expressvpn nordvpn surfshark' },
+      { title: 'Essential Chinese Phrases for Travelers', url: '/en/life/chinese-phrases/', desc: '20 must-know phrases with pronunciation tips.', keywords: 'chinese phrase language speak hello thank you basic' },
+      { title: 'What to Pack for China — Seasons & Climate Guide', url: '/en/life/packing-guide/', desc: 'City-by-city, season-by-season packing recommendations.', keywords: 'pack luggage weather season climate what to bring' },
+
+      // Medical
+      { title: 'Seeing a Doctor in China: Clinics, Hospitals & Insurance', url: '/en/medical/seeing-a-doctor/', desc: 'Pharmacy, clinic, or hospital — how to choose and what to expect.', keywords: 'doctor hospital clinic pharmacy see a doctor treatment' },
+      { title: 'Top Hospitals with International Departments in China', url: '/en/medical/top-hospitals/', desc: 'Best A+++ hospitals with International Departments by city.', keywords: 'hospital international department top ranked city' },
+      { title: 'Travel Insurance for China: What You Need to Know', url: '/en/medical/travel-insurance/', desc: 'Do you need travel insurance for China? What to look for.', keywords: 'insurance travel medical cover policy claim' },
+
+      // Cities
+      { title: 'City Guides Overview', url: '/en/cities/', desc: 'Beijing, Shanghai, Guangzhou, Shenzhen, Chengdu city guides.', keywords: 'city guide overview destination' },
     ];
 
     input.addEventListener('input', (e) => {

@@ -23,10 +23,10 @@ const description = 'Everything you need to know before coming to China: payment
   <section class="max-w-5xl mx-auto px-4 pb-16">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
       {[
-        { href: '/en/prepare/', title: 'Prepare', desc: 'Visa, documents, essential setup before you fly.' },
+        { href: '/en/prepare/', title: 'Visa', desc: 'Visa types, free countries, transit policy.' },
         { href: '/en/payment/', title: 'Payment', desc: 'Wallets, bank cards, cash backup.' },
         { href: '/en/transport/', title: 'Transport', desc: 'High-speed rail, metro, ride-hailing, and getting from the airport to the city.' },
-        { href: '/en/medical/', title: 'Medical', desc: 'Clinics, hospitals, emergency care.' },
+        { href: '/en/life/', title: 'Life in China', desc: 'Apps, medical care, safety tips, daily living.' },
       ].map(card => (
         <a href={card.href} class="group block p-5 rounded-2xl bg-gray-50  :bg-brand-50 dark:hover:bg-brand-950 border border-gray-100  :border-brand-200 dark:hover:border-brand-800 transition-all duration-200 no-underline">
           <h3 class="text-lg font-semibold text-gray-900  :text-brand-600 dark:group-hover:text-brand-400 mb-1">{card.title}</h3>
@@ -111,15 +111,15 @@ const description = 'Everything you need to know before coming to China: payment
         <h3 class="text-lg font-bold text-gray-900 mb-3">Need Help?</h3>
         <div class="grid grid-cols-1 sm:grid-cols-4 gap-3">
           <a href="/en/medical/seeing-a-doctor/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
-            <span class="text-xs font-medium text-red-600">Medical</span>
+            <span class="text-xs font-medium text-red-600">Life</span>
             <p class="text-sm font-semibold text-gray-900 mt-1">Seeing a doctor</p>
           </a>
           <a href="/en/tips/common-scams/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
-            <span class="text-xs font-medium text-red-600">Tips</span>
+            <span class="text-xs font-medium text-red-600">Life</span>
             <p class="text-sm font-semibold text-gray-900 mt-1">Avoiding common scams</p>
           </a>
           <a href="/en/tips/emergency-numbers/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
-            <span class="text-xs font-medium text-red-600">Tips</span>
+            <span class="text-xs font-medium text-red-600">Life</span>
             <p class="text-sm font-semibold text-gray-900 mt-1">Emergency contacts</p>
           </a>
           <a href="/en/payment/payment-fails/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">

@@ -1,182 +1,230 @@
 ---
 import Layout from '@layouts/Layout.astro';
-const title = "Life in China as a Traveler — Apps, SIM, VPN & Packing";
+const title = "Life in China as a Traveler — Apps, SIM, Medical & Safety";
 const description = "Everything you need to know about daily life in China: essential apps, SIM cards, VPN, medical care, safety tips, Chinese phrases, and what to pack.";
 ---
 
 <Layout title={title} description={description} lang="en">
-  <section class="max-w-6xl mx-auto px-6 py-16">
+  <section class="max-w-4xl mx-auto px-6 py-16">
     <header class="mb-16 text-center">
       <p class="text-sm text-gray-500 mb-3">🌏 Daily Life</p>
       <h1 class="text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
-        Life in China as a Traveler
+        Life in China
       </h1>
       <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-        From apps and internet access to packing and basic Chinese — here's everything you need to settle in.
+        Everything you need to know about daily life as a traveler.
       </p>
     </header>
 
     <div class="bg-gradient-to-r from-green-50 to-emerald-50 border-l-4 border-green-500 rounded-r-2xl p-8 mb-16 not-prose">
-      <h2 class="text-2xl font-bold text-green-900 mb-4">🎯 Quick Overview</h2>
+      <h2 class="text-2xl font-bold text-green-900 mb-4">Quick Overview</h2>
       <p class="text-lg text-green-800 leading-relaxed">
-        Traveling in China is a lot easier when you have the right tools and preparation. This section covers <strong>essential apps</strong>, <strong>SIM card & eSIM options</strong>, <strong>VPN setup</strong>, <strong>medical care</strong>, <strong>safety tips</strong>, <strong>basic Chinese phrases</strong>, and <strong>what to pack</strong> — everything you need to feel ready before you step off the plane.
+        <strong>Traveling in China is easier with the right preparation.</strong> Set up a SIM card and VPN before you arrive. Download essential apps for payment, transport, and translation. Know where to go for medical help, and understand local safety and customs.
       </p>
     </div>
 
-    <div class="space-y-6 mb-16 not-prose">
-      <a href="/en/life/survival-kit/" class="group flex items-start gap-4 p-6 rounded-xl bg-white border border-gray-200 hover:shadow-lg hover:border-green-300 transition no-underline">
-        <span class="flex-shrink-0 w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center text-2xl">🎒</span>
-        <div class="flex-1">
-          <span class="text-xs font-medium text-green-600">Overview</span>
-          <h2 class="text-xl font-bold text-gray-900 group-hover:text-green-600 transition">Your China Trip Survival Kit</h2>
-          <p class="text-gray-600 mt-1">The master checklist — apps, connection, VPN, language, and packing, all in one place.</p>
-          <p class="text-xs text-gray-400 mt-2">⏱️ 6 min read</p>
-        </div>
-      </a>
+    <div class="space-y-3 mb-16 not-prose">
 
-      <a href="/en/life/essential-apps/" class="group flex items-start gap-4 p-6 rounded-xl bg-white border border-gray-200 hover:shadow-lg hover:border-blue-300 transition no-underline">
-        <span class="flex-shrink-0 w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center text-2xl">📱</span>
-        <div class="flex-1">
-          <span class="text-xs font-medium text-blue-600">Apps</span>
-          <h2 class="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition">10 Apps You Need Before Traveling to China</h2>
-          <p class="text-gray-600 mt-1">Payment, transport, translation, and discovery — the apps that make China work.</p>
-          <p class="text-xs text-gray-400 mt-2">⏱️ 5 min read</p>
+      <!-- Communication & Internet -->
+      <div class="bg-white border border-gray-200 rounded-xl overflow-hidden">
+        <button onclick="toggleHub(this)" class="w-full flex items-center justify-between p-5 hover:bg-gray-50 transition no-underline text-left">
+          <div class="flex items-center gap-3">
+            <span class="text-lg font-bold text-gray-900">Communication & Internet</span>
+            <span class="text-xs font-medium text-gray-400 bg-gray-100 px-2 py-0.5 rounded-full">3</span>
+          </div>
+          <svg class="w-4 h-4 text-gray-400 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div class="hub-content hidden border-t border-gray-100">
+          <a href="/en/life/sim-card-guide/" class="flex items-center gap-3 px-5 py-4 hover:bg-gray-50 transition border-b border-gray-50 no-underline">
+            <span class="w-1.5 h-1.5 rounded-full bg-purple-500 flex-shrink-0"></span>
+            <div>
+              <span class="text-xs font-medium text-purple-600">Internet</span>
+              <p class="text-sm font-semibold text-gray-900">Best SIM Card & eSIM for Tourists in China</p>
+              <p class="text-xs text-gray-500 mt-0.5">Compare eSIM providers, airport SIM cards, and data plans for every budget.</p>
+            </div>
+          </a>
+          <a href="/en/life/vpn-guide/" class="flex items-center gap-3 px-5 py-4 hover:bg-gray-50 transition border-b border-gray-50 no-underline">
+            <span class="w-1.5 h-1.5 rounded-full bg-red-500 flex-shrink-0"></span>
+            <div>
+              <span class="text-xs font-medium text-red-600">VPN</span>
+              <p class="text-sm font-semibold text-gray-900">Best VPNs for Traveling in China</p>
+              <p class="text-xs text-gray-500 mt-0.5">What works, how to set it up, and why you must do it before you arrive.</p>
+            </div>
+          </a>
+          <a href="/en/life/essential-apps/" class="flex items-center gap-3 px-5 py-4 hover:bg-gray-50 transition border-b border-gray-50 no-underline">
+            <span class="w-1.5 h-1.5 rounded-full bg-blue-500 flex-shrink-0"></span>
+            <div>
+              <span class="text-xs font-medium text-blue-600">Apps</span>
+              <p class="text-sm font-semibold text-gray-900">10 Essential Apps for Traveling in China</p>
+              <p class="text-xs text-gray-500 mt-0.5">Payment, transport, translation, and discovery — the apps that make China work.</p>
+            </div>
+          </a>
         </div>
-      </a>
+      </div>
 
-      <a href="/en/life/sim-card-guide/" class="group flex items-start gap-4 p-6 rounded-xl bg-white border border-gray-200 hover:shadow-lg hover:border-purple-300 transition no-underline">
-        <span class="flex-shrink-0 w-12 h-12 rounded-xl bg-purple-100 flex items-center justify-center text-2xl">📶</span>
-        <div class="flex-1">
-          <span class="text-xs font-medium text-purple-600">Internet</span>
-          <h2 class="text-xl font-bold text-gray-900 group-hover:text-purple-600 transition">Best SIM Card & eSIM for Tourists in China</h2>
-          <p class="text-gray-600 mt-1">Compare eSIM providers, airport SIM cards, and data plans for every budget.</p>
-          <p class="text-xs text-gray-400 mt-2">⏱️ 5 min read</p>
+      <!-- Health & Medical -->
+      <div class="bg-white border border-gray-200 rounded-xl overflow-hidden">
+        <button onclick="toggleHub(this)" class="w-full flex items-center justify-between p-5 hover:bg-gray-50 transition no-underline text-left">
+          <div class="flex items-center gap-3">
+            <span class="text-lg font-bold text-gray-900">Health & Medical</span>
+            <span class="text-xs font-medium text-gray-400 bg-gray-100 px-2 py-0.5 rounded-full">3</span>
+          </div>
+          <svg class="w-4 h-4 text-gray-400 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div class="hub-content hidden border-t border-gray-100">
+          <a href="/en/life/seeing-a-doctor/" class="flex items-center gap-3 px-5 py-4 hover:bg-gray-50 transition border-b border-gray-50 no-underline">
+            <span class="w-1.5 h-1.5 rounded-full bg-teal-500 flex-shrink-0"></span>
+            <div>
+              <span class="text-xs font-medium text-teal-600">Medical</span>
+              <p class="text-sm font-semibold text-gray-900">Seeing a Doctor in China: Clinics, Hospitals & Insurance</p>
+              <p class="text-xs text-gray-500 mt-0.5">Pharmacy, clinic, or hospital — how to choose and what to expect.</p>
+            </div>
+          </a>
+          <a href="/en/life/top-hospitals/" class="flex items-center gap-3 px-5 py-4 hover:bg-gray-50 transition border-b border-gray-50 no-underline">
+            <span class="w-1.5 h-1.5 rounded-full bg-teal-500 flex-shrink-0"></span>
+            <div>
+              <span class="text-xs font-medium text-teal-600">Medical</span>
+              <p class="text-sm font-semibold text-gray-900">Top Hospitals with International Departments</p>
+              <p class="text-xs text-gray-500 mt-0.5">Best hospitals with English-speaking staff, sorted by city.</p>
+            </div>
+          </a>
+          <a href="/en/life/travel-insurance/" class="flex items-center gap-3 px-5 py-4 hover:bg-gray-50 transition border-b border-gray-50 no-underline">
+            <span class="w-1.5 h-1.5 rounded-full bg-teal-500 flex-shrink-0"></span>
+            <div>
+              <span class="text-xs font-medium text-teal-600">Insurance</span>
+              <p class="text-sm font-semibold text-gray-900">Travel Insurance for China: What You Need to Know</p>
+              <p class="text-xs text-gray-500 mt-0.5">Do you need travel insurance for China? What to look for.</p>
+            </div>
+          </a>
         </div>
-      </a>
+      </div>
 
-      <a href="/en/life/vpn-guide/" class="group flex items-start gap-4 p-6 rounded-xl bg-white border border-gray-200 hover:shadow-lg hover:border-red-300 transition no-underline">
-        <span class="flex-shrink-0 w-12 h-12 rounded-xl bg-red-100 flex items-center justify-center text-2xl">🔒</span>
-        <div class="flex-1">
-          <span class="text-xs font-medium text-red-600">VPN</span>
-          <h2 class="text-xl font-bold text-gray-900 group-hover:text-red-600 transition">Best VPNs for Traveling in China</h2>
-          <p class="text-gray-600 mt-1">What works, how to set it up, and why you must do it before you arrive.</p>
-          <p class="text-xs text-gray-400 mt-2">⏱️ 5 min read</p>
+      <!-- Safety & Emergencies -->
+      <div class="bg-white border border-gray-200 rounded-xl overflow-hidden">
+        <button onclick="toggleHub(this)" class="w-full flex items-center justify-between p-5 hover:bg-gray-50 transition no-underline text-left">
+          <div class="flex items-center gap-3">
+            <span class="text-lg font-bold text-gray-900">Safety & Emergencies</span>
+            <span class="text-xs font-medium text-gray-400 bg-gray-100 px-2 py-0.5 rounded-full">3</span>
+          </div>
+          <svg class="w-4 h-4 text-gray-400 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div class="hub-content hidden border-t border-gray-100">
+          <a href="/en/life/is-china-safe/" class="flex items-center gap-3 px-5 py-4 hover:bg-gray-50 transition border-b border-gray-50 no-underline">
+            <span class="w-1.5 h-1.5 rounded-full bg-red-500 flex-shrink-0"></span>
+            <div>
+              <span class="text-xs font-medium text-red-600">Safety</span>
+              <p class="text-sm font-semibold text-gray-900">Is it safe to travel to China?</p>
+              <p class="text-xs text-gray-500 mt-0.5">An honest take on safety, crime, and what to watch for.</p>
+            </div>
+          </a>
+          <a href="/en/life/common-scams/" class="flex items-center gap-3 px-5 py-4 hover:bg-gray-50 transition border-b border-gray-50 no-underline">
+            <span class="w-1.5 h-1.5 rounded-full bg-red-500 flex-shrink-0"></span>
+            <div>
+              <span class="text-xs font-medium text-red-600">Scams</span>
+              <p class="text-sm font-semibold text-gray-900">Common Scams in China & How to Avoid Them</p>
+              <p class="text-xs text-gray-500 mt-0.5">Spot and avoid the most common tourist traps.</p>
+            </div>
+          </a>
+          <a href="/en/life/emergency-numbers/" class="flex items-center gap-3 px-5 py-4 hover:bg-gray-50 transition border-b border-gray-50 no-underline">
+            <span class="w-1.5 h-1.5 rounded-full bg-red-500 flex-shrink-0"></span>
+            <div>
+              <span class="text-xs font-medium text-red-600">Emergency</span>
+              <p class="text-sm font-semibold text-gray-900">Emergency Numbers & Help</p>
+              <p class="text-xs text-gray-500 mt-0.5">110, 120, 119 — plus embassy contacts and emergency phrases.</p>
+            </div>
+          </a>
         </div>
-      </a>
+      </div>
 
-      <a href="/en/life/chinese-phrases/" class="group flex items-start gap-4 p-6 rounded-xl bg-white border border-gray-200 hover:shadow-lg hover:border-yellow-300 transition no-underline">
-        <span class="flex-shrink-0 w-12 h-12 rounded-xl bg-yellow-100 flex items-center justify-center text-2xl">🗣️</span>
-        <div class="flex-1">
-          <span class="text-xs font-medium text-yellow-600">Language</span>
-          <h2 class="text-xl font-bold text-gray-900 group-hover:text-yellow-600 transition">Essential Chinese Phrases for Travelers</h2>
-          <p class="text-gray-600 mt-1">20 must-know phrases with pronunciation tips — plus cultural notes.</p>
-          <p class="text-xs text-gray-400 mt-2">⏱️ 4 min read</p>
+      <!-- Culture & Language -->
+      <div class="bg-white border border-gray-200 rounded-xl overflow-hidden">
+        <button onclick="toggleHub(this)" class="w-full flex items-center justify-between p-5 hover:bg-gray-50 transition no-underline text-left">
+          <div class="flex items-center gap-3">
+            <span class="text-lg font-bold text-gray-900">Culture & Language</span>
+            <span class="text-xs font-medium text-gray-400 bg-gray-100 px-2 py-0.5 rounded-full">2</span>
+          </div>
+          <svg class="w-4 h-4 text-gray-400 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div class="hub-content hidden border-t border-gray-100">
+          <a href="/en/life/chinese-phrases/" class="flex items-center gap-3 px-5 py-4 hover:bg-gray-50 transition border-b border-gray-50 no-underline">
+            <span class="w-1.5 h-1.5 rounded-full bg-yellow-500 flex-shrink-0"></span>
+            <div>
+              <span class="text-xs font-medium text-yellow-600">Language</span>
+              <p class="text-sm font-semibold text-gray-900">Essential Chinese Phrases for Travelers</p>
+              <p class="text-xs text-gray-500 mt-0.5">20 must-know phrases with pronunciation tips.</p>
+            </div>
+          </a>
+          <a href="/en/life/cultural-taboos/" class="flex items-center gap-3 px-5 py-4 hover:bg-gray-50 transition border-b border-gray-50 no-underline">
+            <span class="w-1.5 h-1.5 rounded-full bg-yellow-500 flex-shrink-0"></span>
+            <div>
+              <span class="text-xs font-medium text-yellow-600">Culture</span>
+              <p class="text-sm font-semibold text-gray-900">Cultural Dos and Don'ts in China</p>
+              <p class="text-xs text-gray-500 mt-0.5">Chopstick rules, gift giving, saving face, and photography tips.</p>
+            </div>
+          </a>
         </div>
-      </a>
+      </div>
 
-      <a href="/en/life/packing-guide/" class="group flex items-start gap-4 p-6 rounded-xl bg-white border border-gray-200 hover:shadow-lg hover:border-orange-300 transition no-underline">
-        <span class="flex-shrink-0 w-12 h-12 rounded-xl bg-orange-100 flex items-center justify-center text-2xl">🎒</span>
-        <div class="flex-1">
-          <span class="text-xs font-medium text-orange-600">Packing</span>
-          <h2 class="text-xl font-bold text-gray-900 group-hover:text-orange-600 transition">What to Pack for China — Seasons & Climate Guide</h2>
-          <p class="text-gray-600 mt-1">City-by-city, season-by-season — pack right for every destination.</p>
-          <p class="text-xs text-gray-400 mt-2">⏱️ 6 min read</p>
+      <!-- Packing & Preparation -->
+      <div class="bg-white border border-gray-200 rounded-xl overflow-hidden">
+        <button onclick="toggleHub(this)" class="w-full flex items-center justify-between p-5 hover:bg-gray-50 transition no-underline text-left">
+          <div class="flex items-center gap-3">
+            <span class="text-lg font-bold text-gray-900">Packing & Preparation</span>
+            <span class="text-xs font-medium text-gray-400 bg-gray-100 px-2 py-0.5 rounded-full">2</span>
+          </div>
+          <svg class="w-4 h-4 text-gray-400 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div class="hub-content hidden border-t border-gray-100">
+          <a href="/en/life/survival-kit/" class="flex items-center gap-3 px-5 py-4 hover:bg-gray-50 transition border-b border-gray-50 no-underline">
+            <span class="w-1.5 h-1.5 rounded-full bg-green-500 flex-shrink-0"></span>
+            <div>
+              <span class="text-xs font-medium text-green-600">Checklist</span>
+              <p class="text-sm font-semibold text-gray-900">Your China Trip Survival Kit</p>
+              <p class="text-xs text-gray-500 mt-0.5">The master checklist — apps, connection, VPN, language, and packing, all in one place.</p>
+            </div>
+          </a>
+          <a href="/en/life/packing-guide/" class="flex items-center gap-3 px-5 py-4 hover:bg-gray-50 transition border-b border-gray-50 no-underline">
+            <span class="w-1.5 h-1.5 rounded-full bg-orange-500 flex-shrink-0"></span>
+            <div>
+              <span class="text-xs font-medium text-orange-600">Packing</span>
+              <p class="text-sm font-semibold text-gray-900">What to Pack for China — Seasons & Climate Guide</p>
+              <p class="text-xs text-gray-500 mt-0.5">City-by-city, season-by-season packing recommendations.</p>
+            </div>
+          </a>
         </div>
-      </a>
+      </div>
+
     </div>
 
-    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-6">Health & Safety</h2>
-
-    <div class="space-y-6 mb-16 not-prose">
-      <a href="/en/life/seeing-a-doctor/" class="group flex items-start gap-4 p-6 rounded-xl bg-white border border-gray-200 hover:shadow-lg hover:border-teal-300 transition no-underline">
-        <span class="flex-shrink-0 w-12 h-12 rounded-xl bg-teal-100 flex items-center justify-center text-2xl">🏥</span>
-        <div class="flex-1">
-          <span class="text-xs font-medium text-teal-600">Medical</span>
-          <h2 class="text-xl font-bold text-gray-900 group-hover:text-teal-600 transition">Seeing a Doctor in China: Clinics, Hospitals & Insurance</h2>
-          <p class="text-gray-600 mt-1">Pharmacy, clinic, or hospital — how to choose and what to expect.</p>
-          <p class="text-xs text-gray-400 mt-2">⏱️ 7 min read</p>
-        </div>
-      </a>
-
-      <a href="/en/life/top-hospitals/" class="group flex items-start gap-4 p-6 rounded-xl bg-white border border-gray-200 hover:shadow-lg hover:border-teal-300 transition no-underline">
-        <span class="flex-shrink-0 w-12 h-12 rounded-xl bg-teal-100 flex items-center justify-center text-2xl">🏨</span>
-        <div class="flex-1">
-          <span class="text-xs font-medium text-teal-600">Medical</span>
-          <h2 class="text-xl font-bold text-gray-900 group-hover:text-teal-600 transition">Top Hospitals with International Departments</h2>
-          <p class="text-gray-600 mt-1">Best hospitals with English-speaking staff by city.</p>
-          <p class="text-xs text-gray-400 mt-2">⏱️ 5 min read</p>
-        </div>
-      </a>
-
-      <a href="/en/life/travel-insurance/" class="group flex items-start gap-4 p-6 rounded-xl bg-white border border-gray-200 hover:shadow-lg hover:border-teal-300 transition no-underline">
-        <span class="flex-shrink-0 w-12 h-12 rounded-xl bg-teal-100 flex items-center justify-center text-2xl">🛡️</span>
-        <div class="flex-1">
-          <span class="text-xs font-medium text-teal-600">Medical</span>
-          <h2 class="text-xl font-bold text-gray-900 group-hover:text-teal-600 transition">Travel Insurance for China: What You Need to Know</h2>
-          <p class="text-gray-600 mt-1">Do you need travel insurance for China? What to look for.</p>
-          <p class="text-xs text-gray-400 mt-2">⏱️ 4 min read</p>
-        </div>
-      </a>
-
-      <a href="/en/life/is-china-safe/" class="group flex items-start gap-4 p-6 rounded-xl bg-white border border-gray-200 hover:shadow-lg hover:border-red-300 transition no-underline">
-        <span class="flex-shrink-0 w-12 h-12 rounded-xl bg-red-100 flex items-center justify-center text-2xl">🛡️</span>
-        <div class="flex-1">
-          <span class="text-xs font-medium text-red-600">Safety</span>
-          <h2 class="text-xl font-bold text-gray-900 group-hover:text-red-600 transition">Is it safe to travel to China?</h2>
-          <p class="text-gray-600 mt-1">An honest take on safety, crime, and what to watch for.</p>
-          <p class="text-xs text-gray-400 mt-2">⏱️ 5 min read</p>
-        </div>
-      </a>
-
-      <a href="/en/life/common-scams/" class="group flex items-start gap-4 p-6 rounded-xl bg-white border border-gray-200 hover:shadow-lg hover:border-red-300 transition no-underline">
-        <span class="flex-shrink-0 w-12 h-12 rounded-xl bg-red-100 flex items-center justify-center text-2xl">⚠️</span>
-        <div class="flex-1">
-          <span class="text-xs font-medium text-red-600">Safety</span>
-          <h2 class="text-xl font-bold text-gray-900 group-hover:text-red-600 transition">Common Scams in China & How to Avoid Them</h2>
-          <p class="text-gray-600 mt-1">Spot and avoid the most common tourist traps.</p>
-          <p class="text-xs text-gray-400 mt-2">⏱️ 5 min read</p>
-        </div>
-      </a>
-
-      <a href="/en/life/emergency-numbers/" class="group flex items-start gap-4 p-6 rounded-xl bg-white border border-gray-200 hover:shadow-lg hover:border-red-300 transition no-underline">
-        <span class="flex-shrink-0 w-12 h-12 rounded-xl bg-red-100 flex items-center justify-center text-2xl">📞</span>
-        <div class="flex-1">
-          <span class="text-xs font-medium text-red-600">Safety</span>
-          <h2 class="text-xl font-bold text-gray-900 group-hover:text-red-600 transition">Emergency Numbers & What to Do If You Need Help</h2>
-          <p class="text-gray-600 mt-1">110, 120, 119 — plus embassy contacts and emergency phrases.</p>
-          <p class="text-xs text-gray-400 mt-2">⏱️ 4 min read</p>
-        </div>
-      </a>
-
-      <a href="/en/life/cultural-taboos/" class="group flex items-start gap-4 p-6 rounded-xl bg-white border border-gray-200 hover:shadow-lg hover:border-red-300 transition no-underline">
-        <span class="flex-shrink-0 w-12 h-12 rounded-xl bg-red-100 flex items-center justify-center text-2xl">🎌</span>
-        <div class="flex-1">
-          <span class="text-xs font-medium text-red-600">Culture</span>
-          <h2 class="text-xl font-bold text-gray-900 group-hover:text-red-600 transition">Cultural Dos and Don'ts in China</h2>
-          <p class="text-gray-600 mt-1">Chopstick rules, gift giving, saving face, and photography tips.</p>
-          <p class="text-xs text-gray-400 mt-2">⏱️ 6 min read</p>
-        </div>
-      </a>
-    </div>
+    <script is:inline>
+      function toggleHub(btn) {
+        const content = btn.nextElementSibling;
+        const icon = btn.querySelector('svg');
+        content.classList.toggle('hidden');
+        icon.classList.toggle('rotate-180');
+      }
+    </script>
 
     <div class="bg-gray-50 rounded-2xl p-8 not-prose">
-      <h3 class="text-2xl font-bold text-gray-900 mb-6">📚 Related Guides</h3>
+      <h3 class="text-2xl font-bold text-gray-900 mb-6">Related Guides</h3>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <a href="/en/payment/setup-alipay/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
-          <p class="font-bold text-gray-900 mb-1">💳 How to Set Up Alipay</p>
-          <p class="text-sm text-gray-600">Connect your foreign card and start paying like a local</p>
+        <a href="/en/payment/payment-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-1">Payment in China</p>
+          <p class="text-sm text-gray-600">Alipay, WeChat Pay, and cash</p>
         </a>
-        <a href="/en/payment/setup-wechat/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
-          <p class="font-bold text-gray-900 mb-1">💬 How to Set Up WeChat Pay</p>
-          <p class="text-sm text-gray-600">WeChat is essential — set it up before you go</p>
-        </a>
-        <a href="/en/transport/didi/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
-          <p class="font-bold text-gray-900 mb-1">🚗 How to Use Didi in China</p>
-          <p class="text-sm text-gray-600">China's Uber — safe, cheap, and easy to use</p>
-        </a>
-        <a href="/en/transport/high-speed-rail/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
-          <p class="font-bold text-gray-900 mb-1">🚄 How to Book High-Speed Rail</p>
-          <p class="text-sm text-gray-600">The best way to travel between Chinese cities</p>
+        <a href="/en/transport/transport-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-1">Transport in China</p>
+          <p class="text-sm text-gray-600">Trains, metro, and ride-hailing</p>
         </a>
       </div>
     </div>

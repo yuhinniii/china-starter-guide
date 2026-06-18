@@ -1,88 +1,121 @@
 ---
 import Layout from '@layouts/Layout.astro';
-const title = "Visa Before You Arrive — Visa, Documents & Essential Setup";
-const description = "Everything you need to prepare before flying to China: visa options, documents, and essential first steps.";
+const title = 'Visa & Entry Guide for China — China Starter Guide';
+const description = 'Complete guide to China visa types, visa-free entry, 240-hour transit, and mutual visa-free agreements.';
 ---
 
 <Layout title={title} description={description} lang="en">
-  <section class="max-w-6xl mx-auto px-6 py-16">
-    <!-- Header -->
+  <section class="max-w-4xl mx-auto px-6 py-16">
     <header class="mb-16 text-center">
-      <p class="text-sm text-gray-500 mb-3">📋 Visa</p>
+      <p class="text-sm text-gray-500 mb-3">📋 Entry & Visa</p>
       <h1 class="text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
-        Visa Before You Arrive
+        Visa & Entry for China
       </h1>
       <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-        Essential steps to complete before landing in China — visa, documents, and first-72-hours planning.
+        Everything you need to know about getting into China.
       </p>
     </header>
 
-    <!-- Quick Overview -->
-    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-16 not-prose">
-      <h2 class="text-2xl font-bold text-blue-900 mb-4">🎯 Quick Overview</h2>
-      <p class="text-lg text-blue-800 leading-relaxed">
-        Most travelers can now enter China <strong>without a visa</strong> (30 days for 50 countries), use the <strong>240-hour transit policy</strong>, or apply for a standard tourist visa. Start with the visa guide to find which option fits your trip.
+    <div class="bg-gradient-to-r from-green-50 to-emerald-50 border-l-4 border-green-500 rounded-r-2xl p-8 mb-16 not-prose">
+      <h2 class="text-2xl font-bold text-green-900 mb-4">Quick Overview</h2>
+      <p class="text-lg text-green-800 leading-relaxed">
+        <strong>Whether you need a visa depends on your passport.</strong> Citizens of 46 countries can enter visa-free for up to 30 days. Another 29 countries have mutual visa-free agreements. Travelers from 55 countries can use the 240-hour transit policy. Everyone else needs an L visa.
       </p>
     </div>
 
-    <!-- Article Directory -->
-    <div class="space-y-6 mb-16 not-prose">
-      <!-- Article 1 -->
-      <a href="/en/visa/visa/visa-guide/" class="group flex items-start gap-4 p-6 rounded-xl bg-white border border-gray-200 hover:shadow-lg hover:border-blue-300 transition no-underline">
-        <span class="flex-shrink-0 w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center text-2xl">🛂</span>
-        <div class="flex-1">
-          <span class="text-xs font-medium text-blue-600">Guide</span>
-          <h2 class="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition">China Visa Types Complete Guide 2026</h2>
-          <p class="text-gray-600 mt-1">Compare visa-free entry, 240-hour transit, and tourist visa options to find what fits your trip.</p>
-          <p class="text-xs text-gray-400 mt-2">⏱️ 6 min read</p>
-        </div>
-      </a>
+    <div class="space-y-3 mb-16 not-prose">
 
-      <!-- Article 2 -->
-      <a href="/en/visa/visa/visa-free/" class="group flex items-start gap-4 p-6 rounded-xl bg-white border border-gray-200 hover:shadow-lg hover:border-green-300 transition no-underline">
-        <span class="flex-shrink-0 w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center text-2xl">🌍</span>
-        <div class="flex-1">
-          <span class="text-xs font-medium text-green-600">Reference</span>
-          <h2 class="text-xl font-bold text-gray-900 group-hover:text-green-600 transition">China Visa-Free Countries List (2026)</h2>
-          <p class="text-gray-600 mt-1">Check if your passport qualifies for visa-free entry to China. Includes 50+ countries, stay limits, and entry conditions.</p>
-          <p class="text-xs text-gray-400 mt-2">⏱️ 5 min read</p>
+      <!-- Visa-Free Entry -->
+      <div class="bg-white border border-gray-200 rounded-xl overflow-hidden">
+        <button onclick="toggleHub(this)" class="w-full flex items-center justify-between p-5 hover:bg-gray-50 transition no-underline text-left">
+          <div class="flex items-center gap-3">
+            <span class="text-lg font-bold text-gray-900">Visa-Free Entry</span>
+            <span class="text-xs font-medium text-gray-400 bg-gray-100 px-2 py-0.5 rounded-full">3</span>
+          </div>
+          <svg class="w-4 h-4 text-gray-400 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div class="hub-content hidden border-t border-gray-100">
+          <a href="/en/visa/visa-free/" class="flex items-center gap-3 px-5 py-4 hover:bg-gray-50 transition border-b border-gray-50 no-underline">
+            <span class="w-1.5 h-1.5 rounded-full bg-green-500 flex-shrink-0"></span>
+            <div>
+              <span class="text-xs font-medium text-green-600">List</span>
+              <p class="text-sm font-semibold text-gray-900">China Visa-Free Countries List</p>
+              <p class="text-xs text-gray-500 mt-0.5">46 countries can enter without a visa for up to 30 days.</p>
+            </div>
+          </a>
+          <a href="/en/visa/transit-240/" class="flex items-center gap-3 px-5 py-4 hover:bg-gray-50 transition border-b border-gray-50 no-underline">
+            <span class="w-1.5 h-1.5 rounded-full bg-blue-500 flex-shrink-0"></span>
+            <div>
+              <span class="text-xs font-medium text-blue-600">Transit</span>
+              <p class="text-sm font-semibold text-gray-900">240-Hour Visa-Free Transit Explained</p>
+              <p class="text-xs text-gray-500 mt-0.5">55 countries qualify for 10-day transit without a visa.</p>
+            </div>
+          </a>
+          <a href="/en/visa/mutual-agreement/" class="flex items-center gap-3 px-5 py-4 hover:bg-gray-50 transition border-b border-gray-50 no-underline">
+            <span class="w-1.5 h-1.5 rounded-full bg-teal-500 flex-shrink-0"></span>
+            <div>
+              <span class="text-xs font-medium text-teal-600">Agreement</span>
+              <p class="text-sm font-semibold text-gray-900">Mutual Visa-Free Agreements (29 Countries)</p>
+              <p class="text-xs text-gray-500 mt-0.5">Bilateral visa-exemption deals with stay limits up to 90 days.</p>
+            </div>
+          </a>
         </div>
-      </a>
+      </div>
 
-      <!-- Article 3 -->
-      <a href="/en/visa/visa/transit-240/" class="group flex items-start gap-4 p-6 rounded-xl bg-white border border-gray-200 hover:shadow-lg hover:border-purple-300 transition no-underline">
-        <span class="flex-shrink-0 w-12 h-12 rounded-xl bg-purple-100 flex items-center justify-center text-2xl">🔄</span>
-        <div class="flex-1">
-          <span class="text-xs font-medium text-purple-600">Guide</span>
-          <h2 class="text-xl font-bold text-gray-900 group-hover:text-purple-600 transition">China 240-Hour Visa-Free Transit Explained</h2>
-          <p class="text-gray-600 mt-1">Stay in China up to 10 days without a visa while transiting to a third country. Eligibility, ports, and allowed activities.</p>
-          <p class="text-xs text-gray-400 mt-2">⏱️ 7 min read</p>
+      <!-- Applying for a Visa -->
+      <div class="bg-white border border-gray-200 rounded-xl overflow-hidden">
+        <button onclick="toggleHub(this)" class="w-full flex items-center justify-between p-5 hover:bg-gray-50 transition no-underline text-left">
+          <div class="flex items-center gap-3">
+            <span class="text-lg font-bold text-gray-900">Applying for a Visa</span>
+            <span class="text-xs font-medium text-gray-400 bg-gray-100 px-2 py-0.5 rounded-full">2</span>
+          </div>
+          <svg class="w-4 h-4 text-gray-400 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div class="hub-content hidden border-t border-gray-100">
+          <a href="/en/visa/visa-guide/" class="flex items-center gap-3 px-5 py-4 hover:bg-gray-50 transition border-b border-gray-50 no-underline">
+            <span class="w-1.5 h-1.5 rounded-full bg-purple-500 flex-shrink-0"></span>
+            <div>
+              <span class="text-xs font-medium text-purple-600">Overview</span>
+              <p class="text-sm font-semibold text-gray-900">China Visa Types Complete Guide</p>
+              <p class="text-xs text-gray-500 mt-0.5">All visa options explained — compare visa-free, transit, and L visa.</p>
+            </div>
+          </a>
+          <a href="/en/visa/apply-l-visa/" class="flex items-center gap-3 px-5 py-4 hover:bg-gray-50 transition border-b border-gray-50 no-underline">
+            <span class="w-1.5 h-1.5 rounded-full bg-purple-500 flex-shrink-0"></span>
+            <div>
+              <span class="text-xs font-medium text-purple-600">Tutorial</span>
+              <p class="text-sm font-semibold text-gray-900">How to Apply for China Tourist Visa (L-Type)</p>
+              <p class="text-xs text-gray-500 mt-0.5">Step-by-step application guide — COVA form, documents, and fees.</p>
+            </div>
+          </a>
         </div>
-      </a>
+      </div>
 
-      <!-- Article 4 -->
-      <a href="/en/visa/visa/apply-l-visa/" class="group flex items-start gap-4 p-6 rounded-xl bg-white border border-gray-200 hover:shadow-lg hover:border-orange-300 transition no-underline">
-        <span class="flex-shrink-0 w-12 h-12 rounded-xl bg-orange-100 flex items-center justify-center text-2xl">📝</span>
-        <div class="flex-1">
-          <span class="text-xs font-medium text-orange-600">Guide</span>
-          <h2 class="text-xl font-bold text-gray-900 group-hover:text-orange-600 transition">How to Apply for China Tourist Visa (L-Type) 2026</h2>
-          <p class="text-gray-600 mt-1">Complete walkthrough for L-type tourist visa: COVA form, required documents, appointment booking, and processing times.</p>
-          <p class="text-xs text-gray-400 mt-2">⏱️ 8 min read</p>
-        </div>
-      </a>
     </div>
 
-    <!-- Related Links -->
+    <script is:inline>
+      function toggleHub(btn) {
+        const content = btn.nextElementSibling;
+        const icon = btn.querySelector('svg');
+        content.classList.toggle('hidden');
+        icon.classList.toggle('rotate-180');
+      }
+    </script>
+
     <div class="bg-gray-50 rounded-2xl p-8 not-prose">
-      <h3 class="text-2xl font-bold text-gray-900 mb-6">📚 Related Guides</h3>
+      <h3 class="text-2xl font-bold text-gray-900 mb-6">Related Guides</h3>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <a href="/en/payment/payment-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
-          <p class="font-bold text-gray-900 mb-1">💳 How to Pay in China</p>
-          <p class="text-sm text-gray-600">Alipay, WeChat Pay, and everything about money</p>
+        <a href="/en/payment/payment-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-1">Payment in China</p>
+          <p class="text-sm text-gray-600">Alipay, WeChat Pay, and credit cards</p>
         </a>
-        <a href="/en/transport/transport-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
-          <p class="font-bold text-gray-900 mb-1">🚄 How to Get Around China</p>
-          <p class="text-sm text-gray-600">Transport options for travelers</p>
+        <a href="/en/transport/transport-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-1">Transport in China</p>
+          <p class="text-sm text-gray-600">Trains, metro, and ride-hailing</p>
         </a>
       </div>
     </div>

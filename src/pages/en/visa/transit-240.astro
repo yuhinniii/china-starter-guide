@@ -7,7 +7,7 @@ const description = 'Everything you need to know about China 240-hour visa-free 
 <Layout title={title} description={description} lang="en">
   <article class="max-w-4xl mx-auto px-6 py-12">
     <nav class="mb-8 not-prose">
-      <a href="/en/visa/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+      <a href="/en/prepare/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
         <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
         </svg>
@@ -197,16 +197,39 @@ const description = 'Everything you need to know about China 240-hour visa-free 
       </h2>
 
       <p class="text-lg leading-relaxed text-gray-700 mb-6">
-        Total approved entry/exit ports: <strong>65 ports</strong> (air, sea & rail) across 24 provincial-level regions nationwide (updated November 2025).
+        You can enter and exit through any of <strong>65 designated ports</strong> across <strong>24 provinces (including municipalities and autonomous regions)</strong>. Cross-province travel is <strong>allowed</strong> — you can enter through Shanghai, take a high-speed train to Beijing, and fly home from Beijing. The entire itinerary must stay within the 24 designated provinces/regions.
       </p>
 
-      <div class="bg-blue-50 border border-blue-200 rounded-2xl p-5 mb-6 not-prose">
-        <p class="text-sm font-semibold text-blue-800 mb-2">Core Major Cities Covered</p>
-        <p class="text-sm text-gray-600">Beijing, Shanghai, Guangzhou, Shenzhen, Chengdu, Chongqing, Xi'an, Hangzhou, Xiamen, Nanjing — plus Hefei, Nanchang, Guiyang, Haikou, Sanya, Taiyuan, Datong, and more.</p>
+      <div class="overflow-x-auto mb-8 not-prose">
+        <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm text-sm">
+          <thead>
+            <tr class="bg-gray-900 text-white">
+              <th class="px-4 py-3 font-bold">Province/City</th>
+              <th class="px-4 py-3 font-bold">Key Ports</th>
+              <th class="px-4 py-3 font-bold">Stay Area</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100"><td class="px-4 py-2 font-semibold">Beijing</td><td class="px-4 py-2">首都国际机场(PEK), 大兴国际机场(PKX)</td><td class="px-4 py-2">Beijing</td></tr>
+            <tr class="border-b border-gray-100 bg-gray-50"><td class="px-4 py-2 font-semibold">Shanghai</td><td class="px-4 py-2">浦东(PVG), 虹桥(SHA), 海港口岸</td><td class="px-4 py-2">Shanghai</td></tr>
+            <tr class="border-b border-gray-100"><td class="px-4 py-2 font-semibold">Guangdong</td><td class="px-4 py-2">广州(CAN), 深圳(SZX), 揭阳(SWA) + 海港</td><td class="px-4 py-2">Guangdong province</td></tr>
+            <tr class="border-b border-gray-100 bg-gray-50"><td class="px-4 py-2 font-semibold">Jiangsu</td><td class="px-4 py-2">南京(NKG), 无锡(WUX), 扬州(YTY), 连云港海港</td><td class="px-4 py-2">Jiangsu</td></tr>
+            <tr class="border-b border-gray-100"><td class="px-4 py-2 font-semibold">Zhejiang</td><td class="px-4 py-2">杭州(HGH), 宁波(NGB), 温州(WNZ) 等</td><td class="px-4 py-2">Zhejiang</td></tr>
+            <tr class="border-b border-gray-100 bg-gray-50"><td class="px-4 py-2 font-semibold">Sichuan</td><td class="px-4 py-2">成都双流(CTU), 成都天府(TFU)</td><td class="px-4 py-2">Chengdu + 10 other cities</td></tr>
+            <tr class="border-b border-gray-100"><td class="px-4 py-2 font-semibold">Yunnan</td><td class="px-4 py-2">昆明(KMG)</td><td class="px-4 py-2">Kunming + 8 cities/prefectures</td></tr>
+            <tr class="border-b border-gray-100 bg-gray-50"><td class="px-4 py-2 font-semibold">Guangxi</td><td class="px-4 py-2">南宁(NNG), 桂林(KWL), 北海(BHY)</td><td class="px-4 py-2">Nanning + 11 other cities</td></tr>
+            <tr class="border-b border-gray-100"><td class="px-4 py-2 font-semibold">Fujian</td><td class="px-4 py-2">福州(FOC), 厦门(XMN), 泉州(JJN)</td><td class="px-4 py-2">Fujian</td></tr>
+            <tr class="border-b border-gray-100 bg-gray-50"><td class="px-4 py-2 font-semibold">Hainan</td><td class="px-4 py-2">海口(HAK), 三亚(SYX)</td><td class="px-4 py-2">Hainan island</td></tr>
+            <tr class="border-b border-gray-100"><td class="px-4 py-2 font-semibold">Shaanxi</td><td class="px-4 py-2">西安(XIY)</td><td class="px-4 py-2">Shaanxi</td></tr>
+            <tr class="border-b border-gray-100 bg-gray-50"><td class="px-4 py-2 font-semibold">Chongqing</td><td class="px-4 py-2">重庆(CKG)</td><td class="px-4 py-2">Chongqing</td></tr>
+            <tr class="border-b border-gray-100"><td class="px-4 py-2 font-semibold">Tianjin</td><td class="px-4 py-2">天津(TSN), 天津海港</td><td class="px-4 py-2">Tianjin</td></tr>
+            <tr class="border-b border-gray-100 bg-gray-50"><td class="px-4 py-2 font-semibold">+ 11 more provinces</td><td class="px-4 py-2" colspan="2">Hebei, Liaoning, Shandong, Henan, Hubei, Hunan, Anhui, Guizhou, Shanxi, Heilongjiang, Jiangxi — each with designated airports/seaports</td></tr>
+          </tbody>
+        </table>
       </div>
 
       <div class="bg-yellow-50 border-l-4 border-yellow-400 p-5 rounded-r-xl mb-8 not-prose">
-        <p class="text-yellow-900"><strong>Important:</strong> Not all airports/seaports in China participate in the scheme. Only designated official ports qualify.</p>
+        <p class="text-yellow-900"><strong>Important:</strong> You can travel freely within the 24 designated provinces/regions during your 240-hour stay. For example, fly into Shanghai, take the high-speed train to Beijing, and fly home from Beijing — that's all allowed as long as you leave within 10 days. The key rule is that you must exit China within 240 hours; where you enter and exit can be different ports.</p>
       </div>
 
       <hr class="border-gray-200 my-12" />
@@ -251,19 +274,28 @@ const description = 'Everything you need to know about China 240-hour visa-free 
       </div>
     </div>
 
+    <!-- Sources -->
+    <div class="bg-gray-50 rounded-2xl p-6 not-prose mt-12">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📚 Sources</h3>
+      <ul class="space-y-2">
+        <li><a href="https://www.nia.gov.cn/n741440/n741577/c1731205/content.html" class="text-brand-600 hover:underline text-sm" target="_blank" rel="noopener">National Immigration Administration — 过境免签政策 (24 Provinces, 65 Ports, 55 Countries)</a></li>
+        <li><a href="https://english.www.gov.cn/policies/featured/202412/20/content_WS676548cbc6d0868f4e8ee28f.html" class="text-brand-600 hover:underline text-sm" target="_blank" rel="noopener">English.gov.cn — China's 240-hour visa-free transit policy</a></li>
+      </ul>
+    </div>
+
     <!-- Related Guides -->
     <div class="bg-gray-50 rounded-2xl p-8 not-prose mt-12">
       <h3 class="text-2xl font-bold text-gray-900 mb-6">📚 Related Guides</h3>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <a href="/en/visa/visa/visa-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+        <a href="/en/visa/visa-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
           <p class="font-bold text-gray-900 mb-1">China Visa Types Complete Guide</p>
           <p class="text-sm text-gray-600">All visa options explained</p>
         </a>
-        <a href="/en/visa/visa/visa-free/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+        <a href="/en/visa/visa-free/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
           <p class="font-bold text-gray-900 mb-1">China Visa-Free Countries List (2026)</p>
           <p class="text-sm text-gray-600">See if your passport qualifies</p>
         </a>
-        <a href="/en/visa/visa/apply-l-visa/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+        <a href="/en/visa/apply-l-visa/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
           <p class="font-bold text-gray-900 mb-1">How to Apply for Tourist Visa (L-Type)</p>
           <p class="text-sm text-gray-600">Step-by-step guide</p>
         </a>

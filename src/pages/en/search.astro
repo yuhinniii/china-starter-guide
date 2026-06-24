@@ -74,11 +74,14 @@ pages.sort((a, b) => a.url.localeCompare(b.url));
     </div>
   </div>
 
+  <!-- Embed search data as JSON for the client-side script -->
+  <script type="application/json" id="search-data">{JSON.stringify(pages)}</script>
+
   <script is:inline>
     const input = document.getElementById('search-input');
     const results = document.getElementById('search-results');
     const count = document.getElementById('result-count');
-    const pages = {JSON.stringify(pages)};
+    const pages = JSON.parse(document.getElementById('search-data').textContent);
 
     input.addEventListener('input', (e) => {
       const q = e.target.value.toLowerCase().trim();

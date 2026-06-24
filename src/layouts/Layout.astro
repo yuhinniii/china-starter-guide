@@ -44,23 +44,10 @@ const isActive = (href) => {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
     <style>
-      /* Google Translate Widget - compact style */
-      .translate-widget { display: inline-flex; align-items: center; }
-      .translate-widget .goog-te-gadget { font-size: 0 !important; line-height: 0 !important; }
-      .translate-widget .goog-te-gadget-simple {
-        background: transparent !important;
-        border: 1px solid #e5e7eb !important;
-        border-radius: 4px !important;
-        padding: 1px 6px !important;
-        font-size: 11px !important;
-        line-height: 1.5 !important;
-      }
-      .translate-widget .goog-te-gadget-simple img { display: none !important; }
-      .translate-widget .goog-te-gadget-simple span { color: #6b7280 !important; }
-      .translate-widget .goog-te-gadget-simple:hover { border-color: #d1d5db !important; }
-      /* Hide the top Google Translate bar */
-      .goog-te-banner-frame.skiptranslate { display: none !important; }
-      body { top: 0px !important; }
+      /* Language switcher dropdown */
+      .lang-select { font-size: 11px; padding: 2px 4px; border: 1px solid #e5e7eb; border-radius: 4px; color: #6b7280; background: transparent; cursor: pointer; outline: none; }
+      .lang-select:hover { border-color: #d1d5db; }
+      .lang-select option { font-size: 12px; }
     </style>
   </head>
   <body class="bg-white text-gray-900 font-sans antialiased">
@@ -79,9 +66,20 @@ const isActive = (href) => {
             );
           })}
         </div>
-        <div class="flex items-center gap-3">
-          <!-- Google Translate -->
-          <div id="google_translate_element" class="translate-widget"></div>
+        <div class="flex items-center gap-2">
+          <!-- Translate selector -->
+          <select id="translate-select" class="lang-select" aria-label="Translate page">
+            <option value="">Translate</option>
+            <option value="zh-CN">中文</option>
+            <option value="ja">日本語</option>
+            <option value="ko">한국어</option>
+            <option value="ru">Русский</option>
+            <option value="ar">العربية</option>
+            <option value="fr">Français</option>
+            <option value="th">ไทย</option>
+            <option value="es">Español</option>
+            <option value="original">Show Original</option>
+          </select>
           <!-- Language Switcher -->
           <a href={isZH ? Astro.url.pathname.replace(/^\/zh/, '/en') : Astro.url.pathname.replace(/^\/en/, '/zh')}
              class="text-xs px-2 py-1 rounded border border-gray-200 text-gray-500 hover:text-brand-600 no-underline">
@@ -139,17 +137,54 @@ const isActive = (href) => {
       }
     </script>
 
-    <!-- Google Translate Widget -->
+    <!-- Translate: Custom Google Translate trigger -->
+    <div id="google_translate_element" style="display:none"></div>
     <script is:inline>
-      function googleTranslateInit() {
-        new google.translate.TranslateElement({
-          pageLanguage: 'en',
-          includedLanguages: 'zh-CN,ja,ko,ru,ar,fr,th,es',
-          layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-          autoDisplay: false
-        }, 'google_translate_element');
+      let gtLoaded = false;
+
+      function doTranslate(lang) {
+        if (!gtLoaded) {
+          window.gtCallback = function() {
+            gtLoaded = true;
+            const select = document.querySelector('.goog-te-combo');
+            if (select) {
+              select.value = lang;
+              select.dispatchEvent(new Event('change'));
+            }
+          };
+          const s = document.createElement('script');
+          s.src = '//translate.google.com/translate_a/element.js?cb=gtCallback';
+          document.body.appendChild(s);
+        } else {
+          const select = document.querySelector('.goog-te-combo');
+          if (select) {
+            select.value = lang;
+            select.dispatchEvent(new Event('change'));
+          }
+        }
       }
+
+      document.getElementById('translate-select').addEventListener('change', function() {
+        if (this.value === 'original') {
+          // Reset - reload page without translation
+          const cookies = document.cookie.split(';');
+          for (const c of cookies) {
+            const name = c.trim().split('=')[0];
+            if (name.includes('googtrans')) {
+              document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+            }
+          }
+          location.reload();
+        } else if (this.value) {
+          doTranslate(this.value);
+        }
+        this.value = '';
+      });
     </script>
-    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateInit" async></script>
+    <style>
+      /* Hide Google Translate's header bar */
+      .goog-te-banner-frame.skiptranslate { display: none !important; }
+      body { top: 0px !important; }
+    </style>
   </body>
 </html>

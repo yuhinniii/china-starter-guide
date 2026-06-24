@@ -6,7 +6,7 @@ const base = isZH ? '/zh' : '/en';
 const navItems = isZH
   ? [
       { label: '首页', href: '/zh/' },
-      { label: '签证', href: '/zh/visa/' },
+      { label: '签证', href: '/zh/prepare/' },
       { label: '支付', href: '/zh/payment/' },
       { label: '交通', href: '/zh/transport/' },
       { label: '在中国的生活', href: '/zh/life/' },
@@ -16,7 +16,7 @@ const navItems = isZH
     ]
   : [
       { label: 'Home', href: '/en/' },
-      { label: 'Visa', href: '/en/visa/' },
+      { label: 'Visa', href: '/en/prepare/' },
       { label: 'Payment', href: '/en/payment/' },
       { label: 'Transport', href: '/en/transport/' },
       { label: 'Life in China', href: '/en/life/' },
@@ -43,6 +43,25 @@ const isActive = (href) => {
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
+    <style>
+      /* Google Translate Widget - compact style */
+      .translate-widget { display: inline-flex; align-items: center; }
+      .translate-widget .goog-te-gadget { font-size: 0 !important; line-height: 0 !important; }
+      .translate-widget .goog-te-gadget-simple {
+        background: transparent !important;
+        border: 1px solid #e5e7eb !important;
+        border-radius: 4px !important;
+        padding: 1px 6px !important;
+        font-size: 11px !important;
+        line-height: 1.5 !important;
+      }
+      .translate-widget .goog-te-gadget-simple img { display: none !important; }
+      .translate-widget .goog-te-gadget-simple span { color: #6b7280 !important; }
+      .translate-widget .goog-te-gadget-simple:hover { border-color: #d1d5db !important; }
+      /* Hide the top Google Translate bar */
+      .goog-te-banner-frame.skiptranslate { display: none !important; }
+      body { top: 0px !important; }
+    </style>
   </head>
   <body class="bg-white text-gray-900 font-sans antialiased">
     <!-- Nav -->
@@ -61,6 +80,8 @@ const isActive = (href) => {
           })}
         </div>
         <div class="flex items-center gap-3">
+          <!-- Google Translate -->
+          <div id="google_translate_element" class="translate-widget"></div>
           <!-- Language Switcher -->
           <a href={isZH ? Astro.url.pathname.replace(/^\/zh/, '/en') : Astro.url.pathname.replace(/^\/en/, '/zh')}
              class="text-xs px-2 py-1 rounded border border-gray-200 text-gray-500 hover:text-brand-600 no-underline">
@@ -117,5 +138,18 @@ const isActive = (href) => {
         initMobileMenu();
       }
     </script>
+
+    <!-- Google Translate Widget -->
+    <script is:inline>
+      function googleTranslateInit() {
+        new google.translate.TranslateElement({
+          pageLanguage: 'en',
+          includedLanguages: 'zh-CN,ja,ko,ru,ar,fr,th,es',
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+          autoDisplay: false
+        }, 'google_translate_element');
+      }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateInit" async></script>
   </body>
 </html>

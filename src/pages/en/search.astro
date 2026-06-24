@@ -74,8 +74,8 @@ pages.sort((a, b) => a.url.localeCompare(b.url));
     </div>
   </div>
 
-  <!-- Embed search data as JSON for the client-side script -->
-  <script type="application/json" id="search-data">{JSON.stringify(pages)}</script>
+  <!-- Embed search data as JSON -->
+  <div id="search-data" style="display:none">{JSON.stringify(pages)}</div>
 
   <script is:inline>
     const input = document.getElementById('search-input');

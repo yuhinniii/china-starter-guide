@@ -1,147 +1,101 @@
 ---
 import Layout from '@layouts/Layout.astro';
-const title = "China Travel Tips — Safety, Scams, Emergency, Culture";
-const description = "Practical tips for traveling in China: safety guide, common scams, emergency numbers, and cultural etiquette.";
+const title = 'Travel Tips for China — Safety, Scams & Culture';
+const description = 'Stay safe, avoid scams, and understand local customs.';
 ---
 
 <Layout title={title} description={description} lang="en">
   <section class="max-w-4xl mx-auto px-6 py-12">
+    
     <!-- Header -->
-    <header class="mb-12 text-center">
-      <p class="text-sm text-gray-500 mb-3">🛡️ Travel Tips</p>
-      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
-        China Travel Tips
-      </h1>
-      <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-        Practical advice from a local — safety, scams, emergency contacts, and cultural etiquette.
-      </p>
+    <header class="mb-10 text-center">
+      <p class="text-sm text-gray-500 mb-2">💡 Tips</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-3 leading-tight">Travel Tips for China</h1>
+      <p class="text-base text-gray-500 max-w-2xl mx-auto">Stay safe, avoid scams, and understand local customs.</p>
     </header>
 
-    <!-- Quick Overview -->
-    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-5 mb-10 not-prose">
-      <h2 class="text-lg font-bold text-blue-900 mb-4">🎯 Quick Overview</h2>
-      <p class="text-sm text-blue-800 leading-relaxed">
-        China is <strong>very safe</strong> for tourists, but like anywhere, you should know the common scams, emergency numbers, and a few cultural dos and don'ts. This section covers everything you need to know.
-      </p>
+    <!-- Quick Stats -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-12 not-prose">
+      <div class="bg-green-50 border border-green-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-green-800">1</p>
+        <p class="text-xs font-semibold text-green-800 uppercase tracking-wide mt-1">Safety Guide</p>
+      </div>
+      <div class="bg-red-50 border border-red-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-red-800">1</p>
+        <p class="text-xs font-semibold text-red-800 uppercase tracking-wide mt-1">Scam Alerts</p>
+      </div>
+      <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-blue-800">1</p>
+        <p class="text-xs font-semibold text-blue-800 uppercase tracking-wide mt-1">Emergency Info</p>
+      </div>
+      <div class="bg-purple-50 border border-purple-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-purple-800">1</p>
+        <p class="text-xs font-semibold text-purple-800 uppercase tracking-wide mt-1">Cultural Tips</p>
+      </div>
     </div>
 
-    <!-- Article Directory -->
-    <div class="space-y-3 mb-16 not-prose">
-
-      <!-- Safety -->
-      <div class="bg-green-50 border border-green-200 rounded-xl overflow-hidden">
-        <button onclick="toggleHub(this)" class="w-full flex items-center justify-between p-5 hover:bg-green-100 transition no-underline text-left">
-          <div class="flex items-center gap-3">
-            <span class="text-xl font-bold text-green-900">Safety</span>
-            <span class="text-xs font-medium text-green-600 bg-green-100 px-2 py-0.5 rounded-full">1</span>
-          </div>
-          <svg class="w-4 h-4 text-green-600 transition-transform duration-200 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </button>
-        <div class="hub-content border-t border-green-100">
-          <a href="/en/tips/is-china-safe/" class="flex items-center gap-3 px-5 py-4 hover:bg-green-50 transition border-b border-green-50 no-underline">
-            <span class="w-1.5 h-1.5 rounded-full bg-green-500 flex-shrink-0"></span>
-            <div>
-              <span class="text-xs font-medium text-green-600">Safety</span>
-              <p class="text-base font-semibold text-gray-900">Is it safe to travel to China?</p>
-              <p class="text-sm text-gray-500 mt-0.5">Honest take from a local. Violent crime is extremely rare. Why China feels so safe — and what you should actually watch for.</p>
-            </div>
+    <!-- Category Sections -->
+    <div class="space-y-8 mb-16 not-prose">
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-green-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-green-800">Safety & Security</h2>
+          <span class="text-xs font-medium text-green-800 opacity-60">2 articles</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/en/tips/is-china-safe/" class="block bg-green-50 border border-green-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-green-800">🛡️ Guide</span>
+            <p class="text-base font-bold text-gray-900 mt-1">Is It Safe to Travel to China?</p>
+            <p class="text-sm text-gray-600 mt-0.5">Honest safety overview — crime, food safety, common risks, and travel tips.</p>
+          </a>
+          <a href="/en/tips/common-scams/" class="block bg-green-50 border border-green-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-green-800">⚠️ Guide</span>
+            <p class="text-base font-bold text-gray-900 mt-1">Common Scams in China & How to Avoid Them</p>
+            <p class="text-sm text-gray-600 mt-0.5">Tea scam, taxi scams, fake police — what to watch out for.</p>
           </a>
         </div>
       </div>
-
-      <!-- Scams -->
-      <div class="bg-red-50 border border-red-200 rounded-xl overflow-hidden">
-        <button onclick="toggleHub(this)" class="w-full flex items-center justify-between p-5 hover:bg-red-100 transition no-underline text-left">
-          <div class="flex items-center gap-3">
-            <span class="text-xl font-bold text-red-900">Scams</span>
-            <span class="text-xs font-medium text-red-600 bg-red-100 px-2 py-0.5 rounded-full">1</span>
-          </div>
-          <svg class="w-4 h-4 text-red-600 transition-transform duration-200 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </button>
-        <div class="hub-content border-t border-red-100">
-          <a href="/en/tips/common-scams/" class="flex items-center gap-3 px-5 py-4 hover:bg-red-50 transition border-b border-red-50 no-underline">
-            <span class="w-1.5 h-1.5 rounded-full bg-red-500 flex-shrink-0"></span>
-            <div>
-              <span class="text-xs font-medium text-red-600">Scams</span>
-              <p class="text-base font-semibold text-gray-900">Common Scams in China & How to Avoid Them</p>
-              <p class="text-sm text-gray-500 mt-0.5">Don't let scammers ruin your trip. Here's how to spot and avoid the most common tourist scams in China.</p>
-            </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-red-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-red-800">Emergency</h2>
+          <span class="text-xs font-medium text-red-800 opacity-60">1 article</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/en/tips/emergency-numbers/" class="block bg-red-50 border border-red-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-red-800">🆘 Guide</span>
+            <p class="text-base font-bold text-gray-900 mt-1">Emergency Numbers & What to Do If You Need Help</p>
+            <p class="text-sm text-gray-600 mt-0.5">110, 120, 12308 — essential numbers and step-by-step emergency response.</p>
           </a>
         </div>
       </div>
-
-      <!-- Emergency -->
-      <div class="bg-blue-50 border border-blue-200 rounded-xl overflow-hidden">
-        <button onclick="toggleHub(this)" class="w-full flex items-center justify-between p-5 hover:bg-blue-100 transition no-underline text-left">
-          <div class="flex items-center gap-3">
-            <span class="text-xl font-bold text-blue-900">Emergency</span>
-            <span class="text-xs font-medium text-blue-600 bg-blue-100 px-2 py-0.5 rounded-full">1</span>
-          </div>
-          <svg class="w-4 h-4 text-blue-600 transition-transform duration-200 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </button>
-        <div class="hub-content border-t border-blue-100">
-          <a href="/en/tips/emergency-numbers/" class="flex items-center gap-3 px-5 py-4 hover:bg-blue-50 transition border-b border-blue-50 no-underline">
-            <span class="w-1.5 h-1.5 rounded-full bg-blue-500 flex-shrink-0"></span>
-            <div>
-              <span class="text-xs font-medium text-blue-600">Emergency</span>
-              <p class="text-base font-semibold text-gray-900">Emergency Numbers & What to Do If You Need Help</p>
-              <p class="text-sm text-gray-500 mt-0.5">110 (police), 120 (ambulance), 119 (fire) — plus embassy contacts, lost passport steps, and emergency phrases.</p>
-            </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-blue-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-blue-800">Culture</h2>
+          <span class="text-xs font-medium text-blue-800 opacity-60">1 article</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/en/tips/cultural-taboos/" class="block bg-blue-50 border border-blue-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-blue-800">🎭 Guide</span>
+            <p class="text-base font-bold text-gray-900 mt-1">Cultural Dos and Don'ts in China</p>
+            <p class="text-sm text-gray-600 mt-0.5">Key etiquette rules to avoid awkward moments and show respect.</p>
           </a>
         </div>
       </div>
-
-      <!-- Culture -->
-      <div class="bg-purple-50 border border-purple-200 rounded-xl overflow-hidden">
-        <button onclick="toggleHub(this)" class="w-full flex items-center justify-between p-5 hover:bg-purple-100 transition no-underline text-left">
-          <div class="flex items-center gap-3">
-            <span class="text-xl font-bold text-purple-900">Culture</span>
-            <span class="text-xs font-medium text-purple-600 bg-purple-100 px-2 py-0.5 rounded-full">1</span>
-          </div>
-          <svg class="w-4 h-4 text-purple-600 transition-transform duration-200 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </button>
-        <div class="hub-content border-t border-purple-100">
-          <a href="/en/tips/cultural-taboos/" class="flex items-center gap-3 px-5 py-4 hover:bg-purple-50 transition border-b border-purple-50 no-underline">
-            <span class="w-1.5 h-1.5 rounded-full bg-purple-500 flex-shrink-0"></span>
-            <div>
-              <span class="text-xs font-medium text-purple-600">Culture</span>
-              <p class="text-base font-semibold text-gray-900">Cultural Dos and Don'ts in China</p>
-              <p class="text-sm text-gray-500 mt-0.5">Chopstick rules, gift giving, saving face, photography rules — practical cultural tips that will make your trip smoother.</p>
-            </div>
-          </a>
-        </div>
-      </div>
-
     </div>
 
-    <script is:inline>
-      function toggleHub(btn) {
-        const content = btn.nextElementSibling;
-        const icon = btn.querySelector('svg');
-        content.classList.toggle('hidden');
-        icon.classList.toggle('rotate-180');
-      }
-    </script>
-
-    <!-- Related Links -->
+    <!-- Related Guides -->
     <div class="bg-gray-50 rounded-2xl p-8 not-prose">
-      <h3 class="text-2xl font-bold text-gray-900 mb-6">📚 Related Guides</h3>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <a href="/en/payment/payment-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
-          <p class="font-bold text-gray-900 mb-1">💳 How to Pay in China</p>
-          <p class="text-sm text-gray-600">Alipay, WeChat Pay, and everything about money</p>
+      <h3 class="text-lg font-bold text-gray-900 mb-5">Related Guides</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <a href="/en/transport/transport-guide/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-0.5">Transport in China</p>
+          <p class="text-sm text-gray-500">Trains, metro, and ride-hailing</p>
         </a>
-        <a href="/en/transport/didi/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
-          <p class="font-bold text-gray-900 mb-1">🚗 How to Use Didi in China</p>
-          <p class="text-sm text-gray-600">China's Uber equivalent — safe and cheap</p>
+        <a href="/en/life/essential-apps/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-0.5">Essential Apps</p>
+          <p class="text-sm text-gray-500">Must-have apps for China</p>
         </a>
       </div>
     </div>

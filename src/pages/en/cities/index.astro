@@ -1,159 +1,116 @@
 ---
 import Layout from '@layouts/Layout.astro';
-const title = "China City Guides — Beijing, Shanghai, Guangzhou, Shenzhen & Chengdu";
-const description = "Which Chinese city should you visit? Detailed city guides to China's top destinations — from history to modern life.";
+const title = 'China City Guides — Travel Destinations';
+const description = 'Find the right city for your China trip.';
 ---
 
 <Layout title={title} description={description} lang="en">
   <section class="max-w-4xl mx-auto px-6 py-12">
-    <header class="mb-12 text-center">
-      <p class="text-sm text-gray-500 mb-2">🏙️ City Guides</p>
-      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
-        Cities in China
-      </h1>
-      <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-        Which Chinese city should you visit? Here are our detailed guides to China's top destinations.
-      </p>
+    
+    <!-- Header -->
+    <header class="mb-10 text-center">
+      <p class="text-sm text-gray-500 mb-2">🏙️ Cities</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-3 leading-tight">China City Guides</h1>
+      <p class="text-base text-gray-500 max-w-2xl mx-auto">Find the right city for your China trip.</p>
     </header>
 
-    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-5 mb-10 not-prose">
-      <h2 class="text-lg font-bold text-blue-900 mb-2">Quick Overview</h2>
-      <p class="text-sm text-blue-800 leading-relaxed">
-        <strong>Not sure which city to visit?</strong> Start with the itinerary guide to plan your trip based on your available time and interests. Beijing for history, Shanghai for modern city life, Chengdu for food and pandas, Guangzhou and Shenzhen for the south.
-      </p>
+    <!-- Quick Stats -->
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-3 mb-12 not-prose">
+      <div class="bg-purple-50 border border-purple-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-purple-800">5</p>
+        <p class="text-xs font-semibold text-purple-800 uppercase tracking-wide mt-1">City Guides</p>
+      </div>
+      <div class="bg-red-50 border border-red-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-red-800">1</p>
+        <p class="text-xs font-semibold text-red-800 uppercase tracking-wide mt-1">Itinerary Planner</p>
+      </div>
+      <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-blue-800">3</p>
+        <p class="text-xs font-semibold text-blue-800 uppercase tracking-wide mt-1">Regions Covered</p>
+      </div>
     </div>
 
-    <div class="space-y-3 mb-16 not-prose">
-
-      <!-- Planning -->
-      <div class="bg-purple-50 border border-purple-200 rounded-xl overflow-hidden">
-        <button onclick="toggleHub(this)" class="w-full flex items-center justify-between p-5 hover:bg-purple-100 transition no-underline text-left">
-          <div class="flex items-center gap-3">
-            <span class="text-xl font-bold text-purple-900">Planning Your Trip</span>
-            <span class="text-xs font-medium text-purple-600 bg-purple-100 px-2 py-0.5 rounded-full">1</span>
-          </div>
-          <svg class="w-4 h-4 text-purple-600 transition-transform duration-200 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </button>
-        <div class="hub-content border-t border-purple-100">
-          <a href="/en/cities/city-select/" class="flex items-center gap-3 px-5 py-4 hover:bg-purple-50 transition border-b border-purple-50 no-underline">
-            <span class="w-1.5 h-1.5 rounded-full bg-purple-500 flex-shrink-0"></span>
-            <div>
-              <span class="text-xs font-medium text-purple-600">Planning</span>
-              <p class="text-base font-semibold text-gray-900">How Many Days Do You Need in China?</p>
-              <p class="text-sm text-gray-500 mt-0.5">Plan the perfect itinerary — from a 3-day whirlwind to a 3-week adventure.</p>
-            </div>
+    <!-- Category Sections -->
+    <div class="space-y-8 mb-16 not-prose">
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-purple-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-purple-800">Planning Your Trip</h2>
+          <span class="text-xs font-medium text-purple-800 opacity-60">1 article</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/en/cities/city-select/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-purple-800">🧭 Planning</span>
+            <p class="text-base font-bold text-gray-900 mt-1">How Many Days Do You Need in China?</p>
+            <p class="text-sm text-gray-600 mt-0.5">Plan the perfect itinerary — from a 3-day whirlwind to a 3-week adventure.</p>
           </a>
         </div>
       </div>
-
-      <!-- History & Culture -->
-      <div class="bg-red-50 border border-red-200 rounded-xl overflow-hidden">
-        <button onclick="toggleHub(this)" class="w-full flex items-center justify-between p-5 hover:bg-red-100 transition no-underline text-left">
-          <div class="flex items-center gap-3">
-            <span class="text-xl font-bold text-red-900">History & Culture</span>
-            <span class="text-xs font-medium text-red-600 bg-red-100 px-2 py-0.5 rounded-full">1</span>
-          </div>
-          <svg class="w-4 h-4 text-red-600 transition-transform duration-200 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </button>
-        <div class="hub-content border-t border-red-100">
-          <a href="/en/cities/beijing-guide/" class="flex items-center gap-3 px-5 py-4 hover:bg-red-50 transition border-b border-red-50 no-underline">
-            <span class="w-1.5 h-1.5 rounded-full bg-red-500 flex-shrink-0"></span>
-            <div>
-              <span class="text-xs font-medium text-red-600">Beijing</span>
-              <p class="text-base font-semibold text-gray-900">Beijing Travel Guide: What to See, Eat, and Know</p>
-              <p class="text-sm text-gray-500 mt-0.5">Forbidden City, Great Wall, hutongs, Peking duck, and essential Beijing travel tips.</p>
-            </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-red-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-red-800">History & Culture</h2>
+          <span class="text-xs font-medium text-red-800 opacity-60">1 article</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/en/cities/beijing-guide/" class="block bg-red-50 border border-red-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-red-800">🏛️ Beijing</span>
+            <p class="text-base font-bold text-gray-900 mt-1">Beijing Travel Guide: What to See, Eat, and Know</p>
+            <p class="text-sm text-gray-600 mt-0.5">Forbidden City, Great Wall, hutongs, Peking duck, and essential tips.</p>
           </a>
         </div>
       </div>
-
-      <!-- Modern & Urban -->
-      <div class="bg-blue-50 border border-blue-200 rounded-xl overflow-hidden">
-        <button onclick="toggleHub(this)" class="w-full flex items-center justify-between p-5 hover:bg-blue-100 transition no-underline text-left">
-          <div class="flex items-center gap-3">
-            <span class="text-xl font-bold text-blue-900">Modern & Urban</span>
-            <span class="text-xs font-medium text-blue-600 bg-blue-100 px-2 py-0.5 rounded-full">2</span>
-          </div>
-          <svg class="w-4 h-4 text-blue-600 transition-transform duration-200 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </button>
-        <div class="hub-content border-t border-blue-100">
-          <a href="/en/cities/shanghai-guide/" class="flex items-center gap-3 px-5 py-4 hover:bg-blue-50 transition border-b border-blue-50 no-underline">
-            <span class="w-1.5 h-1.5 rounded-full bg-yellow-500 flex-shrink-0"></span>
-            <div>
-              <span class="text-xs font-medium text-yellow-600">Shanghai</span>
-              <p class="text-base font-semibold text-gray-900">Shanghai Travel Guide: The Most Foreigner-Friendly City</p>
-              <p class="text-sm text-gray-500 mt-0.5">The Bund, Shanghai Tower, French Concession, xiaolongbao, and the world's largest metro.</p>
-            </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-blue-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-blue-800">Modern & Urban</h2>
+          <span class="text-xs font-medium text-blue-800 opacity-60">2 articles</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/en/cities/shanghai-guide/" class="block bg-blue-50 border border-blue-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-blue-800">🌆 Shanghai</span>
+            <p class="text-base font-bold text-gray-900 mt-1">Shanghai Travel Guide: The Most Foreigner-Friendly City</p>
+            <p class="text-sm text-gray-600 mt-0.5">The Bund, Shanghai Tower, French Concession, and world-class dining.</p>
           </a>
-          <a href="/en/cities/shenzhen-guide/" class="flex items-center gap-3 px-5 py-4 hover:bg-blue-50 transition border-b border-blue-50 no-underline">
-            <span class="w-1.5 h-1.5 rounded-full bg-cyan-500 flex-shrink-0"></span>
-            <div>
-              <span class="text-xs font-medium text-cyan-600">Shenzhen</span>
-              <p class="text-base font-semibold text-gray-900">Shenzhen Travel Guide: Tech Hub Next to Hong Kong</p>
-              <p class="text-sm text-gray-500 mt-0.5">China's Silicon Valley, coastal cycling, seafood, and a 15-minute train to Hong Kong.</p>
-            </div>
+          <a href="/en/cities/shenzhen-guide/" class="block bg-blue-50 border border-blue-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-blue-800">🏙️ Shenzhen</span>
+            <p class="text-base font-bold text-gray-900 mt-1">Shenzhen Travel Guide: Tech Hub Next to Hong Kong</p>
+            <p class="text-sm text-gray-600 mt-0.5">China's Silicon Valley, coastal cycling, and a 15-minute train to Hong Kong.</p>
           </a>
         </div>
       </div>
-
-      <!-- Food & Lifestyle -->
-      <div class="bg-orange-50 border border-orange-200 rounded-xl overflow-hidden">
-        <button onclick="toggleHub(this)" class="w-full flex items-center justify-between p-5 hover:bg-orange-100 transition no-underline text-left">
-          <div class="flex items-center gap-3">
-            <span class="text-xl font-bold text-orange-900">Food & Lifestyle</span>
-            <span class="text-xs font-medium text-orange-600 bg-orange-100 px-2 py-0.5 rounded-full">2</span>
-          </div>
-          <svg class="w-4 h-4 text-orange-600 transition-transform duration-200 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </button>
-        <div class="hub-content border-t border-orange-100">
-          <a href="/en/cities/guangzhou-guide/" class="flex items-center gap-3 px-5 py-4 hover:bg-orange-50 transition border-b border-orange-50 no-underline">
-            <span class="w-1.5 h-1.5 rounded-full bg-green-500 flex-shrink-0"></span>
-            <div>
-              <span class="text-xs font-medium text-green-600">Guangzhou</span>
-              <p class="text-base font-semibold text-gray-900">Guangzhou Travel Guide: Food Capital of China</p>
-              <p class="text-sm text-gray-500 mt-0.5">Dim sum, Canton Tower, Shamian Island, and the gateway to Hong Kong and Macau.</p>
-            </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-orange-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-orange-800">Food & Lifestyle</h2>
+          <span class="text-xs font-medium text-orange-800 opacity-60">2 articles</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/en/cities/guangzhou-guide/" class="block bg-orange-50 border border-orange-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-orange-800">🥟 Guangzhou</span>
+            <p class="text-base font-bold text-gray-900 mt-1">Guangzhou Travel Guide: Food Capital of China</p>
+            <p class="text-sm text-gray-600 mt-0.5">Dim sum, Canton Tower, Shamian Island, and gateway to southern China.</p>
           </a>
-          <a href="/en/cities/chengdu-guide/" class="flex items-center gap-3 px-5 py-4 hover:bg-orange-50 transition border-b border-orange-50 no-underline">
-            <span class="w-1.5 h-1.5 rounded-full bg-orange-500 flex-shrink-0"></span>
-            <div>
-              <span class="text-xs font-medium text-orange-600">Chengdu</span>
-              <p class="text-base font-semibold text-gray-900">Chengdu Travel Guide: Pandas, Spicy Food & Slow Life</p>
-              <p class="text-sm text-gray-500 mt-0.5">Giant pandas, Sichuan hotpot, tea houses, and gateway to Jiuzhaigou and Mount Emei.</p>
-            </div>
+          <a href="/en/cities/chengdu-guide/" class="block bg-orange-50 border border-orange-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-orange-800">🐼 Chengdu</span>
+            <p class="text-base font-bold text-gray-900 mt-1">Chengdu Travel Guide: Pandas, Spicy Food & Slow Life</p>
+            <p class="text-sm text-gray-600 mt-0.5">Giant pandas, Sichuan hotpot, tea houses, and gateway to Jiuzhaigou.</p>
           </a>
         </div>
       </div>
-
     </div>
 
-    <script is:inline>
-      function toggleHub(btn) {
-        const content = btn.nextElementSibling;
-        const icon = btn.querySelector('svg');
-        content.classList.toggle('hidden');
-        icon.classList.toggle('rotate-180');
-      }
-    </script>
-
+    <!-- Related Guides -->
     <div class="bg-gray-50 rounded-2xl p-8 not-prose">
-      <h3 class="text-2xl font-bold text-gray-900 mb-6">Related Guides</h3>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <a href="/en/transport/transport-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
-          <p class="font-bold text-gray-900 mb-1">Transport in China</p>
-          <p class="text-sm text-gray-600">How to get between cities</p>
+      <h3 class="text-lg font-bold text-gray-900 mb-5">Related Guides</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <a href="/en/transport/high-speed-rail/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-0.5">High-Speed Rail</p>
+          <p class="text-sm text-gray-500">Getting between cities</p>
         </a>
-        <a href="/en/life/survival-kit/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
-          <p class="font-bold text-gray-900 mb-1">China Trip Survival Kit</p>
-          <p class="text-sm text-gray-600">Pre-departure checklist</p>
+        <a href="/en/transport/metro-bus/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-0.5">Metro & Bus</p>
+          <p class="text-sm text-gray-500">Getting around city centers</p>
         </a>
       </div>
     </div>

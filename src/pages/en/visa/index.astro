@@ -1,168 +1,126 @@
 ---
 import Layout from '@layouts/Layout.astro';
 const title = 'Visa & Entry Guide for China — China Starter Guide';
-const description = 'Complete guide to China visa types, visa-free entry, 240-hour transit, and mutual visa-free agreements.';
+const description = 'Whether you need a visa depends on your passport.';
 ---
 
 <Layout title={title} description={description} lang="en">
   <section class="max-w-4xl mx-auto px-6 py-12">
-    <header class="mb-12 text-center">
+    
+    <!-- Header -->
+    <header class="mb-10 text-center">
       <p class="text-sm text-gray-500 mb-2">📋 Entry & Visa</p>
-      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
-        Visa & Entry for China
-      </h1>
-      <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-        Everything you need to know about getting into China.
-      </p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-3 leading-tight">Visa & Entry for China</h1>
+      <p class="text-base text-gray-500 max-w-2xl mx-auto">Whether you need a visa depends on your passport.</p>
     </header>
 
-    <div class="bg-gradient-to-r from-green-50 to-emerald-50 border-l-4 border-green-500 rounded-r-2xl p-5 mb-10 not-prose">
-      <h2 class="text-lg font-bold text-green-900 mb-2">Quick Overview</h2>
-      <p class="text-sm text-green-800 leading-relaxed">
-        <strong>Whether you need a visa depends on your passport.</strong> Citizens of 50 countries can enter visa-free for up to 30 days. Another 29 countries have mutual visa-free agreements. Travelers from 55 countries can use the 240-hour transit policy. Everyone else needs an L visa.
-      </p>
+    <!-- Quick Stats -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-12 not-prose">
+      <div class="bg-green-50 border border-green-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-green-800">50</p>
+        <p class="text-xs font-semibold text-green-800 uppercase tracking-wide mt-1">Visa-Free Countries</p>
+      </div>
+      <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-blue-800">55</p>
+        <p class="text-xs font-semibold text-blue-800 uppercase tracking-wide mt-1">Transit Countries</p>
+      </div>
+      <div class="bg-teal-50 border border-teal-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-teal-800">29</p>
+        <p class="text-xs font-semibold text-teal-800 uppercase tracking-wide mt-1">Mutual Agreements</p>
+      </div>
+      <div class="bg-orange-50 border border-orange-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-orange-800">59</p>
+        <p class="text-xs font-semibold text-orange-800 uppercase tracking-wide mt-1">Hainan Visa-Free</p>
+      </div>
     </div>
 
-    <div class="space-y-3 mb-16 not-prose">
-
-      <!-- Visa-Free Entry -->
-      <div class="bg-green-50 border-green-200 rounded-xl overflow-hidden">
-        <button onclick="toggleHub(this)" class="w-full flex items-center justify-between p-5 hover:bg-green-100 transition no-underline text-left">
-          <div class="flex items-center gap-3">
-            <span class="text-xl font-bold text-green-900">Visa-Free Entry</span>
-            <span class="text-xs font-medium text-green-600 bg-green-100 px-2 py-0.5 rounded-full">4</span>
-          </div>
-          <svg class="w-4 h-4 text-gray-400 transition-transform duration-200 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </button>
-        <div class="hub-content border-t border-green-100">
-          <a href="/en/visa/visa-free/" class="flex items-center gap-3 px-5 py-4 hover:bg-gray-50 transition border-b border-gray-50 no-underline">
-            <span class="w-1.5 h-1.5 rounded-full bg-green-500 flex-shrink-0"></span>
-            <div>
-              <span class="text-xs font-medium text-green-600">List</span>
-              <p class="text-base font-semibold text-gray-900">China Visa-Free Countries List</p>
-              <p class="text-sm text-gray-500 mt-0.5">50 countries can enter without a visa for up to 30 days.</p>
-            </div>
+    <!-- Category Sections -->
+    <div class="space-y-8 mb-16 not-prose">
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-green-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-green-800">Visa-Free Entry</h2>
+          <span class="text-xs font-medium text-green-800 opacity-60">4 articles</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/en/visa/visa-free/" class="block bg-green-50 border border-green-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-green-800">📋 List</span>
+            <p class="text-base font-bold text-gray-900 mt-1">China Visa-Free Countries List</p>
+            <p class="text-sm text-gray-600 mt-0.5">50 countries can enter without a visa for up to 30 days.</p>
           </a>
-          <a href="/en/visa/transit-240/" class="flex items-center gap-3 px-5 py-4 hover:bg-gray-50 transition border-b border-gray-50 no-underline">
-            <span class="w-1.5 h-1.5 rounded-full bg-blue-500 flex-shrink-0"></span>
-            <div>
-              <span class="text-xs font-medium text-blue-600">Transit</span>
-              <p class="text-base font-semibold text-gray-900">240-Hour Visa-Free Transit Explained</p>
-              <p class="text-sm text-gray-500 mt-0.5">55 countries qualify for 10-day transit without a visa.</p>
-            </div>
+          <a href="/en/visa/transit-240/" class="block bg-green-50 border border-green-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-green-800">✈️ Transit</span>
+            <p class="text-base font-bold text-gray-900 mt-1">240-Hour Visa-Free Transit Explained</p>
+            <p class="text-sm text-gray-600 mt-0.5">55 countries qualify for 10-day transit without a visa.</p>
           </a>
-          <a href="/en/visa/mutual-agreement/" class="flex items-center gap-3 px-5 py-4 hover:bg-gray-50 transition border-b border-gray-50 no-underline">
-            <span class="w-1.5 h-1.5 rounded-full bg-teal-500 flex-shrink-0"></span>
-            <div>
-              <span class="text-xs font-medium text-teal-600">Agreement</span>
-              <p class="text-base font-semibold text-gray-900">Mutual Visa-Free Agreements (29 Countries)</p>
-              <p class="text-sm text-gray-500 mt-0.5">Bilateral visa-exemption deals with stay limits up to 90 days.</p>
-            </div>
+          <a href="/en/visa/mutual-agreement/" class="block bg-green-50 border border-green-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-green-800">🤝 Agreement</span>
+            <p class="text-base font-bold text-gray-900 mt-1">Mutual Visa-Free Agreements (29 Countries)</p>
+            <p class="text-sm text-gray-600 mt-0.5">Bilateral visa-exemption deals with stay limits up to 90 days.</p>
           </a>
-          <a href="/en/visa/hainan-visa-free/" class="flex items-center gap-3 px-5 py-4 hover:bg-gray-50 transition no-underline">
-            <span class="w-1.5 h-1.5 rounded-full bg-orange-500 flex-shrink-0"></span>
-            <div>
-              <span class="text-xs font-medium text-orange-600">Hainan</span>
-              <p class="text-base font-semibold text-gray-900">Hainan Travel Guide — 30-Day Visa-Free</p>
-              <p class="text-sm text-gray-500 mt-0.5">59 countries, 30 days, no visa needed for this tropical island.</p>
-            </div>
+          <a href="/en/visa/hainan-visa-free/" class="block bg-green-50 border border-green-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-green-800">🏝️ Hainan</span>
+            <p class="text-base font-bold text-gray-900 mt-1">Hainan Travel Guide — 30-Day Visa-Free</p>
+            <p class="text-sm text-gray-600 mt-0.5">59 countries, 30 days, no visa needed for this tropical island.</p>
           </a>
         </div>
       </div>
-
-      <!-- Applying for a Visa -->
-      <div class="bg-purple-50 border-purple-200 rounded-xl overflow-hidden">
-        <button onclick="toggleHub(this)" class="w-full flex items-center justify-between p-5 hover:bg-purple-100 transition no-underline text-left">
-          <div class="flex items-center gap-3">
-            <span class="text-xl font-bold text-purple-900">Applying for a Visa</span>
-            <span class="text-xs font-medium text-purple-600 bg-purple-100 px-2 py-0.5 rounded-full">2</span>
-          </div>
-          <svg class="w-4 h-4 text-gray-400 transition-transform duration-200 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </button>
-        <div class="hub-content border-t border-purple-100">
-          <a href="/en/visa/visa-guide/" class="flex items-center gap-3 px-5 py-4 hover:bg-gray-50 transition border-b border-gray-50 no-underline">
-            <span class="w-1.5 h-1.5 rounded-full bg-purple-500 flex-shrink-0"></span>
-            <div>
-              <span class="text-xs font-medium text-purple-600">Overview</span>
-              <p class="text-base font-semibold text-gray-900">China Visa Types Complete Guide</p>
-              <p class="text-sm text-gray-500 mt-0.5">All visa options explained — compare visa-free, transit, and L visa.</p>
-            </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-purple-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-purple-800">Applying for a Visa</h2>
+          <span class="text-xs font-medium text-purple-800 opacity-60">2 articles</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/en/visa/visa-guide/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-purple-800">📖 Overview</span>
+            <p class="text-base font-bold text-gray-900 mt-1">China Visa Types Complete Guide</p>
+            <p class="text-sm text-gray-600 mt-0.5">All visa options explained — compare visa-free, transit, and L visa.</p>
           </a>
-          <a href="/en/visa/apply-l-visa/" class="flex items-center gap-3 px-5 py-4 hover:bg-gray-50 transition border-b border-gray-50 no-underline">
-            <span class="w-1.5 h-1.5 rounded-full bg-purple-500 flex-shrink-0"></span>
-            <div>
-              <span class="text-xs font-medium text-purple-600">Tutorial</span>
-              <p class="text-base font-semibold text-gray-900">How to Apply for China Tourist Visa (L-Type)</p>
-              <p class="text-sm text-gray-500 mt-0.5">Step-by-step application guide — COVA form, documents, and fees.</p>
-            </div>
+          <a href="/en/visa/apply-l-visa/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-purple-800">📝 Tutorial</span>
+            <p class="text-base font-bold text-gray-900 mt-1">How to Apply for China Tourist Visa (L-Type)</p>
+            <p class="text-sm text-gray-600 mt-0.5">Step-by-step application guide — COVA form, documents, and fees.</p>
           </a>
         </div>
       </div>
-
-      <!-- Before You Travel -->
-      <div class="bg-amber-50 border-amber-200 rounded-xl overflow-hidden">
-        <button onclick="toggleHub(this)" class="w-full flex items-center justify-between p-5 hover:bg-amber-100 transition no-underline text-left">
-          <div class="flex items-center gap-3">
-            <span class="text-xl font-bold text-amber-900">Before You Travel</span>
-            <span class="text-xs font-medium text-amber-600 bg-amber-100 px-2 py-0.5 rounded-full">3</span>
-          </div>
-          <svg class="w-4 h-4 text-gray-400 transition-transform duration-200 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-          </svg>
-        </button>
-        <div class="hub-content border-t border-amber-100">
-          <a href="/en/visa/customs-guide/" class="flex items-center gap-3 px-5 py-4 hover:bg-gray-50 transition border-b border-gray-50 no-underline">
-            <span class="w-1.5 h-1.5 rounded-full bg-orange-500 flex-shrink-0"></span>
-            <div>
-              <span class="text-xs font-medium text-orange-600">Regulations</span>
-              <p class="text-base font-semibold text-gray-900">China Customs Regulations</p>
-              <p class="text-sm text-gray-500 mt-0.5">Duty-free limits, prohibited items, and what to declare.</p>
-            </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-amber-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-amber-800">Before You Travel</h2>
+          <span class="text-xs font-medium text-amber-800 opacity-60">3 articles</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/en/visa/customs-guide/" class="block bg-amber-50 border border-amber-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-amber-800">🛃 Regulations</span>
+            <p class="text-base font-bold text-gray-900 mt-1">China Customs Regulations</p>
+            <p class="text-sm text-gray-600 mt-0.5">Duty-free limits, prohibited items, and what to declare.</p>
           </a>
-          <a href="/en/visa/first-time-china/" class="flex items-center gap-3 px-5 py-4 hover:bg-gray-50 transition border-b border-gray-50 no-underline">
-            <span class="w-1.5 h-1.5 rounded-full bg-orange-500 flex-shrink-0"></span>
-            <div>
-              <span class="text-xs font-medium text-orange-600">Guide</span>
-              <p class="text-base font-semibold text-gray-900">First Time in China: Step-by-Step Guide</p>
-              <p class="text-sm text-gray-500 mt-0.5">Visa, digital setup, packing, and arrival tips for first-timers.</p>
-            </div>
+          <a href="/en/visa/first-time-china/" class="block bg-amber-50 border border-amber-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-amber-800">🗺️ Guide</span>
+            <p class="text-base font-bold text-gray-900 mt-1">First Time in China: Step-by-Step Guide</p>
+            <p class="text-sm text-gray-600 mt-0.5">Visa, digital setup, packing, and arrival tips for first-timers.</p>
           </a>
-          <a href="/en/visa/arrival-card/" class="flex items-center gap-3 px-5 py-4 hover:bg-gray-50 transition border-b border-gray-50 no-underline">
-            <span class="w-1.5 h-1.5 rounded-full bg-orange-500 flex-shrink-0"></span>
-            <div>
-              <span class="text-xs font-medium text-orange-600">Tutorial</span>
-              <p class="text-base font-semibold text-gray-900">How to Submit Your Arrival Card Online</p>
-              <p class="text-sm text-gray-500 mt-0.5">Step-by-step guide with screenshots — fill online before you fly.</p>
-            </div>
+          <a href="/en/visa/arrival-card/" class="block bg-amber-50 border border-amber-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-amber-800">📱 Tutorial</span>
+            <p class="text-base font-bold text-gray-900 mt-1">How to Submit Your Arrival Card Online</p>
+            <p class="text-sm text-gray-600 mt-0.5">Step-by-step guide with screenshots — fill online before you fly.</p>
           </a>
         </div>
       </div>
-
     </div>
 
-    <script is:inline>
-      function toggleHub(btn) {
-        const content = btn.nextElementSibling;
-        const icon = btn.querySelector('svg');
-        content.classList.toggle('hidden');
-        icon.classList.toggle('rotate-180');
-      }
-    </script>
-
+    <!-- Related Guides -->
     <div class="bg-gray-50 rounded-2xl p-8 not-prose">
-      <h3 class="text-2xl font-bold text-gray-900 mb-6">Related Guides</h3>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <a href="/en/payment/payment-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
-          <p class="font-bold text-gray-900 mb-1">Payment in China</p>
-          <p class="text-sm text-gray-600">Alipay, WeChat Pay, and credit cards</p>
+      <h3 class="text-lg font-bold text-gray-900 mb-5">Related Guides</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <a href="/en/payment/payment-guide/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-0.5">Payment in China</p>
+          <p class="text-sm text-gray-500">Alipay, WeChat Pay, and credit cards</p>
         </a>
-        <a href="/en/transport/transport-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
-          <p class="font-bold text-gray-900 mb-1">Transport in China</p>
-          <p class="text-sm text-gray-600">Trains, metro, and ride-hailing</p>
+        <a href="/en/transport/transport-guide/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-0.5">Transport in China</p>
+          <p class="text-sm text-gray-500">Trains, metro, and ride-hailing</p>
         </a>
       </div>
     </div>

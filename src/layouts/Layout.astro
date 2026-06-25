@@ -1,8 +1,9 @@
 ---
 const { title, description = 'Your ultimate guide to traveling, living and working in China', lang = 'en' } = Astro.props;
-const isZH = lang === 'zh';
-const base = isZH ? '/zh' : '/en';
-const navItems = isZH
+const langs = ['en', 'zh'];
+const langLabels = { en: 'English', zh: '中文' };
+const base = lang === 'zh' ? '/zh' : '/en';
+const navItems = lang === 'zh'
   ? [
       { label: '首页', href: '/zh/' },
       { label: '行前准备', href: '/zh/prepare/' },
@@ -46,13 +47,19 @@ const navItems = isZH
     <!-- Nav -->
     <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
       <div class="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
-        <a href={base} class="text-lg font-bold text-brand-600 no-underline">{isZH ? '中国入门指南' : 'China Starter Guide'}</a>
+        <a href={base} class="text-lg font-bold text-brand-600 no-underline">{lang === 'zh' ? '中国入门指南' : 'China Starter Guide'}</a>
         <div class="hidden md:flex items-center gap-5 text-sm">
           {navItems.map(item => (
             <a href={item.href} class="text-gray-600 hover:text-brand-600 no-underline transition-colors">{item.label}</a>
           ))}
         </div>
         <div class="flex items-center gap-3">
+          <!-- Language Switcher -->
+          <select id="lang-select" class="text-xs px-2 py-1 rounded border border-gray-200 text-gray-500 bg-white cursor-pointer" aria-label="Language">
+            {langs.map(l => (
+              <option value={l} {l === lang ? 'selected' : ''}>{langLabels[l]}</option>
+            ))}
+          </select>
           <!-- Mobile menu -->
           <button id="mobile-menu-btn" class="md:hidden text-gray-500 text-xl" aria-label="Menu">☰</button>
         </div>
@@ -74,9 +81,9 @@ const navItems = isZH
       <div class="max-w-5xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
         <span>© 2026 China Starter Guide</span>
         <div class="flex gap-4">
-        <a href={isZH ? '/zh/about/' : '/en/about/'} class="hover:text-brand-600 no-underline">About</a>
-          <a href={isZH ? '/zh/privacy/' : '/en/privacy/'} class="hover:text-brand-600 no-underline">Privacy</a>
-          <a href={isZH ? '/zh/contact/' : '/en/contact/'} class="hover:text-brand-600 no-underline">Contact</a>
+        <a href={lang === 'zh' ? '/zh/about/' : '/en/about/'} class="hover:text-brand-600 no-underline">About</a>
+          <a href={lang === 'zh' ? '/zh/privacy/' : '/en/privacy/'} class="hover:text-brand-600 no-underline">Privacy</a>
+          <a href={lang === 'zh' ? '/zh/contact/' : '/en/contact/'} class="hover:text-brand-600 no-underline">Contact</a>
         </div>
       </div>
     </footer>
@@ -92,10 +99,24 @@ const navItems = isZH
         });
       }
 
+      // Language Switcher - redirects between /en/ and /zh/ versions
+      function initLangSwitcher() {
+        const sel = document.getElementById('lang-select');
+        if (!sel) return;
+        sel.addEventListener('change', () => {
+          const targetLang = sel.value;
+          const currentLang = document.documentElement.lang;
+          if (targetLang === currentLang) return;
+          // Replace language prefix in current path
+          const newPath = window.location.pathname.replace(/^\/(en|zh)\//, '/' + targetLang + '/');
+          window.location.href = newPath;
+        });
+      }
+
       if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', () => { initMobileMenu(); });
+        document.addEventListener('DOMContentLoaded', () => { initMobileMenu(); initLangSwitcher(); });
       } else {
-        initMobileMenu();
+        initMobileMenu(); initLangSwitcher();
       }
     </script>
   </body>

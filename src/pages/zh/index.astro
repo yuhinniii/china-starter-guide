@@ -36,30 +36,6 @@ const description = '来中国之前你需要知道的一切：支付、交通�
     </div>
   </section>
 
-  <!-- Top 5 Guides for First-Timers -->
-  <section class="max-w-5xl mx-auto px-4 py-12">
-    <h2 class="text-2xl font-bold text-gray-900  ">五大新手指南</h2>
-    <p class="text-gray-500  ">如果这是你第一次来中国，就从这里开始吧。</p>
-    <div class="space-y-4">
-      {[
-        { title: '首次来华：分步指南', desc: '出发前准备什么，如何减轻压力，以及抵达后的预期。', href: '#', tag: '准备' },
-        { title: '中国支付完整指南', desc: '移动钱包、外国信用卡、现金备用、二维码支付、交通支付以及支付失败时的应对方法。', href: '#', tag: '支付' },
-        { title: '中国安全吗？通常比首次访客预期的更安全', desc: '实际安全状况、常见误解以及需要注意的事项。', href: '#', tag: '贴士' },
-        { title: '从机场到市区的最佳方式', desc: '地铁、出租车和网约车——如何选择以及如何避免错误的决定。', href: '#', tag: '交通' },
-        { title: '外国人在华就医指南', desc: '药店、诊所还是医院——如何选择以及应该预期什么。', href: '#', tag: '医疗' },
-      ].map((g, i) => (
-        <a href={g.href} class="group flex items-start gap-4 p-4 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-900 transition no-underline">
-          <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-brand-100  :text-brand-300 text-sm font-bold flex items-center justify-center">{i + 1}</span>
-          <div>
-            <span class="text-xs font-medium text-brand-600  ">{g.tag}</span>
-            <h3 class="text-base font-semibold text-gray-900  :text-brand-600 dark:group-hover:text-brand-400">{g.title}</h3>
-            <p class="text-sm text-gray-500  ">{g.desc}</p>
-          </div>
-        </a>
-      ))}
-    </div>
-  </section>
-
   <!-- Scenario-Based Quick Links -->
   <section class="max-w-5xl mx-auto px-4 py-12 border-t border-gray-100  ">
     <h2 class="text-2xl font-bold text-gray-900  ">选择你的情况</h2>

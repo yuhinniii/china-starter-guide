@@ -1,0 +1,117 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = '中国主要城市地铁和公交指南';
+const description = '如何在中国城市使用公共交通。移动支付、交通卡、公交提示和一般导航建议。';
+---
+
+<Layout title={title} description={description} lang="zh">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/zh/transport/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Back to Transport
+      </a>
+    </nav>
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🚇 公共交通</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        Metro & Bus Guide for Major Chinese Cities
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">如何在中国城市使用公共交通——移动支付、交通卡、公交提示和导航建议。</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 最后更新日期：2026年6月</span>
+        <span>十几个短语会改变人们对待你的方式。</span>
+      </div>
+    </header>
+
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-blue-900 mb-4">⏱️ 阅读4分钟</h2>
+      <p class="text-lg text-blue-800 leading-relaxed">
+        China's metro systems are <strong>世界级、廉价、英语友好</strong>. Use Alipay or WeChat Pay to scan a QR code at the turnstile — no ticket needed. Buses are a good backup for areas without metro coverage. Station names and announcements are bilingual throughout.
+      </p>
+    </div>
+
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 在本指南中</h3>
+      <ul class="space-y-3">
+        <li><a href="#general" class="text-blue-600 hover:underline">💡 适用于所有城市的一般提示</a></li>
+        <li><a href="#buses" class="text-blue-600 hover:underline">🚌 公交车</a></li>
+        <li><a href="#cards" class="text-blue-600 hover:underline">💳 交通卡</a></li>
+        <li><a href="#mobile" class="text-blue-600 hover:underline">📱 过境移动支付</a></li>
+      </ul>
+    </nav>
+
+    <div class="prose prose-gray max-w-none">
+
+      <h2 id="general" class="text-2xl font-bold text-gray-900 mb-4">💡 General Tips for All Cities</h2>
+
+      <ul class="space-y-3 text-gray-700 mb-8">
+        <li><strong>付款：</strong> You can buy single-trip tickets at machines (most accept cash and Alipay/WeChat Pay). Or scan QR codes at gate barriers via Alipay's Travel section or WeChat's transit mini-program.</li>
+        <li><strong>标志：</strong> Station names are in Chinese and English. Announcements are bilingual.</li>
+        <li><strong>转移：</strong> Follow the colored lines and English signs. Transfers between lines are clearly marked.</li>
+        <li><strong>导航应用程序：</strong> Use local apps such as Gaode Maps or Baidu Maps for precise metro route guidance.</li>
+      </ul>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="buses" class="text-2xl font-bold text-gray-900 mb-4">🚌 Buses</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">如果地铁不能直达目的地，公共汽车是一种方便的备用方式，因为它们覆盖了更偏远的地区。它们比地铁便宜，但速度较慢，在高峰时段经常遇到交通堵塞。</p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">在旅游城市，大多数公交车都用中文和英文报站。不过，请密切关注停车警报。许多公交车在上下车时都需要扫描您的公交二维码，所以下车前别忘了再次扫描。</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="cards" class="text-2xl font-bold text-gray-900 mb-4">💳 Transport Cards</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">每个城市都有自己的公交卡（北京：易卡通，深圳：深圳通）。在地铁站购买，然后用移动支付充值。他们在地铁和公共汽车上工作，并提供小折扣，但对短期游客来说不是必需的。许多都有独特的设计，所以你可以拿一个作为纪念品。</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="mobile" class="text-2xl font-bold text-gray-900 mb-4">📱 Mobile Payment for Transit</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">这是当地人最常用的方法——不需要买票或携带单独的卡。</p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">支付宝和微信支付都为地铁和公交车生成了通用的交通二维码。打开支付宝，点击主屏幕上的“交通”，选择您的城市，然后在旋转栅门处扫描。付款将从您的关联卡中扣除。微信通过其“骑行代码”小程序进行类似的工作。</p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>提示：</strong> Separate QR codes are available for buses and subways, so double-check you've selected the right one before boarding.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8 not-prose">
+        <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+          <img src="/images/alipay-transit.jpg" alt="Alipay transit QR code setup" class="w-full" />
+          <div class="p-4">
+            <p class="text-sm font-semibold text-gray-900">支付宝中转二维码</p>
+            <p class="text-xs text-gray-500">打开支付宝→ 运输→ 选择城市→ 旋转栅门扫描</p>
+          </div>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+          <img src="/images/wechat-transit.jpg" alt="WeChat transit QR code setup" class="w-full" />
+          <div class="p-4">
+            <p class="text-sm font-semibold text-gray-900">微信交通二维码</p>
+            <p class="text-xs text-gray-500">打开微信→ 骑行代码小程序→ 旋转栅门扫描</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="not-prose mt-16">
+      <h2 class="text-2xl font-bold text-gray-900 mb-8">📚 相关指南</h2>
+      <div class="space-y-4">
+        <a href="/zh/transport/transport-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>如何环游中国</strong> — the complete transport guide</a>
+        <a href="/zh/transport/didi/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚗 <strong>外国人如何在中国使用滴滴</strong> — set up ride-hailing</a>
+        <a href="/zh/payment/setup-alipay/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">💳 <strong>外国人如何设置支付宝</strong> — pay for transit with your phone</a>
+      </div>
+    </div>
+
+    <!-- Sources -->
+    <div class="mt-8 pt-6 border-t border-gray-200 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-3">Sources</h3>
+      <ul class="space-y-2">
+        <li><a href="https://" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">Metro网站主要是中文的。每个城市的官方地铁网站上都有通用的地铁地图和路线信息，并附有浏览器翻译。</a></li>
+      </ul>
+    </div>
+  </article>
+</Layout>

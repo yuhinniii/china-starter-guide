@@ -1,0 +1,87 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = "Chengdu Travel Guide: Pandas, Spicy Food & Slow Life";
+const description = "Visit Chengdu — see giant pandas, eat the world's spiciest food, and experience Sichuan's laid-back lifestyle.";
+---
+
+<Layout title={title} description={description} lang="zh">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🏙️ 成都</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">成都旅游指南：熊猫、辣食、慢生活</h1>
+      <p class="text-xl text-gray-600 mb-6">参观成都——看大熊猫，吃世界上最辣的食物，体验四川悠闲的生活方式。</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500"><span>📅 最后更新日期：2026年6月</span><span>⏱️ 阅读8分钟</span></div>
+    </header>
+
+    <div class="bg-gradient-to-r from-orange-50 to-red-50 border-l-4 border-orange-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-orange-900 mb-4">⚡ 快速回答</h2>
+      <p class="text-lg text-orange-800 leading-relaxed">Chengdu is the <strong>大熊猫和四川辣椒之地</strong>早上看大熊猫在竹林里打滚，午餐时吃辣得耳朵都嗡嗡作响的食物，下午在一座有1000年历史的寺庙里喝茶。这座城市以其悠闲的生活节奏而闻名——当地人说成都是“幸福之城”，你一到就会感受到。</p>
+    </div>
+
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 在本指南中</h3>
+      <ul class="space-y-3">
+        <li><a href="#why-visit" class="text-blue-600 hover:underline">🐼 为什么去成都？</a></li>
+        <li><a href="#how-many-days" class="text-blue-600 hover:underline">📅 你需要多少天？</a></li>
+        <li><a href="#attractions" class="text-blue-600 hover:underline">🎯 热门景点</a></li>
+        <li><a href="#getting-around" class="text-blue-600 hover:underline">🚇 出行</a></li>
+        <li><a href="#where-to-stay" class="text-blue-600 hover:underline">🏨 住在哪里</a></li>
+        <li><a href="#what-to-eat" class="text-blue-600 hover:underline">🍜 吃什么</a></li>
+      </ul>
+    </nav>
+
+    <h2 id="why-visit" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🐼 Why Visit Chengdu?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-12">成都是四川省的省会，也是通往中国西部自然奇观的门户。它毫不费力地平衡了传统和现代——古老的寺庙坐落在时尚的艺术区旁边，世界上最辣的食物在几代人经营的餐馆里供应。众所周知，成都的生活节奏很慢：成都的茶馆比中国其他任何城市都多，而且人们确实在使用它们。</p>
+
+    <h2 id="how-many-days" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📅 How Many Days Do You Need?</h2>
+    <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700 mb-4">
+      <li><strong>3-4天（标准）：</strong> Pandas, Jinli, Wuhou Temple, and serious eating</li>
+      <li><strong>5-7天（舒适）：</strong> Add Leshan Giant Buddha (1 day) or Mount Emei (2 days)</li>
+      <li><strong>7+天（深潜）：</strong> Add Jiuzhaigou National Park (3–4 days)</li>
+    </ul>
+    <p class="text-lg text-gray-700 mb-12">如果你有多余的时间，四川省有一些中国最壮观的风景。乐山大佛（距离成都约1.5小时车程）是世界上最大的石佛，高71米。对于喜欢冒险的旅行者来说，九寨沟的绿松石色湖泊和瀑布令人难忘，但至少需要3-4天。</p>
+
+    <h2 id="attractions" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎯 Top Attractions</h2>
+
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">成都大熊猫繁育研究基地</h3><p class="text-gray-700">世界上近距离观察大熊猫的最佳地点。在熊猫最活跃的时候早点去（上午9点之前）。距离市中心约30分钟路程。</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">金里古街</h3><p class="text-gray-700">武侯祠旁的一条重建的古街，充满了传统建筑、小吃摊、纪念品商店和茶馆。</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">武侯祠</h3><p class="text-gray-700">纪念三国时期传奇战略家诸葛亮的纪念碑。一个下午和锦丽一起参观。</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">宽窄巷子</h3><p class="text-gray-700">三条平行的小巷——宽、窄、井——恢复为步行文化区，有商店、餐馆和街头表演者。</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">人民公园</h3><p class="text-gray-700">成都茶馆文化的核心。坐在竹桌旁，点茉莉花茶，看当地人打麻将和唱歌剧。</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12"><h3 class="text-xl font-bold text-gray-900 mb-2">青城山</h3><p class="text-gray-700">距离成都约1小时车程的道教圣山。郁郁葱葱的竹林，古老的寺庙，清新的山间空气。自然爱好者的完美一日游。</p></div>
+
+    <h2 id="getting-around" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🚇 Getting Around</h2>
+    <ul class="list-disc pl-6 space-y-3 text-lg text-gray-700 mb-12">
+      <li><strong>地铁：</strong> 6 lines covering all major attractions and the panda base. Clean, modern, and cheap. See the <a href="/zh/transport/metro-bus/" class="text-blue-600 hover:underline">中国主要城市地铁和公交指南</a> for general tips.</li>
+      <li><strong>迪迪：</strong> Very affordable — most trips across the city center are 20–40 RMB. Set it up ahead of time with <a href="/zh/transport/didi/" class="text-blue-600 hover:underline">外国人如何在中国使用滴滴</a>.</li>
+      <li><strong>骑自行车：</strong> Chengdu is flat and has dedicated bike lanes. Shared bikes are everywhere.</li>
+      <li><strong>高速铁路：</strong> Chengdu East Station connects to Xi'an (3.5 hours) and Chongqing (1.5 hours). Read the <a href="/zh/transport/high-speed-rail/" class="text-blue-600 hover:underline">如何预订和乘坐中国高铁</a> for booking instructions.</li>
+    </ul>
+
+    <h2 id="where-to-stay" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏨 Where to Stay</h2>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">锦江区——最适合首次到访的游客</h3><p class="text-gray-700">春熙路和太古里附近的中心区。步行即可到达购物、餐饮和地铁站。</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">庆阳区——文化爱好者的最佳选择</h3><p class="text-gray-700">在武侯祠、锦里和宽窄巷子附近。有很多茶馆的传统氛围。</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12"><h3 class="text-xl font-bold text-gray-900 mb-2">武侯区——最适合美食家</h3><p class="text-gray-700">美食场景的核心。步行即可到达成都最好的餐厅和夜生活。</p></div>
+
+    <h2 id="what-to-eat" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🍜 What to Eat</h2>
+    <ul class="list-disc pl-6 space-y-3 text-lg text-gray-700 mb-12">
+      <li><strong>麻婆豆腐</strong> — Silky tofu in a fiery sauce of doubanjiang, chili oil, and Sichuan peppercorns.</li>
+      <li><strong>宫保鸡丁</strong> — Diced chicken with peanuts and dried chili. Sweet, sour, and spicy.</li>
+      <li><strong>Dan Dan Noodles</strong> — Noodles with minced pork, preserved vegetables, chili oil, and Sichuan pepper.</li>
+      <li><strong>火锅--火锅</strong> — Chengdu's most social meal. A bubbling pot of spicy broth and you cook your own ingredients.</li>
+      <li><strong>回锅肉</strong> — Pork belly stir-fried with leeks and chili. An iconic Sichuan home dish.</li>
+      <li><strong>Fuqi Feipian</strong> — Sliced beef in chili-oil dressing with Sichuan pepper and sesame.</li>
+      <li><strong>冰粉</strong> — A refreshing dessert with brown sugar syrup. The perfect palate-cooler after spicy food.</li>
+    </ul>
+
+    <div class="not-prose mt-16">
+      <h2 class="text-2xl font-bold text-gray-900 mb-8">📚 相关指南</h2>
+      <div class="space-y-4">
+        <a href="/zh/cities/city-select/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🗺️ <strong>在中国有多少天？</strong> — Plan your full itinerary</a>
+        <a href="/zh/cities/beijing-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🏛️ <strong>北京旅游指南</strong> — Compare north vs. south China</a>
+        <a href="/zh/payment/payment-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">💳 <strong>如何在中国付款</strong> — Get your payment apps ready</a>
+        <a href="/zh/tips/cultural-taboos/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🙏 <strong>中国的文化禁忌</strong> — Useful before visiting Sichuan</a>
+      </div>
+    </div>
+  </article>
+</Layout>

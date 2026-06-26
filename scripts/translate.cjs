@@ -21,6 +21,25 @@ const MAX_RETRIES = 3;
 
 // ====== 缓存已翻译内容（避免重复翻译）=====
 const translationCache = new Map();
+// 文件缓存 — 如果脚本中断，下次可以恢复进度
+const CACHE_FILE = path.resolve(__dirname, '..', '.translate-cache.json');
+function loadCache() {
+  try {
+    if (fs.existsSync(CACHE_FILE)) {
+      const data = JSON.parse(fs.readFileSync(CACHE_FILE, 'utf-8'));
+      for (const [k, v] of Object.entries(data)) {
+        translationCache.set(k, v);
+      }
+      console.log(`  加载缓存: ${translationCache.size} 个已翻译文本\n`);
+    }
+  } catch (e) { /* ignore */ }
+}
+function saveCache() {
+  try {
+    const obj = Object.fromEntries(translationCache);
+    fs.writeFileSync(CACHE_FILE, JSON.stringify(obj, null, 2), 'utf-8');
+  } catch (e) { /* ignore */ }
+}
 
 // ====== 辅助函数 ======
 
@@ -81,12 +100,32 @@ function baiduTranslate(texts, from = 'en', to = 'zh') {
   });
 }
 
-/** 带重试的翻译 */
+/** 带重试的翻译 — 遇到敏感词错误时逐个翻译并跳过有问题文本 */
 async function translateWithRetry(texts) {
   for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
     try {
       return await baiduTranslate(texts);
     } catch (err) {
+      if (err.message.includes('20003')) {
+        // 敏感词错误 — 逐个翻译，跳过有问题的
+        console.log(`  ⚠️ 敏感词错误，逐个尝试翻译 ${texts.length} 条...`);
+        const results = [];
+        for (const t of texts) {
+          try {
+            const r = await baiduTranslate([t]);
+            results.push(r[0]);
+          } catch (e2) {
+            if (e2.message.includes('20003')) {
+              console.log(`  ⚠️ 跳过敏感文本: "${t.substring(0, 50)}..."`);
+              results.push(t); // 保留原文
+            } else {
+              throw e2;
+            }
+          }
+          await new Promise((r) => setTimeout(r, 200));
+        }
+        return results;
+      }
       if (attempt < MAX_RETRIES) {
         console.log(`  Retry ${attempt}/${MAX_RETRIES}: ${err.message}`);
         await new Promise((r) => setTimeout(r, 2000 * attempt));
@@ -247,6 +286,9 @@ function getAstroFiles(dir, baseDir = dir) {
 async function main() {
   console.log('=== China Starter Guide - 百度翻译批量翻译 ===\n');
 
+  // 加载缓存
+  loadCache();
+
   // 检查 API 连接
   try {
     const test = await baiduTranslate(['Hello']);
@@ -278,20 +320,34 @@ async function main() {
   const uniqueStrings = [...new Map(allStrings.map((s) => [s.original, s.original])).keys()];
   console.log(`  去重后 ${uniqueStrings.length} 个唯一文本片段\n`);
 
+  // 筛选出未缓存的需要翻译的文本
+  const toTranslate = uniqueStrings.filter(s => !translationCache.has(s));
+  console.log(`  其中 ${toTranslate.length} 个需要新翻译 (${uniqueStrings.length - toTranslate.length} 个已缓存)\n`);
+
   // 分批翻译
   const translationsMap = new Map();
-  for (let i = 0; i < uniqueStrings.length; i += BATCH_SIZE) {
-    const batch = uniqueStrings.slice(i, i + BATCH_SIZE);
-    console.log(`  翻译批次 ${Math.floor(i / BATCH_SIZE) + 1}/${Math.ceil(uniqueStrings.length / BATCH_SIZE)} (${batch.length} 条)...`);
+  // 先把缓存中的加入 translationsMap
+  for (const [k, v] of translationCache) {
+    translationsMap.set(k, v);
+  }
+
+  for (let i = 0; i < toTranslate.length; i += BATCH_SIZE) {
+    const batch = toTranslate.slice(i, i + BATCH_SIZE);
+    console.log(`  翻译批次 ${Math.floor(i / BATCH_SIZE) + 1}/${Math.ceil(toTranslate.length / BATCH_SIZE)} (${batch.length} 条)...`);
     
     const results = await translateWithRetry(batch);
     for (let j = 0; j < batch.length; j++) {
-      translationsMap.set(batch[j], results[j] || batch[j]);
+      const translated = results[j] || batch[j];
+      translationsMap.set(batch[j], translated);
+      translationCache.set(batch[j], translated);
     }
     console.log(`    → 完成: "${batch[0].substring(0, 30)}..." → "${(results[0] || '').substring(0, 30)}..."`);
     
+    // 每批保存缓存
+    saveCache();
+    
     // 避免触发 API 限流
-    if (i + BATCH_SIZE < uniqueStrings.length) {
+    if (i + BATCH_SIZE < toTranslate.length) {
       await new Promise((r) => setTimeout(r, 500));
     }
   }

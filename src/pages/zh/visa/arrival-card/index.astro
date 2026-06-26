@@ -1,0 +1,504 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = '如何在线提交您的中国入境卡——分步指南';
+const description = '用截图完成分步教程——在飞行前在线填写NIA抵达卡。节省时间，跳过纸质表格。';
+---
+
+<Layout title={title} description={description} lang="zh">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+
+    <!-- Breadcrumb -->
+    <nav class="mb-8 not-prose">
+      <a href="/zh/visa/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Back to Visa & Entry
+      </a>
+    </nav>
+
+    <!-- Header -->
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🛂 入境和签证</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        How to Submit Your Arrival Card to China Online
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">带有截图的完整分步指南。起飞前在线填写表格——跳过纸质到达卡。</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 最后更新日期：2026年6月</span>
+        <span>⏱️ 阅读8分钟</span>
+      </div>
+    </header>
+
+    <!-- Official Portal -->
+    <div class="bg-blue-50 border-l-4 border-blue-500 rounded-r-2xl p-5 mb-8 not-prose">
+      <strong>官方网站：</strong> <a href="https://s.nia.gov.cn/ArrivalCardFillingPC/entry-registation-home" target="_blank" class="text-blue-700 underline">s.nia.gov.cn/ArrivalCardFillingPC/</a>
+    </div>
+
+    <!-- Video Tutorial -->
+    <div class="bg-gradient-to-r from-gray-50 to-blue-50 border border-gray-200 rounded-2xl p-8 mb-10 text-center not-prose">
+      <h3 class="text-xl font-bold text-gray-900 mb-3"> Official NIA Video Tutorial</h3>
+      <p class="text-gray-600 mb-4">观看国家移民局的官方视频演练：</p>
+      <a href="https://en.nia.gov.cn/n147418/n147463/c195170/content.html" target="_blank" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition no-underline">▶ 观看教程视频</a>
+    </div>
+
+    <style>
+      .step-card {
+        background: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 12px;
+        padding: 24px;
+        margin: 28px 0;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+      }
+      .step-card .step-number {
+        display: inline-block;
+        background: #1a73e8;
+        color: #fff;
+        font-weight: 700;
+        font-size: 0.8rem;
+        padding: 2px 14px;
+        border-radius: 20px;
+        margin-bottom: 14px;
+      }
+      .screenshot-wrapper {
+        background: #eef2f7;
+        border: 1px solid #d0d7de;
+        border-radius: 10px;
+        padding: 14px;
+        margin: 16px 0;
+      }
+      .screenshot-wrapper img {
+        width: 100%;
+        border: 1px solid #c0c8d0;
+        border-radius: 6px;
+        margin: 8px 0;
+      }
+      .screenshot-wrapper .caption {
+        font-size: 0.85rem;
+        color: #555;
+        font-style: italic;
+        margin-top: 4px;
+        margin-bottom: 0;
+      }
+      .screenshot-label {
+        display: inline-block;
+        background: #d0d7de;
+        color: #3a3f47;
+        font-size: 0.7rem;
+        font-weight: 700;
+        padding: 2px 10px;
+        border-radius: 5px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+      }
+      .field-group {
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 14px;
+        margin: 12px 0;
+      }
+      .field-group h4 {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+        color: #5f6368;
+      }
+      .field-group .field-item { margin: 6px 0; font-size: 0.9rem; }
+      .col-layout {
+        display: flex;
+        gap: 20px;
+        margin: 12px 0;
+        flex-wrap: wrap;
+      }
+      .col-left { flex: 1; min-width: 260px; }
+      .col-right { flex: 1; min-width: 240px; }
+      .tag-auto { background: #e8f5e9; color: #2e7d32; padding: 1px 8px; border-radius: 8px; font-size: 0.75rem; font-weight: 600; }
+      .tag-fill { background: #fce4ec; color: #c62828; padding: 1px 8px; border-radius: 8px; font-size: 0.75rem; font-weight: 600; }
+      .tag-skip { background: #eeeeee; color: #757575; padding: 1px 8px; border-radius: 8px; font-size: 0.75rem; font-weight: 600; }
+      .tip-box {
+        background: #fff8e1;
+        border-left: 4px solid #ffa000;
+        padding: 12px 16px; margin: 12px 0;
+        border-radius: 0 8px 8px 0; font-size: 0.9rem;
+      }
+      .warn-box {
+        background: #fbe9e7;
+        border-left: 4px solid #d84315;
+        padding: 12px 16px; margin: 12px 0;
+        border-radius: 0 8px 8px 0; font-size: 0.9rem;
+      }
+      .info-box {
+        background: #e8f0fe;
+        border-left: 4px solid #1a73e8;
+        padding: 12px 16px; margin: 12px 0;
+        border-radius: 0 8px 8px 0; font-size: 0.9rem;
+      }
+      .img-row {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin: 12px 0;
+      }
+      .img-row figure {
+        flex: 1;
+        min-width: 240px;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        overflow: hidden;
+        margin: 0;
+      }
+      .img-row figure img { width: 100%; margin: 0; border: none; border-radius: 0; }
+      .img-row figcaption {
+        font-size: 0.8rem;
+        color: #5f6368;
+        text-align: center;
+        padding: 6px;
+        font-style: italic;
+      }
+    </style>
+
+    <!-- ============================================================ -->
+    <!-- STEP 0: HOMEPAGE -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">步骤0：访问门户</h2>
+    <div class="step-card">
+      <div class="step-number">步骤0</div>
+      <p>Open <a href="https://s.nia.gov.cn/ArrivalCardFillingPC/entry-registation-home">s.nia.gov.cn</a> and switch to English using the <strong>Language</strong> dropdown in the top-right corner.</p>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Screenshot</div>
+        <img src="/images/arrival-card/step0-homepage.png" alt="Homepage showing Entry Declaration in English">
+        <p class="caption">After switching to English, click <strong>入境申报</strong> to begin</p>
+      </div>
+      <p>有两个选项可供选择：</p>
+      <ul>
+        <li><strong>Entry Declaration</strong> — for most foreign travelers entering China</li>
+        <li><strong>边境地区居民入境申报</strong> — only for residents from 7 neighboring countries (DPRK, Mongolia, Pakistan, Nepal, Myanmar, Laos, Vietnam)</li>
+      </ul>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- STEP 1: NOTICE / INSTRUCTIONS -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">第一步：阅读说明书</h2>
+    <div class="step-card">
+      <div class="step-number">步骤1</div>
+      <p>After clicking "Entry Declaration", you'll see the <strong>Instructions</strong> page listing who is exempt.</p>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Screenshot</div>
+        <img src="/images/arrival-card/step1-notice.png" alt="Instructions page with notice and I AGREE button">
+        <p class="caption">Read the instructions, then click <strong>我同意</strong> to proceed</p>
+      </div>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-4 mb-2">豁免对象（无需填写此表）：</h3>
+      <ol>
+        <li>中国有效外国永久居民身份证持有人</li>
+        <li>香港/澳门居民（非中国人）有效内地旅行证持有人</li>
+        <li>在港口范围内停留的24小时直达过境旅客</li>
+        <li>团体签证或团体旅游成员</li>
+        <li>机组人员（航空公司、轮船、司机）</li>
+        <li>乘坐同一艘船返回的游轮乘客</li>
+        <li>符合集中文件检查条件的人员</li>
+        <li>电子渠道进入者</li>
+      </ol>
+      <div class="warn-box">
+        <strong>重要提示：</strong> Transit passengers who leave the port area (including 24h / 240h transit passengers) <strong>必须</strong> fill this form.
+      </div>
+      <p>Click <strong>I AGREE</strong> to continue.</p>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- STEP 2: DOCUMENT UPLOAD -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">步骤2：上传您的护照信息页面</h2>
+    <div class="step-card">
+      <div class="step-number">步骤2</div>
+      <p>选择您的文件类型，并上传护照数据页面的清晰照片。系统将使用OCR自动读取您的信息。</p>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Screenshot</div>
+        <img src="/images/arrival-card/step2-upload.png" alt="Document upload page - Uploading ID Document Page">
+        <p class="caption">选择文件类型，上传或拍摄护照数据页</p>
+      </div>
+      <div class="tip-box">
+        <strong>提示：</strong> Make sure the photo is well-lit and all text is clearly readable. The quality of the photo determines how accurately the system can auto-fill your details in the next steps.
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- STEP 3: BASIC INFORMATION -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">第三步：基本信息填写</h2>
+    <div class="step-card">
+      <div class="step-number">步骤3</div>
+      <p>这是主要信息页面。系统将自动从您上传的护照照片中提取您的大部分详细信息。</p>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-4 mb-2">空表单--显示所有字段</h3>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Screenshot</div>
+        <img src="/images/arrival-card/step3-basic-empty.png" alt="Basic Information form - empty">
+        <p class="caption">这是您第一次进入此步骤时表单的样子</p>
+      </div>
+
+      <div class="col-layout">
+        <div class="col-left">
+          <div class="field-group" style="background: #fffde7; border-color: #ffd54f;">
+            <h4>🔶 左侧部分——OCR自动填写（检查准确性）</h4>
+            <div class="field-item"><span class="tag-auto">Auto</span> Surname / Family Name (英文姓)</div>
+            <div class="field-item"><span class="tag-auto">Auto</span> Given Name (英文名)</div>
+            <div class="field-item"><span class="tag-auto">Auto</span> Gender (性别)</div>
+            <div class="field-item"><span class="tag-auto">Auto</span> Date of Birth (出生日期)</div>
+            <div class="field-item"><span class="tag-auto">Auto</span> Document Type (证件类型)</div>
+            <div class="field-item"><span class="tag-auto">Auto</span> Document Number (证件号码)</div>
+            <div class="field-item" style="margin-top:10px; padding-top:10px; border-top:1px dashed #e0e0e0;">
+              <span class="tag-fill">Manual</span> <strong>国家/地区</strong> — this is the only field you need to select yourself on the left side
+            </div>
+          </div>
+        </div>
+        <div class="col-right">
+          <div class="field-group">
+            <h4> Right Section — You need to fill these</h4>
+            <div class="field-item"><span class="tag-fill">Fill</span> Transport Mode (入境交通方式)</div>
+            <div class="field-item"><span class="tag-fill">Fill</span> Flight / Train / Ship No. (入境航班/车次/船次)</div>
+            <div class="field-item"><span class="tag-fill">Fill</span> Entry City (入境城市)</div>
+            <div class="field-item"><span class="tag-fill">Fill</span> Entry Port (入境口岸) — auto-populates after city &amp; transport are selected</div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">填写表单示例</h3>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Screenshot</div>
+        <img src="/images/arrival-card/step3-basic-filled.png" alt="Basic Information form - filled example">
+        <p class="caption">The left section (yellow highlight area) shows data extracted from your passport — double-check everything. Only <strong>国家/地区</strong> needs to be manually selected. Fill the right section with your entry details.</p>
+      </div>
+
+      <div class="info-box">
+        <strong>提醒：</strong> Passport scan quality matters. If your photo is blurry or poorly lit, the auto-fill may be inaccurate. Always double-check all fields before clicking Next.
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- STEP 4: PERSONAL INFORMATION -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">第四步：个人信息填写</h2>
+    <div class="step-card">
+      <div class="step-number">步骤4</div>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Screenshot</div>
+        <img src="/images/arrival-card/step4-personal-empty.png" alt="Personal Information form">
+        <p class="caption">填写您的个人信息。下面有解释的字段。</p>
+      </div>
+
+      <div class="field-group">
+        <h4>现场指南：</h4>
+        <div class="field-item"><span class="tag-fill">Fill</span> <strong>中文</strong> — if you have a Chinese name, enter it here. If not, <strong>留空</strong>.</div>
+        <div class="field-item"><span class="tag-fill">Fill</span> <strong>国籍/居住国</strong> — enter the <strong>您目前居住的国家或城市</strong> (not necessarily your passport country if you live abroad).</div>
+        <div class="field-item"><span class="tag-fill">Fill</span> <strong>Occupation</strong> — your job title or profession.</div>
+        <div class="field-item"><span class="tag-fill">Fill</span> <strong>联系人电话</strong> — include country code if using a non-Chinese number.</div>
+        <div class="field-item"><span class="tag-fill">Fill</span> <strong>电子邮件地址</strong> — for receiving confirmation/QR code.</div>
+        <div class="field-item"><span class="tag-fill">Fill</span> <strong>紧急联系人</strong> — name and phone number of someone to contact in case of emergency.</div>
+      </div>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">签证/入境政策科</h3>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Screenshot</div>
+        <img src="/images/arrival-card/step4-personal-visa.png" alt="Visa and entry policy selection">
+        <p class="caption">如果免签证入境，请选择“否”，然后从下拉列表中选择您的入境政策</p>
+      </div>
+
+      <div class="field-group">
+        <h4>如何填写签证问题：</h4>
+        <div class="field-item"><span class="tag-fill">Fill</span> <strong>你持有有效签证吗？</strong>
+          <ul>
+            <li><strong>Yes</strong> — if you have obtained a Chinese visa (e.g., L tourist visa)</li>
+            <li><strong>No</strong> — if you are entering via a <strong>免签证政策</strong> (e.g., 240-hour transit, 30-day visa-free, Hainan visa-free, etc.)</li>
+          </ul>
+        </div>
+        <div class="field-item"><span class="tag-fill">Fill</span> <strong>如果“否”→ 入境政策选择</strong> — a dropdown menu will appear for you to select the visa-free policy you are using (as shown in the screenshot above).</div>
+      </div>
+
+      <div class="tip-box">
+        <strong>Tip:</strong> If you have a valid L visa, select "Yes". If you're using a visa-free policy (e.g., from the 50-country unilateral visa-free list, or 240-hour transit), select "No" and choose your applicable policy from the dropdown.
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- STEP 5: TRAVEL INFORMATION -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">第五步：旅行信息填写</h2>
+    <div class="step-card">
+      <div class="step-number">步骤5</div>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Screenshot</div>
+        <img src="/images/arrival-card/step5-travel-empty.png" alt="Travel Information form">
+        <p class="caption">填写您的旅行行程详细信息</p>
+      </div>
+
+      <div class="col-layout">
+        <div class="col-left">
+          <div class="field-group">
+            <h4> Left Section — Trip Details</h4>
+            <div class="field-item"><span class="tag-fill">Fill</span> <strong>入境目的</strong> — Tourism / Business / Transit / Family Visit / Other</div>
+            <div class="field-item"><span class="tag-fill">Fill</span> <strong>入境日期</strong> — the date you are scheduled to arrive in China</div>
+            <div class="field-item"><span class="tag-fill">Fill</span> <strong>中国目的地城市</strong> — the cities you plan to visit</div>
+            <div class="field-item"><span class="tag-fill">Fill</span> <strong>中国的交通城市</strong> — any transit/connecting cities (if applicable)</div>
+            <div class="field-item"><span class="tag-fill">Fill</span> <strong>中国地址</strong> — fill in your <strong>详细地址</strong> (hotel name + street + district + city)</div>
+          </div>
+        </div>
+        <div class="col-right">
+          <div class="field-group">
+            <h4> Right Section — Inviter &amp; Return Info</h4>
+            <div class="field-item"><span class="tag-fill">Fill</span> <strong>你被邀请去中国了吗？</strong>
+              <ul>
+                <li><strong>Yes</strong> — fill in inviter's name and contact information</li>
+                <li><strong>No</strong> — skip this section</li>
+              </ul>
+            </div>
+            <div class="field-item"><span class="tag-fill">Fill</span> <strong>出发/返回信息</strong></div>
+            <div style="margin-left:20px; border-left:2px solid #e0e0e0; padding-left:14px;">
+              <div class="field-item">Toggle <strong>“已确认的出发行程”</strong> to <strong>Yes</strong> if you have confirmed return plans, then fill in:</div>
+              <ul>
+                <li><strong>出发日期</strong> — your planned exit date</li>
+                <li><strong>出发交通方式</strong> — Air / Land / Sea</li>
+                <li><strong>出发航班/火车/船只编号</strong> — the specific number</li>
+                <li><strong>出发城市</strong> — the city you will depart from</li>
+                <li><strong>出发港</strong> — auto-populates after city &amp; transport are selected</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="warn-box">
+        <strong>⚠️ 240小时运输注意事项：</strong> If you are entering China under the <strong>240小时免签证过境政策</strong>, you are generally <strong>需持有已确认的往返机票</strong> to a destination outside mainland China. Make sure you fill in the departure/return information accurately.
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- COMPANION PROMPT -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">同伴提示</h2>
+    <div class="step-card">
+      <div class="step-number">步骤5之后</div>
+      <p>填写步骤5并单击“下一步”后，您将看到此弹出窗口，询问同伴：</p>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Screenshot</div>
+        <img src="/images/arrival-card/step5-companion-prompt.png" alt="Do you have any companions popup">
+        <p class="caption">“你有同伴吗？”--选择“是”添加旅行同伴</p>
+      </div>
+
+      <div class="field-group">
+        <h4>选项：</h4>
+        <div class="field-item"><strong>Yes</strong> — You will be taken through the same steps (Basic Info, Personal Info, Travel Info) to fill in for each companion. <strong>注：</strong> You can also have each companion fill their own form individually — it's not required that one person fills for everyone.</div>
+        <div class="field-item"><strong>No</strong> — Proceed directly to the review page.</div>
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- STEP 6: REVIEW & SUBMIT -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">最后一步：审查、签署和；提交</h2>
+    <div class="step-card">
+      <div class="step-number">Final</div>
+      <p>完成所有步骤后，您将到达查看页面。仔细阅读你所有的信息。</p>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Screenshot</div>
+        <img src="/images/arrival-card/step6-submit.png" alt="Review, sign and submit page">
+        <p class="caption">签字确认，然后提交。保存提交后显示的二维码。</p>
+      </div>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-4 mb-2">该怎么办：</h3>
+      <ol>
+        <li><strong>Review</strong> — Double-check all information. Use "Previous" to go back and make corrections if needed.</li>
+        <li><strong>Sign</strong> — Sign your name in the signature box to confirm the declaration.</li>
+        <li><strong>Submit</strong> — Click the submit button.</li>
+        <li><strong>保存您的二维码</strong> — After submission, a <strong>确认二维码</strong> will be displayed. <strong>截图或保存</strong> — you must present this at immigration when you arrive in China.</li>
+      </ol>
+
+      <div class="info-box">
+        <strong>奖金：</strong> Within <strong>一年</strong> of your first submission, if you visit China again, the system will allow you to <strong>重复使用您之前填写的信息</strong> — you only need to update your travel itinerary. This makes repeat trips much faster!
+      </div>
+
+      <div class="warn-box">
+        <strong>⚠️ 重要提示：</strong> The QR code is linked to your scheduled entry. If your travel plans change (different flight, different date), you may need to re-submit a new form. The system typically accepts submissions up to 24 hours before your scheduled arrival.
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- BEFORE YOU START -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">开始之前</h2>
+    <div class="bg-amber-50 border border-amber-200 rounded-2xl p-6 not-prose">
+      <p class="font-bold text-amber-900 mb-3">填写表格前请准备好这些：</p>
+      <ul>
+        <li><strong>您的护照</strong> (physical or a clear photo of the data page)</li>
+        <li><strong>航班/火车/船号</strong> for your entry to China</li>
+        <li><strong>酒店名称和详细地址</strong> in China (if known)</li>
+        <li><strong>您的手机号码</strong> (with country code if not a Chinese number)</li>
+        <li><strong>您的电子邮件地址</strong></li>
+        <li>A device with a <strong>相机</strong> to photograph your passport, or a <strong>护照扫描件</strong> ready on your device</li>
+      </ul>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- FAQ -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">常见问题</h2>
+    <div class="step-card">
+      <h3 class="text-lg font-bold text-gray-800 mt-2 mb-2">Q： 我可以在手机上填写这个吗？</h3>
+      <p class="text-gray-700">是的，该门户是完全移动响应的，可在桌面和移动浏览器上运行。</p>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">Q： 我需要打印二维码吗？</h3>
+      <p class="text-gray-700">在手机上屏蔽或打印出来——都可以。关键是要准备好在移民局展示。</p>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">Q： 如果我在提交后犯了错误怎么办？</h3>
+      <p class="text-gray-700">重新访问门户并提交新表单。旧提交的表单将被替换。</p>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">Q： 这份表格是强制性的吗？我还需要纸质卡片吗？</h3>
+      <p class="text-gray-700">As of 2025-2026, the online form is the recommended option. Some ports may still distribute paper cards as a backup. It's smart to fill the online form <strong>和</strong> carry a pen just in case.</p>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">Q： 我过境时间不到24小时，还没有离开机场——我需要这个吗？</h3>
+      <p class="text-gray-700">不可以。在港口禁区内停留的24小时直达旅客可以免税。</p>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">Q： 我是免240小时过境签证入境的。我需要这张表格吗？</h3>
+      <p class="text-gray-700">是的，如果你要离开港口地区。在中国停留240小时的过境旅客必须填写此表。</p>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">Q： 我可以在未来的旅行中重复使用我的信息吗？</h3>
+      <p class="text-gray-700">对！在一年内，该系统允许您重用以前填充的数据。您只需更新新旅行的行程。</p>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- Related Guides -->
+    <!-- ============================================================ -->
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose mt-12">
+      <h3 class="text-2xl font-bold text-gray-900 mb-6">📚 相关指南</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/zh/visa/customs-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-1">中国海关条例</p>
+          <p class="text-sm text-gray-600">你能带什么和不能带什么进入中国</p>
+        </a>
+        <a href="/zh/visa/first-time-china/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-1">第一次来中国：一步一步指南</p>
+          <p class="text-sm text-gray-600">首次访客的完整准备时间表</p>
+        </a>
+        <a href="/zh/visa/visa-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-1">中国签证类型完整指南</p>
+          <p class="text-sm text-gray-600">解释所有签证选项——免签证、过境和L签证</p>
+        </a>
+        <a href="/zh/visa/transit-240/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-1">240小时免签证过境说明</p>
+          <p class="text-sm text-gray-600">10天过境规则、港口和旅行区</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- Sources -->
+    <div class="mt-8 pt-6 border-t border-gray-200">
+      <h3 class="text-lg font-bold text-gray-900 mb-3">Sources</h3>
+      <ul class="text-sm text-gray-600">
+        <li><a href="https://s.nia.gov.cn/ArrivalCardFillingPC/entry-registation-home" target="_blank" class="text-blue-600 underline">NIA官方入境卡门户</a></li>
+        <li><a href="https://en.nia.gov.cn/n147418/n147463/c195170/content.html" target="_blank" class="text-blue-600 underline">NIA教程视频：如何在线提交您的入境卡到中国</a></li>
+      </ul>
+    </div>
+
+  </article>
+</Layout>

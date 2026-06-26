@@ -1,0 +1,214 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = '唐';
+const description = '字体半粗体文本粒度-900mb-2文本lg';
+---
+
+<Layout title={title} description={description} lang="zh">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/zh/payment/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Back to Payment
+      </a>
+    </nav>
+    <!-- Header -->
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">💳 支付</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        How to Pay in China<br class="hidden md:block" />: Complete Guide for Foreign Visitors
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">支付宝、微信支付、现金或信用卡——2026年中国外国游客支付方式的完整概述。</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 最后更新日期：2026年6月</span>
+        <span>忘记谷歌和脸书吧——这是你真正需要的。</span>
+      </div>
+    </header>
+
+    <!-- Quick Answer Box -->
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-blue-900 mb-4">⏱️ 阅读4分钟</h2>
+      <p class="text-lg text-blue-800 leading-relaxed">
+        <strong>：外国游客完整指南</strong> Link your Visa or Mastercard to it — that covers 95% of your payments in China. Keep ¥500–1000 in cash as backup. WeChat Pay is a good secondary option. Physical credit cards work in limited places only.
+      </p>
+    </div>
+
+    <!-- Table of Contents -->
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 在本指南中</h3>
+      <ul class="space-y-3">
+        <li><a href="#short-answer" class="text-blue-600 hover:underline">💡 简短的回答</a></li>
+        <li><a href="#what-most-do" class="text-blue-600 hover:underline">👍 大多数旅行者都在做什么</a></li>
+        <li><a href="#one-thing" class="text-blue-600 hover:underline">🔑 潜水前要知道的一件事</a></li>
+        <li><a href="#which-method" class="text-blue-600 hover:underline">🤔 您应该使用哪种付款方式？</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="prose prose-lg max-w-none">
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        The first thing most travelers ask me about China is, <strong>“我到底是怎么为那里的东西付钱的？”</strong>
+      </p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        It's a fair question. Walk into any shop in China and nobody's pulling out a wallet. They're all scanning QR codes. It can feel intimidating if you're arriving from a country where tap-and-go means Apple Pay and you're still using cards for half your purchases.
+      </p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        But here's the good news: <strong>在中国付款对外国人来说真的很简单。</strong> The system has opened up massively in the last couple of years.
+      </p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="short-answer" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">💡</span> The Short Answer
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        You have four options:
+      </p>
+
+      <ol class="list-decimal pl-6 space-y-4 text-gray-700 mb-6">
+        <li><strong>支付宝</strong> — The most popular mobile payment app in China. Set it up with a foreign passport and international credit card in about 15 minutes. This is what I recommend for most travelers.</li>
+        <li><strong>微信支付</strong> — Lives inside WeChat (China's everything app). Very similar to Alipay, but you'll need WeChat installed anyway (trust me, you'll want it).</li>
+        <li><strong>现金</strong> — Yes, cash still works. But shops will struggle to give you change, and some smaller vendors might not have any on hand.</li>
+        <li><strong>实体信用卡</strong> — Works at international hotels, some high-end malls, and airports. Don't rely on this as your main method.</li>
+      </ol>
+
+      <div class="overflow-x-auto mb-12 not-prose">
+        <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+          <thead>
+            <tr class="bg-gray-900 text-white">
+              <th class="px-6 py-4 font-bold"></th>
+              <th class="px-6 py-4 font-bold text-center bg-blue-600">Alipay</th>
+              <th class="px-6 py-4 font-bold text-center bg-green-600">微信支付</th>
+              <th class="px-6 py-4 font-bold text-center bg-orange-600">Cash</th>
+              <th class="px-6 py-4 font-bold text-center bg-purple-600">信用卡</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100">
+              <td class="px-6 py-4 font-semibold">各地都接受？</td>
+              <td class="px-6 py-4 text-center">差不多</td>
+              <td class="px-6 py-4 text-center">Pretty much</td>
+              <td class="px-6 py-4 text-center">大多数地方</td>
+              <td class="px-6 py-4 text-center">Limited</td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-6 py-4 font-semibold">需要中国银行账户吗？</td>
+              <td class="px-6 py-4 text-center">No</td>
+              <td class="px-6 py-4 text-center">No</td>
+              <td class="px-6 py-4 text-center">No</td>
+              <td class="px-6 py-4 text-center">No</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-6 py-4 font-semibold">需要中国电话号码吗？</td>
+              <td class="px-6 py-4 text-center">No</td>
+              <td class="px-6 py-4 text-center">No</td>
+              <td class="px-6 py-4 text-center">No</td>
+              <td class="px-6 py-4 text-center">No</td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-6 py-4 font-semibold">Fees</td>
+              <td class="px-6 py-4 text-center">200元以下免费<br/>3%以上</td>
+              <td class="px-6 py-4 text-center">Free under 200 RMB<br/>3% above</td>
+              <td class="px-6 py-4 text-center">货币兑换+银行手续费</td>
+              <td class="px-6 py-4 text-center">DCC+银行手续费</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="what-most-do" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">👍</span> What Most Travelers Do
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        Seriously, just set up Alipay before you fly. Link your Visa or Mastercard to it. That covers 95% of your payments in China — from street food stalls to train tickets.
+      </p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        Keep some cash as backup (¥500–1000 should be plenty), and you're set.
+      </p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        WeChat Pay is worth having too if you plan to use WeChat for messaging (which you probably will), but if you only set up one, make it Alipay.
+      </p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="one-thing" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🔑</span> One Thing to Know Before We Dive In
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        The Chinese payment system runs on QR codes. Every merchant — from the guy selling roasted sweet potatoes on the corner to the ticketing counter at Shanghai Disneyland — has a QR code on their counter. You scan it with the app, enter the amount (or the merchant enters it), and tap pay. That's it.
+      </p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        Your foreign credit card sits behind the scenes. You link it once, then you use the app for everything. You almost never pull out the physical card. For a realistic look at where your card will and won't work, see our <a href="/zh/payment/foreign-cards/" class="text-brand-600 hover:underline">在中国使用外国信用卡指南</a>.
+      </p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="which-method" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🤔</span> Which Payment Method Should You Use?
+      </h2>
+
+      <div class="space-y-4 mb-8 not-prose">
+        <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-blue-900 mb-2">快速回答：使用支付宝</h3>
+          <p class="text-gray-700 mb-3">用您的护照和国际卡在15分钟内完成设置。在95%的地方工作。不需要中国银行账户。</p>
+          <a href="/zh/payment/setup-alipay/" class="inline-flex items-center gap-1 text-sm text-brand-600 font-medium hover:underline">外国人如何设置支付宝→</a>
+        </div>
+
+        <div class="bg-green-50 border border-green-200 rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-green-900 mb-2">推荐备份：微信支付</h3>
+          <p class="text-gray-700 mb-3">有备份真好。微信也很有用，因为微信是中国人交流的方式——同时使用这两个应用程序意味着你被覆盖了。</p>
+          <a href="/zh/payment/setup-wechat/" class="inline-flex items-center gap-1 text-sm text-brand-600 font-medium hover:underline">外国人如何设置微信支付→</a>
+        </div>
+
+        <div class="bg-orange-50 border border-orange-200 rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-orange-900 mb-2">紧急情况：现金</h3>
+          <p class="text-gray-700 mb-3">为小供应商、紧急情况或您的应用程序决定采取行动时，始终携带500-1000日元的小额账单。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Guides -->
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose mt-12">
+      <h3 class="text-2xl font-bold text-gray-900 mb-6">📚 相关指南</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/zh/payment/setup-alipay/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">外国人如何设置支付宝</p>
+          <p class="text-sm text-gray-600">完整的分步设置指南</p>
+        </a>
+        <a href="/zh/payment/setup-wechat/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">外国人如何设置微信支付</p>
+          <p class="text-sm text-gray-600">微信支付演练</p>
+        </a>
+        <a href="/zh/payment/foreign-cards/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">你可以在中国使用外国信用卡吗？</p>
+          <p class="text-sm text-gray-600">他们在哪里工作，在哪里不工作</p>
+        </a>
+        <a href="/zh/payment/payment-fails/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">付款失败时该怎么办</p>
+          <p class="text-sm text-gray-600">故障排除指南</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- Sources -->
+    <div class="mt-8 pt-6 border-t border-gray-200 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-3">Sources</h3>
+      <ul class="space-y-2">
+        <li><a href="https://www.alipayplus.com/consumer/" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">支付宝-消费者中心</a></li>
+        <li><a href="https://cs.help.wechat.com/hc/en-us" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">微信-帮助中心</a></li>
+      </ul>
+    </div>
+  </article>
+</Layout>

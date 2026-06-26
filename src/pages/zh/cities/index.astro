@@ -1,0 +1,132 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = '中国城市指南——旅游目的地';
+const description = '为您的中国之旅找到合适的城市。';
+---
+
+<Layout title={title} description={description} lang="zh">
+  <section class="max-w-4xl mx-auto px-6 py-12">
+    
+    <!-- Header -->
+    <header class="mb-10 text-center">
+      <p class="text-sm text-gray-500 mb-2">🏙️ 城市</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-3 leading-tight">中国城市指南</h1>
+      <p class="text-base text-gray-500 max-w-2xl mx-auto">Find the right city for your China trip.</p>
+    </header>
+
+    <!-- Quick Stats -->
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-3 mb-12 not-prose">
+      <div class="bg-purple-50 border border-purple-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-purple-800">6</p>
+        <p class="text-xs font-semibold text-purple-800 uppercase tracking-wide mt-1">城市指南</p>
+      </div>
+      <div class="bg-red-50 border border-red-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-red-800">1</p>
+        <p class="text-xs font-semibold text-red-800 uppercase tracking-wide mt-1">行程规划师</p>
+      </div>
+      <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-blue-800">3</p>
+        <p class="text-xs font-semibold text-blue-800 uppercase tracking-wide mt-1">覆盖区域</p>
+      </div>
+    </div>
+
+    <!-- Category Sections -->
+    <div class="space-y-8 mb-16 not-prose">
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-purple-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-purple-800">规划您的旅行</h2>
+          <span class="text-xs font-medium text-purple-800 opacity-60">1条</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/zh/cities/city-select/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-purple-800">🧭 规划</span>
+            <p class="text-base font-bold text-gray-900 mt-1">你在中国需要多少天？</p>
+            <p class="text-sm text-gray-600 mt-0.5">规划完美的行程——从3天的旋风到3周的冒险。</p>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-red-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-red-800">历史与文化</h2>
+          <span class="text-xs font-medium text-red-800 opacity-60">1 article</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/zh/cities/beijing-guide/" class="block bg-red-50 border border-red-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-red-800">🏛️ 北京</span>
+            <p class="text-base font-bold text-gray-900 mt-1">北京旅游指南：看什么、吃什么、知道什么</p>
+            <p class="text-sm text-gray-600 mt-0.5">紫禁城、长城、胡同、北京烤鸭和基本提示。</p>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-blue-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-blue-800">现代与城市</h2>
+          <span class="text-xs font-medium text-blue-800 opacity-60">2篇文章</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/zh/cities/shanghai-guide/" class="block bg-blue-50 border border-blue-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-blue-800">🌆 上海</span>
+            <p class="text-base font-bold text-gray-900 mt-1">上海旅游指南：最对外友好的城市</p>
+            <p class="text-sm text-gray-600 mt-0.5">外滩，上海中心大厦，法租界，世界级美食。</p>
+          </a>
+          <a href="/zh/cities/shenzhen-guide/" class="block bg-blue-50 border border-blue-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-blue-800">🏙️ 深圳</span>
+            <p class="text-base font-bold text-gray-900 mt-1">深圳旅游指南：香港旁边的科技中心</p>
+            <p class="text-sm text-gray-600 mt-0.5">中国的硅谷，沿海的自行车，和15分钟的火车到香港。</p>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-emerald-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-emerald-800">热带和岛屿</h2>
+          <span class="text-xs font-medium text-emerald-800 opacity-60">1 article</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/zh/cities/hainan-visa-free/" class="block bg-emerald-50 border border-emerald-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-emerald-800">🏝️ 海南</span>
+            <p class="text-base font-bold text-gray-900 mt-1">海南旅游指南——30天免签证</p>
+            <p class="text-sm text-gray-600 mt-0.5">59个国家的海滩、度假村和免签证入境。</p>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-orange-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-orange-800">食物和生活方式</h2>
+          <span class="text-xs font-medium text-orange-800 opacity-60">2 articles</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/zh/cities/guangzhou-guide/" class="block bg-orange-50 border border-orange-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-orange-800">🥟 广州</span>
+            <p class="text-base font-bold text-gray-900 mt-1">广州旅游指南：中国美食之都</p>
+            <p class="text-sm text-gray-600 mt-0.5">点心、广州塔、沙面岛、华南门户。</p>
+          </a>
+          <a href="/zh/cities/chengdu-guide/" class="block bg-orange-50 border border-orange-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-orange-800">🐼 成都</span>
+            <p class="text-base font-bold text-gray-900 mt-1">成都旅游指南：熊猫、辣食、慢生活</p>
+            <p class="text-sm text-gray-600 mt-0.5">大熊猫、四川火锅、茶馆、九寨沟门户。</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Guides -->
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-5">相关指南</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <a href="/zh/transport/high-speed-rail/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-0.5">高铁</p>
+          <p class="text-sm text-gray-500">城市之间的交通</p>
+        </a>
+        <a href="/zh/transport/metro-bus/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-0.5">地铁和公共汽车</p>
+          <p class="text-sm text-gray-500">游览市中心</p>
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

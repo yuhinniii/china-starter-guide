@@ -1,0 +1,76 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = "Medical Care in China — Clinics, Hospitals & Insurance";
+const description = "Guide to medical care in China for foreign visitors: seeing a doctor, top hospitals with international departments, and travel insurance.";
+---
+
+<Layout title={title} description={description} lang="zh">
+  <section class="max-w-6xl mx-auto px-6 py-16">
+    <!-- Header -->
+    <header class="mb-16 text-center">
+      <p class="text-sm text-gray-500 mb-3">></p>
+      <h1 class="text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
+        Medical Care in China
+      </h1>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        What to do if you get sick or injured in China — from pharmacies to top hospitals with international departments.
+      </p>
+    </header>
+
+    <!-- Quick Overview -->
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-16 not-prose">
+      <h2 class="text-2xl font-bold text-blue-900 mb-4">中国的医疗保健</h2>
+      <p class="text-lg text-blue-800 leading-relaxed">
+        China has <strong>🎯 快速概览</strong> with international departments, especially in major cities. Costs are much lower than in the US or Europe. For minor issues, visit a pharmacy. For serious issues, go to a public hospital with an International Department. <strong>旅行前一定要买旅行保险。</strong>
+      </p>
+    </div>
+
+    <!-- Article Directory -->
+    <div class="space-y-6 mb-16 not-prose">
+      <!-- Article 1 -->
+      <a href="/zh/medical/seeing-a-doctor/" class="group flex items-start gap-4 p-6 rounded-xl bg-white border border-gray-200 hover:shadow-lg hover:border-blue-300 transition no-underline">
+        <span class="flex-shrink-0 w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center text-2xl">🏥</span>
+        <div class="flex-1">
+          <span class="text-xs font-medium text-blue-600">医疗保健</span>
+          <h2 class="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition">在中国看医生：每个旅行者都需要知道什么</h2>
+          <p class="text-gray-600 mt-1">药房、诊所、医院、国际部门、费用以及在紧急情况下该怎么办。</p>
+        </div>
+      </a>
+
+      <!-- Article 2 -->
+      <a href="/zh/medical/top-hospitals/" class="group flex items-start gap-4 p-6 rounded-xl bg-white border border-gray-200 hover:shadow-lg hover:border-green-300 transition no-underline">
+        <span class="flex-shrink-0 w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center text-2xl">📋</span>
+        <div class="flex-1">
+          <span class="text-xs font-medium text-green-600">Hospitals</span>
+          <h2 class="text-xl font-bold text-gray-900 group-hover:text-green-600 transition">中国拥有国际科室的顶级医院</h2>
+          <p class="text-gray-600 mt-1">A++++按城市（北京、上海、广州等）对拥有国际科室的医院进行排名。</p>
+        </div>
+      </a>
+
+      <!-- Article 3 -->
+      <a href="/zh/medical/travel-insurance/" class="group flex items-start gap-4 p-6 rounded-xl bg-white border border-gray-200 hover:shadow-lg hover:border-purple-300 transition no-underline">
+        <span class="flex-shrink-0 w-12 h-12 rounded-xl bg-purple-100 flex items-center justify-center text-2xl">🛡️</span>
+        <div class="flex-1">
+          <span class="text-xs font-medium text-purple-600">Insurance</span>
+          <h2 class="text-xl font-bold text-gray-900 group-hover:text-purple-600 transition">中国旅游保险：要寻找什么</h2>
+          <p class="text-gray-600 mt-1">您的保险在中国应该涵盖哪些内容，以及为中国保险范围验证的推荐提供商。</p>
+        </div>
+      </a>
+    </div>
+
+    <!-- Related Links -->
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose">
+      <h3 class="text-2xl font-bold text-gray-900 mb-6">📚 相关指南</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/zh/tips/emergency-numbers/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">📞 紧急电话号码和该怎么办</p>
+          <p class="text-sm text-gray-600">在需要之前先保存这些</p>
+        </a>
+        <a href="/zh/tips/is-china-safe/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">🛡️ 去中国旅行安全吗？</p>
+          <p class="text-sm text-gray-600">从当地人那里得到诚实的评价</p>
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

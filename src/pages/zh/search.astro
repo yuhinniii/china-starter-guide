@@ -18,18 +18,13 @@ function scanPages(dir) {
       const descMatch = content.match(/const description = '([^']+)'/);
       if (!titleMatch) continue;
 
-      // Generate URL from file path
       let url = path.relative(pagesDir, full).replace(/\\/g, '/');
       url = url.replace(/\.astro$/, '');
-      // index.astro → section root (e.g., /zh/payment/)
       url = url.replace(/\/index$/, '');
-      // Homepage
       if (url === 'index') url = '';
       url = '/zh/' + url + '/';
-      // Fix double slashes
       url = url.replace(/\/\/+/g, '/');
 
-      // Generate tags from title + description
       const desc = descMatch ? descMatch[1] : '';
       const tagWords = (titleMatch[1] + ' ' + desc)
         .toLowerCase()
@@ -37,7 +32,7 @@ function scanPages(dir) {
         .replace(/[^a-z0-9\s]/g, ' ')
         .split(/\s+/)
         .filter(w => w.length > 2 && !['the','and','for','you','your','what','how','are','not','with','that','this','from','china'].includes(w))
-        .filter((w,i,a) => a.indexOf(w) === i) // unique
+        .filter((w,i,a) => a.indexOf(w) === i)
         .slice(0, 15)
         .join(' ');
 
@@ -53,7 +48,6 @@ function scanPages(dir) {
 }
 
 const pages = scanPages(pagesDir);
-// Sort by section: group by URL path
 pages.sort((a, b) => a.url.localeCompare(b.url));
 ---
 
@@ -61,52 +55,24 @@ pages.sort((a, b) => a.url.localeCompare(b.url));
   <div class="max-w-3xl mx-auto px-4 py-16">
     <h1 class="text-4xl font-bold mb-8">搜索</h1>
     <div class="mb-4">
-      <input
-        type="text"
-        id="search-input"
-        placeholder="搜索指南、贴士、城市信息..."
-        class="w-full px-5 py-3 rounded-2xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-500 text-base"
-      />
+      <input type="text" id="search-input" placeholder="搜索指南、贴士、城市信息..." class="w-full px-5 py-3 rounded-2xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-500 text-base" />
     </div>
     <p class="text-xs text-gray-400 mb-6" id="result-count">{pages.length} 个指南已索引</p>
-    <div id="search-results" class="space-y-4">
-      <p class="text-gray-500">在上方输入关键词搜索我们的指南。</p>
-    </div>
+    <div id="search-results" class="space-y-4"><p class="text-gray-500">在上方输入关键词搜索我们的指南。</p></div>
   </div>
-
-  <!-- Embed search data as JSON -->
   <div id="search-data" style="display:none">{JSON.stringify(pages)}</div>
-
   <script is:inline>
     const input = document.getElementById('search-input');
     const results = document.getElementById('search-results');
     const count = document.getElementById('result-count');
     const pages = JSON.parse(document.getElementById('search-data').textContent);
-
     input.addEventListener('input', (e) => {
       const q = e.target.value.toLowerCase().trim();
-      if (!q) {
-        results.innerHTML = '<p class="text-gray-500">在上方输入关键词搜索我们的指南。</p>';
-        count.textContent = pages.length + ' 个指南已索引';
-        return;
-      }
-      const matched = pages.filter(p =>
-        p.title.toLowerCase().includes(q) ||
-        p.desc.toLowerCase().includes(q) ||
-        p.tags.includes(q)
-      );
-      if (matched.length === 0) {
-        results.innerHTML = '<p class="text-gray-500">未找到结果。请尝试其他关键词。</p>';
-        count.textContent = '0 个结果';
-        return;
-      }
+      if (!q) { results.innerHTML = '<p class="text-gray-500">在上方输入关键词搜索我们的指南。</p>'; count.textContent = pages.length + ' 个指南已索引'; return; }
+      const matched = pages.filter(p => p.title.toLowerCase().includes(q) || p.desc.toLowerCase().includes(q) || p.tags.includes(q));
+      if (matched.length === 0) { results.innerHTML = '<p class="text-gray-500">未找到结果。请尝试其他关键词。</p>'; count.textContent = '0 个结果'; return; }
       count.textContent = matched.length + ' 个结果';
-      results.innerHTML = matched.map(p =>
-        `<a href="${p.url}" class="block p-5 rounded-2xl bg-gray-50 hover:bg-gray-100 transition-colors no-underline">
-          <h3 class="text-lg font-semibold text-brand-600">${p.title}</h3>
-          <p class="text-gray-600">${p.desc}</p>
-        </a>`
-      ).join('');
+      results.innerHTML = matched.map(p => '<a href="' + p.url + '" class="block p-5 rounded-2xl bg-gray-50 hover:bg-gray-100 transition-colors no-underline"><h3 class="text-lg font-semibold text-brand-600">' + p.title + '</h3><p class="text-gray-600">' + p.desc + '</p></a>').join('');
     });
   </script>
 </Layout>

@@ -1,7 +1,7 @@
 ---
 import Layout from '@layouts/Layout.astro';
-const title = '不是散文mt-16';
-const description = '如何预订和乘坐中国高铁：分步指南';
+const title = '如何预订和乘坐中国高铁：分步指南';
+const description = '在中国预订门票、导航车站和乘坐高速列车的分步指南。';
 ---
 
 <Layout title={title} description={description} lang="zh">
@@ -10,15 +10,11 @@ const description = '如何预订和乘坐中国高铁：分步指南';
       <a href="/zh/transport/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
         <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
-        </svg>
-        Back to Transport
-      </a>
+        </svg>返回运输</a>
     </nav>
     <header class="mb-12">
       <p class="text-sm text-gray-500 mb-3">🚄 火车</p>
-      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
-        How to Book and Ride China High-Speed Rail
-      </h1>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">如何预订和乘坐中国高铁</h1>
       <p class="text-xl text-gray-600 mb-6">Step-by-step guide to booking tickets, navigating the station, and riding high-speed trains in China.</p>
       <div class="flex items-center gap-4 text-sm text-gray-500">
         <span>📅 最后更新日期：2026年6月</span>
@@ -27,10 +23,8 @@ const description = '如何预订和乘坐中国高铁：分步指南';
     </header>
 
     <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
-      <h2 class="text-2xl font-bold text-blue-900 mb-4">⏱️ 阅读4分钟</h2>
-      <p class="text-lg text-blue-800 leading-relaxed">
-        Book tickets on <strong>Trip.com</strong> (easiest for foreigners) or <strong>12306</strong> (official). Second class is perfectly comfortable. Arrive 30–40 minutes early — your <strong>护照就是你的票</strong>, so keep it handy. Boarding is smooth: security check → waiting hall → gate → platform. Stations have English signs throughout.
-      </p>
+      <h2 class="text-2xl font-bold text-blue-900 mb-4">🎯 快速回答</h2>
+      <p class="text-lg text-blue-800 leading-relaxed">预订门票<strong>Trip.com</strong>（对外国人来说最容易）或<strong>12306</strong>（官方）。二等舱非常舒适。提前30-40分钟到达——你的<strong>护照就是你的票</strong>，所以把它放在手边。登机顺利：安检→ 候车厅→ gate → 平台。车站各处都有英语标志。</p>
     </div>
 
     <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
@@ -50,9 +44,9 @@ const description = '如何预订和乘坐中国高铁：分步指南';
       <p class="text-lg leading-relaxed text-gray-700 mb-6">您有三个选择：</p>
 
       <ul class="space-y-2 text-gray-700 mb-8">
-        <li><strong>Trip.com（推荐）：</strong> Pulls ticket data directly from 12306. No separate 12306 account needed. After booking, you can board with just your passport.</li>
-        <li><strong>12306（官方）：</strong> The official sales channel with better privacy protection. Foreigners can register with their passport number.</li>
-        <li><strong>车站售票柜台：</strong> You can buy tickets in person, but English is not guaranteed.</li>
+        <li><strong>Trip.com（推荐）：</strong>直接从12306中提取票证数据。不需要单独的12306帐户。预订后，您只需携带护照即可登机。</li>
+        <li><strong>12306（官方）：</strong>具有更好隐私保护的官方销售渠道。外国人可以用护照号码登记。</li>
+        <li><strong>车站售票柜台：</strong>你可以亲自买票，但英语不能保证。</li>
       </ul>
 
       <p class="text-lg leading-relaxed text-gray-700 mb-6">对于大多数旅行者来说，Trip.com是最简单的选择。小小的预订费值得这么方便。</p>
@@ -62,9 +56,9 @@ const description = '如何预订和乘坐中国高铁：分步指南';
       <h2 class="text-2xl font-bold text-gray-900 mb-4">门票类别</h2>
 
       <ul class="space-y-2 text-gray-700 mb-8">
-        <li><strong>二等舱：</strong> The standard option. Comfortable seats, 3+2 configuration. This is what most people choose.</li>
-        <li><strong>头等舱：</strong> Wider seats, 2+2 configuration, more legroom. Worth upgrading for journeys over 3 hours.</li>
-        <li><strong>商务舱：</strong> Fully reclining seats, privacy, complimentary meals on long routes. Expensive but an experience.</li>
+        <li><strong>二等舱：</strong>标准选项。舒适的座椅，3+2配置。这是大多数人的选择。</li>
+        <li><strong>头等舱：</strong>座椅更宽，2+2配置，腿部空间更大。对于超过3小时的旅程，值得升级。</li>
+        <li><strong>商务舱：</strong>完全倾斜的座椅，隐私，长途免费用餐。价格昂贵，但却是一种体验。</li>
       </ul>
 
       <hr class="my-10 border-gray-200" />
@@ -74,10 +68,10 @@ const description = '如何预订和乘坐中国高铁：分步指南';
       <p class="text-lg leading-relaxed text-gray-700 mb-6">出发前30-40分钟到达。流程如下：</p>
 
       <ol class="list-decimal pl-6 space-y-4 text-gray-700 mb-8">
-        <li><strong>安全检查：</strong> Bags go through an X-ray machine (like at the airport, but faster).</li>
-        <li><strong>候车大厅：</strong> Check the big screen for your train’s gate number. Follow the signs.</li>
-        <li><strong>寄宿：</strong> Present your passport at the ticket gate. Use the far-side manual counter lane, then proceed downstairs to the platform.</li>
-        <li><strong>找到你的马车：</strong> Check the screens near the platform stairs for the color code assigned to your train. Match this color with the colored floor markers on the platform to locate your correct carriage.</li>
+        <li><strong>安全检查：</strong>行李通过X光机（就像在机场一样，但速度更快）。</li>
+        <li><strong>候车大厅：</strong>在大屏幕上查看你的火车门号。跟着标志走。</li>
+        <li><strong>寄宿：</strong>在检票口出示护照。使用远端手动柜台车道，然后下楼到站台。</li>
+        <li><strong>找到你的马车：</strong>检查站台楼梯附近的屏幕，查看分配给您的列车的颜色代码。将此颜色与平台上的彩色地板标记相匹配，以定位您的正确车厢。</li>
       </ol>
 
       <hr class="my-10 border-gray-200" />
@@ -92,7 +86,7 @@ const description = '如何预订和乘坐中国高铁：分步指南';
       </ul>
 
       <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 not-prose">
-        <p class="text-gray-700"><strong>重要提示：</strong> Your passport is your ticket. Keep it handy for checks at the station entrance, boarding gate, and sometimes on the train. Don’t put it in your checked luggage.</p>
+        <p class="text-gray-700"><strong>重要提示：</strong>你的护照就是你的票。把它放在方便的地方，以便在车站入口、登机口，有时在火车上进行检查。不要把它放在你的托运行李里。</p>
       </div>
 
       <hr class="my-10 border-gray-200" />
@@ -100,17 +94,17 @@ const description = '如何预订和乘坐中国高铁：分步指南';
       <h2 id="related" class="text-2xl font-bold text-gray-900 mb-6 mt-12">📚 相关指南</h2>
 
       <div class="space-y-4 not-prose">
-        <a href="/zh/transport/transport-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>如何环游中国</strong> — the complete transport guide</a>
-        <a href="/zh/transport/airport-to-city/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🛬 <strong>从机场到城市</strong> — what to do when you land</a>
-        <a href="/zh/transport/didi/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚗 <strong>外国人如何在中国使用滴滴</strong> — set up ride-hailing</a>
-        <a href="/zh/transport/metro-bus/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚇 <strong>中国主要城市地铁和公交指南</strong> — navigating city transit</a>
+        <a href="/zh/transport/transport-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>如何环游中国</strong>--完整的运输指南</a>
+        <a href="/zh/transport/airport-to-city/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🛬 <strong>从机场到城市</strong>--着陆后该怎么办</a>
+        <a href="/zh/transport/didi/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚗 <strong>外国人如何在中国使用滴滴</strong>--设置叫车服务</a>
+        <a href="/zh/transport/metro-bus/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚇 <strong>中国主要城市地铁和公交指南</strong>--城市交通导航</a>
       </div>
 
     </div>
 
     <!-- Sources -->
     <div class="mt-8 pt-6 border-t border-gray-200 not-prose">
-      <h3 class="text-lg font-bold text-gray-900 mb-3">Sources</h3>
+      <h3 class="text-lg font-bold text-gray-900 mb-3">来源</h3>
       <ul class="space-y-2">
         <li><a href="https://www.12306.cn/en/index.html" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">中国铁路局-12306 EN</a></li>
       </ul>

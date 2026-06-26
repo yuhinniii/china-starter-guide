@@ -153,6 +153,9 @@ function extractStrings(content) {
   let cleanContent = content.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '<--SCRIPT_BLOCK_REMOVED-->');
   cleanContent = cleanContent.replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, '<--STYLE_BLOCK_REMOVED-->');
 
+  // 保存原始内容用于 HTML 文本节点提取和替换
+  const originalContent = cleanContent;
+
   // 收集需要翻译的文本
   function addString(str, context = '') {
     const trimmed = str.trim();
@@ -163,8 +166,9 @@ function extractStrings(content) {
     // 跳过明显不是自然语言的
     if (trimmed.startsWith('http') || trimmed.startsWith('/')) return;
     if (trimmed.length < 3 && !/[A-Z]/.test(trimmed)) return;
-    // 跳过品牌名/技术术语（短的大写词）
-    if (/^[A-Z][a-z]*$/.test(trimmed) && trimmed.length < 15) return;
+    // 跳过品牌名/技术术语（已知的专有名词）
+    const brands = new Set(['Alipay','WeChat','DiDi','WhatsApp','Google','YouTube','Instagram','Facebook','Twitter','Visa','Mastercard','eSIM','VPN','iOS','Android','iPhone','iPad','Airbnb','Uber','COVA']);
+    if (brands.has(trimmed)) return;
     // 去重
     const key = trimmed.toLowerCase();
     if (seen.has(key)) return;
@@ -176,18 +180,17 @@ function extractStrings(content) {
     return placeholder;
   }
 
-  // 1. 提取 frontmatter 中的 title/description
-  const fmTitleMatch = cleanContent.match(/const\s+title\s*=\s*'([^']+)'/);
+  // 1. 提取 frontmatter 中的 title/description（使用原始内容）
+  const fmTitleMatch = originalContent.match(/const\s+title\s*=\s*'([^']+)'/);
   if (fmTitleMatch) addString(fmTitleMatch[1], 'frontmatter title');
 
-  const fmDescMatch = cleanContent.match(/const\s+description\s*=\s*'([^']+)'/);
+  const fmDescMatch = originalContent.match(/const\s+description\s*=\s*'([^']+)'/);
   if (fmDescMatch) addString(fmDescMatch[1], 'frontmatter description');
 
-  // 2. 提取 HTML 文本节点 (在 > 和 < 之间的文本)
-  // 使用更精确的匹配：>text< 或 >text\n< 模式
+  // 2. 提取 HTML 文本节点（使用原始内容，因为需要准确的 >text< 模式）
   const textPattern = />([^<]+)</g;
   let match;
-  while ((match = textPattern.exec(cleanContent)) !== null) {
+  while ((match = textPattern.exec(originalContent)) !== null) {
     const text = match[1].trim();
     // 过滤掉 HTML 属性、JS 表达式、标签等
     if (text && !text.startsWith('{') && !text.startsWith('</') && !text.startsWith('<!--') && !text.startsWith('&') && !text.startsWith('--')) {
@@ -195,23 +198,8 @@ function extractStrings(content) {
     }
   }
 
-  // 3. 提取 JS 模板字符串中的文本 (如 `'Some text'`, `"Some text"`)
-  // 在 Astro 的 {[...].map(...)} 和对象字面量中
-  const jsStringPattern = /['"]([^'"]{4,})['"]/g;
-  while ((match = jsStringPattern.exec(cleanContent)) !== null) {
-    const text = match[1];
-    // 排除 URL、文件路径、CSS 类名、JS 标识符等
-    if (/^[a-z][a-z0-9]*$/i.test(text) && text.length < 30) continue; // 可能是变量名
-    if (text.includes('/') || text.includes('.')) continue; // 可能是路径
-    if (text.startsWith('#')) continue; // 可能是hash
-    if (/^[a-z-]+$/i.test(text) && text.length < 20) continue; // 可能是CSS类
-    if (text.startsWith(':') || text.startsWith('hover:') || text.startsWith('focus:')) continue;
-    if (text.startsWith('bg-') || text.startsWith('text-') || text.startsWith('border-')) continue;
-    if (text.startsWith('dark:')) continue;
-    if (text.startsWith('md:') || text.startsWith('lg:') || text.startsWith('sm:')) continue;
-    if (text.startsWith('group-')) continue;
-    addString(text, 'js string');
-  }
+  // 3. JS 字符串提取已禁用 — Astro 模板语法导致代码被破坏
+  // 核心页面（index.astro, search.astro）的 JS 模板内容在生成后手动修正即可
 
   return strings;
 }
@@ -223,12 +211,13 @@ function extractStrings(content) {
 function applyTranslations(content, translationsMap, strings) {
   let result = content;
 
-  // 1. 替换 HTML 文本节点
+  // 1. 替换 HTML 文本节点（处理前后可能有空白）
   for (const s of strings) {
     if (s.context === 'html text' && translationsMap.has(s.original)) {
       const translated = translationsMap.get(s.original);
-      // 精确替换 >original< 模式
-      result = result.replace(`>${s.original}<`, `>${translated}<`);
+      // 使用正则替换，处理原文前后可能有换行/空格的情况
+      const escaped = s.original.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      result = result.replace(new RegExp(`>\\s*${escaped}\\s*<`), `>${translated}<`);
     }
   }
 
@@ -271,6 +260,10 @@ function getAstroFiles(dir, baseDir = dir) {
       files.push(...getAstroFiles(fullPath, baseDir));
     } else if (entry.name.endsWith('.astro') && !entry.name.includes('_updated')) {
       // 跳过 _updated 文件（备份文件）
+      const fullPath = path.join(dir, entry.name);
+      // 手动维护的文件不自动翻译
+      const relativePath = path.relative(baseDir, fullPath);
+      if (relativePath === 'index.astro' || relativePath === 'search.astro') continue;
       files.push({
         enPath: fullPath,
         zhPath: path.join(DST_DIR, relativePath),

@@ -1,7 +1,7 @@
 ---
 import Layout from '@layouts/Layout.astro';
-const title = '如何环游中国：完整的交通指南';
-const description = '高铁、地铁、滴滴、出租车和共享单车——如何为中国的每种情况选择合适的交通工具。';
+const title = 'How to Get Around China: The Complete Transport Guide';
+const description = 'High-speed rail, metro, Didi, taxis, and shared bikes — how to choose the right transport for every situation in China.';
 ---
 
 <Layout title={title} description={description} lang="zh">
@@ -10,7 +10,9 @@ const description = '高铁、地铁、滴滴、出租车和共享单车——�
       <a href="/zh/transport/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
         <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
-        </svg>返回运输</a>
+        </svg>
+        Back to Transport
+      </a>
     </nav>
     <header class="mb-12">
       <p class="text-sm text-gray-500 mb-3">🚄 出行</p>
@@ -25,12 +27,14 @@ const description = '高铁、地铁、滴滴、出租车和共享单车——�
     </header>
 
     <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
-      <h2 class="text-2xl font-bold text-blue-900 mb-4">🎯 快速回答</h2>
-      <p class="text-lg text-blue-800 leading-relaxed">中国的交通系统是世界上最高效的交通系统之一。<strong>高铁</strong>是城市之间的最佳选择。<strong>地铁</strong>在城市里最快。<strong>DiDi</strong>最方便挨家挨户旅行。一切都可以用支付宝或微信支付，不需要现金。</p>
+      <h2 class="text-2xl font-bold text-blue-900 mb-4">--填写您的签证申请</h2>
+      <p class="text-lg text-blue-800 leading-relaxed">
+        China's transport system is one of the most efficient in the world. <strong>高铁</strong> is the best option between cities. <strong>地铁</strong> is fastest within cities. <strong>DiDi</strong> is most convenient for door-to-door trips. Everything can be paid with Alipay or WeChat Pay — no cash needed.
+      </p>
     </div>
 
     <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
-      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 在本指南中</h3>
+      <h3 class="text-lg font-bold text-gray-900 mb-4">🍵 1.茶馆或艺术工作室邀请函</h3>
       <ul class="space-y-3">
         <li><a href="#high-speed-rail" class="text-blue-600 hover:underline">🚄 高铁</a></li>
         <li><a href="#metro" class="text-blue-600 hover:underline">🚇 地铁</a></li>
@@ -44,15 +48,15 @@ const description = '高铁、地铁、滴滴、出租车和共享单车——�
 
     <div class="prose prose-gray max-w-none">
 
-      <h2 id="high-speed-rail" class="text-2xl font-bold text-gray-900 mb-4">🚄 High-Speed Rail</h2>
+      <h2 id="high-speed-rail" class="text-2xl font-bold text-gray-900 mb-4">🚄 高铁</h2>
 
       <p class="text-lg leading-relaxed text-gray-700 mb-6">中国的高速铁路连接着所有主要城市。火车干净、准时、平稳，二等座位与航空公司优质的经济舒适度相匹配。如果你想欣赏路边的风景，体验稳定、快速的骑行，可以选择高铁。</p>
 
-      <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>提示：</strong>火车票价全年保持稳定，而航班价格则大幅波动。火车在旺季的价格更低，廉价航班在非高峰期也比火车票价便宜。</p>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>第五步：旅行信息填写</strong> Train fares stay steady year-round, while flight prices swing sharply. Trains cost less in peak seasons, and cheap flights beat rail fares off-peak.</p>
 
       <hr class="my-10 border-gray-200" />
 
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">Metro</h2>
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">地铁</h2>
 
       <p class="text-lg leading-relaxed text-gray-700 mb-6">中国每个大城市都有一个很好的地铁系统。北京和上海拥有世界上最长的地铁网络。标志和公告是双语（中文+英文），车站有清晰的地图。这通常是市内最快的出行方式，票价也很便宜——通常为3-10日元（0.40-1.40美元）。</p>
 
@@ -60,7 +64,7 @@ const description = '高铁、地铁、滴滴、出租车和共享单车——�
 
       <h2 class="text-2xl font-bold text-gray-900 mb-4">DiDi</h2>
 
-      <p class="text-lg leading-relaxed text-gray-700 mb-6">滴滴是中国的优步，它被广泛使用。您可以通过滴滴应用程序或支付宝和微信内的小程序预订乘车。它适用于与支付宝/微信支付相关的国际信用卡。这是您挨家挨户旅行的最佳选择，尤其是在携带行李或天气恶劣的情况下。查看我们的<a href="/zh/transport/didi/" class="text-blue-600 hover:underline">完整的DiDi设置指南</a>获取分步说明。</p>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">DiDi is China’s equivalent of Uber, and it’s widely used. You can book a ride through the DiDi app or through the mini-programs inside Alipay and WeChat. It works with international credit cards linked to Alipay/WeChat Pay. This is your best option for door-to-door trips, especially with luggage or in bad weather. See our <a href="/zh/transport/didi/" class="text-blue-600 hover:underline">完整的DiDi设置指南</a> for step-by-step instructions.</p>
 
       <hr class="my-10 border-gray-200" />
 
@@ -88,21 +92,21 @@ const description = '高铁、地铁、滴滴、出租车和共享单车——�
 
       <hr class="my-10 border-gray-200" />
 
-      <h2 id="related" class="text-2xl font-bold text-gray-900 mb-6 mt-12">📚 相关指南</h2>
+      <h2 id="related" class="text-2xl font-bold text-gray-900 mb-6 mt-12">紧急电话号码以及需要帮助时该怎么办</h2>
 
       <div class="space-y-4 not-prose">
-        <a href="/zh/transport/airport-to-city/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🛬 <strong>从机场到城市</strong>--着陆后该怎么办</a>
-        <a href="/zh/transport/high-speed-rail/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>如何预订和乘坐中国高铁</strong>--分步预订指南</a>
-        <a href="/zh/transport/didi/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚗 <strong>外国人如何在中国使用滴滴</strong>--设置没有中国号码的叫车服务</a>
-        <a href="/zh/transport/metro-bus/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚇 <strong>中国主要城市地铁和公交指南</strong>--城市交通导航</a>
-        <a href="/zh/payment/setup-alipay/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">💳 <strong>外国人如何设置支付宝</strong>--使用一个应用程序支付所有交通费用</a>
+        <a href="/zh/transport/airport-to-city/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🛬 <strong>从机场到城市</strong> — what to do when you land</a>
+        <a href="/zh/transport/high-speed-rail/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>如何预订和乘坐中国高铁</strong> — step-by-step booking guide</a>
+        <a href="/zh/transport/didi/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚗 <strong>外国人如何在中国使用滴滴</strong> — set up ride-hailing without a Chinese number</a>
+        <a href="/zh/transport/metro-bus/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚇 <strong>中国主要城市地铁和公交指南</strong> — navigating city transit</a>
+        <a href="/zh/payment/setup-alipay/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">💳 <strong>外国人如何设置支付宝</strong> — pay for all transport with one app</a>
       </div>
 
     </div>
 
     <!-- Sources -->
     <div class="mt-8 pt-6 border-t border-gray-200 not-prose">
-      <h3 class="text-lg font-bold text-gray-900 mb-3">来源</h3>
+      <h3 class="text-lg font-bold text-gray-900 mb-3">VPN服务经常发生变化。没有单一的官方消息来源。在旅行前研究当前的建议。</h3>
       <ul class="space-y-2">
         <li><a href="https://www.12306.cn/en/index.html" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">中国铁路局-12306 EN</a></li>
         <li><a href="https://web.didiglobal.com/" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">滴滴全球-打车欢呼</a></li>

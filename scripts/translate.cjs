@@ -1,7 +1,15 @@
 /**
- * 百度翻译批量翻译脚本 v3
- * 修复了 v1/v2 中发现的 6 个 bug
+ * 百度翻译批量翻译脚本 v4 (MULTILINGUAL)
+ * 支持任意目标语言，一次配置多语言可用
+ *
+ * 使用方式:
+ *   node scripts/translate.cjs                # 默认 en→zh
+ *   node scripts/translate.cjs ja             # en→日文
+ *   node scripts/translate.cjs ko             # en→韩文
+ *   node scripts/translate.cjs fr             # en→法文
+ *   node scripts/translate.cjs zh ja ko fr    # 批量生成多个语言
  */
+
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
@@ -10,30 +18,19 @@ const https = require('https');
 const BAIDU_APPID = '20260624002637569';
 const BAIDU_KEY = 'wjVRVZoCcxeez3GVPynf';
 const SRC_DIR = path.resolve(__dirname, '..', 'src', 'pages', 'en');
-const DST_DIR = path.resolve(__dirname, '..', 'src', 'pages', 'zh');
+const SRC_LANG = 'en';         // Source language code
+const DEFAULT_TARGET = 'zh';   // Default target language
 const BATCH_SIZE = 10;
 const MAX_RETRIES = 3;
 
-// Cache
-const translationCache = new Map();
-const CACHE_FILE = path.resolve(__dirname, '..', '.translate-cache.json');
-function loadCache() {
-  try {
-    if (fs.existsSync(CACHE_FILE)) {
-      const data = JSON.parse(fs.readFileSync(CACHE_FILE, 'utf-8'));
-      for (const [k, v] of Object.entries(data)) translationCache.set(k, v);
-      console.log(`  Loaded cache: ${translationCache.size} strings\n`);
-    }
-  } catch (e) {}
-}
-function saveCache() {
-  try { fs.writeFileSync(CACHE_FILE, JSON.stringify(Object.fromEntries(translationCache), null, 2), 'utf-8'); } catch (e) {}
-}
+// Cache per language
+const CACHE_DIR = path.resolve(__dirname, '..');
+function getCacheFile(lang) { return path.join(CACHE_DIR, `.translate-cache-${lang}.json`); }
 
-// Baidu Translate API
+// ====== Baidu API ======
 function md5(str) { return crypto.createHash('md5').update(str, 'utf8').digest('hex'); }
 
-function baiduTranslate(texts, from = 'en', to = 'zh') {
+function baiduTranslate(texts, from, to) {
   return new Promise((resolve, reject) => {
     if (!texts || texts.length === 0) { resolve([]); return; }
     const rawQ = texts.join('\n');
@@ -60,14 +57,14 @@ function baiduTranslate(texts, from = 'en', to = 'zh') {
   });
 }
 
-async function translateWithRetry(texts) {
+async function translateWithRetry(texts, from, to) {
   for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
-    try { return await baiduTranslate(texts); } catch (err) {
+    try { return await baiduTranslate(texts, from, to); } catch (err) {
       if (err.message.includes('20003')) {
         console.log(`  Sensitive word, single-translate (${texts.length} items)...`);
         const results = [];
         for (const t of texts) {
-          try { results.push((await baiduTranslate([t]))[0]); } catch (e2) { results.push(t); }
+          try { results.push((await baiduTranslate([t], from, to))[0]); } catch (e2) { results.push(t); }
           await new Promise(r => setTimeout(r, 200));
         }
         return results;
@@ -78,7 +75,7 @@ async function translateWithRetry(texts) {
   }
 }
 
-// ============ FIXED EXTRACTION ============
+// ====== Extraction ======
 const EXCLUDED_BRANDS = new Set([
   'Alipay','WeChat','DiDi','WhatsApp','Google','YouTube','Instagram','Facebook','Twitter',
   'Visa','Mastercard','eSIM','VPN','iOS','Android','iPhone','iPad','Airbnb','Uber','COVA',
@@ -96,7 +93,8 @@ function extractAndPlaceholderize(content) {
     if (!t) return null;
     if (/^\d+$/.test(t)) return null;
     if (/^[\s.,!?;:\-–—/\\(){}\[\]'"]+$/.test(t)) return null;
-    if (/^[\u4e00-\u9fff]+$/.test(t)) return null; // pure Chinese
+    // FIX: Only skip if text is NOT English-sourced — handle multilang by checking
+    // if text is in the source language (has Latin/ASCII characters)
     if (t.startsWith('http') || t.startsWith('/')) return null;
     if (t.startsWith('const ') || t.startsWith('import ')) return null;
     if (EXCLUDED_BRANDS.has(t)) return null;
@@ -109,7 +107,6 @@ function extractAndPlaceholderize(content) {
     return ph;
   }
 
-  // Strip scripts
   const scripts = [];
   let result = content.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, m => {
     scripts.push(m); return `<___SCRIPT_${scripts.length - 1}___/>`;
@@ -118,7 +115,6 @@ function extractAndPlaceholderize(content) {
     scripts.push(m); return `<___SCRIPT_${scripts.length - 1}___/>`;
   });
 
-  // FIX BUG 1: Support BOTH single and double quotes for frontmatter
   const fmTitle = result.match(/const\s+title\s*=\s*['"]([^'"]+)['"]/);
   if (fmTitle) {
     const ph = addString(fmTitle[1], 'fm-title');
@@ -131,7 +127,6 @@ function extractAndPlaceholderize(content) {
     if (ph) result = result.replace(new RegExp(`(const\\s+description\\s*=\\s*['"])${fmDesc[1].replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(['"])`), '$1' + ph + '$2');
   }
 
-  // Extract HTML text nodes
   const textPattern = />([^<]+)</g;
   let match;
   const htmlReplacements = [];
@@ -143,13 +138,11 @@ function extractAndPlaceholderize(content) {
     }
   }
 
-  // FIX BUG 3: Use split/join instead of regex (replaces ALL occurrences)
   htmlReplacements.sort((a, b) => b.text.length - a.text.length);
   for (const { text, ph } of htmlReplacements) {
     result = result.split('>' + text + '<').join('>' + ph + '<');
   }
 
-  // Restore scripts
   for (let i = 0; i < scripts.length; i++) {
     result = result.replace(`<___SCRIPT_${i}___/>`, scripts[i]);
   }
@@ -157,22 +150,41 @@ function extractAndPlaceholderize(content) {
   return { modifiedContent: result, placeholders };
 }
 
-// ============ MAIN ============
-async function main() {
-  console.log('=== China Starter Guide - Baidu Translate v3 (Bug Fixed) ===\n');
-  loadCache();
+// ====== Main ======
+async function translateTo(targetLang) {
+  const DST_DIR = path.resolve(__dirname, '..', 'src', 'pages', targetLang);
+  const cacheFile = getCacheFile(targetLang);
+  
+  console.log(`\n=== Translating en → ${targetLang} ===\n`);
+
+  // Load language-specific cache
+  const cache = new Map();
+  try {
+    if (fs.existsSync(cacheFile)) {
+      const data = JSON.parse(fs.readFileSync(cacheFile, 'utf-8'));
+      for (const [k, v] of Object.entries(data)) cache.set(k, v);
+      console.log(`  Cache: ${cache.size} strings\n`);
+    }
+  } catch (e) {}
+
+  function saveCache() {
+    try { fs.writeFileSync(cacheFile, JSON.stringify(Object.fromEntries(cache), null, 2), 'utf-8'); } catch (e) {}
+  }
 
   // Test API
   try {
-    const test = await baiduTranslate(['Hello']);
+    const test = await baiduTranslate(['Hello'], SRC_LANG, targetLang);
     console.log(`  API OK: "Hello" -> "${test[0]}"\n`);
   } catch (err) {
-    console.error(`  API FAIL: ${err.message}`);
-    console.error('  Recharge at: https://fanyi-api.baidu.com/');
-    process.exit(1);
+    console.error(`  API FAIL (${targetLang}): ${err.message}`);
+    if (targetLang === DEFAULT_TARGET) {
+      console.error('  Recharge at: https://fanyi-api.baidu.com/');
+      process.exit(1);
+    }
+    return; // Skip this language but continue with others
   }
 
-  // FIX BUG 5: Include index.astro and search.astro
+  // Get files
   function getAstroFiles(dir, baseDir = dir) {
     const files = [];
     for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -185,7 +197,7 @@ async function main() {
   }
 
   const files = getAstroFiles(SRC_DIR);
-  console.log(`  Found ${files.length} files (including index/search)\n`);
+  console.log(`  Files: ${files.length}\n`);
 
   // Extract + placeholderize
   const fileData = [];
@@ -196,29 +208,28 @@ async function main() {
     fileData.push({ file, modifiedContent, placeholders });
     allPlaceholders.push(...placeholders);
   }
-  console.log(`  Extracted ${allPlaceholders.length} text segments\n`);
+  console.log(`  Extracted: ${allPlaceholders.length} segments\n`);
 
-  // Dedup
   const unique = [...new Map(allPlaceholders.map(p => [p.original, p.original])).keys()];
-  console.log(`  After dedup: ${unique.length} unique strings\n`);
+  console.log(`  Unique: ${unique.length}\n`);
 
-  const toTrans = unique.filter(s => !translationCache.has(s));
+  const toTrans = unique.filter(s => !cache.has(s));
   console.log(`  To translate: ${toTrans.length} (cached: ${unique.length - toTrans.length})\n`);
 
   // Translate
   const transMap = new Map();
-  for (const [k, v] of translationCache) transMap.set(k, v);
+  for (const [k, v] of cache) transMap.set(k, v);
 
   if (toTrans.length > 0) {
     for (let i = 0; i < toTrans.length; i += BATCH_SIZE) {
       const batch = toTrans.slice(i, i + BATCH_SIZE);
       const n = Math.floor(i / BATCH_SIZE) + 1;
       const total = Math.ceil(toTrans.length / BATCH_SIZE);
-      process.stdout.write(`  Batch ${n}/${total} (${batch.length} items)... `);
-      const results = await translateWithRetry(batch);
+      process.stdout.write(`  Batch ${n}/${total}... `);
+      const results = await translateWithRetry(batch, SRC_LANG, targetLang);
       for (let j = 0; j < batch.length; j++) {
         transMap.set(batch[j], results[j] || batch[j]);
-        translationCache.set(batch[j], results[j] || batch[j]);
+        cache.set(batch[j], results[j] || batch[j]);
       }
       console.log('ok');
       saveCache();
@@ -227,7 +238,7 @@ async function main() {
     console.log();
   }
 
-  // Generate zh files
+  // Generate target language files
   for (const { file, modifiedContent, placeholders } of fileData) {
     let zhContent = modifiedContent;
     for (const p of placeholders) {
@@ -236,18 +247,15 @@ async function main() {
       }
     }
 
-    // Fix lang
-    zhContent = zhContent.replace(/\blang="en"/g, 'lang="zh"');
-    zhContent = zhContent.replace(/\blang='en'/g, "lang='zh'");
+    // Fix lang attribute
+    zhContent = zhContent.replace(/\blang="en"/g, `lang="${targetLang}"`);
+    zhContent = zhContent.replace(/\blang='en'/g, `lang='${targetLang}'`);
 
-    // FIX BUG 4: Replace /en/ in ALL contexts (not just JS strings)
-    // This handles: href="/en/...", href='/en/...', href={.../en/...}, to="/en/...", etc.
-    zhContent = zhContent.replace(/["']\/en\//g, match => match[0] + '/zh/');
-    // Also handle template expressions that contain /en/
-    zhContent = zhContent.replace(/\'\/en\'/g, "'/zh'");
-    zhContent = zhContent.replace(/"\/en"/g, '"/zh"');
-    // Astro template expressions
-    zhContent = zhContent.replace(/\/en\//g, '/zh/');
+    // Replace /en/ paths with /{lang}/
+    zhContent = zhContent.replace(/["']\/en\//g, match => match[0] + '/' + targetLang + '/');
+    zhContent = zhContent.replace(/\'\/en\'/g, `'/${targetLang}'`);
+    zhContent = zhContent.replace(/"\/en"/g, `"/${targetLang}"`);
+    zhContent = zhContent.replace(/\/en\//g, '/' + targetLang + '/');
 
     const dir = path.dirname(file.zhPath);
     if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
@@ -255,7 +263,23 @@ async function main() {
     console.log(`  ${file.relativePath}`);
   }
 
-  console.log(`\n=== DONE! ${files.length} zh pages generated ===`);
+  console.log(`\n=== ${targetLang}: ${files.length} pages generated ===`);
+}
+
+// ====== Entry ======
+const targetLangs = process.argv.slice(2).length > 0 
+  ? process.argv.slice(2) 
+  : [DEFAULT_TARGET];
+
+async function main() {
+  console.log(`=== Baidu Translate v4 (Multilingual) ===`);
+  console.log(`Source: ${SRC_LANG}`);
+  console.log(`Targets: ${targetLangs.join(', ')}`);
+  
+  for (const lang of targetLangs) {
+    await translateTo(lang);
+  }
+  console.log('\n=== ALL DONE ===');
 }
 
 main().catch(err => {

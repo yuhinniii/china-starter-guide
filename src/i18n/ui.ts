@@ -48,7 +48,7 @@ export const ui: Record<UILang, {
     siteName: 'China Starter Guide',
     nav: [
       { label: 'Home', href: '/en/' },
-      { label: 'Prepare', href: '/en/prepare/' },
+      { label: 'Visa', href: '/en/visa/' },
       { label: 'Payment', href: '/en/payment/' },
       { label: 'Transport', href: '/en/transport/' },
       { label: 'Life', href: '/en/life/' },
@@ -65,7 +65,7 @@ export const ui: Record<UILang, {
     siteName: '中国入门指南',
     nav: [
       { label: '首页', href: '/zh/' },
-      { label: '行前准备', href: '/zh/prepare/' },
+      { label: '签证', href: '/zh/visa/' },
       { label: '支付', href: '/zh/payment/' },
       { label: '交通', href: '/zh/transport/' },
       { label: '生活', href: '/zh/life/' },
@@ -82,7 +82,7 @@ export const ui: Record<UILang, {
     siteName: '中国スターターガイド',
     nav: [
       { label: 'ホーム', href: '/ja/' },
-      { label: '準備', href: '/ja/prepare/' },
+      { label: 'ビザ', href: '/ja/visa/' },
       { label: '支払い', href: '/ja/payment/' },
       { label: '交通', href: '/ja/transport/' },
       { label: '生活', href: '/ja/life/' },
@@ -99,7 +99,7 @@ export const ui: Record<UILang, {
     siteName: '차이나 스타터 가이드',
     nav: [
       { label: '홈', href: '/ko/' },
-      { label: '준비', href: '/ko/prepare/' },
+      { label: '비자', href: '/ko/visa/' },
       { label: '결제', href: '/ko/payment/' },
       { label: '교통', href: '/ko/transport/' },
       { label: '생활', href: '/ko/life/' },
@@ -116,7 +116,7 @@ export const ui: Record<UILang, {
     siteName: 'Guide de démarrage pour la Chine',
     nav: [
       { label: 'Accueil', href: '/fr/' },
-      { label: 'Préparer', href: '/fr/prepare/' },
+      { label: 'Visa', href: '/fr/visa/' },
       { label: 'Paiement', href: '/fr/payment/' },
       { label: 'Transport', href: '/fr/transport/' },
       { label: 'Vie', href: '/fr/life/' },
@@ -133,7 +133,7 @@ export const ui: Record<UILang, {
     siteName: 'คู่มือเริ่มต้นสำหรับจีน',
     nav: [
       { label: 'หน้าแรก', href: '/th/' },
-      { label: 'เตรียมตัว', href: '/th/prepare/' },
+      { label: 'วีซ่า', href: '/th/visa/' },
       { label: 'การชำระเงิน', href: '/th/payment/' },
       { label: 'การคมนาคม', href: '/th/transport/' },
       { label: 'ชีวิต', href: '/th/life/' },
@@ -150,7 +150,7 @@ export const ui: Record<UILang, {
     siteName: 'Путеводитель по Китаю',
     nav: [
       { label: 'Главная', href: '/ru/' },
-      { label: 'Подготовка', href: '/ru/prepare/' },
+      { label: 'Виза', href: '/ru/visa/' },
       { label: 'Оплата', href: '/ru/payment/' },
       { label: 'Транспорт', href: '/ru/transport/' },
       { label: 'Жизнь', href: '/ru/life/' },
@@ -167,7 +167,7 @@ export const ui: Record<UILang, {
     siteName: 'Guía de inicio para China',
     nav: [
       { label: 'Inicio', href: '/es/' },
-      { label: 'Preparar', href: '/es/prepare/' },
+      { label: 'Visa', href: '/es/visa/' },
       { label: 'Pago', href: '/es/payment/' },
       { label: 'Transporte', href: '/es/transport/' },
       { label: 'Vida', href: '/es/life/' },
@@ -184,7 +184,7 @@ export const ui: Record<UILang, {
     siteName: 'دليل الصين للمبتدئين',
     nav: [
       { label: 'الرئيسية', href: '/ar/' },
-      { label: 'الاستعداد', href: '/ar/prepare/' },
+      { label: 'التأشيرة', href: '/ar/visa/' },
       { label: 'الدفع', href: '/ar/payment/' },
       { label: 'النقل', href: '/ar/transport/' },
       { label: 'الحياة', href: '/ar/life/' },

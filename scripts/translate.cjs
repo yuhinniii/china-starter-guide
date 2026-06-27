@@ -99,7 +99,7 @@ async function translateWithRetry(texts, from, to) {
 // ====== Extraction ======
 const EXCLUDED_BRANDS_RAW = [
   'Alipay','WeChat','WeChat Pay','AliPay','DiDi','WhatsApp','Google','YouTube','Instagram','Facebook','Twitter','X',
-  'Visa','Mastercard','eSIM','VPN','iOS','Android','iPhone','iPad','Airbnb','Uber','COVA',
+  'eSIM','VPN','iOS','Android','iPhone','iPad','Airbnb','Uber','COVA',
   'Amap','Trip.com','Yelp','ExpressVPN','NordVPN','WireGuard','OpenVPN','Hellobike',
   'Meituan','Dianping','Weibo','Bilibili','TikTok','UnionPay','PayPal'
 ];
@@ -165,6 +165,38 @@ function extractAndPlaceholderize(content) {
   if (fmDesc) {
     const ph = addString(fmDesc[1], 'fm-desc');
     if (ph) result = result.replace(new RegExp(`(const\\s+description\\s*=\\s*['"])${fmDesc[1].replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(['"])`), '$1' + ph + '$2');
+  }
+
+  // Extract string literals inside Astro template expressions (e.g. {[...].map(...)})
+  const exprPattern = /\{((?:[^{}]|\{(?:[^{}]|\{[^{}]*\})*\})*)\}/g;
+  let exprMatch;
+  const exprReplacements = [];
+  while ((exprMatch = exprPattern.exec(result)) !== null) {
+    const expr = exprMatch[0];
+    const inner = exprMatch[1];
+    const strPattern = /(['"])([^'"]+)\1/g;
+    let strMatch;
+    let newInner = inner;
+    let changed = false;
+    while ((strMatch = strPattern.exec(inner)) !== null) {
+      const quote = strMatch[1];
+      const str = strMatch[2];
+      // Skip Tailwind class strings inside class= / class: attributes
+      const before = inner.slice(Math.max(0, strMatch.index - 10), strMatch.index);
+      if (/\bclass[:=]\s*$/.test(before)) continue;
+      const ph = addString(str, 'astro-expr');
+      if (ph) {
+        newInner = newInner.replace(strMatch[0], quote + ph + quote);
+        changed = true;
+      }
+    }
+    if (changed) {
+      exprReplacements.push({ original: expr, replacement: '{' + newInner + '}' });
+    }
+  }
+  exprReplacements.sort((a, b) => b.original.length - a.original.length);
+  for (const { original, replacement } of exprReplacements) {
+    result = result.split(original).join(replacement);
   }
 
   const textPattern = />([^<]+)</g;

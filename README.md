@@ -26,23 +26,13 @@ china-starter-guide/
 ## Local Development
 
 ```bash
-# Install dependencies (first time only)
 npm install
-
-# Start dev server
 npm run dev
-
-# Open http://localhost:4321 in browser
-```
-
-## Build
-
-```bash
-npm run build
+# Open http://localhost:4321
 ```
 
 ## Deploy
 
-1. Push code to GitHub
-2. Connect GitHub repo to Cloudflare Pages
-3. Done — auto-deploy on every push
+Push to GitHub main branch → auto-deploys to Cloudflare Pages.
+
+**Custom domain:** chinastarterhub.com

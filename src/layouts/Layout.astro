@@ -79,11 +79,11 @@ const navItems = lang === 'zh'
     <!-- Footer -->
     <footer class="border-t border-gray-100 mt-16">
       <div class="max-w-5xl mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
-        <span>© 2026 China Starter Guide</span>
+        <span>© 2026 {lang === 'zh' ? '中国入门指南' : 'China Starter Guide'}</span>
         <div class="flex gap-4">
-        <a href={lang === 'zh' ? '/zh/about/' : '/en/about/'} class="hover:text-brand-600 no-underline">About</a>
-          <a href={lang === 'zh' ? '/zh/privacy/' : '/en/privacy/'} class="hover:text-brand-600 no-underline">Privacy</a>
-          <a href={lang === 'zh' ? '/zh/contact/' : '/en/contact/'} class="hover:text-brand-600 no-underline">Contact</a>
+        <a href={lang === 'zh' ? '/zh/about/' : '/en/about/'} class="hover:text-brand-600 no-underline">{lang === 'zh' ? '关于' : 'About'}</a>
+          <a href={lang === 'zh' ? '/zh/privacy/' : '/en/privacy/'} class="hover:text-brand-600 no-underline">{lang === 'zh' ? '隐私' : 'Privacy'}</a>
+          <a href={lang === 'zh' ? '/zh/contact/' : '/en/contact/'} class="hover:text-brand-600 no-underline">{lang === 'zh' ? '联系' : 'Contact'}</a>
         </div>
       </div>
     </footer>

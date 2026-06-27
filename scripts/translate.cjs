@@ -1,5 +1,5 @@
 /**
- * 百度翻译批量翻译脚本 v4 (MULTILINGUAL)
+ * 百度翻译批量翻译脚本 v5 (MULTILINGUAL + 9 locales)
  * 支持任意目标语言，一次配置多语言可用
  *
  * 使用方式:
@@ -7,7 +7,7 @@
  *   node scripts/translate.cjs ja             # en→日文
  *   node scripts/translate.cjs ko             # en→韩文
  *   node scripts/translate.cjs fr             # en→法文
- *   node scripts/translate.cjs zh ja ko fr    # 批量生成多个语言
+ *   node scripts/translate.cjs zh ja ko fr th ru es ar  # 批量生成多个语言
  */
 
 const fs = require('fs');
@@ -18,10 +18,31 @@ const https = require('https');
 const BAIDU_APPID = '20260624002637569';
 const BAIDU_KEY = 'wjVRVZoCcxeez3GVPynf';
 const SRC_DIR = path.resolve(__dirname, '..', 'src', 'pages', 'en');
-const SRC_LANG = 'en';         // Source language code
-const DEFAULT_TARGET = 'zh';   // Default target language
+const SRC_LANG = 'en';         // Source language code (Baidu)
+const DEFAULT_TARGET = 'zh';   // Default target language (site code)
 const BATCH_SIZE = 10;
 const MAX_RETRIES = 3;
+
+// Site language code -> Baidu API language code
+// https://fanyi-api.baidu.com/doc/21
+const BAIDU_LANG_MAP = {
+  en: 'en',    // English
+  zh: 'zh',    // 中文
+  ja: 'jp',    // 日本語 (Baidu uses jp)
+  ko: 'kor',   // 한국어 (Baidu uses kor)
+  fr: 'fra',   // Français (Baidu uses fra)
+  th: 'th',    // ไทย
+  ru: 'ru',    // Русский
+  es: 'spa',   // Español (Baidu uses spa)
+  ar: 'ara',   // العربية (Baidu uses ara)
+};
+
+const SUPPORTED_LANGS = Object.keys(BAIDU_LANG_MAP);
+const RTL_LANGS = new Set(['ar']);
+
+function getBaiduLang(siteLang) {
+  return BAIDU_LANG_MAP[siteLang] || siteLang;
+}
 
 // Cache per language
 const CACHE_DIR = path.resolve(__dirname, '..');
@@ -76,12 +97,30 @@ async function translateWithRetry(texts, from, to) {
 }
 
 // ====== Extraction ======
-const EXCLUDED_BRANDS = new Set([
-  'Alipay','WeChat','DiDi','WhatsApp','Google','YouTube','Instagram','Facebook','Twitter',
+const EXCLUDED_BRANDS_RAW = [
+  'Alipay','WeChat','WeChat Pay','AliPay','DiDi','WhatsApp','Google','YouTube','Instagram','Facebook','Twitter','X',
   'Visa','Mastercard','eSIM','VPN','iOS','Android','iPhone','iPad','Airbnb','Uber','COVA',
   'Amap','Trip.com','Yelp','ExpressVPN','NordVPN','WireGuard','OpenVPN','Hellobike',
-  'Meituan','Dianping','Weibo','Bilibili','TikTok'
-]);
+  'Meituan','Dianping','Weibo','Bilibili','TikTok','UnionPay','PayPal'
+];
+const EXCLUDED_BRANDS = new Set(EXCLUDED_BRANDS_RAW.map(s => s.toLowerCase()));
+
+function isExcludedBrand(t) {
+  const lower = t.toLowerCase();
+  // Exact match case-insensitive
+  if (EXCLUDED_BRANDS.has(lower)) return true;
+  // Whole-word / whole-phrase match for multi-word brands
+  for (const b of EXCLUDED_BRANDS_RAW) {
+    const re = new RegExp('\\b' + b.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\s+/g, '\\s+') + '\\b', 'i');
+    if (re.test(t)) return true;
+  }
+  return false;
+}
+
+function looksLikeEnglishText(t) {
+  // Treat as translatable if it contains at least one Latin letter
+  return /[a-zA-Z]/.test(t);
+}
 
 function extractAndPlaceholderize(content) {
   const placeholders = [];
@@ -93,11 +132,12 @@ function extractAndPlaceholderize(content) {
     if (!t) return null;
     if (/^\d+$/.test(t)) return null;
     if (/^[\s.,!?;:\-–—/\\(){}\[\]'"]+$/.test(t)) return null;
-    // FIX: Only skip if text is NOT English-sourced — handle multilang by checking
-    // if text is in the source language (has Latin/ASCII characters)
+    // Skip URLs, paths, code
     if (t.startsWith('http') || t.startsWith('/')) return null;
     if (t.startsWith('const ') || t.startsWith('import ')) return null;
-    if (EXCLUDED_BRANDS.has(t)) return null;
+    // Skip already-translated non-English text (heuristic: no Latin letters)
+    if (!looksLikeEnglishText(t)) return null;
+    if (isExcludedBrand(t)) return null;
     if (t.length < 3) return null;
     const key = t.toLowerCase().replace(/\s+/g, ' ');
     if (seen.has(key)) return null;
@@ -152,10 +192,11 @@ function extractAndPlaceholderize(content) {
 
 // ====== Main ======
 async function translateTo(targetLang) {
+  const baiduLang = getBaiduLang(targetLang);
   const DST_DIR = path.resolve(__dirname, '..', 'src', 'pages', targetLang);
   const cacheFile = getCacheFile(targetLang);
-  
-  console.log(`\n=== Translating en → ${targetLang} ===\n`);
+
+  console.log(`\n=== Translating en → ${targetLang} (Baidu: ${baiduLang}) ===\n`);
 
   // Load language-specific cache
   const cache = new Map();
@@ -173,7 +214,7 @@ async function translateTo(targetLang) {
 
   // Test API
   try {
-    const test = await baiduTranslate(['Hello'], SRC_LANG, targetLang);
+    const test = await baiduTranslate(['Hello'], SRC_LANG, baiduLang);
     console.log(`  API OK: "Hello" -> "${test[0]}"\n`);
   } catch (err) {
     console.error(`  API FAIL (${targetLang}): ${err.message}`);
@@ -191,7 +232,7 @@ async function translateTo(targetLang) {
       const full = path.join(dir, entry.name);
       const rel = path.relative(baseDir, full);
       if (entry.isDirectory()) files.push(...getAstroFiles(full, baseDir));
-      else if (entry.name.endsWith('.astro')) files.push({ enPath: full, zhPath: path.join(DST_DIR, rel), relativePath: rel });
+      else if (entry.name.endsWith('.astro')) files.push({ enPath: full, targetPath: path.join(DST_DIR, rel), relativePath: rel });
     }
     return files;
   }
@@ -210,7 +251,7 @@ async function translateTo(targetLang) {
   }
   console.log(`  Extracted: ${allPlaceholders.length} segments\n`);
 
-  const unique = [...new Map(allPlaceholders.map(p => [p.original, p.original])).keys()];
+  const unique = [...new Set(allPlaceholders.map(p => p.original))];
   console.log(`  Unique: ${unique.length}\n`);
 
   const toTrans = unique.filter(s => !cache.has(s));
@@ -226,7 +267,7 @@ async function translateTo(targetLang) {
       const n = Math.floor(i / BATCH_SIZE) + 1;
       const total = Math.ceil(toTrans.length / BATCH_SIZE);
       process.stdout.write(`  Batch ${n}/${total}... `);
-      const results = await translateWithRetry(batch, SRC_LANG, targetLang);
+      const results = await translateWithRetry(batch, SRC_LANG, baiduLang);
       for (let j = 0; j < batch.length; j++) {
         transMap.set(batch[j], results[j] || batch[j]);
         cache.set(batch[j], results[j] || batch[j]);
@@ -240,26 +281,34 @@ async function translateTo(targetLang) {
 
   // Generate target language files
   for (const { file, modifiedContent, placeholders } of fileData) {
-    let zhContent = modifiedContent;
+    let targetContent = modifiedContent;
     for (const p of placeholders) {
       if (transMap.has(p.original)) {
-        zhContent = zhContent.split(p.placeholder).join(transMap.get(p.original));
+        targetContent = targetContent.split(p.placeholder).join(transMap.get(p.original));
       }
     }
 
-    // Fix lang attribute
-    zhContent = zhContent.replace(/\blang="en"/g, `lang="${targetLang}"`);
-    zhContent = zhContent.replace(/\blang='en'/g, `lang='${targetLang}'`);
+    // Fix lang attribute on <html> and <Layout lang="...">
+    targetContent = targetContent.replace(/\blang="en"/g, `lang="${targetLang}"`);
+    targetContent = targetContent.replace(/\blang='en'/g, `lang='${targetLang}'`);
 
-    // Replace /en/ paths with /{lang}/
-    zhContent = zhContent.replace(/["']\/en\//g, match => match[0] + '/' + targetLang + '/');
-    zhContent = zhContent.replace(/\'\/en\'/g, `'/${targetLang}'`);
-    zhContent = zhContent.replace(/"\/en"/g, `"/${targetLang}"`);
-    zhContent = zhContent.replace(/\/en\//g, '/' + targetLang + '/');
+    // Add dir="rtl" for Arabic (only if not already present and inside html/Layout)
+    if (RTL_LANGS.has(targetLang)) {
+      targetContent = targetContent.replace(/(<html\b[^>]*)>/gi, `$1 dir="rtl">`);
+    }
 
-    const dir = path.dirname(file.zhPath);
+    // Replace /en/ paths with /{lang}/ — precise replacements only
+    // Double-quoted paths: "/en/..."
+    targetContent = targetContent.replace(/"\/en\/([^"]*)"/g, `"/${targetLang}/$1"`);
+    // Single-quoted paths: '/en/...'
+    targetContent = targetContent.replace(/'\/en\/([^']*)'/g, `'/${targetLang}/$1'`);
+    // Bare /en/ as a full path value
+    targetContent = targetContent.replace(/"\/en"/g, `"/${targetLang}"`);
+    targetContent = targetContent.replace(/'\/en'/g, `'/${targetLang}'`);
+
+    const dir = path.dirname(file.targetPath);
     if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
-    fs.writeFileSync(file.zhPath, zhContent, 'utf-8');
+    fs.writeFileSync(file.targetPath, targetContent, 'utf-8');
     console.log(`  ${file.relativePath}`);
   }
 
@@ -267,15 +316,24 @@ async function translateTo(targetLang) {
 }
 
 // ====== Entry ======
-const targetLangs = process.argv.slice(2).length > 0 
-  ? process.argv.slice(2) 
+const rawTargetLangs = process.argv.slice(2).length > 0
+  ? process.argv.slice(2)
   : [DEFAULT_TARGET];
 
+// Validate languages
+const invalid = rawTargetLangs.filter(l => !SUPPORTED_LANGS.includes(l));
+if (invalid.length > 0) {
+  console.error(`\nUnsupported language(s): ${invalid.join(', ')}`);
+  console.error(`Supported: ${SUPPORTED_LANGS.join(', ')}`);
+  process.exit(1);
+}
+const targetLangs = rawTargetLangs;
+
 async function main() {
-  console.log(`=== Baidu Translate v4 (Multilingual) ===`);
+  console.log(`=== Baidu Translate v5 (Multilingual, ${SUPPORTED_LANGS.length} locales) ===`);
   console.log(`Source: ${SRC_LANG}`);
   console.log(`Targets: ${targetLangs.join(', ')}`);
-  
+
   for (const lang of targetLangs) {
     await translateTo(lang);
   }

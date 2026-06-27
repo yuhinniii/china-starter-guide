@@ -1,0 +1,3 @@
+# Cloudflare Pages redirects
+# Root → English (server-side 301, no Loading flash)
+/   /en/  301

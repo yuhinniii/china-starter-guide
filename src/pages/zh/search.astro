@@ -59,7 +59,7 @@ pages.sort((a, b) => a.url.localeCompare(b.url));
 
 <Layout title="Search - China Starter Guide" lang="zh">
   <div class="max-w-3xl mx-auto px-4 py-16">
-    <h1 class="text-4xl font-bold mb-8">搜索</h1>
+    <h1 class="text-4xl font-bold mb-8">Search</h1>
     <div class="mb-4">
       <input
         type="text"
@@ -70,7 +70,7 @@ pages.sort((a, b) => a.url.localeCompare(b.url));
     </div>
     <p class="text-xs text-gray-400 mb-6" id="result-count">{pages.length} guides indexed</p>
     <div id="search-results" class="space-y-4">
-      <p class="text-gray-500">在上方输入关键词搜索我们的指南。</p>
+      <p class="text-gray-500">Enter a keyword above to search our guides.</p>
     </div>
   </div>
 
@@ -86,7 +86,7 @@ pages.sort((a, b) => a.url.localeCompare(b.url));
     input.addEventListener('input', (e) => {
       const q = e.target.value.toLowerCase().trim();
       if (!q) {
-        results.innerHTML = '<p class="text-gray-500">在上方输入关键词搜索我们的指南。</p>';
+        results.innerHTML = '<p class="text-gray-500">Enter a keyword above to search our guides.</p>';
         count.textContent = pages.length + ' guides indexed';
         return;
       }

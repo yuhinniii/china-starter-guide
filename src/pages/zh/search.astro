@@ -20,12 +20,27 @@ function stripHtml(html: string): string {
 
 function scanPages(dir: string) {
   const results = [];
+  const excludes = new Set([
+    'index.astro',          // homepage
+    'about.astro',
+    'contact.astro',
+    'privacy.astro',
+    'visa/index.astro',     // section hub pages (index pages = navigation, not articles)
+    'cities/index.astro',
+    'life/index.astro',
+    'medical/index.astro',
+    'payment/index.astro',
+    'tips/index.astro',
+    'transport/index.astro',
+  ]);
   const items = fs.readdirSync(dir, { withFileTypes: true });
   for (const item of items) {
     const full = path.join(dir, item.name);
     if (item.isDirectory()) {
       results.push(...scanPages(full));
     } else if (item.name.endsWith('.astro') && item.name !== 'search.astro') {
+      const relPath = path.relative(pagesDir, full).replace(/\\/g, '/');
+      if (excludes.has(relPath)) continue;
       const content = fs.readFileSync(full, 'utf8');
       const titleMatch = content.match(/const title\s*=\s*['"]([^'"]+)['"]/);
       const descMatch = content.match(/const description\s*=\s*['"]([^'"]+)['"]/);

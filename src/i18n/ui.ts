@@ -60,7 +60,7 @@ export const ui: Record<UILang, {
     language: 'Language',
   },
   zh: {
-    siteName: '中国起步枢纽',
+    siteName: 'China Starter Hub',
     nav: [
       { label: '首页', href: '/zh/' },
       { label: '签证', href: '/zh/visa/' },
@@ -75,7 +75,7 @@ export const ui: Record<UILang, {
     language: '语言',
   },
   ja: {
-    siteName: '中国スターターハブ',
+    siteName: 'China Starter Hub',
     nav: [
       { label: 'ホーム', href: '/ja/' },
       { label: 'ビザ', href: '/ja/visa/' },
@@ -90,7 +90,7 @@ export const ui: Record<UILang, {
     language: '言語',
   },
   ko: {
-    siteName: '차이나 스타터 허브',
+    siteName: 'China Starter Hub',
     nav: [
       { label: '홈', href: '/ko/' },
       { label: '비자', href: '/ko/visa/' },
@@ -105,7 +105,7 @@ export const ui: Record<UILang, {
     language: '언어',
   },
   fr: {
-    siteName: 'Hub de démarrage pour la Chine',
+    siteName: 'China Starter Hub',
     nav: [
       { label: 'Accueil', href: '/fr/' },
       { label: 'Visa', href: '/fr/visa/' },
@@ -120,7 +120,7 @@ export const ui: Record<UILang, {
     language: 'Langue',
   },
   th: {
-    siteName: 'ศูนย์กลางเริ่มต้นสำหรับจีน',
+    siteName: 'China Starter Hub',
     nav: [
       { label: 'หน้าแรก', href: '/th/' },
       { label: 'วีซ่า', href: '/th/visa/' },
@@ -135,7 +135,7 @@ export const ui: Record<UILang, {
     language: 'ภาษา',
   },
   ru: {
-    siteName: 'Хаб для поездок в Китай',
+    siteName: 'China Starter Hub',
     nav: [
       { label: 'Главная', href: '/ru/' },
       { label: 'Виза', href: '/ru/visa/' },
@@ -150,7 +150,7 @@ export const ui: Record<UILang, {
     language: 'Язык',
   },
   es: {
-    siteName: 'Hub de inicio para China',
+    siteName: 'China Starter Hub',
     nav: [
       { label: 'Inicio', href: '/es/' },
       { label: 'Visa', href: '/es/visa/' },
@@ -165,7 +165,7 @@ export const ui: Record<UILang, {
     language: 'Idioma',
   },
   ar: {
-    siteName: 'مركز الصين للمبتدئين',
+    siteName: 'China Starter Hub',
     nav: [
       { label: 'الرئيسية', href: '/ar/' },
       { label: 'التأشيرة', href: '/ar/visa/' },

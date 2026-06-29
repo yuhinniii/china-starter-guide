@@ -1,0 +1,364 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = '중국 세관 규정: 중국에 반입 가능한 물품과 불가능한 물품';
+const description = '관광객을 위한 중국 세관 완벽 가이드 — 면세 한도, 금지 품목, 신고 대상, 선택할 채널.';
+---
+
+<Layout title={title} description={description} lang="ko">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/en/visa/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        비자 & 입국으로 돌아가기
+      </a>
+    </nav>
+    <!-- Header -->
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🛂 입국 & 비자</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        중국 세관 규정: 중국에 반입 가능한 물품과 불가능한 물품
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">중국에 입국하는 관광객을 위한 실용적인 세관 규정 가이드.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 최종 업데이트: 2026년 6월</span>
+        <span>⏱️ 읽는 시간 5분</span>
+      </div>
+    </header>
+
+    <!-- Quick Answer Box -->
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-blue-900 mb-4">🎯 빠른 답변</h2>
+      <p class="text-lg text-blue-800 leading-relaxed mb-4">
+        일반 관광객을 위한 요약입니다:
+      </p>
+      <div class="overflow-x-auto mb-4">
+        <table class="w-full text-sm bg-white rounded-xl overflow-hidden shadow-sm">
+          <thead>
+            <tr class="bg-blue-600 text-white">
+              <th class="px-4 py-2 text-left">✅ 가져와도 되는 것</th>
+              <th class="px-4 py-2 text-left">⚠️ 아래 세부사항 확인</th>
+              <th class="px-4 py-2 text-left">❌ 가져오지 말 것</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-2">옷, 세면용품, 휴대폰, 노트북, 카메라</td>
+              <td class="px-4 py-2">술, 담배, 2,000위안 초과 선물, $5,000 초과 현금</td>
+              <td class="px-4 py-2">고기, 과일, 채소, 마약, 무기</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <ul class="list-disc pl-5 text-blue-800 text-sm space-y-1">
+        <li><strong>중국에 두고 갈 선물/소비품:</strong> <strong>2,000위안</strong> 미만 유지</li>
+        <li><strong>담배:</strong> 최대 <strong>400개비</strong> (홍콩/마카오 경유 시 200개비)</li>
+        <li><strong>술:</strong> 최대 <strong>1.5L</strong> (홍콩/마카오 경유 시 0.75L)</li>
+        <li><strong>외화:</strong> <strong>$5,000 USD</strong> 초과 시 신고</li>
+        <li><strong>위안화 현금:</strong> 최대 <strong>20,000위안</strong> (예외 없음)</li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="prose prose-lg max-w-none">
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">❌ 중국에 가져오지 말아야 할 것들</h2>
+
+      <div class="bg-red-50 border border-red-200 rounded-2xl p-6 mb-6 not-prose">
+        <p class="font-bold text-gray-900 mb-2">절대 금지 (몰수됨):</p>
+        <ul class="list-disc pl-5 text-gray-700 space-y-1">
+          <li>🚫 마약, 무기, 위조품</li>
+          <li>🚫 신선 과일, 채소, 생고기, 달걀, 유제품, 살아있는 식물</li>
+          <li>🚫 멸종 위기 종 제품 (상아, 호랑이 뼈, 코뿔소 뿔)</li>
+        </ul>
+      </div>
+
+      <div class="bg-yellow-50 border border-yellow-200 rounded-2xl p-6 mb-8 not-prose">
+        <p class="font-bold text-gray-900 mb-2">주의해야 할 예상치 못한 품목:</p>
+        <ul class="list-disc pl-5 text-gray-700 space-y-1">
+          <li><strong>육포</strong> (쇠고기 육포, 소시지, 베이컨) — 포장되어 있어도 금지</li>
+          <li><strong>가방에 남아있는 과일</strong> — 검역견이 찾아냅니다</li>
+          <li><strong>한약재</strong> — 일부에 멸종 위기 종이 포함될 수 있음. 명확한 라벨이 있는 포장 제품 사용</li>
+          <li><strong>보조 배터리</strong> — 3C 마크 필수, 기내 반입만 가능, 최대 160Wh</li>
+        </ul>
+      </div>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">💰 대부분의 관광객이 알아야 할 사항</h2>
+
+      <h3 class="text-xl font-bold text-gray-800 mb-4">선물 및 두고 오는 물품</h3>
+      <p class="text-gray-700 mb-4">
+        2,000위안 한도는 중국에서 선물하거나 소비하는 물품(친구에게 주는 선물, 기념품, 체류 기간 동안 먹는 초콜릿 등)에 적용됩니다. 본인이 사용하고 다시 가져가는 물품은 해당되지 않습니다.
+      </p>
+
+      <div class="overflow-x-auto mb-8 not-prose">
+        <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+          <thead>
+            <tr class="bg-gray-900 text-white">
+              <th class="px-5 py-3 font-bold">구분</th>
+              <th class="px-5 py-3 font-bold">중국에 두고 가는 물품 면세 한도</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 font-semibold">외국인 관광객</td>
+              <td class="px-5 py-3"><strong>2,000위안</strong></td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-5 py-3 font-semibold">귀국 중국인</td>
+              <td class="px-5 py-3">5,000위안</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="text-xl font-bold text-gray-800 mb-4">담배 & 술</h3>
+      <p class="text-gray-700 mb-4">
+        세관 신고서에 이 면세 한도가 명시되어 있습니다. 초과하는 경우 해당란에 체크하고 Red Channel을 이용하세요.
+      </p>
+
+      <div class="overflow-x-auto mb-4 not-prose">
+        <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+          <thead>
+            <tr class="bg-gray-900 text-white">
+              <th class="px-5 py-3 font-bold">품목</th>
+              <th class="px-5 py-3 font-bold text-center">일반 입국자</th>
+              <th class="px-5 py-3 font-bold text-center">홍콩/마카오 도착자</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3">담배 (가열담배 포함)</td>
+              <td class="px-5 py-3 text-center"><strong>400개비</strong></td>
+              <td class="px-5 py-3 text-center">200개비</td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-5 py-3">시가</td>
+              <td class="px-5 py-3 text-center"><strong>20개</strong></td>
+              <td class="px-5 py-3 text-center">10개</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3">느슨한 담배</td>
+              <td class="px-5 py-3 text-center"><strong>500g</strong></td>
+              <td class="px-5 py-3 text-center">250g</td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-5 py-3">전자담배 기기</td>
+              <td class="px-5 py-3 text-center"><strong>2개</strong></td>
+              <td class="px-5 py-3 text-center">1개</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3">전자담배 팟</td>
+              <td class="px-5 py-3 text-center"><strong>6개</strong> (액상 총 12ml 이하)</td>
+              <td class="px-5 py-3 text-center">3개 (6ml 이하)</td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-5 py-3">알코올 (12% 이상)</td>
+              <td class="px-5 py-3 text-center"><strong>1,500ml</strong></td>
+              <td class="px-5 py-3 text-center">750ml</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-sm text-gray-500 mb-8">참고: 빈번한 여행자(매일/매주 국경 통과)에게는 훨씬 더 엄격한 한도가 적용됩니다 — 담배 40개비, 시가 2개, 담뱃잎 40g, 전자담배 1개. 대부분의 관광객은 이 범주에 해당하지 않습니다.</p>
+
+      <h3 class="text-xl font-bold text-gray-800 mb-4">현금</h3>
+      <div class="overflow-x-auto mb-8 not-prose">
+        <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+          <thead>
+            <tr class="bg-gray-900 text-white">
+              <th class="px-5 py-3 font-bold">통화</th>
+              <th class="px-5 py-3 font-bold text-center">한도</th>
+              <th class="px-5 py-3 font-bold">조치</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3">위안화</td>
+              <td class="px-5 py-3 text-center">최대 <strong>20,000위안</strong></td>
+              <td class="px-5 py-3">초과 시 반입 금지</td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-5 py-3">USD 또는 기타 외화</td>
+              <td class="px-5 py-3 text-center"><strong>$5,000</strong> 초과 시 신고</td>
+              <td class="px-5 py-3">도장 찍힌 양식 수령, 출국 시 보관</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="text-xl font-bold text-gray-800 mb-4">약품</h3>
+      <p class="text-gray-700 mb-4">
+        <strong>처방약:</strong> 7일분은 서류 없이 괜찮습니다. 장기 체류 시 의사 소견서를 지참하세요. 약은 원래 용기에 보관하세요 — 세관 직원은 알약 정리함을 신뢰하지 않습니다.
+      </p>
+      <p class="text-gray-700 mb-8">
+        <strong>감기약 주의:</strong> <strong>슈도에페드린</strong>이 포함된 약(Sudafed, NyQuil, 많은 일반 감기약)은 중국에서 제한됩니다. 한 상자는 괜찮지만, 여러 상자를 가져오면 약물 전구체로 간주될 수 있습니다. 감기약을 많이 챙기지 마세요.
+      </p>
+
+      <h3 class="text-xl font-bold text-gray-800 mb-4">다시 가져갈 전자제품</h3>
+      <p class="text-gray-700 mb-8">
+        노트북, 휴대폰, 카메라, 태블릿은 Green Channel에서 문제없습니다 — 가져와서 다시 가져갈 개인 물품입니다. 매우 고가의 장비(전문 카메라 장비, 여러 대의 노트북)를 휴대하는 경우 Red Channel에서 "임시 수입"으로 자발적으로 신고할 수 있지만, 대부분의 관광객은 신경 쓰지 않으며 문제가 없습니다.
+      </p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">🚦 어떤 채널을 선택해야 할까요</h2>
+      <p class="text-gray-700 mb-4">
+        세관 신고서에는 7개의 항목이 있습니다. <strong>하나라도 해당되면 → Red Channel. 아무것도 해당되지 않으면 → Green Channel.</strong>
+      </p>
+
+      <div class="overflow-x-auto mb-8 not-prose">
+        <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+          <thead>
+            <tr class="bg-gray-900 text-white">
+              <th class="px-5 py-3 font-bold text-center">#</th>
+              <th class="px-5 py-3 font-bold">다음 물품이 있으면 이 항목 체크</th>
+              <th class="px-5 py-3 font-bold text-center">이동</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 text-center font-bold">1</td>
+              <td class="px-5 py-3">동물, 식물, 신선식품, 고기, 미생물, 생물제품</td>
+              <td class="px-5 py-3 text-center">🔴</td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-5 py-3 text-center font-bold">2</td>
+              <td class="px-5 py-3">(귀국 중국인) 5,000위안 초과 물품</td>
+              <td class="px-5 py-3 text-center">🔴</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 text-center font-bold">3</td>
+              <td class="px-5 py-3">(외국인 관광객) 중국에 <strong>두고 갈</strong> 물품 가치가 <strong>2,000위안 초과</strong></td>
+              <td class="px-5 py-3 text-center">🔴</td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-5 py-3 text-center font-bold">4</td>
+              <td class="px-5 py-3"><strong>1,500ml</strong> 초과 알코올 / <strong>400개비</strong> 초과 담배 / <strong>20개</strong> 초과 시가 / <strong>500g</strong> 초과 담뱃잎 / 전자담배 기기 2개 또는 팟 6개 초과</td>
+              <td class="px-5 py-3 text-center">🔴</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 text-center font-bold">5</td>
+              <td class="px-5 py-3"><strong>20,000위안</strong> 초과 위안화 또는 <strong>$5,000 USD</strong> 초과 외화 현금</td>
+              <td class="px-5 py-3 text-center">🔴</td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-5 py-3 text-center font-bold">6</td>
+              <td class="px-5 py-3">별도 선적 수하물, 업무용 물품</td>
+              <td class="px-5 py-3 text-center">🔴</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 text-center font-bold">7</td>
+              <td class="px-5 py-3">확실하지 않은 기타 모든 물품</td>
+              <td class="px-5 py-3 text-center">🔴</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-gray-700 font-semibold mb-8">체크한 항목이 없습니까? → 🟢 Green Channel. 그냥 통과하세요.</p>
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">실제 관광객 시나리오</h2>
+
+      <!-- Scenario 1 -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-4 not-prose">
+        <p class="font-bold text-gray-900 mb-2">시나리오 1: 중국 친구를 위한 선물</p>
+        <p class="text-gray-700 text-sm mb-3">싱글몰트 스카치 한 병($150), 수제 초콜릿 한 상자($40), 브랜드 가죽 지갑($120) — 모두 상하이 친구에게 줄 선물입니다. 총 가치: ~$310 USD (~2,200위안).</p>
+        <div class="bg-yellow-50 rounded-xl p-4">
+          <p class="text-sm text-yellow-900"><strong>분석:</strong> 이 물품들은 중국에 남습니다(선물)并且 총 2,000위안을 초과합니다. 신고서의 항목 3에 체크합니다.</p>
+          <p class="text-sm text-red-700 font-semibold mt-1">→ 🔴 Red Channel. "중국에 남길 선물"로 신고하고 초과분 200위안에 대한 관세를 납부할 준비를 하세요.</p>
+        </div>
+      </div>
+
+      <!-- Scenario 2 -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-4 not-prose">
+        <p class="font-bold text-gray-900 mb-2">시나리오 2: $5,500 USD 현금</p>
+        <p class="text-gray-700 text-sm mb-3">여행 전에 현금을 환전하여 지갑에 $5,500 USD를 가지고 여행에 사용할 예정입니다.</p>
+        <div class="bg-yellow-50 rounded-xl p-4">
+          <p class="text-sm text-yellow-900"><strong>분석:</strong> $5,000 USD를 초과하는 외화 현금은 항목 5에 해당합니다.</p>
+          <p class="text-sm text-red-700 font-semibold mt-1">→ 🔴 Red Channel. $5,500 USD를 신고하고, 현금 신고서를 작성한 후 도장이 찍힌 사본을 받으세요. 출국 시 남은 현금을 가져갈 수 있도록 그 서류를 보관하세요.</p>
+        </div>
+      </div>
+
+      <!-- Scenario 3 -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-4 not-prose">
+        <p class="font-bold text-gray-900 mb-2">시나리오 3: 일반 여행 짐</p>
+        <p class="text-gray-700 text-sm mb-3">옷, 세면용품, 노트북, 휴대폰, Kindle, 카메라를 챙겼습니다 — 모두 다시 가져갈 개인 물품입니다. 가치는 수천 달러이지만, 어느 것도 중국에 남지 않습니다.</p>
+        <div class="bg-green-50 rounded-xl p-4">
+          <p class="text-sm text-green-800"><strong>분석:</strong> 신고서의 어떤 항목도 해당되지 않습니다. 이는 "임시 수입" — 다시 가져갈 개인 소지품입니다.</p>
+          <p class="text-sm text-green-700 font-semibold mt-1">→ 🟢 Green Channel. 95% 관광객의 현실입니다. 그냥 통과하세요.</p>
+        </div>
+      </div>
+
+      <!-- Scenario 4 -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-4 not-prose">
+        <p class="font-bold text-gray-900 mb-2">시나리오 4: 여행용 감기약</p>
+        <p class="text-gray-700 text-sm mb-3">감기약 한 상자(슈도에페드린 함유), 알레르기 약, 항생제 연고 튜브 — 여행자라면 누구나 챙기는 표준 물품입니다.</p>
+        <div class="bg-yellow-50 rounded-xl p-4">
+          <p class="text-sm text-yellow-900"><strong>분석:</strong> 개인 사용을 위한 일반 일반의약품은 괜찮습니다. 슈도에페드린은 중국에서 제한되지만, 한 상자(7일분)는 보통 문제되지 않습니다.</p>
+          <p class="text-sm text-green-700 font-semibold mt-1">→ 🟢 Green Channel (일반 분량). 하지만 여러 상자를 가져왔다면 이야기가 다릅니다.</p>
+        </div>
+      </div>
+
+      <!-- Scenario 5 -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-4 not-prose">
+        <p class="font-bold text-gray-900 mb-2">시나리오 5: 비행기에서 가져온 사과와 치킨 샌드위치</p>
+        <p class="text-gray-700 text-sm mb-3">기내 조식 서비스에서 신선한 사과와 샌드위치를 가져와 가방에 넣어둔 것을 잊었습니다.</p>
+        <div class="bg-red-50 rounded-xl p-4">
+          <p class="text-sm text-red-800"><strong>분석:</strong> 신선 과일 = 항목 1. 육류 제품 = 항목 1.</p>
+          <p class="text-sm text-red-700 font-semibold mt-1">→ 🔴 Red Channel. 신고하세요 — 몰수되어 폐기됩니다. 채널을 선택하기 전에 항상 가방을 확인하세요.</p>
+        </div>
+      </div>
+
+      <div class="bg-red-50 border-l-4 border-red-400 p-5 rounded-r-xl mb-8 not-prose">
+        <p class="text-red-900 text-sm"><strong>확실하지 않으면 Red Channel을 선택하세요.</strong> 자발적 신고는 간단한 절차입니다. 숨기면 물품이 몰수되고 벌금이 부과됩니다.</p>
+      </div>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">📝 신고 방법</h2>
+      <p class="text-gray-700 mb-4">
+        <strong>세관에서 종이 양식을 받으세요</strong> — 검사 채널 전 카운터에서 "Declaration Form for Baggage"(중영문 대조)를 받아 그 자리에서 작성하세요. 해당되는 항목에 체크한 후 Red Channel에서 직원에게 제출하세요.
+      </p>
+      <p class="text-gray-700 mb-8">
+        <strong>은닉 시 처벌:</strong> 몰수 + 최대 100,000위안 벌금. 10,000위안 초과 탈세 시 형사 처벌 가능.
+      </p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">💡 빠른 팁</h2>
+      <ol class="list-decimal pl-6 space-y-2 text-gray-700 mb-8">
+        <li><strong>약은 원래 용기에 보관</strong> — 세관 직원은 알약 정리함을 신뢰하지 않습니다</li>
+        <li><strong>가방에 과일, 고기, 유제품 넣지 마세요</strong> — 검역견은 매우 잘 훈련되어 있습니다</li>
+        <li><strong>세관에서 사진 촬영 금지</strong> — 검사 구역에서는 녹음이 금지됩니다</li>
+        <li><strong>채널 선택 전 가방 확인</strong> — 비행기에서 가져온 사과도 해당됩니다</li>
+        <li><strong>영수증 보관</strong> — 브랜드 제품 및 선물용</li>
+      </ol>
+
+    </div>
+
+    <!-- Sources -->
+    <div class="bg-gray-50 rounded-2xl p-6 not-prose mt-12">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📚 출처</h3>
+      <ul class="space-y-2">
+        <li><a href="http://english.customs.gov.cn/Statics/88707c1e-aa4e-40ca-a968-bdbdbb565e4f.html" class="text-brand-600 hover:underline text-sm" target="_blank" rel="noopener">중국 세관 공식 — 승객 수하물 신고</a></li>
+      </ul>
+    </div>
+
+    <!-- Related Guides -->
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose mt-6">
+      <h3 class="text-2xl font-bold text-gray-900 mb-6">📚 관련 가이드</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/en/life/survival-kit/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">중국 여행 생존 키트</p>
+          <p class="text-sm text-gray-600">출발 전 완벽 체크리스트</p>
+        </a>
+        <a href="/en/visa/arrival-card/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">도착 카드 온라인 제출 방법</p>
+          <p class="text-sm text-gray-600">스크린샷과 함께 보는 단계별 가이드</p>
+        </a>
+      </div>
+    </div>
+  </article>
+</Layout>

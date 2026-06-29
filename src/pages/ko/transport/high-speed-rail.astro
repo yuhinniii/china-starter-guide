@@ -1,0 +1,119 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = '중국 고속철도 예약 및 탑승 방법: 단계별 가이드';
+const description = '중국에서 티켓 예약, 역 이용, 고속철도 탑승에 대한 단계별 가이드.';
+---
+
+<Layout title={title} description={description} lang="ko">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/en/transport/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        교통으로 돌아가기
+      </a>
+    </nav>
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🚄 기차</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        중국 고속철도 예약 및 탑승 방법
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">중국에서 티켓 예약, 역 이용, 고속철도 탑승에 대한 단계별 가이드.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 최종 업데이트: 2026년 6월</span>
+        <span>⏱️ 6분 소요</span>
+      </div>
+    </header>
+
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-blue-900 mb-4">🎯 한 줄 요약</h2>
+      <p class="text-lg text-blue-800 leading-relaxed">
+        <strong>Trip.com</strong>(외국인에게 가장 쉬움) 또는 <strong>12306</strong>(공식)에서 티켓 예약. 2등석도 충분히 편안합니다. 30~40분 일찍 도착하세요 — <strong>여권이 곧 티켓</strong>이므로 항상 지니고 다니세요. 탑승 순서는 매끄럽습니다: 보안 검색 → 대기실 → 게이트 → 승강장. 역 전체에 영어 표지판이 있습니다.
+      </p>
+    </div>
+
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 목차</h3>
+      <ul class="space-y-3">
+        <li><a href="#booking" class="text-blue-600 hover:underline">🎫 티켓 예약</a></li>
+        <li><a href="#classes" class="text-blue-600 hover:underline">💺 좌석 등급</a></li>
+        <li><a href="#station" class="text-blue-600 hover:underline">🚉 역에서</a></li>
+        <li><a href="#onboard" class="text-blue-600 hover:underline">🚄 탑승 팁</a></li>
+      </ul>
+    </nav>
+
+    <div class="prose prose-gray max-w-none">
+
+      <h2 id="booking" class="text-2xl font-bold text-gray-900 mb-4">🎫 티켓 예약</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">세 가지 옵션이 있습니다:</p>
+
+      <ul class="space-y-2 text-gray-700 mb-8">
+        <li><strong>Trip.com (추천):</strong> 12306에서 직접 티켓 데이터를 가져옵니다. 별도 12306 계정 불필요. 예약 후 여권만으로 탑승 가능.</li>
+        <li><strong>12306 (공식):</strong> 더 나은 개인정보 보호를 제공하는 공식 판매 채널. 외국인은 여권 번호로 등록 가능.</li>
+        <li><strong>역 매표소:</strong> 직접 구매 가능하지만 영어 지원이 보장되지 않습니다.</li>
+      </ul>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">대부분의 여행자에게 Trip.com이 가장 쉬운 옵션입니다. 소액의 예약 수수료는 그 편리함에 충분히 가치가 있습니다.</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">좌석 등급</h2>
+
+      <ul class="space-y-2 text-gray-700 mb-8">
+        <li><strong>2등석 (二等座):</strong> 기본 옵션. 편안한 좌석, 3+2 배열. 대부분의 사람이 선택합니다.</li>
+        <li><strong>1등석 (一等座):</strong> 더 넓은 좌석, 2+2 배열, 더 넓은 다리 공간. 3시간 이상 여행이라면 업그레이드할 가치가 있습니다.</li>
+        <li><strong>비즈니스석 (商务座):</strong> 완전히 젖혀지는 좌석, 프라이버시, 장거리 노선 무료 식사 제공. 비싸지만 하나의 경험입니다.</li>
+      </ul>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">역에서</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">출발 30~40분 전에 도착하세요. 순서는 다음과 같습니다:</p>
+
+      <ol class="list-decimal pl-6 space-y-4 text-gray-700 mb-8">
+        <li><strong>보안 검색:</strong> 짐을 X-ray 기계에 통과(공항처럼, 하지만 더 빠름).</li>
+        <li><strong>대기실:</strong> 큰 화면에서 열차 게이트 번호 확인. 표지판을 따르세요.</li>
+        <li><strong>탑승:</strong> 매표소에서 여권 제시. 맨 끝 수동 카운터 차선을 이용한 후 아래층 승강장으로 이동.</li>
+        <li><strong>객차 찾기:</strong> 승강장 계단 근처 화면에서 열차에 할당된 색상 코드 확인. 이 색상을 승강장의 색상 바닥 표시와 일치시켜 올바른 객차를 찾으세요.</li>
+      </ol>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">탑승 팁</h2>
+
+      <ul class="space-y-2 text-gray-700 mb-8">
+        <li>음식과 음료는 카트에서 판매됩니다.</li>
+        <li>일부 열차는 좌석 아래에 전원 콘센트가 있습니다(중국식 소켓 — 어댑터 지참).</li>
+        <li>추가 편의를 위해 내리식 창문 블라인드가 제공됩니다.</li>
+        <li>역과 열차 안내 방송은 중국어와 영어로 모두 방송됩니다.</li>
+      </ul>
+
+      <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 not-prose">
+        <p class="text-gray-700"><strong>중요:</strong> 여권이 곧 티켓입니다. 역 입구, 탑승 게이트, 때로는 열차 내에서 검사가 있으니 항상 지니고 다니세요. 위탁 수하물에 넣지 마세요.</p>
+      </div>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="related" class="text-2xl font-bold text-gray-900 mb-6 mt-12">📚 관련 가이드</h2>
+
+      <div class="space-y-4 not-prose">
+        <a href="/en/transport/transport-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>중국 교통 완벽 가이드</strong> — 전체 교통 가이드</a>
+        <a href="/en/transport/airport-to-city/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🛬 <strong>공항에서 시내까지</strong> — 도착했을 때 해야 할 일</a>
+        <a href="/en/transport/didi/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚗 <strong>외국인이 디디 사용하는 방법</strong> — 차량 호출 설정</a>
+        <a href="/en/transport/metro-bus/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚇 <strong>중국 주요 도시 지하철 & 버스 가이드</strong> — 도시 교통 이용하기</a>
+      </div>
+
+    </div>
+
+    <!-- Sources -->
+    <div class="mt-8 pt-6 border-t border-gray-200 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-3">출처</h3>
+      <ul class="space-y-2">
+        <li><a href="https://www.12306.cn/en/index.html" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">중국철도 공식 - 12306 EN</a></li>
+      </ul>
+    </div>
+  </article>
+</Layout>

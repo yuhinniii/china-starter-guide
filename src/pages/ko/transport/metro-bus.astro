@@ -1,0 +1,117 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = '중국 주요 도시 지하철 & 버스 가이드';
+const description = '중국 도시에서 대중교통 이용 방법. 모바일 결제, 교통 카드, 버스 팁, 일반 길찾기 조언.';
+---
+
+<Layout title={title} description={description} lang="ko">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/en/transport/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        교통으로 돌아가기
+      </a>
+    </nav>
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🚇 대중교통</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        중국 주요 도시 지하철 & 버스 가이드
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">중국 도시에서 대중교통 이용 방법 — 모바일 결제, 교통 카드, 버스 팁, 길찾기 조언.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 최종 업데이트: 2026년 6월</span>
+        <span>⏱️ 4분 소요</span>
+      </div>
+    </header>
+
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-blue-900 mb-4">🎯 한 줄 요약</h2>
+      <p class="text-lg text-blue-800 leading-relaxed">
+        중국의 지하철 시스템은 <strong>세계적 수준이며, 저렴하고, 영어에 친숙합니다</strong>. 알리페이나 위챗페이로 개찰구에서 QR 코드를 스캔하세요 — 티켓 불필요. 버스는 지하철이 닿지 않는 지역에 좋은 백업입니다. 역명과 안내 방송은 모든 곳에서 이중 언어로 제공됩니다.
+      </p>
+    </div>
+
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 목차</h3>
+      <ul class="space-y-3">
+        <li><a href="#general" class="text-blue-600 hover:underline">💡 모든 도시 공통 팁</a></li>
+        <li><a href="#buses" class="text-blue-600 hover:underline">🚌 버스</a></li>
+        <li><a href="#cards" class="text-blue-600 hover:underline">💳 교통 카드</a></li>
+        <li><a href="#mobile" class="text-blue-600 hover:underline">📱 교통 모바일 결제</a></li>
+      </ul>
+    </nav>
+
+    <div class="prose prose-gray max-w-none">
+
+      <h2 id="general" class="text-2xl font-bold text-gray-900 mb-4">💡 모든 도시 공통 팁</h2>
+
+      <ul class="space-y-3 text-gray-700 mb-8">
+        <li><strong>결제:</strong> 자판기에서 1회용 티켓 구매 가능(대부분 현금과 알리페이/위챗페이 수용). 또는 알리페이의 교통 섹션이나 위챗의 교통 미니 프로그램을 통해 개찰구에서 QR 코드 스캔 가능.</li>
+        <li><strong>표지판:</strong> 역명은 중국어와 영어로 표시. 안내 방송은 이중 언어.</li>
+        <li><strong>환승:</strong> 색상 라인과 영어 표지판을 따르세요. 노선 간 환승이 명확하게 표시되어 있습니다.</li>
+        <li><strong>내비게이션 앱:</strong> 정확한 지하철 경로 안내를 위해 가오더 지도나 바이두 지도 같은 현지 앱을 사용하세요.</li>
+      </ul>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="buses" class="text-2xl font-bold text-gray-900 mb-4">🚌 버스</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">버스는 지하철이 목적지까지 직통으로 가지 않을 때 유용한 백업입니다. 더 외진 지역을 커버하기 때문입니다. 지하철보다 저렴하지만 느리고 러시아워에는 교통 체증에 자주 걸립니다.</p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">관광 도시에서는 대부분의 버스가 중국어와 영어로 정류장을 안내합니다. 하지만 정류장 알림에 주의를 기울이세요. 많은 버스가 승하차 시 교통 QR 코드 스캔이 필요하므로, 내리기 전에 다시 스캔하는 것을 잊지 마세요.</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="cards" class="text-2xl font-bold text-gray-900 mb-4">💳 교통 카드</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">각 도시마다 자체 교통 카드가 있습니다(베이징: 이카퉁, 선전: 선전퉁). 지하철역에서 구매하고 모바일 결제로 충전하세요. 지하철과 버스 모두에서 사용 가능하며 소액 할인을 제공하지만, 단기 관광객에게는 필수는 아닙니다. 독특한 디자인이 많아 기념품으로 하나 사는 것도 좋습니다.</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="mobile" class="text-2xl font-bold text-gray-900 mb-4">📱 교통 모바일 결제</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">현지인이 가장 많이 사용하는 방법입니다 — 티켓을 사거나 별도 카드를 소지할 필요가 없습니다.</p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">알리페이와 위챗페이 모두 지하철과 버스용 범용 교통 QR 코드를 생성합니다. 알리페이를 열고, 홈 화면에서 'Transport'를 누르고, 도시를 선택한 후 개찰구에서 스캔하세요. 연결된 카드에서 결제가 차감됩니다. 위챗도 'Ride Code' 미니 프로그램을 통해 비슷하게 작동합니다.</p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>팁:</strong> 버스와 지하철용 QR 코드가 별도로 있으므로, 탑승 전에 올바른 것을 선택했는지 다시 확인하세요.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8 not-prose">
+        <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+          <img src="/images/alipay-transit.jpg" alt="알리페이 교통 QR 코드 설정" class="w-full" />
+          <div class="p-4">
+            <p class="text-sm font-semibold text-gray-900">알리페이 교통 QR 코드</p>
+            <p class="text-xs text-gray-500">알리페이 열기 → Transport → 도시 선택 → 개찰구에서 스캔</p>
+          </div>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+          <img src="/images/wechat-transit.jpg" alt="위챗 교통 QR 코드 설정" class="w-full" />
+          <div class="p-4">
+            <p class="text-sm font-semibold text-gray-900">위챗 교통 QR 코드</p>
+            <p class="text-xs text-gray-500">위챗 열기 → Ride Code 미니 프로그램 → 개찰구에서 스캔</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="not-prose mt-16">
+      <h2 class="text-2xl font-bold text-gray-900 mb-8">📚 관련 가이드</h2>
+      <div class="space-y-4">
+        <a href="/en/transport/transport-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>중국 교통 완벽 가이드</strong> — 전체 교통 가이드</a>
+        <a href="/en/transport/didi/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚗 <strong>외국인이 디디 사용하는 방법</strong> — 차량 호출 설정</a>
+        <a href="/en/payment/setup-alipay/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">💳 <strong>외국인 알리페이 설정 방법</strong> — 휴대폰으로 교통비 결제</a>
+      </div>
+    </div>
+
+    <!-- Sources -->
+    <div class="mt-8 pt-6 border-t border-gray-200 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-3">출처</h3>
+      <ul class="space-y-2">
+        <li><a href="https://" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">지하철 웹사이트는 주로 중국어입니다. 일반 지하철 노선도 및 경로 정보는 각 도시 공식 지하철 사이트에서 브라우저 번역으로 확인 가능합니다.</a></li>
+      </ul>
+    </div>
+  </article>
+</Layout>

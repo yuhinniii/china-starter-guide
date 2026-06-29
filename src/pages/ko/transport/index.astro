@@ -1,0 +1,117 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = '교통 가이드 — 중국 내 이동 방법';
+const description = '기차, 비행기, 지하철, 차량 호출 — 필요한 모든 것.';
+---
+
+<Layout title={title} description={description} lang="ko">
+  <section class="max-w-4xl mx-auto px-6 py-12">
+    
+    <!-- Header -->
+    <header class="mb-10 text-center">
+      <p class="text-sm text-gray-500 mb-2">🚄 교통</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-3 leading-tight">중국 교통</h1>
+      <p class="text-base text-gray-500 max-w-2xl mx-auto">기차, 비행기, 지하철, 차량 호출 — 필요한 모든 것.</p>
+    </header>
+
+    <!-- Quick Stats -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-12 not-prose">
+      <div class="bg-sky-50 border border-sky-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-sky-800">1</p>
+        <p class="text-xs font-semibold text-sky-800 uppercase tracking-wide mt-1">고속철도 가이드</p>
+      </div>
+      <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-emerald-800">1</p>
+        <p class="text-xs font-semibold text-emerald-800 uppercase tracking-wide mt-1">공항 이동</p>
+      </div>
+      <div class="bg-purple-50 border border-purple-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-purple-800">2</p>
+        <p class="text-xs font-semibold text-purple-800 uppercase tracking-wide mt-1">시내 교통</p>
+      </div>
+      <div class="bg-gray-50 border border-gray-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-gray-800">1</p>
+        <p class="text-xs font-semibold text-gray-800 uppercase tracking-wide mt-1">차량 호출 가이드</p>
+      </div>
+    </div>
+
+    <!-- Category Sections -->
+    <div class="space-y-8 mb-16 not-prose">
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-sky-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-sky-800">중국 내 이동</h2>
+          <span class="text-xs font-medium text-sky-800 opacity-60">1개 문서</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/en/transport/transport-guide/" class="block bg-sky-50 border border-sky-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-sky-800">📖 개요</span>
+            <p class="text-base font-bold text-gray-900 mt-1">중국 내 이동 방법</p>
+            <p class="text-sm text-gray-600 mt-0.5">모든 교통 수단 종합 개요 — 기차, 비행기, 지하철 등.</p>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-emerald-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-emerald-800">중국 도착</h2>
+          <span class="text-xs font-medium text-emerald-800 opacity-60">1개 문서</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/en/transport/airport-to-city/" class="block bg-emerald-50 border border-emerald-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-emerald-800">🛬 가이드</span>
+            <p class="text-base font-bold text-gray-900 mt-1">공항에서 시내로 가는 방법</p>
+            <p class="text-sm text-gray-600 mt-0.5">베이징, 상하이, 광저우 등 주요 공항 교통 옵션.</p>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-purple-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-purple-800">시내 교통</h2>
+          <span class="text-xs font-medium text-purple-800 opacity-60">2개 문서</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/en/transport/high-speed-rail/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-purple-800">🚄 가이드</span>
+            <p class="text-base font-bold text-gray-900 mt-1">중국 고속철도 예매 및 탑승 방법</p>
+            <p class="text-sm text-gray-600 mt-0.5">세계 최대 고속철도 네트워크 예매 및 이용에 관한 모든 것.</p>
+          </a>
+          <a href="/en/transport/metro-bus/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-purple-800">🚇 가이드</span>
+            <p class="text-base font-bold text-gray-900 mt-1">주요 도시 지하철 & 버스 가이드</p>
+            <p class="text-sm text-gray-600 mt-0.5">베이징, 상하이, 광저우, 선전의 대중교통 이용 방법.</p>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-gray-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-gray-800">차량 호출</h2>
+          <span class="text-xs font-medium text-gray-800 opacity-60">1개 문서</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/en/transport/didi/" class="block bg-gray-50 border border-gray-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-gray-800">🚕 튜토리얼</span>
+            <p class="text-base font-bold text-gray-900 mt-1">외국인이 중국에서 Didi 사용하는 방법</p>
+            <p class="text-sm text-gray-600 mt-0.5">중국의 Uber, DiDi 사용 단계별 가이드 — 스크린샷 포함.</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Guides -->
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-5">관련 가이드</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <a href="/en/payment/payment-guide/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-0.5">중국 결제</p>
+          <p class="text-sm text-gray-500">교통비 결제 방법</p>
+        </a>
+        <a href="/en/visa/visa-guide/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-0.5">비자 및 입국</p>
+          <p class="text-sm text-gray-500">중국 입국하기</p>
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

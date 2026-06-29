@@ -1,0 +1,126 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = '중국에서 외국 신용카드를 사용할 수 있나요? 현실적인 분석';
+const description = '중국에서 비자와 마스터카드가 실제로 작동하는 곳, ATM 인출 비용, 그리고 2026년 여행자에게 모바일 결제가 더 나은 이유.';
+---
+
+<Layout title={title} description={description} lang="ko">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/en/payment/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        결제로 돌아가기
+      </a>
+    </nav>
+    <!-- Header -->
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">💳 결제</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        중국에서 외국 신용카드를 사용할 수 있나요?
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">비자 또는 마스터카드가 어디서 작동하는지 현실적으로 살펴봅니다.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 최종 업데이트: 2026년 6월</span>
+        <span>⏱️ 4분 소요</span>
+      </div>
+    </header>
+
+    <!-- Quick Answer Box -->
+    <div class="bg-gradient-to-r from-orange-50 to-amber-50 border-l-4 border-orange-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-orange-900 mb-4">🎯 한 줄 요약</h2>
+      <p class="text-lg text-orange-800 leading-relaxed">
+        <strong>중국에서 실물 신용카드를 주 결제 수단으로 의존하지 마세요.</strong> 외국 비자/마스터카드는 국제 호텔, 고급 백화점, 공항에서 작동하지만 — 대부분의 일상적인 장소(식당, 택시, 가게)에서는 사용할 수 없습니다. 대신 알리페이나 위챗페이를 사용하세요.
+      </p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="prose prose-lg max-w-none">
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        솔직히 말씀드리겠습니다: <strong>중국에서 실물 신용카드를 주요 결제 수단으로 사용하지 마세요.</strong>
+      </p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        작동하지 않는다는 뜻은 아닙니다. 일부 장소에서는 작동합니다. 하지만 중국의 결제 생태계는 QR 코드와 모바일 앱을 중심으로 구축되어 있으며, 외국에서 발급된 비자나 마스터카드는 예상만큼 그 시스템의 일부가 아닙니다. <a href="/en/payment/setup-alipay/" class="text-brand-600 hover:underline">알리페이</a> 또는 <a href="/en/payment/setup-wechat/" class="text-brand-600 hover:underline">위챗페이</a>를 설정하는 것이 더 현명한 방법입니다.
+      </p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">💳</span> 외국 카드가 실제로 작동하는 곳
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">솔직한 현황입니다:</p>
+
+      <div class="grid md:grid-cols-2 gap-4 mb-8 not-prose">
+        <div class="bg-green-50 border border-green-200 rounded-2xl p-5">
+          <h3 class="text-sm font-bold text-green-800 uppercase tracking-wide mb-2">✅ 네, 작동합니다</h3>
+          <ul class="text-sm text-green-700 space-y-1">
+            <li>• 국제 호텔 체인 (힐튼, 메리어트, 인터컨티넨탈)</li>
+            <li>• 고급 백화점 및 명품 쇼핑몰</li>
+            <li>• 주요 국제 공항</li>
+            <li>• 일부 국제 레스토랑</li>
+          </ul>
+        </div>
+
+        <div class="bg-red-50 border border-red-200 rounded-2xl p-5">
+          <h3 class="text-sm font-bold text-red-800 uppercase tracking-wide mb-2">❌ 작동하지 않을 가능성이 높음</h3>
+          <ul class="text-sm text-red-700 space-y-1">
+            <li>• 동네 식당과 길거리 음식 포장마차</li>
+            <li>• 택시 및 차량 호출 (디디는 위챗/알리페이만)</li>
+            <li>• 현지 상점, 편의점, 슈퍼마켓</li>
+            <li>• 유니온페이만 받는 곳 (대부분)</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        짜증나는 점은 많은 중국 상점에 POS 기기가 있지만, 그 기기들이 <strong>유니온페이</strong> — 중국의 자체 카드 네트워크 — 용으로 설정되어 있다는 것입니다. 외국 비자나 마스터카드는 유니온페이 네트워크에 연결할 수 없습니다. 따라서 단말기가 바로 거기에 있어도 카드가 거절될 수 있습니다.
+      </p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🏧</span> ATM 사용하기
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        ATM은 다른 이야기입니다. 중국은행, ICBC, 중국건설은행의 대부분 ATM은 현금 인출을 위해 외국 비자와 마스터카드를 받습니다. 수수료는 좋지 않지만(보통 인출당 15~30위안 + 발급 은행의 해외 거래 수수료), 현금이 필요할 때는 작동합니다.
+      </p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">💡</span> 결론
+      </h2>
+
+      <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-8 not-prose">
+        <p class="text-gray-700">신용카드를 백업으로 가져오되, 모바일 결제를 주요 수단으로 설정하세요. 훨씬 더 원활한 여행이 될 것입니다.</p>
+      </div>
+    </div>
+
+    <!-- Related Guides -->
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose mt-12">
+      <h3 class="text-2xl font-bold text-gray-900 mb-6">📚 관련 가이드</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/en/payment/payment-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">중국에서 결제하는 방법</p>
+          <p class="text-sm text-gray-600">전체 결제 개요</p>
+        </a>
+        <a href="/en/payment/setup-alipay/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">알리페이 설정 방법</p>
+          <p class="text-sm text-gray-600">단계별 설정 가이드</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- Sources -->
+    <div class="mt-8 pt-6 border-t border-gray-200 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-3">출처</h3>
+      <ul class="space-y-2">
+        <li><a href="https://cs.help.wechat.com/hc/en-us/articles/11975770896271-How-to-Set-Up-International-Cards-for-Weixin-Pay" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">WeChat - How to Set Up International Cards for Weixin Pay</a></li>
+      </ul>
+    </div>
+  </article>
+</Layout>

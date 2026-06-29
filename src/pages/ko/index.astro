@@ -1,0 +1,313 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'China Starter Hub — 중국 여행 완벽 가이드';
+const description = '중국 방문 전 알아야 할 모든 것: 결제, 교통, 앱, 도시, 여행 팁.';
+---
+
+<Layout title={title} description={description} lang="ko">
+  <!-- Trigger rebuild: 2026-06-12 17:30 -->
+  <section class="text-center py-20 px-4">
+    <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-gray-900  ">
+      중국 첫 방문을 위한<br/><span class="text-brand-600">명확하고 최신의 가이드</span>
+    </h1>
+    <p class="text-lg md:text-xl text-gray-500  ">
+      필수 정보부터 시작해 여행 일정에 맞는 가이드를 따라가보세요.
+    </p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="/en/visa/" class="bg-brand-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-brand-700 transition no-underline">시작하기</a>
+      <a href="/en/about/" class="border border-brand-600 text-brand-600 px-6 py-3 rounded-lg font-medium hover:bg-brand-50 transition no-underline">사이트 소개</a>
+    </div>
+  </section>
+
+  <!-- Section: Category Cards -->
+  <section class="max-w-5xl mx-auto px-4 pb-16">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      {[
+        { href: '/en/visa/', title: '비자', desc: '비자 종류, 무비자 국가, 환승 정책.' },
+        { href: '/en/payment/', title: '결제', desc: '모바일 지갑, 은행 카드, 현금 준비.' },
+        { href: '/en/transport/', title: '교통', desc: '고속철도, 지하철, 차량 호출, 공항에서 시내까지.' },
+        { href: '/en/life/', title: '중국 생활', desc: '앱, 의료, 안전 팁, 일상생활.' },
+      ].map(card => (
+        <a href={card.href} class="group block p-5 rounded-2xl bg-gray-50  :bg-brand-50 dark:hover:bg-brand-950 border border-gray-100  :border-brand-200 dark:hover:border-brand-800 transition-all duration-200 no-underline">
+          <h3 class="text-lg font-semibold text-gray-900  :text-brand-600 dark:group-hover:text-brand-400 mb-1">{card.title}</h3>
+          <p class="text-sm text-gray-500  ">{card.desc}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- Your Trip: Step by Step -->
+  <section class="max-w-5xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-bold text-gray-900 mb-2">여행 단계별 가이드</h2>
+    <p class="text-gray-500 mb-10">현재 단계를 선택하세요 — 각 단계는 실제로 필요한 가이드로 연결됩니다.</p>
+
+    <div class="space-y-8">
+      <!-- Stage 1 -->
+      <div class="relative pl-14">
+        <div class="absolute left-0 top-0 w-9 h-9 rounded-full bg-green-100 flex items-center justify-center text-sm font-bold text-green-700">1</div>
+        <div class="absolute left-[17px] top-9 bottom-0 w-0.5 bg-gray-100"></div>
+        <h3 class="text-lg font-bold text-gray-900 mb-3">출국 전</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <a href="/en/visa/visa-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-green-200 transition no-underline">
+            <span class="text-xs font-medium text-green-600">준비</span>
+            <p class="text-sm font-semibold text-gray-900 mt-1">어떤 비자가 필요할까요?</p>
+          </a>
+          <a href="/en/payment/payment-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-green-200 transition no-underline">
+            <span class="text-xs font-medium text-green-600">결제</span>
+            <p class="text-sm font-semibold text-gray-900 mt-1">중국에서 결제하는 방법</p>
+          </a>
+          <a href="/en/life/survival-kit/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-green-200 transition no-underline">
+            <span class="text-xs font-medium text-green-600">생활</span>
+            <p class="text-sm font-semibold text-gray-900 mt-1">출발 전 체크리스트</p>
+          </a>
+        </div>
+      </div>
+
+      <!-- Stage 2 -->
+      <div class="relative pl-14">
+        <div class="absolute left-0 top-0 w-9 h-9 rounded-full bg-blue-100 flex items-center justify-center text-sm font-bold text-blue-700">2</div>
+        <div class="absolute left-[17px] top-9 bottom-0 w-0.5 bg-gray-100"></div>
+        <h3 class="text-lg font-bold text-gray-900 mb-3">도착 직후</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <a href="/en/transport/airport-to-city/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-blue-200 transition no-underline">
+            <span class="text-xs font-medium text-blue-600">교통</span>
+            <p class="text-sm font-semibold text-gray-900 mt-1">공항에서 시내로 가는 방법</p>
+          </a>
+          <a href="/en/life/sim-card-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-blue-200 transition no-underline">
+            <span class="text-xs font-medium text-blue-600">생활</span>
+            <p class="text-sm font-semibold text-gray-900 mt-1">SIM 카드 & 인터넷 설정</p>
+          </a>
+          <a href="/en/life/vpn-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-blue-200 transition no-underline">
+            <span class="text-xs font-medium text-blue-600">생활</span>
+            <p class="text-sm font-semibold text-gray-900 mt-1">VPN 설정하기</p>
+          </a>
+        </div>
+      </div>
+
+      <!-- Stage 3 -->
+      <div class="relative pl-14">
+        <div class="absolute left-0 top-0 w-9 h-9 rounded-full bg-purple-100 flex items-center justify-center text-sm font-bold text-purple-700">3</div>
+        <div class="absolute left-[17px] top-9 bottom-0 w-0.5 bg-gray-100"></div>
+        <h3 class="text-lg font-bold text-gray-900 mb-3">여행 중</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <a href="/en/transport/transport-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-purple-200 transition no-underline">
+            <span class="text-xs font-medium text-purple-600">교통</span>
+            <p class="text-sm font-semibold text-gray-900 mt-1">중국 내 이동하기</p>
+          </a>
+          <a href="/en/life/essential-apps/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-purple-200 transition no-underline">
+            <span class="text-xs font-medium text-purple-600">생활</span>
+            <p class="text-sm font-semibold text-gray-900 mt-1">필수 앱 10선</p>
+          </a>
+          <a href="/en/life/chinese-phrases/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-purple-200 transition no-underline">
+            <span class="text-xs font-medium text-purple-600">생활</span>
+            <p class="text-sm font-semibold text-gray-900 mt-1">기초 중국어 회화</p>
+          </a>
+        </div>
+      </div>
+
+      <!-- Stage 4 -->
+      <div class="relative pl-14">
+        <div class="absolute left-0 top-0 w-9 h-9 rounded-full bg-red-100 flex items-center justify-center text-sm font-bold text-red-700">4</div>
+        <h3 class="text-lg font-bold text-gray-900 mb-3">도움이 필요할 때</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-4 gap-3">
+          <a href="/en/life/seeing-a-doctor/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
+            <span class="text-xs font-medium text-red-600">생활</span>
+            <p class="text-sm font-semibold text-gray-900 mt-1">병원 방문하기</p>
+          </a>
+          <a href="/en/life/common-scams/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
+            <span class="text-xs font-medium text-red-600">생활</span>
+            <p class="text-sm font-semibold text-gray-900 mt-1">흔한 사기 피하기</p>
+          </a>
+          <a href="/en/life/emergency-numbers/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
+            <span class="text-xs font-medium text-red-600">생활</span>
+            <p class="text-sm font-semibold text-gray-900 mt-1">비상 연락처</p>
+          </a>
+          <a href="/en/payment/payment-fails/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
+            <span class="text-xs font-medium text-red-600">결제</span>
+            <p class="text-sm font-semibold text-gray-900 mt-1">결제 실패 시 대처법</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visa Checker Tool -->
+  <section class="max-w-5xl mx-auto px-4 pb-16">
+    <div class="border-t border-gray-100 pt-12">
+      <div class="max-w-2xl mx-auto">
+        <h2 class="text-2xl font-bold text-gray-900 mb-2 text-center">비자 확인기</h2>
+        <p class="text-gray-500 text-center mb-8">비자가 필요한지 잘 모르시겠나요? 국적을 선택하면 알려드립니다.</p>
+
+        <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100">
+          <label for="visa-country" class="block text-sm font-medium text-gray-700 mb-2">국적</label>
+          <select id="visa-country" class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-brand-500 text-base appearance-none cursor-pointer">
+            <option value="">— 국가를 선택하세요 —</option>
+            <option value="AL">알바니아</option>
+            <option value="AD">안도라</option>
+            <option value="AG">앤티가 바부다</option>
+            <option value="AR">아르헨티나</option>
+            <option value="AM">아르메니아</option>
+            <option value="AU">호주</option>
+            <option value="AT">오스트리아</option>
+            <option value="AZ">아제르바이잔</option>
+            <option value="BS">바하마</option>
+            <option value="BH">바레인</option>
+            <option value="BD">방글라데시</option>
+            <option value="BB">바베이도스</option>
+            <option value="BY">벨라루스</option>
+            <option value="BE">벨기에</option>
+            <option value="BA">보스니아 헤르체고비나</option>
+            <option value="BR">브라질</option>
+            <option value="BN">브루나이</option>
+            <option value="BG">불가리아</option>
+            <option value="CA">캐나다</option>
+            <option value="CL">칠레</option>
+            <option value="HR">크로아티아</option>
+            <option value="CY">키프로스</option>
+            <option value="CZ">체코</option>
+            <option value="DK">덴마크</option>
+            <option value="DM">도미니카</option>
+            <option value="EC">에콰도르</option>
+            <option value="EG">이집트</option>
+            <option value="EE">에스토니아</option>
+            <option value="FJ">피지</option>
+            <option value="FI">핀란드</option>
+            <option value="FR">프랑스</option>
+            <option value="GE">조지아</option>
+            <option value="DE">독일</option>
+            <option value="GR">그리스</option>
+            <option value="GD">그레나다</option>
+            <option value="HU">헝가리</option>
+            <option value="IS">아이슬란드</option>
+            <option value="IN">인도</option>
+            <option value="ID">인도네시아</option>
+            <option value="IE">아일랜드</option>
+            <option value="IT">이탈리아</option>
+            <option value="JP">일본</option>
+            <option value="KZ">카자흐스탄</option>
+            <option value="KE">케냐</option>
+            <option value="KW">쿠웨이트</option>
+            <option value="LV">라트비아</option>
+            <option value="LI">리히텐슈타인</option>
+            <option value="LT">리투아니아</option>
+            <option value="LU">룩셈부르크</option>
+            <option value="MY">말레이시아</option>
+            <option value="MV">몰디브</option>
+            <option value="MT">몰타</option>
+            <option value="MU">모리셔스</option>
+            <option value="MX">멕시코</option>
+            <option value="MC">모나코</option>
+            <option value="ME">몬테네그로</option>
+            <option value="NL">네덜란드</option>
+            <option value="NZ">뉴질랜드</option>
+            <option value="NG">나이지리아</option>
+            <option value="MK">북마케도니아</option>
+            <option value="NO">노르웨이</option>
+            <option value="OM">오만</option>
+            <option value="PK">파키스탄</option>
+            <option value="PE">페루</option>
+            <option value="PH">필리핀</option>
+            <option value="PL">폴란드</option>
+            <option value="PT">포르투갈</option>
+            <option value="QA">카타르</option>
+            <option value="RO">루마니아</option>
+            <option value="RU">러시아</option>
+            <option value="WS">사모아</option>
+            <option value="SM">산마리노</option>
+            <option value="SA">사우디아라비아</option>
+            <option value="RS">세르비아</option>
+            <option value="SC">세이셸</option>
+            <option value="SG">싱가포르</option>
+            <option value="SK">슬로바키아</option>
+            <option value="SI">슬로베니아</option>
+            <option value="SB">솔로몬 제도</option>
+            <option value="ZA">남아프리카공화국</option>
+            <option value="KR">대한민국</option>
+            <option value="ES">스페인</option>
+            <option value="SR">수리남</option>
+            <option value="SE">스웨덴</option>
+            <option value="CH">스위스</option>
+            <option value="TH">태국</option>
+            <option value="TO">통가</option>
+            <option value="TR">튀르키예</option>
+            <option value="UA">우크라이나</option>
+            <option value="AE">아랍에미리트</option>
+            <option value="GB">영국</option>
+            <option value="US">미국</option>
+            <option value="UY">우루과이</option>
+            <option value="UZ">우즈베키스탄</option>
+            <option value="VN">베트남</option>
+            <option value="OTHER">기타 국가</option>
+          </select>
+
+          <div id="visa-result" class="mt-6"></div>
+        </div>
+
+        <p class="text-xs text-gray-400 text-center mt-4">비자 정책은 변경될 수 있습니다. 예약 전에 반드시 현지 중국 대사관에 확인하세요.</p>
+      </div>
+    </div>
+  </section>
+
+  <script is:inline>
+    const countrySelect = document.getElementById('visa-country');
+    const resultDiv = document.getElementById('visa-result');
+
+    // Source: China gov.cn official list (2025)
+    // Category 1: Unilateral visa-free (30 days) - 50 countries
+    const visaFree = ['BN','FR','DE','IT','ES','NL','CH','IE','HU','AT','BE','LU','NZ','AU','PL','PT','GR','CY','SI','SK','NO','FI','DK','IS','AD','MC','LI','KR','BG','RO','HR','ME','MK','MT','EE','LV','JP','BR','AR','CL','PE','UY','SA','OM','KW','BH','CA','RU','GB','SE'];
+
+    // Category 2: Mutual visa agreement (ordinary passport) - 29 countries
+    const mutualFree = ['AL','AE','AG','BB','BS','BY','BA','DM','EC','FJ','GD','GE','KZ','QA','MV','MU','WS','RS','SC','SM','SR','SB','TH','TO','UZ','SG','AM','AZ','MY'];
+
+    // Category 3: 240-hour transit - 55 countries
+    const transit240 = ['AL','AT','BE','BG','BA','BR','CA','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LT','LU','MT','MC','ME','NL','MK','NO','PL','PT','RO','RU','RS','SK','SI','KR','ES','SE','CH','UA','GB','US','AU','NZ','JP','SG','BN','AE','QA','MX','AR','CL','ID','BY'];
+
+    // Determine best visa status for each country
+    function getVisaStatus(code) {
+      if (visaFree.includes(code)) return 'visa-free-30';
+      if (mutualFree.includes(code)) return 'mutual-free';
+      if (transit240.includes(code)) return 'transit';
+      return 'need-visa';
+    }
+
+    const countryNames = {
+      'AL':'Albania','AD':'Andorra','AG':'Antigua and Barbuda','AR':'Argentina','AM':'Armenia',
+      'AU':'Australia','AT':'Austria','AZ':'Azerbaijan','BS':'Bahamas','BH':'Bahrain','BB':'Barbados',
+      'BY':'Belarus','BE':'Belgium','BA':'Bosnia and Herzegovina','BR':'Brazil','BN':'Brunei','BG':'Bulgaria',
+      'CA':'Canada','CL':'Chile','HR':'Croatia','CY':'Cyprus','CZ':'Czech Republic','DK':'Denmark',
+      'DM':'Dominica','EC':'Ecuador','EG':'Egypt','EE':'Estonia','FJ':'Fiji','FI':'Finland','FR':'France',
+      'GE':'Georgia','DE':'Germany','GR':'Greece','GD':'Grenada','HU':'Hungary',      'IS':'Iceland','IE':'Ireland','IN':'India','ID':'Indonesia','IT':'Italy',
+      'JP':'Japan','KZ':'Kazakhstan','KE':'Kenya','KW':'Kuwait','LV':'Latvia','LI':'Liechtenstein',
+      'LT':'Lithuania','LU':'Luxembourg','MY':'Malaysia','MV':'Maldives','MT':'Malta','MU':'Mauritius',
+      'MX':'Mexico',
+      'MC':'Monaco','ME':'Montenegro',      'NL':'Netherlands','NZ':'New Zealand','NG':'Nigeria','MK':'North Macedonia',
+      'NO':'Norway','OM':'Oman','PK':'Pakistan','PE':'Peru','PH':'Philippines','PL':'Poland','PT':'Portugal','QA':'Qatar','RO':'Romania',
+      'RU':'Russia','WS':'Samoa','SM':'San Marino','SA':'Saudi Arabia','RS':'Serbia','SC':'Seychelles',
+      'SG':'Singapore','SK':'Slovakia','SI':'Slovenia','SB':'Solomon Islands','ZA':'South Africa','KR':'South Korea',
+      'ES':'Spain','SR':'Suriname','SE':'Sweden','CH':'Switzerland','TH':'Thailand','TO':'Tonga','TR':'Turkey',
+      'UA':'Ukraine',
+      'AE':'the United Arab Emirates','GB':'the United Kingdom','US':'the United States','UY':'Uruguay','UZ':'Uzbekistan','VN':'Vietnam'
+    };
+
+    countrySelect.addEventListener('change', function() {
+      const val = this.value;
+      if (!val) {
+        resultDiv.innerHTML = '';
+        return;
+      }
+
+      const name = countryNames[val] || 'your country';
+      const status = getVisaStatus(val);
+
+      if (status === 'visa-free-30') {
+        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-green-50 border border-green-200"><p class="text-green-800 font-semibold mb-1">Good news! Citizens of ' + name + ' can enter China <span class="underline">visa-free</span> for up to 30 days.</p><p class="text-green-700 text-sm mb-3">No visa needed for tourism, business, or transit stays under 30 days.</p><a href="/en/visa/visa-free/" class="inline-block text-sm font-medium text-green-700 underline hover:no-underline">See the full visa-free list \u2192</a></div>';
+      } else if (status === 'mutual-free') {
+        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-green-50 border border-green-200"><p class="text-green-800 font-semibold mb-1">Citizens of ' + name + ' can enter China <span class="underline">visa-free</span> under a mutual agreement.</p><p class="text-green-700 text-sm mb-3">Check your passport type and allowed duration before traveling.</p><a href="/en/visa/visa-free/" class="inline-block text-sm font-medium text-green-700 underline hover:no-underline">See the visa-free countries list \u2192</a></div>';
+      } else if (status === 'transit') {
+        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-blue-50 border border-blue-200"><p class="text-blue-800 font-semibold mb-1">You can use the <span class="underline">240-hour transit</span> policy.</p><p class="text-blue-700 text-sm mb-3">Citizens of ' + name + ' can transit through China for up to 10 days without a visa. For longer stays, you\u2019ll need an L visa.</p><div class="flex flex-wrap gap-3"><a href="/en/visa/transit-240/" class="text-sm font-medium text-blue-700 underline hover:no-underline">How transit works \u2192</a><a href="/en/visa/apply-l-visa/" class="text-sm font-medium text-blue-700 underline hover:no-underline">Apply for an L visa \u2192</a></div></div>';
+      } else {
+        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-orange-50 border border-orange-200"><p class="text-orange-800 font-semibold mb-1">You\u2019ll need a visa.</p><p class="text-orange-700 text-sm mb-3">Citizens of ' + name + ' need to apply for a tourist visa (L-type) before traveling to China.</p><a href="/en/visa/apply-l-visa/" class="inline-block text-sm font-medium text-orange-700 underline hover:no-underline">How to apply for an L visa \u2192</a></div>';
+      }
+    });
+  </script>
+</Layout>

@@ -1,0 +1,189 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = "중국에서 진료받기: 병원, 클리닉 & 보험";
+const description = "중국에서 진료받는 방법: 클리닉 vs 병원, 비용, 국제진료부, 여행 보험 등 여행자가 알아야 할 모든 것.";
+---
+
+<Layout title={title} description={description} lang="ko">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/en/life/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        중국 생활 정보로 돌아가기
+      </a>
+    </nav>
+    <!-- Header -->
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🏥 의료 정보</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        중국에서 진료받기<br class="hidden md:block" />: 여행자가 알아야 할 모든 것
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">중국에서 아프거나 다쳤을 때, 어디로 가야 할지만 알면 안전하게 치료받을 수 있습니다.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 최종 업데이트: 2026년 6월</span>
+        <span>⏱️ 약 6분 분량</span>
+      </div>
+    </header>
+
+    <!-- Quick Answer Box -->
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-blue-900 mb-4">🎯 요약</h2>
+      <p class="text-lg text-blue-800 leading-relaxed">
+        <strong>네, 중국에는 세계적 수준의 의료 시스템이 있습니다 — 하지만 방식이 다릅니다.</strong> 가벼운 증상은 약국으로. 응급이 아닌 경우 클리닉을 이용하세요. 심각한 경우 국제진료부가 있는 공립병원으로 가세요. 비용은 미국이나 유럽보다 훨씬 저렴하지만, <strong>여행 전에 항상 여행 보험에 가입하세요.</strong>
+      </p>
+    </div>
+
+    <!-- Table of Contents -->
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 목차</h3>
+      <ul class="space-y-3">
+        <li><a href="#levels" class="text-blue-600 hover:underline">🏥 의료 서비스의 세 가지 수준</a></li>
+        <li><a href="#cost" class="text-blue-600 hover:underline">💰 예상 비용</a></li>
+        <li><a href="#emergency" class="text-blue-600 hover:underline">🚑 의료 응급 시 대처법</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="prose prose-lg max-w-none">
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        중국에서 아프거나 다쳤을 때, 솔직한 진실은 이것입니다: <strong>어디로 가야지만 알면 훌륭한 치료를 받을 수 있습니다.</strong>
+      </p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        중국, 특히 주요 도시에는 최고 수준의 병원이 있습니다. 하지만 시스템이 우리가 익숙한 방식과 다르게 작동하며, 올바른 장소를 아는 것이 시간, 비용, 스트레스를 절약해줍니다.
+      </p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-12">
+        이 가이드는 세 가지를 다룹니다: 어디로 가야 하는지, 비용은 얼마인지, 출발 전 어떻게 준비해야 하는지.
+      </p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="levels" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🏥</span> 의료 서비스의 세 가지 수준
+      </h2>
+
+      <div class="space-y-8 mb-12 not-prose">
+        <div class="bg-green-50 border border-green-200 rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-green-900 mb-3">💊 1. 약국 (药店 / yào diàn)</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">가벼운 증상 — 감기, 두통, 배탈, 알레르기 — 약국에 가세요. 중국 도시의 거의 모든 길에서 찾을 수 있습니다.</p>
+          <ul class="list-disc pl-5 space-y-1 text-gray-700">
+            <li>일반 의약품은 처방전 없이 구매 가능</li>
+            <li>약사는 보통 영어를 못 하므로, 필요한 약의 번역이나 사진을 보여주세요</li>
+            <li>주요 체인 약국: <strong>Dahododo (大参林)</strong>, <strong>Guoda (国大药房)</strong>, <strong>Lens (老百姓大药房)</strong></li>
+          </ul>
+        </div>
+
+        <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-blue-900 mb-3">🩺 2. 클리닉</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">응급이 아니지만 의사 진료가 필요한 경우 — 발열, 감염, 경미한 부상 — 클리닉이 가장 좋은 선택입니다.</p>
+          <ul class="list-disc pl-5 space-y-1 text-gray-700">
+            <li><strong>국제 클리닉</strong>(예: Parkway, United Family Healthcare)은 영어 가능 의사와 서양식 훈련을 받은 직원이 있지만 비쌉니다</li>
+            <li><strong>지역 보건소</strong>는 모든 동네에 있어 접근성이 좋습니다. 저렴한 의료 서비스를 제공하지만 직원이 영어를 거의 못함</li>
+            <li>대부분의 호텔은 외국인 경험이 있는 근처 클리닉을 추천해줄 수 있습니다</li>
+          </ul>
+        </div>
+
+        <div class="bg-purple-50 border border-purple-200 rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-purple-900 mb-3">🏥 3. 병원 (医院 / yī yuàn)</h3>
+          <p class="text-gray-700 leading-relaxed mb-4">심각한 문제 — 흉통, 중상, 떨어지지 않는 고열 — 바로 병원으로 가세요.</p>
+          <ul class="list-disc pl-5 space-y-1 text-gray-700">
+            <li><strong>국제진료부가 있는 공립병원</strong> — 대부분의 여행자에게 최선의 선택</li>
+            <li>최고 병원의 응급실은 모든 상황에 대비 가능</li>
+            <li><strong>120</strong>으로 구급차 호출, 또는 Didi/택시로 병원 이동 — 종종 더 빠름</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="cost" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">💰</span> 예상 비용
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">대부분의 서양 여행자를 놀라게 하는 부분입니다: <strong>중국의 의료 비용은 미국이나 유럽보다 훨씬 저렴합니다.</strong></p>
+
+      <div class="overflow-x-auto mb-8 not-prose">
+        <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+          <thead>
+            <tr class="bg-gray-900 text-white">
+              <th class="px-6 py-4 font-bold">서비스</th>
+              <th class="px-6 py-4 font-bold text-center">CNY (위안)</th>
+              <th class="px-6 py-4 font-bold text-center">USD (약)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100"><td class="px-6 py-4 font-semibold">약국 방문 (일반 약)</td><td class="px-6 py-4 text-center">¥20–100</td><td class="px-6 py-4 text-center">$3–15</td></tr>
+            <tr class="border-b border-gray-100 bg-gray-50"><td class="px-6 py-4 font-semibold">클리닉 진료</td><td class="px-6 py-4 text-center">¥200–800</td><td class="px-6 py-4 text-center">$30–118</td></tr>
+            <tr class="border-b border-gray-100"><td class="px-6 py-4 font-semibold">국제 클리닉 진료</td><td class="px-6 py-4 text-center">¥800–2,000</td><td class="px-6 py-4 text-center">$118–295</td></tr>
+            <tr class="border-b border-gray-100 bg-gray-50"><td class="px-6 py-4 font-semibold">공립병원 응급실 방문</td><td class="px-6 py-4 text-center">¥300–500</td><td class="px-6 py-4 text-center">$44–74</td></tr>
+            <tr class="border-b border-gray-100"><td class="px-6 py-4 font-semibold">공립병원 국제진료부</td><td class="px-6 py-4 text-center">¥600–1,500</td><td class="px-6 py-4 text-center">$80–220</td></tr>
+            <tr class="border-b border-gray-100 bg-gray-50"><td class="px-6 py-4 font-semibold">입원 (1일)</td><td class="px-6 py-4 text-center">¥500–3,000</td><td class="px-6 py-4 text-center">$74–443</td></tr>
+            <tr><td class="px-6 py-4 font-semibold">대수술</td><td class="px-6 py-4 text-center">¥20,000–100,000</td><td class="px-6 py-4 text-center">$2,954–14,771</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="bg-yellow-50 border-l-4 border-yellow-400 p-5 rounded-r-xl mb-8 not-prose">
+        <p class="text-yellow-900"><strong>중요:</strong> 여행 전에 항상 여행 보험에 가입하세요. 비용이 서양보다 저렴하더라도, 심각한 의료 문제는 수만 위안이 들 수 있습니다. 중국 보장이 포함된 보험이 필수입니다.</p>
+      </div>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="emergency" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🚑</span> 의료 응급 시 대처법
+      </h2>
+
+      <div class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+        <ol class="space-y-4">
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">1</span>
+            <div><strong>120에 전화</strong> — 구급차 서비스. 교환원이 영어 지원 연결 가능</div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">2</span>
+            <div><strong>또는 가장 가까운 대형 공립병원으로 직접 이동</strong> — Didi 사용 (추적 가능하고 빠름)</div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">3</span>
+            <div><strong>여권 지참</strong> — 병원 등록에 필요</div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">4</span>
+            <div><strong>보험카드 제시</strong> — 여행 보험이 있다면 즉시 전화하여 지불 조정</div>
+          </li>
+        </ol>
+      </div>
+
+      <div class="bg-gray-900 text-white rounded-2xl p-8 mb-12 not-prose">
+        <p class="text-lg text-center mb-4">📱 <strong>휴대폰에 저장하세요:</strong></p>
+        <div class="bg-white text-gray-900 rounded-xl p-6 text-center">
+          <p class="text-xl font-bold text-red-600 mb-3">我是外国人，需要帮助。请带我去国际部或能找到英语翻译的地方。</p>
+          <p class="text-lg text-gray-600 mb-2"><em>(Wǒ shì wàiguó rén, xūyào bāngzhù. Qǐng dài wǒ qù guójì bù huò néng zhǎodào yīngyǔ fānyì de dìfāng.)</em></p>
+          <p class="text-lg text-gray-800 font-semibold">"저는 외국인이고 도움이 필요합니다. 국제진료부나 영어 통역이 가능한 곳으로 데려가 주세요."</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Guides -->
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose mt-12">
+      <h3 class="text-2xl font-bold text-gray-900 mb-6">📚 관련 가이드</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/en/life/top-hospitals/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">국제진료부를 갖춘 최고 병원</p>
+          <p class="text-sm text-gray-600">중국에서 외국인을 위한 최고 병원</p>
+        </a>
+        <a href="/en/life/travel-insurance/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">중국 여행 보험</p>
+          <p class="text-sm text-gray-600">출발 전 필요한 것</p>
+        </a>
+        <a href="/en/life/emergency-numbers/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">비상 연락처 & 대처법</p>
+          <p class="text-sm text-gray-600">필요하기 전에 저장하세요</p>
+        </a>
+      </div>
+    </div>
+  </article>
+</Layout>

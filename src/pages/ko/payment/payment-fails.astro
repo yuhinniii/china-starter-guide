@@ -1,0 +1,136 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = '중국에서 결제 실패 시 대처 방법';
+const description = '중국에서 외국인 여행자를 위한 일반적인 결제 실패 원인과 QR 코드 결제가 안 될 때 단계별 문제 해결 방법.';
+---
+
+<Layout title={title} description={description} lang="ko">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/en/payment/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        결제로 돌아가기
+      </a>
+    </nav>
+    <!-- Header -->
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">💳 결제</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        중국에서 결제 실패 시 대처 방법
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">당황하지 마세요 — 대부분의 결제 실패는 쉽게 해결됩니다.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 최종 업데이트: 2026년 6월</span>
+        <span>⏱️ 4분 소요</span>
+      </div>
+    </header>
+
+    <!-- Quick Answer Box -->
+    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-red-900 mb-4">🎯 한 줄 요약</h2>
+      <p class="text-lg text-red-800 leading-relaxed">
+        <strong>결제 실패는 외국인 사용자에게 흔한 일입니다.</strong> 대부분 일일 한도, 은행 사기 차단, 또는 네트워크 문제로 인해 발생합니다. 현금으로 전환하거나, 다른 앱을 사용하거나, WiFi에 연결해보세요. 그래도 안 되면 몇 시간 기다렸다가 다시 시도하세요.
+      </p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="prose prose-lg max-w-none">
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        언젠가는 발생할 일입니다. 가게에 있고, QR 코드를 스캔하고, 앱이 잠시 돌아가다가 — 오류. 결제 실패.
+      </p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        당황하지 마세요. 중국에서의 결제 실패는 외국인 사용자에게 흔하며, 대부분의 경우 간단히 해결됩니다.
+      </p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🔍</span> 발생 이유
+      </h2>
+
+      <div class="space-y-4 mb-8 not-prose">
+        <div class="bg-blue-50 border border-blue-200 rounded-2xl p-5">
+          <h3 class="font-semibold text-gray-900 mb-2 text-lg">1. 일일 한도 도달</h3>
+          <p class="text-gray-700 text-sm">알리페이와 위챗페이 모두 지출 한도가 있습니다. 쇼핑을 많이 했다면 한도에 도달했을 수 있습니다.</p>
+          <p class="text-gray-700 text-sm mt-2"><strong>해결:</strong> 다음 날까지 기다리세요 — 일일 한도가 재설정됩니다.</p>
+        </div>
+
+        <div class="bg-green-50 border border-green-200 rounded-2xl p-5">
+          <h3 class="font-semibold text-gray-900 mb-2 text-lg">2. 은행이 거래를 차단함</h3>
+          <p class="text-gray-700 text-sm">은행이 중국에서 발생한 거래를 보고 사기로 의심합니다.</p>
+          <p class="text-gray-700 text-sm mt-2"><strong>해결:</strong> 알림을 확인하세요 — 은행이 보통 본인 확인을 요청하는 SMS를 보냅니다. 승인하고 다시 시도하세요. 여행 전에 은행에 미리 알리면 이를 방지할 수 있습니다.</p>
+        </div>
+
+        <div class="bg-purple-50 border border-purple-200 rounded-2xl p-5">
+          <h3 class="font-semibold text-gray-900 mb-2 text-lg">3. 네트워크 문제</h3>
+          <p class="text-gray-700 text-sm">VPN이 연결 해제되었거나 상점의 인터넷이 느릴 수 있습니다.</p>
+          <p class="text-gray-700 text-sm mt-2"><strong>해결:</strong> VPN 확인, 비행기 모드 켜기/끄기, 또는 상점에 다시 시도해 달라고 요청하세요.</p>
+        </div>
+
+        <div class="bg-orange-50 border border-orange-200 rounded-2xl p-5">
+          <h3 class="font-semibold text-gray-900 mb-2 text-lg">4. 상점이 국제 카드를 받지 않음</h3>
+          <p class="text-gray-700 text-sm">일부 소규모 판매자는 중국 은행 카드로만 작동하는 결제 계정을 가지고 있습니다.</p>
+          <p class="text-gray-700 text-sm mt-2"><strong>해결:</strong> 현금을 사용하거나 위챗페이를 받는지 물어보세요(알리페이가 안 될 때 가끔 작동합니다).</p>
+        </div>
+      </div>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">✅</span> 빠른 문제 해결 체크리스트
+      </h2>
+
+      <div class="bg-gray-50 rounded-2xl p-8 mb-8 not-prose">
+        <ol class="space-y-4">
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">1</span>
+            <div><strong>다른 앱으로 전환</strong> — 알리페이가 실패하면 위챗페이 시도 (또는 그 반대)</div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">2</span>
+            <div><strong>현금 사용</strong> — 항상 500~1000위안을 작은 지폐로 백업 준비</div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">3</span>
+            <div><strong>WiFi 연결</strong> — 상점의 WiFi를 요청하세요; 때때로 셀룰러 데이터가 문제입니다</div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">4</span>
+            <div><strong>앱 재시작</strong> — 알리페이나 위챗을 닫고 다시 엽니다</div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">5</span>
+            <div><strong>기다렸다가 재시도</strong> — 일부 문제는 몇 분 후에 자동 해결됩니다</div>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Related Guides -->
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose mt-12">
+      <h3 class="text-2xl font-bold text-gray-900 mb-6">📚 관련 가이드</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/en/payment/payment-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">중국에서 결제하는 방법</p>
+          <p class="text-sm text-gray-600">전체 결제 개요</p>
+        </a>
+        <a href="/en/payment/setup-alipay/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">알리페이 설정 방법</p>
+          <p class="text-sm text-gray-600">단계별 설정 가이드</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- Sources -->
+    <div class="mt-8 pt-6 border-t border-gray-200 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-3">출처</h3>
+      <ul class="space-y-2">
+        <li><a href="https://www.alipayplus.com/consumer/" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">Alipay - Consumers Center</a></li>
+        <li><a href="https://cs.help.wechat.com/hc/en-us" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">WeChat - Help Center</a></li>
+      </ul>
+    </div>
+  </article>
+</Layout>

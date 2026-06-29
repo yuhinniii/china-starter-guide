@@ -1,0 +1,137 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = "상하이 여행 가이드: 외국인에게 가장 친근한 도시";
+const description = "상하이 가이드 — 중국에서 가장 국제적인 도시의 관광지, 음식, 교통, 숙소 정보.";
+---
+
+<Layout title={title} description={description} lang="ko">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🏙️ 상하이</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">상하이 여행 가이드: 외국인에게 가장 친근한 도시</h1>
+      <p class="text-xl text-gray-600 mb-6">상하이 가이드 — 중국에서 가장 국제적인 도시의 관광지, 음식, 교통, 숙소 정보.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 최종 업데이트: 2026년 6월</span>
+        <span>⏱️ 10분 소요</span>
+      </div>
+    </header>
+
+    <div class="bg-gradient-to-r from-yellow-50 to-amber-50 border-l-4 border-yellow-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-yellow-900 mb-4">⚡ 한 줄 요약</h2>
+      <p class="text-lg text-yellow-800 leading-relaxed">상하이는 <strong>중국에서 외국인에게 가장 친근한 도시</strong>입니다. 영어를 구사하는 인구가 가장 많고, 국제적인 레스토랑이 가장 많으며, 세계 어느 도시와도 견줄 수 있는 스카이라인을 자랑합니다. 상징적인 와이탄 워터프런트, 우뚝 솟은 상하이 타워, 역사적인 위위안 정원, 그리고 상하이 디즈니랜드까지 — 모든 사람을 위한 무언가가 있습니다. 언어 장벽이나 문화 충격이 걱정된다면, 상하이는 중국을 경험하기에 가장 부드러운 입문 도시입니다.</p>
+    </div>
+
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 목차</h3>
+      <ul class="space-y-3">
+        <li><a href="#why-visit" class="text-blue-600 hover:underline">🌆 상하이에 가야 하는 이유</a></li>
+        <li><a href="#how-many-days" class="text-blue-600 hover:underline">📅 몇 일이 필요할까요?</a></li>
+        <li><a href="#attractions" class="text-blue-600 hover:underline">🎯 주요 관광지</a></li>
+        <li><a href="#getting-around" class="text-blue-600 hover:underline">🚇 교통 정보</a></li>
+        <li><a href="#where-to-stay" class="text-blue-600 hover:underline">🏨 추천 숙소</a></li>
+        <li><a href="#what-to-eat" class="text-blue-600 hover:underline">🍜 추천 음식</a></li>
+      </ul>
+    </nav>
+
+    <h2 id="why-visit" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🌆 상하이에 가야 하는 이유</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-12">상하이는 미래의 도시처럼 느껴집니다. 동방명주탑과 상하이 타워가 구름을 뚫고 솟은 푸동 스카이라인은 현대 중국의 얼굴입니다. 하지만 구시가도 매력적입니다. 프랑스 조계지의 가로수 길, 번드의 아르데코 건축물, 올드타운의 구불구불한 골목길이 그렇습니다. 여기에 세계에서 가장 독특한 디즈니 공원과 미슐랭 스타 레스토랑에서 1달러 접시 길거리 포장마차까지 다양한 음식이 있는 상하이는 정말 모든 것을 갖춘 도시입니다.</p>
+
+    <h2 id="how-many-days" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📅 몇 일이 필요할까요?</h2>
+    <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700 mb-12">
+      <li><strong>3일 (기본):</strong> 번드, 올드타운, 프랑스 조계지, 상하이 타워 또는 동방명주탑 방문</li>
+      <li><strong>4~5일 (여유):</strong> 상하이 디즈니랜드, 주자자오 수향, 또는 인근 쑤저우 당일치기 추가</li>
+      <li><strong>5일 이상 (심층):</strong> 박물관, 미술관, 나이트라이프 지역을 집중적으로 탐방</li>
+    </ul>
+
+    <h2 id="attractions" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎯 주요 관광지</h2>
+
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <h3 class="text-xl font-bold text-gray-900 mb-2">와이탄 / 번드 (外滩)</h3>
+      <p class="text-gray-700">상하이의 상징적인 워터프런트 산책로는 모든 방문객이 꼭 봐야 할 곳입니다. 한쪽에는 고딕, 바로크, 로마네스크, 아르데코 양식을 보여주는 26개의 장대한 식민지 시대 건물이 늘어서 있습니다. 반대편에는 동방명주탑과 상하이 타워가 밤을 밝히는 눈부신 푸동 스카이라인이 펼쳐집니다. 번드는 일몰 때 가장 아름답습니다. 황금빛 햇살이 오래된 건물에 비치고 도시의 불빛이 강 건너편에 하나둘 켜지기 시작합니다. 1.5km 길이의 산책로를 따라 여유롭게 걷는 것은 상하이 여행을 시작하는 완벽한 방법입니다.</p>
+      <div class="screenshot-wrapper">
+        <img src="/images/shanghai/the-bund.jpg" alt="식민지 시대 건물과 푸동 스카이라인이 있는 야경의 번드" loading="lazy" />
+      </div>
+    </div>
+
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <h3 class="text-xl font-bold text-gray-900 mb-2">상하이 타워 (上海中心大厦)</h3>
+      <p class="text-gray-700">중국에서 가장 높고 세계에서 세 번째로 높은 632m의 건물입니다. 546m 높이의 전망대는 상하이 전체를 360도로 내려다보는 숨막히는 전망을 제공합니다 — 맑은 날에는 황푸강이 바다까지 굽이쳐 흐르는 모습을 볼 수 있습니다. 엘리베이터를 타는 것만으로도 하나의 경험입니다: 초속 20m(시속 72km)의 속도로 올라가며 귀가 먹먹해지는 것을 느낄 수 있습니다. 내부에는 세계에서 가장 높은 호텔(J-Hotel)과 건물 전체를 나선형으로 올라가는 아트리움이 있습니다. 긴 대기줄을 피하려면 온라인으로 미리 티켓을 예약하세요.</p>
+      <div class="screenshot-wrapper">
+        <img src="/images/shanghai/shanghai-tower.jpg" alt="중국 최고층 빌딩 상하이 타워" loading="lazy" />
+      </div>
+    </div>
+
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <h3 class="text-xl font-bold text-gray-900 mb-2">동방명주탑 (东方明珠塔)</h3>
+      <p class="text-gray-700">이 스카이라인보다 더 잘 알려진 것은 없습니다. 더 이상 상하이에서 가장 높은 구조물은 아니지만, 엽서부터 티셔츠까지 모든 것에 등장하는 상하이의 가장 상징적인 아이콘으로 남아 있습니다. 세 개의 기둥으로 연결된 11개의 다양한 크기의 구체가 특징입니다. 351m 높이의 '스페이스 모듈'에는 유리 바닥 전망대가 있어 아래 도시를 바로 내려다볼 수 있습니다. 가장 좋은 가치를 원한다면 전망대, 유리 바닥 산책로, 역사 박물관이 포함된 콤보 티켓을 구매하세요. 일몰 때 방문하면 가장 극적인 전망을 볼 수 있습니다.</p>
+      <div class="screenshot-wrapper">
+        <img src="/images/shanghai/oriental-pearl.jpg" alt="상하이의 상징 동방명주탑" loading="lazy" />
+      </div>
+    </div>
+
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <h3 class="text-xl font-bold text-gray-900 mb-2">위위안 정원 (豫园)</h3>
+      <p class="text-gray-700">상하이 올드타운 중심에 숨겨진 400년 된 명나라 정원입니다. 1559년 한 관리가 부모님을 위해私人 정원으로 지었습니다. 정자, 인공암석, 연못, 그리고 직선으로만 이동할 수 있는 악령을 혼란스럽게 하기 위해 설계된 지그재그 다리가 완비된 중국 고전 정원 디자인의 걸작입니다. 정원의 중심은 1,000년 이상 된 3.3m의 다공성 돌인 정교한 옥 바위(玉玲珑)입니다. 정원 주변에는 간식 포장마차, 기념품 가게, 그리고 샤오롱바오(만두)가 발명된 유명한 난샹 찐빵 레스토랑이 있는 위위안 바자회가 있습니다. 정원과 바자회를 탐험하는 데 2~3시간을 할애하세요.</p>
+      <div class="screenshot-wrapper">
+        <img src="/images/shanghai/yu-garden.jpg" alt="위위안 정원의 전통 정자와 연못" loading="lazy" />
+      </div>
+    </div>
+
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <h3 class="text-xl font-bold text-gray-900 mb-2">우캉루 & 안푸루 (武康路/安福路) — 구 프랑스 조계지</h3>
+      <p class="text-gray-700">한때 프랑스 조계지(法租界, 1849~1943)의 중심이었던 이 지역은 현재 <strong>우캉루-안푸루 역사문화지구</strong>로 알려져 있습니다. 상하이에서 가장 트렌디한 지역입니다: 가로수 길, 1920년대 아르데코 아파트, 수많은 독립 부티크, 카페, 레스토랑이 있습니다. 우캉루와 화이하이루 교차로에 있는 상징적인 우캉 맨션(武康大楼)은 이 지역에서 가장 사진이 많이 찍히는 장소입니다. 우캉루는 더 조용하고 주거 지역에 가까워 여유로운 산책에 완벽합니다. 안푸루는 더 활기차며, 수제 커피숍, 디자이너 스토어, 최고의 브런치 장소가 모여 있습니다. 오전이나 오후에 카페를 돌아다니며 사람 구경을 즐겨보세요; 이것이 가장 국제적인 모습의 상하이입니다.</p>
+      <div class="screenshot-wrapper">
+        <img src="/images/shanghai/wukang-road.jpg" alt="구 프랑스 조계지의 우캉 맨션과 가로수 길" loading="lazy" />
+      </div>
+    </div>
+
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <h3 class="text-xl font-bold text-gray-900 mb-2">주자자오 수향 (朱家角)</h3>
+      <p class="text-gray-700">상하이 시내에서 지하철로 45분 거리에 있는 고대 수향 마을입니다. 주자자오(문자 그대로 '주씨 가문 마을')는 1,700년 이상의 역사를 가지고 있으며, 잘 보존된 명·청 왕조 건축물이 있습니다. 마을은 버드나무가 늘어선 운하로 뒤덮여 있고, 36개의 돌다리가 놓여 있습니다 — 가장 유명한 것은 1571년에 지어진 5개의 아치를 가진 방생교입니다. 전통 목조 곤돌라(베니스의 곤돌라와 비슷하지만 훨씬 저렴)를 타고 운하를 따라 이동하고, 커즈 정원(课植园)을 방문하며, 쭝쯔(찹쌀 만두)와 냄새나는 두부 같은 현지 간식을 맛보세요. 주자자오는 더 유명한 저우좡에 비해 상업화가 덜 되어 있어 더 진정하고 여유로운 경험을 제공합니다. 반나절이면 충분하지만, 운하 옆 게스트하우스에서 하룻밤 묵으며 정말 평화로운 경험을 할 수도 있습니다.</p>
+      <div class="screenshot-wrapper">
+        <img src="/images/shanghai/zhujiajiao.jpg" alt="주자자오 수향의 운하와 돌다리" loading="lazy" />
+      </div>
+    </div>
+
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12">
+      <h3 class="text-xl font-bold text-gray-900 mb-2">상하이 디즈니랜드 (上海迪士尼乐园)</h3>
+      <p class="text-gray-700">상하이 디즈니랜드는 세계에서 가장 독특한 디즈니 리조트입니다. 2016년에 개장했으며, 높이 60m로 역대 가장 큰 디즈니 성인 <strong>Enchanted Storybook Castle</strong>이 있습니다. 대표 어트랙션인 <strong>TRON Lightcycle Power Run</strong>은 모든 디즈니 공원에서 최고의 스릴 넘치는 놀이기구 중 하나로 널리 알려져 있습니다. 또한 <strong>Pirates of the Caribbean: Battle for the Sunken Treasure</strong>와 같은 독점 어트랙션과 다른 디즈니 리조트에서는 찾을 수 없는 정통 중국 요리를 제공합니다. 공원은 상하이 시내에서 지하철(11호선, 정문까지 직통)로 약 40분 거리에 있습니다.</p>
+      <div class="screenshot-wrapper">
+        <img src="/images/shanghai/disneyland.jpg" alt="상하이 디즈니랜드의 Enchanted Storybook Castle" loading="lazy" />
+      </div>
+    </div>
+
+    <h2 id="getting-around" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🚇 교통 정보</h2>
+    <ul class="list-disc pl-6 space-y-3 text-lg text-gray-700 mb-12">
+      <li><strong>지하철:</strong> 상하이는 세계에서 가장 긴 지하철 시스템(19개 노선, 800km 이상)을 보유하고 있습니다. 모든 것이 영어로 표시되어 있습니다. 노선 팁은 <a href="/en/transport/metro-bus/" class="text-blue-600 hover:underline">중국 주요 도시 지하철 & 버스 가이드</a>를 확인하세요.</li>
+      <li><strong>디디:</strong> 완벽하게 작동합니다. 짧은 이동이나 지하철이 닿지 않는 곳에서 사용하세요. 설정 팁은 <a href="/en/transport/didi/" class="text-blue-600 hover:underline">외국인이 디디 사용하는 방법</a>에서 확인하세요.</li>
+      <li><strong>자기부상열차 (磁悬浮):</strong> 세계에서 가장 빠른 상업용 열차로, 푸동 공항에서 시내까지 7분 만에 연결합니다(시속 430km). 경험 자체만으로도 탈 가치가 있습니다.</li>
+      <li><strong>자전거:</strong> 상하이는 평탄하고 자전거 타기에 좋습니다. 공유 자전거(헬로바이크, 메이투안)가 시내 중심 곳곳에 있어 우캉루와 안푸루 지역 탐험에 완벽합니다.</li>
+    </ul>
+
+    <h2 id="where-to-stay" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏨 추천 숙소</h2>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">번드 / 루자주이 (外滩/陆家嘴) — 첫 방문객에게 최고</h3><p class="text-gray-700">상징적인 스카이라인 전망, 주요 관광지와 가까움, 다양한 럭셔리 호텔. 비싸지만 그 경험을 위해 투자할 가치가 있습니다.</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">우캉루 지역 / 구 프랑스 조계지 (武康路) — 미식가와 문화 애호가에게 최고</h3><p class="text-gray-700">훌륭한 레스토랑, 바, 부티크가 있는 가장 트렌디한 지역. 플라타너스 그늘이 드리운 조용한 거리, 아침 산책에 완벽. 한때 프랑스 조계지(1849~1943)의 중심이었습니다.</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12"><h3 class="text-xl font-bold text-gray-900 mb-2">징안 (静安) — 쇼핑과 나이트라이프에 최고</h3><p class="text-gray-700">뛰어난 지하철 연결성을 갖춘 활기찬 상업 지구. 난징루와 징안사와 가깝습니다.</p></div>
+
+    <h2 id="what-to-eat" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🍜 추천 음식</h2>
+    <ul class="list-disc pl-6 space-y-3 text-lg text-gray-700 mb-12">
+      <li><strong>샤오롱바오 (小笼包)</strong> — 돼지고기와 육즙이 가득한 만두로, 입안에서 터집니다. 상하이 최고의 음식 경험.</li>
+      <li><strong>성졘바오 (生煎包)</strong> — 바삭한 밑바닥과 촉촉한 속을 가진 팬에 구운 돼지고기 번.</li>
+      <li><strong>홍사오러우 (红烧肉)</strong> — 간장과 설탕에 입에서 녹을 때까지 천천히 조린 삼겹살.</li>
+      <li><strong>충유반몐 (葱油拌面)</strong> — 파 기름에 버무린 심플하지만 중독성 있는 국수.</li>
+      <li><strong>다자셰 (大闸蟹)</strong> — 가을에는 인근 양청호의 털게가 상하이 사람들의 열정입니다.</li>
+      <li><strong>라오상하이 나이차 (老上海奶茶)</strong> — 현지인들이 어린 시절부터 마셔온 향수를 불러일으키는 분유 밀크티.</li>
+    </ul>
+
+    <div class="not-prose mt-16">
+      <h2 class="text-2xl font-bold text-gray-900 mb-8">📚 관련 가이드</h2>
+      <div class="space-y-4">
+        <a href="/en/cities/city-select/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🗺️ <strong>중국 여행, 며칠이 필요할까?</strong> — 전체 일정 계획하기</a>
+        <a href="/en/cities/beijing-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🏛️ <strong>베이징 여행 가이드</strong> — 상하이와 비교해보세요</a>
+        <a href="/en/transport/metro-bus/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚇 <strong>중국 주요 도시 지하철 & 버스 가이드</strong> — 상하이 지하철 이용하기</a>
+        <a href="/en/payment/payment-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">💳 <strong>중국에서 결제하는 방법</strong> — 알리페이와 위챗페이 설정</a>
+      </div>
+    </div>
+  </article>
+</Layout>

@@ -1,0 +1,31 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = '중국 필수 앱';
+const description = '중국에서 실제로 필요한 앱 — 비중국어 사용자를 위한 설정 가이드 포함.';
+---
+
+<Layout title={title} description={description} lang="ko">
+  <article class="max-w-3xl mx-auto">
+    <header class="py-12 text-center">
+      <div class="text-sm text-brand-600 font-medium mb-2">카테고리</div>
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900">필수 앱</h1>
+      <p class="text-gray-500">중국에서 실제로 필요한 앱.</p>
+    </header>
+    <div class="prose prose-gray">
+      <div class="bg-amber-50 rounded-xl p-4 mb-8">
+        <p class="text-amber-800">
+          <strong>참고:</strong> 상세한 앱 가이드가 곧 제공됩니다.
+        </p>
+      </div>
+      <h2>꼭 필요한 앱</h2>
+      <ul>
+        <li><strong>위챗 (微信)</strong> — 메시징, 결제, 모든 것</li>
+        <li><strong>알리페이 (支付宝)</strong> — 결제 및 서비스</li>
+        <li><strong>디디 (滴滴)</strong> — 차량 호출</li>
+        <li><strong>아맵 / 바이두 지도</strong> — 내비게이션 (구글 지도는 잘 작동하지 않음)</li>
+        <li><strong>메이투안</strong> — 음식 배달</li>
+        <li><strong>다이엔핑</strong> — 레스토랑 리뷰</li>
+      </ul>
+    </div>
+  </article>
+</Layout>

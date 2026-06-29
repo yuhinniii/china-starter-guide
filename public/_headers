@@ -1,0 +1,4 @@
+# Image caching - 7 days (604800s) for static images
+/images/*
+  Cache-Control: public, max-age=86400, s-maxage=604800
+  X-Content-Type-Options: nosniff

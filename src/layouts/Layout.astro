@@ -24,10 +24,68 @@ const alternateUrls = langs.map(l => {
     <meta name="description" content={description} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
+    <meta property="og:url" content={Astro.url.href} />
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="China Starter Hub" />
+    <link rel="canonical" href={Astro.url.href} />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "China Starter Hub",
+      "url": "https://chinastarterhub.com",
+      "description": "Clear, current guidance for first-time foreigners visiting China.",
+      "inLanguage": currentLang,
+    })}></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans+KR:wght@400;500;700&family=Noto+Naskh+Arabic:wght@400;500;700&display=swap" rel="stylesheet" />
+    <style is:global>
+      /* Responsive tables — horizontal scroll on mobile, keep full format */
+      .table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin: 16px 0;
+      }
+      .table-responsive table {
+        min-width: 480px;
+      }
+      @media (max-width: 640px) {
+        .table-responsive table {
+          font-size: 0.875rem;
+        }
+        .table-responsive table th,
+        .table-responsive table td {
+          padding-left: 0.75rem !important;
+          padding-right: 0.75rem !important;
+        }
+      }
+
+      /* Global image styles */
+      .screenshot-wrapper {
+        background: #f3f4f6;
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        padding: 16px;
+        margin: 16px 0;
+      }
+      .screenshot-wrapper img {
+        width: 100%;
+        border: 1px solid #d1d5db;
+        border-radius: 8px;
+        margin: 8px 0;
+      }
+      .screenshot-label {
+        display: inline-block;
+        background: #d1d5db;
+        color: #374151;
+        font-size: 0.7rem;
+        font-weight: 700;
+        padding: 2px 10px;
+        border-radius: 5px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+      }
+    </style>
   </head>
   <body class="bg-white text-gray-900 font-sans antialiased">
     <!-- Nav -->

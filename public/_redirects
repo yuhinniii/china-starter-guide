@@ -1,3 +1,6 @@
 # Cloudflare Pages redirects
 # Root → English (server-side 301, no Loading flash)
 /   /en/  301
+
+# Sitemap access
+/sitemap-index.xml   /sitemap-index.xml  200

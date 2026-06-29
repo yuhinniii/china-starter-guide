@@ -1,0 +1,116 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = '中国の移動方法：完全交通ガイド';
+const description = '高速鉄道、地下鉄、DiDi、タクシー、シェア自転車 — 状況に応じた最適な交通手段の選び方。';
+---
+
+<Layout title={title} description={description} lang="ja">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/en/transport/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        交通関連に戻る
+      </a>
+    </nav>
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🚄 移動手段</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        中国の移動方法：完全交通ガイド
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">高速鉄道、地下鉄、DiDi、タクシー、シェア自転車 — 状況に応じた最適な交通手段の選び方。</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 最終更新：2026年6月</span>
+        <span>⏱️ 読了時間：約5分</span>
+      </div>
+    </header>
+
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-blue-900 mb-4">🎯 クイックアンサー</h2>
+      <p class="text-lg text-blue-800 leading-relaxed">
+        中国の交通システムは世界で最も効率的なものの一つです。都市間の移動には<strong>高速鉄道</strong>が最適です。都市内なら<strong>地下鉄</strong>が最速です。ドアツードアなら<strong>DiDi</strong>が最も便利です。すべてAlipayまたはWeChat Payで支払い可能 — 現金は不要です。
+      </p>
+    </div>
+
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 このガイドの内容</h3>
+      <ul class="space-y-3">
+        <li><a href="#high-speed-rail" class="text-blue-600 hover:underline">🚄 高速鉄道</a></li>
+        <li><a href="#metro" class="text-blue-600 hover:underline">🚇 地下鉄</a></li>
+        <li><a href="#didi" class="text-blue-600 hover:underline">🚗 DiDi</a></li>
+        <li><a href="#taxis" class="text-blue-600 hover:underline">🚕 タクシー</a></li>
+        <li><a href="#flights" class="text-blue-600 hover:underline">✈️ 国内線</a></li>
+        <li><a href="#bikes" class="text-blue-600 hover:underline">🚲 シェア自転車</a></li>
+        <li><a href="#payment" class="text-blue-600 hover:underline">💳 交通機関の支払い</a></li>
+      </ul>
+    </nav>
+
+    <div class="prose prose-gray max-w-none">
+
+      <h2 id="high-speed-rail" class="text-2xl font-bold text-gray-900 mb-4">🚄 高速鉄道</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">中国の高速鉄道はすべての主要都市を結んでいます。列車は清潔で定時運行、乗り心地も滑らかで、二等座でも飛行機のプレミアムエコノミー並みの快適さです。車窓の景色を眺めながら、安定した高速移動を楽しみたいなら高速鉄道がおすすめです。</p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>ヒント：</strong>鉄道運賃は年間を通じて安定していますが、航空運賃は大きく変動します。繁忙期は鉄道の方が安く、閑散期は格安航空券が鉄道より安くなることもあります。</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">地下鉄</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">中国の主要都市にはすべて優れた地下鉄システムがあります。北京と上海の地下鉄網は世界最長クラスです。案内表示とアナウンスは二ヶ国語（中国語＋英語）で、駅には明確な地図があります。通常、都市内での移動には最速の方法で、運賃も安く — 通常3～10元（約60～200円）です。</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">DiDi</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">DiDiは中国版Uberで、広く使われています。DiDiアプリ、またはAlipayやWeChatのミニプログラムから利用できます。Alipay/WeChat Payに紐付けた国際クレジットカードで支払えます。ドアツードアの移動、特に荷物がある時や悪天候時に最適です。詳しい手順は<a href="/en/transport/didi/" class="text-blue-600 hover:underline">DiDi設定ガイド</a>をご覧ください。</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">タクシー</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">タクシーは中国の都市のいたるところにあります。DiDiなどのライドシェアアプリよりは高くなりますが、街中ですぐに拾えます。難しいのはコミュニケーション — すべての運転手が英語を話せるわけではありません。目的地は必ず中国語で書いて運転手に見せてください。翻訳アプリも役立ちます。タクシーは現金とモバイル決済（Alipay、WeChat）に対応していますが、海外クレジットカードは使えません。</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">国内線</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">非常に長距離（北京から広州、上海から成都など）の場合、飛行機が時間を節約できます。主要航空会社には中国国際航空、中国南方航空、中国東方航空、海南航空などがあります。Trip.com（英語対応）または航空会社のアプリで予約できます。国内線は出発の1.5〜2時間前には空港に到着する必要があり、ほとんどの空港は市内から遠いため、そこに行くだけで45〜60分かかります。</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">シェア自転車</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">短距離の移動には、シェア自転車（Meituan Bike、DiDi Bike）があちこちにあります。AlipayまたはWeChat PayでQRコードをスキャンし、数元で乗れて、どこにでも駐輪できます。目的地までのラストワンマイルに最適です。</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">交通機関の支払い</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">良いニュース：中国の交通機関はほとんどすべてAlipayまたはWeChat Payで支払えます。地下鉄やバス用の交通QRコードをAlipayやWeChat Pay内で直接有効にでき、降車後に自動的に運賃が引き落とされます。DiDiはアプリ経由で請求されます。鉄道のチケットはオンラインで予約できます。交通費に現金は基本的に不要ですが、念のため小銭を少し持っておくと安心です。</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="related" class="text-2xl font-bold text-gray-900 mb-6 mt-12">📚 関連ガイド</h2>
+
+      <div class="space-y-4 not-prose">
+        <a href="/en/transport/airport-to-city/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🛬 <strong>空港から市内へ</strong> — 到着時の移動方法</a>
+        <a href="/en/transport/high-speed-rail/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>中国高速鉄道の予約と乗車方法</strong> — ステップバイステップの予約ガイド</a>
+        <a href="/en/transport/didi/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚗 <strong>外国人が中国でDiDiを使う方法</strong> — 中国の電話番号なしでライドシェアを設定</a>
+        <a href="/en/transport/metro-bus/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚇 <strong>中国主要都市の地下鉄・バスガイド</strong> — 都市交通の利用方法</a>
+        <a href="/en/payment/setup-alipay/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">💳 <strong>外国人向けAlipay設定ガイド</strong> — 1つのアプリですべての交通費を支払う</a>
+      </div>
+
+    </div>
+
+    <!-- Sources -->
+    <div class="mt-8 pt-6 border-t border-gray-200 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-3">参考情報</h3>
+      <ul class="space-y-2">
+        <li><a href="https://www.12306.cn/en/index.html" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">中国鉄路公式 - 12306 英語版</a></li>
+        <li><a href="https://web.didiglobal.com/" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">DiDi Global - ライドシェア</a></li>
+      </ul>
+    </div>
+  </article>
+</Layout>

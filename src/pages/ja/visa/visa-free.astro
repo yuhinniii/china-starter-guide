@@ -1,0 +1,152 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = '中国ビザ免除国リスト（2026） — China Starter Hub';
+const description = '中国へのビザ免除入国が認められる国の公式リスト — 一方的免除（50カ国）および相互協定（29カ国）。';
+---
+
+<Layout title={title} description={description} lang="ja">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/en/visa/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        準備のページに戻る
+      </a>
+    </nav>
+    <!-- Header -->
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">📋 入国・ビザ</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        中国ビザ免除国リスト（2026）
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">あなたの国が中国へのビザ免除入国の対象かどうかをチェックしましょう。</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 最終更新：2026年6月</span>
+        <span>⏱️ 読了時間：約5分</span>
+      </div>
+    </header>
+
+    <!-- Quick Answer Box -->
+    <div class="bg-gradient-to-r from-green-50 to-emerald-50 border-l-4 border-green-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-green-900 mb-4">🎯 すぐわかる答え</h2>
+      <p class="text-lg text-green-800 leading-relaxed">
+        <strong>ビザなしで中国に入国する方法は2つあります：</strong> 中国は<strong>50カ国</strong>の国民に一方的なビザ免除（最大30日）を認めており、<strong>29カ国</strong>とは相互ビザ免除協定を結んでいます。いずれのリストにも該当しない場合は、240時間トランジット制度を確認するか、L字ビザを申請してください。
+      </p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="prose prose-lg max-w-none">
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        以下は中国政府の最新公式データ（2025年）に基づく完全リストです。出典：<a href="http://big5.www.gov.cn/gate/big5/www.gov.cn/yaowen/liebiao/202508/content_7035244.htm" class="text-brand-600 underline" target="_blank" rel="noopener">中国政府网</a>。
+      </p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <!-- Section 1: Unilateral -->
+      <h2 class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🟢</span> 一方的ビザ免除（50カ国）
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        これらの国の国民は<strong>ビザなし</strong>で中国に入国でき、最大<strong>30日間</strong>滞在可能です。事前の申請は不要です。
+      </p>
+
+      <div class="bg-green-50 border border-green-200 rounded-2xl p-6 mb-8 not-prose">
+        <p class="text-gray-700 mb-4 font-medium">対象：観光、ビジネス、家族訪問、トランジット、文化交流。最大30日間。</p>
+      </div>
+
+      <h3 class="text-xl font-bold text-gray-800 mb-4">ヨーロッパ（35）</h3>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 not-prose">
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-gray-700">
+          <span>フランス</span><span>ドイツ</span><span>イタリア</span>
+          <span>オランダ</span><span>スペイン</span><span>スイス</span>
+          <span>アイルランド</span><span>ハンガリー</span><span>オーストリア</span>
+          <span>ベルギー</span><span>ルクセンブルク</span><span>ポーランド</span>
+          <span>ポルトガル</span><span>ギリシャ</span><span>キプロス</span>
+          <span>スロベニア</span><span>スロバキア</span><span>ノルウェー</span>
+          <span>フィンランド</span><span>デンマーク</span><span>アイスランド</span>
+          <span>アンドラ</span><span>モナコ</span><span>リヒテンシュタイン</span>
+          <span>ブルガリア</span><span>ルーマニア</span><span>クロアチア</span>
+          <span>モンテネグロ</span><span>北マケドニア</span><span>マルタ</span>
+          <span>エストニア</span><span>ラトビア</span><span>ロシア</span>
+          <span>スウェーデン</span><span>イギリス</span>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-bold text-gray-800 mb-4">アジア（7）</h3>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 not-prose">
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-gray-700">
+          <span>ブルネイ</span><span>韓国</span><span>日本</span>
+          <span>サウジアラビア</span><span>オマーン</span><span>クウェート</span>
+          <span>バーレーン</span>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-bold text-gray-800 mb-4">アメリカ大陸（6）</h3>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 not-prose">
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-gray-700">
+          <span>ブラジル</span><span>アルゼンチン</span><span>チリ</span>
+          <span>ペルー</span><span>ウルグアイ</span><span>カナダ</span>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-bold text-gray-800 mb-4">オセアニア（2）</h3>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-8 not-prose">
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-gray-700">
+          <span>オーストラリア</span><span>ニュージーランド</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Not sure which one applies to you? -->
+    <div class="bg-gray-50 rounded-2xl p-6 not-prose mt-8 mb-12">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">🤔 どの制度が自分の国に該当するかわからない？</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <a href="/en/visa/transit-240/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-0.5">✈️ 240時間ビザ免除トランジット</p>
+          <p class="text-sm text-gray-500">指定地域で最大10日間 — アメリカなど55カ国が対象。</p>
+        </a>
+        <a href="/en/visa/mutual-agreement/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-0.5">🤝 相互ビザ免除協定</p>
+          <p class="text-sm text-gray-500">二国間ビザ免除協定を結ぶ29カ国 — 滞在期間は協定により異なる。</p>
+        </a>
+        <a href="/en/visa/apply-l-visa/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-0.5">📝 L字観光ビザの申請</p>
+          <p class="text-sm text-gray-500">どのビザ免除リストにも該当しない場合は、標準的な観光ビザを申請してください。</p>
+        </a>
+        <a href="/en/cities/hainan-visa-free/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-0.5">🏝️ 海南島30日ビザ免除</p>
+          <p class="text-sm text-gray-500">59カ国が対象 — 米国、メキシコ、フィリピンなど本土リストにない国も含む。</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- Sources -->
+    <div class="bg-gray-50 rounded-2xl p-6 not-prose mt-12">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📚 出典</h3>
+      <ul class="space-y-2">
+        <li><a href="https://en.nia.gov.cn/n147418/n147463/c183390/content.html" class="text-brand-600 hover:underline text-sm" target="_blank" rel="noopener">国家移民管理局 — 一方的ビザ免除対象国リスト</a></li>
+        <li><a href="https://www.gov.cn/yaowen/liebiao/202508/content_7035244.htm" class="text-brand-600 hover:underline text-sm" target="_blank" rel="noopener">gov.cn — どの国が中国にビザなしで渡航できる？完全リスト！</a></li>
+        <li><a href="https://cs.mfa.gov.cn/wgrlh/lhqz/lhqzjjs/202510/t20251023_11739051.shtml" class="text-brand-600 hover:underline text-sm" target="_blank" rel="noopener">外交部 — 相互ビザ免除協定</a></li>
+      </ul>
+    </div>
+
+    <!-- Related Guides -->
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose">
+      <h3 class="text-2xl font-bold text-gray-900 mb-6">📚 関連ガイド</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/en/visa/visa-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">中国ビザ完全ガイド</p>
+          <p class="text-sm text-gray-600">すべてのビザオプションを解説</p>
+        </a>
+        <a href="/en/visa/transit-240/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">240時間トランジット制度の解説</p>
+          <p class="text-sm text-gray-600">ビザなしで10日間の乗り継ぎ</p>
+        </a>
+      </div>
+    </div>
+  </article>
+</Layout>

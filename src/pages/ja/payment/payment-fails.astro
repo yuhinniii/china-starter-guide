@@ -1,0 +1,136 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = '中国で支払いに失敗した時の対処法';
+const description = '外国人旅行者が中国で直面する一般的な支払い失敗の原因と、QRコード決済が通らない時のステップバイステップのトラブルシューティング。';
+---
+
+<Layout title={title} description={description} lang="ja">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/en/payment/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        支払い関連に戻る
+      </a>
+    </nav>
+    <!-- Header -->
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">💳 支払い</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        中国で支払いに失敗した時の対処法
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">慌てないで — ほとんどの支払い失敗は簡単に解決できます。</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 最終更新：2026年6月</span>
+        <span>⏱️ 読了時間：約4分</span>
+      </div>
+    </header>
+
+    <!-- Quick Answer Box -->
+    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-red-900 mb-4">🎯 クイックアンサー</h2>
+      <p class="text-lg text-red-800 leading-relaxed">
+        <strong>外国ユーザーにとって支払い失敗はよくあることです。</strong>ほとんどの原因は1日の利用限度額、銀行による不正利用ブロック、またはネットワークの問題です。現金に切り替える、別のアプリを使う、WiFiに接続するなどを試してみてください。それでも解決しない場合は、数時間待ってから再試行しましょう。
+      </p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="prose prose-lg max-w-none">
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        どこかのタイミングで必ず起こります。お店でQRコードをスキャンし、アプリが一瞬くるくる回って、そして — エラー。支払い失敗です。
+      </p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        慌てないでください。中国での支払い失敗は外国ユーザーにとって一般的なことで、ほとんどの場合は簡単に解決します。
+      </p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🔍</span> なぜ起こるのか
+      </h2>
+
+      <div class="space-y-4 mb-8 not-prose">
+        <div class="bg-blue-50 border border-blue-200 rounded-2xl p-5">
+          <h3 class="font-semibold text-gray-900 mb-2 text-lg">1. 1日の利用限度額に達した</h3>
+          <p class="text-gray-700 text-sm">AlipayとWeChat Payの両方に利用限度額があります。買い物を続けていると上限に達することがあります。</p>
+          <p class="text-gray-700 text-sm mt-2"><strong>解決策：</strong>翌日まで待つ — 1日の限度額はリセットされます。</p>
+        </div>
+
+        <div class="bg-green-50 border border-green-200 rounded-2xl p-5">
+          <h3 class="font-semibold text-gray-900 mb-2 text-lg">2. 銀行が取引をブロックした</h3>
+          <p class="text-gray-700 text-sm">あなたの銀行が中国からの請求を不正利用と判断します。</p>
+          <p class="text-gray-700 text-sm mt-2"><strong>解決策：</strong>通知を確認 — 銀行から本人確認のSMSが届いていることが多いです。承認して再試行してください。旅行前に銀行に連絡しておくと防げます。</p>
+        </div>
+
+        <div class="bg-purple-50 border border-purple-200 rounded-2xl p-5">
+          <h3 class="font-semibold text-gray-900 mb-2 text-lg">3. ネットワークの問題</h3>
+          <p class="text-gray-700 text-sm">VPNが接続を切っていたり、お店のインターネットが遅い可能性があります。</p>
+          <p class="text-gray-700 text-sm mt-2"><strong>解決策：</strong>VPNを確認し、機内モードのオン/オフを切り替えるか、お店の人に再試行してもらってください。</p>
+        </div>
+
+        <div class="bg-orange-50 border border-orange-200 rounded-2xl p-5">
+          <h3 class="font-semibold text-gray-900 mb-2 text-lg">4. お店が国際カードに対応していない</h3>
+          <p class="text-gray-700 text-sm">一部の小さな店舗は中国の銀行カードしか使えない決済アカウントを持っています。</p>
+          <p class="text-gray-700 text-sm mt-2"><strong>解決策：</strong>現金を使うか、WeChat Payが使えるか聞いてみてください（AlipayがダメでもWeChat Payが使えることがあります）。</p>
+        </div>
+      </div>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">✅</span> クイックトラブルシューティングチェックリスト
+      </h2>
+
+      <div class="bg-gray-50 rounded-2xl p-8 mb-8 not-prose">
+        <ol class="space-y-4">
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">1</span>
+            <div><strong>別のアプリに切り替える</strong> — AlipayがダメならWeChat Payを試す（またはその逆）</div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">2</span>
+            <div><strong>現金を使う</strong> — 予備として常に500～1,000元の小銭を持ち歩く</div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">3</span>
+            <div><strong>WiFiに接続する</strong> — お店のWiFiを借りる；モバイルデータが問題のことも</div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">4</span>
+            <div><strong>アプリを再起動する</strong> — AlipayまたはWeChatを閉じて開き直す</div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">5</span>
+            <div><strong>待って再試行する</strong> — 数分で自然に解決する問題もあります</div>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Related Guides -->
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose mt-12">
+      <h3 class="text-2xl font-bold text-gray-900 mb-6">📚 関連ガイド</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/en/payment/payment-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">中国での支払い方法</p>
+          <p class="text-sm text-gray-600">支払い方法の完全概要</p>
+        </a>
+        <a href="/en/payment/setup-alipay/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">外国人向けAlipay設定ガイド</p>
+          <p class="text-sm text-gray-600">ステップバイステップの設定手順</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- Sources -->
+    <div class="mt-8 pt-6 border-t border-gray-200 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-3">参考情報</h3>
+      <ul class="space-y-2">
+        <li><a href="https://www.alipayplus.com/consumer/" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">Alipay - 消費者センター</a></li>
+        <li><a href="https://cs.help.wechat.com/hc/en-us" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">WeChat - ヘルプセンター</a></li>
+      </ul>
+    </div>
+  </article>
+</Layout>

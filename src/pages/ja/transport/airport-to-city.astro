@@ -1,0 +1,129 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = '中国の空港から市内へ：最適な移動方法';
+const description = '地下鉄、DiDi、タクシー、空港バス — 中国主要空港での選び方と実際の体験。';
+---
+
+<Layout title={title} description={description} lang="ja">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/en/transport/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        交通関連に戻る
+      </a>
+    </nav>
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🛬 交通</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        中国の空港から市内へ：最適な移動方法
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">地下鉄、DiDi、タクシー、空港バス — 中国主要空港での選び方と実際の体験。</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 最終更新：2026年6月</span>
+        <span>⏱️ 読了時間：約5分</span>
+      </div>
+    </header>
+
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-blue-900 mb-4">🎯 クイックアンサー</h2>
+      <p class="text-lg text-blue-800 leading-relaxed">
+        昼間に到着し荷物が少なければ<strong>地下鉄</strong>がおすすめ — 安く（5～10元）、渋滞を避けられます。疲れている、荷物が多い、または深夜に到着するなら<strong>DiDi</strong>（80～200元）を利用しましょう。無許可のタクシーは避け、正規のタクシー乗り場を利用してください。
+      </p>
+    </div>
+
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 このガイドの内容</h3>
+      <ul class="space-y-3">
+        <li><a href="#metro" class="text-blue-600 hover:underline">🚇 方法1：地下鉄（ほとんどの旅行者に最適）</a></li>
+        <li><a href="#didi" class="text-blue-600 hover:underline">🚗 方法2：DiDi（ドアツードアに最適）</a></li>
+        <li><a href="#taxi" class="text-blue-600 hover:underline">🚕 方法3：タクシー</a></li>
+        <li><a href="#bus" class="text-blue-600 hover:underline">🚌 方法4：空港バス</a></li>
+        <li><a href="#reference" class="text-blue-600 hover:underline">📊 空港別クイックリファレンス</a></li>
+      </ul>
+    </nav>
+
+    <div class="prose prose-gray max-w-none">
+
+      <h2 id="metro" class="text-2xl font-bold text-gray-900 mb-4">🚇 方法1：地下鉄（ほとんどの旅行者に最適）</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">中国の主要都市の空港には、都心部への直通地下鉄路線があります。運賃はわずか5～10元で、道路渋滞を避けられ、すべての駅の案内表示は英語に対応しています。</p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>おすすめする場合：</strong>荷物が少なく、営業時間内（通常6:00～23:00）に到着し、ホテルが地下鉄駅の近くにある場合。</p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>避けた方が良い場合：</strong>荷物が多い、深夜に到着する、疲れていてホテルまでドアツードアで行きたい場合。</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">方法2：DiDi（ドアツードアに最適）</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">DiDiを設定済みなら（<a href="/en/transport/didi/" class="text-blue-600 hover:underline">DiDiガイド</a>参照）、空港の送迎エリアから乗車を予約できます。アプリは事前に推定運賃を表示し、Alipay/WeChat Payに対応し、運転手の位置をリアルタイムで追跡できます。</p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>一般的な料金：</strong>距離や都市によりますが80～200元。</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">方法3：タクシー</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">到着ロビー外の正規タクシー乗り場で利用できます。ホテル名と住所を中国語に訳して運転手に見せてください。メーターを使うことを確認しましょう。</p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>料金：</strong>DiDiより少し高く、渋滞があるとさらに高くなる可能性があります。</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">方法4：空港バス</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">ほとんどの主要空港には、市内の主要エリアへのバス路線があります。タクシーより安いですが（20～40元）、遅くて便利さに欠けます。すべてに英語の案内があるわけではありません。</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">空港別クイックリファレンス</h2>
+
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-x-auto mb-8 not-prose">
+        <table class="w-full text-left">
+          <thead class="bg-gray-50">
+            <tr>
+              <th class="px-6 py-4 text-sm font-semibold text-gray-900">空港</th>
+              <th class="px-6 py-4 text-sm font-semibold text-gray-900">都心まで地下鉄</th>
+              <th class="px-6 py-4 text-sm font-semibold text-gray-900">都心までDiDi</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-100">
+            <tr class="hover:bg-gray-50"><td class="px-6 py-4 text-gray-700">北京首都 (PEK)</td><td class="px-6 py-4 text-gray-700">30元、60分</td><td class="px-6 py-4 text-gray-700">120元、45分</td></tr>
+            <tr class="hover:bg-gray-50"><td class="px-6 py-4 text-gray-700">北京大興 (PKX)</td><td class="px-6 py-4 text-gray-700">35元、50分</td><td class="px-6 py-4 text-gray-700">180元、60分</td></tr>
+            <tr class="hover:bg-gray-50"><td class="px-6 py-4 text-gray-700">上海浦東 (PVG)</td><td class="px-6 py-4 text-gray-700">8元、50分</td><td class="px-6 py-4 text-gray-700">180元、50分</td></tr>
+            <tr class="hover:bg-gray-50"><td class="px-6 py-4 text-gray-700">広州白雲 (CAN)</td><td class="px-6 py-4 text-gray-700">8元、40分</td><td class="px-6 py-4 text-gray-700">100元、40分</td></tr>
+            <tr class="hover:bg-gray-50"><td class="px-6 py-4 text-gray-700">深圳宝安 (SZX)</td><td class="px-6 py-4 text-gray-700">8元、40分</td><td class="px-6 py-4 text-gray-700">80元、35分</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 not-prose">
+        <p class="text-gray-700"><strong>私のおすすめ：</strong>昼間に到着し荷物が少なければ地下鉄を利用。疲れている、荷物が多い、または深夜に到着するならDiDiを使いましょう。無許可のタクシーには乗らないで — 正規のタクシー乗り場を利用してください。</p>
+      </div>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="related" class="text-2xl font-bold text-gray-900 mb-6 mt-12">📚 関連ガイド</h2>
+
+      <div class="space-y-4 not-prose">
+        <a href="/en/transport/transport-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>中国の移動方法</strong> — 完全交通ガイド</a>
+        <a href="/en/transport/high-speed-rail/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>中国高速鉄道の予約と乗車方法</strong> — 予約と乗車のコツ</a>
+        <a href="/en/transport/didi/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚗 <strong>外国人が中国でDiDiを使う方法</strong> — ライドシェアの設定</a>
+        <a href="/en/payment/setup-alipay/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">💳 <strong>外国人向けAlipay設定ガイド</strong> — 乗車料金の支払いに</a>
+      </div>
+
+    </div>
+
+    <!-- Sources -->
+    <div class="mt-8 pt-6 border-t border-gray-200 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-3">参考情報</h3>
+      <ul class="space-y-2">
+        <li><a href="https://en.bcia.com.cn/wljc.html" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">北京首都空港 - 交通ガイド</a></li>
+        <li><a href="https://www.shanghaiairport.com/ensh/gdjt/index.html" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">上海空港 - 交通案内</a></li>
+        <li><a href="https://www.gbiac.net/traffic/tfa?urlKey=to-from-airport_en" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">広州白雲空港 - 空港交通</a></li>
+      </ul>
+    </div>
+  </article>
+</Layout>

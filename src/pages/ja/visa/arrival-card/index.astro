@@ -1,0 +1,504 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = '中国入国カードのオンライン提出方法 — ステップバイステップガイド';
+const description = 'スクリーンショット付き完全チュートリアル — 搭乗前にNIA入国カードをオンラインで記入。時間を節約して紙のカードをスキップ。';
+---
+
+<Layout title={title} description={description} lang="ja">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+
+    <!-- Breadcrumb -->
+    <nav class="mb-8 not-prose">
+      <a href="/en/visa/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        ビザ・入国のページに戻る
+      </a>
+    </nav>
+
+    <!-- Header -->
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🛂 入国・ビザ</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        中国入国カードのオンライン提出方法
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">スクリーンショット付き完全ステップバイステップガイド。搭乗前にオンラインでフォームを記入 — 紙の入国カードは不要に。</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 最終更新：2026年6月</span>
+        <span>⏱️ 読了時間：約8分</span>
+      </div>
+    </header>
+
+    <!-- Official Portal -->
+    <div class="bg-blue-50 border-l-4 border-blue-500 rounded-r-2xl p-5 mb-8 not-prose">
+      <strong>公式ポータル：</strong> <a href="https://s.nia.gov.cn/ArrivalCardFillingPC/entry-registation-home" target="_blank" class="text-blue-700 underline">s.nia.gov.cn/ArrivalCardFillingPC/</a>
+    </div>
+
+    <!-- Video Tutorial -->
+    <div class="bg-gradient-to-r from-gray-50 to-blue-50 border border-gray-200 rounded-2xl p-8 mb-10 text-center not-prose">
+      <h3 class="text-xl font-bold text-gray-900 mb-3">公式NIAビデオチュートリアル</h3>
+      <p class="text-gray-600 mb-4">国家移民管理局の公式ウォークスルービデオをご覧ください：</p>
+      <a href="https://en.nia.gov.cn/n147418/n147463/c195170/content.html" target="_blank" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition no-underline">▶ チュートリアル動画を見る</a>
+    </div>
+
+    <style>
+      .step-card {
+        background: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 12px;
+        padding: 24px;
+        margin: 28px 0;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+      }
+      .step-card .step-number {
+        display: inline-block;
+        background: #1a73e8;
+        color: #fff;
+        font-weight: 700;
+        font-size: 0.8rem;
+        padding: 2px 14px;
+        border-radius: 20px;
+        margin-bottom: 14px;
+      }
+      .screenshot-wrapper {
+        background: #eef2f7;
+        border: 1px solid #d0d7de;
+        border-radius: 10px;
+        padding: 14px;
+        margin: 16px 0;
+      }
+      .screenshot-wrapper img {
+        width: 100%;
+        border: 1px solid #c0c8d0;
+        border-radius: 6px;
+        margin: 8px 0;
+      }
+      .screenshot-wrapper .caption {
+        font-size: 0.85rem;
+        color: #555;
+        font-style: italic;
+        margin-top: 4px;
+        margin-bottom: 0;
+      }
+      .screenshot-label {
+        display: inline-block;
+        background: #d0d7de;
+        color: #3a3f47;
+        font-size: 0.7rem;
+        font-weight: 700;
+        padding: 2px 10px;
+        border-radius: 5px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+      }
+      .field-group {
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 14px;
+        margin: 12px 0;
+      }
+      .field-group h4 {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+        color: #5f6368;
+      }
+      .field-group .field-item { margin: 6px 0; font-size: 0.9rem; }
+      .col-layout {
+        display: flex;
+        gap: 20px;
+        margin: 12px 0;
+        flex-wrap: wrap;
+      }
+      .col-left { flex: 1; min-width: 260px; }
+      .col-right { flex: 1; min-width: 240px; }
+      .tag-auto { background: #e8f5e9; color: #2e7d32; padding: 1px 8px; border-radius: 8px; font-size: 0.75rem; font-weight: 600; }
+      .tag-fill { background: #fce4ec; color: #c62828; padding: 1px 8px; border-radius: 8px; font-size: 0.75rem; font-weight: 600; }
+      .tag-skip { background: #eeeeee; color: #757575; padding: 1px 8px; border-radius: 8px; font-size: 0.75rem; font-weight: 600; }
+      .tip-box {
+        background: #fff8e1;
+        border-left: 4px solid #ffa000;
+        padding: 12px 16px; margin: 12px 0;
+        border-radius: 0 8px 8px 0; font-size: 0.9rem;
+      }
+      .warn-box {
+        background: #fbe9e7;
+        border-left: 4px solid #d84315;
+        padding: 12px 16px; margin: 12px 0;
+        border-radius: 0 8px 8px 0; font-size: 0.9rem;
+      }
+      .info-box {
+        background: #e8f0fe;
+        border-left: 4px solid #1a73e8;
+        padding: 12px 16px; margin: 12px 0;
+        border-radius: 0 8px 8px 0; font-size: 0.9rem;
+      }
+      .img-row {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin: 12px 0;
+      }
+      .img-row figure {
+        flex: 1;
+        min-width: 240px;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        overflow: hidden;
+        margin: 0;
+      }
+      .img-row figure img { width: 100%; margin: 0; border: none; border-radius: 0; }
+      .img-row figcaption {
+        font-size: 0.8rem;
+        color: #5f6368;
+        text-align: center;
+        padding: 6px;
+        font-style: italic;
+      }
+    </style>
+
+    <!-- ============================================================ -->
+    <!-- STEP 0: HOMEPAGE -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">ステップ0：ポータルにアクセス</h2>
+    <div class="step-card">
+      <div class="step-number">Step 0</div>
+      <p><a href="https://s.nia.gov.cn/ArrivalCardFillingPC/entry-registation-home">s.nia.gov.cn</a>を開き、右上の<strong>Language</strong>ドロップダウンから英語に切り替えます。</p>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Screenshot</div>
+        <img src="/images/arrival-card/step0-homepage.jpg" alt="英語表示の入国申告ホームページ">
+        <p class="caption">英語に切り替えたら、<strong>Entry Declaration</strong>をクリックして開始</p>
+      </div>
+      <p>2つの選択肢があります：</p>
+      <ul>
+        <li><strong>Entry Declaration（入国申告）</strong> — 中国に入国するほとんどの外国人旅行者向け</li>
+        <li><strong>Entry Declaration for Border Area Residents（国境地域居住者向け入国申告）</strong> — 周辺7カ国（北朝鮮、モンゴル、パキスタン、ネパール、ミャンマー、ラオス、ベトナム）の住民のみ対象</li>
+      </ul>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- STEP 1: NOTICE / INSTRUCTIONS -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">ステップ1：注意事項を読む</h2>
+    <div class="step-card">
+      <div class="step-number">Step 1</div>
+      <p>「Entry Declaration」をクリックすると、免除対象者を記載した<strong>注意事項（Instructions）</strong>ページが表示されます。</p>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Screenshot</div>
+        <img src="/images/arrival-card/step1-notice.jpg" alt="注意事項と同意ボタンが表示されたページ">
+        <p class="caption">注意事項を読み、<strong>I AGREE（同意する）</strong>をクリックして進む</p>
+      </div>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-4 mb-2">免除対象者（このフォームの記入が不要な人）：</h3>
+      <ol>
+        <li>有効な中国外国人永久居留身分証の保有者</li>
+        <li>有効な香港・マカオ住民大陸通行証（非中国籍）の保有者</li>
+        <li>港区画内に留まる24時間直接トランジット旅客</li>
+        <li>団体ビザまたは団体観光客のメンバー</li>
+        <li>乗務員（航空会社、船舶、運転手）</li>
+        <li>同一船舶で帰航するクルーズ旅客</li>
+        <li>集中文書検査対象者</li>
+        <li>電子ゲート入国者</li>
+      </ol>
+      <div class="warn-box">
+        <strong>重要：</strong> 港区画外に出るトランジット旅客（24時間／240時間トランジットを含む）は<strong>必ず</strong>このフォームを記入してください。
+      </div>
+      <p><strong>I AGREE（同意する）</strong>をクリックして続行します。</p>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- STEP 2: DOCUMENT UPLOAD -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">ステップ2：旅券情報ページをアップロード</h2>
+    <div class="step-card">
+      <div class="step-number">Step 2</div>
+      <p>書類の種類を選択し、旅券データページの鮮明な写真をアップロードします。システムがOCRを使用して自動的に情報を読み取ります。</p>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Screenshot</div>
+        <img src="/images/arrival-card/step2-upload.jpg" alt="書類アップロードページ">
+        <p class="caption">書類の種類を選択し、旅券データページの写真をアップロードまたは撮影</p>
+      </div>
+      <div class="tip-box">
+        <strong>ヒント：</strong> 写真は明るく、すべての文字がはっきり読めるようにしてください。写真の品質によって、次のステップでシステムが自動入力する情報の精度が決まります。
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- STEP 3: BASIC INFORMATION -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">ステップ3：基本情報の入力</h2>
+    <div class="step-card">
+      <div class="step-number">Step 3</div>
+      <p>これがメインの情報ページです。システムはアップロードした旅券写真からほとんどの詳細情報を自動抽出します。</p>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-4 mb-2">空のフォーム — 全フィールド表示</h3>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Screenshot</div>
+        <img src="/images/arrival-card/step3-basic-empty.jpg" alt="基本情報フォーム（空）">
+        <p class="caption">このステップに最初に進んだときのフォームの状態</p>
+      </div>
+
+      <div class="col-layout">
+        <div class="col-left">
+          <div class="field-group" style="background: #fffde7; border-color: #ffd54f;">
+            <h4>🔶 左セクション — OCRによる自動入力（正確性を確認）</h4>
+            <div class="field-item"><span class="tag-auto">自動</span> 姓（英文姓）</div>
+            <div class="field-item"><span class="tag-auto">自動</span> 名（英文名）</div>
+            <div class="field-item"><span class="tag-auto">自動</span> 性別</div>
+            <div class="field-item"><span class="tag-auto">自動</span> 生年月日</div>
+            <div class="field-item"><span class="tag-auto">自動</span> 書類の種類</div>
+            <div class="field-item"><span class="tag-auto">自動</span> 書類番号</div>
+            <div class="field-item" style="margin-top:10px; padding-top:10px; border-top:1px dashed #e0e0e0;">
+              <span class="tag-fill">手動</span> <strong>国・地域</strong> — 左側で自分で選択する必要がある唯一のフィールド
+            </div>
+          </div>
+        </div>
+        <div class="col-right">
+          <div class="field-group">
+            <h4>右セクション — 自分で記入</h4>
+            <div class="field-item"><span class="tag-fill">記入</span> 入国交通手段</div>
+            <div class="field-item"><span class="tag-fill">記入</span> 入国便名・列車番号・船番</div>
+            <div class="field-item"><span class="tag-fill">記入</span> 入国都市</div>
+            <div class="field-item"><span class="tag-fill">記入</span> 入国港 — 都市と交通手段を選択すると自動表示</div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">記入済みフォームの例</h3>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Screenshot</div>
+        <img src="/images/arrival-card/step3-basic-filled.jpg" alt="基本情報フォーム（記入例）">
+        <p class="caption">左セクション（黄色ハイライト部分）は旅券から抽出されたデータです — すべてを再確認してください。<strong>国・地域</strong>のみ手動で選択します。右セクションに入国情報を記入してください。</p>
+      </div>
+
+      <div class="info-box">
+        <strong>注意：</strong> 旅券スキャンの品質が重要です。写真がぼやけていたり照明が不十分だと、自動入力が不正確になる可能性があります。「次へ」をクリックする前にすべてのフィールドを必ず再確認してください。
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- STEP 4: PERSONAL INFORMATION -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">ステップ4：個人情報の入力</h2>
+    <div class="step-card">
+      <div class="step-number">Step 4</div>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Screenshot</div>
+        <img src="/images/arrival-card/step4-personal-empty.jpg" alt="個人情報フォーム">
+        <p class="caption">個人情報を記入します。各フィールドの説明は以下を参照。</p>
+      </div>
+
+      <div class="field-group">
+        <h4>フィールドごとのガイド：</h4>
+        <div class="field-item"><span class="tag-fill">記入</span> <strong>中国語名</strong> — 中国語の名前がある場合は入力。ない場合は<strong>空欄のまま</strong>にしてください。</div>
+        <div class="field-item"><span class="tag-fill">記入</span> <strong>国籍・居住国</strong> — 現在住んでいる<strong>国または都市</strong>を入力（海外在住の場合は旅券国籍とは異なっても可）。</div>
+        <div class="field-item"><span class="tag-fill">記入</span> <strong>職業</strong> — 職種または専門分野。</div>
+        <div class="field-item"><span class="tag-fill">記入</span> <strong>連絡先電話番号</strong> — 中国以外の番号の場合は国番号を含めて入力。</div>
+        <div class="field-item"><span class="tag-fill">記入</span> <strong>メールアドレス</strong> — 確認・QRコード受信用。</div>
+        <div class="field-item"><span class="tag-fill">記入</span> <strong>緊急連絡先</strong> — 緊急時に連絡する人の名前と電話番号。</div>
+      </div>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">ビザ・入国制度セクション</h3>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Screenshot</div>
+        <img src="/images/arrival-card/step4-personal-visa.jpg" alt="ビザ・入国制度の選択">
+        <p class="caption">ビザ免除で入国する場合は「No」を選択し、ドロップダウンから入国制度を選ぶ</p>
+      </div>
+
+      <div class="field-group">
+        <h4>ビザの質問の記入方法：</h4>
+        <div class="field-item"><span class="tag-fill">記入</span> <strong>有効なビザを所持していますか？</strong>
+          <ul>
+            <li><strong>Yes（はい）</strong> — 中国ビザ（例：L字観光ビザ）を取得している場合</li>
+            <li><strong>No（いいえ）</strong> — <strong>ビザ免除制度</strong>で入国する場合（例：240時間トランジット、30日ビザ免除、海南島ビザ免除など）</li>
+          </ul>
+        </div>
+        <div class="field-item"><span class="tag-fill">記入</span> <strong>「No」の場合 → 入国制度の選択</strong> — ドロップダウンメニューが表示され、利用するビザ免除制度を選択します（上のスクリーンショット参照）。</div>
+      </div>
+
+      <div class="tip-box">
+        <strong>ヒント：</strong> 有効なL字ビザをお持ちの場合は「Yes」を選択。ビザ免除制度（例：50カ国の一方的ビザ免除リスト対象、または240時間トランジット）を利用する場合は「No」を選択し、該当する制度をドロップダウンから選んでください。
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- STEP 5: TRAVEL INFORMATION -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">ステップ5：渡航情報の入力</h2>
+    <div class="step-card">
+      <div class="step-number">Step 5</div>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Screenshot</div>
+        <img src="/images/arrival-card/step5-travel-empty.jpg" alt="渡航情報フォーム">
+        <p class="caption">旅行日程の詳細を記入</p>
+      </div>
+
+      <div class="col-layout">
+        <div class="col-left">
+          <div class="field-group">
+            <h4>左セクション — 旅行詳細</h4>
+            <div class="field-item"><span class="tag-fill">記入</span> <strong>入国目的</strong> — 観光／ビジネス／トランジット／家族訪問／その他</div>
+            <div class="field-item"><span class="tag-fill">記入</span> <strong>入国予定日</strong> — 中国に到着する予定日</div>
+            <div class="field-item"><span class="tag-fill">記入</span> <strong>中国での滞在先都市</strong> — 訪問予定の都市</div>
+            <div class="field-item"><span class="tag-fill">記入</span> <strong>中国での経由都市</strong> — 経由・乗り継ぎ都市（該当する場合）</div>
+            <div class="field-item"><span class="tag-fill">記入</span> <strong>中国での住所</strong> — <strong>詳細な住所</strong>（ホテル名＋番地＋区＋都市）を記入</div>
+          </div>
+        </div>
+        <div class="col-right">
+          <div class="field-group">
+            <h4>右セクション — 招聘者・帰国情報</h4>
+            <div class="field-item"><span class="tag-fill">記入</span> <strong>中国から招待されていますか？</strong>
+              <ul>
+                <li><strong>Yes（はい）</strong> — 招聘者の名前と連絡先を記入</li>
+                <li><strong>No（いいえ）</strong> — このセクションはスキップ</li>
+              </ul>
+            </div>
+            <div class="field-item"><span class="tag-fill">記入</span> <strong>出国・帰国情報</strong></div>
+            <div style="margin-left:20px; border-left:2px solid #e0e0e0; padding-left:14px;">
+              <div class="field-item">帰国予定が確定している場合は<strong>「Confirmed Departure Itinerary（出国予定確定）」</strong>を<strong>Yes</strong>に切り替え、以下を記入：</div>
+              <ul>
+                <li><strong>出国予定日</strong> — 計画している出国日</li>
+                <li><strong>出国交通手段</strong> — 航空／陸路／海路</li>
+                <li><strong>出国便名・列車番号・船番</strong> — 具体的な番号</li>
+                <li><strong>出国都市</strong> — 出発する都市</li>
+                <li><strong>出国港</strong> — 都市と交通手段を選択すると自動表示</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="warn-box">
+        <strong>⚠️ 240時間トランジットに関する注意：</strong> <strong>240時間ビザ免除トランジット制度</strong>で中国に入国する場合、通常は中国本土以外の目的地への<strong>確定済みの onward・復路航空券</strong>が必要です。出国・帰国情報を正確に記入してください。
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- COMPANION PROMPT -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">同伴者の確認</h2>
+    <div class="step-card">
+      <div class="step-number">Step 5の後</div>
+      <p>ステップ5を記入して「次へ」をクリックすると、同伴者に関するポップアップが表示されます：</p>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Screenshot</div>
+        <img src="/images/arrival-card/step5-companion-prompt.jpg" alt="同伴者有無のポップアップ">
+        <p class="caption">「同伴者はいますか？」 — Yesを選択して同伴者を追加</p>
+      </div>
+
+      <div class="field-group">
+        <h4>選択肢：</h4>
+        <div class="field-item"><strong>Yes（はい）</strong> — 同じ手順（基本情報、個人情報、渡航情報）で同伴者ごとに記入します。<strong>注：</strong> 各同伴者が各自で個別にフォームを記入することも可能です — 必ずしも1人が全員分を記入する必要はありません。</div>
+        <div class="field-item"><strong>No（いいえ）</strong> — 確認ページに直接進みます。</div>
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- STEP 6: REVIEW & SUBMIT -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">最終ステップ：確認、署名、提出</h2>
+    <div class="step-card">
+      <div class="step-number">最終</div>
+      <p>すべてのステップを完了すると、確認ページに進みます。すべての情報を注意深く読み直してください。</p>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Screenshot</div>
+        <img src="/images/arrival-card/step6-submit.jpg" alt="確認、署名、提出ページ">
+        <p class="caption">署名して確認し、提出。提出後に表示されるQRコードを保存。</p>
+      </div>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-4 mb-2">手順：</h3>
+      <ol>
+        <li><strong>確認</strong> — すべての情報を再確認。必要に応じて「戻る」で修正。</li>
+        <li><strong>署名</strong> — 署名ボックスに氏名を記入して申告を確認。</li>
+        <li><strong>提出</strong> — 送信ボタンをクリック。</li>
+        <li><strong>QRコードを保存</strong> — 提出後、<strong>確認QRコード</strong>が表示されます。<strong>スクリーンショットを撮るか保存してください</strong> — 中国到着時に入境審査で提示する必要があります。</li>
+      </ol>
+
+      <div class="info-box">
+        <strong>ボーナス：</strong> 初回提出から<strong>1年以内</strong>に再度中国を訪れる場合、システムは<strong>以前に記入した情報を再利用</strong>できます — 旅行日程のみを更新すればOK。2回目以降の渡航がぐっと楽になります！
+      </div>
+
+      <div class="warn-box">
+        <strong>⚠️ 重要：</strong> QRコードは予定された入国に関連付けられています。旅行計画が変更になった場合（別の便、別の日付など）、新しいフォームを再提出する必要がある場合があります。システムは通常、予定到着時刻の24時間前までの提出を受け付けています。
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- BEFORE YOU START -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">始める前に</h2>
+    <div class="bg-amber-50 border border-amber-200 rounded-2xl p-6 not-prose">
+      <p class="font-bold text-amber-900 mb-3">フォーム記入前にこれらを準備：</p>
+      <ul>
+        <li><strong>旅券</strong>（実物またはデータページの鮮明な写真）</li>
+        <li>中国入国のための<strong>便名・列車番号・船番</strong></li>
+        <li>中国での<strong>ホテル名と詳細な住所</strong>（分かっている場合）</li>
+        <li><strong>電話番号</strong>（中国の番号でない場合は国番号を含む）</li>
+        <li><strong>メールアドレス</strong></li>
+        <li>旅券を撮影できる<strong>カメラ付き端末</strong>、または端末に保存された<strong>旅券スキャンコピー</strong></li>
+      </ul>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- FAQ -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">よくある質問</h2>
+    <div class="step-card">
+      <h3 class="text-lg font-bold text-gray-800 mt-2 mb-2">Q：スマートフォンでも記入できますか？</h3>
+      <p class="text-gray-700">はい、ポータルはモバイル対応で、スマートフォンとPCの両方で使用できます。</p>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">Q：QRコードを印刷する必要がありますか？</h3>
+      <p class="text-gray-700">スマートフォンに表示するか印刷するか — どちらでも大丈夫です。入境審査で提示できる状態にしておくことが重要です。</p>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">Q：提出後に間違いに気づいたら？</h3>
+      <p class="text-gray-700">ポータルに再度アクセスし、新しいフォームを提出してください。以前の送信は置き換えられます。</p>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">Q：このフォームは必須ですか？それとも紙のカードも必要？</h3>
+      <p class="text-gray-700">2025～2026年現在、オンラインフォームが推奨方法です。一部の港では予備として紙のカードが配布されることもあります。オンラインフォームを記入し<strong>つつ</strong>、念のためペンも持参するのが賢明です。</p>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">Q：24時間未満のトランジットで空港から出ない場合、これが必要ですか？</h3>
+      <p class="text-gray-700">いいえ。港の制限エリア内に留まる24時間直接トランジット旅客は免除されます。</p>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">Q：240時間トランジットビザ免除で入国します。このフォームは必要ですか？</h3>
+      <p class="text-gray-700">はい、港エリア外に出る場合は必要です。最大240時間中国に滞在するトランジット旅客はこのフォームを記入する必要があります。</p>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">Q：今後の渡航で情報を再利用できますか？</h3>
+      <p class="text-gray-700">はい！1年以内であれば、システムは以前に入力したデータを再利用できます。新しい渡航の旅行日程のみ更新すればOKです。</p>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- Related Guides -->
+    <!-- ============================================================ -->
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose mt-12">
+      <h3 class="text-2xl font-bold text-gray-900 mb-6">📚 関連ガイド</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/en/visa/customs-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-1">中国税関規制</p>
+          <p class="text-sm text-gray-600">中国に持ち込めるもの・持ち込めないもの</p>
+        </a>
+        <a href="/en/visa/first-time-china/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-1">初めての中国：ステップバイステップガイド</p>
+          <p class="text-sm text-gray-600">初めての訪問者向け完全準備タイムライン</p>
+        </a>
+        <a href="/en/visa/visa-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-1">中国ビザ完全ガイド</p>
+          <p class="text-sm text-gray-600">ビザ免除、トランジット、L字ビザまで全オプション解説</p>
+        </a>
+        <a href="/en/visa/transit-240/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-1">240時間トランジット制度の解説</p>
+          <p class="text-sm text-gray-600">10日間トランジットのルール、港、旅行エリア</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- Sources -->
+    <div class="mt-8 pt-6 border-t border-gray-200">
+      <h3 class="text-lg font-bold text-gray-900 mb-3">出典</h3>
+      <ul class="text-sm text-gray-600">
+        <li><a href="https://s.nia.gov.cn/ArrivalCardFillingPC/entry-registation-home" target="_blank" class="text-blue-600 underline">公式NIA入国カードポータル</a></li>
+        <li><a href="https://en.nia.gov.cn/n147418/n147463/c195170/content.html" target="_blank" class="text-blue-600 underline">NIAチュートリアル動画：中国入国カードのオンライン提出方法</a></li>
+      </ul>
+    </div>
+
+  </article>
+</Layout>

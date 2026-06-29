@@ -1,0 +1,104 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'このサイトについて — China Starter Hub';
+const description = 'このガイドを作った理由と、誰に向けたものか。';
+---
+
+<Layout title={title} description={description} lang="ja">
+  <article class="max-w-3xl mx-auto py-12">
+    <!-- Header -->
+    <header class="text-center mb-16">
+      <div class="text-sm text-brand-600 font-medium tracking-wide uppercase mb-3">このサイトについて</div>
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
+        China Starter Hub について
+      </h1>
+      <p class="text-lg text-gray-500 max-w-2xl mx-auto leading-relaxed">
+        海外からの訪問者が中国を理解し、スムーズに滞在するためのインディペンデントリソース。
+      </p>
+    </header>
+
+    <!-- Main Content -->
+    <div class="prose prose-gray max-w-none">
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        China Starter Hub は、海外からの訪問者が中国での旅行に備え、スムーズに過ごすためのインディペンデントリソースです。
+      </p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        観光、ビジネス、留学、短期滞在を問わず、中国に関する信頼できる情報を見つけるのは難しいものです。ルール、アプリ、決済、交通、日常生活のあらゆるサービスが、多くの旅行者の想定とは大きく異なることがよくあります。
+      </p>
+
+      <div class="border-l-2 border-brand-300 pl-5 py-3 my-8">
+        <p class="text-lg font-medium text-gray-600 italic m-0">
+          私たちの目標はシンプルです：中国をもっと理解しやすく、もっと渡航しやすくすること。
+        </p>
+      </div>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        旅行者や初めて訪れる方々から寄せられる実際の疑問をもとに、実用的なガイドと便利なツールを作成しています。すべてのリソースは、時間の節約と混乱の軽減、そして自信を持って旅をするお手伝いをするために設計されています。
+      </p>
+
+      <hr class="my-12 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">このサイトの特長</h2>
+
+      <div class="grid md:grid-cols-3 gap-6 not-prose mb-12">
+        <div class="p-6 rounded-2xl bg-gray-50 border border-gray-100">
+          <div class="text-brand-600 text-2xl mb-3">📙</div>
+          <h3 class="font-semibold text-gray-900 mb-2">旅行マーケティングは一切なし</h3>
+          <p class="text-sm text-gray-500 leading-relaxed m-0">信頼できるわかりやすい情報だけをお届けします。</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-gray-50 border border-gray-100">
+          <div class="text-brand-600 text-2xl mb-3">⚡</div>
+          <h3 class="font-semibold text-gray-900 mb-2">不必要な複雑さは排除</h3>
+          <p class="text-sm text-gray-500 leading-relaxed m-0">専門用語を使わず、実際の疑問にストレートに答えます。</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-gray-50 border border-gray-100">
+          <div class="text-brand-600 text-2xl mb-3">✅</div>
+          <h3 class="font-semibold text-gray-900 mb-2">実践的ですぐに役立つ</h3>
+          <p class="text-sm text-gray-500 leading-relaxed m-0">すべてのガイドは現地で実際に使えるように設計されています。</p>
+        </div>
+      </div>
+
+      <hr class="my-12 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">こんな方におすすめ</h2>
+      <div class="grid md:grid-cols-2 gap-4 not-prose mb-12">
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-gray-50">
+          <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-brand-100 text-brand-700 text-sm font-bold flex items-center justify-center">1</span>
+          <div>
+            <p class="font-medium text-gray-900 m-0">初めての観光客</p>
+            <p class="text-sm text-gray-500 m-0">初めて中国を訪れ、基本を知りたい方。</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-gray-50">
+          <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-brand-100 text-brand-700 text-sm font-bold flex items-center justify-center">2</span>
+          <div>
+            <p class="font-medium text-gray-900 m-0">ビジネス渡航者</p>
+            <p class="text-sm text-gray-500 m-0">限られた時間で最短で事情を把握したい方。</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-gray-50">
+          <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-brand-100 text-brand-700 text-sm font-bold flex items-center justify-center">3</span>
+          <div>
+            <p class="font-medium text-gray-900 m-0">留学生・研究者</p>
+            <p class="text-sm text-gray-500 m-0">学期単位以上の滞在で現地生活に馴染みたい方。</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-gray-50">
+          <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-brand-100 text-brand-700 text-sm font-bold flex items-center justify-center">4</span>
+          <div>
+            <p class="font-medium text-gray-900 m-0">短期滞在者</p>
+            <p class="text-sm text-gray-500 m-0">トランジットや乗り継ぎ、短期旅行で特定のニーズがある方。</p>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-12 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">最新情報を受け取る</h2>
+      <p class="text-lg leading-relaxed text-gray-700">
+        中国のテクノロジーや政策は目まぐるしく変化します。私たちはガイドを定期的に更新し、正確で役立つ情報を提供し続けています。SNSでフォローするか、定期的にチェックして最新情報をご確認ください。
+      </p>
+    </div>
+  </article>
+</Layout>

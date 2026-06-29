@@ -1,0 +1,117 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = '中国主要都市の地下鉄・バスガイド';
+const description = '中国の都市での公共交通機関の利用方法。モバイル決済、交通カード、バスのコツ、ナビゲーションのアドバイス。';
+---
+
+<Layout title={title} description={description} lang="ja">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/en/transport/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        交通関連に戻る
+      </a>
+    </nav>
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🚇 公共交通</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        中国主要都市の地下鉄・バスガイド
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">中国の都市での公共交通機関の利用方法 — モバイル決済、交通カード、バスのコツ、ナビゲーションのアドバイス。</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 最終更新：2026年6月</span>
+        <span>⏱️ 読了時間：約4分</span>
+      </div>
+    </header>
+
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-blue-900 mb-4">🎯 クイックアンサー</h2>
+      <p class="text-lg text-blue-800 leading-relaxed">
+        中国の地下鉄システムは<strong>世界クラスで、安価、そして英語対応</strong>です。AlipayまたはWeChat Payで改札のQRコードをスキャンするだけ — 切符は不要です。バスは地下鉄がないエリアへの便利な代替手段です。駅名とアナウンスはすべて二ヶ国語で案内されています。
+      </p>
+    </div>
+
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 このガイドの内容</h3>
+      <ul class="space-y-3">
+        <li><a href="#general" class="text-blue-600 hover:underline">💡 全都市共通のヒント</a></li>
+        <li><a href="#buses" class="text-blue-600 hover:underline">🚌 バス</a></li>
+        <li><a href="#cards" class="text-blue-600 hover:underline">💳 交通カード</a></li>
+        <li><a href="#mobile" class="text-blue-600 hover:underline">📱 交通機関のモバイル決済</a></li>
+      </ul>
+    </nav>
+
+    <div class="prose prose-gray max-w-none">
+
+      <h2 id="general" class="text-2xl font-bold text-gray-900 mb-4">💡 全都市共通のヒント</h2>
+
+      <ul class="space-y-3 text-gray-700 mb-8">
+        <li><strong>支払い：</strong>券売機で1回券を購入できます（ほとんどの機械は現金とAlipay/WeChat Payに対応）。またはAlipayの交通セクションやWeChatの交通ミニプログラムから改札のQRコードをスキャンして通過できます。</li>
+        <li><strong>案内表示：</strong>駅名は中国語と英語で表記されています。アナウンスも二ヶ国語です。</li>
+        <li><strong>乗り換え：</strong>色分けされた路線と英語の標識に従ってください。路線間の乗り換えは明確に表示されています。</li>
+        <li><strong>ナビアプリ：</strong>正確な地下鉄ルート案内には、高徳地図や百度地図などの現地アプリを使用しましょう。</li>
+      </ul>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="buses" class="text-2xl font-bold text-gray-900 mb-4">🚌 バス</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">バスは、地下鉄が目的地まで直通していない場合の便利な代替手段です。地下鉄よりは安いですが、遅く、ラッシュ時には渋滞に巻き込まれることがよくあります。</p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">観光都市では、ほとんどのバスが中国語と英語の両方で停留所をアナウンスします。それでも、停車案内には注意を払ってください。多くのバスでは乗車時と降車時の両方で交通QRコードのスキャンが必要ですので、降りる前にもう一度スキャンするのを忘れないでください。</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="cards" class="text-2xl font-bold text-gray-900 mb-4">💳 交通カード</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">各都市に専用の交通カードがあります（北京：一卡通、深圳：深圳通）。地下鉄の駅で購入し、モバイル決済でチャージできます。地下鉄とバスの両方で使え、小さな割引もありますが、短期観光客には必須ではありません。ユニークなデザインのものも多いので、お土産として買うのも良いでしょう。</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="mobile" class="text-2xl font-bold text-gray-900 mb-4">📱 交通機関のモバイル決済</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">これは地元の人々に最も一般的に使われている方法です — 切符を買ったり、別のカードを持ち歩く必要はありません。</p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">AlipayとWeChat Payの両方で、地下鉄とバス用の共通交通QRコードを生成できます。Alipayを開き、ホーム画面の「交通（Transport）」をタップし、都市を選択して改札でスキャンするだけです。支払いは紐付けたカードから引き落とされます。WeChatも「乗車コード（Ride Code）」ミニプログラムで同様に機能します。</p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>ヒント：</strong>バスと地下鉄では別々のQRコードが用意されているので、乗車前に正しい方を選択したか確認してください。</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8 not-prose">
+        <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+          <img src="/images/alipay-transit.jpg" alt="Alipay交通QRコード設定" class="w-full" />
+          <div class="p-4">
+            <p class="text-sm font-semibold text-gray-900">Alipay交通QRコード</p>
+            <p class="text-xs text-gray-500">Alipayを開く → 交通 → 都市を選択 → 改札でスキャン</p>
+          </div>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+          <img src="/images/wechat-transit.jpg" alt="WeChat交通QRコード設定" class="w-full" />
+          <div class="p-4">
+            <p class="text-sm font-semibold text-gray-900">WeChat交通QRコード</p>
+            <p class="text-xs text-gray-500">WeChatを開く → 乗車コードミニプログラム → 改札でスキャン</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="not-prose mt-16">
+      <h2 class="text-2xl font-bold text-gray-900 mb-8">📚 関連ガイド</h2>
+      <div class="space-y-4">
+        <a href="/en/transport/transport-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>中国の移動方法</strong> — 完全交通ガイド</a>
+        <a href="/en/transport/didi/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚗 <strong>外国人が中国でDiDiを使う方法</strong> — ライドシェアの設定</a>
+        <a href="/en/payment/setup-alipay/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">💳 <strong>外国人向けAlipay設定ガイド</strong> — スマホで交通費を支払う</a>
+      </div>
+    </div>
+
+    <!-- Sources -->
+    <div class="mt-8 pt-6 border-t border-gray-200 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-3">参考情報</h3>
+      <ul class="space-y-2">
+        <li><a href="https://" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">地下鉄のウェブサイトは主に中国語です。各都市の公式地下鉄サイトでブラウザ翻訳を使い、一般的な地下鉄マップと路線情報をご確認ください。</a></li>
+      </ul>
+    </div>
+  </article>
+</Layout>

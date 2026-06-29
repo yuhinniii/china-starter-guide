@@ -1,0 +1,133 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = '外国人が中国でDiDiを使う方法';
+const description = '中国の電話番号なしでDiDi（中国版Uber）を設定して利用する方法。乗車オプション、支払い方法、便利なコツ。';
+---
+
+<Layout title={title} description={description} lang="ja">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/en/transport/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        交通関連に戻る
+      </a>
+    </nav>
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🚗 ライドシェア</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        外国人が中国でDiDiを使う方法
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">中国の電話番号なしでDiDi（中国版Uber）を設定して利用。乗車オプション、支払い方法、便利なコツ。</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 最終更新：2026年6月</span>
+        <span>⏱️ 読了時間：約5分</span>
+      </div>
+    </header>
+
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-blue-900 mb-4">🎯 クイックアンサー</h2>
+      <p class="text-lg text-blue-800 leading-relaxed">
+        DiDiは<strong>中国の電話番号なしで</strong>利用できます。最も簡単な方法はAlipayまたはWeChatのミニプログラムから — アプリを開き、DiDiを検索して、乗車を予約するだけです。支払いはAlipay/WeChat Payを通じて自動的に行われます。スタンドアロンのDiDiアプリには英語版もあります。
+      </p>
+    </div>
+
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 このガイドの内容</h3>
+      <ul class="space-y-3">
+        <li><a href="#alipay" class="text-blue-600 hover:underline">📱 方法1：AlipayまたはWeChat経由（最も簡単）</a></li>
+        <li><a href="#app" class="text-blue-600 hover:underline">📲 方法2：DiDiアプリをダウンロード</a></li>
+        <li><a href="#rides" class="text-blue-600 hover:underline">🚘 乗車タイプ</a></li>
+        <li><a href="#tips" class="text-blue-600 hover:underline">💡 DiDi利用のコツ</a></li>
+        <li><a href="#uber" class="text-blue-600 hover:underline">🔀 Uberはどうなった？</a></li>
+      </ul>
+    </nav>
+
+    <div class="prose prose-gray max-w-none">
+
+      <h2 id="alipay" class="text-2xl font-bold text-gray-900 mb-4">📱 方法1：AlipayまたはWeChat経由（最も簡単）</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">すでにAlipayを設定しているなら（<a href="/en/payment/setup-alipay/" class="text-blue-600 hover:underline">Alipay設定ガイド</a>参照）：</p>
+
+      <ol class="list-decimal pl-6 space-y-4 text-gray-700 mb-8">
+        <li>AlipayまたはWeChatを開く</li>
+        <li>「ミニプログラム」までスクロール（または「DiDi」を検索）</li>
+        <li>DiDiのミニプログラムをタップ</li>
+        <li>位置情報へのアクセスを許可</li>
+        <li>出発地と目的地を設定し、乗車タイプを選択して確認。</li>
+      </ol>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 not-prose">
+        <div class="bg-gray-100 rounded-xl p-3">
+          <div class="text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Alipay</div>
+          <img src="/images/didi/alipay-didi.jpg" alt="AlipayミニプログラムからDiDiにアクセス" class="w-full rounded-lg border border-gray-200">
+          <p class="text-sm text-gray-500 italic mt-2">Alipayのミニプログラム一覧からDiDiを見つける</p>
+        </div>
+        <div class="bg-gray-100 rounded-xl p-3">
+          <div class="text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">WeChat</div>
+          <img src="/images/didi/wechat-didi.jpg" alt="WeChatミニプログラムからDiDiにアクセス" class="w-full rounded-lg border border-gray-200">
+          <p class="text-sm text-gray-500 italic mt-2">WeChatのミニプログラムでDiDiを検索</p>
+        </div>
+      </div>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">支払いはAlipayまたはWeChat Payを通じて自動的に行われます。中国の電話番号は不要です。</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="app" class="text-2xl font-bold text-gray-900 mb-4">📲 方法2：DiDiアプリをダウンロード</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">DiDiアプリには英語版があります。アプリストアからダウンロードし（「DiDi Rider」で検索）、国際電話番号で登録して、設定でインターフェースを英語に切り替えられます。</p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">支払い方法：Alipay、WeChat Pay、Visa/Mastercard（アプリ内で追加）。</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="rides" class="text-2xl font-bold text-gray-900 mb-4">🚘 乗車タイプ</h2>
+
+      <ul class="space-y-2 text-gray-700 mb-8">
+        <li><strong>快車（Express）：</strong>標準的な乗車、最も安い。UberXに相当。</li>
+        <li><strong>優享（Premier）：</strong>ややグレードの高い車、少し高め。</li>
+        <li><strong>タクシー（出租車）：</strong>アプリ経由で一般タクシーを呼びます。メーター料金をデジタルで支払い。</li>
+        <li><strong>豪華車（Luxury）：</strong>高級車（メルセデス、BMW）。高額。</li>
+        <li><strong>包車（Hiring a Car）：</strong>数時間または一日中ドライバーをチャーター。</li>
+      </ul>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="tips" class="text-2xl font-bold text-gray-900 mb-4">💡 DiDi利用のコツ</h2>
+
+      <ul class="space-y-2 text-gray-700 mb-8">
+        <li><strong>ピックアップ位置を正確に設定：</strong>地図上のピンを自分のいる正確な場所にドラッグしてください。ピンがずれていると運転手が見つけられないことがよくあります。</li>
+        <li><strong>ナンバープレートを確認：</strong>アプリのナンバーと実際の車のナンバープレートを照合してください。</li>
+        <li><strong>アプリ内チャットを利用：</strong>運転手とのコミュニケーション用に翻訳機能が内蔵されています。</li>
+        <li><strong>忍耐強く：</strong>繁華街では運転手が到着まで数分かかることがあります。</li>
+        <li><strong>有料道路：</strong>高速料金や空港料金は自動的に運賃に加算されます。</li>
+      </ul>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="uber" class="text-2xl font-bold text-gray-900 mb-4">🔀 Uberはどうなった？</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Uberは2016年に中国事業をDiDiに売却しました。Uberアプリは中国でも引き続き使えますが、国際旅行者向けで、ドライバーの数は限られています。DiDiが標準のライドシェアサービスです — より早く配車され、より広いエリアをカバーします。</p>
+
+    </div>
+
+    <div class="not-prose mt-16">
+      <h2 class="text-2xl font-bold text-gray-900 mb-8">📚 関連ガイド</h2>
+      <div class="space-y-4">
+        <a href="/en/transport/transport-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>中国の移動方法</strong> — 完全交通ガイド</a>
+        <a href="/en/transport/airport-to-city/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🛬 <strong>空港から市内へ</strong> — ホテルまでの行き方</a>
+        <a href="/en/payment/setup-alipay/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">💳 <strong>外国人向けAlipay設定ガイド</strong> — DiDiの支払いに</a>
+      </div>
+    </div>
+
+    <!-- Sources -->
+    <div class="mt-8 pt-6 border-t border-gray-200 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-3">参考情報</h3>
+      <ul class="space-y-2">
+        <li><a href="https://www.didiglobal.com/download" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">DiDiアプリのダウンロード</a></li>
+      </ul>
+    </div>
+  </article>
+</Layout>

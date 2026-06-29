@@ -1,0 +1,83 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = "広州旅行ガイド：中国の美食の都";
+const description = "広州を探索 — 世界的に有名な点心、広東文化、香港へのアクセスも便利な中国の美食の都。";
+---
+
+<Layout title={title} description={description} lang="ja">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🏙️ 広州</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">広州旅行ガイド：中国の美食の都</h1>
+      <p class="text-xl text-gray-600 mb-6">広州を探索 — 世界的に有名な点心、広東文化、香港へのアクセスも便利な中国の美食の都。</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500"><span>📅 最終更新：2026年6月</span><span>⏱️ 読了時間：7分</span></div>
+    </header>
+
+    <div class="bg-gradient-to-r from-green-50 to-teal-50 border-l-4 border-green-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-green-900 mb-4">⚡ クイックアンサー</h2>
+      <p class="text-lg text-green-800 leading-relaxed">北京で生きるために食べるなら、広州では<strong>食べるために生きる</strong>。この南部の都市は、<strong>中国の美食の都</strong>として広く認識され、おそらく世界で最も有名な中華料理である広東料理発祥の地です。食以外にも、広州は亜熱帯の緑、のんびりとしたペース、そして深圳や香港への近接性を提供しています。</p>
+    </div>
+
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 このガイドの内容</h3>
+      <ul class="space-y-3">
+        <li><a href="#why-visit" class="text-blue-600 hover:underline">🥟 広州を訪れるべき理由</a></li>
+        <li><a href="#how-many-days" class="text-blue-600 hover:underline">📅 必要な日数</a></li>
+        <li><a href="#attractions" class="text-blue-600 hover:underline">🎯 主要観光スポット</a></li>
+        <li><a href="#getting-around" class="text-blue-600 hover:underline">🚇 市内交通</a></li>
+        <li><a href="#where-to-stay" class="text-blue-600 hover:underline">🏨 宿泊エリア</a></li>
+        <li><a href="#what-to-eat" class="text-blue-600 hover:underline">🍜 現地グルメ</a></li>
+      </ul>
+    </nav>
+
+    <h2 id="why-visit" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🥟 広州を訪れるべき理由</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-12">広州は1000年以上にわたって交易港でした。点心、焼き肉、スロー調理のスープなど、広東料理が完成され、世界中に輸出された場所です。この街は亜熱帯気候（一年中温暖）、活気ある川沿いのエリア、そして北部とは異なる明確な広東文化を持っています。また、珠江デルタへの玄関口でもあります：深圳までは高速鉄道で30分、香港までは約1時間です。</p>
+
+    <h2 id="how-many-days" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📅 必要な日数</h2>
+    <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700 mb-12">
+      <li><strong>2〜3日間（標準）：</strong>点心、広州塔、沙面島、フードツアー</li>
+      <li><strong>4〜5日間（ゆったり）：</strong>長隆サファリパーク、開平の碉楼、または深圳への移動を追加</li>
+      <li><strong>5日間以上（拡張）：</strong>深圳や香港と組み合わせて、珠江デルタを完全満喫</li>
+    </ul>
+
+    <h2 id="attractions" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎯 主要観光スポット</h2>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">広州塔（广州塔）</h3><p class="text-gray-700">象徴的な「スーパーモデル」タワー、高さ600メートル。上って街のパノラマビューを楽しむか、回転レストランで食事を。夜のライトショーは壮観。</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">沙面島（沙面岛）</h3><p class="text-gray-700">かつてのイギリス・フランス租界で、植民地時代の建築、並木道、のんびりとした公園のような雰囲気が残る。</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">陳家祠（陈家祠）</h3><p class="text-gray-700">精巧な木彫り、陶器、刺繍で飾られた見事な清王朝時代の祠堂。</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">越秀公園（越秀公园）</h3><p class="text-gray-700">市内最大の公園で、広州のシンボルである五羊の像がある。</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12"><h3 class="text-xl font-bold text-gray-900 mb-2">北京路（北京路）</h3><p class="text-gray-700">ガラス張りの床から下の宋王朝時代の道路遺構が見える歩行者専用ショッピングストリート。</p></div>
+
+    <h2 id="getting-around" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🚇 市内交通</h2>
+    <ul class="list-disc pl-6 space-y-3 text-lg text-gray-700 mb-12">
+      <li><strong>地下鉄：</strong>広州の地下鉄は16路線、主要観光地をすべてカバー。どこにでも英語表示あり。概要は<a href="/en/transport/metro-bus/" class="text-blue-600 hover:underline">中国主要都市の地下鉄・バスガイド</a>をご確認ください。</li>
+      <li><strong>DiDi：</strong>安くて広く利用可能。都心の移動は約30〜50元。設定とコツは<a href="/en/transport/didi/" class="text-blue-600 hover:underline">外国人が中国でDiDiを使う方法</a>をご覧ください。</li>
+      <li><strong>珠江フェリー：</strong>川を渡る風光明媚な方法。両岸の桟橋間を定期的に運航。</li>
+      <li><strong>高速鉄道：</strong>広州南駅から深圳（30分）、香港（1時間）、珠海/マカオ（1時間）へ接続。予約方法は<a href="/en/transport/high-speed-rail/" class="text-blue-600 hover:underline">中国高速鉄道の予約・乗車ガイド</a>をご覧ください。</li>
+    </ul>
+
+    <h2 id="where-to-stay" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏨 宿泊エリア</h2>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">荔湾区（荔湾区） — グルメ好きに最適</h3><p class="text-gray-700">広州の旧市街の中心。本格的な広東料理レストランとモーニングティーハウスを求めるならここ。</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">天河区（天河区） — モダンな旅行者に最適</h3><p class="text-gray-700">新しいCBDにはショッピングモール、国際的なホテル、優れた地下鉄のアクセスがあります。</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12"><h3 class="text-xl font-bold text-gray-900 mb-2">海珠区（海珠区） — 川の景色を楽しみたい方に</h3><p class="text-gray-700">珠江を挟んで都心の向かい側。静かで、広州塔の素晴らしい眺め。</p></div>
+
+    <h2 id="what-to-eat" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🍜 現地グルメ</h2>
+    <ul class="list-disc pl-6 space-y-3 text-lg text-gray-700 mb-12">
+      <li><strong>点心（点心）</strong> — ハーガウ、シウマイ、チャーシューパオ、チェンフン。朝の茶文化（飲茶）は必見体験。</li>
+      <li><strong>白切鶏（白切鸡）</strong> — 生姜ネギ油で冷やして食べる茹で鶏。</li>
+      <li><strong>焼鵝（烧鹅）</strong> — 皮はパリッと、プラムソースで食べるローストガチョウ。</li>
+      <li><strong>雲呑麺（云吞面）</strong> — エビと豚肉のワンタン入りの細い卵麺。</li>
+      <li><strong>煲仔飯（煲仔饭）</strong> — 土鍋で中国ソーセージや鶏肉と一緒に炊いたご飯。</li>
+      <li><strong>双皮奶（双皮奶）</strong> — 順徳発祥のなめらかで甘いミルクプリン。</li>
+      <li><strong>涼茶（凉茶）</strong> — 地元の人々が愛飲する苦い薬用茶。</li>
+    </ul>
+
+    <div class="not-prose mt-16">
+      <h2 class="text-2xl font-bold text-gray-900 mb-8">📚 関連ガイド</h2>
+      <div class="space-y-4">
+        <a href="/en/cities/city-select/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🗺️ <strong>中国の必要日数ガイド</strong> — 旅程を計画する</a>
+        <a href="/en/cities/shenzhen-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🤖 <strong>深圳旅行ガイド</strong> — わずか30分先</a>
+        <a href="/en/payment/payment-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">💳 <strong>中国での支払い方法</strong> — 広州は完全キャッシュレス</a>
+      </div>
+    </div>
+  </article>
+</Layout>

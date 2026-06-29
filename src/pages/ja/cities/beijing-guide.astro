@@ -1,0 +1,172 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = "北京旅行ガイド：見どころ、グルメ、知っておくべきこと";
+const description = "北京完全ガイド — 観光スポット、交通、グルメ、宿泊情報。";
+---
+
+<Layout title={title} description={description} lang="ja">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🏙️ 北京</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">北京旅行ガイド：見どころ、グルメ、知っておくべきこと</h1>
+      <p class="text-xl text-gray-600 mb-6">北京完全ガイド — 観光スポット、交通、グルメ、宿泊情報。</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 最終更新：2026年6月</span>
+        <span>⏱️ 読了時間：8分</span>
+      </div>
+    </header>
+
+    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-red-900 mb-4">⚡ クイックアンサー</h2>
+      <p class="text-lg text-red-800 leading-relaxed">北京は<strong>中国の政治・文化の中心地</strong>であり、故宮博物院や万里の長城、そして人生で一番の北京ダックに出会える場所です。古い路地（胡同）が現代的な高層ビルと並ぶ、コントラストに富んだ街。初めて中国を訪れる方にも最適な玄関口で、2つの国際空港と国内最大の高速鉄道ハブを備えています。</p>
+    </div>
+
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 このガイドの内容</h3>
+      <ul class="space-y-3">
+        <li><a href="#why-visit" class="text-blue-600 hover:underline">🏛️ 北京を訪れるべき理由</a></li>
+        <li><a href="#how-many-days" class="text-blue-600 hover:underline">📅 必要な日数</a></li>
+        <li><a href="#attractions" class="text-blue-600 hover:underline">🎯 主要観光スポット</a></li>
+        <li><a href="#getting-around" class="text-blue-600 hover:underline">🚇 市内交通</a></li>
+        <li><a href="#where-to-stay" class="text-blue-600 hover:underline">🏨 宿泊エリア</a></li>
+        <li><a href="#what-to-eat" class="text-blue-600 hover:underline">🍜 現地グルメ</a></li>
+      </ul>
+    </nav>
+
+    <h2 id="why-visit" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏛️ 北京を訪れるべき理由</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">北京は単なる都市ではなく、中国文明の生きた博物館です。故宮博物院を歩けば、24人の皇帝の足跡をたどることができます。万里の長城に登れば、2000年以上前に築かれた建造物の上に立っています。しかし北京は同時に、素晴らしい料理、世界クラスの博物館、そして眠らないナイトライフを備えた、活気あふれる現代の首都でもあります。</p>
+
+    <h2 id="how-many-days" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📅 必要な日数</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>最低3日間</strong>あれば、北京のエッセンスを体験できます。</p>
+    <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700 mb-6">
+      <li><strong>3日間（標準）：</strong>故宮博物院 ＋ 万里の長城 ＋ 胡同と天壇をちょっとだけ</li>
+      <li><strong>4〜5日間（ゆったり）：</strong>頤和園、798芸術区、フードツアーを追加</li>
+      <li><strong>5日間以上（じっくり）：</strong>承徳避暑山荘への日帰り、または知られざる寺院めぐり</li>
+    </ul>
+    <p class="text-lg text-gray-700 mb-12">万里の長城だけでも丸一日かかります — 最寄りの区間（慕田峪）まで車で約1.5時間。計画は余裕をもって。</p>
+
+    <h2 id="attractions" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎯 主要観光スポット</h2>
+
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <h3 class="text-xl font-bold text-gray-900 mb-2">故宮博物院（故宫）</h3>
+      <p class="text-gray-700">世界最大の宮殿複合施設で、明・清両王朝の拠点でした。チケットは少なくとも1週間前までに予約を — 1日あたり8万人の入場制限があります。月曜日は休館です。</p>
+      <div class="screenshot-wrapper">
+        <img src="/images/beijing/forbidden-city.jpg?v=2" alt="故宮博物院" loading="lazy" width="1200" height="800" />
+      </div>
+    </div>
+
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <h3 class="text-xl font-bold text-gray-900 mb-2">慕田峪万里の長城（慕田峪长城）</h3>
+      <p class="text-gray-700">最も保存状態が良く、外国人に優しい長城区間です。ケーブルカーあり、そりで下ることもできます — そう、そりです。北京市中心部から約1.5時間。</p>
+      <div class="screenshot-wrapper">
+        <img src="/images/beijing/great-wall.jpg?v=2" alt="慕田峪万里の長城" loading="lazy" width="1200" height="800" />
+      </div>
+    </div>
+
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <h3 class="text-xl font-bold text-gray-900 mb-2">天壇（天坛）</h3>
+      <p class="text-gray-700">皇帝が豊作を祈った美しい明王朝時代の寺院。早朝に訪れると、地元の人々が太極拳や伝統楽器を楽しむ姿が見られます。</p>
+      <div class="screenshot-wrapper">
+        <img src="/images/beijing/temple-of-heaven.jpg?v=2" alt="天壇" loading="lazy" width="1200" height="800" />
+      </div>
+    </div>
+
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <h3 class="text-xl font-bold text-gray-900 mb-2">頤和園（颐和园）</h3>
+      <p class="text-gray-700">昆明湖を中心とした広大な皇帝の庭園。特に春と秋は景色が素晴らしく、半日かけての散策に最適です。</p>
+      <div class="screenshot-wrapper">
+        <img src="/images/beijing/summer-palace.jpg?v=2" alt="頤和園" loading="lazy" width="1200" height="800" />
+      </div>
+    </div>
+
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12">
+      <h3 class="text-xl font-bold text-gray-900 mb-2">胡同（胡同）</h3>
+      <p class="text-gray-700">細い路地が入り組む北京の伝統的な住宅街。徒歩や人力車での探索に最適なエリアは、南鑼鼓巷、五道営、什刹海周辺です。</p>
+      <div class="screenshot-wrapper">
+        <img src="/images/beijing/hutongs.jpg?v=2" alt="北京の胡同" loading="lazy" width="1200" height="800" />
+      </div>
+    </div>
+
+    <h2 id="getting-around" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🚇 市内交通</h2>
+    <ul class="list-disc pl-6 space-y-3 text-lg text-gray-700 mb-12">
+      <li><strong>地下鉄：</strong>北京の地下鉄は路線網が広く、安く、英語表示もあります。ほぼすべての主要観光地をカバー。詳しくは<a href="/en/transport/metro-bus/" class="text-blue-600 hover:underline">中国主要都市の地下鉄・バスガイド</a>をご覧ください。</li>
+      <li><strong>DiDi（中国版Uber）：</strong>ドアツードアの移動に超便利。到着前にアプリをダウンロードしておきましょう。目的地は英語で入力できます。設定方法は<a href="/en/transport/didi/" class="text-blue-600 hover:underline">外国人が中国でDiDiを使う方法</a>をご覧ください。</li>
+      <li><strong>タクシー：</strong>利用は可能ですが、コミュニケーションが難しい場合があります。目的地は必ず中国語で表示しましょう（ホテルの名前は中国語で書いてもらうこと）。</li>
+      <li><strong>自転車：</strong>北京は意外にも自転車に優しい街です。シェア自転車（Hellobike、Meituan）はどこにでもあります。AlipayやWeChatでスキャンして乗りましょう。</li>
+    </ul>
+
+    <h2 id="where-to-stay" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏨 宿泊エリア</h2>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <h3 class="text-xl font-bold text-gray-900 mb-2">東城区（东城区） — 初めての方に最適</h3>
+      <p class="text-gray-700">故宮博物院、胡同、王府井に近い中心部。価格と利便性のバランスが良いエリア。</p>
+    </div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <h3 class="text-xl font-bold text-gray-900 mb-2">西城区（西城区） — 文化愛好家に最適</h3>
+      <p class="text-gray-700">静かで伝統的なエリア。後海エリア、鼓楼、よく保存された多くの胡同に近接。</p>
+    </div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12">
+      <h3 class="text-xl font-bold text-gray-900 mb-2">朝陽区（朝阳区） — ビジネス旅行者に最適</h3>
+      <p class="text-gray-700">近代的なCBDエリア。多くの国際的なホテルや西洋料理レストランがあります。798芸術区や三里屯のナイトライフにも近い。</p>
+    </div>
+
+    <h2 id="what-to-eat" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🍜 現地グルメ</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">北京の食は、力強い味わい、小麦を使った料理、そして宮廷料理の伝統に支えられています。</p>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <h3 class="text-xl font-bold text-gray-900 mb-2">北京ダック（北京烤鸭）</h3>
+      <p class="text-gray-700">薄くパリッとした皮をクレープで包み、甜麺醬、キュウリ、ネギとともに。北京を代表する料理です。</p>
+      <div class="screenshot-wrapper">
+        <img src="/images/beijing/peking-duck.jpg?v=2" alt="北京ダック" loading="lazy" width="1200" height="800" />
+      </div>
+    </div>
+
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <h3 class="text-xl font-bold text-gray-900 mb-2">ザージャン麺（炸酱面）</h3>
+      <p class="text-gray-700">発酵大豆ペーストと豚ひき肉の濃厚なタレをかけた麺料理。素朴でありながら、地元民に愛される定番料理。</p>
+      <div class="screenshot-wrapper">
+        <img src="/images/beijing/zha-jiang-mian.jpg?v=2" alt="ザージャン麺" loading="lazy" width="1200" height="800" />
+      </div>
+    </div>
+
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <h3 class="text-xl font-bold text-gray-900 mb-2">煎餅（煎饼）</h3>
+      <p class="text-gray-700">卵、パリパリのワンタン、ネギ、チリソースを包んだ風味豊かなクレープ。北京の屋台朝食の定番。</p>
+      <div class="screenshot-wrapper">
+        <img src="/images/beijing/jianbing.jpg?v=2" alt="煎餅" loading="lazy" width="1200" height="800" />
+      </div>
+    </div>
+
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <h3 class="text-xl font-bold text-gray-900 mb-2">羊肉火鍋 / 涮羊肉（涮羊肉）</h3>
+      <p class="text-gray-700">薄切りのラム肉を銅鍋の沸騰したスープでサッと茹でて食べます。冬に特に嬉しい一品。</p>
+      <div class="screenshot-wrapper">
+        <img src="/images/beijing/lamb-hotpot.jpg?v=2" alt="羊肉火鍋" loading="lazy" width="1200" height="800" />
+      </div>
+    </div>
+
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <h3 class="text-xl font-bold text-gray-900 mb-2">豆汁（豆汁）</h3>
+      <p class="text-gray-700">発酵させた緑豆の飲み物で、好き嫌いがはっきり分かれる味。コアな地元の珍味 — 旅行者はひと口試す程度で良いかもしれません。</p>
+      <div class="screenshot-wrapper">
+        <img src="/images/beijing/douzhi.jpg?v=2" alt="豆汁" loading="lazy" width="1200" height="800" />
+      </div>
+    </div>
+
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12">
+      <h3 class="text-xl font-bold text-gray-900 mb-2">冰糖葫芦（冰糖葫芦）</h3>
+      <p class="text-gray-700">串に刺したサンザシの飴がけ。北京のクラシックな屋台スナック。</p>
+      <div class="screenshot-wrapper">
+        <img src="/images/beijing/bingtanghulu.jpg?v=2" alt="冰糖葫芦" loading="lazy" width="1200" height="800" />
+      </div>
+    </div>
+
+    <div class="not-prose mt-16">
+      <h2 class="text-2xl font-bold text-gray-900 mb-8">📚 関連ガイド</h2>
+      <div class="space-y-4">
+        <a href="/en/cities/city-select/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🗺️ <strong>中国の必要日数ガイド</strong> — 旅程を計画する</a>
+        <a href="/en/cities/shanghai-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🌆 <strong>上海旅行ガイド</strong> — 中国のもう一つの偉大な都市と比較</a>
+        <a href="/en/transport/transport-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>中国の移動手段ガイド</strong> — すべての交通手段</a>
+        <a href="/en/transport/high-speed-rail/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>中国高速鉄道の予約・乗車ガイド</strong> — 北京から上海まで</a>
+      </div>
+    </div>
+  </article>
+</Layout>

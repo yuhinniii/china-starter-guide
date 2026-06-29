@@ -1,0 +1,131 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = "中国旅行保険ガイド — 選ぶべきポイント";
+const description = "中国に旅行保険が必要な理由、カバーすべき内容、中国対応が確認されたおすすめ保険会社。";
+---
+
+<Layout title={title} description={description} lang="ja">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/en/life/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        中国での生活に戻る
+      </a>
+    </nav>
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🏥 医療</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        中国旅行保険ガイド<br class="hidden md:block" /> — 選ぶべきポイント
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">旅行前に保険に加入しましょう。これはオプションではありません。</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 最終更新: 2026年6月</span>
+        <span>⏱️ 読了時間: 4分</span>
+      </div>
+    </header>
+
+    <!-- Quick Answer Box -->
+    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-red-900 mb-4">🎯 ざっくり答えると</h2>
+      <p class="text-lg text-red-800 leading-relaxed">
+        <strong>はい、中国には旅行保険が必要です。</strong> 医療費は欧米より安いとはいえ、深刻な事故は数万元にもなり得ます。少なくとも10万米ドルの医療補償、緊急避難、24時間英語対応のサポートが付いた保険を選びましょう。
+      </p>
+    </div>
+
+    <div class="prose prose-lg max-w-none">
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        中国の医療費はアメリカよりはるかに安いですが、深刻な事故 — 交通事故、心臓発作、緊急手術 — はそれでも数万元かかることがあります。保険があれば、それが人生を狂わせる出費から、管理可能な手続きに変わります。
+      </p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">✅</span> 中国向け保険に必要な補償内容
+      </h2>
+
+      <div class="overflow-x-auto mb-12 not-prose">
+        <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+          <thead>
+            <tr class="bg-gray-900 text-white">
+              <th class="px-6 py-4 font-bold">補償項目</th>
+              <th class="px-6 py-4 font-bold">必要な理由</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100"><td class="px-6 py-4 font-semibold">医療費</td><td class="px-6 py-4">少なくとも10万米ドルの補償</td></tr>
+            <tr class="border-b border-gray-100 bg-gray-50"><td class="px-6 py-4 font-semibold">緊急避難</td><td class="px-6 py-4">他国への搬送治療が必要な場合</td></tr>
+            <tr class="border-b border-gray-100"><td class="px-6 py-4 font-semibold">遺体搬送</td><td class="px-6 py-4">最悪の場合、遺体を帰国させるため</td></tr>
+            <tr class="border-b border-gray-100 bg-gray-50"><td class="px-6 py-4 font-semibold">旅行キャンセル</td><td class="px-6 py-4">病気でキャンセルする場合</td></tr>
+            <tr class="border-b border-gray-100"><td class="px-6 py-4 font-semibold">手荷物紛失</td><td class="px-6 py-4">標準的な補償</td></tr>
+            <tr class="bg-gray-50"><td class="px-6 py-4 font-semibold">24時間サポートデスク</td><td class="px-6 py-4">英語対応のオペレーターが必要</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🏆</span> おすすめ保険会社
+      </h2>
+
+      <div class="space-y-6 mb-12 not-prose">
+        <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-blue-900 mb-1">World Nomads</h3>
+          <p class="text-sm text-blue-600 mb-3">おすすめ：冒険旅行者、バックパッカー、短期観光客</p>
+          <ul class="space-y-1 text-gray-700">
+            <li>• 長城ハイキング、サイクリング、ウォータースポーツなど300以上のアクティビティに対応</li>
+            <li>• 2つのプラン：Standard（低価格）とExplorer（冒険向け、高補償額）</li>
+            <li>• 緊急医療、避難、旅行キャンセル、手荷物補償</li>
+            <li>• 多言語対応の24時間緊急サポート</li>
+          </ul>
+        </div>
+
+        <div class="bg-green-50 border border-green-200 rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-green-900 mb-1">SafetyWing</h3>
+          <p class="text-sm text-green-600 mb-3">おすすめ：デジタルノマド、リモートワーカー、長期旅行者</p>
+          <ul class="space-y-1 text-gray-700">
+            <li>• サブスクリプション型 — 月額払い、いつでも解約可能、長期契約なし</li>
+            <li>• Nomad Insuranceは月額約45ドルから、医療、避難、旅行中断をカバー</li>
+            <li>• 中国を含む全球対応、長期滞在には自動更新</li>
+            <li>• Nomad Health（外来診療対応の本格的健康保険）もあり</li>
+          </ul>
+        </div>
+
+        <div class="bg-purple-50 border border-purple-200 rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-purple-900 mb-1">AXA Travel Insurance（AXA Assistance）</h3>
+          <p class="text-sm text-purple-600 mb-3">おすすめ：包括的補償（主に米国・欧州在住者向け）</p>
+          <ul class="space-y-1 text-gray-700">
+            <li>• OnTrip（基本）からElite（最大補償）までの4段階プラン</li>
+            <li>• Explorer SelectとEliteプランは既往症もカバー</li>
+            <li>• 英語対応オペレーターによる24時間サポートデスク</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-yellow-50 border-l-4 border-yellow-400 p-5 rounded-r-xl mb-8 not-prose">
+        <p class="text-yellow-900"><strong>注記：</strong> 上記のブランド名は現時点ではプレーンテキストです。アフィリエイトプログラムの設定後、各ブランド名をクリック可能なリンクに変更予定です。</p>
+      </div>
+    </div>
+
+    <!-- Related Guides -->
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose mt-12">
+      <h3 class="text-2xl font-bold text-gray-900 mb-6">📚 関連ガイド</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/en/life/seeing-a-doctor/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">中国で医者にかかる</p>
+          <p class="text-sm text-gray-600">クリニック、病院、知っておくべきこと</p>
+        </a>
+        <a href="/en/life/top-hospitals/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">国際部がある中国のトップ病院</p>
+          <p class="text-sm text-gray-600">外国人のための最良の病院</p>
+        </a>
+        <a href="/en/life/emergency-numbers/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">緊急連絡先と対処法</p>
+          <p class="text-sm text-gray-600">必要になる前に保存しておこう</p>
+        </a>
+      </div>
+    </div>
+  </article>
+</Layout>

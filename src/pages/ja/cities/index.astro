@@ -1,0 +1,132 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = '中国都市ガイド — 旅行先';
+const description = 'あなたの中国旅行に合った都市を見つけよう。';
+---
+
+<Layout title={title} description={description} lang="ja">
+  <section class="max-w-4xl mx-auto px-6 py-12">
+    
+    <!-- Header -->
+    <header class="mb-10 text-center">
+      <p class="text-sm text-gray-500 mb-2">🏙️ 都市</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-3 leading-tight">中国都市ガイド</h1>
+      <p class="text-base text-gray-500 max-w-2xl mx-auto">あなたの中国旅行に合った都市を見つけよう。</p>
+    </header>
+
+    <!-- Quick Stats -->
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-3 mb-12 not-prose">
+      <div class="bg-purple-50 border border-purple-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-purple-800">6</p>
+        <p class="text-xs font-semibold text-purple-800 uppercase tracking-wide mt-1">都市ガイド</p>
+      </div>
+      <div class="bg-red-50 border border-red-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-red-800">1</p>
+        <p class="text-xs font-semibold text-red-800 uppercase tracking-wide mt-1">旅程プランナー</p>
+      </div>
+      <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-blue-800">3</p>
+        <p class="text-xs font-semibold text-blue-800 uppercase tracking-wide mt-1">カバー地域</p>
+      </div>
+    </div>
+
+    <!-- Category Sections -->
+    <div class="space-y-8 mb-16 not-prose">
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-purple-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-purple-800">旅行計画</h2>
+          <span class="text-xs font-medium text-purple-800 opacity-60">1記事</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/en/cities/city-select/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-purple-800">🧭 計画</span>
+            <p class="text-base font-bold text-gray-900 mt-1">中国旅行に必要な日数は？</p>
+            <p class="text-sm text-gray-600 mt-0.5">3日間の弾丸旅行から3週間の冒険まで、完璧な旅程を計画。</p>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-red-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-red-800">歴史・文化</h2>
+          <span class="text-xs font-medium text-red-800 opacity-60">1記事</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/en/cities/beijing-guide/" class="block bg-red-50 border border-red-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-red-800">🏛️ 北京</span>
+            <p class="text-base font-bold text-gray-900 mt-1">北京旅行ガイド：見どころ、グルメ、知っておくべきこと</p>
+            <p class="text-sm text-gray-600 mt-0.5">故宮、万里の長城、胡同、北京ダック、必須のヒント。</p>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-blue-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-blue-800">モダン・都市</h2>
+          <span class="text-xs font-medium text-blue-800 opacity-60">2記事</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/en/cities/shanghai-guide/" class="block bg-blue-50 border border-blue-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-blue-800">🌆 上海</span>
+            <p class="text-base font-bold text-gray-900 mt-1">上海旅行ガイド：外国人に最も優しい都市</p>
+            <p class="text-sm text-gray-600 mt-0.5">外灘、上海タワー、フランス租界、世界クラスのグルメ。</p>
+          </a>
+          <a href="/en/cities/shenzhen-guide/" class="block bg-blue-50 border border-blue-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-blue-800">🏙️ 深圳</span>
+            <p class="text-base font-bold text-gray-900 mt-1">深圳旅行ガイド：香港の隣にあるテクノロジーハブ</p>
+            <p class="text-sm text-gray-600 mt-0.5">中国のシリコンバレー、海岸沿いのサイクリング、香港まで電車で15分。</p>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-emerald-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-emerald-800">自然・景観</h2>
+          <span class="text-xs font-medium text-emerald-800 opacity-60">1記事</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/en/cities/hainan-visa-free/" class="block bg-emerald-50 border border-emerald-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-emerald-800">🏝️ 海南</span>
+            <p class="text-base font-bold text-gray-900 mt-1">海南旅行ガイド — 30日間ビザ免除</p>
+            <p class="text-sm text-gray-600 mt-0.5">熱帯のビーチ、熱帯雨林、59ヶ国がビザなしで入場可能。</p>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-orange-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-orange-800">グルメ・ライフスタイル</h2>
+          <span class="text-xs font-medium text-orange-800 opacity-60">2記事</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/en/cities/guangzhou-guide/" class="block bg-orange-50 border border-orange-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-orange-800">🥟 広州</span>
+            <p class="text-base font-bold text-gray-900 mt-1">広州旅行ガイド：中国の美食の都</p>
+            <p class="text-sm text-gray-600 mt-0.5">点心、広州塔、沙面島、華南への玄関口。</p>
+          </a>
+          <a href="/en/cities/chengdu-guide/" class="block bg-orange-50 border border-orange-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-orange-800">🐼 成都</span>
+            <p class="text-base font-bold text-gray-900 mt-1">成都旅行ガイド：パンダ、辛い料理、スローライフ</p>
+            <p class="text-sm text-gray-600 mt-0.5">ジャイアントパンダ、四川火鍋、茶館、九寨溝への玄関口。</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Guides -->
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-5">関連ガイド</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <a href="/en/transport/high-speed-rail/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-0.5">高速鉄道</p>
+          <p class="text-sm text-gray-500">都市間の移動</p>
+        </a>
+        <a href="/en/transport/metro-bus/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-0.5">地下鉄・バス</p>
+          <p class="text-sm text-gray-500">市内中心部の移動</p>
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

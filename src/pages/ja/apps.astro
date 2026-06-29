@@ -1,0 +1,31 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = '中国で必須のアプリ';
+const description = '中国で実際に必要なアプリ — 中国語が話せない方向けの設定ガイド付き。';
+---
+
+<Layout title={title} description={description} lang="ja">
+  <article class="max-w-3xl mx-auto">
+    <header class="py-12 text-center">
+      <div class="text-sm text-brand-600 font-medium mb-2">カテゴリー</div>
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900  ">必須アプリ</h1>
+      <p class="text-gray-500  ">中国で実際に必要なアプリ。</p>
+    </header>
+    <div class="prose prose-gray  ">
+      <div class="bg-amber-50  :border-amber-900 rounded-xl p-4 mb-8">
+        <p class="text-amber-800  ">
+          <strong>注意：</strong>アプリの詳細ガイドは準備中です。
+        </p>
+      </div>
+      <h2>必須アプリ一覧</h2>
+      <ul>
+        <li><strong>WeChat（微信）</strong> — メッセージング、支払い、なんでもできる</li>
+        <li><strong>Alipay（支付宝）</strong> — 支払いと各種サービス</li>
+        <li><strong>Didi（滴滴）</strong> — ライドシェア</li>
+        <li><strong>高德地図（Amap）/ 百度地図（Baidu Maps）</strong> — ナビゲーション（Googleマップはうまく動作しません）</li>
+        <li><strong>美団（Meituan）</strong> — フードデリバリー</li>
+        <li><strong>大衆点評（Dianping）</strong> — レストランの口コミ</li>
+      </ul>
+    </div>
+  </article>
+</Layout>

@@ -1,0 +1,364 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = '中国税関規制：中国に持ち込めるもの・持ち込めないもの';
+const description = '観光客向け中国税関完全ガイド — 免税枠、禁止品、申告物、選ぶべきゲートまで。';
+---
+
+<Layout title={title} description={description} lang="ja">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/en/visa/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        ビザ・入国のページに戻る
+      </a>
+    </nav>
+    <!-- Header -->
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🛂 入国・ビザ</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        中国税関規制：中国に持ち込めるもの・持ち込めないもの
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">中国に入国する観光客向け税関ルールの実践ガイド。</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 最終更新：2026年6月</span>
+        <span>⏱️ 読了時間：約5分</span>
+      </div>
+    </header>
+
+    <!-- Quick Answer Box -->
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-blue-900 mb-4">🎯 すぐわかる答え</h2>
+      <p class="text-lg text-blue-800 leading-relaxed mb-4">
+        一般的な観光客向けの簡易版です：
+      </p>
+      <div class="overflow-x-auto mb-4">
+        <table class="w-full text-sm bg-white rounded-xl overflow-hidden shadow-sm">
+          <thead>
+            <tr class="bg-blue-600 text-white">
+              <th class="px-4 py-2 text-left">✅ 持ってきてOK</th>
+              <th class="px-4 py-2 text-left">⚠️ 下記の詳細を確認</th>
+              <th class="px-4 py-2 text-left">❌ 持ってこないで</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-2">衣類、洗面用具、スマホ、ノートPC、カメラ</td>
+              <td class="px-4 py-2">酒類、タバコ、2,000元以上の贈り物、5,000米ドル超の現金</td>
+              <td class="px-4 py-2">肉類、果物、野菜、麻薬、武器</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <ul class="list-disc pl-5 text-blue-800 text-sm space-y-1">
+        <li><strong>中国に残す贈り物・消費物：</strong><strong>2,000元</strong>以下に抑える</li>
+        <li><strong>タバコ：</strong>最大<strong>400本</strong>（香港・マカオ経由は200本）</li>
+        <li><strong>酒類：</strong>最大<strong>1.5L</strong>（香港・マカオ経由は0.75L）</li>
+        <li><strong>外貨現金：</strong><strong>5,000米ドル</strong>超は申告</li>
+        <li><strong>人民元現金：</strong>最大<strong>20,000元</strong>（例外なし）</li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="prose prose-lg max-w-none">
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">❌ これらは中国に持ち込まないでください</h2>
+
+      <div class="bg-red-50 border border-red-200 rounded-2xl p-6 mb-6 not-prose">
+        <p class="font-bold text-gray-900 mb-2">絶対禁止（没収されます）：</p>
+        <ul class="list-disc pl-5 text-gray-700 space-y-1">
+          <li>🚫 麻薬、武器、偽造品</li>
+          <li>🚫 生鮮果物、野菜、生肉、卵、乳製品、生きた植物</li>
+          <li>🚫 絶滅危惧種の製品（象牙、トラの骨、サイの角）</li>
+        </ul>
+      </div>
+
+      <div class="bg-yellow-50 border border-yellow-200 rounded-2xl p-6 mb-8 not-prose">
+        <p class="font-bold text-gray-900 mb-2">こんな落とし穴に注意：</p>
+        <ul class="list-disc pl-5 text-gray-700 space-y-1">
+          <li><strong>肉スナック</strong>（ビーフジャーキー、ソーセージ、ベーコン） — 包装済みでも禁止</li>
+          <li><strong>バッグに忘れた果物</strong> — 検疫犬は必ず見つけます</li>
+          <li><strong>漢方薬</strong> — 絶滅危惧種を含むものもあります。ラベル明瞭なパッケージ製品にしましょう</li>
+          <li><strong>モバイルバッテリー</strong> — 3Cマーク必須、機内持ち込みのみ、最大160Wh</li>
+        </ul>
+      </div>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">💰 ほとんどの観光客が知っておくべきこと</h2>
+
+      <h3 class="text-xl font-bold text-gray-800 mb-4">贈り物と中国に置いていくもの</h3>
+      <p class="text-gray-700 mb-4">
+        2,000元の免税枠は、中国で譲渡または消費する品物（贈り物、友人に渡すお土産、滞在中に食べるチョコレートなど）に適用されます。自分用に持参して持ち帰るものはカウントされません。
+      </p>
+
+      <div class="overflow-x-auto mb-8 not-prose">
+        <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+          <thead>
+            <tr class="bg-gray-900 text-white">
+              <th class="px-5 py-3 font-bold">あなたは...</th>
+              <th class="px-5 py-3 font-bold">中国に置いていくものの免税枠</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 font-semibold">外国人観光客</td>
+              <td class="px-5 py-3"><strong>2,000元</strong></td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-5 py-3 font-semibold">帰国する中国在住者</td>
+              <td class="px-5 py-3">5,000元</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="text-xl font-bold text-gray-800 mb-4">タバコと酒類</h3>
+      <p class="text-gray-700 mb-4">
+        税関申告書にこれらの免税限度額が記載されています。超える場合は該当する項目にチェックを入れ、赤色ゲートへ。
+      </p>
+
+      <div class="overflow-x-auto mb-4 not-prose">
+        <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+          <thead>
+            <tr class="bg-gray-900 text-white">
+              <th class="px-5 py-3 font-bold">品目</th>
+              <th class="px-5 py-3 font-bold text-center">入国旅行者</th>
+              <th class="px-5 py-3 font-bold text-center">香港・マカオからの到着者</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3">紙巻タバコ（加熱式タバコ含む）</td>
+              <td class="px-5 py-3 text-center"><strong>400本</strong></td>
+              <td class="px-5 py-3 text-center">200本</td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-5 py-3">葉巻</td>
+              <td class="px-5 py-3 text-center"><strong>20本</strong></td>
+              <td class="px-5 py-3 text-center">10本</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3">ばら煙草</td>
+              <td class="px-5 py-3 text-center"><strong>500g</strong></td>
+              <td class="px-5 py-3 text-center">250g</td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-5 py-3">電子タバコ本体</td>
+              <td class="px-5 py-3 text-center"><strong>2個</strong></td>
+              <td class="px-5 py-3 text-center">1個</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3">電子タバコカートリッジ</td>
+              <td class="px-5 py-3 text-center"><strong>6個</strong>（液量合計≤12ml）</td>
+              <td class="px-5 py-3 text-center">3個（≤6ml）</td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-5 py-3">酒類（アルコール度数12%以上）</td>
+              <td class="px-5 py-3 text-center"><strong>1,500ml</strong></td>
+              <td class="px-5 py-3 text-center">750ml</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-sm text-gray-500 mb-8">注：頻繁に渡航する方（毎日・毎週の越境）には、より厳しい制限が適用されます — 紙巻タバコ40本、葉巻2本、煙草40g、電子タバコ1個。ほとんどの観光客は該当しません。</p>
+
+      <h3 class="text-xl font-bold text-gray-800 mb-4">現金</h3>
+      <div class="overflow-x-auto mb-8 not-prose">
+        <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+          <thead>
+            <tr class="bg-gray-900 text-white">
+              <th class="px-5 py-3 font-bold">通貨</th>
+              <th class="px-5 py-3 font-bold text-center">制限</th>
+              <th class="px-5 py-3 font-bold">対応</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3">人民元</td>
+              <td class="px-5 py-3 text-center">最大<strong>20,000元</strong></td>
+              <td class="px-5 py-3">超過＝禁止</td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-5 py-3">米ドルまたはその他外貨</td>
+              <td class="px-5 py-3 text-center"><strong>5,000米ドル</strong>超は申告</td>
+              <td class="px-5 py-3">捺印済みの用紙をもらい、出国時まで保管</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="text-xl font-bold text-gray-800 mb-4">医薬品</h3>
+      <p class="text-gray-700 mb-4">
+        <strong>処方薬：</strong> 7日分であれば書類不要。長期滞在の場合は医師の診断書を持参。薬は元のボトルに入れたままに — 税関職員はピルケースを信用しません。
+      </p>
+      <p class="text-gray-700 mb-8">
+        <strong>風邪薬の注意：</strong> <strong>プソイドエフェドリン</strong>（Sudafed、NyQuil、多くの総合感冒薬）を含む医薬品は中国で規制されています。1箱は問題ありませんが、複数箱持参すると薬物前駆体の所持とみなされる可能性があります。風邪薬の過剰梱包は避けましょう。
+      </p>
+
+      <h3 class="text-xl font-bold text-gray-800 mb-4">持ち帰る電子機器</h3>
+      <p class="text-gray-700 mb-8">
+        ノートPC、スマホ、カメラ、タブレットは緑色ゲートで問題ありません — これらは自分で持ち込み、持ち帰る私物です。高価な機材（プロ用カメラ機材、複数のノートPCなど）をお持ちの場合は、赤色ゲートで「一時輸入」として任意申告することで出国時の質問を避けられますが、ほとんどの観光客は申告せずに問題なく通過しています。
+      </p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">🚦 どのゲートを選ぶべきか</h2>
+      <p class="text-gray-700 mb-4">
+        税関申告書には7つのチェックボックスがあります。<strong>ひとつでも該当すれば → 赤色ゲート。何も該当しなければ → 緑色ゲート。</strong>
+      </p>
+
+      <div class="overflow-x-auto mb-8 not-prose">
+        <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+          <thead>
+            <tr class="bg-gray-900 text-white">
+              <th class="px-5 py-3 font-bold text-center">#</th>
+              <th class="px-5 py-3 font-bold">これを持っている場合はチェック</th>
+              <th class="px-5 py-3 font-bold text-center">ゲート</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 text-center font-bold">1</td>
+              <td class="px-5 py-3">動物、植物、生鮮食品、肉類、微生物、生物製品</td>
+              <td class="px-5 py-3 text-center">🔴</td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-5 py-3 text-center font-bold">2</td>
+              <td class="px-5 py-3">（帰国する中国在住者）5,000元を超える品物</td>
+              <td class="px-5 py-3 text-center">🔴</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 text-center font-bold">3</td>
+              <td class="px-5 py-3">（外国人観光客）<strong>2,000元超</strong>の贈り物や<strong>中国に残す</strong>品物</td>
+              <td class="px-5 py-3 text-center">🔴</td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-5 py-3 text-center font-bold">4</td>
+              <td class="px-5 py-3"><strong>1,500ml</strong>超の酒類／<strong>400本</strong>超のタバコ／<strong>20本</strong>超の葉巻／<strong>500g</strong>超の煙草／電子タバコ本体2個超またはカートリッジ6個超</td>
+              <td class="px-5 py-3 text-center">🔴</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 text-center font-bold">5</td>
+              <td class="px-5 py-3"><strong>20,000元</strong>超の人民元現金または<strong>5,000米ドル</strong>超の外貨現金</td>
+              <td class="px-5 py-3 text-center">🔴</td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-5 py-3 text-center font-bold">6</td>
+              <td class="px-5 py-3">別送手荷物、商業用貨物</td>
+              <td class="px-5 py-3 text-center">🔴</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 text-center font-bold">7</td>
+              <td class="px-5 py-3">その他、判断に迷うもの</td>
+              <td class="px-5 py-3 text-center">🔴</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-gray-700 font-semibold mb-8">どのボックスにもチェックが入らない？ → 🟢 緑色ゲート。そのまま通過してください。</p>
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">実際の観光客シナリオ</h2>
+
+      <!-- Scenario 1 -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-4 not-prose">
+        <p class="font-bold text-gray-900 mb-2">シナリオ1：中国人の友人への贈り物を持参する場合</p>
+        <p class="text-gray-700 text-sm mb-3">シングルモルトスコッチ1本（150米ドル）、工芸チョコレート1箱（40米ドル）、ブランド革財布1つ（120米ドル） — すべて上海の友人に渡す贈り物です。合計価値：約310米ドル（約2,200元）。</p>
+        <div class="bg-yellow-50 rounded-xl p-4">
+          <p class="text-sm text-yellow-900"><strong>分析：</strong> これらの品物は中国に残す（贈り物）ものであり、合計2,000元を超えています。申告書のボックス3にチェックが必要です。</p>
+          <p class="text-sm text-red-700 font-semibold mt-1">→ 🔴 赤色ゲート。「中国に残す贈り物」として申告し、超過分200元に対する関税の支払いに備えてください。</p>
+        </div>
+      </div>
+
+      <!-- Scenario 2 -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-4 not-prose">
+        <p class="font-bold text-gray-900 mb-2">シナリオ2：5,500米ドルの現金を持っている場合</p>
+        <p class="text-gray-700 text-sm mb-3">旅行前に現金を両替し、5,500米ドルを財布に入れて旅行に持参しています。</p>
+        <div class="bg-yellow-50 rounded-xl p-4">
+          <p class="text-sm text-yellow-900"><strong>分析：</strong> 5,000米ドルを超える外貨現金はボックス5に該当します。</p>
+          <p class="text-sm text-red-700 font-semibold mt-1">→ 🔴 赤色ゲート。5,500米ドルを申告し、現金申告書に記入、捺印済みのコピーを受け取ってください。その用紙を持っていれば、残った現金を出国時に持ち出せます。</p>
+        </div>
+      </div>
+
+      <!-- Scenario 3 -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-4 not-prose">
+        <p class="font-bold text-gray-900 mb-2">シナリオ3：通常の旅行荷物だけの場合</p>
+        <p class="text-gray-700 text-sm mb-3">衣類、洗面用具、ノートPC、スマホ、Kindle、カメラを詰めました — すべて自分で持ち帰る私物です。合計額は数千円になりますが、中国に残すものはありません。</p>
+        <div class="bg-green-50 rounded-xl p-4">
+          <p class="text-sm text-green-800"><strong>分析：</strong> 申告書のどのボックスにも該当しません。これらは「一時輸入」 — 持ち帰る私物です。</p>
+          <p class="text-sm text-green-700 font-semibold mt-1">→ 🟢 緑色ゲート。これが95%の観光客の現実です。そのまま通過してください。</p>
+        </div>
+      </div>
+
+      <!-- Scenario 4 -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-4 not-prose">
+        <p class="font-bold text-gray-900 mb-2">シナリオ4：旅行用に風邪薬を詰めた場合</p>
+        <p class="text-gray-700 text-sm mb-3">風邪薬（プソイドエフェドリン含有）、アレルギー薬、抗菌クリームのチューブ — 旅行者なら誰でも持つ標準的な薬です。</p>
+        <div class="bg-yellow-50 rounded-xl p-4">
+          <p class="text-sm text-yellow-900"><strong>分析：</strong> 個人使用の一般市販薬は問題ありません。プソイドエフェドリンは中国で規制されていますが、1箱（7日分）であれば通常問題になりません。</p>
+          <p class="text-sm text-green-700 font-semibold mt-1">→ 🟢 通常量であれば緑色ゲート。ただし複数箱持っている場合は話が別です。</p>
+        </div>
+      </div>
+
+      <!-- Scenario 5 -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-4 not-prose">
+        <p class="font-bold text-gray-900 mb-2">シナリオ5：機内食のリンゴとチキンサンドイッチ</p>
+        <p class="text-gray-700 text-sm mb-3">機内の朝食サービスでリンゴとサンドイッチを取り、バックパックに入れっぱなしにしていたのを忘れていました。</p>
+        <div class="bg-red-50 rounded-xl p-4">
+          <p class="text-sm text-red-800"><strong>分析：</strong> 生鮮果物＝ボックス1。肉製品＝ボックス1。</p>
+          <p class="text-sm text-red-700 font-semibold mt-1">→ 🔴 赤色ゲート。申告してください — 没収・廃棄されます。ゲートを選ぶ前に必ずバッグを確認しましょう。</p>
+        </div>
+      </div>
+
+      <div class="bg-red-50 border-l-4 border-red-400 p-5 rounded-r-xl mb-8 not-prose">
+        <p class="text-red-900 text-sm"><strong>迷ったら赤色ゲートを選んでください。</strong> 任意申告は簡単な手続きで済みます。隠し持つと没収され、罰金も科せられます。</p>
+      </div>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">📝 申告方法</h2>
+      <p class="text-gray-700 mb-4">
+        <strong>税関で紙の申告書を受け取る</strong> — 検査ゲート前のカウンターにある「携帯品申告書」（中英文併記）を手に取り、その場で記入します。該当するボックスにチェックを入れ、赤色ゲートの職員に手渡してください。
+      </p>
+      <p class="text-gray-700 mb-8">
+        <strong>隠し持った場合の罰則：</strong> 没収＋最大10万元の罰金。1万元以上の脱税は刑事責任を問われる可能性があります。
+      </p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">💡 クイックヒント</h2>
+      <ol class="list-decimal pl-6 space-y-2 text-gray-700 mb-8">
+        <li><strong>薬は元のボトルに入れて</strong> — 税関職員はピルケースを信用しません</li>
+        <li><strong>バッグに果物、肉、乳製品を入れない</strong> — 検疫犬は非常に優秀です</li>
+        <li><strong>税関エリアでの撮影は禁止</strong> — 検査エリアでの録画は禁止されています</li>
+        <li><strong>ゲートを選ぶ前にバッグを確認</strong> — 機内のリンゴもカウントされます</li>
+        <li><strong>ブランド品や贈り物の領収書は保管</strong></li>
+      </ol>
+
+    </div>
+
+    <!-- Sources -->
+    <div class="bg-gray-50 rounded-2xl p-6 not-prose mt-12">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📚 出典</h3>
+      <ul class="space-y-2">
+        <li><a href="http://english.customs.gov.cn/Statics/88707c1e-aa4e-40ca-a968-bdbdbb565e4f.html" class="text-brand-600 hover:underline text-sm" target="_blank" rel="noopener">中国税関公式 — 乗客の手荷物申告</a></li>
+      </ul>
+    </div>
+
+    <!-- Related Guides -->
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose mt-6">
+      <h3 class="text-2xl font-bold text-gray-900 mb-6">📚 関連ガイド</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/en/life/survival-kit/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">中国旅行サバイバルキット</p>
+          <p class="text-sm text-gray-600">出発前の完全チェックリスト</p>
+        </a>
+        <a href="/en/visa/arrival-card/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">入国カードのオンライン提出方法</p>
+          <p class="text-sm text-gray-600">スクリーンショット付きステップバイステップガイド</p>
+        </a>
+      </div>
+    </div>
+  </article>
+</Layout>

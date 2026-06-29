@@ -1,0 +1,150 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = "中国旅行に最適なVPN";
+const description = "中国で使えるベストなVPN — 何が使えて何が使えないか、到着前のVPN設定方法。";
+---
+
+<Layout title={title} description={description} lang="ja">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/en/life/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        ライフ編に戻る
+      </a>
+    </nav>
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🔒 中国での生活</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        中国旅行に最適なVPN
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">出発前に設定を — さもないとネットに接続できません。</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 最終更新: 2026年6月</span>
+        <span>⏱️ 読了時間: 5分</span>
+      </div>
+    </header>
+
+        <div class="bg-gradient-to-r from-green-50 to-emerald-50 border-l-4 border-green-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-green-900 mb-4">🎯 ざっくり答えると</h2>
+      <p class="text-lg text-green-800 leading-relaxed">
+        <strong>VPNは自宅を出る前に設定しましょう。</strong> 中国国内に入るとVPNのウェブサイトやGoogle Playはブロックされていて、ダウンロードも購読もできなくなります。
+      </p>
+    </div>
+
+        <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 目次</h3>
+      <ul class="space-y-3">
+        <li><a href="#why" class="text-blue-600 hover:underline">❓ なぜ中国でVPNが必要なのか</a></li>
+        <li><a href="#best" class="text-blue-600 hover:underline">🏆 中国に最適なVPN</a></li>
+        <li><a href="#setup" class="text-blue-600 hover:underline">⚙️ 出発前のVPN設定方法</a></li>
+        <li><a href="#troubleshoot" class="text-blue-600 hover:underline">🔧 トラブルシューティング：VPNが動かない？</a></li>
+        <li><a href="#free-vs-paid" class="text-blue-600 hover:underline">💰 無料VPN vs 有料VPN</a></li>
+      </ul>
+    </nav>
+
+    <div class="prose prose-lg max-w-none">
+      <hr class="border-gray-200 my-12" />
+
+            <h2 id="why" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">❓</span> なぜ中国でVPNが必要なのか
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">中国のインターネットファイアウォールは、多くの海外サイトやサービスをブロックしています。例：</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12 not-prose">
+        <div class="bg-gray-50 rounded-xl p-5">
+          <p class="font-bold text-gray-900 mb-2">📱 SNS</p>
+          <p class="text-gray-700">Instagram、Facebook、Twitter/X、TikTok（国際版）</p>
+        </div>
+        <div class="bg-gray-50 rounded-xl p-5">
+          <p class="font-bold text-gray-900 mb-2">💬 メッセージ</p>
+          <p class="text-gray-700">WhatsApp、Telegram（一部ブロック）、Signal</p>
+        </div>
+        <div class="bg-gray-50 rounded-xl p-5">
+          <p class="font-bold text-gray-900 mb-2">🔍 検索・地図</p>
+          <p class="text-gray-700">Google（全サービス）、Gmail含む</p>
+        </div>
+        <div class="bg-gray-50 rounded-xl p-5">
+          <p class="font-bold text-gray-900 mb-2">🎵 動画・音楽</p>
+          <p class="text-gray-700">YouTube、Netflix、Spotify</p>
+        </div>
+        <div class="bg-gray-50 rounded-xl p-5 md:col-span-2">
+          <p class="font-bold text-gray-900 mb-2">📰 ニュース</p>
+          <p class="text-gray-700">BBC、CNN、New York Times</p>
+        </div>
+      </div>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-12">仕事、連絡、娯楽のいずれかでこれらに依存しているなら、VPNは必須です。</p>
+
+      <hr class="border-gray-200 my-12" />
+
+            <h2 id="best" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🏆</span> 中国に最適なVPN
+      </h2>
+
+      <div class="bg-blue-50 border border-blue-100 rounded-2xl p-6 mb-6">
+        <h3 class="text-xl font-bold text-blue-900 mb-3">🚀 ExpressVPN</h3>
+        <ul class="space-y-2 text-gray-700">
+          <li>中国で最も信頼できる選択肢の一つ（難読化技術対応）</li>
+          <li>ストリーミングやビデオ通話に高速</li>
+          <li>30日間返金保証</li>
+        </ul>
+        <!-- AFFILIATE: ExpressVPN 联盟链接 -->
+      </div>
+
+      <div class="bg-green-50 border border-green-100 rounded-2xl p-6 mb-6">
+        <h3 class="text-xl font-bold text-green-900 mb-3">🛡️ NordVPN</h3>
+        <ul class="space-y-2 text-gray-700">
+          <li>制限付きネットワーク向けに設計された難読化サーバーを備えた大規模サーバーネットワーク</li>
+          <li>強力なセキュリティ機能（キルスイッチ、ダブルVPN）</li>
+          <li>ブロックされた場合はサーバーを切り替える必要がある場合あり</li>
+        </ul>
+        <!-- AFFILIATE: NordVPN 联盟链接 -->
+      </div>
+
+      <div class="bg-purple-50 border border-purple-100 rounded-2xl p-6 mb-6">
+        <h3 class="text-xl font-bold text-purple-900 mb-3">🐉 Surfshark</h3>
+        <ul class="space-y-2 text-gray-700">
+          <li>低価格で無制限のデバイス接続</li>
+          <li>NoBordersモードで中国でも動作</li>
+          <li>長期旅行やグループ・家族旅行に最適</li>
+        </ul>
+        <!-- AFFILIATE: Surfshark 联盟链接 -->
+      </div>
+
+      <div class="bg-yellow-50 border border-yellow-100 rounded-2xl p-6 mb-12">
+        <p class="text-gray-700"><strong>プロからのアドバイス：</strong> 旅行前に最低<strong>2つ</strong>のVPNをダウンロードしてインストールしておきましょう。1つがブロックされたり問題が発生しても、予備がすぐに使えます。</p>
+      </div>
+
+      <hr class="border-gray-200 my-12" />
+
+            <h2 id="setup" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">⚙️</span> 出発前のVPN設定方法
+      </h2>
+
+      <div class="bg-gray-900 text-white rounded-2xl p-8 mb-12 not-prose">
+        <ol class="space-y-4">
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">1</span>
+            <div><strong>プロバイダーを選ぶ</strong> 上のリストから</div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">2</span>
+            <div><strong>登録してアプリをダウンロード</strong> すべての端末に（スマホ、ノートパソコン、タブレット）</div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">3</span>
+            <div><strong>インストールしてログイン</strong> 自宅にいるうちに</div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">4</span>
+            <div><strong>テストする</strong> — 中国国外のサーバーに接続して動作確認</div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">5</span>
+            <div><strong>キルスイッチを有効に</strong>（VPNが切れたらインターネットを遮断 — 中国では重要）</div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-500 text-white w-8 h-8 rounded-full flex items-center justify

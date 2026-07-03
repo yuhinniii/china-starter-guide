@@ -1,0 +1,71 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'Comment se Déplacer en Chine : Le Guide de Transport Complet';
+const description = 'Train à grande vitesse, métro, Didi, taxis et vélos partagés — comment choisir le bon transport pour chaque situation en Chine.';
+---
+
+<Layout title={title} description={description} lang="fr">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/fr/transport/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Retour à Transport
+      </a>
+    </nav>
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">�4 Se Déplacer</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        Comment se Déplacer en Chine : Le Guide de Transport Complet
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">Train à grande vitesse, métro, Didi, taxis et vélos partagés — comment choisir le bon transport pour chaque situation.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Dernière mise à jour : juin 2026</span>
+        <span>⏱️ 5 min de lecture</span>
+      </div>
+    </header>
+
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-blue-900 mb-4">🎯 Réponse Rapide</h2>
+      <p class="text-lg text-blue-800 leading-relaxed">
+        Le système de transport chinois est l'un des plus efficaces au monde. <strong>Le train à grande vitesse</strong> est la meilleure option entre les villes. <strong>Le métro</strong> est le plus rapide en ville. <strong>DiDi</strong> est le plus pratique pour les trajets porte-à-porte. Tout peut être payé avec Alipay ou WeChat Pay.
+      </p>
+    </div>
+
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 Dans Ce Guide</h3>
+      <ul class="space-y-3">
+        <li><a href="#high-speed-rail" class="text-blue-600 hover:underline">🚄 Train à Grande Vitesse</a></li>
+        <li><a href="#metro" class="text-blue-600 hover:underline">🚇 Métro</a></li>
+        <li><a href="#didi" class="text-blue-600 hover:underline">🚗 DiDi</a></li>
+        <li><a href="#taxis" class="text-blue-600 hover:underline">🚕 Taxis</a></li>
+        <li><a href="#flights" class="text-blue-600 hover:underline">✈️ Vols Intérieurs</a></li>
+        <li><a href="#bikes" class="text-blue-600 hover:underline">🚲 Vélos Partagés</a></li>
+        <li><a href="#payment" class="text-blue-600 hover:underline">💳 Paiement pour les Transports</a></li>
+      </ul>
+    </nav>
+
+    <div class="prose prose-gray max-w-none">
+      <h2 id="high-speed-rail" class="text-2xl font-bold text-gray-900 mb-4">🚄 Train à Grande Vitesse</h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Le réseau de trains à grande vitesse chinois relie toutes les grandes villes. Les trains sont propres, ponctuels et confortables. Les sièges de deuxième classe égalent le confort des classes premium des compagnies aériennes.</p>
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">🚇 Métro</h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Toutes les grandes villes chinoises ont un excellent réseau de métro. Pékin et Shanghai font partie des plus longs réseaux au monde. Les panneaux et annonces sont bilingues (chinois + anglais), et les stations ont des plans clairs. Les tarifs sont bon marché — généralement 3–10 ¥.</p>
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">🚗 DiDi</h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">DiDi est l'équivalent chinois d'Uber. Vous pouvez réserver via l'application DiDi ou via les mini-programmes d'Alipay et WeChat. Voir notre <a href="/fr/transport/didi/" class="text-blue-600 hover:underline">guide complet d'installation DiDi</a>.</p>
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">💳 Paiement pour les Transports</h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Bonne nouvelle : presque tous les transports en Chine peuvent être payés avec Alipay ou WeChat Pay. Activez les codes QR de transport directement dans Alipay.</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <div class="space-y-4 not-prose">
+        <a href="/fr/transport/airport-to-city/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🛬 <strong>De l'Aéroport à la Ville</strong> — que faire à l'arrivée</a>
+        <a href="/fr/transport/high-speed-rail/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>Comment Réserver et Prendre le TGV en Chine</strong> — guide de réservation</a>
+        <a href="/fr/transport/didi/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚗 <strong>Comment Utiliser DiDi en Chine</strong> — configurer le VTC</a>
+      </div>
+    </div>
+  </article>
+</Layout>

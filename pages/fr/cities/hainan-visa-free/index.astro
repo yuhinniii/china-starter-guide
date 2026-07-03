@@ -1,0 +1,234 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'Guide de voyage de Hainan 2026 — Sans visa pour 59 pays';
+const description = 'Planifiez votre voyage à Hainan, l\'île tropicale de la Chine. 30 jours sans visa pour 59 pays. Plages tropicales, randonnées en forêt tropicale, cuisine locale et conseils de voyage en un seul guide.';
+const lastUpdated = 'juin 2026';
+const readTime = '7 min';
+---
+
+<Layout title={title} description={description} lang="fr">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+
+    <!-- Breadcrumb -->
+    <nav class="mb-8 not-prose">
+      <a href="/fr/cities/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Retour aux Guides de villes
+      </a>
+    </nav>
+
+    <!-- Header -->
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🏝️ Hainan</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        Guide de voyage de Hainan : L'île tropicale de la Chine — Pas besoin de visa pour 59 pays
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">Plages, forêts tropicales, volcans et stations balnéaires de classe mondiale — et les citoyens de 59 pays peuvent visiter sans visa jusqu'à 30 jours.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Dernière mise à jour : {lastUpdated}</span>
+        <span>⏱️ {readTime}</span>
+      </div>
+    </header>
+
+    <!-- Quick Answer -->
+    <div class="bg-gradient-to-r from-emerald-50 to-teal-50 border-l-4 border-emerald-500 rounded-r-2xl p-8 mb-6 not-prose">
+      <h2 class="text-2xl font-bold text-emerald-900 mb-4">⚡ Réponse Rapide</h2>
+      <p class="text-lg text-emerald-800 leading-relaxed"><strong>Hainan est le paradis tropical de la Chine — plages, forêts tropicales, volcans et stations balnéaires de classe mondiale — et les citoyens de 59 pays peuvent visiter sans visa jusqu'à 30 jours.</strong> Pas besoin de groupe touristique, pas besoin de visite à l'ambassade. Prenez un vol pour Haikou ou Sanya avec votre passeport et un billet retour, et vous y êtes.</p>
+    </div>
+    <p class="text-gray-700 mb-8">C'est une grande nouvelle si vous venez des <strong>États-Unis, du Mexique, des Philippines, d'Indonésie ou de République tchèque</strong> — ces pays ne sont pas sur la liste continentale chinoise des 30 jours sans visa. (<a href="/fr/visa/visa-free/" class="text-blue-600 hover:underline">Voir la liste complète des 59 pays →</a>)</p>
+
+    <!-- Quick Stats Grid -->
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12">
+      <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
+        <p class="text-2xl mb-1">☀️</p>
+        <p class="text-sm font-semibold text-gray-900">Climat tropical</p>
+        <p class="text-xs text-gray-500">Moy. 24 °C toute l'année</p>
+      </div>
+      <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
+        <p class="text-2xl mb-1">🏖️</p>
+        <p class="text-sm font-semibold text-gray-900">Meilleures plages</p>
+        <p class="text-xs text-gray-500">Yalong Bay, Dadonghai, Haitang Bay</p>
+      </div>
+      <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
+        <p class="text-2xl mb-1">🌋</p>
+        <p class="text-sm font-semibold text-gray-900">Géoparc volcanique</p>
+        <p class="text-xs text-gray-500">Géologie unique de Haikou</p>
+      </div>
+      <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
+        <p class="text-2xl mb-1">🌴</p>
+        <p class="text-sm font-semibold text-gray-900">Forêt tropicale</p>
+        <p class="text-xs text-gray-500">Wuzhishan, Yanoda, Bawangling</p>
+      </div>
+      <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
+        <p class="text-2xl mb-1">⛳</p>
+        <p class="text-sm font-semibold text-gray-900">Stations de golf</p>
+        <p class="text-xs text-gray-500">Parcours de classe mondiale</p>
+      </div>
+      <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
+        <p class="text-2xl mb-1">🦞</p>
+        <p class="text-sm font-semibold text-gray-900">Fruits de mer frais</p>
+        <p class="text-xs text-gray-500">Hainan est célèbre pour cela</p>
+      </div>
+    </div>
+
+    <!-- Which Countries Qualify -->
+    <section class="mb-12">
+      <h2 id="visa-free-countries" class="text-3xl font-bold text-gray-900 mb-4">Quels pays sont éligibles pour Hainan sans visa ?</h2>
+      <p class="text-gray-700 mb-4"><strong>59 pays</strong> — principalement les mêmes que la liste sans visa continentale, mais avec quelques extras importants comme <strong>les États-Unis, le Mexique, les Philippines et l'Indonésie</strong> qui ne sont pas sur la liste continentale des 30 jours.</p>
+      <div class="bg-emerald-50 border-l-4 border-emerald-400 rounded-r-xl p-5 mb-4">
+        <p class="text-sm text-emerald-800"><strong>💡 Note rapide :</strong> Contrairement aux politiques sans visa continentales, la liste de Hainan couvre une gamme plus large (59 vs 50 pays). Si votre pays n'est pas sur la <a href="/fr/visa/visa-free/" class="text-blue-600 hover:underline font-medium">liste sans visa continentale</a>, vérifiez s'il est sur la liste de Hainan — ce pourrait être votre seule option sans visa pour la Chine.</p>
+      </div>
+      <p class="text-sm text-gray-600">Voir la <a href="/fr/visa/visa-free/" class="text-blue-600 hover:underline font-medium">répartition complète des 59 pays par région →</a></p>
+    </section>
+
+    <!-- When to Visit -->
+    <section class="mb-12">
+      <h2 id="when-to-visit" class="text-3xl font-bold text-gray-900 mb-4">Quand visiter Hainan</h2>
+      <div class="bg-white rounded-xl border border-gray-200 overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="bg-gray-50 border-b border-gray-200">
+              <th class="text-left px-5 py-3 font-semibold text-gray-700">Mois</th>
+              <th class="text-left px-5 py-3 font-semibold text-gray-700">Temp.</th>
+              <th class="text-left px-5 py-3 font-semibold text-gray-700">Pluie</th>
+              <th class="text-left px-5 py-3 font-semibold text-gray-700">Foules</th>
+              <th class="text-left px-5 py-3 font-semibold text-gray-700">Avis</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 font-medium">Nov–Mar</td>
+              <td class="px-5 py-3">20–28 °C</td>
+              <td class="px-5 py-3">Faible</td>
+              <td class="px-5 py-3">Élevé</td>
+              <td class="px-5 py-3 font-semibold text-emerald-600">🌟 Meilleure période — sec, chaud, temps de plage parfait</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 font-medium">Avr–Juin</td>
+              <td class="px-5 py-3">25–32 °C</td>
+              <td class="px-5 py-3">Modéré</td>
+              <td class="px-5 py-3">Faible</td>
+              <td class="px-5 py-3 text-amber-600">👍 Bien — plus chaud mais moins de touristes</td>
+            </tr>
+            <tr>
+              <td class="px-5 py-3 font-medium">Juil–Oct</td>
+              <td class="px-5 py-3">26–32 °C</td>
+              <td class="px-5 py-3">Élevé (saison des typhons)</td>
+              <td class="px-5 py-3">Faible</td>
+              <td class="px-5 py-3 text-red-600">⚠️ Pluvieux — vols bon marché mais vérifiez les prévisions de typhons</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-3 text-sm text-gray-600"><strong>Haute saison touristique :</strong> Nouvel An chinois (janv./fév.) et Semaine dorée de la fête nationale (1–7 octobre) — évitez si possible.</p>
+    </section>
+
+    <!-- Getting Around -->
+    <section class="mb-12">
+      <h2 id="getting-around" class="text-3xl font-bold text-gray-900 mb-6">🚇 Se déplacer à Hainan</h2>
+      <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700">
+        <li><strong>TGV :</strong> Hainan a une ligne de TGV circulaire qui relie Haikou, Boao, Sanya et la plupart des villes. Les trains sont fréquents et bon marché (Haikou → Sanya ~100 ¥, 1h30).</li>
+        <li><strong>Taxis / Didi :</strong> Réservez facilement via l'<a href="/fr/transport/didi/" class="text-blue-600 hover:underline">application DiDi</a> ou via les mini-programmes Alipay/WeChat.</li>
+        <li><strong>Location de voiture :</strong> Possible avec un permis de conduire international + traduction en chinois</li>
+        <li><strong>Bus :</strong> Bon marché mais lents, les lignes couvrent la plupart des sites touristiques</li>
+      </ul>
+    </section>
+
+    <!-- Visa-Free Rules -->
+    <section class="mb-12">
+      <h2 id="visa-rules" class="text-3xl font-bold text-gray-900 mb-4">Règles sans visa — Exactement ce qu'il faut savoir</h2>
+      <div class="bg-white rounded-xl border border-gray-200 overflow-x-auto mb-6">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="bg-gray-50 border-b border-gray-200">
+              <th class="text-left px-5 py-3 font-semibold text-gray-700">Question</th>
+              <th class="text-left px-5 py-3 font-semibold text-gray-700">Réponse</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 font-medium">Combien de temps puis-je rester ?</td>
+              <td class="px-5 py-3">Jusqu'à <strong>30 jours</strong> — à compter du lendemain de votre arrivée</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 font-medium">Ai-je besoin d'un groupe touristique ?</td>
+              <td class="px-5 py-3"><strong>Non</strong> — les voyageurs individuels sont acceptés</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 font-medium">Puis-je prolonger ?</td>
+              <td class="px-5 py-3">Possible, faites la demande au bureau d'immigration local à Hainan</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 font-medium">Puis-je visiter la Chine continentale ?</td>
+              <td class="px-5 py-3"><strong>Non</strong> — cette politique ne couvre que l'île de Hainan</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 font-medium">Puis-je entrer à Hainan, aller à Hong Kong, puis revenir ?</td>
+              <td class="px-5 py-3">Oui — chaque entrée réinitialise le compteur de 30 jours</td>
+            </tr>
+            <tr>
+              <td class="px-5 py-3 font-medium">Que faire si je dépasse la durée autorisée ?</td>
+              <td class="px-5 py-3">Amendes + possible interdiction d'entrée. Ne prenez pas ce risque.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="font-semibold text-gray-900 mb-3">Conditions d'entrée :</p>
+      <ol class="list-disc pl-6 space-y-1.5 text-gray-700">
+        <li>✅ Passeport valide 6 mois ou plus</li>
+        <li>✅ Billet retour ou de correspondance dans les 30 jours</li>
+        <li>✅ Réservation d'hôtel (recommandé)</li>
+        <li>✅ Carte d'arrivée (donnée dans l'avion ou <a href="/fr/visa/arrival-card/" class="text-blue-600 hover:underline">remplie en ligne</a>)</li>
+      </ol>
+    </section>
+
+    <!-- Practical Tips -->
+    <section class="mb-12">
+      <h2 id="tips" class="text-3xl font-bold text-gray-900 mb-4">Conseils pratiques pour Hainan</h2>
+      <ol class="list-decimal pl-6 space-y-2 text-gray-700">
+        <li><strong>Payez avec Alipay ou WeChat Pay</strong> — configurez-les avant de prendre l'avion. La plupart des endroits à Hainan sont sans espèces. Voir notre guide <a href="/fr/payment/payment-guide/" class="text-blue-600 hover:underline">Comment payer en Chine</a>.</li>
+        <li><strong>Un VPN est toujours nécessaire</strong> — Google, WhatsApp, Instagram ne fonctionneront pas sans. <a href="/fr/life/best-vpns/" class="text-blue-600 hover:underline">Configurez un VPN</a> avant d'arriver.</li>
+        <li><strong>Carte SIM / eSIM</strong> — achetez-en une en ligne (airalo, Holafly) ou à l'aéroport. Voir notre <a href="/fr/life/best-sim-esim/" class="text-blue-600 hover:underline">guide SIM</a>.</li>
+        <li><strong>Langue</strong> — L'anglais n'est pas largement parlé à Hainan en dehors des stations balnéaires. Ayez Google Traduction ou Pleco prêt.</li>
+        <li><strong>Crème solaire + anti-moustique</strong> — les deux sont essentiels toute l'année.</li>
+        <li><strong>Pourboire</strong> — n'est pas attendu. Voir notre <a href="/fr/payment/tipping/" class="text-blue-600 hover:underline">guide des pourboires</a>.</li>
+      </ol>
+    </section>
+
+    <!-- Related Guides -->
+    <section class="mb-12">
+      <h2 id="related" class="text-2xl font-bold text-gray-900 mb-6">📚 Guides Connexes</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/fr/visa/visa-free/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-1">Liste des pays exemptés de visa pour la Chine (2026)</p>
+          <p class="text-sm text-gray-600">Voir la liste complète des 59 pays pour Hainan</p>
+        </a>
+        <a href="/fr/visa/arrival-card/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-1">Comment soumettre votre fiche d'arrivée en ligne</p>
+          <p class="text-sm text-gray-600">Guide étape par étape avec captures d'écran</p>
+        </a>
+        <a href="/fr/cities/beijing-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-1">Guide de voyage de Pékin</p>
+          <p class="text-sm text-gray-600">Guide de la capitale chinoise</p>
+        </a>
+        <a href="/fr/cities/shanghai-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-1">Guide de voyage de Shanghai</p>
+          <p class="text-sm text-gray-600">La ville la plus accueillante pour les étrangers en Chine</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Sources -->
+    <div class="mt-12 pt-8 border-t border-gray-200">
+      <h3 class="text-xl font-bold text-gray-900 mb-4">Sources</h3>
+      <ul class="space-y-2 text-sm text-gray-600">
+        <li><a href="https://en.nia.gov.cn/n147418/n147463/c180637/content.html" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">National Immigration Administration — Politiques régionales sans visa (Hainan 30 jours)</a></li>
+        <li><a href="https://en.nia.gov.cn/n147418/n147463/c191648/content.html" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">National Immigration Administration — Politiques de facilitation d'entrée en Chine pour les ressortissants étrangers</a></li>
+      </ul>
+    </div>
+
+  </article>
+</Layout>

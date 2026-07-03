@@ -1,0 +1,103 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = "Meilleure Carte SIM & eSIM pour les Touristes en Chine";
+const description = "Comparez les options eSIM et SIM physiques pour la Chine — Airalo, Holafly, China Mobile, et plus.";
+---
+
+<Layout title={title} description={description} lang="fr">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/fr/life/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Retour à Vie en Chine
+      </a>
+    </nav>
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">📶 Vie en Chine</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        Meilleure Carte SIM & eSIM<br class="hidden md:block" /> pour les Touristes en Chine
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">eSIM, SIM physique ou itinérance — laquelle choisir ?</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Dernière mise à jour : juin 2026</span>
+        <span>⏱️ 5 min de lecture</span>
+      </div>
+    </header>
+
+    <div class="bg-gradient-to-r from-green-50 to-emerald-50 border-l-4 border-green-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-green-900 mb-4">🎯 Réponse Rapide</h2>
+      <p class="text-lg text-green-800 leading-relaxed">
+        <strong>L'eSIM est l'option la plus simple</strong> si votre téléphone la supporte — achetez en ligne avant de partir, activez à l'arrivée. Attendez-vous à payer environ <strong>100–300 RMB (~15–45 $)</strong> pour un forfait SIM touriste avec données.
+      </p>
+    </div>
+
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 Dans Ce Guide</h3>
+      <ul class="space-y-3">
+        <li><a href="#esim" class="text-blue-600 hover:underline">📱 Fournisseurs eSIM (Airalo, Holafly)</a></li>
+        <li><a href="#airport" class="text-blue-600 hover:underline">🏛️ Cartes SIM Touristiques à l'Aéroport</a></li>
+        <li><a href="#coverage" class="text-blue-600 hover:underline">📡 Couverture & Vitesse</a></li>
+        <li><a href="#vpn" class="text-blue-600 hover:underline">🔒 Et le VPN ?</a></li>
+      </ul>
+    </nav>
+
+    <div class="prose prose-lg max-w-none">
+      <h2 id="esim" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">📱</span> Fournisseurs eSIM
+      </h2>
+
+      <div class="bg-blue-50 border border-blue-100 rounded-2xl p-6 mb-6">
+        <h3 class="text-xl font-bold text-blue-900 mb-3">📡 Airalo</h3>
+        <ul class="space-y-2 text-gray-700">
+          <li><strong>Couverture :</strong> 4G/5G dans toute la Chine</li>
+          <li><strong>Forfaits :</strong> 1 Go à 20 Go, 7 à 30 jours</li>
+          <li><strong>Prix :</strong> ~5–30 $ selon le forfait</li>
+          <li><strong>Avantages :</strong> Configuration facile, pas de passeport nécessaire</li>
+          <li><strong>Inconvénients :</strong> Données seulement (pas de numéro chinois)</li>
+        </ul>
+      </div>
+
+      <div class="bg-green-50 border border-green-100 rounded-2xl p-6 mb-12">
+        <h3 class="text-xl font-bold text-green-900 mb-3">📡 Holafly</h3>
+        <ul class="space-y-2 text-gray-700">
+          <li><strong>Couverture :</strong> 4G/5G dans toute la Chine</li>
+          <li><strong>Forfaits :</strong> Données illimitées, 5 à 30 jours</li>
+          <li><strong>Prix :</strong> ~20–50 $ selon le forfait</li>
+          <li><strong>Avantages :</strong> Données illimitées</li>
+        </ul>
+      </div>
+
+      <h2 id="airport" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🏛️</span> Cartes SIM Touristiques à l'Aéroport
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">Tous les grands aéroports internationaux ont des comptoirs d'opérateurs dans le hall des arrivées. Il vous faudra votre passeport (obligatoire pour l'enregistrement de la SIM en Chine).</p>
+
+      <h2 id="vpn" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🔒</span> Et le VPN ?
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-12">Avec une carte SIM chinoise, vous pourriez rencontrer des difficultés à utiliser Google, WhatsApp et Instagram. Vous aurez donc besoin d'un VPN — à configurer <strong>avant</strong> d'arriver en Chine.</p>
+
+      <div class="bg-blue-50 border border-blue-100 rounded-2xl p-6 mb-12 not-prose">
+        <p class="text-gray-700"><strong>📖 Guide complet :</strong> <a href="/fr/life/vpn-guide/" class="text-blue-600 hover:underline">Meilleurs VPN pour Voyager en Chine</a></p>
+      </div>
+    </div>
+
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose">
+      <h3 class="text-2xl font-bold text-gray-900 mb-6">📚 Guides Connexes</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/fr/life/vpn-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">🔒 Meilleurs VPN pour la Chine</p>
+          <p class="text-sm text-gray-600">N'oubliez pas de configurer votre VPN</p>
+        </a>
+        <a href="/fr/life/survival-kit/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">🎒 Kit de Survie</p>
+          <p class="text-sm text-gray-600">La checklist complète</p>
+        </a>
+      </div>
+    </div>
+  </article>
+</Layout>

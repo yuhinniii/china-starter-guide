@@ -1,0 +1,504 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'Comment soumettre votre fiche d\'arrivée en Chine en ligne — Guide étape par étape';
+const description = 'Tutoriel complet étape par étape avec captures d\'écran — remplissez la fiche d\'arrivée NIA en ligne avant votre vol. Gagnez du temps et évitez le formulaire papier.';
+---
+
+<Layout title={title} description={description} lang="fr">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+
+    <!-- Breadcrumb -->
+    <nav class="mb-8 not-prose">
+      <a href="/fr/visa/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Retour à Visa & Entrée
+      </a>
+    </nav>
+
+    <!-- Header -->
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🛂 Entrée & Visa</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        Comment soumettre votre fiche d'arrivée en Chine en ligne
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">Un guide complet étape par étape avec captures d'écran. Remplissez le formulaire en ligne avant votre vol — évitez la fiche d'arrivée papier.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Dernière mise à jour : juin 2026</span>
+        <span>⏱️ 8 min de lecture</span>
+      </div>
+    </header>
+
+    <!-- Official Portal -->
+    <div class="bg-blue-50 border-l-4 border-blue-500 rounded-r-2xl p-5 mb-8 not-prose">
+      <strong>Portail officiel :</strong> <a href="https://s.nia.gov.cn/ArrivalCardFillingPC/entry-registation-home" target="_blank" class="text-blue-700 underline">s.nia.gov.cn/ArrivalCardFillingPC/</a>
+    </div>
+
+    <!-- Video Tutorial -->
+    <div class="bg-gradient-to-r from-gray-50 to-blue-50 border border-gray-200 rounded-2xl p-8 mb-10 text-center not-prose">
+      <h3 class="text-xl font-bold text-gray-900 mb-3"> Tutoriel vidéo officiel NIA</h3>
+      <p class="text-gray-600 mb-4">Regardez la procédure vidéo officielle de l'Administration nationale de l'immigration :</p>
+      <a href="https://en.nia.gov.cn/n147418/n147463/c195170/content.html" target="_blank" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition no-underline">▶ Regarder le tutoriel vidéo</a>
+    </div>
+
+    <style>
+      .step-card {
+        background: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 12px;
+        padding: 24px;
+        margin: 28px 0;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+      }
+      .step-card .step-number {
+        display: inline-block;
+        background: #1a73e8;
+        color: #fff;
+        font-weight: 700;
+        font-size: 0.8rem;
+        padding: 2px 14px;
+        border-radius: 20px;
+        margin-bottom: 14px;
+      }
+      .screenshot-wrapper {
+        background: #eef2f7;
+        border: 1px solid #d0d7de;
+        border-radius: 10px;
+        padding: 14px;
+        margin: 16px 0;
+      }
+      .screenshot-wrapper img {
+        width: 100%;
+        border: 1px solid #c0c8d0;
+        border-radius: 6px;
+        margin: 8px 0;
+      }
+      .screenshot-wrapper .caption {
+        font-size: 0.85rem;
+        color: #555;
+        font-style: italic;
+        margin-top: 4px;
+        margin-bottom: 0;
+      }
+      .screenshot-label {
+        display: inline-block;
+        background: #d0d7de;
+        color: #3a3f47;
+        font-size: 0.7rem;
+        font-weight: 700;
+        padding: 2px 10px;
+        border-radius: 5px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+      }
+      .field-group {
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 14px;
+        margin: 12px 0;
+      }
+      .field-group h4 {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+        color: #5f6368;
+      }
+      .field-group .field-item { margin: 6px 0; font-size: 0.9rem; }
+      .col-layout {
+        display: flex;
+        gap: 20px;
+        margin: 12px 0;
+        flex-wrap: wrap;
+      }
+      .col-left { flex: 1; min-width: 260px; }
+      .col-right { flex: 1; min-width: 240px; }
+      .tag-auto { background: #e8f5e9; color: #2e7d32; padding: 1px 8px; border-radius: 8px; font-size: 0.75rem; font-weight: 600; }
+      .tag-fill { background: #fce4ec; color: #c62828; padding: 1px 8px; border-radius: 8px; font-size: 0.75rem; font-weight: 600; }
+      .tag-skip { background: #eeeeee; color: #757575; padding: 1px 8px; border-radius: 8px; font-size: 0.75rem; font-weight: 600; }
+      .tip-box {
+        background: #fff8e1;
+        border-left: 4px solid #ffa000;
+        padding: 12px 16px; margin: 12px 0;
+        border-radius: 0 8px 8px 0; font-size: 0.9rem;
+      }
+      .warn-box {
+        background: #fbe9e7;
+        border-left: 4px solid #d84315;
+        padding: 12px 16px; margin: 12px 0;
+        border-radius: 0 8px 8px 0; font-size: 0.9rem;
+      }
+      .info-box {
+        background: #e8f0fe;
+        border-left: 4px solid #1a73e8;
+        padding: 12px 16px; margin: 12px 0;
+        border-radius: 0 8px 8px 0; font-size: 0.9rem;
+      }
+      .img-row {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin: 12px 0;
+      }
+      .img-row figure {
+        flex: 1;
+        min-width: 240px;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        overflow: hidden;
+        margin: 0;
+      }
+      .img-row figure img { width: 100%; margin: 0; border: none; border-radius: 0; }
+      .img-row figcaption {
+        font-size: 0.8rem;
+        color: #5f6368;
+        text-align: center;
+        padding: 6px;
+        font-style: italic;
+      }
+    </style>
+
+    <!-- ============================================================ -->
+    <!-- STEP 0: HOMEPAGE -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Étape 0 : Accéder au portail</h2>
+    <div class="step-card">
+      <div class="step-number">Étape 0</div>
+      <p>Ouvrez <a href="https://s.nia.gov.cn/ArrivalCardFillingPC/entry-registation-home">s.nia.gov.cn</a> et passez en anglais à l'aide du menu déroulant <strong>Langue</strong> dans le coin supérieur droit.</p>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Capture d'écran</div>
+        <img src="/images/arrival-card/step0-homepage.jpg" alt="Page d'accueil affichant la déclaration d'entrée en anglais">
+        <p class="caption">Après être passé en anglais, cliquez sur <strong>Déclaration d'entrée</strong> pour commencer</p>
+      </div>
+      <p>Deux options sont disponibles :</p>
+      <ul>
+        <li><strong>Déclaration d'entrée</strong> — pour la plupart des voyageurs étrangers entrant en Chine</li>
+        <li><strong>Déclaration d'entrée pour les résidents des zones frontalières</strong> — uniquement pour les résidents de 7 pays voisins (RDPC, Mongolie, Pakistan, Népal, Myanmar, Laos, Vietnam)</li>
+      </ul>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- STEP 1: NOTICE / INSTRUCTIONS -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Étape 1 : Lire les instructions</h2>
+    <div class="step-card">
+      <div class="step-number">Étape 1</div>
+      <p>Après avoir cliqué sur « Déclaration d'entrée », vous verrez la page d'<strong>instructions</strong> listant les personnes exemptées.</p>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Capture d'écran</div>
+        <img src="/images/arrival-card/step1-notice.jpg" alt="Page d'instructions avec avis et bouton J'ACCEPTE">
+        <p class="caption">Lisez les instructions, puis cliquez sur <strong>J'ACCEPTE</strong> pour continuer</p>
+      </div>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-4 mb-2">Qui est EXEMPTÉ (n'a pas besoin de remplir ce formulaire) :</h3>
+      <ol>
+        <li>Titulaires d'une carte de résident permanent étranger valide de Chine</li>
+        <li>Titulaires d'un permis de voyage pour le continent pour les résidents de Hong Kong/Macao (non chinois) valide</li>
+        <li>Passagers en transit direct de moins de 24 heures restant dans l'enceinte du port</li>
+        <li>Membres d'un groupe avec visa ou touristes en groupe</li>
+        <li>Membres d'équipage (avion, bateau, conducteur)</li>
+        <li>Passagers de croisière retournant sur le même navire</li>
+        <li>Personnes éligibles à une inspection documentaire centralisée</li>
+        <li>Utilisateurs de la voie électronique</li>
+      </ol>
+      <div class="warn-box">
+        <strong>Important :</strong> Les passagers en transit qui quittent la zone portuaire (y compris les passagers en transit de 24h / 240h) <strong>doivent</strong> remplir ce formulaire.
+      </div>
+      <p>Cliquez sur <strong>J'ACCEPTE</strong> pour continuer.</p>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- STEP 2: DOCUMENT UPLOAD -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Étape 2 : Télécharger la page d'information de votre passeport</h2>
+    <div class="step-card">
+      <div class="step-number">Étape 2</div>
+      <p>Sélectionnez votre type de document et téléchargez une photo claire de la page de données de votre passeport. Le système utilisera l'OCR pour lire automatiquement vos informations.</p>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Capture d'écran</div>
+        <img src="/images/arrival-card/step2-upload.jpg" alt="Page de téléchargement de document - Téléchargement de la page d'identification">
+        <p class="caption">Sélectionnez le type de document et téléchargez ou prenez une photo de la page de données de votre passeport</p>
+      </div>
+      <div class="tip-box">
+        <strong>Astuce :</strong> Assurez-vous que la photo est bien éclairée et que tout le texte est clairement lisible. La qualité de la photo détermine la précision avec laquelle le système peut remplir automatiquement vos informations dans les étapes suivantes.
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- STEP 3: BASIC INFORMATION -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Étape 3 : Remplir les informations de base</h2>
+    <div class="step-card">
+      <div class="step-number">Étape 3</div>
+      <p>Ceci est la page d'informations principale. Le système extraira automatiquement la plupart de vos informations à partir de la photo de passeport que vous avez téléchargée.</p>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-4 mb-2">Formulaire vide — tous les champs affichés</h3>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Capture d'écran</div>
+        <img src="/images/arrival-card/step3-basic-empty.jpg" alt="Formulaire d'informations de base - vide">
+        <p class="caption">Voici à quoi ressemble le formulaire lorsque vous entrez dans cette étape pour la première fois</p>
+      </div>
+
+      <div class="col-layout">
+        <div class="col-left">
+          <div class="field-group" style="background: #fffde7; border-color: #ffd54f;">
+            <h4>🔶 Section gauche — Remplie automatiquement par OCR (vérifiez l'exactitude)</h4>
+            <div class="field-item"><span class="tag-auto">Auto</span> Nom / Nom de famille (英文姓)</div>
+            <div class="field-item"><span class="tag-auto">Auto</span> Prénom (英文名)</div>
+            <div class="field-item"><span class="tag-auto">Auto</span> Sexe (性别)</div>
+            <div class="field-item"><span class="tag-auto">Auto</span> Date de naissance (出生日期)</div>
+            <div class="field-item"><span class="tag-auto">Auto</span> Type de document (证件类型)</div>
+            <div class="field-item"><span class="tag-auto">Auto</span> Numéro de document (证件号码)</div>
+            <div class="field-item" style="margin-top:10px; padding-top:10px; border-top:1px dashed #e0e0e0;">
+              <span class="tag-fill">Manuel</span> <strong>Pays / Région (国家/地区)</strong> — c'est le seul champ que vous devez sélectionner vous-même sur le côté gauche
+            </div>
+          </div>
+        </div>
+        <div class="col-right">
+          <div class="field-group">
+            <h4> Section droite — Vous devez remplir ces champs</h4>
+            <div class="field-item"><span class="tag-fill">Remplir</span> Mode de transport (入境交通方式)</div>
+            <div class="field-item"><span class="tag-fill">Remplir</span> Vol / Train / Bateau n° (入境航班/车次/船次)</div>
+            <div class="field-item"><span class="tag-fill">Remplir</span> Ville d'entrée (入境城市)</div>
+            <div class="field-item"><span class="tag-fill">Remplir</span> Port d'entrée (入境口岸) — se remplit automatiquement après la sélection de la ville et du transport</div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">Exemple de formulaire rempli</h3>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Capture d'écran</div>
+        <img src="/images/arrival-card/step3-basic-filled.jpg" alt="Formulaire d'informations de base - exemple rempli">
+        <p class="caption">La section gauche (zone surlignée en jaune) montre les données extraites de votre passeport — vérifiez tout. Seul le champ <strong>Pays/Région</strong> doit être sélectionné manuellement. Remplissez la section droite avec les détails de votre entrée.</p>
+      </div>
+
+      <div class="info-box">
+        <strong>Rappel :</strong> La qualité du scan du passeport est importante. Si votre photo est floue ou mal éclairée, le remplissage automatique peut être inexact. Vérifiez toujours tous les champs avant de cliquer sur Suivant.
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- STEP 4: PERSONAL INFORMATION -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Étape 4 : Remplir les informations personnelles</h2>
+    <div class="step-card">
+      <div class="step-number">Étape 4</div>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Capture d'écran</div>
+        <img src="/images/arrival-card/step4-personal-empty.jpg" alt="Formulaire d'informations personnelles">
+        <p class="caption">Remplissez vos informations personnelles. Champs avec explications ci-dessous.</p>
+      </div>
+
+      <div class="field-group">
+        <h4>Guide champ par champ :</h4>
+        <div class="field-item"><span class="tag-fill">Remplir</span> <strong>Nom chinois</strong> — si vous avez un nom chinois, saisissez-le ici. Sinon, <strong>laissez vide</strong>.</div>
+        <div class="field-item"><span class="tag-fill">Remplir</span> <strong>Nationalité / Pays de résidence</strong> — saisissez le <strong>pays ou la ville où vous vivez actuellement</strong> (pas nécessairement votre pays de passeport si vous vivez à l'étranger).</div>
+        <div class="field-item"><span class="tag-fill">Remplir</span> <strong>Profession</strong> — votre titre de poste ou profession.</div>
+        <div class="field-item"><span class="tag-fill">Remplir</span> <strong>Téléphone de contact</strong> — incluez l'indicatif du pays si vous utilisez un numéro non chinois.</div>
+        <div class="field-item"><span class="tag-fill">Remplir</span> <strong>Adresse e-mail</strong> — pour recevoir la confirmation / le code QR.</div>
+        <div class="field-item"><span class="tag-fill">Remplir</span> <strong>Contact d'urgence</strong> — nom et numéro de téléphone d'une personne à contacter en cas d'urgence.</div>
+      </div>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">Section Visa / Politique d'entrée</h3>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Capture d'écran</div>
+        <img src="/images/arrival-card/step4-personal-visa.jpg" alt="Sélection du visa et de la politique d'entrée">
+        <p class="caption">Sélectionnez « Non » si vous entrez sans visa, puis choisissez votre politique d'entrée dans le menu déroulant</p>
+      </div>
+
+      <div class="field-group">
+        <h4>Comment remplir la question sur le visa :</h4>
+        <div class="field-item"><span class="tag-fill">Remplir</span> <strong>Avez-vous un visa valide ?</strong>
+          <ul>
+            <li><strong>Oui</strong> — si vous avez obtenu un visa chinois (ex. visa touristique L)</li>
+            <li><strong>Non</strong> — si vous entrez via une <strong>politique sans visa</strong> (ex. transit de 240 heures, 30 jours sans visa, Hainan sans visa, etc.)</li>
+          </ul>
+        </div>
+        <div class="field-item"><span class="tag-fill">Remplir</span> <strong>Si « Non » → Sélection de la politique d'entrée</strong> — un menu déroulant apparaîtra pour vous permettre de sélectionner la politique sans visa que vous utilisez (comme indiqué dans la capture d'écran ci-dessus).</div>
+      </div>
+
+      <div class="tip-box">
+        <strong>Astuce :</strong> Si vous avez un visa L valide, sélectionnez « Oui ». Si vous utilisez une politique sans visa (ex. de la liste unilatérale des 50 pays, ou transit de 240 heures), sélectionnez « Non » et choisissez votre politique applicable dans le menu déroulant.
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- STEP 5: TRAVEL INFORMATION -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Étape 5 : Remplir les informations de voyage</h2>
+    <div class="step-card">
+      <div class="step-number">Étape 5</div>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Capture d'écran</div>
+        <img src="/images/arrival-card/step5-travel-empty.jpg" alt="Formulaire d'informations de voyage">
+        <p class="caption">Remplissez les détails de votre itinéraire de voyage</p>
+      </div>
+
+      <div class="col-layout">
+        <div class="col-left">
+          <div class="field-group">
+            <h4> Section gauche — Détails du voyage</h4>
+            <div class="field-item"><span class="tag-fill">Remplir</span> <strong>Objet de l'entrée</strong> — Tourisme / Affaires / Transit / Visite familiale / Autre</div>
+            <div class="field-item"><span class="tag-fill">Remplir</span> <strong>Date d'entrée</strong> — la date à laquelle vous devez arriver en Chine</div>
+            <div class="field-item"><span class="tag-fill">Remplir</span> <strong>Villes de destination en Chine</strong> — les villes que vous prévoyez de visiter</div>
+            <div class="field-item"><span class="tag-fill">Remplir</span> <strong>Villes de transit en Chine</strong> — toute ville de transit/de correspondance (si applicable)</div>
+            <div class="field-item"><span class="tag-fill">Remplir</span> <strong>Adresse en Chine</strong> — saisissez votre <strong>adresse détaillée</strong> (nom de l'hôtel + rue + district + ville)</div>
+          </div>
+        </div>
+        <div class="col-right">
+          <div class="field-group">
+            <h4> Section droite — Invitant & Infos de retour</h4>
+            <div class="field-item"><span class="tag-fill">Remplir</span> <strong>Êtes-vous invité en Chine ?</strong>
+              <ul>
+                <li><strong>Oui</strong> — saisissez le nom et les coordonnées de l'invitant</li>
+                <li><strong>Non</strong> — ignorez cette section</li>
+              </ul>
+            </div>
+            <div class="field-item"><span class="tag-fill">Remplir</span> <strong>Informations de départ / retour</strong></div>
+            <div style="margin-left:20px; border-left:2px solid #e0e0e0; padding-left:14px;">
+              <div class="field-item">Mettez <strong>« Itinéraire de départ confirmé »</strong> sur <strong>Oui</strong> si vous avez des plans de retour confirmés, puis remplissez :</div>
+              <ul>
+                <li><strong>Date de départ</strong> — votre date de sortie prévue</li>
+                <li><strong>Mode de transport pour le départ</strong> — Avion / Terre / Mer</li>
+                <li><strong>Numéro de vol/train/bateau de départ</strong> — le numéro spécifique</li>
+                <li><strong>Ville de départ</strong> — la ville depuis laquelle vous partirez</li>
+                <li><strong>Port de départ</strong> — se remplit automatiquement après la sélection de la ville et du transport</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="warn-box">
+        <strong>⚠️ Note sur le transit de 240 heures :</strong> Si vous entrez en Chine dans le cadre de la <strong>politique de transit sans visa de 240 heures</strong>, vous êtes généralement <strong>tenu d'avoir un billet de correspondance/de retour confirmé</strong> vers une destination en dehors de la Chine continentale. Assurez-vous de remplir les informations de départ/retour avec précision.
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- COMPANION PROMPT -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Invite pour les accompagnateurs</h2>
+    <div class="step-card">
+      <div class="step-number">Après l'étape 5</div>
+      <p>Après avoir rempli l'étape 5 et cliqué sur « Suivant », vous verrez cette fenêtre contextuelle concernant les accompagnateurs :</p>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Capture d'écran</div>
+        <img src="/images/arrival-card/step5-companion-prompt.jpg" alt="Fenêtre contextuelle : Avez-vous des accompagnateurs">
+        <p class="caption">« Avez-vous des accompagnateurs ? » — choisissez Oui pour ajouter des compagnons de voyage</p>
+      </div>
+
+      <div class="field-group">
+        <h4>Options :</h4>
+        <div class="field-item"><strong>Oui</strong> — Vous serez guidé à travers les mêmes étapes (Infos de base, Infos personnelles, Infos de voyage) pour remplir les informations de chaque accompagnateur. <strong>Note :</strong> Vous pouvez aussi demander à chaque accompagnateur de remplir son propre formulaire individuellement — il n'est pas obligatoire qu'une seule personne remplisse pour tout le monde.</div>
+        <div class="field-item"><strong>Non</strong> — Passez directement à la page de révision.</div>
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- STEP 6: REVIEW & SUBMIT -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Dernière étape : Réviser, signer et soumettre</h2>
+    <div class="step-card">
+      <div class="step-number">Final</div>
+      <p>Après avoir terminé toutes les étapes, vous arriverez à la page de révision. Relisez attentivement toutes vos informations.</p>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Capture d'écran</div>
+        <img src="/images/arrival-card/step6-submit.jpg" alt="Page de révision, signature et soumission">
+        <p class="caption">Signez pour confirmer, puis soumettez. Enregistrez le code QR qui apparaît après la soumission.</p>
+      </div>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-4 mb-2">Ce qu'il faut faire :</h3>
+      <ol>
+        <li><strong>Révisez</strong> — Vérifiez toutes les informations. Utilisez « Précédent » pour revenir en arrière et faire des corrections si nécessaire.</li>
+        <li><strong>Signez</strong> — Signez votre nom dans la case de signature pour confirmer la déclaration.</li>
+        <li><strong>Soumettez</strong> — Cliquez sur le bouton de soumission.</li>
+        <li><strong>Enregistrez votre code QR</strong> — Après la soumission, un <strong>code QR de confirmation</strong> sera affiché. <strong>Faites une capture d'écran ou enregistrez-le</strong> — vous devez le présenter à l'immigration à votre arrivée en Chine.</li>
+      </ol>
+
+      <div class="info-box">
+        <strong>Bonus :</strong> Dans l'année suivant votre première soumission, si vous visitez à nouveau la Chine, le système vous permettra de <strong>réutiliser les informations que vous avez précédemment saisies</strong> — vous n'aurez qu'à mettre à jour votre itinéraire de voyage. Cela rend les voyages répétés beaucoup plus rapides !
+      </div>
+
+      <div class="warn-box">
+        <strong>⚠️ Important :</strong> Le code QR est lié à votre entrée prévue. Si vos plans de voyage changent (vol différent, date différente), vous devrez peut-être soumettre un nouveau formulaire. Le système accepte généralement les soumissions jusqu'à 24 heures avant votre arrivée prévue.
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- BEFORE YOU START -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Avant de commencer</h2>
+    <div class="bg-amber-50 border border-amber-200 rounded-2xl p-6 not-prose">
+      <p class="font-bold text-amber-900 mb-3">Ayez ces éléments prêts avant de remplir le formulaire :</p>
+      <ul>
+        <li><strong>Votre passeport</strong> (physique ou une photo claire de la page de données)</li>
+        <li><strong>Le numéro de vol / train / bateau</strong> pour votre entrée en Chine</li>
+        <li><strong>Le nom et l'adresse détaillée de l'hôtel</strong> en Chine (si connu)</li>
+        <li><strong>Votre numéro de téléphone</strong> (avec l'indicatif du pays si ce n'est pas un numéro chinois)</li>
+        <li><strong>Votre adresse e-mail</strong></li>
+        <li>Un appareil avec un <strong>appareil photo</strong> pour photographier votre passeport, ou une <strong>copie scannée de votre passeport</strong> prête sur votre appareil</li>
+      </ul>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- FAQ -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">FAQ</h2>
+    <div class="step-card">
+      <h3 class="text-lg font-bold text-gray-800 mt-2 mb-2">Q : Puis-je remplir ce formulaire sur mon téléphone ?</h3>
+      <p class="text-gray-700">Oui, le portail est entièrement adapté aux mobiles et fonctionne aussi bien sur les navigateurs de bureau que sur les navigateurs mobiles.</p>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">Q : Dois-je imprimer le code QR ?</h3>
+      <p class="text-gray-700">Affichez-le sur votre téléphone ou imprimez-le — les deux fonctionnent. L'essentiel est de l'avoir prêt à montrer à l'immigration.</p>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">Q : Que faire si je fais une erreur après avoir soumis ?</h3>
+      <p class="text-gray-700">Réaccédez au portail et soumettez un nouveau formulaire. L'ancienne soumission sera remplacée.</p>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">Q : Ce formulaire est-il obligatoire ? Ai-je encore besoin de la fiche papier ?</h3>
+      <p class="text-gray-700">Depuis 2025-2026, le formulaire en ligne est l'option recommandée. Certains ports peuvent encore distribuer des fiches papier comme solution de secours. Il est judicieux de remplir le formulaire en ligne <strong>et</strong> d'apporter un stylo au cas où.</p>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">Q : Je suis en transit pour moins de 24 heures et je ne quitte pas l'aéroport — ai-je besoin de ce formulaire ?</h3>
+      <p class="text-gray-700">Non. Les passagers en transit direct de moins de 24 heures qui restent dans la zone réglementée du port sont exemptés.</p>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">Q : J'entre dans le cadre du transit sans visa de 240 heures. Ai-je besoin de ce formulaire ?</h3>
+      <p class="text-gray-700">Oui, si vous quittez la zone portuaire. Les passagers en transit qui séjournent en Chine jusqu'à 240 heures doivent remplir ce formulaire.</p>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">Q : Puis-je réutiliser mes informations pour de futurs voyages ?</h3>
+      <p class="text-gray-700">Oui ! Dans l'année, le système vous permet de réutiliser les données précédemment saisies. Vous n'aurez qu'à mettre à jour votre itinéraire de voyage pour le nouveau voyage.</p>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- Related Guides -->
+    <!-- ============================================================ -->
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose mt-12">
+      <h3 class="text-2xl font-bold text-gray-900 mb-6">📚 Guides Connexes</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/fr/visa/customs-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-1">Règlements douaniers chinois</p>
+          <p class="text-sm text-gray-600">Ce que vous pouvez et ne pouvez pas apporter en Chine</p>
+        </a>
+        <a href="/fr/visa/first-time-china/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-1">Première fois en Chine : Guide étape par étape</p>
+          <p class="text-sm text-gray-600">Calendrier de préparation complet pour les primo-visiteurs</p>
+        </a>
+        <a href="/fr/visa/visa-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-1">Guide complet des types de visa chinois</p>
+          <p class="text-sm text-gray-600">Toutes les options de visa expliquées — sans visa, transit et visa L</p>
+        </a>
+        <a href="/fr/visa/transit-240/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-1">Transit sans visa de 240 heures expliqué</p>
+          <p class="text-sm text-gray-600">Règles de transit de 10 jours, ports et zones de voyage</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- Sources -->
+    <div class="mt-8 pt-6 border-t border-gray-200">
+      <h3 class="text-lg font-bold text-gray-900 mb-3">Sources</h3>
+      <ul class="text-sm text-gray-600">
+        <li><a href="https://s.nia.gov.cn/ArrivalCardFillingPC/entry-registation-home" target="_blank" class="text-blue-600 underline">Portail officiel de la fiche d'arrivée NIA</a></li>
+        <li><a href="https://en.nia.gov.cn/n147418/n147463/c195170/content.html" target="_blank" class="text-blue-600 underline">Vidéo tutoriel NIA : Comment soumettre votre fiche d'arrivée en Chine en ligne</a></li>
+      </ul>
+    </div>
+
+  </article>
+</Layout>

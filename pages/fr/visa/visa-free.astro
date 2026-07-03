@@ -1,0 +1,152 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'Liste des pays exemptés de visa pour la Chine (2026) — China Starter Hub';
+const description = 'Liste officielle des pays éligibles à l\'entrée sans visa en Chine — unilatérale (50 pays) et accords mutuels (29 pays).';
+---
+
+<Layout title={title} description={description} lang="fr">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/fr/visa/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Retour à Préparer
+      </a>
+    </nav>
+    <!-- Header -->
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">📋 Entrée & Visa</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        Liste des pays exemptés de visa pour la Chine (2026)
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">Vérifiez si votre pays est éligible à l'entrée sans visa en Chine.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Dernière mise à jour : juin 2026</span>
+        <span>⏱️ 5 min de lecture</span>
+      </div>
+    </header>
+
+    <!-- Quick Answer Box -->
+    <div class="bg-gradient-to-r from-green-50 to-emerald-50 border-l-4 border-green-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-green-900 mb-4">🎯 Réponse Rapide</h2>
+      <p class="text-lg text-green-800 leading-relaxed">
+        <strong>Il existe deux façons d'entrer en Chine sans visa :</strong> La Chine offre l'entrée sans visa unilatérale aux citoyens de <strong>50 pays</strong> (jusqu'à 30 jours) et a des accords de dispense réciproque de visa avec <strong>29 pays</strong>. Si votre pays ne figure sur aucune des deux listes, consultez la politique de transit de 240 heures ou demandez un visa L.
+      </p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="prose prose-lg max-w-none">
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        Voici les listes complètes basées sur les dernières données officielles du gouvernement chinois (2025). Source : <a href="http://big5.www.gov.cn/gate/big5/www.gov.cn/yaowen/liebiao/202508/content_7035244.htm" class="text-brand-600 underline" target="_blank" rel="noopener">中国政府网</a>.
+      </p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <!-- Section 1: Unilateral -->
+      <h2 class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🟢</span> Exemption unilatérale de visa (50 pays)
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        Les citoyens de ces pays peuvent entrer en Chine <strong>sans visa</strong> pour un séjour maximum de <strong>30 jours</strong>. Aucune demande préalable n'est nécessaire.
+      </p>
+
+      <div class="bg-green-50 border border-green-200 rounded-2xl p-6 mb-8 not-prose">
+        <p class="text-gray-700 mb-4 font-medium">Valable pour : tourisme, affaires, visites familiales, transit, échanges culturels. Max 30 jours.</p>
+      </div>
+
+      <h3 class="text-xl font-bold text-gray-800 mb-4">Europe (35)</h3>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 not-prose">
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-gray-700">
+          <span>France</span><span>Germany</span><span>Italy</span>
+          <span>Netherlands</span><span>Spain</span><span>Switzerland</span>
+          <span>Ireland</span><span>Hungary</span><span>Austria</span>
+          <span>Belgium</span><span>Luxembourg</span><span>Poland</span>
+          <span>Portugal</span><span>Greece</span><span>Cyprus</span>
+          <span>Slovenia</span><span>Slovakia</span><span>Norway</span>
+          <span>Finland</span><span>Denmark</span><span>Iceland</span>
+          <span>Andorra</span><span>Monaco</span><span>Liechtenstein</span>
+          <span>Bulgaria</span><span>Romania</span><span>Croatia</span>
+          <span>Montenegro</span><span>North Macedonia</span><span>Malta</span>
+          <span>Estonia</span><span>Latvia</span><span>Russia</span>
+          <span>Sweden</span><span>United Kingdom</span>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-bold text-gray-800 mb-4">Asie (7)</h3>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 not-prose">
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-gray-700">
+          <span>Brunei</span><span>South Korea</span><span>Japan</span>
+          <span>Saudi Arabia</span><span>Oman</span><span>Kuwait</span>
+          <span>Bahrain</span>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-bold text-gray-800 mb-4">Amériques (6)</h3>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 not-prose">
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-gray-700">
+          <span>Brazil</span><span>Argentina</span><span>Chile</span>
+          <span>Peru</span><span>Uruguay</span><span>Canada</span>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-bold text-gray-800 mb-4">Océanie (2)</h3>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-8 not-prose">
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-gray-700">
+          <span>Australia</span><span>New Zealand</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Not sure which one applies to you? -->
+    <div class="bg-gray-50 rounded-2xl p-6 not-prose mt-8 mb-12">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">🤔 Vous ne savez pas quelle politique s'applique à votre pays ?</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <a href="/fr/visa/transit-240/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-0.5">✈️ Transit sans visa de 240 heures</p>
+          <p class="text-sm text-gray-500">Jusqu'à 10 jours dans les régions désignées — couvre 55 pays dont les États-Unis.</p>
+        </a>
+        <a href="/fr/visa/mutual-agreement/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-0.5">🤝 Accords mutuels de dispense de visa</p>
+          <p class="text-sm text-gray-500">29 pays avec des accords bilatéraux d'exemption — les durées de séjour varient.</p>
+        </a>
+        <a href="/fr/visa/apply-l-visa/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-0.5">📝 Demander un visa touristique L</p>
+          <p class="text-sm text-gray-500">Si votre pays ne figure sur aucune liste sans visa, demandez un visa touristique standard.</p>
+        </a>
+        <a href="/fr/cities/hainan-visa-free/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-0.5">🏝️ Hainan 30 jours sans visa</p>
+          <p class="text-sm text-gray-500">59 pays éligibles — inclut les États-Unis, le Mexique, les Philippines et d'autres non présents sur la liste continentale.</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- Sources -->
+    <div class="bg-gray-50 rounded-2xl p-6 not-prose mt-12">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📚 Sources</h3>
+      <ul class="space-y-2">
+        <li><a href="https://en.nia.gov.cn/n147418/n147463/c183390/content.html" class="text-brand-600 hover:underline text-sm" target="_blank" rel="noopener">National Immigration Administration — Liste des pays couverts par l'exemption unilatérale de visa</a></li>
+        <li><a href="https://www.gov.cn/yaowen/liebiao/202508/content_7035244.htm" class="text-brand-600 hover:underline text-sm" target="_blank" rel="noopener">gov.cn — Quels pays peuvent visiter la Chine sans visa ? Une liste complète !</a></li>
+        <li><a href="https://cs.mfa.gov.cn/wgrlh/lhqz/lhqzjjs/202510/t20251023_11739051.shtml" class="text-brand-600 hover:underline text-sm" target="_blank" rel="noopener">Ministère des Affaires étrangères — Accords mutuels d'exemption de visa</a></li>
+      </ul>
+    </div>
+
+    <!-- Related Guides -->
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose">
+      <h3 class="text-2xl font-bold text-gray-900 mb-6">📚 Guides Connexes</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/fr/visa/visa-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">Guide complet des types de visa chinois</p>
+          <p class="text-sm text-gray-600">Toutes les options de visa expliquées</p>
+        </a>
+        <a href="/fr/visa/transit-240/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">Transit sans visa de 240 heures expliqué</p>
+          <p class="text-sm text-gray-600">Transit de 10 jours sans visa</p>
+        </a>
+      </div>
+    </div>
+  </article>
+</Layout>

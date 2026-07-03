@@ -1,0 +1,91 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'Peut-on Utiliser des Cartes de Crédit Étrangères en Chine ? Un Regard Réaliste';
+const description = 'Où Visa et Mastercard fonctionnent vraiment en Chine, coûts de retrait aux DAB, et pourquoi les paiements mobiles sont la solution pour les voyageurs en 2026.';
+---
+
+<Layout title={title} description={description} lang="fr">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/fr/payment/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Retour à Paiement
+      </a>
+    </nav>
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">💳 Paiement</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        Peut-on Utiliser des Cartes de Crédit Étrangères en Chine ?
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">Un regard réaliste sur où votre Visa ou Mastercard fonctionnera.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Dernière mise à jour : juin 2026</span>
+        <span>⏱️ 4 min de lecture</span>
+      </div>
+    </header>
+
+    <div class="bg-gradient-to-r from-orange-50 to-amber-50 border-l-4 border-orange-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-orange-900 mb-4">🎯 Réponse Rapide</h2>
+      <p class="text-lg text-orange-800 leading-relaxed">
+        <strong>Ne comptez pas sur votre carte de crédit physique comme moyen de paiement principal en Chine.</strong> Visa/Mastercard étrangère fonctionne dans les hôtels internationaux, les centres commerciaux de luxe et les aéroports — mais la plupart des commerces du quotidien (restaurants, taxis, boutiques) ne l'acceptent pas. Utilisez Alipay ou WeChat Pay à la place.
+      </p>
+    </div>
+
+    <div class="prose prose-lg max-w-none">
+      <h2 class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">💳</span> Où Votre Carte Étrangère Fonctionne Vraiment
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-4 mb-8 not-prose">
+        <div class="bg-green-50 border border-green-200 rounded-2xl p-5">
+          <h3 class="text-sm font-bold text-green-800 uppercase tracking-wide mb-2">✅ Oui, ça marche</h3>
+          <ul class="text-sm text-green-700 space-y-1">
+            <li>• Chaînes hôtelières internationales (Hilton, Marriott, InterContinental)</li>
+            <li>• Grands magasins et centres commerciaux de luxe</li>
+            <li>• Aéroports internationaux</li>
+            <li>• Certains restaurants internationaux</li>
+          </ul>
+        </div>
+        <div class="bg-red-50 border border-red-200 rounded-2xl p-5">
+          <h3 class="text-sm font-bold text-red-800 uppercase tracking-wide mb-2">❌ Ne marche probablement pas</h3>
+          <ul class="text-sm text-red-700 space-y-1">
+            <li>• Restaurants de quartier et stands de rue</li>
+            <li>• Taxis et VTC (Didi utilise WeChat/Alipay uniquement)</li>
+            <li>• Boutiques locales, supérettes, supermarchés</li>
+            <li>• Partout où seul UnionPay est accepté (la plupart des endroits)</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🏧</span> Utiliser les DAB
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Les DAB de Bank of China, ICBC et China Construction Bank acceptent généralement Visa et Mastercard pour les retraits. Les frais sont d'environ 15–30 ¥ par retrait, plus les frais de votre banque.</p>
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">💡</span> En Résumé
+      </h2>
+
+      <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-8 not-prose">
+        <p class="text-gray-700">Apportez votre carte de crédit en secours, mais configurez les paiements mobiles comme méthode principale. Votre voyage sera bien plus fluide.</p>
+      </div>
+    </div>
+
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose mt-12">
+      <h3 class="text-2xl font-bold text-gray-900 mb-6">📚 Guides Connexes</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/fr/payment/payment-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">Comment Payer en Chine</p>
+          <p class="text-sm text-gray-600">Aperçu complet</p>
+        </a>
+        <a href="/fr/payment/setup-alipay/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">Comment Configurer Alipay</p>
+          <p class="text-sm text-gray-600">Guide pas à pas</p>
+        </a>
+      </div>
+    </div>
+  </article>
+</Layout>

@@ -1,0 +1,76 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'Comment Réserver et Prendre le TGV en Chine : Guide Pas à Pas';
+const description = 'Guide pas à pas pour réserver des billets, naviguer dans la gare et prendre les trains à grande vitesse en Chine.';
+---
+
+<Layout title={title} description={description} lang="fr">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/fr/transport/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Retour à Transport
+      </a>
+    </nav>
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🚄 Trains</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        Comment Réserver et Prendre le TGV en Chine
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">Guide pas à pas pour réserver des billets, naviguer dans la gare et prendre les trains à grande vitesse en Chine.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Dernière mise à jour : juin 2026</span>
+        <span>⏱️ 6 min de lecture</span>
+      </div>
+    </header>
+
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-blue-900 mb-4">🎯 Réponse Rapide</h2>
+      <p class="text-lg text-blue-800 leading-relaxed">
+        Réservez sur <strong>Trip.com</strong> (le plus simple pour les étrangers) ou <strong>12306</strong> (officiel). La deuxième classe est parfaitement confortable. Arrivez 30–40 minutes à l'avance — votre <strong>passeport est votre billet</strong>. Les gares ont des panneaux en anglais.
+      </p>
+    </div>
+
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 Dans Ce Guide</h3>
+      <ul class="space-y-3">
+        <li><a href="#booking" class="text-blue-600 hover:underline">🎫 Réservation de Billet</a></li>
+        <li><a href="#classes" class="text-blue-600 hover:underline">💺 Classes de Billet</a></li>
+        <li><a href="#station" class="text-blue-600 hover:underline">🚉 À la Gare</a></li>
+        <li><a href="#onboard" class="text-blue-600 hover:underline">🚄 Conseils à Bord</a></li>
+      </ul>
+    </nav>
+
+    <div class="prose prose-gray max-w-none">
+      <h2 id="booking" class="text-2xl font-bold text-gray-900 mb-4">🎫 Réservation de Billet</h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Vous avez trois options :</p>
+      <ul class="space-y-2 text-gray-700 mb-8">
+        <li><strong>Trip.com (recommandé) :</strong> Pas besoin de compte 12306. Montez à bord avec votre passeport.</li>
+        <li><strong>12306 (officiel) :</strong> Les étrangers peuvent s'inscrire avec leur numéro de passeport.</li>
+        <li><strong>Guichet en gare :</strong> Possible, mais l'anglais n'est pas garanti.</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">💺 Classes de Billet</h2>
+      <ul class="space-y-2 text-gray-700 mb-8">
+        <li><strong>Deuxième Classe (二等座) :</strong> Confortable, configuration 3+2.</li>
+        <li><strong>Première Classe (一等座) :</strong> Sièges plus larges, 2+2, plus d'espace pour les jambes.</li>
+        <li><strong>Classe Affaires (商务座) :</strong> Sièges inclinables, intimité, repas offerts.</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">🚉 À la Gare</h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Arrivez 30–40 minutes avant le départ :</p>
+      <ol class="list-decimal pl-6 space-y-4 text-gray-700 mb-8">
+        <li><strong>Contrôle de sécurité :</strong> Les bagages passent aux rayons X.</li>
+        <li><strong>Salle d'attente :</strong> Cherchez le numéro de voie sur le grand écran.</li>
+        <li><strong>Embarquement :</strong> Présentez votre passeport au portique.</li>
+        <li><strong>Trouvez votre wagon :</strong> Suivez les codes couleur au sol.</li>
+      </ol>
+
+      <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 not-prose">
+        <p class="text-gray-700"><strong>Important :</strong> Votre passeport est votre billet. Gardez-le à portée de main.</p>
+      </div>
+    </div>
+  </article>
+</Layout>

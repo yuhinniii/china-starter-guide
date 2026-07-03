@@ -1,0 +1,77 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'Comment Utiliser Didi en Chine en tant qu\'Étranger';
+const description = 'Configurez et utilisez DiDi (l\'Uber chinois) sans numéro de téléphone chinois. Options de course, paiement et astuces.';
+---
+
+<Layout title={title} description={description} lang="fr">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/fr/transport/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Retour à Transport
+      </a>
+    </nav>
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🚗 VTC</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        Comment Utiliser Didi en Chine en tant qu'Étranger
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">Configurez et utilisez DiDi sans numéro de téléphone chinois. Options de course, paiement et astuces.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Dernière mise à jour : juin 2026</span>
+        <span>⏱️ 5 min de lecture</span>
+      </div>
+    </header>
+
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-blue-900 mb-4">🎯 Réponse Rapide</h2>
+      <p class="text-lg text-blue-800 leading-relaxed">
+        Vous pouvez utiliser DiDi <strong>sans numéro de téléphone chinois</strong>. Le plus simple est via le mini-programme Alipay ou WeChat. Le paiement passe automatiquement par Alipay/WeChat. L'application DiDi a aussi une version anglaise.
+      </p>
+    </div>
+
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 Dans Ce Guide</h3>
+      <ul class="space-y-3">
+        <li><a href="#alipay" class="text-blue-600 hover:underline">📱 Méthode 1 : Via Alipay ou WeChat</a></li>
+        <li><a href="#app" class="text-blue-600 hover:underline">📲 Méthode 2 : Application DiDi</a></li>
+        <li><a href="#rides" class="text-blue-600 hover:underline">🚘 Types de Courses</a></li>
+        <li><a href="#tips" class="text-blue-600 hover:underline">💡 Astuces pour DiDi</a></li>
+      </ul>
+    </nav>
+
+    <div class="prose prose-gray max-w-none">
+      <h2 id="alipay" class="text-2xl font-bold text-gray-900 mb-4">📱 Méthode 1 : Via Alipay ou WeChat</h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Si vous avez déjà Alipay :</p>
+      <ol class="list-decimal pl-6 space-y-4 text-gray-700 mb-8">
+        <li>Ouvrez Alipay ou WeChat</li>
+        <li>Cherchez "DiDi" dans les mini-programmes</li>
+        <li>Appuyez sur le mini-programme DiDi</li>
+        <li>Autorisez l'accès à votre position</li>
+        <li>Définissez votre point de départ et destination</li>
+      </ol>
+
+      <h2 id="app" class="text-2xl font-bold text-gray-900 mb-4">📲 Méthode 2 : Application DiDi</h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">L'application DiDi a une version anglaise. Téléchargez-la et inscrivez-vous avec un numéro international. Modes de paiement : Alipay, WeChat Pay, Visa/Mastercard.</p>
+
+      <h2 id="rides" class="text-2xl font-bold text-gray-900 mb-4">🚘 Types de Courses</h2>
+      <ul class="space-y-2 text-gray-700 mb-8">
+        <li><strong>Express (快车) :</strong> Course standard, la moins chère.</li>
+        <li><strong>Premier (优享) :</strong> Voitures un peu mieux, plus chères.</li>
+        <li><strong>Taxi (出租车) :</strong> Héler un taxi via l'application.</li>
+        <li><strong>Luxe (豪华车) :</strong> Voitures haut de gamme (Mercedes, BMW).</li>
+        <li><strong>Location (包车) :</strong> Réserver un chauffeur à la journée.</li>
+      </ul>
+
+      <h2 id="tips" class="text-2xl font-bold text-gray-900 mb-4">💡 Astuces pour DiDi</h2>
+      <ul class="space-y-2 text-gray-700 mb-8">
+        <li><strong>Position précise :</strong> Placez l'épingle sur la carte exactement où vous êtes.</li>
+        <li><strong>Vérifiez la plaque :</strong> Comparez le numéro dans l'application avec la voiture.</li>
+        <li><strong>Chat intégré :</strong> Il y a une traduction automatique.</li>
+      </ul>
+    </div>
+  </article>
+</Layout>

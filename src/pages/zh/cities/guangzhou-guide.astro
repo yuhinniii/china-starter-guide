@@ -10,7 +10,7 @@ const description = "探索广州——中国美食之都，享誉世界的点�
       <p class="text-sm text-gray-500 mb-3">🏙️ 广州</p>
       <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">广州旅游指南：中国美食之都</h1>
       <p class="text-xl text-gray-600 mb-6">探索广州——中国美食之都，享誉世界的点心、粤文化和便捷通往香港。</p>
-      <div class="flex items-center gap-4 text-sm text-gray-500"><span>📅 最后更新：2026 年 6 月</span><span>⏱️ 阅读时长：7 分钟</span></div>
+      <div class="flex items-center gap-4 text-sm text-gray-500"><span>📅 最后更新：2026 年 6 月</span><span>⏱️ 阅读时长：8 分钟</span></div>
     </header>
 
     <div class="bg-gradient-to-r from-green-50 to-teal-50 border-l-4 border-green-500 rounded-r-2xl p-8 mb-12 not-prose">
@@ -40,12 +40,80 @@ const description = "探索广州——中国美食之都，享誉世界的点�
       <li><strong>5+ 天（扩展）：</strong>和深圳、香港一起走，来一次完整的珠三角之旅</li>
     </ul>
 
+    <!-- ==================== 景点 ==================== -->
     <h2 id="attractions" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎯 必去景点</h2>
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">广州塔</h3><p class="text-gray-700">600 米高的标志性"小蛮腰"电视塔。上去俯瞰全城，或者去旋转餐厅吃饭。夜景灯光秀非常震撼。</p></div>
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">沙面岛</h3><p class="text-gray-700">曾经的英法租界，保留着殖民时期建筑、林荫大道和悠闲的公园氛围。</p></div>
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">陈家祠</h3><p class="text-gray-700">一座令人叹为观止的清代宗祠，精美木雕、陶塑和刺绣。</p></div>
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">越秀公园</h3><p class="text-gray-700">广州最大的公园，内有五羊石像——广州的标志。</p></div>
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12"><h3 class="text-xl font-bold text-gray-900 mb-2">北京路</h3><p class="text-gray-700">步行购物街，玻璃地板下露出古老的宋代道路遗址。</p></div>
+
+    <!-- 广州塔 -->
+    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/guangzhou/canton-tower.jpg" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">广州塔</h3>
+        <p class="text-gray-700">本地人叫它"小蛮腰"——600 米高，广东第一高塔。上到 450 米的露天观景台坐摩天轮绕塔一圈，不怕高的话还可以试一下速降。建议日落时分上去，整个广州在脚下变成金色，等到天黑还能看灯光秀。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+    <!-- 沙面岛 -->
+    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/guangzhou/shamian-island.jpg" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">沙面岛</h3>
+        <p class="text-gray-700">珠江上的一座小岛，1860 年代曾是英法租界。那些领事馆建筑至今还立在林荫道旁，150 多年的古榕树垂下气根像帘子一样。从头走到尾大约 20 分钟——最好在傍晚来，热气散了，阳光穿过树叶洒下来特别好看。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+    <!-- 陈家祠 -->
+    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/guangzhou/chen-clan-hall.jpg" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">陈家祠</h3>
+        <p class="text-gray-700">1894 年由陈氏宗族建造的祠堂兼书院，19 个厅堂塞满了岭南最精美的木雕。每条屋脊和檐角都立着陶瓷人物——狮子、龙、神仙。现在也是广东民间工艺博物馆，可以边走边看刺绣和陶艺。至少留一个小时。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+    <!-- 越秀公园 -->
+    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/guangzhou/yuexiu-park-five-rams.jpg" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">越秀公园</h3>
+        <p class="text-gray-700">这座公园所在的山丘曾是两千多年前南越国的堡垒。里面有五羊石像（广州的标志）和镇海楼——广州现存最古老的建筑，建于 1380 年。爬上镇海楼能俯瞰公园。最好是工作日上午来，那时公园里全是练太极和下棋的老人家。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+    <!-- 北京路 -->
+    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/guangzhou/beijing-road.jpg" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">北京路</h3>
+        <p class="text-gray-700">脚下的玻璃板里露着宋、元、明、清几个朝代的路面叠在一起——两千多年的行走路线就在你鞋底。地面上是永不停歇的购物和美食街，炸鲜奶、烤鱿鱼、奶茶三步一家。晚上 7 点后霓虹灯亮起来，夜市人群涌上来的时候最热闹。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+    <!-- 大佛寺 -->
+    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-12 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/guangzhou/grand-buddha-temple.jpg" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">大佛寺</h3>
+        <p class="text-gray-700">大雄宝殿宽 36 米，内部几乎看不到柱子——整个屋顶靠复杂的斗拱支撑，一踏进去就能感受到那种开阔的空间感。这不是普通的岭南寺庙风格。清康熙二年由平南王尚可喜仿照北京宫廷官庙式样建造，带着故宫那种庄严的气场。殿内三尊 6 米高的铜佛各重 10 吨，是广东省现存最大的古代青铜造像。柱子是越南王捐赠的楠木，350 年了完好无损。你在广州找不出第二座这样的寺庙。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
 
     <h2 id="getting-around" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🚇 市内交通</h2>
     <ul class="list-disc pl-6 space-y-3 text-lg text-gray-700 mb-12">
@@ -60,20 +128,103 @@ const description = "探索广州——中国美食之都，享誉世界的点�
     <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">天河区——现代旅客首选</h3><p class="text-gray-700">新 CBD，有购物中心、国际酒店和便捷的地铁。</p></div>
     <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12"><h3 class="text-xl font-bold text-gray-900 mb-2">海珠区——江景首选</h3><p class="text-gray-700">珠江对岸，更安静，能看到广州塔的美景。</p></div>
 
+    <!-- ==================== 吃什么 ==================== -->
     <h2 id="what-to-eat" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🍜 吃什么</h2>
-    <ul class="list-disc pl-6 space-y-3 text-lg text-gray-700 mb-12">
-      <li><strong>点心</strong>——虾饺、烧卖、叉烧包、肠粉。早茶文化一定要体验。</li>
-      <li><strong>白切鸡</strong>——白水煮鸡，蘸姜葱油，冷吃。</li>
-      <li><strong>烧鹅</strong>——皮脆肉嫩的烤鹅配梅子酱。</li>
-      <li><strong>云吞面</strong>——竹升面配鲜虾猪肉云吞。</li>
-      <li><strong>煲仔饭</strong>——用砂锅煮的米饭，配上腊味或鸡肉。</li>
-      <li><strong>双皮奶</strong>——来自顺德的丝滑甜奶冻。</li>
-      <li><strong>凉茶</strong>——当地人心目中包治百病的苦味药茶。</li>
-    </ul>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">如果在北京是为了活着而吃，在广州你就是为了吃而活着。粤菜享誉世界，不是没有道理的。</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+      <!-- 点心 -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/guangzhou/dim-sum.jpg" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">点心</h3>
+          <p class="text-gray-600 text-base">四样必点：虾饺，皮薄到几乎透明，裹着整只虾；烧卖，顶上点缀着蟹籽；叉烧包，蓬松雪白的面皮裹着甜叉烧；肠粉，嫩滑的米皮淋上酱油。这种"饮茶"文化每天早晨都在荔湾区的茶楼里上演。早去——11 点前排队长到门外。</p>
+        </div>
+      </div>
+
+      <!-- 白切鸡 -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/guangzhou/white-cut-chicken.jpg" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">白切鸡</h3>
+          <p class="text-gray-600 text-base">整鸡慢火浸熟，然后冷吃——关键是那层滑溜溜的鸡皮底下一层薄薄的胶冻。粤菜师傅把这道菜视为检验功底的标准，因为没有任何调料可以掩盖。蘸姜葱油吃，你就明白为什么简简单单可以这么好吃。</p>
+        </div>
+      </div>
+
+      <!-- 烧鹅 -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/guangzhou/roast-goose.jpg" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">烧鹅</h3>
+          <p class="text-gray-600 text-base">整鹅剖开、腌制、炭火烤到皮脆如玻璃，肉还是深色多汁的状态。配酸梅酱蘸着吃，刚好解腻。这种做法源自广州西边的江门一带，城里最好的烧腊店已经把它打磨了几十年。</p>
+        </div>
+      </div>
+
+      <!-- 云吞面 -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/guangzhou/wonton-noodles.jpg" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">云吞面</h3>
+          <p class="text-gray-600 text-base">面条是加了碱水的竹升面，细而有弹性。云吞皮薄馅大，裹着整只虾和猪肉。但真正的灵魂是汤底——清澈金黄，用大地鱼和虾籽熬出来的。一碗下去，整个人都舒坦了。</p>
+        </div>
+      </div>
+
+      <!-- 煲仔饭 -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/guangzhou/claypot-rice.jpg" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">煲仔饭</h3>
+          <p class="text-gray-600 text-base">生米下砂锅，铺上腊肠、腊肉或鸡肉，炭火慢煮。最精彩的部分在锅底——一层焦香金黄的锅巴，铲起来拌进饭里。加一勺酱油，好好拌匀再吃。</p>
+        </div>
+      </div>
+
+      <!-- 双皮奶 -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/guangzhou/double-skin-milk.jpg" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">双皮奶</h3>
+          <p class="text-gray-600 text-base">这道精致的甜点来自"食在广州、厨出凤城"的顺德。名字源于冷却时奶皮两次凝结——第一层沉下去，第二层再浮上来。口感像蛋挞馅一样嫩滑，但要轻盈得多，热吃冷吃都行。</p>
+        </div>
+      </div>
+
+      <!-- 凉茶 -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/guangzhou/herbal-tea.jpg" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">凉茶</h3>
+          <p class="text-gray-600 text-base">黑得像可乐，苦得像药——因为它就是药。凉茶用二十多种中药熬制，不同配方针对不同症状（上火、喉咙痛、消化不良）。要体验就点一杯"24 味"——保证喝到你皱眉，但本地人说这正说明药效。遍布全城，街头巷尾都有凉茶铺。</p>
+        </div>
+      </div>
+
+      <!-- 啫啫煲 -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/guangzhou/jue-jue-bao.jpg" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">啫啫煲</h3>
+          <p class="text-gray-600 text-base">名字来自食材进高温砂锅时那声"啫啫"响。跟慢煮的煲仔饭不同，这是粤菜里最高温快炒的技法——生鸡肉、鱿鱼、牛肉或鳝鱼直接下预热好的砂锅，加豆豉、蒜头和姜片，在明火上翻滚几分钟就出锅。边缘焦香，香气比菜先到桌上，第一口就有炒锅做不出来的烟熏味。一人一锅，趁热吃。</p>
+        </div>
+      </div>
+    </div>
 
     <div class="not-prose mt-16">
       <h2 class="text-2xl font-bold text-gray-900 mb-8">📚 相关攻略</h2>
-      <div class="space-y-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <a href="/zh/cities/city-select/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🗺️ <strong>去中国玩几天才够？</strong>——规划完整行程</a>
         <a href="/zh/cities/shenzhen-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🤖 <strong>深圳旅游指南</strong>——仅 30 分钟车程</a>
         <a href="/zh/payment/payment-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">💳 <strong>在中国怎么付钱</strong>——广州全面无现金化</a>

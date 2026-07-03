@@ -1,0 +1,104 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'À propos — China Starter Hub';
+const description = 'Pourquoi nous avons créé ce guide et à qui il s\'adresse.';
+---
+
+<Layout title={title} description={description} lang="fr">
+  <article class="max-w-3xl mx-auto py-12">
+    <!-- Header -->
+    <header class="text-center mb-16">
+      <div class="text-sm text-brand-600 font-medium tracking-wide uppercase mb-3">À propos</div>
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
+        À propos de China Starter Hub
+      </h1>
+      <p class="text-lg text-gray-500 max-w-2xl mx-auto leading-relaxed">
+        Une ressource indépendante qui aide les visiteurs internationaux à se préparer et à naviguer en Chine.
+      </p>
+    </header>
+
+    <!-- Main Content -->
+    <div class="prose prose-gray max-w-none">
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        China Starter Hub est une ressource indépendante qui aide les visiteurs internationaux à se préparer et à naviguer pendant leur voyage en Chine.
+      </p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        Que vous voyagiez pour le tourisme, les affaires, les études ou un court séjour, trouver des informations fiables sur la Chine peut s'avérer difficile. Les règles, les applications, les paiements, les transports et les services du quotidien fonctionnent souvent différemment de ce à quoi s'attendent la plupart des voyageurs.
+      </p>
+
+      <div class="border-l-2 border-brand-300 pl-5 py-3 my-8">
+        <p class="text-lg font-medium text-gray-600 italic m-0">
+          Notre objectif est simple : rendre la Chine plus facile à comprendre et à parcourir.
+        </p>
+      </div>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        Nous créons des guides pratiques et des outils utiles basés sur de vraies questions de voyageurs et de visiteurs primo-accédants. Chaque ressource est conçue pour faire gagner du temps, réduire la confusion et aider les gens à voyager en toute confiance.
+      </p>
+
+      <hr class="my-12 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Ce Que Vous Trouverez Ici</h2>
+
+      <div class="grid md:grid-cols-3 gap-6 not-prose mb-12">
+        <div class="p-6 rounded-2xl bg-gray-50 border border-gray-100">
+          <div class="text-brand-600 text-2xl mb-3">📙</div>
+          <h3 class="font-semibold text-gray-900 mb-2">Pas de Marketing Touristique</h3>
+          <p class="text-sm text-gray-500 leading-relaxed m-0">Juste des informations claires et utiles auxquelles vous pouvez vous fier.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-gray-50 border border-gray-100">
+          <div class="text-brand-600 text-2xl mb-3">⚡</div>
+          <h3 class="font-semibold text-gray-900 mb-2">Pas de Complexité Inutile</h3>
+          <p class="text-sm text-gray-500 leading-relaxed m-0">Des réponses directes à de vraies questions, sans jargon.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-gray-50 border border-gray-100">
+          <div class="text-brand-600 text-2xl mb-3">✅</div>
+          <h3 class="font-semibold text-gray-900 mb-2">Pratique & Actionnable</h3>
+          <p class="text-sm text-gray-500 leading-relaxed m-0">Chaque guide est conçu pour être utilisé sur le terrain.</p>
+        </div>
+      </div>
+
+      <hr class="my-12 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">À Qui S'adresse Ce Site</h2>
+      <div class="grid md:grid-cols-2 gap-4 not-prose mb-12">
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-gray-50">
+          <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-brand-100 text-brand-700 text-sm font-bold flex items-center justify-center">1</span>
+          <div>
+            <p class="font-medium text-gray-900 m-0">Touristes primo-accédants</p>
+            <p class="text-sm text-gray-500 m-0">Vous visitez la Chine pour la première fois et avez besoin des bases.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-gray-50">
+          <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-brand-100 text-brand-700 text-sm font-bold flex items-center justify-center">2</span>
+          <div>
+            <p class="font-medium text-gray-900 m-0">Voyageurs d'affaires</p>
+            <p class="text-sm text-gray-500 m-0">Séjours courts avec peu de temps pour tout comprendre.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-gray-50">
+          <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-brand-100 text-brand-700 text-sm font-bold flex items-center justify-center">3</span>
+          <div>
+            <p class="font-medium text-gray-900 m-0">Étudiants & chercheurs</p>
+            <p class="text-sm text-gray-500 m-0">Vous restez un semestre ou plus et devez vous installer.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-gray-50">
+          <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-brand-100 text-brand-700 text-sm font-bold flex items-center justify-center">4</span>
+          <div>
+            <p class="font-medium text-gray-900 m-0">Visiteurs de court séjour</p>
+            <p class="text-sm text-gray-500 m-0">Transit, escales ou voyages rapides avec des besoins spécifiques.</p>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-12 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">Restez Informé</h2>
+      <p class="text-lg leading-relaxed text-gray-700">
+        Le paysage technologique et politique de la Chine évolue rapidement. Nous mettons régulièrement à jour nos guides pour garantir des informations précises et utiles. Suivez-nous ou revenez souvent pour les dernières mises à jour.
+      </p>
+    </div>
+  </article>
+</Layout>

@@ -41,14 +41,92 @@ const description = "来成都看大熊猫、吃火锅、体验四川的慢生�
     </ul>
     <p class="text-lg text-gray-700 mb-12">如果时间充裕，四川省藏着中国最美的自然风光。乐山大佛距成都约 1.5 小时，高 71 米，是世界最大的石佛。喜欢冒险的话，九寨沟的碧蓝湖水和瀑布让人一辈子忘不了，但至少需要 3-4 天。</p>
 
+    <!-- ==================== 景点 ==================== -->
     <h2 id="attractions" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎯 必去景点</h2>
 
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">成都大熊猫繁育研究基地</h3><p class="text-gray-700">全世界看大熊猫最近的地方。建议早上 9 点前去，熊猫这时候最活跃。距市中心约 30 分钟车程。</p></div>
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">锦里</h3><p class="text-gray-700">武侯祠旁边的仿古街，传统建筑、小吃摊、纪念品店和茶馆一条街。</p></div>
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">武侯祠</h3><p class="text-gray-700">纪念三国时期传奇军师诸葛亮的祠堂。和锦里一起逛，一个下午就够了。</p></div>
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">宽窄巷子</h3><p class="text-gray-700">三条平行的巷子——宽巷子、窄巷子和井巷子——改造为步行文化街区，店铺、餐馆和街头艺人随处可见。</p></div>
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">人民公园</h3><p class="text-gray-700">成都茶馆文化的核心。坐在竹椅上点杯茉莉花茶，看本地人打麻将、唱川剧。</p></div>
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12"><h3 class="text-xl font-bold text-gray-900 mb-2">青城山</h3><p class="text-gray-700">距成都约 1 小时的道教名山。竹林葱郁、古寺幽静、空气清新。喜欢自然的话，一天来回刚刚好。</p></div>
+    <!-- 熊猫基地 -->
+    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/chengdu/panda-base.jpg" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">成都大熊猫繁育研究基地</h3>
+        <p class="text-gray-700">全球圈养大熊猫密度最高的地方，总数超过 120 只。必须赶早上 8 点到——8 点到 10 点是喂食时段，熊猫们最活跃、最有精神，满地打滚、抢竹子。打车从市中心过去大约 30 分钟。下午就别去了，大太阳一晒，全都在呼呼大睡，你只能看到一堆毛茸茸的球。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+    <!-- 锦里 -->
+    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/chengdu/jinli.jpg" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">锦里</h3>
+        <p class="text-gray-700">大多数旅游街像主题公园——锦里不一样，它是活的。这条仿清古街紧挨着武侯祠，满街飘着烤串的烟火气，糖画摊前围满了小孩，茶馆里川剧变脸的喝彩声一阵一阵传出来。推荐晚上去，红灯笼亮起来之后特别好看，人也少一些。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+    <!-- 武侯祠 -->
+    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/chengdu/wuhou-shrine.jpg" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">武侯祠</h3>
+        <p class="text-gray-700">纪念三国时期传奇军师诸葛亮的祠堂，一千八百年来他的名字从未被遗忘。最值得看的是诸葛亮墓冢本身，红墙环绕、竹林掩映，整个地方像被时间冻住了。正殿里的石碑和塑像别错过。和隔壁的锦里一起逛，一个下午刚好够。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+    <!-- 宽窄巷子 -->
+    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/chengdu/wide-narrow-alley.jpg" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">宽窄巷子</h3>
+        <p class="text-gray-700">三条平行的巷子，三种完全不同的气氛。宽巷子是游客主力区——店铺、小吃、穿着同款衣服的游客。窄巷子才是精华——精品店、画廊和藏在清代院落里的咖啡馆。还有井巷子，最安静的一条，两侧是民居，人少很多。从宽的逛起，觉得无聊了就逃到窄的里面去。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+    <!-- 人民公园 -->
+    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/chengdu/people-park.png" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">人民公园</h3>
+        <p class="text-gray-700">成都慢生活标签在这里变成真实体验。在露天茶馆里找个竹椅坐下，点一杯茉莉花茶，然后就看——老头打麻将、退休夫妻跳广场舞、阿姨们唱川剧。别错过"相亲角"，父母把儿女的征婚广告贴出来，身高工资房产写得像商品说明书。周末去最热闹，那场面你绝对没见过。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+    <!-- 青城山 -->
+    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/chengdu/qingcheng-mountain.png" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">青城山</h3>
+        <p class="text-gray-700">道教的发源地之一，一千八百年的历史。山上刻着"青城天下幽"四个字——名副其实。时间紧的话坐索道上山，想体验就沿着竹林掩映的石阶徒步。不管哪种方式，山顶的古寺都值得一看。从成都坐火车大约 1 小时到。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+    <!-- 都江堰 -->
+    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-12 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/chengdu/dujiangyan.jpg" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">都江堰</h3>
+        <p class="text-gray-700">一个用了 2300 年还在运转的水利工程奇迹。公元前 256 年李冰父子为驯服岷江而建，不靠一座大坝——仅凭巧妙设计的河岸形状和一个人工岛就把江水分流成灌溉渠道。结果？成都平原从此成为中国最肥沃的粮仓之一，两千多年没有改变。它和青城山完美搭配——两者之间坐公交或打车才 15 分钟，一天之内可以看完。横跨江面的安澜索桥值得走一趟，回头能看到青山做背景的壮阔画面。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
 
     <h2 id="getting-around" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🚇 市内交通</h2>
     <ul class="list-disc pl-6 space-y-3 text-lg text-gray-700 mb-12">
@@ -63,20 +141,92 @@ const description = "来成都看大熊猫、吃火锅、体验四川的慢生�
     <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">青羊区 — 文化爱好者首选</h3><p class="text-gray-700">靠近武侯祠、锦里和宽窄巷子。传统氛围浓厚，茶馆众多。</p></div>
     <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12"><h3 class="text-xl font-bold text-gray-900 mb-2">武侯区 — 吃货首选</h3><p class="text-gray-700">美食核心区。步行可达成都最好的餐馆和夜生活。</p></div>
 
+    <!-- ==================== 吃什么 ==================== -->
     <h2 id="what-to-eat" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🍜 吃什么</h2>
-    <ul class="list-disc pl-6 space-y-3 text-lg text-gray-700 mb-12">
-      <li><strong>麻婆豆腐</strong> — 嫩豆腐配上豆瓣酱、辣椒油和花椒，麻辣鲜香。</li>
-      <li><strong>宫保鸡丁</strong> — 鸡丁炒花生米和干辣椒，酸甜辣俱全。</li>
-      <li><strong>担担面</strong> — 肉末、芽菜、辣椒油和花椒拌面。</li>
-      <li><strong>火锅</strong> — 成都最有社交感的吃法。翻滚的麻辣锅底，自己涮各种食材。</li>
-      <li><strong>回锅肉</strong> — 五花肉片炒蒜苗和辣椒，经典川式家常菜。</li>
-      <li><strong>夫妻肺片</strong> — 牛肉片淋上辣椒油、花椒和芝麻，凉菜一绝。</li>
-      <li><strong>冰粉</strong> — 红糖水配凉粉，吃完辣来一碗，瞬间降温。</li>
-    </ul>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">成都是当之无愧的川菜之都——麻辣、热烈、让人忘不了。</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+      <!-- 麻婆豆腐 -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/chengdu/mapo-tofu.jpg" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">麻婆豆腐</h3>
+          <p class="text-gray-600 text-base">嫩豆腐块泡在深红色的酱汁里，又辣又麻。花椒的麻感在舌头上一点点累积，额头冒汗了你还想再舀一勺。豆腐入口即化、酱汁浓烈带颗粒感——这种对比就是这道菜的精髓。成都任何一家川菜馆都有。</p>
+        </div>
+      </div>
+
+      <!-- 宫保鸡丁 -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/chengdu/kung-pao-chicken.jpg" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">宫保鸡丁</h3>
+          <p class="text-gray-600 text-base">鸡丁、脆花生、干辣椒——看起来比吃起来吓人。秘诀在于平衡：醋和糖的酸甜打头阵，辣椒的暖辣慢慢跟上，花生的脆香收尾。老外最熟悉的一道川菜，不是没有道理的。本地人吃的那种里面是整条干辣椒，你得自己挑出来。</p>
+        </div>
+      </div>
+
+      <!-- 担担面 -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/chengdu/dan-dan-noodles.jpg" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">担担面</h3>
+          <p class="text-gray-600 text-base">最原始的街头面条。碗底铺着肉末、芽菜和红油，你自己动手拌匀，让每根面条都裹上那股咸辣麻的酱汁。芽菜带来一种陈年的醇厚，正好中和辣味。要拌得快、吃得快，凉了就不好吃了。</p>
+        </div>
+      </div>
+
+      <!-- 火锅 -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/chengdu/hotpot.jpg" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">火锅</h3>
+          <p class="text-gray-600 text-base">这不是一顿饭——是两小时的社交活动。一锅沸腾的麻辣汤底摆在桌子中间，大家各自涮自己的：薄切牛肉、毛肚、土豆、青菜、豆皮。关键操作是调料台——用芝麻油、蒜泥、香菜和醋调一碗蘸料来解辣。至少三个人去吃，才能点多些东西。不太能吃辣就点鸳鸯锅。</p>
+        </div>
+      </div>
+
+      <!-- 回锅肉 -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/chengdu/twice-cooked-pork.jpg" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">回锅肉</h3>
+          <p class="text-gray-600 text-base">五花肉先煮后切薄片，再和蒜苗、豆瓣酱一起炒到边缘焦香。两次加热的技法让肉的口感独一无二——里面嫩，边缘韧脆。它是四川版的家庭味，几乎在每家本地餐馆的菜单上都能找到。</p>
+        </div>
+      </div>
+
+      <!-- 夫妻肺片 -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/chengdu/fuqi-feipian.jpg" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">夫妻肺片</h3>
+          <p class="text-gray-600 text-base">薄切牛肉和牛杂，浇上厚重的辣椒油和花椒芝麻。名字虽然叫"肺片"，其实没有肺——是 1930 年代一对卖这道菜的夫妻的故事。口感是精髓：薄嫩肉片裹着油亮的酱汁，每一片都入味。在本地餐馆的凉菜柜台随手拿一份试试。</p>
+        </div>
+      </div>
+
+      <!-- 冰粉 -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/chengdu/bingfen.jpg" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">冰粉</h3>
+          <p class="text-gray-600 text-base">四川人吃完辣后的终极解药。手工搓制，口感比果冻还要嫩滑，近乎透明。浇上红糖水、撒上碎花生，有时还加水果干——冰凉清甜，顺着喉咙滑下去，瞬间把满嘴的麻辣冲刷干净。千万别跳过这道——你真的需要它。</p>
+        </div>
+      </div>
+    </div>
 
     <div class="not-prose mt-16">
       <h2 class="text-2xl font-bold text-gray-900 mb-8">📚 相关攻略</h2>
-      <div class="space-y-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <a href="/zh/cities/city-select/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🗺️ <strong>中国行程规划</strong> — 制定你的完整行程</a>
         <a href="/zh/cities/beijing-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🏛️ <strong>北京旅游指南</strong> — 对比南北方旅行体验</a>
         <a href="/zh/payment/payment-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">💳 <strong>中国支付指南</strong> — 提前搞定支付工具</a>

@@ -1,0 +1,101 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = "10 Applications à Télécharger Avant de Voyager en Chine";
+const description = "Les applications dont vous avez besoin pour survivre et prospérer en Chine — paiement, transport, traduction, et plus.";
+---
+
+<Layout title={title} description={description} lang="fr">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/fr/life/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Retour à Vie en Chine
+      </a>
+    </nav>
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">📱 Vie en Chine</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        10 Applications à Télécharger<br class="hidden md:block" /> Avant de Voyager en Chine
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">Oubliez Google et Facebook — voici ce dont vous avez vraiment besoin.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Dernière mise à jour : juin 2026</span>
+        <span>⏱️ 5 min de lecture</span>
+      </div>
+    </header>
+
+    <div class="bg-gradient-to-r from-green-50 to-emerald-50 border-l-4 border-green-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-green-900 mb-4">🎯 Réponse Rapide</h2>
+      <p class="text-lg text-green-800 leading-relaxed">
+        La Chine fonctionne avec des applications. Oubliez Google et Facebook — ici vous aurez besoin de <strong>WeChat</strong> pour messagerie et paiements, <strong>Alipay</strong> pour les achats, <strong>Didi</strong> pour les courses, et <strong>Amap</strong> pour les itinéraires. Téléchargez-les <strong>avant</strong> votre arrivée.
+      </p>
+    </div>
+
+    <div class="prose prose-lg max-w-none">
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="payment" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">💳</span> Applications de Paiement
+      </h2>
+
+      <div class="bg-blue-50 border border-blue-100 rounded-2xl p-6 mb-12">
+        <h3 class="text-xl font-bold text-blue-900 mb-3">💳 Alipay (支付宝) & WeChat (微信)</h3>
+        <p class="text-gray-700 leading-relaxed">Les deux piliers du paiement en Chine. Alipay est très utilisé pour les achats en ligne (Taobao, Tmall). WeChat Pay est accepté presque partout — des restaurants chics aux stands de rue.</p>
+      </div>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="transport" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🚗</span> Transport & Navigation
+      </h2>
+
+      <div class="bg-purple-50 border border-purple-100 rounded-2xl p-6 mb-6">
+        <h3 class="text-xl font-bold text-purple-900 mb-3">🚗 Didi (滴滴出行)</h3>
+        <p class="text-gray-700 leading-relaxed">L'application de VTC chinoise. Entrez votre destination en anglais, voyez le tarif à l'avance, et payez avec Alipay ou WeChat.</p>
+      </div>
+
+      <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6 mb-12">
+        <h3 class="text-xl font-bold text-orange-900 mb-3">🗺️ Amap (高德地图) ou Baidu Maps (百度地图)</h3>
+        <p class="text-gray-700 leading-relaxed">Google Maps ne fournit pas de navigation détaillée en Chine. Ces deux applications sont les alternatives locales.</p>
+      </div>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="translation" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🔤</span> Traduction & Langue
+      </h2>
+
+      <div class="bg-yellow-50 border border-yellow-100 rounded-2xl p-6 mb-12">
+        <h3 class="text-xl font-bold text-yellow-900 mb-3">🌐 Google Translate & Pleco</h3>
+        <p class="text-gray-700 leading-relaxed">Google Translate est le plus fiable. Téléchargez le pack chinois pour une utilisation hors ligne. Pleco est la référence des dictionnaires chinois-anglais.</p>
+      </div>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="food" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🍜</span> Gastronomie & Découverte
+      </h2>
+
+      <div class="bg-red-50 border border-red-100 rounded-2xl p-6 mb-12">
+        <h3 class="text-xl font-bold text-red-900 mb-3">⭐ Dianping (大众点评)</h3>
+        <p class="text-gray-700 leading-relaxed">Le Yelp chinois. Trouvez des restaurants par cuisine, prix, emplacement et note. L'interface est en chinois, mais les photos sont faciles à naviguer.</p>
+      </div>
+    </div>
+
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose">
+      <h3 class="text-2xl font-bold text-gray-900 mb-6">📚 Guides Connexes</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/fr/life/survival-kit/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">🎒 Kit de Survie pour la Chine</p>
+          <p class="text-sm text-gray-600">La checklist ultime</p>
+        </a>
+        <a href="/fr/life/sim-card-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">📶 Meilleure SIM & eSIM</p>
+          <p class="text-sm text-gray-600">Restez connecté</p>
+        </a>
+      </div>
+    </div>
+  </article>
+</Layout>

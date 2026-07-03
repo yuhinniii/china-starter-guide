@@ -1,0 +1,132 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'Guides des Villes Chinoises — Destinations de Voyage';
+const description = 'Trouvez la ville idéale pour votre voyage en Chine.';
+---
+
+<Layout title={title} description={description} lang="fr">
+  <section class="max-w-4xl mx-auto px-6 py-12">
+    
+    <!-- Header -->
+    <header class="mb-10 text-center">
+      <p class="text-sm text-gray-500 mb-2">🏙️ Villes</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-3 leading-tight">Guides des Villes Chinoises</h1>
+      <p class="text-base text-gray-500 max-w-2xl mx-auto">Trouvez la ville idéale pour votre voyage en Chine.</p>
+    </header>
+
+    <!-- Quick Stats -->
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-3 mb-12 not-prose">
+      <div class="bg-purple-50 border border-purple-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-purple-800">6</p>
+        <p class="text-xs font-semibold text-purple-800 uppercase tracking-wide mt-1">Guides Ville</p>
+      </div>
+      <div class="bg-red-50 border border-red-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-red-800">1</p>
+        <p class="text-xs font-semibold text-red-800 uppercase tracking-wide mt-1">Planif. Itinéraire</p>
+      </div>
+      <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-blue-800">3</p>
+        <p class="text-xs font-semibold text-blue-800 uppercase tracking-wide mt-1">Régions Couvertes</p>
+      </div>
+    </div>
+
+    <!-- Category Sections -->
+    <div class="space-y-8 mb-16 not-prose">
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-purple-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-purple-800">Planifier Votre Voyage</h2>
+          <span class="text-xs font-medium text-purple-800 opacity-60">1 article</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/fr/cities/city-select/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-purple-800">🧭 Planification</span>
+            <p class="text-base font-bold text-gray-900 mt-1">Combien de Jours Faut-il en Chine ?</p>
+            <p class="text-sm text-gray-600 mt-0.5">Planifiez l'itinéraire parfait — d'un tourbillon de 3 jours à une aventure de 3 semaines.</p>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-red-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-red-800">Histoire & Culture</h2>
+          <span class="text-xs font-medium text-red-800 opacity-60">1 article</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/fr/cities/beijing-guide/" class="block bg-red-50 border border-red-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-red-800">🏛️ Pékin</span>
+            <p class="text-base font-bold text-gray-900 mt-1">Guide de Pékin : Que Voir, Manger et Savoir</p>
+            <p class="text-sm text-gray-600 mt-0.5">Cité Interdite, Grande Muraille, hutongs, canard laqué et conseils essentiels.</p>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-blue-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-blue-800">Moderne & Urbain</h2>
+          <span class="text-xs font-medium text-blue-800 opacity-60">2 articles</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/fr/cities/shanghai-guide/" class="block bg-blue-50 border border-blue-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-blue-800">🌆 Shanghai</span>
+            <p class="text-base font-bold text-gray-900 mt-1">Guide de Shanghai : La Ville la Plus Accessible aux Étrangers</p>
+            <p class="text-sm text-gray-600 mt-0.5">Le Bund, la Tour de Shanghai, la Concession Française et une gastronomie de classe mondiale.</p>
+          </a>
+          <a href="/fr/cities/shenzhen-guide/" class="block bg-blue-50 border border-blue-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-blue-800">🏙️ Shenzhen</span>
+            <p class="text-base font-bold text-gray-900 mt-1">Guide de Shenzhen : La Silicon Valley à Côté de Hong Kong</p>
+            <p class="text-sm text-gray-600 mt-0.5">La Silicon Valley chinoise, le cyclisme côtier et un train de 15 minutes pour Hong Kong.</p>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-emerald-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-emerald-800">Nature & Paysages</h2>
+          <span class="text-xs font-medium text-emerald-800 opacity-60">1 article</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/fr/cities/hainan-visa-free/" class="block bg-emerald-50 border border-emerald-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-emerald-800">🏝️ Hainan</span>
+            <p class="text-base font-bold text-gray-900 mt-1">Guide de Hainan — Exonération de Visa de 30 Jours</p>
+            <p class="text-sm text-gray-600 mt-0.5">Plages tropicales, forêt tropicale et exonération de visa pour 59 pays.</p>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-orange-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-orange-800">Gastronomie & Art de Vivre</h2>
+          <span class="text-xs font-medium text-orange-800 opacity-60">2 articles</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/fr/cities/guangzhou-guide/" class="block bg-orange-50 border border-orange-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-orange-800">🥟 Guangzhou</span>
+            <p class="text-base font-bold text-gray-900 mt-1">Guide de Guangzhou : Capitale Gastronomique de la Chine</p>
+            <p class="text-sm text-gray-600 mt-0.5">Dim sum, Canton Tower, Shamian Island et porte d'entrée du sud de la Chine.</p>
+          </a>
+          <a href="/fr/cities/chengdu-guide/" class="block bg-orange-50 border border-orange-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-orange-800">🐼 Chengdu</span>
+            <p class="text-base font-bold text-gray-900 mt-1">Guide de Chengdu : Pandas, Piment et Douceur de Vivre</p>
+            <p class="text-sm text-gray-600 mt-0.5">Pandas géants, fondue sichuanaise, maisons de thé et porte d'entrée vers Jiuzhaigou.</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Guides -->
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-5">Guides Connexes</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <a href="/fr/transport/high-speed-rail/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-0.5">Train Grande Vitesse</p>
+          <p class="text-sm text-gray-500">Voyager entre les villes</p>
+        </a>
+        <a href="/fr/transport/metro-bus/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-0.5">Métro & Bus</p>
+          <p class="text-sm text-gray-500">Se déplacer dans les centres-villes</p>
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

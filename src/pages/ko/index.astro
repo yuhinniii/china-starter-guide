@@ -14,8 +14,8 @@ const description = '중국 방문 전 알아야 할 모든 것: 결제, 교통,
       필수 정보부터 시작해 여행 일정에 맞는 가이드를 따라가보세요.
     </p>
     <div class="flex flex-wrap justify-center gap-4">
-      <a href="/en/visa/" class="bg-brand-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-brand-700 transition no-underline">시작하기</a>
-      <a href="/en/about/" class="border border-brand-600 text-brand-600 px-6 py-3 rounded-lg font-medium hover:bg-brand-50 transition no-underline">사이트 소개</a>
+      <a href="/ko/visa/" class="bg-brand-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-brand-700 transition no-underline">시작하기</a>
+      <a href="/ko/about/" class="border border-brand-600 text-brand-600 px-6 py-3 rounded-lg font-medium hover:bg-brand-50 transition no-underline">사이트 소개</a>
     </div>
   </section>
 
@@ -23,10 +23,10 @@ const description = '중국 방문 전 알아야 할 모든 것: 결제, 교통,
   <section class="max-w-5xl mx-auto px-4 pb-16">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
       {[
-        { href: '/en/visa/', title: '비자', desc: '비자 종류, 무비자 국가, 환승 정책.' },
-        { href: '/en/payment/', title: '결제', desc: '모바일 지갑, 은행 카드, 현금 준비.' },
-        { href: '/en/transport/', title: '교통', desc: '고속철도, 지하철, 차량 호출, 공항에서 시내까지.' },
-        { href: '/en/life/', title: '중국 생활', desc: '앱, 의료, 안전 팁, 일상생활.' },
+        { href: '/ko/visa/', title: '비자', desc: '비자 종류, 무비자 국가, 환승 정책.' },
+        { href: '/ko/payment/', title: '결제', desc: '모바일 지갑, 은행 카드, 현금 준비.' },
+        { href: '/ko/transport/', title: '교통', desc: '고속철도, 지하철, 차량 호출, 공항에서 시내까지.' },
+        { href: '/ko/life/', title: '중국 생활', desc: '앱, 의료, 안전 팁, 일상생활.' },
       ].map(card => (
         <a href={card.href} class="group block p-5 rounded-2xl bg-gray-50  :bg-brand-50 dark:hover:bg-brand-950 border border-gray-100  :border-brand-200 dark:hover:border-brand-800 transition-all duration-200 no-underline">
           <h3 class="text-lg font-semibold text-gray-900  :text-brand-600 dark:group-hover:text-brand-400 mb-1">{card.title}</h3>
@@ -48,15 +48,15 @@ const description = '중국 방문 전 알아야 할 모든 것: 결제, 교통,
         <div class="absolute left-[17px] top-9 bottom-0 w-0.5 bg-gray-100"></div>
         <h3 class="text-lg font-bold text-gray-900 mb-3">출국 전</h3>
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-          <a href="/en/visa/visa-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-green-200 transition no-underline">
+          <a href="/ko/visa/visa-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-green-200 transition no-underline">
             <span class="text-xs font-medium text-green-600">준비</span>
             <p class="text-sm font-semibold text-gray-900 mt-1">어떤 비자가 필요할까요?</p>
           </a>
-          <a href="/en/payment/payment-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-green-200 transition no-underline">
+          <a href="/ko/payment/payment-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-green-200 transition no-underline">
             <span class="text-xs font-medium text-green-600">결제</span>
             <p class="text-sm font-semibold text-gray-900 mt-1">중국에서 결제하는 방법</p>
           </a>
-          <a href="/en/life/survival-kit/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-green-200 transition no-underline">
+          <a href="/ko/life/survival-kit/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-green-200 transition no-underline">
             <span class="text-xs font-medium text-green-600">생활</span>
             <p class="text-sm font-semibold text-gray-900 mt-1">출발 전 체크리스트</p>
           </a>
@@ -69,15 +69,15 @@ const description = '중국 방문 전 알아야 할 모든 것: 결제, 교통,
         <div class="absolute left-[17px] top-9 bottom-0 w-0.5 bg-gray-100"></div>
         <h3 class="text-lg font-bold text-gray-900 mb-3">도착 직후</h3>
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-          <a href="/en/transport/airport-to-city/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-blue-200 transition no-underline">
+          <a href="/ko/transport/airport-to-city/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-blue-200 transition no-underline">
             <span class="text-xs font-medium text-blue-600">교통</span>
             <p class="text-sm font-semibold text-gray-900 mt-1">공항에서 시내로 가는 방법</p>
           </a>
-          <a href="/en/life/sim-card-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-blue-200 transition no-underline">
+          <a href="/ko/life/sim-card-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-blue-200 transition no-underline">
             <span class="text-xs font-medium text-blue-600">생활</span>
             <p class="text-sm font-semibold text-gray-900 mt-1">SIM 카드 & 인터넷 설정</p>
           </a>
-          <a href="/en/life/vpn-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-blue-200 transition no-underline">
+          <a href="/ko/life/vpn-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-blue-200 transition no-underline">
             <span class="text-xs font-medium text-blue-600">생활</span>
             <p class="text-sm font-semibold text-gray-900 mt-1">VPN 설정하기</p>
           </a>
@@ -90,15 +90,15 @@ const description = '중국 방문 전 알아야 할 모든 것: 결제, 교통,
         <div class="absolute left-[17px] top-9 bottom-0 w-0.5 bg-gray-100"></div>
         <h3 class="text-lg font-bold text-gray-900 mb-3">여행 중</h3>
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-          <a href="/en/transport/transport-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-purple-200 transition no-underline">
+          <a href="/ko/transport/transport-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-purple-200 transition no-underline">
             <span class="text-xs font-medium text-purple-600">교통</span>
             <p class="text-sm font-semibold text-gray-900 mt-1">중국 내 이동하기</p>
           </a>
-          <a href="/en/life/essential-apps/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-purple-200 transition no-underline">
+          <a href="/ko/life/essential-apps/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-purple-200 transition no-underline">
             <span class="text-xs font-medium text-purple-600">생활</span>
             <p class="text-sm font-semibold text-gray-900 mt-1">필수 앱 10선</p>
           </a>
-          <a href="/en/life/chinese-phrases/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-purple-200 transition no-underline">
+          <a href="/ko/life/chinese-phrases/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-purple-200 transition no-underline">
             <span class="text-xs font-medium text-purple-600">생활</span>
             <p class="text-sm font-semibold text-gray-900 mt-1">기초 중국어 회화</p>
           </a>
@@ -110,19 +110,19 @@ const description = '중국 방문 전 알아야 할 모든 것: 결제, 교통,
         <div class="absolute left-0 top-0 w-9 h-9 rounded-full bg-red-100 flex items-center justify-center text-sm font-bold text-red-700">4</div>
         <h3 class="text-lg font-bold text-gray-900 mb-3">도움이 필요할 때</h3>
         <div class="grid grid-cols-1 sm:grid-cols-4 gap-3">
-          <a href="/en/life/seeing-a-doctor/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
+          <a href="/ko/life/seeing-a-doctor/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
             <span class="text-xs font-medium text-red-600">생활</span>
             <p class="text-sm font-semibold text-gray-900 mt-1">병원 방문하기</p>
           </a>
-          <a href="/en/life/common-scams/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
+          <a href="/ko/life/common-scams/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
             <span class="text-xs font-medium text-red-600">생활</span>
             <p class="text-sm font-semibold text-gray-900 mt-1">흔한 사기 피하기</p>
           </a>
-          <a href="/en/life/emergency-numbers/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
+          <a href="/ko/life/emergency-numbers/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
             <span class="text-xs font-medium text-red-600">생활</span>
             <p class="text-sm font-semibold text-gray-900 mt-1">비상 연락처</p>
           </a>
-          <a href="/en/payment/payment-fails/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
+          <a href="/ko/payment/payment-fails/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
             <span class="text-xs font-medium text-red-600">결제</span>
             <p class="text-sm font-semibold text-gray-900 mt-1">결제 실패 시 대처법</p>
           </a>
@@ -300,13 +300,13 @@ const description = '중국 방문 전 알아야 할 모든 것: 결제, 교통,
       const status = getVisaStatus(val);
 
       if (status === 'visa-free-30') {
-        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-green-50 border border-green-200"><p class="text-green-800 font-semibold mb-1">Good news! Citizens of ' + name + ' can enter China <span class="underline">visa-free</span> for up to 30 days.</p><p class="text-green-700 text-sm mb-3">No visa needed for tourism, business, or transit stays under 30 days.</p><a href="/en/visa/visa-free/" class="inline-block text-sm font-medium text-green-700 underline hover:no-underline">See the full visa-free list \u2192</a></div>';
+        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-green-50 border border-green-200"><p class="text-green-800 font-semibold mb-1">Good news! Citizens of ' + name + ' can enter China <span class="underline">visa-free</span> for up to 30 days.</p><p class="text-green-700 text-sm mb-3">No visa needed for tourism, business, or transit stays under 30 days.</p><a href="/ko/visa/visa-free/" class="inline-block text-sm font-medium text-green-700 underline hover:no-underline">See the full visa-free list \u2192</a></div>';
       } else if (status === 'mutual-free') {
-        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-green-50 border border-green-200"><p class="text-green-800 font-semibold mb-1">Citizens of ' + name + ' can enter China <span class="underline">visa-free</span> under a mutual agreement.</p><p class="text-green-700 text-sm mb-3">Check your passport type and allowed duration before traveling.</p><a href="/en/visa/visa-free/" class="inline-block text-sm font-medium text-green-700 underline hover:no-underline">See the visa-free countries list \u2192</a></div>';
+        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-green-50 border border-green-200"><p class="text-green-800 font-semibold mb-1">Citizens of ' + name + ' can enter China <span class="underline">visa-free</span> under a mutual agreement.</p><p class="text-green-700 text-sm mb-3">Check your passport type and allowed duration before traveling.</p><a href="/ko/visa/visa-free/" class="inline-block text-sm font-medium text-green-700 underline hover:no-underline">See the visa-free countries list \u2192</a></div>';
       } else if (status === 'transit') {
-        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-blue-50 border border-blue-200"><p class="text-blue-800 font-semibold mb-1">You can use the <span class="underline">240-hour transit</span> policy.</p><p class="text-blue-700 text-sm mb-3">Citizens of ' + name + ' can transit through China for up to 10 days without a visa. For longer stays, you\u2019ll need an L visa.</p><div class="flex flex-wrap gap-3"><a href="/en/visa/transit-240/" class="text-sm font-medium text-blue-700 underline hover:no-underline">How transit works \u2192</a><a href="/en/visa/apply-l-visa/" class="text-sm font-medium text-blue-700 underline hover:no-underline">Apply for an L visa \u2192</a></div></div>';
+        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-blue-50 border border-blue-200"><p class="text-blue-800 font-semibold mb-1">You can use the <span class="underline">240-hour transit</span> policy.</p><p class="text-blue-700 text-sm mb-3">Citizens of ' + name + ' can transit through China for up to 10 days without a visa. For longer stays, you\u2019ll need an L visa.</p><div class="flex flex-wrap gap-3"><a href="/ko/visa/transit-240/" class="text-sm font-medium text-blue-700 underline hover:no-underline">How transit works \u2192</a><a href="/ko/visa/apply-l-visa/" class="text-sm font-medium text-blue-700 underline hover:no-underline">Apply for an L visa \u2192</a></div></div>';
       } else {
-        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-orange-50 border border-orange-200"><p class="text-orange-800 font-semibold mb-1">You\u2019ll need a visa.</p><p class="text-orange-700 text-sm mb-3">Citizens of ' + name + ' need to apply for a tourist visa (L-type) before traveling to China.</p><a href="/en/visa/apply-l-visa/" class="inline-block text-sm font-medium text-orange-700 underline hover:no-underline">How to apply for an L visa \u2192</a></div>';
+        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-orange-50 border border-orange-200"><p class="text-orange-800 font-semibold mb-1">You\u2019ll need a visa.</p><p class="text-orange-700 text-sm mb-3">Citizens of ' + name + ' need to apply for a tourist visa (L-type) before traveling to China.</p><a href="/ko/visa/apply-l-visa/" class="inline-block text-sm font-medium text-orange-700 underline hover:no-underline">How to apply for an L visa \u2192</a></div>';
       }
     });
   </script>

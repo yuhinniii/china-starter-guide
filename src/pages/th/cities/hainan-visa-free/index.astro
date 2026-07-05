@@ -128,7 +128,9 @@ const readTime = '7 นาที';
     <!-- Why Visit -->
     <section class="mb-12">
       <h2 id="why-visit" class="text-3xl font-bold text-gray-900 mb-6">🏝️ ทำไมต้องเที่ยวไหหลำ?</h2>
-      <p class="text-lg leading-relaxed text-gray-700 mb-6">ไหหลำคือคำตอบของจีนสำหรับฮาวาย — เกาะเขตร้อนที่มีชายหาดทรายขาว ป่าฝนเขียวชอุ่ม และบรรยากาศสบายๆ ที่คุณจะไม่พบที่ไหนในแผ่นดินใหญ่ มันเป็นส่วนเดียวของจีนที่คุณสามารถหนีจากเมืองและผ่อนคลายริมมหาสมุทรได้อย่างแท้จริง ยิ่งไปกว่านั้นด้วยการเข้าประเทศแบบฟรีวีซ่าสำหรับ 59 ประเทศ มันเป็นจุดเข้าประเทศจีนที่ง่ายที่สุดสำหรับนักเดินทางหลายคน</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+
+      <p class="text-lg leading-relaxed text-gray-700 md:col-span-2 mb-0">ไหหลำคือคำตอบของจีนสำหรับฮาวาย — เกาะเขตร้อนที่มีชายหาดทรายขาว ป่าฝนเขียวชอุ่ม และบรรยากาศสบายๆ ที่คุณจะไม่พบที่ไหนในแผ่นดินใหญ่ มันเป็นส่วนเดียวของจีนที่คุณสามารถหนีจากเมืองและผ่อนคลายริมมหาสมุทรได้อย่างแท้จริง ยิ่งไปกว่านั้นด้วยการเข้าประเทศแบบฟรีวีซ่าสำหรับ 59 ประเทศ มันเป็นจุดเข้าประเทศจีนที่ง่ายที่สุดสำหรับนักเดินทางหลายคน</p>
     </section>
 
     <!-- How Many Days -->
@@ -148,88 +150,193 @@ const readTime = '7 นาที';
       <h3 class="text-2xl font-bold text-gray-900 mb-4">🏖️ ซานย่า — ที่ที่นักท่องเที่ยวส่วนใหญ่ไป</h3>
       <p class="text-gray-700 mb-6">ซานย่าคือวันหยุดชายหาดเขตร้อนคลาสสิก — คิดถึงต้นปาล์ม น้ำสีฟ้าคราม และรีสอร์ทที่ให้ความรู้สึกหรูหราจริงๆ แต่ยังมีมากกว่าแค่การนอนเล่นริมสระน้ำ</p>
 
-      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/yalong-bay.webp" alt="Hainan attraction" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
         <h4 class="text-xl font-bold text-gray-900 mb-2">อ่าวหยาโหลว</h4>
         <p class="text-gray-700">ชายหาดที่ดีที่สุดบนเกาะ — นั่นไม่ใช่การโอเวอร์ไฮป์ มันคือความจริง ทรายคือผงปะการังสีขาวละเอียดที่คุณมักเห็นแค่ในโปสการ์ด น้ำใสพอที่จะเห็นปลาจากฝั่ง และอ่าวโค้งเป็นระยะทาง 7 กิโลเมตรมีเนินเขาสีเขียวเป็นฉากหลัง รีสอร์ทส่วนใหญ่อยู่ติดชายหาดโดยตรง คุณจึงเดินจากห้องถึงน้ำในประมาณ 90 วินาที ราคาสูงกว่าชายหาดอื่นของซานย่า แต่คุณได้สิ่งที่คุณจ่าย</p>
+      
       </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
 
-      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/dadonghai-bay.webp" alt="Hainan attraction" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
         <h4 class="text-xl font-bold text-gray-900 mb-2">อ่าวต้าตงไห่</h4>
         <p class="text-gray-700">นี่คือที่ที่พลังงานท้องถิ่นอยู่ ต้าตงไห่ไม่ได้รับการดูแลเท่าหยาโหลว — โรงแรมถูกกว่า เสียงดังมากกว่า คนดูดีกว่า อ่าวโค้งเป็นรูปพระจันทร์เสี้ยวว่ายน้ำได้ดี และริมน้ำทั้งหมดเรียงรายด้วยร้านอาหารทะเลที่คุณเลือกสัตว์น้ำจากถังแล้วเขาย่างให้ ช่วงเย็นคือเวลาที่ดีที่สุด: ไฟสว่างขึ้น บาร์ชายหาดเปิด และทั้งสถานที่มีชีวิตชีวา</p>
+      
       </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
 
-      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/haitang-bay.webp" alt="Hainan attraction" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
         <h4 class="text-xl font-bold text-gray-900 mb-2">อ่าวไห่ถาง</h4>
         <p class="text-gray-700">ญาติที่เงียบกว่าและหรูกว่า อ่าวไห่ถางคือที่ตั้งของรีสอร์ท Atlantis Sanya — คิดถึงสวนน้ำขนาดใหญ่ พิพิธภัณฑ์สัตว์น้ำที่มีสัตว์ทะเล 10,000+ ตัว และสระเล่นโลมาที่ให้ความรู้สึกมีรสนิยมเกินคาด ชายหาดกว้างและคนน้อยกว่าหยาโหลว ถ้าคุณชอบช้อปปิ้งปลอดภาษี นี่คือที่ตั้งของ免税店ใหญ่</p>
+      
       </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
 
-      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/wuzhizhou-island.webp" alt="Hainan attraction" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
         <h4 class="text-xl font-bold text-gray-900 mb-2">เกาะอู่จือโจว</h4>
         <p class="text-gray-700">นั่งเรือเฟอร์รี่ 20 นาทีจากชายฝั่งถึงเกาะเล็กๆ แห่งนี้ที่มี snorkeling ที่ดีที่สุดในไหหลำ น้ำรอบๆ ได้รับการปกป้อง ปะการังจึงสมบูรณ์และปลาไม่กระจายตัวทันทีที่คุณใส่หน้ากากลงไป เรือเข้า-เรือออก คุณสามารถเที่ยวทั้งเกาะในครึ่งวัน ไปเช้าเพื่อหลีกเลี่ยงฝูงชน — เรือเฟอร์รี่เต็มเร็วก่อน 10 โมง</p>
+      
       </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
 
-      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/nanshan-temple.webp" alt="Hainan attraction" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
         <h4 class="text-xl font-bold text-gray-900 mb-2">วัดหนานซาน</h4>
         <p class="text-gray-700">จุดเด่นคือรูปปั้นกวนอิมสูง 108 เมตรยืนในทะเล — สามหน้า สามทิศทาง รูปปั้นที่สูงที่สุดในโลกในประเภทนี้ แต่สิ่งที่ทำให้นักท่องเที่ยวส่วนใหญ่ประหลาดใจคือขนาดของทั้งคอมเพล็กซ์: ห้องโถง เจดีย์ สวนที่แผ่กระจายบนพื้นที่หลายเอเคอร์ เป็นวัดที่มีพระจริงและควันธูปจริง ไม่ใช่แค่จุดท่องเที่ยวที่แต่งตัวเป็นวัด</p>
+      
       </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
 
-      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/yanoda-rainforest.webp" alt="Hainan attraction" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
         <h4 class="text-xl font-bold text-gray-900 mb-2">ป่าฝนหยานั่วต้า</h4>
         <p class="text-gray-700">ป่าดงดิบพร้อมอัปเกรดเล็กน้อย: สะพานพื้นกระจกแขวนเหนือเรือนยอดไม้ ซิปไลน์ข้ามหุบเขา และแอ่งน้ำตกที่คุณสามารถลงไปแช่ได้จริง การเดินป่าใช้เวลาไม่นาน (สองสามชั่วโมง) และมีความหลากหลายของพืชที่น่าประหลาดใจ — มองหาต้นไกรยักษ์ อากาศชื้นเร็ว พกน้ำและไปเช้า</p>
+      
       </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
 
-      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-8">
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/luhuitou-park.webp" alt="Hainan attraction" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
         <h4 class="text-xl font-bold text-gray-900 mb-2">สวนลู่ฮุ่ยโถว</h4>
         <p class="text-gray-700">สวนบนยอดเขาที่มีวิวพระอาทิตย์ตกที่ดีที่สุดเหนือซานย่า มีตำนานอยู่เบื้องหลังชื่อ: นายพรานไล่กวางจนถึงขอบผา และกวางกลายเป็นหญิงสาวสวย (ลู่ฮุ่ยโถวแปลตามตัวว่า "กวางหันหัว") เดินขึ้นหรือนั่งกระเช้า — ไม่ว่าทางไหนคุณจะได้วิวพาโนรามาที่ทำให้คุณเข้าใจว่าทำไมจุดนี้ถึงศักดิ์สิทธิ์มานาน</p>
+      
       </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
 
       <h3 class="text-2xl font-bold text-gray-900 mb-4">🏛️ ไหโข่ว — เมืองหลวงสบายๆ</h3>
       <p class="text-gray-700 mb-6">ไหโข่วไม่ใช่ซานย่า และนั่นคือประเด็น ชายหาดน้อยกว่า วัฒนธรรมมากกว่า นักท่องเที่ยวน้อยกว่า ชีวิตจริงมากกว่า มันคือที่ที่คุณไปเมื่อต้องการเข้าใจไหหลำเกินกว่าโบรชัวร์รีสอร์ท</p>
 
-      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/volcanic-geopark.webp" alt="Hainan attraction" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
         <h4 class="text-xl font-bold text-gray-900 mb-2">อุทยานธรณีภูเขาไฟ</h4>
         <p class="text-gray-700">ภูเขาไฟที่ดับแล้วที่คุณสามารถเดินเข้าไปในปล่องภูเขาไฟได้ — ห่างจากใจกลางเมืองไหโข่วประมาณ 30 นาที ทางเดินพาลงไปในกรวยที่ล้อมรอบด้วยหินภูเขาไฟและพืชพรรณเขตร้อน มีอุโมงค์ลาวาใกล้ๆ ที่คุณสามารถคลานเข้าไปได้ (นำไฟฉายมา) ประสบการณ์เฉพาะตัวที่นักท่องเที่ยวไหหลำส่วนใหญ่พลาดเพราะไม่เคยออกจากรีสอร์ทซานย่า</p>
+      
       </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
 
-      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/qilou-old-street.webp" alt="Hainan attraction" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
         <h4 class="text-xl font-bold text-gray-900 mb-2">ถนนเก่าฉีโหลว</h4>
         <p class="text-gray-700">อาคารทรงโค้งจากยุค 1920 เรียงรายสองข้างถนน — การผสมผสานของสไตล์จีน ยุโรป และเอเชียตะวันออกเฉียงใต้ที่มีอยู่เพราะไหหลำเคยเป็นศูนย์กลางการค้า อาคารโค้ง (เรียกว่าฉีโหลว จึงเป็นที่มาของชื่อ) ปกคลุมทางเท้าให้คุณเดินเล่นได้แม้ฝนตก สถาปัตยกรรมนี้มีเฉพาะของไหหลำ และคุณจะไม่เห็นที่ไหนในจีนในขนาดนี้</p>
+      
       </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
 
-      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/hainan-museum.webp" alt="Hainan attraction" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
         <h4 class="text-xl font-bold text-gray-900 mb-2">พิพิธภัณฑ์ไหหลำ</h4>
         <p class="text-gray-700">สถานที่ที่ดีที่สุดในการเรียนรู้เกี่ยวกับวัฒนธรรมชนกลุ่มน้อยหลีและเมียว — สองกลุ่มที่อาศัยบนเกาะนี้มานานหลายศตวรรษก่อนที่รีสอร์ทจะมา คอลเลกชันผ้าทอหลี (มรดกทางวัฒนธรรมที่จับต้องไม่ได้ของ UNESCO) เป็นไฮไลท์: ลวดลายเรขาคณิตที่ซับซ้อนทอด้วยมือโดยใช้เทคนิคที่ไม่เปลี่ยนมา 3,000 ปี คุณยังสามารถเห็นบ้านทรงเรือที่ชาวหลีเคยอยู่ และโบราณวัตถุจากประวัติศาสตร์ของเกาะในฐานะสถานที่เนรเทศสำหรับข้าราชการที่ตกตำแหน่ง</p>
+      
       </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
 
-      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-8">
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/mission-hills.webp" alt="Hainan attraction" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
         <h4 class="text-xl font-bold text-gray-900 mb-2">มิชชั่นฮิลส์</h4>
         <p class="text-gray-700">คอมเพล็กซ์ขนาดใหญ่ที่มีสนามกอล์ฟ 10 สนามออกแบบโดยมือโปรชื่อดัง บ่อน้ำพุร้อน 168 บ่อ themed ตามประเทศต่างๆ และกองถ่ายทำที่มีถนนจำลองเซี่ยงไฮ้ยุค 1930 ถึงคุณจะไม่เล่นกอล์ฟ แค่น้ำพุร้อนก็คุ้มค่าแก่การมา — โดยเฉพาะส่วน火山温泉ที่สร้างด้วยหินภูเขาไฟจริง</p>
+      
       </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
 
       <h3 class="text-2xl font-bold text-gray-900 mb-4">🗺️ นอกเหนือจากสองเมืองหลัก</h3>
 
-      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/boao.webp" alt="Hainan attraction" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
         <h4 class="text-xl font-bold text-gray-900 mb-2">ปั๋วอ้าย</h4>
         <p class="text-gray-700 mb-3">เมืองชายฝั่งเล็กๆ ที่ใหญ่เกินขนาด เป็นเจ้าภาพการประชุม Boao Forum for Asia ประจำปี (คิดถึง Davos ของเอเชีย) ที่ผู้นำโลกรวมตัวกันในบรรยากาศที่รู้สึกเหมือนรีสอร์ทชายหาดมากกว่าศูนย์ประชุม ถนนเลียบทะเลระหว่างปั๋วอ้ายกับหมู่บ้านชาวประมงถานเหมินใกล้เคียงคือหนึ่งในเส้นทางขับรถที่สวยงามที่สุดในไหหลำ — หน้าผาลดหลั่นลงสู่มหาสมุทรด้านหนึ่ง เนินเขาปกคลุมด้วยป่าอีกด้าน ตัวเมืองเงียบและเดินได้ มีทางเดินเลียบปากแม่น้ำ ถ้าคุณขับรถระหว่างไหโข่วและซานย่า แวะที่นี่เพื่ออาหารกลางวันและเดินเล่นเป็นการแบ่งการเดินทางที่สวยงาม</p>
         <div class="bg-blue-50 border-l-4 border-blue-400 p-3 rounded-r-lg text-sm text-blue-800">
           💡 <strong>เคล็ดลับ:</strong> เขตการแพทย์ปั๋วอ้ายเลอเฉิงที่อยู่ติดกันเป็นเขตพิเศษแห่งเดียวของจีนที่ยาที่ได้รับการอนุมัติจากต่างประเทศมีให้ใช้ก่อนได้รับการอนุมัติจากแผ่นดินใหญ่ ถ้าคุณกำลังรักษาเฉพาะ ควรค้นคว้าว่ามีให้บริการที่นี่หรือไม่ — นักเดินทางบางคนรวมการรักษากับการพักฟื้นในรีสอร์ท
         </div>
+      
       </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
 
-      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/wuzhishan.webp" alt="Hainan attraction" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
         <h4 class="text-xl font-bold text-gray-900 mb-2">อู่จื้อซาน (เขาห้านิ้ว)</h4>
         <p class="text-gray-700">เดินป่าที่ดีที่สุดบนเกาะ — ยอดเขาห้ายอดโผล่ขึ้นจากป่าดงดิบเหมือนนิ้วมือ มีป่าหมอกใกล้ยอดเขาและวิวพาโนรามาเมื่ออากาศแจ่มใส การปีนไม่ใช่เรื่องเล่นๆ (3-4 ชั่วโมงขึ้น) แต่รางวัลคือการอยู่เหนือหมอกมองลงมาเห็นเกาะที่ให้ความรู้สึกเหมือน Jurassic Park มากกว่าจีน ไปในวันธรรมดาที่อากาศแจ่มใสถ้าเป็นไปได้</p>
+      
       </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
 
-      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/xinglong.webp" alt="Hainan attraction" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
         <h4 class="text-xl font-bold text-gray-900 mb-2">ซิงหลง</h4>
         <p class="text-gray-700">เมืองที่แปลกและมหัศจรรย์ที่เกิดจากชาวจีนโพ้นทะเลที่กลับมาจากเอเชียตะวันออกเฉียงใต้ซึ่งนำวัฒนธรรมกาแฟมาสู่ที่นี่ในยุค 1950 สวนพฤกษศาสตร์เขตร้อนเป็นจุดดึงดูดหลัก: เครื่องเทศหลายเอเคอร์ ต้นโกโก้ และต้นกาแฟดั้งเดิมที่เริ่มต้นวงการกาแฟของไหหลำ กาแฟเองก็ใช้ได้ — ลองสไตล์ท้องถิ่นกับนมข้นหวาน</p>
+      
       </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
 
-      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/bawangling.webp" alt="Hainan attraction" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
         <h4 class="text-xl font-bold text-gray-900 mb-2">ปาหวังหลิง</h4>
         <p class="text-gray-700">ป่าฝนนี้เป็นบ้านของชะนีไหหลำ — ไพรเมตที่หายากที่สุดในโลก เหลือน้อยกว่า 40 ตัว คุณต้องโชคดีมาก (และมีไกด์) เพื่อเห็นสักตัว แต่ป่าเองก็คุ้มค่าแก่การมาเยือน: ต้นไม้สูง กล้วยไม้ป่า และความเงียบที่ให้ความรู้สึกแตกต่างจากที่อื่นในไหหลำ เที่ยววันเดียวจากไหโข่วถ้าคุณพร้อมขับรถ</p>
+      
       </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
     </section>
 
     <!-- Getting Around -->
@@ -267,37 +374,80 @@ const readTime = '7 นาที';
     <!-- What to Eat -->
     <section class="mb-12">
       <h2 id="what-to-eat" class="text-3xl font-bold text-gray-900 mb-6">🍜 อาหารที่ต้องลองในไหหลำ</h2>
-      <p class="text-lg leading-relaxed text-gray-700 mb-6">อาหารของไหหลำคือรสชาติเขตร้อนสดใหม่ — อาหารทะเล มะพร้าว และข้าวมากมาย</p>
 
-      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">      <p class="text-lg leading-relaxed text-gray-700 mb-6">อาหารของไหหลำคือรสชาติเขตร้อนสดใหม่ — อาหารทะเล มะพร้าว และข้าวมากมาย</p>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/wenchang-chicken.webp" alt="Hainan food" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
         <h3 class="text-xl font-bold text-gray-900 mb-2">ไก่เหวินชาง</h3>
         <p class="text-gray-700">อาหารจานเด่นของไหหลำ — ไก่บ้านลวกด้วยหนังเนียนและเนื้อหวานละมุน ซอสจิ้มน้ำมันขิงต้นหอมคือดาวเด่นจริงๆ หอมและจัดจ้าน เวอร์ชันที่ดีที่สุดอยู่ในเมืองเหวินชางเอง (ชั่วโมงจากไหโข่ว) ที่เสิร์ฟง่ายๆ เป็นอาหารเรียกน้ำย่อยเย็นกับซุปข้าวไก่ข้างๆ คุณยังไม่ได้ลิ้มรสไหหลำจริงๆ จนกว่าจะได้กินสิ่งนี้</p>
+      
       </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
 
-      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/jiaji-duck.webp" alt="Hainan food" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
         <h3 class="text-xl font-bold text-gray-900 mb-2">เป็ดเจียจี๋</h3>
         <p class="text-gray-700">ฮีโร่ที่ไม่มีใครรู้จักของอาหารไหหลำ — เป็ดตุ๋นช้าจนเนื้อหลุดจากกระดูกและน้ำซุปกลายเป็นสีเหลืองอำพันเข้มข้น การทำอาหารง่ายอย่างหลอกลวง: เป็ด น้ำ เกลือ และสมุนไพรจีนเพื่อความอบอุ่นของโป๊ยกั้กและขิง จิ้มเนื้อในเต้าซี่หมักและพริกเพื่อรสชาติเต็มที่ เป็นอาหารบ้านไหหลำที่บริสุทธิ์ที่สุด หาได้ดีที่สุดในพื้นที่เจียจี๋ใกล้ปั๋วอ้าย</p>
+      
       </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
 
-      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/hainan-noodles.webp" alt="Hainan food" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
         <h3 class="text-xl font-bold text-gray-900 mb-2">ก๋วยเตี๋ยวไหหลำ</h3>
         <p class="text-gray-700">อาหารเช้าที่เติมพลังให้เกาะ — เส้นข้าวเหนียวบางในน้ำซุปเบาๆ จากกระดูกหมู กุ้งแห้ง และปลาหมึก ราดด้วยกระเทียมเจียวและต้นหอม สองสไตล์ให้ลอง: <em>ถังเมี่ยน</em> (แบบน้ำ ชามเช้าคลาสสิก) และ <em>ปั้นเมี่ยน</em> (แบบแห้งกับซอสข้นรสชาติเข้มข้น) เติมพริกท้องถิ่นหนึ่งช้อนแล้วคุณจะเข้าใจว่าทำไมคนไหหลำทุกคนเริ่มวันแบบนี้</p>
+      
       </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
 
-      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/seafood-market.webp" alt="Hainan food" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
         <h3 class="text-xl font-bold text-gray-900 mb-2">ประสบการณ์ตลาดอาหารทะเล</h3>
         <p class="text-gray-700">กิจกรรมยามบ่ายในตัวเอง — ไปตลาดอาหารทะเลซานย่า เลือกสัตว์น้ำสดจากถังกั้ง ปูม้า และปลาเก๋า แล้วนำขึ้นไปให้ทำให้บนที่ อบกระเทียมพริก หรือนึ่งขิงต้นหอม ประมาณ ¥100-150 ต่อคนสำหรับมื้อใหญ่ และกั้งอย่างเดียวก็คุ้มค่าแก่การมา — มีความหวานที่กุ้งนำเข้าแช่แข็งเทียบไม่ติด</p>
+      
       </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
 
-      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/coconut-rice.webp" alt="Hainan food" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
         <h3 class="text-xl font-bold text-gray-900 mb-2">ข้าวมะพร้าว</h3>
         <p class="text-gray-700">ข้าวเหนียวนึ่งในมะพร้าวสดกับกะทิและใบเตย — หอม หวานเล็กน้อย เกือบเหมือนพุดดิ้ง ผิวด้านนอก caramelize เป็นเปลือกบาง และเวอร์ชันที่ดีที่สุดมีเนื้อมะพร้าวฝอยผสมอยู่ พ่อค้าแม่ค้าริมถนนขายห่อด้วยใบตอง — มองหาที่ตลาดกลางคืนเหวินชาง</p>
+      
       </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
 
-      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/qingbuliang.webp" alt="Hainan food" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
         <h3 class="text-xl font-bold text-gray-900 mb-2">ชิงปู๋เหลียง</h3>
         <p class="text-gray-700">คำตอบของไหหลำสำหรับอากาศร้อนเขตร้อน — ชามน้ำแข็งไสกะทิกับเผือกเหนียว ถั่วแดง แตงโม วุ้นว่านหางจระเข้ และ "เส้น" แป้งสาหร่ายที่กลืนลงคออย่างน่าพอใจ หวานแต่ไม่เลี่ยน ครีมมี่แต่เบา ทุกร้านมีสูตรเฉพาะของตัวเอง (บางร้านใส่ไอศครีม บางร้านใส่ถั่วลิสงบด) ประมาณ ¥10 ต่อชาม เพลิดเพลินที่สุดที่ตลาดกลางคืนริมน้ำของซานย่าเมื่ออากาศชื้น</p>
+      
       </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
     </section>
 
     <!-- Visa-Free Rules -->

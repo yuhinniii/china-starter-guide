@@ -1,132 +1,132 @@
 ---
 import Layout from '@layouts/Layout.astro';
-const title = 'China คู่มือเมือง — Travel Destinations';
-const description = 'Find the right city for your China trip.';
+const title = 'คู่มือเมืองจีน — จุดหมายปลายทางท่องเที่ยว';
+const description = 'ค้นหาเมืองที่ใช่สำหรับการเดินทางจีนของคุณ';
 ---
 
 <Layout title={title} description={description} lang="th">
- <section class="max-w-4xl mx-auto px-6 py-12">
- 
- <!-- Header -->
- <header class="mb-10 text-center">
- <p class="text-sm text-gray-500 mb-2">🏙️ Cities</p>
- <h1 class="text-4xl font-extrabold text-gray-900 mb-3 leading-tight">China คู่มือเมือง</h1>
- <p class="text-base text-gray-500 max-w-2xl mx-auto">Find the right city for your China trip.</p>
- </header>
+  <section class="max-w-4xl mx-auto px-6 py-12">
+    
+    <!-- Header -->
+    <header class="mb-10 text-center">
+      <p class="text-sm text-gray-500 mb-2">🏙️ เมือง</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-3 leading-tight">คู่มือเมืองจีน</h1>
+      <p class="text-base text-gray-500 max-w-2xl mx-auto">ค้นหาเมืองที่ใช่สำหรับการเดินทางจีนของคุณ</p>
+    </header>
 
- <!-- Quick Stats -->
- <div class="grid grid-cols-2 md:grid-cols-3 gap-3 mb-12 not-prose">
- <div class="bg-purple-50 border border-purple-200 rounded-xl p-4 text-center">
- <p class="text-2xl font-extrabold text-purple-800">6</p>
- <p class="text-xs font-semibold text-purple-800 uppercase tracking-wide mt-1">คู่มือเมือง</p>
- </div>
- <div class="bg-red-50 border border-red-200 rounded-xl p-4 text-center">
- <p class="text-2xl font-extrabold text-red-800">1</p>
- <p class="text-xs font-semibold text-red-800 uppercase tracking-wide mt-1">Itinerary Planner</p>
- </div>
- <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 text-center">
- <p class="text-2xl font-extrabold text-blue-800">3</p>
- <p class="text-xs font-semibold text-blue-800 uppercase tracking-wide mt-1">Regions Covered</p>
- </div>
- </div>
+    <!-- Quick Stats -->
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-3 mb-12 not-prose">
+      <div class="bg-purple-50 border border-purple-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-purple-800">6</p>
+        <p class="text-xs font-semibold text-purple-800 uppercase tracking-wide mt-1">คู่มือเมือง</p>
+      </div>
+      <div class="bg-red-50 border border-red-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-red-800">1</p>
+        <p class="text-xs font-semibold text-red-800 uppercase tracking-wide mt-1">ตัววางแผน itineraries</p>
+      </div>
+      <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-blue-800">3</p>
+        <p class="text-xs font-semibold text-blue-800 uppercase tracking-wide mt-1">ภูมิภาคที่ครอบคลุม</p>
+      </div>
+    </div>
 
- <!-- Category Sections -->
- <div class="space-y-8 mb-16 not-prose">
- <div>
- <div class="flex items-center gap-3 mb-3">
- <div class="w-1 h-7 bg-purple-500 rounded-full"></div>
- <h2 class="text-lg font-bold text-purple-800">Planning Your Trip</h2>
- <span class="text-xs font-medium text-purple-800 opacity-60">1 article</span>
- </div>
- <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
- <a href="/th/cities/city-select/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
- <span class="text-xs font-semibold text-purple-800">🧭 Planning</span>
- <p class="text-base font-bold text-gray-900 mt-1">How Many Days Do You Need in China?</p>
- <p class="text-sm text-gray-600 mt-0.5">Plan the perfect itinerary — from a 3-day whirlwind to a 3-week adventure.</p>
- </a>
- </div>
- </div>
- <div>
- <div class="flex items-center gap-3 mb-3">
- <div class="w-1 h-7 bg-red-500 rounded-full"></div>
- <h2 class="text-lg font-bold text-red-800">History & Culture</h2>
- <span class="text-xs font-medium text-red-800 opacity-60">1 article</span>
- </div>
- <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
- <a href="/th/cities/beijing-guide/" class="block bg-red-50 border border-red-200 rounded-xl p-4 hover:shadow-md transition no-underline">
- <span class="text-xs font-semibold text-red-800">🏛️ Beijing</span>
- <p class="text-base font-bold text-gray-900 mt-1">Beijing Travel Guide: What to See, Eat, and Know</p>
- <p class="text-sm text-gray-600 mt-0.5">Forbidden City, Great Wall, hutongs, Peking duck, and essential tips.</p>
- </a>
- </div>
- </div>
- <div>
- <div class="flex items-center gap-3 mb-3">
- <div class="w-1 h-7 bg-blue-500 rounded-full"></div>
- <h2 class="text-lg font-bold text-blue-800">Modern & Urban</h2>
- <span class="text-xs font-medium text-blue-800 opacity-60">2 articles</span>
- </div>
- <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
- <a href="/th/cities/shanghai-guide/" class="block bg-blue-50 border border-blue-200 rounded-xl p-4 hover:shadow-md transition no-underline">
- <span class="text-xs font-semibold text-blue-800">🌆 Shanghai</span>
- <p class="text-base font-bold text-gray-900 mt-1">Shanghai Travel Guide: The Most Foreigner-Friendly City</p>
- <p class="text-sm text-gray-600 mt-0.5">The Bund, Shanghai Tower, French Concession, and world-class dining.</p>
- </a>
- <a href="/th/cities/shenzhen-guide/" class="block bg-blue-50 border border-blue-200 rounded-xl p-4 hover:shadow-md transition no-underline">
- <span class="text-xs font-semibold text-blue-800">🏙️ Shenzhen</span>
- <p class="text-base font-bold text-gray-900 mt-1">Shenzhen Travel Guide: Tech Hub Next to Hong Kong</p>
- <p class="text-sm text-gray-600 mt-0.5">China's Silicon Valley, coastal cycling, and a 15-minute train to Hong Kong.</p>
- </a>
- </div>
- </div>
- <div>
- <div class="flex items-center gap-3 mb-3">
- <div class="w-1 h-7 bg-emerald-500 rounded-full"></div>
- <h2 class="text-lg font-bold text-emerald-800">Nature & Scenery</h2>
- <span class="text-xs font-medium text-emerald-800 opacity-60">1 article</span>
- </div>
- <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
- <a href="/th/cities/hainan-visa-free/" class="block bg-emerald-50 border border-emerald-200 rounded-xl p-4 hover:shadow-md transition no-underline">
- <span class="text-xs font-semibold text-emerald-800">🏝️ Hainan</span>
- <p class="text-base font-bold text-gray-900 mt-1">Hainan Travel Guide — 30-Day วีซ่า-Free</p>
- <p class="text-sm text-gray-600 mt-0.5">Tropical beaches, rainforest, and visa-free entry for 59 countries.</p>
- </a>
- </div>
- </div>
- <div>
- <div class="flex items-center gap-3 mb-3">
- <div class="w-1 h-7 bg-orange-500 rounded-full"></div>
- <h2 class="text-lg font-bold text-orange-800">Food & ชีวิตstyle</h2>
- <span class="text-xs font-medium text-orange-800 opacity-60">2 articles</span>
- </div>
- <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
- <a href="/th/cities/guangzhou-guide/" class="block bg-orange-50 border border-orange-200 rounded-xl p-4 hover:shadow-md transition no-underline">
- <span class="text-xs font-semibold text-orange-800">🥟 Guangzhou</span>
- <p class="text-base font-bold text-gray-900 mt-1">Guangzhou Travel Guide: Food Capital of China</p>
- <p class="text-sm text-gray-600 mt-0.5">Dim sum, Canton Tower, Shamian Island, and gateway to southern China.</p>
- </a>
- <a href="/th/cities/chengdu-guide/" class="block bg-orange-50 border border-orange-200 rounded-xl p-4 hover:shadow-md transition no-underline">
- <span class="text-xs font-semibold text-orange-800">🐼 Chengdu</span>
- <p class="text-base font-bold text-gray-900 mt-1">Chengdu Travel Guide: Pandas, Spicy Food & Slow ชีวิต</p>
- <p class="text-sm text-gray-600 mt-0.5">Giant pandas, Sichuan hotpot, tea houses, and gateway to Jiuzhaigou.</p>
- </a>
- </div>
- </div>
- </div>
+    <!-- Category Sections -->
+    <div class="space-y-8 mb-16 not-prose">
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-purple-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-purple-800">วางแผนการเดินทาง</h2>
+          <span class="text-xs font-medium text-purple-800 opacity-60">1 บทความ</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/th/cities/city-select/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-purple-800">🧭 การวางแผน</span>
+            <p class="text-base font-bold text-gray-900 mt-1">คุณต้องใช้เวลากี่วันในจีน?</p>
+            <p class="text-sm text-gray-600 mt-0.5">วางแผน itineraries ที่สมบูรณ์แบบ — ตั้งแต่ 3 วันเร่งด่วนไปจนถึงการผจญภัย 3 สัปดาห์</p>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-red-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-red-800">ประวัติศาสตร์และวัฒนธรรม</h2>
+          <span class="text-xs font-medium text-red-800 opacity-60">1 บทความ</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/th/cities/beijing-guide/" class="block bg-red-50 border border-red-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-red-800">🏛️ ปักกิ่ง</span>
+            <p class="text-base font-bold text-gray-900 mt-1">คู่มือท่องเที่ยวปักกิ่ง: สถานที่เที่ยว อาหาร และสิ่งที่ควรรู้</p>
+            <p class="text-sm text-gray-600 mt-0.5">พระราชวังต้องห้าม กำแพงเมืองจีน ตรอกซอย hutong เป็ดปักกิ่ง และเคล็ดลับสำคัญ</p>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-blue-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-blue-800">เมืองทันสมัยและเมืองใหญ่</h2>
+          <span class="text-xs font-medium text-blue-800 opacity-60">2 บทความ</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/th/cities/shanghai-guide/" class="block bg-blue-50 border border-blue-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-blue-800">🌆 ซ่างไห้</span>
+            <p class="text-base font-bold text-gray-900 mt-1">คู่มือท่องเที่ยวซ่างไห้: เมืองที่เป็นมิตรกับชาวต่างชาติมากที่สุด</p>
+            <p class="text-sm text-gray-600 mt-0.5">เดอะบันด์ เซี่ยงไฮ้ทาวเวอร์ เฟรนช์คอนเซสชั่น และร้านอาหารระดับโลก</p>
+          </a>
+          <a href="/th/cities/shenzhen-guide/" class="block bg-blue-50 border border-blue-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-blue-800">🏙️ เซินเจิ้น</span>
+            <p class="text-base font-bold text-gray-900 mt-1">คู่มือท่องเที่ยวเซินเจิ้น: ศูนย์กลางเทคโนโลยีติดฮ่องกง</p>
+            <p class="text-sm text-gray-600 mt-0.5">ซิลิคอนแวลลีย์แห่งจีน ปั่นจักรยานเลียบทะเล และรถไฟ 15 นาทีถึงฮ่องกง</p>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-emerald-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-emerald-800">ธรรมชาติและทิวทัศน์</h2>
+          <span class="text-xs font-medium text-emerald-800 opacity-60">1 บทความ</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/th/cities/hainan-visa-free/" class="block bg-emerald-50 border border-emerald-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-emerald-800">🏝️ ไหหลำ</span>
+            <p class="text-base font-bold text-gray-900 mt-1">คู่มือท่องเที่ยวไหหลำ — ฟรีวีซ่า 30 วัน</p>
+            <p class="text-sm text-gray-600 mt-0.5">ชายหาดเขตร้อน ป่าฝน และการเข้าประเทศแบบไม่ต้องขอวีซ่าสำหรับ 59 ประเทศ</p>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-orange-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-orange-800">อาหารและไลฟ์สไตล์</h2>
+          <span class="text-xs font-medium text-orange-800 opacity-60">2 บทความ</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/th/cities/guangzhou-guide/" class="block bg-orange-50 border border-orange-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-orange-800">🥟 กว่างโจว</span>
+            <p class="text-base font-bold text-gray-900 mt-1">คู่มือท่องเที่ยวกว่างโจว: เมืองหลวงแห่งอาหารของจีน</p>
+            <p class="text-sm text-gray-600 mt-0.5">ติ่มซำ หอคอยกวางตุ้ง เกาะซาเมียน และประตูสู่จีนตอนใต้</p>
+          </a>
+          <a href="/th/cities/chengdu-guide/" class="block bg-orange-50 border border-orange-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-orange-800">🐼 เฉิงตู</span>
+            <p class="text-base font-bold text-gray-900 mt-1">คู่มือท่องเที่ยวเฉิงตู: หมีแพนด้า อาหารเผ็ด และชีวิตชิลล์</p>
+            <p class="text-sm text-gray-600 mt-0.5">หมีแพนด้ายักษ์ หม้อไฟเสฉวน ร้านน้ำชา และประตูสู่จิ่วจ้ายโกว</p>
+          </a>
+        </div>
+      </div>
+    </div>
 
- <!-- คู่มือที่เกี่ยวข้อง -->
- <div class="bg-gray-50 rounded-2xl p-8 not-prose">
- <h3 class="text-lg font-bold text-gray-900 mb-5">คู่มือที่เกี่ยวข้อง</h3>
- <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
- <a href="/th/transport/high-speed-rail/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
- <p class="font-bold text-gray-900 mb-0.5">High-Speed Rail</p>
- <p class="text-sm text-gray-500">Getting between cities</p>
- </a>
- <a href="/th/transport/metro-bus/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
- <p class="font-bold text-gray-900 mb-0.5">Metro & Bus</p>
- <p class="text-sm text-gray-500">Getting around city centers</p>
- </a>
- </div>
- </div>
- </section>
+    <!-- Related Guides -->
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-5">คู่มือที่เกี่ยวข้อง</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <a href="/th/transport/high-speed-rail/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-0.5">รถไฟความเร็วสูง</p>
+          <p class="text-sm text-gray-500">การเดินทางระหว่างเมือง</p>
+        </a>
+        <a href="/th/transport/metro-bus/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-0.5">รถไฟใต้ดินและรถเมล์</p>
+          <p class="text-sm text-gray-500">การเดินทางในตัวเมือง</p>
+        </a>
+      </div>
+    </div>
+  </section>
 </Layout>

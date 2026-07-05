@@ -21,11 +21,11 @@ function stripHtml(html: string): string {
 function scanPages(dir: string) {
   const results = [];
   const excludes = new Set([
-    'index.astro',          // homepage
+    'index.astro',
     'about.astro',
     'contact.astro',
     'privacy.astro',
-    'visa/index.astro',     // section hub pages (index pages = navigation, not articles)
+    'visa/index.astro',
     'cities/index.astro',
     'life/index.astro',
     'payment/index.astro',
@@ -60,7 +60,7 @@ function scanPages(dir: string) {
       url = url.replace(/\.astro$/, '');
       url = url.replace(/\/index$/, '');
       if (url === 'index') url = '';
-      url = '/fr/' + url + '/';
+      url = '/en/' + url + '/';
       url = url.replace(/\/\/+/g, '/');
 
       const desc = descMatch ? descMatch[1].replace(/&amp;/g, '&') : '';
@@ -81,21 +81,21 @@ const pages = scanPages(pagesDir);
 pages.sort((a, b) => a.url.localeCompare(b.url));
 ---
 
-<Layout title="Rechercher — China Starter Hub" lang="fr">
+<Layout title="Recherche — China Starter Hub" lang="fr">
   <div class="max-w-3xl mx-auto px-4 py-16">
-    <h1 class="text-4xl font-bold mb-8">Rechercher</h1>
+    <h1 class="text-4xl font-bold mb-8">Recherche</h1>
     <div class="mb-4">
       <input
         type="text"
         id="search-input"
-        placeholder="Rechercher guides, tips, city info..."
+        placeholder="Rechercher guides, conseils, infos sur les villes..."
         class="w-full px-5 py-3 rounded-2xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-500 text-base"
         autocomplete="off"
       />
     </div>
-    <p class="text-xs text-gray-400 mb-6" id="result-count">{pages.length} guides indexed</p>
+    <p class="text-xs text-gray-400 mb-6" id="result-count">{pages.length} guides indexés</p>
     <div id="search-results" class="space-y-4">
-      <p class="text-gray-500">Enter a keyword above to search our guides.</p>
+      <p class="text-gray-500">Saisissez un mot-clé ci-dessus pour rechercher dans nos guides.</p>
     </div>
   </div>
 
@@ -111,8 +111,8 @@ pages.sort((a, b) => a.url.localeCompare(b.url));
     input.addEventListener('input', (e) => {
       const q = e.target.value.toLowerCase().trim();
       if (!q) {
-        results.innerHTML = '<p class="text-gray-500">Enter a keyword above to search our guides.</p>';
-        count.textContent = pages.length + ' guides indexed';
+        results.innerHTML = '<p class="text-gray-500">Saisissez un mot-clé ci-dessus pour rechercher dans nos guides.</p>';
+        count.textContent = pages.length + ' guides indexés';
         return;
       }
       const matched = pages.filter(p =>
@@ -121,11 +121,11 @@ pages.sort((a, b) => a.url.localeCompare(b.url));
         (p.body && p.body.toLowerCase().includes(q))
       );
       if (matched.length === 0) {
-        results.innerHTML = '<p class="text-gray-500">No results found. Try a different keyword.</p>';
-        count.textContent = '0 results';
+        results.innerHTML = '<p class="text-gray-500">Aucun résultat trouvé. Essayez un mot-clé différent.</p>';
+        count.textContent = '0 résultat';
         return;
       }
-      count.textContent = matched.length + ' result' + (matched.length > 1 ? 's' : '');
+      count.textContent = matched.length + ' résultat' + (matched.length > 1 ? 's' : '');
       results.innerHTML = matched.map(p =>
         `<a href="${p.url}" class="block p-5 rounded-2xl bg-gray-50 hover:bg-gray-100 transition-colors no-underline">
           <h3 class="text-lg font-semibold text-brand-600">${p.title}</h3>

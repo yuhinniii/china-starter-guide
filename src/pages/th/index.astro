@@ -1,21 +1,21 @@
 ---
 import Layout from '@layouts/Layout.astro';
-const title = 'China Starter Hub — คู่มือการเดินทางสู่ประเทศจีน';
-const description = 'ทุกสิ่งที่คุณต้องรู้ก่อนมาเที่ยวจีน: การชำระเงิน การเดินทาง แอป เมือง และเคล็ดลับท่องเที่ยว.';
+const title = 'China Starter Hub — คู่มือการเดินทางจีนที่ดีที่สุด';
+const description = 'ทุกสิ่งที่คุณต้องรู้ก่อนมาเที่ยวจีน: การชำระเงิน การเดินทาง แอปพลิเคชัน เมือง และเคล็ดลับการท่องเที่ยว';
 ---
 
 <Layout title={title} description={description} lang="th">
   <!-- Trigger rebuild: 2026-06-12 17:30 -->
   <section class="text-center py-20 px-4">
     <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-gray-900  ">
-      Clear, Current Guidance for<br/><span class="text-brand-600">การเดินทางไปจีนครั้งแรกของคุณ</span>
+      คำแนะนำที่ชัดเจน ทันสมัย สำหรับ<br/><span class="text-brand-600">นักท่องเที่ยวต่างชาติครั้งแรกที่มาเยือนจีน</span>
     </h1>
     <p class="text-lg md:text-xl text-gray-500  ">
-      เริ่มจากสิ่งที่จำเป็น จากนั้นเลือกคู่มือที่เหมาะกับทริปของคุณ
+      เริ่มต้นด้วยสิ่งจำเป็น แล้วตามคู่มือที่เหมาะกับการเดินทางของคุณ
     </p>
     <div class="flex flex-wrap justify-center gap-4">
       <a href="/th/visa/" class="bg-brand-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-brand-700 transition no-underline">เริ่มต้น</a>
-      <a href="/th/about/" class="border border-brand-600 text-brand-600 px-6 py-3 rounded-lg font-medium hover:bg-brand-50 transition no-underline">เกี่ยวกับเรา</a>
+      <a href="/th/about/" class="border border-brand-600 text-brand-600 px-6 py-3 rounded-lg font-medium hover:bg-brand-50 transition no-underline">เกี่ยวกับเว็บไซต์นี้</a>
     </div>
   </section>
 
@@ -23,10 +23,10 @@ const description = 'ทุกสิ่งที่คุณต้องรู�
   <section class="max-w-5xl mx-auto px-4 pb-16">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
       {[
-        { href: '/th/visa/', title: 'Visa', desc: 'Visa types, free countries, transit policy.' },
-        { href: '/th/payment/', title: 'Payment', desc: 'Wallets, bank cards, cash backup.' },
-        { href: '/th/transport/', title: 'Transport', desc: 'High-speed rail, metro, ride-hailing, and getting from the airport to the city.' },
-        { href: '/th/life/', title: 'ชีวิตในจีน', desc: 'Apps, medical care, safety tips, daily living.' },
+        { href: '/th/visa/', title: 'วีซ่า', desc: 'ประเภทวีซ่า ประเทศที่ยกเว้น และนโยบายการต่อเครื่อง' },
+        { href: '/th/payment/', title: 'การชำระเงิน', desc: 'กระเป๋าเงินดิจิทัล บัตรธนาคาร และเงินสดสำรอง' },
+        { href: '/th/transport/', title: 'การเดินทาง', desc: 'รถไฟความเร็วสูง รถไฟใต้ดิน เรียกแท็กซี่ และจากสนามบินสู่เมือง' },
+        { href: '/th/life/', title: 'ชีวิตในจีน', desc: 'แอปพลิเคชัน การรักษาพยาบาล เคล็ดลับความปลอดภัย การใช้ชีวิตประจำวัน' },
       ].map(card => (
         <a href={card.href} class="group block p-5 rounded-2xl bg-gray-50  :bg-brand-50 dark:hover:bg-brand-950 border border-gray-100  :border-brand-200 dark:hover:border-brand-800 transition-all duration-200 no-underline">
           <h3 class="text-lg font-semibold text-gray-900  :text-brand-600 dark:group-hover:text-brand-400 mb-1">{card.title}</h3>
@@ -36,7 +36,277 @@ const description = 'ทุกสิ่งที่คุณต้องรู�
     </div>
   </section>
 
-  <!-- คุณต้องขอวีซ่า.</p><p class="text-orange-700 text-sm mb-3">Citizens of ' + name + ' ต้องขอวีซ่าท่องเที่ยว (ประเภท L) ก่อนเดินทางไปจีน</p><a href="/th/visa/apply-l-visa/" class="inline-block text-sm font-medium text-orange-700 underline hover:no-underline">วิธีขอวีซ่า L \u2192</a></div>';
+  <!-- Your Trip: Step by Step -->
+  <section class="max-w-5xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-bold text-gray-900 mb-2">การเดินทางของคุณ ทีละขั้นตอน</h2>
+    <p class="text-gray-500 mb-10">ทำตามขั้นตอนของคุณ — แต่ละขั้นเชื่อมโยงไปยังคู่มือที่คุณต้องการจริง ๆ</p>
+
+    <div class="space-y-8">
+      <!-- Stage 1 -->
+      <div class="relative pl-14">
+        <div class="absolute left-0 top-0 w-9 h-9 rounded-full bg-green-100 flex items-center justify-center text-sm font-bold text-green-700">1</div>
+        <div class="absolute left-[17px] top-9 bottom-0 w-0.5 bg-gray-100"></div>
+        <h3 class="text-lg font-bold text-gray-900 mb-3">ก่อนออกเดินทาง</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <a href="/th/visa/visa-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-green-200 transition no-underline">
+            <span class="text-xs font-medium text-green-600">เตรียมการ</span>
+            <p class="text-sm font-semibold text-gray-900 mt-1">คุณต้องใช้วีซ่าประเภทไหน?</p>
+          </a>
+          <a href="/th/payment/payment-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-green-200 transition no-underline">
+            <span class="text-xs font-medium text-green-600">การชำระเงิน</span>
+            <p class="text-sm font-semibold text-gray-900 mt-1">วิธีชำระเงินในจีน</p>
+          </a>
+          <a href="/th/life/survival-kit/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-green-200 transition no-underline">
+            <span class="text-xs font-medium text-green-600">ชีวิต</span>
+            <p class="text-sm font-semibold text-gray-900 mt-1">รายการตรวจสอบก่อนเดินทาง</p>
+          </a>
+        </div>
+      </div>
+
+      <!-- Stage 2 -->
+      <div class="relative pl-14">
+        <div class="absolute left-0 top-0 w-9 h-9 rounded-full bg-blue-100 flex items-center justify-center text-sm font-bold text-blue-700">2</div>
+        <div class="absolute left-[17px] top-9 bottom-0 w-0.5 bg-gray-100"></div>
+        <h3 class="text-lg font-bold text-gray-900 mb-3">เพิ่งถึง</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <a href="/th/transport/airport-to-city/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-blue-200 transition no-underline">
+            <span class="text-xs font-medium text-blue-600">การเดินทาง</span>
+            <p class="text-sm font-semibold text-gray-900 mt-1">จากสนามบินสู่เมือง</p>
+          </a>
+          <a href="/th/life/sim-card-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-blue-200 transition no-underline">
+            <span class="text-xs font-medium text-blue-600">ชีวิต</span>
+            <p class="text-sm font-semibold text-gray-900 mt-1">ซิมการ์ดและอินเทอร์เน็ต</p>
+          </a>
+          <a href="/th/life/vpn-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-blue-200 transition no-underline">
+            <span class="text-xs font-medium text-blue-600">ชีวิต</span>
+            <p class="text-sm font-semibold text-gray-900 mt-1">ตั้งค่า VPN</p>
+          </a>
+        </div>
+      </div>
+
+      <!-- Stage 3 -->
+      <div class="relative pl-14">
+        <div class="absolute left-0 top-0 w-9 h-9 rounded-full bg-purple-100 flex items-center justify-center text-sm font-bold text-purple-700">3</div>
+        <div class="absolute left-[17px] top-9 bottom-0 w-0.5 bg-gray-100"></div>
+        <h3 class="text-lg font-bold text-gray-900 mb-3">ระหว่างทริป</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <a href="/th/transport/transport-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-purple-200 transition no-underline">
+            <span class="text-xs font-medium text-purple-600">การเดินทาง</span>
+            <p class="text-sm font-semibold text-gray-900 mt-1">การเดินทางภายในจีน</p>
+          </a>
+          <a href="/th/life/essential-apps/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-purple-200 transition no-underline">
+            <span class="text-xs font-medium text-purple-600">ชีวิต</span>
+            <p class="text-sm font-semibold text-gray-900 mt-1">10 แอปจำเป็น</p>
+          </a>
+          <a href="/th/life/chinese-phrases/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-purple-200 transition no-underline">
+            <span class="text-xs font-medium text-purple-600">ชีวิต</span>
+            <p class="text-sm font-semibold text-gray-900 mt-1">ประโยคภาษาจีนพื้นฐาน</p>
+          </a>
+        </div>
+      </div>
+
+      <!-- Stage 4 -->
+      <div class="relative pl-14">
+        <div class="absolute left-0 top-0 w-9 h-9 rounded-full bg-red-100 flex items-center justify-center text-sm font-bold text-red-700">4</div>
+        <h3 class="text-lg font-bold text-gray-900 mb-3">ต้องการความช่วยเหลือ?</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-4 gap-3">
+          <a href="/th/life/seeing-a-doctor/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
+            <span class="text-xs font-medium text-red-600">ชีวิต</span>
+            <p class="text-sm font-semibold text-gray-900 mt-1">การพบแพทย์</p>
+          </a>
+          <a href="/th/life/common-scams/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
+            <span class="text-xs font-medium text-red-600">ชีวิต</span>
+            <p class="text-sm font-semibold text-gray-900 mt-1">หลีกเลี่ยงกลลวงทั่วไป</p>
+          </a>
+          <a href="/th/life/emergency-numbers/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
+            <span class="text-xs font-medium text-red-600">ชีวิต</span>
+            <p class="text-sm font-semibold text-gray-900 mt-1">เบอร์ติดต่อฉุกเฉิน</p>
+          </a>
+          <a href="/th/payment/payment-fails/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
+            <span class="text-xs font-medium text-red-600">การชำระเงิน</span>
+            <p class="text-sm font-semibold text-gray-900 mt-1">เมื่อการชำระเงินล้มเหลว</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visa Checker Tool -->
+  <section class="max-w-5xl mx-auto px-4 pb-16">
+    <div class="border-t border-gray-100 pt-12">
+      <div class="max-w-2xl mx-auto">
+        <h2 class="text-2xl font-bold text-gray-900 mb-2 text-center">ตรวจสอบวีซ่า</h2>
+        <p class="text-gray-500 text-center mb-8">ไม่แน่ใจว่าต้องใช้วีซ่าหรือไม่? เลือกสัญชาติของคุณ — เราจะบอกคุณ</p>
+
+        <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100">
+          <label for="visa-country" class="block text-sm font-medium text-gray-700 mb-2">สัญชาติของคุณ</label>
+          <select id="visa-country" class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-brand-500 text-base appearance-none cursor-pointer">
+            <option value="">— เลือกประเทศของคุณ —</option>
+            <option value="AL">แอลเบเนีย</option>
+            <option value="AD">อันดอร์รา</option>
+            <option value="AG">แอนติกาและบาร์บูดา</option>
+            <option value="AR">อาร์เจนตินา</option>
+            <option value="AM">อาร์เมเนีย</option>
+            <option value="AU">ออสเตรเลีย</option>
+            <option value="AT">ออสเตรีย</option>
+            <option value="AZ">อาเซอร์ไบจาน</option>
+            <option value="BS">บาฮามาส</option>
+            <option value="BH">บาห์เรน</option>
+            <option value="BD">บังกลาเทศ</option>
+            <option value="BB">บาร์เบโดส</option>
+            <option value="BY">เบลารุส</option>
+            <option value="BE">เบลเยียม</option>
+            <option value="BA">บอสเนียและเฮอร์เซโกวีนา</option>
+            <option value="BR">บราซิล</option>
+            <option value="BN">บรูไน</option>
+            <option value="BG">บัลแกเรีย</option>
+            <option value="CA">แคนาดา</option>
+            <option value="CL">ชิลี</option>
+            <option value="HR">โครเอเชีย</option>
+            <option value="CY">ไซปรัส</option>
+            <option value="CZ">สาธารณรัฐเช็ก</option>
+            <option value="DK">เดนมาร์ก</option>
+            <option value="DM">โดมินิกา</option>
+            <option value="EC">เอกวาดอร์</option>
+            <option value="EG">อียิปต์</option>
+            <option value="EE">เอสโตเนีย</option>
+            <option value="FJ">ฟิจิ</option>
+            <option value="FI">ฟินแลนด์</option>
+            <option value="FR">ฝรั่งเศส</option>
+            <option value="GE">จอร์เจีย</option>
+            <option value="DE">เยอรมนี</option>
+            <option value="GR">กรีซ</option>
+            <option value="GD">เกรเนดา</option>
+            <option value="HU">ฮังการี</option>
+            <option value="IS">ไอซ์แลนด์</option>
+            <option value="IN">อินเดีย</option>
+            <option value="ID">อินโดนีเซีย</option>
+            <option value="IE">ไอร์แลนด์</option>
+            <option value="IT">อิตาลี</option>
+            <option value="JP">ญี่ปุ่น</option>
+            <option value="KZ">คาซัคสถาน</option>
+            <option value="KE">เคนยา</option>
+            <option value="KW">คูเวต</option>
+            <option value="LV">ลัตเวีย</option>
+            <option value="LI">ลิกเตนสไตน์</option>
+            <option value="LT">ลิทัวเนีย</option>
+            <option value="LU">ลักเซมเบิร์ก</option>
+            <option value="MY">มาเลเซีย</option>
+            <option value="MV">มัลดีฟส์</option>
+            <option value="MT">มอลตา</option>
+            <option value="MU">มอริเชียส</option>
+            <option value="MX">เม็กซิโก</option>
+            <option value="MC">โมนาโก</option>
+            <option value="ME">มอนเตเนโกร</option>
+            <option value="NL">เนเธอร์แลนด์</option>
+            <option value="NZ">นิวซีแลนด์</option>
+            <option value="NG">ไนจีเรีย</option>
+            <option value="MK">นอร์ทมาซิโดเนีย</option>
+            <option value="NO">นอร์เวย์</option>
+            <option value="OM">โอมาน</option>
+            <option value="PK">ปากีสถาน</option>
+            <option value="PE">เปรู</option>
+            <option value="PH">ฟิลิปปินส์</option>
+            <option value="PL">โปแลนด์</option>
+            <option value="PT">โปรตุเกส</option>
+            <option value="QA">กาตาร์</option>
+            <option value="RO">โรมาเนีย</option>
+            <option value="RU">รัสเซีย</option>
+            <option value="WS">ซามัว</option>
+            <option value="SM">ซานมารีโน</option>
+            <option value="SA">ซาอุดีอาระเบีย</option>
+            <option value="RS">เซอร์เบีย</option>
+            <option value="SC">เซเชลส์</option>
+            <option value="SG">สิงคโปร์</option>
+            <option value="SK">สโลวาเกีย</option>
+            <option value="SI">สโลวีเนีย</option>
+            <option value="SB">หมู่เกาะโซโลมอน</option>
+            <option value="ZA">แอฟริกาใต้</option>
+            <option value="KR">เกาหลีใต้</option>
+            <option value="ES">สเปน</option>
+            <option value="SR">ซูรินาม</option>
+            <option value="SE">สวีเดน</option>
+            <option value="CH">สวิตเซอร์แลนด์</option>
+            <option value="TH">ไทย</option>
+            <option value="TO">ตองกา</option>
+            <option value="TR">ตุรกี</option>
+            <option value="UA">ยูเครน</option>
+            <option value="AE">สหรัฐอาหรับเอมิเรตส์</option>
+            <option value="GB">สหราชอาณาจักร</option>
+            <option value="US">สหรัฐอเมริกา</option>
+            <option value="UY">อุรุกวัย</option>
+            <option value="UZ">อุซเบกิสถาน</option>
+            <option value="VN">เวียดนาม</option>
+            <option value="OTHER">ประเทศอื่น ๆ</option>
+          </select>
+
+          <div id="visa-result" class="mt-6"></div>
+        </div>
+
+        <p class="text-xs text-gray-400 text-center mt-4">นโยบายวีซ่าเปลี่ยนแปลงบ่อย กรุณาตรวจสอบกับสถานทูตจีนในประเทศของคุณก่อนจองตั๋ว</p>
+      </div>
+    </div>
+  </section>
+
+  <script is:inline>
+    const countrySelect = document.getElementById('visa-country');
+    const resultDiv = document.getElementById('visa-result');
+
+    // Source: China gov.cn official list (2025)
+    // Category 1: Unilateral visa-free (30 days) - 50 countries
+    const visaFree = ['BN','FR','DE','IT','ES','NL','CH','IE','HU','AT','BE','LU','NZ','AU','PL','PT','GR','CY','SI','SK','NO','FI','DK','IS','AD','MC','LI','KR','BG','RO','HR','ME','MK','MT','EE','LV','JP','BR','AR','CL','PE','UY','SA','OM','KW','BH','CA','RU','GB','SE'];
+
+    // Category 2: Mutual visa agreement (ordinary passport) - 29 countries
+    const mutualFree = ['AL','AE','AG','BB','BS','BY','BA','DM','EC','FJ','GD','GE','KZ','QA','MV','MU','WS','RS','SC','SM','SR','SB','TH','TO','UZ','SG','AM','AZ','MY'];
+
+    // Category 3: 240-hour transit - 55 countries
+    const transit240 = ['AL','AT','BE','BG','BA','BR','CA','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LT','LU','MT','MC','ME','NL','MK','NO','PL','PT','RO','RU','RS','SK','SI','KR','ES','SE','CH','UA','GB','US','AU','NZ','JP','SG','BN','AE','QA','MX','AR','CL','ID','BY'];
+
+    // Determine best visa status for each country
+    function getVisaStatus(code) {
+      if (visaFree.includes(code)) return 'visa-free-30';
+      if (mutualFree.includes(code)) return 'mutual-free';
+      if (transit240.includes(code)) return 'transit';
+      return 'need-visa';
+    }
+
+    const countryNames = {
+      'AL':'แอลเบเนีย','AD':'อันดอร์รา','AG':'แอนติกาและบาร์บูดา','AR':'อาร์เจนตินา','AM':'อาร์เมเนีย',
+      'AU':'ออสเตรเลีย','AT':'ออสเตรีย','AZ':'อาเซอร์ไบจาน','BS':'บาฮามาส','BH':'บาห์เรน','BB':'บาร์เบโดส',
+      'BY':'เบลารุส','BE':'เบลเยียม','BA':'บอสเนียและเฮอร์เซโกวีนา','BR':'บราซิล','BN':'บรูไน','BG':'บัลแกเรีย',
+      'CA':'แคนาดา','CL':'ชิลี','HR':'โครเอเชีย','CY':'ไซปรัส','CZ':'สาธารณรัฐเช็ก','DK':'เดนมาร์ก',
+      'DM':'โดมินิกา','EC':'เอกวาดอร์','EG':'อียิปต์','EE':'เอสโตเนีย','FJ':'ฟิจิ','FI':'ฟินแลนด์','FR':'ฝรั่งเศส',
+      'GE':'จอร์เจีย','DE':'เยอรมนี','GR':'กรีซ','GD':'เกรเนดา','HU':'ฮังการี',      'IS':'ไอซ์แลนด์','IE':'ไอร์แลนด์','IN':'อินเดีย','ID':'อินโดนีเซีย','IT':'อิตาลี',
+      'JP':'ญี่ปุ่น','KZ':'คาซัคสถาน','KE':'เคนยา','KW':'คูเวต','LV':'ลัตเวีย','LI':'ลิกเตนสไตน์',
+      'LT':'ลิทัวเนีย','LU':'ลักเซมเบิร์ก','MY':'มาเลเซีย','MV':'มัลดีฟส์','MT':'มอลตา','MU':'มอริเชียส',
+      'MX':'เม็กซิโก',
+      'MC':'โมนาโก','ME':'มอนเตเนโกร',      'NL':'เนเธอร์แลนด์','NZ':'นิวซีแลนด์','NG':'ไนจีเรีย','MK':'นอร์ทมาซิโดเนีย',
+      'NO':'นอร์เวย์','OM':'โอมาน','PK':'ปากีสถาน','PE':'เปรู','PH':'ฟิลิปปินส์','PL':'โปแลนด์','PT':'โปรตุเกส','QA':'กาตาร์','RO':'โรมาเนีย',
+      'RU':'รัสเซีย','WS':'ซามัว','SM':'ซานมารีโน','SA':'ซาอุดีอาระเบีย','RS':'เซอร์เบีย','SC':'เซเชลส์',
+      'SG':'สิงคโปร์','SK':'สโลวาเกีย','SI':'สโลวีเนีย','SB':'หมู่เกาะโซโลมอน','ZA':'แอฟริกาใต้','KR':'เกาหลีใต้',
+      'ES':'สเปน','SR':'ซูรินาม','SE':'สวีเดน','CH':'สวิตเซอร์แลนด์','TH':'ไทย','TO':'ตองกา','TR':'ตุรกี',
+      'UA':'ยูเครน',
+      'AE':'สหรัฐอาหรับเอมิเรตส์','GB':'สหราชอาณาจักร','US':'สหรัฐอเมริกา','UY':'อุรุกวัย','UZ':'อุซเบกิสถาน','VN':'เวียดนาม'
+    };
+
+    countrySelect.addEventListener('change', function() {
+      const val = this.value;
+      if (!val) {
+        resultDiv.innerHTML = '';
+        return;
+      }
+
+      const name = countryNames[val] || 'ประเทศของคุณ';
+      const status = getVisaStatus(val);
+
+      if (status === 'visa-free-30') {
+        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-green-50 border border-green-200"><p class="text-green-800 font-semibold mb-1">ข่าวดี! พลเมืองของ ' + name + ' สามารถเข้าจีนแบบ <span class="underline">ไม่ต้องใช้วีซ่า</span> ได้สูงสุด 30 วัน</p><p class="text-green-700 text-sm mb-3">ไม่ต้องใช้วีซ่าสำหรับการท่องเที่ยว ธุรกิจ หรือการต่อเครื่องที่น้อยกว่า 30 วัน</p><a href="/th/visa/visa-free/" class="inline-block text-sm font-medium text-green-700 underline hover:no-underline">ดูรายชื่อประเทศที่ยกเว้นวีซ่าทั้งหมด \u2192</a></div>';
+      } else if (status === 'mutual-free') {
+        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-green-50 border border-green-200"><p class="text-green-800 font-semibold mb-1">พลเมืองของ ' + name + ' สามารถเข้าจีนแบบ <span class="underline">ไม่ต้องใช้วีซ่า</span> ภายใต้ข้อตกลงร่วม</p><p class="text-green-700 text-sm mb-3">ตรวจสอบประเภทพาสปอร์ตและระยะเวลาที่อนุญาตก่อนเดินทาง</p><a href="/th/visa/visa-free/" class="inline-block text-sm font-medium text-green-700 underline hover:no-underline">ดูรายชื่อประเทศที่ยกเว้นวีซ่า \u2192</a></div>';
+      } else if (status === 'transit') {
+        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-blue-50 border border-blue-200"><p class="text-blue-800 font-semibold mb-1">คุณสามารถใช้ <span class="underline">นโยบายการต่อเครื่อง 240 ชั่วโมง</span> ได้</p><p class="text-blue-700 text-sm mb-3">พลเมืองของ ' + name + ' สามารถเปลี่ยนเครื่องผ่านจีนได้สูงสุด 10 วันโดยไม่ต้องใช้วีซ่า สำหรับการพัก longer คุณจะต้องใช้วีซ่า L</p><div class="flex flex-wrap gap-3"><a href="/th/visa/transit-240/" class="text-sm font-medium text-blue-700 underline hover:no-underline">วิธีการต่อเครื่อง \u2192</a><a href="/th/visa/apply-l-visa/" class="text-sm font-medium text-blue-700 underline hover:no-underline">ยื่นขอวีซ่า L \u2192</a></div></div>';
+      } else {
+        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-orange-50 border border-orange-200"><p class="text-orange-800 font-semibold mb-1">คุณจำเป็นต้องใช้วีซ่า</p><p class="text-orange-700 text-sm mb-3">พลเมืองของ ' + name + ' ต้องยื่นขอวีซ่าท่องเที่ยว (ประเภท L) ก่อนเดินทางไปจีน</p><a href="/th/visa/apply-l-visa/" class="inline-block text-sm font-medium text-orange-700 underline hover:no-underline">วิธีการยื่นขอวีซ่า L \u2192</a></div>';
       }
     });
   </script>

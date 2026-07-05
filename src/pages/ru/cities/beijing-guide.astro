@@ -1,0 +1,210 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = "Путеводитель по Пекину: что посмотреть, поесть и знать";
+const description = "Твой полный гид по Пекину — достопримечательности, транспорт, еда и где остановиться.";
+---
+
+<Layout title={title} description={description} lang="ru">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🏙️ Пекин</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">Путеводитель по Пекину: что посмотреть, поесть и знать</h1>
+      <p class="text-xl text-gray-600 mb-6">Твой полный гид по Пекину — достопримечательности, транспорт, еда и где остановиться.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Последнее обновление: июнь 2026</span>
+        <span>⏱️ 8 мин. чтения</span>
+      </div>
+    </header>
+
+    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-red-900 mb-4">⚡ Быстрый ответ</h2>
+      <p class="text-lg text-red-800 leading-relaxed">Пекин — это <strong>политическое и культурное сердце Китая</strong>, где находятся Запретный город, Великая стена и лучшая утка по-пекински, которую ты когда-либо пробовал. Это город контрастов, где древние переулки (хутуны) соседствуют с современными небоскрёбами. Пекин также самый удобный пункт въезда для новичков: два международных аэропорта и крупнейший в стране хаб высокоскоростных поездов.</p>
+    </div>
+
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 В этом путеводителе</h3>
+      <ul class="space-y-3">
+        <li><a href="#why-visit" class="text-blue-600 hover:underline">🏛️ Зачем ехать в Пекин?</a></li>
+        <li><a href="#how-many-days" class="text-blue-600 hover:underline">📅 Сколько дней нужно?</a></li>
+        <li><a href="#attractions" class="text-blue-600 hover:underline">🎯 Главные достопримечательности</a></li>
+        <li><a href="#getting-around" class="text-blue-600 hover:underline">🚇 Как передвигаться</a></li>
+        <li><a href="#where-to-stay" class="text-blue-600 hover:underline">🏨 Где остановиться</a></li>
+        <li><a href="#what-to-eat" class="text-blue-600 hover:underline">🍜 Что поесть</a></li>
+      </ul>
+    </nav>
+
+    <h2 id="why-visit" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏛️ Зачем ехать в Пекин?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Пекин — это не просто город, это живой музей китайской цивилизации. Проходя по Запретному городу, ты ступаешь по следам 24 императоров. Поднимаясь на Великую стену, ты стоишь на сооружении, которому более 2000 лет. Но Пекин — это ещё и vibrantная современная столица с невероятной едой, музеями мирового уровня и ночной жизнью, которая не затихает.</p>
+
+    <h2 id="how-many-days" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📅 Сколько дней нужно?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>3 дня — это минимум</strong> для знакомства с Пекином.</p>
+    <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700 mb-6">
+      <li><strong>3 дня (стандартно):</strong> Запретный город + Великая стена + хутуны и Храм Неба</li>
+      <li><strong>4–5 дней (комфортно):</strong> Добавь Летний дворец, арт-район 798 и гастротур</li>
+      <li><strong>5+ дней (глубокое погружение):</strong> Поездка на день в горный курорт Чэндэ или исследуй менее известные храмы города</li>
+    </ul>
+    <p class="text-lg text-gray-700 mb-12">На Великую стену уходит целый день — до ближайшего участка (Мутяньюй) около 1,5 часов на машине, так что планируй соответственно.</p>
+
+    <!-- ==================== ДОСТОПРИМЕЧАТЕЛЬНОСТИ ==================== -->
+    <h2 id="attractions" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎯 Главные достопримечательности</h2>
+
+    <!-- Forbidden City -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <div class="w-full rounded-2xl overflow-hidden">
+        <img src="/images/beijing/forbidden-city.webp" alt="Комплекс Запретного города в Пекине" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Запретный город (故宫)</h3>
+        <p class="text-gray-700">Крупнейший дворцовый комплекс в мире — и вживую он кажется ещё масштабнее. Комплекс занимает 720 000 квадратных метров с почти 1000 зданий, золотыми крышами и красными стенами, которые не выцвели за 600 лет. Ты будешь идти по тем же камням, что и 24 императора, через дворы настолько огромные, что чувствуешь себя крошечным. Бронируй билеты минимум за неделю — всего 80 000 человек в день, и по понедельникам комплекс закрыт.</p>
+      </div>
+    </div>
+
+    <!-- Mutianyu Great Wall -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <div class="w-full rounded-2xl overflow-hidden">
+        <img src="/images/beijing/great-wall.webp" alt="Великая стена в Мутяньюй, вьющаяся по горным хребтам" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Великая стена — Мутяньюй (慕田峪长城)</h3>
+        <p class="text-gray-700">Лучше всего сохранившийся участок Великой стены и единственный, где можно спуститься на тобоггане. Протяжённость — более 2000 метров через 23 сторожевые башни эпохи Мин, восстановленные в первоначальном виде. Со стены открываются лесистые хребты во всех направлениях — ни сувенирных лавок, ни современных зданий, только горы. Поднимись на канатной дороге, а спустись на тобоггане; полуторачасовая дорога из города того стоит.</p>
+      </div>
+    </div>
+
+    <!-- Temple of Heaven -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <div class="w-full rounded-2xl overflow-hidden">
+        <img src="/images/beijing/temple-of-heaven.webp" alt="Храм Неба — исторический храм эпохи Мин в Пекине" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Храм Неба (天坛)</h3>
+        <p class="text-gray-700">Идеальный круг из сине-глазурованной черепицы, устремлённый в небо — Храм Неба, куда императоры Мин и Цин приходили молиться о хорошем урожае. Зал Молитвы о хорошем урожае высотой 38 метров построен без единого гвоздя. В окружающем парке до 7 утра слышно, как распеваются оперные певцы, поют птицы и стучат костяшки маджонга. Приходи на рассвете, чтобы увидеть Пекин таким, какой он есть на самом деле.</p>
+      </div>
+    </div>
+
+    <!-- Summer Palace -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <div class="w-full rounded-2xl overflow-hidden">
+        <img src="/images/beijing/summer-palace.webp" alt="Летний дворец — императорский сад с озером Куньмин в Пекине" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Летний дворец (颐和园)</h3>
+        <p class="text-gray-700">Императорская резиденция настолько грандиозная, что другие королевские сады кажутся двориками — вдовствующая императрица Цыси потратила на него бюджет военно-морского флота. Одно озеро Куньмин занимает 220 гектаров, через него перекинут 17-арочный мост, который золотом сияет на закате. Пройдись по крытой Длинной галерее — 728 метров расписных потолков с более чем 14 000 сцен из китайских легенд. Приезжай поздней осенью ради золотых гинкго и безлюдья.</p>
+      </div>
+    </div>
+
+    <!-- Hutongs -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start bg-white border border-gray-200 rounded-2xl p-6 mb-12">
+      <div class="w-full rounded-2xl overflow-hidden">
+        <img src="/images/beijing/hutongs.webp" alt="Пекинские хутуны — традиционные узкие переулки" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Хутуны (胡同)</h3>
+        <p class="text-gray-700">Древние пекинские переулки, пережившие снос, — сеть узких улочек, где жизнь почти не изменилась за столетие. Некоторым хутунам более 700 лет, ещё со времён династии Юань. Ты увидишь стариков, играющих в шахматы на табуретках, велосипеды, прислонённые к серым кирпичным стенам, и бельё, висящее между проводами. Пропусти туристическую Наньлуогусян и прогуляйся по хутуну Вудаоин или переулкам вокруг Шичахая.</p>
+      </div>
+    </div>
+
+    <h2 id="getting-around" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🚇 Как передвигаться</h2>
+    <ul class="list-disc pl-6 space-y-3 text-lg text-gray-700 mb-12">
+      <li><strong>Метро:</strong> Пекинское метро обширное, дешёвое и с английскими указателями. Покрывает почти все главные достопримечательности. Смотри <a href="/ru/transport/metro-bus/" class="text-blue-600 hover:underline">Гид по метро и автобусам крупных городов Китая</a> для советов по пекинской подземке.</li>
+      <li><strong>Didi (китайский Uber):</strong> Очень удобно для поездок от двери до двери. Скачай приложение до приезда. Можно вводить адреса на английском. Узнай, как настроить, в <a href="/ru/transport/didi/" class="text-blue-600 hover:underline">Как пользоваться Didi в Китае иностранцу</a>.</li>
+      <li><strong>Такси:</strong> Есть, но с общением бывает сложно. Всегда показывай адрес иероглифами (попроси название отеля написать по-китайски).</li>
+      <li><strong>Велосипед:</strong> Пекин на удивление удобен для велосипедистов. Везде есть шеринговые велики (Hellobike, Meituan). Просто отсканируй через Alipay или WeChat и поезжай.</li>
+    </ul>
+
+    <h2 id="where-to-stay" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏨 Где остановиться</h2>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <h3 class="text-xl font-bold text-gray-900 mb-2">Район Дунчэн (东城区) — Лучше всего для новичков</h3>
+      <p class="text-gray-700">Центральное расположение рядом с Запретным городом, хутунами и Ванфуцзин. Хороший баланс цены и удобства.</p>
+    </div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <h3 class="text-xl font-bold text-gray-900 mb-2">Район Сичэн (西城区) — Лучше всего для любителей культуры</h3>
+      <p class="text-gray-700">Тихая, традиционная сторона. Рядом с озером Хоухай, Барабанной башней и множеством хорошо сохранившихся хутунов.</p>
+    </div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12">
+      <h3 class="text-xl font-bold text-gray-900 mb-2">Район Чаоян (朝阳区) — Лучше всего для деловых путешественников</h3>
+      <p class="text-gray-700">Современный деловой центр. Много международных отелей и западных ресторанов. Рядом арт-район 798 и ночная жизнь Санлитунь.</p>
+    </div>
+
+    <!-- ==================== ЧТО ПОЕСТЬ ==================== -->
+    <h2 id="what-to-eat" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🍜 Что поесть</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Пекинская кухня строится на ярких вкусах, блюдах из пшеницы и императорских кулинарных традициях.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+      <!-- Peking Duck -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/beijing/peking-duck.webp" alt="Утка по-пекински с хрустящей кожицей в блинчиках" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">Утка по-пекински (北京烤鸭)</h3>
+          <p class="text-gray-600 text-base">Целая утка, запечённая до хруста кожицы — вот что такое утка по-пекински. Кожица хрустящая и жирная, мясо нежное, заворачивается в тонкие блинчики со сладким бобовым соусом, полосками огурца и зелёным луком. Некоторые местные макают хрустящую кожицу в белый сахар перед тем, как завернуть. Рестораны у Цяньмэнь делают это по старинке уже поколениями.</p>
+        </div>
+      </div>
+
+      <!-- Zha Jiang Mian -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/beijing/zha-jiang-mian.webp" alt="Чжацзянмянь — лапша с соусом из ферментированных соевых бобов" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">Чжацзянмянь (炸酱面)</h3>
+          <p class="text-gray-600 text-base">Толстая лапша ручной работы, утопающая в тёмном соусе из ферментированных соевых бобов и свиного фарша. Соус солёный, с глубоким вкусом и лёгкой горчинкой от бобовой пасты, которую оттеняют свежие огурцы и ростки бобов. Перемешай всё до однородности, чтобы каждый волосок лапши покрылся соусом. Лучшие порции ищи в старых хутунах у Дунсы.</p>
+        </div>
+      </div>
+
+      <!-- Jianbing -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/beijing/jianbing.webp" alt="Цзяньбин — пикантный китайский блин с яйцом и зелёным луком" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">Цзяньбин (煎饼)</h3>
+          <p class="text-gray-600 text-base">Пекинский завтрак на бегу — тонкий пшённый блин на горячей сковороде, с разбитым яйцом, сложенный вокруг хрустящего вафельного крекера. Весь секрет в контрасте: мягкий блин, хрустящая серединка, острый чили-соус и свежий лук, пробивающий насыщенность. Ешь прямо из фольги, пока горячий. Бери с уличной тележки у любой станции метро до 9 утра — к полудню их обычно разбирают.</p>
+        </div>
+      </div>
+
+      <!-- Lamb Hotpot -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/beijing/lamb-hotpot.webp" alt="Хого с бараниной — шуань ян жоу в медном котле" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">Хого с бараниной — Шуань Ян Жоу (涮羊肉)</h3>
+          <p class="text-gray-600 text-base">Медный котелок-самовар с кипящим бульоном — это северокитайский способ есть хого, и здесь всё дело в баранине. Мясо нарезано так тонко, что готовится за секунды, оставаясь нежным с чистым, чуть диковатым вкусом. Покружи в кипящем бульоне не дольше десяти секунд, затем макни в кунжутный соус с ферментированным тофу. Маленькие семейные заведения у Гулоу забиты местными зимними вечерами.</p>
+        </div>
+      </div>
+
+      <!-- Douzhi -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/beijing/douzhi.webp" alt="Доучжи — ферментированный напиток из маша" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">Доучжи (豆汁)</h3>
+          <p class="text-gray-600 text-base">Напиток, который делит пекинцев на своих и чужих — ферментированный сок маша, пахнущий старой зеленью и кислый на вкус. Подаётся тёплым, серо-зелёного цвета, с чуть комковатой текстурой, всегда вместе с солёным кунжутным кольцом и маринованной редькой. Его не пьют мелкими глотками — его хлещут. Закажи чашку в утренних закусочных в старых хутунах у Тянтаня и проверь, войдёшь ли ты в число тех редких приезжих, кому он нравится.</p>
+        </div>
+      </div>
+
+      <!-- Sugar-coated Hawthorn -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/beijing/bingtanghulu.webp" alt="Карамелизированный боярышник на палочке" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">Карамелизированный боярышник (冰糖葫芦)</h3>
+          <p class="text-gray-600 text-base">Ягоды боярышника на бамбуковой шпажке, покрытые твёрдой сахарной глазурью. Первый укус ломает сахар, и тут же накатывает кислинка ягоды — этот кисло-сладкий контраст и вызывает привыкание. Сахарная глазурь достаточно тонкая, чтобы расколоться, и достаточно толстая, чтобы ягоды не казались слишком терпкими. Продавцы торгуют ими с тележек по всему ночному рынку Ванфуцзин и в хутунах круглый год.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="not-prose mt-16">
+      <h2 class="text-2xl font-bold text-gray-900 mb-8">📚 Связанные путеводители</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/ru/cities/city-select/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🗺️ <strong>Сколько дней в Китае?</strong> — Спланируй полный маршрут</a>
+        <a href="/ru/cities/shanghai-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🌆 <strong>Путеводитель по Шанхаю</strong> — Сравни с другим великим городом Китая</a>
+        <a href="/ru/transport/transport-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>Как передвигаться по Китаю</strong> — Все варианты транспорта</a>
+        <a href="/ru/transport/high-speed-rail/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>Как забронировать и поехать на высокоскоростном поезде</strong> — Пекин — Шанхай на поезде</a>
+      </div>
+    </div>
+  </article>
+</Layout>

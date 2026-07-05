@@ -1,0 +1,129 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'Из аэропорта в город в Китае: что обычно лучше всего работает';
+const description = 'Метро, DiDi, такси или автобус — как выбрать и что ожидать в крупных аэропортах Китая.';
+---
+
+<Layout title={title} description={description} lang="ru">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/ru/transport/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Назад к транспорту
+      </a>
+    </nav>
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🛬 Транспорт</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        Из аэропорта в город в Китае: что обычно лучше всего работает
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">Метро, DiDi, такси или автобус — как выбрать и что ожидать в крупных аэропортах Китая.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Последнее обновление: июнь 2026</span>
+        <span>⏱️ 5 мин. чтения</span>
+      </div>
+    </header>
+
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-blue-900 mb-4">🎯 Краткий ответ</h2>
+      <p class="text-lg text-blue-800 leading-relaxed">
+        <strong>Садись на метро</strong> если рейс дневной и багажа немного — дёшево (¥5–10) и без пробок. <strong>Закажи DiDi</strong> если устал, с тяжёлыми чемоданами или прилетаешь поздно ночью (¥80–200). Не бери нелегальное такси — пользуйся официальной стоянкой.
+      </p>
+    </div>
+
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 В этом гайде</h3>
+      <ul class="space-y-3">
+        <li><a href="#metro" class="text-blue-600 hover:underline">🚇 Вариант 1: Метро (лучший для большинства)</a></li>
+        <li><a href="#didi" class="text-blue-600 hover:underline">🚗 Вариант 2: DiDi (лучший «от двери до двери»)</a></li>
+        <li><a href="#taxi" class="text-blue-600 hover:underline">🚕 Вариант 3: Такси</a></li>
+        <li><a href="#bus" class="text-blue-600 hover:underline">🚌 Вариант 4: Аэропортовый автобус</a></li>
+        <li><a href="#reference" class="text-blue-600 hover:underline">📊 Краткая таблица по аэропортам</a></li>
+      </ul>
+    </nav>
+
+    <div class="prose prose-gray max-w-none">
+
+      <h2 id="metro" class="text-2xl font-bold text-gray-900 mb-4">🚇 Вариант 1: Метро (лучший для большинства)</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Крупные аэропорты Китая соединены с центром города прямыми линиями метро. Билеты стоят всего ¥5–10, в пробках не стоишь, а на всех станциях есть указатели на английском.</p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>Хорошо если:</strong> У тебя лёгкий багаж, рейс днём (метро работает примерно с 6:00 до 23:00), и отель рядом с метро.</p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>Не подходит если:</strong> Тяжёлые чемоданы, поздний прилёт или просто устал и хочешь сразу добраться до отеля без пересадок.</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">Вариант 2: DiDi (лучший «от двери до двери»)</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Если у тебя настроен DiDi (смотри <a href="/ru/transport/didi/" class="text-blue-600 hover:underline">гайд по DiDi</a>), можно заказать машину прямо из зоны прибытия. Приложение показывает цену заранее, оплата через Alipay/WeChat, и ты отслеживаешь водителя в реальном времени.</p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>Примерная цена:</strong> ¥80–200 в зависимости от расстояния и города.</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">Вариант 3: Такси</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Такси ждут на официальных стоянках прямо у выхода из зоны прилёта. Подготовь название отеля и адрес иероглифами — покажешь водителю. Следи, чтобы включили счётчик.</p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>Цена:</strong> Чуть дороже DiDi и может вырасти, если попадёшь в пробку.</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">Вариант 4: Аэропортовый автобус</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">В большинстве крупных аэропортов есть автобусные маршруты до ключевых районов города. Дешевле такси (¥20–40), но медленнее и менее удобно. Не везде есть указатели на английском.</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">Краткая таблица по аэропортам</h2>
+
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-x-auto mb-8 not-prose">
+        <table class="w-full text-left">
+          <thead class="bg-gray-50">
+            <tr>
+              <th class="px-6 py-4 text-sm font-semibold text-gray-900">Аэропорт</th>
+              <th class="px-6 py-4 text-sm font-semibold text-gray-900">Метро до центра</th>
+              <th class="px-6 py-4 text-sm font-semibold text-gray-900">DiDi до центра</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-100">
+            <tr class="hover:bg-gray-50"><td class="px-6 py-4 text-gray-700">Пекин Шоуду (PEK)</td><td class="px-6 py-4 text-gray-700">¥30, 60 мин</td><td class="px-6 py-4 text-gray-700">¥120, 45 мин</td></tr>
+            <tr class="hover:bg-gray-50"><td class="px-6 py-4 text-gray-700">Пекин Дасин (PKX)</td><td class="px-6 py-4 text-gray-700">¥35, 50 мин</td><td class="px-6 py-4 text-gray-700">¥180, 60 мин</td></tr>
+            <tr class="hover:bg-gray-50"><td class="px-6 py-4 text-gray-700">Шанхай Пудун (PVG)</td><td class="px-6 py-4 text-gray-700">¥8, 50 мин</td><td class="px-6 py-4 text-gray-700">¥180, 50 мин</td></tr>
+            <tr class="hover:bg-gray-50"><td class="px-6 py-4 text-gray-700">Гуанчжоу Байюнь (CAN)</td><td class="px-6 py-4 text-gray-700">¥8, 40 мин</td><td class="px-6 py-4 text-gray-700">¥100, 40 мин</td></tr>
+            <tr class="hover:bg-gray-50"><td class="px-6 py-4 text-gray-700">Шэньчжэнь Баоань (SZX)</td><td class="px-6 py-4 text-gray-700">¥8, 40 мин</td><td class="px-6 py-4 text-gray-700">¥80, 35 мин</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 not-prose">
+        <p class="text-gray-700"><strong>Моя рекомендация:</strong> Бери метро, если рейс дневной и багажа немного. Закажи DiDi, если устал, много сумок или прилетаешь поздно. Не бери нелегальное такси — пользуйся официальной стоянкой.</p>
+      </div>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="related" class="text-2xl font-bold text-gray-900 mb-6 mt-12">📚 Похожие гайды</h2>
+
+      <div class="space-y-4 not-prose">
+        <a href="/ru/transport/transport-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>Как передвигаться по Китаю</strong> — полный транспортный гайд</a>
+        <a href="/ru/transport/high-speed-rail/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>Как купить билет и поехать на скоростном поезде</strong> — советы по бронированию</a>
+        <a href="/ru/transport/didi/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚗 <strong>Как иностранцу пользоваться DiDi в Китае</strong> — настройка каршеринга</a>
+        <a href="/ru/payment/setup-alipay/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">💳 <strong>Как настроить Alipay иностранцу</strong> — оплачивай поездки</a>
+      </div>
+
+    </div>
+
+    <!-- Sources -->
+    <div class="mt-8 pt-6 border-t border-gray-200 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-3">Источники</h3>
+      <ul class="space-y-2">
+        <li><a href="https://en.bcia.com.cn/wljc.html" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">Аэропорт Пекин Шоуду — Транспорт</a></li>
+        <li><a href="https://www.shanghaiairport.com/ensh/gdjt/index.html" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">Аэропорт Шанхая — Транспорт</a></li>
+        <li><a href="https://www.gbiac.net/traffic/tfa?urlKey=to-from-airport_en" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">Аэропорт Гуанчжоу Байюнь — Аэропортовый транспорт</a></li>
+      </ul>
+    </div>
+  </article>
+</Layout>

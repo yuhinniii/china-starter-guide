@@ -1,0 +1,117 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'Метро и автобусы в крупных городах Китая';
+const description = 'Как пользоваться общественным транспортом в китайских городах. Мобильные платежи, транспортные карты, советы по автобусам и общие рекомендации.';
+---
+
+<Layout title={title} description={description} lang="ru">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/ru/transport/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Назад к транспорту
+      </a>
+    </nav>
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🚇 Общественный транспорт</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        Метро и автобусы в крупных городах Китая
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">Как пользоваться общественным транспортом в китайских городах — мобильные платежи, транспортные карты, советы по автобусам и навигации.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Последнее обновление: июнь 2026</span>
+        <span>⏱️ 4 мин. чтения</span>
+      </div>
+    </header>
+
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-blue-900 mb-4">🎯 Краткий ответ</h2>
+      <p class="text-lg text-blue-800 leading-relaxed">
+        Китайское метро — <strong>мирового уровня, дёшево и с английским</strong>. Просто открой Alipay или WeChat Pay, отсканируй QR-код на турникете — и никаких билетов. Автобусы — хороший запасной вариант для районов без метро. Названия станций и объявления — везде на двух языках.
+      </p>
+    </div>
+
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 В этом гайде</h3>
+      <ul class="space-y-3">
+        <li><a href="#general" class="text-blue-600 hover:underline">💡 Общие советы для всех городов</a></li>
+        <li><a href="#buses" class="text-blue-600 hover:underline">🚌 Автобусы</a></li>
+        <li><a href="#cards" class="text-blue-600 hover:underline">💳 Транспортные карты</a></li>
+        <li><a href="#mobile" class="text-blue-600 hover:underline">📱 Мобильная оплата проезда</a></li>
+      </ul>
+    </nav>
+
+    <div class="prose prose-gray max-w-none">
+
+      <h2 id="general" class="text-2xl font-bold text-gray-900 mb-4">💡 Общие советы для всех городов</h2>
+
+      <ul class="space-y-3 text-gray-700 mb-8">
+        <li><strong>Оплата:</strong> Можно купить одноразовые билеты в автоматах (большинство принимают наличные и Alipay/WeChat Pay). Или сканируй QR-код на турникетах через раздел «Транспорт» в Alipay или мини-программу проезда в WeChat.</li>
+        <li><strong>Указатели:</strong> Названия станций на китайском и английском. Объявления — двуязычные.</li>
+        <li><strong>Пересадки:</strong> Следуй за цветными линиями и английскими указателями. Переходы между линиями хорошо обозначены.</li>
+        <li><strong>Навигационные приложения:</strong> Используй местные карты — Gaode Maps или Baidu Maps для точных маршрутов метро.</li>
+      </ul>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="buses" class="text-2xl font-bold text-gray-900 mb-4">🚌 Автобусы</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Автобусы — удобный запасной вариант, если метро не идёт прямо до нужного места: они охватывают более отдалённые районы. Дешевле метро, но медленнее и часто стоят в пробках в час пик.</p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">В туристических городах большинство автобусов объявляют остановки на китайском и английском. Но всё равно внимательно следи за остановками. Во многих автобусах нужно сканировать транспортный QR-код при входе и при выходе — не забудь отсканировать его снова перед тем, как выйти.</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="cards" class="text-2xl font-bold text-gray-900 mb-4">💳 Транспортные карты</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">В каждом городе своя транспортная карта (в Пекине — Yikatong, в Шэньчжэне — Shenzhentong). Купить можно в кассах метро, пополнить — через мобильные платежи. Они работают и в метро, и в автобусах, дают небольшие скидки. Но для краткосрочных поездок они не обязательны. У многих карт красивый дизайн — можно взять на память.</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="mobile" class="text-2xl font-bold text-gray-900 mb-4">📱 Мобильная оплата проезда</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Это самый популярный способ у местных — не нужно покупать билеты или носить отдельную карту.</p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">И Alipay, и WeChat Pay умеют создавать универсальные транспортные QR-коды для метро и автобусов. Открой Alipay, нажми «Транспорт» на главном экране, выбери свой город и сканируй код на турникете. Плата списывается с привязанной карты. В WeChat то же самое через мини-программу «Код проезда».</p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>Совет:</strong> Для автобусов и метро используются разные QR-коды, так что перед посадкой проверь, что выбрал правильный.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8 not-prose">
+        <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+          <img src="/images/alipay-transit.webp" alt="Настройка транспортного QR-кода в Alipay" class="w-full" />
+          <div class="p-4">
+            <p class="text-sm font-semibold text-gray-900">Транспортный QR-код Alipay</p>
+            <p class="text-xs text-gray-500">Открой Alipay → Транспорт → выбери город → сканируй на турникете</p>
+          </div>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+          <img src="/images/wechat-transit.webp" alt="Настройка транспортного QR-кода в WeChat" class="w-full" />
+          <div class="p-4">
+            <p class="text-sm font-semibold text-gray-900">Транспортный QR-код WeChat</p>
+            <p class="text-xs text-gray-500">Открой WeChat → мини-программа «Код проезда» → сканируй на турникете</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="not-prose mt-16">
+      <h2 class="text-2xl font-bold text-gray-900 mb-8">📚 Похожие гайды</h2>
+      <div class="space-y-4">
+        <a href="/ru/transport/transport-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>Как передвигаться по Китаю</strong> — полный транспортный гайд</a>
+        <a href="/ru/transport/didi/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚗 <strong>Как иностранцу пользоваться DiDi в Китае</strong> — настройка каршеринга</a>
+        <a href="/ru/payment/setup-alipay/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">💳 <strong>Как настроить Alipay иностранцу</strong> — оплачивай проезд с телефона</a>
+      </div>
+    </div>
+
+    <!-- Sources -->
+    <div class="mt-8 pt-6 border-t border-gray-200 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-3">Источники</h3>
+      <ul class="space-y-2">
+        <li><a href="https://" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">Сайты метро в основном на китайском. Общие карты метро и информация о маршрутах доступны на официальных сайтах метро каждого города с переводом в браузере.</a></li>
+      </ul>
+    </div>
+  </article>
+</Layout>

@@ -1,0 +1,329 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = "Безопасно ли путешествовать в Китай?";
+const description = "Интересуешься, безопасно ли в Китае для туристов? Местный житель делится реальным опытом — никаких лозунгов, только честный разговор.";
+---
+
+<Layout title={title} description={description} lang="ru">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/ru/life/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Назад к советам
+      </a>
+    </nav>
+    <!-- Header -->
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🛡️ Советы для путешествий по Китаю</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        Безопасно ли путешествовать в Китай?
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">Честный разговор от того, кто здесь живёт — не туристическая брошюра.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Последнее обновление: июнь 2026</span>
+        <span>⏱️ 8 мин. чтения</span>
+      </div>
+    </header>
+
+    <!-- Quick Answer Box -->
+    <div class="bg-gradient-to-r from-green-50 to-emerald-50 border-l-4 border-green-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-green-900 mb-4">🎯 Краткий ответ</h2>
+      <p class="text-lg text-green-800 leading-relaxed">
+        <strong>Да, Китай очень безопасен.</strong> Я прожил здесь всю жизнь — свободно ношу телефон в руке, гуляю по ночным рынкам после 22:00 и никогда не беспокоюсь. Насильственная преступность крайне редка. Главная трудность — не безопасность, а языковой барьер и понимание того, как всё устроено.
+      </p>
+    </div>
+
+    <!-- Table of Contents -->
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 В этом гайде</h3>
+      <ul class="space-y-3">
+        <li><a href="#why-safe" class="text-blue-600 hover:underline">✅ Почему в Китае так безопасно?</a></li>
+        <li><a href="#the-numbers" class="text-blue-600 hover:underline">📊 А что говорят цифры?</a></li>
+        <li><a href="#real-talk" class="text-blue-600 hover:underline">💬 Честно: что говорят мои иностранные друзья</a></li>
+        <li><a href="#watch-for" class="text-blue-600 hover:underline">⚠️ Да, на это стоит обратить внимание</a></li>
+        <li><a href="#solo-women" class="text-blue-600 hover:underline">👤 Соло-путешественники и женщины</a></li>
+        <li><a href="#practical-tips" class="text-blue-600 hover:underline">🎒 Практические советы от местного</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="prose prose-lg max-w-none">
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        Я живу в Китае всю жизнь. Я часто ношу телефон свободно в руке или засовываю в задний карман, когда гуляю или еду в метро. И я часто брожу по оживлённым ночным рынкам далеко за 22:00 во время своих путешествий.
+      </p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6 font-semibold text-gray-900">
+        Так что могу сказать с полной честностью: <strong>Китай — одна из самых безопасных стран в мире для туристов.</strong>
+      </p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        Я говорю это не как правительственный лозунг. Я говорю это как человек, который испытал это на себе: безопасность здесь — не хвастовство, это то, что ты реально чувствуешь в повседневной жизни. Мои иностранные друзья, приезжая, всегда говорят одно и то же: «Я не ожидал, что буду чувствовать себя так расслабленно».
+      </p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-12">Давай разберёмся, почему.</p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <!-- Section 1 -->
+      <h2 id="why-safe" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">✅</span> Почему в Китае так безопасно?
+      </h2>
+
+      <div class="space-y-8 mb-12">
+        <div class="bg-blue-50 border border-blue-100 rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-blue-900 mb-3">🏘️ 1. Соседский догляд — реальность</h3>
+          <p class="text-gray-700 leading-relaxed">
+            В Китае у районов есть тихая социальная ткань, которая служит естественной страховочной сеткой. Продавцы сидят перед магазинами, дяди играют в шахматы на тротуаре, тётушки выгуливают собак, бабушки собираются в парке. Это не просто повседневные сцены — это естественная система наблюдения. Кто-то всегда смотрит, всегда присутствует.
+          </p>
+          <p class="text-gray-700 leading-relaxed mt-4">
+            Проходя через жилой район, ты не чувствуешь, что за тобой следят в плохом смысле. Ты чувствуешь себя... замеченным. Люди любопытны, дружелюбны, и если бы что-то было не так, кто-то вмешался бы.
+          </p>
+        </div>
+
+        <div class="bg-purple-50 border border-purple-100 rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-purple-900 mb-3">👮 2. Полиция повсюду (и она помогает)</h3>
+          <p class="text-gray-700 leading-relaxed">
+            Прогуливаясь по любому китайскому городу, ты увидишь полицейских почти на каждом крупном перекрёстке. Они не выглядят устрашающе — они просто есть. Полицейские машины с мигалками — обычное дело ночью, и они создают ощущение, что улицы под присмотром.
+          </p>
+          <p class="text-gray-700 leading-relaxed mt-4">
+            Если тебе когда-нибудь понадобится помощь, подойди к любому офицеру. Даже если он не говорит по-английски, он найдёт того, кто говорит, или лично проводит тебя куда нужно. Я видел, как это происходило с заблудившимися туристами.
+          </p>
+        </div>
+
+        <div class="bg-orange-50 border border-orange-100 rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-orange-900 mb-3">🌙 3. Улицы никогда не спят</h3>
+          <p class="text-gray-700 leading-relaxed">
+            Китайские города — настоящие «города, которые никогда не спят» — и это преимущество для безопасности. В полночь ты всё ещё найдёшь уличных торговцев едой, курьеров, спешащих на электроскутерах, и людей, идущих домой. Постоянный поток человеческой активности означает, что тёмные пустые улицы — редкость.
+          </p>
+          <p class="text-gray-700 leading-relaxed mt-4">
+            В Пекине и Шанхае, я бы сказал, гулять одному в полночь безопаснее, чем гулять в большинстве европейских или американских городов днём. Это не преувеличение — это опыт сотен миллионов людей, живущих здесь.
+          </p>
+        </div>
+
+        <div class="bg-green-50 border border-green-100 rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-green-900 mb-3">📹 4. Камеры повсюду (и это хорошо)</h3>
+          <p class="text-gray-700 leading-relaxed">
+            В Китае обширное видеонаблюдение в общественных местах. Некоторые туристы сначала находят это странным, но для путешественника это огромная страховка. Если с тобой что-то случится — ты потеряешь телефон, кто-то украдёт сумку, произойдёт несчастный случай — очень высока вероятность, что это попало на камеру.
+          </p>
+          <p class="text-gray-700 leading-relaxed mt-4">
+            Это также служит мощным сдерживающим фактором. Уличная преступность здесь гораздо рискованнее, потому что тебя почти наверняка опознают.
+          </p>
+        </div>
+      </div>
+
+      <hr class="border-gray-200 my-12" />
+
+      <!-- Section 2: The Numbers -->
+      <h2 id="the-numbers" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">📊</span> А что говорят цифры?
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Вот данные, которые подтверждают ощущения. Уровень насильственной преступности в Китае значительно ниже, чем в большинстве популярных туристических направлений:</p>
+
+      <div class="overflow-x-auto mb-12 not-prose">
+        <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+          <thead>
+            <tr class="bg-gray-900 text-white">
+              <th class="px-6 py-4 font-bold">Категория преступлений</th>
+              <th class="px-6 py-4 font-bold text-center bg-green-600">Китай</th>
+              <th class="px-6 py-4 font-bold text-center">США</th>
+              <th class="px-6 py-4 font-bold text-center">Великобритания</th>
+              <th class="px-6 py-4 font-bold text-center">Франция</th>
+              <th class="px-6 py-4 font-bold text-center bg-red-600 text-white">Бразилия</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100">
+              <td class="px-6 py-4 font-semibold">Убийства (на 100 тыс.)</td>
+              <td class="px-6 py-4 text-center font-bold text-green-600">~0,5</td>
+              <td class="px-6 py-4 text-center">6,4</td>
+              <td class="px-6 py-4 text-center">1,1</td>
+              <td class="px-6 py-4 text-center">1,3</td>
+              <td class="px-6 py-4 text-center text-red-600 font-bold">21,5</td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-6 py-4 font-semibold">Оружие</td>
+              <td class="px-6 py-4 text-center font-bold text-green-600">Ноль</td>
+              <td class="px-6 py-4 text-center">Часто</td>
+              <td class="px-6 py-4 text-center">Редко</td>
+              <td class="px-6 py-4 text-center">Редко</td>
+              <td class="px-6 py-4 text-center text-red-600">Часто</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 font-semibold">Уличная преступность</td>
+              <td class="px-6 py-4 text-center font-bold text-green-600">Низкая</td>
+              <td class="px-6 py-4 text-center">Умеренная</td>
+              <td class="px-6 py-4 text-center">Умеренная</td>
+              <td class="px-6 py-4 text-center">Высокая</td>
+              <td class="px-6 py-4 text-center text-red-600 font-bold">Очень высокая</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="text-sm text-gray-500 mb-12"><em>Источники: UNODC Global Study on Homicide, Numbeo Safety Index (2025-2026)</em></p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <!-- Section 3: Real Talk -->
+      <h2 id="real-talk" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">💬</span> Честно: что говорят мои иностранные друзья
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">За годы я принимал друзей из Великобритании, США, Австралии и Германии. Вот что они постоянно говорят:</p>
+
+      <div class="space-y-6 mb-12 not-prose">
+        <blockquote class="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-r-xl">
+          <p class="text-lg text-gray-800 italic mb-3">«Я никогда не чувствовал себя в такой безопасности, гуляя по большому городу ночью.»</p>
+          <cite class="text-sm text-gray-600 font-semibold">— Том, Лондон</cite>
+        </blockquote>
+
+        <blockquote class="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-r-xl">
+          <p class="text-lg text-gray-800 italic mb-3">«В Нью-Йорке я постоянно оглядываюсь. В Шанхае я забыл телефон на столике в кафе и вернулся через 10 минут — он всё ещё был там.»</p>
+          <cite class="text-sm text-gray-600 font-semibold">— Сара, Нью-Йорк</cite>
+        </blockquote>
+
+        <blockquote class="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-r-xl">
+          <p class="text-lg text-gray-800 italic mb-3">«Самое страшное в Китае — языковой барьер, а не безопасность. Как только разберёшься, как заказать еду и поймать такси, всё остальное легко.»</p>
+          <cite class="text-sm text-gray-600 font-semibold">— Марк, Сидней</cite>
+        </blockquote>
+      </div>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-12">
+        Это отзывы, которые я слышу снова и снова. Главная трудность для посетителей — не безопасность, а привыкание к совершенно другому образу жизни. Как только это происходит, вопрос безопасности отпадает сам собой.
+      </p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <!-- Section 4: Watch For -->
+      <h2 id="watch-for" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">⚠️</span> Да, на это стоит обратить внимание
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">Я не говорю, что Китай идеален. Вот на что реально стоит обратить внимание:</p>
+
+      <div class="bg-amber-50 border border-amber-200 rounded-2xl p-8 mb-12 not-prose">
+        <ul class="space-y-4">
+          <li class="flex items-start gap-3">
+            <span class="text-red-500 text-xl mt-0.5">⚠️</span>
+            <div>
+              <strong class="text-gray-900">Карманники в людных местах</strong>
+              <p class="text-gray-700 mt-1">Вокзалы, туристические достопримечательности, фестивали — как и везде</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-red-500 text-xl mt-0.5">⚠️</span>
+            <div>
+              <strong class="text-gray-900">Туристические разводы</strong>
+              <p class="text-gray-700 mt-1">Фальшивые такси, завышенные цены на чай, «благословляющие» монахи — смотри <a href="/ru/life/common-scams/" class="text-blue-600 hover:underline">статью о мошенничестве</a></p>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-red-500 text-xl mt-0.5">⚠️</span>
+            <div>
+              <strong class="text-gray-900">Качество воздуха</strong>
+              <p class="text-gray-700 mt-1">В северных городах возможен смог, песчаные бури и обильный тополиный пух, который легко вызывает ринит. Рекомендуется проверять AQI перед выходом и всегда носить с собой маску.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-red-500 text-xl mt-0.5">⚠️</span>
+            <div>
+              <strong class="text-gray-900">Языковой барьер</strong>
+              <p class="text-gray-700 mt-1">Вот настоящая трудность. Заранее подготовь офлайн-переводчик</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <hr class="border-gray-200 my-12" />
+
+      <!-- Section 5: Solo & Women -->
+      <h2 id="solo-women" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">👤</span> Безопасно ли в Китае для соло-путешественников? Для женщин?
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 not-prose">
+        <div class="bg-indigo-50 border border-indigo-100 rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-indigo-900 mb-4">🎒 Соло-путешественники</h3>
+          <p class="text-gray-700 leading-relaxed">
+            Очень безопасно. Инфраструктура (поезда, метро, велошеринг, приложения доставки) делает соло-путешествия лёгкими. Единственная реальная проблема — языковой барьер — постарайся выучить базовые фразы или используй переводчик.
+          </p>
+        </div>
+
+        <div class="bg-pink-50 border border-pink-100 rounded-2xl p-6">
+          <h3 class="text-xl font-bold text-pink-900 mb-4">👩 Путешественницы</h3>
+          <p class="text-gray-700 leading-relaxed">
+            Китай безопаснее для женщин, чем большинство туристических направлений. Уличные домогательства редки. Однако, как и везде, следи за напитками в барах, избегай безлюдных мест поздно ночью и пользуйся Didi (отслеживаемый райдшеринг) вместо того, чтобы ловить такси на улице после наступления темноты.
+          </p>
+        </div>
+      </div>
+
+      <hr class="border-gray-200 my-12" />
+
+      <!-- Section 6: Practical Tips -->
+      <h2 id="practical-tips" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🎒</span> Практические советы от местного
+      </h2>
+
+      <div class="bg-gray-900 text-white rounded-2xl p-8 mb-12 not-prose">
+        <ol class="space-y-4">
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">1</span>
+            <div><strong>Всегда носи с собой паспорт</strong> (или фото страницы с данными и визы) — полиция проводит случайные проверки документов</div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">2</span>
+            <div><strong>Пользуйся Didi, а не уличными такси</strong> — поездки отслеживаются, дешевле и намного безопаснее</div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">3</span>
+            <div><strong>Сохрани контакты посольства</strong> до прибытия</div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">4</span>
+            <div><strong>Храни цифровые копии</strong> паспорта, визы и страховки в телефоне</div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">5</span>
+            <div><strong>Скачай офлайн-карты</strong> (Google Maps работает с VPN, Apple Maps работает в Китае, Baidu/Gaode Maps — самое лучшее)</div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">6</span>
+            <div><strong>Оформи туристическую страховку</strong> — медицинские расходы намного ниже, чем на Западе, но без страховки всё равно дорого</div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">7</span>
+            <div><strong>Выучи две фразы</strong>: 救命 (jiù mìng / помогите) и 报警 (bào jǐng / вызовите полицию)</div>
+          </li>
+        </ol>
+      </div>
+
+      <hr class="border-gray-200 my-12" />
+    </div>
+
+    <!-- Related Guides -->
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose">
+      <h3 class="text-2xl font-bold text-gray-900 mb-6">📚 Похожие гайды</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/ru/life/common-scams/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">Распространённые схемы обмана и как их избежать</p>
+          <p class="text-sm text-gray-600">Не дай мошенникам испортить поездку</p>
+        </a>
+        <a href="/ru/life/emergency-numbers/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">Экстренные номера и что делать, если нужна помощь</p>
+          <p class="text-sm text-gray-600">Сохрани эти номера до того, как они понадобятся</p>
+        </a>
+        <a href="/ru/payment/payment-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">Как платить в Китае</p>
+          <p class="text-sm text-gray-600">Alipay, WeChat Pay и всё о деньгах</p>
+        </a>
+        <a href="/ru/transport/didi/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">Как пользоваться Didi в Китае</p>
+          <p class="text-sm text-gray-600">Китайский аналог Uber — безопасно и дёшево</p>
+        </a>
+      </div>
+    </div>
+  </article>
+</Layout>

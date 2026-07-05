@@ -1,0 +1,203 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = "Путеводитель по Шанхаю: самый удобный для иностранцев город";
+const description = "Гид по Шанхаю — достопримечательности, еда, транспорт и где остановиться в самом интернациональном городе Китая.";
+---
+
+<Layout title={title} description={description} lang="ru">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🏙️ Шанхай</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">Путеводитель по Шанхаю: самый удобный для иностранцев город</h1>
+      <p class="text-xl text-gray-600 mb-6">Гид по Шанхаю — достопримечательности, еда, транспорт и где остановиться в самом интернациональном городе Китая.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Последнее обновление: июнь 2026</span>
+        <span>⏱️ 10 мин. чтения</span>
+      </div>
+    </header>
+
+    <div class="bg-gradient-to-r from-yellow-50 to-amber-50 border-l-4 border-yellow-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-yellow-900 mb-4">⚡ Быстрый ответ</h2>
+      <p class="text-lg text-yellow-800 leading-relaxed">Шанхай — <strong>самый удобный для иностранцев город Китая</strong>. Здесь больше всего англоговорящих, больше всего интернациональных ресторанов и небоскрёбы, которые могут соперничать с любыми в мире. От культовой набережной Бунд и Шанхайской башни до исторического сада Юйюань и волшебства Шанхайского Диснейленда — здесь есть всё для каждого. Если ты переживаешь из-за языкового барьера или культурного шока, Шанхай станет самым мягким введением в Китай.</p>
+    </div>
+
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 В этом путеводителе</h3>
+      <ul class="space-y-3">
+        <li><a href="#why-visit" class="text-blue-600 hover:underline">🌆 Зачем ехать в Шанхай?</a></li>
+        <li><a href="#how-many-days" class="text-blue-600 hover:underline">📅 Сколько дней нужно?</a></li>
+        <li><a href="#attractions" class="text-blue-600 hover:underline">🎯 Главные достопримечательности</a></li>
+        <li><a href="#getting-around" class="text-blue-600 hover:underline">🚇 Как передвигаться</a></li>
+        <li><a href="#where-to-stay" class="text-blue-600 hover:underline">🏨 Где остановиться</a></li>
+        <li><a href="#what-to-eat" class="text-blue-600 hover:underline">🍜 Что поесть</a></li>
+      </ul>
+    </nav>
+
+    <h2 id="why-visit" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🌆 Зачем ехать в Шанхай?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-12">Шанхай кажется городом будущего. Панорама Пудуна — с Шанхайской башней и телебашней «Жемчужина Востока», пронзающими облака, — это лицо современного Китая. Но старый город всё ещё очарователен: обсаженные деревьями улицы бывшей Французской концессии, здания в стиле ар-деко вдоль Бунда и извилистые переулки Старого города. Добавь к этому один из самых уникальных Диснейлендов в мире и гастрономическую сцену от ресторанов со звёздами Мишлен до уличных лотков за доллар — и получишь город, где есть абсолютно всё.</p>
+
+    <h2 id="how-many-days" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📅 Сколько дней нужно?</h2>
+    <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700 mb-12">
+      <li><strong>3 дня (стандартно):</strong> Бунд, Старый город, Французская концессия и панорама с Шанхайской башни или «Жемчужины Востока»</li>
+      <li><strong>4–5 дней (комфортно):</strong> Добавь Шанхайский Диснейленд, водный город Чжуцзяцзяо или поездку на день в соседний Сучжоу</li>
+      <li><strong>5+ дней (глубокое погружение):</strong> Исследуй музеи города, художественные галереи и ночные районы</li>
+    </ul>
+
+    <!-- ==================== ДОСТОПРИМЕЧАТЕЛЬНОСТИ ==================== -->
+    <h2 id="attractions" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎯 Главные достопримечательности</h2>
+
+    <!-- The Bund -->
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/shanghai/the-bund.webp" alt="Набережная Бунд ночью с колониальными зданиями и панорамой Пудуна" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">Бунд (外滩)</h3>
+      <p class="text-gray-700">Культовая набережная Шанхая — обязательное место для каждого туриста. С одной стороны — ряд из 26 великолепных колониальных зданий, «Выставка мировой архитектуры» в стилях готики, барокко, романском и ар-деко. С другой — ослепительная панорама Пудуна, где Шанхайская башня и «Жемчужина Востока» зажигают огни по ночам. Лучше всего приходить на закате, когда золотой свет ложится на старые здания, а город постепенно зажигает огни на другом берегу. Неспешная прогулка вдоль 1,5-километровой набережной — идеальное начало знакомства с Шанхаем.</p>
+      <div class="clear-both"></div>
+    </div>
+
+    <!-- Shanghai Tower -->
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/shanghai/shanghai-tower.webp" alt="Шанхайская башня — самое высокое здание Китая" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">Шанхайская башня (上海中心大厦)</h3>
+      <p class="text-gray-700">Самое высокое здание Китая и третье по высоте в мире — 632 метра. Смотровая площадка на высоте 546 метров открывает захватывающий дух 360-градусный обзор всего Шанхая — в ясный день видно, как река Хуанпу вьётся до самого моря. Поездка на лифте сама по себе впечатление: он разгоняется до 20 метров в секунду (72 км/ч), и у тебя закладывает уши. Внутри также находится самый высокий отель в мире (J-Hotel) и потрясающий атриум, спиралью поднимающийся до самого верха. Бронируй билеты онлайн заранее, чтобы избежать очередей.</p>
+      <div class="clear-both"></div>
+    </div>
+
+    <!-- Oriental Pearl Tower -->
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/shanghai/oriental-pearl.webp" alt="Телебашня «Жемчужина Востока» — культовый символ Шанхая" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">Телебашня «Жемчужина Востока» (东方明珠塔)</h3>
+      <p class="text-gray-700">Никакой другой небоскрёб не узнать так же легко. Хотя «Жемчужина Востока» уже не самое высокое сооружение Шанхая, она остаётся самым узнаваемым символом города, появляясь на всём — от открыток до футболок. Башня состоит из 11 сфер разного размера, соединённых тремя колоннами. «Космический модуль» на высоте 351 метра предлагает смотровую площадку со стеклянным полом, откуда можно смотреть прямо вниз на город. В основании — Музей истории Шанхая и торговый комплекс. Лучше всего купить комбинированный билет, включающий смотровую площадку, стеклянный пол и музей. Приходи на закат для самых эффектных видов.</p>
+      <div class="clear-both"></div>
+    </div>
+
+    <!-- Yu Garden -->
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/shanghai/yu-garden.webp" alt="Традиционные павильоны и пруд сада Юйюань" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">Сад Юйюань (豫园)</h3>
+      <p class="text-gray-700">400-летний сад эпохи Мин, спрятанный в сердце шанхайского Старого города. Построенный в 1559 году правительственным чиновником как частный сад для родителей, Юйюань — шедевр классического китайского ландшафтного дизайна с павильонами, горками из камней, прудами и зигзагообразными мостами, призванными запутывать злых духов (которые умеют ходить только по прямой). Центральный элемент — «Нефритовый камень» (玉玲珑): 3,3-метровый пористый камень возрастом более 1000 лет. Вокруг сада — базар Юйюань, оживлённый рынок с закусочными, сувенирами и знаменитым рестораном Наньсян, где изобрели сяолунбао (суповые пельмени). Заложи 2–3 часа на осмотр сада и базара.</p>
+      <div class="clear-both"></div>
+    </div>
+
+    <!-- Wukang Road -->
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/shanghai/wukang-road.webp" alt="Дом Укан и обсаженные деревьями улицы Французской концессии" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">Улица Укан и Аньфу (武康路/安福路) — Район бывшей Французской концессии</h3>
+      <p class="text-gray-700">Когда-то сердце Французской концессии (法租界, 1849–1943), теперь этот район известен как <strong>Историко-культурный квартал Укан — Аньфу</strong>. Это самая модная часть Шанхая: обсаженные деревьями улицы, многоквартирные дома в стиле ар-деко 1920-х годов и сотни независимых бутиков, кафе и ресторанов. Культовый Дом Укан (武康大楼), похожее на корабль здание на пересечении улиц Укан и Хуайхай, — самое фотографируемое место в районе. Улица Укан тише и более жилая — идеально для неспешной прогулки. Улица Аньфу более оживлённая, полна авторских кофеен, дизайнерских магазинов и лучших бранчей в городе. Проведи утро или послеобеденное время, переходя из кафе в кафе и наблюдая за людьми — это Шанхай в его самом космополитичном виде.</p>
+      <div class="clear-both"></div>
+    </div>
+
+    <!-- Zhujiajiao Water Town -->
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/shanghai/zhujiajiao.webp" alt="Каналы и каменные мосты водного городка Чжуцзяцзяо" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">Водный город Чжуцзяцзяо (朱家角)</h3>
+      <p class="text-gray-700">Древний водный городок всего в 45 минутах на метро от центра Шанхая. Чжуцзяцзяо (буквально «Деревня семьи Чжу») имеет историю более 1700 лет с хорошо сохранившейся архитектурой эпох Мин и Цин. Городок пронизан каналами, обсаженными ивами, через которые перекинуты 36 каменных мостов — самый знаменитый из них — Мост Фаншэн (放生桥), 5-арочный каменный мост, построенный в 1571 году. Прокатись на традиционной деревянной гондоле по каналам, посети сад Кэчжи (课植园) и попробуй местные закуски: цзунцзы (клейкие рисовые вареники) и тофу с душком. Чжуцзяцзяо менее коммерциализирован, чем более известный Чжоучжуан, так что атмосфера здесь более аутентичная и расслабленная. Полдня достаточно, но можно и остаться на ночь в гостевом домике у канала для полного погружения в тишину.</p>
+      <div class="clear-both"></div>
+    </div>
+
+    <!-- Shanghai Disneyland -->
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12 overflow-hidden">
+      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/shanghai/disneyland.webp" alt="Замок «Сказочная история» в Шанхайском Диснейленде" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">Шанхайский Диснейленд (上海迪士尼乐园)</h3>
+      <p class="text-gray-700">Шанхайский Диснейленд — самый уникальный курорт Disney в мире. Открытый в 2016 году, он может похвастаться <strong>Замком «Сказочная история»</strong> — самым большим замком Disney из когда-либо построенных (60 метров в высоту). Его фирменный аттракцион <strong>TRON Lightcycle Power Run</strong> считается одним из лучших экстремальных развлечений во всех парках Disney. В парке также есть эксклюзивные аттракционы, такие как <strong>«Пираты Карибского моря: Битва за затонувшее сокровище»</strong>, и аутентичная китайская кухня, которую не найдёшь ни в одном другом парке Disney. Парк находится примерно в 40 минутах от центра Шанхая на метро (линия 11, прямо до входа).</p>
+      <div class="clear-both"></div>
+    </div>
+
+    <h2 id="getting-around" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🚇 Как передвигаться</h2>
+    <ul class="list-disc pl-6 space-y-3 text-lg text-gray-700 mb-12">
+      <li><strong>Метро:</strong> У Шанхая самая длинная система метро в мире (19 линий, 800+ км). Всё подписано на английском. Обратись к <a href="/ru/transport/metro-bus/" class="text-blue-600 hover:underline">Гиду по метро и автобусам крупных городов Китая</a> за советами по маршрутам.</li>
+      <li><strong>Didi:</strong> Работает отлично. Используй для коротких поездок или когда метро не достаёт. Инструкция по настройке в <a href="/ru/transport/didi/" class="text-blue-600 hover:underline">Как пользоваться Didi в Китае иностранцу</a>.</li>
+      <li><strong>Маглев (磁悬浮):</strong> Самый быстрый коммерческий поезд в мире, соединяющий аэропорт Пудун с центром города (7 минут, 430 км/ч). Стоит прокатиться ради самого опыта.</li>
+      <li><strong>Велосипед:</strong> Шанхай плоский и удобный для велосипедистов. Шеринговые велосипеды (Hellobike, Meituan) есть везде в центре — отлично подходят для изучения района улиц Укан и Аньфу.</li>
+    </ul>
+
+    <h2 id="where-to-stay" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏨 Где остановиться</h2>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">Бунд / Луцзяцзуй (外滩/陆家嘴) — Лучше всего для новичков</h3><p class="text-gray-700">Культовый вид на небоскрёбы, близко к главным достопримечательностям, много роскошных отелей. Дороже, но оно того стоит ради впечатлений.</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">Район улицы Укан / Бывшая Французская концессия (武康路) — Лучше всего для гурманов и ценителей культуры</h3><p class="text-gray-700">Самый модный район с отличными ресторанами, барами и бутиками. Тихие улицы в тени платанов, идеально для утренних прогулок. Когда-то это было сердце Французской концессии (1849–1943).</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12"><h3 class="text-xl font-bold text-gray-900 mb-2">Цзинань (静安) — Лучше всего для шопинга и ночной жизни</h3><p class="text-gray-700">Оживлённый деловой район с отличным метро. Близко к Нанкинской улице и храму Цзинань.</p></div>
+
+    <!-- ==================== ЧТО ПОЕСТЬ ==================== -->
+    <h2 id="what-to-eat" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🍜 Что поесть</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Шанхайская гастрономическая сцена легендарна. Вот блюда, которые ты обязательно должен попробовать.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+      <!-- Xiaolongbao -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/shanghai/food/xiaolongbao.webp" alt="Сяолунбао — суповые пельмени на пару" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">Сяолунбао (小笼包)</h3>
+          <p class="text-gray-600 text-base">Нежные пельмени в тончайшем складчатом тесте, наполненные свиным фаршем и желе из свиного бульона, который при варке превращается в шелковистый, невероятно насыщенный бульон. Как есть: надкуси небольшую дырочку сбоку, подуй, чтобы остудить обжигающую жидкость внутри, затем высоси бульон, прежде чем макнуть пельмень целиком в чёрный уксус с тонкой стружкой имбиря. В лучших образцах не менее 18 складочек и тонкая, полупрозрачная обёртка, которая не рвётся. Ищи их в димсамных в Старом городе и особенно у сада Юйюань — иди на пар.</p>
+        </div>
+      </div>
+
+      <!-- Shengjianbao -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/shanghai/food/shengjianbao.webp" alt="Шэнцзяньбао — жареные булочки со свининой, хрустящие снизу" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">Шэнцзяньбао (生煎包)</h3>
+          <p class="text-gray-600 text-base">Дрожжевые булочки, обжаренные донышком вниз в широкой чугунной сковороде, пока основа не превратится в толстую хрустящую золотистую корочку, а верх остаётся мягким и воздушным. Свиная начинка приправлена имбирём и соевым соусом, выпуская горячий, перчёный бульон с каждым укусом — они не дадут тебе забыть об этом. Ешь их свежими со сковороды — обычно продаются по четыре штуки в бумажной коробке и остаются вулканическими несколько минут. Ищи очереди у маленьких магазинчиков в Старом городе и на улицах еды; эта очередь — твоя гарантия качества.</p>
+        </div>
+      </div>
+
+      <!-- Hong Shao Rou -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/shanghai/food/hongshaorou.webp" alt="Хуншаоу — свиная грудинка, тушёная в соевом соусе" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">Тушёная свиная грудинка — Хуншаоу (红烧肉)</h3>
+          <p class="text-gray-600 text-base">Толстые куски свиной грудинки с чередующимися слоями постного мяса и полупрозрачного жира, медленно тушёные в тёмном соевом соусе, леденцовом сахаре и шаосинском вине, пока жир не превратится в желеобразную массу, а соус не выпарится до глянцевой, почти липкой глазури. Каждый кубик одновременно нежный и маслянистый, с комплексной сладостью, уравновешивающей глубокий пикантный удар соевого соуса. Подаётся с тушёными яйцами и побегами бамбука — требует тарелки простого риса на пару, чтобы собрать каждую каплю тёмного карамельного соуса. Есть в меню почти каждого домашнего шанхайского ресторана — от Старого города до Французской концессии.</p>
+        </div>
+      </div>
+
+      <!-- Scallion Oil Noodles -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/shanghai/food/congyoubanmian.webp" alt="Цунъюбаньмянь — лапша в луковом масле, простой классический рецепт" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">Лапша в луковом масле — Цунъюбаньмянь (葱油拌面)</h3>
+          <p class="text-gray-600 text-base">Обманчиво простое блюдо: упругая пшеничная лапша, перемешанная с маслом, которое медленно настаивалось на обожжённом луке до ароматности и ореховых нот, затем приправленная соевым соусом и щепоткой сахара. Каждая нить выходит скользкой и глянцевой, с тонкой копчёностью от лука и ровно столько соли, чтобы хотелось ещё. Некоторые ларьки добавляют сверху сушёные креветки или хрустящий жареный лук для текстуры. Быстрый, дешёвый ланч — найдёшь в фуд-кортах, уличных лапшичных и крошечных столовых по всему Шанхаю.</p>
+        </div>
+      </div>
+
+      <!-- Hairy Crab -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/shanghai/food/dazhaxie.webp" alt="Дачжасе — волосатый краб из озера Янчэн, осенний деликатес" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">Краб — Дачжасе (大闸蟹)</h3>
+          <p class="text-gray-600 text-base">Сезонная одержимость, охватывающая Шанхай каждую осень — эти пресноводные крабы из соседнего озера Янчэн ценятся за золотистую, маслянистую икру (у самок) и сладкое, нежное мясо (у самцов). Название происходит от густой шерсти, покрывающей их клешни, что сигнализирует о зрелости. Вскрывать их традиционным деревянным молоточком — целый ритуал: ты выбираешь каждую полоску мяса, макаешь в чёрный уксус с тонко нарезанным имбирём и запиваешь тёплым шаосинским вином. В сезон крабов (сентябрь–декабрь) их рекламируют повсюду — от дорогих ресторанов до уличных лотков по всему городу.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="not-prose mt-16">
+      <h2 class="text-2xl font-bold text-gray-900 mb-8">📚 Связанные путеводители</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/ru/cities/city-select/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🗺️ <strong>Сколько дней в Китае?</strong> — Спланируй полный маршрут</a>
+        <a href="/ru/cities/beijing-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🏛️ <strong>Путеводитель по Пекину</strong> — Сравни с Шанхаем</a>
+        <a href="/ru/transport/metro-bus/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚇 <strong>Гид по метро и автобусам крупных городов Китая</strong> — Навигация в шанхайском метро</a>
+        <a href="/ru/payment/payment-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">💳 <strong>Как платить в Китае</strong> — Настройка Alipay и WeChat Pay</a>
+      </div>
+    </div>
+  </article>
+</Layout>

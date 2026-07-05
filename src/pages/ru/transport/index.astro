@@ -1,0 +1,117 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'Транспорт в Китае — Как передвигаться по стране';
+const description = 'Поезда, самолёты, метро и каршеринг — всё, что нужно знать.';
+---
+
+<Layout title={title} description={description} lang="ru">
+  <section class="max-w-4xl mx-auto px-6 py-12">
+    
+    <!-- Header -->
+    <header class="mb-10 text-center">
+      <p class="text-sm text-gray-500 mb-2">🚄 Транспорт</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-3 leading-tight">Транспорт в Китае</h1>
+      <p class="text-base text-gray-500 max-w-2xl mx-auto">Поезда, самолёты, метро и каршеринг — всё, что нужно знать.</p>
+    </header>
+
+    <!-- Quick Stats -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-12 not-prose">
+      <div class="bg-sky-50 border border-sky-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-sky-800">1</p>
+        <p class="text-xs font-semibold text-sky-800 uppercase tracking-wide mt-1">Гайд по скоростным поездам</p>
+      </div>
+      <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-emerald-800">1</p>
+        <p class="text-xs font-semibold text-emerald-800 uppercase tracking-wide mt-1">Трансфер из аэропорта</p>
+      </div>
+      <div class="bg-purple-50 border border-purple-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-purple-800">2</p>
+        <p class="text-xs font-semibold text-purple-800 uppercase tracking-wide mt-1">Городской транспорт</p>
+      </div>
+      <div class="bg-gray-50 border border-gray-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-gray-800">1</p>
+        <p class="text-xs font-semibold text-gray-800 uppercase tracking-wide mt-1">Каршеринг</p>
+      </div>
+    </div>
+
+    <!-- Category Sections -->
+    <div class="space-y-8 mb-16 not-prose">
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-sky-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-sky-800">Передвижение по Китаю</h2>
+          <span class="text-xs font-medium text-sky-800 opacity-60">1 статья</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/ru/transport/transport-guide/" class="block bg-sky-50 border border-sky-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-sky-800">📖 Обзор</span>
+            <p class="text-base font-bold text-gray-900 mt-1">Как передвигаться по Китаю</p>
+            <p class="text-sm text-gray-600 mt-0.5">Полный обзор всех видов транспорта — поезда, самолёты, метро и другое.</p>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-emerald-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-emerald-800">Прибытие в Китай</h2>
+          <span class="text-xs font-medium text-emerald-800 opacity-60">1 статья</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/ru/transport/airport-to-city/" class="block bg-emerald-50 border border-emerald-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-emerald-800">🛬 Гайд</span>
+            <p class="text-base font-bold text-gray-900 mt-1">Из аэропорта в город</p>
+            <p class="text-sm text-gray-600 mt-0.5">Варианты транспорта в крупных аэропортах — Пекин, Шанхай, Гуанчжоу и другие.</p>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-purple-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-purple-800">Городской транспорт</h2>
+          <span class="text-xs font-medium text-purple-800 opacity-60">2 статьи</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/ru/transport/high-speed-rail/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-purple-800">🚄 Гайд</span>
+            <p class="text-base font-bold text-gray-900 mt-1">Как купить билет и поехать на скоростном поезде</p>
+            <p class="text-sm text-gray-600 mt-0.5">Всё о покупке билетов и поездках по крупнейшей в мире сети ВСМ.</p>
+          </a>
+          <a href="/ru/transport/metro-bus/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-purple-800">🚇 Гайд</span>
+            <p class="text-base font-bold text-gray-900 mt-1">Метро и автобусы в крупных городах</p>
+            <p class="text-sm text-gray-600 mt-0.5">Как пользоваться общественным транспортом в Пекине, Шанхае, Гуанчжоу и Шэньчжэне.</p>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-gray-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-gray-800">Каршеринг</h2>
+          <span class="text-xs font-medium text-gray-800 opacity-60">1 статья</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/ru/transport/didi/" class="block bg-gray-50 border border-gray-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-gray-800">🚕 Инструкция</span>
+            <p class="text-base font-bold text-gray-900 mt-1">Как иностранцу пользоваться DiDi в Китае</p>
+            <p class="text-sm text-gray-600 mt-0.5">Пошаговая инструкция по использованию DiDi, китайского Uber — со скриншотами.</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Guides -->
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-5">Похожие гайды</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <a href="/ru/payment/payment-guide/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-0.5">Платежи в Китае</p>
+          <p class="text-sm text-gray-500">Как оплачивать транспорт</p>
+        </a>
+        <a href="/ru/visa/visa-guide/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-0.5">Виза и въезд</p>
+          <p class="text-sm text-gray-500">Как попасть в Китай</p>
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

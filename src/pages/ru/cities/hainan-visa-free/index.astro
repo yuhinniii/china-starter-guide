@@ -1,0 +1,522 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'Путеводитель по Хайнаню 2026 — Без визы для 59 стран';
+const description = 'Спланируй поездку на Хайнань, тропический остров Китая. 30 дней без визы для 59 стран. Тропические пляжи, походы в джунгли, местная еда и советы путешественникам в одном гиде.';
+const lastUpdated = 'июнь 2026';
+const readTime = '7 мин';
+---
+
+<Layout title={title} description={description} lang="ru">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+
+    <!-- Breadcrumb -->
+    <nav class="mb-8 not-prose">
+      <a href="/ru/cities/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Назад к путеводителям по городам
+      </a>
+    </nav>
+
+    <!-- Header -->
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🏝️ Хайнань</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        Путеводитель по Хайнаню: тропический остров Китая — виза не нужна для 59 стран
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">Пляжи, джунгли, вулканы и курорты мирового класса — а граждане 59 стран могут посещать остров без визы до 30 дней.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Последнее обновление: {lastUpdated}</span>
+        <span>⏱️ {readTime}</span>
+      </div>
+    </header>
+
+    <!-- Quick Answer -->
+    <div class="bg-gradient-to-r from-emerald-50 to-teal-50 border-l-4 border-emerald-500 rounded-r-2xl p-8 mb-6 not-prose">
+      <h2 class="text-2xl font-bold text-emerald-900 mb-4">⚡ Быстрый ответ</h2>
+      <p class="text-lg text-emerald-800 leading-relaxed"><strong>Хайнань — это тропический рай Китая: пляжи, джунгли, вулканы и курорты мирового класса — а граждане 59 стран могут посещать его без визы до 30 дней.</strong> Никаких тургрупп, никаких походов в посольство. Просто прилети в Хайкоу или Санья с паспортом и обратным билетом — и ты на месте.</p>
+    </div>
+    <p class="text-gray-700 mb-8">Это очень важно, если ты из <strong>США, Мексики, Филиппин, Индонезии или Чехии</strong> — эти страны не входят в 30-дневный безвизовый список материкового Китая. (<a href="/ru/visa/visa-free/" class="text-blue-600 hover:underline">Посмотреть полный список из 59 стран →</a>)</p>
+
+    <!-- Quick Stats Grid -->
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12">
+      <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
+        <p class="text-2xl mb-1">☀️</p>
+        <p class="text-sm font-semibold text-gray-900">Тропический климат</p>
+        <p class="text-xs text-gray-500">В среднем 24°C круглый год</p>
+      </div>
+      <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
+        <p class="text-2xl mb-1">🏖️</p>
+        <p class="text-sm font-semibold text-gray-900">Лучшие пляжи</p>
+        <p class="text-xs text-gray-500">Ялунвань, Дадунхай, Хайтанвань</p>
+      </div>
+      <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
+        <p class="text-2xl mb-1">🌋</p>
+        <p class="text-sm font-semibold text-gray-900">Вулканический парк</p>
+        <p class="text-xs text-gray-500">Уникальная геология Хайкоу</p>
+      </div>
+      <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
+        <p class="text-2xl mb-1">🌴</p>
+        <p class="text-sm font-semibold text-gray-900">Джунгли</p>
+        <p class="text-xs text-gray-500">Учжишань, Янода, Баванлин</p>
+      </div>
+      <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
+        <p class="text-2xl mb-1">⛳</p>
+        <p class="text-sm font-semibold text-gray-900">Гольф-курорты</p>
+        <p class="text-xs text-gray-500">Поля мирового класса</p>
+      </div>
+      <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
+        <p class="text-2xl mb-1">🦞</p>
+        <p class="text-sm font-semibold text-gray-900">Свежие морепродукты</p>
+        <p class="text-xs text-gray-500">Хайнань славится ими</p>
+      </div>
+    </div>
+
+    <!-- Which Countries Qualify -->
+    <section class="mb-12">
+      <h2 id="visa-free-countries" class="text-3xl font-bold text-gray-900 mb-4">Какие страны подходят для безвизового въезда на Хайнань?</h2>
+      <p class="text-gray-700 mb-4"><strong>59 стран</strong> — в основном те же, что и в безвизовом списке материкового Китая, но с несколькими важными дополнениями, такими как <strong>США, Мексика, Филиппины и Индонезия</strong>, которых нет в 30-дневном списке материка.</p>
+      <div class="bg-emerald-50 border-l-4 border-emerald-400 rounded-r-xl p-5 mb-4">
+        <p class="text-sm text-emerald-800"><strong>💡 Заметка:</strong> В отличие от безвизовых правил материкового Китая, список Хайнаня охватывает больше стран (59 против 50). Если твоей страны нет в <a href="/ru/visa/visa-free/" class="text-blue-600 hover:underline font-medium">безвизовом списке материка</a>, проверь, есть ли она в списке Хайнаня — это может быть твой единственный безвизовый вариант въезда в Китай.</p>
+      </div>
+      <p class="text-sm text-gray-600">Смотри <a href="/ru/visa/visa-free/" class="text-blue-600 hover:underline font-medium">полный разбив по 59 странам и регионам →</a></p>
+    </section>
+
+    <!-- When to Visit -->
+    <section class="mb-12">
+      <h2 id="when-to-visit" class="text-3xl font-bold text-gray-900 mb-4">Когда ехать на Хайнань</h2>
+      <div class="bg-white rounded-xl border border-gray-200 overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="bg-gray-50 border-b border-gray-200">
+              <th class="text-left px-5 py-3 font-semibold text-gray-700">Месяцы</th>
+              <th class="text-left px-5 py-3 font-semibold text-gray-700">Температура</th>
+              <th class="text-left px-5 py-3 font-semibold text-gray-700">Дожди</th>
+              <th class="text-left px-5 py-3 font-semibold text-gray-700">Люди</th>
+              <th class="text-left px-5 py-3 font-semibold text-gray-700">Вердикт</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 font-medium">Ноя–Мар</td>
+              <td class="px-5 py-3">20–28°C</td>
+              <td class="px-5 py-3">Мало</td>
+              <td class="px-5 py-3">Много</td>
+              <td class="px-5 py-3 font-semibold text-emerald-600">🌟 Лучшее время — сухо, тепло, идеально для пляжа</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 font-medium">Апр–Июн</td>
+              <td class="px-5 py-3">25–32°C</td>
+              <td class="px-5 py-3">Умеренно</td>
+              <td class="px-5 py-3">Мало</td>
+              <td class="px-5 py-3 text-amber-600">👍 Хорошо — жарче, но меньше туристов</td>
+            </tr>
+            <tr>
+              <td class="px-5 py-3 font-medium">Июл–Окт</td>
+              <td class="px-5 py-3">26–32°C</td>
+              <td class="px-5 py-3">Много (сезон тайфунов)</td>
+              <td class="px-5 py-3">Мало</td>
+              <td class="px-5 py-3 text-red-600">⚠️ Дождливо — дешёвые билеты, но проверяй прогноз тайфунов</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-3 text-sm text-gray-600"><strong>Пик туристического сезона:</strong> Китайский Новый год (янв/фев) и Золотая неделя Национального дня (1–7 окт) — избегай, если можешь.</p>
+    </section>
+
+    <!-- Why Visit -->
+    <section class="mb-12">
+      <h2 id="why-visit" class="text-3xl font-bold text-gray-900 mb-6">🏝️ Зачем ехать на Хайнань?</h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Хайнань — это китайский ответ Гавайям: тропический остров с белоснежными пляжами, пышными джунглями и расслабленной атмосферой, которую не найдёшь больше нигде на материке. Это единственная часть Китая, где можно по-настоящему сбежать от города и расслабиться у океана. Плюс, с безвизовым доступом для 59 стран, это самый простой способ въезда в Китай для многих путешественников.</p>
+    </section>
+
+    <!-- How Many Days -->
+    <section class="mb-12">
+      <h2 id="how-many-days" class="text-3xl font-bold text-gray-900 mb-6">📅 Сколько дней нужно?</h2>
+      <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700 mb-12">
+        <li><strong>3–4 дня (стандартно):</strong> Пляжи Санья, морепродукты и один день в Хайкоу или поход в джунгли</li>
+        <li><strong>5–7 дней (комфортно):</strong> Раздели время между Санья и Хайкоу, добавь Боао и поход на Учжишань</li>
+        <li><strong>7+ дней (глубокое погружение):</strong> Полный круг по острову на скоростном поезде — исследуй всё побережье</li>
+      </ul>
+    </section>
+
+    <!-- Top Attractions -->
+    <section class="mb-12">
+      <h2 id="attractions" class="text-3xl font-bold text-gray-900 mb-6">🎯 Главные достопримечательности</h2>
+
+      <h3 class="text-2xl font-bold text-gray-900 mb-4">🏖️ Санья — куда попадает большинство туристов</h3>
+      <p class="text-gray-700 mb-6">Санья — это классический тропический пляжный отдых: пальмы, бирюзовая вода и курорты, которые действительно ощущаются как роскошь. Но здесь есть и нечто большее, чем просто лежание у бассейна.</p>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/yalong-bay.webp" alt="Ялунвань на Хайнане" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">Бухта Ялунвань</h4>
+        <p class="text-gray-700">Лучшая полоса пляжа на острове — это не преувеличение, это просто факт. Песок — мелкий белый коралловый порошок, который обычно видишь только на открытках, вода настолько прозрачная, что с берега видно рыбу, а вся бухта тянется на 7 километров в обрамлении зелёных холмов. Большинство курортов выходят прямо на пляж, так что от номера до воды — около 90 секунд. Дороже других пляжей Санья, но ты получаешь то, за что платишь.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/dadonghai-bay.webp" alt="Дадунхай на Хайнане" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">Бухта Дадунхай</h4>
+        <p class="text-gray-700">Здесь живёт местная энергия. Дадунхай менее вычурный, чем Ялунвань — более дешёвые отели, больше шума, лучше для наблюдения за людьми. Бухта изгибается полумесяцем с приличным местом для купания, а вся набережная уставлена ресторанами морепродуктов, где ты выбираешь свой улов из аквариумов, и его готовят прямо на месте. Лучшее время — вечер: загораются огни, пляжные бары оживают, и всё вокруг гудит.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/haitang-bay.webp" alt="Хайтанвань на Хайнане" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">Бухта Хайтанвань</h4>
+        <p class="text-gray-700">Более тихий, премиальный вариант. В Хайтанвань находится курорт Atlantis Sanya — огромный аквапарк, аквариум с более чем 10 000 морских животных и бассейн для взаимодействия с дельфинами, который оказывается более изысканным, чем можно было ожидать. Сам пляж широкий и менее многолюдный, чем Ялунвань. Если любишь беспошлинный шопинг, здесь же находится большой免税店.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/wuzhizhou-island.webp" alt="Учжичжоу на Хайнане" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">Остров Учжичжоу</h4>
+        <p class="text-gray-700">20 минут на пароме от берега — и ты на этом небольшом острове с лучшим снорклингом на Хайнане. Вода вокруг охраняется, так что кораллы здоровы, а рыба не разбегается, как только ты опускаешь маску. Паром туда-обратно — можно осмотреть всё за полдня. Приезжай пораньше, чтобы опередить толпы — паромы заполняются к 10 утра.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/nanshan-temple.webp" alt="Храм Наньшань на Хайнане" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">Храм Наньшань</h4>
+        <p class="text-gray-700">Центральный элемент — 108-метровая статуя Гуаньинь, стоящая в море — три лица, три направления, самая высокая статуя такого рода в мире. Но что удивляет большинство посетителей — масштаб всего комплекса: залы, пагоды, сады, раскинувшиеся на гектарах ухоженной территории. Это действующий храм с настоящими монахами и настоящим ладаном, а не просто туристическая остановка, притворяющаяся таковой.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/yanoda-rainforest.webp" alt="Янода на Хайнане" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">Тропический лес Янода</h4>
+        <p class="text-gray-700">Джунгли с некоторыми усовершенствованиями: стеклянный мост над кронами деревьев, зиплайн через долину и водопадные бассейны, в которые можно заходить. Сама прогулка посильная (пара часов), и здесь удивительное разнообразие растений — обрати внимание на гигантские баньяны. Влажно, так что бери воду и приходи пораньше.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/luhuitou-park.webp" alt="Лухуйтоу на Хайнане" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">Парк Лухуйтоу</h4>
+        <p class="text-gray-700">Парк на вершине холма с лучшим видом на закат в Санья. С названием связана легенда: охотник преследовал оленя до края обрыва, и олень превратился в прекрасную женщину (Лухуйтоу буквально означает «олень поворачивает голову»). Поднимись пешком или на трамвайчике — в любом случае получишь панорамный вид, который даёт понять, почему это место считается священным уже так долго.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <h3 class="text-2xl font-bold text-gray-900 mb-4">🏛️ Хайкоу — расслабленная столица</h3>
+      <p class="text-gray-700 mb-6">Хайкоу — это не Санья, и в этом вся суть. Меньше пляжа, больше культуры. Меньше туристов, больше настоящей жизни. Это место, куда едут, когда хотят понять Хайнань за пределами курортных брошюр.</p>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/volcanic-geopark.webp" alt="Вулканический парк на Хайнане" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">Вулканический геопарк</h4>
+        <p class="text-gray-700">Потухший вулкан, в который можно буквально зайти — кратер находится примерно в 30 минутах от центра Хайкоу. Тропа ведёт вниз, внутрь конуса, где ты окружён вулканической породой и тропической растительностью. Рядом есть лавовые туннели, по которым можно проползти (возьми фонарик). Действительно уникальный опыт, который большинство туристов на Хайнане упускают, потому что никогда не покидают курорты Санья.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/qilou-old-street.webp" alt="Улица Цилоу на Хайнане" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">Старая улица Цилоу</h4>
+        <p class="text-gray-700">Аркадные здания 1920-х годов, выстроившиеся по обеим сторонам улицы — смесь китайского, европейского и юго-восточноазиатского стилей, возникшая потому, что Хайнань был торговым хабом в те времена. Аркады (называемые цилоу, отсюда название) укрывают тротуары, так что можно гулять даже под дождём. Архитектура действительно уникальна для Хайнаня, и ты не увидишь её больше нигде в Китае в таком масштабе.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/hainan-museum.webp" alt="Музей Хайнаня на Хайнане" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">Музей Хайнаня</h4>
+        <p class="text-gray-700">Лучшее место, чтобы узнать о культурах меньшинств Ли и Мяо — двух групп, живших на этом острове за столетия до появления курортов. Коллекция парчи Ли (нематериальное наследие ЮНЕСКО) — главная изюминка: замысловатые геометрические узоры, сотканные вручную техниками, которые не менялись 3000 лет. Также можно увидеть лодкообразные дома, в которых жили Ли, и артефакты из истории острова как места ссылки для опальных чиновников.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/mission-hills.webp" alt="Mission Hills на Хайнане" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">Mission Hills</h4>
+        <p class="text-gray-700">Огромный комплекс с 10 полями для гольфа, спроектированными именитыми профессионалами, горячими источниками со 168 бассейнами, стилизованными под разные страны, и голливудскими декорациями с улицами, воспроизводящими Шанхай 1930-х годов. Даже если ты не играешь в гольф, одни горячие источники стоят поездки — особенно секция火山温泉, построенная из настоящих вулканических камней.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <h3 class="text-2xl font-bold text-gray-900 mb-4">🗺️ За пределами двух главных городов</h3>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/boao.webp" alt="Боао на Хайнане" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">Боао</h4>
+        <p class="text-gray-700 mb-3">Небольшой прибрежный городок, который играет выше своего веса. Здесь ежегодно проходит Боаоский форум для Азии (что-то вроде азиатского Давоса), где мировые лидеры собираются в обстановке, напоминающей скорее пляжный курорт, чем конференц-центр. Прибрежная дорога между Боао и соседней рыбацкой деревней Таньмэнь — один из лучших маршрутов для вождения на Хайнане: скалы, обрывающиеся к океану с одной стороны, лесистые холмы с другой. Сам городок тихий и удобный для прогулок, с приятным променадом вдоль устья реки. Если ты едешь на машине между Хайкоу и Санья, остановка здесь на обед и прогулку отлично разбивает поездку.</p>
+        <div class="bg-blue-50 border-l-4 border-blue-400 p-3 rounded-r-lg text-sm text-blue-800">
+          💡 <strong>Совет:</strong> Медицинская зона Боао Лэчэн по соседству — единственная особая зона Китая, где одобренные за рубежом лекарства и терапии доступны до получения одобрения на материке. Если тебя интересует конкретное лечение, стоит изучить, доступно ли оно здесь — некоторые путешественники совмещают процедуру с отдыхом в курорте.
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+      </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/wuzhishan.webp" alt="Учжишань на Хайнане" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">Учжишань (Гора пяти пальцев)</h4>
+        <p class="text-gray-700">Лучший горный поход на острове — пять пиков, поднимающихся из джунглей, как пальцы, с облачным лесом у вершины и панорамными видами, когда погода проясняется. Подъём не шуточный (3–4 часа вверх), но награда — быть выше тумана и смотреть на остров, который больше напоминает «Парк Юрского периода», чем Китай. Приходи в ясный будний день, если сможешь.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/xinglong.webp" alt="Синлун на Хайнане" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">Синлун</h4>
+        <p class="text-gray-700">Странный и чудесный городок, сформированный вернувшимися зарубежными китайцами из Юго-Восточной Азии, которые привезли с собой кофейную культуру в 1950-х годах. Главная достопримечательность — тропический ботанический сад: гектары пряных растений, какао-деревьев и оригинальных кустов кофе, с которых началась кофейная культура Хайнаня. Сам кофе неплох — попробуй местный вариант со сгущённым молоком.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/bawangling.webp" alt="Баванлин на Хайнане" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">Баванлин</h4>
+        <p class="text-gray-700">Этот тропический лес — дом хайнаньского гиббона, самого редкого примата на Земле — осталось менее 40 особей. Тебе понадобится серьёзная удача (и гид), чтобы заметить одного, но сам лес стоит поездки: могучие деревья, дикие орхидеи и тишина, которая ощущается иначе, чем где-либо на Хайнане. Поездка на день из Хайкоу, если готов вести машину.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+    </section>
+
+    <!-- Getting Around -->
+    <section class="mb-12">
+      <h2 id="getting-around" class="text-3xl font-bold text-gray-900 mb-6">🚇 Как передвигаться по Хайнаню</h2>
+      <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700">
+        <li><strong>Высокоскоростной поезд:</strong> На Хайнане есть круговая линия высокоскоростных поездов, соединяющая Хайкоу, Боао, Санья и большинство городов. Поезда ходят часто и дёшево (Хайкоу → Санья ~¥100, 1,5 часа).</li>
+        <li><strong>Такси / Didi:</strong> Вызвать поездку легко через <a href="/ru/transport/didi/" class="text-blue-600 hover:underline">приложение DiDi</a> или через мини-программы Alipay/WeChat.</li>
+        <li><strong>Аренда авто:</strong> Возможно с международным водительским удостоверением + китайским переводом</li>
+        <li><strong>Автобусы:</strong> Дешёво, но медленно, маршруты покрывают большинство туристических мест</li>
+      </ul>
+    </section>
+
+    <!-- Where to Stay -->
+    <section class="mb-12">
+      <h2 id="where-to-stay" class="text-3xl font-bold text-gray-900 mb-6">🏨 Где остановиться</h2>
+      <p class="text-gray-700 mb-6">Курорты Хайнаня обычно дешевле, чем аналогичного качества в Юго-Восточной Азии. Номер за ¥500/ночь в Ялунване часто включает завтрак и имеет частную пляжную зону.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">💰 Бюджетно (¥100–200)</h3>
+          <p class="text-gray-600 text-sm">Хостелы в районе Дадунхай (Санья) · Гостевые дома в районе Цилоу (Хайкоу)</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">💰💰 Средний сегмент (¥300–600)</h3>
+          <p class="text-gray-600 text-sm">Курорты среднего класса в Ялунване (Санья) · Отели в районе Mission Hills (Хайкоу)</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">💰💰💰 Премиум (¥800+)</h3>
+          <p class="text-gray-600 text-sm">Atlantis, Edition, Ritz-Carlton — Хайтанвань (Санья) · Hilton, Marriott в центре (Хайкоу)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- What to Eat -->
+    <section class="mb-12">
+      <h2 id="what-to-eat" class="text-3xl font-bold text-gray-900 mb-6">🍜 Что поесть на Хайнане</h2>
+      <p class="text-lg leading-relaxed text-gray-700 md:col-span-2 mb-0">Хайнаньская еда — это свежие тропические вкусы: много морепродуктов, кокоса и риса.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/hainan/wenchang-chicken.webp" alt="Вэньчан на Хайнане" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Курица по-вэньчански</h3>
+          <p class="text-gray-700">Фирменное блюдо Хайнаня — варёная цыплёнок свободного выгула с шёлковой кожицей и тонко-сладким мясом. Соус из имбирно-лукового масла — настоящая звезда, яркий и пикантный. Лучшая версия — в самом городе Вэньчан (час от Хайкоу), где её подают просто как холодную закуску с супом из куриного бульона с рисом. Ты по-настоящему не попробовал Хайнань, пока не отведал это.</p>
+        </div>
+      </div>
+
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/hainan/jiaji-duck.webp" alt="Цзяцзи на Хайнане" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Утка по-цзяцзи</h3>
+          <p class="text-gray-700">Неоспоримый герой хайнаньской кухни — утка, медленно томлёная, пока мясо не отходит от костей, а бульон не превращается в насыщенную янтарную жидкость. Приготовление обманчиво просто: утка, вода, соль и китайские травы для тонкого анисово-имбирного тепла. Макай мясо в ферментированную бобовую пасту с чили для полноты эффекта. Это хайнаньская домашняя кухня в её чистейшем виде, лучше всего её искать в районе Цзяцзи рядом с Боао.</p>
+        </div>
+      </div>
+
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/hainan/hainan-noodles.webp" alt="Хайнаньская лапша на Хайнане" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Хайнаньская лапша</h3>
+          <p class="text-gray-700">Завтрак, который подпитывает остров — тонкая рисовая лапша в лёгком бульоне из свиных костей, сушёных креветок и кальмаров, посыпанная жареным чесноком и луком. Два стиля на пробу: <em>тан мянь</em> (суповая версия, классическая утренняя миска) и <em>бань мянь</em> (сухой стиль с густым пикантным соусом). Добавь ложку местной чили-пасты и поймёшь, почему каждый хайнанец начинает свой день именно так.</p>
+        </div>
+      </div>
+
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/hainan/seafood-market.webp" alt="Рынок морепродуктов на Хайнане" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Опыт рыбного рынка</h3>
+          <p class="text-gray-700">Само по себе послеобеденное развлечение — отправляйся на рынок морепродуктов Санья, выбери живую добычу из аквариумов с раками-богомолами, цветными крабами и групером, затем отнеси наверх, чтобы приготовили на месте. На гриле с чесноком и чили или на пару с имбирём и луком. Около ¥100–150 на человека за пиршество, и одни раки-богомолы стоят поездки — у них сладость, которая недоступна замороженному импорту.</p>
+        </div>
+      </div>
+
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/hainan/coconut-rice.webp" alt="Кокосовый рис на Хайнане" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Кокосовый рис</h3>
+          <p class="text-gray-700">Клейкий рис, приготовленный на пару внутри свежего кокоса с кокосовым молоком и панданом — ароматный, слегка сладкий, почти как пудинг. Внешний слой карамелизуется в нежную корочку, а в лучших версиях внутрь добавлена тёртая мякоть кокоса. Уличные продавцы продают его, завёрнутым в банановые листья — ищи на вечернем рынке в Вэньчане.</p>
+        </div>
+      </div>
+
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/hainan/qingbuliang.webp" alt="Цинбулян на Хайнане" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Цинбулян</h3>
+          <p class="text-gray-700">Хайнаньский ответ тропической жаре — чаша колотого льда с кокосовым молоком, с жевательным таро, красной фасолью, арбузом, алоэ-желе и «лапшой» из водорослевого крахмала, которая скользит в горло самым приятным образом. Сладко, но не приторно, кремово, но легко. У каждого лотка свой секрет (кто-то добавляет мороженое, кто-то дроблёный арахис). Около ¥10 за чашу, лучше всего наслаждаться им на набережном ночном рынке Санья, когда влажность достигает пика.</p>
+        </div>
+      </div>
+        </div>
+
+    </section>
+
+    <!-- Visa-Free Rules -->
+    <section class="mb-12">
+      <h2 id="visa-rules" class="text-3xl font-bold text-gray-900 mb-4">Правила безвизового въезда — всё, что нужно знать</h2>
+      <div class="bg-white rounded-xl border border-gray-200 overflow-x-auto mb-6">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="bg-gray-50 border-b border-gray-200">
+              <th class="text-left px-5 py-3 font-semibold text-gray-700">Вопрос</th>
+              <th class="text-left px-5 py-3 font-semibold text-gray-700">Ответ</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 font-medium">Как долго можно оставаться?</td>
+              <td class="px-5 py-3">До <strong>30 дней</strong> — считается со дня после прибытия</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 font-medium">Нужна ли тургруппа?</td>
+              <td class="px-5 py-3"><strong>Нет</strong> — самостоятельные путешественники допускаются</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 font-medium">Можно ли продлить?</td>
+              <td class="px-5 py-3">Возможно, обратись в местное иммиграционное бюро на Хайнане</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 font-medium">Можно ли посетить материковый Китай?</td>
+              <td class="px-5 py-3"><strong>Нет</strong> — это правило распространяется только на остров Хайнань</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 font-medium">Можно ли въехать на Хайнань, поехать в Гонконг и вернуться?</td>
+              <td class="px-5 py-3">Да — каждый въезд обнуляет 30-дневный счётчик</td>
+            </tr>
+            <tr>
+              <td class="px-5 py-3 font-medium">Что если превысить срок?</td>
+              <td class="px-5 py-3">Штраф + возможный запрет на въезд. Не рискуй.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="font-semibold text-gray-900 mb-3">Требования для въезда:</p>
+      <ol class="list-disc pl-6 space-y-1.5 text-gray-700">
+        <li>✅ Паспорт со сроком действия 6+ месяцев</li>
+        <li>✅ Обратный или дальнейший билет в течение 30 дней</li>
+        <li>✅ Бронирование отеля (рекомендуется)</li>
+        <li>✅ Миграционная карта (выдают в самолёте или можно <a href="/ru/visa/arrival-card/" class="text-blue-600 hover:underline">заполнить онлайн</a>)</li>
+      </ol>
+    </section>
+
+    <!-- Practical Tips -->
+    <section class="mb-12">
+      <h2 id="tips" class="text-3xl font-bold text-gray-900 mb-4">Практические советы для Хайнаня</h2>
+      <ol class="list-decimal pl-6 space-y-2 text-gray-700">
+        <li><strong>Плати с помощью Alipay или WeChat Pay</strong> — настрой их до вылета. Большинство мест на Хайнане безналичные. Смотри наш гид <a href="/ru/payment/payment-guide/" class="text-blue-600 hover:underline">Как платить в Китае</a>.</li>
+        <li><strong>VPN всё ещё нужен</strong> — Google, WhatsApp, Instagram не работают без него. <a href="/ru/life/best-vpns/" class="text-blue-600 hover:underline">Настрой VPN</a> до приезда.</li>
+        <li><strong>SIM-карта / eSIM</strong> — купи онлайн (airalo, Holafly) или в аэропорту. Смотри наш <a href="/ru/life/best-sim-esim/" class="text-blue-600 hover:underline">гид по SIM</a>.</li>
+        <li><strong>Язык</strong> — английский не широко распространён на Хайнане за пределами курортов. Держи наготове Google Translate или Pleco.</li>
+        <li><strong>Солнцезащитный крем + средство от комаров</strong> — обязательны круглый год.</li>
+        <li><strong>Чаевые</strong> — не ожидаются. Смотри наш <a href="/ru/payment/tipping/" class="text-blue-600 hover:underline">гид по чаевым</a>.</li>
+      </ol>
+    </section>
+
+    <!-- Related Guides -->
+    <section class="mb-12">
+      <h2 id="related" class="text-2xl font-bold text-gray-900 mb-6">📚 Связанные путеводители</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/ru/visa/visa-free/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-1">Список стран с безвизовым въездом в Китай (2026)</p>
+          <p class="text-sm text-gray-600">Посмотреть полный список из 59 стран для Хайнаня</p>
+        </a>
+        <a href="/ru/visa/arrival-card/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-1">Как заполнить миграционную карту онлайн</p>
+          <p class="text-sm text-gray-600">Пошаговая инструкция со скриншотами</p>
+        </a>
+        <a href="/ru/cities/beijing-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-1">Путеводитель по Пекину</p>
+          <p class="text-sm text-gray-600">Гид по столице Китая</p>
+        </a>
+        <a href="/ru/cities/shanghai-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-1">Путеводитель по Шанхаю</p>
+          <p class="text-sm text-gray-600">Самый удобный для иностранцев город Китая</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Sources -->
+    <div class="mt-12 pt-8 border-t border-gray-200">
+      <h3 class="text-xl font-bold text-gray-900 mb-4">Источники</h3>
+      <ul class="space-y-2 text-sm text-gray-600">
+        <li><a href="https://en.nia.gov.cn/n147418/n147463/c180637/content.html" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">National Immigration Administration — Regional Visa-Free Policies (Hainan 30-day)</a></li>
+        <li><a href="https://en.nia.gov.cn/n147418/n147463/c191648/content.html" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">National Immigration Administration — China's Entry Facilitation Policies for Foreign Nationals</a></li>
+      </ul>
+    </div>
+
+  </article>
+</Layout>

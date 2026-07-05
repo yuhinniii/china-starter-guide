@@ -1,0 +1,364 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'Таможенные правила Китая: что можно и нельзя ввозить в Китай';
+const description = 'Полный гайд по таможне Китая для туристов — беспошлинные лимиты, запрещённые предметы, что декларировать и какой коридор выбрать.';
+---
+
+<Layout title={title} description={description} lang="ru">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/ru/visa/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Назад к визе и въезду
+      </a>
+    </nav>
+    <!-- Header -->
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🛂 Въезд и виза</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        Таможенные правила Китая: что можно и нельзя ввозить в Китай
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">Практическое руководство по таможенным правилам для туристов, въезжающих в Китай.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Последнее обновление: июнь 2026</span>
+        <span>⏱️ 5 мин. чтения</span>
+      </div>
+    </header>
+
+    <!-- Quick Answer Box -->
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-blue-900 mb-4">🎯 Краткий ответ</h2>
+      <p class="text-lg text-blue-800 leading-relaxed mb-4">
+        Вот краткая версия для обычного туриста:
+      </p>
+      <div class="overflow-x-auto mb-4">
+        <table class="w-full text-sm bg-white rounded-xl overflow-hidden shadow-sm">
+          <thead>
+            <tr class="bg-blue-600 text-white">
+              <th class="px-4 py-2 text-left">✅ Можно везти</th>
+              <th class="px-4 py-2 text-left">⚠️ Проверь детали ниже</th>
+              <th class="px-4 py-2 text-left">❌ Не вези</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-2">Одежда, туалетные принадлежности, телефон, ноутбук, фотоаппарат</td>
+              <td class="px-4 py-2">Алкоголь, сигареты, подарки дороже 2 000 юаней, наличные > $5 000</td>
+              <td class="px-4 py-2">Мясо, фрукты, овощи, наркотики, оружие</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <ul class="list-disc pl-5 text-blue-800 text-sm space-y-1">
+        <li><strong>Подарки/товары, остающиеся в Китае:</strong> не дороже <strong>2 000 юаней</strong></li>
+        <li><strong>Сигареты:</strong> макс. <strong>400</strong> (200 если из Гонконга/Макао)</li>
+        <li><strong>Алкоголь:</strong> до <strong>1,5 л</strong> (0,75 л если из Гонконга/Макао)</li>
+        <li><strong>Наличная валюта:</strong> декларировать свыше <strong>$5 000 USD</strong></li>
+        <li><strong>Наличные юани:</strong> макс. <strong>20 000 юаней</strong> (без исключений)</li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="prose prose-lg max-w-none">
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">❌ Не вези это в Китай</h2>
+
+      <div class="bg-red-50 border border-red-200 rounded-2xl p-6 mb-6 not-prose">
+        <p class="font-bold text-gray-900 mb-2">Без вариантов (изымут):</p>
+        <ul class="list-disc pl-5 text-gray-700 space-y-1">
+          <li>🚫 Наркотики, оружие, контрафакт</li>
+          <li>🚫 Свежие фрукты, овощи, сырое мясо, яйца, молочка, живые растения</li>
+          <li>🚫 Продукты из исчезающих видов (слоновая кость, тигриная кость, носорожий рог)</li>
+        </ul>
+      </div>
+
+      <div class="bg-yellow-50 border border-yellow-200 rounded-2xl p-6 mb-8 not-prose">
+        <p class="font-bold text-gray-900 mb-2">Обрати внимание на эти сюрпризы:</p>
+        <ul class="list-disc pl-5 text-gray-700 space-y-1">
+          <li><strong>Мясные закуски</strong> (вяленая говядина, колбаски, бекон) — тоже запрещены, даже упакованные</li>
+          <li><strong>Фрукты, забытые в рюкзаке</strong> — карантинные бигли найдут</li>
+          <li><strong>Традиционная китайская медицина</strong> — некоторые содержат виды из красной книги. Бери только упакованные с чёткими этикетками</li>
+          <li><strong>Повербанк</strong> — должен иметь маркировку 3C, только ручная кладь, макс. 160 Вт·ч</li>
+        </ul>
+      </div>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">💰 Что нужно знать большинству туристов</h2>
+
+      <h3 class="text-xl font-bold text-gray-800 mb-4">Подарки и вещи, которые остаются в Китае</h3>
+      <p class="text-gray-700 mb-4">
+        Лимит в 2 000 юаней распространяется на вещи, которые ты даришь или оставляешь в Китае (подарки друзьям, сувениры, шоколадки, которые съешь за время поездки). Вещи для личного пользования, которые ты увозишь обратно, не учитываются.
+      </p>
+
+      <div class="overflow-x-auto mb-8 not-prose">
+        <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+          <thead>
+            <tr class="bg-gray-900 text-white">
+              <th class="px-5 py-3 font-bold">Ты...</th>
+              <th class="px-5 py-3 font-bold">Беспошлинный лимит на вещи, остающиеся в Китае</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 font-semibold">Иностранный турист</td>
+              <td class="px-5 py-3"><strong>2 000 юаней</strong></td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-5 py-3 font-semibold">Китайский житель, возвращающийся домой</td>
+              <td class="px-5 py-3">5 000 юаней</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="text-xl font-bold text-gray-800 mb-4">Сигареты и алкоголь</h3>
+      <p class="text-gray-700 mb-4">
+        Таможенная декларация устанавливает эти беспошлинные лимиты. Если превышаешь — отметь галочку и иди в Красный коридор.
+      </p>
+
+      <div class="overflow-x-auto mb-4 not-prose">
+        <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+          <thead>
+            <tr class="bg-gray-900 text-white">
+              <th class="px-5 py-3 font-bold">Предмет</th>
+              <th class="px-5 py-3 font-bold text-center">Въезжающие</th>
+              <th class="px-5 py-3 font-bold text-center">Из Гонконга/Макао</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3">Сигареты (включая нагреваемый табак)</td>
+              <td class="px-5 py-3 text-center"><strong>400</strong></td>
+              <td class="px-5 py-3 text-center">200</td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-5 py-3">Сигары</td>
+              <td class="px-5 py-3 text-center"><strong>20</strong></td>
+              <td class="px-5 py-3 text-center">10</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3">Табак (россыпью)</td>
+              <td class="px-5 py-3 text-center"><strong>500 г</strong></td>
+              <td class="px-5 py-3 text-center">250 г</td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-5 py-3">Электронные сигареты (устройства)</td>
+              <td class="px-5 py-3 text-center"><strong>2</strong></td>
+              <td class="px-5 py-3 text-center">1</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3">Картриджи для электронных сигарет</td>
+              <td class="px-5 py-3 text-center"><strong>6</strong> (≤ 12 мл жидкости)</td>
+              <td class="px-5 py-3 text-center">3 (≤ 6 мл)</td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-5 py-3">Алкоголь (≥12%)</td>
+              <td class="px-5 py-3 text-center"><strong>1 500 мл</strong></td>
+              <td class="px-5 py-3 text-center">750 мл</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-sm text-gray-500 mb-8">Примечание: Для часто путешествующих (ежедневно/еженедельно) действуют более строгие лимиты — 40 сигарет, 2 сигары, 40 г табака, 1 электронная сигарета. Большинство туристов в эту категорию не попадают.</p>
+
+      <h3 class="text-xl font-bold text-gray-800 mb-4">Наличные</h3>
+      <div class="overflow-x-auto mb-8 not-prose">
+        <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+          <thead>
+            <tr class="bg-gray-900 text-white">
+              <th class="px-5 py-3 font-bold">Валюта</th>
+              <th class="px-5 py-3 font-bold text-center">Лимит</th>
+              <th class="px-5 py-3 font-bold">Что делать</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3">Юани (RMB)</td>
+              <td class="px-5 py-3 text-center">Макс. <strong>20 000 юаней</strong></td>
+              <td class="px-5 py-3">Свыше — запрещено</td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-5 py-3">USD или другая валюта</td>
+              <td class="px-5 py-3 text-center">Декларировать свыше <strong>$5 000</strong></td>
+              <td class="px-5 py-3">Получить штамп, сохранить для выезда</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="text-xl font-bold text-gray-800 mb-4">Лекарства</h3>
+      <p class="text-gray-700 mb-4">
+        <strong>Рецептурные препараты:</strong> Запас на 7 дней без документов — нормально. Для более долгого пребывания возьми справку от врача. Храни таблетки в заводских упаковках — таможенники не доверяют органайзерам для таблеток.
+      </p>
+      <p class="text-gray-700 mb-8">
+        <strong>Внимание — лекарства от простуды:</strong> Препараты с <strong>псевдоэфедрином</strong> (Sudafed, NyQuil, многие таблетки от простуды) в Китае ограничены. Одна упаковка — нормально; несколько упаковок могут расценить как перевозку прекурсоров. Не бери много лекарств от простуды.
+      </p>
+
+      <h3 class="text-xl font-bold text-gray-800 mb-4">Электроника, которую увозишь обратно</h3>
+      <p class="text-gray-700 mb-8">
+        Ноутбук, телефон, фотоаппарат и планшет — всё это можно везти через Зелёный коридор, это личные вещи, которые ты привёз и увозишь обратно. Если везёшь очень дорогое оборудование (профессиональная камера, несколько ноутбуков), можно добровольно задекларировать их как «временный ввоз» в Красном коридоре, чтобы избежать вопросов при выезде — но большинство туристов этого не делают и проблем не возникает.
+      </p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">🚦 Какой коридор выбрать</h2>
+      <p class="text-gray-700 mb-4">
+        В таможенной декларации 7 пунктов. <strong>Если хотя бы один подходит → Красный коридор. Если ни один не подходит → Зелёный коридор.</strong>
+      </p>
+
+      <div class="overflow-x-auto mb-8 not-prose">
+        <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+          <thead>
+            <tr class="bg-gray-900 text-white">
+              <th class="px-5 py-3 font-bold text-center">#</th>
+              <th class="px-5 py-3 font-bold">Отметь, если везёшь...</th>
+              <th class="px-5 py-3 font-bold text-center">Иди в</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 text-center font-bold">1</td>
+              <td class="px-5 py-3">Животные, растения, свежие продукты, мясо, микроорганизмы, биопродукты</td>
+              <td class="px-5 py-3 text-center">🔴</td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-5 py-3 text-center font-bold">2</td>
+              <td class="px-5 py-3">(Китайский житель) Вещи дороже 5 000 юаней</td>
+              <td class="px-5 py-3 text-center">🔴</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 text-center font-bold">3</td>
+              <td class="px-5 py-3">(Иностранный турист) Подарки или вещи <strong>дороже 2 000 юаней</strong>, которые <strong>остаются в Китае</strong></td>
+              <td class="px-5 py-3 text-center">🔴</td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-5 py-3 text-center font-bold">4</td>
+              <td class="px-5 py-3">Больше <strong>1 500 мл</strong> алкоголя / <strong>400</strong> сигарет / <strong>20</strong> сигар / <strong>500 г</strong> табака / больше 2 электронных сигарет или 6 картриджей</td>
+              <td class="px-5 py-3 text-center">🔴</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 text-center font-bold">5</td>
+              <td class="px-5 py-3">Больше <strong>20 000 юаней</strong> наличными или <strong>$5 000 USD</strong> иностранной валюты</td>
+              <td class="px-5 py-3 text-center">🔴</td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-5 py-3 text-center font-bold">6</td>
+              <td class="px-5 py-3">Отдельно отправленный багаж, товары для бизнеса</td>
+              <td class="px-5 py-3 text-center">🔴</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 text-center font-bold">7</td>
+              <td class="px-5 py-3">Что-то ещё, в чём не уверен</td>
+              <td class="px-5 py-3 text-center">🔴</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-gray-700 font-semibold mb-8">Ни один пункт не подходит? → 🟢 Зелёный коридор. Просто проходи.</p>
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">Реальные сценарии для туристов</h2>
+
+      <!-- Scenario 1 -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-4 not-prose">
+        <p class="font-bold text-gray-900 mb-2">Сценарий 1: Ты везёшь подарки китайским друзьям</p>
+        <p class="text-gray-700 text-sm mb-3">Ты упаковал бутылку односолодового виски ($150), коробку шоколада ручной работы ($40) и кожаный кошелёк ($120) — всё это подарки друзьям в Шанхае. Общая стоимость: ~$310 USD (~2 200 юаней).</p>
+        <div class="bg-yellow-50 rounded-xl p-4">
+          <p class="text-sm text-yellow-900"><strong>Анализ:</strong> Эти вещи остаются в Китае (подарки) и превышают 2 000 юаней. В декларации отмечается пункт 3.</p>
+          <p class="text-sm text-red-700 font-semibold mt-1">→ 🔴 Красный коридор. Задекларируй как «подарки, остающиеся в Китае» и будь готов оплатить пошлину за превышение в 200 юаней.</p>
+        </div>
+      </div>
+
+      <!-- Scenario 2 -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-4 not-prose">
+        <p class="font-bold text-gray-900 mb-2">Сценарий 2: Ты привёз $5 500 USD наличными</p>
+        <p class="text-gray-700 text-sm mb-3">Ты обменял валюту перед поездкой и у тебя $5 500 USD на поездку.</p>
+        <div class="bg-yellow-50 rounded-xl p-4">
+          <p class="text-sm text-yellow-900"><strong>Анализ:</strong> Иностранная валюта свыше $5 000 USD активирует пункт 5.</p>
+          <p class="text-sm text-red-700 font-semibold mt-1">→ 🔴 Красный коридор. Задекларируй $5 500 USD, заполни форму декларации наличных и получи штамп. Сохрани форму, чтобы вывезти остаток при отъезде.</p>
+        </div>
+      </div>
+
+      <!-- Scenario 3 -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-4 not-prose">
+        <p class="font-bold text-gray-900 mb-2">Сценарий 3: Обычный туристический багаж</p>
+        <p class="text-gray-700 text-sm mb-3">Ты взял одежду, туалетные принадлежности, ноутбук, телефон, Kindle и фотоаппарат — всё личное, что увозишь обратно. Общая стоимость — тысячи, но ничего не остаётся в Китае.</p>
+        <div class="bg-green-50 rounded-xl p-4">
+          <p class="text-sm text-green-800"><strong>Анализ:</strong> Ни один пункт декларации не подходит. Это «временный ввоз» — личные вещи, которые ты увозишь домой.</p>
+          <p class="text-sm text-green-700 font-semibold mt-1">→ 🟢 Зелёный коридор. Это реальность для 95% туристов. Просто проходи.</p>
+        </div>
+      </div>
+
+      <!-- Scenario 4 -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-4 not-prose">
+        <p class="font-bold text-gray-900 mb-2">Сценарий 4: Ты взял лекарства от простуды в поездку</p>
+        <p class="text-gray-700 text-sm mb-3">У тебя есть упаковка таблеток от простуды и гриппа (с псевдоэфедрином), немного антигистаминных и маленький тюбик антибиотической мази — стандартный набор для любого путешественника.</p>
+        <div class="bg-yellow-50 rounded-xl p-4">
+          <p class="text-sm text-yellow-900"><strong>Анализ:</strong> Обычные безрецептурные препараты для личного пользования — нормально. Псевдоэфедрин в Китае ограничен, но одна упаковка (на 7 дней) обычно проблем не вызывает.</p>
+          <p class="text-sm text-green-700 font-semibold mt-1">→ 🟢 Зелёный коридор для обычного количества. Но если привёз несколько упаковок — это уже другая история.</p>
+        </div>
+      </div>
+
+      <!-- Scenario 5 -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-4 not-prose">
+        <p class="font-bold text-gray-900 mb-2">Сценарий 5: Яблоко и сэндвич с курицей с рейса</p>
+        <p class="text-gray-700 text-sm mb-3">Ты взял свежее яблоко и сэндвич с завтрака на борту и забыл, что они лежат в рюкзаке.</p>
+        <div class="bg-red-50 rounded-xl p-4">
+          <p class="text-sm text-red-800"><strong>Анализ:</strong> Свежие фрукты = пункт 1. Мясные продукты = пункт 1.</p>
+          <p class="text-sm text-red-700 font-semibold mt-1">→ 🔴 Красный коридор. Задекларируй — их изымут и уничтожат. Всегда проверяй рюкзак перед выбором коридора.</p>
+        </div>
+      </div>
+
+      <div class="bg-red-50 border-l-4 border-red-400 p-5 rounded-r-xl mb-8 not-prose">
+        <p class="text-red-900 text-sm"><strong>Если сомневаешься — выбирай Красный коридор.</strong> Добровольная декларация — мелочь. Сокрытие ведёт к изъятию и штрафу.</p>
+      </div>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">📝 Как декларировать</h2>
+      <p class="text-gray-700 mb-4">
+        <strong>Возьми бумажный бланк на таможне</strong> — «Декларацию на багаж» (中英文对照, доступна на стойке перед зоной досмотра) и заполни на месте. Отметь любой подходящий пункт, затем передай бланк сотруднику в Красном коридоре.
+      </p>
+      <p class="text-gray-700 mb-8">
+        <strong>Штрафы за сокрытие:</strong> Изъятие + штраф до 100 000 юаней. Уклонение от уплаты пошлин свыше 10 000 юаней может повлечь уголовную ответственность.
+      </p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">💡 Быстрые советы</h2>
+      <ol class="list-decimal pl-6 space-y-2 text-gray-700 mb-8">
+        <li><strong>Храни лекарства в заводских упаковках</strong> — таможенники не доверяют органайзерам</li>
+        <li><strong>Никаких фруктов, мяса и молочки в рюкзаке</strong> — карантинные бигли отлично делают свою работу</li>
+        <li><strong>Никаких фото на таможне</strong> — съёмка в зоне досмотра запрещена</li>
+        <li><strong>Проверяй рюкзак перед выбором коридора</strong> — то яблоко с рейса считается</li>
+        <li><strong>Сохраняй чеки</strong> на брендовые товары и подарки</li>
+      </ol>
+
+    </div>
+
+    <!-- Sources -->
+    <div class="bg-gray-50 rounded-2xl p-6 not-prose mt-12">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📚 Источники</h3>
+      <ul class="space-y-2">
+        <li><a href="http://english.customs.gov.cn/Statics/88707c1e-aa4e-40ca-a968-bdbdbb565e4f.html" class="text-brand-600 hover:underline text-sm" target="_blank" rel="noopener">China Customs Official — Декларация багажа пассажиров</a></li>
+      </ul>
+    </div>
+
+    <!-- Related Guides -->
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose mt-6">
+      <h3 class="text-2xl font-bold text-gray-900 mb-6">📚 Похожие гайды</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/ru/life/survival-kit/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">Набор выживания для поездки в Китай</p>
+          <p class="text-sm text-gray-600">Полный чек-лист перед вылетом</p>
+        </a>
+        <a href="/ru/visa/arrival-card/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">Как заполнить карту прибытия онлайн</p>
+          <p class="text-sm text-gray-600">Пошаговое руководство со скриншотами</p>
+        </a>
+      </div>
+    </div>
+  </article>
+</Layout>

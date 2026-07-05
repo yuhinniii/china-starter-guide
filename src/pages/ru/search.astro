@@ -1,0 +1,137 @@
+---
+import Layout from '@layouts/Layout.astro';
+import fs from 'fs';
+import path from 'path';
+
+const pagesDir = path.resolve('src/pages/ru');
+
+function stripHtml(html: string): string {
+  return html
+    .replace(/<script[\s\S]*?<\/script>/gi, '')
+    .replace(/<style[\s\S]*?<\/style>/gi, '')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function scanPages(dir: string) {
+  const results = [];
+  const excludes = new Set([
+    'index.astro',
+    'about.astro',
+    'contact.astro',
+    'privacy.astro',
+    'visa/index.astro',
+    'cities/index.astro',
+    'life/index.astro',
+    'payment/index.astro',
+    'transport/index.astro',
+  ]);
+  const items = fs.readdirSync(dir, { withFileTypes: true });
+  for (const item of items) {
+    const full = path.join(dir, item.name);
+    if (item.isDirectory()) {
+      results.push(...scanPages(full));
+    } else if (item.name.endsWith('.astro') && item.name !== 'search.astro') {
+      const relPath = path.relative(pagesDir, full).replace(/\\/g, '/');
+      if (excludes.has(relPath)) continue;
+      const content = fs.readFileSync(full, 'utf8');
+      const titleMatch = content.match(/const title\s*=\s*['"]([^'"]+)['"]/);
+      const descMatch = content.match(/const description\s*=\s*['"]([^'"]+)['"]/);
+      if (!titleMatch) continue;
+
+      // Extract body content (after the closing --- of frontmatter)
+      const bodyMatch = content.match(/---\n([\s\S]*)$/);
+      let bodyText = '';
+      if (bodyMatch) {
+        // Remove the first line if it starts with --- (closing tag)
+        let body = bodyMatch[1].replace(/^---\n/, '');
+        bodyText = stripHtml(body);
+        // Limit to first 3000 chars to keep JSON manageable
+        bodyText = bodyText.substring(0, 3000);
+      }
+
+      // Generate URL from file path
+      let url = path.relative(pagesDir, full).replace(/\\/g, '/');
+      url = url.replace(/\.astro$/, '');
+      url = url.replace(/\/index$/, '');
+      if (url === 'index') url = '';
+      url = '/ru/' + url + '/';
+      url = url.replace(/\/\/+/g, '/');
+
+      const desc = descMatch ? descMatch[1].replace(/&amp;/g, '&') : '';
+      const title = titleMatch[1].replace(/&amp;/g, '&');
+
+      results.push({
+        title,
+        url,
+        desc,
+        body: bodyText,
+      });
+    }
+  }
+  return results;
+}
+
+const pages = scanPages(pagesDir);
+pages.sort((a, b) => a.url.localeCompare(b.url));
+---
+
+<Layout title="Поиск — China Starter Hub" lang="ru">
+  <div class="max-w-3xl mx-auto px-4 py-16">
+    <h1 class="text-4xl font-bold mb-8">Поиск</h1>
+    <div class="mb-4">
+      <input
+        type="text"
+        id="search-input"
+        placeholder="Искать гайды, советы, информацию о городах..."
+        class="w-full px-5 py-3 rounded-2xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-500 text-base"
+        autocomplete="off"
+      />
+    </div>
+    <p class="text-xs text-gray-400 mb-6" id="result-count">{pages.length} гайдов проиндексировано</p>
+    <div id="search-results" class="space-y-4">
+      <p class="text-gray-500">Введи ключевое слово выше, чтобы найти нужный гайд.</p>
+    </div>
+  </div>
+
+  <!-- Embed search data as JSON -->
+  <div id="search-data" style="display:none">{JSON.stringify(pages)}</div>
+
+  <script is:inline>
+    const input = document.getElementById('search-input');
+    const results = document.getElementById('search-results');
+    const count = document.getElementById('result-count');
+    const pages = JSON.parse(document.getElementById('search-data').textContent);
+
+    input.addEventListener('input', (e) => {
+      const q = e.target.value.toLowerCase().trim();
+      if (!q) {
+        results.innerHTML = '<p class="text-gray-500">Введи ключевое слово выше, чтобы найти нужный гайд.</p>';
+        count.textContent = pages.length + ' гайдов проиндексировано';
+        return;
+      }
+      const matched = pages.filter(p =>
+        p.title.toLowerCase().includes(q) ||
+        p.desc.toLowerCase().includes(q) ||
+        (p.body && p.body.toLowerCase().includes(q))
+      );
+      if (matched.length === 0) {
+        results.innerHTML = '<p class="text-gray-500">Ничего не найдено. Попробуй другое ключевое слово.</p>';
+        count.textContent = '0 результатов';
+        return;
+      }
+      count.textContent = matched.length + ' результат' + (matched.length > 1 ? (matched.length < 5 ? 'а' : 'ов') : '');
+      results.innerHTML = matched.map(p =>
+        `<a href="${p.url}" class="block p-5 rounded-2xl bg-gray-50 hover:bg-gray-100 transition-colors no-underline">
+          <h3 class="text-lg font-semibold text-brand-600">${p.title}</h3>
+          <p class="text-gray-600 text-sm">${p.desc}</p>
+        </a>`
+      ).join('');
+    });
+  </script>
+</Layout>

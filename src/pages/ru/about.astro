@@ -1,0 +1,104 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'О проекте — China Starter Hub';
+const description = 'Зачем мы создали этот гид и для кого он.';
+---
+
+<Layout title={title} description={description} lang="ru">
+  <article class="max-w-3xl mx-auto py-12">
+    <!-- Header -->
+    <header class="text-center mb-16">
+      <div class="text-sm text-brand-600 font-medium tracking-wide uppercase mb-3">О проекте</div>
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
+        О China Starter Hub
+      </h1>
+      <p class="text-lg text-gray-500 max-w-2xl mx-auto leading-relaxed">
+        Независимый ресурс, который помогает иностранным путешественникам подготовиться к поездке в Китай и ориентироваться в стране.
+      </p>
+    </header>
+
+    <!-- Main Content -->
+    <div class="prose prose-gray max-w-none">
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        China Starter Hub — это независимый ресурс, который помогает иностранным туристам подготовиться к поездке в Китай и уверенно ориентироваться в стране.
+      </p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+          Едешь ли ты как турист, в командировку, на учёбу или с коротким визитом — найти достоверную информацию о Китае бывает непросто. Правила, приложения, оплата, транспорт и повседневные услуги часто работают совсем не так, как привыкли многие путешественники.
+      </p>
+
+      <div class="border-l-2 border-brand-300 pl-5 py-3 my-8">
+        <p class="text-lg font-medium text-gray-600 italic m-0">
+          Наша цель проста: сделать Китай понятнее и проще для навигации.
+        </p>
+      </div>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        Мы создаём практичные гайды и полезные инструменты на основе реальных вопросов путешественников и тех, кто едет в Китай впервые. Каждый материал призван сэкономить время, уменьшить путаницу и помочь людям путешествовать с уверенностью.
+      </p>
+
+      <hr class="my-12 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Чего ожидать</h2>
+
+      <div class="grid md:grid-cols-3 gap-6 not-prose mb-12">
+        <div class="p-6 rounded-2xl bg-gray-50 border border-gray-100">
+          <div class="text-brand-600 text-2xl mb-3">📙</div>
+          <h3 class="font-semibold text-gray-900 mb-2">Никакой рекламы туров</h3>
+          <p class="text-sm text-gray-500 leading-relaxed m-0">Только чёткая, полезная информация, которой можно доверять.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-gray-50 border border-gray-100">
+          <div class="text-brand-600 text-2xl mb-3">⚡</div>
+          <h3 class="font-semibold text-gray-900 mb-2">Без лишних сложностей</h3>
+          <p class="text-sm text-gray-500 leading-relaxed m-0">Честные ответы на реальные вопросы — без терминологии.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-gray-50 border border-gray-100">
+          <div class="text-brand-600 text-2xl mb-3">✅</div>
+          <h3 class="font-semibold text-gray-900 mb-2">Практично и по делу</h3>
+          <p class="text-sm text-gray-500 leading-relaxed m-0">Каждый гайд сделан так, чтобы им можно было пользоваться прямо на месте.</p>
+        </div>
+      </div>
+
+      <hr class="my-12 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Для кого это</h2>
+      <div class="grid md:grid-cols-2 gap-4 not-prose mb-12">
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-gray-50">
+          <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-brand-100 text-brand-700 text-sm font-bold flex items-center justify-center">1</span>
+          <div>
+            <p class="font-medium text-gray-900 m-0">Туристы-новички</p>
+            <p class="text-sm text-gray-500 m-0">Едут в Китай впервые и нуждаются в базовых знаниях.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-gray-50">
+          <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-brand-100 text-brand-700 text-sm font-bold flex items-center justify-center">2</span>
+          <div>
+            <p class="font-medium text-gray-900 m-0">Деловые путешественники</p>
+            <p class="text-sm text-gray-500 m-0">Короткие поездки, когда нет времени разбираться на месте.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-gray-50">
+          <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-brand-100 text-brand-700 text-sm font-bold flex items-center justify-center">3</span>
+          <div>
+            <p class="font-medium text-gray-900 m-0">Студенты и исследователи</p>
+            <p class="text-sm text-gray-500 m-0">Остаются на семестр и дольше — нужно обустроиться.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3 p-4 rounded-xl bg-gray-50">
+          <span class="flex-shrink-0 w-8 h-8 rounded-lg bg-brand-100 text-brand-700 text-sm font-bold flex items-center justify-center">4</span>
+          <div>
+            <p class="font-medium text-gray-900 m-0">Краткосрочные визитёры</p>
+            <p class="text-sm text-gray-500 m-0">Транзит, пересадки или быстрые поездки с особыми потребностями.</p>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-12 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">Будь в курсе</h2>
+      <p class="text-lg leading-relaxed text-gray-700">
+        Технологии и правила в Китае меняются быстро. Мы регулярно обновляем наши гайды, чтобы информация оставалась точной и полезной. Подписывайся или заглядывай почаще — мы держим руку на пульсе.
+      </p>
+    </div>
+  </article>
+</Layout>

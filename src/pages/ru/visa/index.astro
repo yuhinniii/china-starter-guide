@@ -1,0 +1,129 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'Подготовка к поездке в Китай — Въезд и настройка';
+const description = 'Всё, что нужно подготовить перед поездкой в Китай.';
+---
+
+<Layout title={title} description={description} lang="ru">
+  <section class="max-w-4xl mx-auto px-6 py-12">
+    
+    <!-- Header -->
+    <header class="mb-10 text-center">
+      <p class="text-sm text-gray-500 mb-2">✅ Подготовка</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-3 leading-tight">Подготовка к поездке в Китай</h1>
+      <p class="text-base text-gray-500 max-w-2xl mx-auto">Всё, что нужно подготовить перед поездкой в Китай.</p>
+    </header>
+
+    <!-- Quick Stats -->
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-3 mb-12 not-prose">
+      <div class="bg-green-50 border border-green-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-green-800">5</p>
+        <p class="text-xs font-semibold text-green-800 uppercase tracking-wide mt-1">Виза и въезд</p>
+      </div>
+      <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-blue-800">1</p>
+        <p class="text-xs font-semibold text-blue-800 uppercase tracking-wide mt-1">Цифровая настройка</p>
+      </div>
+      <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-amber-800">4</p>
+        <p class="text-xs font-semibold text-amber-800 uppercase tracking-wide mt-1">Перед вылетом</p>
+      </div>
+    </div>
+
+    <!-- Category Sections -->
+    <div class="space-y-8 mb-16 not-prose">
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-green-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-green-800">Виза и въезд</h2>
+          <span class="text-xs font-medium text-green-800 opacity-60">5 статей</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/ru/visa/visa-guide/" class="block bg-green-50 border border-green-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-green-800">📖 Обзор</span>
+            <p class="text-base font-bold text-gray-900 mt-1">Типы виз в Китай — полный гайд</p>
+            <p class="text-sm text-gray-600 mt-0.5">Все варианты виз: безвизовый въезд, транзит и виза L.</p>
+          </a>
+          <a href="/ru/visa/visa-free/" class="block bg-green-50 border border-green-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-green-800">📋 Список</span>
+            <p class="text-base font-bold text-gray-900 mt-1">Безвизовые страны для Китая</p>
+            <p class="text-sm text-gray-600 mt-0.5">50 стран могут въезжать без визы до 30 дней.</p>
+          </a>
+          <a href="/ru/visa/transit-240/" class="block bg-green-50 border border-green-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-green-800">✈️ Транзит</span>
+            <p class="text-base font-bold text-gray-900 mt-1">240-часовой безвизовый транзит</p>
+            <p class="text-sm text-gray-600 mt-0.5">55 стран — оставайся до 10 дней без визы.</p>
+          </a>
+          <a href="/ru/visa/mutual-agreement/" class="block bg-green-50 border border-green-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-green-800">🤝 Взаимные</span>
+            <p class="text-base font-bold text-gray-900 mt-1">Взаимные безвизовые соглашения</p>
+            <p class="text-sm text-gray-600 mt-0.5">29 стран имеют двусторонние безвизовые договорённости с Китаем.</p>
+          </a>
+          <a href="/ru/visa/apply-l-visa/" class="block bg-green-50 border border-green-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-green-800">📝 Оформление</span>
+            <p class="text-base font-bold text-gray-900 mt-1">Как оформить туристическую визу в Китай</p>
+            <p class="text-sm text-gray-600 mt-0.5">Пошаговый гайд — документы, форма COVA, стоимость и советы.</p>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-blue-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-blue-800">Цифровая настройка</h2>
+          <span class="text-xs font-medium text-blue-800 opacity-60">1 статья</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/ru/life/sim-card-guide/" class="block bg-blue-50 border border-blue-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-blue-800">📶 Интернет</span>
+            <p class="text-base font-bold text-gray-900 mt-1">Лучшая SIM-карта и eSIM для туристов</p>
+            <p class="text-sm text-gray-600 mt-0.5">Сравнение eSIM-провайдеров, SIM-карт в аэропорту и тарифов.</p>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-amber-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-amber-800">Перед вылетом</h2>
+          <span class="text-xs font-medium text-amber-800 opacity-60">4 статьи</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/ru/visa/customs-guide/" class="block bg-amber-50 border border-amber-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-amber-800">🛃 Правила</span>
+            <p class="text-base font-bold text-gray-900 mt-1">Таможенные правила Китая</p>
+            <p class="text-sm text-gray-600 mt-0.5">Беспошлинные лимиты, запрещённые предметы и что нужно декларировать.</p>
+          </a>
+          <a href="/ru/visa/arrival-card/" class="block bg-amber-50 border border-amber-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-amber-800">📄 Карта прибытия</span>
+            <p class="text-base font-bold text-gray-900 mt-1">Заполнение карты прибытия онлайн</p>
+            <p class="text-sm text-gray-600 mt-0.5">Заполни карту прибытия NIA перед вылетом — пошагово со скриншотами.</p>
+          </a>
+          <a href="/ru/life/survival-kit/" class="block bg-amber-50 border border-amber-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-amber-800">🎒 Чек-лист</span>
+            <p class="text-base font-bold text-gray-900 mt-1">Набор выживания для поездки в Китай</p>
+            <p class="text-sm text-gray-600 mt-0.5">Полный чек-лист перед вылетом — документы, приложения и что взять с собой.</p>
+          </a>
+          <a href="/ru/visa/first-time-china/" class="block bg-amber-50 border border-amber-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-amber-800">🌟 Впервые</span>
+            <p class="text-base font-bold text-gray-900 mt-1">Впервые в Китае</p>
+            <p class="text-sm text-gray-600 mt-0.5">Полный таймлайн — виза, цифровая настройка, сборы, прибытие, первые 24 часа.</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Guides -->
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-5">Похожие гайды</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <a href="/ru/payment/payment-guide/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-0.5">Оплата в Китае</p>
+          <p class="text-sm text-gray-500">Настройка Alipay и другие способы</p>
+        </a>
+        <a href="/ru/transport/transport-guide/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-0.5">Транспорт в Китае</p>
+          <p class="text-sm text-gray-500">Как передвигаться</p>
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

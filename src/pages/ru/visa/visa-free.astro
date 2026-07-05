@@ -1,0 +1,152 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'Список безвизовых стран для Китая (2026) — China Starter Hub';
+const description = 'Официальный список стран, имеющих право на безвизовый въезд в Китай — односторонний (50 стран) и взаимные соглашения (29 стран).';
+---
+
+<Layout title={title} description={description} lang="ru">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/ru/visa/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Назад к подготовке
+      </a>
+    </nav>
+    <!-- Header -->
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">📋 Въезд и виза</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        Список безвизовых стран для Китая (2026)
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">Проверь, есть ли твоя страна в списке для безвизового въезда в Китай.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Последнее обновление: июнь 2026</span>
+        <span>⏱️ 5 мин. чтения</span>
+      </div>
+    </header>
+
+    <!-- Quick Answer Box -->
+    <div class="bg-gradient-to-r from-green-50 to-emerald-50 border-l-4 border-green-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-green-900 mb-4">🎯 Краткий ответ</h2>
+      <p class="text-lg text-green-800 leading-relaxed">
+        <strong>Есть два способа въехать в Китай без визы:</strong> Китай предоставляет односторонний безвизовый въезд гражданам <strong>50 стран</strong> (до 30 дней) и имеет взаимные безвизовые соглашения с <strong>29 странами</strong>. Если твоей страны нет ни в одном из списков, проверь правила 240-часового транзита или оформи визу L.
+      </p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="prose prose-lg max-w-none">
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        Ниже приведены полные списки на основе последних официальных данных правительства Китая (2025). Источник: <a href="http://big5.www.gov.cn/gate/big5/www.gov.cn/yaowen/liebiao/202508/content_7035244.htm" class="text-brand-600 underline" target="_blank" rel="noopener">中国政府网</a>.
+      </p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <!-- Section 1: Unilateral -->
+      <h2 class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🟢</span> Односторонний безвизовый режим (50 стран)
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        Граждане этих стран могут въезжать в Китай <strong>без визы</strong> на срок до <strong>30 дней</strong>. Предварительная заявка не нужна.
+      </p>
+
+      <div class="bg-green-50 border border-green-200 rounded-2xl p-6 mb-8 not-prose">
+        <p class="text-gray-700 mb-4 font-medium">Действует для: туризма, бизнеса, посещения семьи, транзита, культурного обмена. Макс. 30 дней.</p>
+      </div>
+
+      <h3 class="text-xl font-bold text-gray-800 mb-4">Европа (35)</h3>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 not-prose">
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-gray-700">
+          <span>Франция</span><span>Германия</span><span>Италия</span>
+          <span>Нидерланды</span><span>Испания</span><span>Швейцария</span>
+          <span>Ирландия</span><span>Венгрия</span><span>Австрия</span>
+          <span>Бельгия</span><span>Люксембург</span><span>Польша</span>
+          <span>Португалия</span><span>Греция</span><span>Кипр</span>
+          <span>Словения</span><span>Словакия</span><span>Норвегия</span>
+          <span>Финляндия</span><span>Дания</span><span>Исландия</span>
+          <span>Андорра</span><span>Монако</span><span>Лихтенштейн</span>
+          <span>Болгария</span><span>Румыния</span><span>Хорватия</span>
+          <span>Черногория</span><span>Северная Македония</span><span>Мальта</span>
+          <span>Эстония</span><span>Латвия</span><span>Россия</span>
+          <span>Швеция</span><span>Великобритания</span>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-bold text-gray-800 mb-4">Азия (7)</h3>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 not-prose">
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-gray-700">
+          <span>Бруней</span><span>Южная Корея</span><span>Япония</span>
+          <span>Саудовская Аравия</span><span>Оман</span><span>Кувейт</span>
+          <span>Бахрейн</span>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-bold text-gray-800 mb-4">Америка (6)</h3>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 not-prose">
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-gray-700">
+          <span>Бразилия</span><span>Аргентина</span><span>Чили</span>
+          <span>Перу</span><span>Уругвай</span><span>Канада</span>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-bold text-gray-800 mb-4">Океания (2)</h3>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-8 not-prose">
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-gray-700">
+          <span>Австралия</span><span>Новая Зеландия</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Not sure which one applies to you? -->
+    <div class="bg-gray-50 rounded-2xl p-6 not-prose mt-8 mb-12">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">🤔 Не уверен, какое правило подходит твоей стране?</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <a href="/ru/visa/transit-240/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-0.5">✈️ 240-часовой безвизовый транзит</p>
+          <p class="text-sm text-gray-500">До 10 дней в определённых регионах — охватывает 55 стран, включая США.</p>
+        </a>
+        <a href="/ru/visa/mutual-agreement/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-0.5">🤝 Взаимные безвизовые соглашения</p>
+          <p class="text-sm text-gray-500">29 стран с двусторонними договорённостями — сроки пребывания различаются.</p>
+        </a>
+        <a href="/ru/visa/apply-l-visa/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-0.5">📝 Оформить туристическую визу L</p>
+          <p class="text-sm text-gray-500">Если твоей страны нет в безвизовых списках, оформи стандартную туристическую визу.</p>
+        </a>
+        <a href="/ru/cities/hainan-visa-free/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-0.5">🏝️ Хайнань — 30 дней без визы</p>
+          <p class="text-sm text-gray-500">Подходит для 59 стран, включая США, Мексику, Филиппины и другие.</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- Sources -->
+    <div class="bg-gray-50 rounded-2xl p-6 not-prose mt-12">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📚 Источники</h3>
+      <ul class="space-y-2">
+        <li><a href="https://en.nia.gov.cn/n147418/n147463/c183390/content.html" class="text-brand-600 hover:underline text-sm" target="_blank" rel="noopener">National Immigration Administration — Список стран, охваченных односторонним безвизовым режимом</a></li>
+        <li><a href="https://www.gov.cn/yaowen/liebiao/202508/content_7035244.htm" class="text-brand-600 hover:underline text-sm" target="_blank" rel="noopener">gov.cn — Какие страны могут посещать Китай без визы? Полный список!</a></li>
+        <li><a href="https://cs.mfa.gov.cn/wgrlh/lhqz/lhqzjjs/202510/t20251023_11739051.shtml" class="text-brand-600 hover:underline text-sm" target="_blank" rel="noopener">МИД Китая — Соглашения о взаимном отказе от виз</a></li>
+      </ul>
+    </div>
+
+    <!-- Related Guides -->
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose">
+      <h3 class="text-2xl font-bold text-gray-900 mb-6">📚 Похожие гайды</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/ru/visa/visa-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">Типы виз в Китай — полный гайд</p>
+          <p class="text-sm text-gray-600">Все варианты виз объяснены</p>
+        </a>
+        <a href="/ru/visa/transit-240/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">240-часовой безвизовый транзит — объяснение</p>
+          <p class="text-sm text-gray-600">10-дневный транзит без визы</p>
+        </a>
+      </div>
+    </div>
+  </article>
+</Layout>

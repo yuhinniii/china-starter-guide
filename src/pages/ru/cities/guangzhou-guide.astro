@@ -1,0 +1,228 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = "Путеводитель по Гуанчжоу: гастрономическая столица Китая";
+const description = "Исследуй Гуанчжоу — гастрономическую столицу Китая с всемирно известными димсамами, кантонской культурой и удобным доступом в Гонконг.";
+---
+
+<Layout title={title} description={description} lang="ru">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🏙️ Гуанчжоу</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">Путеводитель по Гуанчжоу: гастрономическая столица Китая</h1>
+      <p class="text-xl text-gray-600 mb-6">Исследуй Гуанчжоу — гастрономическую столицу Китая с всемирно известными димсамами, кантонской культурой и удобным доступом в Гонконг.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500"><span>📅 Последнее обновление: июнь 2026</span><span>⏱️ 7 мин. чтения</span></div>
+    </header>
+
+    <div class="bg-gradient-to-r from-green-50 to-teal-50 border-l-4 border-green-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-green-900 mb-4">⚡ Быстрый ответ</h2>
+      <p class="text-lg text-green-800 leading-relaxed">Если в Пекине ты ешь, чтобы жить, то в Гуанчжоу ты <strong>живёшь, чтобы есть</strong>. Этот южный город по праву считается <strong>гастрономической столицей Китая</strong> и колыбелью кантонской кухни — пожалуй, самой известной китайской кухни в мире. Но помимо еды, Гуанчжоу может похвастаться субтропической зеленью, неспешным ритмом жизни и близостью к Шэньчжэню и Гонконгу.</p>
+    </div>
+
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 В этом путеводителе</h3>
+      <ul class="space-y-3">
+        <li><a href="#why-visit" class="text-blue-600 hover:underline">🥟 Зачем ехать в Гуанчжоу?</a></li>
+        <li><a href="#how-many-days" class="text-blue-600 hover:underline">📅 Сколько дней нужно?</a></li>
+        <li><a href="#attractions" class="text-blue-600 hover:underline">🎯 Главные достопримечательности</a></li>
+        <li><a href="#getting-around" class="text-blue-600 hover:underline">🚇 Как передвигаться</a></li>
+        <li><a href="#where-to-stay" class="text-blue-600 hover:underline">🏨 Где остановиться</a></li>
+        <li><a href="#what-to-eat" class="text-blue-600 hover:underline">🍜 Что поесть</a></li>
+      </ul>
+    </nav>
+
+    <h2 id="why-visit" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🥟 Зачем ехать в Гуанчжоу?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-12">Гуанчжоу был торговым портом более 1000 лет. Именно здесь кантонская кухня — димсамы, жареное мясо, супы медленного томления — была доведена до совершенства и экспортирована по всему миру. В городе субтропический климат (тепло круглый год), оживлённая набережная и ярко выраженная кантонская культура, которая ощущается совсем иначе, чем на севере. Это также ворота в дельту Жемчужной реки: Шэньчжэнь — 30 минут на скоростном поезде, Гонконг — около часа.</p>
+
+    <h2 id="how-many-days" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📅 Сколько дней нужно?</h2>
+    <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700 mb-12">
+      <li><strong>2–3 дня (стандартно):</strong> Димсамы, Кантонская башня, остров Шамянь и гастротур</li>
+      <li><strong>4–5 дней (комфортно):</strong> Добавь Сафари-парк Чимэлун, башни Кайпин Дяолоу или поездку в Шэньчжэнь</li>
+      <li><strong>5+ дней (расширенно):</strong> Комбинируй с Шэньчжэнем и Гонконгом для полного путешествия по дельте Жемчужной реки</li>
+    </ul>
+
+    <!-- ==================== ДОСТОПРИМЕЧАТЕЛЬНОСТИ ==================== -->
+    <h2 id="attractions" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎯 Главные достопримечательности</h2>
+
+    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/guangzhou/canton-tower.webp" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Кантонская башня (广州塔)</h3>
+        <p class="text-gray-700">Местные называют её «Супермодель» неспроста — на высоте 600 метров это самое высокое сооружение в Гуандуне. Поднимись на открытую палубу 450 метров, чтобы прокатиться на пузырьковом трамвае, опоясывающем башню по талии, или попробуй аттракцион свободного падения, если высота тебя не пугает. Рассчитай время так, чтобы оказаться наверху на закате, когда весь город внизу становится золотым, а затем останься на световое шоу после темноты.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/guangzhou/shamian-island.webp" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Остров Шамянь (沙面岛)</h3>
+        <p class="text-gray-700">Этот крошечный речной остров был британской и французской концессией в 1860-х годах, и те европейские консульские здания до сих пор стоят вдоль бульваров. Гигантские 150-летние баньяны затеняют пешеходные дорожки, их корни свисают как шторы. Чтобы пройти от одного конца до другого, нужно около 20 минут — лучше всего это делать ближе к вечеру, когда спадает жара и свет фильтруется сквозь листву.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/guangzhou/chen-clan-hall.webp" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Зал предков клана Чэнь (陈家祠)</h3>
+        <p class="text-gray-700">Построенный в 1894 году кланом Чэнь как академия и храм, этот комплекс из 19 залов содержит лучшие образцы линнаньской резьбы по дереву, которые ты найдёшь в Китае. Каждая балка и конёк крыши покрыты керамическими фигурками — львы, драконы, бессмертные. Сейчас это музей народного искусства, так что можно бродить по залам и рассматривать вышивку и керамику вблизи. Заложи себе минимум час.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/guangzhou/yuexiu-park-five-rams.webp" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Парк Юэсю (越秀公园)</h3>
+        <p class="text-gray-700">Парк на холме, который когда-то был крепостью древнего царства Наньюэ — более 2000 лет назад. Внутри ты найдёшь статую Пяти баранов (официальный символ Гуанчжоу) и Башню Чжэньхай — самое старое сохранившееся здание в городе, построенное аж в 1380 году. Поднимись на башню ради неплохого вида на парк внизу. Лучше всего приходить в будний день утром, когда там в основном пожилые местные жители занимаются тайцзи и играют в маджонг.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-12 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/guangzhou/beijing-road.webp" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Улица Пекин (北京路)</h3>
+        <p class="text-gray-700">Под стеклянными панелями у тебя под ногами видны настоящие мостовые улиц династий Сун, Юань, Мин и Цин, сложенные слоями истории — более 2000 лет пешеходных маршрутов прямо под твоей обувью. Наверху — бесконечная полоса шопинга и закусок: жареное молоко, кальмары на гриле и бабл-ти на каждом шагу. Приходи после 7 вечера, когда зажигаются неоновые огни и толпа ночного рынка берёт своё.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-12 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/guangzhou/grand-buddha-temple.webp" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Храм Большого Будды (大佛寺)</h3>
+        <p class="text-gray-700">Главный зал шириной 36 метров почти не имеет внутренних колонн — вся крыша держится на сложной системе кронштейнов доугун, и пространство буквально раскрывается перед тобой, когда ты входишь. Это не типичный кантонский храм с цветными керамическими коньками. Построенный в 1663 году цинским принцем, он был смоделирован по образцу императорской пекинской дворцовой архитектуры, так что у него тот же торжественный масштаб Запретного города, который ты не ожидаешь найти в этой части Китая. Внутри сидят три 6-метровых бронзовых Будды, каждый весом 10 тонн — крупнейшие сохранившиеся древние бронзовые статуи Гуандуна. Колонны из вьетнамской древесины нанму доставлены более 350 лет назад и всё ещё целы. Ты идёшь сюда за архитектурной редкостью, которой просто больше нигде нет в Гуанчжоу.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+    <h2 id="getting-around" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🚇 Как передвигаться</h2>
+    <ul class="list-disc pl-6 space-y-3 text-lg text-gray-700 mb-12">
+      <li><strong>Метро:</strong> В гуанчжоуском метро 16 линий, покрывающих все главные достопримечательности. Везде английские указатели. Смотри <a href="/ru/transport/metro-bus/" class="text-blue-600 hover:underline">Гид по метро и автобусам крупных городов Китая</a> для общего обзора.</li>
+      <li><strong>Didi:</strong> Дешёвый и везде доступен. Поездка через центр города стоит около 30–50 юаней. См. <a href="/ru/transport/didi/" class="text-blue-600 hover:underline">Как пользоваться Didi в Китае иностранцу</a> для настройки и советов.</li>
+      <li><strong>Паром через Жемчужную реку:</strong> Живописный способ пересечь реку. Паромы регулярно ходят между причалами на обоих берегах.</li>
+      <li><strong>Высокоскоростной поезд:</strong> Южный вокзал Гуанчжоу соединяет с Шэньчжэнем (30 мин), Гонконгом (1 час) и Чжухаем/Макао (1 час). Инструкции по бронированию в <a href="/ru/transport/high-speed-rail/" class="text-blue-600 hover:underline">Как забронировать и поехать на высокоскоростном поезде</a>.</li>
+    </ul>
+
+    <h2 id="where-to-stay" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏨 Где остановиться</h2>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">Район Ливань (荔湾区) — Лучше всего для гурманов</h3><p class="text-gray-700">Сердце старого Гуанчжоу. Останавливайся здесь ради аутентичных кантонских ресторанов и утренних чайных домиков.</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">Район Тяньхэ (天河区) — Лучше всего для любителей современности</h3><p class="text-gray-700">Новый деловой центр с торговыми центрами, международными отелями и отличным метро.</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12"><h3 class="text-xl font-bold text-gray-900 mb-2">Район Хайчжу (海珠区) — Лучше всего для видов на реку</h3><p class="text-gray-700">На другом берегу Жемчужной реки от центра города. Тише, с отличным видом на Кантонскую башню.</p></div>
+
+    <!-- ==================== ЧТО ПОЕСТЬ ==================== -->
+    <h2 id="what-to-eat" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🍜 Что поесть</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Если в Пекине ты ешь, чтобы жить, то в Гуанчжоу ты живёшь, чтобы есть. Кантонская кухня всемирно известна неспроста.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+      <!-- Dim Sum -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/guangzhou/dim-sum.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">Димсам (点心)</h3>
+          <p class="text-gray-600 text-base">Четыре классических заказа: харгау с полупрозрачной, почти сквозной оболочкой, скрывающей цельные креветки; сюмай с оранжевой икрой сверху; чашьюбао — невероятно воздушные белые булочки со сладкой барбекю-свининой; и чёфун — шёлковые рулетики из рисовой лапши под соевым соусом. Ритуал называется «ямча» (пить чай), и происходит каждое утро в димсамных по всему району Ливань. Приходи пораньше — к 11 утра очереди вытягиваются за дверь.</p>
+        </div>
+      </div>
+
+      <!-- White Cut Chicken -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/guangzhou/white-cut-chicken.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">Варёная курица — Байцзи (白切鸡)</h3>
+          <p class="text-gray-600 text-base">Целая курица нежно отваривается, затем подаётся холодной — и ключевой момент — шёлковистая кожица с тонким желатиновым слоем под ней. Кантонские повара считают это блюдо высшим тестом мастерства, потому что негде спрятаться: курица должна быть идеальной. Каждый кусочек макай в имбирно-луковое масло и поймёшь, почему такое простое блюдо может быть таким вкусным.</p>
+        </div>
+      </div>
+
+      <!-- Roast Goose -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/guangzhou/roast-goose.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">Жареный гусь — Шаоэ (烧鹅)</h3>
+          <p class="text-gray-600 text-base">Целый гусь разрезается, маринуется и жарится на углях, пока кожица не становится стеклянно-хрупкой, а мясо остаётся тёмным и сочным. Подаётся со сливовым соусом, который оттеняет насыщенность. Этот стиль родом из района Цзянмэнь, к западу от Гуанчжоу, и лучшие мясные лавки в городе оттачивают его десятилетиями.</p>
+        </div>
+      </div>
+
+      <!-- Wonton Noodles -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/guangzhou/wonton-noodles.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">Вонтон-лапша — Юньтуньмянь (云吞面)</h3>
+          <p class="text-gray-600 text-base">Лапша тонкая, упругая, приготовленная на щелочной воде (кантонский «юэский» стиль). Вонтоны полные — с цельными креветками и свининой. Но настоящая звезда — бульон: прозрачный, золотистый, сваренный с сушёной камбалой и креветочной икрой. Это та самая тарелка супа, которая чувствуется как восстановление сил.</p>
+        </div>
+      </div>
+
+      <!-- Claypot Rice -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/guangzhou/claypot-rice.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">Рис в глиняном горшочке — Баоцзайфань (煲仔饭)</h3>
+          <p class="text-gray-600 text-base">Сырой рис закладывается в глиняный горшочек, сверху — китайская колбаса, вяленая свиная грудинка или курица, затем готовится на углях. Волшебство — на дне: слой хрустящего, золотистого риса (кантонская версия соцкаррата), который ты соскребаешь и перемешиваешь. Добавь ложку соевого соуса, хорошенько перемешай и начинай.</p>
+        </div>
+      </div>
+
+      <!-- Double Skin Milk -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/guangzhou/double-skin-milk.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">Двойная молочная кожица — Шуанпинай (双皮奶)</h3>
+          <p class="text-gray-600 text-base">Этот нежный десерт родом из Шуньдэ, кулинарной столицы к югу от Гуанчжоу. Название относится к двум слоям кожицы, которые образуются сверху, когда молочный пудинг остывает — первая тонет, затем вторая формируется на поверхности. Он гладкий как заварной крем, но гораздо легче, и хорош как тёплым, так и холодным.</p>
+        </div>
+      </div>
+
+      <!-- Herbal Tea -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/guangzhou/herbal-tea.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">Травяной чай — Лянча (凉茶)</h3>
+          <p class="text-gray-600 text-base">Тёмный как кола и горький как лекарство — потому что это и есть лекарство. Лянча заваривается из 20 и более китайских трав, с разными смесями для разных недугов (жар, боль в горле, несварение). Иди по полной и закажи «24 вкуса» (24味) — у тебя сморщится лицо, но местные говорят, что именно так ты понимаешь, что оно работает. Продаётся в специализированных травяных чайных по всему городу.</p>
+        </div>
+      </div>
+
+      <!-- Claypot Cooking - Jue Jue Bao -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/guangzhou/jue-jue-bao.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">Глиняная готовка — Чжэчжэбао (啫啫煲)</h3>
+          <p class="text-gray-600 text-base">Название происходит от шипящего звука («чжэ-чжэ»), который издаёт глиняный горшочек, когда горячие ингредиенты касаются его поверхности. В отличие от медленно томлёного риса в горшочке, это высокотемпературная, быстрая кантонская готовка в самом драматичном её проявлении: сырая курица, кальмары, говядина или угорь отправляются в предварительно разогретый горшочек с ферментированными чёрными бобами, чесноком и имбирём и обжариваются на открытом огне всего несколько минут. Края карамелизуются, аромат доносится до тебя ещё до того, как блюдо достигнет стола, а первый укус даёт ту копчёную глубину, которой не добиться при жарке в воке. Заказывай по одному горшочку на человека — их нужно есть обжигающе горячими, прямо из глины.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="not-prose mt-16">
+      <h2 class="text-2xl font-bold text-gray-900 mb-8">📚 Связанные путеводители</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/ru/cities/city-select/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🗺️ <strong>Сколько дней в Китае?</strong> — Спланируй полный маршрут</a>
+        <a href="/ru/cities/shenzhen-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🤖 <strong>Путеводитель по Шэньчжэню</strong> — Всего в 30 минутах</a>
+        <a href="/ru/payment/payment-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">💳 <strong>Как платить в Китае</strong> — Гуанчжоу полностью безналичный</a>
+      </div>
+    </div>
+  </article>
+</Layout>

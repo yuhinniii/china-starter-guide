@@ -1,0 +1,116 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'Как передвигаться по Китаю: полный транспортный гайд';
+const description = 'Скоростные поезда, метро, DiDi, такси и велосипеды — как выбрать правильный транспорт для любой ситуации в Китае.';
+---
+
+<Layout title={title} description={description} lang="ru">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/ru/transport/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Назад к транспорту
+      </a>
+    </nav>
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🚄 Передвижение</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        Как передвигаться по Китаю: полный транспортный гайд
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">Скоростные поезда, метро, DiDi, такси и велосипеды — как выбрать правильный транспорт для любой ситуации.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Последнее обновление: июнь 2026</span>
+        <span>⏱️ 5 мин. чтения</span>
+      </div>
+    </header>
+
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-blue-900 mb-4">🎯 Краткий ответ</h2>
+      <p class="text-lg text-blue-800 leading-relaxed">
+        Транспортная система Китая — одна из самых эффективных в мире. <strong>Скоростные поезда</strong> — лучший вариант между городами. <strong>Метро</strong> — самый быстрый внутри города. <strong>DiDi</strong> — удобнее всего для поездок «от двери до двери». Всё можно оплатить через Alipay или WeChat Pay — наличные не обязательны.
+      </p>
+    </div>
+
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 В этом гайде</h3>
+      <ul class="space-y-3">
+        <li><a href="#high-speed-rail" class="text-blue-600 hover:underline">🚄 Скоростные поезда</a></li>
+        <li><a href="#metro" class="text-blue-600 hover:underline">🚇 Метро</a></li>
+        <li><a href="#didi" class="text-blue-600 hover:underline">🚗 DiDi</a></li>
+        <li><a href="#taxis" class="text-blue-600 hover:underline">🚕 Такси</a></li>
+        <li><a href="#flights" class="text-blue-600 hover:underline">✈️ Внутренние перелёты</a></li>
+        <li><a href="#bikes" class="text-blue-600 hover:underline">🚲 Велосипеды</a></li>
+        <li><a href="#payment" class="text-blue-600 hover:underline">💳 Оплата транспорта</a></li>
+      </ul>
+    </nav>
+
+    <div class="prose prose-gray max-w-none">
+
+      <h2 id="high-speed-rail" class="text-2xl font-bold text-gray-900 mb-4">🚄 Скоростные поезда</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Скоростные поезда в Китае соединяют все крупные города. Составы чистые, пунктуальные и плавные, а места второго класса по комфорту сопоставимы с премиум-экономом в самолётах. Выбирай скоростной поезд, если хочешь любоваться видами за окном и наслаждаться быстрой, стабильной поездкой.</p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>Совет:</strong> Цены на билеты на поезда стабильны круглый год, а цены на авиабилеты сильно скачут. В высокий сезон поезда выгоднее, а в низкий — иногда дешевле лететь.</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">Метро</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">В каждом крупном китайском городе отличная система метро. У Пекина и Шанхая — одни из самых протяжённых сетей метро в мире. Все указатели и объявления двуязычные (китайский + английский), на станциях есть понятные карты. Это обычно самый быстрый способ передвижения по городу, и стоит копейки — обычно ¥3–10 (0.40–1.40).</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">DiDi</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">DiDi — китайский аналог Uber, и им пользуются повсеместно. Можно заказать машину через приложение DiDi или через мини-программы внутри Alipay и WeChat. Оплата проходит по международным картам, привязанным к Alipay/WeChat Pay. Это лучший выбор для поездок «от двери до двери», особенно с багажом или в плохую погоду. Подробная инструкция — в нашем <a href="/ru/transport/didi/" class="text-blue-600 hover:underline">гайде по DiDi</a>.</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">Такси</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Такси в китайских городах — на каждом шагу. Они дороже, чем каршеринг через DiDi, но поймать машину можно мгновенно прямо на улице. Сложность — в общении: не все водители говорят по-английски. Всегда держи адрес назначения, написанный иероглифами, и показывай его водителю. Приложение-переводчик тоже пригодится. Такси принимают наличные и мобильные платежи (Alipay и WeChat), но не иностранные карты.</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">Внутренние перелёты</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">На очень дальних расстояниях (Пекин — Гуанчжоу, Шанхай — Чэнду) самолёт может сэкономить время. Крупные авиакомпании: Air China, China Southern, China Eastern и Hainan Airlines. Билеты лучше бронировать через Trip.com (на английском) или сайт авиакомпании. Учти, что на внутренние рейсы нужно приезжать за 1.5–2 часа, а большинство аэропортов далеко от центра города — дорога занимает 45–60 минут.</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">Велосипеды</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Для коротких поездок по городу велосипеды (Meituan Bike, DiDi Bike) — просто идеальный вариант. Сканируешь QR-код в Alipay или WeChat Pay, едешь за несколько юаней и паркуешься где угодно. Отлично подходит для «последнего километра» до нужного места.</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">Оплата транспорта</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Хорошая новость: почти весь транспорт в Китае можно оплатить через Alipay или WeChat Pay. Транспортные QR-коды активируются прямо в приложениях для метро и автобусов — плата списывается автоматически после выхода. DiDi выставляет счёт через приложение. Билеты на поезда бронируются онлайн. В целом наличные для транспорта не нужны, но пару мелких купюр на всякий случай прихвати.</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="related" class="text-2xl font-bold text-gray-900 mb-6 mt-12">📚 Похожие гайды</h2>
+
+      <div class="space-y-4 not-prose">
+        <a href="/ru/transport/airport-to-city/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🛬 <strong>Из аэропорта в город</strong> — что делать после прилёта</a>
+        <a href="/ru/transport/high-speed-rail/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>Как купить билет и поехать на скоростном поезде</strong> — пошаговый гайд</a>
+        <a href="/ru/transport/didi/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚗 <strong>Как иностранцу пользоваться DiDi в Китае</strong> — каршеринг без китайского номера</a>
+        <a href="/ru/transport/metro-bus/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚇 <strong>Метро и автобусы в крупных городах Китая</strong> — ориентируемся в городе</a>
+        <a href="/ru/payment/setup-alipay/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">💳 <strong>Как настроить Alipay иностранцу</strong> — плати за весь транспорт из одного приложения</a>
+      </div>
+
+    </div>
+
+    <!-- Sources -->
+    <div class="mt-8 pt-6 border-t border-gray-200 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-3">Источники</h3>
+      <ul class="space-y-2">
+        <li><a href="https://www.12306.cn/en/index.html" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">China Railway Official — 12306 EN</a></li>
+        <li><a href="https://web.didiglobal.com/" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">Didi Global — Каршеринг</a></li>
+      </ul>
+    </div>
+  </article>
+</Layout>

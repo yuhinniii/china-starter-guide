@@ -1,0 +1,237 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = "Путеводитель по Чэнду: панды, острая еда и медленная жизнь";
+const description = "Посети Чэнду — увидь гигантских панд, попробуй самую острую еду в мире и прочувствуй расслабленный сычуаньский образ жизни.";
+---
+
+<Layout title={title} description={description} lang="ru">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🏙️ Чэнду</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">Путеводитель по Чэнду: панды, острая еда и медленная жизнь</h1>
+      <p class="text-xl text-gray-600 mb-6">Посети Чэнду — увидь гигантских панд, попробуй самую острую еду в мире и прочувствуй расслабленный сычуаньский образ жизни.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500"><span>📅 Последнее обновление: июнь 2026</span><span>⏱️ 8 мин. чтения</span></div>
+    </header>
+
+    <div class="bg-gradient-to-r from-orange-50 to-red-50 border-l-4 border-orange-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-orange-900 mb-4">⚡ Быстрый ответ</h2>
+      <p class="text-lg text-orange-800 leading-relaxed">Чэнду — <strong>земля панд и сычуаньского перца</strong>. Утром наблюдай, как гигантские панды кувыркаются в бамбуковых рощах, в обед ешь такую острую еду, что звенит в ушах, а после обеда пей чай в храме, которому 1000 лет. Город славится своим расслабленным темпом — местные называют Чэнду «городом счастья», и ты почувствуешь это в тот момент, когда приедешь.</p>
+    </div>
+
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 В этом путеводителе</h3>
+      <ul class="space-y-3">
+        <li><a href="#why-visit" class="text-blue-600 hover:underline">🐼 Зачем ехать в Чэнду?</a></li>
+        <li><a href="#how-many-days" class="text-blue-600 hover:underline">📅 Сколько дней нужно?</a></li>
+        <li><a href="#attractions" class="text-blue-600 hover:underline">🎯 Главные достопримечательности</a></li>
+        <li><a href="#getting-around" class="text-blue-600 hover:underline">🚇 Как передвигаться</a></li>
+        <li><a href="#where-to-stay" class="text-blue-600 hover:underline">🏨 Где остановиться</a></li>
+        <li><a href="#what-to-eat" class="text-blue-600 hover:underline">🍜 Что поесть</a></li>
+      </ul>
+    </nav>
+
+    <h2 id="why-visit" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🐼 Зачем ехать в Чэнду?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-12">Чэнду — столица провинции Сычуань и ворота к природным чудесам западного Китая. Он легко сочетает традиции и современность — древние храмы соседствуют с модными арт-районами, а самая острая еда в мире подаётся в ресторанах, которые работают поколениями. Темп жизни здесь знаменито медленный: в Чэнду больше чайных домиков, чем в любом другом городе Китая, и люди действительно ими пользуются.</p>
+
+    <h2 id="how-many-days" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📅 Сколько дней нужно?</h2>
+    <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700 mb-4">
+      <li><strong>3–4 дня (стандартно):</strong> Панды, Цзиньли, храм Ухоу и серьёзная еда</li>
+      <li><strong>5–7 дней (комфортно):</strong> Добавь гигантского Будду в Лэшане (1 день) или гору Эмэй (2 дня)</li>
+      <li><strong>7+ дней (глубокое погружение):</strong> Добавь национальный парк Цзючжайгоу (3–4 дня)</li>
+    </ul>
+    <p class="text-lg text-gray-700 mb-12">Если у тебя есть лишние дни, в провинции Сычуань одни из самых впечатляющих пейзажей в Китае. Гигантский Будда в Лэшане (около 1,5 часов от Чэнду) — самый большой каменный Будда в мире, высотой 71 метр. Для искателей приключений бирюзовые озёра и водопады Цзючжайгоу незабываемы, но требуют минимум 3–4 дня.</p>
+
+    <!-- ==================== ДОСТОПРИМЕЧАТЕЛЬНОСТИ ==================== -->
+    <h2 id="attractions" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎯 Главные достопримечательности</h2>
+
+    <!-- Panda Base -->
+    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/chengdu/panda-base.webp" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Исследовательская база по разведению гигантских панд в Чэнду (成都大熊猫繁育研究基地)</h3>
+        <p class="text-gray-700">Дом около 120 гигантских панд — больше, чем где-либо на планете. Приезжай к 8 утра на утреннее кормление (8–10 утра), когда панды наиболее активны и игривы. Примерно 30 минут на такси от центра города. Пропусти послеобеденный визит — они будут спать в жару.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+    <!-- Jinli -->
+    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/chengdu/jinli.webp" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Древняя улица Цзиньли (锦里)</h3>
+        <p class="text-gray-700">Большинство туристических улиц похожи на парк аттракционов — Цзиньли ощущается живой. Построенная в стиле династии Цин, эта пешеходная улица проходит прямо рядом с храмом Ухоу и наполняется запахом шипящих шашлычков, сахарных картин и звуками сычуаньской оперы, доносящимися из чайных домиков. Приходи ночью, когда зажигаются красные фонари и толпа немного редеет.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+    <!-- Wuhou Shrine -->
+    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/chengdu/wuhou-shrine.webp" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Храм Ухоу (武侯祠)</h3>
+        <p class="text-gray-700">Посвящён Чжугэ Ляну, легендарному стратегу, чьё имя до сих пор звучит через 1800 лет истории Троецарствия. Центральный элемент — гробница самого Чжугэ Ляна, расположенная среди красных стен и бамбуковых аллей, которые заставляют всё место казаться застывшим во времени. Не пропусти каменные стелы и статуи в главном зале. Сочетай с соседней Цзиньли — можно успеть и то, и другое за одно послеобеденное время.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+    <!-- Kuanzhai Alley -->
+    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/chengdu/wide-narrow-alley.webp" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Переулок Куанчжай (宽窄巷子)</h3>
+        <p class="text-gray-700">Три переулка — три совершенно разных настроения. Куан Чжай (Широкий переулок) — магнит для туристов: магазины, закуски, толпы в одинаковых нарядах. Чжай Сян (Узкий переулок) — там, где становится интересно: бутики, художественные галереи и кафе, спрятанные во дворах эпохи Цин. А есть ещё Цзин Сян (Колодезный переулок) — самый тихий из трёх, с жилыми домами и минимумом людей. Начни с Широкого, заскучай и сбеги в Узкий.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+    <!-- People's Park -->
+    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/chengdu/people-park.webp" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Народный парк (人民公园)</h3>
+        <p class="text-gray-700">Именно здесь клише о медленной жизни в Чэнду становится реальностью. Хватай бамбуковое кресло в одной из чайных под открытым небом, закажи чашку жасминового чая и просто наблюдай — старики играют в маджонг, пенсионеры танцуют, тётушки поют оперу. Не пропусти «Уголок знакомств», где родители размещают брачные объявления для своих детей с указанием зарплаты, роста и недвижимости, как технические характеристики. Приходи в выходные ради полного спектакля.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+    <!-- Mount Qingcheng -->
+    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-12 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/chengdu/qingcheng-mountain.webp" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Гора Цинчэншань (青城山)</h3>
+        <p class="text-gray-700">Одно из мест зарождения даосизма с историей, уходящей на 1800 лет назад. На горе есть надпись, называющая её «Самой безмятежной под небом» — и она заслуживает это имя. Поднимись на канатной дороге, если у тебя мало времени, или пройдись по бамбуковой тропе для полного погружения. В любом случае, древние храмы на вершине стоят поездки. Около 1 часа от Чэнду на поезде.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+    <!-- Dujiangyan -->
+    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-12 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/chengdu/dujiangyan.webp" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Оросительная система Дуцзянъянь (都江堰)</h3>
+        <p class="text-gray-700">Инженерное чудо возрастом 2300 лет, которое используется до сих пор. Построено Ли Бином и его сыном в 256 г. до н.э. для укрощения реки Минь, оно отводит воду без единой плотины — только хитроумно спроектированные берега и искусственный остров, разделяющий поток на оросительные каналы. Результат: Чэндуская равнина стала одним из самых плодородных регионов Китая и остаётся такой уже более двух тысячелетий. Отлично сочетается с горой Цинчэншань — они всего в 15 минутах друг от друга на автобусе или такси, так что можно успеть и то, и другое за один день. Подвесной мост Аньлань через реку стоит пройти ради вида на горы позади.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+    <h2 id="getting-around" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🚇 Как передвигаться</h2>
+    <ul class="list-disc pl-6 space-y-3 text-lg text-gray-700 mb-12">
+      <li><strong>Метро:</strong> 6 линий, покрывающих все главные достопримечательности и базу панд. Чистое, современное и дешёвое. Общие советы в <a href="/ru/transport/metro-bus/" class="text-blue-600 hover:underline">Гиде по метро и автобусам крупных городов Китая</a>.</li>
+      <li><strong>Didi:</strong> Очень доступно — большинство поездок по центру города стоят 20–40 юаней. Настрой заранее с <a href="/ru/transport/didi/" class="text-blue-600 hover:underline">Как пользоваться Didi в Китае иностранцу</a>.</li>
+      <li><strong>Велосипед:</strong> Чэнду плоский, есть велодорожки. Шеринговые велосипеды повсюду.</li>
+      <li><strong>Высокоскоростной поезд:</strong> Восточный вокзал Чэнду соединяет с Сианем (3,5 часа) и Чунцином (1,5 часа). Инструкции по бронированию в <a href="/ru/transport/high-speed-rail/" class="text-blue-600 hover:underline">Как забронировать и поехать на высокоскоростном поезде</a>.</li>
+    </ul>
+
+    <h2 id="where-to-stay" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏨 Где остановиться</h2>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">Район Цзиньцзян (锦江区) — Лучше всего для новичков</h3><p class="text-gray-700">Центральный район вокруг улицы Чуньси и Тайкоули. Шопинг, рестораны и метро в шаговой доступности.</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">Район Цинъян (青羊区) — Лучше всего для любителей культуры</h3><p class="text-gray-700">Рядом с храмом Ухоу, Цзиньли и переулком Куанчжай. Традиционная атмосфера, много чайных домиков.</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12"><h3 class="text-xl font-bold text-gray-900 mb-2">Район Ухоу (武侯区) — Лучше всего для гурманов</h3><p class="text-gray-700">Сердце гастрономической сцены. В шаговой доступности лучшие рестораны и ночная жизнь Чэнду.</p></div>
+
+    <!-- ==================== ЧТО ПОЕСТЬ ==================== -->
+    <h2 id="what-to-eat" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🍜 Что поесть</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Чэнду — бесспорная столица сычуаньской кухни: смелая, огненная и незабываемая.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+      <!-- Mapo Tofu -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/chengdu/mapo-tofu.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">Мапо тофу (麻婆豆腐)</h3>
+          <p class="text-gray-600 text-base">Шёлковые кубики тофу в алом соусе, одновременно обжигающем и онемевающем. Сычуаньский перец оставляет покалывание на языке, которое нарастает с каждым куском — такое, что ты тянешься за ещё одной ложкой, даже когда лоб уже в поту. Контраст между мягким, тающим во рту тофу и зернистым, пряным соусом — вот в чём суть. Есть практически в каждом сычуаньском ресторане города.</p>
+        </div>
+      </div>
+
+      <!-- Kung Pao Chicken -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/chengdu/kung-pao-chicken.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">Кунг-пао — Гунбаоцзидин (宫保鸡丁)</h3>
+          <p class="text-gray-600 text-base">Кубики курицы, хрустящий арахис и сушёные чили, которые выглядят свирепее, чем на вкус. Секрет в балансе: кисло-сладкий удар от соуса из уксуса и сахара, за которым следует медленно нарастающее тепло от чили, а арахис придаёт ореховую хрусткость. Это блюдо иностранцы знают лучше всего, и не зря. Ищи версию с целыми сушёными чили, которые ты выбираешь по ходу еды — правильный местный способ.</p>
+        </div>
+      </div>
+
+      <!-- Dan Dan Noodles -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/chengdu/dan-dan-noodles.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">Даньданьмянь (担担面)</h3>
+          <p class="text-gray-600 text-base">Оригинальная уличная лапша. Свиной фарш, консервированные овощи и слой масла чили ждут на дне миски — ты сам всё перемешиваешь, покрывая каждую нить лапши этим солёно-острым-онемевающим соусом. Консервированные овощи придают землистую глубину, которая смягчает остроту. Размешивай быстро и ешь ещё быстрее.</p>
+        </div>
+      </div>
+
+      <!-- Hotpot -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/chengdu/hotpot.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">Хого — Хого (火锅)</h3>
+          <p class="text-gray-600 text-base">Это не еда, это двухчасовое групповое занятие. Котелок с пузырящимся, начинённым чили бульоном стоит посреди стола, и каждый сам готовит свои ингредиенты: тонко нарезанную говядину, рубец, картошку, зелень, кожу тофу. Главный ход — станция с соусами: смешай кунжутное масло, чеснок, кинзу и уксус, чтобы остудить жар. Иди минимум втроём, чтобы можно было заказать больше. И бери «юаньян» (разделённый котелок), если не вывозишь полную остроту.</p>
+        </div>
+      </div>
+
+      <!-- Twice-Cooked Pork -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/chengdu/twice-cooked-pork.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">Дважды приготовленная свинина — Хуэйгоу (回锅肉)</h3>
+          <p class="text-gray-600 text-base">Свиная грудинка сначала варится, затем нарезается тонко, а потом обжаривается с луком-пореем и доубанцзяном (ферментированная чили-бобовая паста), пока края не карамелизуются. Двойная варка даёт мясу текстуру, которую не получить иначе — нежная внутри, слегка хрустящая и жевательная снаружи. Это сычуаньская версия комфортной еды, той, что подают за семейным обеденным столом. Встречается почти в каждом местном меню.</p>
+        </div>
+      </div>
+
+      <!-- Fuqi Feipian -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/chengdu/fuqi-feipian.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">Фуцифэйпянь (夫妻肺片)</h3>
+          <p class="text-gray-600 text-base">Холодная нарезка из говядины и субпродуктов, политая заправкой из масла чили с большим количеством сычуаньского перца и жареного кунжута. Несмотря на название, которое переводится как «лёгкие мужа и жены», лёгких там нет — это история о супружеской паре, которая продавала это с уличной тележки в 1930-х. Главное — текстура: тонкие, нежные ломтики со скользким, ароматным маслом, обволакивающим каждый кусочек. Бери в разделе холодных закусок в любом местном ресторане.</p>
+        </div>
+      </div>
+
+      <!-- Ice Jelly -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/chengdu/bingfen.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">Ледяное желе — Бинфэнь (冰粉)</h3>
+          <p class="text-gray-600 text-base">Лучшее средство очистки вкусовых рецепторов по-сычуаньски. Выжатое вручную из семян растений, бинфэнь имеет желеобразную текстуру, более мягкую, чем Jell-O, с нежным, почти прозрачным видом. Поливается сиропом из коричневого сахара, посыпается дроблёным арахисом, иногда сухофруктами — сладко, холодно и скользит по горлу так, что перезагружает рот после всей остроты. Не пропускай — оно тебе понадобится.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="not-prose mt-16">
+      <h2 class="text-2xl font-bold text-gray-900 mb-8">📚 Связанные путеводители</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/ru/cities/city-select/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🗺️ <strong>Сколько дней в Китае?</strong> — Спланируй полный маршрут</a>
+        <a href="/ru/cities/beijing-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🏛️ <strong>Путеводитель по Пекину</strong> — Сравни север и юг Китая</a>
+        <a href="/ru/payment/payment-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">💳 <strong>Как платить в Китае</strong> — Подготовь платёжные приложения</a>
+        <a href="/ru/life/cultural-taboos/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🙏 <strong>Культурные «можно» и «нельзя» в Китае</strong> — Полезно перед поездкой в Сычуань</a>
+      </div>
+    </div>
+  </article>
+</Layout>

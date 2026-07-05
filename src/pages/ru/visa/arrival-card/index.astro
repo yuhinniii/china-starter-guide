@@ -1,0 +1,504 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'Как заполнить карту прибытия в Китай онлайн — пошаговое руководство';
+const description = 'Полное пошаговое руководство со скриншотами — заполни карту прибытия NIA онлайн перед вылетом. Экономь время и забудь о бумажной форме.';
+---
+
+<Layout title={title} description={description} lang="ru">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+
+    <!-- Breadcrumb -->
+    <nav class="mb-8 not-prose">
+      <a href="/ru/visa/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Назад к визе и въезду
+      </a>
+    </nav>
+
+    <!-- Header -->
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🛂 Въезд и виза</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        Как заполнить карту прибытия в Китай онлайн
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">Полное пошаговое руководство со скриншотами. Заполни форму онлайн перед вылетом — забудь о бумажной карте прибытия.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Последнее обновление: июнь 2026</span>
+        <span>⏱️ 8 мин. чтения</span>
+      </div>
+    </header>
+
+    <!-- Official Portal -->
+    <div class="bg-blue-50 border-l-4 border-blue-500 rounded-r-2xl p-5 mb-8 not-prose">
+      <strong>Официальный портал:</strong> <a href="https://s.nia.gov.cn/ArrivalCardFillingPC/entry-registation-home" target="_blank" class="text-blue-700 underline">s.nia.gov.cn/ArrivalCardFillingPC/</a>
+    </div>
+
+    <!-- Video Tutorial -->
+    <div class="bg-gradient-to-r from-gray-50 to-blue-50 border border-gray-200 rounded-2xl p-8 mb-10 text-center not-prose">
+      <h3 class="text-xl font-bold text-gray-900 mb-3"> Официальный видеоурок NIA</h3>
+      <p class="text-gray-600 mb-4">Посмотри официальное видео от Национальной иммиграционной администрации:</p>
+      <a href="https://en.nia.gov.cn/n147418/n147463/c195170/content.html" target="_blank" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition no-underline">▶ Смотреть видеоурок</a>
+    </div>
+
+    <style>
+      .step-card {
+        background: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 12px;
+        padding: 24px;
+        margin: 28px 0;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+      }
+      .step-card .step-number {
+        display: inline-block;
+        background: #1a73e8;
+        color: #fff;
+        font-weight: 700;
+        font-size: 0.8rem;
+        padding: 2px 14px;
+        border-radius: 20px;
+        margin-bottom: 14px;
+      }
+      .screenshot-wrapper {
+        background: #eef2f7;
+        border: 1px solid #d0d7de;
+        border-radius: 10px;
+        padding: 14px;
+        margin: 16px 0;
+      }
+      .screenshot-wrapper img {
+        width: 100%;
+        border: 1px solid #c0c8d0;
+        border-radius: 6px;
+        margin: 8px 0;
+      }
+      .screenshot-wrapper .caption {
+        font-size: 0.85rem;
+        color: #555;
+        font-style: italic;
+        margin-top: 4px;
+        margin-bottom: 0;
+      }
+      .screenshot-label {
+        display: inline-block;
+        background: #d0d7de;
+        color: #3a3f47;
+        font-size: 0.7rem;
+        font-weight: 700;
+        padding: 2px 10px;
+        border-radius: 5px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+      }
+      .field-group {
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 14px;
+        margin: 12px 0;
+      }
+      .field-group h4 {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+        color: #5f6368;
+      }
+      .field-group .field-item { margin: 6px 0; font-size: 0.9rem; }
+      .col-layout {
+        display: flex;
+        gap: 20px;
+        margin: 12px 0;
+        flex-wrap: wrap;
+      }
+      .col-left { flex: 1; min-width: 260px; }
+      .col-right { flex: 1; min-width: 240px; }
+      .tag-auto { background: #e8f5e9; color: #2e7d32; padding: 1px 8px; border-radius: 8px; font-size: 0.75rem; font-weight: 600; }
+      .tag-fill { background: #fce4ec; color: #c62828; padding: 1px 8px; border-radius: 8px; font-size: 0.75rem; font-weight: 600; }
+      .tag-skip { background: #eeeeee; color: #757575; padding: 1px 8px; border-radius: 8px; font-size: 0.75rem; font-weight: 600; }
+      .tip-box {
+        background: #fff8e1;
+        border-left: 4px solid #ffa000;
+        padding: 12px 16px; margin: 12px 0;
+        border-radius: 0 8px 8px 0; font-size: 0.9rem;
+      }
+      .warn-box {
+        background: #fbe9e7;
+        border-left: 4px solid #d84315;
+        padding: 12px 16px; margin: 12px 0;
+        border-radius: 0 8px 8px 0; font-size: 0.9rem;
+      }
+      .info-box {
+        background: #e8f0fe;
+        border-left: 4px solid #1a73e8;
+        padding: 12px 16px; margin: 12px 0;
+        border-radius: 0 8px 8px 0; font-size: 0.9rem;
+      }
+      .img-row {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin: 12px 0;
+      }
+      .img-row figure {
+        flex: 1;
+        min-width: 240px;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        overflow: hidden;
+        margin: 0;
+      }
+      .img-row figure img { width: 100%; margin: 0; border: none; border-radius: 0; }
+      .img-row figcaption {
+        font-size: 0.8rem;
+        color: #5f6368;
+        text-align: center;
+        padding: 6px;
+        font-style: italic;
+      }
+    </style>
+
+    <!-- ============================================================ -->
+    <!-- STEP 0: HOMEPAGE -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Шаг 0: открой портал</h2>
+    <div class="step-card">
+      <div class="step-number">Шаг 0</div>
+      <p>Открой <a href="https://s.nia.gov.cn/ArrivalCardFillingPC/entry-registation-home">s.nia.gov.cn</a> и переключи на английский через выпадающее меню <strong>Language</strong> в правом верхнем углу.</p>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Скриншот</div>
+        <img src="/images/arrival-card/step0-homepage.webp" alt="Главная страница с декларацией въезда на английском">
+        <p class="caption">После переключения на английский нажми <strong>Entry Declaration</strong>, чтобы начать</p>
+      </div>
+      <p>Доступны два варианта:</p>
+      <ul>
+        <li><strong>Entry Declaration</strong> — для большинства иностранных путешественников, въезжающих в Китай</li>
+        <li><strong>Entry Declaration for Border Area Residents</strong> — только для жителей 7 соседних стран (КНДР, Монголия, Пакистан, Непал, Мьянма, Лаос, Вьетнам)</li>
+      </ul>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- STEP 1: NOTICE / INSTRUCTIONS -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Шаг 1: прочитай инструкции</h2>
+    <div class="step-card">
+      <div class="step-number">Шаг 1</div>
+      <p>После нажатия «Entry Declaration» откроется страница с <strong>инструкциями</strong> и списком тех, кто освобождён от заполнения.</p>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Скриншот</div>
+        <img src="/images/arrival-card/step1-notice.webp" alt="Страница инструкций с кнопкой I AGREE">
+        <p class="caption">Прочитай инструкции, затем нажми <strong>I AGREE</strong>, чтобы продолжить</p>
+      </div>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-4 mb-2">Кто ОСВОБОЖДЁН (не должен заполнять эту форму):</h3>
+      <ol>
+        <li>Обладатели действующей карты постоянного жителя Китая для иностранцев</li>
+        <li>Обладатели действующего разрешения на поездку в материковый Китай для жителей Гонконга/Макао (некитайцы)</li>
+        <li>Транзитные пассажиры с прямым транзитом до 24 часов, остающиеся в порту</li>
+        <li>Участники групповых виз или групповых туров</li>
+        <li>Члены экипажа (авиация, суда, водители)</li>
+        <li>Круизные пассажиры, возвращающиеся на том же судне</li>
+        <li>Лица, подлежащие централизованному досмотру документов</li>
+        <li>Въезжающие через электронные каналы (E-Channel)</li>
+      </ol>
+      <div class="warn-box">
+        <strong>Важно:</strong> Транзитные пассажиры, покидающие зону порта (включая 24-часовой / 240-часовой транзит), <strong>обязаны</strong> заполнить эту форму.
+      </div>
+      <p>Нажми <strong>I AGREE</strong>, чтобы продолжить.</p>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- STEP 2: DOCUMENT UPLOAD -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Шаг 2: загрузи страницу паспорта</h2>
+    <div class="step-card">
+      <div class="step-number">Шаг 2</div>
+      <p>Выбери тип документа и загрузи чёткое фото страницы с данными паспорта. Система использует OCR для автоматического считывания информации.</p>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Скриншот</div>
+        <img src="/images/arrival-card/step2-upload.webp" alt="Страница загрузки документа">
+        <p class="caption">Выбери тип документа и загрузи или сфотографируй страницу паспорта</p>
+      </div>
+      <div class="tip-box">
+        <strong>Совет:</strong> Убедись, что фото хорошо освещено и весь текст чётко читается. От качества фото зависит, насколько точно система заполнит твои данные на следующих шагах.
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- STEP 3: BASIC INFORMATION -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Шаг 3: заполнение основной информации</h2>
+    <div class="step-card">
+      <div class="step-number">Шаг 3</div>
+      <p>Это главная страница с информацией. Система автоматически извлечёт большинство твоих данных из загруженного фото паспорта.</p>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-4 mb-2">Пустая форма — все поля показаны</h3>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Скриншот</div>
+        <img src="/images/arrival-card/step3-basic-empty.webp" alt="Форма основной информации — пустая">
+        <p class="caption">Так выглядит форма при первом входе на этот шаг</p>
+      </div>
+
+      <div class="col-layout">
+        <div class="col-left">
+          <div class="field-group" style="background: #fffde7; border-color: #ffd54f;">
+            <h4>🔶 Левая секция — автозаполнение через OCR (проверь точность)</h4>
+            <div class="field-item"><span class="tag-auto">Авто</span> Фамилия (英文姓)</div>
+            <div class="field-item"><span class="tag-auto">Авто</span> Имя (英文名)</div>
+            <div class="field-item"><span class="tag-auto">Авто</span> Пол (性别)</div>
+            <div class="field-item"><span class="tag-auto">Авто</span> Дата рождения (出生日期)</div>
+            <div class="field-item"><span class="tag-auto">Авто</span> Тип документа (证件类型)</div>
+            <div class="field-item"><span class="tag-auto">Авто</span> Номер документа (证件号码)</div>
+            <div class="field-item" style="margin-top:10px; padding-top:10px; border-top:1px dashed #e0e0e0;">
+              <span class="tag-fill">Вручную</span> <strong>Страна / Регион (国家/地区)</strong> — единственное поле, которое нужно выбрать самой в левой части
+            </div>
+          </div>
+        </div>
+        <div class="col-right">
+          <div class="field-group">
+            <h4> Правая секция — нужно заполнить</h4>
+            <div class="field-item"><span class="tag-fill">Заполнить</span> Вид транспорта (入境交通方式)</div>
+            <div class="field-item"><span class="tag-fill">Заполнить</span> Номер рейса / поезда / судна (入境航班/车次/船次)</div>
+            <div class="field-item"><span class="tag-fill">Заполнить</span> Город въезда (入境城市)</div>
+            <div class="field-item"><span class="tag-fill">Заполнить</span> Порт въезда (入境口岸) — заполняется автоматически после выбора города и транспорта</div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">Пример заполненной формы</h3>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Скриншот</div>
+        <img src="/images/arrival-card/step3-basic-filled.webp" alt="Форма основной информации — заполненная">
+        <p class="caption">Левая секция (жёлтая область) показывает данные, извлечённые из паспорта — перепроверь всё. Только <strong>Страну/Регион</strong> нужно выбрать вручную. Заполни правую секцию данными о въезде.</p>
+      </div>
+
+      <div class="info-box">
+        <strong>Напоминание:</strong> Качество скана паспорта имеет значение. Если фото размытое или плохо освещено, автозаполнение может быть неточным. Всегда перепроверяй все поля перед нажатием «Далее».
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- STEP 4: PERSONAL INFORMATION -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Шаг 4: заполнение личной информации</h2>
+    <div class="step-card">
+      <div class="step-number">Шаг 4</div>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Скриншот</div>
+        <img src="/images/arrival-card/step4-personal-empty.webp" alt="Форма личной информации">
+        <p class="caption">Заполни личные данные. Пояснения к полям ниже.</p>
+      </div>
+
+      <div class="field-group">
+        <h4>Пошаговое руководство по полям:</h4>
+        <div class="field-item"><span class="tag-fill">Заполнить</span> <strong>Китайское имя</strong> — если у тебя есть китайское имя, введи его. Если нет — <strong>оставь пустым</strong>.</div>
+        <div class="field-item"><span class="tag-fill">Заполнить</span> <strong>Гражданство / Страна проживания</strong> — укажи <strong>страну или город, где ты сейчас живёшь</strong> (необязательно страну паспорта, если живёшь за границей).</div>
+        <div class="field-item"><span class="tag-fill">Заполнить</span> <strong>Род занятий</strong> — твоя должность или профессия.</div>
+        <div class="field-item"><span class="tag-fill">Заполнить</span> <strong>Контактный телефон</strong> — укажи код страны, если используешь не китайский номер.</div>
+        <div class="field-item"><span class="tag-fill">Заполнить</span> <strong>Адрес электронной почты</strong> — для получения подтверждения/QR-кода.</div>
+        <div class="field-item"><span class="tag-fill">Заполнить</span> <strong>Контакты для экстренной связи</strong> — имя и номер телефона для связи в экстренном случае.</div>
+      </div>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">Раздел визы / правил въезда</h3>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Скриншот</div>
+        <img src="/images/arrival-card/step4-personal-visa.webp" alt="Выбор визы и правил въезда">
+        <p class="caption">Выбери «Нет», если въезжаешь без визы, затем выбери своё правило въезда из выпадающего списка</p>
+      </div>
+
+      <div class="field-group">
+        <h4>Как заполнить вопрос о визе:</h4>
+        <div class="field-item"><span class="tag-fill">Заполнить</span> <strong>Есть ли у тебя действующая виза?</strong>
+          <ul>
+            <li><strong>Да</strong> — если у тебя есть китайская виза (например, туристическая L)</li>
+            <li><strong>Нет</strong> — если ты въезжаешь по <strong>безвизовому режиму</strong> (например, 240-часовой транзит, 30-дневный безвизовый въезд, безвизовый Хайнань и т.д.)</li>
+          </ul>
+        </div>
+        <div class="field-item"><span class="tag-fill">Заполнить</span> <strong>Если «Нет» → Выбор правила въезда</strong> — появится выпадающее меню для выбора используемого безвизового режима (как показано на скриншоте выше).</div>
+      </div>
+
+      <div class="tip-box">
+        <strong>Совет:</strong> Если у тебя есть действующая виза L, выбери «Да». Если ты используешь безвизовый режим (например, из списка 50 стран или 240-часовой транзит), выбери «Нет» и укажи свой вариант из выпадающего списка.
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- STEP 5: TRAVEL INFORMATION -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Шаг 5: заполнение информации о поездке</h2>
+    <div class="step-card">
+      <div class="step-number">Шаг 5</div>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Скриншот</div>
+        <img src="/images/arrival-card/step5-travel-empty.webp" alt="Форма информации о поездке">
+        <p class="caption">Заполни детали маршрута</p>
+      </div>
+
+      <div class="col-layout">
+        <div class="col-left">
+          <div class="field-group">
+            <h4> Левая секция — детали поездки</h4>
+            <div class="field-item"><span class="tag-fill">Заполнить</span> <strong>Цель въезда</strong> — Туризм / Бизнес / Транзит / Визит к семье / Другое</div>
+            <div class="field-item"><span class="tag-fill">Заполнить</span> <strong>Дата въезда</strong> — запланированная дата прибытия в Китай</div>
+            <div class="field-item"><span class="tag-fill">Заполнить</span> <strong>Города назначения в Китае</strong> — города, которые планируешь посетить</div>
+            <div class="field-item"><span class="tag-fill">Заполнить</span> <strong>Города транзита в Китае</strong> — любые транзитные/пересадочные города (если применимо)</div>
+            <div class="field-item"><span class="tag-fill">Заполнить</span> <strong>Адрес в Китае</strong> — укажи <strong>полный адрес</strong> (название отеля + улица + район + город)</div>
+          </div>
+        </div>
+        <div class="col-right">
+          <div class="field-group">
+            <h4> Правая секция — информация о приглашающем и выезде</h4>
+            <div class="field-item"><span class="tag-fill">Заполнить</span> <strong>Тебя пригласили в Китай?</strong>
+              <ul>
+                <li><strong>Да</strong> — укажи имя и контакты приглашающего</li>
+                <li><strong>Нет</strong> — пропусти этот раздел</li>
+              </ul>
+            </div>
+            <div class="field-item"><span class="tag-fill">Заполнить</span> <strong>Информация о выезде / возвращении</strong></div>
+            <div style="margin-left:20px; border-left:2px solid #e0e0e0; padding-left:14px;">
+              <div class="field-item">Переключи <strong>«Confirmed Departure Itinerary»</strong> на <strong>Да</strong>, если есть подтверждённый план выезда, затем заполни:</div>
+              <ul>
+                <li><strong>Дата выезда</strong> — запланированная дата выезда</li>
+                <li><strong>Транспорт для выезда</strong> — Авиа / Наземный / Морской</li>
+                <li><strong>Номер рейса/поезда/судна</strong> — конкретный номер</li>
+                <li><strong>Город выезда</strong> — город, из которого планируешь выезжать</li>
+                <li><strong>Порт выезда</strong> — заполняется автоматически после выбора города и транспорта</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="warn-box">
+        <strong>⚠️ Примечание для 240-часового транзита:</strong> Если ты въезжаешь в Китай по <strong>240-часовому безвизовому транзиту</strong>, как правило, <strong>требуется подтверждённый билет далее</strong> в пункт назначения за пределами материкового Китая. Заполни информацию о выезде точно.
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- COMPANION PROMPT -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Запрос о спутниках</h2>
+    <div class="step-card">
+      <div class="step-number">После шага 5</div>
+      <p>После заполнения шага 5 и нажатия «Далее» появится всплывающее окно с вопросом о спутниках:</p>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Скриншот</div>
+        <img src="/images/arrival-card/step5-companion-prompt.webp" alt="Всплывающее окно о спутниках">
+        <p class="caption">«У тебя есть спутники?» — выбери «Да», чтобы добавить попутчиков</p>
+      </div>
+
+      <div class="field-group">
+        <h4>Варианты:</h4>
+        <div class="field-item"><strong>Да</strong> — Тебя проведут через те же шаги (Основная информация, Личная информация, Информация о поездке) для каждого спутника. <strong>Примечание:</strong> Каждый спутник может заполнить свою форму отдельно — необязательно, чтобы один человек заполнял за всех.</div>
+        <div class="field-item"><strong>Нет</strong> — Перейти сразу на страницу проверки.</div>
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- STEP 6: REVIEW & SUBMIT -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Финальный шаг: проверка, подпись и отправка</h2>
+    <div class="step-card">
+      <div class="step-number">Финальный</div>
+      <p>После заполнения всех шагов ты попадёшь на страницу проверки. Внимательно прочитай всю информацию.</p>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">Скриншот</div>
+        <img src="/images/arrival-card/step6-submit.webp" alt="Страница проверки, подписи и отправки">
+        <p class="caption">Подпиши для подтверждения, затем отправь. Сохрани QR-код, который появится после отправки.</p>
+      </div>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-4 mb-2">Что делать:</h3>
+      <ol>
+        <li><strong>Проверь</strong> — Перепроверь всю информацию. Используй «Назад», чтобы вернуться и исправить ошибки.</li>
+        <li><strong>Подпиши</strong> — Поставь подпись в поле для подтверждения декларации.</li>
+        <li><strong>Отправь</strong> — Нажми кнопку отправки.</li>
+        <li><strong>Сохрани QR-код</strong> — После отправки появится <strong>QR-код подтверждения</strong>. <strong>Сделай скриншот или сохрани его</strong> — его нужно будет показать на границе по прибытии в Китай.</li>
+      </ol>
+
+      <div class="info-box">
+        <strong>Бонус:</strong> В течение <strong>одного года</strong> после первой отправки, при повторном посещении Китая система позволит <strong>использовать ранее заполненные данные</strong> — нужно будет только обновить маршрут поездки. Это делает повторные поездки намного быстрее!
+      </div>
+
+      <div class="warn-box">
+        <strong>⚠️ Важно:</strong> QR-код привязан к запланированному въезду. Если планы поездки изменятся (другой рейс, другая дата), может потребоваться повторная отправка новой формы. Система обычно принимает заявки до 24 часов до запланированного прибытия.
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- BEFORE YOU START -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">Перед началом</h2>
+    <div class="bg-amber-50 border border-amber-200 rounded-2xl p-6 not-prose">
+      <p class="font-bold text-amber-900 mb-3">Подготовь это перед заполнением формы:</p>
+      <ul>
+        <li><strong>Паспорт</strong> (физический или чёткое фото страницы с данными)</li>
+        <li><strong>Номер рейса / поезда / судна</strong> для въезда в Китай</li>
+        <li><strong>Название отеля и полный адрес</strong> в Китае (если известен)</li>
+        <li><strong>Номер телефона</strong> (с кодом страны, если не китайский номер)</li>
+        <li><strong>Адрес электронной почты</strong></li>
+        <li>Устройство с <strong>камерой</strong> для фотографирования паспорта или <strong>отсканированная копия паспорта</strong> на устройстве</li>
+      </ul>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- FAQ -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">ЧаВО</h2>
+    <div class="step-card">
+      <h3 class="text-lg font-bold text-gray-800 mt-2 mb-2">В: Можно ли заполнить с телефона?</h3>
+      <p class="text-gray-700">Да, портал полностью адаптирован под мобильные устройства и работает на телефоне и компьютере.</p>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">В: Нужно ли распечатывать QR-код?</h3>
+      <p class="text-gray-700">Покажи на экране телефона или распечатай — и так, и так работает. Главное — иметь его наготове для предъявления на границе.</p>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">В: Что если я ошибся после отправки?</h3>
+      <p class="text-gray-700">Зайди на портал снова и отправь новую форму. Предыдущая заявка будет заменена.</p>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">В: Эта форма обязательна? Нужна ли ещё бумажная карта?</h3>
+      <p class="text-gray-700">По состоянию на 2025–2026 годы онлайн-форма — рекомендуемый вариант. На некоторых пунктах въезда всё ещё могут выдавать бумажные карты как запасной вариант. Умно заполнить онлайн-форму <strong>и</strong> иметь при себе ручку на всякий случай.</p>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">В: Я транзитом менее 24 часов и не покидаю аэропорт — нужно ли это?</h3>
+      <p class="text-gray-700">Нет. Пассажиры с прямым транзитом до 24 часов, остающиеся в зоне порта, освобождены от заполнения.</p>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">В: Я въезжаю по 240-часовому транзиту. Нужно ли заполнять эту форму?</h3>
+      <p class="text-gray-700">Да, если ты покидаешь зону порта. Транзитные пассажиры, остающиеся в Китае до 240 часов, должны заполнить эту форму.</p>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">В: Можно ли использовать данные для будущих поездок?</h3>
+      <p class="text-gray-700">Да! В течение одного года система позволяет использовать ранее заполненные данные. Нужно будет только обновить маршрут поездки.</p>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- Related Guides -->
+    <!-- ============================================================ -->
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose mt-12">
+      <h3 class="text-2xl font-bold text-gray-900 mb-6">📚 Похожие гайды</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/ru/visa/customs-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-1">Таможенные правила Китая</p>
+          <p class="text-sm text-gray-600">Что можно и нельзя ввозить в Китай</p>
+        </a>
+        <a href="/ru/visa/first-time-china/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-1">Впервые в Китае: пошаговый гайд</p>
+          <p class="text-sm text-gray-600">Полный таймлайн подготовки для новичков</p>
+        </a>
+        <a href="/ru/visa/visa-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-1">Типы виз в Китай — полный гайд</p>
+          <p class="text-sm text-gray-600">Все варианты: безвизовый, транзит и виза L</p>
+        </a>
+        <a href="/ru/visa/transit-240/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-1">240-часовой безвизовый транзит — объяснение</p>
+          <p class="text-sm text-gray-600">Правила, порты и зоны передвижения</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- Sources -->
+    <div class="mt-8 pt-6 border-t border-gray-200">
+      <h3 class="text-lg font-bold text-gray-900 mb-3">Источники</h3>
+      <ul class="text-sm text-gray-600">
+        <li><a href="https://s.nia.gov.cn/ArrivalCardFillingPC/entry-registation-home" target="_blank" class="text-blue-600 underline">Официальный портал карты прибытия NIA</a></li>
+        <li><a href="https://en.nia.gov.cn/n147418/n147463/c195170/content.html" target="_blank" class="text-blue-600 underline">Видеоурок NIA: Как заполнить карту прибытия в Китай онлайн</a></li>
+      </ul>
+    </div>
+
+  </article>
+</Layout>

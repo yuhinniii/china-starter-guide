@@ -1,0 +1,133 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'Как иностранцу пользоваться Didi в Китае';
+const description = 'Настройка и использование DiDi (китайского Uber) без китайского номера телефона. Варианты поездок, оплата и советы.';
+---
+
+<Layout title={title} description={description} lang="ru">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/ru/transport/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Назад к транспорту
+      </a>
+    </nav>
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🚗 Каршеринг</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        Как иностранцу пользоваться Didi в Китае
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">Настрой и пользуйся DiDi (китайским Uber) без китайского номера. Варианты поездок, оплата и советы.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Последнее обновление: июнь 2026</span>
+        <span>⏱️ 5 мин. чтения</span>
+      </div>
+    </header>
+
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-blue-900 mb-4">🎯 Краткий ответ</h2>
+      <p class="text-lg text-blue-800 leading-relaxed">
+        Ты можешь пользоваться DiDi <strong>без китайского номера телефона</strong>. Проще всего — через мини-программу в Alipay или WeChat: открой приложение, найди DiDi и закажи поездку. Оплата проходит через Alipay/WeChat автоматически. У отдельного приложения DiDi есть английская версия.
+      </p>
+    </div>
+
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 В этом гайде</h3>
+      <ul class="space-y-3">
+        <li><a href="#alipay" class="text-blue-600 hover:underline">📱 Способ 1: Через Alipay или WeChat (самый простой)</a></li>
+        <li><a href="#app" class="text-blue-600 hover:underline">📲 Способ 2: Скачать приложение DiDi</a></li>
+        <li><a href="#rides" class="text-blue-600 hover:underline">🚘 Типы поездок</a></li>
+        <li><a href="#tips" class="text-blue-600 hover:underline">💡 Советы по использованию DiDi</a></li>
+        <li><a href="#uber" class="text-blue-600 hover:underline">🔀 А как же Uber?</a></li>
+      </ul>
+    </nav>
+
+    <div class="prose prose-gray max-w-none">
+
+      <h2 id="alipay" class="text-2xl font-bold text-gray-900 mb-4">📱 Способ 1: Через Alipay или WeChat (самый простой)</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Если у тебя уже настроен Alipay (смотри <a href="/ru/payment/setup-alipay/" class="text-blue-600 hover:underline">гайд по настройке Alipay</a>):</p>
+
+      <ol class="list-decimal pl-6 space-y-4 text-gray-700 mb-8">
+        <li>Открой Alipay или WeChat</li>
+        <li>Листай вниз до раздела «Мини-программы» (или найди «DiDi» через поиск)</li>
+        <li>Нажми на мини-программу DiDi</li>
+        <li>Разреши доступ к геолокации</li>
+        <li>Укажи адрес посадки и назначения, выбери тип поездки и подтверди.</li>
+      </ol>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 not-prose">
+        <div class="bg-gray-100 rounded-xl p-3">
+          <div class="text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Alipay</div>
+          <img src="/images/didi/alipay-didi.webp" alt="Доступ к DiDi через мини-программу Alipay" class="w-full rounded-lg border border-gray-200">
+          <p class="text-sm text-gray-500 italic mt-2">Найди DiDi в списке мини-программ Alipay</p>
+        </div>
+        <div class="bg-gray-100 rounded-xl p-3">
+          <div class="text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">WeChat</div>
+          <img src="/images/didi/wechat-didi.webp" alt="Доступ к DiDi через мини-программу WeChat" class="w-full rounded-lg border border-gray-200">
+          <p class="text-sm text-gray-500 italic mt-2">Найди DiDi в мини-программах WeChat</p>
+        </div>
+      </div>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Оплата проходит через Alipay или WeChat автоматически. Китайский номер не нужен.</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="app" class="text-2xl font-bold text-gray-900 mb-4">📲 Способ 2: Скачать приложение DiDi</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">У приложения DiDi есть английская версия. Скачай его в магазине приложений (найди «DiDi Rider»). Можно зарегистрироваться по международному номеру и переключить интерфейс на английский в настройках.</p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Способы оплаты: Alipay, WeChat Pay, Visa/Mastercard (добавляются в приложении).</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="rides" class="text-2xl font-bold text-gray-900 mb-4">🚘 Типы поездок</h2>
+
+      <ul class="space-y-2 text-gray-700 mb-8">
+        <li><strong>Express (快车):</strong> Стандартная поездка, самая дешёвая. Аналог UberX.</li>
+        <li><strong>Premier (优享):</strong> Машины чуть лучше, немного дороже.</li>
+        <li><strong>Taxi (出租车):</strong> Обычное такси, вызванное через приложение. Оплата по счётчику, но безналично.</li>
+        <li><strong>Luxury (豪华车):</strong> Автомобили премиум-класса (Mercedes, BMW). Дорого.</li>
+        <li><strong>Аренда с водителем (包车):</strong> Закажи водителя на несколько часов или на целый день.</li>
+      </ul>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="tips" class="text-2xl font-bold text-gray-900 mb-4">💡 Советы по использованию DiDi</h2>
+
+      <ul class="space-y-2 text-gray-700 mb-8">
+        <li><strong>Ставь точку посадки точно:</strong> Перетащи булавку на карте туда, где ты реально стоишь. Водители часто не могут найти, если метка стоит неверно.</li>
+        <li><strong>Проверяй номер машины:</strong> Сверь госномер в приложении с тем, что на машине.</li>
+        <li><strong>Пользуйся чатом в приложении:</strong> Встроенный переводчик помогает общаться с водителем.</li>
+        <li><strong>Запасись терпением:</strong> В оживлённых районах водитель может быть в нескольких минутах.</li>
+        <li><strong>Дорожные сборы:</strong> Плата за платные дороги и аэропортовые сборы добавляются к стоимости автоматически.</li>
+      </ul>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="uber" class="text-2xl font-bold text-gray-900 mb-4">🔀 А как же Uber?</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Uber продал свой китайский бизнес DiDi в 2016 году. Приложение Uber всё ещё работает в Китае, но только для иностранных туристов, и машин там мало. DiDi — основной сервис каршеринга: с ним ты быстрее найдёшь машину и покрытие будет лучше.</p>
+
+    </div>
+
+    <div class="not-prose mt-16">
+      <h2 class="text-2xl font-bold text-gray-900 mb-8">📚 Похожие гайды</h2>
+      <div class="space-y-4">
+        <a href="/ru/transport/transport-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>Как передвигаться по Китаю</strong> — полный транспортный гайд</a>
+        <a href="/ru/transport/airport-to-city/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🛬 <strong>Из аэропорта в город</strong> — как добраться до отеля</a>
+        <a href="/ru/payment/setup-alipay/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">💳 <strong>Как настроить Alipay иностранцу</strong> — оплачивай поездки DiDi</a>
+      </div>
+    </div>
+
+    <!-- Sources -->
+    <div class="mt-8 pt-6 border-t border-gray-200 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-3">Источники</h3>
+      <ul class="space-y-2">
+        <li><a href="https://www.didiglobal.com/download" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">Скачать DiDi</a></li>
+      </ul>
+    </div>
+  </article>
+</Layout>

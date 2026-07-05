@@ -1,7 +1,7 @@
 ---
 import Layout from '@layouts/Layout.astro';
-const title = '海南旅行ガイド2026 — 59カ国対象のビザなし制度';
-const description = '中国の熱帯の島、海南への旅行を計画。59カ国対象の30日間ビザなし。熱帯のビーチ、ジャングルハイキング、現地グルメ、旅行のコツを1つのガイドに。';
+const title = '海南旅行ガイド2026 — 59カ国ビザなし';
+const description = '中国の熱帯の島、海南への旅行を計画。59カ国に対して30日間ビザなし。熱帯ビーチ、熱帯雨林ハイキング、地元料理、旅行のヒントを1つのガイドに。';
 const lastUpdated = '2026年6月';
 const readTime = '7分';
 ---
@@ -9,7 +9,7 @@ const readTime = '7分';
 <Layout title={title} description={description} lang="ja">
   <article class="max-w-4xl mx-auto px-6 py-12">
 
-    <!-- パンくずリスト -->
+    <!-- Breadcrumb -->
     <nav class="mb-8 not-prose">
       <a href="/ja/cities/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
         <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -19,84 +19,80 @@ const readTime = '7分';
       </a>
     </nav>
 
-    <!-- ヘッダー -->
+    <!-- Header -->
     <header class="mb-12">
-      <p class="text-sm text-gray-500 mb-3">🏝️ 旅行ガイド</p>
+      <p class="text-sm text-gray-500 mb-3">🏝️ 海南</p>
       <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
-        海南旅行ガイド：中国の熱帯の島 — 59カ国はビザ不要
+        海南旅行ガイド：中国の熱帯の島 — 59カ国ビザ不要
       </h1>
-      <p class="text-xl text-gray-600 mb-6">ビーチ、熱帯雨林、火山、世界クラスのリゾート — 59カ国の市民はビザなしで最大30日間滞在できます。</p>
+      <p class="text-xl text-gray-600 mb-6">ビーチ、熱帯雨林、火山、世界クラスのリゾート — そして59カ国の市民が最大30日間ビザなしで訪れることができます。</p>
       <div class="flex items-center gap-4 text-sm text-gray-500">
-        <span>📅 最終更新：{lastUpdated}</span>
+        <span>📅 最終更新: {lastUpdated}</span>
         <span>⏱️ {readTime}</span>
       </div>
     </header>
 
-    <!-- クイックアンサー -->
-    <section class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">クイックアンサー</h2>
-      <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-6">
-        <p class="text-lg text-gray-800"><strong>海南は中国の熱帯の島のパラダイス — ビーチ、熱帯雨林、火山、世界クラスのリゾート — そして59カ国の市民はビザなしで最大30日間訪れることができます。</strong> ツアーグループは不要、大使館訪問も不要。パスポートと帰りのチケットを持って海口か三亜に飛ぶだけでOKです。</p>
-      </div>
-      <p class="mt-4 text-gray-700"><strong>アメリカ、メキシコ、フィリピン、インドネシア、チェコ共和国</strong>出身の方にとってこれは大きな意味があります — これらの国は中国本土の30日間ビザなしリストには含まれていません。（<a href="/ja/visa/visa-free/" class="text-blue-600 hover:underline">全59カ国のリストを見る →</a>）</p>
+    <!-- Quick Answer -->
+    <div class="bg-gradient-to-r from-emerald-50 to-teal-50 border-l-4 border-emerald-500 rounded-r-2xl p-8 mb-6 not-prose">
+      <h2 class="text-2xl font-bold text-emerald-900 mb-4">⚡ クイックアンサー</h2>
+      <p class="text-lg text-emerald-800 leading-relaxed"><strong>海南は中国の熱帯の島パラダイス — ビーチ、熱帯雨林、火山、世界クラスのリゾート — そして59カ国の市民が最大30日間ビザなしで訪れることができます。</strong> ツアーグループ不要、大使館訪問不要。パスポートと帰りのチケットを持って海口または三亜に飛ぶだけで、入国できます。</p>
+    </div>
+    <p class="text-gray-700 mb-8">これは<strong>アメリカ、メキシコ、フィリピン、インドネシア、チェコ共和国</strong>出身者にとって大きな意味があります — これらの国々は中国本土の30日間ビザ免除リストに含まれていません。（<a href="/ja/visa/visa-free/" class="text-blue-600 hover:underline">完全な59カ国リストを見る →</a>）</p>
 
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8">
-        <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
-          <p class="text-2xl mb-1">☀️</p>
-          <p class="text-sm font-semibold text-gray-900">熱帯気候</p>
-          <p class="text-xs text-gray-500">年間平均24°C</p>
-        </div>
-        <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
-          <p class="text-2xl mb-1">🏖️</p>
-          <p class="text-sm font-semibold text-gray-900">最高のビーチ</p>
-          <p class="text-xs text-gray-500">亜龍湾、大東海、海棠湾</p>
-        </div>
-        <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
-          <p class="text-2xl mb-1">🌋</p>
-          <p class="text-sm font-semibold text-gray-900">火山地質公園</p>
-          <p class="text-xs text-gray-500">海口のユニークな地質</p>
-        </div>
-        <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
-          <p class="text-2xl mb-1">🌴</p>
-          <p class="text-sm font-semibold text-gray-900">熱帯雨林</p>
-          <p class="text-xs text-gray-500">五指山、呀諾達、霸王嶺</p>
-        </div>
-        <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
-          <p class="text-2xl mb-1">⛳</p>
-          <p class="text-sm font-semibold text-gray-900">ゴルフリゾート</p>
-          <p class="text-xs text-gray-500">世界クラスのコース</p>
-        </div>
-        <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
-          <p class="text-2xl mb-1">🦞</p>
-          <p class="text-sm font-semibold text-gray-900">新鮮なシーフード</p>
-          <p class="text-xs text-gray-500">海南はこれで有名</p>
-        </div>
+    <!-- Quick Stats Grid -->
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12">
+      <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
+        <p class="text-2xl mb-1">☀️</p>
+        <p class="text-sm font-semibold text-gray-900">熱帯気候</p>
+        <p class="text-xs text-gray-500">年間平均24°C</p>
       </div>
+      <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
+        <p class="text-2xl mb-1">🏖️</p>
+        <p class="text-sm font-semibold text-gray-900">人気ビーチ</p>
+        <p class="text-xs text-gray-500">亜龍湾、大東海、海棠湾</p>
+      </div>
+      <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
+        <p class="text-2xl mb-1">🌋</p>
+        <p class="text-sm font-semibold text-gray-900">火山地質公園</p>
+        <p class="text-xs text-gray-500">海口のユニークな地質</p>
+      </div>
+      <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
+        <p class="text-2xl mb-1">🌴</p>
+        <p class="text-sm font-semibold text-gray-900">熱帯雨林</p>
+        <p class="text-xs text-gray-500">五指山、呀諾達、霸王嶺</p>
+      </div>
+      <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
+        <p class="text-2xl mb-1">⛳</p>
+        <p class="text-sm font-semibold text-gray-900">ゴルフリゾート</p>
+        <p class="text-xs text-gray-500">世界クラスのコース</p>
+      </div>
+      <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
+        <p class="text-2xl mb-1">🦞</p>
+        <p class="text-sm font-semibold text-gray-900">新鮮なシーフード</p>
+        <p class="text-xs text-gray-500">海南はこれで有名</p>
+      </div>
+    </div>
+
+    <!-- Which Countries Qualify -->
+    <section class="mb-12">
+      <h2 id="visa-free-countries" class="text-3xl font-bold text-gray-900 mb-4">海南ビザ免除の対象国は？</h2>
+      <p class="text-gray-700 mb-4"><strong>59カ国</strong> — ほとんどは本土のビザ免除リストと同じですが、<strong>アメリカ、メキシコ、フィリピン、インドネシア</strong>など本土の30日間リストにない重要な追加国があります。</p>
+      <div class="bg-emerald-50 border-l-4 border-emerald-400 rounded-r-xl p-5 mb-4">
+        <p class="text-sm text-emerald-800"><strong>💡 クイックノート：</strong> 本土のビザ免除ポリシーとは異なり、海南のリストはより広範囲（59カ国対50カ国）をカバーしています。あなたの国が<a href="/ja/visa/visa-free/" class="text-blue-600 hover:underline font-medium">本土のビザ免除リスト</a>にない場合、海南のリストをチェックしてみてください — それが中国への唯一のビザなしオプションかもしれません。</p>
+      </div>
+      <p class="text-sm text-gray-600"><a href="/ja/visa/visa-free/" class="text-blue-600 hover:underline font-medium">地域別の完全な59カ国リストを見る →</a></p>
     </section>
 
-    <!-- 対象国（簡略版） -->
+    <!-- When to Visit -->
     <section class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">どの国が海南ビザなしの対象？</h2>
-      <p class="text-gray-700 mb-4"><strong>59カ国</strong> — ほとんどは本土のビザなしリストと同じですが、本土の30日間リストにない<strong>アメリカ、メキシコ、フィリピン、インドネシア</strong>などの重要な追加国があります。</p>
-
-      <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-5 mb-4">
-        <p class="text-sm text-emerald-800"><strong>💡 簡単なメモ：</strong>本土のビザなし制度とは異なり、海南のリストはより広範囲（59カ国 vs 50カ国）をカバーしています。あなたの国が<a href="/ja/visa/visa-free/" class="text-blue-600 hover:underline font-medium">本土のビザなしリスト</a>にない場合、海南リストを確認してみてください — 中国への唯一のビザなし入国方法かもしれません。</p>
-      </div>
-
-      <p class="text-sm text-gray-600"><a href="/ja/visa/visa-free/" class="text-blue-600 hover:underline font-medium">地域別の全59カ国リストを見る →</a></p>
-    </section>
-
-    <!-- 訪問時期 -->
-    <section class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">海南の訪問時期</h2>
-
+      <h2 id="when-to-visit" class="text-3xl font-bold text-gray-900 mb-4">海南を訪れるベストシーズン</h2>
       <div class="bg-white rounded-xl border border-gray-200 overflow-x-auto">
         <table class="w-full text-sm">
           <thead>
             <tr class="bg-gray-50 border-b border-gray-200">
               <th class="text-left px-5 py-3 font-semibold text-gray-700">月</th>
               <th class="text-left px-5 py-3 font-semibold text-gray-700">気温</th>
-              <th class="text-left px-5 py-3 font-semibold text-gray-700">降雨</th>
+              <th class="text-left px-5 py-3 font-semibold text-gray-700">雨</th>
               <th class="text-left px-5 py-3 font-semibold text-gray-700">混雑</th>
               <th class="text-left px-5 py-3 font-semibold text-gray-700">評価</th>
             </tr>
@@ -107,205 +103,330 @@ const readTime = '7分';
               <td class="px-5 py-3">20〜28°C</td>
               <td class="px-5 py-3">少ない</td>
               <td class="px-5 py-3">多い</td>
-              <td class="px-5 py-3 font-semibold text-emerald-600">🌟 ベストシーズン — 乾燥、温暖、絶好のビーチ日和</td>
+              <td class="px-5 py-3 font-semibold text-emerald-600">🌟 ベストシーズン — 乾燥、温暖、完璧なビーチ日和</td>
             </tr>
             <tr class="border-b border-gray-100">
               <td class="px-5 py-3 font-medium">4月〜6月</td>
               <td class="px-5 py-3">25〜32°C</td>
               <td class="px-5 py-3">中程度</td>
               <td class="px-5 py-3">少ない</td>
-              <td class="px-5 py-3 text-amber-600">👍 良い — 暑いが観光客は少なめ</td>
+              <td class="px-5 py-3 text-amber-600">👍 良い — 暑いが観光客は少ない</td>
             </tr>
             <tr>
               <td class="px-5 py-3 font-medium">7月〜10月</td>
               <td class="px-5 py-3">26〜32°C</td>
               <td class="px-5 py-3">多い（台風シーズン）</td>
               <td class="px-5 py-3">少ない</td>
-              <td class="px-5 py-3 text-red-600">⚠️ 雨季 — 航空券は安いが台風予報を確認</td>
+              <td class="px-5 py-3 text-red-600">⚠️ 雨季 — 航空券は安いが台風予報をチェック</td>
             </tr>
           </tbody>
         </table>
       </div>
-      <p class="mt-3 text-sm text-gray-600"><strong>観光ピークシーズン：</strong>旧正月（1月/2月）と国慶節ゴールデンウィーク（10月1日〜7日） — 可能なら避けましょう。</p>
+      <p class="mt-3 text-sm text-gray-600"><strong>観光ピークシーズン：</strong> 旧正月（1月/2月）と国慶節ゴールデンウィーク（10月1〜7日） — 可能なら避けましょう。</p>
     </section>
 
-    <!-- 行き先 -->
+    <!-- Why Visit -->
     <section class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6">海南のおすすめスポット</h2>
-
-      <h3 class="text-xl font-bold text-gray-900 mb-3">🏖️ 三亜 — ビーチの中心</h3>
-      <p class="text-gray-700 mb-4">三亜はほとんどの観光客が訪れる場所。ヤシの木、白い砂浜、高級リゾートが広がります。</p>
-
-      <div class="bg-white rounded-xl border border-gray-200 overflow-x-auto mb-6">
-        <table class="w-full text-sm">
-          <thead>
-            <tr class="bg-gray-50 border-b border-gray-200">
-              <th class="text-left px-5 py-3 font-semibold text-gray-700">ビーチ</th>
-              <th class="text-left px-5 py-3 font-semibold text-gray-700">おすすめポイント</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-semibold">亜龍湾</td>
-              <td class="px-5 py-3">島で最も美しいビーチ。透き通った水、柔らかな砂、リゾートが立ち並ぶ。</td>
-            </tr>
-            <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-semibold">大東海</td>
-              <td class="px-5 py-3">より地元の雰囲気、安いホテル、ビーチ沿いにたくさんのシーフードレストラン。</td>
-            </tr>
-            <tr>
-              <td class="px-5 py-3 font-semibold">海棠湾</td>
-              <td class="px-5 py-3">より静かで高級。アトランティス三亜（ウォーターパーク＋水族館）がある。</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <p class="font-semibold text-gray-900 mb-2">三亜のその他の見どころ：</p>
-      <ul class="list-disc pl-6 space-y-1.5 text-gray-700 mb-8">
-        <li><strong>蜈支洲島</strong> — シュノーケリングと透き通った海への日帰り旅行</li>
-        <li><strong>南山寺</strong> — 高さ108mの観音像（世界一）</li>
-        <li><strong>呀諾達熱帯雨林</strong> — 滝のあるジャングルハイキング</li>
-        <li><strong>鹿回頭公園</strong> — 三亜を見下ろす夕日スポット</li>
-      </ul>
-
-      <h3 class="text-xl font-bold text-gray-900 mb-3">🏛️ 海口 — 省都</h3>
-      <p class="text-gray-700 mb-4">より文化寄り、ビーチは少なめ。</p>
-      <ul class="list-disc pl-6 space-y-1.5 text-gray-700 mb-8">
-        <li><strong>火山地質公園</strong> — 休火山の火口にハイキング</li>
-        <li><strong>騎楼老街</strong> — 1920年代のアーケード建築、絶好の写真スポット</li>
-        <li><strong>海南省博物館</strong> — リー族とミャオ族の少数民族文化を学ぶ</li>
-        <li><strong>観瀾湖</strong> — ゴルフ、温泉、映画スタジオテーマパークを備えた巨大リゾート複合施設</li>
-      </ul>
-
-      <h3 class="text-xl font-bold text-gray-900 mb-3">🗺️ 主要2都市以外のスポット</h3>
-      <div class="bg-white rounded-xl border border-gray-200 overflow-x-auto">
-        <table class="w-full text-sm">
-          <thead>
-            <tr class="bg-gray-50 border-b border-gray-200">
-              <th class="text-left px-5 py-3 font-semibold text-gray-700">場所</th>
-              <th class="text-left px-5 py-3 font-semibold text-gray-700">訪れる理由</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-semibold">博鰲</td>
-              <td class="px-5 py-3">年次アジアフォーラムの町。美しい海岸道路。<br>
-              <span class="text-xs text-gray-500">💡 ヒント：リゾート滞在と最先端の医療を組み合わせたいなら、博鰲楽城は中国で唯一、本土ではまだ認可されていない海外承認の医薬品や治療法を利用できる医療特区です。</span></td>
-            </tr>
-            <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-semibold">五指山</td>
-              <td class="px-5 py-3">「五指山」— 島で最高のハイキング</td>
-            </tr>
-            <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-semibold">興隆</td>
-              <td class="px-5 py-3">熱帯植物園 ＋ コーヒー農園</td>
-            </tr>
-            <tr>
-              <td class="px-5 py-3 font-semibold">霸王嶺</td>
-              <td class="px-5 py-3">原生熱帯雨林、希少な海南テナガザル</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <h2 id="why-visit" class="text-3xl font-bold text-gray-900 mb-6">🏝️ なぜ海南を訪れるべき？</h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">海南は中国版ハワイ — 白い砂浜、緑豊かな熱帯雨林、本土の他のどこにもないのんびりした雰囲気を持つ熱帯の島です。文字通り都市から逃れて海辺でリラックスできる中国で唯一の場所です。さらに、59カ国に対してビザなしアクセスがあるため、多くの旅行者にとって中国への最も簡単な入境地となっています。</p>
     </section>
 
-    <!-- グルメ -->
+    <!-- How Many Days -->
     <section class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">海南のグルメ</h2>
-      <div class="bg-white rounded-xl border border-gray-200 overflow-x-auto">
-        <table class="w-full text-sm">
-          <thead>
-            <tr class="bg-gray-50 border-b border-gray-200">
-              <th class="text-left px-5 py-3 font-semibold text-gray-700">料理</th>
-              <th class="text-left px-5 py-3 font-semibold text-gray-700">説明</th>
-              <th class="text-left px-5 py-3 font-semibold text-gray-700">おすすめ店</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-semibold">文昌鶏</td>
-              <td class="px-5 py-3">海南で最も有名な料理。生姜ネギソースの茹で鶏。</td>
-              <td class="px-5 py-3">海口の地元レストランどこでも</td>
-            </tr>
-            <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-semibold">加積鴨</td>
-              <td class="px-5 py-3">豊かなスープでじっくり煮込んだアヒル</td>
-              <td class="px-5 py-3">博鰲</td>
-            </tr>
-            <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-semibold">海南麺</td>
-              <td class="px-5 py-3">スープか汁なしで食べる細い米粉麺</td>
-              <td class="px-5 py-3">どこにでもある朝食屋</td>
-            </tr>
-            <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-semibold">シーフード</td>
-              <td class="px-5 py-3">新鮮なカニ、エビ、アサリ、魚 — 焼きまたは蒸し</td>
-              <td class="px-5 py-3">三亜シーフード市場（新鮮なものを買って調理してもらう）</td>
-            </tr>
-            <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-semibold">ココナッツご飯</td>
-              <td class="px-5 py-3">ココナッツミルクで炊いたもち米</td>
-              <td class="px-5 py-3">夜市</td>
-            </tr>
-            <tr>
-              <td class="px-5 py-3 font-semibold">清補涼</td>
-              <td class="px-5 py-3">ココナッツミルク、豆類、果物、氷のデザートスープ</td>
-              <td class="px-5 py-3">三亜の屋台（暑い日に最適）</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <!-- 交通 -->
-    <section class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">海南の交通手段</h2>
-      <ul class="list-disc pl-6 space-y-2 text-gray-700">
-        <li><strong>高速鉄道：</strong>海南には海口、博鰲、三亜、そしてほとんどの町を結ぶ環状高速鉄道があります。列車は頻繁に運行し、安価です（海口 → 三亜 約¥100、1.5時間）。</li>
-        <li><strong>タクシー / DiDi：</strong><a href="/ja/transport/didi/" class="text-blue-600 hover:underline">DiDiアプリ</a>またはAlipay/WeChatのミニプログラムで簡単に呼べます。</li>
-        <li><strong>レンタカー：</strong>国際運転免許証＋中国語翻訳文で可能</li>
-        <li><strong>バス：</strong>安いが遅い、ほとんどの観光地をカバー</li>
+      <h2 id="how-many-days" class="text-3xl font-bold text-gray-900 mb-6">📅 必要な滞在日数</h2>
+      <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700 mb-12">
+        <li><strong>3〜4日間（標準）：</strong> 三亜のビーチ、シーフード、海口への日帰りまたは熱帯雨林ハイキング</li>
+        <li><strong>5〜7日間（ゆったり）：</strong> 三亜と海口に分けて滞在、博鰲と五指山ハイキングを追加</li>
+        <li><strong>7日間以上（じっくり）：</strong> 高速鉄道で島を一周 — 海岸線全体を探検</li>
       </ul>
     </section>
 
-    <!-- 宿泊 -->
+    <!-- Top Attractions -->
     <section class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">宿泊先</h2>
-      <div class="bg-white rounded-xl border border-gray-200 overflow-x-auto mb-4">
-        <table class="w-full text-sm">
-          <thead>
-            <tr class="bg-gray-50 border-b border-gray-200">
-              <th class="text-left px-5 py-3 font-semibold text-gray-700">予算</th>
-              <th class="text-left px-5 py-3 font-semibold text-gray-700">三亜</th>
-              <th class="text-left px-5 py-3 font-semibold text-gray-700">海口</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-medium">💰 低予算（¥100〜200）</td>
-              <td class="px-5 py-3">大東海エリアのホステル</td>
-              <td class="px-5 py-3">騎楼エリアのゲストハウス</td>
-            </tr>
-            <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-medium">💰💰 中級（¥300〜600）</td>
-              <td class="px-5 py-3">亜龍湾のリゾート（ミッドレンジ）</td>
-              <td class="px-5 py-3">観瀾湖エリアのホテル</td>
-            </tr>
-            <tr>
-              <td class="px-5 py-3 font-medium">💰💰💰 高級（¥800+）</td>
-              <td class="px-5 py-3">アトランティス、エディション、リッツ・カールトン（海棠湾）</td>
-              <td class="px-5 py-3">ヒルトン、マリオット（都心）</td>
-            </tr>
-          </tbody>
-        </table>
+      <h2 id="attractions" class="text-3xl font-bold text-gray-900 mb-6">🎯 主要観光スポット</h2>
+
+      <h3 class="text-2xl font-bold text-gray-900 mb-4">🏖️ 三亜 — ほとんどの観光客が行き着く場所</h3>
+      <p class="text-gray-700 mb-6">三亜は典型的な熱帯ビーチリゾート — ヤシの木、ターコイズブルーの海、そして実際に贅沢を感じさせるリゾートが揃っています。しかし、プールサイドでのんびりするだけではありません。</p>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/yalong-bay.webp" alt="海南の亜龍湾" class="w-full h-auto object-cover" loading="lazy" />
       </div>
-      <p class="text-sm text-gray-600">海南のリゾートは、一般的に東南アジアの同等品質よりも安いです。亜龍湾での一晩¥500の部屋には、朝食とプライベートビーチエリアが含まれていることが多いです。</p>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">亜龍湾</h4>
+        <p class="text-gray-700">島で最高のビーチの広がり — 誇張ではなく、それが事実です。砂は通常ポストカードでしか見られないような細かい白い珊瑚の粉で、水は岸から魚が見えるほど透き通り、湾全体が緑の丘に囲まれて7キロメートルにわたって弧を描いています。ほとんどのリゾートはビーチに面しているので、部屋から約90秒で水辺に行けます。三亜の他のビーチよりは高めですが、それだけの価値はあります。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/dadonghai-bay.webp" alt="海南の大東海" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">大東海</h4>
+        <p class="text-gray-700">地元のエネルギーが溢れる場所。大東海は亜龍湾よりも洗練されておらず — ホテルは安く、騒音は多く、人々ウォッチングに最適。湾は三日月形に曲がり、遊泳に適しており、ウォーターフロント全体にシーフードレストランが並び、水槽から獲れたてを選んでその場で焼いてもらえます。夕方がベストタイム：灯りが点き、ビーチバーが活気づき、全体が賑わいます。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/haitang-bay.webp" alt="海南の海棠湾" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">海棠湾</h4>
+        <p class="text-gray-700">より静かで、より高級な姉妹。海棠湾にはアトランティス三亜リゾートがあります — 巨大なウォーターパーク、10,000以上の海洋生物がいる水族館、そして予想以上に品良く感じられるイルカふれあいプール。ビーチ自体は広く、亜龍湾より混雑していません。免税ショッピングに興味があるなら、ここが大きな免税店のある場所です。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/wuzhizhou-island.webp" alt="海南の蜈支洲島" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">蜈支洲島</h4>
+        <p class="text-gray-700">海岸からフェリーで20分で到着するこの小さな島は、海南で最高のシュノーケリングスポットです。周辺の水域は保護されているため、サンゴは健全で、マスクを浸けた瞬間に魚が散ることはありません。ボートで行ってボートで戻り、半日で全部を回れます。早めに行って混雑を避けましょう — フェリーは午前10時までにすぐに満員になります。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/nanshan-temple.webp" alt="海南の南山寺" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">南山寺</h4>
+        <p class="text-gray-700">中心は海に立つ高さ108メートルの観音像 — 三つの顔、三つの方を向き、同種の像としては世界一の高さ。しかし、ほとんどの訪問者を驚かせるのは複合施設全体のスケール：何エーカーもの手入れの行き届いた敷地に広がるホール、パゴダ、庭園。実際の僧侶と本物の線香の煙が立ち込める現役の寺院であり、観光客向けに偽装されただけの場所ではありません。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/yanoda-rainforest.webp" alt="海南の呀諾達熱帯雨林" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">呀諾達熱帯雨林</h4>
+        <p class="text-gray-700">いくつかのアップグレードが施されたジャングル：樹冠の上にかかるガラス底の橋、谷を横切るジップライン、実際に足を浸せる滝のプール。ハイキング自体は管理可能（2時間程度）で、驚くほど多様な植物があります — 巨大なガジュマルの木を探しましょう。すぐに湿度が高くなるので、水を持って早めに行きましょう。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/luhuitou-park.webp" alt="海南の鹿回頭公園" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">鹿回頭公園</h4>
+        <p class="text-gray-700">三亜で最高の夕日スポットがある丘の上の公園。名前の由来となった伝説があります：狩人が鹿を崖の端まで追い詰めると、鹿は美しい女性に変わった（鹿回頭は文字通り「鹿が振り返る」の意）。ハイキングするか、トラムに乗って上がってください — どちらにしても、この場所がなぜ長い間神聖視されてきたのか理解できるパノラマビューが広がります。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <h3 class="text-2xl font-bold text-gray-900 mb-4">🏛️ 海口 — のんびりした首都</h3>
+      <p class="text-gray-700 mb-6">海口は三亜ではありません、そしてそれがポイントです。ビーチは少なく、文化はより深い。観光客は少なく、本当の生活があります。リゾートのパンフレットを超えて海南を理解したい時に訪れる場所です。</p>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/volcanic-geopark.webp" alt="海南の火山地質公園" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">火山地質公園</h4>
+        <p class="text-gray-700">実際に中を歩ける休火山 — 火口は海口の都心から約30分。小道は火口の中へと下り、周囲は火山岩と熱帯植物で囲まれています。近くにはくぐって進める溶岩トンネルもあります（懐中電灯持参）。海南の観光客のほとんどが三亜のリゾートから出ないために見逃す、本当にユニークな体験です。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/qilou-old-street.webp" alt="海南の騎楼老街" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">騎楼老街</h4>
+        <p class="text-gray-700">1920年代のアーケード建築が通りの両側に立ち並ぶ — 中国、ヨーロッパ、東南アジアの様式が混ざり合い、海南が交易の中心地だった時代に存在しました。アーケード（騎楼、名前の由来）が歩道を覆い、雨の日でも散策できます。建築は海南に真にユニークで、中国の他の場所ではこの規模では見られません。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/hainan-museum.webp" alt="海南の海南省博物館" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">海南省博物館</h4>
+        <p class="text-gray-700">リー族とミャオ族の少数民族文化について学べる最高の場所 — リゾートができる前に何世紀もこの島に住んでいた二つの民族。リー錦のコレクション（ユネスコ無形文化遺産）はハイライト：3000年もの間変わっていない技術で手織りされた複雑な幾何学模様。リー族が住んでいた船形の家や、失脚した役人の流刑地としての島の歴史に関する工芸品も見られます。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/mission-hills.webp" alt="海南のミッションヒルズ" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">ミッションヒルズ</h4>
+        <p class="text-gray-700">有名ブランドのプロが設計した10のゴルフコース、168の異なる国をテーマにしたプールがある温泉、1930年代の上海を模した街並みがある映画スタジオのロットを持つ巨大な複合施設。ゴルフをしなくても、温泉だけでも訪れる価値があります — 特に実際の火山岩で作られた火山温泉エリアは。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <h3 class="text-2xl font-bold text-gray-900 mb-4">🗺️ 二大都市以外のスポット</h3>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/boao.webp" alt="海南の博鰲" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">博鰲</h4>
+        <p class="text-gray-700 mb-3">規模以上の存在感を示す小さな海岸町。毎年開催される博鰲アジアフォーラム（アジアのダボス会議）の会場で、世界的リーダーがビーチリトリートのような会議場に集まります。博鰲と近くの潭門漁村の間の海岸道路は海南で最も素晴らしいドライブコースの一つ — 片側は海に落ち込む断崖、もう片側は森林に覆われた丘。町自体は静かで歩きやすく、河口沿いには気持ちの良い遊歩道があります。海口と三亜の間をドライブするなら、ここでランチと散歩のために立ち寄ると、旅を素敵に区切ってくれます。</p>
+        <div class="bg-blue-50 border-l-4 border-blue-400 p-3 rounded-r-lg text-sm text-blue-800">
+          💡 <strong>ヒント：</strong> 隣の博鰲楽城医療特区は、海外承認済みの医薬品や治療法が本土の承認前に利用できる中国唯一の特別区です。特定の治療を検討しているなら、ここで受けられるか調べてみる価値があります — 治療とリゾートでの回復滞在を組み合わせる旅行者もいます。
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+      </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/wuzhishan.webp" alt="海南の五指山" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">五指山</h4>
+        <p class="text-gray-700">島で最高のハイキング — 指のようにジャングルからそびえる五つの峰、頂上付近には雲霧林、天候が晴れればパノラマビュー。登山は本格的（登り3〜4時間）ですが、霧の上からジュラシック・パークというより中国を感じさせる島を眺める報酬があります。可能なら晴れた平日に行きましょう。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/xinglong.webp" alt="海南の興隆" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">興隆</h4>
+        <p class="text-gray-700">奇妙で素晴らしい町で、1950年代に東南アジアから帰国した華僑がコーヒー文化を持ち帰ったことで形成されました。熱帯植物園が主な見どころ：スパイス植物、カカオの木、そして海南のコーヒーシーンを始めた原木のコーヒー低木。コーヒー自体はなかなか良いです — 練乳入りの地元スタイルを試してみてください。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/bawangling.webp" alt="海南の霸王嶺" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">霸王嶺</h4>
+        <p class="text-gray-700">この熱帯雨林は、世界で最も希少な霊長類で野生に40頭未満しか残っていない海南テナガザルの生息地です。一頭を見つけるにはかなりの幸運（とガイド）が必要ですが、森自体は訪れる価値があります：そびえ立つ木々、野生の蘭、そして海南の他のどことも異なる静けさ。運転する気があれば、海口からの日帰り旅行が可能です。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+    </section>
+
+    <!-- Getting Around -->
+    <section class="mb-12">
+      <h2 id="getting-around" class="text-3xl font-bold text-gray-900 mb-6">🚇 海南の移動手段</h2>
+      <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700">
+        <li><strong>高速鉄道：</strong> 海南には海口、博鰲、三亜、そしてほとんどの町を結ぶ環状高速鉄道があります。列車は頻繁に運行しており、安価です（海口→三亜 約100元、1.5時間）。</li>
+        <li><strong>タクシー / Didi：</strong> <a href="/ja/transport/didi/" class="text-blue-600 hover:underline">Didiアプリ</a>またはAlipay/WeChatのミニプログラムから簡単に利用できます。</li>
+        <li><strong>レンタカー：</strong> 国際運転免許証 + 中国語翻訳文で可能</li>
+        <li><strong>バス：</strong> 安いが遅い、ほとんどの観光地をカバー</li>
+      </ul>
+    </section>
+
+    <!-- Where to Stay -->
+    <section class="mb-12">
+      <h2 id="where-to-stay" class="text-3xl font-bold text-gray-900 mb-6">🏨 おすすめの宿泊</h2>
+      <p class="text-gray-700 mb-6">海南のリゾートは、一般的に東南アジアの同等品質より安いです。亜龍湾の1泊500元の部屋には朝食が付き、専用ビーチエリアがあることが多いです。</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">💰 バジェット（100〜200元）</h3>
+          <p class="text-gray-600 text-sm">大東海エリアのホステル（三亜）· 騎楼エリアのゲストハウス（海口）</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">💰💰 ミッドレンジ（300〜600元）</h3>
+          <p class="text-gray-600 text-sm">亜龍湾のミッドレンジリゾート（三亜）· ミッションヒルズエリアのホテル（海口）</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">💰💰💰 プレミアム（800元以上）</h3>
+          <p class="text-gray-600 text-sm">アトランティス、エディション、リッツカールトン — 海棠湾（三亜）· ヒルトン、マリオット都心部（海口）</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- What to Eat -->
+    <section class="mb-12">
+      <h2 id="what-to-eat" class="text-3xl font-bold text-gray-900 mb-6">🍜 海南のグルメ</h2>
+      <p class="text-lg leading-relaxed text-gray-700 md:col-span-2 mb-0">海南の料理はすべて新鮮な熱帯の味 — たくさんのシーフード、ココナッツ、そして米。</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/hainan/wenchang-chicken.webp" alt="海南の文昌鶏" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">文昌鶏</h3>
+          <p class="text-gray-700">海南の代表料理 — 絹のような皮とほのかに甘い肉を持つポーチド放し飼い鶏。生姜ネギ油のディップソースが本当の主役で、鮮やかでパンチが効いています。最高のバージョンは文昌市（海口から1時間）で、シンプルに冷たい前菜としてチキンライススープと一緒に提供されます。これを食べずして海南を味わったとは言えません。</p>
+        </div>
+      </div>
+
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/hainan/jiaji-duck.webp" alt="海南の嘉積鴨" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">嘉積鴨</h3>
+          <p class="text-gray-700">海南料理の知られざるヒーロー — 肉が骨からほろりと落ち、スープが濃厚な琥珀色の液体になるまでじっくり煮込んだ鴨。調理法は騙されるほどシンプル：鴨、水、塩、そしてほのかなアニスと生姜の温かみのための漢方薬。肉を発酵豆ペーストと唐辛子に付けて食べるのが本場の味わい方。博鰲近くの嘉積エリアで見つかる、最も純粋な海南の家庭料理です。</p>
+        </div>
+      </div>
+
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/hainan/hainan-noodles.webp" alt="海南の海南粉" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">海南粉</h3>
+          <p class="text-gray-700">島のエネルギー源となる朝食 — 豚骨、干しエビ、イカで取ったあっさりスープの細い米粉麺に、炒めたニンニクとネギをトッピング。試すべき2つのスタイル：<em>湯麺</em>（スープバージョン、定番の朝の一杯）と<em>拌麺</em>（濃厚な風味豊かなソースのドライスタイル）。地元のチリペーストをスプーン一杯加えれば、なぜすべての海南人がこうして一日を始めるのか理解できるでしょう。</p>
+        </div>
+      </div>
+
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/hainan/seafood-market.webp" alt="海南のシーフード" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">シーフード市場体験</h3>
+          <p class="text-gray-700">それ自体が午後のアクティビティ — 三亜のシーフード市場に行き、シャコや花蟹、ハタが入った水槽から生きた獲れたてを選び、上の階に持って行ってその場で調理してもらいます。ニンニクと唐辛子でグリル、または生姜とネギで蒸し。約100〜150元/人でごちそうになり、シャコだけでも行く価値があります — 冷凍輸入品にはない甘みがあります。</p>
+        </div>
+      </div>
+
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/hainan/coconut-rice.webp" alt="海南のココナッツライス" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">ココナッツライス</h3>
+          <p class="text-gray-700">ココナッツミルクとパンダンリーフと一緒に生のココナッツの中で蒸したもち米 — 香り高く、ほんのり甘く、ほとんどプディングのよう。外側の層は繊細な皮にカラメル化し、最高のバージョンには細かくしたココナッツの実が混ぜ込まれています。屋台の商人がバナナの葉に包んで売っています — 文昌の夜市で探してみてください。</p>
+        </div>
+      </div>
+
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/hainan/qingbuliang.webp" alt="海南の清補涼" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">清補涼</h3>
+          <p class="text-gray-700">海南版熱帯の暑さ対策 — ココナッツミルクのかき氷の器に、歯ごたえのあるタロイモ、小豆、スイカ、アロエベラゼリー、そして最も満足感のある形で喉を滑り落ちる海藻デンプンの「麺」が入っています。甘いけどしつこくなく、クリーミーだけど軽い。どの屋台も独自のアレンジがあります（アイスクリームを加えるところもあれば、砕いたピーナッツをトッピングするところも）。約一杯10元、湿度が高い時に三亜のウォーターフロント夜市で楽しむのが最適です。</p>
+        </div>
+      </div>
+        </div>
+
     </section>
 
     <!-- Visa-Free Rules -->
     <section class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">ビザなしルール — 知っておくべきこと</h2>
+      <h2 id="visa-rules" class="text-3xl font-bold text-gray-900 mb-4">ビザ免除ルール — 知っておくべきこと</h2>
       <div class="bg-white rounded-xl border border-gray-200 overflow-x-auto mb-6">
         <table class="w-full text-sm">
           <thead>
@@ -316,28 +437,28 @@ const readTime = '7分';
           </thead>
           <tbody>
             <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-medium">滞在期間は？</td>
-              <td class="px-5 py-3">最大<strong>30日間</strong> — 到着日の翌日からカウント</td>
+              <td class="px-5 py-3 font-medium">どのくらい滞在できますか？</td>
+              <td class="px-5 py-3">最大<strong>30日間</strong> — 到着翌日からカウント</td>
             </tr>
             <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-medium">ツアーグループは必要？</td>
+              <td class="px-5 py-3 font-medium">ツアーグループは必要ですか？</td>
               <td class="px-5 py-3"><strong>いいえ</strong> — 個人旅行者でも問題ありません</td>
             </tr>
             <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-medium">延長は可能？</td>
-              <td class="px-5 py-3">可能な場合あり、海南の現地出入国管理局で申請</td>
+              <td class="px-5 py-3 font-medium">延長できますか？</td>
+              <td class="px-5 py-3">可能性あり、海南の現地出入国管理事務所に申請</td>
             </tr>
             <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-medium">中国本土への訪問は？</td>
-              <td class="px-5 py-3"><strong>不可</strong> — この制度は海南島のみが対象</td>
+              <td class="px-5 py-3 font-medium">中国本土を訪れられますか？</td>
+              <td class="px-5 py-3"><strong>いいえ</strong> — このポリシーは海南島のみを対象としています</td>
             </tr>
             <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-medium">海南入国→香港→海南再入国は？</td>
-              <td class="px-5 py-3">可能 — 入国ごとに30日間の時計がリセット</td>
+              <td class="px-5 py-3 font-medium">海南に入国し、香港に行き、戻ってこれますか？</td>
+              <td class="px-5 py-3">はい — 入国ごとに30日間のカウントがリセットされます</td>
             </tr>
             <tr>
-              <td class="px-5 py-3 font-medium">超過滞在すると？</td>
-              <td class="px-5 py-3">罰金＋入国禁止の可能性。危険を冒さないでください。</td>
+              <td class="px-5 py-3 font-medium">オーバーステイした場合は？</td>
+              <td class="px-5 py-3">罰金 + 入国禁止の可能性。リスクを冒さないでください。</td>
             </tr>
           </tbody>
         </table>
@@ -345,37 +466,37 @@ const readTime = '7分';
 
       <p class="font-semibold text-gray-900 mb-3">入国要件：</p>
       <ol class="list-disc pl-6 space-y-1.5 text-gray-700">
-        <li>✅ 残存有効期間6ヶ月以上のパスポート</li>
-        <li>✅ 30日以内の帰国または第三国行きの航空券</li>
+        <li>✅ 有効期限6ヶ月以上のパスポート</li>
+        <li>✅ 30日以内の帰国または onward チケット</li>
         <li>✅ ホテル予約（推奨）</li>
-        <li>✅ 入国カード（機内で配布、または<a href="/ja/visa/arrival-card/" class="text-blue-600 hover:underline">オンラインで記入</a>）</li>
+        <li>✅ 入国カード（機内で配布されるか、<a href="/ja/visa/arrival-card/" class="text-blue-600 hover:underline">オンラインで記入</a>）</li>
       </ol>
     </section>
 
-    <!-- 実用的なヒント -->
+    <!-- Practical Tips -->
     <section class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">海南での実用的なヒント</h2>
+      <h2 id="tips" class="text-3xl font-bold text-gray-900 mb-4">海南の実用的ヒント</h2>
       <ol class="list-decimal pl-6 space-y-2 text-gray-700">
-        <li><strong>AlipayまたはWeChat Payで支払う</strong> — フライト前に設定しておきましょう。海南のほとんどの場所はキャッシュレスです。詳しくは<a href="/ja/payment/payment-guide/" class="text-blue-600 hover:underline">中国での支払い方法</a>ガイドをご覧ください。</li>
-        <li><strong>VPNは引き続き必要</strong> — Google、WhatsApp、InstagramはVPNなしでは使えません。到着前に<a href="/ja/life/best-vpns/" class="text-blue-600 hover:underline">VPNを設定</a>しましょう。</li>
-        <li><strong>SIMカード / eSIM</strong> — オンライン（airalo、Holafly）または空港で購入。詳しくは<a href="/ja/life/best-sim-esim/" class="text-blue-600 hover:underline">SIMガイド</a>をご覧ください。</li>
-        <li><strong>言語</strong> — 海南ではリゾート以外では英語はあまり通じません。Google翻訳かPleoを準備しておきましょう。</li>
-        <li><strong>日焼け止め＋虫よけスプレー</strong> — どちらも年間通して必須です。</li>
-        <li><strong>チップ</strong> — チップの習慣はありません。詳しくは<a href="/ja/payment/tipping/" class="text-blue-600 hover:underline">チップガイド</a>をご覧ください。</li>
+        <li><strong>AlipayまたはWeChat Payで支払う</strong> — 飛行機に乗る前に設定しておきましょう。海南のほとんどの場所はキャッシュレスです。<a href="/ja/payment/payment-guide/" class="text-blue-600 hover:underline">中国での支払い方法</a>ガイドをご覧ください。</li>
+        <li><strong>VPNはまだ必要</strong> — Google、WhatsApp、InstagramはVPNなしでは使えません。到着前に<a href="/ja/life/best-vpns/" class="text-blue-600 hover:underline">VPNを設定</a>してください。</li>
+        <li><strong>SIMカード / eSIM</strong> — オンライン（airalo、Holafly）または空港で購入。<a href="/ja/life/best-sim-esim/" class="text-blue-600 hover:underline">SIMガイド</a>をご覧ください。</li>
+        <li><strong>言語</strong> — 海南ではリゾート以外では英語は広く通じません。Google翻訳やPlecoを用意しておきましょう。</li>
+        <li><strong>日焼け止め + 虫除け</strong> — 両方とも一年中必須です。</li>
+        <li><strong>チップ</strong> — 不要。<a href="/ja/payment/tipping/" class="text-blue-600 hover:underline">チップガイド</a>をご覧ください。</li>
       </ol>
     </section>
 
-    <!-- 関連ガイド -->
+    <!-- Related Guides -->
     <section class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6">📚 関連ガイド</h2>
+      <h2 id="related" class="text-2xl font-bold text-gray-900 mb-6">📚 関連ガイド</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <a href="/ja/visa/visa-free/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
-          <p class="font-bold text-gray-900 mb-1">中国ビザなし渡航国リスト（2026年版）</p>
-          <p class="text-sm text-gray-600">海南対象の全59カ国リストを見る</p>
+          <p class="font-bold text-gray-900 mb-1">中国ビザ免除国リスト（2026年）</p>
+          <p class="text-sm text-gray-600">海南の完全な59カ国リストを見る</p>
         </a>
         <a href="/ja/visa/arrival-card/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
           <p class="font-bold text-gray-900 mb-1">入国カードのオンライン提出方法</p>
-          <p class="text-sm text-gray-600">スクリーンショット付きステップバイステップガイド</p>
+          <p class="text-sm text-gray-600">スクリーンショット付きのステップバイステップガイド</p>
         </a>
         <a href="/ja/cities/beijing-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
           <p class="font-bold text-gray-900 mb-1">北京旅行ガイド</p>
@@ -388,12 +509,12 @@ const readTime = '7分';
       </div>
     </section>
 
-    <!-- 出典 -->
+    <!-- Sources -->
     <div class="mt-12 pt-8 border-t border-gray-200">
       <h3 class="text-xl font-bold text-gray-900 mb-4">出典</h3>
       <ul class="space-y-2 text-sm text-gray-600">
-        <li><a href="https://en.nia.gov.cn/n147418/n147463/c180637/content.html" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">国家移民管理局 — 地域別ビザなし制度（海南30日間）</a></li>
-        <li><a href="https://en.nia.gov.cn/n147418/n147463/c191648/content.html" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">国家移民管理局 — 外国人向け中国入国円滑化政策</a></li>
+        <li><a href="https://en.nia.gov.cn/n147418/n147463/c180637/content.html" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">国家移民管理局 — 地域別ビザ免除ポリシー（海南30日間）</a></li>
+        <li><a href="https://en.nia.gov.cn/n147418/n147463/c191648/content.html" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">国家移民管理局 — 外国人のための中国入国円滑化政策</a></li>
       </ul>
     </div>
 

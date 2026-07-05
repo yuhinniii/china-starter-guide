@@ -1,170 +1,208 @@
 ---
 import Layout from '@layouts/Layout.astro';
-const title = "베이징 여행 가이드: 볼거리, 먹거리, 꿀팁";
-const description = "베이징 완벽 가이드 — 관광지, 교통, 음식, 숙소까지 한 번에.";
+const title = "베이징 여행 가이드: 볼거리, 먹거리 & 필수 정보";
+const description = "베이징 완벽 가이드 — 명소, 교통, 음식, 숙소 추천까지 한번에.";
 ---
 
 <Layout title={title} description={description} lang="ko">
   <article class="max-w-4xl mx-auto px-6 py-12">
     <header class="mb-12">
       <p class="text-sm text-gray-500 mb-3">🏙️ 베이징</p>
-      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">베이징 여행 가이드: 볼거리, 먹거리, 꿀팁</h1>
-      <p class="text-xl text-gray-600 mb-6">베이징 완벽 가이드 — 관광지, 교통, 음식, 숙소까지 한 번에.</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">베이징 여행 가이드: 볼거리, 먹거리 & 필수 정보</h1>
+      <p class="text-xl text-gray-600 mb-6">베이징 완벽 가이드 — 명소, 교통, 음식, 숙소 추천까지 한번에.</p>
       <div class="flex items-center gap-4 text-sm text-gray-500">
         <span>📅 최종 업데이트: 2026년 6월</span>
-        <span>⏱️ 8분 소요</span>
+        <span>⏱️ 8분</span>
       </div>
     </header>
 
     <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-2xl p-8 mb-12 not-prose">
-      <h2 class="text-2xl font-bold text-red-900 mb-4">⚡ 한 줄 요약</h2>
-      <p class="text-lg text-red-800 leading-relaxed">베이징은 <strong>중국의 정치·문화 중심지</strong>로, 자금성, 만리장성, 그리고 평생 먹어볼 최고의 베이징 덕이 있는 곳입니다. 오래된 골목(후퉁)이 현대적 마천루와 공존하는 대조적인 도시입니다. 베이징은 두 개의 국제공항과 중국 최대 고속철도 허브를 갖춰 첫 방문객에게 가장 편리한 입국지이기도 합니다.</p>
+      <h2 class="text-2xl font-bold text-red-900 mb-4">⚡ Quick Answer</h2>
+      <p class="text-lg text-red-800 leading-relaxed">베이징은 <strong>중국의 정치·문화 중심지</strong>로, 자금성과 만리장성, 그리고 평생 먹어본 오리 중 가장 맛있는 베이징 덕을 맛볼 수 있는 곳입니다. 오래된 골목길(후퉁)이 현대적 마천루와 어우러진 대조의 도시이기도 하죠. 베이징은 처음 중국을 방문하는 여행자에게 가장 편리한 관문으로, 두 개의 국제공항과 중국 최대의 고속철도 허브를 갖추고 있습니다.</p>
     </div>
 
     <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
       <h3 class="text-lg font-bold text-gray-900 mb-4">📋 목차</h3>
       <ul class="space-y-3">
         <li><a href="#why-visit" class="text-blue-600 hover:underline">🏛️ 베이징에 가야 하는 이유</a></li>
-        <li><a href="#how-many-days" class="text-blue-600 hover:underline">📅 몇 일이 필요할까요?</a></li>
-        <li><a href="#attractions" class="text-blue-600 hover:underline">🎯 주요 관광지</a></li>
+        <li><a href="#how-many-days" class="text-blue-600 hover:underline">📅 며칠이 필요할까?</a></li>
+        <li><a href="#attractions" class="text-blue-600 hover:underline">🎯 주요 명소</a></li>
         <li><a href="#getting-around" class="text-blue-600 hover:underline">🚇 교통 정보</a></li>
-        <li><a href="#where-to-stay" class="text-blue-600 hover:underline">🏨 추천 숙소</a></li>
-        <li><a href="#what-to-eat" class="text-blue-600 hover:underline">🍜 추천 음식</a></li>
+        <li><a href="#where-to-stay" class="text-blue-600 hover:underline">🏨 숙소 추천</a></li>
+        <li><a href="#what-to-eat" class="text-blue-600 hover:underline">🍜 먹거리</a></li>
       </ul>
     </nav>
 
     <h2 id="why-visit" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏛️ 베이징에 가야 하는 이유</h2>
-    <p class="text-lg leading-relaxed text-gray-700 mb-6">베이징은 단순한 도시가 아닌, 중국 문명의 살아있는 박물관입니다. 자금성을 거닐다 보면 24명의 황제가 걸었던 길을 따라 걷고 있는 것입니다. 만리장성에 오르면 2,000년 넘게 세워진 구조물 위에 서 있는 것입니다. 하지만 베이징은 또한 놀라운 음식, 세계적 수준의 박물관, 잠들지 않는 밤문화를 자랑하는 활기찬 현대 수도이기도 합니다.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">베이징은 단순한 도시가 아닙니다 — 살아있는 중국 문명의 박물관입니다. 자금성을 거닐다 보면 24명의 황제가 걸었던 발자국을 따라가는 기분이 들고, 만리장성에 오르면 2,000년 넘게 세워진 장대한 구조물 위에 서 있는 자신을 발견하게 됩니다. 하지만 베이징은 또한 놀라운 음식, 세계적 수준의 박물관, 그리고 밤새도록 잠들지 않는 활기찬 현대 수도이기도 합니다.</p>
 
-    <h2 id="how-many-days" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📅 몇 일이 필요할까요?</h2>
+    <h2 id="how-many-days" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📅 며칠이 필요할까?</h2>
     <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>최소 3일</strong>이면 베이징의 핵심을 경험할 수 있습니다.</p>
     <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700 mb-6">
       <li><strong>3일 (기본):</strong> 자금성 + 만리장성 + 후퉁과 천단 맛보기</li>
-      <li><strong>4~5일 (여유):</strong> 이화원, 798 예술 지구, 푸드 투어 추가</li>
-      <li><strong>5일 이상 (심층):</strong> 청더 피서산장 당일치기 또는 덜 알려진 사원 탐방</li>
+      <li><strong>4–5일 (여유):</strong> 이화원, 798 아트 디스트릭트, 푸드 투어 추가</li>
+      <li><strong>5일 이상 (심층):</strong> 청더 피서산장 당일 여행 또는 덜 알려진 사원 탐방</li>
     </ul>
-    <p class="text-lg text-gray-700 mb-12">만리장성만으로도 하루가 꼬박 걸립니다 — 가장 가까운 구간(무톈위)까지 차로 약 1시간 30분이 소요되니 일정을 잘 계획하세요.</p>
+    <p class="text-lg text-gray-700 mb-12">만리장성만 해도 하루 종일 필요합니다 — 가장 가까운 구간(무톈위)까지 차로 약 1시간 30분이 걸리니 미리 계획하세요.</p>
 
-    <h2 id="attractions" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎯 주요 관광지</h2>
+    <!-- ==================== ATTRACTIONS ==================== -->
+    <h2 id="attractions" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎯 주요 명소</h2>
 
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
-      <h3 class="text-xl font-bold text-gray-900 mb-2">자금성 (故宫)</h3>
-      <p class="text-gray-700">세계에서 가장 큰 궁전 단지로, 명·청 왕조의 황제들이 거처했습니다. 최소 일주일 전에 티켓을 예약하세요 — 하루 방문객은 8만 명으로 제한됩니다. 월요일은 휴관입니다.</p>
-      <div class="screenshot-wrapper">
-        <img src="/images/beijing/forbidden-city.webp" alt="자금성" loading="lazy" width="1200" height="800" />
+    <!-- Forbidden City -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <div class="w-full rounded-2xl overflow-hidden">
+        <img src="/images/beijing/forbidden-city.webp" alt="자금성 궁전 단지" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">자금성 (고궁 / 故宫)</h3>
+        <p class="text-gray-700">세계에서 가장 큰 궁전 단지 — 직접 서 있으면 그 규모가 더 실감납니다. 720,000제곱미터에 달하는 이 단지에는 거의 1,000채의 건물이 있으며, 모두 금색 지붕과 붉은 벽으로 장식되어 600년이 지나도 그 빛을 잃지 않았습니다. 24명의 황제가 걸었던 바로 그 돌 위를 걸으며, 너무나 광활해서 자신이 작게 느껴지는 안뜰을 거닐어보세요. 최소 일주일 전에 미리 티켓을 예약하세요 — 하루에 80,000명만 입장 가능하며 매주 월요일은 휴관입니다.</p>
       </div>
     </div>
 
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
-      <h3 class="text-xl font-bold text-gray-900 mb-2">무톈위 만리장성 (慕田峪长城)</h3>
-      <p class="text-gray-700">가장 잘 보존되고 외국인에게 가장 친근한 만리장성 구간입니다. 케이블카와 썰매(네, 썰매 맞습니다!)를 이용할 수 있습니다. 베이징 중심에서 약 1시간 30분 거리.</p>
-      <div class="screenshot-wrapper">
-        <img src="/images/beijing/great-wall.webp" alt="무톈위 만리장성" loading="lazy" width="1200" height="800" />
+    <!-- Mutianyu Great Wall -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <div class="w-full rounded-2xl overflow-hidden">
+        <img src="/images/beijing/great-wall.webp" alt="무톈위 만리장성이 산등성이를 따라 펼쳐진 모습" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">무톈위 만리장성 (慕田峪长城)</h3>
+        <p class="text-gray-700">가장 잘 보존된 만리장성 구간이자, 썰매를 타고 내려올 수 있는 유일한 곳입니다. 23개의 명나라 시대 망루를 따라 2,000미터 이상 펼쳐져 있으며 원래 상태 그대로 복원되었습니다. 성 위에서 바라보면 숲으로 뒤덮인 산등성이가 사방으로 펼쳐져 있습니다 — 기념품 가게도, 현대식 건물도 없이 오직 산만 보입니다. 케이블카로 올라가고 썰매로 내려오세요. 시내에서 90분 거리인 이곳은 그럴 가치가 충분합니다.</p>
       </div>
     </div>
 
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
-      <h3 class="text-xl font-bold text-gray-900 mb-2">천단 (天坛)</h3>
-      <p class="text-gray-700">황제가 풍년을 기원하던 아름다운 명나라 사원입니다. 이른 아침에 방문하면 공원에서 태극권을 하고 전통 악기를 연주하는 현지인들을 볼 수 있습니다.</p>
-      <div class="screenshot-wrapper">
-        <img src="/images/beijing/temple-of-heaven.webp" alt="천단" loading="lazy" width="1200" height="800" />
+    <!-- Temple of Heaven -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <div class="w-full rounded-2xl overflow-hidden">
+        <img src="/images/beijing/temple-of-heaven.webp" alt="베이징의 명나라 시대 천단" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">천단 (天坛)</h3>
+        <p class="text-gray-700">파란 유약 타일이 완벽한 원형을 이루며 하늘을 향해 솟아 있는 천단은 명·청 시대 황제들이 풍년을 기원하러 왔던 곳입니다. 기년전(祈年殿)은 높이 38미터로, 단 하나의 못도 사용하지 않고 지어졌습니다. 주변 공원에서는 오전 7시가 되기 전부터 오페라 가수들의 목청, 새소리, 마작 패 부딪히는 소리를 들을 수 있습니다. 새벽에 방문하면 가장 현지인다운 베이징의 모습을 볼 수 있습니다.</p>
       </div>
     </div>
 
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
-      <h3 class="text-xl font-bold text-gray-900 mb-2">이화원 (颐和园)</h3>
-      <p class="text-gray-700">곤명호를 중심으로 한 거대한 황실 정원입니다. 특히 봄과 가을에 단풍이 장관일 때 반나절 산책하기에 완벽한 장소입니다.</p>
-      <div class="screenshot-wrapper">
-        <img src="/images/beijing/summer-palace.webp" alt="이화원" loading="lazy" width="1200" height="800" />
+    <!-- Summer Palace -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <div class="w-full rounded-2xl overflow-hidden">
+        <img src="/images/beijing/summer-palace.webp" alt="이화원의 쿤밍 호수와 황실 정원" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">이화원 (颐和园)</h3>
+        <p class="text-gray-700">웅장함이 차원이 다른 황실 별장 — 서태후가 해군 예산을 이곳에 쏟아부었다는 이야기가 전해집니다. 쿤밍 호수만 해도 220헥타르에 달하며, 석양에 금빛으로 빛나는 17아치 다리가 놓여 있습니다. 그늘진 장랑(長廊)을 걸어보세요 — 728미터에 달하는 천장 그림에는 중국 전설 속 14,000여 장면이 그려져 있습니다. 늦가을에 방문하면 황금빛 은행나무와 한적한 인파를 즐길 수 있습니다.</p>
       </div>
     </div>
 
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12">
-      <h3 class="text-xl font-bold text-gray-900 mb-2">후퉁 (胡同)</h3>
-      <p class="text-gray-700">이 좁은 골목들은 베이징의 전통 주거 지역입니다. 도보 또는 인력거로 탐험하기 좋은 곳은 난뤄구샹, 우다오잉, 스차하이 호수 주변입니다.</p>
-      <div class="screenshot-wrapper">
-        <img src="/images/beijing/hutongs.webp" alt="베이징 후퉁" loading="lazy" width="1200" height="800" />
+    <!-- Hutongs -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start bg-white border border-gray-200 rounded-2xl p-6 mb-12">
+      <div class="w-full rounded-2xl overflow-hidden">
+        <img src="/images/beijing/hutongs.webp" alt="베이징 후퉁의 전통 좁은 골목길" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">후퉁 (胡同)</h3>
+        <p class="text-gray-700">철거를 피해 살아남은 베이징의 오래된 골목길 — 100년이 지나도 크게 변하지 않은 삶이 흐르는 좁은 길의 네트워크입니다. 일부 후퉁은 700년 전 원나라 시대로 거슬러 올라갑니다. 노인들이 의자에 앉아 장기를 두고, 회색 벽돌 벽에 기대어 놓인 자전거, 전선 사이에 걸린 빨래를 볼 수 있습니다. 관광객으로 북적이는 난뤄구샹은 피하고, 우다오잉 후퉁이나 스차하이 주변 골목을 걸어보세요.</p>
       </div>
     </div>
 
     <h2 id="getting-around" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🚇 교통 정보</h2>
     <ul class="list-disc pl-6 space-y-3 text-lg text-gray-700 mb-12">
-      <li><strong>지하철:</strong> 베이징의 지하철은 광범위하고 저렴하며 영어 표지판이 있습니다. 거의 모든 주요 관광지를 연결합니다. 베이징 지하철 이용 팁은 <a href="/ko/transport/metro-bus/" class="text-blue-600 hover:underline">중국 주요 도시 지하철 & 버스 가이드</a>를 참고하세요.</li>
-      <li><strong>디디 (중국의 우버):</strong> 원하는 곳까지 바로 가기에 매우 편리합니다. 도착하기 전에 앱을 다운로드하세요. 영어로 목적지를 입력할 수 있습니다. 설정 방법은 <a href="/ko/transport/didi/" class="text-blue-600 hover:underline">외국인이 디디 사용하는 방법</a>에서 확인하세요.</li>
-      <li><strong>택시:</strong> 이용 가능하지만 의사소통이 어려울 수 있습니다. 항상 목적지를 중국어로 보여주세요(호텔 이름은 중국어로 적어두세요).</li>
-      <li><strong>자전거:</strong> 베이징은 의외로 자전거 타기에 좋은 도시입니다. 공유 자전거(헬로바이크, 메이투안)가 곳곳에 있습니다. 알리페이나 위챗페이로 스캔해서 타면 됩니다.</li>
+      <li><strong>지하철:</strong> 베이징 지하철은 노선이 광범위하고 저렴하며 영어 표지판이 있습니다. 거의 모든 주요 명소를 연결합니다. 자세한 내용은 <a href="/ko/transport/metro-bus/" class="text-blue-600 hover:underline">중국 주요 도시 지하철 & 버스 가이드</a>를 확인하세요.</li>
+      <li><strong>디디 (DiDi, 중국의 우버):</strong> 문 앞까지 데려다주는 초간편 앱입니다. 도착 전에 미리 다운로드하세요. 목적지를 영어로 입력할 수 있습니다. 설정 방법은 <a href="/ko/transport/didi/" class="text-blue-600 hover:underline">외국인이 중국에서 DiDi 사용하는 방법</a>에서 확인하세요.</li>
+      <li><strong>택시:</strong> 이용 가능하지만 의사소통이 어려울 수 있습니다. 항상 목적지를 중국어로 보여주세요 (호텔 이름을 중국어로 적어두세요).</li>
+      <li><strong>자전거:</strong> 베이징은 의외로 자전거 타기에 좋습니다. 공유 자전거(Helobike, Meituan)가 곳곳에 있습니다. Alipay나 WeChat으로 스캔해서 타면 됩니다.</li>
     </ul>
 
-    <h2 id="where-to-stay" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏨 추천 숙소</h2>
+    <h2 id="where-to-stay" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏨 숙소 추천</h2>
     <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
-      <h3 class="text-xl font-bold text-gray-900 mb-2">둥청구 (东城区) — 첫 방문객에게 최고</h3>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">둥청구 (东城区) — 첫 방문객에게 최적</h3>
       <p class="text-gray-700">자금성, 후퉁, 왕푸징 인근의 중심 위치. 가격과 편의성의 균형이 좋습니다.</p>
     </div>
     <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
-      <h3 class="text-xl font-bold text-gray-900 mb-2">시청구 (西城区) — 문화 애호가에게 최고</h3>
-      <p class="text-gray-700">조용하고 전통적인 분위기. 허우하이 호수, 고루, 그리고 잘 보존된 후퉁 인근.</p>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">시청구 (西城区) — 문화 애호가에게 최적</h3>
+      <p class="text-gray-700">조용하고 전통적인 분위기. 허우하이 호수 지역, 고루(북종루), 잘 보존된 후퉁 인근.</p>
     </div>
     <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12">
-      <h3 class="text-xl font-bold text-gray-900 mb-2">차오양구 (朝阳区) — 출장 여행자에게 최고</h3>
-      <p class="text-gray-700">현대적인 CBD. 많은 국제 호텔과 서양 레스토랑. 798 예술 지구와 싼리툰 나이트라이프 인근.</p>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">차오양구 (朝阳区) — 출장객에게 최적</h3>
+      <p class="text-gray-700">현대적인 CBD 지역. 많은 국제 호텔과 서양 레스토랑이 있습니다. 798 아트 디스트릭트와 싼리툰 나이트라이프 인근.</p>
     </div>
 
-    <h2 id="what-to-eat" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🍜 추천 음식</h2>
-    <p class="text-lg leading-relaxed text-gray-700 mb-6">베이징의 음식은 진한 풍미, 밀가루 기반 요리, 그리고 황실 요리 전통이 조화를 이룹니다.</p>
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
-      <h3 class="text-xl font-bold text-gray-900 mb-2">베이징 덕 (北京烤鸭)</h3>
-      <p class="text-gray-700">얇고 바삭한 껍질을 팬케이크에 싸서 달콤한 된장, 오이, 파와 함께 먹습니다. 베이징의 대표 요리입니다.</p>
-      <div class="screenshot-wrapper">
-        <img src="/images/beijing/peking-duck.webp" alt="베이징 덕" loading="lazy" width="1200" height="800" />
+    <!-- ==================== WHAT TO EAT ==================== -->
+    <h2 id="what-to-eat" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🍜 먹거리</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">베이징의 음식은 강렬한 풍미, 밀가루 기반 요리, 그리고 황실 요리 전통을 바탕으로 합니다.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+      <!-- Peking Duck -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/beijing/peking-duck.webp" alt="바삭한 껍질의 베이징 덕이 팬케이크에 싸인 모습" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">베이징 덕 (北京烤鸭)</h3>
+          <p class="text-gray-600 text-base">오리 전체를 껍질이 유리처럼 바삭해질 때까지 구워낸 것이 베이징 덕입니다. 껍질은 바삭하고 고소하며, 고기는 부드럽습니다. 얇은 팬케이크에 달콤한 된장 소스, 오이, 파와 함께 싸 먹습니다. 현지인 중에는 바삭한 껍질을 흰 설탕에 찍어 먹기도 합니다. 첸먼 주변 식당들은 여러 대에 걸쳐 전통 방식을 고수해왔습니다.</p>
+        </div>
       </div>
-    </div>
 
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
-      <h3 class="text-xl font-bold text-gray-900 mb-2">자장면 (炸酱面)</h3>
-      <p class="text-gray-700">발효된 된장과 다진 돼지고기로 만든 걸쭉한 소스를 얹은 국수. 소박하지만 사랑받는 현지 대표 음식입니다.</p>
-      <div class="screenshot-wrapper">
-        <img src="/images/beijing/zha-jiang-mian.webp" alt="자장면" loading="lazy" width="1200" height="800" />
+      <!-- Zha Jiang Mian -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/beijing/zha-jiang-mian.webp" alt="짠된장 소스를 얹은 자장면" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">자장면 (炸酱面)</h3>
+          <p class="text-gray-600 text-base">발효된 콩과 다진 돼지고기로 만든 진한 소스가 듬뿍 올려진 두꺼운 수타면입니다. 소스는 짭짤하고 깊은 맛이 나며, 된장의 은은한 쓴맛이 신선한 오이와 콩나물 고명과 어우러집니다. 젓가락으로 모든 면발이 골고루 코팅되도록 잘 비벼서 드세요. 동쓰(东四) 근처 옛 후퉁에서 최고의 그릇을 찾을 수 있습니다.</p>
+        </div>
       </div>
-    </div>
 
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
-      <h3 class="text-xl font-bold text-gray-900 mb-2">지엔빙 (煎饼)</h3>
-      <p class="text-gray-700">계란, 바삭한 원톤, 파, 고추 소스를 넣은 고소한 크레이프. 베이징의 대표 길거리 아침 식사입니다.</p>
-      <div class="screenshot-wrapper">
-        <img src="/images/beijing/jianbing.webp" alt="지엔빙" loading="lazy" width="1200" height="800" />
+      <!-- Jianbing -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/beijing/jianbing.webp" alt="달걀과 파가 들어간 중국식 감자 크레페 젠빙" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">젠빙 (煎饼)</h3>
+          <p class="text-gray-600 text-base">베이징의 길거리 아침 식사 — 뜨거운 철판에 얇게 펼쳐진 기장 크레페 위에 달걀이 톡 깨지고, 바삭한 원턴 크래커가 감싸집니다. 부드러운 크레페, 바삭한 중심, 매운 칠리 소스, 그리고 신선한 파의 조화가 일품입니다. 뜨거울 때 호일 포장째로 바로 드세요. 오전 9시 이전에 지하철역 근처 노점에서 사면 됩니다 — 정오쯤이면 보통 다 팔립니다.</p>
+        </div>
       </div>
-    </div>
 
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
-      <h3 class="text-xl font-bold text-gray-900 mb-2">양고기 샤브샤브 / 슈안양러우 (涮羊肉)</h3>
-      <p class="text-gray-700">종이처럼 얇게 썬 양고기를 끓는 구리 냄비에 익혀 먹습니다. 겨울에 특히 만족스러운 요리입니다.</p>
-      <div class="screenshot-wrapper">
-        <img src="/images/beijing/lamb-hotpot.webp" alt="양고기 샤브샤브" loading="lazy" width="1200" height="800" />
+      <!-- Lamb Hotpot -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/beijing/lamb-hotpot.webp" alt="구리 냄비에 끓는 양고기 샤브샤브" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">양고기 샤부샤부 (涮羊肉)</h3>
+          <p class="text-gray-600 text-base">구리 굴뚝 냄비에 부글부글 끓는 육수 — 이것이 북부 중국식 훠궈로, 양고기가 핵심입니다. 고기는 종이처럼 얇게 썰려 몇 초 만에 익으며, 깔끔하고 약간의 누린내가 나는 부드러운 식감이 일품입니다. 끓는 육수에 10초 이상 넣지 말고, 참깨 소스에 발효 두부를 섞어 찍어 드세요. 구러우(鼓楼) 근처의 가족 운영 작은 식당들은 겨울밤이면 현지인들로 북적입니다.</p>
+        </div>
       </div>
-    </div>
 
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
-      <h3 class="text-xl font-bold text-gray-900 mb-2">더우즈 (豆汁)</h3>
-      <p class="text-gray-700">발효된 녹두 음료로, 취향을 많이 타는 음식입니다. 현지인들에게는 사랑받는 별미 — 관광객은 한 모금만 시도해보세요.</p>
-      <div class="screenshot-wrapper">
-        <img src="/images/beijing/douzhi.webp" alt="더우즈" loading="lazy" width="1200" height="800" />
+      <!-- Douzhi -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/beijing/douzhi.webp" alt="발효 녹두 음료 더우즈" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">더우즈 (豆汁)</h3>
+          <p class="text-gray-600 text-base">베이징 현지인과 그 외 사람들을 가르는 음료 — 발효된 녹두 즙으로, 오래된 채소 냄새가 나고 시큼하며 흙내 나는 맛이 납니다. 따뜻하게 제공되며, 회녹색 빛깔에 약간 덩어리진 식감이 특징입니다. 항상 짭짤한 참깨 링과 절인 무와 함께 나옵니다. 홀짝이는 것이 아니라 단숨에 마시는 음료입니다. 톈탄(天坛) 근처 옛 후퉁의 아침 식당에서 한 그릇 주문해보세요 — 당신이 이걸 좋아하는 몇 안 되는 외지인인지 확인해보세요.</p>
+        </div>
       </div>
-    </div>
 
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12">
-      <h3 class="text-xl font-bold text-gray-900 mb-2">빙탕후루 (冰糖葫芦)</h3>
-      <p class="text-gray-700">꼬치에 꿴 산사나무 열매를 설탕으로 코팅한 간식. 베이징의 대표 길거리 간식입니다.</p>
-      <div class="screenshot-wrapper">
-        <img src="/images/beijing/bingtanghulu.webp" alt="빙탕후루" loading="lazy" width="1200" height="800" />
+      <!-- Sugar-coated Hawthorn -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/beijing/bingtanghulu.webp" alt="꼬치에 꽂은 설탕 코팅 산사나무 열인 빙탕후루" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">빙탕후루 (冰糖葫芦)</h3>
+          <p class="text-gray-600 text-base">대나무 꼬치에 꿰어 단단한 설탕 껍질로 코팅한 산사나무 열매입니다. 첫 입에 설탕이 바삭 깨지고, 이어 열매의 새콤함이 느껴집니다 — 이 달콤새콤한 맛이 중독성을 만듭니다. 설탕 코팅은 깨질 만큼 얇지만, 열매가 너무 시지 않을 만큼 충분히 두껍습니다. 왕푸징 야시장과 후퉁 곳곳에서 카트를 끌고 파는 상인들을 연중 만날 수 있습니다.</p>
+        </div>
       </div>
     </div>
 
     <div class="not-prose mt-16">
       <h2 class="text-2xl font-bold text-gray-900 mb-8">📚 관련 가이드</h2>
-      <div class="space-y-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <a href="/ko/cities/city-select/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🗺️ <strong>중국 여행, 며칠이 필요할까?</strong> — 전체 일정 계획하기</a>
-        <a href="/ko/cities/shanghai-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🌆 <strong>상하이 여행 가이드</strong> — 중국의 또 다른 대도시와 비교하기</a>
-        <a href="/ko/transport/transport-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>중국 교통 완벽 가이드</strong> — 모든 교통 수단 정보</a>
+        <a href="/ko/cities/shanghai-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🌆 <strong>상하이 여행 가이드</strong> — 중국의 또 다른 대도시와 비교해보기</a>
+        <a href="/ko/transport/transport-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>중국 이동 수단 안내</strong> — 모든 교통 옵션</a>
         <a href="/ko/transport/high-speed-rail/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>중국 고속철도 예약 및 탑승 방법</strong> — 베이징에서 상하이까지 기차로</a>
       </div>
     </div>

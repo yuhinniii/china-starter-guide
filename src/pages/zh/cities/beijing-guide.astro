@@ -1,103 +1,120 @@
 ---
 import Layout from '@layouts/Layout.astro';
-const title = "北京旅游指南：看什么、吃什么、要知道什么";
-const description = "你的北京完整指南——景点、交通、美食和住宿推荐。";
+const title = "北京旅行指南：景点、美食与实用信息";
+const description = "完整的北京旅行指南——景点、交通、美食和住宿推荐。";
 ---
 
 <Layout title={title} description={description} lang="zh">
   <article class="max-w-4xl mx-auto px-6 py-12">
     <header class="mb-12">
       <p class="text-sm text-gray-500 mb-3">🏙️ 北京</p>
-      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">北京旅游指南：看什么、吃什么、要知道什么</h1>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">北京旅行指南：景点、美食与实用信息</h1>
       <p class="text-xl text-gray-600 mb-6">你的北京完整指南——景点、交通、美食和住宿推荐。</p>
       <div class="flex items-center gap-4 text-sm text-gray-500">
-        <span>📅 最后更新：2026 年 6 月</span>
-        <span>⏱️ 阅读时长：8 分钟</span>
+        <span>📅 最后更新：2026年6月</span>
+        <span>⏱️ 阅读时间：8分钟</span>
       </div>
     </header>
 
     <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-2xl p-8 mb-12 not-prose">
       <h2 class="text-2xl font-bold text-red-900 mb-4">⚡ 快速回答</h2>
-      <p class="text-lg text-red-800 leading-relaxed">北京是<strong>中国的政治和文化心脏</strong>——故宫、长城，以及你能吃到的最好的北京烤鸭。这是一座充满对比的城市，古老的胡同紧挨着现代摩天大楼。北京也是首次来华游客最方便的入境点，拥有两个国际机场和全国最大的高铁枢纽。</p>
+      <p class="text-lg text-red-800 leading-relaxed">北京是<strong>中国的政治和文化中心</strong>——拥有故宫、长城，以及你可能吃过的最棒的北京烤鸭。这是一座充满对比的城市，古老的胡同与现代摩天大楼并存。北京也是首次访华游客最便捷的入境点，拥有两个国际机场和全国最大的高铁枢纽。</p>
     </div>
 
     <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
-      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 本文目录</h3>
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 本指南目录</h3>
       <ul class="space-y-3">
         <li><a href="#why-visit" class="text-blue-600 hover:underline">🏛️ 为什么去北京？</a></li>
-        <li><a href="#how-many-days" class="text-blue-600 hover:underline">📅 需要几天？</a></li>
-        <li><a href="#attractions" class="text-blue-600 hover:underline">🎯 必去景点</a></li>
-        <li><a href="#getting-around" class="text-blue-600 hover:underline">🚇 市内交通</a></li>
-        <li><a href="#where-to-stay" class="text-blue-600 hover:underline">🏨 住哪里</a></li>
+        <li><a href="#how-many-days" class="text-blue-600 hover:underline">📅 需要玩几天？</a></li>
+        <li><a href="#attractions" class="text-blue-600 hover:underline">🎯 热门景点</a></li>
+        <li><a href="#getting-around" class="text-blue-600 hover:underline">🚇 交通出行</a></li>
+        <li><a href="#where-to-stay" class="text-blue-600 hover:underline">🏨 住宿推荐</a></li>
         <li><a href="#what-to-eat" class="text-blue-600 hover:underline">🍜 吃什么</a></li>
       </ul>
     </nav>
 
     <h2 id="why-visit" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏛️ 为什么去北京？</h2>
-    <p class="text-lg leading-relaxed text-gray-700 mb-6">北京不只是一座城市——它是一所活着的中华文明博物馆。走在故宫里，你踏着 24 位皇帝走过的路。登上长城，你站在了一座修建了两千多年的建筑上。但北京也是一座活力四射的现代首都，有让人惊叹的美食、世界级的博物馆和不夜城的夜生活。</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">北京不仅仅是一座城市——它是一座活着的中华文明博物馆。走进故宫，你踏着24位皇帝的足迹前行。登上长城，你站在一座跨越2000年历史的建筑之上。但北京同样是一座充满活力的现代首都，拥有令人难以置信的美食、世界级的博物馆和不夜城的夜生活。</p>
 
-    <h2 id="how-many-days" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📅 需要几天？</h2>
-    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>3 天是最低要求</strong>，能体验到北京的精华。</p>
+    <h2 id="how-many-days" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📅 需要玩几天？</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>至少需要3天</strong>才能体验北京的精髓。</p>
     <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700 mb-6">
-      <li><strong>3 天（标准）：</strong>故宫 + 长城 + 胡同和天坛</li>
-      <li><strong>4–5 天（舒适）：</strong>加颐和园、798 艺术区和一次美食之旅</li>
-      <li><strong>5+ 天（深入）：</strong>承德避暑山庄一日游，或探索鲜为人知的寺庙</li>
+      <li><strong>3天（标准）：</strong>故宫 + 长城 + 胡同与天坛</li>
+      <li><strong>4–5天（舒适）：</strong>增加颐和园、798艺术区和美食之旅</li>
+      <li><strong>5天以上（深度游）：</strong>承德避暑山庄一日游，或探索京城鲜为人知的寺庙</li>
     </ul>
-    <p class="text-lg text-gray-700 mb-12">长城单程就要一整天——到最近的一段（慕田峪）开车约 1.5 小时，要提前安排好时间。</p>
+    <p class="text-lg text-gray-700 mb-12">仅长城就需要整整一天——到最近的一段（慕田峪）乘车约需1.5小时，请合理安排时间。</p>
 
-    <h2 id="attractions" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎯 必去景点</h2>
+    <!-- ==================== 景点 ==================== -->
+    <h2 id="attractions" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎯 热门景点</h2>
 
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
-      <h3 class="text-xl font-bold text-gray-900 mb-2">故宫</h3>
-      <p class="text-gray-700">世界最大的宫殿建筑群，明清两代的皇宫。门票至少提前一周预订——每天限流 8 万人。周一闭馆。</p>
-      <div class="screenshot-wrapper">
-        <img src="/images/beijing/forbidden-city.webp" alt="故宫" loading="lazy" width="1200" height="800" />
+    <!-- 故宫 -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <div class="w-full rounded-2xl overflow-hidden">
+        <img src="/images/beijing/forbidden-city.webp" alt="北京故宫建筑群" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">故宫</h3>
+        <p class="text-gray-700">世界上最大的宫殿建筑群——当你站在其中时，感觉比想象中还要宏大。整个建筑群占地72万平方米，拥有近1000座建筑，金顶红墙，600年来从未褪色。你将行走在24位皇帝曾走过的石板上，穿过广阔到让人自觉渺小的庭院。请至少提前一周订票——每天仅限8万人入内，且每周一闭馆。</p>
       </div>
     </div>
 
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
-      <h3 class="text-xl font-bold text-gray-900 mb-2">慕田峪长城</h3>
-      <p class="text-gray-700">保存最完好、对老外最友好的一段长城。有缆车，还有滑道下山——对，就是滑道。距北京市中心约 1.5 小时车程。</p>
-      <div class="screenshot-wrapper">
-        <img src="/images/beijing/great-wall.webp" alt="慕田峪长城" loading="lazy" width="1200" height="800" />
+    <!-- 慕田峪长城 -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <div class="w-full rounded-2xl overflow-hidden">
+        <img src="/images/beijing/great-wall.webp" alt="慕田峪长城蜿蜒于山脊之上" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">慕田峪长城</h3>
+        <p class="text-gray-700">保存最完好的长城段落，也是唯一可以坐滑道下山的一段。它横跨2000多米，连接23座明代敌楼，均按原貌修复。站在城墙上，目之所及是连绵起伏的森林山脊——没有纪念品商店，没有现代建筑，只有群山。乘缆车上山，坐滑道下山；从市区出发90分钟的车程绝对值得。</p>
       </div>
     </div>
 
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
-      <h3 class="text-xl font-bold text-gray-900 mb-2">天坛</h3>
-      <p class="text-gray-700">一座令人惊叹的明代祭天建筑。早上去还能看到当地人在公园里打太极、演奏传统乐器。</p>
-      <div class="screenshot-wrapper">
-        <img src="/images/beijing/temple-of-heaven.webp" alt="天坛" loading="lazy" width="1200" height="800" />
+    <!-- 天坛 -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <div class="w-full rounded-2xl overflow-hidden">
+        <img src="/images/beijing/temple-of-heaven.webp" alt="北京天坛明代历史建筑" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">天坛</h3>
+        <p class="text-gray-700">蓝琉璃瓦构成的完美圆形建筑耸立向天——天坛是明清两代皇帝祭天祈谷的地方。祈年殿高38米，通体未用一颗铁钉。在周围的公园里，早晨7点前你就能听到吊嗓子的歌声、鸟鸣和麻将牌的碰撞声。建议黎明时分前往，感受最地道的北京生活。</p>
       </div>
     </div>
 
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
-      <h3 class="text-xl font-bold text-gray-900 mb-2">颐和园</h3>
-      <p class="text-gray-700">以昆明湖为中心的大型皇家园林。适合花半天漫步，春秋两季的景色尤其美。</p>
-      <div class="screenshot-wrapper">
-        <img src="/images/beijing/summer-palace.webp" alt="颐和园" loading="lazy" width="1200" height="800" />
+    <!-- 颐和园 -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <div class="w-full rounded-2xl overflow-hidden">
+        <img src="/images/beijing/summer-palace.webp" alt="颐和园昆明湖皇家园林景观" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">颐和园</h3>
+        <p class="text-gray-700">一座规模宏大的皇家避暑园林——慈禧太后当年挪用了海军经费修建了这里。昆明湖就占地220公顷，一座十七孔桥横跨湖面，日落时分金光闪耀。漫步在遮荫的长廊——728米长的彩绘长廊上，绘有14000多幅中国传奇故事场景。建议深秋时节前来，银杏金黄，游客稀少。</p>
       </div>
     </div>
 
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12">
-      <h3 class="text-xl font-bold text-gray-900 mb-2">胡同</h3>
-      <p class="text-gray-700">这些狭窄的巷子是北京的传统社区。最适合步行或坐三轮车探索的区域有南锣鼓巷、五道营和什刹海周边。</p>
-      <div class="screenshot-wrapper">
-        <img src="/images/beijing/hutongs.webp" alt="北京胡同" loading="lazy" width="1200" height="800" />
+    <!-- 胡同 -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start bg-white border border-gray-200 rounded-2xl p-6 mb-12">
+      <div class="w-full rounded-2xl overflow-hidden">
+        <img src="/images/beijing/hutongs.webp" alt="北京传统胡同狭窄小巷" class="w-full h-auto object-cover" loading="lazy" />
       </div>
+      <div>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">胡同</h3>
+        <p class="text-gray-700">北京幸存的古老小巷网络——狭窄的街巷中，百年来生活几乎未曾改变。有些胡同的历史可以追溯到700多年前的元朝。你会看到老人在小凳上下棋、自行车靠在青砖墙上、电线之间晾晒的衣物。避开人满为患的南锣鼓巷，去五道营胡同或什刹海周边的巷子走走。</p>
+      </div>
+    </div>
 
-    <h2 id="getting-around" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🚇 市内交通</h2>
+    <h2 id="getting-around" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🚇 交通出行</h2>
     <ul class="list-disc pl-6 space-y-3 text-lg text-gray-700 mb-12">
-      <li><strong>地铁：</strong>北京地铁网络庞大、便宜，有英文标识。几乎覆盖所有主要景点。参考<a href="/zh/transport/metro-bus/" class="text-blue-600 hover:underline">主要城市地铁和公交指南</a>了解北京地铁使用技巧。</li>
-      <li><strong>滴滴：</strong>点对点出行非常方便。提前下载好应用。可以用英文输入目的地。设置方法见<a href="/zh/transport/didi/" class="text-blue-600 hover:underline">外国人如何使用滴滴</a>。</li>
-      <li><strong>出租车：</strong>可以坐，但沟通可能有困难。务必用中文展示目的地（把酒店名写成中文）。</li>
-      <li><strong>骑行：</strong>北京其实很适合骑车。共享单车（哈啰、美团）随处可见，用支付宝或微信扫码就能骑。</li>
+      <li><strong>地铁：</strong>北京地铁网络发达、价格便宜，且有英文标识。几乎覆盖所有主要景点。查看<a href="/zh/transport/metro-bus/" class="text-blue-600 hover:underline">中国主要城市地铁与公交指南</a>了解北京地铁使用技巧。</li>
+      <li><strong>滴滴（中国版Uber）：</strong>点对点出行非常方便。出发前下载App，可以用英文输入目的地。了解设置方法请参考<a href="/zh/transport/didi/" class="text-blue-600 hover:underline">外国人如何在华使用滴滴</a>。</li>
+      <li><strong>出租车：</strong>可用，但沟通可能有挑战。始终用中文显示目的地（请让酒店用中文写好名称）。</li>
+      <li><strong>骑行：</strong>北京出乎意料地适合骑行。共享单车（哈啰、美团）随处可见，用支付宝或微信扫码即可骑行。</li>
     </ul>
 
-    <h2 id="where-to-stay" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏨 住哪里</h2>
+    <h2 id="where-to-stay" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏨 住宿推荐</h2>
     <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
-      <h3 class="text-xl font-bold text-gray-900 mb-2">东城区——首次来京首选</h3>
-      <p class="text-gray-700">靠近故宫、胡同和王府井的中心区域。价格和便利性平衡得很好。</p>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">东城区——首次来访最佳选择</h3>
+      <p class="text-gray-700">中心位置，靠近故宫、胡同和王府井。价格与便利性兼顾。</p>
     </div>
     <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
       <h3 class="text-xl font-bold text-gray-900 mb-2">西城区——文化爱好者首选</h3>
@@ -105,65 +122,88 @@ const description = "你的北京完整指南——景点、交通、美食和�
     </div>
     <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12">
       <h3 class="text-xl font-bold text-gray-900 mb-2">朝阳区——商务旅客首选</h3>
-      <p class="text-gray-700">现代 CBD。许多国际酒店和西餐厅。靠近 798 艺术区和三里屯夜生活区。</p>
+      <p class="text-gray-700">现代CBD，许多国际酒店和西餐厅。靠近798艺术区和三里屯夜生活区。</p>
     </div>
 
+    <!-- ==================== 吃什么 ==================== -->
     <h2 id="what-to-eat" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🍜 吃什么</h2>
-    <p class="text-lg leading-relaxed text-gray-700 mb-6">北京美食主打浓郁口味、面食和宫廷饮食传统。</p>
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
-      <h3 class="text-xl font-bold text-gray-900 mb-2">北京烤鸭</h3>
-      <p class="text-gray-700">薄脆的鸭皮用薄饼包着，配上甜面酱、黄瓜丝和大葱。北京最具代表性的菜品。</p>
-      <div class="screenshot-wrapper">
-        <img src="/images/beijing/peking-duck.webp" alt="北京烤鸭" loading="lazy" width="1200" height="800" />
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">北京的美食以浓郁风味、面食和宫廷烹饪传统为特色。</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+      <!-- 北京烤鸭 -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/beijing/peking-duck.webp" alt="北京烤鸭脆皮裹在薄饼中" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">北京烤鸭</h3>
+          <p class="text-gray-600 text-base">整只鸭子烤至皮脆如玻璃——这就是北京烤鸭。鸭皮酥脆肥美，鸭肉鲜嫩，用薄如纸的荷叶饼包裹，配上甜面酱、黄瓜条和葱丝。有些食客在包之前先把脆皮蘸上白糖。前门周边的一些老字号餐馆世代传承着传统做法。</p>
+        </div>
+      </div>
+
+      <!-- 炸酱面 -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/beijing/zha-jiang-mian.webp" alt="炸酱面配黄豆酱" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">炸酱面</h3>
+          <p class="text-gray-600 text-base">粗壮的手擀面上铺满由发酵黄豆和猪肉末制成的深色酱料。酱料咸香醇厚，带有一丝豆酱的微苦，配上新鲜黄瓜丝和豆芽。将所有配料拌匀，让每根面条都裹上酱汁再入口。在东四附近的旧胡同里能找到最美味的炸酱面。</p>
+        </div>
+      </div>
+
+      <!-- 煎饼 -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/beijing/jianbing.webp" alt="煎饼果子里脊鸡蛋葱" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">煎饼</h3>
+          <p class="text-gray-600 text-base">北京的便捷早餐——薄薄的杂粮面糊在热铁板上摊开，打上一个鸡蛋，裹上酥脆的薄脆。口感对比鲜明：柔软的饼皮、酥脆的夹心、辛辣的辣椒酱，新鲜葱花抵消了油腻感。趁热从锡纸包装里直接吃。上午9点前在地铁站附近的路边摊买一个——通常中午前就卖完了。</p>
+        </div>
+      </div>
+
+      <!-- 涮羊肉 -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/beijing/lamb-hotpot.webp" alt="涮羊肉铜锅沸腾汤底" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">涮羊肉</h3>
+          <p class="text-gray-600 text-base">铜锅炭火，清汤沸腾——这是北方人的火锅吃法，主角就是羊肉。肉切得薄如纸，几秒钟即熟，鲜嫩且带有纯正的羊膻味。在沸腾的汤里涮不超过十秒，然后蘸上芝麻酱和腐乳。鼓楼附近那些家庭经营的小店，冬夜里总是坐满了本地食客。</p>
+        </div>
+      </div>
+
+      <!-- 豆汁 -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/beijing/douzhi.webp" alt="豆汁发酵绿豆饮品北京特色小吃" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">豆汁</h3>
+          <p class="text-gray-600 text-base">一道让北京本地人和外地人泾渭分明的饮品——发酵绿豆汁，闻起来像老菜叶子，喝起来酸涩有土味。热着喝，灰绿色，质地略微浓稠，总配着咸口的芝麻烧饼和腌萝卜条。不是小口抿，而是一口气灌下去。在天坛附近老胡同的早点铺子点一碗，看看你是不是那个少数真正喜欢它的外地人。</p>
+        </div>
+      </div>
+
+      <!-- 冰糖葫芦 -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/beijing/bingtanghulu.webp" alt="冰糖葫芦裹糖的山楂串" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">冰糖葫芦</h3>
+          <p class="text-gray-600 text-base">将山楂穿在竹签上，裹上一层硬糖壳。第一口咬碎糖壳，随即尝到山楂的酸味——这种酸甜交融的感觉让人上瘾。糖衣薄到一碰就碎，又厚到足以中和山楂的酸涩。摊贩推着插满糖葫芦的车子，在王府井夜市和胡同里一年四季都有售卖。</p>
+        </div>
       </div>
     </div>
-
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
-      <h3 class="text-xl font-bold text-gray-900 mb-2">炸酱面</h3>
-      <p class="text-gray-700">面条配上用黄豆酱和肉末做的浓稠酱料。平民但深受喜爱的本地主食。</p>
-      <div class="screenshot-wrapper">
-        <img src="/images/beijing/zha-jiang-mian.webp" alt="炸酱面" loading="lazy" width="1200" height="800" />
-      </div>
-    </div>
-
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
-      <h3 class="text-xl font-bold text-gray-900 mb-2">煎饼</h3>
-      <p class="text-gray-700">一种咸味可丽饼，夹着鸡蛋、薄脆、葱花和辣椒酱。北京街头早餐之王。</p>
-      <div class="screenshot-wrapper">
-        <img src="/images/beijing/jianbing.webp" alt="煎饼" loading="lazy" width="1200" height="800" />
-      </div>
-    </div>
-
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
-      <h3 class="text-xl font-bold text-gray-900 mb-2">涮羊肉</h3>
-      <p class="text-gray-700">在铜锅里涮薄如纸的羊肉片。冬天吃特别过瘾。</p>
-      <div class="screenshot-wrapper">
-        <img src="/images/beijing/lamb-hotpot.webp" alt="涮羊肉" loading="lazy" width="1200" height="800" />
-      </div>
-    </div>
-
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
-      <h3 class="text-xl font-bold text-gray-900 mb-2">豆汁</h3>
-      <p class="text-gray-700">发酵绿豆饮品，真正需要"品"的味道。地道本地人最爱——游客尝一口就好。</p>
-      <div class="screenshot-wrapper">
-        <img src="/images/beijing/douzhi.webp" alt="豆汁" loading="lazy" width="1200" height="800" />
-      </div>
-    </div>
-
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12">
-      <h3 class="text-xl font-bold text-gray-900 mb-2">冰糖葫芦</h3>
-      <p class="text-gray-700">串在竹签上的糖渍山楂。经典北京街头小吃。</p>
-      <div class="screenshot-wrapper">
-        <img src="/images/beijing/bingtanghulu.webp" alt="冰糖葫芦" loading="lazy" width="1200" height="800" />
-      </div>
 
     <div class="not-prose mt-16">
-      <h2 class="text-2xl font-bold text-gray-900 mb-8">📚 相关攻略</h2>
-      <div class="space-y-4">
-        <a href="/zh/cities/city-select/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🗺️ <strong>去中国玩几天才够？</strong>——规划完整行程</a>
-        <a href="/zh/cities/shanghai-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🌆 <strong>上海旅游指南</strong>——和另一个伟大城市比比看</a>
-        <a href="/zh/transport/transport-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>中国出行全攻略</strong>——所有交通选择</a>
-        <a href="/zh/transport/high-speed-rail/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>如何购票和乘坐中国高铁</strong>——北京到上海坐火车</a>
+      <h2 class="text-2xl font-bold text-gray-900 mb-8">📚 相关指南</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/zh/cities/city-select/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🗺️ <strong>中国旅行需要多少天？</strong>——规划你的完整行程</a>
+        <a href="/zh/cities/shanghai-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🌆 <strong>上海旅行指南</strong>——与中国的另一座大城市比较</a>
+        <a href="/zh/transport/transport-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>如何在中国出行</strong>——所有交通方式选择</a>
+        <a href="/zh/transport/high-speed-rail/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>如何预订和乘坐中国高铁</strong>——北京到上海乘火车</a>
       </div>
     </div>
   </article>

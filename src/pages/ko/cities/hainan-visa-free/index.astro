@@ -1,7 +1,7 @@
 ---
 import Layout from '@layouts/Layout.astro';
 const title = '하이난 여행 가이드 2026 — 59개국 무비자';
-const description = '하이난, 중국 열대 섬 여행을 계획하세요. 59개국 30일 무비자. 열대 해변, 정글 트레킹, 현지 음식, 여행 팁을 하나의 가이드로.';
+const description = '중국 열대 섬 하이난 여행을 계획하세요. 59개국 30일 무비자. 열대 해변, 정글 트레킹, 현지 음식, 여행 팁까지 한 권의 가이드에 담았습니다.';
 const lastUpdated = '2026년 6월';
 const readTime = '7분';
 ---
@@ -21,11 +21,11 @@ const readTime = '7분';
 
     <!-- Header -->
     <header class="mb-12">
-      <p class="text-sm text-gray-500 mb-3">🏝️ 여행 가이드</p>
+      <p class="text-sm text-gray-500 mb-3">🏝️ 하이난</p>
       <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
-        하이난 여행 가이드: 중국의 열대 섬 — 59개국 비자 불필요
+        하이난 여행 가이드: 중국의 열대 섬 — 59개국 비자 면제
       </h1>
-      <p class="text-xl text-gray-600 mb-6">해변, 열대우림, 화산, 세계적 수준의 리조트 — 59개국 국민이 최대 30일간 비자 없이 방문할 수 있습니다.</p>
+      <p class="text-xl text-gray-600 mb-6">해변, 열대우림, 화산, 세계적 수준의 리조트 — 59개국 국민은 비자 없이 최대 30일까지 방문할 수 있습니다.</p>
       <div class="flex items-center gap-4 text-sm text-gray-500">
         <span>📅 최종 업데이트: {lastUpdated}</span>
         <span>⏱️ {readTime}</span>
@@ -33,94 +33,90 @@ const readTime = '7분';
     </header>
 
     <!-- Quick Answer -->
+    <div class="bg-gradient-to-r from-emerald-50 to-teal-50 border-l-4 border-emerald-500 rounded-r-2xl p-8 mb-6 not-prose">
+      <h2 class="text-2xl font-bold text-emerald-900 mb-4">⚡ Quick Answer</h2>
+      <p class="text-lg text-emerald-800 leading-relaxed"><strong>하이난은 중국의 열대 섬 파라다이스 — 해변, 열대우림, 화산, 세계적 수준의 리조트 — 그리고 59개국 국민은 비자 없이 최대 30일까지 방문할 수 있습니다.</strong> 여행 단체도, 대사관 방문도 필요 없습니다. 여권과 왕복 티켓만 있으면 하이커우나 싼야 공항으로 비행기 타고 오면 됩니다.</p>
+    </div>
+    <p class="text-gray-700 mb-8">이것은 <strong>미국, 멕시코, 필리핀, 인도네시아, 체코</strong> 출신자에게 특히 큰 혜택입니다 — 이들 국가는 중국 본토 30일 무비자 리스트에 포함되어 있지 않습니다. (<a href="/ko/visa/visa-free/" class="text-blue-600 hover:underline">59개국 전체 리스트 보기 →</a>)</p>
+
+    <!-- Quick Stats Grid -->
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12">
+      <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
+        <p class="text-2xl mb-1">☀️</p>
+        <p class="text-sm font-semibold text-gray-900">열대 기후</p>
+        <p class="text-xs text-gray-500">연평균 24°C</p>
+      </div>
+      <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
+        <p class="text-2xl mb-1">🏖️</p>
+        <p class="text-sm font-semibold text-gray-900">최고의 해변</p>
+        <p class="text-xs text-gray-500">야룽베이, 다둥하이, 하이탕베이</p>
+      </div>
+      <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
+        <p class="text-2xl mb-1">🌋</p>
+        <p class="text-sm font-semibold text-gray-900">화산 지질공원</p>
+        <p class="text-xs text-gray-500">하이커우의 독특한 지형</p>
+      </div>
+      <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
+        <p class="text-2xl mb-1">🌴</p>
+        <p class="text-sm font-semibold text-gray-900">열대우림</p>
+        <p class="text-xs text-gray-500">우즈산, 야노다, 바왕링</p>
+      </div>
+      <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
+        <p class="text-2xl mb-1">⛳</p>
+        <p class="text-sm font-semibold text-gray-900">골프 리조트</p>
+        <p class="text-xs text-gray-500">세계적 수준의 코스</p>
+      </div>
+      <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
+        <p class="text-2xl mb-1">🦞</p>
+        <p class="text-sm font-semibold text-gray-900">신선한 해산물</p>
+        <p class="text-xs text-gray-500">하이난이 유명한 이유</p>
+      </div>
+    </div>
+
+    <!-- Which Countries Qualify -->
     <section class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">한 줄 요약</h2>
-      <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-6">
-        <p class="text-lg text-gray-800"><strong>하이난은 중국의 열대 섬 파라다이스 — 해변, 열대우림, 화산, 세계적 수준의 리조트를 갖추고 있으며, 59개국 국민이 최대 30일간 비자 없이 방문할 수 있습니다.</strong> 투어 그룹도 필요 없고, 대사관 방문도 필요 없습니다. 여권과 왕복 항공권만 있으면 하이커우나 싼야로 비행기 타고 오면 됩니다.</p>
+      <h2 id="visa-free-countries" class="text-3xl font-bold text-gray-900 mb-4">하이난 무비자 대상 국가는?</h2>
+      <p class="text-gray-700 mb-4"><strong>59개국</strong> — 대부분 본토 무비자 리스트와 동일하지만, <strong>미국, 멕시코, 필리핀, 인도네시아</strong>처럼 본토 30일 리스트에 없는 중요한 추가 국가가 포함되어 있습니다.</p>
+      <div class="bg-emerald-50 border-l-4 border-emerald-400 rounded-r-xl p-5 mb-4">
+        <p class="text-sm text-emerald-800"><strong>💡 참고:</strong> 본토 무비자 정책과 달리 하이난 리스트는 더 넓은 범위(59개국 대 50개국)를 포함합니다. 당신의 국가가 <a href="/ko/visa/visa-free/" class="text-blue-600 hover:underline font-medium">본토 무비자 리스트</a>에 없다면, 하이난 리스트에 있는지 확인해보세요 — 중국을 무비자로 방문할 수 있는 유일한 방법일 수 있습니다.</p>
       </div>
-      <p class="mt-4 text-gray-700"><strong>미국, 멕시코, 필리핀, 인도네시아, 체코</strong> 국민에게는 특히 큰 기회입니다 — 이 국가들은 중국 본토 30일 무비자 명단에 포함되지 않습니다. (<a href="/ko/visa/visa-free/" class="text-blue-600 hover:underline">전체 59개국 목록 보기 →</a>)</p>
-
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8">
-        <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
-          <p class="text-2xl mb-1">☀️</p>
-          <p class="text-sm font-semibold text-gray-900">열대 기후</p>
-          <p class="text-xs text-gray-500">연평균 24°C</p>
-        </div>
-        <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
-          <p class="text-2xl mb-1">🏖️</p>
-          <p class="text-sm font-semibold text-gray-900">최고의 해변</p>
-          <p class="text-xs text-gray-500">야롱베이, 다둥하이, 하이탕베이</p>
-        </div>
-        <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
-          <p class="text-2xl mb-1">🌋</p>
-          <p class="text-sm font-semibold text-gray-900">화산 지질공원</p>
-          <p class="text-xs text-gray-500">하이커우의 독특한 지형</p>
-        </div>
-        <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
-          <p class="text-2xl mb-1">🌴</p>
-          <p class="text-sm font-semibold text-gray-900">열대우림</p>
-          <p class="text-xs text-gray-500">우즈산, 야노다, 바왕링</p>
-        </div>
-        <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
-          <p class="text-2xl mb-1">⛳</p>
-          <p class="text-sm font-semibold text-gray-900">골프 리조트</p>
-          <p class="text-xs text-gray-500">세계적 수준의 코스</p>
-        </div>
-        <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
-          <p class="text-2xl mb-1">🦞</p>
-          <p class="text-sm font-semibold text-gray-900">신선한 해산물</p>
-          <p class="text-xs text-gray-500">하이난이 유명합니다</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Which Countries Qualify (simplified) -->
-    <section class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">어떤 국가가 하이난 무비자 대상인가요?</h2>
-      <p class="text-gray-700 mb-4"><strong>59개국</strong> — 대부분 본토 무비자 명단과 동일하지만, <strong>미국, 멕시코, 필리핀, 인도네시아</strong>처럼 본토 30일 명단에 없는 중요한 추가 국가가 포함됩니다.</p>
-
-      <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-5 mb-4">
-        <p class="text-sm text-emerald-800"><strong>💡 참고:</strong> 본토 무비자 정책과 달리, 하이난 명단은 더 넓은 범위(59개국 vs 50개국)를 포괄합니다. 귀국이 <a href="/ko/visa/visa-free/" class="text-blue-600 hover:underline font-medium">본토 무비자 명단</a>에 없다면, 하이난 명단을 확인하세요 — 중국을 위한 유일한 무비자 옵션일 수 있습니다.</p>
-      </div>
-
-      <p class="text-sm text-gray-600"><a href="/ko/visa/visa-free/" class="text-blue-600 hover:underline font-medium">지역별 전체 59개국 목록 보기 →</a></p>
+      <p class="text-sm text-gray-600">지역별 <a href="/ko/visa/visa-free/" class="text-blue-600 hover:underline font-medium">59개국 전체 목록 보기 →</a></p>
     </section>
 
     <!-- When to Visit -->
     <section class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">하이난 방문 시기</h2>
-
+      <h2 id="when-to-visit" class="text-3xl font-bold text-gray-900 mb-4">하이난 방문 적기</h2>
       <div class="bg-white rounded-xl border border-gray-200 overflow-x-auto">
         <table class="w-full text-sm">
           <thead>
             <tr class="bg-gray-50 border-b border-gray-200">
-              <th class="text-left px-5 py-3 font-semibold text-gray-700">월</th>
+              <th class="text-left px-5 py-3 font-semibold text-gray-700">시기</th>
               <th class="text-left px-5 py-3 font-semibold text-gray-700">기온</th>
-              <th class="text-left px-5 py-3 font-semibold text-gray-700">강우량</th>
-              <th class="text-left px-5 py-3 font-semibold text-gray-700">혼잡도</th>
+              <th class="text-left px-5 py-3 font-semibold text-gray-700">강수량</th>
+              <th class="text-left px-5 py-3 font-semibold text-gray-700">인파</th>
               <th class="text-left px-5 py-3 font-semibold text-gray-700">평가</th>
             </tr>
           </thead>
           <tbody>
             <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-medium">11월~3월</td>
-              <td class="px-5 py-3">20~28°C</td>
+              <td class="px-5 py-3 font-medium">11월–3월</td>
+              <td class="px-5 py-3">20–28°C</td>
               <td class="px-5 py-3">낮음</td>
-              <td class="px-5 py-3">높음</td>
+              <td class="px-5 py-3">많음</td>
               <td class="px-5 py-3 font-semibold text-emerald-600">🌟 최적기 — 건조하고 따뜻하며 완벽한 해변 날씨</td>
             </tr>
             <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-medium">4월~6월</td>
-              <td class="px-5 py-3">25~32°C</td>
+              <td class="px-5 py-3 font-medium">4월–6월</td>
+              <td class="px-5 py-3">25–32°C</td>
               <td class="px-5 py-3">보통</td>
-              <td class="px-5 py-3">낮음</td>
-              <td class="px-5 py-3 text-amber-600">👍 좋음 — 더 덥지만 관광객이 적음</td>
+              <td class="px-5 py-3">적음</td>
+              <td class="px-5 py-3 text-amber-600">👍 좋음 — 더 덥지만 관광객 적음</td>
             </tr>
             <tr>
-              <td class="px-5 py-3 font-medium">7월~10월</td>
-              <td class="px-5 py-3">26~32°C</td>
+              <td class="px-5 py-3 font-medium">7월–10월</td>
+              <td class="px-5 py-3">26–32°C</td>
               <td class="px-5 py-3">높음 (태풍 시즌)</td>
-              <td class="px-5 py-3">낮음</td>
+              <td class="px-5 py-3">적음</td>
               <td class="px-5 py-3 text-red-600">⚠️ 우기 — 저렴한 항공편 있지만 태풍 예보 확인 필수</td>
             </tr>
           </tbody>
@@ -129,183 +125,308 @@ const readTime = '7분';
       <p class="mt-3 text-sm text-gray-600"><strong>성수기:</strong> 중국 설날(1월/2월)과 국경절 골든위크(10월 1~7일) — 가능하면 피하세요.</p>
     </section>
 
-    <!-- Where to Go -->
+    <!-- Why Visit -->
     <section class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6">하이난의 추천 여행지</h2>
-
-      <h3 class="text-xl font-bold text-gray-900 mb-3">🏖️ 싼야 — 해변 허브</h3>
-      <p class="text-gray-700 mb-4">싼야는 대부분의 관광객이 가는 곳입니다. 야자수, 하얀 모래, 고급 리조트를 생각하면 됩니다.</p>
-
-      <div class="bg-white rounded-xl border border-gray-200 overflow-x-auto mb-6">
-        <table class="w-full text-sm">
-          <thead>
-            <tr class="bg-gray-50 border-b border-gray-200">
-              <th class="text-left px-5 py-3 font-semibold text-gray-700">해변</th>
-              <th class="text-left px-5 py-3 font-semibold text-gray-700">추천 이유</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-semibold">야롱베이</td>
-              <td class="px-5 py-3">섬 최고의 해변. 맑은 물, 부드러운 모래, 리조트로 둘러싸여 있음.</td>
-            </tr>
-            <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-semibold">다둥하이</td>
-              <td class="px-5 py-3">더 현지적인 분위기, 저렴한 호텔, 해변 바로 앞에 많은 해산물 레스토랑.</td>
-            </tr>
-            <tr>
-              <td class="px-5 py-3 font-semibold">하이탕베이</td>
-              <td class="px-5 py-3">더 조용하고 고급스러움. 아틀란티스 싼야(워터파크 + 수족관) 위치.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <p class="font-semibold text-gray-900 mb-2">싼야의 다른 명소:</p>
-      <ul class="list-disc pl-6 space-y-1.5 text-gray-700 mb-8">
-        <li><strong>우즈저우 섬</strong> — 스노클링과 맑은 물을 위한 당일치기</li>
-        <li><strong>난산 사원</strong> — 108m 관음상 (세계 최고)</li>
-        <li><strong>야노다 열대우림</strong> — 폭포가 있는 정글 트레킹</li>
-        <li><strong>루후이토우 공원</strong> — 싼야의 일몰 전망</li>
-      </ul>
-
-      <h3 class="text-xl font-bold text-gray-900 mb-3">🏛️ 하이커우 — 수도</h3>
-      <p class="text-gray-700 mb-4">더 많은 문화, 적은 해변.</p>
-      <ul class="list-disc pl-6 space-y-1.5 text-gray-700 mb-8">
-        <li><strong>화산 지질공원</strong> — 사화산 분화구 하이킹</li>
-        <li><strong>치러우 올드 스트리트</strong> — 1920년대 아케이드 건물, 훌륭한 사진 명소</li>
-        <li><strong>하이난 박물관</strong> — 리족과 먀오족 소수 민족 문화 학습</li>
-        <li><strong>미션 힐스</strong> — 골프, 온천, 영화 스튜디오 테마파크가 있는 대규모 리조트 단지</li>
-      </ul>
-
-      <h3 class="text-xl font-bold text-gray-900 mb-3">🗺️ 두 주요 도시 외</h3>
-      <div class="bg-white rounded-xl border border-gray-200 overflow-x-auto">
-        <table class="w-full text-sm">
-          <thead>
-            <tr class="bg-gray-50 border-b border-gray-200">
-              <th class="text-left px-5 py-3 font-semibold text-gray-700">장소</th>
-              <th class="text-left px-5 py-3 font-semibold text-gray-700">방문 이유</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-semibold">보아오</td>
-              <td class="px-5 py-3">연례 아시아 포럼 도시. 아름다운 해안 도로.<br>
-              <span class="text-xs text-gray-500">💡 팁: 최첨단 의료 치료와 리조트 숙박에 관심이 있다면, 보아오 러청은 중국 본토에서 아직 승인되지 않은 해외 승인 의약품 및 치료법에 접근할 수 있는 중국 유일의 의료 특별 구역입니다.</span></td>
-            </tr>
-            <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-semibold">우즈산</td>
-              <td class="px-5 py-3">'다섯 손가락 산' — 섬 최고의 하이킹</td>
-            </tr>
-            <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-semibold">싱룽</td>
-              <td class="px-5 py-3">열대 식물원 + 커피 농장</td>
-            </tr>
-            <tr>
-              <td class="px-5 py-3 font-semibold">바왕링</td>
-              <td class="px-5 py-3">야생 열대우림, 희귀 하이난 긴팔원숭이</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <h2 id="why-visit" class="text-3xl font-bold text-gray-900 mb-6">🏝️ 하이난에 가야 하는 이유</h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">하이난은 중국의 하와이입니다 — 하얀 모래 해변, 울창한 열대우림, 그리고 본토 어디에서도 찾을 수 없는 여유로운 분위기를 자랑합니다. 도시를 벗어나 바다 옆에서 진정으로 휴식을 취할 수 있는 중국 유일의 지역입니다. 게다가 59개국 무비자 접근은 많은 여행자에게 중국 진입의 가장 쉬운 관문입니다.</p>
     </section>
 
-    <!-- What to Eat -->
+    <!-- How Many Days -->
     <section class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">하이난에서 먹을 것</h2>
-      <div class="bg-white rounded-xl border border-gray-200 overflow-x-auto">
-        <table class="w-full text-sm">
-          <thead>
-            <tr class="bg-gray-50 border-b border-gray-200">
-              <th class="text-left px-5 py-3 font-semibold text-gray-700">요리</th>
-              <th class="text-left px-5 py-3 font-semibold text-gray-700">설명</th>
-              <th class="text-left px-5 py-3 font-semibold text-gray-700">꼭 먹어볼 곳</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-semibold">원창 치킨</td>
-              <td class="px-5 py-3">하이난에서 가장 유명한 요리. 생강-파 소스를 곁들인 포차치킨.</td>
-              <td class="px-5 py-3">하이커우의 아무 현지 레스토랑</td>
-            </tr>
-            <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-semibold">지아지 오리</td>
-              <td class="px-5 py-3">풍부한 육수에 천천히 조린 오리</td>
-              <td class="px-5 py-3">보아오</td>
-            </tr>
-            <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-semibold">하이난 국수</td>
-              <td class="px-5 py-3">육수 또는 비빔 스타일의 얇은 쌀국수</td>
-              <td class="px-5 py-3">아침 식사 가게 어디든</td>
-            </tr>
-            <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-semibold">해산물</td>
-              <td class="px-5 py-3">신선한 게, 새우, 조개, 생선 — 구이 or 찜</td>
-              <td class="px-5 py-3">싼야 해산물 시장 (직접 고르면 요리해줌)</td>
-            </tr>
-            <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-semibold">코코넛 라이스</td>
-              <td class="px-5 py-3">코코넛 밀크에 지은 찹쌀밥</td>
-              <td class="px-5 py-3">야시장</td>
-            </tr>
-            <tr>
-              <td class="px-5 py-3 font-semibold">칭부량</td>
-              <td class="px-5 py-3">코코넛 밀크, 콩, 과일, 얼음을 넣은 디저트 수프</td>
-              <td class="px-5 py-3">싼야 길거리 포장마차 (더운 날 완벽)</td>
-            </tr>
-          </tbody>
-        </table>
+      <h2 id="how-many-days" class="text-3xl font-bold text-gray-900 mb-6">📅 며칠이 필요할까?</h2>
+      <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700 mb-12">
+        <li><strong>3–4일 (기본):</strong> 싼야 해변, 해산물, 하이커우 당일 여행 또는 정글 트레킹</li>
+        <li><strong>5–7일 (여유):</strong> 싼야와 하이커우에 나눠 머물며 보아오와 우즈산 하이킹 추가</li>
+        <li><strong>7일 이상 (심층):</strong> 고속철도로 섬 전체 일주 — 해안선 전체 탐방</li>
+      </ul>
+    </section>
+
+    <!-- Top Attractions -->
+    <section class="mb-12">
+      <h2 id="attractions" class="text-3xl font-bold text-gray-900 mb-6">🎯 주요 명소</h2>
+
+      <h3 class="text-2xl font-bold text-gray-900 mb-4">🏖️ 싼야 — 대부분의 여행자가 찾는 곳</h3>
+      <p class="text-gray-700 mb-6">싼야는 클래식한 열대 해변 휴양지입니다 — 야자수, 에메랄드빛 바다, 그리고 진짜 호화로움을 느끼게 하는 리조트가 기다리고 있습니다. 하지만 수영장에서 누워만 있기에는 아까운 곳이 더 많습니다.</p>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/yalong-bay.webp" alt="하이난 야룽베이" class="w-full h-auto object-cover" loading="lazy" />
       </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">야룽베이</h4>
+        <p class="text-gray-700">섬에서 가장 좋은 해변 — 과장이 아니라 사실입니다. 모래는 엽서에서나 볼 법한 고운 하얀 산호 분말이고, 물은 해안에서 물고기가 보일 정도로 맑으며, 7km에 걸쳐 펼쳐진 만 뒤로 푸른 언덕이 자리잡고 있습니다. 대부분의 리조트가 해변에 직접 면해 있어, 방에서 90초만 걸으면 물에 닿을 수 있습니다. 다른 싼야 해변보다 비싸지만, 그만한 값어치를 합니다.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/dadonghai-bay.webp" alt="하이난 다둥하이" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">다둥하이</h4>
+        <p class="text-gray-700">현지인의 에너지가 살아 숨쉬는 곳입니다. 다둥하이는 야룽보다 덜 세련됐지만 — 호텔은 저렴하고, 소음은 많고, 사람 구경은 더 재미있습니다. 만은 초승달 모양으로 휘어져 있으며 수영하기 좋고, 해안선 전체에는 수조에서 해산물을 직접 고르면 즉석에서 구워주는 해산물 레스토랑이 늘어서 있습니다. 저녁이 가장 좋은 시간입니다: 불빛이 켜지고, 해변 바가 열리며, 전체가 윙윙거리기 시작합니다.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/haitang-bay.webp" alt="하이난 하이탕베이" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">하이탕베이</h4>
+        <p class="text-gray-700">더 조용하고 고급스러운 사촌. 하이탕베이에는 아틀란티스 싼야 리조트가 있습니다 — 거대한 워터파크, 10,000마리 이상의 해양 생물이 있는 수족관, 그리고 예상보다 훨씬 세련된 돌고래 인터랙션 풀이 있습니다. 해변 자체는 넓고 야룽보다 덜 붐빕니다. 면세 쇼핑에 관심이 있다면 대규모 면세점도 이곳에 있습니다.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/wuzhizhou-island.webp" alt="하이난 우즈저우 섬" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">우즈저우 섬</h4>
+        <p class="text-gray-700">해안에서 페리로 20분 거리에 있는 이 작은 섬은 하이난 최고의 스노클링 명소입니다. 주변 바다가 보호구역이라 산호가 건강하고, 물에 마스크를 담그자마자 물고기가 흩어지지 않습니다. 배를 타고 들어와 나가는 방식으로 반나절이면 전체를 둘러볼 수 있습니다. 인파를 피하려면 일찍 가세요 — 오전 10시가 되면 페리가 금방 만석이 됩니다.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/nanshan-temple.webp" alt="하이난 난산 사원" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">난산 사원</h4>
+        <p class="text-gray-700">중심은 바다에 서 있는 108m 높이의 관음상입니다 — 세 개의 얼굴, 세 방향을 바라보며, 같은 종류 중 세계에서 가장 높은 상입니다. 하지만 대부분의 방문객을 놀라게 하는 것은 전체 단지의 규모입니다: 수만 평의 잘 정돈된 부지에 홀, 탑, 정원이 펼쳐져 있습니다. 실제 승려와 진짜 향 연기가 있는 활동적인 사원으로, 관광지로 가장한 곳이 아닙니다.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/yanoda-rainforest.webp" alt="하이난 야노다 열대우림" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">야노다 열대우림</h4>
+        <p class="text-gray-700">업그레이드된 정글: 수관 위에 매달린 유리 바닥 다리, 계곡을 가로지르는 짚라인, 실제로 들어가서 물놀이할 수 있는 폭포 웅덩이가 있습니다. 하이킹 자체는 부담스럽지 않으며(2시간 정도), 놀라울 정도로 다양한 식물이 있습니다 — 거대한 반얀나무를 찾아보세요. 습기가 빨리 차오르니 물을 가져가고 일찍 가세요.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/luhuitou-park.webp" alt="하이난 루후이터우 공원" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">루후이터우 공원</h4>
+        <p class="text-gray-700">싼야 최고의 일몰 뷰를 자랑하는 언덕 공원입니다. 이름 뒤에는 전설이 있습니다: 사슴이 절벽 끝까지 쫓겼는데, 사슴이 아름다운 여인으로 변했다는 이야기(루후이터우는 문자 그대로 '사슴이 고개를 돌리다'라는 뜻). 걸어서 올라가거나 트램을 타세요 — 어느 쪽이든 이곳이 왜 그토록 오랫동안 신성시되어 왔는지 이해하게 되는 파노라마 뷰를 감상할 수 있습니다.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <h3 class="text-2xl font-bold text-gray-900 mb-4">🏛️ 하이커우 — 여유로운 수도</h3>
+      <p class="text-gray-700 mb-6">하이커우는 싼야가 아니며, 그것이 바로 포인트입니다. 해변은 적고, 문화는 더 많습니다. 관광객은 적고, 실제 삶은 더 많습니다. 리조트 브로셔 너머의 하이난을 이해하고 싶을 때 가는 곳입니다.</p>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/volcanic-geopark.webp" alt="하이난 화산 지질공원" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">화산 지질공원</h4>
+        <p class="text-gray-700">실제로 들어가볼 수 있는 사화산 — 분화구는 하이커우 시내에서 약 30분 거리에 있습니다. 길을 따라 화산암과 열대 식물로 둘러싸인 분화구 내부로 내려갑니다. 근처에는 기어들어갈 수 있는 용암 동굴도 있습니다(손전등 필수). 대부분의 하이난 관광객이 싼야 리조트를 떠나지 않아 놓치는 진정 독특한 경험입니다.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/qilou-old-street.webp" alt="하이난 치러우 올드 스트리트" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">치러우 올드 스트리트</h4>
+        <p class="text-gray-700">1920년대의 아케이드 건물들이 거리 양쪽에 늘어서 있습니다 — 중국, 유럽, 동남아시아 스타일이 혼합된 건축물로, 하이난이 무역 허브였던 시절의 산물입니다. 아케이드(치러우, 그래서 이름이 붙여짐)가 보도를 덮어 비가 와도 산책할 수 있습니다. 이 건축물은 하이난에만 독특하게 존재하며, 중국의 다른 곳에서는 이 정도 규모로 볼 수 없습니다.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/hainan-museum.webp" alt="하이난 박물관" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">하이난 박물관</h4>
+        <p class="text-gray-700">리족과 먀오족 소수 민족 문화에 대해 배울 수 있는 최고의 장소 — 리족 브로케이드 컬렉션(유네스코 무형 문화유산)이 하이라이트입니다: 3,000년 동안 변하지 않은 기술로 손으로 짠 정교한 기하학적 패턴. 또한 리족이 살던 배 모양의 집과 불명예스러운 관리들의 유배지로서의 섬 역사와 관련된 유물도 볼 수 있습니다.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/mission-hills.webp" alt="하이난 미션 힐스" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">미션 힐스</h4>
+        <p class="text-gray-700">유명 브랜드 프로가 디자인한 10개의 골프 코스, 각기 다른 국가를 테마로 한 168개의 온천 풀, 그리고 1930년대 상하이를 모델로 한 거리가 있는 영화 스튜디오 세트장 등 거대한 복합 단지입니다. 골프를 치지 않더라도 온천만으로도 방문할 가치가 있습니다 — 특히 실제 화산암으로 만든 화산 온천 구역은 더욱 그렇습니다.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <h3 class="text-2xl font-bold text-gray-900 mb-4">🗺️ 두 주요 도시 너머</h3>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/boao.webp" alt="하이난 보아오" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">보아오</h4>
+        <p class="text-gray-700 mb-3">작은 해안 마을이지만 그 위상은 남다릅니다. 매년 보아오 아시아 포럼(아시아의 다보스)이 열리는 곳으로, 글로벌 지도자들이 컨퍼런스 센터보다 해변 휴양지에 가까운 환경에 모입니다. 보아오와 인근 탄먼 어촌 사이의 해안 도로는 하이난 최고의 드라이브 코스 중 하나입니다 — 한쪽은 바다로 떨어지는 절벽, 다른 쪽은 숲이 우거진 언덕이 펼쳐집니다. 마을 자체는 조용하고 걷기 좋으며, 하구를 따라 유쾌한 산책로가 있습니다. 하이커우와 싼야 사이를 운전한다면 이곳에서 점심과 산책으로 여행을 분할하기 좋습니다.</p>
+        <div class="bg-blue-50 border-l-4 border-blue-400 p-3 rounded-r-lg text-sm text-blue-800">
+          💡 <strong>팁:</strong> 옆에 있는 보아오 러청 의료 특구는 중국에서 유일하게 해외 승인 의약품과 치료법이 본토 승인 전에 제공되는 특별 구역입니다. 특정 치료를 찾고 있다면 이곳에서 가능한지 알아보는 것이 좋습니다 — 일부 여행자는 시술과 리조트 회복 숙박을 결합하기도 합니다.
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+      </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/wuzhishan.webp" alt="하이난 우즈산" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">우즈산 (오지산)</h4>
+        <p class="text-gray-700">섬에서 가장 좋은 하이킹 — 다섯 개의 봉우리가 손가락처럼 정글에서 솟아오르며, 정상 근처에는 구름 숲이 있고 날씨가 맑아지면 파노라마 뷰가 펼쳐집니다. 등반은 만만치 않지만(올라가는데 3-4시간), 보상은 안개 위로 중국보다는 쥬라기 공원에 더 가까워 보이는 섬을 내려다보는 것입니다. 가능하면 맑은 평일에 가세요.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/xinglong.webp" alt="하이난 싱롱" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">싱롱</h4>
+        <p class="text-gray-700">1950년대에 동남아시아에서 돌아온 화교들이 커피 문화를 가져와 형성된 독특하고 멋진 마을입니다. 열대 식물원이 주요 명소로, 수만 평의 향신료 식물, 카카오 나무, 그리고 하이난 커피의 시작이 된 커피 덤불이 있습니다. 커피 자체도 괜찮습니다 — 연유를 넣은 현지 스타일을 시도해보세요.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/bawangling.webp" alt="하이난 바왕링" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">바왕링</h4>
+        <p class="text-gray-700">이 열대우림은 지구상에서 가장 희귀한 영장류인 하이난 긴팔원숭이의 서식지로, 40마리 미만만 남아 있습니다. 하나를 실제로 보려면 엄청난 운(과 가이드)이 필요하겠지만, 숲 자체만으로도 방문할 가치가 있습니다: 우뚝 솟은 나무들, 야생 난초, 그리고 하이난의 다른 어디에서도 느낄 수 없는 고요함. 하이커우에서 당일 여행으로 가능하며, 운전할 의향이 있다면요.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
     </section>
 
     <!-- Getting Around -->
     <section class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">하이난 교통</h2>
-      <ul class="list-disc pl-6 space-y-2 text-gray-700">
-        <li><strong>고속철도:</strong> 하이난에는 하이커우, 보아오, 싼야 및 대부분의 도시를 연결하는 순환 고속철도 노선이 있습니다. 기차는 자주 운행하며 저렴합니다(하이커우 → 싼야 ~100위안, 1시간 30분).</li>
-        <li><strong>택시 / 디디:</strong> <a href="/ko/transport/didi/" class="text-blue-600 hover:underline">디디 앱</a> 또는 알리페이/위챗 미니 프로그램을 통해 쉽게 호출하세요.</li>
+      <h2 id="getting-around" class="text-3xl font-bold text-gray-900 mb-6">🚇 하이난 교통 정보</h2>
+      <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700">
+        <li><strong>고속철도:</strong> 하이난에는 하이커우, 보아오, 싼야 및 대부분의 도시를 연결하는 순환 고속철도가 있습니다. 열차는 자주 운행하며 저렴합니다(하이커우 → 싼야 ~¥100, 1.5시간).</li>
+        <li><strong>택시 / 디디:</strong> <a href="/ko/transport/didi/" class="text-blue-600 hover:underline">DiDi 앱</a> 또는 Alipay/WeChat 미니 프로그램을 통해 쉽게 호출하세요.</li>
         <li><strong>렌터카:</strong> 국제운전면허증 + 중국어 번역본으로 가능</li>
-        <li><strong>버스:</strong> 저렴하지만 느림, 대부분의 관광지 노선 있음</li>
+        <li><strong>버스:</strong> 저렴하지만 느리며, 대부분의 관광지를 연결합니다</li>
       </ul>
     </section>
 
     <!-- Where to Stay -->
     <section class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">숙소 안내</h2>
-      <div class="bg-white rounded-xl border border-gray-200 overflow-x-auto mb-4">
-        <table class="w-full text-sm">
-          <thead>
-            <tr class="bg-gray-50 border-b border-gray-200">
-              <th class="text-left px-5 py-3 font-semibold text-gray-700">예산</th>
-              <th class="text-left px-5 py-3 font-semibold text-gray-700">싼야</th>
-              <th class="text-left px-5 py-3 font-semibold text-gray-700">하이커우</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-medium">💰 저예산 (100~200위안)</td>
-              <td class="px-5 py-3">다둥하이 지역 호스텔</td>
-              <td class="px-5 py-3">치러우 지역 게스트하우스</td>
-            </tr>
-            <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-medium">💰💰 중급 (300~600위안)</td>
-              <td class="px-5 py-3">야롱베이 리조트 (중급)</td>
-              <td class="px-5 py-3">미션 힐스 지역 호텔</td>
-            </tr>
-            <tr>
-              <td class="px-5 py-3 font-medium">💰💰💰 고급 (800위안+)</td>
-              <td class="px-5 py-3">아틀란티스, 에디션, 리츠칼튼 (하이탕베이)</td>
-              <td class="px-5 py-3">힐튼, 메리어트 (시내)</td>
-            </tr>
-          </tbody>
-        </table>
+      <h2 id="where-to-stay" class="text-3xl font-bold text-gray-900 mb-6">🏨 숙소 추천</h2>
+      <p class="text-gray-700 mb-6">하이난 리조트는 일반적으로 동남아시아의 동등한 품질보다 저렴합니다. 야룽베이의 ¥500/박 객실은 종종 조식을 포함하고 전용 해변 공간이 있습니다.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">💰 저예산 (¥100-200)</h3>
+          <p class="text-gray-600 text-sm">다둥하이 지역 호스텔 (싼야) · 치러우 지역 게스트하우스 (하이커우)</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">💰💰 중간 (¥300-600)</h3>
+          <p class="text-gray-600 text-sm">야룽베이 중급 리조트 (싼야) · 미션 힐스 지역 호텔 (하이커우)</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">💰💰💰 프리미엄 (¥800+)</h3>
+          <p class="text-gray-600 text-sm">Atlantis, Edition, Ritz-Carlton — 하이탕베이 (싼야) · Hilton, Marriott 시내 (하이커우)</p>
+        </div>
       </div>
-      <p class="text-sm text-gray-600">하이난 리조트는 일반적으로 동남아시아의 동등한 품질보다 저렴합니다. 야롱베이의 500위안/박 객실은 종종 조식이 포함되어 있고 전용 해변 구역이 있습니다.</p>
+    </section>
+
+    <!-- What to Eat -->
+    <section class="mb-12">
+      <h2 id="what-to-eat" class="text-3xl font-bold text-gray-900 mb-6">🍜 하이난에서 먹을 것</h2>
+      <p class="text-lg leading-relaxed text-gray-700 md:col-span-2 mb-0">하이난의 음식은 신선한 열대 풍미가 전부입니다 — 해산물, 코코넛, 쌀이 많이 사용됩니다.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/hainan/wenchang-chicken.webp" alt="하이난 원창 치킨" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">원창 치킨</h3>
+          <p class="text-gray-700">하이난의 대표 요리 — 실키한 껍질과 은은하게 달콤한 고기를 가진 데친 방목 닭고기. 생강-파 기름 딥핑 소스가 진짜 스타로, 맑고 강렬합니다. 가장 좋은 버전은 원창 시 자체(하이커우에서 1시간)에서 찾을 수 있는데, 닭고기 밥 수프와 함께 간단한 냉채로 제공됩니다. 이것을 먹어보기 전까지는 진정한 하이난을 맛본 게 아닙니다.</p>
+        </div>
+      </div>
+
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/hainan/jiaji-duck.webp" alt="하이난 자지 오리" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">자지 오리</h3>
+          <p class="text-gray-700">하이난 요리의 숨은 영웅 — 오리를 고기가 뼈에서 발라질 때까지 천천히 조려 육수가 진한 호박색 액체로 변합니다. 조리는 속일 정도로 간단합니다: 오리, 물, 소금, 그리고 은은한 아니스와 생강의 온기를 위한 중국 약초. 고기를 발효 콩 페이스트와 칠리에 찍어 먹으면 완전한 효과를 느낄 수 있습니다. 가장 순수한 하이난식 가정 요리로, 보아오 근처 자지 지역에서 가장 맛있게 먹을 수 있습니다.</p>
+        </div>
+      </div>
+
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/hainan/hainan-noodles.webp" alt="하이난 국수" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">하이난 국수</h3>
+          <p class="text-gray-700">섬의 아침을 책임지는 국수 — 돼지 뼈, 말린 새우, 오징어로 만든 가벼운 육수에 가느다란 쌀국수를 넣고, 튀긴 마늘과 파를 얹습니다. 두 가지 스타일: 탕몐(국물 버전, 클래식 아침 그릇)과 반몐(걸쭉한 짭짤한 소스의 비빔 스타일). 한 숟가락의 현지 고추 페이스트를 넣으면 모든 하이난 사람들이 이렇게 하루를 시작하는지 이해하게 됩니다.</p>
+        </div>
+      </div>
+
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/hainan/seafood-market.webp" alt="하이난 해산물 시장" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">해산물 시장 체험</h3>
+          <p class="text-gray-700">그 자체로 오후 활동입니다 — 싼야의 해산물 시장에 가서 수조에서 살아있는 사마귀 새우, 꽃게, 농어를 고른 후, 위층으로 가져가 바로 조리해 달라고 하세요. 마늘과 칠리에 굽거나, 생강과 파로 찌세요. 1인당 약 ¥100-150이면 풍성한 식사가 가능하며, 사마귀 새우만으로도 방문할 가치가 있습니다 — 냉동 수입품은 따라올 수 없는 단맛이 있습니다.</p>
+        </div>
+      </div>
+
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/hainan/coconut-rice.webp" alt="하이난 코코넛 밥" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">코코넛 밥</h3>
+          <p class="text-gray-700">신선한 코코넛 안에 코코넛 밀크와 판단 잎과 함께 찐 찹쌀 — 향긋하고 약간 달콤하며 거의 푸딩처럼 부드럽습니다. 겉면은 섬세한 크러스트로 캐러멜화되며, 가장 좋은 버전에는 코코넛 과육이 섞여 있습니다. 길거리 노점상이 바나나 잎에 싸서 팝니다 — 원창 야시장에서 찾아보세요.</p>
+        </div>
+      </div>
+
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/hainan/qingbuliang.webp" alt="하이난 칭부량" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">칭부량</h3>
+          <p class="text-gray-700">하이난의 열대 더위에 대한 대답 — 코코넛 밀크에 쫄깃한 토란, 팥, 수박, 알로에 베라 젤리, 해초 녹말 '국수'가 들어간 빙수 그릇으로, 가장 만족스럽게 목으로 넘어갑니다. 달지만 느끼하지 않고, 크리미하지만 가볍습니다. 각 노점마다 자신만의 버전이 있습니다(아이스크림을 넣거나 땅콩을 으깨 넣기도 함). 한 그릇에 약 ¥10, 습도가 치솟는 싼야 해변가 야시장에서 가장 즐기기 좋습니다.</p>
+        </div>
+      </div>
+        </div>
+
     </section>
 
     <!-- Visa-Free Rules -->
     <section class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">무비자 규정 — 꼭 알아야 할 사항</h2>
+      <h2 id="visa-rules" class="text-3xl font-bold text-gray-900 mb-4">무비자 규정 — 꼭 알아야 할 사항</h2>
       <div class="bg-white rounded-xl border border-gray-200 overflow-x-auto mb-6">
         <table class="w-full text-sm">
           <thead>
@@ -320,20 +441,20 @@ const readTime = '7분';
               <td class="px-5 py-3">최대 <strong>30일</strong> — 도착 다음 날부터 계산</td>
             </tr>
             <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-medium">투어 그룹이 필요한가요?</td>
-              <td class="px-5 py-3"><strong>아니요</strong> — 개인 여행자도 가능합니다</td>
+              <td class="px-5 py-3 font-medium">여행 단체가 필요한가요?</td>
+              <td class="px-5 py-3"><strong>아니요</strong> — 개인 여행자도 가능</td>
             </tr>
             <tr class="border-b border-gray-100">
               <td class="px-5 py-3 font-medium">연장할 수 있나요?</td>
-              <td class="px-5 py-3">가능합니다. 하이난 현지 출입국 사무소에서 신청하세요</td>
+              <td class="px-5 py-3">가능할 수 있음, 하이난 현지 출입국 사무소에 신청</td>
             </tr>
             <tr class="border-b border-gray-100">
               <td class="px-5 py-3 font-medium">중국 본토를 방문할 수 있나요?</td>
-              <td class="px-5 py-3"><strong>아니요</strong> — 이 정책은 하이난 섬만 적용됩니다</td>
+              <td class="px-5 py-3"><strong>아니요</strong> — 이 정책은 하이난 섬만 해당</td>
             </tr>
             <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-medium">하이난 입국 후 홍콩 갔다가 다시 올 수 있나요?</td>
-              <td class="px-5 py-3">네 — 재입국할 때마다 30일 시계가 리셋됩니다</td>
+              <td class="px-5 py-3 font-medium">하이난 입국 후 홍콩 갔다가 다시 돌아올 수 있나요?</td>
+              <td class="px-5 py-3">네 — 매번 입국 시 30일 시계가 리셋됩니다</td>
             </tr>
             <tr>
               <td class="px-5 py-3 font-medium">체류 기간을 초과하면?</td>
@@ -346,32 +467,32 @@ const readTime = '7분';
       <p class="font-semibold text-gray-900 mb-3">입국 요건:</p>
       <ol class="list-disc pl-6 space-y-1.5 text-gray-700">
         <li>✅ 6개월 이상 유효한 여권</li>
-        <li>✅ 30일 이내 귀국 또는 계속 여행 항공권</li>
+        <li>✅ 30일 이내 왕복 또는 계속 여행 티켓</li>
         <li>✅ 호텔 예약 (권장)</li>
-        <li>✅ 입국 카드 (비행기에서 제공 또는 <a href="/ko/visa/arrival-card/" class="text-blue-600 hover:underline">온라인 작성</a>)</li>
+        <li>✅ 입국 카드 (비행기에서 받거나 <a href="/ko/visa/arrival-card/" class="text-blue-600 hover:underline">온라인 작성</a>)</li>
       </ol>
     </section>
 
     <!-- Practical Tips -->
     <section class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">하이난 실용 팁</h2>
+      <h2 id="tips" class="text-3xl font-bold text-gray-900 mb-4">하이난 실용 팁</h2>
       <ol class="list-decimal pl-6 space-y-2 text-gray-700">
-        <li><strong>알리페이 또는 위챗페이로 결제하세요</strong> — 비행기 타기 전에 설정하세요. 하이난의 대부분 장소는 무현금입니다. <a href="/ko/payment/payment-guide/" class="text-blue-600 hover:underline">중국 결제 방법</a> 가이드를 참고하세요.</li>
-        <li><strong>VPN은 여전히 필요합니다</strong> — 구글, 왓츠앱, 인스타그램은 VPN 없이 작동하지 않습니다. 도착 전에 <a href="/ko/life/best-vpns/" class="text-blue-600 hover:underline">VPN을 설정</a>하세요.</li>
-        <li><strong>SIM 카드/eSIM</strong> — 온라인(airalo, Holafly) 또는 공항에서 구매하세요. <a href="/ko/life/best-sim-esim/" class="text-blue-600 hover:underline">SIM 가이드</a>를 참고하세요.</li>
-        <li><strong>언어</strong> — 하이난에서는 리조트 외부에서 영어가 널리 통하지 않습니다. 구글 번역기 또는 Pleco를 준비하세요.</li>
-        <li><strong>선크림 + 모기 퇴치제</strong> — 둘 다 연중 필수품입니다.</li>
-        <li><strong>팁</strong> — 예상하지 않습니다. <a href="/ko/payment/tipping/" class="text-blue-600 hover:underline">팁 가이드</a>를 참고하세요.</li>
+        <li><strong>Alipay 또는 WeChat Pay로 결제하세요</strong> — 비행기 타기 전에 설정하세요. 하이난의 대부분의 장소는 무현금입니다. <a href="/ko/payment/payment-guide/" class="text-blue-600 hover:underline">중국에서 결제하는 방법</a> 가이드를 참조하세요.</li>
+        <li><strong>VPN은 여전히 필요합니다</strong> — Google, WhatsApp, Instagram은 VPN 없이 작동하지 않습니다. 도착 전에 <a href="/ko/life/best-vpns/" class="text-blue-600 hover:underline">VPN을 설정</a>하세요.</li>
+        <li><strong>SIM 카드 / eSIM</strong> — 온라인(airalo, Holafly) 또는 공항에서 구매하세요. <a href="/ko/life/best-sim-esim/" class="text-blue-600 hover:underline">SIM 가이드</a>를 참조하세요.</li>
+        <li><strong>언어</strong> — 리조트 외부에서는 영어가 널리 통하지 않습니다. Google Translate 또는 Pleco를 준비하세요.</li>
+        <li><strong>자외선 차단제 + 모기 퇴치제</strong> — 둘 다 연중 필수품입니다.</li>
+        <li><strong>팁</strong> — 예상하지 않습니다. <a href="/ko/payment/tipping/" class="text-blue-600 hover:underline">팁 가이드</a>를 참조하세요.</li>
       </ol>
     </section>
 
     <!-- Related Guides -->
     <section class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6">📚 관련 가이드</h2>
+      <h2 id="related" class="text-2xl font-bold text-gray-900 mb-6">📚 관련 가이드</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <a href="/ko/visa/visa-free/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
-          <p class="font-bold text-gray-900 mb-1">중국 무비자 국가 목록 (2026)</p>
-          <p class="text-sm text-gray-600">하이난 전체 59개국 목록 보기</p>
+          <p class="font-bold text-gray-900 mb-1">중국 무비자 국가 리스트 (2026)</p>
+          <p class="text-sm text-gray-600">하이난 59개국 전체 목록 보기</p>
         </a>
         <a href="/ko/visa/arrival-card/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
           <p class="font-bold text-gray-900 mb-1">입국 카드 온라인 제출 방법</p>
@@ -383,7 +504,7 @@ const readTime = '7분';
         </a>
         <a href="/ko/cities/shanghai-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
           <p class="font-bold text-gray-900 mb-1">상하이 여행 가이드</p>
-          <p class="text-sm text-gray-600">외국인에게 가장 친근한 도시</p>
+          <p class="text-sm text-gray-600">외국인에게 가장 친화적인 도시</p>
         </a>
       </div>
     </section>
@@ -393,7 +514,7 @@ const readTime = '7분';
       <h3 class="text-xl font-bold text-gray-900 mb-4">출처</h3>
       <ul class="space-y-2 text-sm text-gray-600">
         <li><a href="https://en.nia.gov.cn/n147418/n147463/c180637/content.html" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">국가이민관리국 — 지역별 무비자 정책 (하이난 30일)</a></li>
-        <li><a href="https://en.nia.gov.cn/n147418/n147463/c191648/content.html" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">국가이민관리국 — 외국인을 위한 중국 입국 촉진 정책</a></li>
+        <li><a href="https://en.nia.gov.cn/n147418/n147463/c191648/content.html" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">국가이민관리국 — 외국인을 위한 중국 입국 완화 정책</a></li>
       </ul>
     </div>
 

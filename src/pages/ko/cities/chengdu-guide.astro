@@ -1,225 +1,225 @@
 ---
 import Layout from '@layouts/Layout.astro';
-const title = "청두 여행 가이드: 판다, 매운 음식 & 여유로운 삶";
-const description = "청두 방문 — 자이언트 판다를 보고, 세계에서 가장 매운 음식을 먹고, 쓰촨의 느긋한 라이프스타일을 경험하세요.";
+const title = "청두 여행 가이드: 판다, 매운 음식 & 느린 삶";
+const description = "청두 방문 — 자이언트 판다를 보고, 세계에서 가장 매운 음식을 먹고, 쓰촨의 여유로운 라이프스타일을 경험하세요.";
 ---
 
 <Layout title={title} description={description} lang="ko">
   <article class="max-w-4xl mx-auto px-6 py-12">
     <header class="mb-12">
       <p class="text-sm text-gray-500 mb-3">🏙️ 청두</p>
-      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">청두 여행 가이드: 판다, 매운 음식 & 여유로운 삶</h1>
-      <p class="text-xl text-gray-600 mb-6">청두 방문 — 자이언트 판다를 보고, 세계에서 가장 매운 음식을 먹고, 쓰촨의 느긋한 라이프스타일을 경험하세요.</p>
-      <div class="flex items-center gap-4 text-sm text-gray-500"><span>📅 최종 업데이트: 2026년 6월</span><span>⏱️ 8분 소요</span></div>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">청두 여행 가이드: 판다, 매운 음식 & 느린 삶</h1>
+      <p class="text-xl text-gray-600 mb-6">청두 방문 — 자이언트 판다를 보고, 세계에서 가장 매운 음식을 먹고, 쓰촨의 여유로운 라이프스타일을 경험하세요.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500"><span>📅 최종 업데이트: 2026년 6월</span><span>⏱️ 8분</span></div>
     </header>
 
     <div class="bg-gradient-to-r from-orange-50 to-red-50 border-l-4 border-orange-500 rounded-r-2xl p-8 mb-12 not-prose">
-      <h2 class="text-2xl font-bold text-orange-900 mb-4">⚡ 한 줄 요약</h2>
-      <p class="text-lg text-orange-800 leading-relaxed">청두는 <strong>판다와 쓰촨 고추의 땅</strong>입니다. 아침에는 자이언트 판다가 대나무 숲에서 뒹구는 모습을 보고, 점심에는 귀가 울릴 정도로 매운 음식을 먹고, 오후에는 1,000년 된 사원에서 차를 마십니다. 이 도시는 여유로운 생활 속도로 유명합니다 — 현지인들은 청두를 '행복의 도시'라고 부르며, 도착하는 순간 그 느낌을 받을 것입니다.</p>
+      <h2 class="text-2xl font-bold text-orange-900 mb-4">⚡ Quick Answer</h2>
+      <p class="text-lg text-orange-800 leading-relaxed">청두는 <strong>판다와 쓰촨 고추의 땅</strong>입니다. 아침에는 대나무 숲에서 자이언트 판다가 뒹구는 모습을 보고, 점심에는 귀에서 울릴 정도로 매운 음식을 먹고, 오후에는 1,000년 된 사원에서 차를 마십니다. 이 도시는 여유로운 생활 속도로 유명합니다 — 현지인들은 청두를 '행복의 도시'라고 부르며, 도착하는 순간 그 이유를 느낄 수 있습니다.</p>
     </div>
 
     <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
       <h3 class="text-lg font-bold text-gray-900 mb-4">📋 목차</h3>
       <ul class="space-y-3">
         <li><a href="#why-visit" class="text-blue-600 hover:underline">🐼 청두에 가야 하는 이유</a></li>
-        <li><a href="#how-many-days" class="text-blue-600 hover:underline">📅 몇 일이 필요할까요?</a></li>
-        <li><a href="#attractions" class="text-blue-600 hover:underline">🎯 주요 관광지</a></li>
+        <li><a href="#how-many-days" class="text-blue-600 hover:underline">📅 며칠이 필요할까?</a></li>
+        <li><a href="#attractions" class="text-blue-600 hover:underline">🎯 주요 명소</a></li>
         <li><a href="#getting-around" class="text-blue-600 hover:underline">🚇 교통 정보</a></li>
-        <li><a href="#where-to-stay" class="text-blue-600 hover:underline">🏨 추천 숙소</a></li>
-        <li><a href="#what-to-eat" class="text-blue-600 hover:underline">🍜 추천 음식</a></li>
+        <li><a href="#where-to-stay" class="text-blue-600 hover:underline">🏨 숙소 추천</a></li>
+        <li><a href="#what-to-eat" class="text-blue-600 hover:underline">🍜 먹거리</a></li>
       </ul>
     </nav>
 
     <h2 id="why-visit" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🐼 청두에 가야 하는 이유</h2>
-    <p class="text-lg leading-relaxed text-gray-700 mb-12">청두는 쓰촨성의 수도이자 중국 서부 자연 경관의 관문입니다. 전통과 현대성이 자연스럽게 공존하는 곳 — 고대 사원이 트렌디한 예술 지구 옆에 있고, 세계에서 가장 매운 음식이 대대로 영업해온 식당에서 제공됩니다. 생활 속도가 유명할 정도로 느립니다: 청두는 중국의 어떤 도시보다 찻집이 많으며, 사람들은 실제로 그곳에서 시간을 보냅니다.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-12">청두는 쓰촨성의 수도이자 중국 서부 자연 경관의 관문입니다. 전통과 현대가 자연스럽게 균형을 이루는 곳 — 고대 사원이 트렌디한 예술 지구 옆에 자리잡고, 세계에서 가장 매운 음식이 여러 대를 이어온 식당에서 제공됩니다. 생활 속도는 유명할 정도로 느립니다: 청두는 중국의 어떤 도시보다 찻집이 많으며, 사람들은 실제로 그곳을 이용합니다.</p>
 
-    <h2 id="how-many-days" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📅 몇 일이 필요할까요?</h2>
+    <h2 id="how-many-days" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📅 며칠이 필요할까?</h2>
     <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700 mb-4">
-      <li><strong>3~4일 (기본):</strong> 판다, 진리, 우허우 사원, 그리고 본격적인 먹방</li>
-      <li><strong>5~7일 (여유):</strong> 러산 대불(1일) 또는 어메이 산(2일) 추가</li>
-      <li><strong>7일 이상 (심층):</strong> 주자이거우 국립공원 추가(3~4일)</li>
+      <li><strong>3–4일 (기본):</strong> 판다, 진리, 우허우 사원, 본격적인 먹방</li>
+      <li><strong>5–7일 (여유):</strong> 러산 대불(1일) 또는 어메이산(2일) 추가</li>
+      <li><strong>7일 이상 (심층):</strong> 주자이거우 국립공원(3~4일) 추가</li>
     </ul>
-    <p class="text-lg text-gray-700 mb-12">시간이 더 있다면, 쓰촨성은 중국에서 가장 장관인 풍경을 자랑합니다. 청두에서 약 1시간 30분 거리에 있는 러산의 대불은 높이 71m의 세계 최대 석불입니다. 모험을 좋아하는 여행자에게 주자이거우의 에메랄드빛 호수와 폭포는 잊을 수 없는 경험이지만 최소 3~4일이 필요합니다.</p>
+    <p class="text-lg text-gray-700 mb-12">시간이 더 있다면 쓰촨성은 중국에서 가장 장관인 풍경을 자랑합니다. 청두에서 약 1시간 30분 거리에 있는 러산의 대불은 높이 71m의 세계 최대 석불입니다. 모험을 좋아하는 여행자라면 주자이거우의 청록색 호수와 폭포가 잊지 못할 경험을 선사하지만, 최소 3-4일이 필요합니다.</p>
 
-    <!-- ==================== 관광지 ==================== -->
-    <h2 id="attractions" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎯 주요 관광지</h2>
+    <!-- ==================== ATTRACTIONS ==================== -->
+    <h2 id="attractions" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎯 주요 명소</h2>
 
-    <!-- 판다 기지 -->
+    <!-- Panda Base -->
     <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
       <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
         <img src="/images/chengdu/panda-base.webp" class="w-full h-auto object-cover" loading="lazy" />
       </div>
       <div class="order-1">
         <h3 class="text-xl font-bold text-gray-900 mb-2">청두 자이언트 판다 번식 연구 기지 (成都大熊猫繁育研究基地)</h3>
-        <p class="text-gray-700">전 세계에서 가장 많은 120마리 이상의 자이언트 판다가 살고 있는 곳입니다. 아침 8시까지 도착해야 해요 — 8시부터 10시까지는 먹이 주는 시간이라 판다들이 가장 활발하게 움직입니다. 택시로 시내에서 약 30분 거리. 오후에는 건너뛰세요 — 더위에 모두 낮잠을 자고 있을 테니까요.</p>
+        <p class="text-gray-700">지구상 어디보다 많은 약 120마리의 자이언트 판다가 살고 있습니다. 아침 8시까지 도착하여 오전 먹이 주는 시간(8-10시)에 맞추세요 — 이때 판다가 가장 활발하고 장난기가 많습니다. 시내에서 택시로 약 30분 거리입니다. 오후 방문은 피하세요 — 더위에 낮잠을 잘 것입니다.</p>
       </div>
       <div class="clear-both hidden md:block"></div>
     </div>
 
-    <!-- 진리 -->
+    <!-- Jinli -->
     <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
       <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
         <img src="/images/chengdu/jinli.webp" class="w-full h-auto object-cover" loading="lazy" />
       </div>
       <div class="order-1">
-        <h3 class="text-xl font-bold text-gray-900 mb-2">진리 고대 거리 (锦里)</h3>
-        <p class="text-gray-700">대부분의 관광 거리는 테마파크 같지만, 진리는 정말 살아있어요. 청나라 양식으로 지어진 이 보행자 거리는 우허우 사원 바로 옆에 있으며, 꼬치 굽는 냄새와 설탕 그림, 찻집에서 흘러나오는 쓰촨 오페라 공연 소리로 가득합니다. 밤에 방문하세요 — 빨간 등불이 켜지고 인파가 좀 줄어듭니다.</p>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">진리 고가 (锦里)</h3>
+        <p class="text-gray-700">대부분의 관광 거리는 테마파크처럼 느껴지지만, 진리는 실제로 살아있습니다. 청나라 스타일로 지어진 이 보행자 전용 거리는 우허우 사원 바로 옆에 있으며, 지글지글 익는 꼬치구이, 설탕 그림, 찻집에서 흘러나오는 쓰촨 오페라 공연의 향기로 가득합니다. 붉은 등불이 켜지고 인파가 조금 줄어드는 밤에 방문하세요.</p>
       </div>
       <div class="clear-both hidden md:block"></div>
     </div>
 
-    <!-- 우허우 사원 -->
+    <!-- Wuhou Shrine -->
     <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
       <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
         <img src="/images/chengdu/wuhou-shrine.webp" class="w-full h-auto object-cover" loading="lazy" />
       </div>
       <div class="order-1">
         <h3 class="text-xl font-bold text-gray-900 mb-2">우허우 사원 (武侯祠)</h3>
-        <p class="text-gray-700">삼국 시대의 전설적인 전략가 제갈량을 기리는 사당으로, 1,800년의 역사가 깃들어 있습니다. 중심에는 붉은 벽과 대나무 길로 둘러싸인 제갈량의 무덤이 있어 마치 시간이 멈춘 듯한 분위기를 느낄 수 있어요. 본당의 석비와 동상도 꼭 보세요. 옆에 있는 진리와 함께 오후면 충분히 둘러볼 수 있습니다.</p>
+        <p class="text-gray-700">1,800년의 삼국지 역사 속에서도 그 이름이 여전히 울려 퍼지는 전설적인 책략가 제갈량을 기리는 사당입니다. 중심에는 붉은 벽과 대나무 길로 둘러싸인 제갈량의 무덤이 있어 전체가 시간이 멈춘 듯한 느낌을 줍니다. 본당의 석비와 조각상을 놓치지 마세요. 옆에 있는 진리와 함께 방문하면 하나의 오후에 두 곳을 다 둘러볼 수 있습니다.</p>
       </div>
       <div class="clear-both hidden md:block"></div>
     </div>
 
-    <!-- 콰이자이 샹쯔 -->
+    <!-- Kuanzhai Alley -->
     <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
       <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
         <img src="/images/chengdu/wide-narrow-alley.webp" class="w-full h-auto object-cover" loading="lazy" />
       </div>
       <div class="order-1">
         <h3 class="text-xl font-bold text-gray-900 mb-2">콰이자이 샹쯔 (宽窄巷子)</h3>
-        <p class="text-gray-700">세 개의 골목, 완전히 다른 세 가지 분위기. 넓은 골목은 관광객들로 북적이고, 좁은 골목은 부티크와 갤러리, 청나라 정원에 자리잡은 카페가 숨어 있어요. 그리고 우물 골목은 가장 조용한 곳으로, 주택가와 사람이 적어 산책하기 좋아요. 넓은 골목에서 시작해서 지루해지면 좁은 골목으로 도망치세요.</p>
+        <p class="text-gray-700">세 개의 골목, 세 가지 완전히 다른 분위기. 콰이자이(넓은 골목)는 관광객의 성지 — 상점, 간식, 커플룩을 입은 인파. 자이샹(좁은 골목)이 진짜 좋은 곳입니다: 청나라 안뜰에 자리잡은 부티크, 미술관, 카페. 그리고 징샹(우물 골목)은 세 골목 중 가장 조용하며, 주택가와 적은 사람들로 이루어져 있습니다. 넓은 골목에서 시작해서 금방 질리면 좁은 골목으로 도망치세요.</p>
       </div>
       <div class="clear-both hidden md:block"></div>
     </div>
 
-    <!-- 런민 공원 -->
+    <!-- People's Park -->
     <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
       <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
         <img src="/images/chengdu/people-park.webp" class="w-full h-auto object-cover" loading="lazy" />
       </div>
       <div class="order-1">
-        <h3 class="text-xl font-bold text-gray-900 mb-2">런민 공원 (人民公园)</h3>
-        <p class="text-gray-700">청두의 느긋한 삶이 실제로 펼쳐지는 곳이에요. 야외 찻집에서 대나무 의자에 앉아 자스민 차를 주문하고 구경만 해보세요 — 어르신들이 마작을 하고, 퇴직한 부부가 춤을 추고, 아줌마들이 오페라를 부릅니다. '중매 코너'도 놓치지 마세요 — 부모님들이 자식의 월급, 키, 재산을 상품 설명처럼 적어 놓은 광고를 볼 수 있어요. 주말에 가면 그 진풍경을 제대로 볼 수 있습니다.</p>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">인민공원 (人民公园)</h3>
+        <p class="text-gray-700">청두의 느린 삶이라는 클리셰가 현실이 되는 곳입니다. 야외 찻집 중 한 곳에서 대나무 의자를 잡고 재스민 차 한 잔을 주문한 후 그냥 구경하세요 — 노인들이 마작을 하고, 은퇴한 부부가 춤을 추고, 아줌마들이 오페라를 부릅니다. 부모들이 자녀의 연애 광고를 연봉, 키, 재산 정보를 제품 스펙처럼 적어 게시하는 '중매 코너'도 놓치지 마세요. 주말에 방문하면 완전한 광경을 볼 수 있습니다.</p>
       </div>
       <div class="clear-both hidden md:block"></div>
     </div>
 
-    <!-- 칭청 산 -->
-    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+    <!-- Mount Qingcheng -->
+    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-12 overflow-hidden">
       <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
         <img src="/images/chengdu/qingcheng-mountain.webp" class="w-full h-auto object-cover" loading="lazy" />
       </div>
       <div class="order-1">
-        <h3 class="text-xl font-bold text-gray-900 mb-2">칭청 산 (青城山)</h3>
-        <p class="text-gray-700">도교의 발상지 중 하나로, 1,800년의 역사를 자랑합니다. 산에는 '천하제일유(가장 고요한 곳)'라는 글귀가 새겨져 있는데, 그 이름값을 충분히 합니다. 시간이 부족하면 케이블카를 타고 올라가고, 여유가 있다면 대나무 숲 그늘진 길을 걸어 올라보세요. 어떤 방법을 선택하든 정상의 고대 사원은 볼 가치가 있어요. 청두에서 기차로 약 1시간 거리.</p>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">칭청산 (青城山)</h3>
+        <p class="text-gray-700">1,800년의 역사를 가진 도교의 발상지 중 하나입니다. 산에는 '천하에서 가장 고요한 곳'이라는 글귀가 새겨져 있으며, 그 이름값을 톡톡히 합니다. 시간이 부족하면 케이블카를 타고 올라가고, 완전한 경험을 원한다면 대나무 그늘진 등산로를 걸어 올라가세요. 어느 쪽이든, 정상의 고대 사원은 방문할 가치가 있습니다. 청두에서 기차로 약 1시간 거리입니다.</p>
       </div>
       <div class="clear-both hidden md:block"></div>
     </div>
 
-    <!-- 두장옌 -->
+    <!-- Dujiangyan -->
     <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-12 overflow-hidden">
       <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
         <img src="/images/chengdu/dujiangyan.webp" class="w-full h-auto object-cover" loading="lazy" />
       </div>
       <div class="order-1">
-        <h3 class="text-xl font-bold text-gray-900 mb-2">두장옌 (都江堰)</h3>
-        <p class="text-gray-700">2,300년이 지난 지금도 사용 중인 공학의 기적입니다. 기원전 256년 이빙 부자가 민강을 다스리기 위해 만들었는데, 댐 하나 없이 — 강둑 모양과 인공 섬을 교묘하게 설계해 물줄기를 갈라 농업용수로로 보냅니다. 그 결과 청두 평원은 중국에서 가장 비옥한 지역이 되었고, 2천 년 넘게 그 상태를 유지하고 있어요. 칭청 산과 완벽한 조합입니다 — 버스나 택시로 15분 거리라 하루에 두 곳을 다 둘러볼 수 있어요. 강을 가로지르는 안란 현수교도 걸어볼 만합니다. 뒤로 펼쳐진 산을 배경으로 한 풍경이 장관이에요.</p>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">두장옌 관개 시스템 (都江堰)</h3>
+        <p class="text-gray-700">2,300년 된 공학적 경이로움으로, 오늘날에도 여전히 사용되고 있습니다. 기원전 256년 이빙과 그의 아들이 민강을 제어하기 위해 건설한 이 시스템은 단 하나의 댐도 없이 물을 우회시킵니다 — 교묘하게 설계된 강둑과 물줄기를 관개 수로로 나누는 인공 섬만으로 말이죠. 그 결과 청두 평원은 중국에서 가장 비옥한 지역 중 하나가 되었으며, 2,000년 이상 그 상태를 유지하고 있습니다. 칭청산과 완벽하게 어울리는 조합입니다 — 버스나 택시로 단 15분 거리이므로 하루에 두 곳을 모두 방문할 수 있습니다. 강을 가로지르는 안란 현수교는 뒤쪽 산의 전망을 감상하기 위해 걸어갈 가치가 있습니다.</p>
       </div>
       <div class="clear-both hidden md:block"></div>
     </div>
 
     <h2 id="getting-around" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🚇 교통 정보</h2>
     <ul class="list-disc pl-6 space-y-3 text-lg text-gray-700 mb-12">
-      <li><strong>지하철:</strong> 6개 노선이 모든 주요 관광지와 판다 기지를 연결합니다. 깨끗하고 현대적이며 저렴합니다. 일반적인 팁은 <a href="/ko/transport/metro-bus/" class="text-blue-600 hover:underline">중국 주요 도시 지하철 & 버스 가이드</a>를 참고하세요.</li>
-      <li><strong>디디:</strong> 매우 저렴 — 시내 대부분의 이동은 20~40위안. <a href="/ko/transport/didi/" class="text-blue-600 hover:underline">외국인이 디디 사용하는 방법</a>으로 미리 설정하세요.</li>
-      <li><strong>자전거:</strong> 청두는 평탄하고 전용 자전거 도로가 있습니다. 공유 자전거가 곳곳에 있습니다.</li>
-      <li><strong>고속철도:</strong> 청두 동역에서 시안(3시간 30분)과 충칭(1시간 30분)으로 연결됩니다. 예약 방법은 <a href="/ko/transport/high-speed-rail/" class="text-blue-600 hover:underline">중국 고속철도 예약 및 탑승 방법</a>을 참고하세요.</li>
+      <li><strong>지하철:</strong> 6개 노선이 모든 주요 명소와 판다 기지를 연결합니다. 깨끗하고 현대적이며 저렴합니다. 일반 팁은 <a href="/ko/transport/metro-bus/" class="text-blue-600 hover:underline">중국 주요 도시 지하철 & 버스 가이드</a>를 확인하세요.</li>
+      <li><strong>디디(Didi):</strong> 매우 저렴합니다 — 시내 대부분의 이동이 20-40 RMB입니다. <a href="/ko/transport/didi/" class="text-blue-600 hover:underline">외국인이 중국에서 DiDi 사용하는 방법</a>으로 미리 설정하세요.</li>
+      <li><strong>자전거:</strong> 청두는 평평하고 전용 자전거 도로가 있습니다. 공유 자전거가 곳곳에 있습니다.</li>
+      <li><strong>고속철도:</strong> 청두 동역에서 시안(3.5시간)과 충칭(1.5시간)으로 연결됩니다. 예매 방법은 <a href="/ko/transport/high-speed-rail/" class="text-blue-600 hover:underline">중국 고속철도 예약 및 탑승 방법</a>을 참조하세요.</li>
     </ul>
 
-    <h2 id="where-to-stay" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏨 추천 숙소</h2>
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">진장 구 — 첫 방문객 추천</h3><p class="text-gray-700">춘시루와 타이구리 주변 중심 지역. 쇼핑, 식당, 지하철 모두 도보 거리.</p></div>
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">칭양 구 — 문화 애호가 추천</h3><p class="text-gray-700">우허우 사원, 진리, 콰이자이 샹쯔 인근. 전통적인 분위기와 많은 찻집.</p></div>
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12"><h3 class="text-xl font-bold text-gray-900 mb-2">우허우 구 — 미식가 추천</h3><p class="text-gray-700">미식의 중심지. 청두 최고의 식당과 나이트라이프까지 도보 거리.</p></div>
+    <h2 id="where-to-stay" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏨 숙소 추천</h2>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">진장구 (锦江区) — 첫 방문객에게 최적</h3><p class="text-gray-700">춘시루와 타이쿠리 주변 중심 지역. 쇼핑, 식사, 지하철이 도보 거리 내에 있습니다.</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">칭양구 (青羊区) — 문화 애호가에게 최적</h3><p class="text-gray-700">우허우 사원, 진리, 쿠안자이 샹쯔 인근. 많은 찻집이 있는 전통적인 분위기.</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12"><h3 class="text-xl font-bold text-gray-900 mb-2">우허우구 (武侯区) — 미식가에게 최적</h3><p class="text-gray-700">미식 씬의 중심지. 청두 최고의 레스토랑과 나이트라이프까지 도보 거리.</p></div>
 
-    <!-- ==================== 추천 음식 ==================== -->
-    <h2 id="what-to-eat" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🍜 추천 음식</h2>
-    <p class="text-lg leading-relaxed text-gray-700 mb-6">청두는 쓰촨 요리의 타의 추종을 불허하는 수도입니다 — 맵고, 뜨겁고, 잊을 수 없는 맛.</p>
+    <!-- ==================== WHAT TO EAT ==================== -->
+    <h2 id="what-to-eat" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🍜 먹거리</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">청두는 쓰촨 요리의 타의 추종을 불허하는 수도입니다 — 대담하고, 불 같으며, 잊을 수 없는 맛입니다.</p>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-      <!-- 마포두부 -->
+      <!-- Mapo Tofu -->
       <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
         <div class="flex items-center justify-center bg-gray-50 p-3">
           <img src="/images/chengdu/mapo-tofu.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
         </div>
         <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-900 mb-1">마포두부 (麻婆豆腐)</h3>
-          <p class="text-gray-600 text-base">부드러운 두부가 진홍색 소스에 잠겨 매콤하고 얼얼함이 공존합니다. 쓰촨 후추가 주는 마비감이 한 입 먹을 때마다 쌓여가는데, 이마에 땀이 나도 계속 수저를 가져가게 만드는 마력이 있어요. 입에서 살살 녹는 두부와 걸쭉한 소스의 대비가 이 요리의 전부입니다. 청두의 어느 쓰촨 식당에서나 찾을 수 있어요.</p>
+          <h3 class="text-lg font-bold text-gray-900 mb-1">마파두부 (麻婆豆腐)</h3>
+          <p class="text-gray-600 text-base">불 같으면서도 마비시키는 진홍색 소스에 둥둥 떠 있는 실키한 두부 조각. 쓰촨 후추가 한 입 먹을 때마다 혀에 전율을 남기며, 이마에 땀이 맺히는데도 숟가락이 저절로 가게 만듭니다. 입에서 녹는 부드러운 두부와 거칠고 강렬한 소스의 대비가 이 요리의 전부입니다. 청두의 거의 모든 쓰촨 레스토랑에서 찾을 수 있습니다.</p>
         </div>
       </div>
 
-      <!-- 궁바오지딩 -->
+      <!-- Kung Pao Chicken -->
       <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
         <div class="flex items-center justify-center bg-gray-50 p-3">
           <img src="/images/chengdu/kung-pao-chicken.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
         </div>
         <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-900 mb-1">궁바오지딩 (宫保鸡丁)</h3>
-          <p class="text-gray-600 text-base">닭고기, 바삭한 땅콩, 마른 고추 — 겉보기보다 덜 맵습니다. 비결은 균형 — 식초와 설탕의 새콤달콤함이 먼저 오고, 고추의 따뜻한 매운맛이 천천히 올라오며, 땅콩의 고소함이 마무리합니다. 외국인에게 가장 잘 알려진 쓰촨 요리로, 그럴 만한 이유가 있죠. 마른 고추가 통째로 들어간 현지 스타일을 찾아보세요.</p>
+          <h3 class="text-lg font-bold text-gray-900 mb-1">꿔바오지딩 (宫保鸡丁)</h3>
+          <p class="text-gray-600 text-base">깍둑썰기한 닭고기, 바삭한 땅콩, 그리고 보기보다 맵지 않은 마른 고추의 조화. 비결은 균형입니다 — 식초와 설탕 소스의 새콤달콤한 맛, 이어 고추의 천천히 올라오는 온기, 그리고 땅콩의 고소한 바삭함이 조화를 이룹니다. 외국인들에게 가장 잘 알려진 요리이며, 그럴 만한 이유가 있습니다. 먹으면서 골라내는 통마른 고추가 들어간 버전을 찾아보세요 — 현지인들이 제대로 먹는 방식입니다.</p>
         </div>
       </div>
 
-      <!-- 단단면 -->
+      <!-- Dan Dan Noodles -->
       <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
         <div class="flex items-center justify-center bg-gray-50 p-3">
           <img src="/images/chengdu/dan-dan-noodles.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
         </div>
         <div class="p-4">
           <h3 class="text-lg font-bold text-gray-900 mb-1">단단면 (担担面)</h3>
-          <p class="text-gray-600 text-base">가장 원조격인 길거리 면 요리. 다진 돼지고기, 절임 채소, 고추기름이 그릇 밑에 깔려 있어요 — 직접 비벼서 모든 면발에 짭짤하고 매콤한 소스를 골고루 코팅해서 먹습니다. 절임 채소가 주는 깊은 감칠맛이 매운맛을 중화시켜줘요. 빨리 비벼서 더 빨리 먹어치우는 게 정답입니다.</p>
+          <p class="text-gray-600 text-base">오리지널 길거리 음식 면입니다. 그릇 바닥에는 다진 돼지고기, 절임 채소, 그리고 칠리 오일이 자리잡고 있습니다 — 직접 모든 것을 섞어 짭짤하고 매콤하며 마비시키는 소스로 모든 면발을 코팅합니다. 절임 채소가 매운맛을 중화시키는 깊은 흙내 나는 풍미를 더합니다. 빨리 비벼서 더 빨리 먹어치우세요.</p>
         </div>
       </div>
 
-      <!-- 훠궈 -->
+      <!-- Hotpot -->
       <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
         <div class="flex items-center justify-center bg-gray-50 p-3">
           <img src="/images/chengdu/hotpot.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
         </div>
         <div class="p-4">
           <h3 class="text-lg font-bold text-gray-900 mb-1">훠궈 (火锅)</h3>
-          <p class="text-gray-600 text-base">식사라기보다 2시간짜리 단체 활동에 가까워요. 끓는 고추 육수 냄비가 테이블 한가운데 있고, 모두가 각자 재료를 익혀 먹습니다 — 얇게 썬 소고기, 양, 감자, 채소, 두부 껍질 등. 핵심은 소스 스테이션 — 참기름, 다진 마늘, 고수, 식초를 섞어 매운맛을 중화시키는 거예요. 최소 3명이서 가야 여러 가지를 시킬 수 있고, 매운 걸 잘 못 먹는다면 위안양(반반 냄비)을 주문하세요.</p>
+          <p class="text-gray-600 text-base">이것은 식사가 아니라 2시간짜리 그룹 활동입니다. 칠리로 가득 찬 부글부글 끓는 육수 냄비가 테이블 중앙에 있고, 모두가 자신의 재료를 익힙니다: 얇게 썬 소고기, 양곱창, 감자, 채소, 두부 피. 진짜 비결은 딥핑 소스 스테이션입니다 — 참기름, 마늘, 고수, 식초를 섞어 매운맛을 식혀주세요. 최소 세 명 이상 가서 더 많은 메뉴를 주문하세요. 완전 매운맛을 견딜 수 없다면 위안양(갈라진 냄비)을 선택하세요.</p>
         </div>
       </div>
 
-      <!-- 후이궈로우 -->
+      <!-- Twice-Cooked Pork -->
       <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
         <div class="flex items-center justify-center bg-gray-50 p-3">
           <img src="/images/chengdu/twice-cooked-pork.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
         </div>
         <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-900 mb-1">후이궈로우 (回锅肉)</h3>
-          <p class="text-gray-600 text-base">삼겹살을 먼저 삶은 후 얇게 썰어 부추와 두반장(발효 고추장)으로 가장자리가 카라멜화될 때까지 볶습니다. 두 번 조리하는 방식이 고기에 독특한 식감을 줍니다 — 속은 부드럽고 겉은 바삭하면서 쫄깃해요. 쓰촨식 가정 요리의 정수로, 거의 모든 현지 식당 메뉴에서 찾을 수 있습니다.</p>
+          <h3 class="text-lg font-bold text-gray-900 mb-1">후이궈러우 (回锅肉)</h3>
+          <p class="text-gray-600 text-base">삼겹살을 먼저 삶은 후 얇게 썰어, 부추와 두반장(발효 고추 된장)과 함께 가장자리가 캐러멜화될 때까지 볶은 요리입니다. 두 번 조리하는 기술이 다른 방식으로는 얻을 수 없는 식감을 만들어냅니다 — 속은 부드럽고, 겉은 약간 바삭하고 쫄깃합니다. 쓰촨식 소울 푸드로, 가족 식탁에서 먹는 그런 요리입니다. 거의 모든 현지 식당 메뉴에서 찾을 수 있습니다.</p>
         </div>
       </div>
 
-      <!-- 푸치페이삔 -->
+      <!-- Fuqi Feipian -->
       <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
         <div class="flex items-center justify-center bg-gray-50 p-3">
           <img src="/images/chengdu/fuqi-feipian.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
         </div>
         <div class="p-4">
           <h3 class="text-lg font-bold text-gray-900 mb-1">푸치페이삔 (夫妻肺片)</h3>
-          <p class="text-gray-600 text-base">얇게 썬 쇠고기와 내장을 고추기름에 쓰촨 후추와 참깨를 듬뿍 넣어 버무린 냉채입니다. 이름은 '부부의 허파 조각'이라는 뜻이지만, 실제로 허파는 들어가지 않아요 — 1930년대에 이 음식을 포장마차에서 팔았던 부부 이야기에서 유래했습니다. 식감이 일품입니다 — 얇고 부드러운 고기 조각에 기름진 양념이 착 달라붙어 있어요. 현지 식당 냉채 코너에서 한 접시 집어보세요.</p>
+          <p class="text-gray-600 text-base">쓰촨 후추와 구운 참깨가 듬뿍 들어간 칠리 오일 드레싱에 버무린 차가운 소고기와 내장 요리입니다. 이름이 '부부의 허파 조각'으로 번역되지만, 실제로 허파는 들어가지 않습니다 — 1930년대 길거리 카트에서 이 음식을 팔았던 한 부부의 이야기에서 유래했습니다. 식감이 핵심입니다: 얇고 부드러운 조각에 향긋한 기름이 모든 조각에 달라붙습니다. 현지 식당의 냉채 코너에서 찾아보세요.</p>
         </div>
       </div>
 
-      <!-- 빙펀 -->
+      <!-- Ice Jelly -->
       <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
         <div class="flex items-center justify-center bg-gray-50 p-3">
           <img src="/images/chengdu/bingfen.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
         </div>
         <div class="p-4">
           <h3 class="text-lg font-bold text-gray-900 mb-1">빙펀 (冰粉)</h3>
-          <p class="text-gray-600 text-base">쓰촨식 매운 음식의 궁극적인 입가심. 식물 씨앗으로 손수 만든 빙펀은 젤리보다 부드럽고 거의 투명합니다. 흑설탕 시럽과 으깬 땅콩, 가끔 말린 과일까지 올려서 — 달콤하고 차갑게 목구멍을 타고 넘어가며 입안의 매운 맛을 싹 씻어줘요. 절대 건너뛰지 마세요 — 정말 필요합니다.</p>
+          <p class="text-gray-600 text-base">쓰촨식 궁극의 입맛 정리 디저트. 식물 씨앗을 손으로 짜서 만든 빙펀은 젤로(Jell-O)보다 부드러운 젤리 질감에 섬세하고 거의 투명한 외관을 가집니다. 흑설탕 시럽, 으깬 땅콩, 때로는 말린 과일을 얹어 — 달콤하고 차갑게, 매운맛 후에 입안을 리셋시키듯 목으로 넘어갑니다. 절대 건너뛰지 마세요 — 필요할 겁니다.</p>
         </div>
       </div>
     </div>
@@ -227,10 +227,10 @@ const description = "청두 방문 — 자이언트 판다를 보고, 세계에�
     <div class="not-prose mt-16">
       <h2 class="text-2xl font-bold text-gray-900 mb-8">📚 관련 가이드</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <a href="/ko/cities/city-select/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🗺️ <strong>중국 여행 일정 계획</strong> — 전체 일정 짜기</a>
-        <a href="/ko/cities/beijing-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🏛️ <strong>베이징 여행 가이드</strong> — 북부와 남부 중국 비교</a>
-        <a href="/ko/payment/payment-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">💳 <strong>중국 결제 방법</strong> — 결제 앱 미리 준비하기</a>
-        <a href="/ko/life/cultural-taboos/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🙏 <strong>중국 문화 예절</strong> — 쓰촨 방문 전에 알아두면 좋아요</a>
+        <a href="/ko/cities/city-select/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🗺️ <strong>중국 여행, 며칠이 필요할까?</strong> — 전체 일정 계획하기</a>
+        <a href="/ko/cities/beijing-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🏛️ <strong>베이징 여행 가이드</strong> — 중국 북부 vs 남부 비교</a>
+        <a href="/ko/payment/payment-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">💳 <strong>중국에서 결제하는 방법</strong> — 결제 앱 준비하기</a>
+        <a href="/ko/life/cultural-taboos/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🙏 <strong>중국 문화의 에티켓과 금기사항</strong> — 쓰촨 방문 전에 알아두면 좋은 정보</a>
       </div>
     </div>
   </article>

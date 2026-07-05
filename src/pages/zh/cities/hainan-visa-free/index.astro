@@ -1,15 +1,15 @@
 ---
 import Layout from '@layouts/Layout.astro';
-const title = '海南旅游指南 2026 — 59 国免签';
-const description = '海南岛旅游攻略：59 国 30 天免签、热带海滩、雨林徒步、地道美食，一篇搞定。';
+const title = '海南旅行指南2026——59国免签';
+const description = '规划你的海南岛之旅。30天免签覆盖59个国家。热带海滩、雨林徒步、当地美食和旅行贴讯一网打尽。';
 const lastUpdated = '2026年6月';
-const readTime = '7 分钟';
+const readTime = '7分钟';
 ---
 
 <Layout title={title} description={description} lang="zh">
   <article class="max-w-4xl mx-auto px-6 py-12">
 
-    <!-- Breadcrumb -->
+    <!-- 面包屑导航 -->
     <nav class="mb-8 not-prose">
       <a href="/zh/cities/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
         <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -19,77 +19,73 @@ const readTime = '7 分钟';
       </a>
     </nav>
 
-    <!-- Header -->
+    <!-- 标题 -->
     <header class="mb-12">
-      <p class="text-sm text-gray-500 mb-3">🏝️ 旅行指南</p>
+      <p class="text-sm text-gray-500 mb-3">🏝️ 海南</p>
       <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
-        海南旅游指南：中国热带海岛 — 59 国免签
+        海南旅行指南：中国热带岛屿——59国免签
       </h1>
-      <p class="text-xl text-gray-600 mb-6">海滩、雨林、火山、顶级度假酒店——59 个国家公民可免签停留最多 30 天。</p>
+      <p class="text-xl text-gray-600 mb-6">海滩、雨林、火山和世界级度假村——59国公民可免签入境停留最长30天。</p>
       <div class="flex items-center gap-4 text-sm text-gray-500">
-        <span>📅 更新于：{lastUpdated}</span>
-        <span>⏱️ {readTime}</span>
+        <span>📅 最后更新：{lastUpdated}</span>
+        <span>⏱️ 阅读时间：{readTime}</span>
       </div>
     </header>
 
-    <!-- Quick Answer -->
-    <section class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">快速了解</h2>
-      <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-6">
-        <p class="text-lg text-gray-800"><strong>海南是中国的热带海岛天堂——海滩、雨林、火山、顶级度假酒店——59 国公民可免签停留最多 30 天。</strong>不需要跟团，不需要跑大使馆。带上护照和回程机票直飞海口或三亚，到了就能入境。</p>
-      </div>
-      <p class="mt-4 text-gray-700">如果你来自<strong>美国、墨西哥、菲律宾、印度尼西亚或捷克</strong>，这条政策尤其重要——这些国家不在中国内地 30 天免签名单上。（<a href="/zh/visa/visa-free/" class="text-blue-600 hover:underline">查看完整 59 国名单 →</a>）</p>
+    <!-- 快速回答 -->
+    <div class="bg-gradient-to-r from-emerald-50 to-teal-50 border-l-4 border-emerald-500 rounded-r-2xl p-8 mb-6 not-prose">
+      <h2 class="text-2xl font-bold text-emerald-900 mb-4">⚡ 快速回答</h2>
+      <p class="text-lg text-emerald-800 leading-relaxed"><strong>海南是中国热带岛屿天堂——海滩、雨林、火山和世界级度假村——59国公民可免签入境最长30天。</strong>无需跟团，无需前往使馆。凭护照和回程机票飞抵海口或三亚即可入境。</p>
+    </div>
+    <p class="text-gray-700 mb-8">如果你来自<strong>美国、墨西哥、菲律宾、印度尼西亚或捷克共和国</strong>，这一点尤为重要——这些国家不在中国大陆30天免签名单上。（<a href="/zh/visa/visa-free/" class="text-blue-600 hover:underline">查看完整的59国名单 →</a>）</p>
 
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8">
-        <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
-          <p class="text-2xl mb-1">☀️</p>
-          <p class="text-sm font-semibold text-gray-900">热带气候</p>
-          <p class="text-xs text-gray-500">全年均温 24°C</p>
-        </div>
-        <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
-          <p class="text-2xl mb-1">🏖️</p>
-          <p class="text-sm font-semibold text-gray-900">顶级海滩</p>
-          <p class="text-xs text-gray-500">亚龙湾、大东海、海棠湾</p>
-        </div>
-        <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
-          <p class="text-2xl mb-1">🌋</p>
-          <p class="text-sm font-semibold text-gray-900">火山地质公园</p>
-          <p class="text-xs text-gray-500">海口独特地质景观</p>
-        </div>
-        <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
-          <p class="text-2xl mb-1">🌴</p>
-          <p class="text-sm font-semibold text-gray-900">热带雨林</p>
-          <p class="text-xs text-gray-500">五指山、呀诺达、霸王岭</p>
-        </div>
-        <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
-          <p class="text-2xl mb-1">⛳</p>
-          <p class="text-sm font-semibold text-gray-900">高尔夫度假村</p>
-          <p class="text-xs text-gray-500">世界级球场</p>
-        </div>
-        <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
-          <p class="text-2xl mb-1">🦞</p>
-          <p class="text-sm font-semibold text-gray-900">生猛海鲜</p>
-          <p class="text-xs text-gray-500">海南以海鲜出名</p>
-        </div>
+    <!-- 快速数据统计 -->
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12">
+      <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
+        <p class="text-2xl mb-1">☀️</p>
+        <p class="text-sm font-semibold text-gray-900">热带气候</p>
+        <p class="text-xs text-gray-500">全年平均24°C</p>
       </div>
+      <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
+        <p class="text-2xl mb-1">🏖️</p>
+        <p class="text-sm font-semibold text-gray-900">顶级海滩</p>
+        <p class="text-xs text-gray-500">亚龙湾、大东海、海棠湾</p>
+      </div>
+      <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
+        <p class="text-2xl mb-1">🌋</p>
+        <p class="text-sm font-semibold text-gray-900">火山地质公园</p>
+        <p class="text-xs text-gray-500">海口独特地质景观</p>
+      </div>
+      <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
+        <p class="text-2xl mb-1">🌴</p>
+        <p class="text-sm font-semibold text-gray-900">雨林</p>
+        <p class="text-xs text-gray-500">五指山、呀诺达、霸王岭</p>
+      </div>
+      <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
+        <p class="text-2xl mb-1">⛳</p>
+        <p class="text-sm font-semibold text-gray-900">高尔夫度假村</p>
+        <p class="text-xs text-gray-500">世界级球场</p>
+      </div>
+      <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
+        <p class="text-2xl mb-1">🦞</p>
+        <p class="text-sm font-semibold text-gray-900">新鲜海鲜</p>
+        <p class="text-xs text-gray-500">海南以海鲜闻名</p>
+      </div>
+    </div>
+
+    <!-- 哪些国家符合条件 -->
+    <section class="mb-12">
+      <h2 id="visa-free-countries" class="text-3xl font-bold text-gray-900 mb-4">哪些国家符合海南免签条件？</h2>
+      <p class="text-gray-700 mb-4"><strong>59个国家</strong>——大部分与大陆免签名单相同，但增加了几个重要的国家，如<strong>美国、墨西哥、菲律宾和印度尼西亚</strong>，这些不在大陆30天免签名单上。</p>
+      <div class="bg-emerald-50 border-l-4 border-emerald-400 rounded-r-xl p-5 mb-4">
+        <p class="text-sm text-emerald-800"><strong>💡 快速提示：</strong>与大陆免签政策不同，海南名单覆盖范围更广（59 vs 50个国家）。如果你的国家不在<a href="/zh/visa/visa-free/" class="text-blue-600 hover:underline font-medium">大陆免签名单</a>上，请查看海南名单——这可能是你在中国的唯一免签选择。</p>
+      </div>
+      <p class="text-sm text-gray-600">查看<a href="/zh/visa/visa-free/" class="text-blue-600 hover:underline font-medium">完整的59国分区域列表 →</a></p>
     </section>
 
-    <!-- Which Countries Qualify (simplified) -->
+    <!-- 最佳旅行时间 -->
     <section class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">哪些国家适用海南免签？</h2>
-      <p class="text-gray-700 mb-4"><strong>59 个国家</strong>——大部分和内地免签名单一致，但多了几个重要的：<strong>美国、墨西哥、菲律宾和印度尼西亚</strong>这些不在内地 30 天免签名单里的国家。</p>
-
-      <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-5 mb-4">
-        <p class="text-sm text-emerald-800"><strong>💡 小提示：</strong>和内地免签政策不同，海南的名单范围更广（59 国 vs 50 国）。如果你的国家不在<a href="/zh/visa/visa-free/" class="text-blue-600 hover:underline font-medium">内地免签名单</a>上，查查海南名单——这可能是你免签来中国的唯一方式。</p>
-      </div>
-
-      <p class="text-sm text-gray-600">查看<a href="/zh/visa/visa-free/" class="text-blue-600 hover:underline font-medium">完整 59 国名单（按地区分类）→</a></p>
-    </section>
-
-    <!-- When to Visit -->
-    <section class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">什么时间去海南最好</h2>
-
+      <h2 id="when-to-visit" class="text-3xl font-bold text-gray-900 mb-4">最佳旅行时间</h2>
       <div class="bg-white rounded-xl border border-gray-200 overflow-x-auto">
         <table class="w-full text-sm">
           <thead>
@@ -98,214 +94,339 @@ const readTime = '7 分钟';
               <th class="text-left px-5 py-3 font-semibold text-gray-700">温度</th>
               <th class="text-left px-5 py-3 font-semibold text-gray-700">降雨</th>
               <th class="text-left px-5 py-3 font-semibold text-gray-700">人流量</th>
-              <th class="text-left px-5 py-3 font-semibold text-gray-700">推荐指数</th>
+              <th class="text-left px-5 py-3 font-semibold text-gray-700">推荐度</th>
             </tr>
           </thead>
           <tbody>
             <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-medium">11 月–3 月</td>
+              <td class="px-5 py-3 font-medium">11月–3月</td>
               <td class="px-5 py-3">20–28°C</td>
               <td class="px-5 py-3">少雨</td>
               <td class="px-5 py-3">人多</td>
-              <td class="px-5 py-3 font-semibold text-emerald-600">🌟 最佳时段——干燥暖和，完美的海滩天气</td>
+              <td class="px-5 py-3 font-semibold text-emerald-600">🌟 最佳时间——干燥、温暖、完美的海滩天气</td>
             </tr>
             <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-medium">4 月–6 月</td>
+              <td class="px-5 py-3 font-medium">4月–6月</td>
               <td class="px-5 py-3">25–32°C</td>
-              <td class="px-5 py-3">适中</td>
+              <td class="px-5 py-3">中等</td>
               <td class="px-5 py-3">人少</td>
-              <td class="px-5 py-3 text-amber-600">👍 不错——热一点但游客少</td>
+              <td class="px-5 py-3 text-amber-600">👍 不错——更热但游客较少</td>
             </tr>
             <tr>
-              <td class="px-5 py-3 font-medium">7 月–10 月</td>
+              <td class="px-5 py-3 font-medium">7月–10月</td>
               <td class="px-5 py-3">26–32°C</td>
               <td class="px-5 py-3">多雨（台风季）</td>
               <td class="px-5 py-3">人少</td>
-              <td class="px-5 py-3 text-red-600">⚠️ 雨季——机票便宜但要注意台风预报</td>
+              <td class="px-5 py-3 text-red-600">⚠️ 雨季——机票便宜但需关注台风预报</td>
             </tr>
           </tbody>
         </table>
       </div>
-      <p class="mt-3 text-sm text-gray-600"><strong>旅游旺季：</strong>春节（1–2 月）和国庆黄金周（10 月 1–7 日）——能避开就避开。</p>
+      <p class="mt-3 text-sm text-gray-600"><strong>旅游高峰期：</strong>春节（1月/2月）和国庆黄金周（10月1–7日）——尽量避开。</p>
     </section>
 
-    <!-- Where to Go -->
+    <!-- 为什么去海南 -->
     <section class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6">海南去哪儿</h2>
-
-      <h3 class="text-xl font-bold text-gray-900 mb-3">🏖️ 三亚 — 海滩中心</h3>
-      <p class="text-gray-700 mb-4">大多数游客都来三亚。椰树、白沙、高端度假村，想象得到的都有了。</p>
-
-      <div class="bg-white rounded-xl border border-gray-200 overflow-x-auto mb-6">
-        <table class="w-full text-sm">
-          <thead>
-            <tr class="bg-gray-50 border-b border-gray-200">
-              <th class="text-left px-5 py-3 font-semibold text-gray-700">海滩</th>
-              <th class="text-left px-5 py-3 font-semibold text-gray-700">为什么去</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-semibold">亚龙湾</td>
-              <td class="px-5 py-3">全岛最好的海滩。海水清澈、沙质细腻、周围都是度假酒店。</td>
-            </tr>
-            <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-semibold">大东海</td>
-              <td class="px-5 py-3">更有本地气息，酒店便宜，海滩边海鲜餐馆一大排。</td>
-            </tr>
-            <tr>
-              <td class="px-5 py-3 font-semibold">海棠湾</td>
-              <td class="px-5 py-3">更安静、更高端。三亚·亚特兰蒂斯（水上乐园+水族馆）就在这里。</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <p class="font-semibold text-gray-900 mb-2">三亚其他好去处：</p>
-      <ul class="list-disc pl-6 space-y-1.5 text-gray-700 mb-8">
-        <li><strong>蜈支洲岛</strong> — 一日游，浮潜看清澈海水</li>
-        <li><strong>南山寺</strong> — 108 米海上观音像（世界最高）</li>
-        <li><strong>呀诺达雨林</strong> — 丛林徒步，有瀑布</li>
-        <li><strong>鹿回头公园</strong> — 俯瞰三亚全景的日落观景点</li>
-      </ul>
-
-      <h3 class="text-xl font-bold text-gray-900 mb-3">🏛️ 海口 — 省会城市</h3>
-      <p class="text-gray-700 mb-4">文化氛围更浓，海滩少了点。</p>
-      <ul class="list-disc pl-6 space-y-1.5 text-gray-700 mb-8">
-        <li><strong>火山口地质公园</strong> — 爬上死火山口</li>
-        <li><strong>骑楼老街</strong> — 1920 年代的骑楼建筑，拍照好去处</li>
-        <li><strong>海南省博物馆</strong> — 了解黎族和苗族文化</li>
-        <li><strong>观澜湖</strong> — 大型度假区，高尔夫、温泉、电影主题乐园一应俱全</li>
-      </ul>
-
-      <h3 class="text-xl font-bold text-gray-900 mb-3">🗺️ 两座城市之外</h3>
-      <div class="bg-white rounded-xl border border-gray-200 overflow-x-auto">
-        <table class="w-full text-sm">
-          <thead>
-            <tr class="bg-gray-50 border-b border-gray-200">
-              <th class="text-left px-5 py-3 font-semibold text-gray-700">地点</th>
-              <th class="text-left px-5 py-3 font-semibold text-gray-700">为什么去</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-semibold">博鳌</td>
-              <td class="px-5 py-3">亚洲论坛举办地，沿海公路风景很美。<br>
-              <span class="text-xs text-gray-500">💡 提示：如果你对前沿医疗感兴趣又想顺便度假，博鳌乐城是中国唯一的医疗特区，可以用到内地尚未批准的海外药品和治疗方案。</span></td>
-            </tr>
-            <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-semibold">五指山</td>
-              <td class="px-5 py-3">海南最佳登山路线</td>
-            </tr>
-            <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-semibold">兴隆</td>
-              <td class="px-5 py-3">热带植物园 + 咖啡种植园</td>
-            </tr>
-            <tr>
-              <td class="px-5 py-3 font-semibold">霸王岭</td>
-              <td class="px-5 py-3">原始雨林，珍稀海南长臂猿</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <h2 id="why-visit" class="text-3xl font-bold text-gray-900 mb-6">🏝️ 为什么去海南？</h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">海南是中国的夏威夷——一个拥有白沙滩、茂密雨林和悠闲氛围的热带岛屿，这种体验在中国其他地方找不到。这是中国唯一一个可以真正逃离城市、在海边放松的地方。再加上59国免签政策，对许多旅行者来说这是进入中国最便捷的入口。</p>
     </section>
 
-    <!-- What to Eat -->
+    <!-- 需要玩几天 -->
     <section class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">在海南吃什么</h2>
-      <div class="bg-white rounded-xl border border-gray-200 overflow-x-auto">
-        <table class="w-full text-sm">
-          <thead>
-            <tr class="bg-gray-50 border-b border-gray-200">
-              <th class="text-left px-5 py-3 font-semibold text-gray-700">美食</th>
-              <th class="text-left px-5 py-3 font-semibold text-gray-700">是什么</th>
-              <th class="text-left px-5 py-3 font-semibold text-gray-700">去哪儿吃</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-semibold">文昌鸡</td>
-              <td class="px-5 py-3">海南最出名的菜。白切鸡蘸姜葱酱。</td>
-              <td class="px-5 py-3">海口随便一家本地餐馆</td>
-            </tr>
-            <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-semibold">嘉积鸭</td>
-              <td class="px-5 py-3">慢火焖鸭，汤浓味醇</td>
-              <td class="px-5 py-3">博鳌</td>
-            </tr>
-            <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-semibold">海南粉</td>
-              <td class="px-5 py-3">细米粉，有汤粉和干拌两种</td>
-              <td class="px-5 py-3">到处都有早餐店</td>
-            </tr>
-            <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-semibold">海鲜</td>
-              <td class="px-5 py-3">新鲜螃蟹、大虾、蛤蜊、鱼——烤的蒸的都好吃</td>
-              <td class="px-5 py-3">三亚海鲜市场（现买现做）</td>
-            </tr>
-            <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-semibold">椰子饭</td>
-              <td class="px-5 py-3">糯米用椰浆蒸熟</td>
-              <td class="px-5 py-3">夜市</td>
-            </tr>
-            <tr>
-              <td class="px-5 py-3 font-semibold">清补凉</td>
-              <td class="px-5 py-3">椰奶甜品，加豆类、水果、冰块</td>
-              <td class="px-5 py-3">三亚街边摊（大热天来一碗绝了）</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <!-- Getting Around -->
-    <section class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">海南岛内交通</h2>
-      <ul class="list-disc pl-6 space-y-2 text-gray-700">
-        <li><strong>高铁：</strong>海南有环岛高铁，连接海口、博鳌、三亚和大部分城镇。班次多、价格便宜（海口 → 三亚约 100 元，1.5 小时）。</li>
-        <li><strong>出租车 / 滴滴：</strong>通过<a href="/zh/transport/didi/" class="text-blue-600 hover:underline">滴滴 App</a> 或支付宝/微信小程序叫车很方便。</li>
-        <li><strong>租车：</strong>持国际驾照 + 中文翻译件可以租车</li>
-        <li><strong>公交车：</strong>便宜但较慢，线路覆盖大部分旅游景点</li>
+      <h2 id="how-many-days" class="text-3xl font-bold text-gray-900 mb-6">📅 需要玩几天？</h2>
+      <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700 mb-12">
+        <li><strong>3–4天（标准）：</strong>三亚海滩、海鲜，加一日游海口或雨林徒步</li>
+        <li><strong>5–7天（舒适）：</strong>三亚和海口分住，增加博鳌和五指山徒步</li>
+        <li><strong>7天以上（深度游）：</strong>环岛高铁——探索完整海岸线</li>
       </ul>
     </section>
 
-    <!-- Where to Stay -->
+    <!-- 热门景点 -->
     <section class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">住在哪里</h2>
-      <div class="bg-white rounded-xl border border-gray-200 overflow-x-auto mb-4">
-        <table class="w-full text-sm">
-          <thead>
-            <tr class="bg-gray-50 border-b border-gray-200">
-              <th class="text-left px-5 py-3 font-semibold text-gray-700">预算</th>
-              <th class="text-left px-5 py-3 font-semibold text-gray-700">三亚</th>
-              <th class="text-left px-5 py-3 font-semibold text-gray-700">海口</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-medium">💰 经济（100-200 元）</td>
-              <td class="px-5 py-3">大东海区域青旅</td>
-              <td class="px-5 py-3">骑楼区域民宿</td>
-            </tr>
-            <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-medium">💰💰 中档（300-600 元）</td>
-              <td class="px-5 py-3">亚龙湾度假酒店（中档）</td>
-              <td class="px-5 py-3">观澜湖附近酒店</td>
-            </tr>
-            <tr>
-              <td class="px-5 py-3 font-medium">💰💰💰 高端（800 元+）</td>
-              <td class="px-5 py-3">亚特兰蒂斯、艾迪逊、丽思卡尔顿（海棠湾）</td>
-              <td class="px-5 py-3">希尔顿、万豪（市中心）</td>
-            </tr>
-          </tbody>
-        </table>
+      <h2 id="attractions" class="text-3xl font-bold text-gray-900 mb-6">🎯 热门景点</h2>
+
+      <h3 class="text-2xl font-bold text-gray-900 mb-4">🏖️ 三亚——大多数游客的目的地</h3>
+      <p class="text-gray-700 mb-6">三亚是经典的热带海滩度假地——棕榈树、碧蓝海水、让你觉得物有所值的度假村。但这里远不止泳池边的悠闲时光。</p>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/yalong-bay.webp" alt="海南亚龙湾" class="w-full h-auto object-cover" loading="lazy" />
       </div>
-      <p class="text-sm text-gray-600">海南的度假酒店通常比东南亚同档次的便宜。亚龙湾 500 元一晚的房间经常含早餐，还有私家海滩。</p>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">亚龙湾</h4>
+        <p class="text-gray-700">岛上最好的海滩——不是夸张，这是事实。沙子是那种通常只在明信片上才能看到的细腻白珊瑚粉，海水清澈到可以从岸边看到鱼，整个海湾绵延7公里，背靠青山。大多数度假村直接面海，从房间到海边大约90秒。比亚龙湾其他海滩贵一些，但一分钱一分货。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/dadonghai-bay.webp" alt="海南大东海" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">大东海</h4>
+        <p class="text-gray-700">这里才是本地活力的所在。大东海比亚龙湾更朴实——酒店便宜些、更热闹、更适合看人。海湾呈月牙形，适合游泳，整条海滨遍布海鲜餐厅，你可以从水箱里挑选海鲜，店家当场帮你烤制。黄昏时分来最好：灯光亮起，沙滩酒吧热闹起来，整个地方充满生机。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/haitang-bay.webp" alt="海南海棠湾" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">海棠湾</h4>
+        <p class="text-gray-700">更安静、更高端的选择。海棠湾是三亚亚特兰蒂斯酒店所在地——拥有大型水上乐园、10,000余种海洋生物的水族馆，以及比想象中更有格调的海豚互动池。海滩本身比亚龙湾更宽阔、人更少。如果你喜欢免税购物，这里也有大型免税店。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/wuzhizhou-island.webp" alt="海南蜈支洲岛" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">蜈支洲岛</h4>
+        <p class="text-gray-700">从海岸乘船20分钟，到达这个拥有海南最佳浮潜条件的小岛。周边水域受到保护，珊瑚健康，鱼群不会一看到你戴面镜就四散而去。乘船上岛再乘船返回，半天就能逛完。早点去避开人群——上午10点前渡轮就挤满了。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/nanshan-temple.webp" alt="海南南山寺" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">南山寺</h4>
+        <p class="text-gray-700">亮点是屹立在海中的108米高观音像——三面三向，世界上同类雕像中最高。但让大多数游客惊讶的是整个建筑群的规模：殿堂、佛塔、园林占地广阔。这是一座有真和尚、有真香火的活动寺庙，而不仅仅是装扮成寺庙的旅游景点。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/yanoda-rainforest.webp" alt="海南呀诺达雨林" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">呀诺达雨林</h4>
+        <p class="text-gray-700">经过升级的热带丛林：树冠玻璃桥、山谷滑索、可以涉水的瀑布水潭。徒步路线难度适中（两三小时），植物种类丰富——留意巨大的榕树。湿度大，记得带水，早点出发。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/luhuitou-park.webp" alt="海南鹿回头公园" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">鹿回头公园</h4>
+        <p class="text-gray-700">山顶公园，拥有三亚最美的日落景观。名字背后有一个传说：一名猎人追鹿到悬崖边，鹿变成了美丽的女子（"鹿回头"字面意思即"鹿转回头"）。徒步上山或乘电瓶车——无论哪种方式，你都能欣赏到全景，让你明白为什么这个地方长久以来被视为圣地。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <h3 class="text-2xl font-bold text-gray-900 mb-4">🏛️ 海口——悠闲的首府</h3>
+      <p class="text-gray-700 mb-6">海口不是三亚，而这正是它的魅力所在。海滩少一些，文化多一些。游客少一些，真实生活多一些。如果你想了解度假宣传册之外的海南，就来这里。</p>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/volcanic-geopark.webp" alt="海南火山地质公园" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">火山地质公园</h4>
+        <p class="text-gray-700">一座可以走进去的死火山——火山口距海口市中心约30分钟。步道带你下到火山锥内部，四周是火山岩和热带植被。附近还有熔岩隧道可以爬行（带上手电筒）。这是大多数海南游客错过的独特体验——因为他们从未离开过三亚的度假村。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/qilou-old-street.webp" alt="海南骑楼老街" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">骑楼老街</h4>
+        <p class="text-gray-700">街道两旁是20世纪20年代的骑楼建筑——融合了中国、欧洲和东南亚风格，因为海南在过去是一个贸易枢纽。骑楼遮蔽了人行道，即使下雨也能悠闲漫步。这种建筑风格在海南独一无二，你在中国其他地方看不到如此规模的骑楼群。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/hainan-museum.webp" alt="海南省博物馆" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">海南省博物馆</h4>
+        <p class="text-gray-700">了解黎族和苗族文化的最佳地点——这两个民族在度假村到来之前已经在岛上生活了数百年。黎锦收藏（联合国教科文组织非物质文化遗产）是亮点：手工编织的复杂几何图案，采用的是3000年来未曾改变的技艺。你还可以看到黎族曾经居住的船形屋，以及该岛作为被贬官员流放地的历史文物。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/mission-hills.webp" alt="海南观澜湖" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">观澜湖</h4>
+        <p class="text-gray-700">大型综合度假区，拥有10个由知名职业选手设计的高尔夫球场、168个以不同国家为主题的温泉泡池，以及仿1930年代上海街道打造的电影片场。即使不打高尔夫，仅温泉就值得一去——尤其是用真实火山岩打造的火山温泉区。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <h3 class="text-2xl font-bold text-gray-900 mb-4">🗺️ 两大主要城市之外</h3>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/boao.webp" alt="海南博鳌" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">博鳌</h4>
+        <p class="text-gray-700 mb-3">一个不大的沿海小镇，却有着超乎想象的地位。每年这里举办博鳌亚洲论坛（亚洲的达沃斯），全球领袖汇聚于此，氛围更像海滩度假地而非会议中心。博鳌与附近潭门渔村之间的沿海公路是海南最美的驾驶路线之一——一边是悬崖大海，一边是森林山丘。小镇本身安静宜人，河口旁有舒适的步道。如果你在海口和三亚之间自驾，在这里停下来吃个午餐、散散步，会让旅途更加美好。</p>
+        <div class="bg-blue-50 border-l-4 border-blue-400 p-3 rounded-r-lg text-sm text-blue-800">
+          💡 <strong>提示：</strong>隔壁的博鳌乐城医疗先行区是中国唯一一个境外获批药品和疗法在大陆获批前即可使用的特区。如果你在寻求特定治疗，值得研究一下——有些旅行者将医疗程序与度假康复结合。
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+      </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/wuzhishan.webp" alt="海南五指山" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">五指山</h4>
+        <p class="text-gray-700">岛上最佳的徒步路线——五座山峰从丛林中拔地而起，宛如手指，山顶附近有云雾林，天气晴朗时可看到全景。攀登并不轻松（上去3-4小时），但回报是置身云层之上，俯瞰这座更像侏罗纪公园而非中国的岛屿。尽量选一个晴朗的工作日前往。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/xinglong.webp" alt="海南兴隆" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">兴隆</h4>
+        <p class="text-gray-700">一个奇特而美妙的小镇，由1950年代从东南亚归国的华侨塑造，他们带来了咖啡文化。热带植物园是主要看点：成片的香料植物、可可树，以及开启海南咖啡文化的原始咖啡树。咖啡本身不错——试试加炼乳的本地做法。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/bawangling.webp" alt="海南霸王岭" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">霸王岭</h4>
+        <p class="text-gray-700">这片雨林是海南长臂猿的家园——地球上最稀有的灵长类动物，现存不到40只。你需要极好的运气（和一名向导）才能看到一只，但森林本身就值得一游：参天大树、野生兰花，以及一种与海南其他地方截然不同的宁静。从海口出发一日游，如果你愿意开车的话。</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
     </section>
 
-    <!-- Visa-Free Rules -->
+    <!-- 交通出行 -->
     <section class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">免签规则 — 你需要知道的</h2>
+      <h2 id="getting-around" class="text-3xl font-bold text-gray-900 mb-6">🚇 海南交通出行</h2>
+      <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700">
+        <li><strong>高铁：</strong>海南有环岛高铁连接海口、博鳌、三亚及大部分城镇。班次频繁且便宜（海口→三亚约100元，1.5小时）。</li>
+        <li><strong>出租车 / 滴滴：</strong>通过<a href="/zh/transport/didi/" class="text-blue-600 hover:underline">滴滴App</a>或支付宝/微信小程序轻松叫车。</li>
+        <li><strong>租车：</strong>持国际驾照+中文翻译件可租车</li>
+        <li><strong>公交车：</strong>便宜但慢，线路覆盖大部分旅游景点</li>
+      </ul>
+    </section>
+
+    <!-- 住宿推荐 -->
+    <section class="mb-12">
+      <h2 id="where-to-stay" class="text-3xl font-bold text-gray-900 mb-6">🏨 住宿推荐</h2>
+      <p class="text-gray-700 mb-6">海南度假村通常比东南亚同等品质的度假村便宜。亚龙湾500元/晚的房间通常含早餐并有私家海滩区。</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">💰 经济（100-200元）</h3>
+          <p class="text-gray-600 text-sm">大东海区域青旅（三亚）· 骑楼区域民宿（海口）</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">💰💰 中档（300-600元）</h3>
+          <p class="text-gray-600 text-sm">亚龙湾中档度假村（三亚）· 观澜湖区域酒店（海口）</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">💰💰💰 高档（800元以上）</h3>
+          <p class="text-gray-600 text-sm">亚特兰蒂斯、艾迪逊、丽思卡尔顿——海棠湾（三亚）· 希尔顿、万豪市中心（海口）</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 吃什么 -->
+    <section class="mb-12">
+      <h2 id="what-to-eat" class="text-3xl font-bold text-gray-900 mb-6">🍜 海南吃什么</h2>
+      <p class="text-lg leading-relaxed text-gray-700 md:col-span-2 mb-0">海南的美食以新鲜热带风味为主——大量的海鲜、椰子和米饭。</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/hainan/wenchang-chicken.webp" alt="海南文昌鸡" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">文昌鸡</h3>
+          <p class="text-gray-700">海南的招牌菜——白切走地鸡，皮滑肉甜。姜葱蘸酱才是真正的亮点，鲜香浓郁。最好吃的在文昌市（距海口一小时车程），店家直接把鸡肉作为冷盘上桌，配上一碗鸡油饭。没吃过文昌鸡，就不算真正来过海南。</p>
+        </div>
+      </div>
+
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/hainan/jiaji-duck.webp" alt="海南嘉积鸭" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">嘉积鸭</h3>
+          <p class="text-gray-700">海南菜中未被充分赞颂的英雄——鸭肉慢炖至脱骨，汤色变为浓郁琥珀色。做法出奇简单：鸭、水、盐，加上中式药材带来微妙的八角姜暖香。蘸上豆瓣酱和辣椒食用才够味。这是最纯粹的海南家常菜，在博鳌附近的嘉积地区才能找到最好的。</p>
+        </div>
+      </div>
+
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/hainan/hainan-noodles.webp" alt="海南粉" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">海南粉</h3>
+          <p class="text-gray-700">滋养全岛的早餐——细米粉放入用猪骨、虾干和鱿鱼熬制的清汤中，撒上炸蒜和葱花。两种吃法：汤面（经典早餐吃法）和拌面（干拌配浓酱）。加一勺本地辣椒酱，你就会明白为什么每个海南人每天都这样开始新的一天。</p>
+        </div>
+      </div>
+
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/hainan/seafood-market.webp" alt="海南海鲜市场" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">海鲜市场体验</h3>
+          <p class="text-gray-700">本身就是一个下午的活动——去三亚的海鲜市场，从水箱中挑选活濑尿虾、花蟹和石斑鱼，然后拿到楼上现场加工。蒜蓉辣椒烤，或姜葱清蒸。人均约100-150元就能吃一顿丰盛大餐，光是濑尿虾就值回票价——它们有一种冷冻品无法比拟的鲜甜。</p>
+        </div>
+      </div>
+
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/hainan/coconut-rice.webp" alt="海南椰子饭" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">椰子饭</h3>
+          <p class="text-gray-700">糯米用新鲜椰子水和斑兰叶蒸制——香气扑鼻，微甜，几乎像布丁一样。外层焦糖化为细腻的脆皮，最好的版本还会混入椰肉丝。街头小贩用香蕉叶包裹出售——在文城夜市可以找到。</p>
+        </div>
+      </div>
+
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/hainan/qingbuliang.webp" alt="海南清补凉" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">清补凉</h3>
+          <p class="text-gray-700">海南应对热带炎热的答案——一碗椰汁沙冰配上有嚼劲的芋头、红豆、西瓜、芦荟果冻和海藻淀粉制成的"面条"，滑入口中令人无比满足。甜而不腻，奶香而清爽。每个摊位都有自己的秘诀（有的加冰淇淋，有的加碎花生）。约10元一碗，在湿热的夜晚去三亚海滨夜市吃最惬意。</p>
+        </div>
+      </div>
+        </div>
+
+    </section>
+
+    <!-- 免签规则 -->
+    <section class="mb-12">
+      <h2 id="visa-rules" class="text-3xl font-bold text-gray-900 mb-4">免签规则——你需要知道的一切</h2>
       <div class="bg-white rounded-xl border border-gray-200 overflow-x-auto mb-6">
         <table class="w-full text-sm">
           <thead>
@@ -316,28 +437,28 @@ const readTime = '7 分钟';
           </thead>
           <tbody>
             <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-medium">能待多久？</td>
-              <td class="px-5 py-3">最多 <strong>30 天</strong>——从入境次日开始算</td>
+              <td class="px-5 py-3 font-medium">我能停留多久？</td>
+              <td class="px-5 py-3">最长<strong>30天</strong>——从抵达次日开始计算</td>
             </tr>
             <tr class="border-b border-gray-100">
               <td class="px-5 py-3 font-medium">需要跟团吗？</td>
-              <td class="px-5 py-3"><strong>不用</strong>——自由行完全没问题</td>
+              <td class="px-5 py-3"><strong>不需要</strong>——自由行游客即可</td>
             </tr>
             <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-medium">能延期吗？</td>
-              <td class="px-5 py-3">有可能，到海南当地出入境管理部门申请</td>
+              <td class="px-5 py-3 font-medium">可以延期吗？</td>
+              <td class="px-5 py-3">可以，在海南当地出入境管理部门申请</td>
             </tr>
             <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-medium">可以去内地吗？</td>
-              <td class="px-5 py-3"><strong>不行</strong>——这个政策只限海南岛</td>
+              <td class="px-5 py-3 font-medium">可以去中国大陆吗？</td>
+              <td class="px-5 py-3"><strong>不可以</strong>——此政策仅限海南岛</td>
             </tr>
             <tr class="border-b border-gray-100">
-              <td class="px-5 py-3 font-medium">先进海南、再去香港、再回海南，行吗？</td>
-              <td class="px-5 py-3">可以——每次入境重新获得 30 天免签</td>
+              <td class="px-5 py-3 font-medium">我可以先进入海南，去香港，再返回吗？</td>
+              <td class="px-5 py-3">可以——每次入境重新计算30天</td>
             </tr>
             <tr>
-              <td class="px-5 py-3 font-medium">超期滞留会怎样？</td>
-              <td class="px-5 py-3">罚款 + 可能被禁止入境。别冒这个险。</td>
+              <td class="px-5 py-3 font-medium">逾期居留会怎样？</td>
+              <td class="px-5 py-3">罚款 + 可能被禁止入境。不要冒险。</td>
             </tr>
           </tbody>
         </table>
@@ -345,55 +466,55 @@ const readTime = '7 分钟';
 
       <p class="font-semibold text-gray-900 mb-3">入境要求：</p>
       <ol class="list-disc pl-6 space-y-1.5 text-gray-700">
-        <li>✅ 护照有效期 6 个月以上</li>
-        <li>✅ 30 天内离境的回程或联程机票</li>
-        <li>✅ 酒店预订（建议有）</li>
-        <li>✅ 入境卡（飞机上发或在<a href="/zh/visa/arrival-card/" class="text-blue-600 hover:underline">线填写</a>）</li>
+        <li>✅ 护照有效期6个月以上</li>
+        <li>✅ 30天内的回程或续程机票</li>
+        <li>✅ 酒店预订（推荐）</li>
+        <li>✅ 入境卡（飞机上领取或<a href="/zh/visa/arrival-card/" class="text-blue-600 hover:underline">在线填写</a>）</li>
       </ol>
     </section>
 
-    <!-- Practical Tips -->
+    <!-- 实用贴士 -->
     <section class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">海南实用贴士</h2>
+      <h2 id="tips" class="text-3xl font-bold text-gray-900 mb-4">海南实用贴士</h2>
       <ol class="list-decimal pl-6 space-y-2 text-gray-700">
-        <li><strong>用支付宝或微信支付</strong>——出发前就设置好。海南大部分地方都不收现金。见我们的<a href="/zh/payment/payment-guide/" class="text-blue-600 hover:underline">中国支付指南</a>。</li>
-        <li><strong>还是需要 VPN</strong>——Google、WhatsApp、Instagram 没有 VPN 用不了。出发前<a href="/zh/life/best-vpns/" class="text-blue-600 hover:underline">设置好 VPN</a>。</li>
-        <li><strong>SIM 卡 / eSIM</strong>——在网上买（airalo、Holafly）或在机场买。见我们的<a href="/zh/life/best-sim-esim/" class="text-blue-600 hover:underline">SIM 卡指南</a>。</li>
-        <li><strong>语言</strong>——除了度假村，海南英语普及度不高。备好 Google Translate 或 Pleco。</li>
-        <li><strong>防晒霜 + 驱蚊水</strong>——全年必备。</li>
-        <li><strong>小费</strong>——不需要给。见我们的<a href="/zh/payment/tipping/" class="text-blue-600 hover:underline">小费指南</a>。</li>
+        <li><strong>使用支付宝或微信支付</strong>——出发前设置好。海南大部分地方已进入无现金社会。查看我们的<a href="/zh/payment/payment-guide/" class="text-blue-600 hover:underline">如何在华支付</a>指南。</li>
+        <li><strong>仍需要VPN</strong>——没有VPN，谷歌、WhatsApp、Instagram无法使用。出发前<a href="/zh/life/best-vpns/" class="text-blue-600 hover:underline">设置好VPN</a>。</li>
+        <li><strong>SIM卡/eSIM</strong>——在线购买（airalo、Holafly）或在机场购买。查看我们的<a href="/zh/life/best-sim-esim/" class="text-blue-600 hover:underline">SIM卡指南</a>。</li>
+        <li><strong>语言</strong>——在海南，除度假村外，英语并不普及。准备好谷歌翻译或Pleco。</li>
+        <li><strong>防晒霜 + 驱蚊液</strong>——全年必备。</li>
+        <li><strong>小费</strong>——不期待小费。查看我们的<a href="/zh/payment/tipping/" class="text-blue-600 hover:underline">小费指南</a>。</li>
       </ol>
     </section>
 
-    <!-- Related Guides -->
+    <!-- 相关指南 -->
     <section class="mb-12">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6">📚 相关攻略</h2>
+      <h2 id="related" class="text-2xl font-bold text-gray-900 mb-6">📚 相关指南</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <a href="/zh/visa/visa-free/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
           <p class="font-bold text-gray-900 mb-1">中国免签国家名单（2026）</p>
-          <p class="text-sm text-gray-600">查看海南 59 国完整名单</p>
+          <p class="text-sm text-gray-600">查看海南59国完整名单</p>
         </a>
         <a href="/zh/visa/arrival-card/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
-          <p class="font-bold text-gray-900 mb-1">在线填写入境卡</p>
-          <p class="text-sm text-gray-600">图文分步教程</p>
+          <p class="font-bold text-gray-900 mb-1">如何在线提交入境卡</p>
+          <p class="text-sm text-gray-600">图文并茂的分步指南</p>
         </a>
         <a href="/zh/cities/beijing-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
-          <p class="font-bold text-gray-900 mb-1">北京旅游指南</p>
-          <p class="text-sm text-gray-600">首都旅行攻略</p>
+          <p class="font-bold text-gray-900 mb-1">北京旅行指南</p>
+          <p class="text-sm text-gray-600">中国首都城市指南</p>
         </a>
         <a href="/zh/cities/shanghai-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
-          <p class="font-bold text-gray-900 mb-1">上海旅游指南</p>
-          <p class="text-sm text-gray-600">中国最国际化的大都市</p>
+          <p class="font-bold text-gray-900 mb-1">上海旅行指南</p>
+          <p class="text-sm text-gray-600">中国对外国人最友好的城市</p>
         </a>
       </div>
     </section>
 
-    <!-- Sources -->
+    <!-- 来源 -->
     <div class="mt-12 pt-8 border-t border-gray-200">
-      <h3 class="text-xl font-bold text-gray-900 mb-4">信息来源</h3>
+      <h3 class="text-xl font-bold text-gray-900 mb-4">来源</h3>
       <ul class="space-y-2 text-sm text-gray-600">
-        <li><a href="https://en.nia.gov.cn/n147418/n147463/c180637/content.html" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">国家移民管理局 — 区域性免签政策（海南 30 天）</a></li>
-        <li><a href="https://en.nia.gov.cn/n147418/n147463/c191648/content.html" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">国家移民管理局 — 外国人入境便利政策</a></li>
+        <li><a href="https://en.nia.gov.cn/n147418/n147463/c180637/content.html" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">国家移民管理局——区域免签政策（海南30天）</a></li>
+        <li><a href="https://en.nia.gov.cn/n147418/n147463/c191648/content.html" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">国家移民管理局——外国人入境便利化政策</a></li>
       </ul>
     </div>
 

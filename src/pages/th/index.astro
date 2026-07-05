@@ -1,0 +1,43 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'China Starter Hub — คู่มือการเดินทางสู่ประเทศจีน';
+const description = 'ทุกสิ่งที่คุณต้องรู้ก่อนมาเที่ยวจีน: การชำระเงิน การเดินทาง แอป เมือง และเคล็ดลับท่องเที่ยว.';
+---
+
+<Layout title={title} description={description} lang="th">
+  <!-- Trigger rebuild: 2026-06-12 17:30 -->
+  <section class="text-center py-20 px-4">
+    <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-gray-900  ">
+      Clear, Current Guidance for<br/><span class="text-brand-600">การเดินทางไปจีนครั้งแรกของคุณ</span>
+    </h1>
+    <p class="text-lg md:text-xl text-gray-500  ">
+      เริ่มจากสิ่งที่จำเป็น จากนั้นเลือกคู่มือที่เหมาะกับทริปของคุณ
+    </p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="/th/visa/" class="bg-brand-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-brand-700 transition no-underline">เริ่มต้น</a>
+      <a href="/th/about/" class="border border-brand-600 text-brand-600 px-6 py-3 rounded-lg font-medium hover:bg-brand-50 transition no-underline">เกี่ยวกับเรา</a>
+    </div>
+  </section>
+
+  <!-- Section: Category Cards -->
+  <section class="max-w-5xl mx-auto px-4 pb-16">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      {[
+        { href: '/th/visa/', title: 'Visa', desc: 'Visa types, free countries, transit policy.' },
+        { href: '/th/payment/', title: 'Payment', desc: 'Wallets, bank cards, cash backup.' },
+        { href: '/th/transport/', title: 'Transport', desc: 'High-speed rail, metro, ride-hailing, and getting from the airport to the city.' },
+        { href: '/th/life/', title: 'ชีวิตในจีน', desc: 'Apps, medical care, safety tips, daily living.' },
+      ].map(card => (
+        <a href={card.href} class="group block p-5 rounded-2xl bg-gray-50  :bg-brand-50 dark:hover:bg-brand-950 border border-gray-100  :border-brand-200 dark:hover:border-brand-800 transition-all duration-200 no-underline">
+          <h3 class="text-lg font-semibold text-gray-900  :text-brand-600 dark:group-hover:text-brand-400 mb-1">{card.title}</h3>
+          <p class="text-sm text-gray-500  ">{card.desc}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- คุณต้องขอวีซ่า.</p><p class="text-orange-700 text-sm mb-3">Citizens of ' + name + ' ต้องขอวีซ่าท่องเที่ยว (ประเภท L) ก่อนเดินทางไปจีน</p><a href="/th/visa/apply-l-visa/" class="inline-block text-sm font-medium text-orange-700 underline hover:no-underline">วิธีขอวีซ่า L \u2192</a></div>';
+      }
+    });
+  </script>
+</Layout>

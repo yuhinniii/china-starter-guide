@@ -1,0 +1,117 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'Transport Guide — การเดินทางในจีน';
+const description = 'Trains, planes, metro, and ride-hailing — everything you need.';
+---
+
+<Layout title={title} description={description} lang="th">
+  <section class="max-w-4xl mx-auto px-6 py-12">
+    
+    <!-- Header -->
+    <header class="mb-10 text-center">
+      <p class="text-sm text-gray-500 mb-2">🚄 Transport</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-3 leading-tight">การเดินทางในจีน</h1>
+      <p class="text-base text-gray-500 max-w-2xl mx-auto">Trains, planes, metro, and ride-hailing — everything you need.</p>
+    </header>
+
+    <!-- Quick Stats -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-12 not-prose">
+      <div class="bg-sky-50 border border-sky-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-sky-800">1</p>
+        <p class="text-xs font-semibold text-sky-800 uppercase tracking-wide mt-1">รถไฟความเร็วสูง Guide</p>
+      </div>
+      <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-emerald-800">1</p>
+        <p class="text-xs font-semibold text-emerald-800 uppercase tracking-wide mt-1">การเดินทางจากสนามบิน</p>
+      </div>
+      <div class="bg-purple-50 border border-purple-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-purple-800">2</p>
+        <p class="text-xs font-semibold text-purple-800 uppercase tracking-wide mt-1">City Transport</p>
+      </div>
+      <div class="bg-gray-50 border border-gray-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-gray-800">1</p>
+        <p class="text-xs font-semibold text-gray-800 uppercase tracking-wide mt-1">รถเรียกผ่านแอป Guide</p>
+      </div>
+    </div>
+
+    <!-- Category Sections -->
+    <div class="space-y-8 mb-16 not-prose">
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-sky-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-sky-800">การเดินทางในจีน</h2>
+          <span class="text-xs font-medium text-sky-800 opacity-60">1 article</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/th/transport/transport-guide/" class="block bg-sky-50 border border-sky-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-sky-800">📖 Overview</span>
+            <p class="text-base font-bold text-gray-900 mt-1">How to Get Around China</p>
+            <p class="text-sm text-gray-600 mt-0.5">Complete overview of all transport options — trains, planes, metro, and more.</p>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-emerald-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-emerald-800">Arriving in China</h2>
+          <span class="text-xs font-medium text-emerald-800 opacity-60">1 article</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/th/transport/airport-to-city/" class="block bg-emerald-50 border border-emerald-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-emerald-800">🛬 Guide</span>
+            <p class="text-base font-bold text-gray-900 mt-1">From Airport to City</p>
+            <p class="text-sm text-gray-600 mt-0.5">Transport options at major airports — Beijing, Shanghai, Guangzhou, and more.</p>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-purple-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-purple-800">City Transport</h2>
+          <span class="text-xs font-medium text-purple-800 opacity-60">2 articles</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/th/transport/high-speed-rail/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-purple-800">🚄 Guide</span>
+            <p class="text-base font-bold text-gray-900 mt-1">How to Book and Ride China รถไฟความเร็วสูง</p>
+            <p class="text-sm text-gray-600 mt-0.5">Everything about booking and riding the world's largest HSR network.</p>
+          </a>
+          <a href="/th/transport/metro-bus/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-purple-800">🚇 Guide</span>
+            <p class="text-base font-bold text-gray-900 mt-1">รถไฟใต้ดินและรถเมล์ Guide for Major Cities</p>
+            <p class="text-sm text-gray-600 mt-0.5">Navigate public transit in Beijing, Shanghai, Guangzhou, and Shenzhen.</p>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-gray-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-gray-800">รถเรียกผ่านแอป</h2>
+          <span class="text-xs font-medium text-gray-800 opacity-60">1 article</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/th/transport/didi/" class="block bg-gray-50 border border-gray-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-gray-800">🚕 Tutorial</span>
+            <p class="text-base font-bold text-gray-900 mt-1">วิธีใช้ Didi ในจีน as a Foreigner</p>
+            <p class="text-sm text-gray-600 mt-0.5">Step-by-step guide to using DiDi, China's Uber — with screenshots.</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- คู่มือที่เกี่ยวข้อง -->
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-5">คู่มือที่เกี่ยวข้อง</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <a href="/th/payment/payment-guide/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-0.5">การชำระเงินในจีน</p>
+          <p class="text-sm text-gray-500">How to pay for transport</p>
+        </a>
+        <a href="/th/visa/visa-guide/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-0.5">วีซ่าและการเข้าเมือง</p>
+          <p class="text-sm text-gray-500">Getting into China</p>
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

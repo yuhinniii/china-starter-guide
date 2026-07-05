@@ -1,7 +1,7 @@
 ---
 import Layout from '@layouts/Layout.astro';
 const title = 'China Starter Hub — Votre Guide Complet pour la Chine';
-const description = 'Everything you need to know before coming to China: payment, transport, apps, cities, and travel tips.';
+const description = 'Tout ce que vous devez savoir avant de venir en Chine : paiement, transport, applications, villes et conseils de voyage.';
 ---
 
 <Layout title={title} description={description} lang="fr">
@@ -15,7 +15,7 @@ const description = 'Everything you need to know before coming to China: payment
     </p>
     <div class="flex flex-wrap justify-center gap-4">
       <a href="/fr/visa/" class="bg-brand-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-brand-700 transition no-underline">Commencer</a>
-      <a href="/fr/about/" class="border border-brand-600 text-brand-600 px-6 py-3 rounded-lg font-medium hover:bg-brand-50 transition no-underline">About This Site</a>
+      <a href="/fr/about/" class="border border-brand-600 text-brand-600 px-6 py-3 rounded-lg font-medium hover:bg-brand-50 transition no-underline">À propos</a>
     </div>
   </section>
 
@@ -23,10 +23,10 @@ const description = 'Everything you need to know before coming to China: payment
   <section class="max-w-5xl mx-auto px-4 pb-16">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
       {[
-        { href: '/fr/visa/', title: 'Visa', desc: 'Visa types, free countries, transit policy.' },
-        { href: '/fr/payment/', title: 'Payment', desc: 'Wallets, bank cards, cash backup.' },
-        { href: '/fr/transport/', title: 'Transport', desc: 'High-speed rail, metro, ride-hailing, and getting from the airport to the city.' },
-        { href: '/fr/life/', title: 'Life in China', desc: 'Apps, medical care, safety tips, daily living.' },
+        { href: '/fr/visa/', title: 'Visa', desc: 'Types de visa, pays exonérés, politique de transit.' },
+        { href: '/fr/payment/', title: 'Paiement', desc: 'Portefeuilles numériques, cartes bancaires, espèces.' },
+        { href: '/fr/transport/', title: 'Transport', desc: 'Train grande vitesse, métro, VTC, de l'aéroport à la ville.' },
+        { href: '/fr/life/', title: 'Vie en Chine', desc: 'Applications, soins médicaux, conseils sécurité, vie quotidienne.' },
       ].map(card => (
         <a href={card.href} class="group block p-5 rounded-2xl bg-gray-50  :bg-brand-50 dark:hover:bg-brand-950 border border-gray-100  :border-brand-200 dark:hover:border-brand-800 transition-all duration-200 no-underline">
           <h3 class="text-lg font-semibold text-gray-900  :text-brand-600 dark:group-hover:text-brand-400 mb-1">{card.title}</h3>
@@ -53,11 +53,11 @@ const description = 'Everything you need to know before coming to China: payment
             <p class="text-sm font-semibold text-gray-900 mt-1">Quel visa vous faut-il ?</p>
           </a>
           <a href="/fr/payment/payment-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-green-200 transition no-underline">
-            <span class="text-xs font-medium text-green-600">Payment</span>
+            <span class="text-xs font-medium text-green-600">Paiement</span>
             <p class="text-sm font-semibold text-gray-900 mt-1">Comment payer en Chine</p>
           </a>
           <a href="/fr/life/survival-kit/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-green-200 transition no-underline">
-            <span class="text-xs font-medium text-green-600">Life</span>
+            <span class="text-xs font-medium text-green-600">Vie</span>
             <p class="text-sm font-semibold text-gray-900 mt-1">Liste de vérification pré-départ</p>
           </a>
         </div>
@@ -74,11 +74,11 @@ const description = 'Everything you need to know before coming to China: payment
             <p class="text-sm font-semibold text-gray-900 mt-1">De l'aéroport à la ville</p>
           </a>
           <a href="/fr/life/sim-card-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-blue-200 transition no-underline">
-            <span class="text-xs font-medium text-blue-600">Life</span>
+            <span class="text-xs font-medium text-blue-600">Vie</span>
             <p class="text-sm font-semibold text-gray-900 mt-1">Carte SIM et configuration internet</p>
           </a>
           <a href="/fr/life/vpn-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-blue-200 transition no-underline">
-            <span class="text-xs font-medium text-blue-600">Life</span>
+            <span class="text-xs font-medium text-blue-600">Vie</span>
             <p class="text-sm font-semibold text-gray-900 mt-1">Configuration de votre VPN</p>
           </a>
         </div>
@@ -95,11 +95,11 @@ const description = 'Everything you need to know before coming to China: payment
             <p class="text-sm font-semibold text-gray-900 mt-1">Se déplacer en Chine</p>
           </a>
           <a href="/fr/life/essential-apps/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-purple-200 transition no-underline">
-            <span class="text-xs font-medium text-purple-600">Life</span>
+            <span class="text-xs font-medium text-purple-600">Vie</span>
             <p class="text-sm font-semibold text-gray-900 mt-1">10 applications essentielles</p>
           </a>
           <a href="/fr/life/chinese-phrases/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-purple-200 transition no-underline">
-            <span class="text-xs font-medium text-purple-600">Life</span>
+            <span class="text-xs font-medium text-purple-600">Vie</span>
             <p class="text-sm font-semibold text-gray-900 mt-1">Phrases de base en chinois</p>
           </a>
         </div>
@@ -111,19 +111,19 @@ const description = 'Everything you need to know before coming to China: payment
         <h3 class="text-lg font-bold text-gray-900 mb-3">Besoin d'Aide ?</h3>
         <div class="grid grid-cols-1 sm:grid-cols-4 gap-3">
           <a href="/fr/life/seeing-a-doctor/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
-            <span class="text-xs font-medium text-red-600">Life</span>
+            <span class="text-xs font-medium text-red-600">Vie</span>
             <p class="text-sm font-semibold text-gray-900 mt-1">Consulter un médecin</p>
           </a>
           <a href="/fr/life/common-scams/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
-            <span class="text-xs font-medium text-red-600">Life</span>
+            <span class="text-xs font-medium text-red-600">Vie</span>
             <p class="text-sm font-semibold text-gray-900 mt-1">Éviter les arnaques courantes</p>
           </a>
           <a href="/fr/life/emergency-numbers/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
-            <span class="text-xs font-medium text-red-600">Life</span>
+            <span class="text-xs font-medium text-red-600">Vie</span>
             <p class="text-sm font-semibold text-gray-900 mt-1">Numéros d'urgence</p>
           </a>
           <a href="/fr/payment/payment-fails/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
-            <span class="text-xs font-medium text-red-600">Payment</span>
+            <span class="text-xs font-medium text-red-600">Paiement</span>
             <p class="text-sm font-semibold text-gray-900 mt-1">En cas de problème de paiement</p>
           </a>
         </div>
@@ -135,8 +135,8 @@ const description = 'Everything you need to know before coming to China: payment
   <section class="max-w-5xl mx-auto px-4 pb-16">
     <div class="border-t border-gray-100 pt-12">
       <div class="max-w-2xl mx-auto">
-        <h2 class="text-2xl font-bold text-gray-900 mb-2 text-center">Visa Checker</h2>
-        <p class="text-gray-500 text-center mb-8">Vous ne savez pas si vous avez besoin d'un visa ? Pick your nationality — we'll tell you.</p>
+        <h2 class="text-2xl font-bold text-gray-900 mb-2 text-center">Vérificateur de Visa</h2>
+        <p class="text-gray-500 text-center mb-8">Vous ne savez pas si vous avez besoin d'un visa ? Sélectionnez votre pays — nous vous indiquerons la marche à suivre.</p>
 
         <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100">
           <label for="visa-country" class="block text-sm font-medium text-gray-700 mb-2">Votre nationalité</label>
@@ -243,7 +243,7 @@ const description = 'Everything you need to know before coming to China: payment
           <div id="visa-result" class="mt-6"></div>
         </div>
 
-        <p class="text-xs text-gray-400 text-center mt-4">Visa policies change. Always verify with your local Chinese embassy before booking.</p>
+        <p class="text-xs text-gray-400 text-center mt-4">La politique des visas peut changer. Vérifiez toujours auprès de l'ambassade de Chine avant de réserver.</p>
       </div>
     </div>
   </section>
@@ -286,7 +286,7 @@ const description = 'Everything you need to know before coming to China: payment
       'SG':'Singapour','SK':'Slovaquie','SI':'Slovénie','SB':'Îles Salomon','ZA':'Afrique du Sud','KR':'Corée du Sud',
       'ES':'Espagne','SR':'Suriname','SE':'Suède','CH':'Suisse','TH':'Thaïlande','TO':'Tonga','TR':'Turquie',
       'UA':'Ukraine',
-      'AE':'the Émirats Arabes Unis','GB':'the Royaume-Uni','US':'the États-Unis','UY':'Uruguay','UZ':'Ouzbékistan','VN':'Viêt Nam'
+      'AE':'Émirats Arabes Unis','GB':'Royaume-Uni','US':'États-Unis','UY':'Uruguay','UZ':'Ouzbékistan','VN':'Viêt Nam'
     };
 
     countrySelect.addEventListener('change', function() {

@@ -1,0 +1,203 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = "دليل شنغهاي السياحي: المدينة الأكثر ترحيباً بالأجانب";
+const description = "دليل شنغهاي — المعالم، الطعام، المواصلات، وأماكن الإقامة في أكثر مدن الصين عالمية.";
+---
+
+<Layout title={title} description={description} lang="ar">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🏙️ شنغهاي</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">دليل شنغهاي السياحي: المدينة الأكثر ترحيباً بالأجانب</h1>
+      <p class="text-xl text-gray-600 mb-6">دليل شنغهاي — المعالم، الطعام، المواصلات، وأماكن الإقامة في أكثر مدن الصين عالمية.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 آخر تحديث: يونيو 2026</span>
+        <span>⏱️ 10 دقائق</span>
+      </div>
+    </header>
+
+    <div class="bg-gradient-to-r from-yellow-50 to-amber-50 border-l-4 border-yellow-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-yellow-900 mb-4">⚡ إجابة سريعة</h2>
+      <p class="text-lg text-yellow-800 leading-relaxed">شنغهاي هي <strong>المدينة الصينية الأكثر ترحيباً بالأجانب</strong>. لديها أكبر عدد من المتحدثين بالإنكليزية، وأكثر المطاعم العالمية، وأفق مدينة ينافس أي مدينة في العالم. من الواجهة البحرية الأيقونية وبرج شنغهاي الشاهق إلى سحر حديقة يو التاريخي وسحر ديزني لاند شنغهاي — هناك شيء للجميع. إذا كنت متوتراً بشأن حاجز اللغة أو صدمة الثقافة، فإن شنغهاي هي ألطف مقدمة للصين.</p>
+    </div>
+
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 في هذا الدليل</h3>
+      <ul class="space-y-3">
+        <li><a href="#why-visit" class="text-blue-600 hover:underline">🌆 لماذا زيارة شنغهاي؟</a></li>
+        <li><a href="#how-many-days" class="text-blue-600 hover:underline">📅 كم يوماً تحتاج؟</a></li>
+        <li><a href="#attractions" class="text-blue-600 hover:underline">🎯 أهم المعالم</a></li>
+        <li><a href="#getting-around" class="text-blue-600 hover:underline">🚇 التنقل</a></li>
+        <li><a href="#where-to-stay" class="text-blue-600 hover:underline">🏨 أماكن الإقامة</a></li>
+        <li><a href="#what-to-eat" class="text-blue-600 hover:underline">🍜 ماذا تأكل</a></li>
+      </ul>
+    </nav>
+
+    <h2 id="why-visit" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🌆 لماذا زيارة شنغهاي؟</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-12">شنغهاي تشعر وكأنها مدينة المستقبل. أفق بودنغ — مع برج اللؤلؤة الشرقية وبرج شنغهاي يخترقان السحاب — هو وجه الصين الحديثة. لكن المدينة القديمة لا تزال ساحرة: الشوارع المظللة بالأشجار في الحي الفرنسي السابق، مباني آرت ديكو على طول الواجهة البحرية، والأزقة المتعرجة في البلدة القديمة. أضف إلى ذلك واحدة من أكثر حدائق ديزني تميزاً في العالم ومشهد طعام يتراوح من المطاعم الفاخرة الحاصلة على نجمة ميشلان إلى أكشاك الشارع التي لا تتجاوز الدولار، وستحصل على مدينة تمتلك كل شيء حقاً.</p>
+
+    <h2 id="how-many-days" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📅 كم يوماً تحتاج؟</h2>
+    <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700 mb-12">
+      <li><strong>3 أيام (قياسي):</strong> الواجهة البحرية، البلدة القديمة، الحي الفرنسي السابق، وزيارة الأفق لبرج شنغهاي أو اللؤلؤة الشرقية</li>
+      <li><strong>4–5 أيام (مريح):</strong> أضف ديزني لاند شنغهاي، بلدة تشوجياجياو المائية، أو رحلة يومية إلى سوتشو القريبة</li>
+      <li><strong>5+ أيام (غوص عميق):</strong> استكشف متاحف المدينة ومعارضها الفنية وأحياء الحياة الليلية بعمق</li>
+    </ul>
+
+    <!-- ==================== ATTRACTIONS ==================== -->
+    <h2 id="attractions" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎯 أهم المعالم</h2>
+
+    <!-- The Bund (long text → float wrap) -->
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/shanghai/the-bund.webp" alt="الواجهة البحرية ليلاً مع المباني الاستعمارية وأفق بودنغ" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">الواجهة البحرية — ذا بند (外滩)</h3>
+      <p class="text-gray-700">الممشى المائي الأيقوني في شنغهاي هو معلم لا بد منه لكل زائر. على جانب واحد، صف من 26 مبنى استعمارياً رائعاً — "معرض العمارة العالمية" — يعرض الطراز القوطي والباروكي والرومانسكي وآرت ديكو. على الجانب الآخر، أفق بودنغ المبهر مع برج اللؤلؤة الشرقية وبرج شنغهاي يضيء الليل. يُفضل زيارة الواجهة البحرية عند غروب الشمس، عندما يضرب الضوء الذهبي المباني القديمة وتتوهج أضواء المدينة تدريجياً عبر النهر. نزهة مريحة على طول الممشى الذي يبلغ 1.5 كيلومتر هي الطريقة المثالية لبدء تجربتك في شنغهاي.</p>
+      <div class="clear-both"></div>
+    </div>
+
+    <!-- Shanghai Tower (long text → float wrap) -->
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/shanghai/shanghai-tower.webp" alt="برج شنغهاي، أطول ناطحة سحاب في الصين" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">برج شنغهاي (上海中心大厦)</h3>
+      <p class="text-gray-700">أطول مبنى في الصين وثالث أطول مبنى في العالم بارتفاع 632 متراً. منصة المراقبة على ارتفاع 546 متراً تقدم إطلالة 360 درجة مذهلة على شنغهاي بأكملها — في يوم صافٍ يمكنك رؤية نهر هوانغبو يتعرج وصولاً إلى البحر. رحلة المصعد هي تجربة بحد ذاتها: تصل سرعته إلى 20 متراً في الثانية (72 كم/ساعة) وستشعر بأذنيك تطنان وأنت تصعد. في الداخل، يضم البرج أيضاً أعلى فندق في العالم (J-Hotel) وردهة مذهلة حلزونية الشكل تمتد لأعلى المبنى. احجز التذاكر عبر الإنترنت مسبقاً لتجنب الطوابير الطويلة.</p>
+      <div class="clear-both"></div>
+    </div>
+
+    <!-- Oriental Pearl Tower (long text → float wrap) -->
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/shanghai/oriental-pearl.webp" alt="برج اللؤلؤة الشرقية، الرمز الأيقوني لشنغهاي" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">برج اللؤلؤة الشرقية (东方明珠塔)</h3>
+      <p class="text-gray-700">لا يوجد أفق مدينة أكثر تميزاً من برج اللؤلؤة الشرقية. على الرغم من أنه لم يعد أطول هيكل في شنغهاي، إلا أن اللؤلؤة الشرقية لا تزال الرمز الأكثر أيقونية للمدينة، حيث يظهر على كل شيء من البطاقات البريدية إلى التيشيرتات. يضم البرج 11 كرة بأحجام مختلفة متصلة بثلاثة أعمدة. "الوحدة الفضائية" على ارتفاع 351 متراً تقدم منصة مراقبة بأرضية زجاجية حيث يمكنك النظر مباشرة إلى الأسفل نحو المدينة بالأسفل. في القاعدة يوجد متحف تاريخ شنغهاي ومجمع تسوق. للحصول على أفضل قيمة، اشترِ تذكرة مركبة تشمل منصة المراقبة والممر الزجاجي ومتحف التاريخ. زر عند غروب الشمس لأفضل الإطلالات.</p>
+      <div class="clear-both"></div>
+    </div>
+
+    <!-- Yu Garden (long text → float wrap) -->
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/shanghai/yu-garden.webp" alt="الأجنحة التقليدية والبركة في حديقة يو" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">حديقة يو (豫园)</h3>
+      <p class="text-gray-700">حديقة من عهد أسرة مينغ عمرها 400 عام مخبأة في قلب البلدة القديمة في شنغهاي. بُنيت في عام 1559 من قبل مسؤول حكومي كحديقة خاصة لوالديه، حديقة يو هي تحفة من تصميم الحدائق الصينية الكلاسيكية — كاملة مع الأجنحة والحدائق الصخرية والبرك والجسور المتعرجة التي تهدف إلى إرباك الأرواح الشريرة (التي لا تستطيع السفر إلا في خطوط مستقيمة). اليشم الرائع (玉玲珑) هو جوهرة الحديقة: حجر مسامي بارتفاع 3.3 متر عمره أكثر من 1000 عام. حول الحديقة يوجد سوق يويوان، منطقة سوق نابضة بالحياة مليئة بأكشاك الوجبات الخفيفة ومحلات الهدايا التذكارية ومطعم نانشيانغ الشهير حيث اخترع الزيالونغباو (زلابية الحساء). خصص 2–3 ساعات لاستكشاف الحديقة والسوق.</p>
+      <div class="clear-both"></div>
+    </div>
+
+    <!-- Wukang Road (long text → float wrap) -->
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/shanghai/wukang-road.webp" alt="قصر ووكانغ والشوارع المظللة بالأشجار في منطقة الحي الفرنسي السابق" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">شارع ووكانغ وشارع أنفو (武康路/安福路) — منطقة الحي الفرنسي السابق</h3>
+      <p class="text-gray-700">كانت هذه المنطقة قلب الحي الفرنسي (法租界, 1849–1943)، وهي الآن تُعرف باسم <strong>المنطقة التاريخية والثقافية لشارع ووكانغ–شارع أنفو</strong>. هذا هو الجزء الأكثر عصرية في شنغهاي: شوارع مظللة بالأشجار، مبانٍ سكنية من طراز آرت ديكو من عشرينيات القرن الماضي، ومئات المحلات المستقلة والمقاهي والمطاعم. قصر ووكانغ الأيقوني (武康大楼)، بناء يشبه السفينة عند تقاطع طريق ووكانغ وهوایهای، هو أكثر موقع يتم تصويره في المنطقة. شارع ووكانغ أكثر هدوءاً وسكنية — مثالي لنزهة مريحة. شارع أنفو أكثر حيوية، مليء بمقاهي القهوة الحرفية والمتاجر المصممة وبعض من أفضل مطاعم الفطور في المدينة. اقض صباحاً أو بعد الظهر في التنقل بين المقاهي ومراقبة الناس؛ هذه هي شنغهاي في أكثر حالاتها عالمية.</p>
+      <div class="clear-both"></div>
+    </div>
+
+    <!-- Zhujiajiao Water Town (long text → float wrap) -->
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/shanghai/zhujiajiao.webp" alt="القنوات والجسور الحجرية في بلدة تشوجياجياو المائية" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">بلدة تشوجياجياو المائية (朱家角)</h3>
+      <p class="text-gray-700">بلدة مائية قديمة تبعد 45 دقيقة فقط بالمترو عن وسط شنغهاي. تشوجياجياو (حرفياً "قرية عائلة تشو") يمتد تاريخها لأكثر من 1700 عام، مع عمارة محفوظة جيداً من عهدي مينغ وتشينغ. البلدة متقاطعة بالقنوات المصطفة بأشجار الصفصاف، ويعبرها 36 جسراً حجرياً — أشهرها جسر فانغشينغ (放生桥)، جسر حجري ذو 5 أقواس بُني في عام 1571. استقل غندولاً خشبياً تقليدياً (يشبه غندول البندقية لكنه أرخص بكثير) عبر القنوات، زر حديقة كيزي (课植园)، وتذوق الوجبات الخفيفة المحلية مثل زونغزي (زلابية الأرز اللزج) والتوفو النتن. تشوجياجياو أقل تجارية من تشوتشوانغ الأكثر شهرة، مما يجعلها تجربة أكثر أصالة واسترخاء. رحلة نصف يوم كافية، لكن يمكنك أيضاً المبيت في نزل على ضفاف القناة لتجربة هادئة حقاً.</p>
+      <div class="clear-both"></div>
+    </div>
+
+    <!-- Shanghai Disneyland (long text → float wrap) -->
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12 overflow-hidden">
+      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/shanghai/disneyland.webp" alt="قلعة القصص المسحورة في ديزني لاند شنغهاي" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">ديزني لاند شنغهاي (上海迪士尼乐园)</h3>
+      <p class="text-gray-700">ديزني لاند شنغهاي هي أكثر منتجعات ديزني تميزاً في العالم. افتُتحت في عام 2016، وتضم <strong>قلعة القصص المسحورة</strong> — أكبر قلعة ديزني بنيت على الإطلاق بارتفاع 60 متراً. جاذبيتها المميزة، <strong>TRON Lightcycle Power Run</strong>، تُعتبر على نطاق واسع واحدة من أفضل ركوبات الإثارة في أي حديقة ديزني. تقدم الحديقة أيضاً جاذبيات حصرية مثل <strong>قراصنة الكاريبي: معركة الكنز الغارق</strong> ومأكولات صينية أصيلة لن تجدها في أي منتجع ديزني آخر. تبعد الحديقة حوالي 40 دقيقة عن وسط شنغهاي بالمترو (الخط 11، مباشرة إلى البوابة).</p>
+      <div class="clear-both"></div>
+    </div>
+
+    <h2 id="getting-around" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🚇 التنقل</h2>
+    <ul class="list-disc pl-6 space-y-3 text-lg text-gray-700 mb-12">
+      <li><strong>المترو:</strong> شنغهاي لديها أطول نظام مترو في العالم (19 خطاً، 800+ كم). كل شيء مكتوب بالإنكليزية. راجع <a href="/ar/transport/metro-bus/" class="text-blue-600 hover:underline">دليل المترو والحافلات للمدن الصينية الكبرى</a> لنصائح المسار.</li>
+      <li><strong>ديدي:</strong> يعمل بشكل مثالي. استخدمه للرحلات القصيرة أو عندما لا يصل المترو. احصل على نصائح الإعداد في <a href="/ar/transport/didi/" class="text-blue-600 hover:underline">كيفية استخدام ديدي في الصين كأجنبي</a>.</li>
+      <li><strong>ماغليف (磁悬浮):</strong> أسرع قطار تجاري في العالم، يربط مطار بودنغ بوسط المدينة (7 دقائق، 430 كم/ساعة). يستحق التجربة للتجربة بحد ذاتها.</li>
+      <li><strong>ركوب الدراجات:</strong> شنغهاي مسطحة وصديقة للدراجات. الدراجات المشتركة (Hellobike، Meituan) في كل مكان في وسط المدينة — مثالية لاستكشاف منطقة شارع ووكانغ وشارع أنفو.</li>
+    </ul>
+
+    <h2 id="where-to-stay" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏨 أماكن الإقامة</h2>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">الواجهة البحرية / لوجياتسوي (外滩/陆家嘴) — الأفضل للزوار الجدد</h3><p class="text-gray-700">إطلالات أيقونية على الأفق، قريبة من المعالم الرئيسية، الكثير من الفنادق الفاخرة. أغلى ثمناً لكنه يستحق الانغماس من أجل التجربة.</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">منطقة شارع ووكانغ / الحي الفرنسي السابق (武康路) — الأفضل لعشاق الطعام والثقافة</h3><p class="text-gray-700">المنطقة الأكثر عصرية مع مطاعم رائعة وحانات ومحلات بوتيك. شوارع هادئة مظللة بأشجار الجميز، مثالية للنزهات الصباحية. كانت هذه المنطقة قلب الحي الفرنسي (1849–1943).</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12"><h3 class="text-xl font-bold text-gray-900 mb-2">جينغآن (静安) — الأفضل للتسوق والحياة الليلية</h3><p class="text-gray-700">منطقة تجارية نابضة بالحياة مع وصلات ممتازة بالمترو. قريبة من شارع نانجينغ ومعبد جينغآن.</p></div>
+
+    <!-- ==================== WHAT TO EAT ==================== -->
+    <h2 id="what-to-eat" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🍜 ماذا تأكل</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">مشهد الطعام في شنغهاي أسطوري. إليك الأطباق التي يجب أن تجربها بالتأكيد.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+      <!-- Xiaolongbao -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/shanghai/food/xiaolongbao.webp" alt="زيالونغباو، زلابية حساء لحم الخنزير المطهوة على البخار" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">زيالونغباو (小笼包)</h3>
+          <p class="text-gray-600 text-base">زلابية رقيقة ملفوفة بعجين مطوي رقيق كالورق، محشوة بلحم الخنزير المفروم ومرق لحم خنزير جيلاتيني يذوب ليصبح مرقاً حريرياً لذيذاً عند الطهي على البخار. للأكل: انخر ثقباً صغيراً في الجانب، انفخ لتبرد السائل المغلي بالداخل، ثم احتسِ الحساء قبل غمس الزلابية كاملة في الخل الأسود مع شرائح الزنجبيل الناعمة. أفضل الأنواع لديها 18 طية على الأقل وغلاف رقيق شفاف لا يتمزق. ستجدها في معظم مطاعم الديم سام حول المدينة القديمة وبالقرب من حديقة يو — اتبع البخار.</p>
+        </div>
+      </div>
+
+      <!-- Shengjianbao -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/shanghai/food/shengjianbao.webp" alt="شينغجيانباو، كعك لحم الخنزير المقلي بقاع مقرمش" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">شينغجيانباو (生煎包)</h3>
+          <p class="text-gray-600 text-base">كعك مخمر يُقلى من الأسفل في مقلاة حديدية واسعة حتى يتحول القاع إلى قشرة ذهبية مقرمشة سميكة بينما يبقى الجزء العلوي طرياً ناعماً. حشوة لحم الخنزير في الداخل متبلة بالزنجبيل والصويا، وتطلق حساءاً حاراً فلفلياً مع كل قضمة لن تنساها. تناولها ساخنة مباشرة من المقلاة — تُباع عادةً في batches من أربعة في صندوق ورقي، وتظل بركانية لعدة دقائق. ابحث عن الطوابير الطويلة أمام المحلات الصغيرة في المدينة القديمة وعلى طول شوارع الطعام؛ هذا الطابور هو ضمانك.</p>
+        </div>
+      </div>
+
+      <!-- Hong Shao Rou -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/shanghai/food/hongshaorou.webp" alt="هونغ شاو رو، بطن الخنزير المطبوخ بالصويا" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">بطن الخنزير الأحمر المطبوخ — هونغ شاو رو (红烧肉)</h3>
+          <p class="text-gray-600 text-base">شرائح سميكة من بطن الخنزير بخطوط متناوبة من اللحم الخالي من الدهون والدهون الشفافة، مطبوخة ببطء في صلصة الصويا الداكنة والسكر الصخري ونبيذ شاوشينغ حتى تتحول الدهون إلى جيلاتينية ويتكثف الصلصة إلى طبقة لامعة لزجة تقريباً. كل مكعب طري ودسم في آن واحد، مع حلاوة معقدة توازن النكهة المالحة العميقة للصويا. يُقدم مع البيض المطبوخ وبراعم الخيزران، ويتطلب وعاء من الأرز الأبيض المسلوق البسيط لامتصاص كل قطرة من صلصة الكراميل الداكنة. موجود في قائمة كل مطعم منزلي في شنغهاي تقريباً، من المدينة القديمة إلى الحي الفرنسي.</p>
+        </div>
+      </div>
+
+      <!-- Scallion Oil Noodles -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/shanghai/food/congyoubanmian.webp" alt="كونغ يو بان ميان، نودلز زيت البصل الأخضر الكلاسيكية البسيطة" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">نودلز زيت البصل الأخضر — كونغ يو بان ميان (葱油拌面)</h3>
+          <p class="text-gray-600 text-base">بسيطة بشكل خادع: نودلز قمح مرنة مقلية في زيت تم تشريبه ببطء مع البصل الأخضر المحروق حتى يصبح عطرياً وجوزياً، ثم متبلة بصلصة الصويا وقليل من السكر. كل شعيرية تخرج لامعة وزيتية، تحمل دخاناً خفيفاً من البصل الأخضر وملحاً كافياً لتعيدك لقضمة أخرى. بعض الأكشاك تضيف الجمبري المجفف أو البصل المقرمش المقلي على الوجه لمزيد من القوام. وجبة غداء سريعة ورخيصة موجودة في ساحات الطعام ومحلات النودلز على جانب الشارع والمقاصف الصغيرة في كل أنحاء شنغهاي.</p>
+        </div>
+      </div>
+
+      <!-- Hairy Crab -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/shanghai/food/dazhaxie.webp" alt="دا زها شيه، سرطان البحر المشعر من بحيرة يانغتشنغ" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">سرطان البحر — دا زها شيه (大闸蟹)</h3>
+          <p class="text-gray-600 text-base">هوس موسمي يسيطر على شنغهاي كل خريف — سرطان البحر freshwater من بحيرة يانغتشنغ القريبة يُقدّر لroes الذهبي الزبدي (في الإناث) واللحم الحلو الرقيق (في الذكور). الاسم يأتي من الشعر الكثيف الذي يغطي مخالبه، مما يشير إلى النضج. فتح واحدة بالمطرقة الخشبية التقليدية هو طقس: تنتقي كل قطعة لحم، تغمسها في الخل الأسود مع الزنجبيل المقطع، وتغسلها بنبيذ شاوشينغ الدافئ. خلال موسم السرطان (سبتمبر إلى ديسمبر)، ستعلن عنها في كل مكان من المطاعم الراقية إلى أكشاك الشارع في جميع أنحاء المدينة.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="not-prose mt-16">
+      <h2 class="text-2xl font-bold text-gray-900 mb-8">📚 أدلة ذات صلة</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/ar/cities/city-select/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🗺️ <strong>كم يوماً في الصين؟</strong> — خطط رحلتك الكاملة</a>
+        <a href="/ar/cities/beijing-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🏛️ <strong>دليل بكين السياحي</strong> — شاهد كيف تقارن شنغهاي</a>
+        <a href="/ar/transport/metro-bus/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚇 <strong>دليل المترو والحافلات للمدن الصينية الكبرى</strong> — تنقل في مترو شنغهاي</a>
+        <a href="/ar/payment/payment-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">💳 <strong>كيف تدفع في الصين</strong> — إعداد Alipay وWeChat Pay</a>
+      </div>
+    </div>
+  </article>
+</Layout>

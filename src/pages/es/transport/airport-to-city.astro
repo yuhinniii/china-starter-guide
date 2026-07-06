@@ -1,0 +1,129 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'Del aeropuerto a la ciudad en China: qué suele funcionar mejor';
+const description = 'Metro, Didi, taxi o autobús aeroportuario: cómo elegir y qué esperar en los principales aeropuertos chinos.';
+---
+
+<Layout title={title} description={description} lang="es">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/es/transport/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Volver a Transporte
+      </a>
+    </nav>
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🛬 Transporte</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        Del aeropuerto a la ciudad en China: qué suele funcionar mejor
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">Metro, Didi, taxi o autobús aeroportuario: cómo elegir y qué esperar en los principales aeropuertos chinos.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Última actualización: junio 2026</span>
+        <span>⏱️ 5 min de lectura</span>
+      </div>
+    </header>
+
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-blue-900 mb-4">🎯 Respuesta rápida</h2>
+      <p class="text-lg text-blue-800 leading-relaxed">
+        <strong>Toma el metro</strong> si tu vuelo llega durante el día y llevas poco equipaje — es barato (¥5–10) y evita el tráfico. <strong>Usa DiDi</strong> si estás cansado, llevas maletas pesadas o llegas tarde por la noche (¥80–200). Evita los taxis sin licencia; usa la cola oficial de taxis.
+      </p>
+    </div>
+
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 En esta guía</h3>
+      <ul class="space-y-3">
+        <li><a href="#metro" class="text-blue-600 hover:underline">🚇 Opción 1: Metro (mejor para la mayoría)</a></li>
+        <li><a href="#didi" class="text-blue-600 hover:underline">🚗 Opción 2: DiDi (mejor puerta a puerta)</a></li>
+        <li><a href="#taxi" class="text-blue-600 hover:underline">🚕 Opción 3: Taxi</a></li>
+        <li><a href="#bus" class="text-blue-600 hover:underline">🚌 Opción 4: Autobús aeroportuario</a></li>
+        <li><a href="#reference" class="text-blue-600 hover:underline">📊 Referencia rápida por aeropuerto</a></li>
+      </ul>
+    </nav>
+
+    <div class="prose prose-gray max-w-none">
+
+      <h2 id="metro" class="text-2xl font-bold text-gray-900 mb-4">🚇 Opción 1: Metro (mejor para la mayoría)</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Los principales aeropuertos de las ciudades clave de China cuentan con líneas de metro directas al centro. Las tarifas oscilan entre ¥5 y ¥10, el servicio evita los atascos y toda la señalización de las estaciones incluye traducciones al inglés.</p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>Úsalo si:</strong> Llevas poco equipaje, llegas durante el horario de servicio (normalmente 6:00–23:00) y tu hotel está cerca de una estación de metro.</p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>Evítalo si:</strong> Llevas mucho equipaje, llegas tarde por la noche, o estás cansado y solo quieres llegar directamente a tu hotel.</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="didi" class="text-2xl font-bold text-gray-900 mb-4">🚗 Opción 2: DiDi (mejor puerta a puerta)</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Si tienes DiDi configurado (consulta la <a href="/es/transport/didi/" class="text-blue-600 hover:underline">guía de DiDi</a>), puedes reservar un viaje desde la zona de recogida del aeropuerto. La aplicación muestra las tarifas estimadas por adelantado, acepta Alipay/WeChat Pay y puedes seguir a tu conductor en tiempo real.</p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>Coste típico:</strong> ¥80–200 según la distancia y la ciudad.</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="taxi" class="text-2xl font-bold text-gray-900 mb-4">🚕 Opción 3: Taxi</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Hay taxis disponibles en las paradas oficiales fuera de las llegadas. Ten el nombre y la dirección de tu hotel traducidos al chino y muéstraselos al conductor. Asegúrate de que usen el taxímetro.</p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>Coste:</strong> Un poco más caro que DiDi, y potencialmente más si hay tráfico.</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="bus" class="text-2xl font-bold text-gray-900 mb-4">🚌 Opción 4: Autobús aeroportuario</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">La mayoría de los aeropuertos principales tienen rutas de autobús a zonas clave de la ciudad. Son más baratos que los taxis (¥20–40) pero más lentos y menos cómodos. No todos tienen carteles en inglés.</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="reference" class="text-2xl font-bold text-gray-900 mb-4">📊 Referencia rápida por aeropuerto</h2>
+
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-x-auto mb-8 not-prose">
+        <table class="w-full text-left">
+          <thead class="bg-gray-50">
+            <tr>
+              <th class="px-6 py-4 text-sm font-semibold text-gray-900">Aeropuerto</th>
+              <th class="px-6 py-4 text-sm font-semibold text-gray-900">Metro al centro</th>
+              <th class="px-6 py-4 text-sm font-semibold text-gray-900">DiDi al centro</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-100">
+            <tr class="hover:bg-gray-50"><td class="px-6 py-4 text-gray-700">Pekín Capital (PEK)</td><td class="px-6 py-4 text-gray-700">¥30, 60 min</td><td class="px-6 py-4 text-gray-700">¥120, 45 min</td></tr>
+            <tr class="hover:bg-gray-50"><td class="px-6 py-4 text-gray-700">Pekín Daxing (PKX)</td><td class="px-6 py-4 text-gray-700">¥35, 50 min</td><td class="px-6 py-4 text-gray-700">¥180, 60 min</td></tr>
+            <tr class="hover:bg-gray-50"><td class="px-6 py-4 text-gray-700">Shanghái Pudong (PVG)</td><td class="px-6 py-4 text-gray-700">¥8, 50 min</td><td class="px-6 py-4 text-gray-700">¥180, 50 min</td></tr>
+            <tr class="hover:bg-gray-50"><td class="px-6 py-4 text-gray-700">Cantón Baiyun (CAN)</td><td class="px-6 py-4 text-gray-700">¥8, 40 min</td><td class="px-6 py-4 text-gray-700">¥100, 40 min</td></tr>
+            <tr class="hover:bg-gray-50"><td class="px-6 py-4 text-gray-700">Shenzhen Bao'an (SZX)</td><td class="px-6 py-4 text-gray-700">¥8, 40 min</td><td class="px-6 py-4 text-gray-700">¥80, 35 min</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 not-prose">
+        <p class="text-gray-700"><strong>Mi recomendación:</strong> Toma el metro si tu vuelo llega durante el día y no llevas demasiado equipaje. Usa DiDi si estás cansado, llevas muchas maletas o llegas tarde. No tomes un taxi sin licencia — usa la cola oficial de taxis.</p>
+      </div>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="related" class="text-2xl font-bold text-gray-900 mb-6 mt-12">📚 Guías relacionadas</h2>
+
+      <div class="space-y-4 not-prose">
+        <a href="/es/transport/transport-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>Cómo moverse por China</strong> — la guía de transporte completa</a>
+        <a href="/es/transport/high-speed-rail/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>Cómo reservar y usar el tren bala en China</strong> — consejos de reserva y viaje</a>
+        <a href="/es/transport/didi/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚗 <strong>Cómo usar DiDi en China como extranjero</strong> — configura viajes compartidos</a>
+        <a href="/es/payment/setup-alipay/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">💳 <strong>Cómo configurar Alipay como extranjero</strong> — paga tu viaje</a>
+      </div>
+
+    </div>
+
+    <!-- Sources -->
+    <div class="mt-8 pt-6 border-t border-gray-200 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-3">Fuentes</h3>
+      <ul class="space-y-2">
+        <li><a href="https://en.bcia.com.cn/wljc.html" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">Aeropuerto de Pekín Capital - Guía de transporte</a></li>
+        <li><a href="https://www.shanghaiairport.com/ensh/gdjt/index.html" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">Aeropuerto de Shanghái - Transporte</a></li>
+        <li><a href="https://www.gbiac.net/traffic/tfa?urlKey=to-from-airport_en" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">Aeropuerto de Cantón Baiyun - Tráfico aeroportuario</a></li>
+      </ul>
+    </div>
+  </article>
+</Layout>

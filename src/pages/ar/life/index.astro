@@ -1,0 +1,152 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'الحياة في الصين — نصائح وأدلة السفر';
+const description = 'ابقَ متصلاً، وآمناً، واستمتع برحلتك على أكمل وجه.';
+---
+
+<Layout title={title} description={description} lang="ar">
+  <section class="max-w-4xl mx-auto px-6 py-12" dir="rtl">
+    
+    <!-- Header -->
+    <header class="mb-10 text-center">
+      <p class="text-sm text-gray-500 mb-2">🌏 الحياة</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-3 leading-tight">الحياة في الصين</h1>
+      <p class="text-base text-gray-500 max-w-2xl mx-auto">ابقَ متصلاً، وآمناً، واستمتع برحلتك على أكمل وجه.</p>
+    </header>
+
+    <!-- Quick Stats -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-12 not-prose">
+      <div class="bg-purple-50 border border-purple-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-purple-800">3</p>
+        <p class="text-xs font-semibold text-purple-800 uppercase tracking-wide mt-1">الإنترنت والتطبيقات</p>
+      </div>
+      <div class="bg-cyan-50 border border-cyan-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-cyan-800">3</p>
+        <p class="text-xs font-semibold text-cyan-800 uppercase tracking-wide mt-1">الصحة والرعاية الطبية</p>
+      </div>
+      <div class="bg-red-50 border border-red-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-red-800">3</p>
+        <p class="text-xs font-semibold text-red-800 uppercase tracking-wide mt-1">السلامة والطوارئ</p>
+      </div>
+      <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-yellow-800">2</p>
+        <p class="text-xs font-semibold text-yellow-800 uppercase tracking-wide mt-1">الثقافة والأساسيات</p>
+      </div>
+    </div>
+
+    <!-- Category Sections -->
+    <div class="space-y-8 mb-16 not-prose">
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-purple-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-purple-800">الاتصالات والإنترنت</h2>
+          <span class="text-xs font-medium text-purple-800 opacity-60">3 مقالات</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/ar/life/sim-card-guide/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-purple-800">📶 الإنترنت</span>
+            <p class="text-base font-bold text-gray-900 mt-1">أفضل بطاقة SIM و eSIM للسياح</p>
+            <p class="text-sm text-gray-600 mt-0.5">قارن بين مزودي eSIM وبطاقات SIM في المطار وخطط البيانات.</p>
+          </a>
+          <a href="/ar/life/vpn-guide/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-purple-800">🔒 VPN</span>
+            <p class="text-base font-bold text-gray-900 mt-1">أفضل خدمات VPN للسفر في الصين</p>
+            <p class="text-sm text-gray-600 mt-0.5">ما الذي يعمل، وكيفية الإعداد، ولماذا يجب قبل وصولك.</p>
+          </a>
+          <a href="/ar/life/essential-apps/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-purple-800">📱 التطبيقات</span>
+            <p class="text-base font-bold text-gray-900 mt-1">10 تطبيقات أساسية للسفر في الصين</p>
+            <p class="text-sm text-gray-600 mt-0.5">الدفع، النقل، الترجمة، والاستكشاف.</p>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-cyan-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-cyan-800">الصحة والرعاية الطبية</h2>
+          <span class="text-xs font-medium text-cyan-800 opacity-60">3 مقالات</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/ar/life/seeing-a-doctor/" class="block bg-cyan-50 border border-cyan-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-cyan-800">⚕️ الرعاية الطبية</span>
+            <p class="text-base font-bold text-gray-900 mt-1">زيارة الطبيب في الصين</p>
+            <p class="text-sm text-gray-600 mt-0.5">صيدلية، عيادة، أو مستشفى — كيف تختار.</p>
+          </a>
+          <a href="/ar/life/top-hospitals/" class="block bg-cyan-50 border border-cyan-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-cyan-800">🏥 المستشفيات</span>
+            <p class="text-base font-bold text-gray-900 mt-1">أفضل المستشفيات ذات الأقسام الدولية</p>
+            <p class="text-sm text-gray-600 mt-0.5">أفضل المستشفيات التي تتحدث بالإنجليزية، حسب المدينة.</p>
+          </a>
+          <a href="/ar/life/travel-insurance/" class="block bg-cyan-50 border border-cyan-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-cyan-800">🛡️ التأمين</span>
+            <p class="text-base font-bold text-gray-900 mt-1">تأمين السفر للصين</p>
+            <p class="text-sm text-gray-600 mt-0.5">ما تحتاج معرفته عن تأمين السفر.</p>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-red-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-red-800">السلامة والطوارئ</h2>
+          <span class="text-xs font-medium text-red-800 opacity-60">3 مقالات</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/ar/life/is-china-safe/" class="block bg-red-50 border border-red-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-red-800">🛡️ الأمان</span>
+            <p class="text-base font-bold text-gray-900 mt-1">هل السفر إلى الصين آمن؟</p>
+            <p class="text-sm text-gray-600 mt-0.5">رأي صادق حول السلامة والجريمة وما يجب الانتباه له.</p>
+          </a>
+          <a href="/ar/life/common-scams/" class="block bg-red-50 border border-red-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-red-800">⚠️ الاحتيال</span>
+            <p class="text-base font-bold text-gray-900 mt-1">الاحتيالات الشائعة في الصين وكيفية تجنبها</p>
+            <p class="text-sm text-gray-600 mt-0.5">اكتشف أشهر فخاخ السياح وتجنبها.</p>
+          </a>
+          <a href="/ar/life/emergency-numbers/" class="block bg-red-50 border border-red-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-red-800">🆘 الطوارئ</span>
+            <p class="text-base font-bold text-gray-900 mt-1">أرقام الطوارئ وماذا تفعل</p>
+            <p class="text-sm text-gray-600 mt-0.5">جهات اتصال أساسية وخطوات الاستجابة للطوارئ.</p>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-yellow-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-yellow-800">الثقافة والأساسيات</h2>
+          <span class="text-xs font-medium text-yellow-800 opacity-60">3 مقالات</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/ar/life/survival-kit/" class="block bg-yellow-50 border border-yellow-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-yellow-800">🎒 قائمة التحقق</span>
+            <p class="text-base font-bold text-gray-900 mt-1">حقيبة البقاء لرحلتك إلى الصين</p>
+            <p class="text-sm text-gray-600 mt-0.5">قائمة تحقق شاملة قبل المغادرة.</p>
+          </a>
+          <a href="/ar/life/packing-guide/" class="block bg-yellow-50 border border-yellow-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-yellow-800">🧳 التعبئة</span>
+            <p class="text-base font-bold text-gray-900 mt-1">ماذا تأخذ معك إلى الصين</p>
+            <p class="text-sm text-gray-600 mt-0.5">قائمة تعبئة عملية لكل فصل.</p>
+          </a>
+          <a href="/ar/life/chinese-phrases/" class="block bg-yellow-50 border border-yellow-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-yellow-800">🈶 اللغة</span>
+            <p class="text-base font-bold text-gray-900 mt-1">عبارات صينية أساسية للسياح</p>
+            <p class="text-sm text-gray-600 mt-0.5">لغة صينية للبقاء للمسافرين.</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Guides -->
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-5">أدلة ذات صلة</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <a href="/ar/payment/payment-guide/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-0.5">الدفع في الصين</p>
+          <p class="text-sm text-gray-500">إعداد Alipay و WeChat Pay</p>
+        </a>
+        <a href="/ar/transport/transport-guide/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-0.5">النقل في الصين</p>
+          <p class="text-sm text-gray-500">التنقل في جميع أنحاء البلاد</p>
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

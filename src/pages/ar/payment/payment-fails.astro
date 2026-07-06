@@ -1,0 +1,136 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'ماذا تفعل عندما تفشل عملية الدفع في الصين';
+const description = 'أسباب فشل الدفع الشائعة للمسافرين الأجانب في الصين وحلول خطوة بخطوة عندما لا تمر عملية دفع رمز QR.';
+---
+
+<Layout title={title} description={description} lang="ar">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/ar/payment/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        العودة إلى الدفع
+      </a>
+    </nav>
+    <!-- Header -->
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">💳 الدفع</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        ماذا تفعل عندما تفشل عملية الدفع في الصين
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">لا داعي للذعر — معظم حالات فشل الدفع سهلة الإصلاح.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 آخر تحديث: يونيو 2026</span>
+        <span>⏱️ 4 دقائق</span>
+      </div>
+    </header>
+
+    <!-- Quick Answer Box -->
+    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-red-900 mb-4">🎯 إجابة سريعة</h2>
+      <p class="text-lg text-red-800 leading-relaxed">
+        <strong>حالات فشل الدفع شائعة بين المستخدمين الأجانب.</strong> معظمها ناتج عن الحدود اليومية، حظر الاحتيال من البنك، أو مشاكل الشبكة. حاول التحويل إلى النقد، استخدام تطبيق مختلف، أو الاتصال بشبكة WiFi. إذا لم ينجح شيء، انتظر بضع ساعات وحاول مرة أخرى.
+      </p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="prose prose-lg max-w-none">
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        سيحدث ذلك في وقت ما. أنت في متجر، تمسح رمز QR، يدور التطبيق للحظة، ثم — خطأ. فشلت عملية الدفع.
+      </p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        لا داعي للذعر. حالات فشل الدفع في الصين شائعة بين المستخدمين الأجانب، وفي معظم الأحيان يكون الإصلاح بسيطاً.
+      </p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🔍</span> لماذا حدث ذلك
+      </h2>
+
+      <div class="space-y-4 mb-8 not-prose">
+        <div class="bg-blue-50 border border-blue-200 rounded-2xl p-5">
+          <h3 class="font-semibold text-gray-900 mb-2 text-lg">1. وصلت للحد اليومي</h3>
+          <p class="text-gray-700 text-sm">كل من Alipay و WeChat Pay لهما حدود على المبلغ الذي يمكنك إنفاقه. إذا كنت تتسوق، ربما وصلت للسقف.</p>
+          <p class="text-gray-700 text-sm mt-2"><strong>الحل:</strong> انتظر حتى اليوم التالي — الحدود اليومية تُعاد تعيينها.</p>
+        </div>
+
+        <div class="bg-green-50 border border-green-200 rounded-2xl p-5">
+          <h3 class="font-semibold text-gray-900 mb-2 text-lg">2. بنكك حظر المعاملة</h3>
+          <p class="text-gray-700 text-sm">بنكك يرى شحناً قادماً من الصين ويعتقد أنه احتيال.</p>
+          <p class="text-gray-700 text-sm mt-2"><strong>الحل:</strong> تحقق من إشعاراتك — عادة ما يرسل بنكك رسالة SMS يسأل إن كان هذا أنت. وافق عليها وحاول مرة أخرى. أخطر بنكك قبل السفر لتجنب هذا.</p>
+        </div>
+
+        <div class="bg-purple-50 border border-purple-200 rounded-2xl p-5">
+          <h3 class="font-semibold text-gray-900 mb-2 text-lg">3. مشكلة في الشبكة</h3>
+          <p class="text-gray-700 text-sm">قد يكون VPN الخاص بك قد انقطع، أو أن إنترنت التاجر بطيء.</p>
+          <p class="text-gray-700 text-sm mt-2"><strong>الحل:</strong> تحقق من VPN، شغل وضع الطيران ثم أطفئه، أو اسأل التاجر إذا كان يمكنه المحاولة مرة أخرى.</p>
+        </div>
+
+        <div class="bg-orange-50 border border-orange-200 rounded-2xl p-5">
+          <h3 class="font-semibold text-gray-900 mb-2 text-lg">4. التاجر لا يقبل البطاقات الدولية</h3>
+          <p class="text-gray-700 text-sm">بعض البائعين الصغار لديهم حسابات دفع تعمل فقط مع البطاقات المصرفية الصينية.</p>
+          <p class="text-gray-700 text-sm mt-2"><strong>الحل:</strong> استخدم النقد، أو اسأل إذا كانوا يقبلون WeChat Pay (أحياناً يعمل عندما لا يعمل Alipay).</p>
+        </div>
+      </div>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">✅</span> قائمة التحقق السريع لحل المشكلات
+      </h2>
+
+      <div class="bg-gray-50 rounded-2xl p-8 mb-8 not-prose">
+        <ol class="space-y-4">
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">1</span>
+            <div><strong>حوّل إلى التطبيق الآخر</strong> — إذا فشل Alipay، جرب WeChat Pay (أو العكس)</div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">2</span>
+            <div><strong>استخدم النقد</strong> — احمل دائماً 500–1000 يوان في فئات صغيرة كاحتياطي</div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">3</span>
+            <div><strong>اتصل بشبكة WiFi</strong> — اسأل التاجر عن WiFi الخاصة به؛ أحياناً البيانات الخلوية هي المشكلة</div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">4</span>
+            <div><strong>أعد تشغيل التطبيق</strong> — أغلق وأعد فتح Alipay أو WeChat</div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">5</span>
+            <div><strong>انتظر وحاول مرة أخرى</strong> — بعض المشاكل تُحل نفسها بعد بضع دقائق</div>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Related Guides -->
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose mt-12">
+      <h3 class="text-2xl font-bold text-gray-900 mb-6">📚 أدلة ذات صلة</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/ar/payment/payment-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">كيفية الدفع في الصين</p>
+          <p class="text-sm text-gray-600">نظرة عامة كاملة عن الدفع</p>
+        </a>
+        <a href="/ar/payment/setup-alipay/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">كيفية إعداد Alipay</p>
+          <p class="text-sm text-gray-600">دليل الإعداد خطوة بخطوة</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- Sources -->
+    <div class="mt-8 pt-6 border-t border-gray-200 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-3">المصادر</h3>
+      <ul class="space-y-2">
+        <li><a href="https://www.alipayplus.com/consumer/" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">Alipay - مركز المستهلكين</a></li>
+        <li><a href="https://cs.help.wechat.com/hc/en-us" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">WeChat - مركز المساعدة</a></li>
+      </ul>
+    </div>
+  </article>
+</Layout>

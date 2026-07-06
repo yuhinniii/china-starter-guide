@@ -1,0 +1,117 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'Guía de metro y autobús para las principales ciudades chinas';
+const description = 'Cómo usar el transporte público en las ciudades chinas. Pago móvil, tarjetas de transporte, consejos para autobuses y consejos de navegación.';
+---
+
+<Layout title={title} description={description} lang="es">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/es/transport/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Volver a Transporte
+      </a>
+    </nav>
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🚇 Transporte público</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        Guía de metro y autobús para las principales ciudades chinas
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">Cómo usar el transporte público en las ciudades chinas — pago móvil, tarjetas de transporte, consejos para autobuses y consejos de navegación.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Última actualización: junio 2026</span>
+        <span>⏱️ 4 min de lectura</span>
+      </div>
+    </header>
+
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-blue-900 mb-4">🎯 Respuesta rápida</h2>
+      <p class="text-lg text-blue-800 leading-relaxed">
+        Los sistemas de metro de China son <strong>de clase mundial, baratos y accesibles en inglés</strong>. Usa Alipay o WeChat Pay para escanear un código QR en el torno — no necesitas billete. Los autobuses son un buen respaldo para zonas sin cobertura de metro. Los nombres de las estaciones y los anuncios son bilingües en todas partes.
+      </p>
+    </div>
+
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 En esta guía</h3>
+      <ul class="space-y-3">
+        <li><a href="#general" class="text-blue-600 hover:underline">💡 Consejos generales para todas las ciudades</a></li>
+        <li><a href="#buses" class="text-blue-600 hover:underline">🚌 Autobuses</a></li>
+        <li><a href="#cards" class="text-blue-600 hover:underline">💳 Tarjetas de transporte</a></li>
+        <li><a href="#mobile" class="text-blue-600 hover:underline">📱 Pago móvil para transporte público</a></li>
+      </ul>
+    </nav>
+
+    <div class="prose prose-gray max-w-none">
+
+      <h2 id="general" class="text-2xl font-bold text-gray-900 mb-4">💡 Consejos generales para todas las ciudades</h2>
+
+      <ul class="space-y-3 text-gray-700 mb-8">
+        <li><strong>Pago:</strong> Puedes comprar billetes de un solo viaje en las máquinas (la mayoría acepta efectivo y Alipay/WeChat Pay). O escanea códigos QR en los tornos mediante la sección Viajes de Alipay o el miniprograma de transporte de WeChat.</li>
+        <li><strong>Carteles:</strong> Los nombres de las estaciones están en chino e inglés. Los anuncios son bilingües.</li>
+        <li><strong>Transbordos:</strong> Sigue las líneas de color y los carteles en inglés. Los transbordos entre líneas están claramente indicados.</li>
+        <li><strong>Aplicaciones de navegación:</strong> Usa aplicaciones locales como Gaode Maps o Baidu Maps para obtener indicaciones precisas de rutas de metro.</li>
+      </ul>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="buses" class="text-2xl font-bold text-gray-900 mb-4">🚌 Autobuses</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Los autobuses son un buen respaldo si el metro no llega directamente a tu destino, ya que cubren zonas más remotas. Son más baratos que el metro pero más lentos y a menudo sufren atascos en horas punta.</p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">En las ciudades turísticas, la mayoría de los autobuses anuncian las paradas tanto en chino como en inglés. Aun así, presta mucha atención a los avisos de parada. Muchos autobuses requieren escanear tu código QR de transporte tanto al subir como al bajar, así que no olvides escanear de nuevo antes de bajarte.</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="cards" class="text-2xl font-bold text-gray-900 mb-4">💳 Tarjetas de transporte</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Cada ciudad tiene su propia tarjeta de transporte (Pekín: Yikatong, Shenzhen: Shenzhentong). Cómpralas en las estaciones de metro y recárgalas con pago móvil. Funcionan tanto en metro como en autobús y ofrecen pequeños descuentos, pero no son necesarias para viajeros de corta estancia. Muchas tienen diseños únicos, así que puedes llevarte una como recuerdo.</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="mobile" class="text-2xl font-bold text-gray-900 mb-4">📱 Pago móvil para transporte público</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Este es el método más usado por los locales — no necesitas comprar billetes ni llevar una tarjeta aparte.</p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Tanto Alipay como WeChat Pay generan códigos QR de transporte universales para metro y autobuses. Abre Alipay, pulsa "Transporte" en la pantalla de inicio, selecciona tu ciudad y escanea en el torno. El pago se descuenta de tu tarjeta vinculada. WeChat funciona de manera similar a través de su miniprograma "Ride Code".</p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>Consejo:</strong> Hay códigos QR separados para autobuses y metro, así que asegúrate de haber seleccionado el correcto antes de subir.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8 not-prose">
+        <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+          <img src="/images/alipay-transit.webp" alt="Configuración del código QR de transporte de Alipay" class="w-full" />
+          <div class="p-4">
+            <p class="text-sm font-semibold text-gray-900">Código QR de transporte de Alipay</p>
+            <p class="text-xs text-gray-500">Abre Alipay → Transporte → selecciona ciudad → escanea en el torno</p>
+          </div>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+          <img src="/images/wechat-transit.webp" alt="Configuración del código QR de transporte de WeChat" class="w-full" />
+          <div class="p-4">
+            <p class="text-sm font-semibold text-gray-900">Código QR de transporte de WeChat</p>
+            <p class="text-xs text-gray-500">Abre WeChat → miniprograma Ride Code → escanea en el torno</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="not-prose mt-16">
+      <h2 class="text-2xl font-bold text-gray-900 mb-8">📚 Guías relacionadas</h2>
+      <div class="space-y-4">
+        <a href="/es/transport/transport-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>Cómo moverse por China</strong> — la guía de transporte completa</a>
+        <a href="/es/transport/didi/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚗 <strong>Cómo usar DiDi en China como extranjero</strong> — configura viajes compartidos</a>
+        <a href="/es/payment/setup-alipay/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">💳 <strong>Cómo configurar Alipay como extranjero</strong> — paga el transporte con tu móvil</a>
+      </div>
+    </div>
+
+    <!-- Sources -->
+    <div class="mt-8 pt-6 border-t border-gray-200 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-3">Fuentes</h3>
+      <ul class="space-y-2">
+        <li><a href="https://" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">Los sitios web de metro están principalmente en chino. Mapas e información de rutas disponibles en el sitio oficial de metro de cada ciudad con traducción del navegador.</a></li>
+      </ul>
+    </div>
+  </article>
+</Layout>

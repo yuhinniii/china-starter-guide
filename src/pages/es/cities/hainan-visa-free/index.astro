@@ -1,0 +1,522 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'Guía de Viaje de Hainan 2026 — Sin Visa para 59 Países';
+const description = 'Planifica tu viaje a Hainan, la isla tropical de China. 30 días sin visa para 59 países. Playas tropicales, senderos en la selva, comida local y consejos de viaje en una guía.';
+const lastUpdated = 'junio 2026';
+const readTime = '7 min';
+---
+
+<Layout title={title} description={description} lang="es">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+
+    <!-- Breadcrumb -->
+    <nav class="mb-8 not-prose">
+      <a href="/es/cities/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Volver a Guías de Ciudades
+      </a>
+    </nav>
+
+    <!-- Header -->
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🏝️ Hainan</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        Guía de Viaje de Hainan: La Isla Tropical de China — Sin Visa para 59 Países
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">Playas, selva tropical, volcanes y complejos turísticos de clase mundial — y los ciudadanos de 59 países pueden visitarla sin visa hasta por 30 días.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Última actualización: {lastUpdated}</span>
+        <span>⏱️ {readTime}</span>
+      </div>
+    </header>
+
+    <!-- Quick Answer -->
+    <div class="bg-gradient-to-r from-emerald-50 to-teal-50 border-l-4 border-emerald-500 rounded-r-2xl p-8 mb-6 not-prose">
+      <h2 class="text-2xl font-bold text-emerald-900 mb-4">⚡ Respuesta Rápida</h2>
+      <p class="text-lg text-emerald-800 leading-relaxed"><strong>Hainan es el paraíso insular tropical de China — playas, selva tropical, volcanes y complejos turísticos de clase mundial — y los ciudadanos de 59 países pueden visitarla sin visa hasta por 30 días.</strong> No necesitas grupo turístico, ni visita a la embajada. Vuela a Haikou o Sanya con tu pasaporte y un billete de regreso, y ya estás dentro.</p>
+    </div>
+    <p class="text-gray-700 mb-8">Esto es importante si eres de <strong>EE. UU., México, Filipinas, Indonesia o República Checa</strong> — estos países no están en la lista de 30 días sin visa de la China continental. (<a href="/es/visa/visa-free/" class="text-blue-600 hover:underline">Ver la lista completa de 59 países →</a>)</p>
+
+    <!-- Quick Stats Grid -->
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12">
+      <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
+        <p class="text-2xl mb-1">☀️</p>
+        <p class="text-sm font-semibold text-gray-900">Clima Tropical</p>
+        <p class="text-xs text-gray-500">Promedio 24°C / 75°F todo el año</p>
+      </div>
+      <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
+        <p class="text-2xl mb-1">🏖️</p>
+        <p class="text-sm font-semibold text-gray-900">Mejores Playas</p>
+        <p class="text-xs text-gray-500">Yalong Bay, Dadonghai, Haitang Bay</p>
+      </div>
+      <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
+        <p class="text-2xl mb-1">🌋</p>
+        <p class="text-sm font-semibold text-gray-900">Geoparque Volcánico</p>
+        <p class="text-xs text-gray-500">Geología única en Haikou</p>
+      </div>
+      <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
+        <p class="text-2xl mb-1">🌴</p>
+        <p class="text-sm font-semibold text-gray-900">Selva Tropical</p>
+        <p class="text-xs text-gray-500">Wuzhishan, Yanoda, Bawangling</p>
+      </div>
+      <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
+        <p class="text-2xl mb-1">⛳</p>
+        <p class="text-sm font-semibold text-gray-900">Resorts de Golf</p>
+        <p class="text-xs text-gray-500">Campos de clase mundial</p>
+      </div>
+      <div class="bg-white rounded-xl p-4 border border-gray-100 text-center">
+        <p class="text-2xl mb-1">🦞</p>
+        <p class="text-sm font-semibold text-gray-900">Marisco Fresco</p>
+        <p class="text-xs text-gray-500">Hainan es famosa por ello</p>
+      </div>
+    </div>
+
+    <!-- Which Countries Qualify -->
+    <section class="mb-12">
+      <h2 id="visa-free-countries" class="text-3xl font-bold text-gray-900 mb-4">¿Qué Países Califican para la Exención de Visa de Hainan?</h2>
+      <p class="text-gray-700 mb-4"><strong>59 países</strong> — en su mayoría los mismos que la lista sin visa continental, pero con algunos extras importantes como <strong>EE. UU., México, Filipinas e Indonesia</strong> que no están en la lista continental de 30 días.</p>
+      <div class="bg-emerald-50 border-l-4 border-emerald-400 rounded-r-xl p-5 mb-4">
+        <p class="text-sm text-emerald-800"><strong>💡 Nota rápida:</strong> A diferencia de las políticas sin visa continentales, la lista de Hainan cubre un rango más amplio (59 frente a 50 países). Si tu país no está en la <a href="/es/visa/visa-free/" class="text-blue-600 hover:underline font-medium">lista sin visa continental</a>, comprueba si está en la lista de Hainan — podría ser tu única opción sin visa para China.</p>
+      </div>
+      <p class="text-sm text-gray-600">Consulta el <a href="/es/visa/visa-free/" class="text-blue-600 hover:underline font-medium">desglose completo de los 59 países por región →</a></p>
+    </section>
+
+    <!-- When to Visit -->
+    <section class="mb-12">
+      <h2 id="when-to-visit" class="text-3xl font-bold text-gray-900 mb-4">Cuándo Visitar Hainan</h2>
+      <div class="bg-white rounded-xl border border-gray-200 overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="bg-gray-50 border-b border-gray-200">
+              <th class="text-left px-5 py-3 font-semibold text-gray-700">Mes</th>
+              <th class="text-left px-5 py-3 font-semibold text-gray-700">Temp.</th>
+              <th class="text-left px-5 py-3 font-semibold text-gray-700">Lluvia</th>
+              <th class="text-left px-5 py-3 font-semibold text-gray-700">Gente</th>
+              <th class="text-left px-5 py-3 font-semibold text-gray-700">Veredicto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 font-medium">Nov–Mar</td>
+              <td class="px-5 py-3">20–28°C</td>
+              <td class="px-5 py-3">Baja</td>
+              <td class="px-5 py-3">Alta</td>
+              <td class="px-5 py-3 font-semibold text-emerald-600">🌟 Mejor época — seca, cálida, clima de playa perfecto</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 font-medium">Abr–Jun</td>
+              <td class="px-5 py-3">25–32°C</td>
+              <td class="px-5 py-3">Moderada</td>
+              <td class="px-5 py-3">Baja</td>
+              <td class="px-5 py-3 text-amber-600">👍 Buena — más calor pero menos turistas</td>
+            </tr>
+            <tr>
+              <td class="px-5 py-3 font-medium">Jul–Oct</td>
+              <td class="px-5 py-3">26–32°C</td>
+              <td class="px-5 py-3">Alta (temporada de tifones)</td>
+              <td class="px-5 py-3">Baja</td>
+              <td class="px-5 py-3 text-red-600">⚠️ Lluviosa — vuelos baratos pero consulta los pronósticos de tifones</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-3 text-sm text-gray-600"><strong>Temporada alta de turismo:</strong> Año Nuevo Chino (enero/febrero) y Semana Dorada del Día Nacional (1–7 de octubre) — evítalas si puedes.</p>
+    </section>
+
+    <!-- Why Visit -->
+    <section class="mb-12">
+      <h2 id="why-visit" class="text-3xl font-bold text-gray-900 mb-6">🏝️ ¿Por Qué Visitar Hainan?</h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Hainan es la respuesta de China a Hawái — una isla tropical con playas de arena blanca, exuberante selva tropical y una vibra relajada que no encontrarás en ningún otro lugar del continente. Es la única parte de China donde puedes escapar verdaderamente de la ciudad y relajarte junto al océano. Además, con acceso sin visa para 59 países, es el punto de entrada más fácil a China para muchos viajeros.</p>
+    </section>
+
+    <!-- How Many Days -->
+    <section class="mb-12">
+      <h2 id="how-many-days" class="text-3xl font-bold text-gray-900 mb-6">📅 ¿Cuántos Días Necesitas?</h2>
+      <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700 mb-12">
+        <li><strong>3–4 días (estándar):</strong> Playas de Sanya, marisco y una excursión de un día a Haikou o una caminata por la selva</li>
+        <li><strong>5–7 días (cómodo):</strong> Repartido entre Sanya y Haikou, añade Boao y senderismo en Wuzhishan</li>
+        <li><strong>7+ días (inmersión profunda):</strong> Vuelta completa a la isla en tren de alta velocidad — explora toda la costa</li>
+      </ul>
+    </section>
+
+    <!-- Top Attractions -->
+    <section class="mb-12">
+      <h2 id="attractions" class="text-3xl font-bold text-gray-900 mb-6">🎯 Principales Atracciones</h2>
+
+      <h3 class="text-2xl font-bold text-gray-900 mb-4">🏖️ Sanya — Donde Acaba la Mayoría de los Turistas</h3>
+      <p class="text-gray-700 mb-6">Sanya es la clásica escapada a la playa tropical — piensa en palmeras, agua turquesa y complejos turísticos que realmente se sienten como un capricho. Pero hay mucho más aquí que simplemente holgazanear junto a la piscina.</p>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/yalong-bay.webp" alt="Yalong in Hainan" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">Yalong Bay</h4>
+        <p class="text-gray-700">La mejor franja de playa de la isla — no es exageración, es simplemente cierto. La arena es ese polvo de coral blanco y fino que normalmente solo ves en postales, el agua es lo suficientemente clara como para ver peces desde la orilla, y toda la bahía se curva durante 7 kilómetros con colinas verdes al fondo. La mayoría de los complejos turísticos dan directamente a la playa, así que puedes ir de tu habitación al agua en unos 90 segundos. Es más cara que otras playas de Sanya, pero obtienes lo que pagas.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/dadonghai-bay.webp" alt="Dadonghai in Hainan" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">Bahía de Dadonghai</h4>
+        <p class="text-gray-700">Aquí es donde vive la energía local. Dadonghai es menos refinada que Yalong — hoteles más baratos, más ruido, mejor observación de gente. La bahía forma una media luna con baño decente, y todo el paseo marítimo está lleno de restaurantes de marisco donde eliges tu captura de los tanques y la asan en el momento. La tarde es el mejor momento: se encienden las luces, los bares de playa se animan y todo el lugar vibra.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/haitang-bay.webp" alt="Haitang in Hainan" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">Haitang Bay</h4>
+        <p class="text-gray-700">El primo más tranquilo y exclusivo. Haitang Bay es donde se encuentra el complejo Atlantis Sanya — piensa en un parque acuático masivo, un acuario con más de 10,000 animales marinos y una piscina de interacción con delfines que en realidad se siente más decorosa de lo que esperarías. La playa en sí es amplia y menos concurrida que Yalong. Si te gustan las compras libres de impuestos, aquí también está el gran免税店.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/wuzhizhou-island.webp" alt="Wuzhizhou in Hainan" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">Isla Wuzhizhou</h4>
+        <p class="text-gray-700">Un ferry de 20 minutos desde la costa te lleva a esta pequeña isla con el mejor esnórquel de Hainan. El agua que la rodea está protegida, así que el coral está sano y los peces no se dispersan en cuanto sumerges la máscara. Se llega en barco y se sale en barco, puedes recorrer todo el lugar en medio día. Ve temprano para evitar las multitudes — los ferries se llenan rápido a las 10 AM.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/nanshan-temple.webp" alt="Nanshan in Hainan" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">Templo de Nanshan</h4>
+        <p class="text-gray-700">La pieza central es la estatua de Guanyin de 108 metros de pie en el mar — tres caras, tres direcciones, la estatua más alta de su tipo en el mundo. Pero lo que sorprende a la mayoría de los visitantes es la escala de todo el complejo: salones, pagodas, jardines repartidos en hectáreas de terreno bien cuidado. Es un templo activo con monjes reales e incienso real, no solo una parada turística disfrazada.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/yanoda-rainforest.webp" alt="Yanoda in Hainan" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">Selva de Yanoda</h4>
+        <p class="text-gray-700">Jungla con algunas mejoras: puente de suelo de cristal suspendido sobre el dosel, tirolina a través de un valle y piscinas en cascada en las que puedes meterte. La caminata en sí es manejable (un par de horas) y hay una sorprendente variedad de vida vegetal — busca los banianos gigantes. Se vuelve húmedo rápidamente, así que lleva agua y ve temprano.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/luhuitou-park.webp" alt="Luhuitou in Hainan" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">Parque Luhuitou</h4>
+        <p class="text-gray-700">El parque en la cima de la colina con la mejor vista del atardecer sobre Sanya. Hay una leyenda detrás del nombre: un cazador persiguió a un ciervo hasta el borde de un acantilado, y el ciervo se convirtió en una hermosa mujer (Luhuitou significa literalmente "ciervo girando la cabeza"). Sube a pie o toma el tranvía — de cualquier manera obtienes una vista panorámica que te hace entender por qué este lugar ha sido sagrado durante tanto tiempo.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <h3 class="text-2xl font-bold text-gray-900 mb-4">🏛️ Haikou — La Capital Tranquila</h3>
+      <p class="text-gray-700 mb-6">Haikou no es Sanya, y ese es el punto. Menos playa, más cultura. Menos turistas, más vida real. Es a donde vas cuando quieres entender Hainan más allá del folleto del resort.</p>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/volcanic-geopark.webp" alt="Volcanic in Hainan" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">Geoparque Volcánico</h4>
+        <p class="text-gray-700">Un volcán extinto en el que realmente puedes entrar — el cráter está a unos 30 minutos del centro de Haikou. El sendero te lleva al interior del cono, donde estás rodeado de roca volcánica y vegetación tropical. Hay túneles de lava cercanos por los que puedes gatear (lleva una linterna). Una experiencia genuinamente única que la mayoría de los turistas de Hainan se pierden porque nunca salen de los resorts de Sanya.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/qilou-old-street.webp" alt="Qilou in Hainan" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">Calle Antigua Qilou</h4>
+        <p class="text-gray-700">Edificios con soportales de los años 20 alineados a ambos lados de la calle — una mezcla de estilos chino, europeo y del sudeste asiático que existe porque Hainan era un centro comercial en aquellos tiempos. Los soportales (llamados qilou, de ahí el nombre) protegen las aceras para que puedas pasear incluso bajo la lluvia. La arquitectura es genuinamente única de Hainan, y no la verás en ningún otro lugar de China a esta escala.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/hainan-museum.webp" alt="Hainan Museum in Hainan" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">Museo de Hainan</h4>
+        <p class="text-gray-700">El mejor lugar para aprender sobre las culturas minoritarias Li y Miao — dos grupos que vivieron en esta isla durante siglos antes de que llegaran los resorts. La colección de brocados Li (Patrimonio Inmaterial de la UNESCO) es lo más destacado: intrincados patrones geométricos tejidos a mano usando técnicas que no han cambiado en 3,000 años. También puedes ver las casas con forma de barco en las que solían vivir los Li, y artefactos de la historia de la isla como lugar de exilio para funcionarios caídos en desgracia.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/mission-hills.webp" alt="Mission in Hainan" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">Mission Hills</h4>
+        <p class="text-gray-700">Un complejo masivo con 10 campos de golf diseñados por profesionales de renombre, aguas termales con 168 piscinas temáticas de diferentes países, y un backlot de estudio cinematográfico con calles modeladas según el Shanghái de los años 30. Incluso si no juegas al golf, solo las aguas termales merecen el viaje — especialmente la sección de火山温泉 construida con rocas volcánicas reales.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <h3 class="text-2xl font-bold text-gray-900 mb-4">🗺️ Más Allá de las Dos Ciudades Principales</h3>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/boao.webp" alt="Boao in Hainan" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">Boao</h4>
+        <p class="text-gray-700 mb-3">Un pequeño pueblo costero que da la talla. Alberga el Foro anual de Boao para Asia (piensa en el Davos de Asia) donde líderes mundiales se reúnen en un entorno que se siente más como un retiro playero que como un centro de conferencias. La carretera costera entre Boao y el cercano pueblo pesquero de Tanmen es uno de los mejores paseos en coche de Hainan — acantilados que caen al océano a un lado, colinas boscosas al otro. El pueblo en sí es tranquilo y transitable, con un agradable paseo marítimo a lo largo del estuario. Si vas en coche entre Haikou y Sanya, parar aquí para almorzar y pasear rompe el viaje maravillosamente.</p>
+        <div class="bg-blue-50 border-l-4 border-blue-400 p-3 rounded-r-lg text-sm text-blue-800">
+          💡 <strong>Consejo:</strong> La zona médica de Boao Lecheng, justo al lado, es la única zona especial de China donde los medicamentos y terapias aprobados en el extranjero están disponibles antes de obtener la aprobación continental. Si estás buscando un tratamiento específico, vale la pena investigar si está disponible aquí — algunos viajeros combinan un procedimiento con una estancia de recuperación en un resort.
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+      </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/wuzhishan.webp" alt="Wuzhishan in Hainan" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">Wuzhishan (Montaña de los Cinco Dedos)</h4>
+        <p class="text-gray-700">El mejor senderismo de la isla — cinco picos que se elevan de la jungla como dedos, con bosque nuboso cerca de la cima y vistas panorámicas cuando el tiempo se despeja. La subida no es broma (3-4 horas hacia arriba), pero la recompensa es estar por encima de la niebla mirando una isla que parece más Jurassic Park que China. Ve un día claro entre semana si puedes.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/xinglong.webp" alt="Xinglong in Hainan" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">Xinglong</h4>
+        <p class="text-gray-700">Un pueblo extraño y maravilloso moldeado por chinos de ultramar que regresaron del sudeste asiático trayendo consigo la cultura del café en la década de 1950. El jardín botánico tropical es la principal atracción: hectáreas de plantas de especias, árboles de cacao y los arbustos de café originales que iniciaron la escena cafetera de Hainan. El café en sí es decente — prueba el estilo local con leche condensada.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+      <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/hainan/bawangling.webp" alt="Bawangling in Hainan" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h4 class="text-xl font-bold text-gray-900 mb-2">Bawangling</h4>
+        <p class="text-gray-700">Esta selva tropical es el hogar del gibón de Hainan — el primate más raro de la Tierra, con menos de 40 individuos. Necesitarías mucha suerte (y un guía) para ver uno, pero el bosque en sí vale el viaje: árboles imponentes, orquídeas silvestres y un silencio que se siente diferente de cualquier otro lugar de Hainan. Una excursión de un día desde Haikou si estás dispuesto a conducir.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+    </section>
+
+    <!-- Getting Around -->
+    <section class="mb-12">
+      <h2 id="getting-around" class="text-3xl font-bold text-gray-900 mb-6">🚇 Cómo Moverse por Hainan</h2>
+      <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700">
+        <li><strong>Tren de alta velocidad:</strong> Hainan tiene una línea de tren de alta velocidad circular que conecta Haikou, Boao, Sanya y la mayoría de los pueblos. Los trenes son frecuentes y baratos (Haikou → Sanya ~¥100, 1.5 horas).</li>
+        <li><strong>Taxis / Didi:</strong> Pide un coche fácilmente a través de la <a href="/es/transport/didi/" class="text-blue-600 hover:underline">aplicación DiDi</a> o mediante los miniprogramas de Alipay/WeChat.</li>
+        <li><strong>Alquiler de coches:</strong> Posible con un Permiso de Conducir Internacional + traducción al chino</li>
+        <li><strong>Autobuses:</strong> Baratos pero lentos, las rutas cubren la mayoría de los lugares turísticos</li>
+      </ul>
+    </section>
+
+    <!-- Where to Stay -->
+    <section class="mb-12">
+      <h2 id="where-to-stay" class="text-3xl font-bold text-gray-900 mb-6">🏨 Dónde Alojarse</h2>
+      <p class="text-gray-700 mb-6">Los resorts de Hainan son generalmente más baratos que los de calidad equivalente en el sudeste asiático. Una habitación de ¥500/noche en Yalong Bay a menudo incluye desayuno y tiene una zona de playa privada.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">💰 Económico (¥100-200)</h3>
+          <p class="text-gray-600 text-sm">Albergues de la zona de Dadonghai (Sanya) · Casas de huéspedes de la zona de Qilou (Haikou)</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">💰💰 Gama Media (¥300-600)</h3>
+          <p class="text-gray-600 text-sm">Resorts de gama media de Yalong Bay (Sanya) · Hoteles de la zona de Mission Hills (Haikou)</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-6">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">💰💰💰 Premium (¥800+)</h3>
+          <p class="text-gray-600 text-sm">Atlantis, Edition, Ritz-Carlton — Haitang Bay (Sanya) · Hilton, Marriott en el centro (Haikou)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- What to Eat -->
+    <section class="mb-12">
+      <h2 id="what-to-eat" class="text-3xl font-bold text-gray-900 mb-6">🍜 Qué Comer en Hainan</h2>
+      <p class="text-lg leading-relaxed text-gray-700 md:col-span-2 mb-0">La comida de Hainan se basa en sabores tropicales frescos — mucho marisco, coco y arroz.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/hainan/wenchang-chicken.webp" alt="Wenchang in Hainan" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Pollo Wenchang (文昌鸡)</h3>
+          <p class="text-gray-700">El plato estrella de Hainan — pollo de corral escalfado con piel sedosa y carne sutilmente dulce. La salsa de aceite de jengibre y cebolleta es la verdadera estrella, brillante y potente. La mejor versión está en la propia ciudad de Wenchang (a una hora de Haikou), donde lo sirven simplemente como aperitivo frío con sopa de arroz y pollo al lado. No has probado realmente Hainan hasta que has comido esto.</p>
+        </div>
+      </div>
+
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/hainan/jiaji-duck.webp" alt="Jiaji in Hainan" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Pato Jiaji (嘉积鸭)</h3>
+          <p class="text-gray-700">El héroe anónimo de la cocina hainanesa — pato cocinado a fuego lento hasta que la carne se desprende del hueso y el caldo se convierte en un líquido rico de color ámbar. La cocción es engañosamente simple: pato, agua, sal y hierbas chinas para un sutil calor de anís y jengibre. Moja la carne en pasta de judías fermentadas y chili para el efecto completo. Es cocina casera hainanesa en su estado más puro, mejor encontrada en el área de Jiaji cerca de Boao.</p>
+        </div>
+      </div>
+
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/hainan/hainan-noodles.webp" alt="Hainan Noodles in Hainan" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Fideos de Hainan (海南粉)</h3>
+          <p class="text-gray-700">El desayuno que alimenta la isla — finos fideos de arroz en un caldo ligero hecho con huesos de cerdo, gambas secas y calamar, cubiertos con ajo frito y cebolletas. Dos estilos para probar: <em>tang mian</em> (versión en sopa, el clásico cuenco matutino) y <em>ban mian</em> (estilo seco con una salsa espesa y sabrosa). Añade una cucharada de pasta de chili local y entenderás por qué todos los hainaneses empiezan el día así.</p>
+        </div>
+      </div>
+
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/hainan/seafood-market.webp" alt="Seafood in Hainan" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Experiencia del Mercado de Marisco</h3>
+          <p class="text-gray-700">Una actividad de una tarde en sí misma — dirígete al mercado de marisco de Sanya, elige tu captura viva de tanques de langosta mantis, cangrejos de flor y mero, luego súbelo para que lo cocinen en el momento. A la parrilla con ajo y chili, o al vapor con jengibre y cebolleta. Unos ¥100-150 por persona para un festín, y solo la langosta mantis vale el viaje — tienen un dulzor que los congelados importados no pueden igualar.</p>
+        </div>
+      </div>
+
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/hainan/coconut-rice.webp" alt="Coconut in Hainan" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Arroz con Coco</h3>
+          <p class="text-gray-700">Arroz glutinoso cocido al vapor dentro de un coco fresco con leche de coco y pandán — fragante, ligeramente dulce, casi como un pudín. La capa exterior se carameliza formando una costra delicada, y las mejores versiones incluyen carne de coco rallada mezclada. Los vendedores ambulantes lo venden envuelto en hojas de plátano — búscalo en el mercado nocturno de Wenchang.</p>
+        </div>
+      </div>
+
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/hainan/qingbuliang.webp" alt="Qingbuliang in Hainan" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Qingbuliang (清补凉)</h3>
+          <p class="text-gray-700">La respuesta de Hainan al calor tropical — un cuenco de hielo rallado con leche de coco, taro masticable, judías rojas, sandía, gelatina de aloe vera y "fideos" de almidón de algas que se deslizan hacia abajo de la forma más satisfactoria. Dulce pero empalagoso, cremoso pero ligero. Cada puesto tiene su propio toque (algunos añaden helado, otros cacahuetes triturados). Unos ¥10 el cuenco, mejor disfrutado en el mercado nocturno junto al mar de Sanya cuando aprieta la humedad.</p>
+        </div>
+      </div>
+        </div>
+
+    </section>
+
+    <!-- Visa-Free Rules -->
+    <section class="mb-12">
+      <h2 id="visa-rules" class="text-3xl font-bold text-gray-900 mb-4">Reglas de Exención de Visa — Exactamente lo que Necesitas Saber</h2>
+      <div class="bg-white rounded-xl border border-gray-200 overflow-x-auto mb-6">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="bg-gray-50 border-b border-gray-200">
+              <th class="text-left px-5 py-3 font-semibold text-gray-700">Pregunta</th>
+              <th class="text-left px-5 py-3 font-semibold text-gray-700">Respuesta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 font-medium">¿Cuánto tiempo puedo quedarme?</td>
+              <td class="px-5 py-3">Hasta <strong>30 días</strong> — contados desde el día después de tu llegada</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 font-medium">¿Necesito un grupo turístico?</td>
+              <td class="px-5 py-3"><strong>No</strong> — los viajeros individuales no tienen problema</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 font-medium">¿Puedo prorrogarlo?</td>
+              <td class="px-5 py-3">Posiblemente, solicítalo en la oficina de inmigración local en Hainan</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 font-medium">¿Puedo visitar la China continental?</td>
+              <td class="px-5 py-3"><strong>No</strong> — esta política solo cubre la isla de Hainan</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 font-medium">¿Puedo entrar en Hainan, ir a Hong Kong y luego volver?</td>
+              <td class="px-5 py-3">Sí — cada entrada reinicia el contador de 30 días</td>
+            </tr>
+            <tr>
+              <td class="px-5 py-3 font-medium">¿Qué pasa si me excedo?</td>
+              <td class="px-5 py-3">Multas + posible prohibición de entrada. No te arriesgues.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="font-semibold text-gray-900 mb-3">Requisitos de entrada:</p>
+      <ol class="list-disc pl-6 space-y-1.5 text-gray-700">
+        <li>✅ Pasaporte válido por 6+ meses</li>
+        <li>✅ Billete de regreso o continuación dentro de 30 días</li>
+        <li>✅ Reserva de hotel (recomendado)</li>
+        <li>✅ Tarjeta de llegada (se entrega en el avión o <a href="/es/visa/arrival-card/" class="text-blue-600 hover:underline">rellénala online</a>)</li>
+      </ol>
+    </section>
+
+    <!-- Practical Tips -->
+    <section class="mb-12">
+      <h2 id="tips" class="text-3xl font-bold text-gray-900 mb-4">Consejos Prácticos para Hainan</h2>
+      <ol class="list-decimal pl-6 space-y-2 text-gray-700">
+        <li><strong>Paga con Alipay o WeChat Pay</strong> — configúralos antes de volar. La mayoría de los lugares en Hainan no usan efectivo. Consulta nuestra guía <a href="/es/payment/payment-guide/" class="text-blue-600 hover:underline">Cómo Pagar en China</a>.</li>
+        <li><strong>La VPN sigue siendo necesaria</strong> — Google, WhatsApp, Instagram no funcionarán sin ella. <a href="/es/life/best-vpns/" class="text-blue-600 hover:underline">Configura una VPN</a> antes de llegar.</li>
+        <li><strong>Tarjeta SIM / eSIM</strong> — cómprala online (airalo, Holafly) o en el aeropuerto. Consulta nuestra <a href="/es/life/best-sim-esim/" class="text-blue-600 hover:underline">guía de SIM</a>.</li>
+        <li><strong>Idioma</strong> — el inglés no se habla mucho en Hainan fuera de los resorts. Ten Google Translate o Pleco preparados.</li>
+        <li><strong>Protector solar + repelente de mosquitos</strong> — ambos son esenciales durante todo el año.</li>
+        <li><strong>Propinas</strong> — no se esperan. Consulta nuestra <a href="/es/payment/tipping/" class="text-blue-600 hover:underline">guía de propinas</a>.</li>
+      </ol>
+    </section>
+
+    <!-- Related Guides -->
+    <section class="mb-12">
+      <h2 id="related" class="text-2xl font-bold text-gray-900 mb-6">📚 Guías Relacionadas</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/es/visa/visa-free/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-1">Lista de Países Sin Visa para China (2026)</p>
+          <p class="text-sm text-gray-600">Ver la lista completa de 59 países para Hainan</p>
+        </a>
+        <a href="/es/visa/arrival-card/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-1">Cómo Enviar tu Tarjeta de Llegada Online</p>
+          <p class="text-sm text-gray-600">Guía paso a paso con capturas de pantalla</p>
+        </a>
+        <a href="/es/cities/beijing-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-1">Guía de Viaje de Pekín</p>
+          <p class="text-sm text-gray-600">Guía de la capital de China</p>
+        </a>
+        <a href="/es/cities/shanghai-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-1">Guía de Viaje de Shanghái</p>
+          <p class="text-sm text-gray-600">La ciudad más amigable para extranjeros de China</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Sources -->
+    <div class="mt-12 pt-8 border-t border-gray-200">
+      <h3 class="text-xl font-bold text-gray-900 mb-4">Fuentes</h3>
+      <ul class="space-y-2 text-sm text-gray-600">
+        <li><a href="https://en.nia.gov.cn/n147418/n147463/c180637/content.html" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Administración Nacional de Inmigración — Políticas Regionales Sin Visa (Hainan 30 días)</a></li>
+        <li><a href="https://en.nia.gov.cn/n147418/n147463/c191648/content.html" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Administración Nacional de Inmigración — Políticas de Facilitación de Entrada a China para Extranjeros</a></li>
+      </ul>
+    </div>
+
+  </article>
+</Layout>

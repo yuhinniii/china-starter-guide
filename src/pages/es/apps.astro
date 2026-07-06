@@ -1,0 +1,31 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'Apps Esenciales para China';
+const description = 'Las apps que realmente necesitas en China — con guías de configuración para quienes no hablan chino.';
+---
+
+<Layout title={title} description={description} lang="es">
+  <article class="max-w-3xl mx-auto">
+    <header class="py-12 text-center">
+      <div class="text-sm text-brand-600 font-medium mb-2">CATEGORÍA</div>
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900  ">Apps Esenciales</h1>
+      <p class="text-gray-500  ">Las apps que realmente necesitas en China.</p>
+    </header>
+    <div class="prose prose-gray  ">
+      <div class="bg-amber-50  :border-amber-900 rounded-xl p-4 mb-8">
+        <p class="text-amber-800  ">
+          <strong>Nota:</strong> Guías detalladas de apps próximamente.
+        </p>
+      </div>
+      <h2>Apps Imprescindibles</h2>
+      <ul>
+        <li><strong>WeChat (微信)</strong> — Mensajería, pagos, todo</li>
+        <li><strong>Alipay (支付宝)</strong> — Pagos y servicios</li>
+        <li><strong>Didi (滴滴)</strong> — Transporte privado</li>
+        <li><strong>Amap / Baidu Maps</strong> — Navegación (Google Maps no funciona bien)</li>
+        <li><strong>Meituan</strong> — Entrega de comida</li>
+        <li><strong>Dianping</strong> — Reseñas de restaurantes</li>
+      </ul>
+    </div>
+  </article>
+</Layout>

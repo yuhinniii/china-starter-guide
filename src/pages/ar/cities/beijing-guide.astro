@@ -1,0 +1,210 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = "دليل بكين السياحي: ماذا ترى، تأكل، وتحتاج معرفته";
+const description = "دليلك الكامل لبكين — المعالم، المواصلات، الطعام، وأماكن الإقامة.";
+---
+
+<Layout title={title} description={description} lang="ar">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🏙️ بكين</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">دليل بكين السياحي: ماذا ترى، تأكل، وتحتاج معرفته</h1>
+      <p class="text-xl text-gray-600 mb-6">دليلك الكامل لبكين — المعالم، المواصلات، الطعام، وأماكن الإقامة.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 آخر تحديث: يونيو 2026</span>
+        <span>⏱️ 8 دقائق</span>
+      </div>
+    </header>
+
+    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-red-900 mb-4">⚡ إجابة سريعة</h2>
+      <p class="text-lg text-red-800 leading-relaxed">بكين هي <strong>قلب الصين السياسي والثقافي</strong> — موطن المدينة المحرمة، سور الصين العظيم، وبعض من أفضل بط بكين الذي قد تأكله على الإطلاق. إنها مدينة التناقضات حيث الأزقة القديمة (الهوتونغ) تقع بجانب ناطحات السحاب الحديثة. بكين أيضاً هي نقطة الدخول الأكثر ملاءمة للزوار الجدد، مع مطارين دوليين وأكبر مركز قطارات فائقة السرعة في البلاد.</p>
+    </div>
+
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 في هذا الدليل</h3>
+      <ul class="space-y-3">
+        <li><a href="#why-visit" class="text-blue-600 hover:underline">🏛️ لماذا زيارة بكين؟</a></li>
+        <li><a href="#how-many-days" class="text-blue-600 hover:underline">📅 كم يوماً تحتاج؟</a></li>
+        <li><a href="#attractions" class="text-blue-600 hover:underline">🎯 أهم المعالم</a></li>
+        <li><a href="#getting-around" class="text-blue-600 hover:underline">🚇 التنقل</a></li>
+        <li><a href="#where-to-stay" class="text-blue-600 hover:underline">🏨 أماكن الإقامة</a></li>
+        <li><a href="#what-to-eat" class="text-blue-600 hover:underline">🍜 ماذا تأكل</a></li>
+      </ul>
+    </nav>
+
+    <h2 id="why-visit" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏛️ لماذا زيارة بكين؟</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">بكين ليست مجرد مدينة — إنها متحف حي للحضارة الصينية. عندما تمشي في المدينة المحرمة، فإنك تتبع خطى 24 إمبراطوراً. عندما تتسلق سور الصين العظيم، فإنك تقف على بناء شُيد على مدى 2000 عام. لكن بكين أيضاً عاصمة حديثة نابضة بالحياة مع طعام لا يُصدق، ومتاحف عالمية المستوى، ومشهد حياة ليلية لا ينام.</p>
+
+    <h2 id="how-many-days" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📅 كم يوماً تحتاج؟</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>3 أيام هي الحد الأدنى</strong> لتجربة بكين الأساسية.</p>
+    <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700 mb-6">
+      <li><strong>3 أيام (قياسي):</strong> المدينة المحرمة + سور الصين العظيم + لمحة عن الأزقة ومعبد السماء</li>
+      <li><strong>4–5 أيام (مريح):</strong> أضف القصر الصيفي، منطقة 798 للفنون، وجولة طعام</li>
+      <li><strong>5+ أيام (غوص عميق):</strong> رحلة يومية إلى منتجع تشنغدي الجبلي أو استكشاف معابد المدينة الأقل شهرة</li>
+    </ul>
+    <p class="text-lg text-gray-700 mb-12">سور الصين العظيم وحده يحتاج يوماً كاملاً — يبعد حوالي 1.5 ساعة بالسيارة إلى أقرب جزء (موتيانيو)، لذا خطط وفقاً لذلك.</p>
+
+    <!-- ==================== ATTRACTIONS ==================== -->
+    <h2 id="attractions" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎯 أهم المعالم</h2>
+
+    <!-- Forbidden City -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <div class="w-full rounded-2xl overflow-hidden">
+        <img src="/images/beijing/forbidden-city.webp" alt="مجمع القصر المحرم في بكين" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">المدينة المحرمة (故宫)</h3>
+        <p class="text-gray-700">أكبر مجمع قصور في العالم — ويبدو أكبر عندما تقف فيه. يمتد المجمع على 720,000 متر مربع مع ما يقرب من 1000 مبنى، كلها بأسقف مذهبة وجدران حمراء لم تتلاشى منذ 600 عام. ستمشي على نفس الحجارة التي مشى عليها 24 إمبراطوراً، عبر ساحات شاسعة تجعلك تشعر بصغرك. احجز التذاكر قبل أسبوع على الأقل — فقط 80,000 شخص يدخلون يومياً، وهو مغلق كل يوم اثنين.</p>
+      </div>
+    </div>
+
+    <!-- Mutianyu Great Wall -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <div class="w-full rounded-2xl overflow-hidden">
+        <img src="/images/beijing/great-wall.webp" alt="سور الصين العظيم في موتيانيو يتعرج عبر سلاسل الجبال" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">سور الصين العظيم — موتيانيو (慕田峪长城)</h3>
+        <p class="text-gray-700">أفضل جزء محفوظ من سور الصين العظيم، والوحيد الذي يمكنك النزول منه بالزلاجة. يمتد لأكثر من 2000 متر عبر 23 برج مراقبة من عهد مينغ، تم ترميمها إلى حالتها الأصلية. من السور، ترى تلالاً مغطاة بالغابات تمتد في كل اتجاه — لا متاجر للهدايا التذكارية، لا مبانٍ حديثة، فقط جبال. اصعد بالتلفريك وانزل بالزلاجة؛ الرحلة كلها تستحق 90 دقيقة بالسيارة من المدينة.</p>
+      </div>
+    </div>
+
+    <!-- Temple of Heaven -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <div class="w-full rounded-2xl overflow-hidden">
+        <img src="/images/beijing/temple-of-heaven.webp" alt="معبد السماء في بكين، معبد تاريخي من عهد مينغ" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">معبد السماء (天坛)</h3>
+        <p class="text-gray-700">دائرة مثالية من البلاط المزجج الأزرق ترتفع نحو السماء — معبد السماء هو المكان الذي كان يأتي إليه أباطرة مينغ وتشينغ للصلاة من أجل محاصيل وفيرة. ترتفع قاعة الصلاة من أجل المحاصيل الوفيرة 38 متراً، بُنيت بالكامل دون مسمار واحد. في الحديقة المحيطة، ستسمع مغني الأوبرا وهم يسخنون أصواتهم، وزقزقة العصافير، وصوت قطع الماه Jong قبل السابعة صباحاً. اذهب عند الفجر لترى بكين في أكثر حالاتها محلية.</p>
+      </div>
+    </div>
+
+    <!-- Summer Palace -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <div class="w-full rounded-2xl overflow-hidden">
+        <img src="/images/beijing/summer-palace.webp" alt="القصر الصيفي مع بحيرة كونمينغ في بكين" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">القصر الصيفي (颐和园)</h3>
+        <p class="text-gray-700">ملاذ إمبراطوري فخم لدرجة أنه يجعل الحدائق الملكية الأخرى تبدو كأفنية — الإمبراطورة الأرملة تسيشي أنفقت ميزانية البحرية على هذا المكان. بحيرة كونمينغ وحدها تغطي 220 هكتاراً، يعبرها جسر ذو 17 قوساً يتوهج بالذهب عند غروب الشمس. تجول في الممر الطويل المظلل — 728 متراً من الأسقف المرسومة بأكثر من 14,000 مشهد من الأساطير الصينية. تعال في أواخر الخريف لأشجار الجنكة الذهبية وحشود خفيفة.</p>
+      </div>
+    </div>
+
+    <!-- Hutongs -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start bg-white border border-gray-200 rounded-2xl p-6 mb-12">
+      <div class="w-full rounded-2xl overflow-hidden">
+        <img src="/images/beijing/hutongs.webp" alt="أزقة بكين التقليدية الضيقة" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">الأزقة — هوتونغ (胡同)</h3>
+        <p class="text-gray-700">أزقة بكين القديمة التي نجت من الهدم — شبكة من الممرات الضيقة حيث لم تتغير الحياة كثيراً منذ قرن. يعود تاريخ بعض الأزقة إلى أكثر من 700 عام في عهد أسرة يوان. سترى رجالاً مسنين يلعبون الشطرنج على مقاعد، ودراجات مسندة إلى جدران من الطوب الرمادي، وغسيل معلق بين أسلاك الكهرباء. تجنب نانلوهوغوشيانغ المزدحم بالسياح وامش في ووداوينغ هوتونغ أو الأزقة حول شيشاهاي بدلاً من ذلك.</p>
+      </div>
+    </div>
+
+    <h2 id="getting-around" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🚇 التنقل</h2>
+    <ul class="list-disc pl-6 space-y-3 text-lg text-gray-700 mb-12">
+      <li><strong>المترو:</strong> مترو بكين واسع النطاق، رخيص، وبه لافتات بالإنكليزية. يغطي كل معلم رئيسي تقريباً. راجع <a href="/ar/transport/metro-bus/" class="text-blue-600 hover:underline">دليل المترو والحافلات للمدن الصينية الكبرى</a> لنصائح حول استخدام مترو بكين.</li>
+      <li><strong>ديدي (أوبر الصين):</strong> مريح جداً للرحلات من باب إلى باب. حمّل التطبيق قبل وصولك. يمكنك إدخال الوجهات بالإنكليزية. تعلم كيفية إعداده في <a href="/ar/transport/didi/" class="text-blue-600 hover:underline">كيفية استخدام ديدي في الصين كأجنبي</a>.</li>
+      <li><strong>سيارات الأجرة:</strong> متوفرة، لكن التواصل قد يكون صعباً. احرص دائماً على إظهار وجهتك بالحروف الصينية (احفظ اسم فندقك مكتوباً بالصينية).</li>
+      <li><strong>ركوب الدراجات:</strong> بكين مناسبة بشكل مدهش للدراجات. الدراجات المشتركة (Hellobike، Meituan) في كل مكان. استخدم Alipay أو WeChat للمسح والركوب.</li>
+    </ul>
+
+    <h2 id="where-to-stay" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏨 أماكن الإقامة</h2>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <h3 class="text-xl font-bold text-gray-900 mb-2">منطقة دونغتشنغ (东城区) — الأفضل للزوار الجدد</h3>
+      <p class="text-gray-700">موقع مركزي قريب من المدينة المحرمة والأزقة ووانغفوجينغ. توازن جيد بين السعر والراحة.</p>
+    </div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+      <h3 class="text-xl font-bold text-gray-900 mb-2">منطقة شيتشنغ (西城区) — الأفضل لعشاق الثقافة</h3>
+      <p class="text-gray-700">الجانب الهادئ التقليدي. قريب من منطقة بحيرة هوهاي، برج الطبل، والعديد من الأزقة المحفوظة جيداً.</p>
+    </div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12">
+      <h3 class="text-xl font-bold text-gray-900 mb-2">منطقة تشاويانغ (朝阳区) — الأفضل لمسافري الأعمال</h3>
+      <p class="text-gray-700">الـ CBD الحديث. العديد من الفنادق الدولية والمطاعم الغربية. قريب من منطقة 798 للفنون وحياة سانليتون الليلية.</p>
+    </div>
+
+    <!-- ==================== WHAT TO EAT ==================== -->
+    <h2 id="what-to-eat" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🍜 ماذا تأكل</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">مشهد الطعام في بكين مبني على نكهات قوية، أطباق تعتمد على القمح، وتقاليد طهي إمبراطورية.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+      <!-- Peking Duck -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/beijing/peking-duck.webp" alt="بط بكين المقرمش ملفوف في فطائر" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">بط بكين (北京烤鸭)</h3>
+          <p class="text-gray-600 text-base">بطة كاملة تُشوى حتى يصبح الجلد هشاً كالزجاج — هذا هو بط بكين. الجلد مقرمش ودسم، واللحم طري، ملفوف في فطائر رقيقة كالورق مع صلصة الفاصوليا الحلوة، شرائح الخيار، والبصل الأخضر. بعض السكان المحليين يغمسون الجلد المقرمش في السكر الأبيض قبل لفه. المطاعم حول تشيانمن تفعلها بالطريقة التقليدية منذ أجيال.</p>
+        </div>
+      </div>
+
+      <!-- Zha Jiang Mian -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/beijing/zha-jiang-mian.webp" alt="نودلز زها جيانغ ميان مع صلصة معجون فول الصويا" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">نودلز زها جيانغ ميان (炸酱面)</h3>
+          <p class="text-gray-600 text-base">نودلز سميكة مسحوبة باليد مغمورة تحت صلصة داكنة مصنوعة من فول الصويا المخمر ولحم الخنزير المفروم. الصلصة مالحة وعميقة، مع مرارة خفيفة من معجون الفول، ت cutها شرائح الخيار الطازج وبراعم الفاصوليا. اخلط كل شيء معاً حتى تُغطى كل شعيرية قبل أن تأخذ قضمة. ستجد أفضل الوجبات في الأزقة القديمة قرب دونغسي.</p>
+        </div>
+      </div>
+
+      <!-- Jianbing -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/beijing/jianbing.webp" alt="جيانبينغ، كريب صيني لذيذ مع البيض والبصل الأخضر" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">جيانبينغ (煎饼)</h3>
+          <p class="text-gray-600 text-base">فطور بكين أثناء التنقل — كريب رقيق من الدخن يُفرد على صاج حار، يُكسر عليه بيضة، ويُطوى حول مقرمش وونتون. التباين هو كل شيء: كريب طري، مركز مقرمش، صلصة فلفل حارة، وبصل أخضر طازج يقطع الغنى. تناوله مباشرة من غلاف القصدير وهو لا يزال ساخناً. احصل على واحد من عربة شارع قرب أي محطة مترو قبل الساعة 9 صباحاً — عادةً ما ينفد بحلول الظهر.</p>
+        </div>
+      </div>
+
+      <!-- Lamb Hotpot -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/beijing/lamb-hotpot.webp" alt="هوت بوت لحم الضأن شوان يانغ رو في قدر نحاسي" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">هوت بوت لحم الضأن — شوان يانغ رو (涮羊肉)</h3>
+          <p class="text-gray-600 text-base">قدر مدخنة نحاسي مليء بمرق يغلي — هذه هي الطريقة الشمالية الصينية لتناول الهوت بوت، وكل شيء يدور حول لحم الضأن. يُقطع اللحم رقيقاً كالمناديل حتى ينضج في ثوانٍ، ويبقى طرياً بنكهة نظيفة. اغمسه في المرق المغلي لمدة لا تزيد عن عشر ثوانٍ، ثم اسحبه عبر صلصة السمسم مع التوفو المخمر. المطاعم العائلية الصغيرة قرب غولو تكتظ بالسكان المحليين في ليالي الشتاء.</p>
+        </div>
+      </div>
+
+      <!-- Douzhi -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/beijing/douzhi.webp" alt="دوتشي، مشروب فول المونغ المخمر، من المأكولات المحلية في بكين" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">دوتشي (豆汁)</h3>
+          <p class="text-gray-600 text-base">المشروب الذي يفرق بين سكان بكين الأصليين وأي شخص آخر — عصير فول المونغ المخمر تفوح منه رائحة الخضروات القديمة وطعمه حامض وترابي. يُقدم دافئاً، بلون رمادي-أخضر مع قوام خشن قليلاً، دائماً بجانب خبز السمسم المالح والفجل المخلل. لا ترشفه، بل ابتلعه. اطلب وعاءً في محلات الفطور في الأزقة القديمة قرب تيانتان وانظر إذا كنت واحداً من القلائل من خارج المدينة الذين يعجبهم حقاً.</p>
+        </div>
+      </div>
+
+      <!-- Sugar-coated Hawthorn -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/beijing/bingtanghulu.webp" alt="توت الزعرور المسكر على عصا" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">توت الزعرور المسكر (冰糖葫芦)</h3>
+          <p class="text-gray-600 text-base">توت الزعرور المسكر على عصا من الخيزران ومغطى بقشرة سكر صلبة. القضمة الأولى تكسر السكر، ثم تصل إلى حموضة التوت — هذا المد الحلو-الحامض هو ما يجعله مسبباً للإدمان. طبقة السكر رقيقة بما يكفي لتتكسر، سميكة بما يكفي لتمنع التوت من أن يكون حامضاً جداً. يبيعها الباعة على عصي من عربات في كل مكان في سوق وانغفوجينغ الليلي والأزقة على مدار العام.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="not-prose mt-16">
+      <h2 class="text-2xl font-bold text-gray-900 mb-8">📚 أدلة ذات صلة</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/ar/cities/city-select/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🗺️ <strong>كم يوماً في الصين؟</strong> — خطط رحلتك الكاملة</a>
+        <a href="/ar/cities/shanghai-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🌆 <strong>دليل شنغهاي السياحي</strong> — قارن مع مدينة الصين العظيمة الأخرى</a>
+        <a href="/ar/transport/transport-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>كيف تتنقل في الصين</strong> — كل خيارات النقل</a>
+        <a href="/ar/transport/high-speed-rail/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>كيف تحجز وتركب القطار فائق السرعة في الصين</strong> — من بكين إلى شنغهاي بالقطار</a>
+      </div>
+    </div>
+  </article>
+</Layout>

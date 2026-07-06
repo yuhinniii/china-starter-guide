@@ -1,0 +1,117 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'دليل النقل — التجول في الصين';
+const description = 'القطارات، الطائرات، المترو، واستئجار الركوب — كل ما تحتاجه.';
+---
+
+<Layout title={title} description={description} lang="ar">
+  <section class="max-w-4xl mx-auto px-6 py-12" dir="rtl">
+    
+    <!-- Header -->
+    <header class="mb-10 text-center">
+      <p class="text-sm text-gray-500 mb-2">🚄 النقل</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-3 leading-tight">النقل في الصين</h1>
+      <p class="text-base text-gray-500 max-w-2xl mx-auto">القطارات، الطائرات، المترو، واستئجار الركوب — كل ما تحتاجه.</p>
+    </header>
+
+    <!-- Quick Stats -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-12 not-prose">
+      <div class="bg-sky-50 border border-sky-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-sky-800">1</p>
+        <p class="text-xs font-semibold text-sky-800 uppercase tracking-wide mt-1">دليل القطار فائق السرعة</p>
+      </div>
+      <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-emerald-800">1</p>
+        <p class="text-xs font-semibold text-emerald-800 uppercase tracking-wide mt-1">الانتقال من المطار</p>
+      </div>
+      <div class="bg-purple-50 border border-purple-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-purple-800">2</p>
+        <p class="text-xs font-semibold text-purple-800 uppercase tracking-wide mt-1">النقل внутри المدينة</p>
+      </div>
+      <div class="bg-gray-50 border border-gray-200 rounded-xl p-4 text-center">
+        <p class="text-2xl font-extrabold text-gray-800">1</p>
+        <p class="text-xs font-semibold text-gray-800 uppercase tracking-wide mt-1">دليل استئجار الركوب</p>
+      </div>
+    </div>
+
+    <!-- Category Sections -->
+    <div class="space-y-8 mb-16 not-prose">
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-sky-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-sky-800">التجول في الصين</h2>
+          <span class="text-xs font-medium text-sky-800 opacity-60">1 مقال</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/ar/transport/transport-guide/" class="block bg-sky-50 border border-sky-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-sky-800">📖 نظرة عامة</span>
+            <p class="text-base font-bold text-gray-900 mt-1">كيفية التجول في الصين</p>
+            <p class="text-sm text-gray-600 mt-0.5">نظرة عامة كاملة عن جميع خيارات النقل — القطارات، الطائرات، المترو، والمزيد.</p>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-emerald-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-emerald-800">الوصول إلى الصين</h2>
+          <span class="text-xs font-medium text-emerald-800 opacity-60">1 مقال</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/ar/transport/airport-to-city/" class="block bg-emerald-50 border border-emerald-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-emerald-800">🛬 دليل</span>
+            <p class="text-base font-bold text-gray-900 mt-1">من المطار إلى المدينة</p>
+            <p class="text-sm text-gray-600 mt-0.5">خيارات النقل في المطارات الرئيسية — بكين، شنغهاي، قوانغتشو، والمزيد.</p>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-purple-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-purple-800">النقل في المدينة</h2>
+          <span class="text-xs font-medium text-purple-800 opacity-60">2 مقال</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/ar/transport/high-speed-rail/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-purple-800">🚄 دليل</span>
+            <p class="text-base font-bold text-gray-900 mt-1">كيفية حجز وركوب القطار فائق السرعة في الصين</p>
+            <p class="text-sm text-gray-600 mt-0.5">كل شيء عن حجز وركوب أكبر شبكة قطارات فائقة السرعة في العالم.</p>
+          </a>
+          <a href="/ar/transport/metro-bus/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-purple-800">🚇 دليل</span>
+            <p class="text-base font-bold text-gray-900 mt-1">دليل المترو والحافلات للمدن الكبرى</p>
+            <p class="text-sm text-gray-600 mt-0.5">التنقل في وسائل النقل العام في بكين، شنغهاي، قوانغتشو، وشنتشن.</p>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-1 h-7 bg-gray-500 rounded-full"></div>
+          <h2 class="text-lg font-bold text-gray-800">استئجار الركوب</h2>
+          <span class="text-xs font-medium text-gray-800 opacity-60">1 مقال</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <a href="/ar/transport/didi/" class="block bg-gray-50 border border-gray-200 rounded-xl p-4 hover:shadow-md transition no-underline">
+            <span class="text-xs font-semibold text-gray-800">🚕 دليل</span>
+            <p class="text-base font-bold text-gray-900 mt-1">كيفية استخدام Didi في الصين كأجنبي</p>
+            <p class="text-sm text-gray-600 mt-0.5">دليل خطوة بخطوة لاستخدام DiDi، أوبر الصين — مع لقطات شاشة.</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Guides -->
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-5">أدلة ذات صلة</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <a href="/ar/payment/payment-guide/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-0.5">الدفع في الصين</p>
+          <p class="text-sm text-gray-500">كيفية الدفع مقابل النقل</p>
+        </a>
+        <a href="/ar/visa/visa-guide/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-0.5">التأشيرة والدخول</p>
+          <p class="text-sm text-gray-500">الدخول إلى الصين</p>
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

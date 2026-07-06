@@ -1,0 +1,504 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'كيفية تقديم بطاقة الوصول إلى الصين عبر الإنترنت — دليل خطوة بخطوة';
+const description = 'دليل تعليمي كامل خطوة بخطوة مع لقطات شاشة — املأ بطاقة وصول NIA عبر الإنترنت قبل الطيران. وفر الوقت وتجنب النموذج الورقي.';
+---
+
+<Layout title={title} description={description} lang="ar">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+
+    <!-- Breadcrumb -->
+    <nav class="mb-8 not-prose">
+      <a href="/ar/visa/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        العودة إلى التأشيرة والدخول
+      </a>
+    </nav>
+
+    <!-- Header -->
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🛂 الدخول والتأشيرة</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        كيفية تقديم بطاقة الوصول إلى الصين عبر الإنترنت
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">دليل كامل خطوة بخطوة مع لقطات شاشة. املأ النموذج عبر الإنترنت قبل الطيران — واستغنِ عن بطاقة الوصول الورقية.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 آخر تحديث: يونيو 2026</span>
+        <span>⏱️ 8 دقائق قراءة</span>
+      </div>
+    </header>
+
+    <!-- Official Portal -->
+    <div class="bg-blue-50 border-r-4 border-blue-500 rounded-l-2xl p-5 mb-8 not-prose">
+      <strong>البوابة الرسمية:</strong> <a href="https://s.nia.gov.cn/ArrivalCardFillingPC/entry-registation-home" target="_blank" class="text-blue-700 underline">s.nia.gov.cn/ArrivalCardFillingPC/</a>
+    </div>
+
+    <!-- Video Tutorial -->
+    <div class="bg-gradient-to-r from-gray-50 to-blue-50 border border-gray-200 rounded-2xl p-8 mb-10 text-center not-prose">
+      <h3 class="text-xl font-bold text-gray-900 mb-3">فيديو تعليمي رسمي من NIA</h3>
+      <p class="text-gray-600 mb-4">شاهد الفيديو الرسمي من الإدارة الوطنية للهجرة:</p>
+      <a href="https://en.nia.gov.cn/n147418/n147463/c195170/content.html" target="_blank" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition no-underline">▶ شاهد الفيديو التعليمي</a>
+    </div>
+
+    <style>
+      .step-card {
+        background: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 12px;
+        padding: 24px;
+        margin: 28px 0;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+      }
+      .step-card .step-number {
+        display: inline-block;
+        background: #1a73e8;
+        color: #fff;
+        font-weight: 700;
+        font-size: 0.8rem;
+        padding: 2px 14px;
+        border-radius: 20px;
+        margin-bottom: 14px;
+      }
+      .screenshot-wrapper {
+        background: #eef2f7;
+        border: 1px solid #d0d7de;
+        border-radius: 10px;
+        padding: 14px;
+        margin: 16px 0;
+      }
+      .screenshot-wrapper img {
+        width: 100%;
+        border: 1px solid #c0c8d0;
+        border-radius: 6px;
+        margin: 8px 0;
+      }
+      .screenshot-wrapper .caption {
+        font-size: 0.85rem;
+        color: #555;
+        font-style: italic;
+        margin-top: 4px;
+        margin-bottom: 0;
+      }
+      .screenshot-label {
+        display: inline-block;
+        background: #d0d7de;
+        color: #3a3f47;
+        font-size: 0.7rem;
+        font-weight: 700;
+        padding: 2px 10px;
+        border-radius: 5px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+      }
+      .field-group {
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 14px;
+        margin: 12px 0;
+      }
+      .field-group h4 {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+        color: #5f6368;
+      }
+      .field-group .field-item { margin: 6px 0; font-size: 0.9rem; }
+      .col-layout {
+        display: flex;
+        gap: 20px;
+        margin: 12px 0;
+        flex-wrap: wrap;
+      }
+      .col-left { flex: 1; min-width: 260px; }
+      .col-right { flex: 1; min-width: 240px; }
+      .tag-auto { background: #e8f5e9; color: #2e7d32; padding: 1px 8px; border-radius: 8px; font-size: 0.75rem; font-weight: 600; }
+      .tag-fill { background: #fce4ec; color: #c62828; padding: 1px 8px; border-radius: 8px; font-size: 0.75rem; font-weight: 600; }
+      .tag-skip { background: #eeeeee; color: #757575; padding: 1px 8px; border-radius: 8px; font-size: 0.75rem; font-weight: 600; }
+      .tip-box {
+        background: #fff8e1;
+        border-right: 4px solid #ffa000;
+        padding: 12px 16px; margin: 12px 0;
+        border-radius: 8px 0 0 8px; font-size: 0.9rem;
+      }
+      .warn-box {
+        background: #fbe9e7;
+        border-right: 4px solid #d84315;
+        padding: 12px 16px; margin: 12px 0;
+        border-radius: 8px 0 0 8px; font-size: 0.9rem;
+      }
+      .info-box {
+        background: #e8f0fe;
+        border-right: 4px solid #1a73e8;
+        padding: 12px 16px; margin: 12px 0;
+        border-radius: 8px 0 0 8px; font-size: 0.9rem;
+      }
+      .img-row {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin: 12px 0;
+      }
+      .img-row figure {
+        flex: 1;
+        min-width: 240px;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        overflow: hidden;
+        margin: 0;
+      }
+      .img-row figure img { width: 100%; margin: 0; border: none; border-radius: 0; }
+      .img-row figcaption {
+        font-size: 0.8rem;
+        color: #5f6368;
+        text-align: center;
+        padding: 6px;
+        font-style: italic;
+      }
+    </style>
+
+    <!-- ============================================================ -->
+    <!-- STEP 0: HOMEPAGE -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">الخطوة 0: الوصول إلى البوابة</h2>
+    <div class="step-card">
+      <div class="step-number">الخطوة 0</div>
+      <p>افتح <a href="https://s.nia.gov.cn/ArrivalCardFillingPC/entry-registation-home">s.nia.gov.cn</a> وبدّل إلى اللغة الإنجليزية باستخدام القائمة المنسدلة <strong>Language</strong> في الزاوية العلوية اليمنى.</p>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">لقطة شاشة</div>
+        <img src="/images/arrival-card/step0-homepage.webp" alt="الصفحة الرئيسية تظهر إعلان الدخول باللغة الإنجليزية">
+        <p class="caption">بعد التبديل إلى الإنجليزية، انقر على <strong>Entry Declaration</strong> للبدء</p>
+      </div>
+      <p>خياران متاحان:</p>
+      <ul>
+        <li><strong>Entry Declaration</strong> — لمعظم المسافرين الأجانب الذين يدخلون الصين</li>
+        <li><strong>Entry Declaration for Border Area Residents</strong> — فقط للمقيمين من 7 دول مجاورة (كوريا الشمالية، منغوليا، باكستان، نيبال، ميانمار، لاوس، فيتنام)</li>
+      </ul>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- STEP 1: NOTICE / INSTRUCTIONS -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">الخطوة 1: اقرأ التعليمات</h2>
+    <div class="step-card">
+      <div class="step-number">الخطوة 1</div>
+      <p>بعد الضغط على "Entry Declaration"، ستظهر صفحة <strong>التعليمات</strong> التي تسرد من هم المعفيون.</p>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">لقطة شاشة</div>
+        <img src="/images/arrival-card/step1-notice.webp" alt="صفحة التعليمات مع الإشعار وزر I AGREE">
+        <p class="caption">اقرأ التعليمات، ثم انقر <strong>I AGREE</strong> للمتابعة</p>
+      </div>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-4 mb-2">المُعفون (لا يحتاجون لملء هذا النموذج):</h3>
+      <ol>
+        <li>حاملو بطاقة الإقامة الدائمة للأجانب الصالحة في الصين</li>
+        <li>حاملو تصريح السفر إلى البر الرئيسي لسكان هونغ كونغ/ماكاو الصالح (غير الصينيين)</li>
+        <li>مسافرو الترانزيت المباشر لمدة 24 ساعة والذين يبقون ضمن حدود الميناء</li>
+        <li>حاملو التأشيرة الجماعية أو أعضاء المجموعات السياحية</li>
+        <li>أفراد الطاقم (طيران، سفينة، سائق)</li>
+        <li>ركاب السفن السياحية العائدون على نفس السفينة</li>
+        <li>الأشخاص المؤهلون للتفتيش المركزي للمستندات</li>
+        <li>داخلون عبر E-Channel</li>
+      </ol>
+      <div class="warn-box">
+        <strong>مهم:</strong> ركاب الترانزيت الذين يغادرون منطقة الميناء (بما في ذلك ركاب الترانزيت 24 ساعة / 240 ساعة) <strong>يجب</strong> عليهم ملء هذا النموذج.
+      </div>
+      <p>انقر <strong>I AGREE</strong> للمتابعة.</p>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- STEP 2: DOCUMENT UPLOAD -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">الخطوة 2: تحميل صفحة معلومات جواز سفرك</h2>
+    <div class="step-card">
+      <div class="step-number">الخطوة 2</div>
+      <p>اختر نوع وثيقتك وحمّل صورة واضحة لصفحة بيانات جواز سفرك. سيستخدم النظام التعرف البصري (OCR) لقراءة معلوماتك تلقائياً.</p>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">لقطة شاشة</div>
+        <img src="/images/arrival-card/step2-upload.webp" alt="صفحة تحميل المستندات">
+        <p class="caption">اختر نوع المستند وحمّل أو التقط صورة لصفحة بيانات جواز سفرك</p>
+      </div>
+      <div class="tip-box">
+        <strong>نصيحة:</strong> تأكد من أن الصورة مضاءة جيداً وأن كل النص مقروء بوضوح. جودة الصورة تحدد دقة الملء التلقائي لبياناتك في الخطوات التالية.
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- STEP 3: BASIC INFORMATION -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">الخطوة 3: ملء المعلومات الأساسية</h2>
+    <div class="step-card">
+      <div class="step-number">الخطوة 3</div>
+      <p>هذه هي صفحة المعلومات الرئيسية. سيقوم النظام تلقائياً باستخراج معظم بياناتك من صورة جواز السفر التي حمّلتها.</p>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-4 mb-2">النموذج الفارغ — جميع الحقول معروضة</h3>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">لقطة شاشة</div>
+        <img src="/images/arrival-card/step3-basic-empty.webp" alt="نموذج المعلومات الأساسية - فارغ">
+        <p class="caption">هذا ما يبدو عليه النموذج عند دخولك هذه الخطوة لأول مرة</p>
+      </div>
+
+      <div class="col-layout">
+        <div class="col-left">
+          <div class="field-group" style="background: #fffde7; border-color: #ffd54f;">
+            <h4>🔶 القسم الأيسر — معبأ تلقائياً بواسطة OCR (تحقق من الدقة)</h4>
+            <div class="field-item"><span class="tag-auto">تلقائي</span> اسم العائلة</div>
+            <div class="field-item"><span class="tag-auto">تلقائي</span> الاسم الأول</div>
+            <div class="field-item"><span class="tag-auto">تلقائي</span> الجنس</div>
+            <div class="field-item"><span class="tag-auto">تلقائي</span> تاريخ الميلاد</div>
+            <div class="field-item"><span class="tag-auto">تلقائي</span> نوع المستند</div>
+            <div class="field-item"><span class="tag-auto">تلقائي</span> رقم المستند</div>
+            <div class="field-item" style="margin-top:10px; padding-top:10px; border-top:1px dashed #e0e0e0;">
+              <span class="tag-fill">يدوي</span> <strong>الدولة/المنطقة</strong> — هذا هو الحقل الوحيد الذي تحتاج لاختياره بنفسك في الجانب الأيسر
+            </div>
+          </div>
+        </div>
+        <div class="col-right">
+          <div class="field-group">
+            <h4> القسم الأيمن — تحتاج لملء هذه</h4>
+            <div class="field-item"><span class="tag-fill">املأ</span> وسيلة النقل</div>
+            <div class="field-item"><span class="tag-fill">املأ</span> رقم الرحلة / القطار / السفينة</div>
+            <div class="field-item"><span class="tag-fill">املأ</span> مدينة الدخول</div>
+            <div class="field-item"><span class="tag-fill">املأ</span> ميناء الدخول — يتم الملء تلقائياً بعد اختيار المدينة ووسيلة النقل</div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">مثال على النموذج المملوء</h3>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">لقطة شاشة</div>
+        <img src="/images/arrival-card/step3-basic-filled.webp" alt="نموذج المعلومات الأساسية - مثال مملوء">
+        <p class="caption">القسم الأيسر (المنطقة المظللة بالأصفر) يظهر البيانات المستخرجة من جواز سفرك — تحقق من كل شيء. فقط <strong>الدولة/المنطقة</strong> تحتاج للاختيار اليدوي. املأ القسم الأيمن بتفاصيل دخولك.</p>
+      </div>
+
+      <div class="info-box">
+        <strong>تذكير:</strong> جودة مسح جواز السفر مهمة. إذا كانت صورك ضبابية أو سيئة الإضاءة، قد يكون الملء التلقائي غير دقيق. تحقق دائماً من جميع الحقول قبل الضغط على Next.
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- STEP 4: PERSONAL INFORMATION -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">الخطوة 4: ملء المعلومات الشخصية</h2>
+    <div class="step-card">
+      <div class="step-number">الخطوة 4</div>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">لقطة شاشة</div>
+        <img src="/images/arrival-card/step4-personal-empty.webp" alt="نموذج المعلومات الشخصية">
+        <p class="caption">املأ تفاصيلك الشخصية. الحقول مع شرح أدناه.</p>
+      </div>
+
+      <div class="field-group">
+        <h4>دليل حقل بحقل:</h4>
+        <div class="field-item"><span class="tag-fill">املأ</span> <strong>الاسم بالصينية</strong> — إذا كان لديك اسم صيني، أدخله هنا. إذا لم يكن لديك، <strong>اتركه فارغاً</strong>.</div>
+        <div class="field-item"><span class="tag-fill">املأ</span> <strong>الجنسية / بلد الإقامة</strong> — أدخل <strong>البلد أو المدينة التي تقيم فيها حالياً</strong> (ليس بالضرورة بلد جواز سفرك إذا كنت تعيش في الخارج).</div>
+        <div class="field-item"><span class="tag-fill">املأ</span> <strong>المهنة</strong> — المسمى الوظيفي أو المهنة.</div>
+        <div class="field-item"><span class="tag-fill">املأ</span> <strong>هاتف الاتصال</strong> — أضف رمز البلد إذا كنت تستخدم رقماً غير صيني.</div>
+        <div class="field-item"><span class="tag-fill">املأ</span> <strong>البريد الإلكتروني</strong> — لاستلام رمز التأكيد/QR.</div>
+        <div class="field-item"><span class="tag-fill">املأ</span> <strong>جهة اتصال للطوارئ</strong> — اسم ورقم هاتف شخص للاتصال به في حالات الطوارئ.</div>
+      </div>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">قسم التأشيرة / سياسة الدخول</h3>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">لقطة شاشة</div>
+        <img src="/images/arrival-card/step4-personal-visa.webp" alt="اختيار التأشيرة وسياسة الدخول">
+        <p class="caption">اختر "No" إذا كنت تدخل بدون تأشيرة، ثم اختر سياسة الدخول من القائمة المنسدلة</p>
+      </div>
+
+      <div class="field-group">
+        <h4>كيفية ملء سؤال التأشيرة:</h4>
+        <div class="field-item"><span class="tag-fill">املأ</span> <strong>هل لديك تأشيرة سارية المفعول؟</strong>
+          <ul>
+            <li><strong>نعم</strong> — إذا كنت قد حصلت على تأشيرة صينية (مثل تأشيرة L السياحية)</li>
+            <li><strong>لا</strong> — إذا كنت تدخل بموجب <strong>سياسة الإعفاء من التأشيرة</strong> (مثل العبور 240 ساعة، الإعفاء 30 يوماً، إعفاء هاينان، إلخ)</li>
+          </ul>
+        </div>
+        <div class="field-item"><span class="tag-fill">املأ</span> <strong>إذا "لا" ← اختيار سياسة الدخول</strong> — ستظهر قائمة منسدلة لتختار سياسة الإعفاء التي تستخدمها (كما هو موضح في لقطة الشاشة أعلاه).</div>
+      </div>
+
+      <div class="tip-box">
+        <strong>نصيحة:</strong> إذا كان لديك تأشيرة L سارية، اختر "Yes". إذا كنت تستخدم سياسة إعفاء (مثل قائمة 50 دولة للإعفاء الأحادي، أو العبور 240 ساعة)، اختر "No" واختر السياسة المناسبة من القائمة المنسدلة.
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- STEP 5: TRAVEL INFORMATION -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">الخطوة 5: ملء معلومات السفر</h2>
+    <div class="step-card">
+      <div class="step-number">الخطوة 5</div>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">لقطة شاشة</div>
+        <img src="/images/arrival-card/step5-travel-empty.webp" alt="نموذج معلومات السفر">
+        <p class="caption">املأ تفاصيل خط سير رحلتك</p>
+      </div>
+
+      <div class="col-layout">
+        <div class="col-left">
+          <div class="field-group">
+            <h4> القسم الأيسر — تفاصيل الرحلة</h4>
+            <div class="field-item"><span class="tag-fill">املأ</span> <strong>الغرض من الدخول</strong> — سياحة / أعمال / عبور / زيارة عائلة / أخرى</div>
+            <div class="field-item"><span class="tag-fill">املأ</span> <strong>تاريخ الدخول</strong> — تاريخ وصولك المقرر إلى الصين</div>
+            <div class="field-item"><span class="tag-fill">املأ</span> <strong>مدن الوجهة في الصين</strong> — المدن التي تخطط لزيارتها</div>
+            <div class="field-item"><span class="tag-fill">املأ</span> <strong>مدن العبور في الصين</strong> — أي مدن عبور/ربط (إن وجد)</div>
+            <div class="field-item"><span class="tag-fill">املأ</span> <strong>العنوان في الصين</strong> — أدخل <strong>عنوانك المفصل</strong> (اسم الفندق + الشارع + المنطقة + المدينة)</div>
+          </div>
+        </div>
+        <div class="col-right">
+          <div class="field-group">
+            <h4> القسم الأيمن — معلومات الداعي والعودة</h4>
+            <div class="field-item"><span class="tag-fill">املأ</span> <strong>هل تمت دعوتك إلى الصين؟</strong>
+              <ul>
+                <li><strong>نعم</strong> — املأ اسم الداعي ومعلومات الاتصال به</li>
+                <li><strong>لا</strong> — تخط هذا القسم</li>
+              </ul>
+            </div>
+            <div class="field-item"><span class="tag-fill">املأ</span> <strong>معلومات المغادرة / العودة</strong></div>
+            <div style="margin-right:20px; border-right:2px solid #e0e0e0; padding-right:14px;">
+              <div class="field-item">بدّل <strong>"Confirmed Departure Itinerary"</strong> إلى <strong>Yes</strong> إذا كان لديك خطط عودة مؤكدة، ثم املأ:</div>
+              <ul>
+                <li><strong>تاريخ المغادرة</strong> — تاريخ خروجك المخطط</li>
+                <li><strong>وسيلة نقل المغادرة</strong> — جو / بر / بحر</li>
+                <li><strong>رقم رحلة/قطار/سفينة المغادرة</strong> — الرقم المحدد</li>
+                <li><strong>مدينة المغادرة</strong> — المدينة التي ستغادر منها</li>
+                <li><strong>ميناء المغادرة</strong> — يتم الملء تلقائياً بعد اختيار المدينة ووسيلة النقل</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="warn-box">
+        <strong>⚠️ ملاحظة العبور 240 ساعة:</strong> إذا كنت تدخل الصين بموجب <strong>سياسة العبور بدون تأشيرة 240 ساعة</strong>، فأنت عادةً <strong>مطلوب منك أن يكون لديك تذكرة سفر مؤكدة للوجهة التالية/العودة</strong> إلى وجهة خارج البر الرئيسي للصين. تأكد من ملء معلومات المغادرة/العودة بدقة.
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- COMPANION PROMPT -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">طلب الرفقاء</h2>
+    <div class="step-card">
+      <div class="step-number">بعد الخطوة 5</div>
+      <p>بعد ملء الخطوة 5 والضغط على "Next"، ستظهر هذه النافذة المنبثقة تسأل عن الرفقاء:</p>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">لقطة شاشة</div>
+        <img src="/images/arrival-card/step5-companion-prompt.webp" alt="نافذة هل لديك رفقاء">
+        <p class="caption">"هل لديك رفقاء؟" — اختر Yes لإضافة رفقاء السفر</p>
+      </div>
+
+      <div class="field-group">
+        <h4>الخيارات:</h4>
+        <div class="field-item"><strong>نعم</strong> — سيتم نقلك عبر نفس الخطوات (معلومات أساسية، معلومات شخصية، معلومات سفر) لملء بيانات كل رفيق. <strong>ملاحظة:</strong> يمكن لكل رفيق ملء نموذجه الخاص بشكل فردي — ليس مطلوباً أن يملأ شخص واحد النموذج للجميع.</div>
+        <div class="field-item"><strong>لا</strong> — انتقل مباشرة إلى صفحة المراجعة.</div>
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- STEP 6: REVIEW & SUBMIT -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">الخطوة النهائية: المراجعة والتوقيع والإرسال</h2>
+    <div class="step-card">
+      <div class="step-number">النهائية</div>
+      <p>بعد إكمال جميع الخطوات، ستصل إلى صفحة المراجعة. اقرأ جميع معلوماتك بعناية.</p>
+      <div class="screenshot-wrapper">
+        <div class="screenshot-label">لقطة شاشة</div>
+        <img src="/images/arrival-card/step6-submit.webp" alt="صفحة المراجعة والتوقيع والإرسال">
+        <p class="caption">وقّع للتأكيد، ثم أرسل. احفظ رمز QR الذي يظهر بعد الإرسال.</p>
+      </div>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-4 mb-2">ما يجب فعله:</h3>
+      <ol>
+        <li><strong>راجع</strong> — تحقق من جميع المعلومات مرة أخرى. استخدم "Previous" للعودة وإجراء التصحيحات إذا لزم الأمر.</li>
+        <li><strong>وقّع</strong> — اكتب اسمك في مربع التوقيع لتأكيد التصريح.</li>
+        <li><strong>أرسل</strong> — انقر على زر الإرسال.</li>
+        <li><strong>احفظ رمز QR الخاص بك</strong> — بعد الإرسال، سيظهر <strong>رمز QR تأكيدي</strong>. <strong>خذ لقطة شاشة أو احفظه</strong> — يجب تقديمه للهجرة عند وصولك إلى الصين.</li>
+      </ol>
+
+      <div class="info-box">
+        <strong>مكافأة:</strong> خلال <strong>عام واحد</strong> من أول تقديم لك، إذا زرت الصين مرة أخرى، سيسمح لك النظام <strong>بإعادة استخدام المعلومات التي ملأتها سابقاً</strong> —只需要 تحديث خط سير رحلتك. هذا يجعل الرحلات المتكررة أسرع بكثير!
+      </div>
+
+      <div class="warn-box">
+        <strong>⚠️ مهم:</strong> رمز QR مرتبط بدخولك المقرر. إذا تغيرت خطط سفرك (رحلة مختلفة، تاريخ مختلف)، قد تحتاج إلى إعادة تقديم نموذج جديد. يقبل النظام عادةً التقديمات حتى 24 ساعة قبل وصولك المقرر.
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- BEFORE YOU START -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">قبل أن تبدأ</h2>
+    <div class="bg-amber-50 border border-amber-200 rounded-2xl p-6 not-prose">
+      <p class="font-bold text-amber-900 mb-3">احضر هذه قبل ملء النموذج:</p>
+      <ul>
+        <li><strong>جواز سفرك</strong> (نسخة فعلية أو صورة واضحة لصفحة البيانات)</li>
+        <li><strong>رقم الرحلة / القطار / السفينة</strong> لدخولك إلى الصين</li>
+        <li><strong>اسم الفندق وعنوانه المفصل</strong> في الصين (إذا كان معروفاً)</li>
+        <li><strong>رقم هاتفك</strong> (مع رمز البلد إذا لم يكن رقماً صينياً)</li>
+        <li><strong>بريدك الإلكتروني</strong></li>
+        <li>جهاز مزود <strong>بكاميرا</strong> لتصوير جواز سفرك، أو <strong>نسخة ممسوحة ضوئياً من جواز السفر</strong> جاهزة على جهازك</li>
+      </ul>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- FAQ -->
+    <!-- ============================================================ -->
+    <h2 class="text-2xl font-bold text-gray-900 mt-12 mb-4">الأسئلة الشائعة</h2>
+    <div class="step-card">
+      <h3 class="text-lg font-bold text-gray-800 mt-2 mb-2">س: هل يمكنني ملء هذا على هاتفي؟</h3>
+      <p class="text-gray-700">نعم، البوابة متجاوبة بالكامل مع الأجهزة المحمولة وتعمل على متصفحات سطح المكتب والجوال.</p>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">س: هل أحتاج لطباعة رمز QR؟</h3>
+      <p class="text-gray-700">يمكنك عرضه على هاتفك أو طباعته — كلاهما مقبول. المهم هو أن يكون جاهزاً للعرض في الهجرة.</p>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">س: ماذا لو أخطأت بعد الإرسال؟</h3>
+      <p class="text-gray-700">عد إلى البوابة وأرسل نموذجاً جديداً. سيتم استبدال التقديم القديم.</p>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">س: هل هذا النموذج إلزامي؟ هل ما زلت بحاجة للبطاقة الورقية؟</h3>
+      <p class="text-gray-700">اعتباراً من 2025-2026، النموذج عبر الإنترنت هو الخيار الموصى به. بعض المنافذ قد لا تزال توزع البطاقات الورقية كخيار احتياطي. من الحكمة ملء النموذج عبر الإنترنت <strong>و</strong> حمل قلم تحسباً لأي طارئ.</p>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">س: أنا أعبر لأقل من 24 ساعة ولا أغادر المطار — هل أحتاج هذا؟</h3>
+      <p class="text-gray-700">لا. ركاب الترانزيت المباشر لمدة 24 ساعة الذين يبقون ضمن المنطقة المقيدة في المطار معفون.</p>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">س: أنا أدخل بموجب العبور 240 ساعة بدون تأشيرة. هل أحتاج هذا النموذج؟</h3>
+      <p class="text-gray-700">نعم، إذا كنت تغادر منطقة الميناء. ركاب الترانزيت الذين يقيمون في الصين لمدة تصل إلى 240 ساعة يجب عليهم ملء هذا النموذج.</p>
+
+      <h3 class="text-lg font-bold text-gray-800 mt-6 mb-2">س: هل يمكنني إعادة استخدام معلوماتي للرحلات المستقبلية؟</h3>
+      <p class="text-gray-700">نعم! خلال عام واحد، يسمح لك النظام بإعادة استخدام البيانات التي ملأتها سابقاً.只需要 تحديث خط سير رحلتك للرحلة الجديدة.</p>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- Related Guides -->
+    <!-- ============================================================ -->
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose mt-12">
+      <h3 class="text-2xl font-bold text-gray-900 mb-6">📚 أدلة ذات صلة</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/ar/visa/customs-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-1">لوائح الجمارك الصينية</p>
+          <p class="text-sm text-gray-600">ما يمكنك وما لا يمكنك إحضاره إلى الصين</p>
+        </a>
+        <a href="/ar/visa/first-time-china/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-1">أول مرة في الصين: دليل خطوة بخطوة</p>
+          <p class="text-sm text-gray-600">جدول تحضيري كامل للزوار لأول مرة</p>
+        </a>
+        <a href="/ar/visa/visa-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-1">الدليل الكامل لأنواع تأشيرات الصين</p>
+          <p class="text-sm text-gray-600">جميع خيارات التأشيرات موضحة — الإعفاء والعبور وتأشيرة L</p>
+        </a>
+        <a href="/ar/visa/transit-240/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100 no-underline">
+          <p class="font-bold text-gray-900 mb-1">شرح العبور بدون تأشيرة 240 ساعة</p>
+          <p class="text-sm text-gray-600">قواعد العبور 10 أيام والمنافذ ومناطق السفر</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- Sources -->
+    <div class="mt-8 pt-6 border-t border-gray-200">
+      <h3 class="text-lg font-bold text-gray-900 mb-3">المصادر</h3>
+      <ul class="text-sm text-gray-600">
+        <li><a href="https://s.nia.gov.cn/ArrivalCardFillingPC/entry-registation-home" target="_blank" class="text-blue-600 underline">البوابة الرسمية لبطاقة وصول NIA</a></li>
+        <li><a href="https://en.nia.gov.cn/n147418/n147463/c195170/content.html" target="_blank" class="text-blue-600 underline">فيديو تعليمي NIA: كيفية تقديم بطاقة الوصول إلى الصين عبر الإنترنت</a></li>
+      </ul>
+    </div>
+
+  </article>
+</Layout>

@@ -1,0 +1,136 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'Qué hacer cuando falla el pago en China';
+const description = 'Razones comunes de fallos de pago para viajeros extranjeros en China y solución de problemas paso a paso cuando tu pago con código QR no se procesa.';
+---
+
+<Layout title={title} description={description} lang="es">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/es/payment/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Volver a Pagos
+      </a>
+    </nav>
+    <!-- Header -->
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">💳 Pagos</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        Qué hacer cuando falla el pago en China
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">No entres en pánico — la mayoría de los fallos de pago se solucionan fácilmente.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Última actualización: junio 2026</span>
+        <span>⏱️ 4 min de lectura</span>
+      </div>
+    </header>
+
+    <!-- Quick Answer Box -->
+    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-red-900 mb-4">🎯 Respuesta rápida</h2>
+      <p class="text-lg text-red-800 leading-relaxed">
+        <strong>Los fallos de pago son comunes para los usuarios extranjeros.</strong> La mayoría son causados por límites diarios, bloqueos de fraude del banco o problemas de red. Intenta cambiar a efectivo, usar una aplicación diferente o conectarte al WiFi. Si nada funciona, espera unas horas y vuelve a intentarlo.
+      </p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="prose prose-lg max-w-none">
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        En algún momento va a pasar. Estás en una tienda, escaneas el código QR, la aplicación gira un momento, y luego — error. Pago fallido.
+      </p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        No entres en pánico. Los fallos de pago en China son comunes para los usuarios extranjeros, y la mayoría de las veces tienen una solución sencilla.
+      </p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🔍</span> Por qué ocurrió
+      </h2>
+
+      <div class="space-y-4 mb-8 not-prose">
+        <div class="bg-blue-50 border border-blue-200 rounded-2xl p-5">
+          <h3 class="font-semibold text-gray-900 mb-2 text-lg">1. Alcanzaste el límite diario</h3>
+          <p class="text-gray-700 text-sm">Tanto Alipay como WeChat Pay tienen límites en cuánto puedes gastar. Si has estado de compras, es posible que hayas alcanzado el tope.</p>
+          <p class="text-gray-700 text-sm mt-2"><strong>Solución:</strong> Espera hasta el día siguiente — los límites diarios se reinician.</p>
+        </div>
+
+        <div class="bg-green-50 border border-green-200 rounded-2xl p-5">
+          <h3 class="font-semibold text-gray-900 mb-2 text-lg">2. Tu banco bloqueó la transacción</h3>
+          <p class="text-gray-700 text-sm">Tu banco ve un cargo desde China y piensa que es fraude.</p>
+          <p class="text-gray-700 text-sm mt-2"><strong>Solución:</strong> Revisa tus notificaciones — tu banco suele enviar un SMS preguntando si eres tú. Aprueba la operación e inténtalo de nuevo. Notifica a tu banco antes de viajar para evitar esto.</p>
+        </div>
+
+        <div class="bg-purple-50 border border-purple-200 rounded-2xl p-5">
+          <h3 class="font-semibold text-gray-900 mb-2 text-lg">3. Problema de red</h3>
+          <p class="text-gray-700 text-sm">Tu VPN puede haberse desconectado, o el internet del comerciante es lento.</p>
+          <p class="text-gray-700 text-sm mt-2"><strong>Solución:</strong> Revisa tu VPN, activa/desactiva el modo avión, o pide al comerciante que lo intente de nuevo.</p>
+        </div>
+
+        <div class="bg-orange-50 border border-orange-200 rounded-2xl p-5">
+          <h3 class="font-semibold text-gray-900 mb-2 text-lg">4. El comerciante no acepta tarjetas internacionales</h3>
+          <p class="text-gray-700 text-sm">Algunos vendedores pequeños tienen cuentas de pago que solo funcionan con tarjetas bancarias chinas.</p>
+          <p class="text-gray-700 text-sm mt-2"><strong>Solución:</strong> Usa efectivo, o pregunta si aceptan WeChat Pay (a veces funciona cuando Alipay no).</p>
+        </div>
+      </div>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">✅</span> Lista de verificación rápida
+      </h2>
+
+      <div class="bg-gray-50 rounded-2xl p-8 mb-8 not-prose">
+        <ol class="space-y-4">
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">1</span>
+            <div><strong>Cambia a la otra aplicación</strong> — Si Alipay falla, prueba WeChat Pay (o viceversa)</div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">2</span>
+            <div><strong>Usa efectivo</strong> — Lleva siempre ¥500–1000 en billetes pequeños como respaldo</div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">3</span>
+            <div><strong>Conéctate al WiFi</strong> — Pide el WiFi al comerciante; a veces los datos móviles son el problema</div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">4</span>
+            <div><strong>Reinicia la aplicación</strong> — Cierra y vuelve a abrir Alipay o WeChat</div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold flex-shrink-0">5</span>
+            <div><strong>Espera y vuelve a intentarlo</strong> — Algunos problemas se resuelven solos después de unos minutos</div>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Related Guides -->
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose mt-12">
+      <h3 class="text-2xl font-bold text-gray-900 mb-6">📚 Guías relacionadas</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/es/payment/payment-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">Cómo pagar en China</p>
+          <p class="text-sm text-gray-600">Visión general completa de pagos</p>
+        </a>
+        <a href="/es/payment/setup-alipay/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">Cómo configurar Alipay</p>
+          <p class="text-sm text-gray-600">Guía paso a paso</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- Sources -->
+    <div class="mt-8 pt-6 border-t border-gray-200 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-3">Fuentes</h3>
+      <ul class="space-y-2">
+        <li><a href="https://www.alipayplus.com/consumer/" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">Alipay - Centro de consumidores</a></li>
+        <li><a href="https://cs.help.wechat.com/hc/en-us" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">WeChat - Centro de ayuda</a></li>
+      </ul>
+    </div>
+  </article>
+</Layout>

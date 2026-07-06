@@ -1,0 +1,313 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'China Starter Hub — دليلك الكامل إلى الصين';
+const description = 'كل ما تحتاج معرفته قبل السفر إلى الصين: الدفع، النقل، التطبيقات، المدن، ونصائح السفر.';
+---
+
+<Layout title={title} description={description} lang="ar">
+  <!-- Trigger rebuild: 2026-06-12 17:30 -->
+  <section class="text-center py-20 px-4">
+    <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-gray-900  ">
+      إرشادات واضحة وحديثة<br/><span class="text-brand-600">للمسافرين الأجانب لأول مرة إلى الصين</span>
+    </h1>
+    <p class="text-lg md:text-xl text-gray-500  ">
+      ابدأ بالأساسيات، ثم اتبع الأدلة التي تناسب رحلتك.
+    </p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="/ar/visa/" class="bg-brand-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-brand-700 transition no-underline">ابدأ الآن</a>
+      <a href="/ar/about/" class="border border-brand-600 text-brand-600 px-6 py-3 rounded-lg font-medium hover:bg-brand-50 transition no-underline">عن هذا الموقع</a>
+    </div>
+  </section>
+
+  <!-- Section: Category Cards -->
+  <section class="max-w-5xl mx-auto px-4 pb-16">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      {[
+        { href: '/ar/visa/', title: 'التأشيرة', desc: 'أنواع التأشيرات، الدول المعفاة، سياسة العبور.' },
+        { href: '/ar/payment/', title: 'الدفع', desc: 'المحافظ الإلكترونية، البطاقات المصرفية، النقود الاحتياطية.' },
+        { href: '/ar/transport/', title: 'النقل', desc: 'القطار فائق السرعة، المترو، طلب المركبات، والوصول من المطار إلى المدينة.' },
+        { href: '/ar/life/', title: 'الحياة في الصين', desc: 'التطبيقات، الرعاية الطبية، نصائح السلامة، الحياة اليومية.' },
+      ].map(card => (
+        <a href={card.href} class="group block p-5 rounded-2xl bg-gray-50  :bg-brand-50 dark:hover:bg-brand-950 border border-gray-100  :border-brand-200 dark:hover:border-brand-800 transition-all duration-200 no-underline">
+          <h3 class="text-lg font-semibold text-gray-900  :text-brand-600 dark:group-hover:text-brand-400 mb-1">{card.title}</h3>
+          <p class="text-sm text-gray-500  ">{card.desc}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- Your Trip: Step by Step -->
+  <section class="max-w-5xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-bold text-gray-900 mb-2">رحلتك، خطوة بخطوة</h2>
+    <p class="text-gray-500 mb-10">اتبع مرحلتك — كل منها يوصلك إلى الأدلة التي ستحتاجها فعلاً.</p>
+
+    <div class="space-y-8">
+      <!-- Stage 1 -->
+      <div class="relative pl-14">
+        <div class="absolute left-0 top-0 w-9 h-9 rounded-full bg-green-100 flex items-center justify-center text-sm font-bold text-green-700">1</div>
+        <div class="absolute left-[17px] top-9 bottom-0 w-0.5 bg-gray-100"></div>
+        <h3 class="text-lg font-bold text-gray-900 mb-3">قبل السفر</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <a href="/ar/visa/visa-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-green-200 transition no-underline">
+            <span class="text-xs font-medium text-green-600">تجهيز</span>
+            <p class="text-sm font-semibold text-gray-900 mt-1">ما التأشيرة التي تحتاجها؟</p>
+          </a>
+          <a href="/ar/payment/payment-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-green-200 transition no-underline">
+            <span class="text-xs font-medium text-green-600">الدفع</span>
+            <p class="text-sm font-semibold text-gray-900 mt-1">كيف تدفع في الصين</p>
+          </a>
+          <a href="/ar/life/survival-kit/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-green-200 transition no-underline">
+            <span class="text-xs font-medium text-green-600">الحياة</span>
+            <p class="text-sm font-semibold text-gray-900 mt-1">قائمة التجهيز قبل المغادرة</p>
+          </a>
+        </div>
+      </div>
+
+      <!-- Stage 2 -->
+      <div class="relative pl-14">
+        <div class="absolute left-0 top-0 w-9 h-9 rounded-full bg-blue-100 flex items-center justify-center text-sm font-bold text-blue-700">2</div>
+        <div class="absolute left-[17px] top-9 bottom-0 w-0.5 bg-gray-100"></div>
+        <h3 class="text-lg font-bold text-gray-900 mb-3">بمجرد الوصول</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <a href="/ar/transport/airport-to-city/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-blue-200 transition no-underline">
+            <span class="text-xs font-medium text-blue-600">النقل</span>
+            <p class="text-sm font-semibold text-gray-900 mt-1">الوصول من المطار إلى المدينة</p>
+          </a>
+          <a href="/ar/life/sim-card-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-blue-200 transition no-underline">
+            <span class="text-xs font-medium text-blue-600">الحياة</span>
+            <p class="text-sm font-semibold text-gray-900 mt-1">بطاقة SIM وإعداد الإنترنت</p>
+          </a>
+          <a href="/ar/life/vpn-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-blue-200 transition no-underline">
+            <span class="text-xs font-medium text-blue-600">الحياة</span>
+            <p class="text-sm font-semibold text-gray-900 mt-1">إعداد VPN</p>
+          </a>
+        </div>
+      </div>
+
+      <!-- Stage 3 -->
+      <div class="relative pl-14">
+        <div class="absolute left-0 top-0 w-9 h-9 rounded-full bg-purple-100 flex items-center justify-center text-sm font-bold text-purple-700">3</div>
+        <div class="absolute left-[17px] top-9 bottom-0 w-0.5 bg-gray-100"></div>
+        <h3 class="text-lg font-bold text-gray-900 mb-3">أثناء رحلتك</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <a href="/ar/transport/transport-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-purple-200 transition no-underline">
+            <span class="text-xs font-medium text-purple-600">النقل</span>
+            <p class="text-sm font-semibold text-gray-900 mt-1">التنقل في الصين</p>
+          </a>
+          <a href="/ar/life/essential-apps/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-purple-200 transition no-underline">
+            <span class="text-xs font-medium text-purple-600">الحياة</span>
+            <p class="text-sm font-semibold text-gray-900 mt-1">10 تطبيقات أساسية</p>
+          </a>
+          <a href="/ar/life/chinese-phrases/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-purple-200 transition no-underline">
+            <span class="text-xs font-medium text-purple-600">الحياة</span>
+            <p class="text-sm font-semibold text-gray-900 mt-1">عبارات صينية أساسية</p>
+          </a>
+        </div>
+      </div>
+
+      <!-- Stage 4 -->
+      <div class="relative pl-14">
+        <div class="absolute left-0 top-0 w-9 h-9 rounded-full bg-red-100 flex items-center justify-center text-sm font-bold text-red-700">4</div>
+        <h3 class="text-lg font-bold text-gray-900 mb-3">هل تحتاج مساعدة؟</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-4 gap-3">
+          <a href="/ar/life/seeing-a-doctor/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
+            <span class="text-xs font-medium text-red-600">الحياة</span>
+            <p class="text-sm font-semibold text-gray-900 mt-1">زيارة الطبيب</p>
+          </a>
+          <a href="/ar/life/common-scams/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
+            <span class="text-xs font-medium text-red-600">الحياة</span>
+            <p class="text-sm font-semibold text-gray-900 mt-1">تجنب الاحتيال الشائع</p>
+          </a>
+          <a href="/ar/life/emergency-numbers/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
+            <span class="text-xs font-medium text-red-600">الحياة</span>
+            <p class="text-sm font-semibold text-gray-900 mt-1">أرقام الطوارئ</p>
+          </a>
+          <a href="/ar/payment/payment-fails/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
+            <span class="text-xs font-medium text-red-600">الدفع</span>
+            <p class="text-sm font-semibold text-gray-900 mt-1">عند فشل الدفع</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visa Checker Tool -->
+  <section class="max-w-5xl mx-auto px-4 pb-16">
+    <div class="border-t border-gray-100 pt-12">
+      <div class="max-w-2xl mx-auto">
+        <h2 class="text-2xl font-bold text-gray-900 mb-2 text-center">التحقق من التأشيرة</h2>
+        <p class="text-gray-500 text-center mb-8">لست متأكداً مما إذا كنت بحاجة إلى تأشيرة؟ اختر جنسيتك وسنخبرك.</p>
+
+        <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100">
+          <label for="visa-country" class="block text-sm font-medium text-gray-700 mb-2">جنسيتك</label>
+          <select id="visa-country" class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-brand-500 text-base appearance-none cursor-pointer">
+            <option value="">— اختر بلدك —</option>
+            <option value="AL">ألبانيا</option>
+            <option value="AD">أندورا</option>
+            <option value="AG">أنتيغوا وباربودا</option>
+            <option value="AR">الأرجنتين</option>
+            <option value="AM">أرمينيا</option>
+            <option value="AU">أستراليا</option>
+            <option value="AT">النمسا</option>
+            <option value="AZ">أذربيجان</option>
+            <option value="BS">جزر البهاما</option>
+            <option value="BH">البحرين</option>
+            <option value="BD">بنغلاديش</option>
+            <option value="BB">بربادوس</option>
+            <option value="BY">بيلاروسيا</option>
+            <option value="BE">بلجيكا</option>
+            <option value="BA">البوسنة والهرسك</option>
+            <option value="BR">البرازيل</option>
+            <option value="BN">بروناي</option>
+            <option value="BG">بلغاريا</option>
+            <option value="CA">كندا</option>
+            <option value="CL">تشيلي</option>
+            <option value="HR">كرواتيا</option>
+            <option value="CY">قبرص</option>
+            <option value="CZ">جمهورية التشيك</option>
+            <option value="DK">الدنمارك</option>
+            <option value="DM">دومينيكا</option>
+            <option value="EC">الإكوادور</option>
+            <option value="EG">مصر</option>
+            <option value="EE">إستونيا</option>
+            <option value="FJ">فيجي</option>
+            <option value="FI">فنلندا</option>
+            <option value="FR">فرنسا</option>
+            <option value="GE">جورجيا</option>
+            <option value="DE">ألمانيا</option>
+            <option value="GR">اليونان</option>
+            <option value="GD">غرينادا</option>
+            <option value="HU">المجر</option>
+            <option value="IS">آيسلندا</option>
+            <option value="IN">الهند</option>
+            <option value="ID">إندونيسيا</option>
+            <option value="IE">أيرلندا</option>
+            <option value="IT">إيطاليا</option>
+            <option value="JP">اليابان</option>
+            <option value="KZ">كازاخستان</option>
+            <option value="KE">كينيا</option>
+            <option value="KW">الكويت</option>
+            <option value="LV">لاتفيا</option>
+            <option value="LI">ليختنشتاين</option>
+            <option value="LT">ليتوانيا</option>
+            <option value="LU">لوكسمبورغ</option>
+            <option value="MY">ماليزيا</option>
+            <option value="MV">جزر المالديف</option>
+            <option value="MT">مالطا</option>
+            <option value="MU">موريشيوس</option>
+            <option value="MX">المكسيك</option>
+            <option value="MC">موناكو</option>
+            <option value="ME">الجبل الأسود</option>
+            <option value="NL">هولندا</option>
+            <option value="NZ">نيوزيلندا</option>
+            <option value="NG">نيجيريا</option>
+            <option value="MK">مقدونيا الشمالية</option>
+            <option value="NO">النرويج</option>
+            <option value="OM">عُمان</option>
+            <option value="PK">باكستان</option>
+            <option value="PE">بيرو</option>
+            <option value="PH">الفلبين</option>
+            <option value="PL">بولندا</option>
+            <option value="PT">البرتغال</option>
+            <option value="QA">قطر</option>
+            <option value="RO">رومانيا</option>
+            <option value="RU">روسيا</option>
+            <option value="WS">ساموا</option>
+            <option value="SM">سان مارينو</option>
+            <option value="SA">المملكة العربية السعودية</option>
+            <option value="RS">صربيا</option>
+            <option value="SC">سيشل</option>
+            <option value="SG">سنغافورة</option>
+            <option value="SK">سلوفاكيا</option>
+            <option value="SI">سلوفينيا</option>
+            <option value="SB">جزر سليمان</option>
+            <option value="ZA">جنوب إفريقيا</option>
+            <option value="KR">كوريا الجنوبية</option>
+            <option value="ES">إسبانيا</option>
+            <option value="SR">سورينام</option>
+            <option value="SE">السويد</option>
+            <option value="CH">سويسرا</option>
+            <option value="TH">تايلاند</option>
+            <option value="TO">تونغا</option>
+            <option value="TR">تركيا</option>
+            <option value="UA">أوكرانيا</option>
+            <option value="AE">الإمارات العربية المتحدة</option>
+            <option value="GB">المملكة المتحدة</option>
+            <option value="US">الولايات المتحدة الأمريكية</option>
+            <option value="UY">الأوروغواي</option>
+            <option value="UZ">أوزبكستان</option>
+            <option value="VN">فيتنام</option>
+            <option value="OTHER">دولة أخرى</option>
+          </select>
+
+          <div id="visa-result" class="mt-6"></div>
+        </div>
+
+        <p class="text-xs text-gray-400 text-center mt-4">تتغير سياسات التأشيرات. تحقق دائماً من سفارة الصين المحلية قبل الحجز.</p>
+      </div>
+    </div>
+  </section>
+
+  <script is:inline>
+    const countrySelect = document.getElementById('visa-country');
+    const resultDiv = document.getElementById('visa-result');
+
+    // Source: China gov.cn official list (2025)
+    // Category 1: Unilateral visa-free (30 days) - 50 countries
+    const visaFree = ['BN','FR','DE','IT','ES','NL','CH','IE','HU','AT','BE','LU','NZ','AU','PL','PT','GR','CY','SI','SK','NO','FI','DK','IS','AD','MC','LI','KR','BG','RO','HR','ME','MK','MT','EE','LV','JP','BR','AR','CL','PE','UY','SA','OM','KW','BH','CA','RU','GB','SE'];
+
+    // Category 2: Mutual visa agreement (ordinary passport) - 29 countries
+    const mutualFree = ['AL','AE','AG','BB','BS','BY','BA','DM','EC','FJ','GD','GE','KZ','QA','MV','MU','WS','RS','SC','SM','SR','SB','TH','TO','UZ','SG','AM','AZ','MY'];
+
+    // Category 3: 240-hour transit - 55 countries
+    const transit240 = ['AL','AT','BE','BG','BA','BR','CA','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LT','LU','MT','MC','ME','NL','MK','NO','PL','PT','RO','RU','RS','SK','SI','KR','ES','SE','CH','UA','GB','US','AU','NZ','JP','SG','BN','AE','QA','MX','AR','CL','ID','BY'];
+
+    // Determine best visa status for each country
+    function getVisaStatus(code) {
+      if (visaFree.includes(code)) return 'visa-free-30';
+      if (mutualFree.includes(code)) return 'mutual-free';
+      if (transit240.includes(code)) return 'transit';
+      return 'need-visa';
+    }
+
+    const countryNames = {
+      'AL':'ألبانيا','AD':'أندورا','AG':'أنتيغوا وباربودا','AR':'الأرجنتين','AM':'أرمينيا',
+      'AU':'أستراليا','AT':'النمسا','AZ':'أذربيجان','BS':'جزر البهاما','BH':'البحرين','BB':'بربادوس',
+      'BY':'بيلاروسيا','BE':'بلجيكا','BA':'البوسنة والهرسك','BR':'البرازيل','BN':'بروناي','BG':'بلغاريا',
+      'CA':'كندا','CL':'تشيلي','HR':'كرواتيا','CY':'قبرص','CZ':'جمهورية التشيك','DK':'الدنمارك',
+      'DM':'دومينيكا','EC':'الإكوادور','EG':'مصر','EE':'إستونيا','FJ':'فيجي','FI':'فنلندا','FR':'فرنسا',
+      'GE':'جورجيا','DE':'ألمانيا','GR':'اليونان','GD':'غرينادا','HU':'المجر',      'IS':'آيسلندا','IE':'أيرلندا','IN':'الهند','ID':'إندونيسيا','IT':'إيطاليا',
+      'JP':'اليابان','KZ':'كازاخستان','KE':'كينيا','KW':'الكويت','LV':'لاتفيا','LI':'ليختنشتاين',
+      'LT':'ليتوانيا','LU':'لوكسمبورغ','MY':'ماليزيا','MV':'جزر المالديف','MT':'مالطا','MU':'موريشيوس',
+      'MX':'المكسيك',
+      'MC':'موناكو','ME':'الجبل الأسود',      'NL':'هولندا','NZ':'نيوزيلندا','NG':'نيجيريا','MK':'مقدونيا الشمالية',
+      'NO':'النرويج','OM':'عُمان','PK':'باكستان','PE':'بيرو','PH':'الفلبين','PL':'بولندا','PT':'البرتغال','QA':'قطر','RO':'رومانيا',
+      'RU':'روسيا','WS':'ساموا','SM':'سان مارينو','SA':'المملكة العربية السعودية','RS':'صربيا','SC':'سيشل',
+      'SG':'سنغافورة','SK':'سلوفاكيا','SI':'سلوفينيا','SB':'جزر سليمان','ZA':'جنوب إفريقيا','KR':'كوريا الجنوبية',
+      'ES':'إسبانيا','SR':'سورينام','SE':'السويد','CH':'سويسرا','TH':'تايلاند','TO':'تونغا','TR':'تركيا',
+      'UA':'أوكرانيا',
+      'AE':'الإمارات العربية المتحدة','GB':'المملكة المتحدة','US':'الولايات المتحدة الأمريكية','UY':'الأوروغواي','UZ':'أوزبكستان','VN':'فيتنام'
+    };
+
+    countrySelect.addEventListener('change', function() {
+      const val = this.value;
+      if (!val) {
+        resultDiv.innerHTML = '';
+        return;
+      }
+
+      const name = countryNames[val] || 'بلدك';
+      const status = getVisaStatus(val);
+
+      if (status === 'visa-free-30') {
+        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-green-50 border border-green-200"><p class="text-green-800 font-semibold mb-1">أخبار سارة! يمكن لمواطني ' + name + ' دخول الصين <span class="underline">بدون تأشيرة</span> لمدة تصل إلى 30 يوماً.</p><p class="text-green-700 text-sm mb-3">لا حاجة لتأشيرة للسياحة أو الأعمال أو العبور لأقل من 30 يوماً.</p><a href="/ar/visa/visa-free/" class="inline-block text-sm font-medium text-green-700 underline hover:no-underline">اطلع على القائمة الكاملة للدول المعفاة ←</a></div>';
+      } else if (status === 'mutual-free') {
+        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-green-50 border border-green-200"><p class="text-green-800 font-semibold mb-1">يمكن لمواطني ' + name + ' دخول الصين <span class="underline">بدون تأشيرة</span> بموجب اتفاقية متبادلة.</p><p class="text-green-700 text-sm mb-3">تحقق من نوع جواز سفرك ومدة الإقامة المسموح بها قبل السفر.</p><a href="/ar/visa/visa-free/" class="inline-block text-sm font-medium text-green-700 underline hover:no-underline">اطلع على قائمة الدول المعفاة ←</a></div>';
+      } else if (status === 'transit') {
+        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-blue-50 border border-blue-200"><p class="text-blue-800 font-semibold mb-1">يمكنك استخدام سياسة <span class="underline">العبور 240 ساعة</span>.</p><p class="text-blue-700 text-sm mb-3">يمكن لمواطني ' + name + ' العبور عبر الصين لمدة تصل إلى 10 أيام بدون تأشيرة. للإقامات الأطول، ستحتاج إلى تأشيرة L.</p><div class="flex flex-wrap gap-3"><a href="/ar/visa/transit-240/" class="text-sm font-medium text-blue-700 underline hover:no-underline">كيف تعمل سياسة العبور ←</a><a href="/ar/visa/apply-l-visa/" class="text-sm font-medium text-blue-700 underline hover:no-underline">تقديم طلب تأشيرة L ←</a></div></div>';
+      } else {
+        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-orange-50 border border-orange-200"><p class="text-orange-800 font-semibold mb-1">ستحتاج إلى تأشيرة.</p><p class="text-orange-700 text-sm mb-3">يحتاج مواطنو ' + name + ' إلى تقديم طلب للحصول على تأشيرة سياحية (نوع L) قبل السفر إلى الصين.</p><a href="/ar/visa/apply-l-visa/" class="inline-block text-sm font-medium text-orange-700 underline hover:no-underline">كيفية التقديم على تأشيرة L ←</a></div>';
+      }
+    });
+  </script>
+</Layout>

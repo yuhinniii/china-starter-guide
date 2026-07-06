@@ -1,0 +1,133 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'Cómo usar Didi en China como extranjero';
+const description = 'Configura y usa DiDi (el Uber chino) sin número de teléfono chino. Opciones de viaje, pago y consejos.';
+---
+
+<Layout title={title} description={description} lang="es">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/es/transport/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Volver a Transporte
+      </a>
+    </nav>
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🚗 Viajes compartidos</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        Cómo usar Didi en China como extranjero
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">Configura y usa DiDi (el Uber chino) sin número de teléfono chino. Opciones de viaje, pago y consejos.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Última actualización: junio 2026</span>
+        <span>⏱️ 5 min de lectura</span>
+      </div>
+    </header>
+
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-blue-900 mb-4">🎯 Respuesta rápida</h2>
+      <p class="text-lg text-blue-800 leading-relaxed">
+        Puedes usar DiDi <strong>sin número de teléfono chino</strong>. La forma más fácil es a través del miniprograma de Alipay o WeChat — abre la aplicación, busca "DiDi" y reserva un viaje. El pago se realiza automáticamente a través de Alipay/WeChat. La aplicación independiente de DiDi también tiene versión en inglés.
+      </p>
+    </div>
+
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 En esta guía</h3>
+      <ul class="space-y-3">
+        <li><a href="#alipay" class="text-blue-600 hover:underline">📱 Método 1: a través de Alipay o WeChat (más fácil)</a></li>
+        <li><a href="#app" class="text-blue-600 hover:underline">📲 Método 2: descarga la aplicación DiDi</a></li>
+        <li><a href="#rides" class="text-blue-600 hover:underline">🚘 Tipos de viaje</a></li>
+        <li><a href="#tips" class="text-blue-600 hover:underline">💡 Consejos para usar DiDi</a></li>
+        <li><a href="#uber" class="text-blue-600 hover:underline">🔀 ¿Y Uber?</a></li>
+      </ul>
+    </nav>
+
+    <div class="prose prose-gray max-w-none">
+
+      <h2 id="alipay" class="text-2xl font-bold text-gray-900 mb-4">📱 Método 1: a través de Alipay o WeChat (más fácil)</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Si ya tienes Alipay configurado (consulta la <a href="/es/payment/setup-alipay/" class="text-blue-600 hover:underline">guía de configuración de Alipay</a>):</p>
+
+      <ol class="list-decimal pl-6 space-y-4 text-gray-700 mb-8">
+        <li>Abre Alipay o WeChat</li>
+        <li>Desplázate hasta "Miniprogramas" (o busca "DiDi")</li>
+        <li>Toca el miniprograma de DiDi</li>
+        <li>Permite el acceso a la ubicación</li>
+        <li>Establece tu punto de recogida y destino, elige un tipo de viaje y confirma.</li>
+      </ol>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 not-prose">
+        <div class="bg-gray-100 rounded-xl p-3">
+          <div class="text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">Alipay</div>
+          <img src="/images/didi/alipay-didi.webp" alt="Accediendo a DiDi a través del miniprograma de Alipay" class="w-full rounded-lg border border-gray-200">
+          <p class="text-sm text-gray-500 italic mt-2">Encuentra DiDi en la lista de miniprogramas de Alipay</p>
+        </div>
+        <div class="bg-gray-100 rounded-xl p-3">
+          <div class="text-xs font-bold text-gray-500 uppercase tracking-wide mb-2">WeChat</div>
+          <img src="/images/didi/wechat-didi.webp" alt="Accediendo a DiDi a través del miniprograma de WeChat" class="w-full rounded-lg border border-gray-200">
+          <p class="text-sm text-gray-500 italic mt-2">Busca DiDi en los miniprogramas de WeChat</p>
+        </div>
+      </div>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">El pago se realiza automáticamente a través de Alipay o WeChat. No necesitas número de teléfono chino.</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="app" class="text-2xl font-bold text-gray-900 mb-4">📲 Método 2: descarga la aplicación DiDi</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">La aplicación DiDi tiene versión en inglés. Descárgala desde tu tienda de aplicaciones (busca "DiDi Rider"). Puedes registrarte con un número de teléfono internacional y cambiar la interfaz a inglés en los ajustes.</p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Métodos de pago: Alipay, WeChat Pay, Visa/Mastercard (añádelas en la aplicación).</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="rides" class="text-2xl font-bold text-gray-900 mb-4">🚘 Tipos de viaje</h2>
+
+      <ul class="space-y-2 text-gray-700 mb-8">
+        <li><strong>Express (快车):</strong> Viaje estándar, el más barato. Comparable a UberX.</li>
+        <li><strong>Premier (优享):</strong> Coches un poco mejores, un poco más caro.</li>
+        <li><strong>Taxi (出租车):</strong> Solicita un taxi normal a través de la aplicación. Paga la tarifa del taxímetro digitalmente.</li>
+        <li><strong>Luxury (豪华车):</strong> Coches de alta gama (Mercedes, BMW). Caro.</li>
+        <li><strong>Alquiler de coche (包车):</strong> Reserva un conductor por varias horas o un día completo.</li>
+      </ul>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="tips" class="text-2xl font-bold text-gray-900 mb-4">💡 Consejos para usar DiDi</h2>
+
+      <ul class="space-y-2 text-gray-700 mb-8">
+        <li><strong>Establece tu punto de recogida con precisión:</strong> Arrastra el pin en el mapa exactamente donde estás. Los conductores a menudo no te encuentran si el pin está desviado.</li>
+        <li><strong>Verifica la matrícula:</strong> Compara el número de matrícula en la aplicación con el del coche.</li>
+        <li><strong>Usa el chat de la aplicación:</strong> Tiene traducción integrada para comunicarte con tu conductor.</li>
+        <li><strong>Ten paciencia:</strong> En zonas concurridas, tu conductor puede tardar unos minutos en llegar.</li>
+        <li><strong>Peajes:</strong> Los peajes de autopista y las tasas aeroportuarias se añaden automáticamente a tu tarifa.</li>
+      </ul>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="uber" class="text-2xl font-bold text-gray-900 mb-4">🔀 ¿Y Uber?</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Uber vendió sus operaciones en China a DiDi en 2016. La aplicación de Uber todavía funciona en China pero solo para viajeros internacionales, y la disponibilidad de conductores es limitada. DiDi es el servicio de viajes compartidos predeterminado — tendrás recogidas más rápidas y mejor cobertura.</p>
+
+    </div>
+
+    <div class="not-prose mt-16">
+      <h2 class="text-2xl font-bold text-gray-900 mb-8">📚 Guías relacionadas</h2>
+      <div class="space-y-4">
+        <a href="/es/transport/transport-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>Cómo moverse por China</strong> — la guía de transporte completa</a>
+        <a href="/es/transport/airport-to-city/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🛬 <strong>Del aeropuerto a la ciudad</strong> — cómo llegar a tu hotel</a>
+        <a href="/es/payment/setup-alipay/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">💳 <strong>Cómo configurar Alipay como extranjero</strong> — paga los viajes de DiDi</a>
+      </div>
+    </div>
+
+    <!-- Sources -->
+    <div class="mt-8 pt-6 border-t border-gray-200 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-3">Fuentes</h3>
+      <ul class="space-y-2">
+        <li><a href="https://www.didiglobal.com/download" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">Descarga de la aplicación DiDi</a></li>
+      </ul>
+    </div>
+  </article>
+</Layout>

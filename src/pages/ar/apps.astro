@@ -1,0 +1,31 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'التطبيقات الأساسية للصين';
+const description = 'التطبيقات التي ستحتاجها فعلاً في الصين — مع أدلة إعداد لغير الناطقين بالصينية.';
+---
+
+<Layout title={title} description={description} lang="ar">
+  <article class="max-w-3xl mx-auto">
+    <header class="py-12 text-center">
+      <div class="text-sm text-brand-600 font-medium mb-2">تصنيف</div>
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900  ">التطبيقات الأساسية</h1>
+      <p class="text-gray-500  ">التطبيقات التي ستحتاجها فعلاً في الصين.</p>
+    </header>
+    <div class="prose prose-gray  ">
+      <div class="bg-amber-50  :border-amber-900 rounded-xl p-4 mb-8">
+        <p class="text-amber-800  ">
+          <strong>ملاحظة:</strong> أدلة التطبيقات التفصيلية قريباً.
+        </p>
+      </div>
+      <h2>التطبيقات التي لا غنى عنها</h2>
+      <ul>
+        <li><strong>WeChat (微信)</strong> — المراسلة، المدفوعات، كل شيء</li>
+        <li><strong>Alipay (支付宝)</strong> — المدفوعات والخدمات</li>
+        <li><strong>DiDi (滴滴)</strong> — طلب المركبات</li>
+        <li><strong>Amap / Baidu Maps</strong> — الملاحة (Google Maps لا يعمل بشكل جيد)</li>
+        <li><strong>Meituan</strong> — توصيل الطعام</li>
+        <li><strong>Dianping</strong> — تقييمات المطاعم</li>
+      </ul>
+    </div>
+  </article>
+</Layout>

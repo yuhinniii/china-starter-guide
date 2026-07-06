@@ -1,0 +1,364 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'لوائح الجمارك الصينية: ما يمكنك وما لا يمكنك إحضاره إلى الصين';
+const description = 'دليل كامل للجمارك الصينية للسياح — حدود الإعفاء الجمركي، العناصر المحظورة، ما يجب التصريح به، وأي ممر تختار.';
+---
+
+<Layout title={title} description={description} lang="ar">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/ar/visa/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        العودة إلى التأشيرة والدخول
+      </a>
+    </nav>
+    <!-- Header -->
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🛂 الدخول والتأشيرة</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        لوائح الجمارك الصينية: ما يمكنك وما لا يمكنك إحضاره إلى الصين
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">دليل عملي لقواعد الجمارك للسياح القادمين إلى الصين.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 آخر تحديث: يونيو 2026</span>
+        <span>⏱️ 5 دقائق قراءة</span>
+      </div>
+    </header>
+
+    <!-- Quick Answer Box -->
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-blue-900 mb-4">🎯 إجابة سريعة</h2>
+      <p class="text-lg text-blue-800 leading-relaxed mb-4">
+        إليك النسخة المختصرة لسائح عادي:
+      </p>
+      <div class="overflow-x-auto mb-4">
+        <table class="w-full text-sm bg-white rounded-xl overflow-hidden shadow-sm">
+          <thead>
+            <tr class="bg-blue-600 text-white">
+              <th class="px-4 py-2 text-right">✅ مسموح به</th>
+              <th class="px-4 py-2 text-right">⚠️ تحقق من التفاصيل أدناه</th>
+              <th class="px-4 py-2 text-right">❌ لا تحضره</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100">
+              <td class="px-4 py-2">ملابس، أدوات نظافة، هاتف، لابتوب، كاميرا</td>
+              <td class="px-4 py-2">كحول، سجائر، هدايا تزيد قيمتها عن 2,000 يوان، نقود تزيد عن 5,000 دولار</td>
+              <td class="px-4 py-2">لحوم، فواكه، خضروات، مخدرات، أسلحة</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <ul class="list-disc pr-5 text-blue-800 text-sm space-y-1">
+        <li><strong>الهدايا/المواد الاستهلاكية المتروكة في الصين:</strong> أقل من <strong>2,000 يوان</strong></li>
+        <li><strong>السجائر:</strong> حد أقصى <strong>400</strong> (200 إذا كنت قادماً من هونغ كونغ/ماكاو)</li>
+        <li><strong>الكحول:</strong> حتى <strong>1.5 لتر</strong> (0.75 لتر إذا كنت قادماً من هونغ كونغ/ماكاو)</li>
+        <li><strong>النقود الأجنبية:</strong> صرّح إذا تجاوزت <strong>5,000 دولار أمريكي</strong></li>
+        <li><strong>النقود الصينية:</strong> حد أقصى <strong>20,000 يوان</strong> (بدون استثناءات)</li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="prose prose-lg max-w-none">
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">❌ لا تحضر هذه إلى الصين</h2>
+
+      <div class="bg-red-50 border border-red-200 rounded-2xl p-6 mb-6 not-prose">
+        <p class="font-bold text-gray-900 mb-2">غير قابل للتفاوض (سيتم مصادرته):</p>
+        <ul class="list-disc pr-5 text-gray-700 space-y-1">
+          <li>🚫 مخدرات، أسلحة، بضائع مقلدة</li>
+          <li>🚫 فواكه طازجة، خضروات، لحوم نيئة، بيض، ألبان، نباتات حية</li>
+          <li>🚫 منتجات الأنواع المهددة بالانقراض (عاج، عظم نمر، قرن وحيد القرن)</li>
+        </ul>
+      </div>
+
+      <div class="bg-yellow-50 border border-yellow-200 rounded-2xl p-6 mb-8 not-prose">
+        <p class="font-bold text-gray-900 mb-2">انتبه لهذه المفاجآت:</p>
+        <ul class="list-disc pr-5 text-gray-700 space-y-1">
+          <li><strong>وجبات خفيفة من اللحوم</strong> (لحم بقري مجفف، نقانق، لحم مقدد) — ممنوعة أيضاً، حتى لو كانت معبأة</li>
+          <li><strong>فاكهة نسيتها في حقيبتك</strong> — كلاب الحجر الصحي ستجدها</li>
+          <li><strong>الطب الصيني التقليدي</strong> — بعضها يحتوي على أنواع مهددة بالانقراض. التزم بالمنتجات المعبأة ذات الملصقات الواضحة</li>
+          <li><strong>بنك الطاقة</strong> — يجب أن يحمل علامة 3C، فقط في حقيبة اليد، حد أقصى 160Wh</li>
+        </ul>
+      </div>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">💰 ما يحتاج معظم السياح إلى معرفته</h2>
+
+      <h3 class="text-xl font-bold text-gray-800 mb-4">الهدايا والأشياء التي تتركها</h3>
+      <p class="text-gray-700 mb-4">
+        حد 2,000 يوان ينطبق على الأشياء التي تهديها أو تستهلكها في الصين (هدايا، هدايا تذكارية تسلمها لصديق، شوكولاتة تأكلها أثناء إقامتك). الأشياء التي أحضرتها لنفسك وتأخذها معك للخروج لا تحتسب.
+      </p>
+
+      <div class="overflow-x-auto mb-8 not-prose">
+        <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+          <thead>
+            <tr class="bg-gray-900 text-white">
+              <th class="px-5 py-3 font-bold">أنت...</th>
+              <th class="px-5 py-3 font-bold">البدل المعفى من الجمارك للأشياء المتروكة في الصين</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 font-semibold">سائح أجنبي</td>
+              <td class="px-5 py-3"><strong>2,000 يوان</strong></td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-5 py-3 font-semibold">مقيم صيني عائد</td>
+              <td class="px-5 py-3">5,000 يوان</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="text-xl font-bold text-gray-800 mb-4">السجائر والكحول</h3>
+      <p class="text-gray-700 mb-4">
+        نموذج التصريح الجمركي يحدد هذه الحدود المعفاة. إذا تجاوزتها، ضع علامة في المربع واستخدم الممر الأحمر.
+      </p>
+
+      <div class="overflow-x-auto mb-4 not-prose">
+        <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+          <thead>
+            <tr class="bg-gray-900 text-white">
+              <th class="px-5 py-3 font-bold">العنصر</th>
+              <th class="px-5 py-3 font-bold text-center">مسافرون قادمون</th>
+              <th class="px-5 py-3 font-bold text-center">قادمون من هونغ كونغ/ماكاو</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3">سجائر (بما في ذلك التبغ المسخن)</td>
+              <td class="px-5 py-3 text-center"><strong>400</strong></td>
+              <td class="px-5 py-3 text-center">200</td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-5 py-3">سيجار</td>
+              <td class="px-5 py-3 text-center"><strong>20</strong></td>
+              <td class="px-5 py-3 text-center">10</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3">تبغ سائب</td>
+              <td class="px-5 py-3 text-center"><strong>500 غم</strong></td>
+              <td class="px-5 py-3 text-center">250 غم</td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-5 py-3">أجهزة السجائر الإلكترونية</td>
+              <td class="px-5 py-3 text-center"><strong>2</strong></td>
+              <td class="px-5 py-3 text-center">1</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3">خراطيش السجائر الإلكترونية</td>
+              <td class="px-5 py-3 text-center"><strong>6</strong> (إجمالي سائل ≤ 12 مل)</td>
+              <td class="px-5 py-3 text-center">3 (≤ 6 مل)</td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-5 py-3">الكحول (≥12%)</td>
+              <td class="px-5 py-3 text-center"><strong>1,500 مل</strong></td>
+              <td class="px-5 py-3 text-center">750 مل</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-sm text-gray-500 mb-8">ملاحظة: للمسافرين المتكررين (عبور الحدود يومياً/أسبوعياً)، تنطبق حدود أكثر صرامة — 40 سيجارة، 2 سيجار، 40 غم تبغ، جهاز سيجارة إلكترونية واحد. معظم السياح لا يندرجون ضمن هذه الفئة.</p>
+
+      <h3 class="text-xl font-bold text-gray-800 mb-4">النقود</h3>
+      <div class="overflow-x-auto mb-8 not-prose">
+        <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+          <thead>
+            <tr class="bg-gray-900 text-white">
+              <th class="px-5 py-3 font-bold">العملة</th>
+              <th class="px-5 py-3 font-bold text-center">الحد</th>
+              <th class="px-5 py-3 font-bold">ما يجب فعله</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3">اليوان الصيني</td>
+              <td class="px-5 py-3 text-center">حد أقصى <strong>20,000 يوان</strong></td>
+              <td class="px-5 py-3">أكثر من هذا = ممنوع</td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-5 py-3">دولار أمريكي أو عملة أجنبية أخرى</td>
+              <td class="px-5 py-3 text-center">صرّح إذا <strong>تجاوز 5,000 دولار</strong></td>
+              <td class="px-5 py-3">احصل على نموذج مختوم، واحتفظ به للمغادرة</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="text-xl font-bold text-gray-800 mb-4">الأدوية</h3>
+      <p class="text-gray-700 mb-4">
+        <strong>الأدوية الموصوفة:</strong> كمية 7 أيام جيدة بدون أوراق. للإقامات الأطول، أحضر ملاحظة من الطبيب. احتفظ بالأقراص في زجاجاتها الأصلية — ضباط الجمارك لا يثقون بمنظمات الحبوب.
+      </p>
+      <p class="text-gray-700 mb-8">
+        <strong>تحذير أدوية البرد:</strong> الأدوية التي تحتوي على <strong>السودوإيفيدرين</strong> (Sudafed، NyQuil، العديد من أقراص البرد العامة) مقيدة في الصين. علبة واحدة جيدة؛ إحضار عدة علب قد يُعتبر حمل مواد أولية للمخدرات. لا تفرط في تعبئة أدوية البرد.
+      </p>
+
+      <h3 class="text-xl font-bold text-gray-800 mb-4">الإلكترونيات التي ستأخذها معك للخروج</h3>
+      <p class="text-gray-700 mb-8">
+        لابتوبك وهاتفك وكاميرتك وجهازك اللوحي كلها جيدة في الممر الأخضر — إنها أغراض شخصية أحضرتها وستأخذها معك للخروج. إذا كنت تحمل معدات باهظة الثمن (كاميرا احترافية، أجهزة لابتوب متعددة)، يمكنك التصريح بها طواعية كـ "واردات مؤقتة" في الممر الأحمر لتجنب الأسئلة عند المغادرة، لكن معظم السياح لا يهتمون وليس لديهم مشاكل.
+      </p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">🚦 أي ممر تختار</h2>
+      <p class="text-gray-700 mb-4">
+        نموذج التصريح الجمركي يحتوي على 7 مربعات. <strong>إذا انطبق أي منها عليك → الممر الأحمر. إذا لم ينطبق أي منها → الممر الأخضر.</strong>
+      </p>
+
+      <div class="overflow-x-auto mb-8 not-prose">
+        <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+          <thead>
+            <tr class="bg-gray-900 text-white">
+              <th class="px-5 py-3 font-bold text-center">#</th>
+              <th class="px-5 py-3 font-bold">ضع علامة في هذا المربع إذا كنت تحمل...</th>
+              <th class="px-5 py-3 font-bold text-center">اذهب إلى</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 text-center font-bold">1</td>
+              <td class="px-5 py-3">حيوانات، نباتات، طعام طازج، لحوم، ميكروبات، منتجات بيولوجية</td>
+              <td class="px-5 py-3 text-center">🔴</td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-5 py-3 text-center font-bold">2</td>
+              <td class="px-5 py-3">(مقيم صيني عائد) أغراض تزيد عن 5,000 يوان</td>
+              <td class="px-5 py-3 text-center">🔴</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 text-center font-bold">3</td>
+              <td class="px-5 py-3">(سائح أجنبي) هدايا أو أغراض <strong>تزيد قيمتها عن 2,000 يوان</strong> تُترك <strong>في الصين</strong></td>
+              <td class="px-5 py-3 text-center">🔴</td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-5 py-3 text-center font-bold">4</td>
+              <td class="px-5 py-3">أكثر من <strong>1,500 مل</strong> كحول / <strong>400</strong> سيجارة / <strong>20</strong> سيجار / <strong>500 غم</strong> تبغ / أكثر من جهازي سيجارة إلكترونية أو 6 خراطيش</td>
+              <td class="px-5 py-3 text-center">🔴</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 text-center font-bold">5</td>
+              <td class="px-5 py-3">أكثر من <strong>20,000 يوان</strong> نقداً أو <strong>5,000 دولار أمريكي</strong> نقداً أجنبياً</td>
+              <td class="px-5 py-3 text-center">🔴</td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-5 py-3 text-center font-bold">6</td>
+              <td class="px-5 py-3">أمتعة منفصلة، بضائع تجارية</td>
+              <td class="px-5 py-3 text-center">🔴</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-5 py-3 text-center font-bold">7</td>
+              <td class="px-5 py-3">أي شيء آخر لست متأكداً منه</td>
+              <td class="px-5 py-3 text-center">🔴</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-gray-700 font-semibold mb-8">لا مربعات محددة؟ → 🟢 الممر الأخضر. فقط مرّ.</p>
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">سيناريوهات سياحية حقيقية</h2>
+
+      <!-- Scenario 1 -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-4 not-prose">
+        <p class="font-bold text-gray-900 mb-2">السيناريو 1: تحضر هدايا لأصدقاء صينيين</p>
+        <p class="text-gray-700 text-sm mb-3">حزمت زجاجة ويسكي سكوتش ($150)، وعلبة شوكولاتة حرفية ($40)، ومحفظة جلدية ماركة ($120) — كلها هدايا لتقديمها لصديقك في شنغهاي. القيمة الإجمالية: ~310 دولار أمريكي (~2,200 يوان).</p>
+        <div class="bg-yellow-50 rounded-xl p-4">
+          <p class="text-sm text-yellow-900"><strong>التحليل:</strong> هذه الأغراض ستبقى في الصين (هدايا) وتتجاوز 2,000 يوان إجمالاً. في النموذج، المربع 3 محدد.</p>
+          <p class="text-sm text-red-700 font-semibold mt-1">→ 🔴 الممر الأحمر. صرّح بها كـ "هدايا متروكة في الصين" وكن مستعداً لدفع الرسوم على الـ 200 يوان الزائدة.</p>
+        </div>
+      </div>
+
+      <!-- Scenario 2 -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-4 not-prose">
+        <p class="font-bold text-gray-900 mb-2">السيناريو 2: أحضرت 5,500 دولار أمريكي نقداً</p>
+        <p class="text-gray-700 text-sm mb-3">صرفت نقوداً قبل رحلتك ولديك 5,500 دولار أمريكي في محفظتك لاستخدامها في الرحلة.</p>
+        <div class="bg-yellow-50 rounded-xl p-4">
+          <p class="text-sm text-yellow-900"><strong>التحليل:</strong> النقود الأجنبية التي تتجاوز 5,000 دولار أمريكي تفعّل المربع 5.</p>
+          <p class="text-sm text-red-700 font-semibold mt-1">→ 🔴 الممر الأحمر. صرّح بمبلغ 5,500 دولار أمريكي، املأ نموذج التصريح النقدي، واحصل على نسخة مختومة. احتفظ بهذا النموذج لإخراج أي نقود متبقية عند مغادرتك.</p>
+        </div>
+      </div>
+
+      <!-- Scenario 3 -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-4 not-prose">
+        <p class="font-bold text-gray-900 mb-2">السيناريو 3: مجرد أمتعة سفر عادية</p>
+        <p class="text-gray-700 text-sm mb-3">حزمت ملابس وأدوات نظافة ولابتوب وهاتف وجهاز Kindle وكاميرا — كلها أغراض شخصية ستأخذها معك للخروج. القيمة بالآلاف، لكن لا شيء سيبقى في الصين.</p>
+        <div class="bg-green-50 rounded-xl p-4">
+          <p class="text-sm text-green-800"><strong>التحليل:</strong> لا ينطبق أي مربع في النموذج. هذه "واردات مؤقتة" — ممتلكات شخصية ستأخذها للخروج.</p>
+          <p class="text-sm text-green-700 font-semibold mt-1">→ 🟢 الممر الأخضر. هذا هو واقع 95٪ من السياح. مرّ.</p>
+        </div>
+      </div>
+
+      <!-- Scenario 4 -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-4 not-prose">
+        <p class="font-bold text-gray-900 mb-2">السيناريو 4: حزمت أدوية البرد للرحلة</p>
+        <p class="text-gray-700 text-sm mb-3">لديك علبة أقراص برد وإنفلونزا (تحتوي على السودوإيفيدرين)، وبعض حبوب الحساسية، وأنبوب صغير من كريم المضاد الحيوي — أشياء عادية لأي مسافر.</p>
+        <div class="bg-yellow-50 rounded-xl p-4">
+          <p class="text-sm text-yellow-900"><strong>التحليل:</strong> الأدوية العادية التي لا تستلزم وصفة طبية للاستخدام الشخصي جيدة. السودوإيفيدرين مقيد في الصين، لكن علبة واحدة (كمية 7 أيام) عادة لا تمثل مشكلة.</p>
+          <p class="text-sm text-green-700 font-semibold mt-1">→ 🟢 الممر الأخضر لكمية عادية. لكن إذا أحضرت عدة علب، فهذه قصة مختلفة.</p>
+        </div>
+      </div>
+
+      <!-- Scenario 5 -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-4 not-prose">
+        <p class="font-bold text-gray-900 mb-2">السيناريو 5: تفاحة وشطيرة دجاج من الرحلة</p>
+        <p class="text-gray-700 text-sm mb-3">أخذت تفاحة طازجة وشطيرة من خدمة الإفطار ونسيت أنهما في حقيبة ظهرك.</p>
+        <div class="bg-red-50 rounded-xl p-4">
+          <p class="text-sm text-red-800"><strong>التحليل:</strong> فاكهة طازجة = المربع 1. منتجات لحوم = المربع 1.</p>
+          <p class="text-sm text-red-700 font-semibold mt-1">→ 🔴 الممر الأحمر. صرّح بها — ستتم مصادرتها وإتلافها. تحقق دائماً من حقيبتك قبل اختيار الممر.</p>
+        </div>
+      </div>
+
+      <div class="bg-red-50 border-r-4 border-red-400 p-5 rounded-l-xl mb-8 not-prose">
+        <p class="text-red-900 text-sm"><strong>عند الشك، اختر الممر الأحمر.</strong> التصريح الطوعي هو إجراء بسيط. إخفاء الأشياء يؤدي إلى مصادرتها وغرامة.</p>
+      </div>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">📝 كيفية التصريح</h2>
+      <p class="text-gray-700 mb-4">
+        <strong>خذ نموذجاً ورقياً من الجمارك</strong> — احصل على "نموذج التصريح للأمتعة" (بالعربية والإنجليزية، متوفر عند المنضدة قبل ممرات التفتيش) واملأه في الحال. ضع علامة على أي مربع ينطبق، ثم سلمه للموظف في الممر الأحمر.
+      </p>
+      <p class="text-gray-700 mb-8">
+        <strong>عقوبات إخفاء الأشياء:</strong> المصادرة + غرامات تصل إلى 100,000 يوان. التهرب الضريبي الذي يتجاوز 10,000 يوان قد يؤدي إلى تهم جنائية.
+      </p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">💡 نصائح سريعة</h2>
+      <ol class="list-decimal pr-6 space-y-2 text-gray-700 mb-8">
+        <li><strong>احزم الأدوية في زجاجاتها الأصلية</strong> — ضباط الجمارك لا يثقون بمنظمات الحبوب</li>
+        <li><strong>لا فواكه أو لحوم أو ألبان في حقيبتك</strong> — كلاب الحجر الصحي ماهرة جداً في عملها</li>
+        <li><strong>لا تصوير في الجمارك</strong> — التسجيل محظور في مناطق التفتيش</li>
+        <li><strong>تحقق من حقيبتك قبل اختيار الممر</strong> — تفاحة الرحلة تحتسب</li>
+        <li><strong>احتفظ بالإيصالات</strong> للبضائع ذات العلامات التجارية والهدايا</li>
+      </ol>
+
+    </div>
+
+    <!-- Sources -->
+    <div class="bg-gray-50 rounded-2xl p-6 not-prose mt-12">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📚 المصادر</h3>
+      <ul class="space-y-2">
+        <li><a href="http://english.customs.gov.cn/Statics/88707c1e-aa4e-40ca-a968-bdbdbb565e4f.html" class="text-brand-600 hover:underline text-sm" target="_blank" rel="noopener">الجمارك الصينية الرسمية — التصريح عن أمتعة المسافرين</a></li>
+      </ul>
+    </div>
+
+    <!-- Related Guides -->
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose mt-6">
+      <h3 class="text-2xl font-bold text-gray-900 mb-6">📚 أدلة ذات صلة</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <a href="/ar/life/survival-kit/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">حقيبة النجاة لرحلتك إلى الصين</p>
+          <p class="text-sm text-gray-600">قائمة تجهيز كاملة قبل المغادرة</p>
+        </a>
+        <a href="/ar/visa/arrival-card/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
+          <p class="font-bold text-gray-900 mb-1">كيفية تقديم بطاقة الوصول عبر الإنترنت</p>
+          <p class="text-sm text-gray-600">دليل خطوة بخطوة مع لقطات شاشة</p>
+        </a>
+      </div>
+    </div>
+  </article>
+</Layout>

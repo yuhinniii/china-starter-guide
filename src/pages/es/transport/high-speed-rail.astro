@@ -1,0 +1,119 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'Cómo reservar y usar el tren de alta velocidad en China: guía paso a paso';
+const description = 'Guía paso a paso para reservar billetes, navegar por la estación y viajar en trenes de alta velocidad en China.';
+---
+
+<Layout title={title} description={description} lang="es">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/es/transport/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Volver a Transporte
+      </a>
+    </nav>
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🚄 Trenes</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        Cómo reservar y usar el tren de alta velocidad en China
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">Guía paso a paso para reservar billetes, navegar por la estación y viajar en trenes de alta velocidad en China.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Última actualización: junio 2026</span>
+        <span>⏱️ 6 min de lectura</span>
+      </div>
+    </header>
+
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-blue-900 mb-4">🎯 Respuesta rápida</h2>
+      <p class="text-lg text-blue-800 leading-relaxed">
+        Reserva los billetes en <strong>Trip.com</strong> (lo más fácil para extranjeros) o <strong>12306</strong> (oficial). La segunda clase es perfectamente cómoda. Llega 30–40 minutos antes — <strong>tu pasaporte es tu billete</strong>, así que tenlo a mano. El embarque es sencillo: control de seguridad → sala de espera → puerta → andén. Las estaciones tienen carteles en inglés en todas partes.
+      </p>
+    </div>
+
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 En esta guía</h3>
+      <ul class="space-y-3">
+        <li><a href="#booking" class="text-blue-600 hover:underline">🎫 Reserva tu billete</a></li>
+        <li><a href="#classes" class="text-blue-600 hover:underline">💺 Clases de billete</a></li>
+        <li><a href="#station" class="text-blue-600 hover:underline">🚉 En la estación</a></li>
+        <li><a href="#onboard" class="text-blue-600 hover:underline">🚄 Consejos a bordo</a></li>
+      </ul>
+    </nav>
+
+    <div class="prose prose-gray max-w-none">
+
+      <h2 id="booking" class="text-2xl font-bold text-gray-900 mb-4">🎫 Reserva tu billete</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Tienes tres opciones:</p>
+
+      <ul class="space-y-2 text-gray-700 mb-8">
+        <li><strong>Trip.com (recomendado):</strong> Obtiene los datos de billetes directamente de 12306. No necesitas una cuenta separada de 12306. Después de reservar, puedes abordar solo con tu pasaporte.</li>
+        <li><strong>12306 (oficial):</strong> El canal de venta oficial con mejor protección de privacidad. Los extranjeros pueden registrarse con su número de pasaporte.</li>
+        <li><strong>Taquilla de la estación:</strong> Puedes comprar billetes en persona, pero no hay garantía de que hablen inglés.</li>
+      </ul>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Para la mayoría de los viajeros, Trip.com es la opción más fácil. La pequeña comisión de reserva vale la pena por la comodidad.</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="classes" class="text-2xl font-bold text-gray-900 mb-4">💺 Clases de billete</h2>
+
+      <ul class="space-y-2 text-gray-700 mb-8">
+        <li><strong>Segunda clase (二等座):</strong> La opción estándar. Asientos cómodos, configuración 3+2. Esto es lo que elige la mayoría.</li>
+        <li><strong>Primera clase (一等座):</strong> Asientos más anchos, configuración 2+2, más espacio para las piernas. Vale la pena mejorar para viajes de más de 3 horas.</li>
+        <li><strong>Clase business (商务座):</strong> Asientos totalmente reclinables, privacidad, comidas incluidas en rutas largas. Caro pero es una experiencia.</li>
+      </ul>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="station" class="text-2xl font-bold text-gray-900 mb-4">🚉 En la estación</h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Llega 30–40 minutos antes de la salida. Este es el flujo:</p>
+
+      <ol class="list-decimal pl-6 space-y-4 text-gray-700 mb-8">
+        <li><strong>Control de seguridad:</strong> El equipaje pasa por una máquina de rayos X (como en el aeropuerto, pero más rápido).</li>
+        <li><strong>Sala de espera:</strong> Consulta la pantalla grande para ver el número de puerta de tu tren. Sigue las indicaciones.</li>
+        <li><strong>Embarque:</strong> Presenta tu pasaporte en la puerta de embarque. Usa el carril manual del lado más alejado, luego baja al andén.</li>
+        <li><strong>Encuentra tu vagón:</strong> Consulta las pantallas cerca de las escaleras del andén para ver el código de color asignado a tu tren. Coincide este color con las marcas de color en el suelo del andén para localizar tu vagón correcto.</li>
+      </ol>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="onboard" class="text-2xl font-bold text-gray-900 mb-4">🚄 Consejos a bordo</h2>
+
+      <ul class="space-y-2 text-gray-700 mb-8">
+        <li>Se venden comida y bebida desde un carrito.</li>
+        <li>Hay enchufes debajo de los asientos en algunos trenes (enchufes chinos — trae un adaptador).</li>
+        <li>Las cortinas de las ventanas son abatibles para mayor comodidad.</li>
+        <li>Los anuncios de estaciones y del tren se emiten tanto en chino como en inglés.</li>
+      </ul>
+
+      <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 not-prose">
+        <p class="text-gray-700"><strong>Importante:</strong> Tu pasaporte es tu billete. Tenlo a mano para los controles en la entrada de la estación, la puerta de embarque y, a veces, en el tren. No lo guardes en el equipaje facturado.</p>
+      </div>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="related" class="text-2xl font-bold text-gray-900 mb-6 mt-12">📚 Guías relacionadas</h2>
+
+      <div class="space-y-4 not-prose">
+        <a href="/es/transport/transport-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>Cómo moverse por China</strong> — la guía de transporte completa</a>
+        <a href="/es/transport/airport-to-city/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🛬 <strong>Del aeropuerto a la ciudad</strong> — qué hacer cuando aterrices</a>
+        <a href="/es/transport/didi/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚗 <strong>Cómo usar DiDi en China como extranjero</strong> — configura viajes compartidos</a>
+        <a href="/es/transport/metro-bus/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚇 <strong>Guía de metro y autobús para las principales ciudades chinas</strong> — navega por el transporte urbano</a>
+      </div>
+
+    </div>
+
+    <!-- Sources -->
+    <div class="mt-8 pt-6 border-t border-gray-200 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-3">Fuentes</h3>
+      <ul class="space-y-2">
+        <li><a href="https://www.12306.cn/en/index.html" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">China Railway Oficial - 12306 EN</a></li>
+      </ul>
+    </div>
+  </article>
+</Layout>

@@ -28,6 +28,16 @@ const alternateUrls = langs.map(l => {
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="China Starter Hub" />
     <link rel="canonical" href={Astro.url.href} />
+
+    <!-- Google tag (gtag.js) -->
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-5XBG2EKSCG"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-5XBG2EKSCG');
+    </script>
+
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "WebSite",

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- C letter shape (coral/red) -->
+  <path d="M160 30 C190 30 200 50 200 80 L160 80 C160 60 155 55 140 55 L80 55 C50 55 30 80 30 100 C30 120 50 145 80 145 L140 145 C155 145 160 140 160 120 L200 120 C200 150 190 170 160 170 L80 170 C35 170 5 135 5 100 C5 65 35 30 80 30 Z" fill="#C2413E"/>
+  <!-- Compass needle - top half (red) -->
+  <polygon points="100,42 110,95 100,105 90,95" fill="#C2413E"/>
+  <!-- Compass needle - bottom half (gold) -->
+  <polygon points="100,158 110,105 100,95 90,105" fill="#D4A843"/>
+  <!-- Star at the tip -->
+  <circle cx="100" cy="32" r="10" fill="#D4A843"/>
+</svg>

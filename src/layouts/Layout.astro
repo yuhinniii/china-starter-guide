@@ -40,6 +40,8 @@ const alternateUrls = langs.map(l => {
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <link rel="canonical" href={Astro.url.href} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate icon" href="/favicon.svg" />
 
     <!-- hreflang tags for all language versions -->
     {alternateUrls.map(alt => (
@@ -160,7 +162,10 @@ const alternateUrls = langs.map(l => {
     <!-- Nav -->
     <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
       <div class="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
-        <a href={base + '/'} class="text-lg font-bold text-brand-600 no-underline">{t.siteName}</a>
+        <a href={base + '/'} class="flex items-center gap-2 no-underline group">
+          <img src="/logo-icon.svg" alt="" class="h-8 w-8" />
+          <span class="text-lg font-bold text-brand-600">{t.siteName}</span>
+        </a>
         <div class="hidden md:flex items-center gap-5 text-sm">
           {t.nav.map(item => (
             <a href={item.href} class="text-gray-600 hover:text-brand-600 no-underline transition-colors">{item.label}</a>

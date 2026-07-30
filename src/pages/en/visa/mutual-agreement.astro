@@ -119,6 +119,7 @@ const description = 'Complete guide to China\'s mutual visa-free agreements with
 
       <div class="overflow-x-auto mb-8 not-prose">
         <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+          <caption class="text-sm text-gray-500 italic mb-2">Mutual visa-free agreement countries with China</caption>
           <thead>
             <tr class="bg-gray-900 text-white">
               <th class="px-5 py-3 font-bold"></th>
@@ -175,27 +176,43 @@ const description = 'Complete guide to China\'s mutual visa-free agreements with
       </div>
     </div>
 
-    <!-- Related Guides -->
-    <div class="bg-gray-50 rounded-2xl p-8 not-prose mt-12">
-      <h3 class="text-2xl font-bold text-gray-900 mb-6">📚 Related Guides</h3>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <a href="/en/visa/visa-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
-          <p class="font-bold text-gray-900 mb-1">China Visa Types Complete Guide</p>
-          <p class="text-sm text-gray-600">All visa options explained</p>
-        </a>
-        <a href="/en/visa/visa-free/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
-          <p class="font-bold text-gray-900 mb-1">China Visa-Free Countries List</p>
-          <p class="text-sm text-gray-600">Unilateral + mutual list combined</p>
-        </a>
-        <a href="/en/visa/transit-240/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
-          <p class="font-bold text-gray-900 mb-1">240-Hour Visa-Free Transit Explained</p>
-          <p class="text-sm text-gray-600">10-day transit without a visa</p>
-        </a>
-        <a href="/en/visa/apply-l-visa/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
-          <p class="font-bold text-gray-900 mb-1">How to Apply for China Tourist Visa (L-Type)</p>
-          <p class="text-sm text-gray-600">Step-by-step application guide</p>
-        </a>
+                <div class="border-t border-gray-100 pt-6 mt-8">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5 not-prose">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h3 class="text-sm font-bold text-gray-900">📚 Next Reads</h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="/en/visa/visa-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              China Visa Types Complete Guide
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/en/visa/visa-free/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              China Visa-Free Countries List
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/en/visa/transit-240/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              240-Hour Visa-Free Transit Explained
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/en/visa/apply-l-visa/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              How to Apply for China Tourist Visa (L-Type)
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </article>
-</Layout>
+<!-- FAQPage Schema -->
+    <script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+        {"@type":"Question","name":'How long can I stay visa-free?',"acceptedAnswer":{"@type":"Answer","text":'The duration varies by agreement but is typically 15, 30, or 90 days depending on the country and passport type. Check your specific agreement before traveling.'}},
+        {"@type":"Question","name":'Can I leave and re-enter under the agreement?',"acceptedAnswer":{"@type":"Answer","text":'That depends on the specific agreement. Many mutual visa exemptions allow multiple entries within the validity period, but some are single-entry only. Verify before you travel.'}},
+        {"@type":"Question","name":'What if I want to stay longer?',"acceptedAnswer":{"@type":"Answer","text":'Overstaying a mutual visa exemption can result in fines, detention, or entry bans. If you need a longer stay, apply for a visa before your visa-free period expires.'}},
+        {"@type":"Question","name":'Do I need travel insurance for visa-free entry?',"acceptedAnswer":{"@type":"Answer","text":'Although not always mandatory, travel insurance with medical cover is strongly recommended when entering under a mutual visa exemption. Some border officials may ask to see proof of insurance.'}}
+  ]
+}</script>
+
+    </Layout>

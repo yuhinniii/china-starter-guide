@@ -1,7 +1,7 @@
 ---
 import Layout from '@layouts/Layout.astro';
-const title = "広州旅行ガイド：中国の美食の都";
-const description = "広州を探索 — 世界的有名な点心、広東文化、香港へのアクセスも便利な中国の美食の都。";
+const title = "広州旅行ガイド：美食の都と貿易の中心地";
+const description = "広州完全ガイド—中国南部の大都市、広東料理の本場、観光スポットと交通情報。";
 ---
 
 <Layout title={title} description={description} lang="ja">
@@ -16,233 +16,189 @@ const description = "広州を探索 — 世界的有名な点心、広東文化
   <article class="max-w-4xl mx-auto px-6 py-12">
     <header class="mb-12">
       <p class="text-sm text-gray-500 mb-3">🏙️ 広州</p>
-      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">広州旅行ガイド：中国の美食の都</h1>
-      <p class="text-xl text-gray-600 mb-6">広州を探索 — 世界的有名な点心、広東文化、香港へのアクセスも便利な中国の美食の都。</p>
-      <div class="flex items-center gap-4 text-sm text-gray-500"><span>📅 最終更新: 2026年6月</span><span>⏱️ 7分で読めます</span></div>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">広州旅行ガイド：美食の都と貿易の中心地</h1>
+      <p class="text-xl text-gray-600 mb-6">広州完全ガイド—中国南部の大都市、広東料理の本場、観光スポットと交通情報。</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 最終更新：2026年6月</span>
+        <span>⏱️ 読了時間：7分</span>
+      </div>
     </header>
 
-    <div class="bg-gradient-to-r from-green-50 to-teal-50 border-l-4 border-green-500 rounded-r-2xl p-8 mb-12 not-prose">
-      <h2 class="text-2xl font-bold text-green-900 mb-4">⚡ クイックアンサー</h2>
-      <p class="text-lg text-green-800 leading-relaxed">北京では食べるために生きるなら、広州では<strong>生きるために食べる</strong>。この南部の都市は広く<strong>中国の美食の都</strong>とされ、おそらく世界で最も有名な中華料理である広東料理の発祥地です。食べ物以外にも、広州は亜熱帯の緑、リラックスしたペース、そして深圳や香港への近さを提供しています。</p>
+    <div class="bg-gradient-to-r from-blue-50 to-cyan-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-blue-900 mb-4">⚡ クイックアンサー</h2>
+      <p class="text-lg text-blue-800 leading-relaxed">広州は<strong>広東料理の発祥地</strong>であり、2,000年以上の歴史を持つ国際貿易の中心地です。珠江デルタの要衝として発展し、北京・上海に次ぐ中国第三の都市として知られています。広州は「食在広州（美食は広州にあり）」という言葉が示す通り、飲茶（ヤムチャ）文化の発祥地であり、世界中の料理が集まる美食の都です。また、毎年開催される広州交易会（ Canton Fair）には世界中からバイヤーが集まります。歴史的な建築と近代的な超高層ビルが混在するユニークな景観も魅力です。</p>
     </div>
 
     <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
       <h3 class="text-lg font-bold text-gray-900 mb-4">📋 ガイド目次</h3>
       <ul class="space-y-3">
-        <li><a href="#why-visit" class="text-blue-600 hover:underline">🥟 なぜ広州を訪れるべき？</a></li>
+        <li><a href="#why-visit" class="text-blue-600 hover:underline">🏙️ なぜ広州を訪れるべきか</a></li>
         <li><a href="#how-many-days" class="text-blue-600 hover:underline">📅 必要な滞在日数</a></li>
-        <li><a href="#attractions" class="text-blue-600 hover:underline">🎯 主要観光スポット</a></li>
-        <li><a href="#getting-around" class="text-blue-600 hover:underline">🚇 移動手段</a></li>
-        <li><a href="#where-to-stay" class="text-blue-600 hover:underline">🏨 おすすめの宿泊エリア</a></li>
-        <li><a href="#what-to-eat" class="text-blue-600 hover:underline">🍜 現地グルメ</a></li>
+        <li><a href="#attractions" class="text-blue-600 hover:underline">🎯 おすすめ観光スポット</a></li>
+        <li><a href="#getting-around" class="text-blue-600 hover:underline">🚇 市内移動</a></li>
+        <li><a href="#where-to-stay" class="text-blue-600 hover:underline">🏨 おすすめ宿泊エリア</a></li>
+        <li><a href="#what-to-eat" class="text-blue-600 hover:underline">🍜 広州グルメ</a></li>
       </ul>
     </nav>
 
-    <h2 id="why-visit" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🥟 なぜ広州を訪れるべき？</h2>
-    <p class="text-lg leading-relaxed text-gray-700 mb-12">広州は1000年以上にわたって貿易港でした。点心、焼き肉、スロークックスープといった広東料理が完成され、世界中に輸出された場所です。この都市は亜熱帯気候（一年中温暖）、活気ある川沿い、そして北方とは異なる独特の広東文化を持っています。また、珠江デルタへの玄関口でもあります：深圳まで高速鉄道で30分、香港まで約1時間です。</p>
+    <h2 id="why-visit" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏙️ なぜ広州を訪れるべきか</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-12">広州は「食在広州」の言葉通り、中国美食の中心地です。広東料理は最も繊細で洗練された中国料理の一つとされ、飲茶文化の発祥地として世界中に知られています。2,000年以上の歴史を持つシルクロードの海上拠点として、国際色豊かな文化が根付いています。珠江のほとりに広がる近代的な都市景観と、古老の路地に残る伝統的な下町情緒のコントラストが魅力的です。また、深圳や香港へのアクセスも良く、広東省観光の拠点としても最適です。</p>
 
     <h2 id="how-many-days" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📅 必要な滞在日数</h2>
     <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700 mb-12">
-      <li><strong>2〜3日間（標準）：</strong> 点心、広州塔、沙面島、フードツアー</li>
-      <li><strong>4〜5日間（ゆったり）：</strong> 長隆サファリパーク、開平碉楼、または深圳への移動を追加</li>
-      <li><strong>5日間以上（拡張）：</strong> 深圳と香港と組み合わせて珠江デルタ完全旅行</li>
+      <li><strong>2〜3日間（標準）：</strong>越秀公園、陳家祠、沙面島、広州塔、そして飲茶体験</li>
+      <li><strong>4〜5日間（ゆったり）：</strong>深圳や香港への日帰り旅行、珠江夜遊を追加</li>
+      <li><strong>6日間以上（じっくり）：</strong>開平の碉楼や肇慶の自然景勝地への遠出</li>
     </ul>
 
     <!-- ==================== ATTRACTIONS ==================== -->
-    <h2 id="attractions" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎯 主要観光スポット</h2>
+    <h2 id="attractions" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎯 おすすめ観光スポット</h2>
 
-    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
-      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
-        <img src="/images/guangzhou/canton-tower.webp" class="w-full h-auto object-cover" loading="lazy" />
+    <!-- Canton Tower -->
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/guangzhou/canton-tower.webp" alt="広州塔、ねじれたシルエットのテレビ塔" class="w-full h-auto object-cover" loading="lazy" />
       </div>
-      <div class="order-1">
-        <h3 class="text-xl font-bold text-gray-900 mb-2">広州塔（广州塔）</h3>
-        <p class="text-gray-700">地元の人々が「スーパーモデル」と呼ぶのには理由があります — 高さ600メートル、広東省で最も高い建造物です。450メートルの屋外デッキに上がり、塔のくびれを一周するバブルトラムに乗るか、高所が平気ならスカイドロップに挑戦してみてください。街全体が黄金色に染まる夕暮れ時に訪れ、日が暮れた後のライトショーまで滞在しましょう。</p>
-      </div>
-      <div class="clear-both hidden md:block"></div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">広州塔（Canton Tower）</h3>
+      <p class="text-gray-700">高さ600メートルの広州のシンボルで、中国で最も高いテレビ塔の一つ。その優美なツイストシルエットは広州のスカイラインに独特の存在感を放っています。展望台からは珠江や広州市街の絶景が一望でき、塔の頂上付近には回転レストランもあります。夜にはライトアップされ、塔全体が幻想的に輝きます。</p>
+      <div class="clear-both"></div>
     </div>
 
-    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
-      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
-        <img src="/images/guangzhou/shamian-island.webp" class="w-full h-auto object-cover" loading="lazy" />
+    <!-- Shamian Island -->
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/guangzhou/shamian-island.webp" alt="沙面島のコロニアル様式の建築と並木道" class="w-full h-auto object-cover" loading="lazy" />
       </div>
-      <div class="order-1">
-        <h3 class="text-xl font-bold text-gray-900 mb-2">沙面島（沙面岛）</h3>
-        <p class="text-gray-700">この小さな川の中州は1860年代にイギリスとフランスの租界でした。それらのヨーロッパ領事館の建物が今も大通りに並んでいます。樹齢150年のガジュマルの巨木が歩行者道に日陰を落とし、根がカーテンのように垂れています。端から端まで歩いて約20分 — 暑さが和らぎ、葉の間から光が差し込む夕方遅くに行くのがベストです。</p>
-      </div>
-      <div class="clear-both hidden md:block"></div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">沙面島（Shamian Island）</h3>
+      <p class="text-gray-700">珠江に浮かぶ小さな島で、19世紀の欧州植民地時代の建築が美しく保存されたエリア。かつてはイギリスとフランスの租界だったこの島は、並木道とコロニアル様式の建物が静かな雰囲気を醸し出し、広州の中でも異国情緒あふれるエリアです。カフェやアートギャラリーが点在し、散策に最適。</p>
+      <div class="clear-both"></div>
     </div>
 
-    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
-      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
-        <img src="/images/guangzhou/chen-clan-hall.webp" class="w-full h-auto object-cover" loading="lazy" />
+    <!-- Chen Clan Academy -->
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/guangzhou/chen-clan-academy.webp" alt="陳家祠の精緻な彫刻が施された建築" class="w-full h-auto object-cover" loading="lazy" />
       </div>
-      <div class="order-1">
-        <h3 class="text-xl font-bold text-gray-900 mb-2">陳家祠（陈家祠）</h3>
-        <p class="text-gray-700">陳一族が学問所兼寺院として1894年に建設したこの複合施設には、中国で最も精巧な嶺南木彫刻が見られる19のホールがあります。すべての棟木や屋根の頂上は陶磁器の像 — 獅子、龍、仙人 — で覆われています。現在は民俗芸術博物館となっており、ホールを巡って刺繍や陶芸を間近で見ることができます。少なくとも1時間は見ておきましょう。</p>
-      </div>
-      <div class="clear-both hidden md:block"></div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">陳家祠（Chen Clan Academy）</h3>
+      <p class="text-gray-700">広東文化の粋を集めた19世紀の祠堂で、精巧な彫刻と美しい装飾が見どころ。屋根には色鮮やかな陶磁器の人物像が立ち並び、壁面には緻密な木彫りや石彫りが施されています。広東の伝統工芸の最高傑作とも言える建築物で、ユネスコ世界遺産にも登録されています。</p>
+      <div class="clear-both"></div>
     </div>
 
-    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
-      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
-        <img src="/images/guangzhou/yuexiu-park-five-rams.webp" class="w-full h-auto object-cover" loading="lazy" />
+    <!-- Yuexiu Park -->
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/guangzhou/yuexiu-park.webp" alt="越秀公園の広州のシンボル五羊石像" class="w-full h-auto object-cover" loading="lazy" />
       </div>
-      <div class="order-1">
-        <h3 class="text-xl font-bold text-gray-900 mb-2">越秀公園（越秀公园）</h3>
-        <p class="text-gray-700">この公園は2000年以上前に古代南越王国の砦があった丘の上にあります。園内には五羊石像（広州の公式シンボル）と、1380年に建てられた市内最古の現存建築物である鎮海楼があります。塔に登れば、眼下の公園の景色が楽しめます。地元の年配者が太極拳やマージャンをしている平日の午前中がベストです。</p>
-      </div>
-      <div class="clear-both hidden md:block"></div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">越秀公園（Yuexiu Park）</h3>
+      <p class="text-gray-700">広州最大の都市公園で、広州のシンボル「五羊石像」があることで有名です。公園内には鎮海楼（広州博物館）や明代の古城壁など、歴史的な見どころも多数。地元の人々の憩いの場でもあり、朝の太極拳や夕方の散歩を楽しむ人々の姿が見られます。</p>
+      <div class="clear-both"></div>
     </div>
 
-    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-12 overflow-hidden">
-      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
-        <img src="/images/guangzhou/beijing-road.webp" class="w-full h-auto object-cover" loading="lazy" />
+    <!-- Pearl River Night Cruise -->
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/guangzhou/pearl-river-night.webp" alt="珠江夜遊、ライトアップされた広州の夜景" class="w-full h-auto object-cover" loading="lazy" />
       </div>
-      <div class="order-1">
-        <h3 class="text-xl font-bold text-gray-900 mb-2">北京路（北京路）</h3>
-        <p class="text-gray-700">足下のガラスパネルの下には、宋、元、明、清の各時代の実際の舗装道路が歴史の層のように積み重なって見えます — 靴の下に2000年以上の道があるのです。地上は、揚げミルク、焼きイカ、タピオカミルクティーが軒を連ねる終わりのないショッピングとスナック通りの様相です。ネオンが灯り、ナイトマーケットの群衆が押し寄せる午後7時以降に訪れましょう。</p>
-      </div>
-      <div class="clear-both hidden md:block"></div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">珠江夜遊（Pearl River Night Cruise）</h3>
+      <p class="text-gray-700">広州の夜の楽しみ方の代表格。珠江を遊覧船で巡りながら、ライトアップされた広州塔や珠江新城の高層ビル群、海珠橋などの美しい夜景を楽しめます。約1時間のクルーズで、広州の魅力的なナイトビューを満喫できます。</p>
+      <div class="clear-both"></div>
     </div>
 
-    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-12 overflow-hidden">
-      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
-        <img src="/images/guangzhou/grand-buddha-temple.webp" class="w-full h-auto object-cover" loading="lazy" />
+    <!-- Beijing Road -->
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12 overflow-hidden">
+      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/guangzhou/beijing-road.webp" alt="北京路歩行者天国のショッピングストリート" class="w-full h-auto object-cover" loading="lazy" />
       </div>
-      <div class="order-1">
-        <h3 class="text-xl font-bold text-gray-900 mb-2">大佛寺（大佛寺）</h3>
-        <p class="text-gray-700">本堂は幅36メートルですが、内部に柱がほとんどありません — 屋根全体が複雑な斗栱（とうきょう）組物システムで支えられており、一歩足を踏み入れた瞬間に空間が広がるのを感じます。カラフルな陶器の棟飾りがある典型的な広東式の寺院とは異なります。1663年に清の王子によって建てられたこの寺院は、北京の皇室建築を模して設計されたため、この地域では予想もしない荘厳な故宮スケールを備えています。内部には3体の高さ6メートルの青銅仏像が鎮座し、それぞれ重さ10トン — 広東省に現存する最大の古代青銅像です。柱は350年以上前に運ばれたベトナム楠木で、今も無傷です。広州の他のどこにも存在しない建築的希少性のために訪れる価値があります。</p>
-      </div>
-      <div class="clear-both hidden md:block"></div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">北京路歩行者天国（Beijing Road）</h3>
+      <p class="text-gray-700">広州で最も賑やかなショッピングストリートで、歩道のガラス越しに宋・明・清代の道路遺構を見ることができる歴史と現代が融合したエリア。周辺には数多くのショッピングモール、レストラン、屋台が集まり、地元の人々や観光客で常に賑わっています。</p>
+      <div class="clear-both"></div>
     </div>
 
-    <!-- 珠江夜遊 -->
-    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-12 overflow-hidden">
-      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
-        <img src="/images/guangzhou/pearl-river-cruise-v2.webp" class="w-full h-auto object-cover" loading="lazy" />
-      </div>
-      <div class="order-1">
-        <h3 class="text-xl font-bold text-gray-900 mb-2">珠江夜遊 (Pearl River Night Cruise)</h3>
-        <p class="text-gray-700">日没後に広州を観賞する定番方法。60-80分、50-100元。午後8時からがベストタイミング。</p>
-      </div>
-      <div class="clear-both hidden md:block"></div>
-    </div>
-
-        <h2 id="getting-around" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🚇 移動手段</h2>
+    <h2 id="getting-around" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🚇 市内移動</h2>
     <ul class="list-disc pl-6 space-y-3 text-lg text-gray-700 mb-12">
-      <li><strong>地下鉄：</strong> 広州の地下鉄は16路線あり、主要観光地のすべてにアクセスできます。英語標識はどこにでもあります。概要については<a href="/ja/transport/metro-bus/" class="text-blue-600 hover:underline">中国主要都市の地下鉄・バスガイド</a>をご覧ください。</li>
-      <li><strong>Didi：</strong> 安くて広く利用可能。都心部を横断する移動は約30〜50元です。セットアップとヒントについては<a href="/ja/transport/didi/" class="text-blue-600 hover:underline">外国人のための中国でのDidiの使い方</a>をご覧ください。</li>
-      <li><strong>珠江フェリー：</strong> 川を渡る景色の良い方法。両岸の桟橋間を定期的に運航しています。</li>
-      <li><strong>高速鉄道：</strong> 広州南駅から深圳（30分）、香港（1時間）、珠海/マカオ（1時間）へ。予約手順については<a href="/ja/transport/high-speed-rail/" class="text-blue-600 hover:underline">中国高速鉄道の予約と乗車方法</a>をご覧ください。</li>
+      <li><strong>地下鉄：</strong>広州の地下鉄は広範囲に整備されており、主要観光スポットのほとんどをカバー。英語表示あり。詳細は<a href="/ja/transport/metro-bus/" class="text-blue-600 hover:underline">中国主要都市の地下鉄・バスガイド</a>をご覧ください。</li>
+      <li><strong>滴滴：</strong>広州全域で利用可能で便利。設定方法は<a href="/ja/transport/didi/" class="text-blue-600 hover:underline">外国人が中国で滴滴を使う方法</a>をご覧ください。</li>
+      <li><strong>タクシー：</strong>比較的手頃で、特に空港や駅への移動に便利。</li>
+      <li><strong>BRT（バス高速輸送）：</strong>広州は中国でも有数のBRTシステムを持ち、専用レーンを走る快速バスが主要エリアを結んでいます。</li>
     </ul>
 
-    <h2 id="where-to-stay" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏨 おすすめの宿泊エリア</h2>
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">茘湾区（荔湾区）— グルメ愛好家に最適</h3><p class="text-gray-700">旧広州の中心。本格的な広東料理レストランや朝の茶館を求めるならここ。</p></div>
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">天河区（天河区）— モダントラベラーに最適</h3><p class="text-gray-700">新しいCBDにはショッピングモール、国際的ホテル、優れた地下鉄接続があります。</p></div>
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12"><h3 class="text-xl font-bold text-gray-900 mb-2">海珠区（海珠区）— 川の景色に最適</h3><p class="text-gray-700">都心部から珠江を渡った場所。静かで、広州塔の素晴らしい眺めがあります。</p></div>
+    <h2 id="where-to-stay" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏨 おすすめ宿泊エリア</h2>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">珠江新城（Zhujiang New Town）—初めての訪問者に最適</h3><p class="text-gray-700">広州の新しいCBD。高級ホテル、ショッピングモール、レストランが集まり、広州塔や花城広場にも近い。</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">沙面島/荔湾区—カルチャー好きに最適</h3><p class="text-gray-700">歴史的な雰囲気と地元の生活を感じられるエリア。伝統的な広東料理の名店も多く、散策に最適。</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12"><h3 class="text-xl font-bold text-gray-900 mb-2">天河区（Tianhe）—ビジネス旅行者に最適</h3><p class="text-gray-700">広州のもう一つのビジネス中心地で、地下鉄のアクセスが良好。ショッピングや食事の選択肢も豊富。</p></div>
 
     <!-- ==================== WHAT TO EAT ==================== -->
-    <h2 id="what-to-eat" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🍜 現地グルメ</h2>
-    <p class="text-lg leading-relaxed text-gray-700 mb-6">北京では食べるために生きるなら、広州では生きるために食べる。広東料理が世界的に有名なのには理由があります。</p>
+    <h2 id="what-to-eat" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🍜 広州グルメ</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">「食在広州」の言葉通り、広州は美食の都。飲茶文化の発祥地として、世界中の食通を魅了しています。</p>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-      <!-- Dim Sum -->
       <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
         <div class="flex items-center justify-center bg-gray-50 p-3">
-          <img src="/images/guangzhou/dim-sum.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
+          <img src="/images/guangzhou/food/dimsum.webp" alt="飲茶、広東式点心の盛り合わせ" class="max-w-full max-h-56 object-contain" loading="lazy" />
         </div>
         <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-900 mb-1">点心（点心）</h3>
-          <p class="text-gray-600 text-base">注文すべき4つの定番：エビが丸ごと入った透き通るような皮のハーガオ（蝦餃）、オレンジ色のトビコをトッピングしたシウマイ（焼売）、信じられないほどふわふわの白いパンに甘いチャーシューが詰まったチャーシューパオ（叉焼包）、そして醤油をかけた絹のような米粉の巻き物、チョンフン（腸粉）。この儀式は飲茶と呼ばれ、茘湾区の点心店で毎朝行われています。早めに行きましょう — 午前11時までには列が店の外まで伸びています。</p>
+          <h3 class="text-lg font-bold text-gray-900 mb-1">飲茶（Yum Cha）—点心</h3>
+          <p class="text-gray-600 text-base">広州が世界に誇る食文化。小さな蒸籠（せいろ）で次々と運ばれる点心の数々—エビ餃子（ハーガウ）、豚肉焼売（シウマイ）、腸粉（チョンフン）、鳳爪（フェニックスの爪）など、数百種類にも及びます。温かいお茶を飲みながら、家族や友人がゆっくりと会話を楽しむスタイルが伝統的。広州人の朝の過ごし方であり、週末には老舗飲茶店が地元の人々で長い列を作ります。</p>
         </div>
       </div>
 
-      <!-- White Cut Chicken -->
       <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
         <div class="flex items-center justify-center bg-gray-50 p-3">
-          <img src="/images/guangzhou/white-cut-chicken.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
+          <img src="/images/guangzhou/food/wonton-noodles.webp" alt="雲呑麺、広東式ワンタンヌードル" class="max-w-full max-h-56 object-contain" loading="lazy" />
         </div>
         <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-900 mb-1">白切鶏（白切鸡）</h3>
-          <p class="text-gray-600 text-base">鶏を丸ごと優しくポーチしてから冷やして提供 — ポイントはその下の薄いゼラチン層のある絹のような皮。広東の料理人はこの料理を究極の技量試験と考えています。隠れる場所がないからです：鶏が完璧でなければなりません。各部位を生姜ネギ油に浸せば、なぜこんなにシンプルなものがこんなに美味しいのか理解できるでしょう。</p>
+          <h3 class="text-lg font-bold text-gray-900 mb-1">雲呑麺（Wonton Noodles）</h3>
+          <p class="text-gray-600 text-base">広東式ワンタンヌードルは、エビと豚肉の混ぜ餡を薄い皮で包んだワンタンを、コシのある細麺とともに透明なスープで戴く、広州を代表する麺料理。スープは大地魚（干しエイヒレ）と豚骨でじっくりとった出汁が効いています。一杯で満足感のある軽食として、朝食や昼食に人気です。</p>
         </div>
       </div>
 
-      <!-- Roast Goose -->
       <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
         <div class="flex items-center justify-center bg-gray-50 p-3">
-          <img src="/images/guangzhou/roast-goose.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
+          <img src="/images/guangzhou/food/roast-goose.webp" alt="広東式焼きガチョウ、パリパリの皮と柔らかい肉" class="max-w-full max-h-56 object-contain" loading="lazy" />
         </div>
         <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-900 mb-1">焼鵝（烧鹅）</h3>
-          <p class="text-gray-600 text-base">ガチョウを丸ごと開き、マリネして炭火で皮がガラスのようにパリパリになるまで焼き上げ、肉は濃くてジューシーなまま。コクを切るプラムソースが添えられます。このスタイルは広州の西、江門エリアが発祥で、町で最高の焼き肉店は何十年も完成度を高めてきました。</p>
+          <h3 class="text-lg font-bold text-gray-900 mb-1">広東式ローストグース（焼鵝）</h3>
+          <p class="text-gray-600 text-base">広州の焼味（焼き肉）の最高峰。ガチョウを特製のタレに漬け込み、じっくりとローストすることで、皮はパリパリ、肉は驚くほど柔らかくジューシーに仕上がります。秘伝の醤油ベースのタレが染み込み、甘みと旨味の絶妙なバランスを生み出します。骨付きのままでぶつ切りにされ、プラムソースとともに提供されます。</p>
         </div>
       </div>
 
-      <!-- Wonton Noodles -->
       <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
         <div class="flex items-center justify-center bg-gray-50 p-3">
-          <img src="/images/guangzhou/wonton-noodles.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
+          <img src="/images/guangzhou/food/claypot-rice.webp" alt="煲仔飯、広東式土鍋ご飯" class="max-w-full max-h-56 object-contain" loading="lazy" />
         </div>
         <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-900 mb-1">雲呑麺（云吞面）</h3>
-          <p class="text-gray-600 text-base">麺は細くてコシがあり、かん水で作られています（広東式「広東麺」）。ワンタンは丸ごとのエビと豚肉がたっぷり。しかし本当の主役はスープ — 透き通り、黄金色に輝き、干しヒラメとエビの卵でじっくり取ったもの。心身ともに癒される一杯です。</p>
-        </div>
-      </div>
-
-      <!-- Claypot Rice -->
-      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
-        <div class="flex items-center justify-center bg-gray-50 p-3">
-          <img src="/images/guangzhou/claypot-rice.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-900 mb-1">煲仔飯（煲仔饭）</h3>
-          <p class="text-gray-600 text-base">土鍋に生米を入れ、中華ソーセージ、保存豚バラ肉、または鶏肉をトッピングして炭火で調理。魔法は底にあります — 削って混ぜ込むカリカリの黄金色のご飯（広東版ソカラット）。醤油をひと回しかけて、よくかき混ぜてからいただきます。</p>
-        </div>
-      </div>
-
-      <!-- Double Skin Milk -->
-      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
-        <div class="flex items-center justify-center bg-gray-50 p-3">
-          <img src="/images/guangzhou/double-skin-milk.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-900 mb-1">双皮奶（双皮奶）</h3>
-          <p class="text-gray-600 text-base">この繊細なデザートは、広州のすぐ南にある美食の都・順徳が発祥。名前はミルクプディングが冷めるにつれて表面にできる2枚の皮に由来します — 最初の皮が沈み、表面に2枚目が形成されます。カスタードのように滑らかですが、はるかに軽く、温かくても冷たくても楽しめます。</p>
-        </div>
-      </div>
-
-      <!-- Herbal Tea -->
-      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
-        <div class="flex items-center justify-center bg-gray-50 p-3">
-          <img src="/images/guangzhou/herbal-tea.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-900 mb-1">涼茶（凉茶）</h3>
-          <p class="text-gray-600 text-base">コーラのように黒く、薬のように苦い — なぜならそれは薬だから。涼茶は20種類以上の中国ハーブで煎じられ、症状（熱気、喉の痛み、消化不良）によって異なるブレンドがあります。完全な体験を求めるなら「24味」（24味）を注文してみてください — 顔がゆがむほどの苦さですが、地元の人曰く、それで効いている証拠だそうです。街中の専門の涼茶店で入手できます。</p>
-        </div>
-      </div>
-
-      <!-- Claypot Cooking - Jue Jue Bao -->
-      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
-        <div class="flex items-center justify-center bg-gray-50 p-3">
-          <img src="/images/guangzhou/jue-jue-bao.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-900 mb-1">啫啫煲（啫啫煲）</h3>
-          <p class="text-gray-600 text-base">名前は熱い材料が土鍋の表面に当たったときのジュージューという音（「zhe-zhe」）に由来します。スロー調理の煲仔飯とは異なり、これは高温・速炒の広東料理の最もドラマチックな形態：生の鶏肉、イカ、牛肉、またはウナギを予熱した土鍋に発酵黒豆、ニンニク、生姜とともに入れ、直火で数分間だけ炒めます。端はカラメル化し、料理がテーブルに届く前から香りが漂い、最初の一口には鍋で炒めるだけでは得られないスモーキーな深みがあります。一人一鍋注文しましょう — 熱々の土鍋から直接食べるために作られています。</p>
+          <h3 class="text-lg font-bold text-gray-900 mb-1">煲仔飯（Claypot Rice）</h3>
+          <p class="text-gray-600 text-base">土鍋で炊き上げた広東式ご飯料理。ご飯の上にソーセージ、鶏肉、牛肉などの具材をのせ、醤油ベースのタレをかけて香ばしく炊き上げます。土鍋の底にはパリパリのお焦げ（鍋巴）ができ、これが最大の魅力。熱々の土鍋のまま提供され、かき混ぜながら戴くのが正しい食べ方です。</p>
         </div>
       </div>
     </div>
 
     <div class="not-prose mt-16">
-      <h2 class="text-2xl font-bold text-gray-900 mb-8">📚 関連ガイド</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <a href="/ja/cities/city-select/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🗺️ <strong>中国の旅程計画</strong> — 完全な旅程を立てる</a>
-        <a href="/ja/cities/shenzhen-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🤖 <strong>深圳旅行ガイド</strong> — わずか30分先</a>
-        <a href="/ja/payment/payment-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">💳 <strong>中国での支払い方法</strong> — 広州は完全キャッシュレス</a>
+          <div class="border-t border-gray-100 pt-6 mt-8">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5 not-prose">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h3 class="text-sm font-bold text-gray-900">📚 関連ガイド</h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="/ja/cities/city-select/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🗺️ 中国旅行の必要日数
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ja/cities/shenzhen-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🏙️ 深圳旅行ガイド
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ja/transport/high-speed-rail/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🚄 中国高速鉄道の予約・乗車ガイド
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ja/payment/payment-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              💳 中国での支払い方法
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
       </div>
+    </div>
     </div>
   </article>
 </Layout>

@@ -8,12 +8,9 @@ const description = '中国に来る前に知っておくべきすべて：決�
   <!-- Trigger rebuild: 2026-06-12 17:30 -->
   <section class="text-center py-20 px-4">
     <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-gray-900  ">
-      明確で最新のガイド — <br/><span class="text-brand-600">初めて中国を訪れる外国人向け</span>
+      自信を持って中国旅行を —<br/><span class="text-brand-600">ビザから決済、移動までステップバイステップガイド</span>
     </h1>
-    <p class="text-lg md:text-xl text-gray-500  ">
-      まずは基本から始めて、その後はあなたの旅に合ったガイドをどうぞ。
-    </p>
-    <div class="flex flex-wrap justify-center gap-4">
+    <div class="flex flex-wrap justify-center gap-4 mt-10">
       <a href="/ja/visa/" class="bg-brand-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-brand-700 transition no-underline">はじめる</a>
       <a href="/ja/about/" class="border border-brand-600 text-brand-600 px-6 py-3 rounded-lg font-medium hover:bg-brand-50 transition no-underline">このサイトについて</a>
     </div>
@@ -23,292 +20,439 @@ const description = '中国に来る前に知っておくべきすべて：決�
   <section class="max-w-5xl mx-auto px-4 pb-16">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
       {[
-        { href: '/ja/visa/', title: 'ビザ', desc: 'ビザの種類、査証免除国、トランジットポリシー。' },
+        { href: '/ja/visa/', title: 'ビザ', desc: 'ビザの種類、免除国、トランジットポリシー。' },
         { href: '/ja/payment/', title: '決済', desc: '電子ウォレット、銀行カード、現金の備え。' },
         { href: '/ja/transport/', title: '交通', desc: '高速鉄道、地下鉄、ライドシェア、空港から市内への移動。' },
         { href: '/ja/life/', title: '中国での生活', desc: 'アプリ、医療、安全情報、日常生活。' },
       ].map(card => (
         <a href={card.href} class="group block p-5 rounded-2xl bg-gray-50  :bg-brand-50 dark:hover:bg-brand-950 border border-gray-100  :border-brand-200 dark:hover:border-brand-800 transition-all duration-200 no-underline">
-          <h3 class="text-lg font-semibold text-gray-900  :text-brand-600 dark:group-hover:text-brand-400 mb-1">{card.title}</h3>
+          <h3 class="text-lg font-semibold text-gray-900  group-hover:text-brand-600 dark:group-hover:text-brand-400 mb-1">{card.title}</h3>
           <p class="text-sm text-gray-500  ">{card.desc}</p>
         </a>
       ))}
     </div>
   </section>
 
-  <!-- Your Trip: Step by Step -->
+  <!-- Interactive Pre-Departure Checklist -->
   <section class="max-w-5xl mx-auto px-4 py-12">
-    <h2 class="text-2xl font-bold text-gray-900 mb-2">旅のステップガイド</h2>
-    <p class="text-gray-500 mb-10">あなたの段階に合わせて — 必要なガイドに直接リンクしています。</p>
+    <h2 class="text-2xl font-bold text-gray-900 mb-2">中国旅行チェックリスト</h2>
+    <p class="text-gray-500 mb-4">1ヶ月前から当日まで — 各項目を完了ごとにチェック。</p>
+
+    <!-- Time Filter -->
+    <div id="checklist-filter" class="flex flex-wrap gap-2 mb-5">
+      <button class="filter-chip px-3 py-1.5 rounded-full border border-gray-200 bg-brand-50 text-brand-700 text-sm font-medium cursor-pointer transition hover:border-brand-300 active" data-show="all">すべての段階</button>
+      <button class="filter-chip px-3 py-1.5 rounded-full border border-gray-200 bg-white text-gray-600 text-sm font-medium cursor-pointer transition hover:border-brand-300 hover:text-brand-600" data-show="1">1ヶ月前</button>
+      <button class="filter-chip px-3 py-1.5 rounded-full border border-gray-200 bg-white text-gray-600 text-sm font-medium cursor-pointer transition hover:border-brand-300 hover:text-brand-600" data-show="2">2週間前</button>
+      <button class="filter-chip px-3 py-1.5 rounded-full border border-gray-200 bg-white text-gray-600 text-sm font-medium cursor-pointer transition hover:border-brand-300 hover:text-brand-600" data-show="3">1週間前</button>
+      <button class="filter-chip px-3 py-1.5 rounded-full border border-gray-200 bg-white text-gray-600 text-sm font-medium cursor-pointer transition hover:border-brand-300 hover:text-brand-600" data-show="4,5">到着時</button>
+      <button class="filter-chip px-3 py-1.5 rounded-full border border-gray-200 bg-white text-gray-600 text-sm font-medium cursor-pointer transition hover:border-brand-300 hover:text-brand-600" data-show="6">1日目</button>
+    </div>
+
+    <!-- Overall Progress -->
+    <div id="checklist-progress" class="bg-gray-50 rounded-2xl p-5 mb-10">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-sm font-semibold text-gray-700">全体の進捗</span>
+        <span id="progress-text" data-suffix="完了" class="text-base font-bold text-brand-600">0 / 23 完了</span>
+      </div>
+      <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+        <div id="progress-bar" class="h-full bg-brand-500 rounded-full transition-all duration-300" style="width:0%"></div>
+      </div>
+    </div>
 
     <div class="space-y-8">
-      <!-- Stage 1 -->
-      <div class="relative pl-14">
-        <div class="absolute left-0 top-0 w-9 h-9 rounded-full bg-green-100 flex items-center justify-center text-sm font-bold text-green-700">1</div>
-        <div class="absolute left-[17px] top-9 bottom-0 w-0.5 bg-gray-100"></div>
-        <h3 class="text-lg font-bold text-gray-900 mb-3">渡航前の準備</h3>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-          <a href="/ja/visa/visa-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-green-200 transition no-underline">
-            <span class="text-xs font-medium text-green-600">準備</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">必要なビザは？</p>
-          </a>
-          <a href="/ja/payment/payment-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-green-200 transition no-underline">
-            <span class="text-xs font-medium text-green-600">決済</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">中国での支払い方法</p>
-          </a>
-          <a href="/ja/life/survival-kit/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-green-200 transition no-underline">
-            <span class="text-xs font-medium text-green-600">生活</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">出発前チェックリスト</p>
-          </a>
+
+      <!-- Stage 1: T-30日 · 出発の1ヶ月前 -->
+      <div class="relative pl-12 stage-group" data-stage="1">
+        <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-green-100 flex items-center justify-center text-xs font-bold text-green-700">1</div>
+        <div class="absolute left-[14px] top-8 bottom-0 w-px bg-gray-200"></div>
+        <h3 class="text-base font-bold text-gray-900 mb-3">
+          <span class="text-green-700">T-30日</span> · 出発の1ヶ月前
+          <span class="stage-progress text-sm font-normal text-gray-400 ml-1" data-stage="1">0/3 ✓</span>
+        </h3>
+        <div class="space-y-1.5 checklist-stage" data-stage="1">
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="check-passport">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">01</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">パスポートの有効期限を確認</p>
+              <p class="text-sm text-gray-500 mt-0.5">多くの国では、中国ビザ取得に渡航日から6ヶ月以上の有効期限が必要です。</p>
+            </div>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="check-visa">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">02</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">ビザの種類または免除資格を確認</p>
+              <p class="text-sm text-gray-500 mt-0.5">ビザが必要ですか？240時間トランジットの対象ですか？30秒でチェック。</p>
+            </div>
+            <a href="/ja/visa/visa-guide/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">→ ガイド →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="travel-insurance">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">03</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">医療補償付き旅行保険に加入</p>
+              <p class="text-sm text-gray-500 mt-0.5">中国の病院は前払い制。最低10万ドルの医療補償と緊急避難を推奨。</p>
+            </div>
+            <a href="/ja/life/travel-insurance/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">→ ガイド →</a>
+          </div>
         </div>
       </div>
 
-      <!-- Stage 2 -->
-      <div class="relative pl-14">
-        <div class="absolute left-0 top-0 w-9 h-9 rounded-full bg-blue-100 flex items-center justify-center text-sm font-bold text-blue-700">2</div>
-        <div class="absolute left-[17px] top-9 bottom-0 w-0.5 bg-gray-100"></div>
-        <h3 class="text-lg font-bold text-gray-900 mb-3">到着直後</h3>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-          <a href="/ja/transport/airport-to-city/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-blue-200 transition no-underline">
-            <span class="text-xs font-medium text-blue-600">交通</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">空港から市内への移動</p>
-          </a>
-          <a href="/ja/life/sim-card-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-blue-200 transition no-underline">
-            <span class="text-xs font-medium text-blue-600">生活</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">SIMカードとインターネット設定</p>
-          </a>
-          <a href="/ja/life/vpn-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-blue-200 transition no-underline">
-            <span class="text-xs font-medium text-blue-600">生活</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">VPNの設定方法</p>
-          </a>
+      <!-- Stage 2: T-15日 · 2週間前 -->
+      <div class="relative pl-12 stage-group" data-stage="2">
+        <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-xs font-bold text-blue-700">2</div>
+        <div class="absolute left-[14px] top-8 bottom-0 w-px bg-gray-200"></div>
+        <h3 class="text-base font-bold text-gray-900 mb-3">
+          <span class="text-blue-700">T-15日</span> · 2週間前
+          <span class="stage-progress text-sm font-normal text-gray-400 ml-1" data-stage="2">0/6 ✓</span>
+        </h3>
+        <div class="space-y-1.5 checklist-stage" data-stage="2">
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="buy-vpn">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">04</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">VPNサブスクリプションを購入してインストール</p>
+              <p class="text-sm text-gray-500 mt-0.5">中国国内からVPNアプリはダウンロードできません。出国前に全デバイスにインストールしてテストしましょう。</p>
+            </div>
+            <a href="/ja/life/vpn-guide/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">→ ガイド →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="buy-esim">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">05</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">eSIMを購入</p>
+              <p class="text-sm text-gray-500 mt-0.5">中国対応のeSIMを選びましょう。香港経由でファイアウォールを回避するものが理想的。出国前にインストール。</p>
+            </div>
+            <a href="/ja/life/sim-card-guide/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">→ ガイド →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="setup-alipay">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">06</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">Alipayを設定しカードをリンク</p>
+              <p class="text-sm text-gray-500 mt-0.5">クレジットカードとデビットカードの両方をリンク — 小店舗の個人QRコードはクレジットカードに対応していません。</p>
+            </div>
+            <a href="/ja/payment/payment-guide/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">→ ガイド →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="setup-wechat">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">07</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">WeChat Payを設定（オプションのバックアップ）</p>
+              <p class="text-sm text-gray-500 mt-0.5">Alipayで95%カバーできますが、一部の小さな飲食店はWeChatのみ。バックアップとして設定を。</p>
+            </div>
+            <a href="/ja/payment/setup-wechat/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">→ ガイド →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="book-hotel">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">08</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">外国人宿泊可能なホテルを予約</p>
+              <p class="text-sm text-gray-500 mt-0.5">中国の全てのホテルが外国旅券を受け入れられるわけではありません。Trip.comなどを利用して予約。</p>
+            </div>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="notify-bank">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">09</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">銀行に中国渡航を通知</p>
+              <p class="text-sm text-gray-500 mt-0.5">一部の銀行は中国での取引を不正利用と自動ブロックします。アプリで旅行通知を設定。</p>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- Stage 3 -->
-      <div class="relative pl-14">
-        <div class="absolute left-0 top-0 w-9 h-9 rounded-full bg-purple-100 flex items-center justify-center text-sm font-bold text-purple-700">3</div>
-        <div class="absolute left-[17px] top-9 bottom-0 w-0.5 bg-gray-100"></div>
-        <h3 class="text-lg font-bold text-gray-900 mb-3">滞在中</h3>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-          <a href="/ja/transport/transport-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-purple-200 transition no-underline">
-            <span class="text-xs font-medium text-purple-600">交通</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">中国国内の移動手段</p>
-          </a>
-          <a href="/ja/life/essential-apps/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-purple-200 transition no-underline">
-            <span class="text-xs font-medium text-purple-600">生活</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">必須アプリ10選</p>
-          </a>
-          <a href="/ja/life/chinese-phrases/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-purple-200 transition no-underline">
-            <span class="text-xs font-medium text-purple-600">生活</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">中国語の基本フレーズ</p>
-          </a>
+      <!-- Stage 3: T-7日 · 出発前 -->
+      <div class="relative pl-12 stage-group" data-stage="3">
+        <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center text-xs font-bold text-indigo-700">3</div>
+        <div class="absolute left-[14px] top-8 bottom-0 w-px bg-gray-200"></div>
+        <h3 class="text-base font-bold text-gray-900 mb-3">
+          <span class="text-indigo-700">T-7日</span> · 出発前
+          <span class="stage-progress text-sm font-normal text-gray-400 ml-1" data-stage="3">0/4 ✓</span>
+        </h3>
+        <div class="space-y-1.5 checklist-stage" data-stage="3">
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="test-vpn">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">10</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">全デバイスでVPNをテスト</p>
+              <p class="text-sm text-gray-500 mt-0.5">スマホ、ノートPC、タブレットで接続確認。出国前に自宅で行いましょう。</p>
+            </div>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="install-apps">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">11</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">中国旅行に必須のアプリをインストール</p>
+              <p class="text-sm text-gray-500 mt-0.5">Baidu Maps、Didi、Trip.com。今ダウンロードを。</p>
+            </div>
+            <a href="/ja/life/essential-apps/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">→ ガイド →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="learn-chinese">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">12</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">中国語の基本フレーズ10個を覚える</p>
+              <p class="text-sm text-gray-500 mt-0.5">「ありがとう」「いくらですか」と言えるだけで対応が変わります。基本から。</p>
+            </div>
+            <a href="/ja/life/chinese-phrases/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">→ ガイド →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="backup-docs">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">13</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">パスポート、ビザ、保険のデジタルコピーを保存</p>
+              <p class="text-sm text-gray-500 mt-0.5">スマホとクラウドに写真やスキャンを保存。紛失時の最終手段です。</p>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- Stage 4 -->
-      <div class="relative pl-14">
-        <div class="absolute left-0 top-0 w-9 h-9 rounded-full bg-red-100 flex items-center justify-center text-sm font-bold text-red-700">4</div>
-        <h3 class="text-lg font-bold text-gray-900 mb-3">困ったときは</h3>
-        <div class="grid grid-cols-1 sm:grid-cols-4 gap-3">
-          <a href="/ja/life/seeing-a-doctor/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
-            <span class="text-xs font-medium text-red-600">生活</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">病院に行く</p>
-          </a>
-          <a href="/ja/life/common-scams/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
-            <span class="text-xs font-medium text-red-600">生活</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">よくある詐欺を避ける</p>
-          </a>
-          <a href="/ja/life/emergency-numbers/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
-            <span class="text-xs font-medium text-red-600">生活</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">緊急連絡先</p>
-          </a>
-          <a href="/ja/payment/payment-fails/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
-            <span class="text-xs font-medium text-red-600">決済</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">決済が失敗した場合</p>
-          </a>
+      <!-- Stage 4: T-24時間 · 最終準備 -->
+      <div class="relative pl-12 stage-group" data-stage="4">
+        <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center text-xs font-bold text-amber-700">4</div>
+        <div class="absolute left-[14px] top-8 bottom-0 w-px bg-gray-200"></div>
+        <h3 class="text-base font-bold text-gray-900 mb-3">
+          <span class="text-amber-700">T-24時間</span> · 最終準備
+          <span class="stage-progress text-sm font-normal text-gray-400 ml-1" data-stage="4">0/3 ✓</span>
+        </h3>
+        <div class="space-y-1.5 checklist-stage" data-stage="4">
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="check-in">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">16</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">オンラインチェックインとフライト確認</p>
+              <p class="text-sm text-gray-500 mt-0.5">早めに座席を選び、ゲート変更や遅延を確認。</p>
+            </div>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="withdraw-cash">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">15</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">500〜1000元の現金を引き出す</p>
+              <p class="text-sm text-gray-500 mt-0.5">中国は95%キャッシュレスですが、決済アプリは必ず一度は失敗します。現金は緊急時のバックアップ。</p>
+            </div>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="power-bank">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">16</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">モバイルバッテリーと変換プラグを機内持ち込みに</p>
+              <p class="text-sm text-gray-500 mt-0.5">地図、決済、翻訳、全てにスマホが必要。機内でも到着後も充電を確保。</p>
+            </div>
+          </div>
         </div>
       </div>
+
+      <!-- Stage 5: 到着時 · 最初の2時間 -->
+      <div class="relative pl-12 stage-group" data-stage="5">
+        <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-teal-100 flex items-center justify-center text-xs font-bold text-teal-700">5</div>
+        <div class="absolute left-[14px] top-8 bottom-0 w-px bg-gray-200"></div>
+        <h3 class="text-base font-bold text-gray-900 mb-3">
+          <span class="text-teal-700">到着時</span> · 最初の2時間
+          <span class="stage-progress text-sm font-normal text-gray-400 ml-1" data-stage="5">0/3 ✓</span>
+        </h3>
+        <div class="space-y-1.5 checklist-stage" data-stage="5">
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="activate-esim">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">17</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">eSIMをアクティベートしモバイルデータをオンに</p>
+              <p class="text-sm text-gray-500 mt-0.5">入国審査後、最初に行うこと。全てインターネット次第。</p>
+            </div>
+            <a href="/ja/life/sim-card-guide/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">→ ガイド →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="connect-vpn">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">18</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">VPNに接続</p>
+              <p class="text-sm text-gray-500 mt-0.5">アプリを開く前にVPNをオンに。ないとメッセージが静かに溜まります。</p>
+            </div>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="airport-to-city">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">19</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">空港からホテルへ移動</p>
+              <p class="text-sm text-gray-500 mt-0.5">ほとんどの空港では地下鉄が最安。Didi（中国版Uber）も良いバックアップ。</p>
+            </div>
+            <a href="/ja/transport/airport-to-city/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">→ ガイド →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stage 6: 1日目 · 定着 -->
+      <div class="relative pl-12 stage-group" data-stage="6">
+        <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-violet-100 flex items-center justify-center text-xs font-bold text-violet-700">6</div>
+        <div class="absolute left-[14px] top-8 bottom-0 w-px bg-gray-200"></div>
+        <h3 class="text-base font-bold text-gray-900 mb-3">
+          <span class="text-violet-700">1日目</span> · 定着
+          <span class="stage-progress text-sm font-normal text-gray-400 ml-1" data-stage="6">0/4 ✓</span>
+        </h3>
+        <div class="space-y-1.5 checklist-stage" data-stage="6">
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="test-payment">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">20</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">少額の買い物でAlipayをテスト</p>
+              <p class="text-sm text-gray-500 mt-0.5">コンビニで水を一本購入。QRが通れば準備完了。</p>
+            </div>
+            <a href="/ja/payment/payment-guide/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">→ ガイド →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="police-registration">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">21</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">ホテルが警察登録を行うか確認</p>
+              <p class="text-sm text-gray-500 mt-0.5">ホテルは24時間以内に外国人を警察に登録する義務があります。これを忘れると後でトラブルの原因になります。</p>
+            </div>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="try-transport">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">22</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">地下鉄に乗るかDidiを呼んでみる</p>
+              <p class="text-sm text-gray-500 mt-0.5">地下鉄を一駅乗るか、近くのカフェまでDidiを呼ぶ。今日中に交通システムを覚えましょう。</p>
+            </div>
+            <a href="/ja/transport/transport-guide/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">→ ガイド →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="emergency-numbers">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">23</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">緊急連絡先をスマホに保存</p>
+              <p class="text-sm text-gray-500 mt-0.5">110（警察）、120（救急車）、119（消防）。大使館の領事ホットラインも保存。</p>
+            </div>
+            <a href="/ja/life/emergency-numbers/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">→ ガイド →</a>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </section>
 
-  <!-- Visa Checker Tool -->
-  <section class="max-w-5xl mx-auto px-4 pb-16">
-    <div class="border-t border-gray-100 pt-12">
-      <div class="max-w-2xl mx-auto">
-        <h2 class="text-2xl font-bold text-gray-900 mb-2 text-center">ビザチェッカー</h2>
-        <p class="text-gray-500 text-center mb-8">ビザが必要かどうかわからない？国籍を選べばお知らせします。</p>
-
-        <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100">
-          <label for="visa-country" class="block text-sm font-medium text-gray-700 mb-2">国籍</label>
-          <select id="visa-country" class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-brand-500 text-base appearance-none cursor-pointer">
-            <option value="">— 国籍を選択 —</option>
-            <option value="AL">Albania</option>
-            <option value="AD">Andorra</option>
-            <option value="AG">Antigua and Barbuda</option>
-            <option value="AR">Argentina</option>
-            <option value="AM">Armenia</option>
-            <option value="AU">Australia</option>
-            <option value="AT">Austria</option>
-            <option value="AZ">Azerbaijan</option>
-            <option value="BS">Bahamas</option>
-            <option value="BH">Bahrain</option>
-            <option value="BD">Bangladesh</option>
-            <option value="BB">Barbados</option>
-            <option value="BY">Belarus</option>
-            <option value="BE">Belgium</option>
-            <option value="BA">Bosnia and Herzegovina</option>
-            <option value="BR">Brazil</option>
-            <option value="BN">Brunei</option>
-            <option value="BG">Bulgaria</option>
-            <option value="CA">Canada</option>
-            <option value="CL">Chile</option>
-            <option value="HR">Croatia</option>
-            <option value="CY">Cyprus</option>
-            <option value="CZ">Czech Republic</option>
-            <option value="DK">Denmark</option>
-            <option value="DM">Dominica</option>
-            <option value="EC">Ecuador</option>
-            <option value="EG">Egypt</option>
-            <option value="EE">Estonia</option>
-            <option value="FJ">Fiji</option>
-            <option value="FI">Finland</option>
-            <option value="FR">France</option>
-            <option value="GE">Georgia</option>
-            <option value="DE">Germany</option>
-            <option value="GR">Greece</option>
-            <option value="GD">Grenada</option>
-            <option value="HU">Hungary</option>
-            <option value="IS">Iceland</option>
-            <option value="IN">India</option>
-            <option value="ID">Indonesia</option>
-            <option value="IE">Ireland</option>
-            <option value="IT">Italy</option>
-            <option value="JP">Japan</option>
-            <option value="KZ">Kazakhstan</option>
-            <option value="KE">Kenya</option>
-            <option value="KW">Kuwait</option>
-            <option value="LV">Latvia</option>
-            <option value="LI">Liechtenstein</option>
-            <option value="LT">Lithuania</option>
-            <option value="LU">Luxembourg</option>
-            <option value="MY">Malaysia</option>
-            <option value="MV">Maldives</option>
-            <option value="MT">Malta</option>
-            <option value="MU">Mauritius</option>
-            <option value="MX">Mexico</option>
-            <option value="MC">Monaco</option>
-            <option value="ME">Montenegro</option>
-            <option value="NL">Netherlands</option>
-            <option value="NZ">New Zealand</option>
-            <option value="NG">Nigeria</option>
-            <option value="MK">North Macedonia</option>
-            <option value="NO">Norway</option>
-            <option value="OM">Oman</option>
-            <option value="PK">Pakistan</option>
-            <option value="PE">Peru</option>
-            <option value="PH">Philippines</option>
-            <option value="PL">Poland</option>
-            <option value="PT">Portugal</option>
-            <option value="QA">Qatar</option>
-            <option value="RO">Romania</option>
-            <option value="RU">Russia</option>
-            <option value="WS">Samoa</option>
-            <option value="SM">San Marino</option>
-            <option value="SA">Saudi Arabia</option>
-            <option value="RS">Serbia</option>
-            <option value="SC">Seychelles</option>
-            <option value="SG">Singapore</option>
-            <option value="SK">Slovakia</option>
-            <option value="SI">Slovenia</option>
-            <option value="SB">Solomon Islands</option>
-            <option value="ZA">South Africa</option>
-            <option value="KR">South Korea</option>
-            <option value="ES">Spain</option>
-            <option value="SR">Suriname</option>
-            <option value="SE">Sweden</option>
-            <option value="CH">Switzerland</option>
-            <option value="TH">Thailand</option>
-            <option value="TO">Tonga</option>
-            <option value="TR">Turkey</option>
-            <option value="UA">Ukraine</option>
-            <option value="AE">United Arab Emirates</option>
-            <option value="GB">United Kingdom</option>
-            <option value="US">United States</option>
-            <option value="UY">Uruguay</option>
-            <option value="UZ">Uzbekistan</option>
-            <option value="VN">Vietnam</option>
-            <option value="OTHER">Other country</option>
-          </select>
-
-          <div id="visa-result" class="mt-6"></div>
-        </div>
-
-        <p class="text-xs text-gray-400 text-center mt-4">ビザのポリシーは変更される場合があります。渡航前に最寄りの中国大使館で必ずご確認ください。</p>
-      </div>
-    </div>
+    <p class="text-xs text-gray-400 text-center mt-10">進捗はブラウザに保存されます。ブラウザデータを消去するとリセットされます。</p>
   </section>
 
   <script is:inline>
-    const countrySelect = document.getElementById('visa-country');
-    const resultDiv = document.getElementById('visa-result');
+    const STORAGE_KEY = 'chinastarterhub-checklist-home';
+    const checkboxes = document.querySelectorAll('.checklist-item input[type="checkbox"]');
+    const progressBar = document.getElementById('progress-bar');
+    const progressText = document.getElementById('progress-text');
 
-    // Source: China gov.cn official list (2025)
-    // Category 1: Unilateral visa-free (30 days) - 50 countries
-    const visaFree = ['BN','FR','DE','IT','ES','NL','CH','IE','HU','AT','BE','LU','NZ','AU','PL','PT','GR','CY','SI','SK','NO','FI','DK','IS','AD','MC','LI','KR','BG','RO','HR','ME','MK','MT','EE','LV','JP','BR','AR','CL','PE','UY','SA','OM','KW','BH','CA','RU','GB','SE'];
+    function updateOverall() {
+      const checked = document.querySelectorAll('.checklist-item input[type="checkbox"]:checked').length;
+      const total = checkboxes.length;
+      const pct = total > 0 ? Math.round((checked / total) * 100) : 0;
+      progressBar.style.width = pct + '%';
+      const __suffix = progressText.dataset.suffix || 'completed'; progressText.textContent = checked + ' / ' + total + ' ' + __suffix;
 
-    // Category 2: Mutual visa agreement (ordinary passport) - 29 countries
-    const mutualFree = ['AL','AE','AG','BB','BS','BY','BA','DM','EC','FJ','GD','GE','KZ','QA','MV','MU','WS','RS','SC','SM','SR','SB','TH','TO','UZ','SG','AM','AZ','MY'];
-
-    // Category 3: 240-hour transit - 55 countries
-    const transit240 = ['AL','AT','BE','BG','BA','BR','CA','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LT','LU','MT','MC','ME','NL','MK','NO','PL','PT','RO','RU','RS','SK','SI','KR','ES','SE','CH','UA','GB','US','AU','NZ','JP','SG','BN','AE','QA','MX','AR','CL','ID','BY'];
-
-    // Determine best visa status for each country
-    function getVisaStatus(code) {
-      if (visaFree.includes(code)) return 'visa-free-30';
-      if (mutualFree.includes(code)) return 'mutual-free';
-      if (transit240.includes(code)) return 'transit';
-      return 'need-visa';
+      // Update per-stage progress
+      document.querySelectorAll('.checklist-stage').forEach(function(stage) {
+        const stageKey = stage.dataset.stage;
+        const cbs = stage.querySelectorAll('input[type="checkbox"]');
+        const checkedInStage = stage.querySelectorAll('input[type="checkbox"]:checked').length;
+        const totalInStage = cbs.length;
+        const label = document.querySelector('.stage-progress[data-stage="' + stageKey + '"]');
+        if (label) label.textContent = checkedInStage + '/' + totalInStage + ' \u2713';
+      });
     }
 
-    const countryNames = {
-      'AL':'Albania','AD':'Andorra','AG':'Antigua and Barbuda','AR':'Argentina','AM':'Armenia',
-      'AU':'Australia','AT':'Austria','AZ':'Azerbaijan','BS':'Bahamas','BH':'Bahrain','BB':'Barbados',
-      'BY':'Belarus','BE':'Belgium','BA':'Bosnia and Herzegovina','BR':'Brazil','BN':'Brunei','BG':'Bulgaria',
-      'CA':'Canada','CL':'Chile','HR':'Croatia','CY':'Cyprus','CZ':'Czech Republic','DK':'Denmark',
-      'DM':'Dominica','EC':'Ecuador','EG':'Egypt','EE':'Estonia','FJ':'Fiji','FI':'Finland','FR':'France',
-      'GE':'Georgia','DE':'Germany','GR':'Greece','GD':'Grenada','HU':'Hungary',      'IS':'Iceland','IE':'Ireland','IN':'India','ID':'Indonesia','IT':'Italy',
-      'JP':'Japan','KZ':'Kazakhstan','KE':'Kenya','KW':'Kuwait','LV':'Latvia','LI':'Liechtenstein',
-      'LT':'Lithuania','LU':'Luxembourg','MY':'Malaysia','MV':'Maldives','MT':'Malta','MU':'Mauritius',
-      'MX':'Mexico',
-      'MC':'Monaco','ME':'Montenegro',      'NL':'Netherlands','NZ':'New Zealand','NG':'Nigeria','MK':'North Macedonia',
-      'NO':'Norway','OM':'Oman','PK':'Pakistan','PE':'Peru','PH':'Philippines','PL':'Poland','PT':'Portugal','QA':'Qatar','RO':'Romania',
-      'RU':'Russia','WS':'Samoa','SM':'San Marino','SA':'Saudi Arabia','RS':'Serbia','SC':'Seychelles',
-      'SG':'Singapore','SK':'Slovakia','SI':'Slovenia','SB':'Solomon Islands','ZA':'South Africa','KR':'South Korea',
-      'ES':'Spain','SR':'Suriname','SE':'Sweden','CH':'Switzerland','TH':'Thailand','TO':'Tonga','TR':'Turkey',
-      'UA':'Ukraine',
-      'AE':'the United Arab Emirates','GB':'the United Kingdom','US':'the United States','UY':'Uruguay','UZ':'Uzbekistan','VN':'Vietnam'
-    };
+    const FILTER_KEY = STORAGE_KEY + '-filter';
+    const filterChips = document.querySelectorAll('.filter-chip');
+    const stages = document.querySelectorAll('.stage-group');
 
-    countrySelect.addEventListener('change', function() {
-      const val = this.value;
-      if (!val) {
-        resultDiv.innerHTML = '';
-        return;
-      }
-
-      const name = countryNames[val] || 'your country';
-      const status = getVisaStatus(val);
-
-      if (status === 'visa-free-30') {
-        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-green-50 border border-green-200"><p class="text-green-800 font-semibold mb-1">Good news! Citizens of ' + name + ' can enter China <span class="underline">visa-free</span> for up to 30 days.</p><p class="text-green-700 text-sm mb-3">No visa needed for tourism, business, or transit stays under 30 days.</p><a href="/ja/visa/visa-free/" class="inline-block text-sm font-medium text-green-700 underline hover:no-underline">See the full visa-free list \u2192</a></div>';
-      } else if (status === 'mutual-free') {
-        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-green-50 border border-green-200"><p class="text-green-800 font-semibold mb-1">Citizens of ' + name + ' can enter China <span class="underline">visa-free</span> under a mutual agreement.</p><p class="text-green-700 text-sm mb-3">Check your passport type and allowed duration before traveling.</p><a href="/ja/visa/visa-free/" class="inline-block text-sm font-medium text-green-700 underline hover:no-underline">See the visa-free countries list \u2192</a></div>';
-      } else if (status === 'transit') {
-        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-blue-50 border border-blue-200"><p class="text-blue-800 font-semibold mb-1">You can use the <span class="underline">240-hour transit</span> policy.</p><p class="text-blue-700 text-sm mb-3">Citizens of ' + name + ' can transit through China for up to 10 days without a visa. For longer stays, you\u2019ll need an L visa.</p><div class="flex flex-wrap gap-3"><a href="/ja/visa/transit-240/" class="text-sm font-medium text-blue-700 underline hover:no-underline">How transit works \u2192</a><a href="/ja/visa/apply-l-visa/" class="text-sm font-medium text-blue-700 underline hover:no-underline">Apply for an L visa \u2192</a></div></div>';
+    function applyFilter(show, skipScroll) {
+      filterChips.forEach(function(chip) {
+        if (chip.dataset.show === show) {
+          chip.classList.remove('bg-white', 'text-gray-600', 'border-gray-200');
+          chip.classList.add('bg-brand-50', 'text-brand-700', 'border-brand-300');
+        } else {
+          chip.classList.remove('bg-brand-50', 'text-brand-700', 'border-brand-300');
+          chip.classList.add('bg-white', 'text-gray-600', 'border-gray-200');
+        }
+      });
+      if (show === 'all') {
+        stages.forEach(function(s) { s.classList.remove('hidden'); });
+        // Scroll to checklist section header, not page top
+        if (!skipScroll) {
+          var sectionTitle = document.querySelector('#checklist-filter');
+          if (sectionTitle) {
+            var targetY = sectionTitle.getBoundingClientRect().top + window.scrollY - 80;
+            window.scrollTo({ top: targetY, behavior: 'smooth' });
+          }
+        }
       } else {
-        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-orange-50 border border-orange-200"><p class="text-orange-800 font-semibold mb-1">You\u2019ll need a visa.</p><p class="text-orange-700 text-sm mb-3">Citizens of ' + name + ' need to apply for a tourist visa (L-type) before traveling to China.</p><a href="/ja/visa/apply-l-visa/" class="inline-block text-sm font-medium text-orange-700 underline hover:no-underline">How to apply for an L visa \u2192</a></div>';
+        var showList = show.split(',');
+        stages.forEach(function(s) {
+          if (showList.indexOf(s.dataset.stage) !== -1) {
+            s.classList.remove('hidden');
+          } else {
+            s.classList.add('hidden');
+          }
+        });
+        // Scroll to the first visible stage with offset (so progress/chips stay visible above)
+        if (!skipScroll) {
+          var firstStage = document.querySelector('.stage-group:not(.hidden)');
+          if (firstStage) {
+            var targetY = firstStage.getBoundingClientRect().top + window.scrollY - 120;
+            window.scrollTo({ top: targetY, behavior: 'smooth' });
+          }
+        }
       }
+      try { localStorage.setItem(FILTER_KEY, show); } catch(e) {}
+    }
+
+    filterChips.forEach(function(chip) {
+      chip.addEventListener('click', function() {
+        applyFilter(this.dataset.show);
+      });
     });
+
+    function saveState() {
+      const state = {};
+      checkboxes.forEach(function(cb) {
+        state[cb.closest('.checklist-item').dataset.key] = cb.checked;
+      });
+      try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch(e) {}
+    }
+
+    function loadState() {
+      try {
+        const saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
+        if (!saved) return;
+        checkboxes.forEach(function(cb) {
+          const key = cb.closest('.checklist-item').dataset.key;
+          if (saved[key]) {
+            cb.checked = true;
+            cb.closest('.checklist-item').classList.add('opacity-50', 'line-through');
+          }
+        });
+      } catch(e) {}
+      updateOverall();
+      // Restore last filter
+      try {
+        var savedFilter = localStorage.getItem(FILTER_KEY);
+        if (savedFilter) applyFilter(savedFilter, true);
+      } catch(e) {}
+    }
+
+    checkboxes.forEach(function(cb) {
+      cb.addEventListener('change', function() {
+        const item = this.closest('.checklist-item');
+        if (this.checked) {
+          item.classList.add('opacity-50', 'line-through');
+        } else {
+          item.classList.remove('opacity-50', 'line-through');
+        }
+        saveState();
+        updateOverall();
+      });
+    });
+
+    loadState();
   </script>
+
     <p class="text-xs text-gray-400 text-center mt-8">最終更新：2026年7月</p>
 </Layout>

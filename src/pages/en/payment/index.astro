@@ -5,11 +5,10 @@ const description = 'Set up Alipay before you fly — that covers 95% of payment
 ---
 
 <Layout title={title} description={description} lang="en">
-  <section class="max-w-4xl mx-auto px-6 py-12">
+  <section class="max-w-5xl mx-auto px-6 py-12">
     
     <!-- Header -->
     <header class="mb-10 text-center">
-      <p class="text-sm text-gray-500 mb-2">💳 Payment</p>
       <h1 class="text-4xl font-extrabold text-gray-900 mb-3 leading-tight">Payment in China</h1>
       <p class="text-base text-gray-500 max-w-2xl mx-auto">Set up Alipay before you fly — that covers 95% of payments.</p>
     </header>
@@ -113,18 +112,26 @@ const description = 'Set up Alipay before you fly — that covers 95% of payment
       </div>
     </div>
 
-    <!-- Related Guides -->
-    <div class="bg-gray-50 rounded-2xl p-8 not-prose">
-      <h3 class="text-lg font-bold text-gray-900 mb-5">Related Guides</h3>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-        <a href="/en/transport/transport-guide/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
-          <p class="font-bold text-gray-900 mb-0.5">Transport in China</p>
-          <p class="text-sm text-gray-500">Trains, metro, taxis, and ride-hailing</p>
-        </a>
-        <a href="/en/life/essential-apps/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
-          <p class="font-bold text-gray-900 mb-0.5">Essential Apps for China</p>
-          <p class="text-sm text-gray-500">Must-have apps for traveling in China</p>
-        </a>
+    <!-- Next Step -->
+    <div class="border-t border-gray-100 pt-8 mb-4">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-2xl p-6 md:p-8 not-prose">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div>
+            <p class="text-xs font-bold tracking-widest text-brand-600 uppercase mb-1">Next Step</p>
+            <h3 class="text-xl font-bold text-gray-900">Stay connected and get around</h3>
+            <p class="text-sm text-gray-600 mt-1 max-w-md">Payments are set up. Next: get an eSIM for data and learn how to navigate China's transport system.</p>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-3 shrink-0">
+            <a href="/en/life/sim-card-guide/" class="inline-flex items-center justify-center gap-2 px-5 py-3 bg-white border border-gray-200 rounded-xl text-sm font-semibold text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              📶 Get an eSIM
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/en/transport/transport-guide/" class="inline-flex items-center justify-center gap-2 px-5 py-3 bg-white border border-gray-200 rounded-xl text-sm font-semibold text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🚗 Transport guide
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </section>

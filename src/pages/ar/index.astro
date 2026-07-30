@@ -7,19 +7,14 @@ const description = 'كل ما تحتاج معرفته قبل السفر إلى 
 <Layout title={title} description={description} lang="ar">
   <!-- Trigger rebuild: 2026-06-12 17:30 -->
   <section class="text-center py-20 px-4">
-    <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-gray-900  ">
-      إرشادات واضحة وحديثة<br/><span class="text-brand-600">للمسافرين الأجانب لأول مرة إلى الصين</span>
+    <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-gray-900">
+      سافر إلى الصين بثقة —<br/><span class="text-brand-600">أدلة خطوة بخطوة من التأشيرة إلى الدفع إلى التنقل</span>
     </h1>
-    <p class="text-lg md:text-xl text-gray-500  ">
-      ابدأ بالأساسيات، ثم اتبع الأدلة التي تناسب رحلتك.
-    </p>
-    <div class="flex flex-wrap justify-center gap-4">
+    <div class="flex flex-wrap justify-center gap-4 mt-10">
       <a href="/ar/visa/" class="bg-brand-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-brand-700 transition no-underline">ابدأ الآن</a>
       <a href="/ar/about/" class="border border-brand-600 text-brand-600 px-6 py-3 rounded-lg font-medium hover:bg-brand-50 transition no-underline">عن هذا الموقع</a>
     </div>
-  </section>
-
-  <!-- Section: Category Cards -->
+  </section>  <!-- Section: Category Cards -->
   <section class="max-w-5xl mx-auto px-4 pb-16">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
       {[
@@ -29,286 +24,442 @@ const description = 'كل ما تحتاج معرفته قبل السفر إلى 
         { href: '/ar/life/', title: 'الحياة في الصين', desc: 'التطبيقات، الرعاية الطبية، نصائح السلامة، الحياة اليومية.' },
       ].map(card => (
         <a href={card.href} class="group block p-5 rounded-2xl bg-gray-50  :bg-brand-50 dark:hover:bg-brand-950 border border-gray-100  :border-brand-200 dark:hover:border-brand-800 transition-all duration-200 no-underline">
-          <h3 class="text-lg font-semibold text-gray-900  :text-brand-600 dark:group-hover:text-brand-400 mb-1">{card.title}</h3>
+          <h3 class="text-lg font-semibold text-gray-900  group-hover:text-brand-600 dark:group-hover:text-brand-400 mb-1">{card.title}</h3>
           <p class="text-sm text-gray-500  ">{card.desc}</p>
         </a>
       ))}
     </div>
   </section>
 
-  <!-- Your Trip: Step by Step -->
+<!-- Interactive Pre-Departure Checklist -->
   <section class="max-w-5xl mx-auto px-4 py-12">
-    <h2 class="text-2xl font-bold text-gray-900 mb-2">رحلتك، خطوة بخطوة</h2>
-    <p class="text-gray-500 mb-10">اتبع مرحلتك — كل منها يوصلك إلى الأدلة التي ستحتاجها فعلاً.</p>
+    <h2 class="text-2xl font-bold text-gray-900 mb-2">قائمة رحلتك إلى الصين</h2>
+    <p class="text-gray-500 mb-4">من شهر قبل المغادرة إلى اليوم الأول — حدد كل عنصر وأنت تمضي.</p>
+
+    <!-- Time Filter -->
+    <div id="checklist-filter" class="flex flex-wrap gap-2 mb-5">
+      <button class="filter-chip px-3 py-1.5 rounded-full border border-gray-200 bg-brand-50 text-brand-700 text-sm font-medium cursor-pointer transition hover:border-brand-300 active" data-show="all">جميع المراحل</button>
+      <button class="filter-chip px-3 py-1.5 rounded-full border border-gray-200 bg-white text-gray-600 text-sm font-medium cursor-pointer transition hover:border-brand-300 hover:text-brand-600" data-show="1">قبل شهر</button>
+      <button class="filter-chip px-3 py-1.5 rounded-full border border-gray-200 bg-white text-gray-600 text-sm font-medium cursor-pointer transition hover:border-brand-300 hover:text-brand-600" data-show="2">قبل أسبوعين</button>
+      <button class="filter-chip px-3 py-1.5 rounded-full border border-gray-200 bg-white text-gray-600 text-sm font-medium cursor-pointer transition hover:border-brand-300 hover:text-brand-600" data-show="3">قبل أسبوع</button>
+      <button class="filter-chip px-3 py-1.5 rounded-full border border-gray-200 bg-white text-gray-600 text-sm font-medium cursor-pointer transition hover:border-brand-300 hover:text-brand-600" data-show="4,5">عند الوصول</button>
+      <button class="filter-chip px-3 py-1.5 rounded-full border border-gray-200 bg-white text-gray-600 text-sm font-medium cursor-pointer transition hover:border-brand-300 hover:text-brand-600" data-show="6">اليوم الأول</button>
+    </div>
+
+    <!-- Overall Progress -->
+    <div id="checklist-progress" class="bg-gray-50 rounded-2xl p-5 mb-10">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-sm font-semibold text-gray-700">التقدم العام</span>
+        <span id="progress-text" data-suffix="مكتمل" class="text-base font-bold text-brand-600">0 من 23 مكتمل</span>
+      </div>
+      <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+        <div id="progress-bar" class="h-full bg-brand-500 rounded-full transition-all duration-300" style="width:0%"></div>
+      </div>
+    </div>
 
     <div class="space-y-8">
-      <!-- Stage 1 -->
-      <div class="relative pl-14">
-        <div class="absolute left-0 top-0 w-9 h-9 rounded-full bg-green-100 flex items-center justify-center text-sm font-bold text-green-700">1</div>
-        <div class="absolute left-[17px] top-9 bottom-0 w-0.5 bg-gray-100"></div>
-        <h3 class="text-lg font-bold text-gray-900 mb-3">قبل السفر</h3>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-          <a href="/ar/visa/visa-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-green-200 transition no-underline">
-            <span class="text-xs font-medium text-green-600">تجهيز</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">ما التأشيرة التي تحتاجها؟</p>
-          </a>
-          <a href="/ar/payment/payment-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-green-200 transition no-underline">
-            <span class="text-xs font-medium text-green-600">الدفع</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">كيف تدفع في الصين</p>
-          </a>
-          <a href="/ar/life/survival-kit/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-green-200 transition no-underline">
-            <span class="text-xs font-medium text-green-600">الحياة</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">قائمة التجهيز قبل المغادرة</p>
-          </a>
+
+      <!-- Stage 1: T-30 يوم · قبل شهر من المغادرة -->
+      <div class="relative pl-12 stage-group" data-stage="1">
+        <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-green-100 flex items-center justify-center text-xs font-bold text-green-700">1</div>
+        <div class="absolute left-[14px] top-8 bottom-0 w-px bg-gray-200"></div>
+        <h3 class="text-base font-bold text-gray-900 mb-3">
+          <span class="text-green-700">T-30 يوم</span> · قبل شهر من السفر
+          <span class="stage-progress text-sm font-normal text-gray-400 ml-1" data-stage="1">0/3 ✓</span>
+        </h3>
+        <div class="space-y-1.5 checklist-stage" data-stage="1">
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="check-passport">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">01</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">التحقق من صلاحية جواز السفر</p>
+              <p class="text-sm text-gray-500 mt-0.5">تتطلب دول كثيرة أن تكون صلاحية الجواز 6 أشهر بعد تواريخ سفرك للحصول على التأشيرة الصينية. تحقق قبل المغادرة.</p>
+            </div>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="check-visa">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">02</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">تأكيد نوع التأشيرة أو الإعفاء</p>
+              <p class="text-sm text-gray-500 mt-0.5">هل تحتاج تأشيرة؟ هل أنت مؤهل لعبور 240 ساعة؟ أداة الفحص أعلاه تجيبك في 30 ثانية.</p>
+            </div>
+            <a href="/ar/visa/visa-guide/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">→ دليل →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="travel-insurance">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">03</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">شراء تأمين سفر مع تغطية طبية</p>
+              <p class="text-sm text-gray-500 mt-0.5">المستشفيات الصينية تتطلب الدفع المسبق. يُوصى بتأمين طبي لا يقل عن 100,000 دولار مع الإخلاء الطارئ.</p>
+            </div>
+            <a href="/ar/life/travel-insurance/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">→ دليل →</a>
+          </div>
         </div>
       </div>
 
-      <!-- Stage 2 -->
-      <div class="relative pl-14">
-        <div class="absolute left-0 top-0 w-9 h-9 rounded-full bg-blue-100 flex items-center justify-center text-sm font-bold text-blue-700">2</div>
-        <div class="absolute left-[17px] top-9 bottom-0 w-0.5 bg-gray-100"></div>
-        <h3 class="text-lg font-bold text-gray-900 mb-3">بمجرد الوصول</h3>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-          <a href="/ar/transport/airport-to-city/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-blue-200 transition no-underline">
-            <span class="text-xs font-medium text-blue-600">النقل</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">الوصول من المطار إلى المدينة</p>
-          </a>
-          <a href="/ar/life/sim-card-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-blue-200 transition no-underline">
-            <span class="text-xs font-medium text-blue-600">الحياة</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">بطاقة SIM وإعداد الإنترنت</p>
-          </a>
-          <a href="/ar/life/vpn-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-blue-200 transition no-underline">
-            <span class="text-xs font-medium text-blue-600">الحياة</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">إعداد VPN</p>
-          </a>
+      <!-- Stage 2: T-15 يوم · قبل أسبوعين -->
+      <div class="relative pl-12 stage-group" data-stage="2">
+        <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-xs font-bold text-blue-700">2</div>
+        <div class="absolute left-[14px] top-8 bottom-0 w-px bg-gray-200"></div>
+        <h3 class="text-base font-bold text-gray-900 mb-3">
+          <span class="text-blue-700">T-15 يوم</span> · قبل أسبوعين
+          <span class="stage-progress text-sm font-normal text-gray-400 ml-1" data-stage="2">0/6 ✓</span>
+        </h3>
+        <div class="space-y-1.5 checklist-stage" data-stage="2">
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="buy-vpn">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">04</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">شراء اشتراك VPN وتثبيته</p>
+              <p class="text-sm text-gray-500 mt-0.5">لا يمكن تنزيل VPN من داخل الصين — المواقع محجوبة. ثبّته واختبره من المنزل قبل المغادرة.</p>
+            </div>
+            <a href="/ar/life/vpn-guide/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">→ دليل →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="buy-esim">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">05</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">شراء eSIM</p>
+              <p class="text-sm text-gray-500 mt-0.5">اختر eSIM يغطي الصين، الأفضل عبر هونغ كونغ. ثبّته قبل المغادرة.</p>
+            </div>
+            <a href="/ar/life/sim-card-guide/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">→ دليل →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="setup-alipay">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">06</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">إعداد Alipay وربط بطاقاتك</p>
+              <p class="text-sm text-gray-500 mt-0.5">اربط بطاقة ائتمان وخصم. رموز QR الشخصية لا تقبل الائتمان، لكن الخصم يعمل.</p>
+            </div>
+            <a href="/ar/payment/payment-guide/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">→ دليل →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="setup-wechat">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">07</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">إعداد WeChat Pay (احتياطي اختياري)</p>
+              <p class="text-sm text-gray-500 mt-0.5">Alipay يغطي 95%، لكن مطاعم صغيرة تستخدم WeChat فقط. اضبطه كاحتياطي.</p>
+            </div>
+            <a href="/ar/payment/setup-wechat/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">→ دليل →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="book-hotel">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">08</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">حجز فندق يمكنه تسجيل النزلاء الأجانب</p>
+              <p class="text-sm text-gray-500 mt-0.5">ليست كل الفنادق تقبل جوازات الأجانب. احجز عبر Trip.com مع تقييمات إيجابية من الأجانب.</p>
+            </div>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="notify-bank">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">09</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">إبلاغ بنكك أنك مسافر إلى الصين</p>
+              <p class="text-sm text-gray-500 mt-0.5">بعض البنوك تحظر معاملات الصين كاحتيال. حدد إشعار السفر بالتطبيق أو اتصل — 5 دقائق توفر صداعاً.</p>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- Stage 3 -->
-      <div class="relative pl-14">
-        <div class="absolute left-0 top-0 w-9 h-9 rounded-full bg-purple-100 flex items-center justify-center text-sm font-bold text-purple-700">3</div>
-        <div class="absolute left-[17px] top-9 bottom-0 w-0.5 bg-gray-100"></div>
-        <h3 class="text-lg font-bold text-gray-900 mb-3">أثناء رحلتك</h3>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-          <a href="/ar/transport/transport-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-purple-200 transition no-underline">
-            <span class="text-xs font-medium text-purple-600">النقل</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">التنقل في الصين</p>
-          </a>
-          <a href="/ar/life/essential-apps/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-purple-200 transition no-underline">
-            <span class="text-xs font-medium text-purple-600">الحياة</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">10 تطبيقات أساسية</p>
-          </a>
-          <a href="/ar/life/chinese-phrases/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-purple-200 transition no-underline">
-            <span class="text-xs font-medium text-purple-600">الحياة</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">عبارات صينية أساسية</p>
-          </a>
+      <!-- Stage 3: T-7 أيام · قبل المغادرة -->
+      <div class="relative pl-12 stage-group" data-stage="3">
+        <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center text-xs font-bold text-indigo-700">3</div>
+        <div class="absolute left-[14px] top-8 bottom-0 w-px bg-gray-200"></div>
+        <h3 class="text-base font-bold text-gray-900 mb-3">
+          <span class="text-indigo-700">T-7 أيام</span> · قبل المغادرة
+          <span class="stage-progress text-sm font-normal text-gray-400 ml-1" data-stage="3">0/4 ✓</span>
+        </h3>
+        <div class="space-y-1.5 checklist-stage" data-stage="3">
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="test-vpn">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">10</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">اختبار VPN على كل جهاز</p>
+              <p class="text-sm text-gray-500 mt-0.5">تأكد من الاتصال على هاتفك ولابتوبك وجهازك اللوحي. افعل ذلك من المنزل — داخل الصين مواقع VPN محجوبة أيضاً.</p>
+            </div>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="install-apps">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">11</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">تثبيت التطبيقات الأساسية للسفر إلى الصين</p>
+              <p class="text-sm text-gray-500 mt-0.5">Baidu Maps، Didi، Trip.com. حمّلها الآن قبل أن يتم تقييد متجر التطبيقات.</p>
+            </div>
+            <a href="/ar/life/essential-apps/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">→ دليل →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="learn-chinese">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">12</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">تعلم 10 عبارات صينية أساسية</p>
+              <p class="text-sm text-gray-500 mt-0.5">قدرتك على قول "شكراً" و"كم السعر" تغير معاملة الناس لك. ابدأ بالأساسيات.</p>
+            </div>
+            <a href="/ar/life/chinese-phrases/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">→ دليل →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="backup-docs">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">13</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">حفظ نسخ رقمية من جواز السفر والتأشيرة والتأمين</p>
+              <p class="text-sm text-gray-500 mt-0.5">احفظ صوراً أو مسحاً ضوئياً في هاتفك وسحابتك. إذا فقدت المستندات، النسخ الاحتياطية هي ملاذك الوحيد.</p>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- Stage 4 -->
-      <div class="relative pl-14">
-        <div class="absolute left-0 top-0 w-9 h-9 rounded-full bg-red-100 flex items-center justify-center text-sm font-bold text-red-700">4</div>
-        <h3 class="text-lg font-bold text-gray-900 mb-3">هل تحتاج مساعدة؟</h3>
-        <div class="grid grid-cols-1 sm:grid-cols-4 gap-3">
-          <a href="/ar/life/seeing-a-doctor/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
-            <span class="text-xs font-medium text-red-600">الحياة</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">زيارة الطبيب</p>
-          </a>
-          <a href="/ar/life/common-scams/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
-            <span class="text-xs font-medium text-red-600">الحياة</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">تجنب الاحتيال الشائع</p>
-          </a>
-          <a href="/ar/life/emergency-numbers/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
-            <span class="text-xs font-medium text-red-600">الحياة</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">أرقام الطوارئ</p>
-          </a>
-          <a href="/ar/payment/payment-fails/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
-            <span class="text-xs font-medium text-red-600">الدفع</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">عند فشل الدفع</p>
-          </a>
+      <!-- Stage 4: T-24 ساعة · التحضير النهائي -->
+      <div class="relative pl-12 stage-group" data-stage="4">
+        <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center text-xs font-bold text-amber-700">4</div>
+        <div class="absolute left-[14px] top-8 bottom-0 w-px bg-gray-200"></div>
+        <h3 class="text-base font-bold text-gray-900 mb-3">
+          <span class="text-amber-700">T-24 ساعة</span> · التحضير النهائي
+          <span class="stage-progress text-sm font-normal text-gray-400 ml-1" data-stage="4">0/3 ✓</span>
+        </h3>
+        <div class="space-y-1.5 checklist-stage" data-stage="4">
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="check-in">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">16</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">تسجيل الوصول عبر الإنترنت وتأكيد حالة الرحلة</p>
+              <p class="text-sm text-gray-500 mt-0.5">اختر مقعدك مبكراً وتحقق من تغييرات البوابة أو التأخير. لا تتركه لآخر لحظة.</p>
+            </div>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="withdraw-cash">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">15</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">سحب 500-1000 يوان نقداً</p>
+              <p class="text-sm text-gray-500 mt-0.5">الصين 95% غير نقدية، لكن تطبيق الدفع سيفشل مرة على الأقل. النقود هي احتياطك للطوارئ لسائق التاكسي والباعة والأكواد المعطلة.</p>
+            </div>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="power-bank">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">16</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">وضع باور بانك ومحول السفر في حقيبة اليد</p>
+              <p class="text-sm text-gray-500 mt-0.5">ستحتاج هاتفك لكل شيء: الخرائط، الدفع، الترجمة. أبقِه مشحوناً أثناء الرحلة وبعد الوصول.</p>
+            </div>
+          </div>
         </div>
       </div>
+
+      <!-- Stage 5: عند الوصول · أول ساعتين -->
+      <div class="relative pl-12 stage-group" data-stage="5">
+        <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-teal-100 flex items-center justify-center text-xs font-bold text-teal-700">5</div>
+        <div class="absolute left-[14px] top-8 bottom-0 w-px bg-gray-200"></div>
+        <h3 class="text-base font-bold text-gray-900 mb-3">
+          <span class="text-teal-700">عند الوصول</span> · أول ساعتين
+          <span class="stage-progress text-sm font-normal text-gray-400 ml-1" data-stage="5">0/3 ✓</span>
+        </h3>
+        <div class="space-y-1.5 checklist-stage" data-stage="5">
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="activate-esim">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">17</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">تفعيل eSIM وتشغيل بيانات الجوال</p>
+              <p class="text-sm text-gray-500 mt-0.5">أول شيء بعد الجوازات. الخرائط، Didi، الترجمة، الدفع — كلها تعتمد على وجود إنترنت.</p>
+            </div>
+            <a href="/ar/life/sim-card-guide/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">→ دليل →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="connect-vpn">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">18</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">تشغيل VPN</p>
+              <p class="text-sm text-gray-500 mt-0.5">شغّل VPN قبل فتح أي تطبيق. بدونه، رسائل WhatsApp تتراكم وخرائط Google لا تعمل.</p>
+            </div>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="airport-to-city">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">19</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">الوصول من المطار إلى فندقك</p>
+              <p class="text-sm text-gray-500 mt-0.5">المترو الأرخص والأسهل لمعظم المطارات. Didi (أوبر الصين) خيار احتياطي جيد.</p>
+            </div>
+            <a href="/ar/transport/airport-to-city/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">→ دليل →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stage 6: اليوم الأول · الاستقرار -->
+      <div class="relative pl-12 stage-group" data-stage="6">
+        <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-violet-100 flex items-center justify-center text-xs font-bold text-violet-700">6</div>
+        <div class="absolute left-[14px] top-8 bottom-0 w-px bg-gray-200"></div>
+        <h3 class="text-base font-bold text-gray-900 mb-3">
+          <span class="text-violet-700">اليوم الأول</span> · استقر وابدأ
+          <span class="stage-progress text-sm font-normal text-gray-400 ml-1" data-stage="6">0/4 ✓</span>
+        </h3>
+        <div class="space-y-1.5 checklist-stage" data-stage="6">
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="test-payment">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">20</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">اختبار Alipay على عملية شراء صغيرة</p>
+              <p class="text-sm text-gray-500 mt-0.5">اشتر زجاجة ماء من متجر صغير. إذا عمل QR فأنت جاهز. إذا فشل، لديك وقت للإصلاح.</p>
+            </div>
+            <a href="/ar/payment/payment-guide/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">→ دليل →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="police-registration">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">21</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">تأكيد أن الفندق يتولى التسجيل لدى الشرطة</p>
+              <p class="text-sm text-gray-500 mt-0.5">يجب على الفنادق تسجيل الأجانب لدى الشرطة خلال 24 ساعة. معظمها يفعل ذلك تلقائياً، لكن تأكد.</p>
+            </div>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="try-transport">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">22</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">تجربة المترو أو طلب Didi</p>
+              <p class="text-sm text-gray-500 mt-0.5">اركب المترو محطة واحدة أو اطلب Didi إلى مقهى قريب. تعلم نظام النقل اليوم كي لا تكتشفه وأنت في عجلة.</p>
+            </div>
+            <a href="/ar/transport/transport-guide/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">→ دليل →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="emergency-numbers">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">23</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">حفظ أرقام الطوارئ في هاتفك</p>
+              <p class="text-sm text-gray-500 mt-0.5">110 (شرطة)، 120 (إسعاف)، 119 (مطافئ). واحفظ أيضاً خط الطوارئ القنصلي لسفارتك. لن تتذكرها عندما تحتاجها.</p>
+            </div>
+            <a href="/ar/life/emergency-numbers/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">→ دليل →</a>
+          </div>
+        </div>
+      </div>
+
     </div>
+
+    <p class="text-xs text-gray-400 text-center mt-10">يتم حفظ تقدمك في متصفحك. مسح بيانات المتصفح يعيد تعيينه.</p>
   </section>
 
-  <!-- Visa Checker Tool -->
-  <section class="max-w-5xl mx-auto px-4 pb-16">
-    <div class="border-t border-gray-100 pt-12">
-      <div class="max-w-2xl mx-auto">
-        <h2 class="text-2xl font-bold text-gray-900 mb-2 text-center">التحقق من التأشيرة</h2>
-        <p class="text-gray-500 text-center mb-8">لست متأكداً مما إذا كنت بحاجة إلى تأشيرة؟ اختر جنسيتك وسنخبرك.</p>
+  
 
-        <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100">
-          <label for="visa-country" class="block text-sm font-medium text-gray-700 mb-2">جنسيتك</label>
-          <select id="visa-country" class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-brand-500 text-base appearance-none cursor-pointer">
-            <option value="">— اختر بلدك —</option>
-            <option value="AL">ألبانيا</option>
-            <option value="AD">أندورا</option>
-            <option value="AG">أنتيغوا وباربودا</option>
-            <option value="AR">الأرجنتين</option>
-            <option value="AM">أرمينيا</option>
-            <option value="AU">أستراليا</option>
-            <option value="AT">النمسا</option>
-            <option value="AZ">أذربيجان</option>
-            <option value="BS">جزر البهاما</option>
-            <option value="BH">البحرين</option>
-            <option value="BD">بنغلاديش</option>
-            <option value="BB">بربادوس</option>
-            <option value="BY">بيلاروسيا</option>
-            <option value="BE">بلجيكا</option>
-            <option value="BA">البوسنة والهرسك</option>
-            <option value="BR">البرازيل</option>
-            <option value="BN">بروناي</option>
-            <option value="BG">بلغاريا</option>
-            <option value="CA">كندا</option>
-            <option value="CL">تشيلي</option>
-            <option value="HR">كرواتيا</option>
-            <option value="CY">قبرص</option>
-            <option value="CZ">جمهورية التشيك</option>
-            <option value="DK">الدنمارك</option>
-            <option value="DM">دومينيكا</option>
-            <option value="EC">الإكوادور</option>
-            <option value="EG">مصر</option>
-            <option value="EE">إستونيا</option>
-            <option value="FJ">فيجي</option>
-            <option value="FI">فنلندا</option>
-            <option value="FR">فرنسا</option>
-            <option value="GE">جورجيا</option>
-            <option value="DE">ألمانيا</option>
-            <option value="GR">اليونان</option>
-            <option value="GD">غرينادا</option>
-            <option value="HU">المجر</option>
-            <option value="IS">آيسلندا</option>
-            <option value="IN">الهند</option>
-            <option value="ID">إندونيسيا</option>
-            <option value="IE">أيرلندا</option>
-            <option value="IT">إيطاليا</option>
-            <option value="JP">اليابان</option>
-            <option value="KZ">كازاخستان</option>
-            <option value="KE">كينيا</option>
-            <option value="KW">الكويت</option>
-            <option value="LV">لاتفيا</option>
-            <option value="LI">ليختنشتاين</option>
-            <option value="LT">ليتوانيا</option>
-            <option value="LU">لوكسمبورغ</option>
-            <option value="MY">ماليزيا</option>
-            <option value="MV">جزر المالديف</option>
-            <option value="MT">مالطا</option>
-            <option value="MU">موريشيوس</option>
-            <option value="MX">المكسيك</option>
-            <option value="MC">موناكو</option>
-            <option value="ME">الجبل الأسود</option>
-            <option value="NL">هولندا</option>
-            <option value="NZ">نيوزيلندا</option>
-            <option value="NG">نيجيريا</option>
-            <option value="MK">مقدونيا الشمالية</option>
-            <option value="NO">النرويج</option>
-            <option value="OM">عُمان</option>
-            <option value="PK">باكستان</option>
-            <option value="PE">بيرو</option>
-            <option value="PH">الفلبين</option>
-            <option value="PL">بولندا</option>
-            <option value="PT">البرتغال</option>
-            <option value="QA">قطر</option>
-            <option value="RO">رومانيا</option>
-            <option value="RU">روسيا</option>
-            <option value="WS">ساموا</option>
-            <option value="SM">سان مارينو</option>
-            <option value="SA">المملكة العربية السعودية</option>
-            <option value="RS">صربيا</option>
-            <option value="SC">سيشل</option>
-            <option value="SG">سنغافورة</option>
-            <option value="SK">سلوفاكيا</option>
-            <option value="SI">سلوفينيا</option>
-            <option value="SB">جزر سليمان</option>
-            <option value="ZA">جنوب إفريقيا</option>
-            <option value="KR">كوريا الجنوبية</option>
-            <option value="ES">إسبانيا</option>
-            <option value="SR">سورينام</option>
-            <option value="SE">السويد</option>
-            <option value="CH">سويسرا</option>
-            <option value="TH">تايلاند</option>
-            <option value="TO">تونغا</option>
-            <option value="TR">تركيا</option>
-            <option value="UA">أوكرانيا</option>
-            <option value="AE">الإمارات العربية المتحدة</option>
-            <option value="GB">المملكة المتحدة</option>
-            <option value="US">الولايات المتحدة الأمريكية</option>
-            <option value="UY">الأوروغواي</option>
-            <option value="UZ">أوزبكستان</option>
-            <option value="VN">فيتنام</option>
-            <option value="OTHER">دولة أخرى</option>
-          </select>
 
-          <div id="visa-result" class="mt-6"></div>
-        </div>
 
-        <p class="text-xs text-gray-400 text-center mt-4">تتغير سياسات التأشيرات. تحقق دائماً من سفارة الصين المحلية قبل الحجز.</p>
-      </div>
-    </div>
-  </section>
+
+
 
   <script is:inline>
-    const countrySelect = document.getElementById('visa-country');
-    const resultDiv = document.getElementById('visa-result');
+    const STORAGE_KEY = 'chinastarterhub-checklist-home';
+    const checkboxes = document.querySelectorAll('.checklist-item input[type="checkbox"]');
+    const progressBar = document.getElementById('progress-bar');
+    const progressText = document.getElementById('progress-text');
 
-    // Source: China gov.cn official list (2025)
-    // Category 1: Unilateral visa-free (30 days) - 50 countries
-    const visaFree = ['BN','FR','DE','IT','ES','NL','CH','IE','HU','AT','BE','LU','NZ','AU','PL','PT','GR','CY','SI','SK','NO','FI','DK','IS','AD','MC','LI','KR','BG','RO','HR','ME','MK','MT','EE','LV','JP','BR','AR','CL','PE','UY','SA','OM','KW','BH','CA','RU','GB','SE'];
+    function updateOverall() {
+      const checked = document.querySelectorAll('.checklist-item input[type="checkbox"]:checked').length;
+      const total = checkboxes.length;
+      const pct = total > 0 ? Math.round((checked / total) * 100) : 0;
+      progressBar.style.width = pct + '%';
+      const __suffix = progressText.dataset.suffix || 'completed'; progressText.textContent = checked + ' / ' + total + ' ' + __suffix;
 
-    // Category 2: Mutual visa agreement (ordinary passport) - 29 countries
-    const mutualFree = ['AL','AE','AG','BB','BS','BY','BA','DM','EC','FJ','GD','GE','KZ','QA','MV','MU','WS','RS','SC','SM','SR','SB','TH','TO','UZ','SG','AM','AZ','MY'];
-
-    // Category 3: 240-hour transit - 55 countries
-    const transit240 = ['AL','AT','BE','BG','BA','BR','CA','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LT','LU','MT','MC','ME','NL','MK','NO','PL','PT','RO','RU','RS','SK','SI','KR','ES','SE','CH','UA','GB','US','AU','NZ','JP','SG','BN','AE','QA','MX','AR','CL','ID','BY'];
-
-    // Determine best visa status for each country
-    function getVisaStatus(code) {
-      if (visaFree.includes(code)) return 'visa-free-30';
-      if (mutualFree.includes(code)) return 'mutual-free';
-      if (transit240.includes(code)) return 'transit';
-      return 'need-visa';
+      // Update per-stage progress
+      document.querySelectorAll('.checklist-stage').forEach(function(stage) {
+        const stageKey = stage.dataset.stage;
+        const cbs = stage.querySelectorAll('input[type="checkbox"]');
+        const checkedInStage = stage.querySelectorAll('input[type="checkbox"]:checked').length;
+        const totalInStage = cbs.length;
+        const label = document.querySelector('.stage-progress[data-stage="' + stageKey + '"]');
+        if (label) label.textContent = checkedInStage + '/' + totalInStage + ' \u2713';
+      });
     }
 
-    const countryNames = {
-      'AL':'ألبانيا','AD':'أندورا','AG':'أنتيغوا وباربودا','AR':'الأرجنتين','AM':'أرمينيا',
-      'AU':'أستراليا','AT':'النمسا','AZ':'أذربيجان','BS':'جزر البهاما','BH':'البحرين','BB':'بربادوس',
-      'BY':'بيلاروسيا','BE':'بلجيكا','BA':'البوسنة والهرسك','BR':'البرازيل','BN':'بروناي','BG':'بلغاريا',
-      'CA':'كندا','CL':'تشيلي','HR':'كرواتيا','CY':'قبرص','CZ':'جمهورية التشيك','DK':'الدنمارك',
-      'DM':'دومينيكا','EC':'الإكوادور','EG':'مصر','EE':'إستونيا','FJ':'فيجي','FI':'فنلندا','FR':'فرنسا',
-      'GE':'جورجيا','DE':'ألمانيا','GR':'اليونان','GD':'غرينادا','HU':'المجر',      'IS':'آيسلندا','IE':'أيرلندا','IN':'الهند','ID':'إندونيسيا','IT':'إيطاليا',
-      'JP':'اليابان','KZ':'كازاخستان','KE':'كينيا','KW':'الكويت','LV':'لاتفيا','LI':'ليختنشتاين',
-      'LT':'ليتوانيا','LU':'لوكسمبورغ','MY':'ماليزيا','MV':'جزر المالديف','MT':'مالطا','MU':'موريشيوس',
-      'MX':'المكسيك',
-      'MC':'موناكو','ME':'الجبل الأسود',      'NL':'هولندا','NZ':'نيوزيلندا','NG':'نيجيريا','MK':'مقدونيا الشمالية',
-      'NO':'النرويج','OM':'عُمان','PK':'باكستان','PE':'بيرو','PH':'الفلبين','PL':'بولندا','PT':'البرتغال','QA':'قطر','RO':'رومانيا',
-      'RU':'روسيا','WS':'ساموا','SM':'سان مارينو','SA':'المملكة العربية السعودية','RS':'صربيا','SC':'سيشل',
-      'SG':'سنغافورة','SK':'سلوفاكيا','SI':'سلوفينيا','SB':'جزر سليمان','ZA':'جنوب إفريقيا','KR':'كوريا الجنوبية',
-      'ES':'إسبانيا','SR':'سورينام','SE':'السويد','CH':'سويسرا','TH':'تايلاند','TO':'تونغا','TR':'تركيا',
-      'UA':'أوكرانيا',
-      'AE':'الإمارات العربية المتحدة','GB':'المملكة المتحدة','US':'الولايات المتحدة الأمريكية','UY':'الأوروغواي','UZ':'أوزبكستان','VN':'فيتنام'
-    };
+    const FILTER_KEY = STORAGE_KEY + '-filter';
+    const filterChips = document.querySelectorAll('.filter-chip');
+    const stages = document.querySelectorAll('.stage-group');
 
-    countrySelect.addEventListener('change', function() {
-      const val = this.value;
-      if (!val) {
-        resultDiv.innerHTML = '';
-        return;
-      }
-
-      const name = countryNames[val] || 'بلدك';
-      const status = getVisaStatus(val);
-
-      if (status === 'visa-free-30') {
-        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-green-50 border border-green-200"><p class="text-green-800 font-semibold mb-1">أخبار سارة! يمكن لمواطني ' + name + ' دخول الصين <span class="underline">بدون تأشيرة</span> لمدة تصل إلى 30 يوماً.</p><p class="text-green-700 text-sm mb-3">لا حاجة لتأشيرة للسياحة أو الأعمال أو العبور لأقل من 30 يوماً.</p><a href="/ar/visa/visa-free/" class="inline-block text-sm font-medium text-green-700 underline hover:no-underline">اطلع على القائمة الكاملة للدول المعفاة ←</a></div>';
-      } else if (status === 'mutual-free') {
-        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-green-50 border border-green-200"><p class="text-green-800 font-semibold mb-1">يمكن لمواطني ' + name + ' دخول الصين <span class="underline">بدون تأشيرة</span> بموجب اتفاقية متبادلة.</p><p class="text-green-700 text-sm mb-3">تحقق من نوع جواز سفرك ومدة الإقامة المسموح بها قبل السفر.</p><a href="/ar/visa/visa-free/" class="inline-block text-sm font-medium text-green-700 underline hover:no-underline">اطلع على قائمة الدول المعفاة ←</a></div>';
-      } else if (status === 'transit') {
-        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-blue-50 border border-blue-200"><p class="text-blue-800 font-semibold mb-1">يمكنك استخدام سياسة <span class="underline">العبور 240 ساعة</span>.</p><p class="text-blue-700 text-sm mb-3">يمكن لمواطني ' + name + ' العبور عبر الصين لمدة تصل إلى 10 أيام بدون تأشيرة. للإقامات الأطول، ستحتاج إلى تأشيرة L.</p><div class="flex flex-wrap gap-3"><a href="/ar/visa/transit-240/" class="text-sm font-medium text-blue-700 underline hover:no-underline">كيف تعمل سياسة العبور ←</a><a href="/ar/visa/apply-l-visa/" class="text-sm font-medium text-blue-700 underline hover:no-underline">تقديم طلب تأشيرة L ←</a></div></div>';
+    function applyFilter(show, skipScroll) {
+      filterChips.forEach(function(chip) {
+        if (chip.dataset.show === show) {
+          chip.classList.remove('bg-white', 'text-gray-600', 'border-gray-200');
+          chip.classList.add('bg-brand-50', 'text-brand-700', 'border-brand-300');
+        } else {
+          chip.classList.remove('bg-brand-50', 'text-brand-700', 'border-brand-300');
+          chip.classList.add('bg-white', 'text-gray-600', 'border-gray-200');
+        }
+      });
+      if (show === 'all') {
+        stages.forEach(function(s) { s.classList.remove('hidden'); });
+        // Scroll to checklist section header, not page top
+        if (!skipScroll) {
+          var sectionTitle = document.querySelector('#checklist-filter');
+          if (sectionTitle) {
+            var targetY = sectionTitle.getBoundingClientRect().top + window.scrollY - 80;
+            window.scrollTo({ top: targetY, behavior: 'smooth' });
+          }
+        }
       } else {
-        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-orange-50 border border-orange-200"><p class="text-orange-800 font-semibold mb-1">ستحتاج إلى تأشيرة.</p><p class="text-orange-700 text-sm mb-3">يحتاج مواطنو ' + name + ' إلى تقديم طلب للحصول على تأشيرة سياحية (نوع L) قبل السفر إلى الصين.</p><a href="/ar/visa/apply-l-visa/" class="inline-block text-sm font-medium text-orange-700 underline hover:no-underline">كيفية التقديم على تأشيرة L ←</a></div>';
+        var showList = show.split(',');
+        stages.forEach(function(s) {
+          if (showList.indexOf(s.dataset.stage) !== -1) {
+            s.classList.remove('hidden');
+          } else {
+            s.classList.add('hidden');
+          }
+        });
+        // Scroll to the first visible stage with offset (so progress/chips stay visible above)
+        if (!skipScroll) {
+          var firstStage = document.querySelector('.stage-group:not(.hidden)');
+          if (firstStage) {
+            var targetY = firstStage.getBoundingClientRect().top + window.scrollY - 120;
+            window.scrollTo({ top: targetY, behavior: 'smooth' });
+          }
+        }
       }
+      try { localStorage.setItem(FILTER_KEY, show); } catch(e) {}
+    }
+
+    filterChips.forEach(function(chip) {
+      chip.addEventListener('click', function() {
+        applyFilter(this.dataset.show);
+      });
     });
+
+    function saveState() {
+      const state = {};
+      checkboxes.forEach(function(cb) {
+        state[cb.closest('.checklist-item').dataset.key] = cb.checked;
+      });
+      try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch(e) {}
+    }
+
+    function loadState() {
+      try {
+        const saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
+        if (!saved) return;
+        checkboxes.forEach(function(cb) {
+          const key = cb.closest('.checklist-item').dataset.key;
+          if (saved[key]) {
+            cb.checked = true;
+            cb.closest('.checklist-item').classList.add('opacity-50', 'line-through');
+          }
+        });
+      } catch(e) {}
+      updateOverall();
+      // Restore last filter
+      try {
+        var savedFilter = localStorage.getItem(FILTER_KEY);
+        if (savedFilter) applyFilter(savedFilter, true);
+      } catch(e) {}
+    }
+
+    checkboxes.forEach(function(cb) {
+      cb.addEventListener('change', function() {
+        const item = this.closest('.checklist-item');
+        if (this.checked) {
+          item.classList.add('opacity-50', 'line-through');
+        } else {
+          item.classList.remove('opacity-50', 'line-through');
+        }
+        saveState();
+        updateOverall();
+      });
+    });
+
+    loadState();
   </script>
+
+
+
     <p class="text-xs text-gray-400 text-center mt-8">آخر تحديث: يوليو 2026</p>
 </Layout>

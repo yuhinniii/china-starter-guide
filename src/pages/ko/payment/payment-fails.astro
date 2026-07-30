@@ -109,28 +109,44 @@ const description = '중국에서 외국인 여행자를 위한 일반적인 결
       </div>
     </div>
 
-    <!-- Related Guides -->
-    <div class="bg-gray-50 rounded-2xl p-8 not-prose mt-12">
-      <h3 class="text-2xl font-bold text-gray-900 mb-6">📚 관련 가이드</h3>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <a href="/ko/payment/payment-guide/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
-          <p class="font-bold text-gray-900 mb-1">중국에서 결제하는 방법</p>
-          <p class="text-sm text-gray-600">전체 결제 개요</p>
-        </a>
-        <a href="/ko/payment/setup-alipay/" class="block bg-white rounded-xl p-5 hover:shadow-md transition border border-gray-100">
-          <p class="font-bold text-gray-900 mb-1">알리페이 설정 방법</p>
-          <p class="text-sm text-gray-600">단계별 설정 가이드</p>
-        </a>
+    <div class="border-t border-gray-100 pt-6 mt-8">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5 not-prose">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h3 class="text-sm font-bold text-gray-900">📚 다음 읽을거리</h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="/ko/payment/payment-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              중국에서 결제하는 방법
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ko/payment/setup-alipay/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              알리페이 설정 방법
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- Sources -->
-    <div class="mt-8 pt-6 border-t border-gray-200 not-prose">
-      <h3 class="text-lg font-bold text-gray-900 mb-3">출처</h3>
-      <ul class="space-y-2">
-        <li><a href="https://www.alipayplus.com/consumer/" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">Alipay - Consumers Center</a></li>
-        <li><a href="https://cs.help.wechat.com/hc/en-us" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">WeChat - Help Center</a></li>
-      </ul>
-    </div>
+    <div class="not-prose mt-12 pt-8 border-t border-gray-200">
+  <h3 class="text-base font-bold text-gray-900 mb-4 flex items-center gap-2">📚 출처</h3>
+  <ul class="space-y-2">
+    <li>
+      <a href="https://www.alipayplus.com/consumer/" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+        <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>
+        Alipay - Consumers Center
+        <svg class="w-3 h-3 text-gray-300 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+      </a>
+    </li>
+    <li>
+      <a href="https://cs.help.wechat.com/hc/en-us" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+        <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>
+        WeChat - Help Center
+        <svg class="w-3 h-3 text-gray-300 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+      </a>
+    </li>
+  </ul>
+</div>
   </article>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "HowTo", "name": "중국에서 결제 실패 시 대처 방법", "step": [{"@type": "HowToStep", "name": "다른 앱으로 전환", "text": "1 다른 앱으로 전환 — 알리페이가 실패하면 위챗페이 시도 (또는 그 반대)"}, {"@type": "HowToStep", "name": "현금 사용", "text": "2 현금 사용 — 항상 500~1000위안을 작은 지폐로 백업 준비"}, {"@type": "HowToStep", "name": "WiFi 연결", "text": "3 WiFi 연결 — 상점의 WiFi를 요청하세요; 때때로 셀룰러 데이터가 문제입니다"}, {"@type": "HowToStep", "name": "앱 재시작", "text": "4 앱 재시작 — 알리페이나 위챗을 닫고 다시 엽니다"}, {"@type": "HowToStep", "name": "기다렸다가 재시도", "text": "5 기다렸다가 재시도 — 일부 문제는 몇 분 후에 자동 해결됩니다"}]}</script>
 </Layout>

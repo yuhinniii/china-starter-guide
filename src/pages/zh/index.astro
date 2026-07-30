@@ -7,12 +7,9 @@ const description = '签证、支付、交通、生活贴士，来中国前需�
 <Layout title={title} description={description} lang="zh">
   <section class="text-center py-20 px-4">
     <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-gray-900">
-      来中国旅行前，<br/><span class="text-brand-600">你需要的一切指南</span>
+      自信游中国 —<br/><span class="text-brand-600">从签证到支付，一步步出行指南</span>
     </h1>
-    <p class="text-lg md:text-xl text-gray-500">
-      从必备知识开始，再根据你的行程找到对应的攻略。
-    </p>
-    <div class="flex flex-wrap justify-center gap-4">
+    <div class="flex flex-wrap justify-center gap-4 mt-10">
       <a href="/zh/visa/" class="bg-brand-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-brand-700 transition no-underline">开始准备</a>
       <a href="/zh/about/" class="border border-brand-600 text-brand-600 px-6 py-3 rounded-lg font-medium hover:bg-brand-50 transition no-underline">关于本站</a>
     </div>
@@ -28,283 +25,437 @@ const description = '签证、支付、交通、生活贴士，来中国前需�
         { href: '/zh/life/', title: '生活', desc: '常用App、看病、安全贴士、日常必备' },
       ].map(card => (
         <a href={card.href} class="group block p-5 rounded-2xl bg-gray-50 border border-gray-100 transition-all duration-200 no-underline">
-          <h3 class="text-lg font-semibold text-gray-900 group-hover:text-brand-600 mb-1">{card.title}</h3>
+          <h3 class="text-lg font-semibold text-gray-900 group-hover:text-brand-600 dark:group-hover:text-brand-400 mb-1">{card.title}</h3>
           <p class="text-sm text-gray-500">{card.desc}</p>
         </a>
       ))}
     </div>
   </section>
 
-  <!-- 行程阶段指引 -->
+  <!-- Interactive Pre-Departure Checklist -->
   <section class="max-w-5xl mx-auto px-4 py-12">
-    <h2 class="text-2xl font-bold text-gray-900 mb-2">你的行程，分步搞定</h2>
-    <p class="text-gray-500 mb-10">按你的阶段点进去——每条链接都指向你真正需要的那篇攻略。</p>
+    <h2 class="text-2xl font-bold text-gray-900 mb-2">你的中国旅行清单</h2>
+    <p class="text-gray-500 mb-4">从出发前一个月到抵达第一天——每完成一项就打个勾。</p>
+
+    <!-- Time Filter -->
+    <div id="checklist-filter" class="flex flex-wrap gap-2 mb-5">
+      <button class="filter-chip px-3 py-1.5 rounded-full border border-gray-200 bg-brand-50 text-brand-700 text-sm font-medium cursor-pointer transition hover:border-brand-300 active" data-show="all">全部阶段</button>
+      <button class="filter-chip px-3 py-1.5 rounded-full border border-gray-200 bg-white text-gray-600 text-sm font-medium cursor-pointer transition hover:border-brand-300 hover:text-brand-600" data-show="1">出发前1个月</button>
+      <button class="filter-chip px-3 py-1.5 rounded-full border border-gray-200 bg-white text-gray-600 text-sm font-medium cursor-pointer transition hover:border-brand-300 hover:text-brand-600" data-show="2">出发前2周</button>
+      <button class="filter-chip px-3 py-1.5 rounded-full border border-gray-200 bg-white text-gray-600 text-sm font-medium cursor-pointer transition hover:border-brand-300 hover:text-brand-600" data-show="3">出发前1周</button>
+      <button class="filter-chip px-3 py-1.5 rounded-full border border-gray-200 bg-white text-gray-600 text-sm font-medium cursor-pointer transition hover:border-brand-300 hover:text-brand-600" data-show="4,5">落地当天</button>
+      <button class="filter-chip px-3 py-1.5 rounded-full border border-gray-200 bg-white text-gray-600 text-sm font-medium cursor-pointer transition hover:border-brand-300 hover:text-brand-600" data-show="6">第一天</button>
+    </div>
+
+    <!-- Overall Progress -->
+    <div id="checklist-progress" class="bg-gray-50 rounded-2xl p-5 mb-10">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-sm font-semibold text-gray-700">总体进度</span>
+        <span id="progress-text" data-suffix="已完成" class="text-base font-bold text-brand-600">已完成 0 / 23</span>
+      </div>
+      <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+        <div id="progress-bar" class="h-full bg-brand-500 rounded-full transition-all duration-300" style="width:0%"></div>
+      </div>
+    </div>
 
     <div class="space-y-8">
-      <!-- 阶段 1 -->
-      <div class="relative pl-14">
-        <div class="absolute left-0 top-0 w-9 h-9 rounded-full bg-green-100 flex items-center justify-center text-sm font-bold text-green-700">1</div>
-        <div class="absolute left-[17px] top-9 bottom-0 w-0.5 bg-gray-100"></div>
-        <h3 class="text-lg font-bold text-gray-900 mb-3">出发之前</h3>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-          <a href="/zh/visa/visa-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-green-200 transition no-underline">
-            <span class="text-xs font-medium text-green-600">准备</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">你需要哪种签证？</p>
-          </a>
-          <a href="/zh/payment/payment-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-green-200 transition no-underline">
-            <span class="text-xs font-medium text-green-600">支付</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">在中国怎么付钱</p>
-          </a>
-          <a href="/zh/life/survival-kit/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-green-200 transition no-underline">
-            <span class="text-xs font-medium text-green-600">生活</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">出发前 checklist</p>
-          </a>
+
+      <!-- Stage 1: T-30 Days · 出发前一个月 -->
+      <div class="relative pl-12 stage-group" data-stage="1">
+        <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-green-100 flex items-center justify-center text-xs font-bold text-green-700">1</div>
+        <div class="absolute left-[14px] top-8 bottom-0 w-px bg-gray-200"></div>
+        <h3 class="text-base font-bold text-gray-900 mb-3">
+          <span class="text-green-700">T-30 Days</span> · 出发前一个月
+          <span class="stage-progress text-sm font-normal text-gray-400 ml-1" data-stage="1">0/3 ✓</span>
+        </h3>
+        <div class="space-y-1.5 checklist-stage" data-stage="1">
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="check-passport">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">01</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">检查护照有效期</p>
+              <p class="text-sm text-gray-500 mt-0.5">很多国家办中国签证要求护照有效期超过旅行日期至少6个月。出发前确认一下。</p>
+            </div>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="check-visa">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">02</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">确认签证类型或免签资格</p>
+              <p class="text-sm text-gray-500 mt-0.5">不确定要不要签证？用签证筛选器30秒查清。</p>
+            </div>
+            <a href="/zh/visa/visa-guide/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">查看指南 →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="travel-insurance">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">03</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">购买含医疗保险的旅行保险</p>
+              <p class="text-sm text-gray-500 mt-0.5">中国医院先交钱再看病。建议买至少10万美元医疗保额、含紧急救援的旅行保险。</p>
+            </div>
+            <a href="/zh/life/travel-insurance/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">查看指南 →</a>
+          </div>
         </div>
       </div>
 
-      <!-- 阶段 2 -->
-      <div class="relative pl-14">
-        <div class="absolute left-0 top-0 w-9 h-9 rounded-full bg-blue-100 flex items-center justify-center text-sm font-bold text-blue-700">2</div>
-        <div class="absolute left-[17px] top-9 bottom-0 w-0.5 bg-gray-100"></div>
-        <h3 class="text-lg font-bold text-gray-900 mb-3">刚落地</h3>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-          <a href="/zh/transport/airport-to-city/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-blue-200 transition no-underline">
-            <span class="text-xs font-medium text-blue-600">交通</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">从机场怎么进城</p>
-          </a>
-          <a href="/zh/life/sim-card-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-blue-200 transition no-underline">
-            <span class="text-xs font-medium text-blue-600">生活</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">手机卡和上网</p>
-          </a>
-          <a href="/zh/life/vpn-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-blue-200 transition no-underline">
-            <span class="text-xs font-medium text-blue-600">生活</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">VPN 怎么设置</p>
-          </a>
+      <!-- Stage 2: T-15 Days · 出发前两周 -->
+      <div class="relative pl-12 stage-group" data-stage="2">
+        <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-xs font-bold text-blue-700">2</div>
+        <div class="absolute left-[14px] top-8 bottom-0 w-px bg-gray-200"></div>
+        <h3 class="text-base font-bold text-gray-900 mb-3">
+          <span class="text-blue-700">T-15 Days</span> · 出发前两周
+          <span class="stage-progress text-sm font-normal text-gray-400 ml-1" data-stage="2">0/6 ✓</span>
+        </h3>
+        <div class="space-y-1.5 checklist-stage" data-stage="2">
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="buy-vpn">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">04</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">购买 VPN 并安装</p>
+              <p class="text-sm text-gray-500 mt-0.5">在中国境内下不了 VPN。出发前买好装到所有设备上，在家测试连通。</p>
+            </div>
+            <a href="/zh/life/vpn-guide/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">查看指南 →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="buy-esim">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">05</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">购买 eSIM</p>
+              <p class="text-sm text-gray-500 mt-0.5">选一个支持中国的 eSIM，最好经香港路由能绕过防火墙。出发前装好。</p>
+            </div>
+            <a href="/zh/life/sim-card-guide/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">查看指南 →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="setup-alipay">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">06</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">设置支付宝并绑定银行卡</p>
+              <p class="text-sm text-gray-500 mt-0.5">建议绑一张信用卡加一张储蓄卡。小店个人收款码刷不了信用卡，但储蓄卡能付。</p>
+            </div>
+            <a href="/zh/payment/payment-guide/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">查看指南 →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="setup-wechat">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">07</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">设置微信支付（备用）</p>
+              <p class="text-sm text-gray-500 mt-0.5">Alipay 能搞定95%支付，但有的小餐馆只能用微信。当备用装了也不亏。</p>
+            </div>
+            <a href="/zh/payment/setup-wechat/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">查看指南 →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="book-hotel">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">08</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">预订能接待外宾的酒店</p>
+              <p class="text-sm text-gray-500 mt-0.5">不是所有酒店都能接待外宾。用 Trip.com 订房筛选有外国人好评的酒店。</p>
+            </div>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="notify-bank">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">09</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">通知银行你要去中国</p>
+              <p class="text-sm text-gray-500 mt-0.5">有些银行会自动拦截中国交易。出发前去 App 设旅行通知，5分钟省心。</p>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- 阶段 3 -->
-      <div class="relative pl-14">
-        <div class="absolute left-0 top-0 w-9 h-9 rounded-full bg-purple-100 flex items-center justify-center text-sm font-bold text-purple-700">3</div>
-        <h3 class="text-lg font-bold text-gray-900 mb-3">旅途中</h3>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-          <a href="/zh/transport/transport-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-purple-200 transition no-underline">
-            <span class="text-xs font-medium text-purple-600">交通</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">在中国怎么出行</p>
-          </a>
-          <a href="/zh/life/essential-apps/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-purple-200 transition no-underline">
-            <span class="text-xs font-medium text-purple-600">生活</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">10 个必备 App</p>
-          </a>
-          <a href="/zh/life/chinese-phrases/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-purple-200 transition no-underline">
-            <span class="text-xs font-medium text-purple-600">生活</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">基础中文用语</p>
-          </a>
+      <!-- Stage 3: T-7 Days · 临行前 -->
+      <div class="relative pl-12 stage-group" data-stage="3">
+        <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center text-xs font-bold text-indigo-700">3</div>
+        <div class="absolute left-[14px] top-8 bottom-0 w-px bg-gray-200"></div>
+        <h3 class="text-base font-bold text-gray-900 mb-3">
+          <span class="text-indigo-700">T-7 Days</span> · 临行前
+          <span class="stage-progress text-sm font-normal text-gray-400 ml-1" data-stage="3">0/4 ✓</span>
+        </h3>
+        <div class="space-y-1.5 checklist-stage" data-stage="3">
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="test-vpn">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">10</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">在所有设备上测试 VPN</p>
+              <p class="text-sm text-gray-500 mt-0.5">确认手机、笔记本、平板都能连。在家测好，到了中国 VPN 官网也打不开。</p>
+            </div>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="install-apps">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">11</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">安装中国旅行必备 App</p>
+              <p class="text-sm text-gray-500 mt-0.5">Baidu Maps、Didi、Trip.com。趁 App Store 还能下先装好。</p>
+            </div>
+            <a href="/zh/life/essential-apps/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">查看指南 →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="learn-chinese">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">12</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">学10句基础中文</p>
+              <p class="text-sm text-gray-500 mt-0.5">会说"谢谢"和"多少钱"，别人对你的态度会不一样。从最常用的开始学。</p>
+            </div>
+            <a href="/zh/life/chinese-phrases/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">查看指南 →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="backup-docs">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">13</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">备份护照、签证、保险的电子版</p>
+              <p class="text-sm text-gray-500 mt-0.5">在手机和云盘各存一份扫描件。原件丢了，备份是最后的救命稻草。</p>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- 阶段 4 -->
-      <div class="relative pl-14">
-        <div class="absolute left-0 top-0 w-9 h-9 rounded-full bg-red-100 flex items-center justify-center text-sm font-bold text-red-700">4</div>
-        <h3 class="text-lg font-bold text-gray-900 mb-3">需要帮助？</h3>
-        <div class="grid grid-cols-1 sm:grid-cols-4 gap-3">
-          <a href="/zh/life/seeing-a-doctor/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
-            <span class="text-xs font-medium text-red-600">生活</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">看病怎么办</p>
-          </a>
-          <a href="/zh/life/common-scams/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
-            <span class="text-xs font-medium text-red-600">生活</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">常见骗局避坑</p>
-          </a>
-          <a href="/zh/life/emergency-numbers/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
-            <span class="text-xs font-medium text-red-600">生活</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">紧急电话</p>
-          </a>
-          <a href="/zh/payment/payment-fails/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
-            <span class="text-xs font-medium text-red-600">支付</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">付款失败怎么办</p>
-          </a>
+      <!-- Stage 4: T-24h · 最后准备 -->
+      <div class="relative pl-12 stage-group" data-stage="4">
+        <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center text-xs font-bold text-amber-700">4</div>
+        <div class="absolute left-[14px] top-8 bottom-0 w-px bg-gray-200"></div>
+        <h3 class="text-base font-bold text-gray-900 mb-3">
+          <span class="text-amber-700">T-24h</span> · 最后准备
+          <span class="stage-progress text-sm font-normal text-gray-400 ml-1" data-stage="4">0/3 ✓</span>
+        </h3>
+        <div class="space-y-1.5 checklist-stage" data-stage="4">
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="check-in">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">16</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">在线值机并确认航班</p>
+              <p class="text-sm text-gray-500 mt-0.5">早点选座，顺便看看有没有换登机口。别拖到最后。</p>
+            </div>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="withdraw-cash">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">15</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">取 500-1000 元现金</p>
+              <p class="text-sm text-gray-500 mt-0.5">中国95%无现金，但支付 App 至少崩一次。现金是出租车、小摊扫码失败时的救命钱。</p>
+            </div>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="power-bank">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">16</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">充电宝和转换插头放随身行李</p>
+              <p class="text-sm text-gray-500 mt-0.5">手机管一切：地图、付钱、翻译。飞行途中和落地后保持电量充足。</p>
+            </div>
+          </div>
         </div>
       </div>
+
+      <!-- Stage 5: 落地当天 · 落地头两小时 -->
+      <div class="relative pl-12 stage-group" data-stage="5">
+        <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-teal-100 flex items-center justify-center text-xs font-bold text-teal-700">5</div>
+        <div class="absolute left-[14px] top-8 bottom-0 w-px bg-gray-200"></div>
+        <h3 class="text-base font-bold text-gray-900 mb-3">
+          <span class="text-teal-700">落地当天</span> · 落地头两小时
+          <span class="stage-progress text-sm font-normal text-gray-400 ml-1" data-stage="5">0/3 ✓</span>
+        </h3>
+        <div class="space-y-1.5 checklist-stage" data-stage="5">
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="activate-esim">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">17</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">激活 eSIM 打开数据</p>
+              <p class="text-sm text-gray-500 mt-0.5">过海关后第一件事：开网。之后的地图、打车、翻译、付钱全都要靠网络。</p>
+            </div>
+            <a href="/zh/life/sim-card-guide/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">查看指南 →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="connect-vpn">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">18</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">连接 VPN</p>
+              <p class="text-sm text-gray-500 mt-0.5">打开任何 App 前先连 VPN。不连的话 WhatsApp 收不到，Google Maps 空白。</p>
+            </div>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="airport-to-city">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">19</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">从机场到酒店</p>
+              <p class="text-sm text-gray-500 mt-0.5">大部分机场坐地铁最便宜也最简单。Didi 是好的备选。</p>
+            </div>
+            <a href="/zh/transport/airport-to-city/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">查看指南 →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stage 6: 第一天 · 安顿下来 -->
+      <div class="relative pl-12 stage-group" data-stage="6">
+        <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-violet-100 flex items-center justify-center text-xs font-bold text-violet-700">6</div>
+        <div class="absolute left-[14px] top-8 bottom-0 w-px bg-gray-200"></div>
+        <h3 class="text-base font-bold text-gray-900 mb-3">
+          <span class="text-violet-700">第一天</span> · 安顿下来
+          <span class="stage-progress text-sm font-normal text-gray-400 ml-1" data-stage="6">0/4 ✓</span>
+        </h3>
+        <div class="space-y-1.5 checklist-stage" data-stage="6">
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="test-payment">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">20</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">小额支付测试支付宝</p>
+              <p class="text-sm text-gray-500 mt-0.5">去便利店买瓶水试试。二维码能扫通就稳了。不行还有时间解决。</p>
+            </div>
+            <a href="/zh/payment/payment-guide/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">查看指南 →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="police-registration">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">21</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">确认酒店已做住宿登记</p>
+              <p class="text-sm text-gray-500 mt-0.5">酒店必须在24小时内向外籍住客登记。大部分会自动处理，最好确认一下。</p>
+            </div>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="try-transport">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">22</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">坐一次地铁或叫一次滴滴</p>
+              <p class="text-sm text-gray-500 mt-0.5">坐一站地铁或叫个 Didi 去附近咖啡店。今天先摸清交通。</p>
+            </div>
+            <a href="/zh/transport/transport-guide/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">查看指南 →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="emergency-numbers">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">23</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">在手机里存好紧急号码</p>
+              <p class="text-sm text-gray-500 mt-0.5">110（报警）、120（急救）、119（火警）。顺便存一下大使馆电话。真到用时肯定记不住。</p>
+            </div>
+            <a href="/zh/life/emergency-numbers/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">查看指南 →</a>
+          </div>
+        </div>
+      </div>
+
     </div>
+
+    <p class="text-xs text-gray-400 text-center mt-10">你的进度保存在浏览器中，清除浏览器数据会重置。</p>
   </section>
 
-  <!-- 签证查询工具 -->
-  <section class="max-w-5xl mx-auto px-4 pb-16">
-    <div class="border-t border-gray-100 pt-12">
-      <div class="max-w-2xl mx-auto">
-        <h2 class="text-2xl font-bold text-gray-900 mb-2 text-center">签证查询</h2>
-        <p class="text-gray-500 text-center mb-8">不确定自己要不要签证？选你的国籍，我们告诉你。</p>
-
-        <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100">
-          <label for="visa-country" class="block text-sm font-medium text-gray-700 mb-2">你的国籍</label>
-          <select id="visa-country" class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-brand-500 text-base appearance-none cursor-pointer">
-            <option value="">— 选择你的国家 —</option>
-            <option value="AL">阿尔巴尼亚</option>
-            <option value="AD">安道尔</option>
-            <option value="AG">安提瓜和巴布达</option>
-            <option value="AR">阿根廷</option>
-            <option value="AM">亚美尼亚</option>
-            <option value="AU">澳大利亚</option>
-            <option value="AT">奥地利</option>
-            <option value="AZ">阿塞拜疆</option>
-            <option value="BS">巴哈马</option>
-            <option value="BH">巴林</option>
-            <option value="BD">孟加拉国</option>
-            <option value="BB">巴巴多斯</option>
-            <option value="BY">白俄罗斯</option>
-            <option value="BE">比利时</option>
-            <option value="BA">波斯尼亚和黑塞哥维那</option>
-            <option value="BR">巴西</option>
-            <option value="BN">文莱</option>
-            <option value="BG">保加利亚</option>
-            <option value="CA">加拿大</option>
-            <option value="CL">智利</option>
-            <option value="HR">克罗地亚</option>
-            <option value="CY">塞浦路斯</option>
-            <option value="CZ">捷克</option>
-            <option value="DK">丹麦</option>
-            <option value="DM">多米尼克</option>
-            <option value="EC">厄瓜多尔</option>
-            <option value="EG">埃及</option>
-            <option value="EE">爱沙尼亚</option>
-            <option value="FJ">斐济</option>
-            <option value="FI">芬兰</option>
-            <option value="FR">法国</option>
-            <option value="GE">格鲁吉亚</option>
-            <option value="DE">德国</option>
-            <option value="GR">希腊</option>
-            <option value="GD">格林纳达</option>
-            <option value="HU">匈牙利</option>
-            <option value="IS">冰岛</option>
-            <option value="IN">印度</option>
-            <option value="ID">印度尼西亚</option>
-            <option value="IE">爱尔兰</option>
-            <option value="IT">意大利</option>
-            <option value="JP">日本</option>
-            <option value="KZ">哈萨克斯坦</option>
-            <option value="KE">肯尼亚</option>
-            <option value="KW">科威特</option>
-            <option value="LV">拉脱维亚</option>
-            <option value="LI">列支敦士登</option>
-            <option value="LT">立陶宛</option>
-            <option value="LU">卢森堡</option>
-            <option value="MY">马来西亚</option>
-            <option value="MV">马尔代夫</option>
-            <option value="MT">马耳他</option>
-            <option value="MU">毛里求斯</option>
-            <option value="MX">墨西哥</option>
-            <option value="MC">摩纳哥</option>
-            <option value="ME">黑山</option>
-            <option value="NL">荷兰</option>
-            <option value="NZ">新西兰</option>
-            <option value="NG">尼日利亚</option>
-            <option value="MK">北马其顿</option>
-            <option value="NO">挪威</option>
-            <option value="OM">阿曼</option>
-            <option value="PK">巴基斯坦</option>
-            <option value="PE">秘鲁</option>
-            <option value="PH">菲律宾</option>
-            <option value="PL">波兰</option>
-            <option value="PT">葡萄牙</option>
-            <option value="QA">卡塔尔</option>
-            <option value="RO">罗马尼亚</option>
-            <option value="RU">俄罗斯</option>
-            <option value="WS">萨摩亚</option>
-            <option value="SM">圣马力诺</option>
-            <option value="SA">沙特阿拉伯</option>
-            <option value="RS">塞尔维亚</option>
-            <option value="SC">塞舌尔</option>
-            <option value="SG">新加坡</option>
-            <option value="SK">斯洛伐克</option>
-            <option value="SI">斯洛文尼亚</option>
-            <option value="SB">所罗门群岛</option>
-            <option value="ZA">南非</option>
-            <option value="KR">韩国</option>
-            <option value="ES">西班牙</option>
-            <option value="SR">苏里南</option>
-            <option value="SE">瑞典</option>
-            <option value="CH">瑞士</option>
-            <option value="TH">泰国</option>
-            <option value="TO">汤加</option>
-            <option value="TR">土耳其</option>
-            <option value="UA">乌克兰</option>
-            <option value="AE">阿拉伯联合酋长国</option>
-            <option value="GB">英国</option>
-            <option value="US">美国</option>
-            <option value="UY">乌拉圭</option>
-            <option value="UZ">乌兹别克斯坦</option>
-            <option value="VN">越南</option>
-            <option value="OTHER">其他国家</option>
-          </select>
-
-          <div id="visa-result" class="mt-6"></div>
-        </div>
-
-        <p class="text-xs text-gray-400 text-center mt-4">签证政策随时可能调整。订票前请务必向当地中国使领馆核实最新信息。</p>
-      </div>
-    </div>
-  </section>
+  
 
   <script is:inline>
-    const countrySelect = document.getElementById('visa-country');
-    const resultDiv = document.getElementById('visa-result');
+    const STORAGE_KEY = 'chinastarterhub-checklist-home';
+    const checkboxes = document.querySelectorAll('.checklist-item input[type="checkbox"]');
+    const progressBar = document.getElementById('progress-bar');
+    const progressText = document.getElementById('progress-text');
 
-    // 资料来源：中国政府网官方名单（2025）
-    // 类别 1：单方面免签（30天）- 50国
-    const visaFree = ['BN','FR','DE','IT','ES','NL','CH','IE','HU','AT','BE','LU','NZ','AU','PL','PT','GR','CY','SI','SK','NO','FI','DK','IS','AD','MC','LI','KR','BG','RO','HR','ME','MK','MT','EE','LV','JP','BR','AR','CL','PE','UY','SA','OM','KW','BH','CA','RU','GB','SE'];
+    function updateOverall() {
+      const checked = document.querySelectorAll('.checklist-item input[type="checkbox"]:checked').length;
+      const total = checkboxes.length;
+      const pct = total > 0 ? Math.round((checked / total) * 100) : 0;
+      progressBar.style.width = pct + '%';
+      const __suffix = progressText.dataset.suffix || 'completed'; progressText.textContent = checked + ' / ' + total + ' ' + __suffix;
 
-    // 类别 2：互免签证协议（普通护照）- 29国
-    const mutualFree = ['AL','AE','AG','BB','BS','BY','BA','DM','EC','FJ','GD','GE','KZ','QA','MV','MU','WS','RS','SC','SM','SR','SB','TH','TO','UZ','SG','AM','AZ','MY'];
-
-    // 类别 3：240小时过境免签 - 55国
-    const transit240 = ['AL','AT','BE','BG','BA','BR','CA','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LT','LU','MT','MC','ME','NL','MK','NO','PL','PT','RO','RU','RS','SK','SI','KR','ES','SE','CH','UA','GB','US','AU','NZ','JP','SG','BN','AE','QA','MX','AR','CL','ID','BY'];
-
-    function getVisaStatus(code) {
-      if (visaFree.includes(code)) return 'visa-free-30';
-      if (mutualFree.includes(code)) return 'mutual-free';
-      if (transit240.includes(code)) return 'transit';
-      return 'need-visa';
+      // Update per-stage progress
+      document.querySelectorAll('.checklist-stage').forEach(function(stage) {
+        const stageKey = stage.dataset.stage;
+        const cbs = stage.querySelectorAll('input[type="checkbox"]');
+        const checkedInStage = stage.querySelectorAll('input[type="checkbox"]:checked').length;
+        const totalInStage = cbs.length;
+        const label = document.querySelector('.stage-progress[data-stage="' + stageKey + '"]');
+        if (label) label.textContent = checkedInStage + '/' + totalInStage + ' \u2713';
+      });
     }
 
-    const countryNames = {
-      'AL':'阿尔巴尼亚','AD':'安道尔','AG':'安提瓜和巴布达','AR':'阿根廷','AM':'亚美尼亚',
-      'AU':'澳大利亚','AT':'奥地利','AZ':'阿塞拜疆','BS':'巴哈马','BH':'巴林','BB':'巴巴多斯',
-      'BY':'白俄罗斯','BE':'比利时','BA':'波斯尼亚和黑塞哥维那','BR':'巴西','BN':'文莱','BG':'保加利亚',
-      'CA':'加拿大','CL':'智利','HR':'克罗地亚','CY':'塞浦路斯','CZ':'捷克','DK':'丹麦',
-      'DM':'多米尼克','EC':'厄瓜多尔','EG':'埃及','EE':'爱沙尼亚','FJ':'斐济','FI':'芬兰','FR':'法国',
-      'GE':'格鲁吉亚','DE':'德国','GR':'希腊','GD':'格林纳达','HU':'匈牙利','IS':'冰岛','IE':'爱尔兰',
-      'IN':'印度','ID':'印度尼西亚','IT':'意大利','JP':'日本','KZ':'哈萨克斯坦','KE':'肯尼亚','KW':'科威特',
-      'LV':'拉脱维亚','LI':'列支敦士登','LT':'立陶宛','LU':'卢森堡','MY':'马来西亚','MV':'马尔代夫',
-      'MT':'马耳他','MU':'毛里求斯','MX':'墨西哥','MC':'摩纳哥','ME':'黑山','NL':'荷兰','NZ':'新西兰','NG':'尼日利亚',
-      'MK':'北马其顿','NO':'挪威','OM':'阿曼','PK':'巴基斯坦','PE':'秘鲁','PH':'菲律宾','PL':'波兰',
-      'PT':'葡萄牙','QA':'卡塔尔','RO':'罗马尼亚','RU':'俄罗斯','WS':'萨摩亚','SM':'圣马力诺',
-      'SA':'沙特阿拉伯','RS':'塞尔维亚','SC':'塞舌尔','SG':'新加坡','SK':'斯洛伐克','SI':'斯洛文尼亚',
-      'SB':'所罗门群岛','ZA':'南非','KR':'韩国','ES':'西班牙','SR':'苏里南','SE':'瑞典','CH':'瑞士',
-      'TH':'泰国','TO':'汤加','TR':'土耳其','UA':'乌克兰','AE':'阿拉伯联合酋长国','GB':'英国','US':'美国',
-      'UY':'乌拉圭','UZ':'乌兹别克斯坦','VN':'越南'
-    };
+    const FILTER_KEY = STORAGE_KEY + '-filter';
+    const filterChips = document.querySelectorAll('.filter-chip');
+    const stages = document.querySelectorAll('.stage-group');
 
-    countrySelect.addEventListener('change', function() {
-      const val = this.value;
-      if (!val) {
-        resultDiv.innerHTML = '';
-        return;
-      }
-
-      const name = countryNames[val] || '您的国家';
-      const status = getVisaStatus(val);
-
-      if (status === 'visa-free-30') {
-        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-green-50 border border-green-200"><p class="text-green-800 font-semibold mb-1">好消息！<span class="underline">' + name + '</span> 公民可以 <span class="underline">免签</span> 入境中国，最长停留 30 天。</p><p class="text-green-700 text-sm mb-3">旅游、商务或过境，30 天内都不需要办签证。</p><a href="/zh/visa/visa-free/" class="inline-block text-sm font-medium text-green-700 underline hover:no-underline">查看完整免签名单 →</a></div>';
-      } else if (status === 'mutual-free') {
-        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-green-50 border border-green-200"><p class="text-green-800 font-semibold mb-1"><span class="underline">' + name + '</span> 公民可根据互免协议 <span class="underline">免签</span> 入境中国。</p><p class="text-green-700 text-sm mb-3">出行前请确认护照类型和允许停留时长。</p><a href="/zh/visa/visa-free/" class="inline-block text-sm font-medium text-green-700 underline hover:no-underline">查看免签国家列表 →</a></div>';
-      } else if (status === 'transit') {
-        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-blue-50 border border-blue-200"><p class="text-blue-800 font-semibold mb-1">你可以使用 <span class="underline">240 小时过境免签</span> 政策。</p><p class="text-blue-700 text-sm mb-3"><span class="underline">' + name + '</span> 公民过境中国可停留最长 10 天无需签证。如果停留更久，需要申请 L 签证。</p><div class="flex flex-wrap gap-3"><a href="/zh/visa/transit-240/" class="text-sm font-medium text-blue-700 underline hover:no-underline">了解过境政策 →</a><a href="/zh/visa/apply-l-visa/" class="text-sm font-medium text-blue-700 underline hover:no-underline">申请 L 签证 →</a></div></div>';
+    function applyFilter(show, skipScroll) {
+      filterChips.forEach(function(chip) {
+        if (chip.dataset.show === show) {
+          chip.classList.remove('bg-white', 'text-gray-600', 'border-gray-200');
+          chip.classList.add('bg-brand-50', 'text-brand-700', 'border-brand-300');
+        } else {
+          chip.classList.remove('bg-brand-50', 'text-brand-700', 'border-brand-300');
+          chip.classList.add('bg-white', 'text-gray-600', 'border-gray-200');
+        }
+      });
+      if (show === 'all') {
+        stages.forEach(function(s) { s.classList.remove('hidden'); });
+        // Scroll to checklist section header, not page top
+        if (!skipScroll) {
+          var sectionTitle = document.querySelector('#checklist-filter');
+          if (sectionTitle) {
+            var targetY = sectionTitle.getBoundingClientRect().top + window.scrollY - 80;
+            window.scrollTo({ top: targetY, behavior: 'smooth' });
+          }
+        }
       } else {
-        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-orange-50 border border-orange-200"><p class="text-orange-800 font-semibold mb-1">你需要办理签证。</p><p class="text-orange-700 text-sm mb-3"><span class="underline">' + name + '</span> 公民需要在出发前申请旅游签证（L 类）。</p><a href="/zh/visa/apply-l-visa/" class="inline-block text-sm font-medium text-orange-700 underline hover:no-underline">如何申请 L 签证 →</a></div>';
+        var showList = show.split(',');
+        stages.forEach(function(s) {
+          if (showList.indexOf(s.dataset.stage) !== -1) {
+            s.classList.remove('hidden');
+          } else {
+            s.classList.add('hidden');
+          }
+        });
+        // Scroll to the first visible stage with offset (so progress/chips stay visible above)
+        if (!skipScroll) {
+          var firstStage = document.querySelector('.stage-group:not(.hidden)');
+          if (firstStage) {
+            var targetY = firstStage.getBoundingClientRect().top + window.scrollY - 120;
+            window.scrollTo({ top: targetY, behavior: 'smooth' });
+          }
+        }
       }
+      try { localStorage.setItem(FILTER_KEY, show); } catch(e) {}
+    }
+
+    filterChips.forEach(function(chip) {
+      chip.addEventListener('click', function() {
+        applyFilter(this.dataset.show);
+      });
     });
+
+    function saveState() {
+      const state = {};
+      checkboxes.forEach(function(cb) {
+        state[cb.closest('.checklist-item').dataset.key] = cb.checked;
+      });
+      try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch(e) {}
+    }
+
+    function loadState() {
+      try {
+        const saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
+        if (!saved) return;
+        checkboxes.forEach(function(cb) {
+          const key = cb.closest('.checklist-item').dataset.key;
+          if (saved[key]) {
+            cb.checked = true;
+            cb.closest('.checklist-item').classList.add('opacity-50', 'line-through');
+          }
+        });
+      } catch(e) {}
+      updateOverall();
+      // Restore last filter
+      try {
+        var savedFilter = localStorage.getItem(FILTER_KEY);
+        if (savedFilter) applyFilter(savedFilter, true);
+      } catch(e) {}
+    }
+
+    checkboxes.forEach(function(cb) {
+      cb.addEventListener('change', function() {
+        const item = this.closest('.checklist-item');
+        if (this.checked) {
+          item.classList.add('opacity-50', 'line-through');
+        } else {
+          item.classList.remove('opacity-50', 'line-through');
+        }
+        saveState();
+        updateOverall();
+      });
+    });
+
+    loadState();
   </script>
+
+    
+
     <p class="text-xs text-gray-400 text-center mt-8">最后更新：2026年7月</p>
 </Layout>

@@ -7,19 +7,14 @@ const description = '중국 방문 전 알아야 할 모든 것: 결제, 교통,
 <Layout title={title} description={description} lang="ko">
   <!-- Trigger rebuild: 2026-06-12 17:30 -->
   <section class="text-center py-20 px-4">
-    <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-gray-900  ">
-      중국 첫 방문을 위한<br/><span class="text-brand-600">명확하고 최신의 가이드</span>
+    <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-gray-900">
+      자신감 있게 중국 여행을 —<br/><span class="text-brand-600">비자부터 결제, 이동까지 단계별 가이드</span>
     </h1>
-    <p class="text-lg md:text-xl text-gray-500  ">
-      필수 정보부터 시작해 여행 일정에 맞는 가이드를 따라가보세요.
-    </p>
-    <div class="flex flex-wrap justify-center gap-4">
+    <div class="flex flex-wrap justify-center gap-4 mt-10">
       <a href="/ko/visa/" class="bg-brand-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-brand-700 transition no-underline">시작하기</a>
       <a href="/ko/about/" class="border border-brand-600 text-brand-600 px-6 py-3 rounded-lg font-medium hover:bg-brand-50 transition no-underline">사이트 소개</a>
     </div>
-  </section>
-
-  <!-- Section: Category Cards -->
+  </section>  <!-- Section: Category Cards -->
   <section class="max-w-5xl mx-auto px-4 pb-16">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
       {[
@@ -29,286 +24,442 @@ const description = '중국 방문 전 알아야 할 모든 것: 결제, 교통,
         { href: '/ko/life/', title: '중국 생활', desc: '앱, 의료, 안전 팁, 일상생활.' },
       ].map(card => (
         <a href={card.href} class="group block p-5 rounded-2xl bg-gray-50  :bg-brand-50 dark:hover:bg-brand-950 border border-gray-100  :border-brand-200 dark:hover:border-brand-800 transition-all duration-200 no-underline">
-          <h3 class="text-lg font-semibold text-gray-900  :text-brand-600 dark:group-hover:text-brand-400 mb-1">{card.title}</h3>
+          <h3 class="text-lg font-semibold text-gray-900  group-hover:text-brand-600 dark:group-hover:text-brand-400 mb-1">{card.title}</h3>
           <p class="text-sm text-gray-500  ">{card.desc}</p>
         </a>
       ))}
     </div>
   </section>
 
-  <!-- Your Trip: Step by Step -->
+<!-- Interactive Pre-Departure Checklist -->
   <section class="max-w-5xl mx-auto px-4 py-12">
-    <h2 class="text-2xl font-bold text-gray-900 mb-2">여행 단계별 가이드</h2>
-    <p class="text-gray-500 mb-10">현재 단계를 선택하세요 — 각 단계는 실제로 필요한 가이드로 연결됩니다.</p>
+    <h2 class="text-2xl font-bold text-gray-900 mb-2">중국 여행 체크리스트</h2>
+    <p class="text-gray-500 mb-4">한 달 전부터 첫날까지 — 각 항목을 완료할 때마다 체크하세요.</p>
+
+    <!-- Time Filter -->
+    <div id="checklist-filter" class="flex flex-wrap gap-2 mb-5">
+      <button class="filter-chip px-3 py-1.5 rounded-full border border-gray-200 bg-brand-50 text-brand-700 text-sm font-medium cursor-pointer transition hover:border-brand-300 active" data-show="all">모든 단계</button>
+      <button class="filter-chip px-3 py-1.5 rounded-full border border-gray-200 bg-white text-gray-600 text-sm font-medium cursor-pointer transition hover:border-brand-300 hover:text-brand-600" data-show="1">1개월 전</button>
+      <button class="filter-chip px-3 py-1.5 rounded-full border border-gray-200 bg-white text-gray-600 text-sm font-medium cursor-pointer transition hover:border-brand-300 hover:text-brand-600" data-show="2">2주 전</button>
+      <button class="filter-chip px-3 py-1.5 rounded-full border border-gray-200 bg-white text-gray-600 text-sm font-medium cursor-pointer transition hover:border-brand-300 hover:text-brand-600" data-show="3">1주 전</button>
+      <button class="filter-chip px-3 py-1.5 rounded-full border border-gray-200 bg-white text-gray-600 text-sm font-medium cursor-pointer transition hover:border-brand-300 hover:text-brand-600" data-show="4,5">도착</button>
+      <button class="filter-chip px-3 py-1.5 rounded-full border border-gray-200 bg-white text-gray-600 text-sm font-medium cursor-pointer transition hover:border-brand-300 hover:text-brand-600" data-show="6">첫째 날</button>
+    </div>
+
+    <!-- Overall Progress -->
+    <div id="checklist-progress" class="bg-gray-50 rounded-2xl p-5 mb-10">
+      <div class="flex items-center justify-between mb-1.5">
+        <span class="text-sm font-semibold text-gray-700">전체 진행 상황</span>
+        <span id="progress-text" data-suffix="완료" class="text-base font-bold text-brand-600">0 / 23 완료</span>
+      </div>
+      <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+        <div id="progress-bar" class="h-full bg-brand-500 rounded-full transition-all duration-300" style="width:0%"></div>
+      </div>
+    </div>
 
     <div class="space-y-8">
-      <!-- Stage 1 -->
-      <div class="relative pl-14">
-        <div class="absolute left-0 top-0 w-9 h-9 rounded-full bg-green-100 flex items-center justify-center text-sm font-bold text-green-700">1</div>
-        <div class="absolute left-[17px] top-9 bottom-0 w-0.5 bg-gray-100"></div>
-        <h3 class="text-lg font-bold text-gray-900 mb-3">출국 전</h3>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-          <a href="/ko/visa/visa-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-green-200 transition no-underline">
-            <span class="text-xs font-medium text-green-600">준비</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">어떤 비자가 필요할까요?</p>
-          </a>
-          <a href="/ko/payment/payment-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-green-200 transition no-underline">
-            <span class="text-xs font-medium text-green-600">결제</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">중국에서 결제하는 방법</p>
-          </a>
-          <a href="/ko/life/survival-kit/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-green-200 transition no-underline">
-            <span class="text-xs font-medium text-green-600">생활</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">출발 전 체크리스트</p>
-          </a>
+
+      <!-- Stage 1: T-30일 · 출발 한 달 전 -->
+      <div class="relative pl-12 stage-group" data-stage="1">
+        <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-green-100 flex items-center justify-center text-xs font-bold text-green-700">1</div>
+        <div class="absolute left-[14px] top-8 bottom-0 w-px bg-gray-200"></div>
+        <h3 class="text-base font-bold text-gray-900 mb-3">
+          <span class="text-green-700">T-30일</span> · 출발 한 달 전
+          <span class="stage-progress text-sm font-normal text-gray-400 ml-1" data-stage="1">0/3 ✓</span>
+        </h3>
+        <div class="space-y-1.5 checklist-stage" data-stage="1">
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="check-passport">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">01</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">여권 만료일 확인</p>
+              <p class="text-sm text-gray-500 mt-0.5">많은 국가에서 중국 비자 조건으로 여권 유효기간이 여행일 기준 6개월 이상 남아 있어야 합니다. 출발 전 확인하세요.</p>
+            </div>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="check-visa">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">02</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">비자 유형 또는 면제 자격 확인</p>
+              <p class="text-sm text-gray-500 mt-0.5">비자가 필요하신가요? 240시간 환승 대상인가요? 위의 비자 체커로 30초면 확인 가능합니다.</p>
+            </div>
+            <a href="/ko/visa/visa-guide/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">→ 가이드 →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="travel-insurance">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">03</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">의료 보험이 포함된 여행 보험 구매</p>
+              <p class="text-sm text-gray-500 mt-0.5">중국 병원은 선불제입니다. 최소 10만 달러의 의료 보장과 응급 후송이 포함된 보험을 권장합니다.</p>
+            </div>
+            <a href="/ko/life/travel-insurance/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">→ 가이드 →</a>
+          </div>
         </div>
       </div>
 
-      <!-- Stage 2 -->
-      <div class="relative pl-14">
-        <div class="absolute left-0 top-0 w-9 h-9 rounded-full bg-blue-100 flex items-center justify-center text-sm font-bold text-blue-700">2</div>
-        <div class="absolute left-[17px] top-9 bottom-0 w-0.5 bg-gray-100"></div>
-        <h3 class="text-lg font-bold text-gray-900 mb-3">도착 직후</h3>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-          <a href="/ko/transport/airport-to-city/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-blue-200 transition no-underline">
-            <span class="text-xs font-medium text-blue-600">교통</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">공항에서 시내로 가는 방법</p>
-          </a>
-          <a href="/ko/life/sim-card-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-blue-200 transition no-underline">
-            <span class="text-xs font-medium text-blue-600">생활</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">SIM 카드 & 인터넷 설정</p>
-          </a>
-          <a href="/ko/life/vpn-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-blue-200 transition no-underline">
-            <span class="text-xs font-medium text-blue-600">생활</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">VPN 설정하기</p>
-          </a>
+      <!-- Stage 2: T-15일 · 2주 전 -->
+      <div class="relative pl-12 stage-group" data-stage="2">
+        <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-xs font-bold text-blue-700">2</div>
+        <div class="absolute left-[14px] top-8 bottom-0 w-px bg-gray-200"></div>
+        <h3 class="text-base font-bold text-gray-900 mb-3">
+          <span class="text-blue-700">T-15일</span> · 출발 2주 전
+          <span class="stage-progress text-sm font-normal text-gray-400 ml-1" data-stage="2">0/6 ✓</span>
+        </h3>
+        <div class="space-y-1.5 checklist-stage" data-stage="2">
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="buy-vpn">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">04</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">VPN 구독 구매 및 설치</p>
+              <p class="text-sm text-gray-500 mt-0.5">중국 내에서는 VPN 앱을 다운로드할 수 없습니다 — 웹사이트가 차단되어 있습니다. 출국 전에 설치하고 테스트하세요.</p>
+            </div>
+            <a href="/ko/life/vpn-guide/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">→ 가이드 →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="buy-esim">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">05</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">eSIM 구매</p>
+              <p class="text-sm text-gray-500 mt-0.5">중국 적용 eSIM을 선택하세요. 홍콩 경유로 방화벽을 우회하는 것이 이상적입니다. 출국 전 설치.</p>
+            </div>
+            <a href="/ko/life/sim-card-guide/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">→ 가이드 →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="setup-alipay">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">06</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">Alipay 설정 및 카드 연결</p>
+              <p class="text-sm text-gray-500 mt-0.5">신용카드와 체크카드를 모두 연결하세요. 소규모 상점 개인 QR코드는 신용카드를 받지 않습니다.</p>
+            </div>
+            <a href="/ko/payment/payment-guide/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">→ 가이드 →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="setup-wechat">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">07</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">WeChat Pay 설정 (선택적 백업)</p>
+              <p class="text-sm text-gray-500 mt-0.5">Alipay로 95% 결제 가능하지만, 일부 작은 식당은 WeChat만 사용합니다. 백업으로 설정하세요.</p>
+            </div>
+            <a href="/ko/payment/setup-wechat/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">→ 가이드 →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="book-hotel">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">08</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">외국인 투숙 가능한 호텔 예약</p>
+              <p class="text-sm text-gray-500 mt-0.5">모든 호텔이 외국인 여권을 받는 것은 아닙니다. Trip.com 등에서 외국인 후기 좋은 호텔을 예약하세요.</p>
+            </div>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="notify-bank">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">09</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">은행에 중국 여행 알리기</p>
+              <p class="text-sm text-gray-500 mt-0.5">일부 은행은 중국 거래를 사기로 자동 차단합니다. 앱에서 여행 알림 설정이나 전화로 5분이면 해결됩니다.</p>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- Stage 3 -->
-      <div class="relative pl-14">
-        <div class="absolute left-0 top-0 w-9 h-9 rounded-full bg-purple-100 flex items-center justify-center text-sm font-bold text-purple-700">3</div>
-        <div class="absolute left-[17px] top-9 bottom-0 w-0.5 bg-gray-100"></div>
-        <h3 class="text-lg font-bold text-gray-900 mb-3">여행 중</h3>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-          <a href="/ko/transport/transport-guide/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-purple-200 transition no-underline">
-            <span class="text-xs font-medium text-purple-600">교통</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">중국 내 이동하기</p>
-          </a>
-          <a href="/ko/life/essential-apps/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-purple-200 transition no-underline">
-            <span class="text-xs font-medium text-purple-600">생활</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">필수 앱 10선</p>
-          </a>
-          <a href="/ko/life/chinese-phrases/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-purple-200 transition no-underline">
-            <span class="text-xs font-medium text-purple-600">생활</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">기초 중국어 회화</p>
-          </a>
+      <!-- Stage 3: T-7일 · 출발 전 -->
+      <div class="relative pl-12 stage-group" data-stage="3">
+        <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center text-xs font-bold text-indigo-700">3</div>
+        <div class="absolute left-[14px] top-8 bottom-0 w-px bg-gray-200"></div>
+        <h3 class="text-base font-bold text-gray-900 mb-3">
+          <span class="text-indigo-700">T-7일</span> · 출발 전
+          <span class="stage-progress text-sm font-normal text-gray-400 ml-1" data-stage="3">0/4 ✓</span>
+        </h3>
+        <div class="space-y-1.5 checklist-stage" data-stage="3">
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="test-vpn">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">10</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">모든 기기에서 VPN 테스트</p>
+              <p class="text-sm text-gray-500 mt-0.5">휴대폰, 노트북, 태블릿에서 연결 확인하세요. 중국 내에서는 VPN 제공업체 사이트도 차단됩니다.</p>
+            </div>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="install-apps">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">11</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">중국 여행 필수 앱 설치</p>
+              <p class="text-sm text-gray-500 mt-0.5">Baidu Maps, Didi, Trip.com. 지금 다운로드하세요 — 중국에서는 앱스토어가 제한될 수 있습니다.</p>
+            </div>
+            <a href="/ko/life/essential-apps/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">→ 가이드 →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="learn-chinese">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">12</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">중국어 기본 표현 10개 배우기</p>
+              <p class="text-sm text-gray-500 mt-0.5">"감사합니다"와 "얼마예요"를 말할 수 있으면 사람들의 태도가 달라집니다. 기본부터 시작하세요.</p>
+            </div>
+            <a href="/ko/life/chinese-phrases/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">→ 가이드 →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="backup-docs">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">13</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">여권, 비자, 보험의 디지털 사본 저장</p>
+              <p class="text-sm text-gray-500 mt-0.5">휴대폰과 클라우드에 여권, 비자, 보험증 사본을 보관하세요. 분실 시 백업이 유일한 방법입니다.</p>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- Stage 4 -->
-      <div class="relative pl-14">
-        <div class="absolute left-0 top-0 w-9 h-9 rounded-full bg-red-100 flex items-center justify-center text-sm font-bold text-red-700">4</div>
-        <h3 class="text-lg font-bold text-gray-900 mb-3">도움이 필요할 때</h3>
-        <div class="grid grid-cols-1 sm:grid-cols-4 gap-3">
-          <a href="/ko/life/seeing-a-doctor/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
-            <span class="text-xs font-medium text-red-600">생활</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">병원 방문하기</p>
-          </a>
-          <a href="/ko/life/common-scams/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
-            <span class="text-xs font-medium text-red-600">생활</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">흔한 사기 피하기</p>
-          </a>
-          <a href="/ko/life/emergency-numbers/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
-            <span class="text-xs font-medium text-red-600">생활</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">비상 연락처</p>
-          </a>
-          <a href="/ko/payment/payment-fails/" class="block p-4 rounded-xl bg-white border border-gray-100 hover:shadow-md hover:border-red-200 transition no-underline">
-            <span class="text-xs font-medium text-red-600">결제</span>
-            <p class="text-sm font-semibold text-gray-900 mt-1">결제 실패 시 대처법</p>
-          </a>
+      <!-- Stage 4: T-24시간 · 최종 준비 -->
+      <div class="relative pl-12 stage-group" data-stage="4">
+        <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center text-xs font-bold text-amber-700">4</div>
+        <div class="absolute left-[14px] top-8 bottom-0 w-px bg-gray-200"></div>
+        <h3 class="text-base font-bold text-gray-900 mb-3">
+          <span class="text-amber-700">T-24시간</span> · 마지막 준비
+          <span class="stage-progress text-sm font-normal text-gray-400 ml-1" data-stage="4">0/3 ✓</span>
+        </h3>
+        <div class="space-y-1.5 checklist-stage" data-stage="4">
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="check-in">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">16</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">온라인 체크인 및 항공편 확인</p>
+              <p class="text-sm text-gray-500 mt-0.5">일찍 좌석을 선택하고 게이트 변경이나 지연을 확인하세요. 마지막까지 미루지 마세요.</p>
+            </div>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="withdraw-cash">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">15</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">500-1000위안 현금 인출</p>
+              <p class="text-sm text-gray-500 mt-0.5">중국은 95% 무현금 사회지만, 결제 앱은 한 번쯤 실패합니다. 현금은 택시, 포장마차, QR 오류 시 비상용입니다.</p>
+            </div>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="power-bank">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">16</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">보조배터리와 여행용 어댑터를 기내 수하물에</p>
+              <p class="text-sm text-gray-500 mt-0.5">지도, 결제, 번역, 모든 것에 휴대폰이 필요합니다. 비행 중과 도착 후에도 배터리를 확보하세요.</p>
+            </div>
+          </div>
         </div>
       </div>
+
+      <!-- Stage 5: 도착 · 처음 2시간 -->
+      <div class="relative pl-12 stage-group" data-stage="5">
+        <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-teal-100 flex items-center justify-center text-xs font-bold text-teal-700">5</div>
+        <div class="absolute left-[14px] top-8 bottom-0 w-px bg-gray-200"></div>
+        <h3 class="text-base font-bold text-gray-900 mb-3">
+          <span class="text-teal-700">도착</span> · 첫 2시간
+          <span class="stage-progress text-sm font-normal text-gray-400 ml-1" data-stage="5">0/3 ✓</span>
+        </h3>
+        <div class="space-y-1.5 checklist-stage" data-stage="5">
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="activate-esim">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">17</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">eSIM 활성화 및 모바일 데이터 켜기</p>
+              <p class="text-sm text-gray-500 mt-0.5">입국 심사 후 가장 먼저 할 일. 지도, Didi, 번역, 결제 — 모두 인터넷이 필요합니다.</p>
+            </div>
+            <a href="/ko/life/sim-card-guide/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">→ 가이드 →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="connect-vpn">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">18</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">VPN 연결</p>
+              <p class="text-sm text-gray-500 mt-0.5">앱을 열기 전에 VPN을 켜세요. VPN이 없으면 WhatsApp 메시지가 도착하지 않고 지도도 안 됩니다.</p>
+            </div>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="airport-to-city">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">19</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">공항에서 호텔로 이동</p>
+              <p class="text-sm text-gray-500 mt-0.5">대부분의 공항에서는 지하철이 가장 저렴하고 쉽습니다. Didi도 좋은 백업입니다.</p>
+            </div>
+            <a href="/ko/transport/airport-to-city/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">→ 가이드 →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stage 6: 첫째 날 · 정착 -->
+      <div class="relative pl-12 stage-group" data-stage="6">
+        <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-violet-100 flex items-center justify-center text-xs font-bold text-violet-700">6</div>
+        <div class="absolute left-[14px] top-8 bottom-0 w-px bg-gray-200"></div>
+        <h3 class="text-base font-bold text-gray-900 mb-3">
+          <span class="text-violet-700">첫째 날</span> · 정착
+          <span class="stage-progress text-sm font-normal text-gray-400 ml-1" data-stage="6">0/4 ✓</span>
+        </h3>
+        <div class="space-y-1.5 checklist-stage" data-stage="6">
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="test-payment">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">20</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">소액 결제로 Alipay 테스트</p>
+              <p class="text-sm text-gray-500 mt-0.5">편의점에서 물 한 병을 사서 테스트하세요. QR이 작동하면 준비 완료입니다. 실패해도 식사 전에 해결할 시간이 있습니다.</p>
+            </div>
+            <a href="/ko/payment/payment-guide/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">→ 가이드 →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="police-registration">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">21</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">호텔이 경찰 등록을 처리하는지 확인</p>
+              <p class="text-sm text-gray-500 mt-0.5">호텔은 24시간 이내에 외국인 투숙객을 경찰에 등록해야 합니다. 대부분 자동 처리하지만 확인하세요.</p>
+            </div>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="try-transport">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">22</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">지하철 타보기 또는 Didi 호출</p>
+              <p class="text-sm text-gray-500 mt-0.5">지하철 한 정거장 타거나 주변 카페까지 Didi를 불러보세요. 오늘 교통 시스템을 익혀두면 나중에 당황하지 않습니다.</p>
+            </div>
+            <a href="/ko/transport/transport-guide/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">→ 가이드 →</a>
+          </div>
+          <div class="checklist-item flex items-start gap-2.5 px-3 py-2.5 rounded-lg hover:bg-gray-50 transition" data-key="emergency-numbers">
+            <span class="text-sm font-mono text-gray-300 w-5 shrink-0 text-right mt-0.5">23</span>
+            <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500 cursor-pointer shrink-0">
+            <div class="flex-1 min-w-0">
+              <p class="text-base font-semibold text-gray-900">비상 연락처를 휴대폰에 저장</p>
+              <p class="text-sm text-gray-500 mt-0.5">110(경찰), 120(구급차), 119(화재). 대사관 영사 핫라인도 저장하세요. 필요할 때 기억나지 않습니다.</p>
+            </div>
+            <a href="/ko/life/emergency-numbers/" class="text-sm text-brand-600 hover:underline whitespace-nowrap mt-0.5 shrink-0">→ 가이드 →</a>
+          </div>
+        </div>
+      </div>
+
     </div>
+
+    <p class="text-xs text-gray-400 text-center mt-10">진행 상황은 브라우저에 저장됩니다. 브라우저 데이터를 지우면 초기화됩니다.</p>
   </section>
 
-  <!-- Visa Checker Tool -->
-  <section class="max-w-5xl mx-auto px-4 pb-16">
-    <div class="border-t border-gray-100 pt-12">
-      <div class="max-w-2xl mx-auto">
-        <h2 class="text-2xl font-bold text-gray-900 mb-2 text-center">비자 확인기</h2>
-        <p class="text-gray-500 text-center mb-8">비자가 필요한지 잘 모르시겠나요? 국적을 선택하면 알려드립니다.</p>
+  
 
-        <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100">
-          <label for="visa-country" class="block text-sm font-medium text-gray-700 mb-2">국적</label>
-          <select id="visa-country" class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-brand-500 text-base appearance-none cursor-pointer">
-            <option value="">— 국가를 선택하세요 —</option>
-            <option value="AL">알바니아</option>
-            <option value="AD">안도라</option>
-            <option value="AG">앤티가 바부다</option>
-            <option value="AR">아르헨티나</option>
-            <option value="AM">아르메니아</option>
-            <option value="AU">호주</option>
-            <option value="AT">오스트리아</option>
-            <option value="AZ">아제르바이잔</option>
-            <option value="BS">바하마</option>
-            <option value="BH">바레인</option>
-            <option value="BD">방글라데시</option>
-            <option value="BB">바베이도스</option>
-            <option value="BY">벨라루스</option>
-            <option value="BE">벨기에</option>
-            <option value="BA">보스니아 헤르체고비나</option>
-            <option value="BR">브라질</option>
-            <option value="BN">브루나이</option>
-            <option value="BG">불가리아</option>
-            <option value="CA">캐나다</option>
-            <option value="CL">칠레</option>
-            <option value="HR">크로아티아</option>
-            <option value="CY">키프로스</option>
-            <option value="CZ">체코</option>
-            <option value="DK">덴마크</option>
-            <option value="DM">도미니카</option>
-            <option value="EC">에콰도르</option>
-            <option value="EG">이집트</option>
-            <option value="EE">에스토니아</option>
-            <option value="FJ">피지</option>
-            <option value="FI">핀란드</option>
-            <option value="FR">프랑스</option>
-            <option value="GE">조지아</option>
-            <option value="DE">독일</option>
-            <option value="GR">그리스</option>
-            <option value="GD">그레나다</option>
-            <option value="HU">헝가리</option>
-            <option value="IS">아이슬란드</option>
-            <option value="IN">인도</option>
-            <option value="ID">인도네시아</option>
-            <option value="IE">아일랜드</option>
-            <option value="IT">이탈리아</option>
-            <option value="JP">일본</option>
-            <option value="KZ">카자흐스탄</option>
-            <option value="KE">케냐</option>
-            <option value="KW">쿠웨이트</option>
-            <option value="LV">라트비아</option>
-            <option value="LI">리히텐슈타인</option>
-            <option value="LT">리투아니아</option>
-            <option value="LU">룩셈부르크</option>
-            <option value="MY">말레이시아</option>
-            <option value="MV">몰디브</option>
-            <option value="MT">몰타</option>
-            <option value="MU">모리셔스</option>
-            <option value="MX">멕시코</option>
-            <option value="MC">모나코</option>
-            <option value="ME">몬테네그로</option>
-            <option value="NL">네덜란드</option>
-            <option value="NZ">뉴질랜드</option>
-            <option value="NG">나이지리아</option>
-            <option value="MK">북마케도니아</option>
-            <option value="NO">노르웨이</option>
-            <option value="OM">오만</option>
-            <option value="PK">파키스탄</option>
-            <option value="PE">페루</option>
-            <option value="PH">필리핀</option>
-            <option value="PL">폴란드</option>
-            <option value="PT">포르투갈</option>
-            <option value="QA">카타르</option>
-            <option value="RO">루마니아</option>
-            <option value="RU">러시아</option>
-            <option value="WS">사모아</option>
-            <option value="SM">산마리노</option>
-            <option value="SA">사우디아라비아</option>
-            <option value="RS">세르비아</option>
-            <option value="SC">세이셸</option>
-            <option value="SG">싱가포르</option>
-            <option value="SK">슬로바키아</option>
-            <option value="SI">슬로베니아</option>
-            <option value="SB">솔로몬 제도</option>
-            <option value="ZA">남아프리카공화국</option>
-            <option value="KR">대한민국</option>
-            <option value="ES">스페인</option>
-            <option value="SR">수리남</option>
-            <option value="SE">스웨덴</option>
-            <option value="CH">스위스</option>
-            <option value="TH">태국</option>
-            <option value="TO">통가</option>
-            <option value="TR">튀르키예</option>
-            <option value="UA">우크라이나</option>
-            <option value="AE">아랍에미리트</option>
-            <option value="GB">영국</option>
-            <option value="US">미국</option>
-            <option value="UY">우루과이</option>
-            <option value="UZ">우즈베키스탄</option>
-            <option value="VN">베트남</option>
-            <option value="OTHER">기타 국가</option>
-          </select>
 
-          <div id="visa-result" class="mt-6"></div>
-        </div>
 
-        <p class="text-xs text-gray-400 text-center mt-4">비자 정책은 변경될 수 있습니다. 예약 전에 반드시 현지 중국 대사관에 확인하세요.</p>
-      </div>
-    </div>
-  </section>
+
+
 
   <script is:inline>
-    const countrySelect = document.getElementById('visa-country');
-    const resultDiv = document.getElementById('visa-result');
+    const STORAGE_KEY = 'chinastarterhub-checklist-home';
+    const checkboxes = document.querySelectorAll('.checklist-item input[type="checkbox"]');
+    const progressBar = document.getElementById('progress-bar');
+    const progressText = document.getElementById('progress-text');
 
-    // Source: China gov.cn official list (2025)
-    // Category 1: Unilateral visa-free (30 days) - 50 countries
-    const visaFree = ['BN','FR','DE','IT','ES','NL','CH','IE','HU','AT','BE','LU','NZ','AU','PL','PT','GR','CY','SI','SK','NO','FI','DK','IS','AD','MC','LI','KR','BG','RO','HR','ME','MK','MT','EE','LV','JP','BR','AR','CL','PE','UY','SA','OM','KW','BH','CA','RU','GB','SE'];
+    function updateOverall() {
+      const checked = document.querySelectorAll('.checklist-item input[type="checkbox"]:checked').length;
+      const total = checkboxes.length;
+      const pct = total > 0 ? Math.round((checked / total) * 100) : 0;
+      progressBar.style.width = pct + '%';
+      const __suffix = progressText.dataset.suffix || 'completed'; progressText.textContent = checked + ' / ' + total + ' ' + __suffix;
 
-    // Category 2: Mutual visa agreement (ordinary passport) - 29 countries
-    const mutualFree = ['AL','AE','AG','BB','BS','BY','BA','DM','EC','FJ','GD','GE','KZ','QA','MV','MU','WS','RS','SC','SM','SR','SB','TH','TO','UZ','SG','AM','AZ','MY'];
-
-    // Category 3: 240-hour transit - 55 countries
-    const transit240 = ['AL','AT','BE','BG','BA','BR','CA','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LT','LU','MT','MC','ME','NL','MK','NO','PL','PT','RO','RU','RS','SK','SI','KR','ES','SE','CH','UA','GB','US','AU','NZ','JP','SG','BN','AE','QA','MX','AR','CL','ID','BY'];
-
-    // Determine best visa status for each country
-    function getVisaStatus(code) {
-      if (visaFree.includes(code)) return 'visa-free-30';
-      if (mutualFree.includes(code)) return 'mutual-free';
-      if (transit240.includes(code)) return 'transit';
-      return 'need-visa';
+      // Update per-stage progress
+      document.querySelectorAll('.checklist-stage').forEach(function(stage) {
+        const stageKey = stage.dataset.stage;
+        const cbs = stage.querySelectorAll('input[type="checkbox"]');
+        const checkedInStage = stage.querySelectorAll('input[type="checkbox"]:checked').length;
+        const totalInStage = cbs.length;
+        const label = document.querySelector('.stage-progress[data-stage="' + stageKey + '"]');
+        if (label) label.textContent = checkedInStage + '/' + totalInStage + ' \u2713';
+      });
     }
 
-    const countryNames = {
-      'AL':'Albania','AD':'Andorra','AG':'Antigua and Barbuda','AR':'Argentina','AM':'Armenia',
-      'AU':'Australia','AT':'Austria','AZ':'Azerbaijan','BS':'Bahamas','BH':'Bahrain','BB':'Barbados',
-      'BY':'Belarus','BE':'Belgium','BA':'Bosnia and Herzegovina','BR':'Brazil','BN':'Brunei','BG':'Bulgaria',
-      'CA':'Canada','CL':'Chile','HR':'Croatia','CY':'Cyprus','CZ':'Czech Republic','DK':'Denmark',
-      'DM':'Dominica','EC':'Ecuador','EG':'Egypt','EE':'Estonia','FJ':'Fiji','FI':'Finland','FR':'France',
-      'GE':'Georgia','DE':'Germany','GR':'Greece','GD':'Grenada','HU':'Hungary',      'IS':'Iceland','IE':'Ireland','IN':'India','ID':'Indonesia','IT':'Italy',
-      'JP':'Japan','KZ':'Kazakhstan','KE':'Kenya','KW':'Kuwait','LV':'Latvia','LI':'Liechtenstein',
-      'LT':'Lithuania','LU':'Luxembourg','MY':'Malaysia','MV':'Maldives','MT':'Malta','MU':'Mauritius',
-      'MX':'Mexico',
-      'MC':'Monaco','ME':'Montenegro',      'NL':'Netherlands','NZ':'New Zealand','NG':'Nigeria','MK':'North Macedonia',
-      'NO':'Norway','OM':'Oman','PK':'Pakistan','PE':'Peru','PH':'Philippines','PL':'Poland','PT':'Portugal','QA':'Qatar','RO':'Romania',
-      'RU':'Russia','WS':'Samoa','SM':'San Marino','SA':'Saudi Arabia','RS':'Serbia','SC':'Seychelles',
-      'SG':'Singapore','SK':'Slovakia','SI':'Slovenia','SB':'Solomon Islands','ZA':'South Africa','KR':'South Korea',
-      'ES':'Spain','SR':'Suriname','SE':'Sweden','CH':'Switzerland','TH':'Thailand','TO':'Tonga','TR':'Turkey',
-      'UA':'Ukraine',
-      'AE':'the United Arab Emirates','GB':'the United Kingdom','US':'the United States','UY':'Uruguay','UZ':'Uzbekistan','VN':'Vietnam'
-    };
+    const FILTER_KEY = STORAGE_KEY + '-filter';
+    const filterChips = document.querySelectorAll('.filter-chip');
+    const stages = document.querySelectorAll('.stage-group');
 
-    countrySelect.addEventListener('change', function() {
-      const val = this.value;
-      if (!val) {
-        resultDiv.innerHTML = '';
-        return;
-      }
-
-      const name = countryNames[val] || 'your country';
-      const status = getVisaStatus(val);
-
-      if (status === 'visa-free-30') {
-        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-green-50 border border-green-200"><p class="text-green-800 font-semibold mb-1">Good news! Citizens of ' + name + ' can enter China <span class="underline">visa-free</span> for up to 30 days.</p><p class="text-green-700 text-sm mb-3">No visa needed for tourism, business, or transit stays under 30 days.</p><a href="/ko/visa/visa-free/" class="inline-block text-sm font-medium text-green-700 underline hover:no-underline">See the full visa-free list \u2192</a></div>';
-      } else if (status === 'mutual-free') {
-        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-green-50 border border-green-200"><p class="text-green-800 font-semibold mb-1">Citizens of ' + name + ' can enter China <span class="underline">visa-free</span> under a mutual agreement.</p><p class="text-green-700 text-sm mb-3">Check your passport type and allowed duration before traveling.</p><a href="/ko/visa/visa-free/" class="inline-block text-sm font-medium text-green-700 underline hover:no-underline">See the visa-free countries list \u2192</a></div>';
-      } else if (status === 'transit') {
-        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-blue-50 border border-blue-200"><p class="text-blue-800 font-semibold mb-1">You can use the <span class="underline">240-hour transit</span> policy.</p><p class="text-blue-700 text-sm mb-3">Citizens of ' + name + ' can transit through China for up to 10 days without a visa. For longer stays, you\u2019ll need an L visa.</p><div class="flex flex-wrap gap-3"><a href="/ko/visa/transit-240/" class="text-sm font-medium text-blue-700 underline hover:no-underline">How transit works \u2192</a><a href="/ko/visa/apply-l-visa/" class="text-sm font-medium text-blue-700 underline hover:no-underline">Apply for an L visa \u2192</a></div></div>';
+    function applyFilter(show, skipScroll) {
+      filterChips.forEach(function(chip) {
+        if (chip.dataset.show === show) {
+          chip.classList.remove('bg-white', 'text-gray-600', 'border-gray-200');
+          chip.classList.add('bg-brand-50', 'text-brand-700', 'border-brand-300');
+        } else {
+          chip.classList.remove('bg-brand-50', 'text-brand-700', 'border-brand-300');
+          chip.classList.add('bg-white', 'text-gray-600', 'border-gray-200');
+        }
+      });
+      if (show === 'all') {
+        stages.forEach(function(s) { s.classList.remove('hidden'); });
+        // Scroll to checklist section header, not page top
+        if (!skipScroll) {
+          var sectionTitle = document.querySelector('#checklist-filter');
+          if (sectionTitle) {
+            var targetY = sectionTitle.getBoundingClientRect().top + window.scrollY - 80;
+            window.scrollTo({ top: targetY, behavior: 'smooth' });
+          }
+        }
       } else {
-        resultDiv.innerHTML = '<div class="p-5 rounded-xl bg-orange-50 border border-orange-200"><p class="text-orange-800 font-semibold mb-1">You\u2019ll need a visa.</p><p class="text-orange-700 text-sm mb-3">Citizens of ' + name + ' need to apply for a tourist visa (L-type) before traveling to China.</p><a href="/ko/visa/apply-l-visa/" class="inline-block text-sm font-medium text-orange-700 underline hover:no-underline">How to apply for an L visa \u2192</a></div>';
+        var showList = show.split(',');
+        stages.forEach(function(s) {
+          if (showList.indexOf(s.dataset.stage) !== -1) {
+            s.classList.remove('hidden');
+          } else {
+            s.classList.add('hidden');
+          }
+        });
+        // Scroll to the first visible stage with offset (so progress/chips stay visible above)
+        if (!skipScroll) {
+          var firstStage = document.querySelector('.stage-group:not(.hidden)');
+          if (firstStage) {
+            var targetY = firstStage.getBoundingClientRect().top + window.scrollY - 120;
+            window.scrollTo({ top: targetY, behavior: 'smooth' });
+          }
+        }
       }
+      try { localStorage.setItem(FILTER_KEY, show); } catch(e) {}
+    }
+
+    filterChips.forEach(function(chip) {
+      chip.addEventListener('click', function() {
+        applyFilter(this.dataset.show);
+      });
     });
+
+    function saveState() {
+      const state = {};
+      checkboxes.forEach(function(cb) {
+        state[cb.closest('.checklist-item').dataset.key] = cb.checked;
+      });
+      try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch(e) {}
+    }
+
+    function loadState() {
+      try {
+        const saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
+        if (!saved) return;
+        checkboxes.forEach(function(cb) {
+          const key = cb.closest('.checklist-item').dataset.key;
+          if (saved[key]) {
+            cb.checked = true;
+            cb.closest('.checklist-item').classList.add('opacity-50', 'line-through');
+          }
+        });
+      } catch(e) {}
+      updateOverall();
+      // Restore last filter
+      try {
+        var savedFilter = localStorage.getItem(FILTER_KEY);
+        if (savedFilter) applyFilter(savedFilter, true);
+      } catch(e) {}
+    }
+
+    checkboxes.forEach(function(cb) {
+      cb.addEventListener('change', function() {
+        const item = this.closest('.checklist-item');
+        if (this.checked) {
+          item.classList.add('opacity-50', 'line-through');
+        } else {
+          item.classList.remove('opacity-50', 'line-through');
+        }
+        saveState();
+        updateOverall();
+      });
+    });
+
+    loadState();
   </script>
+
+
+
     <p class="text-xs text-gray-400 text-center mt-8">최종 업데이트: 2026년 7월</p>
 </Layout>

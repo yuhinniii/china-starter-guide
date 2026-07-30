@@ -5,11 +5,10 @@ const description = 'Настрой Alipay до вылета — этого хв
 ---
 
 <Layout title={title} description={description} lang="ru">
-  <section class="max-w-4xl mx-auto px-6 py-12">
+  <section class="max-w-5xl mx-auto px-6 py-12">
     
     <!-- Header -->
     <header class="mb-10 text-center">
-      <p class="text-sm text-gray-500 mb-2">💳 Платежи</p>
       <h1 class="text-4xl font-extrabold text-gray-900 mb-3 leading-tight">Платежи в Китае</h1>
       <p class="text-base text-gray-500 max-w-2xl mx-auto">Настрой Alipay до вылета — этого хватит для 95% платежей.</p>
     </header>
@@ -113,18 +112,26 @@ const description = 'Настрой Alipay до вылета — этого хв
       </div>
     </div>
 
-    <!-- Related Guides -->
-    <div class="bg-gray-50 rounded-2xl p-8 not-prose">
-      <h3 class="text-lg font-bold text-gray-900 mb-5">Похожие гайды</h3>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-        <a href="/ru/transport/transport-guide/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
-          <p class="font-bold text-gray-900 mb-0.5">Транспорт в Китае</p>
-          <p class="text-sm text-gray-500">Поезда, метро, такси и каршеринг</p>
-        </a>
-        <a href="/ru/life/essential-apps/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
-          <p class="font-bold text-gray-900 mb-0.5">Приложения для поездки в Китай</p>
-          <p class="text-sm text-gray-500">Must-have приложения для путешествия</p>
-        </a>
+        <!-- Next Step -->
+    <div class="border-t border-gray-100 pt-8 mb-4">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-2xl p-6 md:p-8 not-prose">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div>
+            <p class="text-xs font-bold tracking-widest text-brand-600 uppercase mb-1">Следующий шаг</p>
+            <h3 class="text-xl font-bold text-gray-900">Оставайтесь на связи и передвигайтесь</h3>
+            <p class="text-sm text-gray-600 mt-1 max-w-md">Оплата настроена. Дальше: купите eSIM и узнайте о транспорте.</p>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-3 shrink-0">
+            <a href="/ru/life/sim-card-guide/" class="inline-flex items-center justify-center gap-2 px-5 py-3 bg-white border border-gray-200 rounded-xl text-sm font-semibold text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              📶 Купить eSIM
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ru/transport/transport-guide/" class="inline-flex items-center justify-center gap-2 px-5 py-3 bg-white border border-gray-200 rounded-xl text-sm font-semibold text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🚗 Гид по транспорту
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </section>

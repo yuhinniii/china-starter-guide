@@ -1,0 +1,2469 @@
+
+### ar\cities\city-select.astro  (1)
+  [5w] China city comparison for tourists
+
+### ar\cities\hainan-visa-free\index.astro  (1)
+  [4w] Hainan visa-free policy comparison
+
+### ar\cities\shanghai-guide.astro  (1)
+  [4w] TRON Lightcycle Power Run
+
+### ar\contact.astro  (2)
+  [3w] import Layout from
+  [2w] const title
+
+### ar\life\chinese-phrases.astro  (10)
+  [2w] Thank you
+  [2w] Excuse me
+  [2w] It's okay
+  [2w] How much
+  [4w] Can you lower it
+  [3w] I'll take it
+  [2w] Where is...
+  [3w] I'm going here
+  [2w] Stop here
+  [2w] How long
+
+### ar\life\emergency-numbers.astro  (1)
+  [5w] Emergency phone numbers in China
+
+### ar\life\essential-apps.astro  (1)
+  [3w] WeChat Pay 
+           WeChat
+
+### ar\life\is-china-safe.astro  (1)
+  [5w] China safety comparison by category
+
+### ar\life\packing-guide.astro  (1)
+  [6w] Essential packing list for China travel
+
+### ar\life\seeing-a-doctor.astro  (1)
+  [8w] Hospital and clinic comparison for foreigners in China
+
+### ar\life\top-hospitals.astro  (10)
+  [7w] Cancer Hospital Chinese Academy of Medical Sciences
+  [2w] Zhongshan Hospital
+  [2w] Ruijin Hospital
+  [4w] Shanghai Jiao Tong University
+  [2w] Huashan Hospital
+  [5w] Fudan University Shanghai Cancer Center
+  [4w] Shanghai Ninth People's Hospital
+  [5w] Children's Hospital of Fudan University
+  [4w] The First Affiliated Hospital
+  [3w] Sun Yat-sen University
+
+### ar\life\travel-insurance.astro  (4)
+  [6w] Recommended travel insurance providers for China
+  [2w] Nomad Health
+  [2w] AXA Assistance
+  [2w] Explorer Select
+
+### ar\payment\foreign-cards.astro  (1)
+  [2w] Weixin Pay
+
+### ar\payment\payment-guide.astro  (2)
+  [6w] Fee comparison for major Chinese banks
+  [3w] Alipay 
+               WeChat Pay
+
+### ar\payment\setup-wechat.astro  (3)
+  [2w] WeChat Pay.
+  [3w] CVV 
+       
+
+       
+        WeChat Pay
+  [2w] Weixin Pay
+
+### ar\transport\airport-to-city.astro  (1)
+  [6w] Airport to city transport options comparison
+
+### ar\transport\didi.astro  (1)
+  [2w] Alipay 
+         
+         
+           WeChat
+
+### ar\transport\transport-guide.astro  (3)
+  [2w] WeChat Pay.
+  [2w] China Southern
+  [2w] Meituan Bike
+
+### ar\visa\customs-guide\index.astro  (1)
+  [7w] China customs duty-free allowances and prohibited items
+
+### ar\visa\first-time-china\index.astro  (1)
+  [3w] Mastercard 
+             WeChat Pay
+
+### ar\visa\index.astro  (3)
+  [2w] Visa Checker
+  [2w] United States
+  [2w] United Kingdom
+
+### ar\visa\mutual-agreement.astro  (1)
+  [5w] Mutual visa-free agreement countries comparison
+
+### ar\visa\transit-240.astro  (1)
+  [5w] Comparison of transit without visa
+
+### ar\visa\visa-guide.astro  (1)
+  [7w] Comparison of China entry options for tourists
+
+### es\about.astro  (10)
+  [45w] Acerca de 
+       
+        Acerca de China Starter Hub
+       
+       
+        Un recurso independiente que ayuda a visitantes internacionales a prepa
+  [3w] cticas y herramientas
+  [13w] tiles basadas en preguntas reales de viajeros y visitantes primerizos. Cada recurso est
+  [3w] reducir la confusi
+  [11w] ada para que puedas usarla realmente sobre el terreno. 
+         
+       
+
+       
+
+       Para Qui
+  [11w] Turistas primerizos 
+             Visitan China por primera vez y necesitan lo b
+  [12w] Viajeros de negocios 
+             Viajes cortos con tiempo limitado para resolver las cosas.
+  [9w] Estudiantes e investigadores 
+             Se quedan un semestre o m
+  [4w] s y necesitan establecerse.
+  [4w] Visitantes de corta duraci
+
+### es\apps.astro  (2)
+  [11w] A 
+       Apps Esenciales 
+       Las apps que realmente necesitas en China. 
+     
+     
+       
+         
+           Nota
+  [4w] ximamente.
+         
+       
+       Apps Imprescindibles 
+       
+          WeChat
+
+### es\cities\beijing-guide.astro  (10)
+  [5w] Comer y Saber 
+       Tu gu
+  [10w] la Gran Muralla y del mejor pato laqueado que probar
+  [9w] s conveniente para quienes visitan China por primera vez
+  [2w] Visitar Pek
+  [2w] as Necesitas
+  [8w] sitios Patrimonio de la Humanidad de la UNESCO
+  [15w] metros cuadrados de salones con techos dorados y muros rojos. Subiendo a la Gran Muralla
+  [10w] metros por el norte de China. Al caer la noche
+  [11w] los mercados nocturnos de Wangfujing y Guijie bullecen hasta la medianoche
+  [20w] las azoteas de Sanlitun se llenan y los tranquilos patios de los hutongs se convierten en bares de copas escondidos.
+
+### es\cities\chengdu-guide.astro  (10)
+  [5w] a de Viaje de Chengd
+  [7w] Comida Picante y Vida Tranquila 
+       Visita Chengd
+  [4w] come la comida m
+  [13w] s picante del mundo y experimenta el estilo de vida relajado de Sichuan.
+  [2w] pida 
+       Chengd
+  [10w] come comida tan picante que te hace zumbar los o
+  [3w] dos a mediod
+  [17w] en un templo milenario por la tarde. La ciudad es famosa por su ritmo de vida relajado
+  [2w] los lugare
+  [4w] os dicen que Chengd
+
+### es\cities\city-select.astro  (10)
+  [4w] as Necesitas en China
+  [3w] Itinerario por Duraci
+  [5w] as hasta una aventura de
+  [9w] encuentra el itinerario que se ajuste a tu tiempo.
+  [5w] pida 
+       
+         China merece al menos
+  [6w] puedes experimentar tanto los lugares cl
+  [7w] mo ajustar tu itinerario al tiempo disponible.
+  [3w] Disfruta o A
+  [3w] El Gran Tour
+  [4w] Ciudad Te Va Mejor
+
+### es\cities\guangzhou-guide.astro  (10)
+  [5w] a de Viaje de Cant
+  [2w] Capital Gastron
+  [5w] mica de China 
+       Explora Cant
+  [3w] la capital gastron
+  [8w] mica de China con mundialmente famoso dim sum
+  [4w] cultura cantonesa y f
+  [7w] pida 
+       Si comes para vivir en Pek
+  [2w] en Cant
+  [4w] n  vives para comer
+  [3w] Esta ciudad sure
+
+### es\cities\hainan-visa-free\index.astro  (10)
+  [5w] La Isla Tropical de China
+  [3w] Sin Visa para
+  [4w] volcanes y complejos tur
+  [7w] ses pueden visitarla sin visa hasta por
+  [5w] as.  No necesitas grupo tur
+  [18w] ni visita a la embajada. Vuela a Haikou o Sanya con tu pasaporte y un billete de regreso
+  [2w] blica Checa
+  [5w] n en la lista de
+  [7w] as sin visa de la China continental.
+  [5w] Ver la lista completa de
+
+### es\cities\index.astro  (10)
+  [3w] Planificador de Itinerario
+  [5w] Regiones Cubiertas 
+       
+     
+
+     
+     
+       
+         
+            
+           Planificando tu Viaje
+  [4w] as Necesitas en China
+  [4w] Planifica el itinerario perfecto
+  [6w] as intensos hasta una aventura de
+  [4w] semanas. 
+           
+         
+       
+       
+         
+            
+           Historia y Cultura
+  [5w] Comer y Saber 
+             Ciudad Prohibida
+  [2w] Shanghai Tower
+  [2w] Shenzhen 
+             Gu
+  [5w] a de Viaje de Shenzhen
+
+### es\cities\shanghai-guide.astro  (10)
+  [16w] s internacionales y un horizonte urbano que compite con cualquier ciudad del mundo. Desde el emblem
+  [12w] timo del Bund y la imponente Shanghai Tower hasta el encanto hist
+  [8w] n Yu y la magia de Shanghai Disneyland
+  [2w] Visitar Shangh
+  [2w] as Necesitas
+  [10w] i parece una ciudad del futuro. El horizonte de Pudong
+  [12w] con la Torre Perla Oriental y la Shanghai Tower perforando las nubes
+  [4w] n conserva su encanto
+  [9w] ade a eso uno de los parques Disney m
+  [8w] s singulares del mundo y una escena gastron
+
+### es\cities\shenzhen-guide.astro  (10)
+  [2w] Shenzhen 
+       Gu
+  [5w] a de Viaje de Shenzhen
+  [7w] gico Junto a Hong Kong 
+       Visita Shenzhen
+  [3w] la capital tecnol
+  [8w] pida 
+       Shenzhen es  el Silicon Valley de China
+  [10w] de ser un pueblo de pescadores a una megaciudad de
+  [7w] millones de habitantes en solo cuatro d
+  [11w] cil para cruzar a Hong Kong. Si te gusta la tecnolog
+  [2w] el marisco
+  [19w] las actividades al aire libre o quieres visitar tanto la China continental como Hong Kong en un solo viaje
+
+### es\contact.astro  (5)
+  [3w] import Layout from
+  [2w] const title
+  [4w] Tienes preguntas o comentarios
+  [2w] Nos encantar
+  [3w] benos a  hello
+
+### es\index.astro  (10)
+  [12w] as paso a paso desde el visado hasta los pagos y c
+  [7w] mo moverte 
+     
+     
+ 
+       Empezar 
+       Acerca de este sitio
+  [3w] Tipos de visa
+  [2w] Monederos digitales
+  [14w] Tu Lista de Viaje a China 
+     Desde un mes antes hasta el primer d
+  [8w] marca cada tarea al completarla. 
+
+     
+     
+       Todas las etapas
+  [2w] mes antes
+  [5w] Un mes antes de volar
+  [17w] meses de validez del pasaporte tras el viaje para el visado chino. Verifica esto antes de salir.
+  [6w] Confirmar tipo de visado o exenci
+
+### es\life\chinese-phrases.astro  (10)
+  [16w] pida 
+       
+        No necesitas hablar chino para viajar por China. Pero aprender una docena de frases har
+  [6w] que tu viaje sea inmensamente mejor
+  [2w] los lugare
+  [5w] os aprecian genuinamente el esfuerzo
+  [2w] y notar
+  [5w] s que recibes mejor servicio
+  [2w] sonrisas m
+  [8w] lidas e incluso mejores precios en los mercados.
+  [3w] Comer y Pedir
+  [3w] Pinyin 
+               Notas 
+             
+           
+           
+              Hola
+
+### es\life\common-scams.astro  (10)
+  [16w] mo Evitarlas
+     
+     No dejes que los estafadores arruinen tu viaje. Esto es lo que debes vigilar.
+  [15w] a de los chinos son honestos y serviciales.  Pero como en cualquier lugar con turismo
+  [9w] algunos se aprovechan de los visitantes. Las estafas aqu
+  [2w] n sitio
+  [2w] La Invitaci
+  [4w] Taxis Falsos y Tax
+  [2w] metros Manipulados
+  [2w] Regalo Gratuito
+  [3w] El Tour de
+  [5w] jame empezar diciendo esto honestamente
+
+### es\life\cultural-taboos.astro  (10)
+  [23w] blemente comprensivos  con los visitantes extranjeros que no conocen las costumbres locales. Nadie espera que seas perfecto. Pero saber algunos puntos
+  [7w] a conectar mejor con la gente local.
+  [4w] Cosas que realmente importan
+  [23w] blemente comprensivos con los visitantes extranjeros que no conocen las costumbres locales. Nadie espera que seas perfecto. Pero saber algunos puntos 
+  [13w] a conectar mejor con la gente local.
+     
+
+     
+      He organizado esto en tres niveles
+  [4w] lo que realmente impresionar
+  [8w] a los locales y lo que realmente importa.
+  [11w] Reglas de los palillos 
+         
+           No los claves verticalmente en el arroz
+  [5w] se asemeja al incienso funerario
+  [7w] eso es lo que hacen los mendigos
+
+### es\life\emergency-numbers.astro  (10)
+  [6w] meros de Emergencia en Chinay Qu
+  [11w] Hacer si Necesitas Ayuda
+     
+     Si algo sale mal durante tu visita
+  [3w] tienes exactamente qu
+  [5w] meros salvan vidas en China
+  [7w] mero de tu embajada antes de llegar.
+  [3w] meros que Necesitas
+  [4w] Pasos para Emergencias Comunes
+  [8w] Frases de Emergencia para Guardar en tu Tel
+  [4w] a 
+         Para cualquier emergencia
+  [5w] incluso si necesitas ayuda m
+
+### es\life\essential-apps.astro  (10)
+  [10w] Apps que Necesitas Descargar Antes de Viajar a China
+       
+       Olv
+  [6w] esto es lo que realmente necesitas.
+  [4w] necesitas  WeChat  para mensajer
+  [6w] per app de China. La usar
+  [3w] s para mensajear
+  [4w] reservar citas y m
+  [10w] s. Casi todos los negocios en China aceptan WeChat Pay
+  [7w] desde restaurantes elegantes hasta puestos callejeros. Config
+  [2w] s listo.
+  [16w] La otra mitad del duopolio de pagos en China. Alipay es especialmente fuerte para compras online
+
+### es\life\index.astro  (10)
+  [3w] Salud y Medicina
+  [3w] Seguridad y Emergencias
+  [11w] Internet 
+             Mejor SIM y eSIM para Turistas 
+             Compara proveedores de eSIM
+  [8w] VPN 
+             Mejores VPN para Viajar por China 
+             Qu
+  [6w] n y descubrimiento. 
+           
+         
+       
+       
+         
+            
+           Salud y Medicina
+  [3w] nica u hospital
+  [11w] Hospitales 
+             Mejores Hospitales con Departamentos Internacionales 
+             Mejores hospitales con personal angloparlante
+  [18w] Seguro 
+             Seguro de Viaje para China 
+             Lo que necesitas saber sobre el seguro de viaje. 
+           
+         
+       
+       
+
+  [3w] delitos y qu
+  [8w] mo Evitarlas 
+             Identifica y evita las trampas tur
+
+### es\life\is-china-safe.astro  (10)
+  [7w] China es muy segura.  He vivido aqu
+  [5w] paseo por mercados nocturnos despu
+  [15w] p. m. y nunca me preocupo. Los delitos violentos son extremadamente raros. El mayor desaf
+  [6w] Lo que Dicen Mis Amigos Extranjeros
+  [4w] Viajeros Solitarios y Mujeres
+  [16w] cticos de una Local  
+       
+     
+
+     
+     
+       
+        He vivido en China toda mi vida. A menudo llevo mi tel
+  [27w] fono suelto en la mano o lo meto en el bolsillo trasero mientras camino o tomo el metro. Y a menudo paseo por bulliciosos mercados nocturnos despu
+  [6w] p. m. durante mis viajes.
+       
+
+       
+        As
+  [22w] s seguros del mundo para los turistas. 
+       
+
+       
+        No lo digo como un eslogan gubernamental. Lo digo como alguien que lo ha experimentad
+  [19w] es algo que realmente sientes en tu vida diaria. Mis amigos extranjeros que me visitan siempre dicen lo mismo
+
+### es\life\packing-guide.astro  (10)
+  [6w] esto es lo que realmente necesitas.
+  [3w] mientras que Cant
+  [5w] n en verano es sofocante
+  [2w] con humedad
+  [3w] ficas que visitar
+  [3w] un power bank
+  [13w] nico y una botella de agua reutilizable son esenciales independientemente de la temporada.
+  [2w] nde visites
+  [7w] Essential packing list for China travel 
+           
+             
+               Art
+  [4w] Power bank   La bater
+
+### es\life\seeing-a-doctor.astro  (10)
+  [8w] pero funciona de manera diferente.  Para problemas menores
+  [8w] ve a una farmacia. Para emergencias no graves
+  [5w] ve a un hospital p
+  [9w] blico con Departamento Internacional. Los costos son mucho m
+  [5w] Hacer en una Emergencia M
+  [8w] nde ir. 
+       
+
+       
+        China tiene hospitales de primer nivel
+  [16w] especialmente en las grandes ciudades. Pero el sistema funciona de manera diferente a lo que est
+  [3w] Para problemas menores
+  [14w] s en casi todas las calles de las ciudades chinas. 
+           
+             Los medicamentos comunes est
+  [6w] n disponibles sin receta 
+             Los farmac
+
+### es\life\sim-card-guide.astro  (10)
+  [12w] Vida en China 
+       
+        Mejor SIM y eSIM para Turistas en China
+       
+       eSIM
+  [13w] sticas en China son solo de datos o tienen minutos de voz limitados.
+  [3w] mero de tel
+  [3w] Datos ilimitados de
+  [2w] Datos ilimitados
+  [4w] rate de revisar las
+  [9w] n disponibles en ciertas regiones. Si planeas visitar m
+  [3w] incluyendo Beijing Capital
+  [6w] Shenzhen Bao'an y Hangzhou Xiaoshan. Tambi
+  [8w] aunque estas suelen tener opciones de planes limitadas.
+
+### es\life\top-hospitals.astro  (10)
+  [11w] dica 
+       
+        Mejores Hospitales con Departamentos Internacionales en China
+       
+       Todos clasificados A
+  [11w] por el Ranking Integral de Hospitales de la Universidad de Fudan.
+  [8w] min de lectura 
+       
+     
+
+     
+       Todos los hospitales listados est
+  [11w] en el Ranking Integral de Hospitales de la Universidad de Fudan
+  [13w] Los rankings de especialidades provienen de los mismos rankings de especialidades de Fudan
+  [5w] nicas basadas en la revisi
+  [6w] n por pares de expertos. 
+       Fuente
+  [6w] a y Medicina Nuclear se sit
+  [5w] an consistentemente en el top
+  [4w] nacional. 
+         
+         
+           PLA General Hospital
+
+### es\life\travel-insurance.astro  (10)
+  [14w] Buscar
+       
+       Contrata un seguro de viaje antes de tu viaje. Esto no es opcional.
+  [10w] necesitas seguro de viaje para China.  Aunque los costos m
+  [4w] liza con al menos
+  [4w] USD de cobertura m
+  [6w] n de emergencia y asistencia telef
+  [3w] accidente de coche
+  [3w] a de emergencia
+  [15w] Debe Cubrir tu Seguro para China
+       
+
+       
+         
+ Recommended travel insurance providers for China 
+           
+             
+             
+  [4w] la Necesitas 
+             
+           
+           
+              Gastos m
+  [3w] dicos  Al menos
+
+### es\life\vpn-guide.astro  (10)
+  [10w] Vida en China 
+       
+        Mejores VPN para Viajar por China
+       
+       Config
+  [9w] los sitios web de VPN y Google Play est
+  [6w] s descargar ni suscribirte desde all
+  [5w] Necesitas una VPN en China
+  [4w] Mejores VPN para China
+  [6w] VPN Gratuitas vs VPN de Pago
+  [21w] Necesitas una VPN en China
+       
+
+       El cortafuegos de internet de China bloquea una larga lista de sitios web y servicios occidentales
+  [2w] a 
+           WhatsApp
+  [2w] parcialmente bloqueado
+  [2w] sica 
+           YouTube
+
+### es\payment\foreign-cards.astro  (10)
+  [6w] Se pueden usar tarjetas de cr
+  [4w] dito extranjeras en China
+  [5w] Una mirada realista a d
+  [4w] tu Visa o Mastercard.
+  [2w] dito f
+  [7w] todo principal de pago en China.  Visa
+  [6w] centros comerciales de lujo y aeropuertos
+  [6w] a de los lugares del d
+  [10w] n. Usa Alipay o WeChat Pay en su lugar.
+       
+     
+
+     
+     
+       
+        D
+  [4w] jame ser directo contigo
+
+### es\payment\index.astro  (10)
+  [5w] a de propinas 
+       
+     
+
+     
+     
+       
+         
+            
+           Primeros pasos
+  [8w] mero internacional y vincula tu tarjeta de cr
+  [2w] dito extranjera.
+  [8w] mo configurar WeChat Pay como extranjero 
+             Descarga WeChat
+  [11w] verifica tu identidad y vincula tu tarjeta internacional. 
+           
+         
+       
+       
+         
+            
+           Usar tarjetas inter
+  [6w] Se pueden usar tarjetas de cr
+  [4w] dito extranjeras en China
+  [13w] nde funcionan Visa o Mastercard y costos de retiro en cajeros. 
+           
+         
+       
+       
+         
+            
+           Problemas comu
+  [3w] necesitas dejar propina
+  [2w] una visi
+
+### es\payment\payment-fails.astro  (10)
+  [13w] pida 
+       
+         Los fallos de pago son comunes para los usuarios extranjeros.  La mayor
+  [5w] a son causados por l
+  [2w] mites diarios
+  [3w] usar una aplicaci
+  [6w] n momento va a pasar. Est
+  [3w] escaneas el c
+  [4w] n gira un momento
+  [13w] nico. Los fallos de pago en China son comunes para los usuarios extranjeros
+  [3w] Alcanzaste el l
+  [9w] mite diario 
+           Tanto Alipay como WeChat Pay tienen l
+
+### es\payment\payment-guide.astro  (10)
+  [12w] a completa para visitantes extranjeros
+       
+       Lo primero que se pregunta la mayor
+  [7w] mo pago realmente las cosas en China
+  [11w] pida 
+       
+         Configura Alipay antes de volar.  Vincula tu Visa o Mastercard
+  [6w] de tus pagos en China. Lleva
+  [10w] en efectivo como respaldo. WeChat Pay es una buena opci
+  [2w] dito f
+  [6w] sicas solo funcionan en lugares limitados.
+  [2w] as usar
+  [5w] Lo primero que la mayor
+  [9w] a de los viajeros me pregunta sobre China es
+
+### es\payment\setup-alipay.astro  (10)
+  [4w] te explico exactamente c
+  [3w] mero de tel
+  [10w] verifica tu identidad con tu pasaporte y vincula tu Visa
+  [8w] Mastercard extranjera.  No necesitas cuenta bancaria ni n
+  [23w] jame guiarte en esto. Lo he hecho yo mismo y he ayudado a una docena de amigos a hacer lo mismo.  Tarda unos
+  [10w] y puedes hacerlo todo antes incluso de abordar tu vuelo.
+  [9w] n
+       
+
+       
+        Ve a tu tienda de aplicaciones y busca
+  [3w] fono necesita iOS
+  [4w] fono. La buena noticia
+  [5w] puedes usar tu propio n
+
+### es\payment\setup-wechat.astro  (10)
+  [6w] mo configurar WeChat Pay como extranjero
+  [9w] Tener tanto Alipay como WeChat Pay es el est
+  [7w] pida 
+       
+         WeChat Pay vive dentro de WeChat
+  [4w] n multiusos de China
+  [2w] Descarga WeChat
+  [3w] mero de tel
+  [8w] dito extranjera. No necesitas cuenta bancaria china.
+       
+     
+
+     
+     
+       
+        As
+  [7w] Bien. Ahora hablemos de WeChat Pay.
+       
+
+       
+        Honestamente
+  [4w] si solo usas Alipay
+  [9w] de tus compras. Pero WeChat Pay tiene sus ventajas
+
+### es\payment\tipping.astro  (10)
+  [3w] necesitas dejar propina
+  [15w] y de hecho puede crear incomodidad. 
+       
+
+       
+        Esto es una de esas cosas que parecen extra
+  [8w] as si vienes de EE. UU. o Canad
+  [7w] cticamente un segundo sueldo. Pero en China
+  [5w] la cultura es completamente diferente.
+  [4w] n suele ser confusi
+  [23w] n o rechazo. He visto a camareros perseguir a clientes calle abajo para devolverles la propina que dejaron en la mesa.
+       
+
+       
+        La raz
+  [4w] Algunos establecimientos exclusivos est
+  [13w] a propina al final es apreciada pero absolutamente no requerida. 
+          Botones de hotel
+  [8w] bien pero es opcional. 
+       
+
+       
+        Incluso en esos casos
+
+### es\privacy.astro  (10)
+  [10w] respetamos tu privacidad y estamos comprometidos a proteger cualquier informaci
+  [8w] n que Recopilamos 
+
+       
+        Cuando visitas nuestro sitio web
+  [2w] ticamente informaci
+  [4w] n no personal limitada
+  [3w] n del dispositivo
+  [15w] ginas visitadas y datos generales de uso.
+       
+
+       
+        Si te pones en contacto con nosotros directamente
+  [5w] n que nos proporciones voluntariamente
+  [4w] mo Usamos la Informaci
+  [4w] n 
+
+       
+        Usamos la informaci
+  [8w] Mejorar nuestro sitio web y contenido 
+           Entender c
+
+### es\search.astro  (1)
+  [12w] as indexadas 
+     
+       Ingresa una palabra clave arriba para buscar en nuestras gu
+
+### es\transport\airport-to-city.astro  (10)
+  [4w] suele funcionar mejor
+       
+       Metro
+  [11w] pida 
+       
+         Toma el metro  si tu vuelo llega durante el d
+  [4w] y evita el tr
+  [5w] fico.  Usa DiDi  si est
+  [2w] s cansado
+  [9w] llevas maletas pesadas o llegas tarde por la noche
+  [5w] Evita los taxis sin licencia
+  [6w] usa la cola oficial de taxis.
+  [4w] mejor para la mayor
+  [4w] mejor puerta a puerta
+
+### es\transport\didi.astro  (10)
+  [11w] mo usar Didi en China como extranjero
+       
+       Configura y usa DiDi
+  [3w] mero de tel
+  [6w] pida 
+       
+        Puedes usar DiDi  sin n
+  [7w] s del miniprograma de Alipay o WeChat
+  [3w] ticamente a trav
+  [3w] WeChat. La aplicaci
+  [5w] s de Alipay o WeChat
+  [4w] Consejos para usar DiDi
+  [5w] Abre Alipay o WeChat 
+         Despl
+  [2w] zate hasta
+
+### es\transport\high-speed-rail.astro  (10)
+  [12w] mo reservar y usar el tren de alta velocidad en China
+       
+       Gu
+  [6w] La segunda clase es perfectamente c
+  [7w] Obtiene los datos de billetes directamente de
+  [6w] No necesitas una cuenta separada de
+  [8w] El canal de venta oficial con mejor protecci
+  [10w] n de privacidad. Los extranjeros pueden registrarse con su n
+  [7w] mero de pasaporte. 
+          Taquilla de la estaci
+  [2w] a comisi
+  [3w] a. 
+          Primera clase
+  [13w] s espacio para las piernas. Vale la pena mejorar para viajes de m
+
+### es\transport\index.astro  (10)
+  [4w] metro y viajes compartidos
+  [4w] todo lo que necesitas.
+  [5w] mo moverse por China 
+             Visi
+  [3w] metro y m
+  [25w] mo reservar y usar el tren bala en China 
+             Todo sobre la reserva y el uso de la red de tren de alta velocidad m
+  [5w] a de metro y autob
+  [5w] n y Shenzhen. 
+           
+         
+       
+       
+         
+            
+           Viajes compartidos
+  [8w] mo usar DiDi en China como extranjero 
+             Gu
+  [7w] a paso a paso para usar DiDi
+  [3w] a de Shenzhen
+
+### es\transport\metro-bus.astro  (10)
+  [5w] a de metro y autob
+  [5w] mo usar el transporte p
+  [7w] consejos para autobuses y consejos de navegaci
+  [11w] pida 
+       
+        Los sistemas de metro de China son  de clase mundial
+  [9w] Usa Alipay o WeChat Pay para escanear un c
+  [25w] no necesitas billete. Los autobuses son un buen respaldo para zonas sin cobertura de metro. Los nombres de las estaciones y los anuncios son biling
+  [3w] O escanea c
+  [8w] digos QR en los tornos mediante la secci
+  [12w] n Viajes de Alipay o el miniprograma de transporte de WeChat. 
+          Carteles
+  [6w] n claramente indicados. 
+          Aplicaciones de navegaci
+
+### es\transport\transport-guide.astro  (10)
+  [4w] taxis y bicicletas compartidas
+  [8w] mo elegir el transporte adecuado para cada situaci
+  [12w] pida 
+       
+        El sistema de transporte de China es uno de los m
+  [13w] s eficientes del mundo.  El tren de alta velocidad  es la mejor opci
+  [8w] n entre ciudades.  El metro  es el m
+  [15w] modo para trayectos puerta a puerta. Todo se puede pagar con Alipay o WeChat Pay
+  [3w] no necesitas efectivo.
+  [23w] neas. Elige el tren de alta velocidad si quieres ver el paisaje por la ventanilla y disfrutar de un viaje estable y r
+  [5w] an considerablemente. En temporada alta
+  [12w] Metro 
+
+       Toda gran ciudad china tiene un excelente sistema de metro. Pek
+
+### es\visa\apply-l-visa.astro  (10)
+  [4w] Visa de Turista 
+       
+        C
+  [8w] mo Solicitar la Visa de Turista para China
+  [12w] a completa paso a paso para obtener tu visa de turista china.
+  [4w] pida 
+       
+         Solicita en l
+  [12w] luego visita tu Centro de Solicitud de Visa local en persona.  Necesitar
+  [14w] itinerario de viaje y la tarifa de la visa. El procesamiento suele tomar de
+  [5w] Completa tu solicitud de visa
+  [6w] a de Visa de Asuntos Consulares
+  [5w] Centros de Solicitud de Visa
+  [10w] Encuentra tu centro local y reserva citas 
+       
+     
+
+     
+     
+       
+        Si has le
+
+### es\visa\arrival-card\index.astro  (10)
+  [5w] Volver a Visa y Entrada
+  [4w] Entrada y Visa 
+       
+        C
+  [7w] evita la tarjeta de llegada en papel.
+  [13w] Video Tutorial Oficial de NIA 
+       Mira el video tutorial oficial de la Administraci
+  [4w] s usando el men
+  [10w] haz clic en  Entry Declaration  para comenzar 
+       
+       Dos opciones disponibles
+  [15w] a de los viajeros extranjeros que entran a China 
+          Entry Declaration for Border Area Residents
+  [6w] gina de  Instrucciones  que lista qui
+  [5w] no necesitan completar este formulario
+  [11w] Titulares de una Tarjeta de Residente Permanente Extranjero de China v
+
+### es\visa\customs-guide\index.astro  (10)
+  [5w] Volver a Visa y Entrada
+  [7w] Entrada y Visa 
+       
+        Regulaciones Aduaneras de China
+  [11w] ctica de las reglas aduaneras para turistas que entran a China.
+  [6w] n corta para un turista t
+  [7w] China customs duty-free allowances and prohibited items
+  [4w] Revisa los detalles abajo
+  [3w] USD  
+          Efectivo RMB
+  [8w] incluso empaquetados 
+            Fruta que olvidaste en tu bolso
+  [6w] los beagles de cuarentena la encontrar
+  [4w] n 
+            Medicina tradicional china
+
+### es\visa\first-time-china\index.astro  (10)
+  [5w] Volver a Visa y Entrada
+  [7w] Entrada y Visa 
+       
+        Primera Vez en China
+  [16w] n Paso a Paso
+       
+       Todo lo que necesitas hacer antes de tu primer viaje a China
+  [16w] meses antes de tu viaje.   Verifica si necesitas visa  primero. Compra seguro de viaje. Configura VPN
+  [17w] Alipay y WeChat Pay al menos una semana antes de la salida. Empaca un adaptador de corriente
+  [7w] y medicamentos recetados. Una vez que aterrices
+  [2w] s listo.
+  [2w] Meses Antes
+  [3w] Visa y Documentos
+  [2w] Mes Antes
+
+### es\visa\index.astro  (10)
+  [2w] Visa 
+       Prep
+  [2w] Visa Checker
+  [6w] s seguro de si necesitas visa
+  [2w] United States
+  [2w] United Kingdom
+  [4w] sito de tu visita
+  [3w] Familia 
+             Visita general
+  [3w] Estudio 
+             Requiere admisi
+  [9w] n universitaria 
+           
+         
+       
+
+       
+        
+
+       
+       Empezar de nuevo 
+
+       Basado en la pol
+  [3w] Visa y Entrada
+
+### es\visa\mutual-agreement.astro  (10)
+  [7w] Entrada y Visa 
+       
+        Acuerdos Mutuos Sin Visa
+  [4w] n de visa con
+  [15w] ses pueden entrar a China sin visa bajo acuerdos mutuos.  A diferencia de la pol
+  [6w] tica unilateral sin visa de China
+  [14w] ses acuerdan eximir los requisitos de visa para los ciudadanos del otro. Los l
+  [5w] mites de estancia van de
+  [6w] n de visa con China. Fuente
+  [3w] Lista Completa de
+  [10w] ses pueden entrar a China sin visa para estancias cortas
+  [3w] Bosnia y Herzegovina
+
+### es\visa\transit-240.astro  (10)
+  [4w] Entrada y Visa 
+       
+        Tr
+  [4w] nsito Sin Visa de
+  [4w] Puedes visitar China hasta
+  [3w] as sin visa
+  [12w] horas de China permite a viajeros elegibles quedarse en regiones permitidas hasta
+  [8w] n. Necesitas un pasaporte de uno de los
+  [5w] Debes Cumplir TODOS Estos Requisitos
+  [2w] Documentos Necesitas
+  [14w] horas de China permite a viajeros elegibles quedarse en regiones permitidas de China hasta
+  [4w] n. Para muchos visitantes
+
+### es\visa\visa-free.astro  (10)
+  [6w] Entrada y Visa 
+       
+        Lista de Pa
+  [5w] ses Sin Visa para China
+  [8w] s califica para entrada sin visa a China.
+  [10w] pida 
+       
+         Hay dos formas de entrar a China sin visa
+  [9w] China ofrece entrada unilateral sin visa a ciudadanos de
+  [7w] y tiene acuerdos mutuos sin visa con
+  [6w] en ninguna de las dos listas
+  [2w] nsito de
+  [8w] horas o solicita una visa L.
+       
+     
+
+     
+     
+
+       
+        A continuaci
+  [10w] n las listas completas basadas en los datos oficiales m
+
+### es\visa\visa-guide.astro  (10)
+  [4w] Entrada y Visa 
+       
+        Gu
+  [7w] a Completa de Tipos de Visa China
+  [2w] Visa Necesitas
+  [7w] os. Esto es lo que necesitas saber.
+  [11w] pida 
+       
+         Si necesitas visa depende de tu pasaporte.  Los ciudadanos de
+  [7w] ses pueden entrar sin visa por hasta
+  [7w] tienen acuerdos mutuos sin visa. Viajeros de
+  [5w] ses pueden usar la pol
+  [2w] nsito de
+  [9w] s necesitan una visa de turista tipo L est
+
+### fr\about.astro  (10)
+  [8w] propos de China Starter Hub
+       
+       
+        Une ressource ind
+  [6w] pendante pour aider les visiteurs internationaux
+  [2w] parer et
+  [10w] naviguer en Chine.
+       
+     
+
+     
+     
+       
+        China Starter Hub est une ressource ind
+  [6w] pendante qui aide les visiteurs internationaux
+  [11w] naviguer leur voyage en Chine.
+       
+
+       
+        Que vous voyagiez pour le tourisme
+  [5w] tudes ou un court s
+  [2w] les paiements
+  [3w] remment de ce
+  [10w] quoi la plupart des voyageurs s'attendent.
+       
+
+       
+         
+          Notre objectif est simple
+
+### fr\apps.astro  (6)
+  [13w] GORIE 
+       Applications Essentielles 
+       Les applications dont vous avez vraiment besoin en Chine. 
+     
+     
+       
+         
+           No
+  [4w] t.
+         
+       
+       Applications Indispensables 
+       
+          WeChat
+  [4w] Paiements et services 
+          Didi
+  [4w] servation de courses 
+          Amap
+  [4w] Livraison de repas 
+          Dianping
+  [4w] Avis sur les restaurants
+
+### fr\cities\beijing-guide.astro  (10)
+  [5w] Retour aux guides des villes
+  [2w] re mise
+  [7w] ur politique et culturel de la Chine
+  [3w] abritant la Cit
+  [9w] la Grande Muraille et certains des meilleurs canards laqu
+  [6w] s que vous mangerez jamais. C
+  [6w] kin est aussi le point d
+  [7w] e le plus pratique pour les primo-visiteurs
+  [10w] roports internationaux et la plus grande gare TGV du pays.
+  [3w] Pourquoi Visiter P
+
+### fr\cities\chengdu-guide.astro  (10)
+  [6w] Chengdu 
+       Guide de Voyage de Chengdu
+  [7w] e et Art de Vivre 
+       Visitez Chengdu
+  [4w] la nourriture la plus
+  [2w] re mise
+  [13w] ponse Rapide 
+       Chengdu est le  pays des pandas et du poivre du Sichuan
+  [5w] ts de bambous le matin
+  [4w] mangez une nourriture si
+  [8w] elle vous fait siffler les oreilles au d
+  [7w] bre pour son rythme de vie d
+  [7w] les habitants disent que Chengdu est la
+
+### fr\cities\city-select.astro  (10)
+  [5w] Retour aux guides des villes
+  [8w] Guides de Villes 
+       
+        Combien de Jours en Chine
+  [10w] jour
+       
+       Planifiez le voyage parfait en Chine. D'un tourbillon de
+  [2w] trouvez l'itin
+  [2w] re mise
+  [3w] rite au moins
+  [5w] jours.  Si vous n'avez que
+  [3w] vous pouvez d
+  [8w] la fois les sites classiques et une deuxi
+  [3w] me ville contrast
+
+### fr\cities\guangzhou-guide.astro  (10)
+  [5w] Retour aux guides des villes
+  [8w] La Capitale Gastronomique de la Chine 
+       Explorez Guangzhou
+  [9w] la capitale gastronomique de la Chine avec ses c
+  [6w] sa culture cantonaise et un acc
+  [2w] re mise
+  [7w] ponse Rapide 
+       Si vous mangez pour vivre
+  [4w] vous  vivez pour manger
+  [7w] Cette ville du sud est largement consid
+  [15w] e comme  la capitale gastronomique de la Chine  et le berceau de la cuisine cantonaise
+  [8w] sans doute la cuisine chinoise la plus c
+
+### fr\cities\hainan-visa-free\index.astro  (10)
+  [5w] Retour aux Guides de Villes
+  [4w] Pas de Visa N
+  [2w] cessaire pour
+  [4w] volcans et complexes h
+  [4w] et les citoyens de
+  [7w] pays peuvent visiter sans visa pour jusqu
+  [2w] re mise
+  [10w] ponse Rapide 
+        Hainan est le paradis tropical de la Chine
+  [6w] jours.  Pas besoin de groupe touristique
+  [3w] pas de visite
+
+### fr\cities\index.astro  (10)
+  [6w] ale pour votre voyage en Chine.
+  [6w] Planification 
+             Combien de Jours en Chine
+  [2w] raire parfait
+  [3w] un tourbillon de
+  [4w] semaines. 
+           
+         
+       
+       
+         
+            
+           Histoire et Culture
+  [4w] Manger et Savoir 
+             Cit
+  [2w] canard laqu
+  [7w] La Ville la Plus Accueillante pour les
+  [2w] Shanghai Tower
+  [6w] aise et gastronomie de classe mondiale.
+
+### fr\cities\shanghai-guide.astro  (10)
+  [5w] Retour aux guides des villes
+  [7w] La Ville la Plus Accueillante pour les
+  [9w] dormir dans la ville la plus internationale de Chine.
+  [2w] re mise
+  [12w] ponse Rapide 
+       Shanghai est  la ville chinoise la plus accueillante pour les
+  [6w] de la plus grande population anglophone
+  [14w] le plus grand nombre de restaurants internationaux et une skyline qui rivalise avec n
+  [15w] bre Bund et de la tour Shanghai Tower au charme historique du Jardin Yu et
+  [5w] la magie de Shanghai Disneyland
+  [8w] il y en a pour tous les go
+
+### fr\cities\shenzhen-guide.astro  (10)
+  [5w] Retour aux guides des villes
+  [6w] Shenzhen 
+       Guide de Voyage de Shenzhen
+  [6w] s de Hong Kong 
+       Visitez Shenzhen
+  [6w] la capitale technologique de la Chine
+  [8w] aventures en plein air entre montagne et mer
+  [7w] et une ville moderne construite en seulement
+  [2w] re mise
+  [10w] ponse Rapide 
+       Shenzhen est  la Silicon Valley de la Chine
+  [5w] habitants en seulement quatre d
+  [4w] verte et constitue l
+
+### fr\contact.astro  (7)
+  [3w] import Layout from
+  [2w] const title
+  [2w] Nous contacter
+  [5w] Des questions ou des retours
+  [6w] Nous serions ravis de vous entendre.'
+  [8w] CONTACT 
+       Nous contacter 
+       Des questions ou des retours
+  [6w] Nous serions ravis de vous entendre.
+
+### fr\index.astro  (10)
+  [9w] du visa au paiement en passant par les d
+  [2w] placements 
+     
+     
+ 
+       Commencer
+  [4w] propos de ce site
+  [3w] Types de visa
+  [3w] politique de transit.'
+  [4w] argent liquide de secours.'
+  [2w] grande vitesse
+  [5w] servation de courses et acc
+  [4w] la ville depuis l
+  [12w] Votre Liste de Voyage pour la Chine 
+     D'un mois avant le d
+
+### fr\life\chinese-phrases.astro  (10)
+  [16w] Vie en Chine 
+       
+        Phrases chinoises essentielles pour les voyageurs
+       
+       Une douzaine de phrases changeront la fa
+  [6w] on dont les gens vous traitent.
+  [2w] re mise
+  [24w] ponse rapide 
+       
+        Vous n'avez pas besoin de parler chinois pour voyager en Chine. Mais apprendre une douzaine de phrases rendra votre voya
+  [2w] rement l'effort
+  [6w] et vous obtiendrez un meilleur service
+  [6w] des sourires plus chaleureux et m
+  [6w] me de meilleurs prix aux march
+  [3w] Salutations et politesse
+  [9w] Salutations et politesse
+       
+
+       
+         
+ Basic Chinese phrases for travelers 
+           
+             
+               Fran
+
+### fr\life\common-scams.astro  (10)
+  [12w] Conseils pour voyager en Chine 
+     
+      Arnaques courantes en Chine et comment les
+  [7w] viter
+     
+     Ne laissez pas les arnaqueurs g
+  [4w] cher votre voyage. Voici
+  [2w] re mise
+  [5w] ponse rapide 
+     
+       La grande majorit
+  [4w] des Chinois sont honn
+  [7w] tes et serviables.  Mais comme partout o
+  [5w] il y a du tourisme
+  [13w] certains ciblent les touristes. Les arnaques ici visent votre  confiance et votre amabilit
+  [15w] pas votre peur. Si un inconnu est  trop  amical et veut vous emmener quelque part
+
+### fr\life\cultural-taboos.astro  (10)
+  [11w] Vie en Chine
+       
+     
+     
+   
+     Vie en Chine 
+     
+      Us et coutumes en Chine
+  [7w] s rendra votre voyage bien plus agr
+  [2w] re mise
+  [6w] ponse rapide 
+     
+      Les Chinois sont  extr
+  [2w] mement compr
+  [4w] hensifs  envers les visiteurs
+  [11w] trangers qui ne connaissent pas les coutumes locales. Personne ne s'attend
+  [7w] ce que vous soyez parfait. Mais conna
+  [2w] ments cl
+  [9w] s rendra votre voyage plus fluide et vous aidera
+
+### fr\life\emergency-numbers.astro  (10)
+  [6w] Conseils pour voyager en Chine 
+     
+      Num
+  [6w] ros d'urgence en Chine et conduite
+  [9w] me
+     
+     Si quelque chose tourne mal pendant votre visite
+  [4w] voici exactement quoi faire.
+  [2w] re mise
+  [4w] ponse rapide 
+     
+       Trois num
+  [4w] Tous ont des op
+  [5w] rateurs anglophones. Enregistrez le num
+  [3w] Les trois num
+  [5w] ros dont vous avez besoin
+
+### fr\life\essential-apps.astro  (10)
+  [7w] voici ce dont vous avez vraiment besoin.
+  [2w] re mise
+  [11w] vous avez besoin de  WeChat  pour la messagerie et les paiements
+  [4w] Alipay  pour les achats
+  [9w] Didi  pour les courses et  Amap  pour les itin
+  [4w] comme les services Google
+  [4w] sont plus difficiles d'acc
+  [5w] s une fois en Chine.
+  [3w] Applications de paiement
+  [3w] Messagerie et r
+
+### fr\life\index.astro  (10)
+  [7w] et profitez au maximum de votre voyage.
+  [12w] Internet 
+             Meilleure carte SIM et eSIM pour touristes 
+             Comparez les fournisseurs d'eSIM
+  [5w] roport et les forfaits data.
+  [10w] VPN 
+             Meilleurs VPN pour voyager en Chine 
+             Ce qui fonctionne
+  [8w] comment les configurer et pourquoi avant votre arriv
+  [7w] applications essentielles pour voyager en Chine 
+             Paiement
+  [2w] comment choisir.
+  [3w] pitaux 
+             Meilleurs h
+  [7w] pitaux avec services internationaux 
+             Les meilleurs h
+  [4w] pitaux avec personnel anglophone
+
+### fr\life\is-china-safe.astro  (10)
+  [7w] Conseils pour voyager en Chine 
+       
+        Est-il s
+  [8w] Un vrai discours de quelqu'un qui vit ici
+  [2w] re mise
+  [4w] te jamais. La criminalit
+  [6w] mement rare. Le plus grand d
+  [10w] re de la langue et comprendre comment les choses fonctionnent.
+  [6w] Pourquoi la Chine est-elle si s
+  [4w] Qu'en disent les chiffres
+  [2w] Vrai discours
+  [5w] ce que disent mes amis
+
+### fr\life\packing-guide.astro  (10)
+  [11w] Vie en Chine 
+       
+        Que mettre dans sa valise pour la Chine
+  [7w] Guide des saisons et du climat
+       
+       Pr
+  [8w] parer ses bagages pour la Chine est diff
+  [7w] voici ce dont vous avez vraiment besoin.
+  [2w] re mise
+  [8w] ponse rapide 
+       
+         La Chine a des variations saisonni
+  [2w] mes.  P
+  [4w] tandis que Guangzhou en
+  [2w] avec humidit
+  [7w] tements en couches et de se pr
+
+### fr\life\seeing-a-doctor.astro  (10)
+  [15w] ce que tout voyageur doit savoir
+       
+       Si vous tombez malade ou vous blessez en Chine
+  [6w] vous serez entre de bonnes mains
+  [4w] si vous savez o
+  [2w] re mise
+  [6w] la Chine dispose de soins m
+  [3w] mais le syst
+  [3w] me fonctionne diff
+  [5w] remment.  Pour les petits probl
+  [5w] la pharmacie. Pour les non-urgences
+  [6w] essayez une clinique. Pour les probl
+
+### fr\life\sim-card-guide.astro  (10)
+  [13w] Vie en Chine 
+       
+        Meilleure carte SIM et eSIM pour touristes en Chine
+       
+       eSIM
+  [5w] carte SIM physique ou itin
+  [2w] laquelle choisir
+  [2w] re mise
+  [11w] ponse rapide 
+       
+         L'eSIM est l'option la plus simple  si votre t
+  [6w] achetez en ligne avant de partir
+  [8w] achetez une carte SIM touriste au hall d'arriv
+  [7w] pour un forfait SIM touriste avec donn
+  [18w] es. Notez que la plupart des SIM touristes en Chine sont data-only ou ont des minutes vocales limit
+  [2w] Fournisseurs d'eSIM
+
+### fr\life\top-hospitals.astro  (10)
+  [3w] dicaux 
+       
+        Meilleurs h
+  [8w] pitaux avec services internationaux en Chine
+       
+       Tous class
+  [3w] plus haut niveau
+  [6w] par le classement complet des h
+  [3w] pitaux de l'Universit
+  [2w] re mise
+  [6w] min de lecture 
+       
+     
+
+     
+       Tous les h
+  [2w] pitaux list
+  [6w] dans le classement complet des h
+  [4w] Les classements par sp
+
+### fr\life\travel-insurance.astro  (10)
+  [6w] dicaux 
+       
+        Assurance voyage pour la Chine
+  [15w] ce qu'il faut rechercher
+       
+       Souscrivez une assurance voyage avant votre voyage. Ce n'est pas optionnel.
+  [2w] re mise
+  [10w] vous avez besoin d'une assurance voyage pour la Chine.  M
+  [5w] me si les frais m
+  [2w] me co
+  [14w] ter des dizaines de milliers de RMB. Optez pour un contrat avec au moins
+  [4w] US de couverture m
+  [6w] vacuation d'urgence et une assistance anglophone
+  [3w] accident de voiture
+
+### fr\life\vpn-guide.astro  (10)
+  [13w] Vie en Chine 
+       
+        Meilleurs VPN pour voyager en Chine
+       
+       Configurez-le avant de partir
+  [5w] ou vous n'aurez pas acc
+  [2w] re mise
+  [14w] ponse rapide 
+       
+         Configurez votre VPN avant de quitter votre domicile.  Une fois en Chine
+  [9w] les sites web VPN et Google Play sont bloqu
+  [5w] vous ne pourrez ni t
+  [6w] charger ni vous abonner depuis l
+  [8w] Pourquoi vous avez besoin d'un VPN en Chine
+  [5w] Meilleurs VPN pour la Chine
+  [7w] Comment configurer votre VPN avant de partir
+
+### fr\payment\foreign-cards.astro  (10)
+  [3w] Retour au paiement
+  [7w] Paiement 
+       
+        Peut-on utiliser les cartes de cr
+  [4w] aliste sur l'endroit o
+  [5w] votre Visa ou Mastercard fonctionnera.
+  [2w] re mise
+  [4w] dit physique comme m
+  [8w] thode de paiement principale en Chine.  Les Visa
+  [8w] les centres commerciaux de luxe et les a
+  [7w] mais la plupart des commerces du quotidien
+  [5w] ne l'acceptent pas. Utilisez plut
+
+### fr\payment\index.astro  (10)
+  [10w] Paiement 
+       Payer en Chine 
+       Configurez Alipay avant de prendre l'avion
+  [2w] des paiements.
+  [4w] Apps de paiement mobile
+  [4w] Guide pourboire 
+       
+     
+
+     
+     
+       
+         
+            
+           Premiers pas
+  [7w] Tutoriel 
+             Comment configurer Alipay en tant qu'
+  [4w] inscrivez-vous avec votre num
+  [8w] Tutoriel 
+             Comment configurer WeChat Pay en tant qu'
+  [2w] chargez WeChat
+  [3w] rifiez votre identit
+  [9w] et liez votre carte internationale. 
+           
+         
+       
+       
+         
+            
+           Utiliser les cartes internationales
+
+### fr\payment\payment-fails.astro  (10)
+  [3w] Retour au paiement
+  [6w] Paiement 
+       
+        Que faire lorsque votre paiement
+  [5w] checs de paiement se r
+  [2w] glent facilement.
+  [2w] re mise
+  [5w] checs de paiement sont fr
+  [4w] quents pour les utilisateurs
+  [5w] trangers.  La plupart sont caus
+  [5w] s par les plafonds journaliers
+  [3w] mes de r
+
+### fr\payment\payment-guide.astro  (10)
+  [3w] Retour au paiement
+  [5w] Paiement 
+       
+        Comment payer en Chine
+  [5w] guide complet pour les visiteurs
+  [6w] comment faire pour payer en Chine
+  [2w] re mise
+  [13w] ponse rapide 
+       
+         Configurez Alipay avant de prendre l'avion.  Liez votre Visa ou Mastercard
+  [6w] de vos paiements en Chine. Gardez
+  [16w] ces comme solution de secours. WeChat Pay est une bonne option secondaire. Les cartes de cr
+  [9w] dit physiques ne fonctionnent que dans certains endroits limit
+  [2w] ponse courte
+
+### fr\payment\setup-alipay.astro  (10)
+  [3w] Retour au paiement
+  [7w] Paiement 
+       
+        Comment configurer Alipay en tant qu'
+  [4w] voici exactement comment faire.
+  [2w] re mise
+  [4w] inscrivez-vous avec votre num
+  [3w] rifiez votre identit
+  [7w] avec votre passeport et liez votre Visa
+  [10w] re.  Pas besoin de compte bancaire chinois ni de num
+  [5w] phone chinois. Cela prend environ
+  [5w] minutes.
+       
+     
+
+     
+     
+       
+        Laissez-moi vous guider pas
+
+### fr\payment\setup-wechat.astro  (10)
+  [3w] Retour au paiement
+  [8w] Paiement 
+       
+        Comment configurer WeChat Pay en tant qu'
+  [6w] la fois Alipay et WeChat Pay
+  [2w] re mise
+  [6w] ponse rapide 
+       
+         WeChat Pay est int
+  [3w] l'application tout-en-un chinoise
+  [2w] chargez WeChat
+  [4w] inscrivez-vous avec votre num
+  [3w] rifiez votre identit
+  [10w] re. Pas besoin de compte bancaire chinois.
+       
+     
+
+     
+     
+       
+        Vous avez d
+
+### fr\payment\tipping.astro  (10)
+  [3w] Retour au paiement
+  [6w] Paiement 
+       
+        Culture du pourboire en Chine
+  [4w] faut-il laisser un pourboire
+  [2w] ponse courte
+  [10w] Non. Ne donnez pas de pourboire. Personne ne s'y attend.
+  [2w] re mise
+  [32w] ponse rapide 
+       
+         Non. Ne donnez pas de pourboire.  Le pourboire ne fait pas partie de la culture chinoise. Les frais de service sont inc
+  [2w] me cr
+  [4w] er une situation g
+  [6w] le personnel pourrait vous courir apr
+
+### fr\privacy.astro  (10)
+  [4w] Juridique 
+       
+        Politique de Confidentialit
+  [2w] re mise
+  [4w] Chez China Starter Hub
+  [5w] nous respectons votre vie priv
+  [5w] e et nous nous engageons
+  [20w] ger toute information que vous choisissez de partager avec nous.
+       
+
+       
+
+       Informations que nous collectons 
+
+       
+        Lorsque v
+  [9w] nous pouvons automatiquement collecter des informations non personnelles limit
+  [7w] es telles que le type de navigateur
+  [4w] les informations sur l'appareil
+  [3w] les pages visit
+
+### fr\search.astro  (2)
+  [4w] s 
+     
+       Saisissez un mot-cl
+  [6w] ci-dessus pour rechercher dans nos guides.
+
+### fr\transport\airport-to-city.astro  (10)
+  [3w] Retour au transport
+  [4w] ralement le mieux
+       
+       M
+  [3w] comment choisir et
+  [2w] roports chinois.
+  [2w] re mise
+  [8w] tro  si votre vol arrive pendant la journ
+  [8w] e et que vous avez des bagages l
+  [7w] vite les embouteillages.  Utilisez DiDi  si vous
+  [9w] avez des bagages lourds ou arrivez tard le soir
+  [5w] vitez les taxis non agr
+
+### fr\transport\didi.astro  (10)
+  [3w] Retour au transport
+  [9w] VTC 
+       
+        Comment utiliser Didi en Chine en tant qu'
+  [5w] tranger
+       
+       Configurez et utilisez DiDi
+  [3w] le Uber chinois
+  [5w] phone chinois. Types de course
+  [3w] paiement et astuces.
+  [2w] re mise
+  [8w] ponse rapide 
+       
+        Vous pouvez utiliser DiDi  sans num
+  [2w] phone chinois
+  [12w] Le moyen le plus simple est via le mini-programme Alipay ou WeChat
+
+### fr\transport\high-speed-rail.astro  (10)
+  [3w] Retour au transport
+  [3w] Trains 
+       
+        Comment r
+  [7w] server et prendre le TGV chinois
+       
+       Guide
+  [3w] tape pour r
+  [8w] naviguer dans la gare et prendre les trains
+  [4w] grande vitesse en Chine.
+  [2w] re mise
+  [5w] le plus simple pour les
+  [6w] me classe est parfaitement confortable. Arrivez
+  [6w] votre passeport vous sert de billet
+
+### fr\transport\index.astro  (10)
+  [6w] tout ce dont vous avez besoin.
+  [4w] u 
+             Comment se d
+  [4w] tro et plus. 
+           
+         
+       
+       
+         
+            
+           Arriv
+  [5w] Canton et plus. 
+           
+         
+       
+       
+         
+            
+           Transport urbain
+  [3w] Guide 
+             Comment r
+  [11w] server et prendre le TGV chinois 
+             Tout savoir sur la r
+  [7w] servation et l'utilisation du plus grand r
+  [14w] tro et du bus dans les grandes villes 
+             Naviguez dans les transports en commun
+  [4w] Canton et Shenzhen. 
+           
+         
+       
+       
+         
+            
+           VTC
+  [9w] Tutoriel 
+             Comment utiliser Didi en Chine en tant qu'
+
+### fr\transport\metro-bus.astro  (10)
+  [3w] Retour au transport
+  [19w] tro et du bus dans les grandes villes chinoises
+       
+       Comment utiliser les transports en commun dans les villes chinoises
+  [2w] paiement mobile
+  [8w] conseils pour le bus et conseils de navigation.
+  [2w] re mise
+  [6w] tro chinois sont  de classe mondiale
+  [3w] utiliser en anglais
+  [12w] Utilisez Alipay ou WeChat Pay pour scanner un code QR au tourniquet
+  [20w] pas besoin de billet. Les bus sont une bonne solution de repli pour les zones non desservies par le m
+  [5w] raux pour toutes les villes
+
+### fr\transport\transport-guide.astro  (10)
+  [3w] Retour au transport
+  [4w] placer 
+       
+        Comment se d
+  [3w] taxis et v
+  [8w] comment choisir le bon transport pour chaque situation.
+  [2w] re mise
+  [22w] me de transport chinois est l'un des plus efficaces au monde.  Le TGV  est la meilleure option entre les villes.  Le m
+  [16w] tro  est le plus rapide en ville.  DiDi  est le plus pratique pour les trajets porte-
+  [5w] avec Alipay ou WeChat Pay
+  [3w] Paiement des transports
+  [13w] seau de TGV chinois relie toutes les grandes villes. Les trains sont propres
+
+### fr\visa\apply-l-visa.astro  (10)
+  [8w] Visa touristique 
+       
+        Comment demander un visa touristique chinois
+  [7w] tape pour obtenir votre visa touristique chinois.
+  [2w] re mise
+  [9w] ponse rapide 
+       
+         Faites votre demande en ligne via  COVA
+  [19w] puis rendez-vous en personne au centre de demande de visa le plus proche.  Vous aurez besoin d'un passeport valide
+  [2w] d'un itin
+  [12w] raire de voyage et des frais de visa. Le traitement prend g
+  [4w] jours ouvrables.
+       
+     
+
+     
+       Portails officiels
+  [5w] Remplissez votre demande de visa
+  [6w] Guide des visas des Affaires consulaires
+
+### fr\visa\arrival-card\index.astro  (10)
+  [6w] Visa 
+       
+        Comment soumettre votre carte d'arriv
+  [9w] cran. Remplissez le formulaire en ligne avant votre vol
+  [4w] vitez la carte d'arriv
+  [2w] re mise
+  [7w] monstration officielle de l'Administration nationale de l'immigration
+  [11w] Ouvrez  s.nia.gov.cn  et passez en anglais en utilisant le menu d
+  [4w] rieur droit. 
+       
+         Capture d'
+  [2w] en anglais
+  [10w] cliquez sur  Entry Declaration  pour commencer 
+       
+       Deux options sont disponibles
+  [5w] pour la plupart des voyageurs
+
+### fr\visa\customs-guide\index.astro  (10)
+  [2w] Visa 
+       
+        R
+  [2w] glementations douani
+  [2w] res chinoises
+  [16w] Ce que vous pouvez et ne pouvez pas apporter en Chine
+       
+       Un guide pratique des r
+  [7w] res pour les touristes entrant en Chine.
+  [2w] re mise
+  [10w] ponse rapide 
+       
+        Voici la version courte pour un touriste typique
+  [7w] China customs duty-free allowances and prohibited items
+  [2w] tails ci-dessous
+  [3w] appareil photo 
+               Alcool
+
+### fr\visa\first-time-china\index.astro  (10)
+  [2w] Visa 
+       
+        Premi
+  [4w] re fois en Chine
+  [13w] tape
+       
+       Tout ce que vous devez faire avant votre premier voyage en Chine
+  [2w] re mise
+  [3w] ponse rapide 
+       
+         Commencez
+  [5w] mois avant votre voyage.   V
+  [8w] rifiez d'abord si vous avez besoin d'un visa
+  [6w] Achetez une assurance voyage. Configurez VPN
+  [11w] Alipay et WeChat Pay au moins une semaine avant le d
+  [6w] dicaments sur ordonnance. Une fois arriv
+
+### fr\visa\index.astro  (10)
+  [2w] Visa 
+       Pr
+  [10w] parez votre voyage en Chine 
+       Tout ce qu'il faut pr
+  [6w] parer avant votre voyage en Chine.
+  [12w] Visa Checker 
+           Vous ne savez pas si vous avez besoin d'un visa
+  [7w] trois questions et nous vous le dirons.
+  [2w] United States
+  [2w] United Kingdom
+  [7w] Quel est le but de votre visite
+  [3w] Famille 
+             Visite g
+  [4w] cessite un parrainage employeur
+
+### fr\visa\mutual-agreement.astro  (10)
+  [4w] Visa 
+       
+        Accords mutuels d'exon
+  [3w] ration de visa
+  [6w] des accords d'exemption de visa avec
+  [8w] voici ce que chacun signifie pour votre voyage.
+  [2w] re mise
+  [3w] les citoyens de
+  [13w] pays peuvent entrer en Chine sans visa dans le cadre d'accords mutuels.  Contrairement
+  [3w] la politique unilat
+  [6w] ration de visa de la Chine
+  [4w] il s'agit d'accords bilat
+
+### fr\visa\transit-240.astro  (10)
+  [5w] Visa 
+       
+        Transit sans visa de
+  [4w] heures en Chine expliqu
+  [5w] Pouvez-vous visiter la Chine jusqu'
+  [3w] jours sans visa
+  [2w] re mise
+  [11w] dans de nombreux cas.  La politique de transit sans visa de
+  [7w] heures de la Chine permet aux voyageurs
+  [4w] journer dans les r
+  [2w] gions autoris
+  [2w] es jusqu'
+
+### fr\visa\visa-free.astro  (10)
+  [5w] Visa 
+       
+        Liste des pays exon
+  [4w] s de visa Chine
+  [5w] e sans visa en Chine.
+  [2w] re mise
+  [6w] ponse rapide 
+       
+         Il existe deux fa
+  [6w] ons d'entrer en Chine sans visa
+  [4w] e sans visa unilat
+  [4w] rale aux citoyens de
+  [4w] ration de visa avec
+  [10w] Si votre pays ne figure sur aucune des deux listes
+
+### fr\visa\visa-guide.astro  (10)
+  [8w] Visa 
+       
+        Guide complet des types de visa chinois
+  [5w] De quel visa avez-vous besoin
+  [11w] Entrer en Chine est plus facile qu'il y a quelques ann
+  [7w] es. Voici ce que vous devez savoir.
+  [2w] re mise
+  [3w] d'un visa d
+  [7w] pend de votre passeport.  Les citoyens de
+  [8w] pays peuvent entrer sans visa pour un s
+  [3w] jour allant jusqu'
+  [8w] pays peuvent utiliser la politique de transit de
+
+### ja\cities\chengdu-guide.astro  (1)
+  [3w] Do's and Don'ts
+
+### ja\cities\city-select.astro  (1)
+  [5w] China city comparison for tourists
+
+### ja\cities\hainan-visa-free\index.astro  (1)
+  [4w] Hainan visa-free policy comparison
+
+### ja\contact.astro  (2)
+  [3w] import Layout from
+  [2w] const title
+
+### ja\life\chinese-phrases.astro  (10)
+  [2w] Thank you
+  [2w] Excuse me
+  [2w] It's okay
+  [2w] How much
+  [4w] Can you lower it
+  [3w] I'll take it
+  [2w] Where is...
+  [3w] I'm going here
+  [2w] Stop here
+  [2w] How long
+
+### ja\life\emergency-numbers.astro  (1)
+  [5w] Emergency phone numbers in China
+
+### ja\life\index.astro  (1)
+  [3w] Do's and Don'ts
+
+### ja\life\is-china-safe.astro  (1)
+  [5w] China safety comparison by category
+
+### ja\life\packing-guide.astro  (1)
+  [6w] Essential packing list for China travel
+
+### ja\life\seeing-a-doctor.astro  (1)
+  [8w] Hospital and clinic comparison for foreigners in China
+
+### ja\life\top-hospitals.astro  (10)
+  [7w] Cancer Hospital Chinese Academy of Medical Sciences
+  [2w] Zhongshan Hospital
+  [2w] Ruijin Hospital
+  [4w] Shanghai Jiao Tong University
+  [2w] Huashan Hospital
+  [5w] Fudan University Shanghai Cancer Center
+  [4w] Shanghai Ninth People's Hospital
+  [5w] Children's Hospital of Fudan University
+  [4w] The First Affiliated Hospital
+  [3w] Sun Yat-sen University
+
+### ja\life\travel-insurance.astro  (4)
+  [6w] Recommended travel insurance providers for China
+  [2w] Nomad Health
+  [2w] AXA Assistance
+  [2w] Explorer Select
+
+### ja\life\vpn-guide.astro  (2)
+  [2w] text-white w-
+  [4w] rounded-full flex items-center justify
+
+### ja\payment\foreign-cards.astro  (2)
+  [2w] Sources 
+   
+     
+       
+           
+        WeChat
+  [2w] Weixin Pay
+
+### ja\payment\payment-fails.astro  (1)
+  [2w] Sources 
+   
+     
+       
+           
+        Alipay
+
+### ja\payment\payment-guide.astro  (2)
+  [3w] Alipay 
+               WeChat Pay
+  [2w] Sources 
+   
+     
+       
+           
+        Alipay
+
+### ja\payment\setup-alipay.astro  (1)
+  [2w] Sources 
+   
+     
+       
+           
+        Alipay
+
+### ja\payment\setup-wechat.astro  (2)
+  [2w] Sources 
+   
+     
+       
+           
+        WeChat
+  [2w] Weixin Pay
+
+### ja\transport\airport-to-city.astro  (1)
+  [6w] Airport to city transport options comparison
+
+### ja\transport\didi.astro  (2)
+  [2w] WeChat 
+           
+           WeChat
+  [2w] Sources 
+   
+     
+       
+           
+        DiDi
+
+### ja\transport\transport-guide.astro  (1)
+  [2w] Meituan Bike
+
+### ja\visa\customs-guide\index.astro  (1)
+  [7w] China customs duty-free allowances and prohibited items
+
+### ja\visa\index.astro  (10)
+  [2w] Visa Checker
+  [2w] Your passport
+  [2w] United States
+  [2w] United Kingdom
+  [5w] What's your purpose of visit
+  [3w] Family 
+             General visit
+  [13w] Study 
+             Requires university admission 
+           
+         
+       
+
+       
+        
+
+       
+       Start over 
+
+       Based on offici
+  [6w] Verify with your embassy before booking.
+  [24w] Next Step 
+             Set up payments and get around 
+             Your visa is sorted. Now set up Alipay and learn how to navigate China's transpor
+  [2w] Payment guide
+
+### ja\visa\mutual-agreement.astro  (1)
+  [5w] Mutual visa-free agreement countries comparison
+
+### ja\visa\transit-240.astro  (1)
+  [5w] Comparison of transit without visa
+
+### ko\cities\chengdu-guide.astro  (1)
+  [2w] Quick Answer
+
+### ko\cities\city-select.astro  (1)
+  [5w] China city comparison for tourists
+
+### ko\cities\hainan-visa-free\index.astro  (1)
+  [4w] Hainan visa-free policy comparison
+
+### ko\cities\shanghai-guide.astro  (1)
+  [4w] TRON Lightcycle Power Run
+
+### ko\contact.astro  (2)
+  [3w] import Layout from
+  [2w] const title
+
+### ko\life\chinese-phrases.astro  (10)
+  [2w] Thank you
+  [2w] Excuse me
+  [2w] It's okay
+  [2w] How much
+  [4w] Can you lower it
+  [3w] I'll take it
+  [2w] Where is...
+  [3w] I'm going here
+  [2w] Stop here
+  [2w] How long
+
+### ko\life\emergency-numbers.astro  (1)
+  [5w] Emergency phone numbers in China
+
+### ko\life\is-china-safe.astro  (1)
+  [5w] China safety comparison by category
+
+### ko\life\packing-guide.astro  (1)
+  [6w] Essential packing list for China travel
+
+### ko\life\seeing-a-doctor.astro  (1)
+  [8w] Hospital and clinic comparison for foreigners in China
+
+### ko\life\top-hospitals.astro  (10)
+  [7w] Cancer Hospital Chinese Academy of Medical Sciences
+  [2w] Zhongshan Hospital
+  [2w] Ruijin Hospital
+  [4w] Shanghai Jiao Tong University
+  [2w] Huashan Hospital
+  [5w] Fudan University Shanghai Cancer Center
+  [4w] Shanghai Ninth People's Hospital
+  [5w] Children's Hospital of Fudan University
+  [4w] The First Affiliated Hospital
+  [3w] Sun Yat-sen University
+
+### ko\life\travel-insurance.astro  (4)
+  [6w] Recommended travel insurance providers for China
+  [2w] Nomad Health
+  [2w] AXA Assistance
+  [2w] Explorer Select
+
+### ko\payment\foreign-cards.astro  (1)
+  [9w] How to Set Up International Cards for Weixin Pay
+
+### ko\payment\payment-fails.astro  (2)
+  [3w] Consumers Center
+           
+       
+     
+     
+       
+           
+        WeChat
+  [2w] Help Center
+
+### ko\payment\payment-guide.astro  (2)
+  [3w] Consumers Center
+           
+       
+     
+     
+       
+           
+        WeChat
+  [2w] Help Center
+
+### ko\payment\setup-alipay.astro  (1)
+  [2w] Consumers Center
+
+### ko\payment\setup-wechat.astro  (2)
+  [3w] WeChat Help Center
+  [9w] How to Set Up International Cards for Weixin Pay
+
+### ko\transport\airport-to-city.astro  (1)
+  [6w] Airport to city transport options comparison
+
+### ko\transport\transport-guide.astro  (1)
+  [2w] China Southern
+
+### ko\visa\arrival-card\index.astro  (3)
+  [2w] Family Name
+  [2w] Given Name
+  [5w] Do you have any companions
+
+### ko\visa\customs-guide\index.astro  (2)
+  [7w] China customs duty-free allowances and prohibited items
+  [9w] Green Channel. 
+       
+
+       
+         
+ China customs duty-free allowances and prohibited items
+
+### ko\visa\index.astro  (3)
+  [2w] Visa Checker
+  [2w] United States
+  [2w] United Kingdom
+
+### ko\visa\mutual-agreement.astro  (1)
+  [5w] Mutual visa-free agreement countries comparison
+
+### ko\visa\transit-240.astro  (1)
+  [5w] Comparison of transit without visa
+
+### ru\cities\city-select.astro  (1)
+  [5w] China city comparison for tourists
+
+### ru\cities\hainan-visa-free\index.astro  (5)
+  [4w] Hainan visa-free policy comparison
+  [2w] Atlantis Sanya
+  [2w] Mission Hills
+  [3w] Regional Visa-Free Policies
+  [7w] China's Entry Facilitation Policies for Foreign Nationals
+
+### ru\cities\shanghai-guide.astro  (1)
+  [4w] TRON Lightcycle Power Run
+
+### ru\contact.astro  (2)
+  [3w] import Layout from
+  [2w] const title
+
+### ru\life\chinese-phrases.astro  (10)
+  [2w] Thank you
+  [2w] Excuse me
+  [2w] It's okay
+  [2w] How much
+  [4w] Can you lower it
+  [3w] I'll take it
+  [2w] Where is...
+  [3w] I'm going here
+  [2w] Stop here
+  [2w] How long
+
+### ru\life\emergency-numbers.astro  (1)
+  [5w] Emergency phone numbers in China
+
+### ru\life\essential-apps.astro  (1)
+  [3w] WeChat Pay 
+           WeChat
+
+### ru\life\is-china-safe.astro  (1)
+  [5w] China safety comparison by category
+
+### ru\life\packing-guide.astro  (1)
+  [6w] Essential packing list for China travel
+
+### ru\life\seeing-a-doctor.astro  (1)
+  [8w] Hospital and clinic comparison for foreigners in China
+
+### ru\life\top-hospitals.astro  (10)
+  [7w] Cancer Hospital Chinese Academy of Medical Sciences
+  [2w] Zhongshan Hospital
+  [2w] Ruijin Hospital
+  [4w] Shanghai Jiao Tong University
+  [2w] Huashan Hospital
+  [5w] Fudan University Shanghai Cancer Center
+  [4w] Shanghai Ninth People's Hospital
+  [5w] Children's Hospital of Fudan University
+  [4w] The First Affiliated Hospital
+  [3w] Sun Yat-sen University
+
+### ru\life\travel-insurance.astro  (4)
+  [6w] Recommended travel insurance providers for China
+  [2w] Nomad Health
+  [2w] AXA Assistance
+  [2w] Explorer Select
+
+### ru\life\vpn-guide.astro  (1)
+  [2w] kill switch
+
+### ru\payment\foreign-cards.astro  (2)
+  [2w] WeChat Pay.
+  [2w] Weixin Pay
+
+### ru\payment\payment-guide.astro  (2)
+  [6w] Fee comparison for major Chinese banks
+  [3w] Alipay 
+               WeChat Pay
+
+### ru\payment\setup-wechat.astro  (3)
+  [2w] WeChat Pay.
+  [3w] CVV 
+       
+
+       
+        WeChat Pay
+  [2w] Weixin Pay
+
+### ru\transport\airport-to-city.astro  (1)
+  [6w] Airport to city transport options comparison
+
+### ru\transport\didi.astro  (1)
+  [2w] Alipay 
+         
+         
+           WeChat
+
+### ru\transport\transport-guide.astro  (3)
+  [2w] WeChat Pay.
+  [2w] China Southern
+  [2w] Meituan Bike
+
+### ru\visa\customs-guide\index.astro  (2)
+  [7w] China customs duty-free allowances and prohibited items
+  [3w] China Customs Official
+
+### ru\visa\first-time-china\index.astro  (1)
+  [3w] Mastercard 
+             WeChat Pay
+
+### ru\visa\index.astro  (3)
+  [2w] Visa Checker
+  [2w] United States
+  [2w] United Kingdom
+
+### ru\visa\mutual-agreement.astro  (1)
+  [5w] Mutual visa-free agreement countries comparison
+
+### ru\visa\transit-240.astro  (1)
+  [5w] Comparison of transit without visa
+
+### ru\visa\visa-guide.astro  (1)
+  [7w] Comparison of China entry options for tourists
+
+### th\cities\city-select.astro  (1)
+  [5w] China city comparison for tourists
+
+### th\cities\hainan-visa-free\index.astro  (10)
+  [4w] Hainan visa-free policy comparison
+  [2w] Golden Week
+  [2w] Haitang Bay
+  [2w] Atlantis Sanya
+  [2w] Wuzhizhou Island
+  [2w] Luhuitou Park
+  [2w] Volcanic Geopark
+  [2w] Hainan Museum
+  [2w] Mission Hills
+  [2w] Wenchang Chicken
+
+### th\cities\shanghai-guide.astro  (3)
+  [4w] TRON Lightcycle Power Run
+  [4w] Pirates of the Caribbean
+  [5w] Battle for the Sunken Treasure
+
+### th\cities\shenzhen-guide.astro  (1)
+  [4w] Window of the World
+
+### th\contact.astro  (2)
+  [3w] import Layout from
+  [2w] const title
+
+### th\life\chinese-phrases.astro  (10)
+  [2w] Thank you
+  [2w] Excuse me
+  [2w] It's okay
+  [2w] How much
+  [4w] Can you lower it
+  [3w] I'll take it
+  [2w] Where is...
+  [3w] I'm going here
+  [2w] Stop here
+  [2w] How long
+
+### th\life\emergency-numbers.astro  (1)
+  [5w] Emergency phone numbers in China
+
+### th\life\essential-apps.astro  (1)
+  [3w] WeChat Pay 
+           WeChat
+
+### th\life\is-china-safe.astro  (1)
+  [5w] China safety comparison by category
+
+### th\life\packing-guide.astro  (1)
+  [6w] Essential packing list for China travel
+
+### th\life\seeing-a-doctor.astro  (1)
+  [8w] Hospital and clinic comparison for foreigners in China
+
+### th\life\sim-card-guide.astro  (2)
+  [2w] Beijing Capital
+  [2w] Shenzhen Bao'an
+
+### th\life\top-hospitals.astro  (10)
+  [7w] Cancer Hospital Chinese Academy of Medical Sciences
+  [2w] Zhongshan Hospital
+  [2w] Ruijin Hospital
+  [4w] Shanghai Jiao Tong University
+  [2w] Huashan Hospital
+  [5w] Fudan University Shanghai Cancer Center
+  [4w] Shanghai Ninth People's Hospital
+  [5w] Children's Hospital of Fudan University
+  [4w] The First Affiliated Hospital
+  [3w] Sun Yat-sen University
+
+### th\life\travel-insurance.astro  (4)
+  [6w] Recommended travel insurance providers for China
+  [2w] Nomad Health
+  [2w] AXA Assistance
+  [2w] Explorer Select
+
+### th\life\vpn-guide.astro  (1)
+  [2w] kill switch
+
+### th\payment\foreign-cards.astro  (1)
+  [2w] Weixin Pay
+
+### th\payment\payment-guide.astro  (2)
+  [6w] Fee comparison for major Chinese banks
+  [3w] Alipay 
+               WeChat Pay
+
+### th\payment\setup-wechat.astro  (2)
+  [3w] CVV 
+       
+
+       
+        WeChat Pay
+  [2w] Weixin Pay
+
+### th\transport\airport-to-city.astro  (1)
+  [6w] Airport to city transport options comparison
+
+### th\transport\didi.astro  (1)
+  [2w] Alipay 
+         
+         
+           WeChat
+
+### th\transport\transport-guide.astro  (2)
+  [2w] China Southern
+  [2w] Meituan Bike
+
+### th\visa\arrival-card\index.astro  (1)
+  [5w] Do you have any companions
+
+### th\visa\customs-guide\index.astro  (2)
+  [7w] China customs duty-free allowances and prohibited items
+  [2w] Power Bank
+
+### th\visa\first-time-china\index.astro  (1)
+  [3w] Mastercard 
+             WeChat Pay
+
+### th\visa\index.astro  (3)
+  [2w] Visa Checker
+  [2w] United States
+  [2w] United Kingdom
+
+### th\visa\mutual-agreement.astro  (1)
+  [5w] Mutual visa-free agreement countries comparison
+
+### th\visa\transit-240.astro  (1)
+  [5w] Comparison of transit without visa
+
+### th\visa\visa-guide.astro  (1)
+  [7w] Comparison of China entry options for tourists
+
+### zh\cities\hainan-visa-free\index.astro  (1)
+  [4w] white rounded-xl border border-gray-
+
+### zh\contact.astro  (2)
+  [3w] import Layout from
+  [2w] const title
+
+### zh\life\chinese-phrases.astro  (10)
+  [2w] Thank you
+  [2w] Excuse me
+  [2w] It's okay
+  [2w] How much
+  [4w] Can you lower it
+  [3w] I'll take it
+  [3w] flex items-center gap-
+  [2w] Where is...
+  [3w] I'm going here
+  [2w] Stop here
+
+### zh\life\seeing-a-doctor.astro  (1)
+  [18w] I'm a foreigner and need help. Please take me to the International Department or somewhere with English translation.
+
+### zh\life\top-hospitals.astro  (10)
+  [7w] Cancer Hospital Chinese Academy of Medical Sciences
+  [2w] Zhongshan Hospital
+  [2w] Ruijin Hospital
+  [4w] Shanghai Jiao Tong University
+  [2w] Huashan Hospital
+  [5w] Fudan University Shanghai Cancer Center
+  [4w] Shanghai Ninth People's Hospital
+  [5w] Children's Hospital of Fudan University
+  [4w] The First Affiliated Hospital
+  [3w] Sun Yat-sen University
+
+### zh\life\travel-insurance.astro  (3)
+  [2w] Nomad Health
+  [2w] AXA Assistance
+  [2w] Explorer Select
+
+### zh\life\vpn-guide.astro  (1)
+  [2w] kill switch
+
+### zh\visa\arrival-card\index.astro  (10)
+  [2w] Family Name
+  [2w] Given Name
+  [2w] Document Type
+  [2w] Document Number
+  [2w] Entry City
+  [2w] Chinese Name
+  [3w] Country of Residence
+  [2w] Emergency Contact
+  [6w] Do you hold a valid visa
+  [4w] Destination Cities in China

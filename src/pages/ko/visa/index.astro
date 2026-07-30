@@ -5,24 +5,85 @@ const description = '중국 여행 전 준비해야 할 모든 것.';
 ---
 
 <Layout title={title} description={description} lang="ko">
-  <section class="max-w-4xl mx-auto px-6 py-12">
+  <section class="max-w-5xl mx-auto px-6 py-12">
     
     <!-- Header -->
     <header class="mb-10 text-center">
-      <p class="text-sm text-gray-500 mb-2">✅ 준비</p>
       <h1 class="text-4xl font-extrabold text-gray-900 mb-3 leading-tight">중국 여행 준비하기</h1>
       <p class="text-base text-gray-500 max-w-2xl mx-auto">중국 여행 전 준비해야 할 모든 것.</p>
     </header>
 
-    <!-- Quick Stats -->
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-3 mb-12 not-prose">
+    <!-- 비자 체커 -->
+    <div id="visa-checker" class="bg-white border border-gray-200 rounded-2xl p-6 md:p-8 mb-12 not-prose shadow-sm">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="text-2xl">🛂</span>
+        <div>
+          <h2 class="text-lg font-bold text-gray-900">비자 체커</h2>
+          <p class="text-sm text-gray-500">비자가 필요한지 잘 모르시나요? 질문 3개에 답하면 알려드립니다.</p>
+        </div>
+      </div>
+
+      <!-- Step 1: Country -->
+      <div id="step-country" class="mb-6">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="w-6 h-6 rounded-full bg-brand-500 text-white text-xs font-bold flex items-center justify-center">1</span>
+          <span class="text-base font-semibold text-gray-700">여권</span>
+        </div>
+        <div class="flex flex-wrap gap-2 mb-3 sm:justify-between">
+          <button class="quick-country px-3 py-2 rounded-full border border-gray-200 bg-white hover:bg-brand-50 hover:border-brand-200 transition text-xs font-medium text-gray-700 cursor-pointer" data-code="US"><span class="mr-1">🇺🇸</span>United States</button>
+          <button class="quick-country px-3 py-2 rounded-full border border-gray-200 bg-white hover:bg-brand-50 hover:border-brand-200 transition text-xs font-medium text-gray-700 cursor-pointer" data-code="GB"><span class="mr-1">🇬🇧</span>United Kingdom</button>
+          <button class="quick-country px-3 py-2 rounded-full border border-gray-200 bg-white hover:bg-brand-50 hover:border-brand-200 transition text-xs font-medium text-gray-700 cursor-pointer" data-code="CA"><span class="mr-1">🇨🇦</span>Canada</button>
+          <button class="quick-country px-3 py-2 rounded-full border border-gray-200 bg-white hover:bg-brand-50 hover:border-brand-200 transition text-xs font-medium text-gray-700 cursor-pointer" data-code="AU"><span class="mr-1">🇦🇺</span>Australia</button>
+          <button class="quick-country px-3 py-2 rounded-full border border-gray-200 bg-white hover:bg-brand-50 hover:border-brand-200 transition text-xs font-medium text-gray-700 cursor-pointer" data-code="SG"><span class="mr-1">🇸🇬</span>Singapore</button>
+          <button class="quick-country px-3 py-2 rounded-full border border-gray-200 bg-white hover:bg-brand-50 hover:border-brand-200 transition text-xs font-medium text-gray-700 cursor-pointer" data-code="TH"><span class="mr-1">🇹🇭</span>Thailand</button>
+          <button class="quick-country px-3 py-2 rounded-full border border-gray-200 bg-white hover:bg-brand-50 hover:border-brand-200 transition text-xs font-medium text-gray-700 cursor-pointer" data-code="KR"><span class="mr-1">🇰🇷</span>South Korea</button>
+        </div>
+        <div class="relative">
+          <input id="country-input" type="text" placeholder="또는 국가 검색..." class="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent text-base">
+          <svg class="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          <div id="country-dropdown" class="hidden absolute z-10 w-full mt-1 bg-white border border-gray-200 rounded-xl shadow-lg max-h-60 overflow-y-auto"></div>
+        </div>
+        <p id="country-selected" class="hidden mt-2 text-base text-green-700 font-medium"></p>
+      </div>
+
+      <!-- Step 2: Purpose -->
+      <div id="step-purpose" class="hidden mb-6">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="w-6 h-6 rounded-full bg-brand-500 text-white text-xs font-bold flex items-center justify-center">2</span>
+          <span class="text-base font-semibold text-gray-700">방문 목적은 무엇인가요?</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+          <button data-purpose="tourism-business" class="purpose-btn px-4 py-3 rounded-xl border border-gray-200 bg-white hover:bg-brand-50 hover:border-brand-200 transition text-left cursor-pointer">
+            <div class="font-semibold text-gray-900 text-base">🏖️ 관광 / 출장 / 가족</div>
+            <div class="text-xs text-gray-500 mt-0.5">일반 방문</div>
+          </button>
+          <button data-purpose="work" class="purpose-btn px-4 py-3 rounded-xl border border-gray-200 bg-white hover:bg-brand-50 hover:border-brand-200 transition text-left cursor-pointer">
+            <div class="font-semibold text-gray-900 text-base">💼 취업</div>
+            <div class="text-xs text-gray-500 mt-0.5">고용주 스폰서 필요</div>
+          </button>
+          <button data-purpose="study" class="purpose-btn px-4 py-3 rounded-xl border border-gray-200 bg-white hover:bg-brand-50 hover:border-brand-200 transition text-left cursor-pointer">
+            <div class="font-semibold text-gray-900 text-base">📚 유학</div>
+            <div class="text-xs text-gray-500 mt-0.5">대학 입학 필요</div>
+          </button>
+        </div>
+      </div>
+
+      <!-- Result -->
+      <div id="visa-result" class="hidden"></div>
+
+      <!-- Reset -->
+      <button id="reset-checker" class="hidden mt-4 text-base text-gray-400 hover:text-gray-600 underline cursor-pointer">다시 시작</button>
+
+      <p class="text-xs text-gray-400 mt-4">NIA 공식 정책 기준. 최종 업데이트: 2026년 7월. <span class="underline">예약 전 대사관에 확인하세요.</span></p>
+    </div>
+
+    
+
+<!-- Quick Stats -->
+    <div class="grid grid-cols-2 gap-3 mb-12 not-prose">
       <div class="bg-green-50 border border-green-200 rounded-xl p-4 text-center">
         <p class="text-2xl font-extrabold text-green-800">5</p>
         <p class="text-xs font-semibold text-green-800 uppercase tracking-wide mt-1">비자 및 입국</p>
-      </div>
-      <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-blue-800">1</p>
-        <p class="text-xs font-semibold text-blue-800 uppercase tracking-wide mt-1">디지털 설정</p>
       </div>
       <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 text-center">
         <p class="text-2xl font-extrabold text-amber-800">4</p>
@@ -66,20 +127,7 @@ const description = '중국 여행 전 준비해야 할 모든 것.';
           </a>
         </div>
       </div>
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-blue-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-blue-800">디지털 설정</h2>
-          <span class="text-xs font-medium text-blue-800 opacity-60">1개 문서</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/ko/life/sim-card-guide/" class="block bg-blue-50 border border-blue-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-blue-800">📶 인터넷</span>
-            <p class="text-base font-bold text-gray-900 mt-1">관광객을 위한 최고의 SIM 카드 & eSIM</p>
-            <p class="text-sm text-gray-600 mt-0.5">eSIM 제공업체, 공항 SIM 카드, 데이터 요금제 비교.</p>
-          </a>
-        </div>
-      </div>
+      
       <div>
         <div class="flex items-center gap-3 mb-3">
           <div class="w-1 h-7 bg-amber-500 rounded-full"></div>
@@ -111,19 +159,196 @@ const description = '중국 여행 전 준비해야 할 모든 것.';
       </div>
     </div>
 
-    <!-- Related Guides -->
-    <div class="bg-gray-50 rounded-2xl p-8 not-prose">
-      <h3 class="text-lg font-bold text-gray-900 mb-5">관련 가이드</h3>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-        <a href="/ko/payment/payment-guide/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
-          <p class="font-bold text-gray-900 mb-0.5">중국 결제</p>
-          <p class="text-sm text-gray-500">Alipay 설정 등</p>
-        </a>
-        <a href="/ko/transport/transport-guide/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
-          <p class="font-bold text-gray-900 mb-0.5">중국 교통</p>
-          <p class="text-sm text-gray-500">이동 방법</p>
-        </a>
+    <!-- 다음 단계 -->
+    <div class="border-t border-gray-100 pt-8 mb-4">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-2xl p-6 md:p-8 not-prose">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div>
+            <p class="text-xs font-bold tracking-widest text-brand-600 uppercase mb-1">다음 단계</p>
+            <h3 class="text-xl font-bold text-gray-900">결제를 설정하고 이동 방법을 배우세요</h3>
+            <p class="text-sm text-gray-600 mt-1 max-w-md">비자가 해결되었습니다. 이제 Alipay를 설정하고 중국 교통편 이용 방법을 알아보세요.</p>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-3 shrink-0">
+            <a href="/ko/payment/payment-guide/" class="inline-flex items-center justify-center gap-2 px-5 py-3 bg-white border border-gray-200 rounded-xl text-sm font-semibold text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              💳 결제 가이드
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ko/transport/transport-guide/" class="inline-flex items-center justify-center gap-2 px-5 py-3 bg-white border border-gray-200 rounded-xl text-sm font-semibold text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🚗 교통 가이드
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
+</section>
+
+<script is:inline>
+    const visaFree30 = ['BN','FR','DE','IT','ES','NL','CH','IE','HU','AT','BE','LU','NZ','AU','PL','PT','GR','CY','SI','SK','NO','FI','DK','IS','AD','MC','LI','KR','BG','RO','HR','ME','MK','MT','EE','LV','JP','BR','AR','CL','PE','UY','SA','OM','KW','BH','CA','RU','GB','SE'];
+    const mutualFree = ['AL','AE','AG','BB','BS','BY','BA','DM','EC','FJ','GD','GE','KZ','QA','MV','MU','WS','RS','SC','SM','SR','SB','TH','TO','UZ','SG','AM','AZ','MY'];
+    const transit240 = ['AL','AT','BE','BG','BA','BR','CA','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LT','LU','MT','MC','ME','NL','MK','NO','PL','PT','RO','RU','RS','SK','SI','KR','ES','SE','CH','UA','GB','US','AU','NZ','JP','SG','BN','AE','QA','MX','AR','CL','ID','BY'];
+
+    const countryData = [
+      {code:'AF',name:'Afghanistan',flag:'🇦🇫'},{code:'AL',name:'Albania',flag:'🇦🇱'},{code:'DZ',name:'Algeria',flag:'🇩🇿'},{code:'AD',name:'Andorra',flag:'🇦🇩'},
+      {code:'AO',name:'Angola',flag:'🇦🇴'},{code:'AG',name:'Antigua and Barbuda',flag:'🇦🇬'},{code:'AR',name:'Argentina',flag:'🇦🇷'},{code:'AM',name:'Armenia',flag:'🇦🇲'},
+      {code:'AU',name:'Australia',flag:'🇦🇺'},{code:'AT',name:'Austria',flag:'🇦🇹'},{code:'AZ',name:'Azerbaijan',flag:'🇦🇿'},{code:'BS',name:'Bahamas',flag:'🇧🇸'},
+      {code:'BH',name:'Bahrain',flag:'🇧🇭'},{code:'BD',name:'Bangladesh',flag:'🇧🇩'},{code:'BB',name:'Barbados',flag:'🇧🇧'},{code:'BY',name:'Belarus',flag:'🇧🇾'},
+      {code:'BE',name:'Belgium',flag:'🇧🇪'},{code:'BZ',name:'Belize',flag:'🇧🇿'},{code:'BJ',name:'Benin',flag:'🇧🇯'},{code:'BT',name:'Bhutan',flag:'🇧🇹'},
+      {code:'BO',name:'Bolivia',flag:'🇧🇴'},{code:'BA',name:'Bosnia and Herzegovina',flag:'🇧🇦'},{code:'BW',name:'Botswana',flag:'🇧🇼'},{code:'BR',name:'Brazil',flag:'🇧🇷'},
+      {code:'BN',name:'Brunei',flag:'🇧🇳'},{code:'BG',name:'Bulgaria',flag:'🇧🇬'},{code:'BF',name:'Burkina Faso',flag:'🇧🇫'},{code:'BI',name:'Burundi',flag:'🇧🇮'},
+      {code:'CV',name:'Cabo Verde',flag:'🇨🇻'},{code:'KH',name:'Cambodia',flag:'🇰🇭'},{code:'CM',name:'Cameroon',flag:'🇨🇲'},{code:'CA',name:'Canada',flag:'🇨🇦'},
+      {code:'CF',name:'Central African Republic',flag:'🇨🇫'},{code:'TD',name:'Chad',flag:'🇹🇩'},{code:'CL',name:'Chile',flag:'🇨🇱'},{code:'CN',name:'China',flag:'🇨🇳'},
+      {code:'CO',name:'Colombia',flag:'🇨🇴'},{code:'KM',name:'Comoros',flag:'🇰🇲'},{code:'CG',name:'Congo',flag:'🇨🇬'},{code:'CR',name:'Costa Rica',flag:'🇨🇷'},
+      {code:'HR',name:'Croatia',flag:'🇭🇷'},{code:'CU',name:'Cuba',flag:'🇨🇺'},{code:'CY',name:'Cyprus',flag:'🇨🇾'},{code:'CZ',name:'Czech Republic',flag:'🇨🇿'},
+      {code:'CI',name:"Côte d'Ivoire",flag:'🇨🇮'},{code:'CD',name:'Democratic Republic of the Congo',flag:'🇨🇩'},{code:'DK',name:'Denmark',flag:'🇩🇰'},{code:'DJ',name:'Djibouti',flag:'🇩🇯'},
+      {code:'DM',name:'Dominica',flag:'🇩🇲'},{code:'DO',name:'Dominican Republic',flag:'🇩🇴'},{code:'EC',name:'Ecuador',flag:'🇪🇨'},{code:'EG',name:'Egypt',flag:'🇪🇬'},
+      {code:'SV',name:'El Salvador',flag:'🇸🇻'},{code:'GQ',name:'Equatorial Guinea',flag:'🇬🇶'},{code:'ER',name:'Eritrea',flag:'🇪🇷'},{code:'EE',name:'Estonia',flag:'🇪🇪'},
+      {code:'SZ',name:'Eswatini',flag:'🇸🇿'},{code:'ET',name:'Ethiopia',flag:'🇪🇹'},{code:'FJ',name:'Fiji',flag:'🇫🇯'},{code:'FI',name:'Finland',flag:'🇫🇮'},
+      {code:'FR',name:'France',flag:'🇫🇷'},{code:'GA',name:'Gabon',flag:'🇬🇦'},{code:'GM',name:'Gambia',flag:'🇬🇲'},{code:'GE',name:'Georgia',flag:'🇬🇪'},
+      {code:'DE',name:'Germany',flag:'🇩🇪'},{code:'GH',name:'Ghana',flag:'🇬🇭'},{code:'GR',name:'Greece',flag:'🇬🇷'},{code:'GD',name:'Grenada',flag:'🇬🇩'},
+      {code:'GT',name:'Guatemala',flag:'🇬🇹'},{code:'GN',name:'Guinea',flag:'🇬🇳'},{code:'GW',name:'Guinea-Bissau',flag:'🇬🇼'},{code:'GY',name:'Guyana',flag:'🇬🇾'},
+      {code:'HT',name:'Haiti',flag:'🇭🇹'},{code:'HN',name:'Honduras',flag:'🇭🇳'},{code:'HU',name:'Hungary',flag:'🇭🇺'},{code:'IS',name:'Iceland',flag:'🇮🇸'},
+      {code:'IN',name:'India',flag:'🇮🇳'},{code:'ID',name:'Indonesia',flag:'🇮🇩'},{code:'IR',name:'Iran',flag:'🇮🇷'},{code:'IQ',name:'Iraq',flag:'🇮🇶'},
+      {code:'IE',name:'Ireland',flag:'🇮🇪'},{code:'IL',name:'Israel',flag:'🇮🇱'},{code:'IT',name:'Italy',flag:'🇮🇹'},{code:'JM',name:'Jamaica',flag:'🇯🇲'},
+      {code:'JP',name:'Japan',flag:'🇯🇵'},{code:'JO',name:'Jordan',flag:'🇯🇴'},{code:'KZ',name:'Kazakhstan',flag:'🇰🇿'},{code:'KE',name:'Kenya',flag:'🇰🇪'},
+      {code:'KI',name:'Kiribati',flag:'🇰🇮'},{code:'KP',name:"Korea, Democratic People's Republic of",flag:'🇰🇵'},{code:'KW',name:'Kuwait',flag:'🇰🇼'},{code:'KG',name:'Kyrgyzstan',flag:'🇰🇬'},
+      {code:'LA',name:'Laos',flag:'🇱🇦'},{code:'LV',name:'Latvia',flag:'🇱🇻'},{code:'LB',name:'Lebanon',flag:'🇱🇧'},{code:'LS',name:'Lesotho',flag:'🇱🇸'},
+      {code:'LR',name:'Liberia',flag:'🇱🇷'},{code:'LY',name:'Libya',flag:'🇱🇾'},{code:'LI',name:'Liechtenstein',flag:'🇱🇮'},{code:'LT',name:'Lithuania',flag:'🇱🇹'},
+      {code:'LU',name:'Luxembourg',flag:'🇱🇺'},{code:'MG',name:'Madagascar',flag:'🇲🇬'},{code:'MW',name:'Malawi',flag:'🇲🇼'},{code:'MY',name:'Malaysia',flag:'🇲🇾'},
+      {code:'MV',name:'Maldives',flag:'🇲🇻'},{code:'ML',name:'Mali',flag:'🇲🇱'},{code:'MT',name:'Malta',flag:'🇲🇹'},{code:'MH',name:'Marshall Islands',flag:'🇲🇭'},
+      {code:'MR',name:'Mauritania',flag:'🇲🇷'},{code:'MU',name:'Mauritius',flag:'🇲🇺'},{code:'MX',name:'Mexico',flag:'🇲🇽'},{code:'FM',name:'Micronesia',flag:'🇫🇲'},
+      {code:'MD',name:'Moldova',flag:'🇲🇩'},{code:'MC',name:'Monaco',flag:'🇲🇨'},{code:'MN',name:'Mongolia',flag:'🇲🇳'},{code:'ME',name:'Montenegro',flag:'🇲🇪'},
+      {code:'MA',name:'Morocco',flag:'🇲🇦'},{code:'MZ',name:'Mozambique',flag:'🇲🇿'},{code:'MM',name:'Myanmar',flag:'🇲🇲'},{code:'NA',name:'Namibia',flag:'🇳🇦'},
+      {code:'NR',name:'Nauru',flag:'🇳🇷'},{code:'NP',name:'Nepal',flag:'🇳🇵'},{code:'NL',name:'Netherlands',flag:'🇳🇱'},{code:'NZ',name:'New Zealand',flag:'🇳🇿'},
+      {code:'NI',name:'Nicaragua',flag:'🇳🇮'},{code:'NE',name:'Niger',flag:'🇳🇪'},{code:'NG',name:'Nigeria',flag:'🇳🇬'},{code:'MK',name:'North Macedonia',flag:'🇲🇰'},
+      {code:'NO',name:'Norway',flag:'🇳🇴'},{code:'OM',name:'Oman',flag:'🇴🇲'},{code:'PK',name:'Pakistan',flag:'🇵🇰'},{code:'PW',name:'Palau',flag:'🇵🇼'},
+      {code:'PA',name:'Panama',flag:'🇵🇦'},{code:'PG',name:'Papua New Guinea',flag:'🇵🇬'},{code:'PY',name:'Paraguay',flag:'🇵🇾'},{code:'PE',name:'Peru',flag:'🇵🇪'},
+      {code:'PH',name:'Philippines',flag:'🇵🇭'},{code:'PL',name:'Poland',flag:'🇵🇱'},{code:'PT',name:'Portugal',flag:'🇵🇹'},{code:'QA',name:'Qatar',flag:'🇶🇦'},
+      {code:'RO',name:'Romania',flag:'🇷🇴'},{code:'RU',name:'Russia',flag:'🇷🇺'},{code:'RW',name:'Rwanda',flag:'🇷🇼'},{code:'KN',name:'Saint Kitts and Nevis',flag:'🇰🇳'},
+      {code:'LC',name:'Saint Lucia',flag:'🇱🇨'},{code:'VC',name:'Saint Vincent and the Grenadines',flag:'🇻🇨'},{code:'WS',name:'Samoa',flag:'🇼🇸'},{code:'SM',name:'San Marino',flag:'🇸🇲'},
+      {code:'ST',name:'Sao Tome and Principe',flag:'🇸🇹'},{code:'SA',name:'Saudi Arabia',flag:'🇸🇦'},{code:'SN',name:'Senegal',flag:'🇸🇳'},{code:'RS',name:'Serbia',flag:'🇷🇸'},
+      {code:'SC',name:'Seychelles',flag:'🇸🇨'},{code:'SL',name:'Sierra Leone',flag:'🇸🇱'},{code:'SG',name:'Singapore',flag:'🇸🇬'},{code:'SK',name:'Slovakia',flag:'🇸🇰'},
+      {code:'SI',name:'Slovenia',flag:'🇸🇮'},{code:'SB',name:'Solomon Islands',flag:'🇸🇧'},{code:'SO',name:'Somalia',flag:'🇸🇴'},{code:'ZA',name:'South Africa',flag:'🇿🇦'},
+      {code:'KR',name:'South Korea',flag:'🇰🇷'},{code:'SS',name:'South Sudan',flag:'🇸🇸'},{code:'ES',name:'Spain',flag:'🇪🇸'},{code:'LK',name:'Sri Lanka',flag:'🇱🇰'},
+      {code:'SD',name:'Sudan',flag:'🇸🇩'},{code:'SR',name:'Suriname',flag:'🇸🇷'},{code:'SE',name:'Sweden',flag:'🇸🇪'},{code:'CH',name:'Switzerland',flag:'🇨🇭'},
+      {code:'SY',name:'Syria',flag:'🇸🇾'},{code:'TJ',name:'Tajikistan',flag:'🇹🇯'},{code:'TH',name:'Thailand',flag:'🇹🇭'},{code:'TL',name:'Timor-Leste',flag:'🇹🇱'},
+      {code:'TG',name:'Togo',flag:'🇹🇬'},{code:'TO',name:'Tonga',flag:'🇹🇴'},{code:'TT',name:'Trinidad and Tobago',flag:'🇹🇹'},{code:'TN',name:'Tunisia',flag:'🇹🇳'},
+      {code:'TR',name:'Turkey',flag:'🇹🇷'},{code:'TM',name:'Turkmenistan',flag:'🇹🇲'},{code:'TV',name:'Tuvalu',flag:'🇹🇻'},{code:'UG',name:'Uganda',flag:'🇺🇬'},
+      {code:'UA',name:'Ukraine',flag:'🇺🇦'},{code:'AE',name:'United Arab Emirates',flag:'🇦🇪'},{code:'GB',name:'United Kingdom',flag:'🇬🇧'},{code:'US',name:'United States',flag:'🇺🇸'},
+      {code:'UY',name:'Uruguay',flag:'🇺🇾'},{code:'UZ',name:'Uzbekistan',flag:'🇺🇿'},{code:'VU',name:'Vanuatu',flag:'🇻🇺'},{code:'VE',name:'Venezuela',flag:'🇻🇪'},
+      {code:'VN',name:'Vietnam',flag:'🇻🇳'},{code:'YE',name:'Yemen',flag:'🇾🇪'},{code:'ZM',name:'Zambia',flag:'🇿🇲'},{code:'ZW',name:'Zimbabwe',flag:'🇿🇼'}
+    ];
+
+    let state = { country: null, purpose: null };
+    const countryInput = document.getElementById('country-input');
+    const countryDropdown = document.getElementById('country-dropdown');
+    const countrySelected = document.getElementById('country-selected');
+    const stepPurpose = document.getElementById('step-purpose');
+    const resultDiv = document.getElementById('visa-result');
+    const resetBtn = document.getElementById('reset-checker');
+    const purposeBtns = document.querySelectorAll('.purpose-btn');
+
+    function getVisaStatus(code) {
+      if (visaFree30.includes(code)) return 'visa-free-30';
+      if (mutualFree.includes(code)) return 'mutual-free';
+      if (transit240.includes(code)) return 'transit';
+      return 'need-visa';
+    }
+
+    countryInput.addEventListener('input', function() {
+      renderDropdown(this.value.toLowerCase().trim());
+    });
+    countryInput.addEventListener('focus', function() {
+      renderDropdown(this.value);
+    });
+
+    function renderDropdown(q) {
+      const matches = q ? countryData.filter(c => c.name.toLowerCase().includes(q) || c.code.toLowerCase() === q) : countryData;
+      if (matches.length === 0) { countryDropdown.classList.add('hidden'); return; }
+      countryDropdown.innerHTML = matches.map(c =>
+        '<div class="px-4 py-2.5 hover:bg-brand-50 cursor-pointer flex items-center gap-3 text-base border-b border-gray-100 last:border-0 ' + (state.country === c.code ? 'bg-brand-50 font-semibold' : '') + '" data-code="' + c.code + '"><span>' + c.flag + '</span><span>' + c.name + '</span></div>'
+      ).join('');
+      countryDropdown.classList.remove('hidden');
+    }
+
+    countryDropdown.addEventListener('click', function(e) {
+      var item = e.target.closest('[data-code]');
+      if (item) selectCountry(item.dataset.code);
+    });
+    document.querySelectorAll('.quick-country').forEach(function(btn) {
+      btn.addEventListener('click', function() { selectCountry(this.dataset.code); });
+    });
+
+    function selectCountry(code) {
+      var c = countryData.find(function(x) { return x.code === code; });
+      if (!c) return;
+      state.country = code;
+      countryInput.value = '';
+      countryDropdown.classList.add('hidden');
+      countrySelected.classList.remove('hidden');
+      countrySelected.innerHTML = c.flag + ' <span class="font-semibold">' + c.name + '</span>';
+      document.querySelectorAll('.quick-country').forEach(function(btn) {
+        if (btn.dataset.code === code) { btn.classList.add('bg-brand-500','text-white','border-brand-500'); btn.classList.remove('bg-white','border-gray-200'); }
+        else { btn.classList.remove('bg-brand-500','text-white','border-brand-500'); btn.classList.add('bg-white','border-gray-200'); }
+      });
+      stepPurpose.classList.remove('hidden');
+      resultDiv.classList.add('hidden');
+      state.purpose = null;
+      purposeBtns.forEach(function(b) { b.classList.remove('bg-brand-500','text-white','border-brand-500'); b.classList.add('bg-white','text-gray-700','border-gray-200'); });
+    }
+
+    purposeBtns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        state.purpose = this.dataset.purpose;
+        purposeBtns.forEach(function(b) { b.classList.remove('bg-brand-500','text-white','border-brand-500'); b.classList.add('bg-white','text-gray-700','border-gray-200'); });
+        this.classList.remove('bg-white','text-gray-700','border-gray-200');
+        this.classList.add('bg-brand-500','text-white','border-brand-500');
+        resetBtn.classList.remove('hidden');
+        showResult();
+      });
+    });
+
+    function detailRow(label, value) {
+      return '<div class="flex gap-x-3 text-sm leading-relaxed mb-2 pb-2 border-b border-gray-100"><span class="w-28 shrink-0 text-right font-medium text-gray-500">' + label + '</span><span class="text-gray-700">' + value + '</span></div>';
+    }
+
+    function showResult() {
+      var country = countryData.find(function(c) { return c.code === state.country; });
+      var name = country ? country.name : '귀하의 국가';
+      var status = getVisaStatus(state.country);
+      var purpose = state.purpose;
+
+      if (purpose === 'work') {
+        resultDiv.innerHTML = '<div class="rounded-xl border border-gray-200 border-l-4 border-l-orange-500 overflow-hidden"><div class="bg-orange-50 px-5 py-4"><p class="text-xs font-bold tracking-widest text-orange-600 uppercase mb-1.5">비자 필요</p><h3 class="text-base font-semibold text-gray-900 leading-snug mb-1">' + name + ' — 취업은 Z비자 필요</h3><p class="text-sm text-gray-600 leading-relaxed">중국에서 일하려면 여권이나 입국 방식과 관계없이 항상 사전 승인된 Z 비자가 필요합니다.</p></div><div class="bg-white px-5 py-4">' + detailRow('비자 유형', 'Z비자 (취업 허가)') + detailRow('스폰서', '고용주가 대신 신청') + detailRow('처리 기간', '보통 4-8주') + '<a href="https://en.nia.gov.cn/" target="_blank" class="inline-block text-base font-medium text-orange-600 hover:underline">NIA 공식 사이트 →</a><div class="bg-gray-50 rounded-xl p-3 mt-4 flex flex-wrap gap-x-6 gap-y-1"><a href="/ko/visa/visa-guide/" class="text-sm font-medium text-brand-600 hover:underline">중국 비자 유형 →</a></div></div></div>';
+      } else if (purpose === 'study') {
+        resultDiv.innerHTML = '<div class="rounded-xl border border-gray-200 border-l-4 border-l-orange-500 overflow-hidden"><div class="bg-orange-50 px-5 py-4"><p class="text-xs font-bold tracking-widest text-orange-600 uppercase mb-1.5">비자 필요</p><h3 class="text-base font-semibold text-gray-900 leading-snug mb-1">' + name + ' — 유학은 X비자 필요</h3><p class="text-sm text-gray-600 leading-relaxed">중국에서 유학하려면 여권이나 입국 방식과 관계없이 항상 사전 승인된 X 비자가 필요합니다.</p></div><div class="bg-white px-5 py-4">' + detailRow('비자 유형', 'X1 (180일 초과) 또는 X2 (180일 이하)') + detailRow('서류', 'JW202 양식, 입학 허가서, 건강검진') + detailRow('처리 기간', '5-10 영업일') + '<a href="https://en.nia.gov.cn/" target="_blank" class="inline-block text-base font-medium text-orange-600 hover:underline">NIA 공식 사이트 →</a><div class="bg-gray-50 rounded-xl p-3 mt-4 flex flex-wrap gap-x-6 gap-y-1"><a href="/ko/visa/visa-guide/" class="text-sm font-medium text-brand-600 hover:underline">중국 비자 유형 →</a></div></div></div>';
+      } else if (purpose === 'tourism-business') {
+        if (status === 'visa-free-30' || status === 'mutual-free') {
+          var policyText = status === 'visa-free-30' ? '30일 무비자 입국' : '양자 상호 협정';
+          resultDiv.innerHTML = '<div class="rounded-xl border border-gray-200 border-l-4 border-l-green-500 overflow-hidden"><div class="bg-green-50 px-5 py-4"><p class="text-xs font-bold tracking-widest text-green-700 uppercase mb-1.5">무비자</p><h3 class="text-base font-semibold text-gray-900 leading-snug mb-1">' + name + ' — 30일, 무비자</h3><p class="text-sm text-gray-600 leading-relaxed">비자 없이 최대 30일까지 중국에 입국할 수 있습니다.</p></div><div class="bg-white px-5 py-4">' + detailRow('정책', policyText) + detailRow('유효 기간', '2026년 12월 31일까지') + detailRow('입국', '모든 항구 — 항공, 홍콩 육로 국경 또는 해상') + detailRow('허용 용도', '관광, 출장, 가족 방문, 환승') + detailRow('불허', '취업, 유학, 언론') + '<a href="https://en.nia.gov.cn/" target="_blank" class="inline-block text-base font-medium text-green-600 hover:underline">NIA 공식 사이트 →</a><div class="bg-gray-50 rounded-xl p-3 mt-4 flex flex-wrap gap-x-6 gap-y-1"><a href="/ko/visa/visa-free/" class="text-sm font-medium text-brand-600 hover:underline">무비자 전체 목록 →</a><a href="/ko/visa/first-time-china/" class="text-sm font-medium text-brand-600 hover:underline">중국 첫 방문 →</a></div></div></div>';
+        } else if (transit240.includes(state.country)) {
+          resultDiv.innerHTML = '<div class="rounded-xl border border-gray-200 border-l-4 border-l-gray-400 overflow-hidden"><div class="bg-gray-50 px-5 py-4"><p class="text-xs font-bold tracking-widest text-gray-500 uppercase mb-1.5">비자 옵션</p><h3 class="text-base font-semibold text-gray-900 leading-snug mb-1">' + name + ' — L비자 또는 240시간 환승</h3><p class="text-sm text-gray-600 leading-relaxed">두 가지 옵션이 있습니다. 여행 일정에 맞는 것을 선택하세요.</p></div><div class="bg-white px-5 py-4 space-y-6"><div class="rounded-lg border-l-4 border-orange-400 overflow-hidden"><div class="bg-orange-50 px-3 py-2"><p class="text-base font-semibold text-orange-700 mb-0.5">📄 옵션 A: 비자 신청</p><p class="text-sm text-gray-600 leading-relaxed">직항 왕복 여행의 경우 ' + name + '과 중국 사이. 여행 전 중국 대사관에서 신청하세요.</p></div><div class="bg-white px-3 py-2">' + detailRow('비자 유형', '보통 L비자 (관광) 또는 M비자 (출장)') + detailRow('서류', '여권, 사진, 일정, 재정 증명, 공식 양식') + detailRow('처리 기간', '4~10 영업일') + '<a href="/ko/visa/apply-l-visa/" class="text-base text-orange-600 font-medium hover:underline">L비자 신청 방법 →</a></div></div><div class="rounded-lg border-l-4 border-blue-400 overflow-hidden"><div class="bg-blue-50 px-3 py-2"><p class="text-base font-semibold text-blue-700 mb-0.5">🔄 옵션 B: 240시간 환승 (비자 불필요)</p><p class="text-sm text-gray-600 leading-relaxed">홍콩, 마카오 또는 다른 국가를 포함하는 여행의 경우. 최대 10일간 무비자 체류.</p></div><div class="bg-white px-3 py-2">' + detailRow('조건', '제3국 또는 지역으로의 확정된 환승 항공권') + detailRow('최대 체류', '240시간 (10일)') + '<a href="/ko/visa/transit-240/" class="text-base text-blue-600 font-medium hover:underline">240시간 환승 상세 →</a></div></div><div class="pt-2 border-t border-gray-100"><a href="https://en.nia.gov.cn/" target="_blank" class="inline-block text-base font-medium text-gray-500 hover:text-gray-700">NIA 공식 사이트 →</a></div></div></div>';
+        } else {
+          resultDiv.innerHTML = '<div class="rounded-xl border border-gray-200 border-l-4 border-l-orange-500 overflow-hidden"><div class="bg-orange-50 px-5 py-4"><p class="text-xs font-bold tracking-widest text-orange-600 uppercase mb-1.5">비자 필요</p><h3 class="text-base font-semibold text-gray-900 leading-snug mb-1">' + name + ' — 여행 전 신청</h3><p class="text-sm text-gray-600 leading-relaxed">' + name + ' 여권 소지자는 도착 전에 중국 비자를 신청해야 합니다.</p></div><div class="bg-white px-5 py-4">' + detailRow('비자 유형', '보통 L비자 (관광) 또는 M비자 (출장)') + detailRow('신청 장소', '본국의 중국 대사관 또는 영사관') + detailRow('서류', '여권, 사진, 일정, 재정 증명, 공식 양식') + detailRow('처리 기간', '보통 4-10 영업일') + '<a href="https://en.nia.gov.cn/" target="_blank" class="inline-block text-base font-medium text-orange-600 hover:underline">NIA 공식 사이트 →</a><div class="bg-gray-50 rounded-xl p-3 mt-4 flex flex-wrap gap-x-6 gap-y-1"><a href="/ko/visa/apply-l-visa/" class="text-sm font-medium text-brand-600 hover:underline">L비자 신청 가이드 →</a><a href="/ko/visa/visa-guide/" class="text-sm font-medium text-brand-600 hover:underline">중국 비자 유형 개요 →</a></div></div></div>';
+        }
+      }
+      resultDiv.classList.remove('hidden');
+    }
+
+    resetBtn.addEventListener('click', function() {
+      state = { country: null, purpose: null };
+      countryInput.value = '';
+      countryDropdown.classList.add('hidden');
+      countrySelected.classList.add('hidden');
+      stepPurpose.classList.add('hidden');
+      resultDiv.classList.add('hidden');
+      resetBtn.classList.add('hidden');
+      purposeBtns.forEach(function(b) { b.classList.remove('bg-brand-500','text-white','border-brand-500'); b.classList.add('bg-white','text-gray-700','border-gray-200'); });
+    });
+
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('#step-country')) countryDropdown.classList.add('hidden');
+    });
+  </script>
+
 </Layout>

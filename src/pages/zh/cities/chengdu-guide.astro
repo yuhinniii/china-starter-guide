@@ -1,237 +1,204 @@
 ---
 import Layout from '@layouts/Layout.astro';
-const title = "成都旅行指南：熊猫、麻辣美食与慢生活";
-const description = "来成都看大熊猫、吃世界上最辣的美食，体验四川的悠闲生活方式。";
+const title = "成都旅行指南：熊猫、美食与慢生活";
+const description = "成都完全指南——大熊猫、川菜和悠闲生活方式，这座来了就不想走的城市。";
 ---
 
 <Layout title={title} description={description} lang="zh">
+    <nav class="mb-8 not-prose">
+      <a href="/zh/cities/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        返回城市指南
+      </a>
+    </nav>
   <article class="max-w-4xl mx-auto px-6 py-12">
     <header class="mb-12">
       <p class="text-sm text-gray-500 mb-3">🏙️ 成都</p>
-      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">成都旅行指南：熊猫、麻辣美食与慢生活</h1>
-      <p class="text-xl text-gray-600 mb-6">来成都看大熊猫、吃世界上最辣的美食，体验四川的悠闲生活方式。</p>
-      <div class="flex items-center gap-4 text-sm text-gray-500"><span>📅 最后更新：2026年6月</span><span>⏱️ 阅读时间：8分钟</span></div>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">成都旅行指南：熊猫、美食与慢生活</h1>
+      <p class="text-xl text-gray-600 mb-6">成都完全指南——大熊猫、川菜和悠闲生活方式，这座来了就不想走的城市。</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 最后更新：2026年6月</span>
+        <span>⏱️ 阅读时间：7分钟</span>
+      </div>
     </header>
 
-    <div class="bg-gradient-to-r from-orange-50 to-red-50 border-l-4 border-orange-500 rounded-r-2xl p-8 mb-12 not-prose">
-      <h2 class="text-2xl font-bold text-orange-900 mb-4">⚡ 快速回答</h2>
-      <p class="text-lg text-orange-800 leading-relaxed">成都是<strong>熊猫和花椒的国度</strong>。早上在竹林中看大熊猫打滚，中午吃辣到耳朵发麻的美食，下午在千年古寺中品茶。这座城市以悠闲的生活节奏闻名——成都人称之为"幸福之都"，你一到达就能感受到。</p>
+    <div class="bg-gradient-to-r from-pink-50 to-yellow-50 border-l-4 border-pink-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-pink-900 mb-4">⚡ 快速回答</h2>
+      <p class="text-lg text-pink-800 leading-relaxed">成都是<strong>大熊猫的故乡</strong>和川菜的中心。但这座城市真正特别之处在于它的生活方式——成都人悠闲自在，热爱泡茶馆、打麻将。成都位于被称为\"天府之国\"的富饶成都平原，拥有3000多年历史，同时也在快速发展现代化。对三国迷来说，武侯祠是必到之处。而最重要的是，成都是世界上能最近距离看大熊猫的地方。</p>
     </div>
 
     <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
       <h3 class="text-lg font-bold text-gray-900 mb-4">📋 本指南目录</h3>
       <ul class="space-y-3">
-        <li><a href="#why-visit" class="text-blue-600 hover:underline">🐼 为什么去成都？</a></li>
-        <li><a href="#how-many-days" class="text-blue-600 hover:underline">📅 需要玩几天？</a></li>
+        <li><a href="#why-visit" class="text-blue-600 hover:underline">🐼 为什么要去成都</a></li>
+        <li><a href="#how-many-days" class="text-blue-600 hover:underline">📅 需要几天</a></li>
         <li><a href="#attractions" class="text-blue-600 hover:underline">🎯 热门景点</a></li>
-        <li><a href="#getting-around" class="text-blue-600 hover:underline">🚇 交通出行</a></li>
-        <li><a href="#where-to-stay" class="text-blue-600 hover:underline">🏨 住宿推荐</a></li>
+        <li><a href="#getting-around" class="text-blue-600 hover:underline">🚇 市内交通</a></li>
+        <li><a href="#where-to-stay" class="text-blue-600 hover:underline">🏨 住在哪里</a></li>
         <li><a href="#what-to-eat" class="text-blue-600 hover:underline">🍜 吃什么</a></li>
       </ul>
     </nav>
 
-    <h2 id="why-visit" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🐼 为什么去成都？</h2>
-    <p class="text-lg leading-relaxed text-gray-700 mb-12">成都是四川省会，也是通往中国西部自然奇观的门户。它毫不费力地平衡着传统与现代——古老的寺庙与时尚的艺术区并存，全球最辣的美食在传承数代的老店里供应。生活节奏出了名的慢：成都的茶馆数量超过中国任何其他城市，而且人们真的会去泡茶馆。</p>
+    <h2 id="why-visit" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🐼 为什么要去成都</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-12">成都被誉为\"天府之国\"，是一座拥有3000多年历史的古都，同时兼具现代魅力。这里有全球最大的大熊猫繁育研究基地，是少数能近距离看大熊猫的地方之一。作为川菜发源地，麻婆豆腐、担担面等世界名菜都诞生于此。成都人珍视用\"安逸\"来形容的悠闲生活方式——泡茶馆、吃火锅是这座城市的文化传统。对于历史爱好者来说，三国文化的圣地巡礼也极具吸引力。</p>
 
-    <h2 id="how-many-days" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📅 需要玩几天？</h2>
-    <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700 mb-4">
-      <li><strong>3–4天（标准）：</strong>熊猫、锦里、武侯祠和认真地吃</li>
-      <li><strong>5–7天（舒适）：</strong>增加乐山大佛（1天）或峨眉山（2天）</li>
-      <li><strong>7天以上（深度游）：</strong>增加九寨沟国家公园（3–4天）</li>
+    <h2 id="how-many-days" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📅 需要几天</h2>
+    <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700 mb-12">
+      <li><strong>2-3天（标准）：</strong>熊猫基地、武侯祠、锦里、宽窄巷子，品尝川菜</li>
+      <li><strong>4-5天（宽松）：</strong>峨眉山或乐山大佛一日游，登上青城山</li>
+      <li><strong>6天以上（深度）：</strong>前往九寨沟、黄龙等四川自然奇观</li>
     </ul>
-    <p class="text-lg text-gray-700 mb-12">如果你有多余的时间，四川省拥有中国最壮观的景色。乐山大佛（距成都约1.5小时）高71米，是世界最大的石雕佛像。对于喜欢冒险的旅行者，九寨沟的碧蓝湖泊和瀑布令人终生难忘，但至少需要3–4天。</p>
 
-    <!-- ==================== 景点 ==================== -->
+    <!-- ==================== ATTRACTIONS ==================== -->
     <h2 id="attractions" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎯 热门景点</h2>
 
-    <!-- 熊猫基地 -->
-    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
-      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
-        <img src="/images/chengdu/panda-base.webp" class="w-full h-auto object-cover" loading="lazy" />
+    <!-- Panda Base -->
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/chengdu/panda-base.webp" alt="成都大熊猫繁育研究基地的大熊猫" class="w-full h-auto object-cover" loading="lazy" />
       </div>
-      <div class="order-1">
-        <h3 class="text-xl font-bold text-gray-900 mb-2">成都大熊猫繁育研究基地</h3>
-        <p class="text-gray-700">这里生活着约120只大熊猫——比地球上任何其他地方都多。早上8点前到达，赶上上午的喂食时间（8-10点），这时熊猫最活跃、最爱玩。从市中心打车约30分钟。跳过下午的参观——它们会在炎热中呼呼大睡。</p>
-      </div>
-      <div class="clear-both hidden md:block"></div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">成都大熊猫繁育研究基地</h3>
+      <p class="text-gray-700">全球最大、最负盛名的大熊猫保护研究机构，生活着100多只大熊猫和小熊猫。在这里你可以看到从刚出生的熊猫宝宝到成年大熊猫各个年龄段的熊猫。上午是熊猫最活跃的时间，能看到它们吃竹子、玩耍的样子。游览最佳时间是开园后立即入园（早上7:30），可以避开人流高峰，在凉爽的时段看到熊猫最活泼的一面。</p>
+      <div class="clear-both"></div>
     </div>
 
-    <!-- 锦里 -->
-    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
-      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
-        <img src="/images/chengdu/jinli.webp" class="w-full h-auto object-cover" loading="lazy" />
+    <!-- Wuhou Shrine -->
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/chengdu/wuhou-shrine.webp" alt="武侯祠，三国圣地" class="w-full h-auto object-cover" loading="lazy" />
       </div>
-      <div class="order-1">
-        <h3 class="text-xl font-bold text-gray-900 mb-2">锦里</h3>
-        <p class="text-gray-700">大多数旅游古街感觉像主题公园——但锦里让人感觉是活的。这条仿清风格的步行街紧邻武侯祠，空气中弥漫着烤串的香味、糖画的甜味，茶馆里传出川剧表演的声音。晚上来最好，红灯笼亮起，人群也少一些。</p>
-      </div>
-      <div class="clear-both hidden md:block"></div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">武侯祠</h3>
+      <p class="text-gray-700">纪念三国时期蜀汉丞相诸葛亮的祠庙，是三国迷的朝圣地。优美的园林和历史建筑让人沉浸在三国历史之中。祠内陈列着蜀汉英雄塑像，以及《出师表》等著名碑文。</p>
+      <div class="clear-both"></div>
     </div>
 
-    <!-- 武侯祠 -->
-    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
-      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
-        <img src="/images/chengdu/wuhou-shrine.webp" class="w-full h-auto object-cover" loading="lazy" />
+    <!-- Jinli & Kuanzhai -->
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/chengdu/jinli.webp" alt="锦里古街的红灯笼" class="w-full h-auto object-cover" loading="lazy" />
       </div>
-      <div class="order-1">
-        <h3 class="text-xl font-bold text-gray-900 mb-2">武侯祠</h3>
-        <p class="text-gray-700">纪念传奇谋士诸葛亮——他的名字在1800年的三国历史中回响至今。中心是诸葛亮的墓冢，周围红墙竹影，让整个地方仿佛凝固在时间里。不要错过正殿的石碑和塑像。与隔壁的锦里一起游览——一个下午就能逛完两个地方。</p>
-      </div>
-      <div class="clear-both hidden md:block"></div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">锦里 & 宽窄巷子</h3>
+      <p class="text-gray-700">成都最具代表性的历史文化街区。锦里毗邻武侯祠，是一条清代风格的商业街，红灯笼高挂，古色古香，两旁是各种纪念品店、小吃摊和茶馆。宽窄巷子由宽巷子、窄巷子和井巷子三条平行巷子组成，保留了传统川西建筑风貌，现已成为汇集咖啡馆、餐厅和艺术画廊的时尚地标。</p>
+      <div class="clear-both"></div>
     </div>
 
-    <!-- 宽窄巷子 -->
-    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
-      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
-        <img src="/images/chengdu/wide-narrow-alley.webp" class="w-full h-auto object-cover" loading="lazy" />
+    <!-- Du Fu Cottage -->
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/chengdu/dufu-cottage.webp" alt="杜甫草堂园林" class="w-full h-auto object-cover" loading="lazy" />
       </div>
-      <div class="order-1">
-        <h3 class="text-xl font-bold text-gray-900 mb-2">宽窄巷子</h3>
-        <p class="text-gray-700">三条巷子，三种截然不同的氛围。宽巷子是游客磁铁——商店、小吃、穿着同款衣服的人群。窄巷子才是精华所在：精品店、艺术画廊和藏在清代庭院里的咖啡馆。还有井巷子，三条中最安静的一条，两旁是居民住宅，人更少。从宽巷子开始，逛腻了再逃进窄巷子。</p>
-      </div>
-      <div class="clear-both hidden md:block"></div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">杜甫草堂</h3>
+      <p class="text-gray-700">唐代大诗人杜甫流寓成都时居住4年的茅屋旧址扩建而成的博物馆。翠竹掩映、清幽雅致的园林中，陈列着杜甫生平与作品展览。对中国诗歌和文化感兴趣的游客不容错过。</p>
+      <div class="clear-both"></div>
     </div>
 
-    <!-- 人民公园 -->
-    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
-      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
-        <img src="/images/chengdu/people-park.webp" class="w-full h-auto object-cover" loading="lazy" />
+    <!-- Mount Qingcheng -->
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/chengdu/qingchengshan.webp" alt="青城山的道教宫观与翠绿山林" class="w-full h-auto object-cover" loading="lazy" />
       </div>
-      <div class="order-1">
-        <h3 class="text-xl font-bold text-gray-900 mb-2">人民公园</h3>
-        <p class="text-gray-700">在这里，成都慢生活的老生常谈变成了现实。在露天茶馆里拖一把竹椅坐下，点一杯茉莉花茶，静静地看着——老大爷打麻将、退休夫妇跳舞、阿姨们唱戏。不要错过"相亲角"，家长们在这里为子女贴出征婚广告，薪资、身高和房产细节一一列明，宛如产品说明书。周末来能看到最热闹的场面。</p>
-      </div>
-      <div class="clear-both hidden md:block"></div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">青城山 & 都江堰</h3>
+      <p class="text-gray-700">从成都出发可一日往返的世界文化遗产。青城山是道教发源地之一，素有\"青城天下幽\"的美誉。都江堰则是2200多年前建成的古代水利工程，至今仍在发挥灌溉作用，是令人惊叹的工程奇迹。</p>
+      <div class="clear-both"></div>
     </div>
 
-    <!-- 青城山 -->
-    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-12 overflow-hidden">
-      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
-        <img src="/images/chengdu/qingcheng-mountain.webp" class="w-full h-auto object-cover" loading="lazy" />
+    <!-- Sichuan Opera -->
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12 overflow-hidden">
+      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/chengdu/sichuan-opera.webp" alt="川剧变脸表演" class="w-full h-auto object-cover" loading="lazy" />
       </div>
-      <div class="order-1">
-        <h3 class="text-xl font-bold text-gray-900 mb-2">青城山</h3>
-        <p class="text-gray-700">道教发源地之一，历史可追溯到1800年前。山中刻有"青城天下幽"的字样——名副其实。如果时间紧张可以乘索道上山，或者沿着竹荫掩映的山路徒步，体验完整的过程。无论如何，山顶的古寺都值得一去。距离成都约1小时车程。</p>
-      </div>
-      <div class="clear-both hidden md:block"></div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">川剧 & 变脸</h3>
+      <p class="text-gray-700">川剧是四川传统戏曲，其中\"变脸\"绝技闻名世界。演员在瞬间变换五彩斑斓的脸谱，令人叹为观止。成都有多家剧院上演川剧，是游客喜爱的夜间活动。</p>
+      <div class="clear-both"></div>
     </div>
 
-    <!-- 都江堰 -->
-    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-12 overflow-hidden">
-      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
-        <img src="/images/chengdu/dujiangyan.webp" class="w-full h-auto object-cover" loading="lazy" />
-      </div>
-      <div class="order-1">
-        <h3 class="text-xl font-bold text-gray-900 mb-2">都江堰</h3>
-        <p class="text-gray-700">一个2300年前修建、至今仍在使用的工程奇迹。李冰父子于公元前256年修建，用于治理岷江，它不用一座大坝就实现了分流——仅凭巧妙设计的河岸和一座人工岛将水流引入灌溉渠。结果：成都平原成为中国最肥沃的地区之一，并持续了两千多年。它与青城山完美搭配——两者仅相距15分钟车程，一天内可以游览两处。横跨江面的安澜索桥值得一走，可以看到背后的山景。</p>
-      </div>
-      <div class="clear-both hidden md:block"></div>
-    </div>
-
-    <h2 id="getting-around" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🚇 交通出行</h2>
+    <h2 id="getting-around" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🚇 市内交通</h2>
     <ul class="list-disc pl-6 space-y-3 text-lg text-gray-700 mb-12">
-      <li><strong>地铁：</strong>6条线路覆盖所有主要景点和熊猫基地。干净、现代、便宜。查看<a href="/zh/transport/metro-bus/" class="text-blue-600 hover:underline">中国主要城市地铁与公交指南</a>获取通用建议。</li>
-      <li><strong>滴滴：</strong>非常实惠——穿越市中心大多只需20–40元。提前在<a href="/zh/transport/didi/" class="text-blue-600 hover:underline">外国人如何在华使用滴滴</a>中设置好。</li>
-      <li><strong>骑行：</strong>成都地势平坦且有专用自行车道。共享单车随处可见。</li>
-      <li><strong>高铁：</strong>成都东站连接西安（3.5小时）和重庆（1.5小时）。阅读<a href="/zh/transport/high-speed-rail/" class="text-blue-600 hover:underline">如何预订和乘坐中国高铁</a>获取购票指南。</li>
+      <li><strong>地铁：</strong>成都地铁发展迅速，覆盖大部分主要景点。有英文标识。详情见<a href="/zh/transport/metro-bus/" class="text-blue-600 hover:underline">中国主要城市地铁公交指南</a>。</li>
+      <li><strong>滴滴：</strong>市内到处可用，很方便。设置方法见<a href="/zh/transport/didi/" class="text-blue-600 hover:underline">外国人在中国使用滴滴指南</a>。</li>
+      <li><strong>出租车：</strong>价格实惠，容易打到。</li>
+      <li><strong>共享单车：</strong>成都地势平坦，非常适合骑行。共享单车遍布全城，探索街巷很轻松。</li>
     </ul>
 
-    <h2 id="where-to-stay" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏨 住宿推荐</h2>
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">锦江区——首次来访最佳选择</h3><p class="text-gray-700">春熙路和太古里周边中心区域。购物、餐饮和地铁站步行可达。</p></div>
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">青羊区——文化爱好者首选</h3><p class="text-gray-700">靠近武侯祠、锦里和宽窄巷子。传统氛围，茶馆众多。</p></div>
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12"><h3 class="text-xl font-bold text-gray-900 mb-2">武侯区——美食爱好者首选</h3><p class="text-gray-700">美食聚集地。步行可至成都最好的餐厅和夜生活区。</p></div>
+    <h2 id="where-to-stay" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏨 住在哪里</h2>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">锦里/武侯祠区域——首次游客首选</h3><p class="text-gray-700">历史文化氛围浓厚，靠近主要景点。在传统韵味中体验成都。</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">春熙路区域——购物首选</h3><p class="text-gray-700">成都核心商圈，从高档酒店到经济型住宿选择丰富。地铁交通便利。</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12"><h3 class="text-xl font-bold text-gray-900 mb-2">宽窄巷子区域——文化体验首选</h3><p class="text-gray-700">保留传统川西建筑的街区，特色精品酒店和民宿众多。夜晚散步氛围极佳。</p></div>
 
-    <!-- ==================== 吃什么 ==================== -->
+    <!-- ==================== WHAT TO EAT ==================== -->
     <h2 id="what-to-eat" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🍜 吃什么</h2>
-    <p class="text-lg leading-relaxed text-gray-700 mb-6">成都是无可争议的川菜之都——浓烈、火爆、令人难忘。</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">川菜之魂在成都。麻辣鲜香的各色菜肴令全球食客为之倾倒。</p>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-      <!-- 麻婆豆腐 -->
       <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
         <div class="flex items-center justify-center bg-gray-50 p-3">
-          <img src="/images/chengdu/mapo-tofu.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
+          <img src="/images/chengdu/food/mapo-tofu.webp" alt="麻婆豆腐" class="max-w-full max-h-56 object-contain" loading="lazy" />
         </div>
         <div class="p-4">
           <h3 class="text-lg font-bold text-gray-900 mb-1">麻婆豆腐</h3>
-          <p class="text-gray-600 text-base">嫩滑的豆腐块浸泡在鲜红酱汁中，辣味和麻味各半。花椒在你的舌尖留下酥麻感，每一口都在累积——那种让你额头冒汗却忍不住再来一勺的感觉。嫩滑到入口即化的豆腐和浓烈酱汁的对比，就是这道菜的精髓。城里几乎每家川菜馆都有。</p>
+          <p class="text-gray-600 text-base">川菜的代表之作。嫩豆腐与猪肉末、豆瓣酱、花椒一同烧制，花椒的麻和辣椒的辣相得益彰。白米饭上浇一勺，是成都人最熟悉的味道。城里随处可吃，但陈麻婆豆腐总店最为正宗。</p>
         </div>
       </div>
 
-      <!-- 宫保鸡丁 -->
       <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
         <div class="flex items-center justify-center bg-gray-50 p-3">
-          <img src="/images/chengdu/kung-pao-chicken.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-900 mb-1">宫保鸡丁</h3>
-          <p class="text-gray-600 text-base">鸡丁、酥脆花生和干辣椒——看起来比吃起来辣。秘诀在于平衡：醋和糖调出的酸甜口感，辣椒带来的温热的慢热感，以及花生的坚果脆香作为骨架。这是外国人最熟悉的川菜，名副其实。找那种整只干辣椒需要边吃边挑出来的版本——这才是地道的本地吃法。</p>
-        </div>
-      </div>
-
-      <!-- 担担面 -->
-      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
-        <div class="flex items-center justify-center bg-gray-50 p-3">
-          <img src="/images/chengdu/dan-dan-noodles.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
+          <img src="/images/chengdu/food/dandan-noodles.webp" alt="担担面" class="max-w-full max-h-56 object-contain" loading="lazy" />
         </div>
         <div class="p-4">
           <h3 class="text-lg font-bold text-gray-900 mb-1">担担面</h3>
-          <p class="text-gray-600 text-base">最原始的街头面条。碗底是肉末、芽菜和红油——你自己拌匀，让每根面条都裹上那种咸辣麻的酱汁。芽菜提供的醇厚深度抵消了辣味。快速搅拌，快速吃。</p>
+          <p class="text-gray-600 text-base">起源于街边担担小贩的成都名面。细面条上浇着猪肉末、芽菜、葱花、芝麻酱、花椒和红油调制的酱料。甜、辣、麻的平衡恰到好处，一口就能尝到川味的精髓。</p>
         </div>
       </div>
 
-      <!-- 火锅 -->
       <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
         <div class="flex items-center justify-center bg-gray-50 p-3">
-          <img src="/images/chengdu/hotpot.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
+          <img src="/images/chengdu/food/huoguo.webp" alt="四川火锅" class="max-w-full max-h-56 object-contain" loading="lazy" />
         </div>
         <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-900 mb-1">火锅</h3>
-          <p class="text-gray-600 text-base">这不只是一顿饭——而是一场两小时的集体活动。一锅沸腾的麻辣汤底放在桌子中央，每个人自己煮食材：薄切牛肉、毛肚、土豆、青菜、豆皮。真正的秘诀是蘸料台——混合香油、蒜泥、香菜和醋来降温解辣。至少三个人一起去，这样能点多一些菜。如果受不了全辣，可以点"鸳鸯锅"（双味锅）。</p>
+          <h3 class="text-lg font-bold text-gray-900 mb-1">四川火锅</h3>
+          <p class="text-gray-600 text-base">成都饮食文化的精髓。沸腾的麻辣红油锅中涮入薄肉片、蔬菜、豆腐、菌菇等食材，蘸香油碟食用。四川特有的香油碟能缓解辣度，增添风味。本地人喜欢就着啤酒或酸梅汤吃上几个小时。</p>
         </div>
       </div>
 
-      <!-- 回锅肉 -->
       <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
         <div class="flex items-center justify-center bg-gray-50 p-3">
-          <img src="/images/chengdu/twice-cooked-pork.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
+          <img src="/images/chengdu/food/chuanchuan.webp" alt="串串香" class="max-w-full max-h-56 object-contain" loading="lazy" />
         </div>
         <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-900 mb-1">回锅肉</h3>
-          <p class="text-gray-600 text-base">五花肉先煮后切薄片，再与蒜苗和豆瓣酱同炒至边缘焦香。双重烹饪技法赋予了肉质无法通过其他方式获得的纹理——内部软嫩，外部微脆有嚼劲。这是川版的家常菜，是一种你会在家里的餐桌上吃到的菜。几乎每家本地餐馆的菜单上都有。</p>
-        </div>
-      </div>
-
-      <!-- 夫妻肺片 -->
-      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
-        <div class="flex items-center justify-center bg-gray-50 p-3">
-          <img src="/images/chengdu/fuqi-feipian.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-900 mb-1">夫妻肺片</h3>
-          <p class="text-gray-600 text-base">凉拌牛肉和牛杂，淋上大量红油、花椒和熟芝麻。尽管名字里有"肺片"，但里面并没有肺——这说的是1930年代一对卖这道菜的夫妻的故事。口感才是关键：薄而嫩的肉片，每片都裹着滑润香浓的红油。在任何本地餐馆的凉菜柜台都能买到。</p>
-        </div>
-      </div>
-
-      <!-- 冰粉 -->
-      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
-        <div class="flex items-center justify-center bg-gray-50 p-3">
-          <img src="/images/chengdu/bingfen.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-900 mb-1">冰粉</h3>
-          <p class="text-gray-600 text-base">终极川味清口甜品。用植物种子手搓而成，果冻状质地比吉利丁更软，呈半透明状。淋上红糖浆、碎花生，有时还有干果——甜、凉、滑入喉咙，在你吃完所有辣味后重新唤醒味蕾。不要错过这个——你一定会需要的。</p>
+          <h3 class="text-lg font-bold text-gray-900 mb-1">串串香</h3>
+          <p class="text-gray-600 text-base">火锅的串串版，成都特有的街头美食。各类食材串在竹签上，自己放入麻辣汤底中烫熟。按竹签数量计费，可以轻松尝试各种食材。从路边摊到专门店，城中随处可见。</p>
         </div>
       </div>
     </div>
 
     <div class="not-prose mt-16">
-      <h2 class="text-2xl font-bold text-gray-900 mb-8">📚 相关指南</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <a href="/zh/cities/city-select/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🗺️ <strong>中国旅行需要多少天？</strong>——规划你的完整行程</a>
-        <a href="/zh/cities/beijing-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🏛️ <strong>北京旅行指南</strong>——比较中国北方与南方</a>
-        <a href="/zh/payment/payment-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">💳 <strong>如何在华支付</strong>——准备好你的支付应用</a>
-        <a href="/zh/life/cultural-taboos/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🙏 <strong>中国文化礼仪须知</strong>——去四川前了解有用</a>
+          <div class="border-t border-gray-100 pt-6 mt-8">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5 not-prose">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h3 class="text-sm font-bold text-gray-900">📚 继续阅读</h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="/zh/cities/city-select/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🗺️ 中国旅行需要几天
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/zh/cities/guangzhou-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🏙️ 广州旅行指南
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/zh/transport/high-speed-rail/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🚄 中国高铁预订与乘坐指南
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/zh/payment/payment-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              💳 中国支付方式指南
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
       </div>
+    </div>
     </div>
   </article>
 </Layout>

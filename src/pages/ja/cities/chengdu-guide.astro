@@ -1,249 +1,204 @@
 ---
 import Layout from '@layouts/Layout.astro';
-const title = "成都旅行ガイド：パンダ、辛い料理、スローライフ";
-const description = "成都を訪れる — ジャイアントパンダを見て、世界一辛い料理を食べ、四川ののんびりしたライフスタイルを体験。";
+const title = "成都旅行ガイド：パンダ・美食・リラックスしたライフスタイル";
+const description = "成都完全ガイド—ジャイアントパンダ、四川料理、のんびりした生活スタイルが魅力の街。";
 ---
 
 <Layout title={title} description={description} lang="ja">
+    <nav class="mb-8 not-prose">
+      <a href="/ja/cities/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        都市ガイドに戻る
+      </a>
+    </nav>
   <article class="max-w-4xl mx-auto px-6 py-12">
     <header class="mb-12">
       <p class="text-sm text-gray-500 mb-3">🏙️ 成都</p>
-      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">成都旅行ガイド：パンダ、辛い料理、スローライフ</h1>
-      <p class="text-xl text-gray-600 mb-6">成都を訪れる — ジャイアントパンダを見て、世界一辛い料理を食べ、四川ののんびりしたライフスタイルを体験。</p>
-      <div class="flex items-center gap-4 text-sm text-gray-500"><span>📅 最終更新: 2026年6月</span><span>⏱️ 8分で読めます</span></div>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">成都旅行ガイド：パンダ・美食・リラックスしたライフスタイル</h1>
+      <p class="text-xl text-gray-600 mb-6">成都完全ガイド—ジャイアントパンダ、四川料理、のんびりした生活スタイルが魅力の街。</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 最終更新：2026年6月</span>
+        <span>⏱️ 読了時間：7分</span>
+      </div>
     </header>
 
-    <div class="bg-gradient-to-r from-orange-50 to-red-50 border-l-4 border-orange-500 rounded-r-2xl p-8 mb-12 not-prose">
-      <h2 class="text-2xl font-bold text-orange-900 mb-4">⚡ クイックアンサー</h2>
-      <p class="text-lg text-orange-800 leading-relaxed">成都は<strong>パンダと花椒の国</strong>。午前中は竹やぶでジャイアントパンダが転がるのを見て、午後は耳がキーンとするほど辛い料理を食べ、1000年前の寺院でお茶をすする。この街はのんびりした生活ペースで有名で、地元の人々は成都を「幸福の都市」と呼び、到着した瞬間にそれを感じるでしょう。</p>
+    <div class="bg-gradient-to-r from-pink-50 to-yellow-50 border-l-4 border-pink-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-pink-900 mb-4">⚡ クイックアンサー</h2>
+      <p class="text-lg text-pink-800 leading-relaxed">成都は<strong>ジャイアントパンダの故郷</strong>であり、四川料理の中心地です。しかし、この街が本当に特別なのはそのライフスタイル—成都の人々はゆったりと構え、tea house（茶館）で過ごす時間を大切にし、マージャン牌を鳴らしながら交流することを愛しています。成都は「天府の国」と呼ばれる豊かな成都平原に位置し、3,000年以上の歴史を持ちながら、現代的な都市開発も進んでいます。三国志ファンにとっては武侯祠が必見。そして何よりも、成都は世界で最もジャイアントパンダを間近で見られる場所です。</p>
     </div>
 
     <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
       <h3 class="text-lg font-bold text-gray-900 mb-4">📋 ガイド目次</h3>
       <ul class="space-y-3">
-        <li><a href="#why-visit" class="text-blue-600 hover:underline">🐼 なぜ成都を訪れるべき？</a></li>
+        <li><a href="#why-visit" class="text-blue-600 hover:underline">🐼 なぜ成都を訪れるべきか</a></li>
         <li><a href="#how-many-days" class="text-blue-600 hover:underline">📅 必要な滞在日数</a></li>
-        <li><a href="#attractions" class="text-blue-600 hover:underline">🎯 主要観光スポット</a></li>
-        <li><a href="#getting-around" class="text-blue-600 hover:underline">🚇 移動手段</a></li>
-        <li><a href="#where-to-stay" class="text-blue-600 hover:underline">🏨 おすすめの宿泊エリア</a></li>
-        <li><a href="#what-to-eat" class="text-blue-600 hover:underline">🍜 現地グルメ</a></li>
+        <li><a href="#attractions" class="text-blue-600 hover:underline">🎯 おすすめ観光スポット</a></li>
+        <li><a href="#getting-around" class="text-blue-600 hover:underline">🚇 市内移動</a></li>
+        <li><a href="#where-to-stay" class="text-blue-600 hover:underline">🏨 おすすめ宿泊エリア</a></li>
+        <li><a href="#what-to-eat" class="text-blue-600 hover:underline">🍜 成都グルメ</a></li>
       </ul>
     </nav>
 
-    <h2 id="why-visit" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🐼 なぜ成都を訪れるべき？</h2>
-    <p class="text-lg leading-relaxed text-gray-700 mb-12">成都は四川省の省都であり、中国西部の自然の驚異への玄関口です。伝統と現代性を難なく両立させています — 古代の寺院がトレンディなアート地区と隣り合い、世界一辛い料理が何世代も営まれているレストランで提供されています。生活のペースは有名なほどゆったり：成都は中国のどの都市よりも多くの茶館があり、人々は実際にそれらを利用しています。</p>
+    <h2 id="why-visit" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🐼 なぜ成都を訪れるべきか</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-12">成都は「天府の国」の異名を持ち、3,000年以上の歴史を持つ古都でありながら、現代的な魅力も兼ね備えています。世界最大のジャイアントパンダ繁殖研究基地があり、間近でパンダを見られる数少ない場所の一つです。また、四川料理の発祥地として、麻婆豆腐や担担麺など世界的に有名な料理を生み出しました。成都の人々は「バラエティ（安逸）」という言葉で表現されるリラックスしたライフスタイルを大切にし、茶館で過ごす時間や、夕方の火鍋を楽しむ文化的な伝統があります。歴史好きには三国志の聖地巡礼も魅力的です。</p>
 
     <h2 id="how-many-days" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📅 必要な滞在日数</h2>
-    <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700 mb-4">
-      <li><strong>3〜4日間（標準）：</strong> パンダ、錦里、武侯祠、そして本格的な食体験</li>
-      <li><strong>5〜7日間（ゆったり）：</strong> 楽山大仏（1日）または峨眉山（2日）を追加</li>
-      <li><strong>7日間以上（じっくり）：</strong> 九寨溝国立公園（3〜4日）を追加</li>
+    <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700 mb-12">
+      <li><strong>2〜3日間（標準）：</strong>パンダ基地、武侯祠、錦里、寛窄巷子、そして四川料理体験</li>
+      <li><strong>4〜5日間（ゆったり）：</strong>峨眉山や楽山大仏への日帰り旅行、青城山への訪問を追加</li>
+      <li><strong>6日間以上（じっくり）：</strong>九寨溝や黄龍など、四川の大自然への遠出</li>
     </ul>
-    <p class="text-lg text-gray-700 mb-12">余裕があれば、四川省には中国で最も壮大な景観があります。楽山の大仏（成都から約1.5時間）は高さ71メートルの世界最大の石仏です。冒険好きな旅行者には、九寨溝のターコイズブルーの湖と滝が忘れられない体験になりますが、最低3〜4日必要です。</p>
 
     <!-- ==================== ATTRACTIONS ==================== -->
-    <h2 id="attractions" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎯 主要観光スポット</h2>
+    <h2 id="attractions" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎯 おすすめ観光スポット</h2>
 
     <!-- Panda Base -->
-    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
-      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
-        <img src="/images/chengdu/panda-base.webp" class="w-full h-auto object-cover" loading="lazy" />
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/chengdu/panda-base.webp" alt="成都ジャイアントパンダ繁殖研究基地のパンダ" class="w-full h-auto object-cover" loading="lazy" />
       </div>
-      <div class="order-1">
-        <h3 class="text-xl font-bold text-gray-900 mb-2">成都ジャイアントパンダ繁殖研究基地（成都大熊猫繁育研究基地）</h3>
-        <p class="text-gray-700">地球上の他のどこよりも多い約120頭のジャイアントパンダが暮らしています。午前8時までに到着して朝の餌やり時間（8〜10時）に合わせましょう。この時間がパンダが最も活発で遊び好きです。都心からタクシーで約30分。午後の訪問は避けてください — 暑さで昼寝をしています。</p>
-      </div>
-      <div class="clear-both hidden md:block"></div>
-    </div>
-
-    <!-- Jinli -->
-    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
-      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
-        <img src="/images/chengdu/jinli.webp" class="w-full h-auto object-cover" loading="lazy" />
-      </div>
-      <div class="order-1">
-        <h3 class="text-xl font-bold text-gray-900 mb-2">錦里古街（锦里）</h3>
-        <p class="text-gray-700">多くの観光客向けの通りはテーマパークのようですが、錦里は実際に活気を感じさせます。清代様式で建てられたこの歩行者専用路地は武侯祠のすぐ隣にあり、ジュージュー焼ける串焼き、飴細工、茶館から流れる四川オペラの香りで満ちています。赤い提灯が灯り、人混みが少し減る夜に訪れましょう。</p>
-      </div>
-      <div class="clear-both hidden md:block"></div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">成都ジャイアントパンダ繁殖研究基地（成都大熊猫繁育研究基地）</h3>
+      <p class="text-gray-700">世界最大かつ最も有名なパンダ保護施設で、100頭以上のジャイアントパンダとレッサーパンダが暮らしています。ここでは生まれたばかりの赤ちゃんパンダから大人のパンダまで、すべての年齢のパンダを見ることができます。午前中はパンダが最も活発に動き、竹を食べたり遊んだりする姿を観察できます。訪問のベストタイムは開園直後の午前7時30分で、混雑を避けて涼しい時間帯にパンダの最も活動的な時間を楽しめます。</p>
+      <div class="clear-both"></div>
     </div>
 
     <!-- Wuhou Shrine -->
-    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
-      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
-        <img src="/images/chengdu/wuhou-shrine.webp" class="w-full h-auto object-cover" loading="lazy" />
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/chengdu/wuhou-shrine.webp" alt="武侯祠、三国志の聖地" class="w-full h-auto object-cover" loading="lazy" />
       </div>
-      <div class="order-1">
-        <h3 class="text-xl font-bold text-gray-900 mb-2">武侯祠（武侯祠）</h3>
-        <p class="text-gray-700">伝説の戦略家であり、1800年の三国志の歴史に名を残す諸葛孔明に捧げられた祠堂。中心は諸葛孔明の墓そのもので、赤い壁と竹に囲まれた小道が全体を時が止まったように感じさせます。本堂の石碑や像もお見逃しなく。隣の錦里と組み合わせて — 午後一つで両方を訪れられます。</p>
-      </div>
-      <div class="clear-both hidden md:block"></div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">武侯祠（Wuhou Shrine）</h3>
+      <p class="text-gray-700">三国時代の蜀の宰相・諸葛孔明を祀る寺院で、三国志ファンにとっての聖地です。美しい庭園と歴史的な建築が広がり、三国志の歴史に浸ることができます。廟内には蜀の英雄たちの像が並び、『出師表』などの有名な碑文も展示されています。</p>
+      <div class="clear-both"></div>
     </div>
 
-    <!-- Kuanzhai Alley -->
-    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
-      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
-        <img src="/images/chengdu/wide-narrow-alley.webp" class="w-full h-auto object-cover" loading="lazy" />
+    <!-- Jinli & Kuanzhai -->
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/chengdu/jinli.webp" alt="錦里古街の赤い提灯が並ぶ通り" class="w-full h-auto object-cover" loading="lazy" />
       </div>
-      <div class="order-1">
-        <h3 class="text-xl font-bold text-gray-900 mb-2">寛窄巷子（宽窄巷子）</h3>
-        <p class="text-gray-700">3つの路地、3つのまったく異なる雰囲気。寛巷子（ワイドアレイ）は観光客の Magnet — ショップ、スナック、お揃いの服装の群衆。窄巷子（ナローアレイ）が本番：清代の中庭に隠れたブティック、アートギャラリー、カフェ。そして井巷子（ウェルアレイ）は3つの中で最も静かで、住宅が並び人が少ない。ワイドから始めて、飽きてナローに逃げ込むのがおすすめ。</p>
-      </div>
-      <div class="clear-both hidden md:block"></div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">錦里古街 & 寛窄巷子（Jinli & Kuanzhai Xiangzi）</h3>
+      <p class="text-gray-700">成都の代表的な歴史的観光エリア。錦里は武侯祠に隣接する清代様式の商店街で、赤い提灯が並ぶ風情ある通りに土産物店、屋台、茶館が軒を連ねます。寛窄巷子は広い路・狭い路・井戸の路の3本の路地からなる観光エリアで、伝統的な四川建築が保存され、カフェやレストラン、アートギャラリーが入っています。</p>
+      <div class="clear-both"></div>
     </div>
 
-    <!-- People's Park -->
-    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
-      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
-        <img src="/images/chengdu/people-park.webp" class="w-full h-auto object-cover" loading="lazy" />
+    <!-- Dufu Thatched Cottage -->
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/chengdu/dufu-cottage.webp" alt="杜甫草堂、詩人杜甫の旧居の庭園" class="w-full h-auto object-cover" loading="lazy" />
       </div>
-      <div class="order-1">
-        <h3 class="text-xl font-bold text-gray-900 mb-2">人民公園（人民公园）</h3>
-        <p class="text-gray-700">ここは成都のスローライフの決まり文句が現実になるところ。露天の茶館で竹の椅子を引き寄せ、ジャスミン茶を一杯注文して、ただ眺める — マージャンをする老人、踊る退職したカップル、オペラを歌うおばちゃんたち。「相親角」（お見合いコーナー）もお見逃しなく。親たちが子供の結婚広告を給料、身長、財産の詳細を製品スペックのように記載して貼り出しています。週末に来れば完全なスペクタクルを楽しめます。</p>
-      </div>
-      <div class="clear-both hidden md:block"></div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">杜甫草堂（Du Fu Thatched Cottage）</h3>
+      <p class="text-gray-700">唐代の偉大な詩人・杜甫が4年間暮らした草庵を復元した博物館。静かな庭園と竹林に囲まれた敷地内には、杜甫の生涯と作品を紹介する展示があります。詩と中国文化に興味がある方には必見のスポットです。</p>
+      <div class="clear-both"></div>
     </div>
 
-    <!-- Mount Qingcheng -->
-    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-12 overflow-hidden">
-      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
-        <img src="/images/chengdu/qingcheng-mountain.webp" class="w-full h-auto object-cover" loading="lazy" />
+    <!-- Mount Qingcheng / Dujiangyan -->
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/chengdu/qingchengshan.webp" alt="青城山の道教寺院と緑豊かな風景" class="w-full h-auto object-cover" loading="lazy" />
       </div>
-      <div class="order-1">
-        <h3 class="text-xl font-bold text-gray-900 mb-2">青城山（青城山）</h3>
-        <p class="text-gray-700">1800年の歴史を持つ道教発祥の地の一つ。山には「天下第一幽」という碑文が刻まれており — その名に恥じません。時間がなければケーブルカーで上がり、余裕があれば竹林に覆われた道をハイキングして完全な体験を。いずれにせよ、山頂の古代寺院は訪れる価値があります。成都から電車で約1時間。</p>
-      </div>
-      <div class="clear-both hidden md:block"></div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">青城山 & 都江堰（Mount Qingcheng & Dujiangyan）</h3>
+      <p class="text-gray-700">成都から日帰りで行けるユネスコ世界遺産。青城山は道教発祥の地の一つで、「青城天下幽」と称される美しい景観が広がります。都江堰は2,200年以上前に建設された古代の灌漑システムで、今も現役で使用されている驚異的な土木遺産です。</p>
+      <div class="clear-both"></div>
     </div>
 
-    <!-- Dujiangyan -->
-
-    <!-- Leshan Giant Buddha -->
-    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-12 overflow-hidden">
-      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
-        <img src="/images/chengdu/leshan-buddha-v2.webp" class="w-full h-auto object-cover" loading="lazy" />
+    <!-- Sichuan Opera -->
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12 overflow-hidden">
+      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/chengdu/sichuan-opera.webp" alt="四川変面ショーのパフォーマー" class="w-full h-auto object-cover" loading="lazy" />
       </div>
-      <div class="order-1">
-        <h3 class="text-xl font-bold text-gray-900 mb-2">楽山大仏 (Leshan Giant Buddha)</h3>
-        <p class="text-gray-700">川岸の崖に直接彫られた高さ71メートルの大仏で、世界最大の石造仏像です。完成までに90年を要し、803年に竣工しました。岷江、大渡河、青衣江が合流する荒れ狂う水流を鎮めるために造られました。崖に刻まれた狭い階段を下りて仏足まで行くか、川からボートで全景を見るかの2つの鑑賞方法があります。ユネスコ世界遺産に登録されています。成都から楽山まで高速鉄道で約1.5時間、その後タクシーで一駅。丸一日かけて訪れましょう。</p>
-      </div>
-      <div class="clear-both hidden md:block"></div>
-    </div>
-    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-12 overflow-hidden">
-      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
-        <img src="/images/chengdu/dujiangyan.webp" class="w-full h-auto object-cover" loading="lazy" />
-      </div>
-      <div class="order-1">
-        <h3 class="text-xl font-bold text-gray-900 mb-2">都江堰水利施設（都江堰）</h3>
-        <p class="text-gray-700">今も現役で使われている2300年前の工学の驚異。紀元前256年に李冰とその息子によって岷江を鎮めるために建設され、ダムを一切使わずに水を迂回させます — 巧妙に形作られた川岸と、流れを灌漑用水路に分流する人工島だけです。その結果、成都平原は中国で最も肥沃な地域の一つとなり、2000年以上その状態を保っています。青城山と組み合わせるのに最適で、バスかタクシーでわずか15分なので、両方を一日で訪れられます。川にかかる安瀾橋からの後ろの山々の景色は歩く価値があります。</p>
-      </div>
-      <div class="clear-both hidden md:block"></div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2"> Sichuan Opera & 変面（Face-Changing）</h3>
+      <p class="text-gray-700">四川の伝統芸能である川劇は、その中でも「変面（フェイスチェンジング）」と呼ばれる技法で世界的に有名です。瞬時に色とりどりの仮面を次々と変えるパフォーマンスは圧巻。成都では多くの劇場で公演があり、観光客に人気のナイトアクティビティです。</p>
+      <div class="clear-both"></div>
     </div>
 
-    <h2 id="getting-around" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🚇 移動手段</h2>
+    <h2 id="getting-around" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🚇 市内移動</h2>
     <ul class="list-disc pl-6 space-y-3 text-lg text-gray-700 mb-12">
-      <li><strong>地下鉄：</strong> 6路線が主要観光地とパンダ基地をカバー。清潔で近代的、そして安い。全般的なヒントは<a href="/ja/transport/metro-bus/" class="text-blue-600 hover:underline">中国主要都市の地下鉄・バスガイド</a>をご覧ください。</li>
-      <li><strong>Didi：</strong> 非常に手頃 — 都心部のほとんどの移動は20〜40元。事前に<a href="/ja/transport/didi/" class="text-blue-600 hover:underline">外国人のための中国でのDidiの使い方</a>で設定しておきましょう。</li>
-      <li><strong>自転車：</strong> 成都は平坦で専用自転車レーンがあります。シェア自転車はどこにでもあります。</li>
-      <li><strong>高速鉄道：</strong> 成都東駅から西安（3.5時間）や重慶（1.5時間）へ。予約手順は<a href="/ja/transport/high-speed-rail/" class="text-blue-600 hover:underline">中国高速鉄道の予約と乗車方法</a>をご覧ください。</li>
+      <li><strong>地下鉄：</strong>成都の地下鉄は急速に拡大中で、主要観光スポットのほとんどをカバー。英語表示あり。詳細は<a href="/ja/transport/metro-bus/" class="text-blue-600 hover:underline">中国主要都市の地下鉄・バスガイド</a>をご覧ください。</li>
+      <li><strong>滴滴：</strong>どこでも使えて便利。設定方法は<a href="/ja/transport/didi/" class="text-blue-600 hover:underline">外国人が中国で滴滴を使う方法</a>をご覧ください。</li>
+      <li><strong>タクシー：</strong>手頃な料金で利用しやすい。</li>
+      <li><strong>自転車：</strong>成都は平坦で自転車に優しい街。シェア自転車で街中の探索が簡単にできます。</li>
     </ul>
 
-    <h2 id="where-to-stay" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏨 おすすめの宿泊エリア</h2>
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">錦江区（锦江区）— 初めての訪問者に最適</h3><p class="text-gray-700">春熙路と太古里周辺の中心エリア。ショッピング、食事、地下鉄の接続が徒歩圏内。</p></div>
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">青羊区（青羊区）— 文化愛好家に最適</h3><p class="text-gray-700">武侯祠、錦里、寛窄巷子に近い。茶館が多く、伝統的な雰囲気。</p></div>
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12"><h3 class="text-xl font-bold text-gray-900 mb-2">武侯区（武侯区）— グルメ愛好家に最適</h3><p class="text-gray-700">食シーンの中心。成都で最高のレストランやナイトライフまで徒歩圏内。</p></div>
+    <h2 id="where-to-stay" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏨 おすすめ宿泊エリア</h2>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">錦里/武侯祠エリア—初めての訪問者に最適</h3><p class="text-gray-700">歴史的な魅力と観光スポットへの近接性が魅力。伝統的な雰囲気の中で成都を体験できます。</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">春熙路エリア—買い物好きに最適</h3><p class="text-gray-700">成都の中心的なショッピングエリア。高級ホテルから手頃な宿まで選択肢が豊富。地下鉄のアクセスも良好。</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12"><h3 class="text-xl font-bold text-gray-900 mb-2">寛窄巷子エリア—カルチャー体験に最適</h3><p class="text-gray-700">伝統的な建築が残るエリアで、雰囲気のあるブティックホテルやゲストハウスが点在。夜の散歩に最適な環境。</p></div>
 
     <!-- ==================== WHAT TO EAT ==================== -->
-    <h2 id="what-to-eat" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🍜 現地グルメ</h2>
-    <p class="text-lg leading-relaxed text-gray-700 mb-6">成都は四川料理の紛れもない首都 — 大胆で、火のように辛く、忘れられない味わい。</p>
+    <h2 id="what-to-eat" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🍜 成都グルメ</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">四川料理の本場、成都。麻辣（マーラー）の風味が特徴的な料理の数々は、世界中の食通を魅了しています。</p>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-      <!-- Mapo Tofu -->
       <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
         <div class="flex items-center justify-center bg-gray-50 p-3">
-          <img src="/images/chengdu/mapo-tofu.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
+          <img src="/images/chengdu/food/mapo-tofu.webp" alt="麻婆豆腐、四川の代表的な豆腐料理" class="max-w-full max-h-56 object-contain" loading="lazy" />
         </div>
         <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-900 mb-1">麻婆豆腐（麻婆豆腐）</h3>
-          <p class="text-gray-600 text-base">絹ごし豆腐の角切りが、辛さと痺れが半々の真紅のソースに泳いでいます。花椒が舌に残すピリピリ感は、一口ごとに強くなります — 額に汗をかきながらも、もう一口と手を伸ばさせる種類のものです。口の中でとろける柔らかい豆腐と、粗くてパンチの効いたソースのコントラストがすべて。市内のほぼすべての四川料理店で見つけられます。</p>
+          <h3 class="text-lg font-bold text-gray-900 mb-1">麻婆豆腐（Mapo Tofu）</h3>
+          <p class="text-gray-600 text-base">四川料理の代表格。絹ごし豆腐を豚ひき肉、豆板醤、花椒で辛く煮込んだ料理で、花椒のしびれるような痺れ（麻）と唐辛子の辛さ（辣）が絶妙に調和します。ご飯にかけて食べるのが王道。成都のどこでも味わえますが、陳麻婆豆腐本店が最も有名です。</p>
         </div>
       </div>
 
-      <!-- Kung Pao Chicken -->
       <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
         <div class="flex items-center justify-center bg-gray-50 p-3">
-          <img src="/images/chengdu/kung-pao-chicken.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
+          <img src="/images/chengdu/food/dandan-noodles.webp" alt="担担麺、四川風ゴマ醤油麺" class="max-w-full max-h-56 object-contain" loading="lazy" />
         </div>
         <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-900 mb-1">宮保鶏丁（宫保鸡丁）</h3>
-          <p class="text-gray-600 text-base">鶏肉の角切り、カリカリのピーナッツ、そして見た目ほど辛くない乾燥唐辛子。秘密はバランス — 酢と砂糖のソースからの甘酸っぱさ、それに続く唐辛子からのゆっくりと来る温かさ、そしてピーナッツのナッツのような歯ごたえが全体を引き締めます。外国人が最もよく知る料理で、それには理由があります。食べながら取り除く丸ごとの乾燥唐辛子が入ったバージョンを探しましょう — 本場の食べ方です。</p>
+          <h3 class="text-lg font-bold text-gray-900 mb-1">担担麺（Dan Dan Noodles）</h3>
+          <p class="text-gray-600 text-base">街角の屋台が発祥の成都を代表する麺料理。細かい豚ひき肉、ザーサイ、ネギ、ゴマペースト、花椒、ラー油を和えたタレに、細麺を絡めて食べます。甘み、辛み、痺れのバランスが絶妙で、一口で四川の味覚の真髄を体験できます。</p>
         </div>
       </div>
 
-      <!-- Dan Dan Noodles -->
       <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
         <div class="flex items-center justify-center bg-gray-50 p-3">
-          <img src="/images/chengdu/dan-dan-noodles.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
+          <img src="/images/chengdu/food/huoguo.webp" alt="四川火鍋、麻辣スープで具材を茹でる" class="max-w-full max-h-56 object-contain" loading="lazy" />
         </div>
         <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-900 mb-1">担担麺（担担面）</h3>
-          <p class="text-gray-600 text-base">元祖ストリートフードヌードル。ひき肉、保存野菜、そしてチリオイルの一絞りが丼の底にあり — 自分で全部を混ぜ合わせ、すべての麺にその塩辛くて辛くて痺れるソースを絡めます。保存野菜が辛さを切る土のような深みを与えます。素早く混ぜて、素早く食べましょう。</p>
+          <h3 class="text-lg font-bold text-gray-900 mb-1">四川火鍋（Sichuan Hotpot）</h3>
+          <p class="text-gray-600 text-base">成都の食文化の中心と言える体験。真っ赤な麻辣スープがグツグツと沸騰する鍋で、薄切りの肉、野菜、豆腐、キノコなどを自分で茹でて食べます。四川特有の「香油（ごま油）」のディップソースが辛さを和らげ、風味を引き立てます。現地の人々はビールや酸梅湯とともに何時間もかけて楽しみます。</p>
         </div>
       </div>
 
-      <!-- Hotpot -->
       <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
         <div class="flex items-center justify-center bg-gray-50 p-3">
-          <img src="/images/chengdu/hotpot.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
+          <img src="/images/chengdu/food/chuanchuan.webp" alt="串串香、四川風串焼き鍋" class="max-w-full max-h-56 object-contain" loading="lazy" />
         </div>
         <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-900 mb-1">火鍋（火锅）</h3>
-          <p class="text-gray-600 text-base">これは食事ではなく — 2時間のグループアクティビティです。泡立つチリだらけのスープの鍋がテーブルの中央にあり、各自が自分の食材を調理します：薄切りの牛肉、ハチノス、ジャガイモ、青菜、湯葉。本当の技はディップソースステーション — ごま油、ニンニク、コリアンダー、酢を混ぜて辛さを和らげます。最低3人で行って、より多くのものを注文しましょう。フルスパイスが耐えられないなら「鴛鴦鍋」（仕切り鍋）を頼んでください。</p>
-        </div>
-      </div>
-
-      <!-- Twice-Cooked Pork -->
-      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
-        <div class="flex items-center justify-center bg-gray-50 p-3">
-          <img src="/images/chengdu/twice-cooked-pork.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-900 mb-1">回鍋肉（回锅肉）</h3>
-          <p class="text-gray-600 text-base">最初に茹でてから薄切りにし、ニラと豆板醤（発酵唐辛子味噌）で端がカラメル化するまで炒めた豚バラ肉。二重調理法により、他では得られない食感を肉に与えます — 中は柔らかく、外は少しカリッと噛みごたえがある。四川版のコンフォートフードで、家族の食卓で食べるような料理です。ほぼすべての地元のメニューに載っています。</p>
-        </div>
-      </div>
-
-      <!-- Fuqi Feipian -->
-      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
-        <div class="flex items-center justify-center bg-gray-50 p-3">
-          <img src="/images/chengdu/fuqi-feipian.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-900 mb-1">夫妻肺片（夫妻肺片）</h3>
-          <p class="text-gray-600 text-base">冷製の薄切り牛肉と臓物を、花椒と炒りごまたっぷりのチリオイルドレッシングに浸したもの。名前は「夫婦の肺スライス」と訳されますが、実際には肺は入っていません — 1930年代に屋台でこれを売っていた夫婦の話が由来です。食感がポイント：薄く柔らかいスライスに、ツヤツヤの香ばしいオイルがまとわりついています。地元のレストランの冷菜コーナーで手に入れてください。</p>
-        </div>
-      </div>
-
-      <!-- Ice Jelly -->
-      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
-        <div class="flex items-center justify-center bg-gray-50 p-3">
-          <img src="/images/chengdu/bingfen.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
-        </div>
-        <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-900 mb-1">氷粉（冰粉）</h3>
-          <p class="text-gray-600 text-base">究極の四川パレットクレンザー。植物の種から手で絞られ、ゼリーのような食感でJell-Oより柔らかく、繊細でほぼ透明な外観。黒糖シロップ、砕いたピーナッツ、時にはドライフルーツがトッピングされます — 甘くて冷たく、喉を通り抜けて、辛さの後の口をリセットします。絶対にスキップしないでください — 必要になります。</p>
+          <h3 class="text-lg font-bold text-gray-900 mb-1">串串香（Chuan Chuan Xiang）</h3>
+          <p class="text-gray-600 text-base">火鍋の串焼き版とも言える成都ならではのストリートフード。様々な具材を串に刺して、自分で麻辣スープで茹でて食べます。串の本数で料金が決まるシステムで、気軽に色々な具材を試せるのが魅力。屋台形式の店から専門店まで、街中の至る所で見かけます。</p>
         </div>
       </div>
     </div>
 
     <div class="not-prose mt-16">
-      <h2 class="text-2xl font-bold text-gray-900 mb-8">📚 関連ガイド</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <a href="/ja/cities/city-select/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🗺️ <strong>中国の旅程計画</strong> — 完全な旅程を立てる</a>
-        <a href="/ja/cities/beijing-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🏛️ <strong>北京旅行ガイド</strong> — 中国の北方と南方を比較</a>
-        <a href="/ja/payment/payment-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">💳 <strong>中国での支払い方法</strong> — 支払いアプリの準備</a>
-        <a href="/ja/life/cultural-taboos/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🙏 <strong>中国での文化的なDo's and Don'ts</strong> — 四川訪問前に役立つ</a>
+          <div class="border-t border-gray-100 pt-6 mt-8">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5 not-prose">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h3 class="text-sm font-bold text-gray-900">📚 関連ガイド</h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="/ja/cities/city-select/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🗺️ 中国旅行の必要日数
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ja/cities/guangzhou-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🏙️ 広州旅行ガイド
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ja/transport/high-speed-rail/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🚄 中国高速鉄道の予約・乗車ガイド
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ja/payment/payment-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              💳 中国での支払い方法
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
       </div>
+    </div>
     </div>
   </article>
 </Layout>

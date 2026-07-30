@@ -80,14 +80,14 @@ const description = 'How to use public transit in Chinese cities. Mobile payment
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8 not-prose">
         <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
-          <img src="/images/alipay-transit.webp" alt="Alipay transit QR code setup" class="w-full" />
+          <img src="/images/alipay-transit.jpg" alt="Alipay transit QR code setup" class="w-full" />
           <div class="p-4">
             <p class="text-sm font-semibold text-gray-900">Alipay Transit QR Code</p>
             <p class="text-xs text-gray-500">Open Alipay → Transport → select city → scan at turnstile</p>
           </div>
         </div>
         <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
-          <img src="/images/wechat-transit.webp" alt="WeChat transit QR code setup" class="w-full" />
+          <img src="/images/wechat-transit.jpg" alt="WeChat transit QR code setup" class="w-full" />
           <div class="p-4">
             <p class="text-sm font-semibold text-gray-900">WeChat Transit QR Code</p>
             <p class="text-xs text-gray-500">Open WeChat → Ride Code mini-program → scan at turnstile</p>
@@ -98,20 +98,28 @@ const description = 'How to use public transit in Chinese cities. Mobile payment
     </div>
 
     <div class="not-prose mt-16">
-      <h2 class="text-2xl font-bold text-gray-900 mb-8">📚 Related Guides</h2>
-      <div class="space-y-4">
-        <a href="/en/transport/transport-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>How to Get Around China</strong> — the complete transport guide</a>
-        <a href="/en/transport/didi/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚗 <strong>How to Use DiDi in China as a Foreigner</strong> — set up ride-hailing</a>
-        <a href="/en/payment/setup-alipay/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">💳 <strong>How to Set Up Alipay as a Foreigner</strong> — pay for transit with your phone</a>
+          <div class="border-t border-gray-100 pt-6 mt-8">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5 not-prose">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h3 class="text-sm font-bold text-gray-900">📚 Next Reads</h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="/en/transport/transport-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🚄 How to Get Around China
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/en/transport/didi/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🚗 How to Use DiDi in China as a Foreigner
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/en/payment/setup-alipay/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              💳 How to Set Up Alipay as a Foreigner
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-
-    <!-- Sources -->
-    <div class="mt-8 pt-6 border-t border-gray-200 not-prose">
-      <h3 class="text-lg font-bold text-gray-900 mb-3">Sources</h3>
-      <ul class="space-y-2">
-        <li><a href="https://www.travelchinaguide.com/cityguides/" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">Metro websites are primarily in Chinese. General metro maps and route info available on each city's official metro site with browser translation.</a></li>
-      </ul>
     </div>
+
   </article>
 </Layout>

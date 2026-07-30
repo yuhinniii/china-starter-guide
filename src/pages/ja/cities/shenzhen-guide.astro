@@ -1,7 +1,7 @@
 ---
 import Layout from '@layouts/Layout.astro';
-const title = "深圳旅行ガイド：香港に隣接するテクノロジーハブ";
-const description = "深圳を訪れる — 中国のテクノロジー首都、香港への玄関口、山海のアウトドア体験、わずか40年で築かれた現代都市。";
+const title = "深圳旅行ガイド：イノベーションとハイテクの中心地";
+const description = "深圳完全ガイド—中国のシリコンバレー、観光スポット、グルメ、交通、宿泊情報。";
 ---
 
 <Layout title={title} description={description} lang="ja">
@@ -16,194 +16,179 @@ const description = "深圳を訪れる — 中国のテクノロジー首都、
   <article class="max-w-4xl mx-auto px-6 py-12">
     <header class="mb-12">
       <p class="text-sm text-gray-500 mb-3">🏙️ 深圳</p>
-      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">深圳旅行ガイド：香港に隣接するテクノロジーハブ</h1>
-      <p class="text-xl text-gray-600 mb-6">深圳を訪れる — 中国のテクノロジー首都、香港への玄関口、山海のアウトドア体験、わずか40年で築かれた現代都市。</p>
-      <div class="flex items-center gap-4 text-sm text-gray-500"><span>📅 最終更新: 2026年6月</span><span>⏱️ 8分で読めます</span></div>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">深圳旅行ガイド：イノベーションとハイテクの中心地</h1>
+      <p class="text-xl text-gray-600 mb-6">深圳完全ガイド—中国のシリコンバレー、観光スポット、グルメ、交通、宿泊情報。</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 最終更新：2026年6月</span>
+        <span>⏱️ 読了時間：7分</span>
+      </div>
     </header>
 
-    <div class="bg-gradient-to-r from-cyan-50 to-blue-50 border-l-4 border-cyan-500 rounded-r-2xl p-8 mb-12 not-prose">
-      <h2 class="text-2xl font-bold text-cyan-900 mb-4">⚡ クイックアンサー</h2>
-      <p class="text-lg text-cyan-800 leading-relaxed">深圳は<strong>中国のシリコンバレー</strong> — 漁村からわずか40年で2000万人のメガシティに成長した都市です。超近代的で緑豊か、そして香港への最も簡単な入境地。テクノロジー、シーフード、アウトドアアクティビティに興味がある方、または中国本土と香港を一度の旅行で訪れたい方に、深圳は最適な都市です。</p>
+    <div class="bg-gradient-to-r from-green-50 to-teal-50 border-l-4 border-green-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-green-900 mb-4">⚡ クイックアンサー</h2>
+      <p class="text-lg text-green-800 leading-relaxed">深圳は<strong>中国のシリコンバレー</strong>であり、世界中の投資家が注目する活気ある大都市です。わずか40年で漁村からテクノロジーの中心地へと変貌を遂げました。華強北（ファーチャンベイ）は電子機器ショッピングのメッカ、華僑城（OCT）はクリエイティブなアートとカルチャーの中心地です。ここでは、未来的な建築、亜熱帯の公園、そして香港への玄関口としてのユニークな役割を融合させた街を探索できます。活気ある都会のエネルギーを求めるなら、深圳は見逃せない目的地です。</p>
     </div>
 
     <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
       <h3 class="text-lg font-bold text-gray-900 mb-4">📋 ガイド目次</h3>
       <ul class="space-y-3">
-        <li><a href="#why-visit" class="text-blue-600 hover:underline">🤖 なぜ深圳を訪れるべき？</a></li>
+        <li><a href="#why-visit" class="text-blue-600 hover:underline">🏙️ なぜ深圳を訪れるべきか</a></li>
         <li><a href="#how-many-days" class="text-blue-600 hover:underline">📅 必要な滞在日数</a></li>
-        <li><a href="#attractions" class="text-blue-600 hover:underline">🎯 主要観光スポット</a></li>
-        <li><a href="#getting-around" class="text-blue-600 hover:underline">🚇 移動手段</a></li>
-        <li><a href="#where-to-stay" class="text-blue-600 hover:underline">🏨 おすすめの宿泊エリア</a></li>
-        <li><a href="#what-to-eat" class="text-blue-600 hover:underline">🍜 現地グルメ</a></li>
+        <li><a href="#attractions" class="text-blue-600 hover:underline">🎯 おすすめ観光スポット</a></li>
+        <li><a href="#getting-around" class="text-blue-600 hover:underline">🚇 市内移動</a></li>
+        <li><a href="#where-to-stay" class="text-blue-600 hover:underline">🏨 おすすめ宿泊エリア</a></li>
+        <li><a href="#what-to-eat" class="text-blue-600 hover:underline">🍜 深圳グルメ</a></li>
       </ul>
     </nav>
 
-    <h2 id="why-visit" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🤖 なぜ深圳を訪れるべき？</h2>
-    <p class="text-lg leading-relaxed text-gray-700 mb-12">深圳は中国の経済奇跡の生きた証です。テクノロジー大手（Huawei、Tencent、DJI）、未来的な建築、そして国内最高のシーフードの本拠地です。また、香港への主要な陸路国境 crossing でもあり — 地下鉄で1時間以内に九龍に着けます。最もダイナミックな現代中国を体験したい旅行者には、深圳が応えます。さらに、都市の「山海連城」構想により、美しい海岸沿いのサイクリングルートや山岳ハイキングが生まれ、アウトドア愛好家にとって隠れた宝石となっています。</p>
+    <h2 id="why-visit" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏙️ なぜ深圳を訪れるべきか</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-12">深圳は世界でも類を見ない急速な変貌を遂げた都市です。わずか数十年で小さな漁村から1,700万人以上が暮らす未来的な大都市に成長しました。深圳のエネルギーは伝染性で、現代中国の原動力となる革新と起業家精神を目の当たりにできます。亜熱帯の気候、緑豊かな公園、そして香港への近接性が、ビジネスとレジャーの両方に魅力的な目的地となっています。</p>
 
     <h2 id="how-many-days" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📅 必要な滞在日数</h2>
-    <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700 mb-4">
-      <li><strong>2〜3日間（標準）：</strong> 市内観光、シーフード、香港日帰り旅行</li>
-      <li><strong>4〜5日間（ゆったり）：</strong> 世界之窗、深圳湾、OCT-Loft芸術地区を追加</li>
-      <li><strong>5日間以上（拡張）：</strong> 香港と2〜3日間組み合わせるか、フェリーでマカオへ</li>
+    <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700 mb-12">
+      <li><strong>2日間（標準）：</strong>華強北、華僑城（OCT）、そして深圳湾エリアを探索</li>
+      <li><strong>3〜4日間（ゆったり）：</strong>香港への日帰り旅行、大鵬半島のビーチ巡りを追加</li>
+      <li><strong>5日間以上（じっくり）：</strong>深圳の博物館、テクノロジーパーク、近郊の自然保護区を深く探訪</li>
     </ul>
-    <p class="text-lg text-gray-700 mb-2"><strong>スポーツ・アウトドア愛好家向け：</strong> 「山海連城」トレイルのために追加で1日 — 太子湾から深圳湾まで海岸沿いをサイクリング（2〜3時間）、または大鵬半島の七娘山にハイキング（半日）。</p>
-    <p class="text-lg text-gray-700 mb-4">より長く滞在するなら、香港へのサイドトリップを検討してください。高速鉄道または地下鉄で香港まで1時間未満です。</p>
-    <div class="bg-blue-50 border-l-4 border-blue-400 p-4 mb-12 rounded-r-lg text-blue-800 text-sm">
-      🌏 <strong>240時間ビザ無し通過ポリシーを利用する旅行者への注意：</strong> 香港（香港、China）は別の関税地域とみなされるため、香港への入境は中国本土から「第三国・地域」への出国要件を満たします。旅程が深圳から始まる場合、香港経由でその旅行区間のために別途ビザを取得する必要なく出国できます。参照：<a href="/ja/visa/transit-240/" class="text-blue-600 underline">中国240時間ビザ無し通過制度の解説</a>。
-    </div>
 
     <!-- ==================== ATTRACTIONS ==================== -->
-    <h2 id="attractions" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎯 主要観光スポット</h2>
+    <h2 id="attractions" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎯 おすすめ観光スポット</h2>
+
+    <!-- Huaqiangbei -->
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/shenzhen/huaqiangbei.webp" alt="華強北の賑やかな電子機器マーケット" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">華強北（Huaqiangbei）</h3>
+      <p class="text-gray-700">世界最大の電子機器市場で、テクノロジー愛好家の楽園です。この広大なショッピング地区には、最新のガジェット、部品、アクセサリーを販売する無数の店舗がひしめき合っています。スマートフォンの修理部品からドローンやロボットまで、電子機器に関するものなら何でもここで見つかります。値段交渉は必須です。時間をかけて回る価値のある迷宮のようなショッピング体験をお楽しみください。</p>
+      <div class="clear-both"></div>
+    </div>
 
     <!-- OCT Loft -->
-    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
-      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
-        <img src="/images/shenzhen/oct-loft.webp" alt="OCT-Loft創造芸術地区、深圳のストリートアートとギャラリー" class="w-full h-auto object-cover" loading="lazy" />
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/shenzhen/oct-loft.webp" alt="華僑城創意文化園のアートスペース" class="w-full h-auto object-cover" loading="lazy" />
       </div>
-      <div class="order-1">
-        <h3 class="text-xl font-bold text-gray-900 mb-2">OCT-Loft（华侨城创意文化园）</h3>
-        <p class="text-gray-700">深圳版北京798 — 元工場複合施設を改装した創造芸術地区で、ギャラリー、デザインスタジオ、独立系書店、週末のクリエイティブマーケットが集まっています。ストリートアートは数ヶ月ごとに変わるので、常に新しい発見があります。中庭を散策し、インダストリアルシックなカフェでコーヒーを飲むのに2〜3時間を見積もってください。南山地区にあり、都心から地下鉄で約20分。</p>
-      </div>
-      <div class="clear-both hidden md:block"></div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">華僑城創意文化園（OCT Loft）</h3>
+      <p class="text-gray-700">深圳のクリエイティブな中心地で、かつての工業団地をアート、デザイン、文化のハブに生まれ変えました。改装された工場の建物には、アートギャラリー、デザインスタジオ、トレンディなカフェやレストラン、個性的なブティックが入っています。週末にはクリエイティブマーケットやアートイベントが開催され、若いアーティストやデザイナー、旅行者で賑わいます。</p>
+      <div class="clear-both"></div>
     </div>
 
-    <!-- Lianhua Mountain -->
-    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
-      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
-        <img src="/images/shenzhen/lianhua-mountain.webp" alt="蓮花山公園から深圳スカイラインのパノラマビュー" class="w-full h-auto object-cover" loading="lazy" />
+    <!-- Shenzhen Bay -->
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/shenzhen/shenzhen-bay.webp" alt="対岸の香港が見える深圳湾公園" class="w-full h-auto object-cover" loading="lazy" />
       </div>
-      <div class="order-1">
-        <h3 class="text-xl font-bold text-gray-900 mb-2">蓮花山公園（莲花山公园）</h3>
-        <p class="text-gray-700">都心の丘の上にある公園で、深圳のスカイラインのパノラマビューが楽しめます — 入場無料、登りは約20分。夕方に来て<strong>市民中心のライトショー（市民中心灯光秀）</strong>を見ましょう：数十の高層ビルが同期してライトアップされ、ダウンタウン全体がネオンとアニメーションのキャンバスに変わり、週末の夜には音楽に合わせて脈動します。深圳のテクノロジー首都としてのアイデンティティを捉えた、純粋なサイバーパンクのスペクタクルです。</p>
-      </div>
-      <div class="clear-both hidden md:block"></div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">深圳湾公園（Shenzhen Bay Park）</h3>
+      <p class="text-gray-700">街の喧騒から逃れられる広大な海岸公園で、深圳湾を見渡せます。13キロにわたる遊歩道はサイクリング、ランニング、散歩に最適で、対岸の香港の景色が楽しめます。夕暮れ時は特に美しく、街の灯りが海に反射します。</p>
+      <div class="clear-both"></div>
     </div>
 
-    <!-- Window of the World -->
-    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
-      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
-        <img src="/images/shenzhen/window-of-the-world.webp" alt="世界之窗テーマパーク、深圳のエッフェル塔ミニチュアレプリカ" class="w-full h-auto object-cover" loading="lazy" />
+    <!-- Splendid China / Window of the World -->
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/shenzhen/window-of-the-world.webp" alt="世界之窗のテーマパークにあるエッフェル塔のレプリカ" class="w-full h-auto object-cover" loading="lazy" />
       </div>
-      <div class="order-1">
-        <h3 class="text-xl font-bold text-gray-900 mb-2">世界之窗（世界之窗）</h3>
-        <p class="text-gray-700">130以上の世界のランドマークのミニチュアレプリカがあるテーマパーク — エッフェル塔、タージマハル、ピラミッド、何でもあります。はい、いかがわしいです。はい、それでも本当に楽しいです。特に夜の文化ショーと花火のために来るならなおさら。ベストな戦略：午後遅くに行き、暗くなる前にランドマークを見て、夜のパフォーマンスまで滞在。1号線/2号線の地下鉄で都心から約30分。</p>
-      </div>
-      <div class="clear-both hidden md:block"></div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">世界之窗 & 錦繍中華（Window of the World & Splendid China）</h3>
+      <p class="text-gray-700">二つの象徴的なテーマパークが隣り合っています。「世界之窗」は世界中の有名なランドマークの縮小レプリカを展示し、「錦繍中華」は中国全土の有名な景観や文化遺産を紹介しています。家族連れや、一日で世界旅行気分を味わいたい方に最適です。</p>
+      <div class="clear-both"></div>
     </div>
 
-    <!-- Shenzhen Bay Park -->
-    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
-      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
-        <img src="/images/shenzhen/shenzhen-bay-park.webp" alt="深圳湾公園の遊歩道、香港方面の夕日" class="w-full h-auto object-cover" loading="lazy" />
+    <!-- Dapeng Peninsula -->
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12 overflow-hidden">
+      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/shenzhen/dapeng-peninsula.webp" alt="大鵬半島の美しい海岸線とビーチ" class="w-full h-auto object-cover" loading="lazy" />
       </div>
-      <div class="order-1">
-        <h3 class="text-xl font-bold text-gray-900 mb-2">深圳湾公園（深圳湾公园）</h3>
-        <p class="text-gray-700">湾を挟んで香港の新界を望む15キロメートルの海岸公園。夕日の散歩に最適 — 空は深圳湾大橋の背後でオレンジと紫の色合いに変わります。10月から4月（ピークは12月〜3月）に訪れると、何千もの渡り鳥が岸辺に集まります — クロツラヘラサギ、ユリカモメ、シラサギが干潟で餌を探しています。早朝か午後遅くが観察に最適な時間帯です。</p>
-      </div>
-      <div class="clear-both hidden md:block"></div>
+      <h3 class="text-xl font-bold text-gray-900 mb-2">大鵬半島（Dapeng Peninsula）</h3>
+      <p class="text-gray-700">深圳の喧騒から逃れて、自然の美しさに浸りたいなら大鵬半島へ。このエリアには美しい砂浜、ハイキングコース、600年の歴史を持つ大鵬古城があります。市内から約1時間で、静かなビーチリゾート気分を味わえます。</p>
+      <div class="clear-both"></div>
     </div>
 
-    <!-- Dameisha Beach -->
-    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
-      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
-        <img src="/images/shenzhen/dameisha-beach.webp" alt="大梅沙ビーチの黄金の砂と透き通った青い水" class="w-full h-auto object-cover" loading="lazy" />
-      </div>
-      <div class="order-1">
-        <h3 class="text-xl font-bold text-gray-900 mb-2">大梅沙（大梅沙）</h3>
-        <p class="text-gray-700">深圳で最も人気のあるビーチで、都心から東に約30分。砂はきれいで、遊泳エリアはロープで区切られ、背後には緑の丘が広がり、実際よりも街から遠く離れた感じがします。遊歩道はビーチの全長にわたって伸び、片端にはシーフードレストランがあります。可能なら平日に行きましょう — 週末は混雑し、入場は1日8万人に制限されています。</p>
-      </div>
-      <div class="clear-both hidden md:block"></div>
-    </div>
-
-    <!-- Mountains-Sea-City Trail -->
-    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-12 overflow-hidden">
-      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
-        <img src="/images/shenzhen/mountains-sea-city.webp" alt="山海連城海岸サイクリングトレイル、深圳海岸線沿いの景色の良い自転車道" class="w-full h-auto object-cover" loading="lazy" />
-      </div>
-      <div class="order-1">
-        <h3 class="text-xl font-bold text-gray-900 mb-3">アウトドア・スポーツ愛好家向け — 深圳「山海連城」トレイル</h3>
-        <p class="text-gray-700 mb-3">深圳の全市的なイニシアチブにより、山と海を街を通じて結ぶ素晴らしいアウトドアルートが生まれました。2つの代表的な体験：</p>
-        <ul class="list-disc pl-6 space-y-2 text-gray-700">
-          <li><strong>海岸サイクリング（太子湾 → 深圳湾）：</strong> 太子湾から深圳湾公園までの専用自転車道を走行。太子湾区間では270度のパノラマの海の景色が広がり、深圳湾大橋と香港の山々が地平線に見えます。より長く走りたいなら、西海岸ルート全体は西湾紅樹林から福田紅樹林エコパークまで約50キロ — 海風を感じながらの半日のサイクリング冒険に最適です。シェア自転車を借りて走るだけです。</li>
-          <li><strong>山岳ハイキング（七娘山）：</strong> 深圳で2番目に高い標高869メートルの七娘山（Qiniangshan）へ。大鵬半島に位置し、三方を海に囲まれているため、山頂からの山と海の壮大な景色が広がります。大鵬半島国家地質公園の一部で、深圳中心部から約1.5時間。</li>
-        </ul>
-      </div>
-      <div class="clear-both hidden md:block"></div>
-    </div>
-
-    <h2 id="getting-around" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🚇 移動手段</h2>
+    <h2 id="getting-around" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🚇 市内移動</h2>
     <ul class="list-disc pl-6 space-y-3 text-lg text-gray-700 mb-12">
-      <li><strong>地下鉄：</strong> 12路線が市内をカバーし、香港国境（羅湖駅と福田駅）まで延伸。路線図については<a href="/ja/transport/metro-bus/" class="text-blue-600 hover:underline">中国主要都市の地下鉄・バスガイド</a>をご覧ください。</li>
-      <li><strong>Didi：</strong> 安くて効率的。ほとんどのドライバーは基本的な英語のピックアップ場所を理解します。設定は<a href="/ja/transport/didi/" class="text-blue-600 hover:underline">外国人のための中国でのDidiの使い方</a>をご覧ください。</li>
-      <li><strong>高速鉄道：</strong> 深圳北駅から広州（30分）、香港西九龍（15分）、その他の都市へ。予約詳細は<a href="/ja/transport/high-speed-rail/" class="text-blue-600 hover:underline">中国高速鉄道の予約と乗車方法</a>をご覧ください。</li>
-      <li><strong>徒歩：</strong> 都心部（福田と南山）は歩道が広く公園も多いので、とても歩きやすいです。</li>
+      <li><strong>地下鉄：</strong>深圳の地下鉄は急速に拡大しており、主要エリアのほとんどをカバー。英語表示あり。詳細は<a href="/ja/transport/metro-bus/" class="text-blue-600 hover:underline">中国主要都市の地下鉄・バスガイド</a>をご覧ください。</li>
+      <li><strong>滴滴：</strong>深圳中で広く使われており、非常に便利。設定方法は<a href="/ja/transport/didi/" class="text-blue-600 hover:underline">外国人が中国で滴滴を使う方法</a>をご覧ください。</li>
+      <li><strong>タクシー：</strong>比較的手頃で利用しやすいですが、目的地は中国語で表示しましょう。</li>
+      <li><strong>徒歩：</strong>深圳の多くのアトラクションはコンパクトなエリアに集中しており、歩いて探索しやすい。</li>
     </ul>
 
-    <h2 id="where-to-stay" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏨 おすすめの宿泊エリア</h2>
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">福田区（福田区）— 初めての訪問者に最適</h3><p class="text-gray-700">中央ビジネス地区で、最高の地下鉄接続と香港国境へのアクセスが便利。高級ホテルとショッピングモール。</p></div>
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">南山区（南山区）— テクノロジーと海岸の雰囲気に最適</h3><p class="text-gray-700">深圳のテクノロジー本社の所在地で、深圳湾に近い。よりリラックスした雰囲気で、素晴らしいシーフードレストランがあります。</p></div>
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12"><h3 class="text-xl font-bold text-gray-900 mb-2">羅湖区（罗湖区）— 予算重視の旅行者に最適</h3><p class="text-gray-700">古い中心部は香港への羅湖国境 crossing に近い。より手頃なホテルと有名な東門ショッピングストリート。</p></div>
+    <h2 id="where-to-stay" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏨 おすすめ宿泊エリア</h2>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">福田区（Futian）—ビジネス＆交通の中心</h3><p class="text-gray-700">深圳のCBDであり、主要な交通ハブに近い。高級ホテルやショッピングモールが豊富。</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">南山区（Nanshan）—テクノロジー＆カルチャーの中心</h3><p class="text-gray-700">深圳ハイテクパークとOCTエリアに近く、ビジネスとレジャーの両方に便利。トレンディなカフェやレストランも豊富。</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12"><h3 class="text-xl font-bold text-gray-900 mb-2">羅湖区（Luohu）—香港に近いエリア</h3><p class="text-gray-700">香港との国境に近く、ショッピングとエンターテイメントに最適。老街エリアは買い物客で賑わいます。</p></div>
 
     <!-- ==================== WHAT TO EAT ==================== -->
-    <h2 id="what-to-eat" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🍜 現地グルメ</h2>
-    <p class="text-lg leading-relaxed text-gray-700 mb-6">深圳の食シーンは、広東の伝統と中国全土からの移住者の味が融合したものです。新鮮なシーフードがハイライト。</p>
+    <h2 id="what-to-eat" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🍜 深圳グルメ</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">移民の街である深圳の食シーンは、中国全土の料理が集まる多様性が魅力です。</p>
 
-    <!-- Food cards with images -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-      <!-- Chaoshan Beef Hotpot -->
       <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
         <div class="flex items-center justify-center bg-gray-50 p-3">
-          <img src="/images/shenzhen/chaoshan-hotpot.webp" alt="潮汕牛肉火鍋、澄んだスープの薄切り新鮮牛肉" class="max-w-full max-h-56 object-contain" loading="lazy" />
+          <img src="/images/shenzhen/food/guangdong-roast-goose.webp" alt="広東式ローストグース" class="max-w-full max-h-56 object-contain" loading="lazy" />
         </div>
         <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-900 mb-1">潮汕牛肉火鍋（潮汕牛肉火锅）</h3>
-          <p class="text-gray-600 text-base">潮汕料理の誇りであり、深圳の中毒的グルメ。紙のように薄い高級牛肉のスライス — バターのようなブリスケットから歯ごたえのある筋まで、部位によって異なる食感 — をあっさりとした牛骨スープに軽くくぐらせ、沙茶醬（サテ風ソース）に新鮮な唐辛子とニンニクを加えたディップソースに。肉は非常に新鮮で、しばしば肉屋からまだ温かい状態です。良い食事の秘訣：複数の部位を注文し、加熱しすぎないこと — スープに8秒で十分です。</p>
+          <h3 class="text-lg font-bold text-gray-900 mb-1">広東式ローストグース（広東焼鵝）</h3>
+          <p class="text-gray-600 text-base">広東料理の逸品。グースは外側がパリッと香ばしく、中は驚くほど柔らかくジューシーにローストされています。特製の醤油ベースのタレが染み込み、甘みと旨味の完璧なバランスを生み出します。骨付きのままぶつ切りにされ、プラムソースを添えて提供されます。深圳の老舗廣式焼味店で味わえます。</p>
         </div>
       </div>
 
-      <!-- Cantonese Seafood -->
       <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
         <div class="flex items-center justify-center bg-gray-50 p-3">
-          <img src="/images/shenzhen/seafood.webp" alt="広東風シーフード、生姜ネギ炒めの新鮮な蛤、エビ、蟹" class="max-w-full max-h-56 object-contain" loading="lazy" />
+          <img src="/images/shenzhen/food/seafood.webp" alt="深圳のシーフード料理" class="max-w-full max-h-56 object-contain" loading="lazy" />
         </div>
         <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-900 mb-1">広東風シーフード（粤式海鲜）</h3>
-          <p class="text-gray-600 text-base">深圳の海岸への近さは、ここのシーフードが格別であることを意味します — 黒豆ソースで蒸したハマグリ、ニンニクと唐辛子で炒めたシャコ、生姜とネギだけで蒸した魚がほろほろとほぐれるまで。最高の食べ方：地元のシーフード市場に行き、水槽から獲れたてを選び、近くのレストランで調理してもらう。2人前のごちそうで約200〜300元。</p>
+          <h3 class="text-lg font-bold text-gray-900 mb-1">シーフード（海鮮）</h3>
+          <p class="text-gray-600 text-base">沿岸都市ならではの新鮮なシーフードが豊富。蒸し魚、エビのガーリック炒め、カニなど、どのレストランでも多彩な海の幸を楽しめます。塩田区の海鮮街は特に有名で、水槽で泳ぐ魚介を選んで調理してもらえます。</p>
         </div>
       </div>
 
-      <!-- Coconut Chicken -->
       <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
         <div class="flex items-center justify-center bg-gray-50 p-3">
-          <img src="/images/shenzhen/coconut-chicken.webp" alt="椰子鶏、ココナッツウォータースープのやわらかい鶏肉、深圳名物料理" class="max-w-full max-h-56 object-contain" loading="lazy" />
+          <img src="/images/shenzhen/food/chaoshan-beef-hotpot.webp" alt="潮汕牛肉火鍋" class="max-w-full max-h-56 object-contain" loading="lazy" />
         </div>
         <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-900 mb-1">椰子鶏（椰子鸡）</h3>
-          <p class="text-gray-600 text-base">他ではなかなか見つからない料理 — 土鍋で新鮮なココナッツウォーターで調理された柔らかい鶏肉で、スープに自然な甘みと軽やかな香りがつきます。3ステップの食事の儀式：まずココナッツスープを飲む（これが一番）、鶏肉を刻み唐辛子、醤油、ライムのミックスに付け、スープが減るにつれてココナッツウォーターを追加。深圳生まれの定番で、広東料理の定番となりました。</p>
+          <h3 class="text-lg font-bold text-gray-900 mb-1">潮汕牛肉火鍋（Chaoshan Beef Hotpot）</h3>
+          <p class="text-gray-600 text-base">深圳で絶対に試すべき料理の一つ。潮州風の牛肉火鍋は、驚くほど新鮮な牛肉の薄切りを透明なスープで軽く茹でて、特製のタレで戴きます。牛肉の部位によって異なる食感と風味を楽しめます。</p>
         </div>
       </div>
 
-      <!-- Dongmen Snacks -->
       <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
         <div class="flex items-center justify-center bg-gray-50 p-3">
-          <img src="/images/shenzhen/dongmen-snacks.webp" alt="東門歩行者天国夜市の焼きイカ串とフルーツティーの屋台" class="max-w-full max-h-56 object-contain" loading="lazy" />
+          <img src="/images/shenzhen/food/shahe-fen.webp" alt="沙河粉、広東式ライスヌードル" class="max-w-full max-h-56 object-contain" loading="lazy" />
         </div>
         <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-900 mb-1">東門小吃（东门小吃）</h3>
-          <p class="text-gray-600 text-base">東門（东门）は深圳で最も古いショッピングストリートで、夜になると活気あるストリートフードの目的地に変身します。クミンと唐辛子でジュージュー焼かれるイカの串焼き、臭い以上の味がする臭豆腐（信じてください）、絞りたてのサトウキビジュース、そして大きなフレッシュマンゴーとパッションフルーツ入りのフルーツティー。コツ：夕暮れ時に到着し、メインストリートを歩き、煙を追って最も混んでいる屋台を見つける — そこに良いものがあります。ほとんどの軽食は10〜30元。</p>
+          <h3 class="text-lg font-bold text-gray-900 mb-1">沙河粉（Sha He Fen）</h3>
+          <p class="text-gray-600 text-base">広東発祥の幅広のライスヌードルで、深圳でも人気の朝食・軽食。炒めたり、スープに入れたり、様々な調理法で楽しまれます。牛肉のせやエビと野菜炒めが定番で、醤油ベースのタレが絡んだツルツルの食感が魅力。</p>
         </div>
       </div>
     </div>
 
     <div class="not-prose mt-16">
-      <h2 class="text-2xl font-bold text-gray-900 mb-8">📚 関連ガイド</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <a href="/ja/cities/city-select/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🗺️ <strong>中国の旅程計画</strong> — 完全な旅程を立てる</a>
-        <a href="/ja/cities/guangzhou-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🥟 <strong>広州旅行ガイド</strong> — 鉄道でわずか30分</a>
-        <a href="/ja/visa/transit-240/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🛂 <strong>中国240時間ビザ無し通過制度の解説</strong> — 通過旅行者のビザ規則</a>
-        <a href="/ja/transport/transport-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>中国の移動手段ガイド</strong> — すべての選択肢</a>
+          <div class="border-t border-gray-100 pt-6 mt-8">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5 not-prose">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h3 class="text-sm font-bold text-gray-900">📚 関連ガイド</h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="/ja/cities/city-select/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🗺️ 中国旅行の必要日数
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ja/cities/guangzhou-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🏙️ 広州旅行ガイド
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ja/transport/metro-bus/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🚇 中国主要都市の地下鉄・バスガイド
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ja/payment/payment-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              💳 中国での支払い方法
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
       </div>
+    </div>
     </div>
   </article>
 </Layout>

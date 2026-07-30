@@ -5,11 +5,10 @@ const description = '鉄道、飛行機、地下鉄、配車サービス — 必
 ---
 
 <Layout title={title} description={description} lang="ja">
-  <section class="max-w-4xl mx-auto px-6 py-12">
+  <section class="max-w-5xl mx-auto px-6 py-12">
     
     <!-- Header -->
     <header class="mb-10 text-center">
-      <p class="text-sm text-gray-500 mb-2">🚄 交通</p>
       <h1 class="text-4xl font-extrabold text-gray-900 mb-3 leading-tight">中国の交通</h1>
       <p class="text-base text-gray-500 max-w-2xl mx-auto">鉄道、飛行機、地下鉄、配車サービス — 必要な情報すべて。</p>
     </header>
@@ -99,18 +98,26 @@ const description = '鉄道、飛行機、地下鉄、配車サービス — 必
       </div>
     </div>
 
-    <!-- Related Guides -->
-    <div class="bg-gray-50 rounded-2xl p-8 not-prose">
-      <h3 class="text-lg font-bold text-gray-900 mb-5">関連ガイド</h3>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-        <a href="/ja/payment/payment-guide/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
-          <p class="font-bold text-gray-900 mb-0.5">中国の支払い</p>
-          <p class="text-sm text-gray-500">交通機関の支払い方法</p>
-        </a>
-        <a href="/ja/visa/visa-guide/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
-          <p class="font-bold text-gray-900 mb-0.5">ビザ・入国</p>
-          <p class="text-sm text-gray-500">中国への入国</p>
-        </a>
+        <!-- Next Step -->
+    <div class="border-t border-gray-100 pt-8 mb-4">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-2xl p-6 md:p-8 not-prose">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div>
+            <p class="text-xs font-bold tracking-widest text-brand-600 uppercase mb-1">次のステップ</p>
+            <h3 class="text-xl font-bold text-gray-900">中国の都市を発見</h3>
+            <p class="text-sm text-gray-600 mt-1 max-w-md">移動方法はOK。次は行き先を選ぼう——都市比較ガイドから。</p>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-3 shrink-0">
+            <a href="/ja/cities/city-select/" class="inline-flex items-center justify-center gap-2 px-5 py-3 bg-white border border-gray-200 rounded-xl text-sm font-semibold text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🗺️ 都市比較
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ja/cities/shenzhen-guide/" class="inline-flex items-center justify-center gap-2 px-5 py-3 bg-white border border-gray-200 rounded-xl text-sm font-semibold text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              📍 深圳ガイド
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </section>

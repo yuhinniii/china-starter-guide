@@ -5,11 +5,10 @@ const description = '연결 유지, 안전하게, 그리고 여행을 최대한 
 ---
 
 <Layout title={title} description={description} lang="ko">
-  <section class="max-w-4xl mx-auto px-6 py-12">
+  <section class="max-w-5xl mx-auto px-6 py-12">
     
     <!-- Header -->
     <header class="mb-10 text-center">
-      <p class="text-sm text-gray-500 mb-2">🌏 생활</p>
       <h1 class="text-4xl font-extrabold text-gray-900 mb-3 leading-tight">중국 생활</h1>
       <p class="text-base text-gray-500 max-w-2xl mx-auto">연결 유지, 안전하게, 그리고 여행을 최대한 즐기세요.</p>
     </header>
@@ -115,11 +114,6 @@ const description = '연결 유지, 안전하게, 그리고 여행을 최대한 
           <span class="text-xs font-medium text-yellow-800 opacity-60">4개 문서</span>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/ko/life/survival-kit/" class="block bg-yellow-50 border border-yellow-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-yellow-800">🎒 체크리스트</span>
-            <p class="text-base font-bold text-gray-900 mt-1">중국 여행 생존 키트</p>
-            <p class="text-sm text-gray-600 mt-0.5">출발 전 전체 체크리스트.</p>
-          </a>
           <a href="/ko/life/packing-guide/" class="block bg-yellow-50 border border-yellow-200 rounded-xl p-4 hover:shadow-md transition no-underline">
             <span class="text-xs font-semibold text-yellow-800">🧳 짐 싸기</span>
             <p class="text-base font-bold text-gray-900 mt-1">중국에 가져갈 물건</p>
@@ -139,18 +133,26 @@ const description = '연결 유지, 안전하게, 그리고 여행을 최대한 
       </div>
     </div>
 
-    <!-- Related Guides -->
-    <div class="bg-gray-50 rounded-2xl p-8 not-prose">
-      <h3 class="text-lg font-bold text-gray-900 mb-5">관련 가이드</h3>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-        <a href="/ko/payment/payment-guide/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
-          <p class="font-bold text-gray-900 mb-0.5">중국 결제</p>
-          <p class="text-sm text-gray-500">Alipay와 WeChat Pay 설정</p>
-        </a>
-        <a href="/ko/transport/transport-guide/" class="block bg-white rounded-xl p-4 hover:shadow-md transition border border-gray-100 no-underline">
-          <p class="font-bold text-gray-900 mb-0.5">중국 교통</p>
-          <p class="text-sm text-gray-500">중국 내 이동 방법</p>
-        </a>
+        <!-- Next Step -->
+    <div class="border-t border-gray-100 pt-8 mb-4">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-2xl p-6 md:p-8 not-prose">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div>
+            <p class="text-xs font-bold tracking-widest text-brand-600 uppercase mb-1">다음 단계</p>
+            <h3 class="text-xl font-bold text-gray-900">여행 계획하기</h3>
+            <p class="text-sm text-gray-600 mt-1 max-w-md">중국 일상 생활 준비 완료. 이제: 비자를 정리하고 교통편을 알아보세요.</p>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-3 shrink-0">
+            <a href="/ko/visa/visa-guide/" class="inline-flex items-center justify-center gap-2 px-5 py-3 bg-white border border-gray-200 rounded-xl text-sm font-semibold text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🛂 비자 가이드
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ko/transport/transport-guide/" class="inline-flex items-center justify-center gap-2 px-5 py-3 bg-white border border-gray-200 rounded-xl text-sm font-semibold text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🚗 교통 가이드
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </section>

@@ -1,7 +1,7 @@
 ---
 import Layout from '@layouts/Layout.astro';
-const title = '如何购票和乘坐中国高铁：一步步教程';
-const description = '从购票到进站、乘车——中国高铁完整使用教程。';
+const title = '中国高铁订票与乘车指南：一步步教你';
+const description = '从订票、进站到乘车，完整的高铁出行攻略。';
 ---
 
 <Layout title={title} description={description} lang="zh">
@@ -11,109 +11,136 @@ const description = '从购票到进站、乘车——中国高铁完整使用�
         <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
         </svg>
-        返回交通指南
+        ← 返回交通指南
       </a>
     </nav>
     <header class="mb-12">
-      <p class="text-sm text-gray-500 mb-3">🚄 火车</p>
+      <p class="text-sm text-gray-500 mb-3">🚄 高铁</p>
       <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
-        如何购票和乘坐中国高铁
+        中国高铁订票与乘车指南
       </h1>
-      <p class="text-xl text-gray-600 mb-6">从购票到进站、乘车——中国高铁完整使用教程。</p>
+      <p class="text-xl text-gray-600 mb-6">从订票到进站再到乘车，一步步搞定。</p>
       <div class="flex items-center gap-4 text-sm text-gray-500">
-        <span>📅 最后更新：2026 年 6 月</span>
-        <span>⏱️ 阅读时长：6 分钟</span>
+        <span>📅 最后更新：2026年6月</span>
+        <span>⏱️ 阅读时间：6分钟</span>
       </div>
     </header>
 
     <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
       <h2 class="text-2xl font-bold text-blue-900 mb-4">🎯 快速回答</h2>
       <p class="text-lg text-blue-800 leading-relaxed">
-        在 <strong>Trip.com</strong>（外国人最方便）或 <strong>12306</strong>（官方渠道）买票。二等座就挺舒服了。提前 30–40 分钟到站——<strong>护照就是你的车票</strong>，随身放好。进站流程：安检 → 候车大厅 → 检票口 → 站台。车站全程有英文标识。
+        用 <strong>Trip.com</strong>（外国人最方便）或 <strong>12306</strong>（官方）订票。二等座就很好了。提前30–40分钟到站——<strong>护照就是你的车票</strong>，务必随身带好。流程很简单：安检 → 候车大厅 → 检票口 → 站台。车站各处都有英文标识，不用担心。
       </p>
     </div>
 
     <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
-      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 本文目录</h3>
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 本指南目录</h3>
       <ul class="space-y-3">
-        <li><a href="#booking" class="text-blue-600 hover:underline">🎫 购票</a></li>
+        <li><a href="#booking" class="text-blue-600 hover:underline">🎫 订票</a></li>
         <li><a href="#classes" class="text-blue-600 hover:underline">💺 座位等级</a></li>
-        <li><a href="#station" class="text-blue-600 hover:underline">🚉 在车站</a></li>
-        <li><a href="#onboard" class="text-blue-600 hover:underline">🚄 车上小贴士</a></li>
+        <li><a href="#station" class="text-blue-600 hover:underline">🚉 车站流程</a></li>
+        <li><a href="#onboard" class="text-blue-600 hover:underline">🚄 车上贴士</a></li>
       </ul>
     </nav>
 
     <div class="prose prose-gray max-w-none">
 
-      <h2 id="booking" class="text-2xl font-bold text-gray-900 mb-4">🎫 购票</h2>
+      <h2 id="booking" class="text-2xl font-bold text-gray-900 mb-4">🎫 订票</h2>
 
       <p class="text-lg leading-relaxed text-gray-700 mb-6">你有三种选择：</p>
 
       <ul class="space-y-2 text-gray-700 mb-8">
-        <li><strong>Trip.com（推荐）：</strong>直接从 12306 系统拉取票源。无需单独注册 12306 账号。购票后凭护照即可乘车。</li>
-        <li><strong>12306（官方）：</strong>官方售票渠道，隐私保护更好。外国人可以用护照号注册。</li>
-        <li><strong>车站售票窗口：</strong>可以现场买票，但不保证有英文服务。</li>
+        <li><strong>Trip.com（推荐）：</strong>直接从12306拉取票务数据，不用另外注册12306账号。订好票后凭护照就能乘车，最省事。</li>
+        <li><strong>12306（官方）：</strong>官方售票渠道，隐私保护更好。外国人可以用护照号注册，价格最透明。</li>
+        <li><strong>车站售票窗口：</strong>可以去现场买票，但不保证有英文服务，高峰期可能要排队。</li>
       </ul>
 
-      <p class="text-lg leading-relaxed text-gray-700 mb-6">对大多数旅行者来说，Trip.com 是最省事的。少量手续费换来的便利很值得。</p>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">对多数人来说，Trip.com是最省事的选择。小额外币手续费换来的便利完全值得。</p>
 
       <hr class="my-10 border-gray-200" />
 
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">💺 座位等级</h2>
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">座位等级</h2>
 
       <ul class="space-y-2 text-gray-700 mb-8">
-        <li><strong>二等座：</strong>标准选择。座位舒适，3+2 排列。大多数人选这个。</li>
-        <li><strong>一等座：</strong>更宽的座位，2+2 排列，腿部空间更大。超过 3 小时的行程值得升级。</li>
-        <li><strong>商务座：</strong>可完全平躺的座椅，私密空间，长途线路提供免费餐食。贵但值得体验。</li>
+        <li><strong>二等座：</strong>标准座位，3+2布局，座位挺舒服的。绝大多数人选这个，短途完全够用。</li>
+        <li><strong>一等座：</strong>座位更宽，2+2布局，腿部空间大不少。超过3小时的车程值得升级。</li>
+        <li><strong>商务座：</strong>座椅可以完全放平，私密性好，长途线路还包餐。价格确实贵，但坐过一次就知道为什么值。</li>
       </ul>
 
       <hr class="my-10 border-gray-200" />
 
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">🚉 在车站</h2>
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">车站流程</h2>
 
-      <p class="text-lg leading-relaxed text-gray-700 mb-6">提前 30–40 分钟到站。流程如下：</p>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">建议提前30–40分钟到站。流程如下：</p>
 
       <ol class="list-decimal pl-6 space-y-4 text-gray-700 mb-8">
-        <li><strong>安检：</strong>行李过 X 光机（和机场一样，但快多了）。</li>
-        <li><strong>候车大厅：</strong>查看大屏幕找到你车次的检票口。跟着指示牌走。</li>
-        <li><strong>检票乘车：</strong>在检票口出示护照。走最边上的手动通道，然后下楼去站台。</li>
-        <li><strong>找车厢：</strong>看站台楼梯附近屏幕上的颜色代码。按照这个颜色找站台上对应颜色的地标，就能找到你的车厢位置。</li>
+        <li><strong>安检：</strong>行李过X光机，跟机场差不多但更快，不用脱鞋取电脑。</li>
+        <li><strong>候车大厅：</strong>看大屏幕找到你的列车检票口，跟着指示牌走就行。</li>
+        <li><strong>检票乘车：</strong>在检票口刷护照通过，走最边上的自助通道，然后下楼梯到站台。</li>
+        <li><strong>找车厢：</strong>站台楼梯口的大屏幕会显示你列车对应的颜色代码，按地上同颜色的地标找到你的车厢位置。</li>
       </ol>
 
       <hr class="my-10 border-gray-200" />
 
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">🚄 车上小贴士</h2>
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">车上贴士</h2>
 
       <ul class="space-y-2 text-gray-700 mb-8">
-        <li>有推车售卖食品和饮料。</li>
-        <li>部分列车座位下方有电源插座（中国标准插座，带个转换头）。</li>
-        <li>车窗有下拉式遮阳帘。</li>
-        <li>车站和列车广播中英文双语播报。</li>
+        <li>餐车会推着饮料零食经过车厢，价格比外面贵但还能接受。</li>
+        <li>部分列车座位下方有电源插座（中国制式的两孔/三孔插座，记得带转换器）。</li>
+        <li>车窗配有下拉式遮阳帘，阳光大的时候很有用。</li>
+        <li>车站和列车广播都是中英双语播报，不用担心听不懂。</li>
       </ul>
 
       <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 not-prose">
-        <p class="text-gray-700"><strong>重要：</strong>你的护照就是车票。进站、检票、车上查票时都要用。别放进行李箱。</p>
+        <p class="text-gray-700"><strong>重要提醒：</strong>护照就是你的车票。进站、检票口、有时车上列车员也会查票，务必随身放好，别塞进行李箱托运。</p>
       </div>
 
       <hr class="my-10 border-gray-200" />
 
-      <h2 id="related" class="text-2xl font-bold text-gray-900 mb-6 mt-12">📚 相关攻略</h2>
-
-      <div class="space-y-4 not-prose">
-        <a href="/zh/transport/transport-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>中国出行全攻略</strong>——完整交通指南</a>
-        <a href="/zh/transport/airport-to-city/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🛬 <strong>从机场到市区</strong>——落地后怎么走</a>
-        <a href="/zh/transport/didi/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚗 <strong>外国人如何使用滴滴</strong>——设置网约车</a>
-        <a href="/zh/transport/metro-bus/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚇 <strong>主要城市地铁和公交指南</strong>——市内交通攻略</a>
+          <div class="border-t border-gray-100 pt-6 mt-8">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5 not-prose">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h3 class="text-sm font-bold text-gray-900">📚 继续阅读</h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="/zh/transport/transport-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🚄 中国出行指南
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/zh/transport/airport-to-city/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🛬 机场到市区交通
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/zh/transport/didi/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🚗 外国人用滴滴指南
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/zh/transport/metro-bus/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🚇 中国主要城市地铁公交指南
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
       </div>
+    </div>
 
     </div>
 
-    <!-- Sources -->
-    <div class="mt-8 pt-6 border-t border-gray-200 not-prose">
-      <h3 class="text-lg font-bold text-gray-900 mb-3">参考来源</h3>
+        <!-- Sources -->
+    <div class="not-prose mt-12 pt-8 border-t border-gray-200">
+      <h3 class="text-base font-bold text-gray-900 mb-4 flex items-center gap-2">
+        <span class="text-lg">📚</span> 参考来源
+      </h3>
       <ul class="space-y-2">
-        <li><a href="https://www.12306.cn/en/index.html" target="_blank" rel="noopener" class="text-blue-600 underline text-sm">中国铁路官方 - 12306 英文版</a></li>
+        <li>
+          <a href="https://www.12306.cn/en/index.html" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+            <span class="border-b border-transparent group-hover:border-brand-700">中国铁路官方 - 12306 英文版</span>
+            <svg class="w-3 h-3 text-gray-300 ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </li>
       </ul>
     </div>
   </article>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "HowTo", "name": "中国高铁订票与乘车指南：一步步教你", "step": [{"@type": "HowToStep", "name": "安检", "text": "行李过X光机，跟机场差不多但更快。"}, {"@type": "HowToStep", "name": "候车大厅", "text": "看大屏幕找到列车检票口，跟着指示牌走。"}, {"@type": "HowToStep", "name": "检票乘车", "text": "在检票口刷护照通过，下楼到站台。"}, {"@type": "HowToStep", "name": "找车厢", "text": "楼梯口屏幕显示列车颜色码，按地上对应颜色的地标找到你的车厢。"}]}</script>
 </Layout>

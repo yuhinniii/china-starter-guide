@@ -117,24 +117,7 @@ const alternateUrls = langs.map(l => {
       },
       "image": ogImage
     })}></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    {currentLang === 'zh' && (
-      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
-    )}
-    {currentLang === 'ja' && (
-      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
-    )}
-    {currentLang === 'ko' && (
-      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
-    )}
-    {currentLang === 'ar' && (
-      <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;700&display=swap" rel="stylesheet" />
-    )}
-    {currentLang === 'th' && (
-      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;700&display=swap" rel="stylesheet" />
-    )}
+    <!-- System font stack — no external font downloads, instant render, 0 CLS -->
     <style is:global>
       /* Responsive tables — horizontal scroll on mobile, keep full format */
       .table-responsive {

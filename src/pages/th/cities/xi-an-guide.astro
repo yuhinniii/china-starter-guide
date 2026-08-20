@@ -1,0 +1,240 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = "คู่มือเที่ยวซีอาน: สถานที่เที่ยว อาหาร และสิ่งที่ต้องรู้";
+const description = "เมืองหลวงของ 13 ราชวงศ์ยาวนานกว่า 1,100 ปี — ทหารดินเผา กำแพงเมืองที่ได้รับการอนุรักษ์ดีที่สุดในจีน และย่านมุสลิมที่เป็นศูนย์กลางการค้าเส้นทางสายไหมมานับพันปี";
+---
+
+<Layout title={title} description={description} lang="th">
+    <nav class="mb-8 not-prose">
+      <a href="/th/cities/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        กลับไปยังคู่มือเมือง
+      </a>
+    </nav>
+
+    <article class="max-w-4xl mx-auto px-6 py-12">
+      <header class="mb-12">
+        <p class="text-sm text-gray-500 mb-3">🏛️ ซีอาน</p>
+        <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">คู่มือเที่ยวซีอาน: สถานที่เที่ยว อาหาร และสิ่งที่ต้องรู้</h1>
+        <p class="text-xl text-gray-600 mb-6">เมืองหลวงของ 13 ราชวงศ์ยาวนานกว่า 1,100 ปี — ทหารดินเผา กำแพงเมืองที่ได้รับการอนุรักษ์ดีที่สุดในจีน และย่านมุสลิมที่เป็นศูนย์กลางการค้าเส้นทางสายไหมมานับพันปี</p>
+        <div class="flex items-center gap-4 text-sm text-gray-500"><span>📅 อัปเดตล่าสุด: สิงหาคม 2026</span><span>⏱️ 10 นาที</span></div>
+      </header>
+
+      <div class="bg-gradient-to-r from-orange-50 to-red-50 border-l-4 border-orange-500 rounded-r-2xl p-8 mb-12 not-prose">
+        <h2 class="text-2xl font-bold text-orange-900 mb-4">⚡ คำตอบด่วน</h2>
+        <p class="text-lg text-orange-800 leading-relaxed">ซีอานคือที่ที่ <strong>ประวัติศาสตร์จีนเข้มข้นที่สุด</strong> — เคยเป็นเมืองหลวงของ 13 ราชวงศ์ยาวนานกว่า 1,100 ปี แค่ทหารดินเผาก็คุ้มค่ากับการเดินทางแล้ว: ทหารดินเผาขนาดเท่าคนจริง 8,000 นาย เรียงแถวในขบวนทัพ แต่ละคนมีใบหน้าที่ไม่ซ้ำกัน ถูกฝังมานาน 2,200 ปี และยังคงเฝ้ามองไปทางทิศตะวันออก แต่ซีอานก็ยังเป็นเมืองที่มีชีวิต ด้วยกำแพงเมืองที่ได้รับการอนุรักษ์ดีที่สุดในจีน (ปั่นจักรยานรอบ 14 กม. ได้เต็มวง) ย่านมุสลิมที่เป็นศูนย์กลางการค้าเส้นทางสายไหมมานับพันปี และอาหารที่สู้เมืองไหนในประเทศก็ได้</p>
+      </div>
+
+      <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+        <h3 class="text-lg font-bold text-gray-900 mb-4">📋 สารบัญ</h3>
+        <ul class="space-y-3">
+          <li><a href="#how-many-days" class="text-blue-600 hover:underline">📅 ควรเที่ยวกี่วัน?</a></li>
+          <li><a href="#attractions" class="text-blue-600 hover:underline">🎯 สถานที่ท่องเที่ยวยอดนิยม</a></li>
+          <li><a href="#getting-around" class="text-blue-600 hover:underline">🚇 การเดินทาง</a></li>
+          <li><a href="#where-to-stay" class="text-blue-600 hover:underline">🏨 ที่พักแนะนำ</a></li>
+          <li><a href="#what-to-eat" class="text-blue-600 hover:underline">🍜 อาหารที่ต้องลอง</a></li>
+        </ul>
+      </nav>
+
+      <h2 id="how-many-days" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📅 ควรเที่ยวกี่วัน?</h2>
+      <ul class="space-y-3 text-gray-700 mb-12">
+        <li><strong>2 วัน (ขั้นต่ำ):</strong> วันที่ 1 ทหารดินเผา วันที่ 2 กำแพงเมือง + ย่านมุสลิม</li>
+        <li><strong>3 วัน (สบาย):</strong> เพิ่มพิพิธภัณฑ์ประวัติศาสตร์มณฑลส่านซีและทัวร์หนึ่งวัน</li>
+        <li><strong>4+ วัน (เจาะลึก):</strong> เพิ่มการปีนเขาหัวซาน วัดฝาเหมิน หรือคลาสเรียนทำอาหาร</li>
+      </ul>
+
+      <!-- ==================== ATTRACTIONS ==================== -->
+      <h2 id="attractions" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎯 สถานที่ท่องเที่ยวยอดนิยม</h2>
+
+      <!-- Terracotta Warriors -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+        <img src="/images/xi-an/terracotta-warriors.webp" alt="แถวทหารดินเผาในหลุมที่ 1 ซีอาน" class="w-full md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl" loading="lazy" />
+        <h3 class="text-xl font-bold text-gray-900 mb-2">ทหารดินเผา (兵马俑)</h3>
+        <p class="text-base font-semibold text-purple-700 mb-1">🎫 ค่าเข้า: ¥120 ($17) · 8:30-17:00 (ฤดูท่องเที่ยว 16 มี.ค. - 15 พ.ย.)</p>
+        <p class="text-base font-semibold mb-3"><a href="https://www.trip.com/t/QTmU64CNUV2" class="text-purple-700 underline hover:text-purple-900" target="_blank" rel="noopener">ดูราคาและตัวเลือกตั๋ว →</a></p>
+        <p class="text-gray-700 mb-3">สิ่งแรกที่สะกดคุณคือขนาด หลุมที่ 1 เพียงหลุมเดียวใหญ่เท่าสนามฟุตบอลสามสนาม ทหารยืนเรียงแถวอย่างเงียบงัน — เป็นพัน ๆ คน หันหน้าไปทางทิศตะวันออกทั้งหมด เหมือนกำลังรอคำสั่งที่ไม่เคยมาถึง จากนั้นคุณจะสังเกตเห็นใบหน้า ทหารทุกนายแตกต่างกัน — ทรงผมต่างกัน เกราะต่างกัน สีหน้าและวัยต่างกัน บางคนดูภูมิใจ บางคนดูเหนื่อยล้า บางคนเหมือนกำลังยิ้ม ราวกับช่างแกะสลักจับภาพแต่ละคนตอนกำลังคิดอะไรอยู่เมื่อ 2,200 ปีก่อน</p>
+        <p class="text-gray-700 mb-3">พิพิธภัณฑ์มีสามหลุม: หลุมที่ 1 คือกองทัพหลัก หลุมที่ 2 ทหารม้าและพลธนู และหลุมที่ 3 ศูนย์บัญชาการ รถม้าสำริด — ขนาดครึ่งหนึ่งของจริง ละเอียดประณีต อายุมากกว่า 2,000 ปี — คือผลงานชิ้นเอกเงียบ ๆ ที่คนส่วนใหญ่เดินผ่านไปโดยไม่สนใจ</p>
+        <p class="text-gray-700 mb-3"><strong>ควรจ้างไกด์ไหม?</strong> ควร ทัวร์พร้อมไกด์จะเปลี่ยนสถานที่นี้จาก "ห้องที่เต็มไปด้วยรูปปั้น" เป็นหนึ่งในประสบการณ์ประวัติศาสตร์ที่น่าทึ่งที่สุดในโลก — เรื่องราวเบื้องหลังอาวุธ เทคนิคการก่อสร้าง และความจริงที่ว่าทหารแต่ละนายเดิมถูกทาสีด้วยสีสดใส (เม็ดสีหายไปภายในไม่กี่นาทีหลังการขุดค้น โศกนาฏกรรมการอนุรักษ์ที่ยังคงหลอกหลอนสถานที่) เครื่องบรรยายเสียงอิเล็กทรอนิกส์ราคา 30-40 หยวน อย่างไรก็ตาม ผมแนะนำให้จ้างไกด์นำเที่ยวที่มีประสบการณ์ โดยปกติคิด 200-300 หยวนต่อทัวร์ 2 ชั่วโมง</p>
+        <p class="text-gray-700"><strong>เคล็ดลับปฏิบัติ:</strong></p>
+        <ul class="list-disc list-inside text-gray-700 space-y-1 mb-3">
+          <li><strong>ไปให้ทันเปิด 8:30</strong> รถทัวร์มาถึงประมาณ 10 โมง และหลุมจะแน่นชนกัน</li>
+          <li><strong>ทหารดินเผามีโควตานักท่องเที่ยวรายวันจำกัดอย่างเคร่งครัด</strong> ในฤดูท่องเที่ยว ควรจองล่วงหน้า 7 วันบน <a href="https://www.trip.com/t/QTmU64CNUV2" class="text-blue-600 hover:underline" target="_blank" rel="noopener">trip</a></li>
+        </ul>
+        <div class="clear-both"></div>
+      </div>
+
+      <!-- Xi'an City Wall -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+        <img src="/images/xi-an/city-wall.webp" alt="นักปั่นจักรยานบนกำแพงเมืองโบราณซีอานยามพระอาทิตย์ตก" class="w-full md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl" loading="lazy" />
+        <h3 class="text-xl font-bold text-gray-900 mb-2">กำแพงเมืองซีอาน (西安城墙)</h3>
+        <p class="text-base font-semibold text-purple-700 mb-1">🎫 ค่าเข้า: ¥54 ($8) · เช่าจักรยาน ¥45 ($6) ต่อ 2 ชั่วโมง · วงรอบ 14 กม.</p>
+        <p class="text-base font-semibold mb-3"><a href="https://www.trip.com/t/cuqHzURNUV2" class="text-purple-700 underline hover:text-purple-900" target="_blank" rel="noopener">ดูราคาและตัวเลือกตั๋ว →</a></p>
+        <p class="text-gray-700">กำแพงเมืองที่ได้รับการอนุรักษ์ดีที่สุดในจีน — สูง 12 เมตร กว้าง 14 เมตรที่ด้านบน กว้างถึงขนาดที่เคยมีรถแข่งบนกำแพง (ถูกห้ามในทศวรรษ 1950) ปัจจุบันคุณเช่าจักรยานปั่นรอบ 14 กม. ใช้เวลาประมาณ 90 นาที ทำช่วงพระอาทิตย์ตก: เมืองเก่าด้านในกำแพง — หลังคากระเบื้องสีเทา ตรอกแคบ ควันครัวที่ลอยจากลานบ้านนับร้อย — เทียบกับเมืองใหม่ด้านนอก — ตึกกระจกและป้ายนีออน — และคุณบนจุดสูงสุดของทั้งหมด เป็นนักปั่นเพียงคนเดียวบนกำแพงช่วงของคุณ เช่าจักรยานที่ประตูใต้ (หย่งหนิงเหมิน) ¥45 ต่อ 2 ชั่วโมง</p>
+        <div class="clear-both"></div>
+      </div>
+
+      <!-- Shaanxi History Museum -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+        <img src="/images/xi-an/shaanxi-history-museum.webp" alt="โบราณวัตถุราชวงศ์ถังที่พิพิธภัณฑ์ประวัติศาสตร์มณฑลส่านซี" class="w-full md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl" loading="lazy" />
+        <h3 class="text-xl font-bold text-gray-900 mb-2">พิพิธภัณฑ์ประวัติศาสตร์มณฑลส่านซี (陕西历史博物馆)</h3>
+        <p class="text-base font-semibold text-purple-700 mb-1">🎫 ค่าเข้า: ฟรี (นิทรรศการพื้นฐาน) หรือ ¥30 ($4) นิทรรศการพิเศษ · จองล่วงหน้า 3+ วัน</p>
+        <p class="text-base font-semibold mb-3"><a href="https://www.trip.com/t/bfVy7xcNUV2" class="text-purple-700 underline hover:text-purple-900" target="_blank" rel="noopener">ดูราคาและตัวเลือกตั๋ว →</a></p>
+        <p class="text-gray-700 mb-3">ว่ากันว่าเป็นพิพิธภัณฑ์ที่ดีที่สุดในจีนนอกเหนือจากปักกิ่ง ของสะสมครอบคลุมราชวงศ์โจว ฉิน ฮั่น และถัง — ทุกราชวงศ์มีเมืองหลวงอยู่ที่ซีอานหรือใกล้เคียง ห้องแสดงราชวงศ์ถังคือไฮไลต์: ถ้วยทองคำและเงินที่ประณีต กระจกและเครื่องประดับที่ดูเหมือนเพิ่งออกจากโรงงานหลวงเมื่อวาน ถ้วยเงินชุบทองรูปม้าเต้นรำ (鎏金舞马衔杯纹银壶) คือโบราณวัตถุชิ้นเดียวที่ทุกคนถ่ายรูป — ม้ากำลังยกขาหลังขึ้นคาบถ้วยในปาก เพื่อรำลึกถึงการแสดงจริงในงานเลี้ยงราชสำนักถัง</p>
+        <p class="text-gray-700"><strong>คุ้มที่จะจ้างไกด์ไหม?</strong> คุ้มมาก ของสะสมลึกซึ้งอย่างเหลือเชื่อ และหากไม่มีบริบท คุณจะเดินผ่านโบราณวัตถุที่เปลี่ยนความเข้าใจของนักประวัติศาสตร์ต่ออารยธรรมจีน — จิตรกรรมฝาผนังถัง เศษผ้าไหม สิ่งของฝังศพที่เขียนลำดับเวลาหลายราชวงศ์ใหม่ เครื่องบรรยายเสียงราคา ¥30 และคุ้มค่า</p>
+        <div class="clear-both"></div>
+      </div>
+
+      <!-- Big Wild Goose Pagoda -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+        <img src="/images/xi-an/big-wild-goose-pagoda.webp" alt="เจดีย์ห่านป่าองค์ใหญ่พร้อมรูปปั้นพระถังซำจังเบื้องหน้า" class="w-full md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl" loading="lazy" />
+        <h3 class="text-xl font-bold text-gray-900 mb-2">เจดีย์ห่านป่า (大雁塔)</h3>
+        <p class="text-base font-semibold text-purple-700 mb-1">🎫 ค่าเข้า: ¥40 ($6) เข้าบริเวณวัด + ¥25 ($3) ขึ้นเจดีย์</p>
+        <p class="text-base font-semibold mb-3"><a href="https://www.trip.com/t/8teFo5iNUV2" class="text-purple-700 underline hover:text-purple-900" target="_blank" rel="noopener">ดูราคาและตัวเลือกตั๋ว →</a></p>
+        <p class="text-gray-700">เจดีย์พุทธเจ็ดชั้นสมัยราชวงศ์ถัง สร้างเมื่อ ค.ศ. 652 เพื่อเก็บพระคัมภีร์พุทธที่พระถังซำจังนำกลับมาจากอินเดีย — การเดินทางเดียวกับที่สร้างแรงบันดาลใจนวนิยาย "ไซอิ๋ว" ขึ้นไปบนยอดเพื่อชมวิวเมืองเก่า ลานด้านหน้ามีการแสดงน้ำพุขนาดใหญ่ตอนกลางคืน (21.00 และ 22.00 น.) — นักท่องเที่ยวหนาแน่น แต่สายน้ำที่เต้นตามเสียงเพลงตัดกับเจดีย์ที่ส่องสว่าง สวยงามจริง ๆ ราว 15 นาที</p>
+        <div class="clear-both"></div>
+      </div>
+
+      <!-- Datang Everbright City -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+        <img src="/images/xi-an/datang-everbright-city.webp" alt="ถนนคนเดินต้าถังปู้เย่เฉิงสว่างไสวด้วยแสงแดงสไตล์ราชวงศ์ถังยามค่ำคืน" class="w-full md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl" loading="lazy" />
+        <h3 class="text-xl font-bold text-gray-900 mb-2">ต้าถังปู้เย่เฉิง (大唐不夜城)</h3>
+        <p class="text-base font-semibold text-purple-700 mb-3">🎫 ค่าเข้า: ฟรี · เปิดทุกวัน ดีที่สุดหลังพระอาทิตย์ตก</p>
+        <p class="text-gray-700">ถนนคนเดินยาว 2.1 กม. รายล้อมด้วยสถาปัตยกรรมสไตล์ราชวงศ์ถัง จอ LED ขนาดยักษ์ นักแสดงข้างถนน และตัวละครแต่งชุด — คำตอบของซีอานต่อพิพิธภัณฑ์มีชีวิต "ขุนนาง" ราชวงศ์ถังในชุดเต็มยศเดินเล่นบนถนน นักเขียนพู่กันเขียนบนพื้น และหลังมืด ทั้งถนนสว่างไสวด้วยสีทองและแดง ตั้งอยู่ติดกับเจดีย์ห่านป่า คุณจึงเที่ยวทั้งสองที่ในคืนเดียวได้ รัฐบาลทุ่มงบประมาณมหาศาลเพื่อทำให้ที่นี่เป็นหน้าต่างวัฒนธรรมจีน และแม้จะดูเป็นแหล่งท่องเที่ยว แต่ก็ประทับใจจริง ๆ — โดยเฉพาะตอน 21.00 น. ที่เจดีย์สว่างขึ้นหลังฝูงชน</p>
+        <div class="clear-both"></div>
+      </div>
+
+      <!-- Muslim Quarter -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+        <img src="/images/xi-an/muslim-quarter.webp" alt="แผงขายอาหารบนถนนฮุ่ยหมินพร้อมป้ายโคมไฟยามพลบค่ำ" class="w-full md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl" loading="lazy" />
+        <h3 class="text-xl font-bold text-gray-900 mb-2">ย่านมุสลิม / ถนนฮุ่ยหมิน (回民街)</h3>
+        <p class="text-base font-semibold text-purple-700 mb-3">🎫 ค่าเข้า: ฟรี · เปิดทุกวัน คึกคักที่สุดตอนกลางคืน</p>
+        <p class="text-gray-700">เขาวงกตของแผงอาหารและร้านค้าที่เป็นศูนย์กลางการค้าเส้นทางสายไหมมานับพันปี — อากาศเต็มไปด้วยกลิ่นลูกแกะย่างบนถ่าน เสียงฉ่า กลิ่นยี่หร่า และไอหวานของขนมลูกพลับ ฝ่าฝูงชนบนถนนสายหลักแล้วเลี้ยวเข้าตรอกเล็ก ๆ: อาหารที่ดีที่สุดอยู่บนถนนเล็ก ๆ เสมอ ที่ที่พ่อค้าเปิดแผงเดียวกันมาสามชั่วอายุคน มัสยิดใหญ่ ซ่อนอยู่ปลายตรอกหนึ่ง เป็นหนึ่งในสี่มัสยิดโบราณ สถาปัตยกรรมสมัยราชวงศ์หมิงอันเงียบสงบที่ผสมผสานลานแบบจีนกับอักษรอิสลาม — สะพานเชื่อมวัฒนธรรมอายุพันปี ค่าเข้า ¥25</p>
+        <div class="clear-both"></div>
+      </div>
+
+      <!-- Huashan Mountain -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+        <img src="/images/xi-an/huashan-mountain.webp" alt="หน้าผาหินแกรนิตบริสุทธิ์ของเขาหัวซานปกคลุมด้วยต้นสน" class="w-full md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl" loading="lazy" />
+        <h3 class="text-xl font-bold text-gray-900 mb-2">เขาหัวซาน (华山)</h3>
+        <p class="text-base font-semibold text-purple-700 mb-1">🎫 ค่าเข้า: ¥160 ($22) + ¥140 ($19) กระเช้าลอยฟ้าเที่ยวเดียว</p>
+        <p class="text-base font-semibold mb-3"><a href="https://www.trip.com/t/kvp5zQZNUV2" class="text-purple-700 underline hover:text-purple-900" target="_blank" rel="noopener">ดูราคาและตัวเลือกตั๋ว →</a></p>
+        <p class="text-gray-700">หนึ่งในห้าเขาศักดิ์สิทธิ์ของจีน มีชื่อเสียงจาก "ทางเดินไม้กระดาน" — ชั้นไม้กว้าง 30 เซนติเมตรยึดติดกับหน้าผาสูงชัน มีเชือกนิรภัยและคำอธิษฐานว่าฝูงชนจะเบาบาง ไม่เหมาะกับคนใจไม่แข็ง ควรเผื่อเวลาทั้งวันจากซีอาน (รถไฟประมาณ 2 ชั่วโมง) การนั่งกระเช้าลอยฟ้าก็เป็นอีกไฮไลต์ — คุณลอยขึ้นผ่านหน้าผาหินแกรนิตบริสุทธิ์และต้นสนที่งอกจากซอกหิน ภูเขาสูงตระหง่าน 2,000 เมตรเหนือที่ราบ</p>
+        <div class="clear-both"></div>
+      </div>
+
+      <!-- ==================== TRANSPORT ==================== -->
+      <h2 id="getting-around" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🚇 การเดินทาง</h2>
+      <ul class="list-disc pl-6 space-y-3 text-lg text-gray-700 mb-12">
+        <li><strong>รถไฟใต้ดิน:</strong> 8 สาย ราคาถูก (2-6 หยวนต่อเที่ยว) สาย 2 และ 4 ครอบคลุมจุดท่องเที่ยวส่วนใหญ่</li>
+        <li><strong>ดีตี้:</strong> คล้าย Uber ถูกกว่าแท็กซี่ ตั้งค่าให้พร้อมก่อนเดินทาง — ดู <a href="/th/transport/didi/" class="text-blue-600 hover:underline">วิธีใช้ดีตี้ในจีน</a></li>
+        <li><strong>แท็กซี่:</strong> ค่าเริ่มต้น 8.50 หยวน เตรียมปลายทางเป็นภาษาจีนล่วงหน้า</li>
+        <li><strong>เดิน:</strong> พื้นที่ในกำแพงเมืองเดินง่ายมาก — ย่านมุสลิม หอระฆัง และหอกลอง เดินถึงได้ทั้งหมด</li>
+      </ul>
+
+      <!-- ==================== WHERE TO STAY ==================== -->
+      <h2 id="where-to-stay" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏨 ที่พักแนะนำ</h2>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">ในกำแพงเมือง (ประตูใต้) — ดีที่สุดสำหรับครั้งแรก</h3>
+        <p class="text-gray-700">เดินถึงกำแพงเมือง ย่านมุสลิม และหอระฆัง ตัวเลือกที่ใช้งานได้จริงที่สุด</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">ย่านมุสลิม — ดีที่สุดสำหรับคออาหาร</h3>
+        <p class="text-gray-700">วุ่นวาย มีชีวิตชีวา สวรรค์ของคนกิน เหมาะสำหรับผู้ที่อยากอยู่ใจกลางความคึกคัก</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">ย่านเป่ยหยวนเหมิน — ใกล้หอกลอง</h3>
+        <p class="text-gray-700">ใจกลางเมือง สะดวก</p>
+      </div>
+
+      <!-- ==================== FOOD ==================== -->
+      <h2 id="what-to-eat" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🍜 อาหารที่ต้องลอง</h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">อาหารซีอานสร้างจากเส้นทำมือ เนื้อแกะ และแป้งแผ่นหนาที่หล่อเลี้ยงนักเดินทางเส้นทางสายไหมมานับพันปี</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+        <!-- Roujiamo -->
+        <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+          <div class="flex items-center justify-center bg-gray-50 p-3">
+            <img src="/images/xi-an/roujiamo.webp" alt="โร่วเจียโม่ แซนด์วิชหมูตุ๋นในแป้งแผ่น" class="max-w-full max-h-56 object-contain" loading="lazy" />
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-gray-900 mb-1">โร่วเจียโม่ (肉夹馍)</h3>
+            <p class="text-gray-600 text-base">คำตอบของซีอานต่อแฮมเบอร์เกอร์ — แต่เกิดก่อนเวอร์ชันตะวันตกหลายศตวรรษ หมูตุ๋น (หรือแกะ ถ้าสั่ง) สับกับผักชีและพริก ใส่ในแป้งแผ่นย่างที่แตกเล็กน้อยเมื่อกัด ราคาประมาณ ¥10–15</p>
+          </div>
+        </div>
+
+        <!-- Biangbiang Noodles -->
+        <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+          <div class="flex items-center justify-center bg-gray-50 p-3">
+            <img src="/images/xi-an/biangbiang-noodles.webp" alt="บะหมี่เปี้ยนเปี้ยน เส้นแป้งสาลีเส้นใหญ่ทำมือราดน้ำพริกเผา" class="max-w-full max-h-56 object-contain" loading="lazy" />
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-gray-900 mb-1">บะหมี่เปี้ยนเปี้ยน (biangbiang面)</h3>
+            <p class="text-gray-600 text-base">เส้นแป้งสาลีทำมือ เส้นหนา กว้างเท่าสายเข็มขัด เสิร์ฟพร้อมน้ำพริกเผา กระเทียม ซีอิ๊ว และน้ำส้มสายชู ชื่อมาจากเสียงแป้งตีเขียง — "เปี้ยนเปี้ยน" อักษรจีนเพียงตัวเดียวที่มี 57 ขีด เขียนบนป้ายทุกร้าน ราคาประมาณ ¥15–20 สั่งเพิ่มไข่ดาวด้านบน คนท้องถิ่นกินแบบนั้น</p>
+          </div>
+        </div>
+
+        <!-- Yangrou Paomo -->
+        <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+          <div class="flex items-center justify-center bg-gray-50 p-3">
+            <img src="/images/xi-an/yangrou-paomo.webp" alt="หยางโรว์พาวโม่ สตูว์แกะกับแป้งฉีกในชามกระเบื้องลายคราม" class="max-w-full max-h-56 object-contain" loading="lazy" />
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-gray-900 mb-1">หยางโรว์พาวโม่ (羊肉泡馍)</h3>
+            <p class="text-gray-600 text-base">สตูว์แกะกับแป้งสาลีฉีก — และพิธีกรรมสำคัญ คุณจะได้แป้งทั้งชิ้นสองแผ่นพร้อมคำสั่งให้ฉีกเป็นชิ้นขนาดหัวแม่มือ ห้ามใหญ่กว่านั้น ครัวจะรับชามของคุณไปราดน้ำซุปแกะลงบนแป้ง ตุ๋นจนชิ้นแป้งนุ่มในและกรอบนอก ฉีกแป้งใช้เวลา 20 นาที กินใช้เวลา 5 ราคาประมาณ ¥25–35 ที่ร้านคลาสสิกในย่านมุสลิม</p>
+          </div>
+        </div>
+
+        <!-- Liangpi -->
+        <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+          <div class="flex items-center justify-center bg-gray-50 p-3">
+            <img src="/images/xi-an/liangpi.webp" alt="เหลียงพี สลัดเส้นข้าวเย็นกับน้ำพริกเผาและถั่วงอก" class="max-w-full max-h-56 object-contain" loading="lazy" />
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-gray-900 mb-1">เหลียงพี (凉皮)</h3>
+            <p class="text-gray-600 text-base">สลัดเส้นข้าวเย็นกับน้ำพริกเผา น้ำส้มสายชู และถั่วงอก — เมนูสมบูรณ์แบบสำหรับหน้าร้อนและยาแก้อาการเมาค้างที่คนส่านซีเลือกใช้ ราคาประมาณ ¥8–12</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-gray-700 mb-2"><strong>ย่านมุสลิมคือสถานที่ที่ดีที่สุดในการลองทั้งหมดนี้ในคืนเดียว ไปแบบท้องว่าง!</strong></p>
+      <p class="text-gray-600 text-sm mb-12 italic">ลองสั่งของกินเล่นแต่ละอย่างเพียงเล็กน้อยหรือแบ่งกันกิน ไม่เช่นนั้นจะอิ่มเร็วมาก</p>
+
+      <!-- ==================== NEXT READS ==================== -->
+      <div class="border-t border-gray-100 pt-8 mt-8 not-prose">
+        <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5">
+          <div class="flex items-center justify-between gap-4 flex-wrap">
+            <h3 class="text-sm font-bold text-gray-900">📚 อ่านต่อ</h3>
+            <div class="flex flex-wrap gap-2">
+              <a href="/th/cities/beijing-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                🏛️ คู่มือปักกิ่ง
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/th/cities/shanghai-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                🌆 คู่มือเซี่ยงไฮ้
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/th/transport/high-speed-rail/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                🚄 จองรถไฟความเร็วสูง
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/th/payment/setup-alipay/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                💰 ตั้งค่า Alipay
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== SOURCES ==================== -->
+      <section class="mt-10 pt-6 border-t border-gray-100">
+        <h3 class="text-sm font-bold text-gray-500 uppercase tracking-wide mb-2">แหล่งอ้างอิง</h3>
+        <ul class="text-sm text-gray-600 space-y-1">
+          <li>พิพิธภัณฑ์สุสานจักรพรรดิฉินซีฮ่องเต้ — <a href="https://www.bmy.com.cn/jingtai/bmyweb/ticketing.html" class="text-blue-600 hover:underline" target="_blank" rel="noopener">bmy.com.cn</a></li>
+          <li>กำแพงเมืองซีอาน (Shaanxi Daily สื่อของรัฐ) — <a href="https://www.sxdaily.com.cn/2026-07/01/content_20049276.html" class="text-blue-600 hover:underline" target="_blank" rel="noopener">sxdaily.com.cn</a></li>
+        </ul>
+      </section>
+    </article>
+</Layout>

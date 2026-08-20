@@ -1,0 +1,212 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = "Comment réserver un hôtel en Chine pour les étrangers";
+const description = "Réservez un hôtel en Chine en tant qu'étranger — Trip.com, prix des hôtels, politique d'accueil des étrangers, enregistrement et où loger.";
+---
+
+<Layout title={title} description={description} lang="fr">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/fr/life/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Retour à Vie
+      </a>
+    </nav>
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🏨 Vie en Chine</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        Comment réserver un hôtel en Chine pour les étrangers
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">Prix, politique d'accueil des étrangers, plateformes de réservation et enregistrement — ce qu'il faut savoir avant de réserver.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Dernière mise à jour : août 2026</span>
+        <span>⏱️ 6 min de lecture</span>
+      </div>
+    </header>
+
+    <div class="bg-gradient-to-r from-green-50 to-emerald-50 border-l-4 border-green-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-green-900 mb-4">🎯 Réponse rapide</h2>
+      <p class="text-lg text-green-800 leading-loose">
+        Oui, vous pouvez réserver un hôtel en Chine en tant qu'étranger — la clé est de choisir un établissement qui accepte les étrangers. Utilisez <strong>Trip.com</strong> (le site international) : interface en anglais, réservation au passeport et paiement par Visa/Mastercard fonctionnent tous. Comptez environ <strong>¥120–¥300 ($18–$44)</strong> pour une chaîne économique propre (Home Inn, Hanting, 7 Days), <strong>¥400–¥900 ($59–$133)</strong> pour un séjour de gamme intermédiaire (All Seasons, Atour), et <strong>¥900 et plus ($133 et plus)</strong> pour les hôtels internationaux 4–5 étoiles. Apportez votre <strong>passeport original</strong> — une photo ne suffira pas — et prévoyez un enregistrement de 5 à 15 minutes pendant que la réception vous déclare à la police.
+      </p>
+    </div>
+
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 Dans ce guide</h3>
+      <ul class="space-y-3">
+        <li><a href="#costs" class="text-blue-600 hover:underline">💰 Combien coûtent les hôtels en Chine ?</a></li>
+        <li><a href="#foreigners" class="text-blue-600 hover:underline">🛂 Tous les hôtels acceptent-ils les étrangers ?</a></li>
+        <li><a href="#platforms" class="text-blue-600 hover:underline">🏨 Quelle plateforme de réservation utiliser ?</a></li>
+        <li><a href="#checkin" class="text-blue-600 hover:underline">📝 Que se passe-t-il à l'enregistrement ?</a></li>
+        <li><a href="#location" class="text-blue-600 hover:underline">📍 Où devez-vous loger ?</a></li>
+      </ul>
+    </nav>
+
+    <div class="prose prose-lg max-w-none">
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="costs" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">💰</span> Combien coûtent les hôtels en Chine ?
+      </h2>
+
+      <div class="overflow-x-auto mb-12 not-prose">
+        <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+          <thead>
+            <tr class="bg-gray-900 text-white">
+              <th class="px-6 py-4 font-bold">Type</th>
+              <th class="px-6 py-4 font-bold">Tarif nocturne typique</th>
+              <th class="px-6 py-4 font-bold">Ce que vous obtenez</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100">
+              <td class="px-6 py-4 font-semibold">Chaîne économique</td>
+              <td class="px-6 py-4">¥120–¥300 ($18–$44)</td>
+              <td class="px-6 py-4">Home Inn (如家), Hanting (汉庭), 7 Days (7天), Jinjiang. Propre, moderne, parfois de petites chambres. Peut descendre sous ¥100 dans les villes plus petites.</td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-6 py-4 font-semibold">Gamme intermédiaire</td>
+              <td class="px-6 py-4">¥400–¥900 ($59–$133)</td>
+              <td class="px-6 py-4">All Seasons (全季), Atour (亚朵), Orange (桔子), Vienna. Le bon compromis — équivaut à un 3–4 étoiles occidental.</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-6 py-4 font-semibold">Haut de gamme</td>
+              <td class="px-6 py-4">¥900–¥2,000+ ($133–$296+)</td>
+              <td class="px-6 py-4">Chaînes internationales (Marriott, Hilton, Hyatt, Shangri-La) et marques de luxe locales. Souvent nettement moins cher que la même marque dans les villes occidentales.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="text-lg leading-loose text-gray-700 mb-12">Les prix explosent pendant la <strong>Semaine d'or de la Fête nationale (début octobre), le Nouvel An chinois et l'été dans les villes de tier-1</strong> — une chambre économique à ¥150 peut atteindre ¥900 dans le centre de Pékin en pleine saison. Réservez tôt ou décalez vos dates si possible.</p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="foreigners" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🛂</span> Tous les hôtels acceptent-ils les étrangers ?
+      </h2>
+
+      <p class="text-lg leading-loose text-gray-700 mb-10"><strong>Officiellement, oui — dans la pratique, pas toujours.</strong> Une circulaire de juillet 2024 de sept ministères chinois a indiqué aux hôtels qu'ils ne pouvaient refuser les étrangers faute de licence « client étranger », et a demandé aux plateformes de cesser de publier des annonces « interdit aux étrangers ». L'application reste cependant inégale : la plupart des hôtels des grandes villes acceptent les étrangers sans problème, mais les chaînes économiques et les petites guesthouses — et même différentes succursales d'une même chaîne — varient. Un Hanting qui accepte les étrangers en centre-ville peut ne pas les accepter dans une ville plus petite.</p>
+
+      <p class="text-lg leading-loose text-gray-700 mb-10"><strong>La solution fiable :</strong> avant de réserver, vous pouvez consulter la page de politique de l'hôtel sur Trip — elle indique si l'hôtel accepte les clients d'autres pays et régions. Ainsi, vous éliminez les hôtels qui ne vous acceptent pas. Si l'on vous refuse à la réception malgré une réservation confirmée, vous avez trois options : appeler la ligne bilingue <strong>12367</strong> (Administration nationale de l'immigration) ou le <strong>12345</strong>, ou — généralement le plus rapide — aller au prochain hôtel. Ne laissez pas une seule réception gâcher votre voyage.</p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="platforms" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🏨</span> Quelle plateforme de réservation utiliser ?
+      </h2>
+
+      <p class="text-lg leading-loose text-gray-700 mb-10"><strong>Trip.com</strong> est le premier choix pour réserver un hôtel en Chine : interface en anglais, réservation au passeport, paiement par carte étrangère et la plus grande sélection (plus d'un million d'établissements), avec la meilleure couverture des hôtels économiques et les meilleurs filtres et avis.</p>
+
+      <div class="bg-yellow-50 border border-yellow-100 rounded-2xl p-6 mb-12">
+        <p class="text-gray-700"><strong>🏨 Astuce :</strong> après une recherche, basculez vers les avis chinois (Trip.com les affiche sous les avis en anglais ; l'outil de traduction de votre téléphone fait le reste). Les avis chinois sont généralement écrits par des voyageurs locaux plus exigeants sur le bruit, la propreté et l'emplacement — plus utiles que les avis en anglais des primo-visiteurs. Recherchez des notes de 4,5 et plus avec quelques centaines d'avis.</p>
+      </div>
+
+      <div class="bg-blue-50 border border-blue-100 rounded-2xl p-6 mb-12 not-prose">
+        <p class="text-gray-700"><strong>👉 Réservez des hôtels sur Trip.com :</strong> <a href="https://www.trip.com/t/Rs0dQkxrzV2" class="text-blue-600 hover:underline">Rechercher des hôtels en Chine</a></p>
+      </div>
+
+      <p class="text-lg leading-loose text-gray-700 mb-12"><strong>Booking.com et Agoda</strong> acceptent aussi les passeports et couvrent les hôtels chinois — leurs annonces se ressemblent, penchent vers le haut de gamme, et pour certains hôtels de standing le tarif est en fait inférieur à Trip.com. Une méthode pratique : filtrez et pré-sélectionnez sur Trip.com d'abord (ses filtres et avis chinois sont les plus utiles), puis collez le nom de l'hôtel dans Booking.com et Agoda pour comparer les prix. Booking.com est pratique si vous avez un statut de fidélité dans une chaîne internationale.</p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="checkin" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">📝</span> Que se passe-t-il à l'enregistrement ?
+      </h2>
+
+      <ul class="space-y-6 mb-12 list-none pl-0">
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">Passeport original, sans exception.</p>
+          <div class="text-lg text-gray-700">La loi exige que les hôtels vérifient et enregistrent votre identité, donc une copie ou une photo sur votre téléphone ne sera pas acceptée.</div>
+        </li>
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">L'enregistrement à la police est fait pour vous.</p>
+          <div class="text-lg text-gray-700">Conformément à la règle d'enregistrement sous 24 heures, la réception déclare votre séjour à la police locale automatiquement. Demandez votre Registration Form of Temporary Residence (临时住宿登记表) — un papier imprimé gratuit qui compte si vous demandez plus tard une extension de visa.</div>
+        </li>
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">La police peut venir vérifier vos documents.</p>
+          <div class="text-lg text-gray-700">Selon la même règle, des agents s'arrêtent parfois à l'hôtel — souvent au petit-déjeuner — pour vérifier les passeports des étrangers en personne. C'est routinier, pas une rafle. Gardez votre passeport sur vous les premier et deuxième jours après l'enregistrement, et remettez-le quand on vous le demande.</div>
+        </li>
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">Une caution remboursable</p>
+          <div class="text-lg text-gray-700">Certains hôtels l'omettent totalement, d'autres demandent ¥200–¥500. WeChat Pay et Alipay fonctionnent tous deux pour la préautorisation, et le montant est remboursé automatiquement sur le compte d'origine après le départ.</div>
+        </li>
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">Mise en garde sur le Wi-Fi</p>
+          <div class="text-lg text-gray-700">Le Wi-Fi d'hôtel passe par les réseaux continentaux, donc vos applications habituelles (Google, WhatsApp, Instagram) peuvent ne pas s'y charger. Gardez votre eSIM/itinérance active pour les applications internationales et utilisez le Wi-Fi de l'hôtel pour la navigation locale — voir le <a href="/fr/life/sim-card-guide/" class="text-blue-600 hover:underline">guide SIM &amp; eSIM</a> pour rester connecté.</div>
+        </li>
+      </ul>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="location" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">📍</span> Où devez-vous loger ?
+      </h2>
+
+      <p class="text-lg leading-loose text-gray-700 mb-10"><strong>Près d'une station de métro.</strong> Les villes chinoises sont immenses et les taxis aux heures de pointe avancent au ralenti ; être à moins de 500 m d'une sortie de métro vous fait gagner une heure par jour.</p>
+
+      <p class="text-lg leading-loose text-gray-700 mb-10"><strong>Être près de l'aéroport d'arrivée ou de la gare TGV</strong> vaut aussi le coup si c'est proche des principales attractions — le transfert est plus facile le premier jour, et après le départ vous pouvez laisser vos bagages à l'hôtel et les récupérer en route vers votre prochaine ville au lieu de les traîner à travers la ville. Deux autres habitudes qui paient :</p>
+
+      <ul class="space-y-6 mb-12 list-none pl-0">
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">Faites une capture d'écran du nom et de l'adresse chinois de votre hôtel.</p>
+          <div class="text-lg text-gray-700">Faites-le avant d'arriver — les chauffeurs de taxi et DiDi lisent le chinois instantanément mais peuvent ne pas reconnaître du tout le nom anglais.</div>
+        </li>
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">Consultez d'abord les guides de paiement.</p>
+          <div class="text-lg text-gray-700">Si votre hôtel n'accepte que Alipay/WeChat Pay, vous voudrez les configurer avant l'enregistrement — voir <a href="/fr/payment/payment-guide/" class="text-blue-600 hover:underline">Comment payer en Chine</a>.</div>
+        </li>
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">Besoin d'aide pour choisir un hôtel ?</p>
+          <div class="text-lg text-gray-700">Écrivez-moi — je serai ravi de suggérer des options selon votre itinéraire.</div>
+        </li>
+      </ul>
+
+      <p class="text-lg leading-loose text-gray-700 mb-12">Un choix sûr dans chaque ville : le vieux centre près d'un échangeur de métro — praticable à pied, bien desservi, et là où se concentrent la plupart des sites phares. Au-delà, les meilleurs quartiers diffèrent selon la ville, et chaque guide de ville de ce site détaille où loger.</p>
+    </div>
+
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose">
+      <div class="border-t border-gray-100 pt-6 mt-8">
+        <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5 not-prose">
+          <div class="flex items-center justify-between gap-4 flex-wrap">
+            <h3 class="text-sm font-bold text-gray-900">📚 Lectures suivantes</h3>
+            <div class="flex flex-wrap gap-2">
+              <a href="/fr/transport/transport-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                🚗 Comment se déplacer en Chine
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/fr/transport/high-speed-rail/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                🚄 Guide du train à grande vitesse
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/fr/payment/payment-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                💳 Comment payer en Chine
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/fr/life/sim-card-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                📶 Guide SIM & eSIM
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/fr/payment/china-travel-budget/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                💰 Coût d'un voyage en Chine 2026
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-10 not-prose">
+      <h3 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-4">Sources</h3>
+      <ol class="space-y-2 text-sm text-gray-500">
+        <li>1. <strong>Circulaire des sept ministères (juillet 2024)</strong> — les hôtels ne peuvent refuser les étrangers ; les plateformes doivent retirer les annonces « interdit aux étrangers » : <a href="https://www.gov.cn/zhengce/zhengceku/202407/content_6964443.htm" class="text-blue-600 hover:underline">gov.cn</a></li>
+        <li>2. <strong>Loi sur l'administration des entrées et sorties, article 39</strong> — obligation d'enregistrement du logement sous 24 heures : <a href="https://www.nia.gov.cn/n794014/n1050181/n1050484/c1771556/content.html" class="text-blue-600 hover:underline">nia.gov.cn</a></li>
+        <li>3. <strong>Ligne bilingue de l'Administration nationale de l'immigration 12367</strong> — 24/7, pour les refus d'hôtel et les questions d'enregistrement : <a href="https://s.nia.gov.cn/" class="text-blue-600 hover:underline">s.nia.gov.cn</a></li>
+      </ol>
+      <p class="text-sm text-gray-400 mt-4">Prix et politiques vérifiés en août 2026 ; ils changent selon la saison et la succursale — confirmez avant de réserver.</p>
+    </div>
+  </article>
+</Layout>

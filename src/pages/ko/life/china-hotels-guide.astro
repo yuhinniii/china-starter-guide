@@ -1,0 +1,212 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = "외국인을 위한 중국 호텔 예약 방법";
+const description = "외국인이 중국에서 호텔 예약하기 — Trip.com, 호텔 요금, 외국인 정책, 체크인, 추천 지역.";
+---
+
+<Layout title={title} description={description} lang="ko">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/ko/life/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        생활 정보로 돌아가기
+      </a>
+    </nav>
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🏨 중국 생활</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        외국인을 위한 중국 호텔 예약 방법
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">요금, 외국인 수용 정책, 예약 플랫폼, 체크인 — 예약 전에 알아야 할 것.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 최종 업데이트: 2026년 8월</span>
+        <span>⏱️ 약 6분 분량</span>
+      </div>
+    </header>
+
+    <div class="bg-gradient-to-r from-green-50 to-emerald-50 border-l-4 border-green-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-green-900 mb-4">🎯 한 줄 요약</h2>
+      <p class="text-lg text-green-800 leading-loose">
+        네, 외국인도 중국 호텔을 예약할 수 있다 — 핵심은 외국인을 받는 곳을 고르는 것이다. <strong>Trip.com</strong>(국제 사이트)을 쓰라: 영어 화면, 여권 기반 예약, 비자/마스터카드 결제가 모두 된다. 깨끗한 저예산 체인(홈인, 한팅, 7 Days)은 약 <strong>¥120–¥300($18–$44)</strong>, 중급(All Seasons, Atour)은 <strong>¥400–¥900($59–$133)</strong>, 국제 4~5성 호텔은 <strong>¥900+($133+)</strong>를 예상하라. <strong>여권 원본</strong>을 지참하라 — 사진은 안 된다 — 그리고 프런트 데스크가 경찰에 등록하는 동안 5~15분 체크인을 각오하라.
+      </p>
+    </div>
+
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 가이드 목차</h3>
+      <ul class="space-y-3">
+        <li><a href="#costs" class="text-blue-600 hover:underline">💰 중국 호텔 요금은 얼마일까?</a></li>
+        <li><a href="#foreigners" class="text-blue-600 hover:underline">🛂 모든 호텔이 외국인을 받나요?</a></li>
+        <li><a href="#platforms" class="text-blue-600 hover:underline">🏨 어떤 예약 플랫폼을 써야 할까요?</a></li>
+        <li><a href="#checkin" class="text-blue-600 hover:underline">📝 체크인은 어떻게 진행되나요?</a></li>
+        <li><a href="#location" class="text-blue-600 hover:underline">📍 어디에 머물러야 할까요?</a></li>
+      </ul>
+    </nav>
+
+    <div class="prose prose-lg max-w-none">
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="costs" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">💰</span> 중국 호텔 요금은 얼마일까?
+      </h2>
+
+      <div class="overflow-x-auto mb-12 not-prose">
+        <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+          <thead>
+            <tr class="bg-gray-900 text-white">
+              <th class="px-6 py-4 font-bold">유형</th>
+              <th class="px-6 py-4 font-bold">일반적인 1박 요금</th>
+              <th class="px-6 py-4 font-bold">제공 사항</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100">
+              <td class="px-6 py-4 font-semibold">저예산 체인</td>
+              <td class="px-6 py-4">¥120–¥300 ($18–$44)</td>
+              <td class="px-6 py-4">Home Inn (如家), Hanting (汉庭), 7 Days (7天), Jinjiang. 깨끗하고 현대적이며 때로 작은 방. 소도시에서는 ¥100 미만으로 떨어지기도 함.</td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-6 py-4 font-semibold">중급</td>
+              <td class="px-6 py-4">¥400–¥900 ($59–$133)</td>
+              <td class="px-6 py-4">All Seasons (全季), Atour (亚朵), Orange (桔子), Vienna. 딱 좋은 지점 — 서구 3~4성급 느낌.</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-6 py-4 font-semibold">고급</td>
+              <td class="px-6 py-4">¥900–¥2,000+ ($133–$296+)</td>
+              <td class="px-6 py-4">국제 체인(메리어트, 힐튼, 하얏트, 샹그릴라)과 국내 럭셔리 브랜드. 서구 도시의 같은 브랜드보다 훨씬 저렴한 경우가 많음.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="text-lg leading-loose text-gray-700 mb-12">가격은 <strong>국경절 황금연휴(10월 초), 설, 그리고 1선 도시의 여름</strong>에 급등한다 — ¥150짜리 저예산 방이 성수기엔 베이징 한복판에서 ¥900까지 치솟기도 한다. 가능하다면 미리 예약하거나 날짜를 조정하라.</p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="foreigners" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🛂</span> 모든 호텔이 외국인을 받나요?
+      </h2>
+
+      <p class="text-lg leading-loose text-gray-700 mb-10"><strong>공식적으로는 그렇다 — 실제로는 항상 그런 건 아니다.</strong> 2024년 7월 중국 7개 부처의 통지에 따르면, 호텔은 '외국인' 라이선스가 없다는 이유로 외국인 투숙을 거절해서는 안 되며, 플랫폼에도 '외국인 불가' 매물 게시를 중단하라고 했다. 다만 집행은 고르지 않다: 대도시 대부분의 호텔은 외국인을 문제 없이 받지만, 저예산 체인과 작은 여관 — 심지어 같은 체인의 지점마다 — 다르다. 외국인을 받는 한팅이 시내엔 있어도 소도시엔 없을 수 있다.</p>
+
+      <p class="text-lg leading-loose text-gray-700 mb-10"><strong>확실한 우회법:</strong> 예약 전에 Trip에서 해당 호텔의 정책 페이지를 확인할 수 있다 — 외국인 및 기타 국가·지역 투숙객을 받는지 여부가 적혀 있다. 이렇게 하면 당신을 받지 않는 호텔을 걸러낼 수 있다. 예약을 했는데 프런트에서 거절당한다면 세 가지 선택지가 있다: 이중언어 핫라인 <strong>12367</strong>(출입국관리국)이나 <strong>12345</strong>에 전화하거나 — 보통 가장 빠른 건 — 그냥 다음 호텔로 걸어가는 것이다. 프런트 한 곳 때문에 여행이 꼬이게 두지 마라.</p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="platforms" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🏨</span> 어떤 예약 플랫폼을 써야 할까요?
+      </h2>
+
+      <p class="text-lg leading-loose text-gray-700 mb-10"><strong>Trip.com</strong>이 중국 호텔 예약의 첫 번째 선택지다: 영어 화면, 여권 기반 예약, 해외 카드 결제, 그리고 가장 많은 매물(100만 개 이상)에, 저예산 호텔 커버리지가 가장 두텁고 필터와 후기가 가장 좋다.</p>
+
+      <div class="bg-yellow-50 border border-yellow-100 rounded-2xl p-6 mb-12">
+        <p class="text-gray-700"><strong>🏨 팁:</strong> 검색 후 중국어 후기로 넘겨보라(Trip.com은 영어 후기 아래에 중국어 후기를 보여준다. 휴대폰 번역 도구가 나머지를 처리한다). 중국어 후기는 국내 여행객이 쓴 경우가 많아 소음·청결·입지에 까다로워 영어 후기보다 더 유용하다. 4.5점 이상에 후기 수백 개를 찾아라.</p>
+      </div>
+
+      <div class="bg-blue-50 border border-blue-100 rounded-2xl p-6 mb-12 not-prose">
+        <p class="text-gray-700"><strong>👉 Trip.com에서 호텔 예약:</strong> <a href="https://www.trip.com/t/Rs0dQkxrzV2" class="text-blue-600 hover:underline">중국 호텔 검색</a></p>
+      </div>
+
+      <p class="text-lg leading-loose text-gray-700 mb-12"><strong>Booking.com과 Agoda</strong>도 여권을 받고 중국 호텔을 다룬다 — 둘의 매물은 서로 비슷하고 고급 쪽에 치우쳐 있으며, 일부 고급 호텔은 요금이 Trip.com보다 실제로 낮을 때도 있다. 실용적인 흐름: 먼저 Trip.com에서 필터링하고 리스트를 추려라(필터와 중국어 후기가 가장 유용하다), 그런 다음 호텔 이름을 Booking.com과 Agoda에 붙여넣어 가격을 비교하라. 국제 체인의 로열티 상태가 있다면 Booking.com이 요긴하다.</p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="checkin" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">📝</span> 체크인은 어떻게 진행되나요?
+      </h2>
+
+      <ul class="space-y-6 mb-12 list-none pl-0">
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">여권 원본, 예외 없음.</p>
+          <div class="text-lg text-gray-700">법률상 호텔은 신원을 확인·등록해야 하므로, 휴대폰 속 복사본이나 사진은 받지 않는다.</div>
+        </li>
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">경찰 등록은 대신 해준다.</p>
+          <div class="text-lg text-gray-700">24시간 등록 규정에 따라, 프런트 데스크가 현지 경찰에 투숙을 자동으로 등록한다. <strong>임시숙박등록표(临时住宿登记表)</strong>를 요청하라 — 비용 없는 종이 쪽지로, 추후 비자 연장을 신청할 때 중요하다.</div>
+        </li>
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">경찰이 신분증 확인을 위해 방문할 수 있다.</p>
+          <div class="text-lg text-gray-700">같은 규정에 따라 경찰이 호텔을 들를 때가 있는데 — 흔히 아침 식사 때 — 외국인 투숙객의 여권을 직접 확인한다. 일상적인 절차이지 급습이 아니다. 체크인 후 하루 이틀은 여권을 지니고 다니고, 요구하면 내주라.</div>
+        </li>
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">환불 가능한 보증금</p>
+          <div class="text-lg text-gray-700">일부 호텔은 아예 받지 않고,另一些은 ¥200–¥500을 요구한다. 위챗페이와 알리페이 모두 보증금 홀드에 쓰이며, 체크아웃 후 원래 계정으로 자동 환불된다.</div>
+        </li>
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">와이파이 주의사항</p>
+          <div class="text-lg text-gray-700">호텔 와이파이는 본토 네트워크를 거치므로, 평소 쓰는 앱(Google, WhatsApp, Instagram)이 연결되지 않을 수 있다. 국제 앱은 eSIM/로밍 데이터를 켜두고, 호텔 와이파이는 현지 브라우징용으로 써라 — 연결을 유지하는 법은 <a href="/ko/life/sim-card-guide/" class="text-blue-600 hover:underline">SIM & eSIM 가이드</a>를 보라.</div>
+        </li>
+      </ul>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="location" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">📍</span> 어디에 머물러야 할까요?
+      </h2>
+
+      <p class="text-lg leading-loose text-gray-700 mb-10"><strong>지하철역 근처.</strong> 중국 도시는 거대하고 러시아워 택시는 꼼짝 못 하는데, 지하철 출구 500m 이내면 하루 한 시간을 아낀다.</p>
+
+      <p class="text-lg leading-loose text-gray-700 mb-10"><strong>도착 공항이나 고속철도역 근처</strong>도 주요 명소와 가깝다면 고려할 만하다 — 첫날 이동이 수월하고, 체크아웃 후 짐을 호텔에 맡겨뒀다 다음 도시로 갈 때 찾는 식으로, 도시 반대편을 가로지를 필요가 없다. 더 보람 있는 습관 두 가지:</p>
+
+      <ul class="space-y-6 mb-12 list-none pl-0">
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">호텔의 중국어 이름과 주소를 캡처하라.</p>
+          <div class="text-lg text-gray-700">도착 전에 하라 — 택시 기사나 디디 기사는 중국어를 즉석에서 읽지만 영어 이름은 전혀 알아보지 못할 수 있다.</div>
+        </li>
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">먼저 결제 가이드를 보라.</p>
+          <div class="text-lg text-gray-700">호텔이 알리페이/위챗페이만 받는다면, 체크인 전에 설정해 두는 게 좋다 — <a href="/ko/payment/payment-guide/" class="text-blue-600 hover:underline">중국에서 결제하는 방법</a>을 보라.</div>
+        </li>
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">호텔 고르는 데 도움이 필요한가?</p>
+          <div class="text-lg text-gray-700">연락하라 — 일정에 맞춰 옵션을 추천해 드리겠다.</div>
+        </li>
+      </ul>
+
+      <p class="text-lg leading-loose text-gray-700 mb-12">모든 도시의 안전한 기본값: 지하철 환승역 근처의 옛 도심 — 걷기 좋고, 교통이 편리하며, 대부분의 메인 명소가 모여 있다. 그 외에는 도시마다 좋은 동네가 다르며, 이 사이트의 각 도시 가이드가 어디에 머물러야 할지 자세히 다룬다.</p>
+    </div>
+
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose">
+      <div class="border-t border-gray-100 pt-6 mt-8">
+        <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5 not-prose">
+          <div class="flex items-center justify-between gap-4 flex-wrap">
+            <h3 class="text-sm font-bold text-gray-900">📚 다음 읽을거리</h3>
+            <div class="flex flex-wrap gap-2">
+              <a href="/ko/transport/transport-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                🚗 중국 내 이동 방법
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/ko/transport/high-speed-rail/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                🚄 고속철도 가이드
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/ko/payment/payment-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                💳 중국에서 결제하는 방법
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/ko/life/sim-card-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                📶 SIM & eSIM 가이드
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/ko/payment/china-travel-budget/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                💰 2026년 중국 여행 경비
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-10 not-prose">
+      <h3 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-4">출처</h3>
+      <ol class="space-y-2 text-sm text-gray-500">
+        <li>1. <strong>7개 부처 통지(2024년 7월)</strong> — 호텔은 외국인 투숙을 거절해선 안 되며, 플랫폼은 '외국인 불가' 매물을 삭제: <a href="https://www.gov.cn/zhengce/zhengceku/202407/content_6964443.htm" class="text-blue-600 hover:underline">gov.cn</a></li>
+        <li>2. <strong>출입국관리법 제39조</strong> — 24시간 숙박 등록 의무: <a href="https://www.nia.gov.cn/n794014/n1050181/n1050484/c1771556/content.html" class="text-blue-600 hover:underline">nia.gov.cn</a></li>
+        <li>3. <strong>출입국관리국 핫라인 12367</strong> — 이중언어, 24시간, 호텔 거절 및 등록 문의: <a href="https://s.nia.gov.cn/" class="text-blue-600 hover:underline">s.nia.gov.cn</a></li>
+      </ol>
+      <p class="text-sm text-gray-400 mt-4">요금과 정책은 2026년 8월 기준 검증 — 계절과 지점별로 바뀌므로 예약 전 확인하라.</p>
+    </div>
+  </article>
+</Layout>

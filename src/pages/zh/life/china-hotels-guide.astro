@@ -1,0 +1,212 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = "外国人如何在中国预订酒店";
+const description = "外国人在中国订酒店——Trip.com、酒店价格、接待外宾政策、入住流程，以及住哪里。";
+---
+
+<Layout title={title} description={description} lang="zh">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/zh/life/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        返回生活指南
+      </a>
+    </nav>
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🏨 中国生活</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        外国人如何在中国预订酒店
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">价格、接待外宾政策、预订平台与入住流程——预订前你需要了解的一切。</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 最后更新：2026 年 8 月</span>
+        <span>⏱️ 阅读时间：6 分钟</span>
+      </div>
+    </header>
+
+    <div class="bg-gradient-to-r from-green-50 to-emerald-50 border-l-4 border-green-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-green-900 mb-4">🎯 快速回答</h2>
+      <p class="text-lg text-green-800 leading-loose">
+        是的，外国人完全可以在中国订酒店——关键是要选一家接待外宾的。用 <strong>Trip.com</strong>（国际版）：英文界面、凭护照预订、Visa／Mastercard 付款都通。干净的经济连锁（如家、汉庭、7 天）大约 <strong>¥120–¥300（$18–$44）</strong>，中档（全季、亚朵）约 <strong>¥400–¥900（$59–$133）</strong>，国际四五星酒店 <strong>¥900+（$133+）</strong>。带好你的实体护照——照片不行——并在前台向公安登记时，准备好花 5–15 分钟办理入住。
+      </p>
+    </div>
+
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 本文导读</h3>
+      <ul class="space-y-3">
+        <li><a href="#costs" class="text-blue-600 hover:underline">💰 中国的酒店要花多少钱？</a></li>
+        <li><a href="#foreigners" class="text-blue-600 hover:underline">🛂 所有酒店都接待外国人吗？</a></li>
+        <li><a href="#platforms" class="text-blue-600 hover:underline">🏨 该用哪个预订平台？</a></li>
+        <li><a href="#checkin" class="text-blue-600 hover:underline">📝 入住时会经历什么？</a></li>
+        <li><a href="#location" class="text-blue-600 hover:underline">📍 该住哪里？</a></li>
+      </ul>
+    </nav>
+
+    <div class="prose prose-lg max-w-none">
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="costs" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">💰</span> 中国的酒店要花多少钱？
+      </h2>
+
+      <div class="overflow-x-auto mb-12 not-prose">
+        <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+          <thead>
+            <tr class="bg-gray-900 text-white">
+              <th class="px-6 py-4 font-bold">类型</th>
+              <th class="px-6 py-4 font-bold">典型每晚价格</th>
+              <th class="px-6 py-4 font-bold">你能得到什么</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100">
+              <td class="px-6 py-4 font-semibold">经济连锁</td>
+              <td class="px-6 py-4">¥120–¥300 ($18–$44)</td>
+              <td class="px-6 py-4">如家（如家）、汉庭（汉庭）、7 天（7天）、锦江。干净、现代，房间有时偏小。小城市可降到 ¥100 以下。</td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-6 py-4 font-semibold">中档</td>
+              <td class="px-6 py-4">¥400–¥900 ($59–$133)</td>
+              <td class="px-6 py-4">全季（全季）、亚朵（亚朵）、桔子（桔子）、维也纳。性价比甜点——相当于西方的三四星级。</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-6 py-4 font-semibold">高档</td>
+              <td class="px-6 py-4">¥900–¥2,000+ ($133–$296+)</td>
+              <td class="px-6 py-4">国际连锁（万豪、希尔顿、凯悦、香格里拉）及国内奢华品牌。往往比同品牌在西方城市明显便宜。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="text-lg leading-loose text-gray-700 mb-12">国庆黄金周（10 月初）、春节，以及一线城市暑期，价格会猛涨——高峰期北京中心区 ¥150 的廉价房能飙到 ¥900。能早订就早订，或者错开日期。</p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="foreigners" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🛂</span> 所有酒店都接待外国人吗？
+      </h2>
+
+      <p class="text-lg leading-loose text-gray-700 mb-10"><strong>官面上，是的——实际中，未必。</strong>2024 年 7 月，中国七个部委联合发文，告知酒店不得因没有"涉外"资质而拒收外国客人，并要求平台下架"不接待外宾"的房源。但执行并不均衡：大城市多数酒店接待外宾没问题，可经济连锁和小旅馆——甚至同一品牌的不同分店——情况各异。市中心那家汉庭能接外宾，小城市的另一家可能就不行。</p>
+
+      <p class="text-lg leading-loose text-gray-700 mb-10"><strong>可靠的应对办法：</strong>预订前，可在 Trip 上查看酒店的"政策"页——上面会写明是否接待境外及港澳台旅客。这样就能先排除那些不接待你的酒店。如果已确认预订、却在前台被拒，你有三个选择：拨打双语热线 <strong>12367</strong>（国家移民管理局）或 <strong>12345</strong>，或者——通常最快的——直接换下一家。别让一个前台毁了你的行程。</p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="platforms" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🏨</span> 该用哪个预订平台？
+      </h2>
+
+      <p class="text-lg leading-loose text-gray-700 mb-10"><strong>Trip.com</strong> 是在中国订酒店的首选：英文界面、凭护照预订、境外卡付款，房源最多（超过百万家），经济酒店覆盖最全，筛选和点评也最好用。</p>
+
+      <div class="bg-yellow-50 border border-yellow-100 rounded-2xl p-6 mb-12">
+        <p class="text-gray-700"><strong>🏨 小窍门：</strong>搜完之后，翻到中文点评（Trip.com 会把它们放在英文点评下方；你手机的翻译工具能搞定其余）。中文点评多半是国内旅客写的，对噪音、卫生、位置更挑剔——比初次到访者的英文点评更有用。找评分 4.5 以上、几百条点评的。</p>
+      </div>
+
+      <div class="bg-blue-50 border border-blue-100 rounded-2xl p-6 mb-12 not-prose">
+        <p class="text-gray-700"><strong>👉 在 Trip.com 上订酒店：</strong> <a href="https://www.trip.com/t/Rs0dQkxrzV2" class="text-blue-600 hover:underline">搜索中国酒店</a></p>
+      </div>
+
+      <p class="text-lg leading-loose text-gray-700 mb-12"><strong>Booking.com 和 Agoda</strong> 同样接受护照、覆盖中国酒店——两者的房源彼此相近，偏向上档酒店，部分高端酒店的价格其实低于 Trip.com。实用流程：先在 Trip.com 上筛选、初选（它的筛选和中文点评最有价值），再把酒店名复制到 Booking.com 和 Agoda 比价。如果你在国际连锁有会员等级，Booking.com 会很方便。</p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="checkin" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">📝</span> 入住时会经历什么？
+      </h2>
+
+      <ul class="space-y-6 mb-12 list-none pl-0">
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">实体护照，没有例外。</p>
+          <div class="text-lg text-gray-700">法律要求酒店核验并登记你的身份，所以手机里的复印件或照片不会被接受。</div>
+        </li>
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">酒店会代你完成公安登记。</p>
+          <div class="text-lg text-gray-700">按 24 小时登记规定，前台会自动把你的住宿报给当地派出所。记得索要《临时住宿登记表》（临时住宿登记表）——一张不收费的打印单，日后若要办签证延期，它很重要。</div>
+        </li>
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">警察可能上门核验证件。</p>
+          <div class="text-lg text-gray-700">同条规定下，民警有时会到酒店——常在早餐时——当面查外宾护照。这是例行公事，不是查房。入住后头一两天随身带好护照，被问到就出示。</div>
+        </li>
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">可退还的押金</p>
+          <div class="text-lg text-gray-700">有的酒店完全不收，有的收 ¥200–¥500。微信支付和支付宝都能冻结押金，退房后自动原路退回。</div>
+        </li>
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">Wi-Fi 提醒</p>
+          <div class="text-lg text-gray-700">酒店 Wi-Fi 走的是内地网络，所以你的常用 App（Google、WhatsApp、Instagram）可能连不上。国际 App 请开着 eSIM／漫游流量，本地浏览用酒店 Wi-Fi——如何保持联网，请看 <a href="/zh/life/sim-card-guide/" class="text-blue-600 hover:underline">SIM 与 eSIM 指南</a>。</div>
+        </li>
+      </ul>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="location" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">📍</span> 该住哪里？
+      </h2>
+
+      <p class="text-lg leading-loose text-gray-700 mb-10"><strong>靠近地铁站。</strong>中国城市很大，高峰时段出租车挪得比爬还慢；住在地铁口 500 米内，每天能省一小时。</p>
+
+      <p class="text-lg leading-loose text-gray-700 mb-10"><strong>如果你的抵达机场或高铁站离主要景点近，也值得考虑住在那儿</strong>——第一天转场更轻松，退房后还能把行李寄存在酒店，出发去下一座城市时顺路取，不必拉着箱子穿城。还有两个好习惯，很划算：</p>
+
+      <ul class="space-y-6 mb-12 list-none pl-0">
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">截好酒店的中文名和地址。</p>
+          <div class="text-lg text-gray-700">出发前就截好——出租车和滴滴司机秒读中文，却可能完全不认英文店名。</div>
+        </li>
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">先把支付指南备好。</p>
+          <div class="text-lg text-gray-700">如果你的酒店只收支付宝／微信支付，最好在入住前就开通——见 <a href="/zh/payment/payment-guide/" class="text-blue-600 hover:underline">《在中国怎么付钱》</a>。</div>
+        </li>
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">需要帮忙挑酒店？</p>
+          <div class="text-lg text-gray-700">给我留言——很乐意根据你的行程给建议。</div>
+        </li>
+      </ul>
+
+      <p class="text-lg leading-loose text-gray-700 mb-12">每座城市都稳妥的默认选择：地铁换乘站附近的老城区——可步行、四通八达，多数招牌景点都聚在那儿。除此之外，最好的街区因城而异，本站的每篇城市指南都详细写了住哪儿。</p>
+    </div>
+
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose">
+      <div class="border-t border-gray-100 pt-6 mt-8">
+        <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5 not-prose">
+          <div class="flex items-center justify-between gap-4 flex-wrap">
+            <h3 class="text-sm font-bold text-gray-900">📚 相关攻略</h3>
+            <div class="flex flex-wrap gap-2">
+              <a href="/zh/transport/transport-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                中国出行指南
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/zh/transport/high-speed-rail/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                高铁指南
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/zh/payment/payment-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                在中国怎么付钱
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/zh/life/sim-card-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                SIM 与 eSIM 指南
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/zh/payment/china-travel-budget/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                2026 年中国旅行花费
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-10 not-prose">
+      <h3 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-4">参考来源</h3>
+      <ol class="space-y-2 text-sm text-gray-500">
+        <li>1. <strong>七部委通知（2024 年 7 月）</strong> —— 酒店不得拒收外宾，平台须下架"不接待外宾"房源：<a href="https://www.gov.cn/zhengce/zhengceku/202407/content_6964443.htm" class="text-blue-600 hover:underline">gov.cn</a></li>
+        <li>2. <strong>《出境入境管理法》第三十九条</strong> —— 24 小时住宿登记要求：<a href="https://www.nia.gov.cn/n794014/n1050181/n1050484/c1771556/content.html" class="text-blue-600 hover:underline">nia.gov.cn</a></li>
+        <li>3. <strong>国家移民管理局热线 12367</strong> —— 双语、24 小时，受理拒收外宾与登记问题：<a href="https://s.nia.gov.cn/" class="text-blue-600 hover:underline">s.nia.gov.cn</a></li>
+      </ol>
+      <p class="text-sm text-gray-400 mt-4">价格与政策于 2026 年 8 月核实；会随季节和分店变化——预订前请再确认。</p>
+    </div>
+  </article>
+</Layout>

@@ -1,0 +1,212 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = "Как бронировать отели в Китае иностранцу";
+const description = "Бронируйте отели в Китае как иностранец — Trip.com, цены на отели, политика в отношении иностранцев, заселение и где остановиться.";
+---
+
+<Layout title={title} description={description} lang="ru">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/ru/life/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Назад к «Жизни в Китае»
+      </a>
+    </nav>
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🏨 Жизнь в Китае</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        Как бронировать отели в Китае иностранцу
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">Цены, политика в отношении иностранцев, платформы бронирования и заселение — что нужно знать до брони.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Последнее обновление: август 2026</span>
+        <span>⏱️ 6 мин. чтения</span>
+      </div>
+    </header>
+
+    <div class="bg-gradient-to-r from-green-50 to-emerald-50 border-l-4 border-green-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-green-900 mb-4">🎯 Краткий ответ</h2>
+      <p class="text-lg text-green-800 leading-loose">
+        Да, вы можете забронировать отель в Китае как иностранец — ключ в том, чтобы выбрать тот, что принимает иностранных гостей. Используйте Trip.com (международный сайт): английский интерфейс, бронирование по паспорту и оплата Visa/Mastercard — всё работает. Рассчитывайте примерно на <strong>¥120–¥300 ($18–$44)</strong> за чистую бюджетную сеть (Home Inn, Hanting, 7 Days), <strong>¥400–¥900 ($59–$133)</strong> за проживание среднего уровня (All Seasons, Atour) и <strong>¥900+ ($133+)</strong> за международные отели 4–5 звёзд. Возьмите с собой оригинал паспорта — фото не сработает — и будьте готовы к заселению 5–15 минут, пока администратор регистрирует вас в полиции.
+      </p>
+    </div>
+
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 В этом гайде</h3>
+      <ul class="space-y-3">
+        <li><a href="#costs" class="text-blue-600 hover:underline">💰 Сколько стоят отели в Китае?</a></li>
+        <li><a href="#foreigners" class="text-blue-600 hover:underline">🛂 Принимают ли все отели иностранцев?</a></li>
+        <li><a href="#platforms" class="text-blue-600 hover:underline">🏨 Какую платформу бронирования выбрать?</a></li>
+        <li><a href="#checkin" class="text-blue-600 hover:underline">📝 Что происходит при заселении?</a></li>
+        <li><a href="#location" class="text-blue-600 hover:underline">📍 Где стоит остановиться?</a></li>
+      </ul>
+    </nav>
+
+    <div class="prose prose-lg max-w-none">
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="costs" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">💰</span> Сколько стоят отели в Китае?
+      </h2>
+
+      <div class="overflow-x-auto mb-12 not-prose">
+        <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+          <thead>
+            <tr class="bg-gray-900 text-white">
+              <th class="px-6 py-4 font-bold">Тип</th>
+              <th class="px-6 py-4 font-bold">Типичная цена за ночь</th>
+              <th class="px-6 py-4 font-bold">Что вы получаете</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100">
+              <td class="px-6 py-4 font-semibold">Бюджетная сеть</td>
+              <td class="px-6 py-4">¥120–¥300 ($18–$44)</td>
+              <td class="px-6 py-4">Home Inn (如家), Hanting (汉庭), 7 Days (7天), Jinjiang. Чисто, современно, иногда небольшие номера. В малых городах может опуститься ниже ¥100.</td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-6 py-4 font-semibold">Средний уровень</td>
+              <td class="px-6 py-4">¥400–¥900 ($59–$133)</td>
+              <td class="px-6 py-4">All Seasons (全季), Atour (亚朵), Orange (桔子), Vienna. Золотая середина — ощущается как западные 3–4 звезды.</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-6 py-4 font-semibold">Премиум</td>
+              <td class="px-6 py-4">¥900–¥2,000+ ($133–$296+)</td>
+              <td class="px-6 py-4">Международные сети (Marriott, Hilton, Hyatt, Shangri-La) и отечественные люксовые бренды. Часто заметно дешевле, чем тот же бренд в западных городах.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="text-lg leading-loose text-gray-700 mb-12">Цены резко взлетают во время Золотой недели национального праздника (начало октября), китайского Нового года и летом в городах первого эшелона — бюджетный номер за ¥150 может достичь ¥900 в центре Beijing в пик. Бронируйте заранее или сдвиньте даты, если можете.</p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="foreigners" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🛂</span> Принимают ли все отели иностранцев?
+      </h2>
+
+      <p class="text-lg leading-loose text-gray-700 mb-10"><strong>Официально — да, на практике — не всегда.</strong> Уведомление семи китайских министерств от июля 2024 года сообщило отелям, что они не вправе отказывать иностранным гостям из-за отсутствия лицензии «для иностранных гостей», и попросило платформы прекратить публиковать объявления «не для иностранцев». Однако исполнение неравномерно: большинство отелей в крупных городах принимают иностранцев без проблем, но бюджетные сети и малые гостевые дома — и даже разные филиалы одной сети — отличаются. Hanting, принимающий иностранцев в центре, может не принимать их в меньшем городе.</p>
+
+      <p class="text-lg leading-loose text-gray-700 mb-10"><strong>Надёжный обходной путь:</strong> перед бронированием вы можете проверить страницу политики отеля на Trip — там указано, принимает ли отель гостей из других стран и регионов. Так вы отсеете отели, которые вас не принимают. Если вам всё же откажут на стойке при подтверждённом бронировании, у вас три варианта: позвоните на двуязычную горячую линию <strong>12367</strong> (Национальная иммиграционная администрация) или <strong>12345</strong>, либо — обычно самый быстрый — идите в следующий отель. Не дайте одной стойке сорвать поездку.</p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="platforms" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🏨</span> Какую платформу бронирования выбрать?
+      </h2>
+
+      <p class="text-lg leading-loose text-gray-700 mb-10"><strong>Trip.com</strong> — первый выбор для бронирования отелей в Китае: английский интерфейс, бронирование по паспорту, оплата иностранной картой и самый большой выбор (более миллиона объектов), с самым сильным покрытием бюджетных отелей и лучшими фильтрами и отзывами.</p>
+
+      <div class="bg-yellow-50 border border-yellow-100 rounded-2xl p-6 mb-12">
+        <p class="text-gray-700"><strong>🏨 Совет:</strong> после поиска переключитесь на китайские отзывы (Trip.com показывает их под английскими; переводчик в телефоне сделает остальное). Китайские отзывы обычно пишут внутренние путешественники, которые придирчивее к шуму, чистоте и расположению, — полезнее английских отзывов от новичков. Ищите рейтинг 4.5+ с несколькими сотнями отзывов.</p>
+      </div>
+
+      <div class="bg-blue-50 border border-blue-100 rounded-2xl p-6 mb-12 not-prose">
+        <p class="text-gray-700"><strong>👉 Бронируйте отели на Trip.com:</strong> <a href="https://www.trip.com/t/Rs0dQkxrzV2" class="text-blue-600 hover:underline">Искать отели в Китае</a></p>
+      </div>
+
+      <p class="text-lg leading-loose text-gray-700 mb-12"><strong>Booking.com и Agoda</strong> также принимают паспорта и охватывают китайские отели — их объявления похожи друг на друга, смещены в сторону более дорогих объектов, и для некоторых премиальных отелей цена фактически ниже, чем на Trip.com. Практичный подход: сначала отфильтруйте и составьте шорт-лист на Trip.com (его фильтры и китайские отзывы полезнее всего), затем вставьте название отеля в Booking.com и Agoda для сравнения цен. Booking.com удобен, если у вас есть статус лояльности в международной сети.</p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="checkin" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">📝</span> Что происходит при заселении?
+      </h2>
+
+      <ul class="space-y-6 mb-12 list-none pl-0">
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">Оригинал паспорта, без исключений.</p>
+          <div class="text-lg text-gray-700">Закон обязывает отели проверять и регистрировать вашу личность, поэтому копия или фото в телефоне не принимаются.</div>
+        </li>
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">Регистрация в полиции сделана за вас.</p>
+          <div class="text-lg text-gray-700">Согласно правилу регистрации в течение 24 часов, администратор автоматически регистрирует ваше пребывание в местной полиции. Попросите свою Registration Form of Temporary Residence (临时住宿登记表) — напечатанный талон, который ничего не стоит и важен, если позже вы подадите на продление визы.</div>
+        </li>
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">Полиция может прийти проверить документы.</p>
+          <div class="text-lg text-gray-700">Согласно тому же правилу, офицеры иногда заглядывают в отель — часто во время завтрака — чтобы лично проверить паспорта иностранных гостей. Это рутина, не облава. Держите паспорт при себе первый-второй день после заселения и отдавайте по требованию.</div>
+        </li>
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">Возвратный депозит</p>
+          <div class="text-lg text-gray-700">Некоторые отели пропускают его вовсе, другие просят ¥200–¥500. WeChat Pay и Alipay одинаково подходят для удержания, и он автоматически возвращается на исходный счёт после выезда.</div>
+        </li>
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">Нюанс с Wi-Fi</p>
+          <div class="text-lg text-gray-700">Отельный Wi-Fi идёт через материковые сети, поэтому ваши привычные приложения (Google, WhatsApp, Instagram) могут не грузиться на нём. Держите eSIM/роуминг для международных приложений и используйте отельный Wi-Fi для локального серфинга — см. <a href="/ru/life/sim-card-guide/" class="text-blue-600 hover:underline">гайд по SIM и eSIM</a>, как оставаться на связи.</div>
+        </li>
+      </ul>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="location" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">📍</span> Где стоит остановиться?
+      </h2>
+
+      <p class="text-lg leading-loose text-gray-700 mb-10"><strong>Рядом со станцией метро.</strong> Китайские города огромны, а такси в час пик ползут; быть в 500 м от выхода метро экономит час в день.</p>
+
+      <p class="text-lg leading-loose text-gray-700 mb-10"><strong>Рядом с аэропортом прибытия или станцией высокоскоростного поезда</strong> тоже стоит рассмотреть, если они близко к главным достопримечательностям, — трансфер легче в первый день, а после выезда вы можете оставить вещи в отеле и забрать по пути в следующий город, вместо того чтобы тащить через весь город. Ещё две привычки, которые окупаются:</p>
+
+      <ul class="space-y-6 mb-12 list-none pl-0">
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">Сделайте скриншот китайского названия и адреса отеля.</p>
+          <div class="text-lg text-gray-700">Сделайте это до прибытия — водители такси и DiDi мгновенно читают китайский, но могут вообще не распознать английское название.</div>
+        </li>
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">Сначала используйте платёжные гайды.</p>
+          <div class="text-lg text-gray-700">Если ваш отель принимает только Alipay/WeChat Pay, вы захотите настроить их до заселения — см. <a href="/ru/payment/payment-guide/" class="text-blue-600 hover:underline">Как платить в Китае</a>.</div>
+        </li>
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">Нужна помощь с выбором отеля?</p>
+          <div class="text-lg text-gray-700">Напишите мне — с радостью предложу варианты по вашему маршруту.</div>
+        </li>
+      </ul>
+
+      <p class="text-lg leading-loose text-gray-700 mb-12">Безопасный вариант по умолчанию в каждом городе: старый центр у пересадочной станции метро — пешеходный, хорошо связанный и там, где кластеруются большинство заглавных достопримечательностей. Помимо этого, лучшие районы различаются по городам, и каждый путеводитель по городу на этом сайте подробно рассказывает, где остановиться.</p>
+    </div>
+
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose">
+      <div class="border-t border-gray-100 pt-6 mt-8">
+        <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5 not-prose">
+          <div class="flex items-center justify-between gap-4 flex-wrap">
+            <h3 class="text-sm font-bold text-gray-900">📚 Далее читать</h3>
+            <div class="flex flex-wrap gap-2">
+              <a href="/ru/transport/transport-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                🚗 Как передвигаться по Китаю
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/ru/transport/high-speed-rail/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                🚄 Гайд по высокоскоростным поездам
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/ru/payment/payment-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                💳 Как платить в Китае
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/ru/life/sim-card-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                📶 Гайд по SIM и eSIM
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/ru/payment/china-travel-budget/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                💰 Сколько стоит поездка в Китай в 2026
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-10 not-prose">
+      <h3 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-4">Источники</h3>
+      <ol class="space-y-2 text-sm text-gray-500">
+        <li>1. <strong>Уведомление семи министерств (июль 2024)</strong> — отели не вправе отказывать иностранным гостям; платформы должны убрать объявления «не для иностранцев»: <a href="https://www.gov.cn/zhengce/zhengceku/202407/content_6964443.htm" class="text-blue-600 hover:underline">gov.cn</a></li>
+        <li>2. <strong>Закон об администрировании въезда и выезда, статья 39</strong> — требование регистрации проживания в течение 24 часов: <a href="https://www.nia.gov.cn/n794014/n1050181/n1050484/c1771556/content.html" class="text-blue-600 hover:underline">nia.gov.cn</a></li>
+        <li>3. <strong>Горячая линия Национальной иммиграционной администрации 12367</strong> — двуязычная, 24/7, по вопросам отказа в отеле и регистрации: <a href="https://s.nia.gov.cn/" class="text-blue-600 hover:underline">s.nia.gov.cn</a></li>
+      </ol>
+      <p class="text-sm text-gray-400 mt-4">Цены и политика проверены в августе 2026; они меняются по сезонам и по филиалам — уточняйте перед бронированием.</p>
+    </div>
+  </article>
+</Layout>

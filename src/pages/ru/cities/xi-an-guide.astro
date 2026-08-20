@@ -1,0 +1,240 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = "Путеводитель по Сианю: что посмотреть, поесть и знать";
+const description = "Столица 13 династий на протяжении более 1100 лет — терракотовая армия, лучшая сохранившаяся городская стена Китая и мусульманский квартал, который был торговым центром Шёлкового пути тысячу лет.";
+---
+
+<Layout title={title} description={description} lang="ru">
+    <nav class="mb-8 not-prose">
+      <a href="/ru/cities/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Назад к путеводителям по городам
+      </a>
+    </nav>
+
+    <article class="max-w-4xl mx-auto px-6 py-12">
+      <header class="mb-12">
+        <p class="text-sm text-gray-500 mb-3">🏛️ Сиань</p>
+        <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">Путеводитель по Сианю: что посмотреть, поесть и знать</h1>
+        <p class="text-xl text-gray-600 mb-6">Столица 13 династий на протяжении более 1100 лет — терракотовая армия, лучшая сохранившаяся городская стена Китая и мусульманский квартал, который был торговым центром Шёлкового пути тысячу лет.</p>
+        <div class="flex items-center gap-4 text-sm text-gray-500"><span>📅 Последнее обновление: август 2026</span><span>⏱️ 10 мин. чтения</span></div>
+      </header>
+
+      <div class="bg-gradient-to-r from-orange-50 to-red-50 border-l-4 border-orange-500 rounded-r-2xl p-8 mb-12 not-prose">
+        <h2 class="text-2xl font-bold text-orange-900 mb-4">⚡ Быстрый ответ</h2>
+        <p class="text-lg text-orange-800 leading-relaxed">Сиань — это место, где <strong>история Китая бьёт сильнее всего</strong>: 13 династий правили отсюда более 1100 лет. Одной терракотовой армии достаточно, чтобы оправдать поездку: 8000 глиняных солдат в натуральную величину, выстроенных в боевом порядке, каждый с уникальным лицом, погребённых 2200 лет назад и до сих пор глядящих на восток. Но Сиань — ещё и живой город с лучшей сохранившейся городской стеной Китая (можно объехать все 14 км на велосипеде), мусульманским кварталом — торговым центром Шёлкового пути уже тысячу лет — и кухней, которая не уступает ни одному городу страны.</p>
+      </div>
+
+      <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+        <h3 class="text-lg font-bold text-gray-900 mb-4">📋 В этом путеводителе</h3>
+        <ul class="space-y-3">
+          <li><a href="#how-many-days" class="text-blue-600 hover:underline">📅 Сколько дней нужно?</a></li>
+          <li><a href="#attractions" class="text-blue-600 hover:underline">🎯 Главные достопримечательности</a></li>
+          <li><a href="#getting-around" class="text-blue-600 hover:underline">🚇 Как передвигаться</a></li>
+          <li><a href="#where-to-stay" class="text-blue-600 hover:underline">🏨 Где остановиться</a></li>
+          <li><a href="#what-to-eat" class="text-blue-600 hover:underline">🍜 Что поесть</a></li>
+        </ul>
+      </nav>
+
+      <h2 id="how-many-days" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📅 Сколько дней нужно?</h2>
+      <ul class="space-y-3 text-gray-700 mb-12">
+        <li><strong>2 дня (минимум):</strong> День 1 — терракотовая армия, День 2 — стена + мусульманский квартал</li>
+        <li><strong>3 дня (комфортно):</strong> Добавьте Музей истории Шэньси и однодневную поездку</li>
+        <li><strong>4+ дня (глубоко):</strong> Добавьте поход на Хуашань, храм Фамэнь или кулинарный мастер-класс</li>
+      </ul>
+
+      <!-- ==================== ATTRACTIONS ==================== -->
+      <h2 id="attractions" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎯 Главные достопримечательности</h2>
+
+      <!-- Terracotta Warriors -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+        <img src="/images/xi-an/terracotta-warriors.webp" alt="Ряды глиняных солдат терракотовой армии в яме №1 в Сиане" class="w-full md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl" loading="lazy" />
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Терракотовая армия (兵马俑)</h3>
+        <p class="text-base font-semibold text-purple-700 mb-1">🎫 Вход: ¥120 ($17) · 8:30-17:00 (высокий сезон 16 марта — 15 ноября)</p>
+        <p class="text-base font-semibold mb-3"><a href="https://www.trip.com/t/QTmU64CNUV2" class="text-purple-700 underline hover:text-purple-900" target="_blank" rel="noopener">Цены и варианты билетов →</a></p>
+        <p class="text-gray-700 mb-3">Первое, что поражает, — масштаб. Одна яма №1 размером с три футбольных поля, и воины стоят молчаливыми рядами — тысячи, все лицом на восток, будто ждут команды, которая так и не прозвучала. Потом замечаешь лица. Каждый солдат разный — разные причёски, разные доспехи, разные выражения, разный возраст. Кто-то выглядит гордым, кто-то усталым, кто-то усмехается, словно скульптор поймал каждого человека в середине мысли 2200 лет назад.</p>
+        <p class="text-gray-700 mb-3">В музее три ямы: №1 — главная армия, №2 — кавалерия и лучники, №3 — командный пункт. Бронзовые колесницы — в полразмера, с тончайшими деталями, старше 2000 лет — тихие шедевры, мимо которых большинство проходит не глядя.</p>
+        <p class="text-gray-700 mb-3"><strong>Нанять ли гида?</strong> Да. С гидом это место превращается из «комнаты, полной статуй» в один из самых захватывающих исторических опытов на Земле — истории оружия, строительные технологии, тот факт, что каждый воин изначально был расписан яркими красками (пигмент исчез в течение минут после раскопок — трагедия консервации, до сих пор преследующая место). Электронный аудиогид стоит 30-40 юаней. Однако я рекомендую нанять опытного гида. Обычно они берут 200-300 юаней за двухчасовую экскурсию.</p>
+        <p class="text-gray-700"><strong>Практические советы:</strong></p>
+        <ul class="list-disc list-inside text-gray-700 space-y-1 mb-3">
+          <li><strong>Приходите к открытию в 8:30.</strong> Туристические автобусы прибывают около 10:00, и ямы становятся битком.</li>
+          <li><strong>У терракотовой армии строгий дневной лимит посетителей.</strong> В высокий сезон бронируйте за 7 дней на <a href="https://www.trip.com/t/QTmU64CNUV2" class="text-blue-600 hover:underline" target="_blank" rel="noopener">trip</a>.</li>
+        </ul>
+        <div class="clear-both"></div>
+      </div>
+
+      <!-- Xi'an City Wall -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+        <img src="/images/xi-an/city-wall.webp" alt="Велосипедисты на вершине древней городской стены Сианя на закате" class="w-full md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl" loading="lazy" />
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Городская стена Сианя (西安城墙)</h3>
+        <p class="text-base font-semibold text-purple-700 mb-1">🎫 Вход: ¥54 ($8) · Аренда велосипеда ¥45 ($6) на 2 часа · Круг 14 км</p>
+        <p class="text-base font-semibold mb-3"><a href="https://www.trip.com/t/cuqHzURNUV2" class="text-purple-700 underline hover:text-purple-900" target="_blank" rel="noopener">Цены и варианты билетов →</a></p>
+        <p class="text-gray-700">Лучшая сохранившаяся городская стена Китая — 12 метров высотой, 14 метров шириной наверху, настолько широкая, что по ней когда-то гоняли машины (гонки запретили в 1950-х). Сегодня берёшь велосипед и объезжаешь весь периметр в 14 км примерно за 90 минут. Делайте это ближе к закату: старый город внутри стены — серые черепичные крыши, узкие переулки, дым от готовки, поднимающийся из сотен дворов — против нового города снаружи — стеклянные башни и неон — а вы над всем этим, единственный велосипедист на своём участке. Велосипед можно взять у Южных ворот (Юннин), ¥45 за 2 часа.</p>
+        <div class="clear-both"></div>
+      </div>
+
+      <!-- Shaanxi History Museum -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+        <img src="/images/xi-an/shaanxi-history-museum.webp" alt="Артефакты династии Тан в Музее истории Шэньси" class="w-full md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl" loading="lazy" />
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Музей истории Шэньси (陕西历史博物馆)</h3>
+        <p class="text-base font-semibold text-purple-700 mb-1">🎫 Вход: бесплатно (основная экспозиция) или ¥30 ($4) спецвыставки · Бронировать за 3+ дня</p>
+        <p class="text-base font-semibold mb-3"><a href="https://www.trip.com/t/bfVy7xcNUV2" class="text-purple-700 underline hover:text-purple-900" target="_blank" rel="noopener">Цены и варианты билетов →</a></p>
+        <p class="text-gray-700 mb-3">Пожалуй, лучший музей Китая после Пекина. Коллекция охватывает династии Чжоу, Цинь, Хань и Тан — все они имели столицу в Сиане или рядом. Главный магнит — танские галереи: ювелирно выполненные золотые и серебряные чаши, зеркала, украшения, которые выглядят так, будто вышли из императорской мастерской вчера. Позолоченная чаша с танцующей лошадью (鎏金舞马衔杯纹银壶) — артефакт, который фотографируют все: лошадь, вставшая на дыбы, держит во рту чашу, увековечивая реальный трюк с танского дворцового банкета.</p>
+        <p class="text-gray-700"><strong>Стоит ли гид?</strong> Безусловно. Коллекция ошеломляюще глубока, и без контекста вы проходите мимо артефактов, изменивших понимание китайской цивилизации историками — танские фрески, фрагменты шёлка, погребальные дары, переписавшие хронологию нескольких династий. Аудиогиды стоят ¥30 и того стоят.</p>
+        <div class="clear-both"></div>
+      </div>
+
+      <!-- Big Wild Goose Pagoda -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+        <img src="/images/xi-an/big-wild-goose-pagoda.webp" alt="Пагода Дикого гуся со статуей Сюаньцзана на переднем плане" class="w-full md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl" loading="lazy" />
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Пагода Дикого Гуся (大雁塔)</h3>
+        <p class="text-base font-semibold text-purple-700 mb-1">🎫 Вход: ¥40 ($6) на территорию храма + ¥25 ($3) подъём на пагоду</p>
+        <p class="text-base font-semibold mb-3"><a href="https://www.trip.com/t/8teFo5iNUV2" class="text-purple-700 underline hover:text-purple-900" target="_blank" rel="noopener">Цены и варианты билетов →</a></p>
+        <p class="text-gray-700">Семиярусная буддийская пагода эпохи Тан, построенная в 652 году н.э. для хранения буддийских сутр, которые монах Сюаньцзан привёз из Индии — того самого путешествия, что вдохновило роман «Путешествие на Запад». Поднимитесь наверх за видом на старый город; на площади перед пагодой по вечерам идёт грандиозное шоу фонтанов (в 21:00 и 22:00) — туристическое, но струи воды, танцующие под музыку на фоне подсвеченной пагоды, действительно впечатляют минут на пятнадцать.</p>
+        <div class="clear-both"></div>
+      </div>
+
+      <!-- Datang Everbright City -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+        <img src="/images/xi-an/datang-everbright-city.webp" alt="Пешеходная улица Датан Эвербрайт Сити, освещённая красным в стиле Тан ночью" class="w-full md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl" loading="lazy" />
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Датан Эвербрайт Сити (大唐不夜城)</h3>
+        <p class="text-base font-semibold text-purple-700 mb-3">🎫 Вход: бесплатно · Открыто ежедневно, лучше после заката</p>
+        <p class="text-gray-700">Пешеходный бульвар в 2,1 км, обрамлённый архитектурой в стиле Тан, гигантскими LED-экранами, уличными артистами и ряжеными персонажами — сианьский ответ живому музею. «Чиновники» Тан в полных придворных одеждах прогуливаются по улице, каллиграфы пишут на асфальте, а с наступлением темноты всё вокруг загорается золотом и красным. Он стоит прямо рядом с Пагодой Дикого гуся, так что оба места можно посмотреть за один вечер. Власти вложили огромные средства, чтобы сделать это витриной китайской культуры, и, хотя место ощущается туристическим, оно действительно впечатляет — особенно в 21:00, когда за толпой вспыхивает пагода.</p>
+        <div class="clear-both"></div>
+      </div>
+
+      <!-- Muslim Quarter -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+        <img src="/images/xi-an/muslim-quarter.webp" alt="Ларьки с едой на улице Хуэйминь с фонарями-вывесками в сумерках" class="w-full md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl" loading="lazy" />
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Мусульманский квартал / Улица Хуэйминь (回民街)</h3>
+        <p class="text-base font-semibold text-purple-700 mb-3">🎫 Вход: бесплатно · Открыто ежедневно, вечером людно</p>
+        <p class="text-gray-700">Лабиринт ларьков с едой и лавок, который тысячу лет был торговым центром Шёлкового пути — воздух пахнет шипящими на углях ягнячьими шашлыками, тмином и сладким паром хурмовых пирожков. Проберитесь сквозь толпу на главной улице и нырните в боковые переулки: лучшая еда всегда на маленьких улицах, где хозяева держат одни и те же ларьки три поколения. Большая мечеть, спрятанная в конце одного из переулков, — одна из четырёх древних мечетей; это спокойный комплекс эпохи Мин, сочетающий китайский дворовый дизайн с исламской каллиграфией — тысячелетний мост между культурами, вход ¥25.</p>
+        <div class="clear-both"></div>
+      </div>
+
+      <!-- Huashan Mountain -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+        <img src="/images/xi-an/huashan-mountain.webp" alt="Чистые гранитные скалы горы Хуашань, поросшие соснами" class="w-full md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl" loading="lazy" />
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Гора Хуашань (华山)</h3>
+        <p class="text-base font-semibold text-purple-700 mb-1">🎫 Вход: ¥160 ($22) + ¥140 ($19) канатная дорога в одну сторону</p>
+        <p class="text-base font-semibold mb-3"><a href="https://www.trip.com/t/kvp5zQZNUV2" class="text-purple-700 underline hover:text-purple-900" target="_blank" rel="noopener">Цены и варианты билетов →</a></p>
+        <p class="text-gray-700">Одна из пяти священных гор Китая, знаменитая «доской-тропой» — деревянной полкой в 30 сантиметров, прикрученной к отвесному утёсу, со страховочным тросом и молитвой о том, чтобы народу было поменьше. Не для слабонервных. Заложите полный день из Сианя (около 2 часов на поезде). Поездка на канатной дороге — ещё один яркий момент: поднимаешься вдоль чистых гранитных скал и сосен, растущих из каменных стен, гора возвышается на 2000 метров над равниной.</p>
+        <div class="clear-both"></div>
+      </div>
+
+      <!-- ==================== TRANSPORT ==================== -->
+      <h2 id="getting-around" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🚇 Как передвигаться</h2>
+      <ul class="list-disc pl-6 space-y-3 text-lg text-gray-700 mb-12">
+        <li><strong>Метро:</strong> 8 линий. Дёшево (2-6 юаней за поездку). Линии 2 и 4 покрывают большинство туристических мест.</li>
+        <li><strong>Didi:</strong> Как Uber. Дешевле такси. Настройте до приезда — см. <a href="/ru/transport/didi/" class="text-blue-600 hover:underline">Как пользоваться Didi в Китае</a>.</li>
+        <li><strong>Такси:</strong> Посадка 8,50 юаня. Заранее подготовьте пункт назначения на китайском.</li>
+        <li><strong>Пешком:</strong> Внутри стены всё очень пешеходно — мусульманский квартал, колокольная и барабанная башни доступны пешком.</li>
+      </ul>
+
+      <!-- ==================== WHERE TO STAY ==================== -->
+      <h2 id="where-to-stay" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏨 Где остановиться</h2>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Внутри стены (Южные ворота) — лучший выбор для первого визита</h3>
+        <p class="text-gray-700">Пешая доступность стены, мусульманского квартала и колокольной башни. Самый практичный вариант.</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Мусульманский квартал — для любителей еды</h3>
+        <p class="text-gray-700">Хаотично, живо, гастрономический рай. Лучше всего для тех, кто хочет быть в гуще событий.</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Район Бэйюаньмэнь — у барабанной башни</h3>
+        <p class="text-gray-700">Центрально, удобно.</p>
+      </div>
+
+      <!-- ==================== FOOD ==================== -->
+      <h2 id="what-to-eat" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🍜 Что поесть</h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Кухня Сианя строится вокруг лапши ручной работы, баранины и плотных лепёшек, которые кормят путешественников Шёлкового пути уже тысячу лет.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+        <!-- Roujiamo -->
+        <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+          <div class="flex items-center justify-center bg-gray-50 p-3">
+            <img src="/images/xi-an/roujiamo.webp" alt="Роуцзямо, китайский мясной сэндвич с тушёной свининой в лепёшке" class="max-w-full max-h-56 object-contain" loading="lazy" />
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-gray-900 mb-1">Роуцзямо (肉夹馍)</h3>
+            <p class="text-gray-600 text-base">Ответ Сианя на гамбургер — только он опередил западную версию на века. Тушёную свинину (или баранину, если попросить) рубят с кинзой и чили и закладывают в поджаренную на решётке лепёшку, которая чуть ломается, когда откусываешь. Около ¥10–15.</p>
+          </div>
+        </div>
+
+        <!-- Biangbiang Noodles -->
+        <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+          <div class="flex items-center justify-center bg-gray-50 p-3">
+            <img src="/images/xi-an/biangbiang-noodles.webp" alt="Лапша бянг-бянг — широкая лапша ручной работы с маслом чили" class="max-w-full max-h-56 object-contain" loading="lazy" />
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-gray-900 mb-1">Лапша бянг-бянг (biangbiang面)</h3>
+            <p class="text-gray-600 text-base">Толстая, шириной с ремень, лапша ручной работы с маслом чили, чесноком, соевым соусом и уксусом. Название — от звука, с которым тесто шлёпается о прилавок: «бянг-бянг» — единственный китайский иероглиф из 57 черт, вывешенный в каждой лавке. Около ¥15–20. Закажите с яичницей сверху — так делают местные.</p>
+          </div>
+        </div>
+
+        <!-- Yangrou Paomo -->
+        <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+          <div class="flex items-center justify-center bg-gray-50 p-3">
+            <img src="/images/xi-an/yangrou-paomo.webp" alt="Янжоу паомо — рагу из баранины с рваной лепёшкой в бело-синей фарфоровой миске" class="max-w-full max-h-56 object-contain" loading="lazy" />
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-gray-900 mb-1">Янжоу паомо (羊肉泡馍)</h3>
+            <p class="text-gray-600 text-base">Рагу из баранины с рваной пшеничной лепёшкой — и ритуал важен. Вам дают две целые лепёшки и велят рвать их на куски размером с большой палец, не больше; кухня забирает вашу миску и заливает бараний бульон поверх хлеба, томя его, пока куски не станут мягкими внутри и упругими снаружи. Рвать — 20 минут, есть — 5. Около ¥25–35 в классических заведениях мусульманского квартала.</p>
+          </div>
+        </div>
+
+        <!-- Liangpi -->
+        <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+          <div class="flex items-center justify-center bg-gray-50 p-3">
+            <img src="/images/xi-an/liangpi.webp" alt="Лянпи — холодный салат из рисовой лапши с маслом чили и ростками" class="max-w-full max-h-56 object-contain" loading="lazy" />
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-gray-900 mb-1">Лянпи (凉皮)</h3>
+            <p class="text-gray-600 text-base">Холодный салат из рисовой лапши с маслом чили, уксусом и соевыми ростками — идеальное летнее блюдо и любимое средство от похмелья во всём Шэньси. Около ¥8–12.</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-gray-700 mb-2"><strong>Мусульманский квартал — лучшее место, чтобы попробовать всё это за один вечер. Приходите голодными.</strong></p>
+      <p class="text-gray-600 text-sm mb-12 italic">Берите по небольшой порции каждой закуски или делитесь блюдами — иначе быстро наедитесь.</p>
+
+      <!-- ==================== NEXT READS ==================== -->
+      <div class="border-t border-gray-100 pt-8 mt-8 not-prose">
+        <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5">
+          <div class="flex items-center justify-between gap-4 flex-wrap">
+            <h3 class="text-sm font-bold text-gray-900">📚 Читать далее</h3>
+            <div class="flex flex-wrap gap-2">
+              <a href="/ru/cities/beijing-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                🏛️ Путеводитель по Пекину
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/ru/cities/shanghai-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                🌆 Путеводитель по Шанхаю
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/ru/transport/high-speed-rail/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                🚄 Забронировать скоростной поезд
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/ru/payment/setup-alipay/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                💰 Настроить Alipay
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== SOURCES ==================== -->
+      <section class="mt-10 pt-6 border-t border-gray-100">
+        <h3 class="text-sm font-bold text-gray-500 uppercase tracking-wide mb-2">Источники</h3>
+        <ul class="text-sm text-gray-600 space-y-1">
+          <li>Музей мавзолея императора Цинь Шихуана — <a href="https://www.bmy.com.cn/jingtai/bmyweb/ticketing.html" class="text-blue-600 hover:underline" target="_blank" rel="noopener">bmy.com.cn</a></li>
+          <li>Городская стена Сианя (Shaanxi Daily, государственные СМИ) — <a href="https://www.sxdaily.com.cn/2026-07/01/content_20049276.html" class="text-blue-600 hover:underline" target="_blank" rel="noopener">sxdaily.com.cn</a></li>
+        </ul>
+      </section>
+    </article>
+</Layout>

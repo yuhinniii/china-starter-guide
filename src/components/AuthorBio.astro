@@ -1,0 +1,13 @@
+---
+// 底部作者卡组件 — 由 Layout 自动渲染到所有内容文章页末尾
+import { authorBio, authorByline } from '../data/site-author';
+
+const { lang = 'en' } = Astro.props;
+const bio = authorBio(lang);
+const byline = authorByline(lang);
+---
+
+<div class="author-bio mt-12 rounded-2xl border border-gray-100 bg-gray-50 p-6">
+  <p class="text-sm font-semibold text-gray-900 m-0 mb-2">{byline}</p>
+  <p class="text-sm text-gray-600 leading-relaxed m-0">{bio}</p>
+</div>

@@ -1,0 +1,240 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = "西安旅行指南：景点、美食与须知事项";
+const description = "西安是十三朝古都——兵马俑、中国保存最完好的城墙,以及传承千年的丝绸之路回民街。";
+---
+
+<Layout title={title} description={description} lang="zh">
+    <nav class="mb-8 not-prose">
+      <a href="/zh/cities/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        返回城市指南
+      </a>
+    </nav>
+
+    <article class="max-w-4xl mx-auto px-6 py-12">
+      <header class="mb-12">
+        <p class="text-sm text-gray-500 mb-3">🏛️ 西安</p>
+        <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">西安旅行指南：景点、美食与须知事项</h1>
+        <p class="text-xl text-gray-600 mb-6">十三朝古都、1100 余年都城史——这里有兵马俑、中国保存最完好的城墙,以及延续千年的丝绸之路回民街。</p>
+        <div class="flex items-center gap-4 text-sm text-gray-500"><span>📅 最后更新：2026年8月</span><span>⏱️ 阅读时间：10分钟</span></div>
+      </header>
+
+      <div class="bg-gradient-to-r from-orange-50 to-red-50 border-l-4 border-orange-500 rounded-r-2xl p-8 mb-12 not-prose">
+        <h2 class="text-2xl font-bold text-orange-900 mb-4">⚡ 快速回答</h2>
+        <p class="text-lg text-orange-800 leading-relaxed">西安是<strong>中国历史底蕴最厚重的地方</strong>——这里曾是十三朝古都,历时 1100 余年。光是兵马俑就值得专程来一趟:8000 尊真人大小、按军阵排列的陶俑,个个面孔独一无二,在地下埋了 2200 年,依然面朝东方守望。但西安也是一座活着的城市:拥有中国保存最完好的城墙(可骑行环绕 14 公里),有传承了上千年的丝绸之路回民街,还有不输任何城市的美食。</p>
+      </div>
+
+      <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+        <h3 class="text-lg font-bold text-gray-900 mb-4">📋 本指南目录</h3>
+        <ul class="space-y-3">
+          <li><a href="#how-many-days" class="text-blue-600 hover:underline">📅 需要几天</a></li>
+          <li><a href="#attractions" class="text-blue-600 hover:underline">🎯 热门景点</a></li>
+          <li><a href="#getting-around" class="text-blue-600 hover:underline">🚇 市内交通</a></li>
+          <li><a href="#where-to-stay" class="text-blue-600 hover:underline">🏨 住在哪里</a></li>
+          <li><a href="#what-to-eat" class="text-blue-600 hover:underline">🍜 吃什么</a></li>
+        </ul>
+      </nav>
+
+      <h2 id="how-many-days" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📅 需要几天</h2>
+      <ul class="space-y-3 text-gray-700 mb-12">
+        <li><strong>2 天（最短）：</strong>第 1 天兵马俑，第 2 天城墙 + 回民街</li>
+        <li><strong>3 天（舒适）：</strong>加陕西历史博物馆和一次周边一日游</li>
+        <li><strong>4 天以上（深度）：</strong>加华山徒步、法门寺，或参加一次烹饪课</li>
+      </ul>
+
+      <!-- ==================== ATTRACTIONS ==================== -->
+      <h2 id="attractions" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎯 热门景点</h2>
+
+      <!-- Terracotta Warriors -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+        <img src="/images/xi-an/terracotta-warriors.webp" alt="西安兵马俑一号坑内的陶俑阵列" class="w-full md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl" loading="lazy" />
+        <h3 class="text-xl font-bold text-gray-900 mb-2">兵马俑</h3>
+        <p class="text-base font-semibold text-purple-700 mb-1">🎫 门票：¥120（$17）· 8:30-17:00（旺季 3月16日-11月15日）</p>
+        <p class="text-base font-semibold mb-3"><a href="https://www.trip.com/t/QTmU64CNUV2" class="text-purple-700 underline hover:text-purple-900" target="_blank" rel="noopener">查看价格与购票选项 →</a></p>
+        <p class="text-gray-700 mb-3">首先冲击你的是它的规模。仅一号坑就有三个足球场那么大,陶俑一排排肃立——数以千计,全部面朝东方,仿佛在等待一个永远不会下达的命令。然后你会注意到那些面孔:每个士兵都不一样——不同的发型、不同的铠甲、不同的神情、不同的年龄。有的显得骄傲,有的疲惫,有的带着笑意,仿佛 2200 年前工匠们捕捉到了每个人沉思的瞬间。</p>
+        <p class="text-gray-700 mb-3">博物馆共有三个坑:一号坑是主力部队,二号坑是骑兵和弓弩手,三号坑是指挥部。青铜马车——按原物二分之一铸造、细节繁复、已有 2000 多年历史——是大多数人匆匆略过的安静杰作。</p>
+        <p class="text-gray-700 mb-3"><strong>要不要请导游？</strong>要。一位好导游能把这里从"一屋子雕像"变成地球上最震撼的历史体验之一——那些武器背后的故事、建造工艺,以及每尊陶俑原本都涂有鲜艳色彩的事实(颜料在出土几分钟内就消失了,这场文物保护悲剧至今仍令人扼腕)。电子语音导览每台 30-40 元。不过我更推荐请一位有经验的讲解导游,两小时大约 200-300 元。</p>
+        <p class="text-gray-700"><strong>实用贴士：</strong></p>
+        <ul class="list-disc list-inside text-gray-700 space-y-1 mb-3">
+          <li><strong>赶 8:30 开门时段。</strong>旅游大巴大约 10 点抵达,之后坑内会人挤人。</li>
+          <li><strong>兵马俑有严格的每日限流。</strong>旺季需提前 7 天在 <a href="https://www.trip.com/t/QTmU64CNUV2" class="text-blue-600 hover:underline" target="_blank" rel="noopener">trip</a> 上订票。</li>
+        </ul>
+        <div class="clear-both"></div>
+      </div>
+
+      <!-- Xi'an City Wall -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+        <img src="/images/xi-an/city-wall.webp" alt="日落时分骑行在西安古城墙之上" class="w-full md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl" loading="lazy" />
+        <h3 class="text-xl font-bold text-gray-900 mb-2">西安城墙</h3>
+        <p class="text-base font-semibold text-purple-700 mb-1">🎫 门票：¥54（$8）· 租自行车 ¥45（$6）2小时 · 全程 14 公里</p>
+        <p class="text-base font-semibold mb-3"><a href="https://www.trip.com/t/cuqHzURNUV2" class="text-purple-700 underline hover:text-purple-900" target="_blank" rel="noopener">查看价格与购票选项 →</a></p>
+        <p class="text-gray-700">中国保存最完好的城墙——高 12 米,顶部宽 14 米,宽到当年曾有汽车在上面比赛(赛车活动在 20 世纪 50 年代被叫停)。如今你租一辆自行车,大约 90 分钟就能骑完 14 公里的全程。最好赶在日落前后:城墙内的老城——灰瓦屋顶、狭窄街巷、上百户院落里升起的炊烟——与城墙外的新城——玻璃幕墙与霓虹——形成鲜明对比,而你就骑在这一切之上,是你所骑行这一段城墙上唯一的骑行者。租车在南门（永宁门）,¥45 两小时。</p>
+        <div class="clear-both"></div>
+      </div>
+
+      <!-- Shaanxi History Museum -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+        <img src="/images/xi-an/shaanxi-history-museum.webp" alt="陕西历史博物馆的唐代文物" class="w-full md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl" loading="lazy" />
+        <h3 class="text-xl font-bold text-gray-900 mb-2">陕西历史博物馆</h3>
+        <p class="text-base font-semibold text-purple-700 mb-1">🎫 门票：免费（基本陈列）或 ¥30（$4）特展 · 需提前 3 天以上预约</p>
+        <p class="text-base font-semibold mb-3"><a href="https://www.trip.com/t/bfVy7xcNUV2" class="text-purple-700 underline hover:text-purple-900" target="_blank" rel="noopener">查看价格与购票选项 →</a></p>
+        <p class="text-gray-700 mb-3">可以说是北京之外中国最好的博物馆。馆藏覆盖周、秦、汉、唐四个朝代——它们都曾在西安或其周边定都。唐代展厅是最大的看点:工艺繁复的金银杯、铜镜和饰品,精美得仿佛昨天才离开皇家作坊。鎏金舞马衔杯纹银壶是人人都会拍照的那件展品——一匹后蹄跃起的马,嘴里衔着一只酒杯,纪念的是一次真实的唐代宫廷宴会表演。</p>
+        <p class="text-gray-700"><strong>值得请讲解吗？</strong>非常值得。馆藏深不可测,没有背景知识,你只会与那些改变了历史学家对中国文明认知的文物擦肩而过——唐墓壁画、丝绸残片、改写多个朝代年代线的随葬品。语音导览 ¥30,值得租。</p>
+        <div class="clear-both"></div>
+      </div>
+
+      <!-- Big Wild Goose Pagoda -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+        <img src="/images/xi-an/big-wild-goose-pagoda.webp" alt="西安大雁塔与玄奘像" class="w-full md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl" loading="lazy" />
+        <h3 class="text-xl font-bold text-gray-900 mb-2">大雁塔</h3>
+        <p class="text-base font-semibold text-purple-700 mb-1">🎫 门票：¥40（$6）进入寺院 + ¥25（$3）登塔</p>
+        <p class="text-base font-semibold mb-3"><a href="https://www.trip.com/t/8teFo5iNUV2" class="text-purple-700 underline hover:text-purple-900" target="_blank" rel="noopener">查看价格与购票选项 →</a></p>
+        <p class="text-gray-700">七层唐代佛塔,建于公元 652 年,用以存放玄奘法师从印度取回的佛教经卷——正是启发小说《西游记》的那段旅程。登顶可俯瞰老城;塔前广场每晚有大型音乐喷泉表演(晚上 9 点和 10 点)——虽然游客众多,但喷泉随音乐舞动、背后古塔灯光亮起的那一刻,确实值得一看 15 分钟。</p>
+        <div class="clear-both"></div>
+      </div>
+
+      <!-- Datang Everbright City -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+        <img src="/images/xi-an/datang-everbright-city.webp" alt="夜晚灯火通明的大唐不夜城步行街" class="w-full md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl" loading="lazy" />
+        <h3 class="text-xl font-bold text-gray-900 mb-2">大唐不夜城</h3>
+        <p class="text-base font-semibold text-purple-700 mb-3">🎫 门票：免费 · 全天开放，傍晚后最佳</p>
+        <p class="text-gray-700">一条 2.1 公里的步行街,两侧是唐风建筑、巨型 LED 屏、街头艺人和古装演员——西安版的"活的博物馆"。身着全套唐代官服的"官员"在街上漫步,书法家在地上作画,入夜后整条街亮起金红两色的灯光。它紧邻大雁塔,晚上可以一趟逛完两处。政府重金打造这片中国文化的展示区,虽然商业气息浓,但确实壮观——尤其是晚上 9 点,大雁塔在人群后方亮起的那一刻。</p>
+        <div class="clear-both"></div>
+      </div>
+
+      <!-- Muslim Quarter -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+        <img src="/images/xi-an/muslim-quarter.webp" alt="傍晚回民街的灯笼招牌与小吃摊位" class="w-full md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl" loading="lazy" />
+        <h3 class="text-xl font-bold text-gray-900 mb-2">回民街</h3>
+        <p class="text-base font-semibold text-purple-700 mb-3">🎫 门票：免费 · 全天开放，夜晚最热闹</p>
+        <p class="text-gray-700">一片迷宫般的食摊和小店,作为丝绸之路贸易枢纽已有一千年历史——空气里弥漫着炭火烤羊肉串的滋滋声、孜然香,以及柿子饼蒸腾的甜味。挤过热闹的主街,钻进小巷:最好的食物总是在小街上,那里的店家已经三代人守着同一个摊位。藏在小巷尽头的大清真寺是四大古清真寺之一,这座明代建筑群静谧安然,将中式庭院设计与伊斯兰书法融为一体——一座跨越千年的文化桥梁,门票 ¥25。</p>
+        <div class="clear-both"></div>
+      </div>
+
+      <!-- Huashan Mountain -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+        <img src="/images/xi-an/huashan-mountain.webp" alt="被松林覆盖的华山陡峭花岗岩峭壁" class="w-full md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl" loading="lazy" />
+        <h3 class="text-xl font-bold text-gray-900 mb-2">华山</h3>
+        <p class="text-base font-semibold text-purple-700 mb-1">🎫 门票：¥160（$22）进山 + ¥140（$19）单程索道</p>
+        <p class="text-base font-semibold mb-3"><a href="https://www.trip.com/t/kvp5zQZNUV2" class="text-purple-700 underline hover:text-purple-900" target="_blank" rel="noopener">查看价格与购票选项 →</a></p>
+        <p class="text-gray-700">中国五岳之一,以"长空栈道"闻名——一段 30 厘米宽的木栈道钉在垂直崖壁上,只有一条安全绳,还得祈祷人少一点。胆小者慎入。从西安出发要预留一整天(火车约 2 小时)。索道本身就是另一个亮点——你沿壁立千仞的花岗岩峭壁上升,松树从岩缝中长出,山体在平原上方拔起 2000 米。</p>
+        <div class="clear-both"></div>
+      </div>
+
+      <!-- ==================== TRANSPORT ==================== -->
+      <h2 id="getting-around" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🚇 市内交通</h2>
+      <ul class="list-disc pl-6 space-y-3 text-lg text-gray-700 mb-12">
+        <li><strong>地铁：</strong>8 条线路,票价便宜（单程 2-6 元）。2 号线和 4 号线覆盖大部分景点。</li>
+        <li><strong>滴滴：</strong>类似 Uber,比出租车便宜。出发前先设置好——参见 <a href="/zh/transport/didi/" class="text-blue-600 hover:underline">在中国如何使用滴滴</a>。</li>
+        <li><strong>出租车：</strong>起步价 8.50 元。建议提前用中文写好目的地。</li>
+        <li><strong>步行：</strong>城墙内非常适合步行——回民街、钟楼、鼓楼都能步行抵达。</li>
+      </ul>
+
+      <!-- ==================== WHERE TO STAY ==================== -->
+      <h2 id="where-to-stay" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏨 住在哪里</h2>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">城墙内（南门）— 最适合首次到访者</h3>
+        <p class="text-gray-700">步行可达城墙、回民街和钟楼。最实用的选择。</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">回民街 — 最适合美食爱好者</h3>
+        <p class="text-gray-700">热闹、充满烟火气、美食天堂。适合想置身美食中心的人。</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">北院门一带 — 靠近鼓楼</h3>
+        <p class="text-gray-700">位置居中,交通方便。</p>
+      </div>
+
+      <!-- ==================== FOOD ==================== -->
+      <h2 id="what-to-eat" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🍜 吃什么</h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">西安的美食以手工拉面、羊肉和扎实的烙饼为主——这些食物供养丝绸之路上的旅人已有一千年。</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+        <!-- Roujiamo -->
+        <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+          <div class="flex items-center justify-center bg-gray-50 p-3">
+            <img src="/images/xi-an/roujiamo.webp" alt="肉夹馍——烙饼夹卤猪肉" class="max-w-full max-h-56 object-contain" loading="lazy" />
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-gray-900 mb-1">肉夹馍</h3>
+            <p class="text-gray-600 text-base">西安版"汉堡"——而且比西方汉堡早了好几百年。卤猪肉（或羊肉,如果你要求）与香菜、辣椒一起剁碎,夹进炉烤的酥脆烙饼里,一口咬下去饼皮微裂。约 ¥10–15。</p>
+          </div>
+        </div>
+
+        <!-- Biangbiang Noodles -->
+        <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+          <div class="flex items-center justify-center bg-gray-50 p-3">
+            <img src="/images/xi-an/biangbiang-noodles.webp" alt="biangbiang 面——宽条手工拉面配辣椒油与肉末" class="max-w-full max-h-56 object-contain" loading="lazy" />
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-gray-900 mb-1">Biangbiang 面</h3>
+            <p class="text-gray-600 text-base">又宽又厚的腰带型手工拉面,配辣椒油、蒜、酱油和醋。名字来自面团拍打案板的声音——"biang biang",这也是全中国笔画最多的汉字（57 画）,每家店的招牌上都写着它。约 ¥15–20。建议加个煎蛋,本地人都这么吃。</p>
+          </div>
+        </div>
+
+        <!-- Yangrou Paomo -->
+        <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+          <div class="flex items-center justify-center bg-gray-50 p-3">
+            <img src="/images/xi-an/yangrou-paomo.webp" alt="羊肉泡馍——青花瓷碗中的羊肉汤配掰碎的烙饼" class="max-w-full max-h-56 object-contain" loading="lazy" />
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-gray-900 mb-1">羊肉泡馍</h3>
+            <p class="text-gray-600 text-base">羊肉汤配手撕烙饼——而且仪式感很重要。店家会给你两个整馍,让你掰成拇指大小、不能再大;厨房端走你的碗,把羊肉汤浇在馍上炖煮,直到馍块外软内韧。掰馍要 20 分钟,吃只要 5 分钟。回民街老店约 ¥25–35。</p>
+          </div>
+        </div>
+
+        <!-- Liangpi -->
+        <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+          <div class="flex items-center justify-center bg-gray-50 p-3">
+            <img src="/images/xi-an/liangpi.webp" alt="凉皮——凉拌米皮配辣椒油与豆芽" class="max-w-full max-h-56 object-contain" loading="lazy" />
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-gray-900 mb-1">凉皮</h3>
+            <p class="text-gray-600 text-base">凉拌米皮配辣椒油、醋和豆芽——夏天的绝配,也是陕西人解宿醉的首选。约 ¥8–12。</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-gray-700 mb-2"><strong>回民街是体验以上所有美食的最佳地点,一个晚上就能吃遍。记得空着肚子去。</strong></p>
+      <p class="text-gray-600 text-sm mb-12 italic">每样小吃只点小份或与人分享,否则很容易吃撑。</p>
+
+      <!-- ==================== NEXT READS ==================== -->
+      <div class="border-t border-gray-100 pt-8 mt-8 not-prose">
+        <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5">
+          <div class="flex items-center justify-between gap-4 flex-wrap">
+            <h3 class="text-sm font-bold text-gray-900">📚 继续阅读</h3>
+            <div class="flex flex-wrap gap-2">
+              <a href="/zh/cities/beijing-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                🏛️ 北京旅行指南
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/zh/cities/shanghai-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                🌆 上海旅行指南
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/zh/transport/high-speed-rail/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                🚄 中国高铁订票指南
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/zh/payment/setup-alipay/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                💰 支付宝设置指南
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== SOURCES ==================== -->
+      <section class="mt-10 pt-6 border-t border-gray-100">
+        <h3 class="text-sm font-bold text-gray-500 uppercase tracking-wide mb-2">资料来源</h3>
+        <ul class="text-sm text-gray-600 space-y-1">
+          <li>秦始皇帝陵博物院 — <a href="https://www.bmy.com.cn/jingtai/bmyweb/ticketing.html" class="text-blue-600 hover:underline" target="_blank" rel="noopener">bmy.com.cn</a></li>
+          <li>西安城墙（陕西日报）— <a href="https://www.sxdaily.com.cn/2026-07/01/content_20049276.html" class="text-blue-600 hover:underline" target="_blank" rel="noopener">sxdaily.com.cn</a></li>
+        </ul>
+      </section>
+    </article>
+</Layout>

@@ -1,5 +1,6 @@
 ---
 import Layout from '@layouts/Layout.astro';
+import { authorAbout } from '../../data/site-author';
 const title = 'Acerca de — China Starter Hub';
 const description = 'Por qué creamos esta guía y para quién es.';
 ---
@@ -16,6 +17,16 @@ const description = 'Por qué creamos esta guía y para quién es.';
         Un recurso independiente que ayuda a visitantes internacionales a prepararse y moverse por China.
       </p>
     </header>
+
+<!-- Meet the Author -->
+    <section class="mb-16 not-prose">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Conoce a la Autora</h2>
+      <div class="p-6 rounded-2xl bg-gray-50 border border-gray-100">
+        <p class="text-sm font-semibold text-gray-900 m-0 mb-3">Lynn</p>
+        <p class="text-base leading-relaxed text-gray-700 m-0">{authorAbout('es')}</p>
+      </div>
+    </section>
+
 
     <!-- Main Content -->
     <div class="prose prose-gray max-w-none">

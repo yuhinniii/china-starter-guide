@@ -1,0 +1,212 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = "外国人が中国でホテルを予約する方法";
+const description = "外国人が中国でホテルを予約——Trip.com、ホテル料金、外国人受入れポリシー、チェックイン、おすすめ滞在エリア。";
+---
+
+<Layout title={title} description={description} lang="ja">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/ja/life/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        ライフ編に戻る
+      </a>
+    </nav>
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🏨 中国での生活</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        外国人が中国でホテルを予約する方法
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">料金、外国人受入れポリシー、予約プラットフォーム、チェックイン——予約前に知っておくべきこと。</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 最終更新：2026年8月</span>
+        <span>⏱️ 読了時間：6分</span>
+      </div>
+    </header>
+
+    <div class="bg-gradient-to-r from-green-50 to-emerald-50 border-l-4 border-green-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-green-900 mb-4">🎯 クイックアンサー</h2>
+      <p class="text-lg text-green-800 leading-loose">
+        はい、外国人でも中国のホテルを予約できます——鍵は外国人を受け入れるホテルを選ぶことです。<strong>Trip.com</strong>（国際版サイト）を使いましょう。英語画面、パスポートベースの予約、Visa／Mastercardの決済、すべて機能します。清潔なバジェットチェーン（Home Inn、Hanting、7 Days）なら約<strong>¥120〜¥300（$18〜$44）</strong>、ミドルクラス（All Seasons、Atour）なら<strong>¥400〜¥900（$59〜$133）</strong>、国際的4〜5つ星ホテルなら<strong>¥900+（$133+）</strong>を見込んでください。<strong>原本のパスポート</strong>を持参してください——写真では不可です——そして、フロントが警察に申請を登録している間、5〜15分のチェックインに備えてください。
+      </p>
+    </div>
+
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 このガイドの内容</h3>
+      <ul class="space-y-3">
+        <li><a href="#costs" class="text-blue-600 hover:underline">💰 中国のホテルはいくら？</a></li>
+        <li><a href="#foreigners" class="text-blue-600 hover:underline">🛂 すべてのホテルが外国人を受け入れる？</a></li>
+        <li><a href="#platforms" class="text-blue-600 hover:underline">🏨 どの予約プラットフォームを使うべき？</a></li>
+        <li><a href="#checkin" class="text-blue-600 hover:underline">📝 チェックインでは何が起きる？</a></li>
+        <li><a href="#location" class="text-blue-600 hover:underline">📍 どこに泊まるべき？</a></li>
+      </ul>
+    </nav>
+
+    <div class="prose prose-lg max-w-none">
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="costs" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">💰</span> 中国のホテルはいくら？
+      </h2>
+
+      <div class="overflow-x-auto mb-12 not-prose">
+        <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+          <thead>
+            <tr class="bg-gray-900 text-white">
+              <th class="px-6 py-4 font-bold">タイプ</th>
+              <th class="px-6 py-4 font-bold">1泊あたりの目安料金</th>
+              <th class="px-6 py-4 font-bold">内容</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-100">
+              <td class="px-6 py-4 font-semibold">バジェットチェーン</td>
+              <td class="px-6 py-4">¥120–¥300 ($18–$44)</td>
+              <td class="px-6 py-4">Home Inn（如家）、Hanting（汉庭）、7 Days（7天）、Jinjiang。清潔でモダン、部屋が小さいことも。小都市では¥100以下になることも。</td>
+            </tr>
+            <tr class="border-b border-gray-100 bg-gray-50">
+              <td class="px-6 py-4 font-semibold">ミドルクラス</td>
+              <td class="px-6 py-4">¥400–¥900 ($59–$133)</td>
+              <td class="px-6 py-4">All Seasons（全季）、Atour（亚朵）、Orange（桔子）、Vienna。一番の狙い目——西洋の3〜4つ星のような感覚。</td>
+            </tr>
+            <tr class="border-b border-gray-100">
+              <td class="px-6 py-4 font-semibold">ハイエンド</td>
+              <td class="px-6 py-4">¥900–¥2,000+ ($133–$296+)</td>
+              <td class="px-6 py-4">国際チェーン（Marriott、Hilton、Hyatt、Shangri-La）と国内ラグジュアリーブランド。西洋の都市の同ブランドより目立って安いことも。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="text-lg leading-loose text-gray-700 mb-12">料金は<strong>国慶節ゴールデンウィーク（10月上旬）、旧正月、そして一線級都市の夏</strong>に激しく跳ね上がります——¥150のバジェット部屋がピーク時の北京市中心部では¥900になることも。できれば早めに予約するか、日程をずらしてください。</p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="foreigners" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🛂</span> すべてのホテルが外国人を受け入れる？
+      </h2>
+
+      <p class="text-lg leading-loose text-gray-700 mb-10"><strong>公的には、はい——実際には、常にではありません。</strong> 2024年7月、中国の7つの省庁が出した通知は、ホテルに対し「外国人専用」の許可がないことを理由に外国人ゲストを拒んではならず、プラットフォームに対し「外国人不可」のリスティングの公開を停止するよう求めました。しかし、執行は一貫していません。大都市のほとんどのホテルは問題なく外国人を受け入れますが、バジェットチェーンや小さな民宿——同じチェーンの支店同士でも——ばらつきがあります。市中心部で外国人を受け入れるHantingでも、小都市では受け入れないかもしれません。</p>
+
+      <p class="text-lg leading-loose text-gray-700 mb-10"><strong>頼りになる回避策：</strong> 予約する前に、Tripのホテルのポリシーページで、他国・地域からのゲストを受け入れるかどうかを確認できます。これで、あなたを受け入れないホテルを除外できます。確定予約があるのにフロントで断られた場合、3つの選択肢があります。二か国語対応のホットライン<strong>12367</strong>（国家移民管理局）か<strong>12345</strong>に電話する、あるいは——たいてい最速の——次のホテルへ歩いて行くことです。一つのフロントに旅の予定を狂わせられないでください。</p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="platforms" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🏨</span> どの予約プラットフォームを使うべき？
+      </h2>
+
+      <p class="text-lg leading-loose text-gray-700 mb-10"><strong>Trip.com</strong>は中国でホテルを予約する際の第一選択です。英語画面、パスポートベースの予約、外国カードの決済、そして最大の選択肢（100万件以上の物件）を備え、バジェットホテルの網羅性、フィルター、レビューの質でも最強です。</p>
+
+      <div class="bg-yellow-50 border border-yellow-100 rounded-2xl p-6 mb-12">
+        <p class="text-gray-700"><strong>🏨 プロのヒント：</strong> 検索後、中国語のレビューに切り替えましょう（Trip.comは英語の下に中国語を表示します。あとのことはスマホの翻訳ツールが担ってくれます）。中国語のレビューは、騒音・清潔さ・立地にうるさい国内旅行者が書くことが多く、初めての訪問者の英語レビューより役立ちます。数百件のレビューを伴う4.5以上の評価を探しましょう。</p>
+      </div>
+
+      <div class="bg-blue-50 border border-blue-100 rounded-2xl p-6 mb-12 not-prose">
+        <p class="text-gray-700"><strong>👉 Trip.comでホテルを予約：</strong> <a href="https://www.trip.com/t/Rs0dQkxrzV2" class="text-blue-600 hover:underline">中国のホテルを検索</a></p>
+      </div>
+
+      <p class="text-lg leading-loose text-gray-700 mb-12"><strong>Booking.comとAgoda</strong>もパスポートを受け付け、中国のホテルをカバーしています——両者の掲載は似通っており、高級物件に偏り、一部の高級ホテルでは料金がTrip.comより安いことも。実用的な流れ：まずTrip.comでフィルターと短絡（ショートリスト）を作成（フィルターと中国語レビューが最も有用）し、次にホテル名をBooking.comとAgodaに貼って料金を比較。国際チェーンでロイヤルティステータスを持っているなら、Booking.comが便利です。</p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="checkin" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">📝</span> チェックインでは何が起きる？
+      </h2>
+
+      <ul class="space-y-6 mb-12 list-none pl-0">
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">原本のパスポート、例外なし。</p>
+          <div class="text-lg text-gray-700">法律によりホテルは身分を確認・登録する必要があるため、コピーやスマホの写真は受け付けられません。</div>
+        </li>
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">警察への登録は代行してくれる。</p>
+          <div class="text-lg text-gray-700">24時間登録ルールに基づき、フロントが地元の警察にあなたの滞在を自動登録します。<strong>臨時住宿登記表（Registration Form of Temporary Residence）</strong>——無料で印刷された用紙——を求めましょう。後でビザ延長を申請する際に重要です。</div>
+        </li>
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">警察が訪問して書類を確認することがある。</p>
+          <div class="text-lg text-gray-700">同じルールに基づき、警官がホテルを訪れることがあります——たいてい朝食時——外国人ゲストのパスポートを直接確認するため。これは日常的なもので、摘発ではありません。チェックイン後1〜2日はパスポートを携帯し、求められたら渡してください。</div>
+        </li>
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">返金可能なデポジット</p>
+          <div class="text-lg text-gray-700">デポジットを省くホテルもあれば、¥200〜¥500を求めるところも。WeChat PayとAlipayの両方で holds ができ、チェックアウト後に元の口座へ自動返金されます。</div>
+        </li>
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">Wi-Fiの注意点</p>
+          <div class="text-lg text-gray-700">ホテルのWi-Fiは中国本土のネットワークを経由するため、いつものアプリ（Google、WhatsApp、Instagram）は読み込まれないことがあります。国際アプリ用にはeSIM／ローミングのデータをオンのままにし、ホテルのWi-Fiは現地の閲覧に使いましょう。接続を保つ方法は<a href="/ja/life/sim-card-guide/" class="text-blue-600 hover:underline">SIM・eSIMガイド</a>を参照。</div>
+        </li>
+      </ul>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="location" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">📍</span> どこに泊まるべき？
+      </h2>
+
+      <p class="text-lg leading-loose text-gray-700 mb-10"><strong>地下鉄駅の近く。</strong> 中国の都市は広く、ラッシュ時のタクシーはのろのろです。地下鉄出口から500m以内にいれば、1日1時間節約できます。</p>
+
+      <p class="text-lg leading-loose text-gray-700 mb-10"><strong>到着空港や高速鉄道駅の近く</strong>も、主要な見どころに近ければ検討の価値があります。1日目の移動が楽になり、チェックアウト後も荷物をホテルに预け、次の都市へ向かう途中で受け取れば、街中を引きずり回す必要がありません。さらに報いる2つの習慣：</p>
+
+      <ul class="space-y-6 mb-12 list-none pl-0">
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">ホテルの中国語名と住所をスクリーンショット。</p>
+          <div class="text-lg text-gray-700">到着前にしておきましょう——タクシーやDiDiの運転手は中国語を即座に読みますが、英語名をまったく認識しないことがあります。</div>
+        </li>
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">まず支払いガイドを利用。</p>
+          <div class="text-lg text-gray-700">ホテルがAlipay／WeChat Payしか受け付けない場合、チェックイン前にそれらを設定しておく必要があります。<a href="/ja/payment/payment-guide/" class="text-blue-600 hover:underline">中国での支払い方法</a>を参照。</div>
+        </li>
+        <li>
+          <p class="text-lg font-semibold text-gray-900 mb-1">ホテル選びを手伝ってほしい？</p>
+          <div class="text-lg text-gray-700">ぜひ連絡を——旅程に基づいて選択肢を提案できます。</div>
+        </li>
+      </ul>
+
+      <p class="text-lg leading-loose text-gray-700 mb-12">どの都市でも安全なデフォルト：地下鉄の乗り換え駅近くの旧市街——徒歩圏で、交通の便が良く、主要な見どころの大半が集まっています。それ以外は都市によって最適なエリアが異なり、当サイトの各都市ガイドで滞在エリアを詳しく扱っています。</p>
+    </div>
+
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose">
+      <div class="border-t border-gray-100 pt-6 mt-8">
+        <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5 not-prose">
+          <div class="flex items-center justify-between gap-4 flex-wrap">
+            <h3 class="text-sm font-bold text-gray-900">📚 続けて読む</h3>
+            <div class="flex flex-wrap gap-2">
+              <a href="/ja/transport/transport-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                🚗 中国の移動方法
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/ja/transport/high-speed-rail/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                🚄 高速鉄道ガイド
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/ja/payment/payment-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                💳 中国での支払い方法
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/ja/life/sim-card-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                📶 SIM・eSIMガイド
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/ja/payment/china-travel-budget/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                💰 中国旅行の費用2026
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-10 not-prose">
+      <h3 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-4">出典</h3>
+      <ol class="space-y-2 text-sm text-gray-500">
+        <li>1. <strong>7部門の通知（2024年7月）</strong> —— ホテルは外国人ゲストを拒否してはならず、プラットフォームは「外国人不可」の掲載を削除：<a href="https://www.gov.cn/zhengce/zhengceku/202407/content_6964443.htm" class="text-blue-600 hover:underline">gov.cn</a></li>
+        <li>2. <strong>出入国管理法第39条</strong> —— 24時間以内の宿泊登録義務：<a href="https://www.nia.gov.cn/n794014/n1050181/n1050484/c1771556/content.html" class="text-blue-600 hover:underline">nia.gov.cn</a></li>
+        <li>3. <strong>国家移民管理局ホットライン12367</strong> —— バイリンガル、24時間365日、ホテルの拒否と登録の質問に対応：<a href="https://s.nia.gov.cn/" class="text-blue-600 hover:underline">s.nia.gov.cn</a></li>
+      </ol>
+      <p class="text-sm text-gray-400 mt-4">料金とポリシーは2026年8月に確認。季節や支店によって変動するため、予約前に確認を。</p>
+    </div>
+  </article>
+</Layout>

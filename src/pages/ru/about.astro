@@ -1,5 +1,6 @@
 ---
 import Layout from '@layouts/Layout.astro';
+import { authorAbout } from '../../data/site-author';
 const title = 'О проекте — China Starter Hub';
 const description = 'Зачем мы создали этот гид и для кого он.';
 ---
@@ -16,6 +17,16 @@ const description = 'Зачем мы создали этот гид и для к
         Независимый ресурс, который помогает иностранным путешественникам подготовиться к поездке в Китай и ориентироваться в стране.
       </p>
     </header>
+
+<!-- Meet the Author -->
+    <section class="mb-16 not-prose">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Познакомьтесь с автором</h2>
+      <div class="p-6 rounded-2xl bg-gray-50 border border-gray-100">
+        <p class="text-sm font-semibold text-gray-900 m-0 mb-3">Lynn</p>
+        <p class="text-base leading-relaxed text-gray-700 m-0">{authorAbout('ru')}</p>
+      </div>
+    </section>
+
 
     <!-- Main Content -->
     <div class="prose prose-gray max-w-none">

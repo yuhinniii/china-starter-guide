@@ -1,5 +1,7 @@
 ---
 import { langs, langLabels, langDirections, getUI, isValidLang, defaultLocale } from '../i18n/ui';
+import { siteAuthor, authorBio } from '../data/site-author';
+import AuthorBio from '../components/AuthorBio.astro';
 
 const { 
   title, 
@@ -16,6 +18,15 @@ const currentLang = isValidLang(lang) ? lang : defaultLocale;
 const dir = langDirections[currentLang];
 const t = getUI(currentLang);
 const base = `/${currentLang}`;
+
+// 判断当前页面是否为内容文章页（导航页不显示作者行/作者卡）
+// 导航页：首页、about/contact/privacy/search/apps + 各子目录 index（/en/cities/ 这类）
+const NAV_PAGES = new Set(['', 'about', 'contact', 'privacy', 'search', 'apps']);
+const pathSegments = Astro.url.pathname.split('/').filter(Boolean); // ['en','cities','beijing-guide']
+const firstSegment = pathSegments[1] || '';
+const isSubIndex = Astro.url.pathname.endsWith('/') && pathSegments.length === 2; // /en/cities/ 等
+const isArticlePage = pathSegments.length >= 2 && !NAV_PAGES.has(firstSegment) && !isSubIndex;
+const schemaType = isArticlePage ? 'Article' : type;
 
 // Build alternate-language URLs for the current page
 const currentPath = Astro.url.pathname;
@@ -77,6 +88,17 @@ const alternateUrls = langs.map(l => {
       "inLanguage": currentLang,
     })}></script>
 
+    <!-- Person JSON-LD (author) -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": siteAuthor.fullName,
+      "description": siteAuthor.schemaDescription,
+      "url": "https://chinastarterhub.com/en/about/",
+      "jobTitle": "Travel Writer",
+      "knowsAbout": ["Travel in China", "High-speed rail", "Mobile payments in China", "Chinese cities"]
+    })}></script>
+
     <!-- BreadcrumbList JSON-LD -->
     {breadcrumbs.length > 0 && (
       <script type="application/ld+json" set:html={JSON.stringify({
@@ -94,18 +116,20 @@ const alternateUrls = langs.map(l => {
     <!-- Article / WebPage JSON-LD -->
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
-      "@type": type,
+      "@type": schemaType,
       "headline": title,
       "description": description,
       "url": Astro.url.href,
       "inLanguage": currentLang,
-      ...(type === 'Article' && publishedDate ? { "datePublished": publishedDate } : {}),
-      ...(modifiedDate ? { "dateModified": modifiedDate } : {}),
-      "author": {
-        "@type": "Organization",
-        "name": "China Starter Hub",
-        "url": "https://chinastarterhub.com"
-      },
+      ...(schemaType === 'Article' && publishedDate ? { "datePublished": publishedDate } : {}),
+      ...(schemaType === 'Article' ? { "dateModified": modifiedDate || publishedDate } : {}),
+      ...(schemaType === 'Article' ? {
+        "author": {
+          "@type": "Person",
+          "name": siteAuthor.fullName,
+          "url": "https://chinastarterhub.com/en/about/"
+        }
+      } : {}),
       "publisher": {
         "@type": "Organization",
         "name": "China Starter Hub",
@@ -226,6 +250,11 @@ const alternateUrls = langs.map(l => {
 
     <main class="max-w-5xl mx-auto px-4 py-8">
       <slot />
+      {isArticlePage && (
+        <div class="max-w-3xl mx-auto">
+          <AuthorBio lang={currentLang} />
+        </div>
+      )}
     </main>
 
     <!-- Footer -->

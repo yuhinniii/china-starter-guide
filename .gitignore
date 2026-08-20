@@ -5,3 +5,7 @@ dist/
 .DS_Store
 Thumbs.db
 .translate-cache.json
+
+# —— 预览中未定稿的文章(最佳时间篇 + 美食篇 × 全语种仍隔离;预算篇与酒店篇已定稿发布,2026-08-20) ——
+src/pages/*/cities/best-time-to-visit-china.astro
+src/pages/*/life/china-food-guide.astro

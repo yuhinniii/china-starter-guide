@@ -1,0 +1,240 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = "西安旅行ガイド：観光スポット、グルメ、知っておくべきこと";
+const description = "十三朝の古都・西安——兵馬俑、中国で最も保存状態の良い城壁、そして千年続くシルクロードのムスリム・クォーター。";
+---
+
+<Layout title={title} description={description} lang="ja">
+    <nav class="mb-8 not-prose">
+      <a href="/ja/cities/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        都市ガイドに戻る
+      </a>
+    </nav>
+
+    <article class="max-w-4xl mx-auto px-6 py-12">
+      <header class="mb-12">
+        <p class="text-sm text-gray-500 mb-3">🏛️ 西安</p>
+        <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">西安旅行ガイド：観光スポット、グルメ、知っておくべきこと</h1>
+        <p class="text-xl text-gray-600 mb-6">十三朝・1100年以上の都——兵馬俑、中国で最も保存状態の良い城壁、そして千年続くシルクロードのムスリム・クォーター。</p>
+        <div class="flex items-center gap-4 text-sm text-gray-500"><span>📅 最終更新：2026年8月</span><span>⏱️ 読了時間：10分</span></div>
+      </header>
+
+      <div class="bg-gradient-to-r from-orange-50 to-red-50 border-l-4 border-orange-500 rounded-r-2xl p-8 mb-12 not-prose">
+        <h2 class="text-2xl font-bold text-orange-900 mb-4">⚡ クイックアンサー</h2>
+        <p class="text-lg text-orange-800 leading-relaxed">西安は<strong>中国の歴史が最も濃く詰まった街</strong>——十三朝の都として1100年以上栄えました。兵馬俑だけで訪れる価値があります:8,000体の等身大の兵士が戦闘隊形に並び、一人ひとり異なる顔を持ち、2200年間地中に眠り、今も東を見つめています。しかし西安はまた、中国で最も保存状態の良い城壁（全長14kmを自転車で一周可能）、千年続くシルクロードの交易拠点ムスリム・クォーター、そして国内随一のグルメを持つ、今も息づく街でもあります。</p>
+      </div>
+
+      <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+        <h3 class="text-lg font-bold text-gray-900 mb-4">📋 ガイド目次</h3>
+        <ul class="space-y-3">
+          <li><a href="#how-many-days" class="text-blue-600 hover:underline">📅 必要な滞在日数</a></li>
+          <li><a href="#attractions" class="text-blue-600 hover:underline">🎯 おすすめ観光スポット</a></li>
+          <li><a href="#getting-around" class="text-blue-600 hover:underline">🚇 市内移動</a></li>
+          <li><a href="#where-to-stay" class="text-blue-600 hover:underline">🏨 おすすめ宿泊エリア</a></li>
+          <li><a href="#what-to-eat" class="text-blue-600 hover:underline">🍜 西安グルメ</a></li>
+        </ul>
+      </nav>
+
+      <h2 id="how-many-days" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📅 必要な滞在日数</h2>
+      <ul class="space-y-3 text-gray-700 mb-12">
+        <li><strong>2日（最短）：</strong>1日目は兵馬俑、2日目は城壁＋ムスリム・クォーター</li>
+        <li><strong>3日（ゆとり）：</strong>陝西歴史博物館と日帰り旅行を追加</li>
+        <li><strong>4日以上（じっくり）：</strong>華山ハイキング、法門寺、または料理教室を追加</li>
+      </ul>
+
+      <!-- ==================== ATTRACTIONS ==================== -->
+      <h2 id="attractions" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎯 おすすめ観光スポット</h2>
+
+      <!-- Terracotta Warriors -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+        <img src="/images/xi-an/terracotta-warriors.webp" alt="西安の兵馬俑一号坑に並ぶ陶俑の列" class="w-full md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl" loading="lazy" />
+        <h3 class="text-xl font-bold text-gray-900 mb-2">兵馬俑</h3>
+        <p class="text-base font-semibold text-purple-700 mb-1">🎫 入場料：¥120（$17）・8:30-17:00（繁忙期 3月16日-11月15日）</p>
+        <p class="text-base font-semibold mb-3"><a href="https://www.trip.com/t/QTmU64CNUV2" class="text-purple-700 underline hover:text-purple-900" target="_blank" rel="noopener">料金・チケットを見る →</a></p>
+        <p class="text-gray-700 mb-3">最初に圧倒されるのはその規模です。一号坑だけでサッカー場3つ分の広さがあり、兵士たちは静かに列をなして立ち並んでいます——数千体、すべて東を向き、来るはずのない命令を待っているかのようです。そして顔に目が行きます。一人ひとりの兵士が違うのです——髪型も、鎧も、表情も、年齢も。誇らしげな者、疲れた者、微笑んでいる者——2200年前、彫刻家がそれぞれの人物の思考の一瞬を捉えたかのようです。</p>
+        <p class="text-gray-700 mb-3">博物館には三つの坑があります:一号坑は主力部隊、二号坑は騎兵と弓兵、三号坑は司令部です。青銅の戦車——等身の半分、精緻な細工、2000年以上前のもの——は、多くの人が足早に通り過ぎる静かな傑作です。</p>
+        <p class="text-gray-700 mb-3"><strong>ガイドを雇うべき？</strong>はい。ガイド付きの見学は、ここを「彫像の部屋」から地球上で最も驚くべき歴史体験のひとつに変えます——武器にまつわる物語、建造技術、そして各兵士が元々鮮やかな彩色を施されていたという事実（発掘から数分で顔料が消えてしまった、今も現場を悩ませる保存上の悲劇）。電子音声ガイドは1台30〜40元。ただし、経験豊富なツアーガイドを雇うことをお勧めします。2時間のツアーで通常200〜300元です。</p>
+        <p class="text-gray-700"><strong>実用アドバイス：</strong></p>
+        <ul class="list-disc list-inside text-gray-700 space-y-1 mb-3">
+          <li><strong>8:30の開門時間を狙う。</strong>観光バスは10時頃到着し、それ以降は坑内が肩を寄せ合う混雑になります。</li>
+          <li><strong>兵馬俑には厳格な1日入場上限がある。</strong>繁忙期は7日前までに <a href="https://www.trip.com/t/QTmU64CNUV2" class="text-blue-600 hover:underline" target="_blank" rel="noopener">trip</a> で予約を。</li>
+        </ul>
+        <div class="clear-both"></div>
+      </div>
+
+      <!-- Xi'an City Wall -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+        <img src="/images/xi-an/city-wall.webp" alt="夕暮れの西安の城壁の上を自転車で走る人々" class="w-full md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl" loading="lazy" />
+        <h3 class="text-xl font-bold text-gray-900 mb-2">西安城壁</h3>
+        <p class="text-base font-semibold text-purple-700 mb-1">🎫 入場料：¥54（$8）・レンタサイクル ¥45（$6）2時間・全長14km</p>
+        <p class="text-base font-semibold mb-3"><a href="https://www.trip.com/t/cuqHzURNUV2" class="text-purple-700 underline hover:text-purple-900" target="_blank" rel="noopener">料金・チケットを見る →</a></p>
+        <p class="text-gray-700">中国で最も保存状態の良い城壁——高さ12メートル、頂部の幅14メートル、かつて車がレースをしていたほど広い道です（レースは1950年代に禁止）。現在は自転車を借りて、全長14kmを約90分で一周できます。夕暮れ時がおすすめ:城壁の内側の旧市街——灰色の瓦屋根、細い路地、百の庭から立ち上る炊事の煙——と外側の新市街——ガラスタワーとネオン——の対比、そしてその上を走る自分。南門（永寧門）で自転車を借りられます、2時間¥45。</p>
+        <div class="clear-both"></div>
+      </div>
+
+      <!-- Shaanxi History Museum -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+        <img src="/images/xi-an/shaanxi-history-museum.webp" alt="陝西歴史博物館の唐代の文物" class="w-full md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl" loading="lazy" />
+        <h3 class="text-xl font-bold text-gray-900 mb-2">陝西歴史博物館</h3>
+        <p class="text-base font-semibold text-purple-700 mb-1">🎫 入場料：無料（基本展示）または ¥30（$4）特別展・3日以上前の予約必須</p>
+        <p class="text-base font-semibold mb-3"><a href="https://www.trip.com/t/bfVy7xcNUV2" class="text-purple-700 underline hover:text-purple-900" target="_blank" rel="noopener">料金・チケットを見る →</a></p>
+        <p class="text-gray-700 mb-3">間違いなく北京以外では中国最高の博物館です。コレクションは周・秦・漢・唐の四王朝を網羅——すべて西安またはその近郊に都を置きました。目玉は唐代ギャラリー:細密な細工の金銀の杯、鏡、装飾品——昨日宮廷の工房を出たばかりのように見えます。鎏金舞馬衔杯紋銀壺（馬が杯をくわえて舞う金箔の銀の壺）は誰もが写真に収める一点もので、実際の唐の宮廷宴会の芸を記念したものです。</p>
+        <p class="text-gray-700"><strong>ガイドは価値ある？</strong>絶対に。コレクションは驚くほど深く、背景知識なしでは、中国文明の理解を変えた文物——唐の壁画、絹の断片、いくつかの王朝の年表を書き換えた副葬品——を通り過ぎてしまうだけです。音声ガイドは¥30で、価値があります。</p>
+        <div class="clear-both"></div>
+      </div>
+
+      <!-- Big Wild Goose Pagoda -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+        <img src="/images/xi-an/big-wild-goose-pagoda.webp" alt="手前に玄奘像を配した西安の大雁塔" class="w-full md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl" loading="lazy" />
+        <h3 class="text-xl font-bold text-gray-900 mb-2">大雁塔</h3>
+        <p class="text-base font-semibold text-purple-700 mb-1">🎫 入場料：¥40（$6）寺院境内＋¥25（$3）塔に登る</p>
+        <p class="text-base font-semibold mb-3"><a href="https://www.trip.com/t/8teFo5iNUV2" class="text-purple-700 underline hover:text-purple-900" target="_blank" rel="noopener">料金・チケットを見る →</a></p>
+        <p class="text-gray-700">玄奘がインドから持ち帰った仏典を納めるために西暦652年に建てられた七重の唐代仏塔——『西遊記』のモデルとなった旅そのものです。頂上に登ると旧市街を一望できます。前の広場では夜に大規模な噴水ショーが開催されます（夜9時と10時）——観光地然としていますが、音楽に合わせて踊る水柱とライトアップされた塔は、15分間本物の感動を与えてくれます。</p>
+        <div class="clear-both"></div>
+      </div>
+
+      <!-- Datang Everbright City -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+        <img src="/images/xi-an/datang-everbright-city.webp" alt="夜、赤く灯る唐様式の大唐不夜城の歩行者街路" class="w-full md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl" loading="lazy" />
+        <h3 class="text-xl font-bold text-gray-900 mb-2">大唐不夜城</h3>
+        <p class="text-base font-semibold text-purple-700 mb-3">🎫 入場料：無料・毎日開放、日没後が最適</p>
+        <p class="text-gray-700">唐様式の建築、巨大LEDスクリーン、大道芸人、時代衣装の役者たちが並ぶ2.1kmの歩行者大通り——西安版「生きた博物館」。満廷の唐の「役人」たちが街を歩き、書家が地面に文字を描き、日が暮れると通り全体が金と赤に輝きます。大雁塔のすぐ隣なので、一晩で両方回れます。政府は中国文化のショーケースに多額を投じており、観光地然としているとはいえ、本当に印象的——特に夜9時、群衆の背後で塔がライトアップされる瞬間は。</p>
+        <div class="clear-both"></div>
+      </div>
+
+      <!-- Muslim Quarter -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+        <img src="/images/xi-an/muslim-quarter.webp" alt="夕暮れの回民街のランタン看板と屋台" class="w-full md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl" loading="lazy" />
+        <h3 class="text-xl font-bold text-gray-900 mb-2">回民街</h3>
+        <p class="text-base font-semibold text-purple-700 mb-3">🎫 入場料：無料・毎日開放、夜が最も賑わう</p>
+        <p class="text-gray-700">千年にわたりシルクロードの交易拠点だった屋台と商店の迷路——空気には炭火で焼けるラム串の音、クミンの香り、柿の蒸し菓子の甘い湯気が満ちています。賑わう目抜き通りをかき分け、脇の路地に入りましょう:最高の食べ物はいつも小さな通りにあり、店主は三代にわたり同じ屋台を守っています。路地の奥に隠れる大清真寺は四大古モスクのひとつ。明代の静かな建築群で、中国式の中庭設計とイスラム書道を融合させています——千年の文化交流の架け橋、入場料¥25。</p>
+        <div class="clear-both"></div>
+      </div>
+
+      <!-- Huashan Mountain -->
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+        <img src="/images/xi-an/huashan-mountain.webp" alt="松林に覆われた華山の断崖絶壁" class="w-full md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl" loading="lazy" />
+        <h3 class="text-xl font-bold text-gray-900 mb-2">華山</h3>
+        <p class="text-base font-semibold text-purple-700 mb-1">🎫 入場料：¥160（$22）入山＋¥140（$19）ロープウェイ片道</p>
+        <p class="text-base font-semibold mb-3"><a href="https://www.trip.com/t/kvp5zQZNUV2" class="text-purple-700 underline hover:text-purple-900" target="_blank" rel="noopener">料金・チケットを見る →</a></p>
+        <p class="text-gray-700">中国五岳のひとつ。「長空栈道」で有名——垂直の崖面に打ち付けられた幅30センチの木の棚道で、安全ケーブルと「人出が少ないことを祈る」だけ。心臓の弱い人はお断り。西安からは1日を確保しましょう（電車で約2時間）。ロープウェイからの眺めももうひとつのハイライト——花崗岩の絶壁と岩肌から生える松を抜けて、山は平野から2000メートルそびえています。</p>
+        <div class="clear-both"></div>
+      </div>
+
+      <!-- ==================== TRANSPORT ==================== -->
+      <h2 id="getting-around" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🚇 市内移動</h2>
+      <ul class="list-disc pl-6 space-y-3 text-lg text-gray-700 mb-12">
+        <li><strong>地下鉄：</strong>8路線。安い（1回2〜6元）。2号線と4号線が主要観光地をカバー。</li>
+        <li><strong>滴滴：</strong>Uberのようなもの。タクシーより安い。到着前に設定を——<a href="/ja/transport/didi/" class="text-blue-600 hover:underline">中国で滴滴を使う方法</a> を参照。</li>
+        <li><strong>タクシー：</strong>初乗り8.50元。目的地を事前に中国語で用意しておきましょう。</li>
+        <li><strong>徒歩：</strong>城壁内はとても歩きやすい——回民街、鐘楼、鼓楼は徒歩で回れます。</li>
+      </ul>
+
+      <!-- ==================== WHERE TO STAY ==================== -->
+      <h2 id="where-to-stay" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏨 おすすめ宿泊エリア</h2>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">城壁内（南門）— 初めての人に最適</h3>
+        <p class="text-gray-700">城壁、回民街、鐘楼へ徒歩圏内。最も実用的な選択。</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">回民街 — グルメ好きに最適</h3>
+        <p class="text-gray-700">にぎやかで活気にあふれた食の楽園。食べ歩きの中心にいたい人向け。</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">北院門エリア — 鼓楼の近く</h3>
+        <p class="text-gray-700">中心部に位置し、便利。</p>
+      </div>
+
+      <!-- ==================== FOOD ==================== -->
+      <h2 id="what-to-eat" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🍜 西安グルメ</h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">西安の食は、手延べ麺、羊肉、そして千年にわたりシルクロードの旅人を養ってきたしっかりした平焼きパンが中心です。</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+        <!-- Roujiamo -->
+        <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+          <div class="flex items-center justify-center bg-gray-50 p-3">
+            <img src="/images/xi-an/roujiamo.webp" alt="肉夹馍——煮込んだ豚肉を挟んだパン" class="max-w-full max-h-56 object-contain" loading="lazy" />
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-gray-900 mb-1">肉夹馍（ロージアモー）</h3>
+            <p class="text-gray-600 text-base">西安版ハンバーガー——しかも西洋版より数世紀早く生まれました。煮込んだ豚肉（頼めば羊肉）をパクチーと唐辛子とともに刻み、鉄板で焼いたパンに挟みます。かじるとパンが少し砕けます。約¥10–15。</p>
+          </div>
+        </div>
+
+        <!-- Biangbiang Noodles -->
+        <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+          <div class="flex items-center justify-center bg-gray-50 p-3">
+            <img src="/images/xi-an/biangbiang-noodles.webp" alt="biangbiang麺——幅広の手延べ麺に辣油と肉そぼろ" class="max-w-full max-h-56 object-contain" loading="lazy" />
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-gray-900 mb-1">biangbiang麺</h3>
+            <p class="text-gray-600 text-base">ベルトのように幅広の手延べ麺を辣油、ニンニク、醤油、酢で味付け。名前は生地を台に打ち付ける音「ビャンビャン」に由来し、全中国で最も画数が多い（57画）唯一の漢字がどの店の看板にも書かれています。約¥15–20。目玉焼きをトッピングするのが地元流。</p>
+          </div>
+        </div>
+
+        <!-- Yangrou Paomo -->
+        <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+          <div class="flex items-center justify-center bg-gray-50 p-3">
+            <img src="/images/xi-an/yangrou-paomo.webp" alt="羊肉泡馍——青磁の器に入った、ちぎったパンを入れた羊肉のスープ" class="max-w-full max-h-56 object-contain" loading="lazy" />
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-gray-900 mb-1">羊肉泡馍（ヤンロウパオモー）</h3>
+            <p class="text-gray-600 text-base">ちぎった小麦パン入りの羊肉スープ——そして儀式が重要です。丸パン2枚を渡され、親指大に、それ以上大きくならないようにちぎるよう言われます。厨房が器を受け取り、パンの上に羊肉のスープを注ぎ、中は柔らかく外はしっかりと煮込みます。ちぎるのに20分、食べるのに5分。回民街の老舗で約¥25–35。</p>
+          </div>
+        </div>
+
+        <!-- Liangpi -->
+        <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+          <div class="flex items-center justify-center bg-gray-50 p-3">
+            <img src="/images/xi-an/liangpi.webp" alt="凉皮——辣油と豆もやしの冷たい米麺サラダ" class="max-w-full max-h-56 object-contain" loading="lazy" />
+          </div>
+          <div class="p-4">
+            <h3 class="text-lg font-bold text-gray-900 mb-1">凉皮（リャンピー）</h3>
+            <p class="text-gray-600 text-base">辣油、酢、豆もやしの冷たい米麺サラダ——夏の定番であり、陝西全域で二日酔いの定番の薬でもあります。約¥8–12。</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-gray-700 mb-2"><strong>回民街はこれらすべてを一晩で試せる最高の場所です。お腹を空かせて行きましょう。</strong></p>
+      <p class="text-gray-600 text-sm mb-12 italic">各スナックは少量を選ぶか、みんなで分け合うのがおすすめ——すぐにお腹いっぱいになります。</p>
+
+      <!-- ==================== NEXT READS ==================== -->
+      <div class="border-t border-gray-100 pt-8 mt-8 not-prose">
+        <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5">
+          <div class="flex items-center justify-between gap-4 flex-wrap">
+            <h3 class="text-sm font-bold text-gray-900">📚 次の読み物</h3>
+            <div class="flex flex-wrap gap-2">
+              <a href="/ja/cities/beijing-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                🏛️ 北京旅行ガイド
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/ja/cities/shanghai-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                🌆 上海旅行ガイド
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/ja/transport/high-speed-rail/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                🚄 中国高速鉄道の予約方法
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/ja/payment/setup-alipay/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                💰 Alipayの設定方法
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== SOURCES ==================== -->
+      <section class="mt-10 pt-6 border-t border-gray-100">
+        <h3 class="text-sm font-bold text-gray-500 uppercase tracking-wide mb-2">出典</h3>
+        <ul class="text-sm text-gray-600 space-y-1">
+          <li>秦始皇帝陵博物院 — <a href="https://www.bmy.com.cn/jingtai/bmyweb/ticketing.html" class="text-blue-600 hover:underline" target="_blank" rel="noopener">bmy.com.cn</a></li>
+          <li>西安城壁（陝西日報）— <a href="https://www.sxdaily.com.cn/2026-07/01/content_20049276.html" class="text-blue-600 hover:underline" target="_blank" rel="noopener">sxdaily.com.cn</a></li>
+        </ul>
+      </section>
+    </article>
+</Layout>

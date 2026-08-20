@@ -1,20 +1,63 @@
 ﻿---
 import Layout from '@layouts/Layout.astro';
 const title = 'Contáctanos — China Starter Hub';
-const description = '¿Tienes preguntas o comentarios? Nos encantaría saber de ti.';
+const description = '¿Planeas un viaje a China o ya estás aquí y necesitas ayuda? Ayudamos a viajeros independientes en cada paso — itinerario, hoteles y más.';
 ---
 
 <Layout title={title} description={description} lang="es">
   <article class="max-w-2xl mx-auto">
     <header class="py-12 text-center">
-      <div class="text-sm text-brand-600 font-medium mb-2">CONTACTO</div>
-      <h1 class="text-3xl md:text-4xl font-bold text-gray-900  ">Contáctanos</h1>
-      <p class="text-gray-500  ">¿Tienes preguntas o comentarios? Nos encantaría saber de ti.</p>
+      <div class="text-sm text-brand-600 font-medium mb-2">💬 CONTACTO</div>
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Contáctanos</h1>
+      <p class="text-lg text-gray-500">¿Planeas un viaje a China, o ya estás aquí y necesitas ayuda? Somos un asistente integral para viajeros independientes.</p>
     </header>
-    <div class="bg-gray-50  :border-gray-800 rounded-2xl p-8">
-      <div class="space-y-4 text-center">
-        <p class="text-gray-700 text-lg">Escríbenos a <a href="mailto:hello@chinastarterhub.com" class="text-brand-600 font-medium hover:underline">hello@chinastarterhub.com</a></p>
-      </div>
+
+    <div class="space-y-8 pb-16">
+      <section class="bg-white border border-gray-200 rounded-2xl p-6 md:p-8">
+        <h2 class="text-xl font-bold text-gray-900 mb-4">Qué podemos hacer por ti</h2>
+        <ul class="space-y-3 text-lg text-gray-700">
+          <li>✅ Planificar tu itinerario y elegir hoteles que se ajusten a tu presupuesto</li>
+          <li>✅ Resolver dudas sobre visados, pagos, transporte y entradas a atracciones</li>
+          <li>✅ Ayudarte a distancia cuando ya estés en China</li>
+          <li>✅ Responder cualquier pregunta sobre viajar en China: comida, internet, seguridad, etiqueta y más</li>
+        </ul>
+      </section>
+
+      <section class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-2xl p-6 md:p-8">
+        <h2 class="text-xl font-bold text-gray-900 mb-2">🎁 Comparación de hoteles gratis</h2>
+        <p class="text-lg text-gray-700 mb-3">Cuéntanos tu zona y tu presupuesto por noche — comparamos <strong>2 hoteles</strong> gratis para ti.</p>
+        <p class="text-sm text-gray-800 font-medium">Escríbenos con el asunto <strong>"Hotel help"</strong> e incluye:</p>
+        <ol class="text-sm text-gray-700 list-decimal pl-5 mt-1 space-y-1">
+          <li>Ciudad o zona</li>
+          <li>Presupuesto por noche</li>
+          <li>Fecha de entrada</li>
+          <li>Número de personas</li>
+        </ol>
+      </section>
+
+      <section class="bg-gray-50 border border-gray-100 rounded-2xl p-6 md:p-8 text-center">
+        <h2 class="text-xl font-bold text-gray-900 mb-4">Ponte en contacto</h2>
+        <p class="text-lg text-gray-700">Escríbenos a <a href="mailto:hello@chinastarterhub.com" class="text-brand-600 font-medium hover:underline">hello@chinastarterhub.com</a></p>
+        <p class="text-sm text-gray-500 mt-2">Normalmente respondemos en 1–2 días laborables.</p>
+      </section>
+
+      <section class="bg-white border border-gray-200 rounded-2xl p-6 md:p-8">
+        <h2 class="text-xl font-bold text-gray-900 mb-4">Preguntas rápidas</h2>
+        <div class="space-y-4">
+          <details class="group border border-gray-200 rounded-xl p-4">
+            <summary class="font-semibold text-gray-900 cursor-pointer">¿Pueden ayudarme a planificar la ruta y elegir hoteles?</summary>
+            <p class="text-gray-700 mt-2">Sí — comparte tus fechas, destinos y presupuesto, y armamos el plan.</p>
+          </details>
+          <details class="group border border-gray-200 rounded-xl p-4">
+            <summary class="font-semibold text-gray-900 cursor-pointer">¿Sois una agencia de viajes?</summary>
+            <p class="text-gray-700 mt-2">No — somos asistentes para viajeros independientes. Ayudamos con necesidades concretas, sin paquetes turísticos.</p>
+          </details>
+          <details class="group border border-gray-200 rounded-xl p-4">
+            <summary class="font-semibold text-gray-900 cursor-pointer">¿Dónde estáis?</summary>
+            <p class="text-gray-700 mt-2">Trabajamos en remoto, así que podemos ayudarte en cualquier parte de China.</p>
+          </details>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

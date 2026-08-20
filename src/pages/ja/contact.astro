@@ -1,20 +1,63 @@
 ﻿---
 import Layout from '@layouts/Layout.astro';
 const title = 'お問い合わせ — China Starter Hub';
-const description = 'ご質問やご意見がありましたら、ぜひお聞かせください。';
+const description = '中国旅行の計画中、または現地で困っていませんか？旅程・ホテルなど、個人旅行者のあらゆる場面をサポートします。';
 ---
 
 <Layout title={title} description={description} lang="ja">
   <article class="max-w-2xl mx-auto">
     <header class="py-12 text-center">
-      <div class="text-sm text-brand-600 font-medium mb-2">お問い合わせ</div>
-      <h1 class="text-3xl md:text-4xl font-bold text-gray-900  ">お問い合わせ</h1>
-      <p class="text-gray-500  ">ご質問やご意見がありましたら、ぜひお聞かせください。</p>
+      <div class="text-sm text-brand-600 font-medium mb-2">💬 お問い合わせ</div>
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">お問い合わせ</h1>
+      <p class="text-lg text-gray-500">中国旅行の計画中、または現地で困っていませんか？個人旅行者向けのワンストップアシスタントです。</p>
     </header>
-    <div class="bg-gray-50  :border-gray-800 rounded-2xl p-8">
-      <div class="space-y-4 text-center">
-        <p class="text-gray-700 text-lg">メール：<a href="mailto:hello@chinastarterhub.com" class="text-brand-600 font-medium hover:underline">hello@chinastarterhub.com</a></p>
-      </div>
+
+    <div class="space-y-8 pb-16">
+      <section class="bg-white border border-gray-200 rounded-2xl p-6 md:p-8">
+        <h2 class="text-xl font-bold text-gray-900 mb-4">お手伝いできること</h2>
+        <ul class="space-y-3 text-lg text-gray-700">
+          <li>✅ 旅程の組み立てと、予算に合ったホテル選び</li>
+          <li>✅ ビザ・支払い・交通・観光地チケットの疑問を解決</li>
+          <li>✅ 中国滞在中もリモートでサポート</li>
+          <li>✅ 中国旅行のあらゆる質問（グルメ、ネット、安全、マナーなど）にお答えします</li>
+        </ul>
+      </section>
+
+      <section class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-2xl p-6 md:p-8">
+        <h2 class="text-xl font-bold text-gray-900 mb-2">🎁 無料ホテル提案</h2>
+        <p class="text-lg text-gray-700 mb-3">エリアと1泊の予算を教えていただければ、ホテルを<strong>2軒</strong>無料で比較してご提案します。</p>
+        <p class="text-sm text-gray-800 font-medium">件名を<strong>「Hotel help」</strong>として、以下を明記してください：</p>
+        <ol class="text-sm text-gray-700 list-decimal pl-5 mt-1 space-y-1">
+          <li>都市またはエリア</li>
+          <li>1泊の予算</li>
+          <li>チェックイン日</li>
+          <li>人数</li>
+        </ol>
+      </section>
+
+      <section class="bg-gray-50 border border-gray-100 rounded-2xl p-6 md:p-8 text-center">
+        <h2 class="text-xl font-bold text-gray-900 mb-4">お問い合わせ</h2>
+        <p class="text-lg text-gray-700">メール：<a href="mailto:hello@chinastarterhub.com" class="text-brand-600 font-medium hover:underline">hello@chinastarterhub.com</a></p>
+        <p class="text-sm text-gray-500 mt-2">通常1〜2営業日以内に返信します。</p>
+      </section>
+
+      <section class="bg-white border border-gray-200 rounded-2xl p-6 md:p-8">
+        <h2 class="text-xl font-bold text-gray-900 mb-4">よくある質問</h2>
+        <div class="space-y-4">
+          <details class="group border border-gray-200 rounded-xl p-4">
+            <summary class="font-semibold text-gray-900 cursor-pointer">旅程の計画やホテル選びを手伝ってもらえますか？</summary>
+            <p class="text-gray-700 mt-2">はい — 日程・目的地・予算を教えていただければ、プランを組みます。</p>
+          </details>
+          <details class="group border border-gray-200 rounded-xl p-4">
+            <summary class="font-semibold text-gray-900 cursor-pointer">旅行会社ですか？</summary>
+            <p class="text-gray-700 mt-2">いいえ — 個人旅行者向けアシスタントです。個別のニーズに合わせてお手伝いします。パッケージツアーは扱いません。</p>
+          </details>
+          <details class="group border border-gray-200 rounded-xl p-4">
+            <summary class="font-semibold text-gray-900 cursor-pointer">どこに拠点がありますか？</summary>
+            <p class="text-gray-700 mt-2">リモートで対応しているので、中国のどこにいてもサポートできます。</p>
+          </details>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

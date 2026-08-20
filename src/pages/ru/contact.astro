@@ -1,20 +1,63 @@
 ﻿---
 import Layout from '@layouts/Layout.astro';
-const title = 'Связаться с нами — China Starter Hub';
-const description = 'Есть вопросы или предложения? Будем рады вас услышать.';
+const title = 'Свяжитесь с нами — China Starter Hub';
+const description = 'Планируете поездку в Китай или уже здесь и застряли? Помогаем самостоятельным путешественникам на каждом шагу — маршрут, отели и другое.';
 ---
 
 <Layout title={title} description={description} lang="ru">
   <article class="max-w-2xl mx-auto">
     <header class="py-12 text-center">
-      <div class="text-sm text-brand-600 font-medium mb-2">КОНТАКТЫ</div>
-      <h1 class="text-3xl md:text-4xl font-bold text-gray-900  ">Связаться с нами</h1>
-      <p class="text-gray-500  ">Есть вопросы или предложения? Будем рады вас услышать.</p>
+      <div class="text-sm text-brand-600 font-medium mb-2">💬 КОНТАКТЫ</div>
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Свяжитесь с нами</h1>
+      <p class="text-lg text-gray-500">Планируете поездку в Китай или уже здесь и застряли? Мы — универсальный помощник для самостоятельных путешественников.</p>
     </header>
-    <div class="bg-gray-50  :border-gray-800 rounded-2xl p-8">
-      <div class="space-y-4 text-center">
-        <p class="text-gray-700 text-lg">Напишите нам на <a href="mailto:hello@chinastarterhub.com" class="text-brand-600 font-medium hover:underline">hello@chinastarterhub.com</a></p>
-      </div>
+
+    <div class="space-y-8 pb-16">
+      <section class="bg-white border border-gray-200 rounded-2xl p-6 md:p-8">
+        <h2 class="text-xl font-bold text-gray-900 mb-4">Чем мы можем помочь</h2>
+        <ul class="space-y-3 text-lg text-gray-700">
+          <li>✅ Составить маршрут и подобрать отели под ваш бюджет</li>
+          <li>✅ Разобраться с визой, оплатой, транспортом и билетами в достопримечательности</li>
+          <li>✅ Помочь на расстоянии, когда вы уже в Китае</li>
+          <li>✅ Ответить на любые вопросы о поездке: еда, интернет, безопасность, этикет и другое</li>
+        </ul>
+      </section>
+
+      <section class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-2xl p-6 md:p-8">
+        <h2 class="text-xl font-bold text-gray-900 mb-2">🎁 Подбор отелей бесплатно</h2>
+        <p class="text-lg text-gray-700 mb-3">Расскажите нам свой район и бюджет за ночь — бесплатно сравним для вас <strong>2 отеля</strong>.</p>
+        <p class="text-sm text-gray-800 font-medium">Напишите нам на почту с темой <strong>«Hotel help»</strong> и укажите:</p>
+        <ol class="text-sm text-gray-700 list-decimal pl-5 mt-1 space-y-1">
+          <li>Город или район</li>
+          <li>Бюджет за ночь</li>
+          <li>Дату заезда</li>
+          <li>Количество гостей</li>
+        </ol>
+      </section>
+
+      <section class="bg-gray-50 border border-gray-100 rounded-2xl p-6 md:p-8 text-center">
+        <h2 class="text-xl font-bold text-gray-900 mb-4">Связь с нами</h2>
+        <p class="text-lg text-gray-700">Напишите нам на <a href="mailto:hello@chinastarterhub.com" class="text-brand-600 font-medium hover:underline">hello@chinastarterhub.com</a></p>
+        <p class="text-sm text-gray-500 mt-2">Обычно отвечаем в течение 1–2 рабочих дней.</p>
+      </section>
+
+      <section class="bg-white border border-gray-200 rounded-2xl p-6 md:p-8">
+        <h2 class="text-xl font-bold text-gray-900 mb-4">Частые вопросы</h2>
+        <div class="space-y-4">
+          <details class="group border border-gray-200 rounded-xl p-4">
+            <summary class="font-semibold text-gray-900 cursor-pointer">Поможете спланировать маршрут и выбрать отели?</summary>
+            <p class="text-gray-700 mt-2">Да — пришлите даты, города и бюджет, и мы составим план.</p>
+          </details>
+          <details class="group border border-gray-200 rounded-xl p-4">
+            <summary class="font-semibold text-gray-900 cursor-pointer">Вы туристическое агентство?</summary>
+            <p class="text-gray-700 mt-2">Нет — мы помощник для самостоятельных путешественников. Помогаем с конкретными задачами, без готовых туров.</p>
+          </details>
+          <details class="group border border-gray-200 rounded-xl p-4">
+            <summary class="font-semibold text-gray-900 cursor-pointer">Где вы находитесь?</summary>
+            <p class="text-gray-700 mt-2">Мы работаем удалённо, поэтому можем помочь в любой точке Китая.</p>
+          </details>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

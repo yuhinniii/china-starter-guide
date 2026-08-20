@@ -1,20 +1,63 @@
 ﻿---
 import Layout from '@layouts/Layout.astro';
-const title = 'Nous contacter — China Starter Hub';
-const description = 'Des questions ou des retours ? Nous serions ravis de vous entendre.';
+const title = 'Contactez-nous — China Starter Hub';
+const description = 'Vous préparez un voyage en Chine ou vous êtes déjà sur place et bloqué ? Nous aidons les voyageurs indépendants à chaque étape — itinéraire, hôtels et plus encore.';
 ---
 
 <Layout title={title} description={description} lang="fr">
   <article class="max-w-2xl mx-auto">
     <header class="py-12 text-center">
-      <div class="text-sm text-brand-600 font-medium mb-2">CONTACT</div>
-      <h1 class="text-3xl md:text-4xl font-bold text-gray-900  ">Nous contacter</h1>
-      <p class="text-gray-500  ">Des questions ou des retours ? Nous serions ravis de vous entendre.</p>
+      <div class="text-sm text-brand-600 font-medium mb-2">💬 CONTACT</div>
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Contactez-nous</h1>
+      <p class="text-lg text-gray-500">Vous préparez un voyage en Chine, ou vous êtes déjà sur place et bloqué ? Nous sommes un assistant complet pour les voyageurs indépendants.</p>
     </header>
-    <div class="bg-gray-50  :border-gray-800 rounded-2xl p-8">
-      <div class="space-y-4 text-center">
-        <p class="text-gray-700 text-lg">Écrivez-nous à <a href="mailto:hello@chinastarterhub.com" class="text-brand-600 font-medium hover:underline">hello@chinastarterhub.com</a></p>
-      </div>
+
+    <div class="space-y-8 pb-16">
+      <section class="bg-white border border-gray-200 rounded-2xl p-6 md:p-8">
+        <h2 class="text-xl font-bold text-gray-900 mb-4">Comment pouvons-nous vous aider</h2>
+        <ul class="space-y-3 text-lg text-gray-700">
+          <li>✅ Planifier votre itinéraire et choisir des hôtels adaptés à votre budget</li>
+          <li>✅ Régler les questions de visa, paiement, transport et billets de sites</li>
+          <li>✅ Vous dépanner à distance une fois sur place</li>
+          <li>✅ Répondre à toutes vos questions sur la Chine : cuisine, internet, sécurité, étiquette, etc.</li>
+        </ul>
+      </section>
+
+      <section class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-2xl p-6 md:p-8">
+        <h2 class="text-xl font-bold text-gray-900 mb-2">🎁 Comparateur d'hôtels gratuit</h2>
+        <p class="text-lg text-gray-700 mb-3">Dites-nous votre quartier et votre budget par nuit — nous comparons gratuitement <strong>2 hôtels</strong> pour vous.</p>
+        <p class="text-sm text-gray-800 font-medium">Envoyez-nous un e-mail avec l'objet <strong>« Hotel help »</strong> en précisant :</p>
+        <ol class="text-sm text-gray-700 list-decimal pl-5 mt-1 space-y-1">
+          <li>La ville ou le quartier</li>
+          <li>Le budget par nuit</li>
+          <li>La date d'arrivée</li>
+          <li>Le nombre de voyageurs</li>
+        </ol>
+      </section>
+
+      <section class="bg-gray-50 border border-gray-100 rounded-2xl p-6 md:p-8 text-center">
+        <h2 class="text-xl font-bold text-gray-900 mb-4">Écrivez-nous</h2>
+        <p class="text-lg text-gray-700">Contactez-nous à <a href="mailto:hello@chinastarterhub.com" class="text-brand-600 font-medium hover:underline">hello@chinastarterhub.com</a></p>
+        <p class="text-sm text-gray-500 mt-2">Réponse habituelle sous 1 à 2 jours ouvrés.</p>
+      </section>
+
+      <section class="bg-white border border-gray-200 rounded-2xl p-6 md:p-8">
+        <h2 class="text-xl font-bold text-gray-900 mb-4">Questions rapides</h2>
+        <div class="space-y-4">
+          <details class="group border border-gray-200 rounded-xl p-4">
+            <summary class="font-semibold text-gray-900 cursor-pointer">Pouvez-vous m'aider à organiser mon itinéraire et choisir mes hôtels ?</summary>
+            <p class="text-gray-700 mt-2">Oui — partagez vos dates, vos destinations et votre budget, et nous établissons le plan.</p>
+          </details>
+          <details class="group border border-gray-200 rounded-xl p-4">
+            <summary class="font-semibold text-gray-900 cursor-pointer">Êtes-vous une agence de voyages ?</summary>
+            <p class="text-gray-700 mt-2">Non — nous sommes un assistant pour voyageurs indépendants. Nous aidons sur des besoins précis, sans forfaits organisés.</p>
+          </details>
+          <details class="group border border-gray-200 rounded-xl p-4">
+            <summary class="font-semibold text-gray-900 cursor-pointer">Où êtes-vous basés ?</summary>
+            <p class="text-gray-700 mt-2">Nous travaillons à distance, donc nous pouvons vous aider partout en Chine.</p>
+          </details>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

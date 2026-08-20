@@ -1,20 +1,63 @@
 ﻿---
 import Layout from '@layouts/Layout.astro';
 const title = 'اتصل بنا — China Starter Hub';
-const description = 'هل لديك أسئلة أو ملاحظات؟ يسعدنا سماع رأيك.';
+const description = 'تخطط لرحلة إلى الصين أو وصلت بالفعل وعلقت في مشكلة؟ نساعد المسافرين المستقلين في كل خطوة — المسار والفنادق وغيرها.';
 ---
 
 <Layout title={title} description={description} lang="ar">
   <article class="max-w-2xl mx-auto">
     <header class="py-12 text-center">
-      <div class="text-sm text-brand-600 font-medium mb-2">اتصل بنا</div>
-      <h1 class="text-3xl md:text-4xl font-bold text-gray-900  ">اتصل بنا</h1>
-      <p class="text-gray-500  ">هل لديك أسئلة أو ملاحظات؟ يسعدنا سماع رأيك.</p>
+      <div class="text-sm text-brand-600 font-medium mb-2">💬 اتصل بنا</div>
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">اتصل بنا</h1>
+      <p class="text-lg text-gray-500">تخطط لرحلة إلى الصين، أو وصلت بالفعل وعلقت في مشكلة؟ نحن مساعد شامل للمسافرين المستقلين.</p>
     </header>
-    <div class="bg-gray-50  :border-gray-800 rounded-2xl p-8">
-      <div class="space-y-4 text-center">
-        <p class="text-gray-700 text-lg">راسلنا عبر البريد الإلكتروني: <a href="mailto:hello@chinastarterhub.com" class="text-brand-600 font-medium hover:underline">hello@chinastarterhub.com</a></p>
-      </div>
+
+    <div class="space-y-8 pb-16">
+      <section class="bg-white border border-gray-200 rounded-2xl p-6 md:p-8">
+        <h2 class="text-xl font-bold text-gray-900 mb-4">ما الذي يمكننا مساعدتك فيه</h2>
+        <ul class="space-y-3 text-lg text-gray-700">
+          <li>✅ تخطيط مسار رحلتك واختيار فنادق تناسب ميزانيتك</li>
+          <li>✅ حل استفسارات التأشيرة والدفع والنقل وتذاكر المعالم</li>
+          <li>✅ مساعدتك عن بُعد بعد وصولك إلى الصين</li>
+          <li>✅ الإجابة عن أي سؤال عن السفر إلى الصين: الطعام والإنترنت والسلامة وآداب التعامل وغيرها</li>
+        </ul>
+      </section>
+
+      <section class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-2xl p-6 md:p-8">
+        <h2 class="text-xl font-bold text-gray-900 mb-2">🎁 مطابقة فندقية مجانية</h2>
+        <p class="text-lg text-gray-700 mb-3">أخبرنا بالمنطقة وميزانيتك الليلية — سنقارن لك <strong>فندقين</strong> مجانًا.</p>
+        <p class="text-sm text-gray-800 font-medium">راسلنا بعنوان <strong>«Hotel help»</strong> واذكر:</p>
+        <ol class="text-sm text-gray-700 list-decimal pr-5 mt-1 space-y-1">
+          <li>المدينة أو المنطقة</li>
+          <li>الميزانية الليلية</li>
+          <li>تاريخ الوصول</li>
+          <li>عدد النزلاء</li>
+        </ol>
+      </section>
+
+      <section class="bg-gray-50 border border-gray-100 rounded-2xl p-6 md:p-8 text-center">
+        <h2 class="text-xl font-bold text-gray-900 mb-4">تواصل معنا</h2>
+        <p class="text-lg text-gray-700">راسلنا على <a href="mailto:hello@chinastarterhub.com" class="text-brand-600 font-medium hover:underline">hello@chinastarterhub.com</a></p>
+        <p class="text-sm text-gray-500 mt-2">نرد عادة خلال 1–2 يوم عمل.</p>
+      </section>
+
+      <section class="bg-white border border-gray-200 rounded-2xl p-6 md:p-8">
+        <h2 class="text-xl font-bold text-gray-900 mb-4">أسئلة سريعة</h2>
+        <div class="space-y-4">
+          <details class="group border border-gray-200 rounded-xl p-4">
+            <summary class="font-semibold text-gray-900 cursor-pointer">هل يمكنكم المساعدة في تخطيط الطريق واختيار الفنادق؟</summary>
+            <p class="text-gray-700 mt-2">نعم — أخبرنا بالتواريخ والوجهات والميزانية وسنضع الخطة.</p>
+          </details>
+          <details class="group border border-gray-200 rounded-xl p-4">
+            <summary class="font-semibold text-gray-900 cursor-pointer">هل أنتم وكالة سفر؟</summary>
+            <p class="text-gray-700 mt-2">لا — نحن مساعد للمسافرين المستقلين، نقدم المساعدة حسب الحاجة دون باقات جاهزة.</p>
+          </details>
+          <details class="group border border-gray-200 rounded-xl p-4">
+            <summary class="font-semibold text-gray-900 cursor-pointer">أين مقركم؟</summary>
+            <p class="text-gray-700 mt-2">نعمل عن بُعد، لذا يمكننا مساعدتك في أي مكان في الصين.</p>
+          </details>
+        </div>
+      </section>
     </div>
   </article>
 </Layout>

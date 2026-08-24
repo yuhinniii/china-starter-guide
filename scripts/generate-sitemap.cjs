@@ -36,8 +36,11 @@ function walkDir(dir, relativePath = '') {
     if (item.isDirectory()) {
       entries.push(...walkDir(full, rel));
     } else if (item.name === 'index.html') {
-      let urlPath = '/' + rel.replace('/index.html', '').replace(/\\/g, '/');
-      if (urlPath.endsWith('/index')) urlPath = urlPath.slice(0, -6);
+      // Astro 把每个页面输出为 xxx/index.html，这里还原为带尾斜杠的目录 URL，
+      // 与线上 canonical（带斜杠）保持一致，避免 308 重定向。
+      let urlPath = '/' + rel.replace(/index\.html$/, '').replace(/\\/g, '/');
+      // 根路径 / 会被 301 到 /en/ 且带 noindex，不应出现在 sitemap 中
+      if (urlPath === '/' || urlPath === '') continue;
       // Check exclusion
       if (EXCLUDE.some(e => urlPath.includes(e))) continue;
       entries.push({

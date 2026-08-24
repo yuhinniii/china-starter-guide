@@ -1,7 +1,7 @@
 ---
 import Layout from '@layouts/Layout.astro';
-const title = "광저우 여행 가이드: 미식의 도시이자 무역 중심지";
-const description = "광저우 완벽 가이드 — 중국 남부의 대도시, 광동 요리의 본고장, 관광명소와 교통 정보.";
+const title = "광저우 여행 가이드: 중국의 미식 수도";
+const description = "광저우를 탐험하세요 — 세계적으로 유명한 딤섬과 광둥 문화, 그리고 홍콩으로의 편리한 접근성을 갖춘 중국의 미식 수도.";
 ---
 
 <Layout title={title} description={description} lang="ko">
@@ -16,23 +16,20 @@ const description = "광저우 완벽 가이드 — 중국 남부의 대도시, 
   <article class="max-w-4xl mx-auto px-6 py-12">
     <header class="mb-12">
       <p class="text-sm text-gray-500 mb-3">🏙️ 광저우</p>
-      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">광저우 여행 가이드: 미식의 도시이자 무역 중심지</h1>
-      <p class="text-xl text-gray-600 mb-6">광저우 완벽 가이드 — 중국 남부의 대도시, 광동 요리의 본고장, 관광명소와 교통 정보.</p>
-      <div class="flex items-center gap-4 text-sm text-gray-500">
-        <span>📅 최종 업데이트: 2026년 6월</span>
-        <span>⏱️ 읽는 시간: 7분</span>
-      </div>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">광저우 여행 가이드: 중국의 미식 수도</h1>
+      <p class="text-xl text-gray-600 mb-6">광저우를 탐험하세요 — 세계적으로 유명한 딤섬과 광둥 문화, 그리고 홍콩으로의 편리한 접근성을 갖춘 중국의 미식 수도.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500"><span>📅 최종 업데이트: 2026년 6월</span><span>⏱️ 읽는 시간: 7분</span></div>
     </header>
 
-    <div class="bg-gradient-to-r from-blue-50 to-cyan-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
-      <h2 class="text-2xl font-bold text-blue-900 mb-4">⚡ 빠른 답변</h2>
-      <p class="text-lg text-blue-800 leading-relaxed">광저우는 <strong>광동 요리의 발상지</strong>이자 2,000년 이상의 역사를 가진 국제 무역 중심지입니다. 주장 삼각주의 요충지로 발전하여 베이징·상하이에 이은 중국 제3의 도시로 알려져 있습니다. 광저우는 '식재광저우(美食在廣州, 미식은 광저우에 있다)'라는 말이 증명하듯, 얌차(딤섬) 문화의 발상지이며 세계 각국의 요리가 모이는 미식의 도시입니다. 또한 매년 열리는 광저우 교역회(Canton Fair)에는 전 세계의 바이어들이 모여듭니다. 역사적인 건축물과 현대식 초고층 빌딩이 혼재하는 독특한 경관도 매력입니다.</p>
+    <div class="bg-gradient-to-r from-green-50 to-teal-50 border-l-4 border-green-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-green-900 mb-4">⚡ 빠른 답변</h2>
+      <p class="text-lg text-green-800 leading-relaxed">베이징에서 먹기 위해 사는 사람이라면, 광저우에서는 <strong>먹기 위해 삽니다</strong>. 이 남부 도시는 <strong>중국의 미식 수도</strong>로 널리 인정받고 있으며, 아마 세계에서 가장 유명한 중국 요리인 광둥 요리의 요람입니다. 음식 외에도 광저우는 아열대의 푸르름, 여유로운 속도, 그리고 선전과 홍콩 양쪽과의 가까운 거리를 제공합니다.</p>
     </div>
 
     <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
       <h3 class="text-lg font-bold text-gray-900 mb-4">📋 가이드 목차</h3>
       <ul class="space-y-3">
-        <li><a href="#why-visit" class="text-blue-600 hover:underline">🏙️ 광저우를 방문해야 하는 이유</a></li>
+        <li><a href="#why-visit" class="text-blue-600 hover:underline">🥟 광저우를 방문해야 하는 이유</a></li>
         <li><a href="#how-many-days" class="text-blue-600 hover:underline">📅 필요한 여행 일수</a></li>
         <li><a href="#attractions" class="text-blue-600 hover:underline">🎯 추천 관광명소</a></li>
         <li><a href="#getting-around" class="text-blue-600 hover:underline">🚇 시내 이동</a></li>
@@ -41,134 +38,205 @@ const description = "광저우 완벽 가이드 — 중국 남부의 대도시, 
       </ul>
     </nav>
 
-    <h2 id="why-visit" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏙️ 광저우를 방문해야 하는 이유</h2>
-    <p class="text-lg leading-relaxed text-gray-700 mb-12">광저우는 '식재광저우'라는 말 그대로, 중국 미식의 중심지입니다. 광동 요리는 가장 섬세하고 정교한 중국 요리 중 하나로 손꼽히며, 얌차 문화의 발상지로서 전 세계에 알려져 있습니다. 2,000년 이상의 역사를 가진 실크로드의 해상 거점으로서 국제적인 문화가 뿌리내려 있습니다. 주장(주강) 강변에 펼쳐진 현대적인 도시 경관과 오래된 골목에 남아 있는 전통적인 골목 분위기의 대비가 매력적입니다. 또한 선전과 홍콩으로의 접근성도 좋아 광둥성 관광의 거점으로도 최적입니다.</p>
+    <h2 id="why-visit" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🥟 광저우를 방문해야 하는 이유</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-12">광저우는 1,000년 이상 무역항으로 기능해 왔습니다. 광둥 요리 — 딤섬, 구이류, 푹 끓인 탕 — 가 완성되어 전 세계로 수출된 곳이 바로 여기입니다. 이 도시는 아열대 기후(연중 따뜻함), 활기찬 강변, 그리고 북부와는 다른 독특한 광둥 문화를 지니고 있습니다. 또한 주장(진주강) 삼각주로 가는 관문이기도 합니다: 선전은 고속철도로 30분, 홍콩은 약 1시간 거리입니다.</p>
 
     <h2 id="how-many-days" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📅 필요한 여행 일수</h2>
     <ul class="list-disc pl-6 space-y-2 text-lg text-gray-700 mb-12">
-      <li><strong>2~3일 (표준):</strong> 웨슈 공원, 천가사, 사몐섬, 광저우 타워, 얌차 체험</li>
-      <li><strong>4~5일 (여유):</strong> 선전이나 홍콩 당일 여행, 주강 야간 유람선 추가</li>
-      <li><strong>6일 이상 (깊이):</strong> 개평의 조루(초루)나 자오칭의 자연 경관지로의 여행</li>
+      <li><strong>2~3일 (표준):</strong> 딤섬, 광저우 타워, 사몐섬, 그리고 미식 투어</li>
+      <li><strong>4~5일 (여유):</strong> 침룽 사파리파크, 카이핑 댜오러우, 또는 선전으로의 이동 추가</li>
+      <li><strong>5일 이상 (확장):</strong> 완전한 주장 삼각주 여행을 위해 선전과 홍콩과 결합</li>
     </ul>
 
     <!-- ==================== ATTRACTIONS ==================== -->
     <h2 id="attractions" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎯 추천 관광명소</h2>
 
-    <!-- Canton Tower -->
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
-      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
-        <img src="/images/guangzhou/canton-tower.webp" alt="광저우 타워, 꼬인 실루엣의 TV 타워" class="w-full h-auto object-cover" loading="lazy" />
+    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/guangzhou/canton-tower.webp" class="w-full h-auto object-cover" loading="lazy" />
       </div>
-      <h3 class="text-xl font-bold text-gray-900 mb-2">광저우 타워 (Canton Tower / 广州塔)</h3>
-      <p class="text-gray-700">높이 600미터의 광저우의 상징으로, 중국에서 가장 높은 TV 타워 중 하나입니다. 우아하게 비틀린 실루엣은 광저우의 스카이라인에 독특한 존재감을 발산합니다. 전망대에서는 주강과 광저우 시내의 절경이 한눈에 펼쳐지며, 타워 정상 부근에는 회전 레스토랑도 있습니다. 밤에는 조명이 켜져 타워 전체가 환상적으로 빛납니다.</p>
-      <div class="clear-both"></div>
+      <div class="order-1">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">광저우 타워 (广州塔)</h3>
+        <p class="text-base font-semibold text-purple-700 mb-1">🎫 사전 예약 권장 — 전망대 시간대를 예약해 줄을 건너뛰세요.</p>
+        <p class="mb-4"><a href="https://www.trip.com/t/Uo9W4mmb2W2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 광저우 타워 방문 예약하기 →</a></p>
+        <p class="text-gray-700">현지인들이 '슈퍼모델'이라고 부르는 데는 이유가 있습니다 — 600미터로 광둥에서 가장 높은 구조물입니다. 타워 허리를 도는 버블 트램을 타려면 450미터 야외 전망대까지 올라가거나, 높은 곳을 무서워하지 않는다면 스카이 드롭 놀이기구를 시도해 보세요. 아래 도시 전체가 황금빛으로 물드는 일몰 시간에 맞춰 방문하고, 어두워진 뒤에는 라이트 쇼까지 즐기세요.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
     </div>
 
-    <!-- Shamian Island -->
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
-      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
-        <img src="/images/guangzhou/shamian-island.webp" alt="사몐섬의 식민지 스타일 건축과 가로수 길" class="w-full h-auto object-cover" loading="lazy" />
+    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/guangzhou/shamian-island.webp" class="w-full h-auto object-cover" loading="lazy" />
       </div>
-      <h3 class="text-xl font-bold text-gray-900 mb-2">사몐섬 (Shamian Island / 沙面島)</h3>
-      <p class="text-gray-700">주강에 떠 있는 작은 섬으로, 19세기 유럽 식민지 시대 건축물이 아름답게 보존된 지역입니다. 한때 영국과 프랑스의 조계지였던 이 섬은 가로수 길과 식민지 스타일 건물이 조용한 분위기를 자아내며, 광저우에서도 이국적인 정취가 물씬 풍기는 지역입니다. 카페와 아트 갤러리가 곳곳에 있어 산책하기 좋습니다.</p>
-      <div class="clear-both"></div>
+      <div class="order-1">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">사몐섬 (沙面岛)</h3>
+        <p class="text-gray-700">이 작은 강 위의 섬은 1860년대에 유럽 영사관이 있었던 곳이며, 그 유럽 영사관 건물들이 오늘날에도 여전히 대로변에 늘어서 있습니다. 150년 된 거대한 반얀나무가 보행자 길에 그늘을 드리우고, 뿌리는 커튼처럼 드리워져 있습니다. 한쪽 끝에서 다른 쪽까지 걷는 데 약 20분이 걸립니다 — 더위가 내려가고 빛이 나뭇잎 사이로 스며드는 늦은 오후에 하기 가장 좋습니다.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
     </div>
 
-    <!-- Chen Clan Academy -->
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
-      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
-        <img src="/images/guangzhou/chen-clan-academy.webp" alt="천가사(진씨 서원)의 정교한 조각 건축물" class="w-full h-auto object-cover" loading="lazy" />
+    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/guangzhou/chen-clan-hall.webp" class="w-full h-auto object-cover" loading="lazy" />
       </div>
-      <h3 class="text-xl font-bold text-gray-900 mb-2">천가사 (Chen Clan Academy / 陳家祠)</h3>
-      <p class="text-gray-700">광동 문화의 정수를 모은 19세기 사당으로, 정교한 조각과 아름다운 장식이 볼거리입니다. 지붕에는 화려한 도자기 인물상이 늘어서 있고, 벽면에는 치밀한 목조와 석조 조각이 장식되어 있습니다. 광동 전통 공예의 최고 걸작으로 꼽히는 건축물로, 유네스코 세계문화유산에도 등재되어 있습니다.</p>
-      <div class="clear-both"></div>
+      <div class="order-1">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">천가사 (陈家祠)</h3>
+        <p class="text-base font-semibold text-purple-700 mb-1">🎫 입장은 게이트에서 위챗 미니프로그램 QR코드로 — 사전 예약 불필요</p>
+        <p class="text-gray-700">1894년 천 씨족이 학당 겸 사당으로 지은 이 건물 단지는 중국 어디서든 찾을 수 있는 최고의 링난 목조각으로 가득한 19개의 홀을 갖추고 있습니다. 모든 용마루 보와 지붕 꼭대기는 도자기 인형 — 사자, 용, 신선 —으로 덮여 있습니다. 지금은 민속 예술 박물관이 되어 홀을 돌아다니며 자수와 도자기를 가까이서 볼 수 있습니다. 입장권은 게이트에서 위챗 미니프로그램 QR코드로 구매합니다. 최소 1시간은 잡으세요.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
     </div>
 
-    <!-- Yuexiu Park -->
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
-      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
-        <img src="/images/guangzhou/yuexiu-park.webp" alt="웨슈 공원의 광저우 상징 오양석상" class="w-full h-auto object-cover" loading="lazy" />
+    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/guangzhou/yuexiu-park-five-rams.webp" class="w-full h-auto object-cover" loading="lazy" />
       </div>
-      <h3 class="text-xl font-bold text-gray-900 mb-2">웨슈 공원 (Yuexiu Park / 越秀公園)</h3>
-      <p class="text-gray-700">광저우 최대의 도시 공원으로, 광저우의 상징인 '오양석상'이 있는 것으로 유명합니다. 공원 내에는 진하이루(광저우 박물관)와 명나라 시대의 성벽 등 역사적인 볼거리도 많습니다. 현지 사람들의 휴식처이기도 하며, 아침 태극권과 저녁 산책을 즐기는 사람들의 모습을 볼 수 있습니다.</p>
-      <div class="clear-both"></div>
+      <div class="order-1">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">웨슈 공원 (越秀公园)</h3>
+        <p class="text-gray-700">이 공원은 2,000여 년 전 고대 남월 왕국의 요새였던 언덕에 자리하고 있습니다. 안에는 오양 석상(광저우의 공식 상징)과 1380년에 지어진 도시에서 가장 오래된 건물인 진하이 타워가 있습니다. 탑에 올라 아래 공원의 전망을 감상하세요. 대부분 나이 든 현지인들이 태극권을 수련하고 마작을 즐기는 평일 아침이 가장 좋습니다.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-12 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/guangzhou/beijing-road.webp" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">베이징루 (北京路)</h3>
+        <p class="text-gray-700">발밑의 유리 패널 아래에서 송, 원, 명, 청 왕조의 실제 포장도로를 역사 층처럼 겹겹이 볼 수 있습니다 — 바로 신발 아래 2,000년 넘는 보행로가 있는 셈입니다. 지상은 끝없이 이어지는 쇼핑과 간식 거리로, 곳곳에 튀긴 우유, 구운 오징어, 버블티가 있습니다. 네온 불빛이 깜박이고 야시장 인파가 자리를 차지하는 오후 7시 이후에 가보세요.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
+    </div>
+
+    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-12 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/guangzhou/grand-buddha-temple.webp" class="w-full h-auto object-cover" loading="lazy" />
+      </div>
+      <div class="order-1">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">대불사 (大佛寺)</h3>
+        <p class="text-gray-700">본당은 폭 36미터이지만 내부 기둥이 거의 없습니다 — 지붕 전체가 복잡한 두공 브래킷 시스템으로 지탱되며, 들어서는 순간 공간이 펼쳐지는 것을 느낄 수 있습니다. 화려한 도자기 용마루를 지닌 전형적인 광둥 사찰이 아닙니다. 1663년 청나라 왕자가 황실 베이징 궁전 건축을 모델로 지었기 때문에, 이 지역에서 결코 기대하지 못할 자금성의 장엄한 규모를 갖추고 있습니다. 내부에는 각각 무게가 10톤인 6미터 청동 불상 세 구가 있는데, 광둥에서 현존하는 가장 큰 고대 청동상입니다. 기둥은 350여 년 전에 공급된 베트남산 난무 나무로 오늘날까지 그대로 보존되어 있습니다. 광저우의 다른 어디에도 존재하지 않는 건축적 희소성을 보러 가는 곳입니다.</p>
+      </div>
+      <div class="clear-both hidden md:block"></div>
     </div>
 
     <!-- Pearl River Night Cruise -->
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6 overflow-hidden">
-      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
-        <img src="/images/guangzhou/pearl-river-night.webp" alt="주강 야간 유람선, 조명이 켜진 광저우의 야경" class="w-full h-auto object-cover" loading="lazy" />
+    <div class="flex flex-col md:block bg-white border border-gray-200 rounded-2xl p-6 mb-12 overflow-hidden">
+      <div class="order-2 md:float-left md:mr-8 md:mb-4 md:w-80 lg:w-96 rounded-2xl overflow-hidden">
+        <img src="/images/guangzhou/pearl-river-cruise-v2.webp" class="w-full h-auto object-cover" loading="lazy" />
       </div>
-      <h3 class="text-xl font-bold text-gray-900 mb-2">주강 야간 유람선 (Pearl River Night Cruise)</h3>
-      <p class="text-gray-700">광저우의 밤을 즐기는 대표적인 방법. 주강을 유람선으로 항해하며, 조명이 켜진 광저우 타워와 주장신청의 고층 빌딩들, 하이주교 등 아름다운 야경을 즐길 수 있습니다. 약 1시간의 크루즈로 광저우의 매력적인 나이트 뷰를 만끽할 수 있습니다.</p>
-      <div class="clear-both"></div>
-    </div>
-
-    <!-- Beijing Road -->
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12 overflow-hidden">
-      <div class="float-left mr-8 mb-4 w-full md:w-80 lg:w-96 rounded-2xl overflow-hidden">
-        <img src="/images/guangzhou/beijing-road.webp" alt="베이징루 보행자 천국의 쇼핑 거리" class="w-full h-auto object-cover" loading="lazy" />
+      <div class="order-1">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">주강 야간 유람선 (珠江夜游)</h3>
+        <p class="text-base font-semibold text-purple-700 mb-1">🎫 유람선 자리를 확보하려면 미리 예약하세요 — 저녁 항차는 빨리 매진됩니다.</p>
+        <p class="mb-4"><a href="https://www.trip.com/t/77DTUSzb2W2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 주강 유람선 예약하기 →</a></p>
+        <p class="text-gray-700">어두워진 후 광저우를 보는 표준적인 방법 — 그리고 최소 한 번은 해볼 가치가 있습니다. 배는 강변의 부두(톈쯔 부두가 가장 중심에 있음)에서 출발해 조명이 켜진 광저우 타워, 꼬인 실루엣의 광저우 IFC 타워, 사몐섬 가장자리의 옛 식민지 건물을 지나 미끄러지듯 나아갑니다. 동선에 맞는 부두를 고르고 — 경치 좋은 구간은 어느 탑승 지점에서나 동일합니다 — 가장 저렴한 객실 등급을 선택하세요. 어차피 전망을 보러 야외 갑판으로 올라갈 테니까요. 60~80분 크루즈 요금은 선박 등급에 따라 약 88위안부터이며, 위층 갑판이 바로 당신이 있어야 할 자리입니다. 가벼운 재킷을 가져오세요 — 강바람은 생각보다 쌀쌀합니다. 가장 좋은 시간은 광저우 타워 라이트 쇼가 시작되고 스카이라인 전체가 색으로 물드는 오후 8시 직후입니다. 관광객용이긴 하지만, 다른 각도에서 도시를 보는 가장 수월한 방법이기도 합니다.</p>
       </div>
-      <h3 class="text-xl font-bold text-gray-900 mb-2">베이징루 보행자 천국 (Beijing Road / 北京路)</h3>
-      <p class="text-gray-700">광저우에서 가장 번화한 쇼핑 거리로, 보도의 유리 너머로 송·명·청 시대의 도로 유적을 볼 수 있는 역사와 현대가 융합된 지역입니다. 주변에는 수많은 쇼핑몰, 레스토랑, 노점이 모여 있어 현지인과 관광객들로 항상 북적입니다.</p>
-      <div class="clear-both"></div>
+      <div class="clear-both hidden md:block"></div>
     </div>
 
     <h2 id="getting-around" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🚇 시내 이동</h2>
     <ul class="list-disc pl-6 space-y-3 text-lg text-gray-700 mb-12">
-      <li><strong>지하철:</strong> 광저우의 지하철은 광범위하게 정비되어 있으며, 주요 관광지 대부분을 커버합니다. 영어 표시가 있습니다. 자세한 내용은<a href="/ko/transport/metro-bus/" class="text-blue-600 hover:underline">중국 주요 도시 지하철·버스 가이드</a>를 참조하세요.</li>
-      <li><strong>디디:</strong> 광저우 전역에서 사용 가능하며 편리합니다. 설정 방법은<a href="/ko/transport/didi/" class="text-blue-600 hover:underline">외국인이 중국에서 디디 사용하는 방법</a>을 참조하세요.</li>
-      <li><strong>택시:</strong> 비교적 저렴하며, 특히 공항이나 역으로 이동할 때 편리합니다.</li>
-      <li><strong>BRT(버스 고속 수송):</strong> 광저우는 중국에서도 손꼽히는 BRT 시스템을 갖추고 있으며, 전용 차선을 달리는 빠른 버스가 주요 지역을 연결합니다.</li>
+      <li><strong>지하철:</strong> 광저우의 지하철은 16개 노선으로 모든 주요 관광지에 닿습니다. 영어 표시가 곳곳에 있습니다. 개요는 <a href="/ko/transport/metro-bus/" class="text-blue-600 hover:underline">중국 주요 도시 지하철·버스 가이드</a>를 확인하세요.</li>
+      <li><strong>디디:</strong> 저렴하고 널리 이용 가능합니다. 시내 한 번 이동에 약 30~50위안입니다. 설정과 팁은 <a href="/ko/transport/didi/" class="text-blue-600 hover:underline">외국인이 중국에서 디디 사용하는 방법</a>을 참조하세요.</li>
+      <li><strong>주강 페리:</strong> 강을 건너는 풍경 좋은 방법. 양쪽 부두 사이를 페리가 정기적으로 운항합니다.</li>
+      <li><strong>고속철도:</strong> 광저우 남역은 선전(30분), 홍콩(1시간), 주하이/마카오(1시간)로 연결됩니다. 예약 방법은 <a href="/ko/transport/high-speed-rail/" class="text-blue-600 hover:underline">중국 고속철도 예약·탑승 가이드</a>를 참조하세요.</li>
     </ul>
 
     <h2 id="where-to-stay" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏨 추천 숙박 지역</h2>
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">주장신청 (Zhujiang New Town) — 첫 방문객에게 최적</h3><p class="text-gray-700">광저우의 새로운 CBD. 고급 호텔, 쇼핑몰, 레스토랑이 밀집하고 광저우 타워와 화청 광장에서 가깝습니다.</p></div>
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">사몐섬/리완구 — 문화 애호가에게 최적</h3><p class="text-gray-700">역사적인 분위기와 현지 생활을 느낄 수 있는 지역. 전통 광동 요리 맛집이 많고 산책하기 좋습니다.</p></div>
-    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12"><h3 class="text-xl font-bold text-gray-900 mb-2">톈허구 (Tianhe) — 비즈니스 여행객에게 최적</h3><p class="text-gray-700">광저우의 또 다른 비즈니스 중심지로 지하철 접근성이 우수합니다. 쇼핑과 식사 선택지도 풍부합니다.</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">리완구 (荔湾区) — 미식 애호가에게 최적</h3><p class="text-gray-700">옛 광저우의 중심. 정통 광둥 레스토랑과 아침 찻집을 위해 이곳에 머무르세요.</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-6"><h3 class="text-xl font-bold text-gray-900 mb-2">톈허구 (天河区) — 현대 여행객에게 최적</h3><p class="text-gray-700">새로운 CBD에는 쇼핑몰, 국제 호텔, 훌륭한 지하철 연결이 있습니다.</p></div>
+    <div class="bg-white border border-gray-200 rounded-2xl p-6 mb-12"><h3 class="text-xl font-bold text-gray-900 mb-2">하이주구 (海珠区) — 강변 전망에 최적</h3><p class="text-gray-700">시내 건너편 주강 건너에 있습니다. 더 조용하고 광저우 타워의 훌륭한 전망이 있습니다.</p></div>
 
     <!-- ==================== WHAT TO EAT ==================== -->
     <h2 id="what-to-eat" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🍜 광저우 맛집</h2>
-    <p class="text-lg leading-relaxed text-gray-700 mb-6">'식재광저우'라는 말처럼, 광저우는 미식의 도시입니다. 얌차 문화의 발상지로서 전 세계 미식가들을 매혹하고 있습니다.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">베이징에서 먹기 위해 산다면, 광저우에서는 먹기 위해 삽니다. 광둥 요리가 세계적으로 유명한 데는 이유가 있습니다.</p>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+      <!-- Dim Sum -->
       <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
         <div class="flex items-center justify-center bg-gray-50 p-3">
-          <img src="/images/guangzhou/food/dimsum.webp" alt="얌차, 광동식 딤섬 모둠" class="max-w-full max-h-56 object-contain" loading="lazy" />
+          <img src="/images/guangzhou/dim-sum.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
         </div>
         <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-900 mb-1">얌차 (Yum Cha / 飲茶) — 딤섬</h3>
-          <p class="text-gray-600 text-base">광저우가 세계에 자랑하는 식문화. 작은 찜통에서 연이어 나오는 딤섬의 향연 — 새우 하가우, 돼지고기 시우마이, 창펀(쌀롤), 봉조(닭발) 등 수백 가지에 이릅니다. 따뜻한 차를 마시면서 가족이나 친구들이 천천히 대화를 즐기는 스타일이 전통적입니다. 광저우 사람들의 아침을 보내는 방식이며, 주말에는 오래된 얌차 노점에 현지인들이 긴 줄을 만듭니다.</p>
+          <h3 class="text-lg font-bold text-gray-900 mb-1">딤섬 (点心)</h3>
+          <p class="text-gray-600 text-base">주문할 네 가지 고전: 통새우를 감싼 반투명한 거의 비쳐 보이는 피의 하가우, 오렌지색 어란을 얹은 시우마이, 새콤달콤한 바비큐 돼지고기가 들어간 믿기 힘들 정도로 폭신한 흰 빵 차시우바오, 그리고 간장을 뿌린 매끄러운 쌀국수 롤 창펀. 이 의식은 윰차(차를 마시다)라고 불리며, 리완구 곳곳의 딤섬 하우스에서 매일 아침 이루어집니다. 일찍 가세요 — 오전 11시가 되면 문 밖까지 줄이 이어집니다.</p>
         </div>
       </div>
 
+      <!-- White Cut Chicken -->
       <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
         <div class="flex items-center justify-center bg-gray-50 p-3">
-          <img src="/images/guangzhou/food/wonton-noodles.webp" alt="원탄면, 광동식 완탕 국수" class="max-w-full max-h-56 object-contain" loading="lazy" />
+          <img src="/images/guangzhou/white-cut-chicken.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
         </div>
         <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-900 mb-1">원탄면 (Wonton Noodles / 雲呑麺)</h3>
-          <p class="text-gray-600 text-base">광동식 완탕 국수는 새우와 돼지고기를 섞은 소를 얇은 피로 싼 완탕을 탱글한 가는 면과 함께 투명한 육수에 넣어 먹는 광저우 대표 국수 요리입니다. 육수는 건가오피(말린 홍어)와 돼지뼈로 푹 우려낸 육수가 진미를 더합니다. 한 그릇으로 든든한 가벼운 식사로, 아침이나 점심으로 인기 있습니다.</p>
+          <h3 class="text-lg font-bold text-gray-900 mb-1">백절계 (白切鸡)</h3>
+          <p class="text-gray-600 text-base">닭 한 마리를 부드럽게 삶은 뒤 차갑게 내는 요리 — 핵심은 그 아래 얇은 젤라틴 층이 있는 매끄러운 껍질입니다. 광둥 셰프들은 이 요리를 숨길 곳이 없기 때문에 기술의 궁극적인 시험으로 여깁니다: 닭이 완벽해야 합니다. 각 조각을 생강-파 기름에 찍어 먹으면 왜 그렇게 단순한 것이 그렇게 맛있을 수 있는지 이해하게 됩니다.</p>
         </div>
       </div>
 
+      <!-- Roast Goose -->
       <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
         <div class="flex items-center justify-center bg-gray-50 p-3">
-          <img src="/images/guangzhou/food/roast-goose.webp" alt="광동식 구운 거위, 바삭한 껍질과 부드러운 고기" class="max-w-full max-h-56 object-contain" loading="lazy" />
+          <img src="/images/guangzhou/roast-goose.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
         </div>
         <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-900 mb-1">광동식 구운 거위 (燒鵝)</h3>
-          <p class="text-gray-600 text-base">광저우의 구이(燒味) 요리의 최고봉. 거위를 특제 소스에 재워 천천히 구워내면 껍질은 바삭하고 고기는 놀라울 정도로 부드럽고 육즙이 풍부해집니다. 비법 간장 베이스 소스가 배어들어 달콤함과 감칠맛의 절묘한 균형을 이룹니다. 뼈째로 토막내어 자두 소스와 함께 제공됩니다.</p>
+          <h3 class="text-lg font-bold text-gray-900 mb-1">소어 (烧鹅)</h3>
+          <p class="text-gray-600 text-base">통거위를 갈라서 양념에 재운 뒤 껍질이 유리처럼 바삭해지고 고기가 진하고 육즙이 유지될 때까지 숯불에 구워냅니다. 느끼함을 잡아주는 자두 딥 소스가 곁들여집니다. 이 방식은 광저우 바로 서쪽의 장먼 지역에서 시작되었으며, 시내 최고의 구이집들은 수십 년 동안 이를 완성해 왔습니다.</p>
         </div>
       </div>
 
+      <!-- Wonton Noodles -->
       <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
         <div class="flex items-center justify-center bg-gray-50 p-3">
-          <img src="/images/guangzhou/food/claypot-rice.webp" alt="煲仔飯, 광동식 뚝배기 밥" class="max-w-full max-h-56 object-contain" loading="lazy" />
+          <img src="/images/guangzhou/wonton-noodles.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
         </div>
         <div class="p-4">
-          <h3 class="text-lg font-bold text-gray-900 mb-1">뚝배기 밥 (煲仔飯 / Claypot Rice)</h3>
-          <p class="text-gray-600 text-base">뚝배기에 지은 광동식 밥 요리. 밥 위에 소시지, 닭고기, 소고기 등의 재료를 얹고 간장 베이스 소스를 뿌려 고소하게 지어냅니다. 뚝배기 바닥에는 바삭바삭한 누룽지(鍋巴)가 생기는데, 이것이 최고의 매력입니다. 뜨거운 뚝배기째로 제공되며, 비벼 먹는 것이 올바른 먹는 방법입니다.</p>
+          <h3 class="text-lg font-bold text-gray-900 mb-1">원탄면 (云吞面)</h3>
+          <p class="text-gray-600 text-base">면은 가늘고 탱글하며 알칼리수를 넣어 만듭니다(광둥식 '웨 스타일' 면). 완탕은 통새우와 돼지고기로 통통하게 채워집니다. 하지만 진짜 주인공은 육수입니다 — 맑고 황금빛이며 말린 넙치와 새우 알로 우려냅니다. 회복이 되는 느낌의 그런 한 그릇입니다.</p>
+        </div>
+      </div>
+
+      <!-- Claypot Rice -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/guangzhou/claypot-rice.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">바오짜이판 (煲仔饭)</h3>
+          <p class="text-gray-600 text-base">생쌀을 뚝배기에 넣고 중국 소시지, 절인 삼겹살 또는 닭고기를 얹은 뒤 숯불 위에서 조리합니다. 마법은 바닥에 있습니다 — 긁어서 섞는 바삭하고 황금빛인 밥 층(광둥판 소카라트)이 그것입니다. 간장 한 방울을 넣고 먹기 전에 잘 저어주세요.</p>
+        </div>
+      </div>
+
+      <!-- Double Skin Milk -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/guangzhou/double-skin-milk.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">쌍피나이 (双皮奶)</h3>
+          <p class="text-gray-600 text-base">이 섬세한 디저트는 광저우 바로 남쪽의 미식 수도 순더에서 유래했습니다. 이름은 밀크 푸딩이 식으면서 위에 형성되는 두 겹의 피부 층을 말합니다 — 첫 번째가 가라앉으면 두 번째가 표면에 형성됩니다. 커스터드처럼 부드럽지만 훨씬 가볍고, 따뜻하게도 차갑게도 즐길 수 있습니다.</p>
+        </div>
+      </div>
+
+      <!-- Herbal Tea -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/guangzhou/herbal-tea.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">량차 (凉茶)</h3>
+          <p class="text-gray-600 text-base">콜라처럼 검고 약처럼 쓰다 — 약이기 때문입니다. 량차는 20가지 이상의 중국 약초로 끓이며, 각기 다른 질환(열기, 인후통, 소화불량)에 맞는 서로 다른 배합이 있습니다. 완전한 경험을 위해 '24가지 맛'(24味)을 주문해 보세요 — 얼굴이 찌푸려지겠지만, 현지인들은 그것이 효과가 있다는 신호라고 말합니다. 도시 곳곳의 전문 약차점에서 판매합니다.</p>
+        </div>
+      </div>
+
+      <!-- Claypot Cooking - Jue Jue Bao -->
+      <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden">
+        <div class="flex items-center justify-center bg-gray-50 p-3">
+          <img src="/images/guangzhou/jue-jue-bao.webp" class="max-w-full max-h-56 object-contain" loading="lazy" />
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">쩨쩨바오 (啫啫煲)</h3>
+          <p class="text-gray-600 text-base">이름은 뜨거운 재료가 표면에 닿을 때 뚝배기가 내는 지글거리는 소리('쩨쩨')에서 유래했습니다. 천천히 조리하는 뚝배기 밥과 달리, 이것은 가장 극적인 고온·속성 광둥 조리법입니다: 생닭, 오징어, 소고기 또는 장어를 발효 검은콩, 마늘, 생강과 함께 달궈진 뚝배기에 넣고 맨불 위에서 불과 몇 분간 볶습니다. 가장자리는 카라멜화되고, 요리가 테이블에 닿기도 전에 향이 밀려오며, 첫 입에는 웍으로 볶는 것에서는 얻을 수 없는 훈연의 깊이가 있습니다. 사람당 한 뚝배기씩 주문하세요 — 뜨거울 때 뚝배기째 먹게 되어 있습니다.</p>
         </div>
       </div>
     </div>
@@ -184,11 +252,7 @@ const description = "광저우 완벽 가이드 — 중국 남부의 대도시, 
               <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
             </a>
             <a href="/ko/cities/shenzhen-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
-              🏙️ 선전 여행 가이드
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-            </a>
-            <a href="/ko/transport/high-speed-rail/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
-              🚄 중국 고속철도 예약·탑승 가이드
+              🤖 선전 여행 가이드
               <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
             </a>
             <a href="/ko/payment/payment-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">

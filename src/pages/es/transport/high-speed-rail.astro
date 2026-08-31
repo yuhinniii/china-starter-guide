@@ -1,7 +1,7 @@
 ---
 import Layout from '@layouts/Layout.astro';
-const title = 'Cómo reservar y usar el tren de alta velocidad en China: guía paso a paso';
-const description = 'Guía paso a paso para reservar billetes, navegar por la estación y viajar en trenes de alta velocidad en China.';
+const title = 'Cómo reservar y viajar en el tren de alta velocidad de China: guía paso a paso';
+const description = 'Reserva billetes de tren de alta velocidad en China con solo tu pasaporte: Trip.com o el sitio oficial en inglés de 12306. Guía paso a paso de reserva, estación y viaje a bordo.';
 ---
 
 <Layout title={title} description={description} lang="es">
@@ -17,110 +17,461 @@ const description = 'Guía paso a paso para reservar billetes, navegar por la es
     <header class="mb-12">
       <p class="text-sm text-gray-500 mb-3">🚄 Trenes</p>
       <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
-        Cómo reservar y usar el tren de alta velocidad en China
+        Cómo reservar y viajar en el tren de alta velocidad de China
       </h1>
-      <p class="text-xl text-gray-600 mb-6">Guía paso a paso para reservar billetes, navegar por la estación y viajar en trenes de alta velocidad en China.</p>
+      <p class="text-xl text-gray-600 mb-6">Reserva billetes con nada más que tu pasaporte, encuentra tu camino por la estación y viaja en los trenes más rápidos de China — paso a paso.</p>
       <div class="flex items-center gap-4 text-sm text-gray-500">
-        <span>📅 Última actualización: junio 2026</span>
-        <span>⏱️ 6 min de lectura</span>
+        <span>📅 Última actualización: agosto 2026</span>
+        <span>⏱️ 8 min de lectura</span>
       </div>
     </header>
 
     <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
       <h2 class="text-2xl font-bold text-blue-900 mb-4">🎯 Respuesta rápida</h2>
       <p class="text-lg text-blue-800 leading-relaxed">
-        Reserva los billetes en <strong>Trip.com</strong> (lo más fácil para extranjeros) o <strong>12306</strong> (oficial). La segunda clase es perfectamente cómoda. Llega 30–40 minutos antes — <strong>tu pasaporte es tu billete</strong>, así que tenlo a mano. El embarque es sencillo: control de seguridad → sala de espera → puerta → andén. Las estaciones tienen carteles en inglés en todas partes.
+        Puedes viajar en los trenes de alta velocidad de China con <strong>nada más que tu pasaporte</strong> — sin documento de identidad chino, sin número de teléfono chino, sin cuenta bancaria local. Hay dos formas de comprar: <a href="https://www.trip.com/t/nUumZWrKUV2" target="_blank" rel="noopener" class="text-blue-700 underline font-semibold">Trip.com</a> (paga con Visa o Mastercard, sin necesidad de cuenta de 12306) o el <strong>sitio oficial en inglés de 12306</strong>, donde los pasaportes extranjeros se pueden verificar en línea desde finales de 2023. Llega 30–40 minutos antes. Tu pasaporte <em>es</em> tu billete: lo mostrarás en el control de seguridad, en la puerta de embarque y a veces de nuevo a bordo.
       </p>
     </div>
 
     <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
       <h3 class="text-lg font-bold text-gray-900 mb-4">📋 En esta guía</h3>
       <ul class="space-y-3">
-        <li><a href="#booking" class="text-blue-600 hover:underline">🎫 Reserva tu billete</a></li>
-        <li><a href="#classes" class="text-blue-600 hover:underline">💺 Clases de billete</a></li>
+        <li><a href="#booking" class="text-blue-600 hover:underline">🎫 Cómo reservar tu billete</a></li>
+        <li><a href="#passport" class="text-blue-600 hover:underline">🛂 Comprar en 12306 con pasaporte</a></li>
         <li><a href="#station" class="text-blue-600 hover:underline">🚉 En la estación</a></li>
-        <li><a href="#onboard" class="text-blue-600 hover:underline">🚄 Consejos a bordo</a></li>
+        <li><a href="#changes" class="text-blue-600 hover:underline">✏️ Cambiar o cancelar</a></li>
+        <li><a href="#bring" class="text-blue-600 hover:underline">🧳 Qué puedes y qué no puedes llevar</a></li>
+        <li><a href="#onboard" class="text-blue-600 hover:underline">🚄 En el tren</a></li>
       </ul>
     </nav>
 
     <div class="prose prose-gray max-w-none">
 
-      <h2 id="booking" class="text-2xl font-bold text-gray-900 mb-4">🎫 Reserva tu billete</h2>
+      <h2 id="booking" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🎫</span> Cómo reservar tu billete
+      </h2>
 
-      <p class="text-lg leading-relaxed text-gray-700 mb-6">Tienes tres opciones:</p>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">Tres opciones, de la más fácil a la más laboriosa:</p>
 
-      <ul class="space-y-2 text-gray-700 mb-8">
-        <li><strong>Trip.com (recomendado):</strong> Obtiene los datos de billetes directamente de 12306. No necesitas una cuenta separada de 12306. Después de reservar, puedes abordar solo con tu pasaporte.</li>
-        <li><strong>12306 (oficial):</strong> El canal de venta oficial con mejor protección de privacidad. Los extranjeros pueden registrarse con su número de pasaporte.</li>
-        <li><strong>Taquilla de la estación:</strong> Puedes comprar billetes en persona, pero no hay garantía de que hablen inglés.</li>
-      </ul>
-
-      <p class="text-lg leading-relaxed text-gray-700 mb-6">Para la mayoría de los viajeros, Trip.com es la opción más fácil. La pequeña comisión de reserva vale la pena por la comodidad.</p>
-
-      <hr class="my-10 border-gray-200" />
-
-      <h2 id="classes" class="text-2xl font-bold text-gray-900 mb-4">💺 Clases de billete</h2>
-
-      <ul class="space-y-2 text-gray-700 mb-8">
-        <li><strong>Segunda clase (二等座):</strong> La opción estándar. Asientos cómodos, configuración 3+2. Esto es lo que elige la mayoría.</li>
-        <li><strong>Primera clase (一等座):</strong> Asientos más anchos, configuración 2+2, más espacio para las piernas. Vale la pena mejorar para viajes de más de 3 horas.</li>
-        <li><strong>Clase business (商务座):</strong> Asientos totalmente reclinables, privacidad, comidas incluidas en rutas largas. Caro pero es una experiencia.</li>
-      </ul>
-
-      <hr class="my-10 border-gray-200" />
-
-      <h2 id="station" class="text-2xl font-bold text-gray-900 mb-4">🚉 En la estación</h2>
-
-      <p class="text-lg leading-relaxed text-gray-700 mb-6">Llega 30–40 minutos antes de la salida. Este es el flujo:</p>
-
-      <ol class="list-decimal pl-6 space-y-4 text-gray-700 mb-8">
-        <li><strong>Control de seguridad:</strong> El equipaje pasa por una máquina de rayos X (como en el aeropuerto, pero más rápido).</li>
-        <li><strong>Sala de espera:</strong> Consulta la pantalla grande para ver el número de puerta de tu tren. Sigue las indicaciones.</li>
-        <li><strong>Embarque:</strong> Presenta tu pasaporte en la puerta de embarque. Usa el carril manual del lado más alejado, luego baja al andén.</li>
-        <li><strong>Encuentra tu vagón:</strong> Consulta las pantallas cerca de las escaleras del andén para ver el código de color asignado a tu tren. Coincide este color con las marcas de color en el suelo del andén para localizar tu vagón correcto.</li>
+      <ol class="space-y-3 mb-12 list-decimal pl-6 text-gray-700">
+        <li><strong>Trip.com (recomendado para la mayoría de los viajeros)</strong> — sin comisión de reserva, obtiene disponibilidad en tiempo real directamente del sistema de 12306 y no necesita una cuenta separada de 12306. Reservas con tu número de pasaporte y abordas con el mismo pasaporte. Paga con Visa, Mastercard o Apple Pay.</li>
+        <li><strong>12306 (oficial — sitio/aplicación en inglés)</strong> — el canal de venta propio de China Railway. Los precios son idénticos a los de Trip.com; la diferencia es que compras directamente al operador, sin comisión de reserva y sin intermediarios que gestionen tu pedido. Los extranjeros se registran con un pasaporte, superan una verificación de identidad única y luego reservan con normalidad. Pago: tarjetas bancarias internacionales, además de Alipay o WeChat Pay si los tienes configurados. Guía completa en la siguiente sección.</li>
+        <li><strong>Taquilla de la estación</strong> — acércate a cualquier estación, dile al personal tu destino y hora de salida, y lleva tu pasaporte <em>físico</em> (una foto no servirá). Los precios son idénticos a los de la venta en línea. No hay garantía de inglés en todas las taquillas, aunque las estaciones más concurridas (Sur de Pekín, Hongqiao de Shanghái, Sur de Cantón) casi siempre tienen a alguien que habla inglés.</li>
       </ol>
 
+      <p class="mb-12">
+        <a href="https://www.trip.com/t/nUumZWrKUV2" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition no-underline text-base">
+          👉 Reserva billetes de tren en Trip.com →
+        </a>
+      </p>
+
       <hr class="my-10 border-gray-200" />
 
-      <h2 id="onboard" class="text-2xl font-bold text-gray-900 mb-4">🚄 Consejos a bordo</h2>
+      <h2 id="passport" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🛂</span> Comprar en 12306 con un pasaporte — paso a paso
+      </h2>
 
-      <ul class="space-y-2 text-gray-700 mb-8">
-        <li>Se venden comida y bebida desde un carrito.</li>
-        <li>Hay enchufes debajo de los asientos en algunos trenes (enchufes chinos — trae un adaptador).</li>
-        <li>Las cortinas de las ventanas son abatibles para mayor comodidad.</li>
-        <li>Los anuncios de estaciones y del tren se emiten tanto en chino como en inglés.</li>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">Hasta finales de 2023, un titular de pasaporte extranjero que quisiera comprar en 12306 prácticamente tenía que visitar una taquilla de estación para verificarse primero. China Railway lo cambió: ahora los pasaportes se pueden comprobar en línea, dentro de la aplicación o del sitio web. Ese único cambio es lo que hace que la reserva directa sea viable en un viaje corto.</p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">El sitio en inglés (<a href="https://www.12306.cn/en/index.html" target="_blank" rel="noopener" class="text-blue-600 hover:underline">12306.cn/en</a>) es una interfaz independiente creada para viajeros extranjeros — acepta <strong>solo pasaportes extranjeros</strong>, así que nunca te pedirán un número de documento de identidad chino.</p>
+
+      <div class="my-10 not-prose">
+        <svg viewBox="0 0 680 200" class="w-full h-auto" role="img" aria-label="Flujo de reserva con pasaporte: Registrarse, Añadir pasajero, Verificar identidad, Reservar y pagar, Abordar con pasaporte">
+          <defs>
+            <marker id="hsrArrow" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto">
+              <path d="M0,0 L6,3 L0,6 Z" fill="#3b82f6"/>
+            </marker>
+          </defs>
+          <!-- connectors -->
+          <line x1="128" y1="70" x2="144" y2="70" stroke="#3b82f6" stroke-width="2" marker-end="url(#hsrArrow)"/>
+          <line x1="264" y1="70" x2="280" y2="70" stroke="#3b82f6" stroke-width="2" marker-end="url(#hsrArrow)"/>
+          <line x1="400" y1="70" x2="416" y2="70" stroke="#3b82f6" stroke-width="2" marker-end="url(#hsrArrow)"/>
+          <line x1="536" y1="70" x2="552" y2="70" stroke="#3b82f6" stroke-width="2" marker-end="url(#hsrArrow)"/>
+          <!-- node 1 -->
+          <rect x="10" y="40" width="118" height="120" rx="14" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+          <circle cx="69" cy="70" r="16" fill="#3b82f6"/>
+          <text x="69" y="75" text-anchor="middle" font-size="15" font-weight="bold" fill="#ffffff">1</text>
+          <text x="69" y="102" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e3a8a">Registrarse</text>
+          <text x="69" y="120" text-anchor="middle" font-size="10" fill="#475569">12306.cn/en</text>
+          <text x="69" y="134" text-anchor="middle" font-size="10" fill="#475569">o la app</text>
+          <!-- node 2 -->
+          <rect x="146" y="40" width="118" height="120" rx="14" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+          <circle cx="205" cy="70" r="16" fill="#3b82f6"/>
+          <text x="205" y="75" text-anchor="middle" font-size="15" font-weight="bold" fill="#ffffff">2</text>
+          <text x="205" y="102" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e3a8a">Añadir</text>
+          <text x="205" y="118" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e3a8a">pasajero</text>
+          <text x="205" y="136" text-anchor="middle" font-size="10" fill="#475569">Nombre +</text>
+          <text x="205" y="150" text-anchor="middle" font-size="10" fill="#475569">n.º de pasaporte</text>
+          <!-- node 3 -->
+          <rect x="282" y="40" width="118" height="120" rx="14" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+          <circle cx="341" cy="70" r="16" fill="#3b82f6"/>
+          <text x="341" y="75" text-anchor="middle" font-size="15" font-weight="bold" fill="#ffffff">3</text>
+          <text x="341" y="102" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e3a8a">Verificar</text>
+          <text x="341" y="118" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e3a8a">identidad</text>
+          <text x="341" y="136" text-anchor="middle" font-size="10" fill="#475569">Sube foto,</text>
+          <text x="341" y="150" text-anchor="middle" font-size="10" fill="#475569">o en taquilla</text>
+          <!-- node 4 -->
+          <rect x="418" y="40" width="118" height="120" rx="14" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+          <circle cx="477" cy="70" r="16" fill="#3b82f6"/>
+          <text x="477" y="75" text-anchor="middle" font-size="15" font-weight="bold" fill="#ffffff">4</text>
+          <text x="477" y="102" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e3a8a">Reservar</text>
+          <text x="477" y="118" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e3a8a">y pagar</text>
+          <text x="477" y="136" text-anchor="middle" font-size="10" fill="#475569">Elige tren,</text>
+          <text x="477" y="150" text-anchor="middle" font-size="10" fill="#475569">paga con tarjeta</text>
+          <!-- node 5 -->
+          <rect x="554" y="40" width="118" height="120" rx="14" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+          <circle cx="613" cy="70" r="16" fill="#3b82f6"/>
+          <text x="613" y="75" text-anchor="middle" font-size="15" font-weight="bold" fill="#ffffff">5</text>
+          <text x="613" y="102" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e3a8a">Abordar</text>
+          <text x="613" y="120" text-anchor="middle" font-size="10" fill="#475569">Muestra</text>
+          <text x="613" y="134" text-anchor="middle" font-size="10" fill="#475569">el pasaporte</text>
+        </svg>
+        <p class="text-sm text-gray-500 mt-3 text-center">Tu pasaporte es la única identificación que necesitas — desde crear la cuenta hasta subir al andén.</p>
+      </div>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">Los cinco pasos:</p>
+
+      <div class="space-y-8 mb-12">
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">1️⃣ Regístrate</h4>
+          <p class="text-base leading-relaxed text-gray-700">Ve a <a href="https://www.12306.cn/en/index.html" target="_blank" rel="noopener" class="text-blue-600 hover:underline">12306.cn/en</a> o descarga la aplicación de 12306 y cambia el idioma a inglés. Regístrate con una dirección de correo electrónico. Durante el registro puedes escanear tu pasaporte para autocompletar tu información, lo cual es mucho más cómodo. Recomendamos la aplicación.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">2️⃣ Añádete como pasajero</h4>
+          <p class="text-base leading-relaxed text-gray-700">Abre "Mis pasajeros" e introduce tu nombre y número de pasaporte. Este es el paso donde fallan la mayoría de las verificaciones — lee la regla del nombre más abajo antes de escribir nada.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">3️⃣ Verifica tu identidad</h4>
+          <p class="text-base leading-relaxed text-gray-700">El sistema intenta primero una comprobación automática. Si no puede confirmarte, sube una foto de la página de información de tu pasaporte para una revisión manual — normalmente se resuelve en uno o dos días. Si la revisión en línea tampoco se resuelve, entra en cualquier ventanilla de billetes de la estación con tu pasaporte físico; el personal te verifica en el acto en un par de minutos.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">4️⃣ Busca, reserva y paga</h4>
+          <p class="text-base leading-relaxed text-gray-700">Una vez que tu estado de pasajero indique "verificado", elige tu fecha, tren y clase de asiento, y paga con tarjeta internacional. Añade a tus acompañantes de la misma forma: cada uno necesita sus propios datos de pasaporte y su propia verificación.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">5️⃣ Aborda con tu pasaporte</h4>
+          <p class="text-base leading-relaxed text-gray-700">No hay billete en papel que recoger. Usa el carril situado más a la derecha para la inspección manual, entrega tu pasaporte al personal (las puertas automáticas solo leen documentos de identidad chinos) y ve a buscar tu vagón.</p>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-bold text-gray-900 mb-4">📝 La regla del nombre que decide si la verificación funciona</h3>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Introduce el nombre <strong>exactamente</strong> como aparece impreso en la página legible por máquina del pasaporte:</p>
+
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm mb-8 not-prose">
+        <table class="w-full text-left">
+          <thead class="bg-gray-900 text-white">
+            <tr>
+              <th class="px-6 py-4 font-semibold">Sí</th>
+              <th class="px-6 py-4 font-semibold">No</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-100 text-gray-700">
+            <tr>
+              <td class="px-6 py-4 align-top">Solo letras latinas (A–Z)</td>
+              <td class="px-6 py-4 align-top">Caracteres chinos, tildes u otros sistemas de escritura no latinos</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top">Apellido primero y luego los nombres, en el orden del pasaporte</td>
+              <td class="px-6 py-4 align-top">Reordenar poniendo el nombre primero porque parece natural</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top">Un único espacio entre las partes del nombre</td>
+              <td class="px-6 py-4 align-top">Espacios de más, guiones añadidos por ti o comas</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top">El nombre completo tal como aparece impreso</td>
+              <td class="px-6 py-4 align-top">Tratamientos como Sr. / Sra. / Srta. / Dr. — no son necesarios</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-12">Si el nombre impreso supera la longitud que permite el campo (64 caracteres), introduce lo que quepa desde el principio. Una discrepancia de un solo carácter suele ser la razón por la que la comprobación automática se rechaza.</p>
+
+      <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-12 not-prose">
+        <p class="text-gray-900 font-bold mb-3">🔑 Dos reglas que sorprenden a la gente</p>
+        <ul class="space-y-2 text-gray-700">
+          <li><strong>Venta de billetes con nombre real:</strong> cada persona solo puede comprar un billete por franja horaria. Por ejemplo, si tienes un billete para las 10:00–12:00 de un día determinado, cualquier intento de comprar otro para las 11:00–13:00 fallará.</li>
+          <li><strong>Es un billete electrónico:</strong> tu pasaporte <em>es</em> el billete. Puedes imprimir un justificante de itinerario en una máquina de la estación para tus gastos, pero ese justificante <strong>no</strong> es válido para abordar — lleva el pasaporte.</li>
+        </ul>
+      </div>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="station" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🚉</span> En la estación — paso a paso
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">Llega 30–40 minutos antes de la salida. Esto es lo que ocurre, en orden:</p>
+
+      <div class="space-y-8 mb-12">
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🛂 Control de seguridad</h4>
+          <p class="text-base leading-relaxed text-gray-700">Cada bolsa pasa por una máquina de rayos X. Similar al control del aeropuerto pero más rápido; no necesitas sacar líquidos, portátiles ni baterías externas. Tarda unos 2–3 minutos salvo que la estación esté inusualmente concurrida.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">📺 Sala de espera</h4>
+          <p class="text-base leading-relaxed text-gray-700">Busca el número de tu puerta en la gran pantalla de salidas. Todas las estaciones principales muestran los números de puerta en chino e inglés, además del estado del tren ("A tiempo", "Embarque", "Llegado").</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🎫 Control de billetes</h4>
+          <p class="text-base leading-relaxed text-gray-700">Las puertas automáticas normales solo leen documentos de identidad chinos. Si tienes pasaporte extranjero, busca el carril manual, normalmente en el extremo izquierdo o derecho del grupo de puertas, marcado como "人工通道" (paso manual). El control comienza unos 15 minutos antes de la salida. Entrega tu pasaporte al personal; lo escanean y te dejan pasar en unos 10 segundos.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚃 Encuentra tu vagón</h4>
+          <p class="text-base leading-relaxed text-gray-700">En el andén, busca las marcas de color en el suelo. Cada número de vagón tiene un punto de color; una pantalla grande junto a las escaleras muestra el código de color de tu tren. Haz coincidir el color con la marca del suelo para saber dónde esperar, ya que los trenes se detienen con puertas específicas en posiciones concretas.</p>
+        </div>
+      </div>
+
+      <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-12 not-prose">
+        <p class="text-gray-700 leading-relaxed"><strong>Tu pasaporte es tu billete.</strong> Tenlo en la mano desde que entras en la estación hasta que te sientas. Lo mostrarás al menos dos veces: en el control de seguridad y en la puerta de embarque. En algunas rutas, el personal recorre el vagón tras la salida para hacer un control aleatorio de pasaportes.</p>
+      </div>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="changes" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">✏️</span> Cambiar o cancelar tu billete
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">Las normas son las mismas tanto si reservaste en Trip.com como en 12306:</p>
+
+      <ul class="space-y-3 mb-12 text-gray-700">
+        <li><strong>Cambio (改签):</strong> pasar a otro tren del mismo día — gratis si se hace con más de 48 horas de antelación. Cambiar a una fecha posterior cuesta un 5%–40%, según lo cerca que esté la nueva fecha de la original. Hazlo a través del sitio/aplicación en inglés de 12306 o en cualquier taquilla de la estación.</li>
+        <li><strong>Reembolso:</strong> los mismos canales. Gratis más de 8 días antes de la salida; 5% entre 48 h y 8 días; 10% entre 24 y 48 h; 20% dentro de las 24 h.</li>
+        <li><strong>No presentarse:</strong> si pierdes el tren sin cambiarlo o cancelarlo a tiempo, pierdes el valor íntegro del billete. No hay período de gracia.</li>
       </ul>
 
-      <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 not-prose">
-        <p class="text-gray-700"><strong>Importante:</strong> Tu pasaporte es tu billete. Tenlo a mano para los controles en la entrada de la estación, la puerta de embarque y, a veces, en el tren. No lo guardes en el equipaje facturado.</p>
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="bring" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🧳</span> Qué puedes y qué no puedes llevar
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">Estas normas se basan en el <em>Catálogo de artículos prohibidos y restringidos para los pasajeros de ferrocarril</em> (《铁路旅客禁止、限制携带和托运物品目录》), el reglamento oficial publicado por China Railway.</p>
+
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm mb-8 not-prose">
+        <table class="w-full text-left">
+          <thead class="bg-gray-900 text-white">
+            <tr>
+              <th class="px-6 py-4 font-semibold">Artículo</th>
+              <th class="px-6 py-4 font-semibold">Límite</th>
+              <th class="px-6 py-4 font-semibold">Notas</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-100 text-gray-700">
+            <tr>
+              <td class="px-6 py-4 align-top font-medium">Batería externa (power bank)</td>
+              <td class="px-6 py-4 align-top whitespace-nowrap">≤ 100Wh (≈ 27,000 mAh)</td>
+              <td class="px-6 py-4 align-top text-sm">La capacidad debe estar claramente indicada en la carcasa</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top font-medium">Perfumes / sprays cosméticos</td>
+              <td class="px-6 py-4 align-top whitespace-nowrap">Recipiente individual ≤ 100ml</td>
+              <td class="px-6 py-4 align-top text-sm">Tipos no presurizados y no inflamables</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top font-medium">Aerosoles (laca, protector solar)</td>
+              <td class="px-6 py-4 align-top whitespace-nowrap">≤ 150ml cada uno, ≤ 600ml en total</td>
+              <td class="px-6 py-4 align-top text-sm">Botes de tamaño de viaje estándar</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top font-medium">Esmalte de uñas / quitaesmalte</td>
+              <td class="px-6 py-4 align-top whitespace-nowrap">≤ 50 ml en total</td>
+              <td class="px-6 py-4 align-top text-sm">Lleva solo lo necesario</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top font-medium">Mechero</td>
+              <td class="px-6 py-4 align-top whitespace-nowrap">≤ 2</td>
+              <td class="px-6 py-4 align-top text-sm">Mecheros desechables estándar</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top font-medium">Alcohol (botellas selladas de fábrica)</td>
+              <td class="px-6 py-4 align-top whitespace-nowrap">≤ 3,000 ml, 24%–70% de alcohol</td>
+              <td class="px-6 py-4 align-top text-sm">Sellado de fábrica con una etiqueta clara; sin rellenar</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top font-medium">Herramientas pequeñas (tijeras, cuchillo de fruta)</td>
+              <td class="px-6 py-4 align-top whitespace-nowrap">Hoja &lt; 60mm</td>
+              <td class="px-6 py-4 align-top text-sm">Las hojas de 60 mm o más no pueden subirse en absoluto</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top font-medium">Caña de pescar, trípode, paraguas</td>
+              <td class="px-6 py-4 align-top whitespace-nowrap">Extendido ≤ 130cm</td>
+              <td class="px-6 py-4 align-top text-sm">Pliégalos y guárdalos bien en los trenes bala</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="text-lg font-semibold text-gray-900 mb-6">Artículos que no puedes subir al tren en absoluto:</p>
+
+      <div class="space-y-6 mb-12">
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚫 Armas de fuego, munición y explosivos</h4>
+          <p class="text-base leading-relaxed text-gray-700">De cualquier tipo — sin excepciones.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚫 Líquidos inflamables</h4>
+          <p class="text-base leading-relaxed text-gray-700">Gasolina, queroseno y alcohol con más del 70% de graduación.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚫 Alimentos auto-calentables</h4>
+          <p class="text-base leading-relaxed text-gray-700">Olla caliente auto-calentable, arroz auto-calentable: el vapor puede activar los detectores de humo en los trenes de alta velocidad. Es lo que más sorprende a los turistas extranjeros; si lo encuentran, puede ser confiscado.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚫 Globos de hidrógeno</h4>
+          <p class="text-base leading-relaxed text-gray-700">No están permitidos a bordo ni en el interior de las estaciones.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚫 Corrosivos, materiales radiactivos y venenos</h4>
+          <p class="text-base leading-relaxed text-gray-700">Incluye ácidos fuertes, álcalis, lejía en grandes cantidades y cualquier sustancia tóxica.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚫 Cuchillos restringidos con mecanismo de bloqueo</h4>
+          <p class="text-base leading-relaxed text-gray-700">Hojas de 60 mm o más que tengan mecanismo de bloqueo.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚫 Hojas largas de 60 mm o más</h4>
+          <p class="text-base leading-relaxed text-gray-700">Cuchillos de cocina, cuchillos multiusos, machetes — no se pueden subir en absoluto (las hojas más cortas de &lt; 60 mm sí se permiten en el equipaje de mano).</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚫 Armas contundentes</h4>
+          <p class="text-base leading-relaxed text-gray-700">Bates de béisbol, martillos, herramientas pesadas y cualquier cosa que pueda usarse como arma.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚫 Bicicletas y patinetes eléctricos</h4>
+          <p class="text-base leading-relaxed text-gray-700">A menos que estén completamente desmontados y empaquetados dentro de un equipaje rígido.</p>
+        </div>
       </div>
 
       <hr class="my-10 border-gray-200" />
 
-      <h2 id="related" class="text-2xl font-bold text-gray-900 mb-6 mt-12">📚 Guías relacionadas</h2>
+      <h2 id="onboard" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🚄</span> En el tren — qué esperar
+      </h2>
 
-      <div class="space-y-4 not-prose">
-        <a href="/es/transport/transport-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>Cómo moverse por China</strong> — la guía de transporte completa</a>
-        <a href="/es/transport/airport-to-city/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🛬 <strong>Del aeropuerto a la ciudad</strong> — qué hacer cuando aterrices</a>
-        <a href="/es/transport/didi/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚗 <strong>Cómo usar DiDi en China como extranjero</strong> — configura viajes compartidos</a>
-        <a href="/es/transport/metro-bus/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚇 <strong>Guía de metro y autobús para las principales ciudades chinas</strong> — navega por el transporte urbano</a>
+      <div class="space-y-8 mb-12">
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">💺 Asientos</h4>
+          <p class="text-base leading-relaxed text-gray-700">La segunda clase tiene una distribución 3+2, similar a la premium economy de las aerolíneas — suficiente para la mayoría de las personas de hasta unos 185 cm. La primera clase es 2+2, con asientos más anchos y más espacio para las piernas; vale la pena en trayectos de más de 3 horas. La clase business es 2+1, con asientos totalmente reclinables.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🔌 Enchufes</h4>
+          <p class="text-base leading-relaxed text-gray-700">La mayoría de los trenes de la serie G (300–350 km/h) tienen enchufes chinos de dos clavijas bajo los asientos. Algunos trenes más antiguos de la serie D (200–250 km/h) pueden no tener enchufes en todos los asientos — lleva una <a href="/es/life/packing-guide/" class="text-blue-600 hover:underline">batería externa como respaldo</a>.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🍜 Comida y bebida</h4>
+          <p class="text-base leading-relaxed text-gray-700">Un carrito pasa una o dos veces vendiendo comidas en caja (unos ¥40 / $5.50), aperitivos, fideos instantáneos y bebidas. El café es instantáneo. Las rutas más largas tienen un vagón restaurante con una selección algo mejor.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚻 Aseos</h4>
+          <p class="text-base leading-relaxed text-gray-700">En ambos extremos de cada vagón. La limpieza varía según la ruta y la hora del día; el del inicio del trayecto suele estar limpio, menos hacia la mitad. Lleva tu propio desinfectante de manos y papel higiénico.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">📢 Anuncios</h4>
+          <p class="text-base leading-relaxed text-gray-700">Los nombres de las estaciones en chino e inglés. Las pantallas sobre las puertas muestran la próxima parada, la velocidad actual y la temperatura exterior. El audio en inglés a veces es difícil de entender, así que mira también la pantalla.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🌡️ Temperatura</h4>
+          <p class="text-base leading-relaxed text-gray-700">El aire acondicionado funciona a unos 22–24°C todo el año. Incluso en julio, es recomendable llevar una chaqueta ligera o manga larga.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🧳 Almacenamiento de equipaje</h4>
+          <p class="text-base leading-relaxed text-gray-700">Los portaequipajes superiores caben bolsas de tamaño de equipaje de mano. Las maletas grandes (24"+) van en la estantería del extremo de cada vagón o bajo el asiento. Vigila las bolsas del extremo del vagón en las paradas intermedias.</p>
+        </div>
       </div>
+
+          <div class="border-t border-gray-100 pt-6 mt-8">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5 not-prose">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h3 class="text-sm font-bold text-gray-900">📚 Próximas lecturas</h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="/es/transport/transport-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🚄 Cómo moverse por China
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/es/transport/didi/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🚗 Cómo usar DiDi en China
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/es/transport/flights-vs-rail/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              ✈️ Vuelos vs tren de alta velocidad
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/es/payment/payment-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              💳 Cómo pagar en China
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/es/life/sim-card-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              📱 Mantente conectado (SIM y eSIM)
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     </div>
 
+        <!-- Sources -->
     <div class="not-prose mt-12 pt-8 border-t border-gray-200">
-  <h3 class="text-base font-bold text-gray-900 mb-4 flex items-center gap-2">📚 Fuentes</h3>
-  <ul class="space-y-2">
-    <li>
-      <a href="https://www.12306.cn/en/index.html" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
-        <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>
-        China Railway Oficial - 12306 EN
-        <svg class="w-3 h-3 text-gray-300 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-      </a>
-    </li>
-  </ul>
-</div>
+      <h3 class="text-base font-bold text-gray-900 mb-4 flex items-center gap-2">
+        <span class="text-lg">📚</span> Fuentes
+      </h3>
+      <ul class="space-y-2">
+        <li>
+          <a href="https://www.12306.cn/en/index.html" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+            <span class="border-b border-transparent group-hover:border-brand-700">China Railway 12306 — sitio oficial en inglés (reserva, verificación de pasaporte extranjero, normas de cambio y reembolso)</span>
+            <svg class="w-3 h-3 text-gray-300 ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.12306.cn/en/faq.html" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+            <span class="border-b border-transparent group-hover:border-brand-700">China Railway 12306 — preguntas frecuentes en inglés (venta de billetes con nombre real, billetes electrónicos, documentos de identidad aceptados)</span>
+            <svg class="w-3 h-3 text-gray-300 ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.12306.cn/mormhweb/zxdt/202311/t20231127_40375.html" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+            <span class="border-b border-transparent group-hover:border-brand-700">China Railway 12306 — aviso sobre la verificación de identidad para pasaportes extranjeros (27 nov 2023)</span>
+            <svg class="w-3 h-3 text-gray-300 ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://kyfw.12306.cn/otn/gonggao/saleTicketMeans.html" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+            <span class="border-b border-transparent group-hover:border-brand-700">China Railway 12306 — normas de verificación de identidad para la compra de billetes en línea</span>
+            <svg class="w-3 h-3 text-gray-300 ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://mobile.12306.cn/otsmobile/h5/otsbussiness/passportInstruction/passport-entry-instructions.html" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+            <span class="border-b border-transparent group-hover:border-brand-700">Instrucciones de 12306 para introducir el nombre del pasaporte (letras latinas, orden, espacio único, sin tratamientos, límite de 64 caracteres)</span>
+            <svg class="w-3 h-3 text-gray-300 ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.12306.cn/mormhweb/zxdt/202206/t20220617_37625.html" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+            <span class="border-b border-transparent group-hover:border-brand-700">China Railway — catálogo de artículos prohibidos y restringidos (reglamento oficial)</span>
+            <svg class="w-3 h-3 text-gray-300 ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.enghunan.gov.cn/hneng/Services/Live/Transportation/RailwayStations/index.html" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+            <span class="border-b border-transparent group-hover:border-brand-700">Gobierno de la provincia de Hunan — guía en inglés para comprar billetes de tren como extranjero</span>
+            <svg class="w-3 h-3 text-gray-300 ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </li>
+      </ul>
+    </div>
   </article>
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "HowTo", "name": "Cómo reservar y usar el tren de alta velocidad en China: guía paso a paso", "step": [{"@type": "HowToStep", "name": "Control de seguridad:", "text": "El equipaje pasa por una máquina de rayos X (como en el aeropuerto, pero más rápido)."}, {"@type": "HowToStep", "name": "Sala de espera:", "text": "Consulta la pantalla grande para ver el número de puerta de tu tren. Sigue las indicaciones."}, {"@type": "HowToStep", "name": "Embarque:", "text": "Presenta tu pasaporte en la puerta de embarque. Usa el carril manual del lado más alejado, luego baja al andén."}, {"@type": "HowToStep", "name": "Encuentra tu vagón:", "text": "Consulta las pantallas cerca de las escaleras del andén para ver el código de color asignado a tu tren. Coincide este color con las marcas de color en el suelo del andén para localizar tu vagón correc"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "HowTo", "name": "Cómo reservar y viajar en el tren de alta velocidad de China: guía paso a paso", "step": [{"@type": "HowToStep", "name": "Reserva tu billete", "text": "Reserva en Trip.com (compatible con tarjetas extranjeras) o en el sitio oficial en inglés de 12306 con tu pasaporte. No se necesita documento de identidad chino ni número de teléfono."}, {"@type": "HowToStep", "name": "Verifica tu pasaporte (solo 12306)", "text": "En 12306, regístrate, añádete como pasajero y completa la verificación de identidad única: automática, subiendo una foto de tu pasaporte o en la taquilla de una estación."}, {"@type": "HowToStep", "name": "Llega con antelación", "text": "Llega a la estación 30–40 minutos antes de la salida."}, {"@type": "HowToStep", "name": "Pasa el control de seguridad", "text": "Pon las bolsas en la máquina de rayos X. No hace falta sacar líquidos ni portátiles."}, {"@type": "HowToStep", "name": "Muestra tu pasaporte en la puerta", "text": "Usa el carril manual (extremo izquierdo o derecho del grupo de puertas). Entrega tu pasaporte al personal: las puertas automáticas solo leen documentos de identidad chinos."}, {"@type": "HowToStep", "name": "Encuentra tu vagón y aborda", "text": "Haz coincidir el código de color de las pantallas del andén con las marcas del suelo, aborda y ten el pasaporte a mano para los controles a bordo."}]}</script>
 </Layout>

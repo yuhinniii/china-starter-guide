@@ -1,7 +1,7 @@
 ---
 import Layout from '@layouts/Layout.astro';
-const title = '中国高速鉄道の予約と乗車ガイド：ステップバイステップ';
-const description = '切符の予約、駅での流れ、乗車までを完全カバー。';
+const title = '中国の高速鉄道の予約と乗り方：ステップバイステップガイド';
+const description = 'パスポートだけで中国の高速鉄道チケットを予約 — Trip.comまたは公式12306英語サイト。予約、駅、車内のステップバイステップガイド。';
 ---
 
 <Layout title={title} description={description} lang="ja">
@@ -11,91 +11,373 @@ const description = '切符の予約、駅での流れ、乗車までを完全�
         <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
         </svg>
-        ← 交通ガイドに戻る
+        交通関連に戻る
       </a>
     </nav>
     <header class="mb-12">
-      <p class="text-sm text-gray-500 mb-3">🚄 高速鉄道</p>
+      <p class="text-sm text-gray-500 mb-3">🚄 鉄道</p>
       <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
-        中国高速鉄道の予約と乗車ガイド
+        中国の高速鉄道の予約と乗り方
       </h1>
-      <p class="text-xl text-gray-600 mb-6">予約から駅での手続き、乗車までをわかりやすく解説。</p>
+      <p class="text-xl text-gray-600 mb-6">パスポートだけでチケットを予約し、駅で迷わず、中国最速の列車に乗る — ステップバイステップで解説。</p>
       <div class="flex items-center gap-4 text-sm text-gray-500">
-        <span>📅 最終更新：2026年6月</span>
-        <span>⏱️ 読了時間：6分</span>
+        <span>📅 最終更新：2026年8月</span>
+        <span>⏱️ 読了時間：8分</span>
       </div>
     </header>
 
     <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
       <h2 class="text-2xl font-bold text-blue-900 mb-4">🎯 クイックアンサー</h2>
       <p class="text-lg text-blue-800 leading-relaxed">
-        <strong>Trip.com</strong>（外国人に一番便利）か <strong>12306</strong>（公式）で予約。二等席で十分快適。30～40分前に駅に到着——<strong>パスポートが切符代わり</strong>なので必ず携帯。流れは：手荷物検査 → 待合ホール → 改札口 → ホーム。駅構内は英語表記完備。
+        中国の高速鉄道は<strong>パスポートだけで</strong>利用できます — 中国の身分証、中国の電話番号、現地の銀行口座は一切不要です。購入方法は2つ：<a href="https://www.trip.com/t/nUumZWrKUV2" target="_blank" rel="noopener" class="text-blue-700 underline font-semibold">Trip.com</a>（VisaまたはMastercardで支払い、12306のアカウント不要）か、公式の<strong>12306英語サイト</strong>。2023年後半から、外国パスポートのオンライン本人確認が可能になりました。出発の30～40分前には到着しましょう。パスポートこそが<em>チケット</em>です。セキュリティチェック、改札、そして時には車内でも提示します。
       </p>
     </div>
 
     <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
-      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 目次</h3>
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 このガイドの内容</h3>
       <ul class="space-y-3">
-        <li><a href="#booking" class="text-blue-600 hover:underline">🎫 切符の予約</a></li>
-        <li><a href="#classes" class="text-blue-600 hover:underline">💺 座席クラス</a></li>
+        <li><a href="#booking" class="text-blue-600 hover:underline">🎫 チケットの予約</a></li>
+        <li><a href="#passport" class="text-blue-600 hover:underline">🛂 パスポートで12306を利用して購入</a></li>
         <li><a href="#station" class="text-blue-600 hover:underline">🚉 駅での流れ</a></li>
-        <li><a href="#onboard" class="text-blue-600 hover:underline">🚄 車内のコツ</a></li>
+        <li><a href="#changes" class="text-blue-600 hover:underline">✏️ 変更・キャンセル</a></li>
+        <li><a href="#bring" class="text-blue-600 hover:underline">🧳 持ち込みOK・NG品</a></li>
+        <li><a href="#onboard" class="text-blue-600 hover:underline">🚄 車内での過ごし方</a></li>
       </ul>
     </nav>
 
     <div class="prose prose-gray max-w-none">
 
-      <h2 id="booking" class="text-2xl font-bold text-gray-900 mb-4">🎫 切符の予約</h2>
+      <h2 id="booking" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🎫</span> チケットの予約方法
+      </h2>
 
-      <p class="text-lg leading-relaxed text-gray-700 mb-6">3つの選択肢：</p>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">3つの方法を、簡単な順に紹介します：</p>
 
-      <ul class="space-y-2 text-gray-700 mb-8">
-        <li><strong>Trip.com（推奨）：</strong>12306から直接チケットデータを取得。別途12306アカウント不要。予約後はパスポートだけで乗車可能。</li>
-        <li><strong>12306（公式）：</strong>公式販売チャネルで、プライバシー保護も充実。外国人はパスポート番号で登録できる。</li>
-        <li><strong>駅の窓口：</strong>直接購入も可能だが、英語対応は保証されない。</li>
-      </ul>
-
-      <p class="text-lg leading-relaxed text-gray-700 mb-6">ほとんどの旅行者にはTrip.comが一番簡単。少額の手数料を払う価値は十分にある。</p>
-
-      <hr class="my-10 border-gray-200" />
-
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">座席クラス</h2>
-
-      <ul class="space-y-2 text-gray-700 mb-8">
-        <li><strong>二等座：</strong>標準的な座席、3+2配置。ほとんどの人がこれを選ぶ。短距離なら十分。</li>
-        <li><strong>一等座：</strong>座席が広く、2+2配置で足元に余裕あり。3時間以上の旅ならアップグレードする価値あり。</li>
-        <li><strong>ビジネスクラス：</strong>完全リクライニングシート、プライバシー確保、長距離路線では食事付き。</li>
-      </ul>
-
-      <hr class="my-10 border-gray-200" />
-
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">駅での流れ</h2>
-
-      <p class="text-lg leading-relaxed text-gray-700 mb-6">出発30～40分前に到着しよう。流れは以下の通り：</p>
-
-      <ol class="list-decimal pl-6 space-y-4 text-gray-700 mb-8">
-        <li><strong>手荷物検査：</strong>バッグをX線検査機に通す（空港より速い）。</li>
-        <li><strong>待合ホール：</strong>大型モニターで自分の列車の改札番号を確認。案内表示に従って進む。</li>
-        <li><strong>改札・乗車：</strong>改札でパスポートを提示。有人レーンを通ってホームへ。</li>
-        <li><strong>車両を探す：</strong>ホーム階段付近のモニターに自車の色コードが表示される。その色の床マーカーに合わせて自分の車両を見つける。</li>
+      <ol class="space-y-3 mb-12 list-decimal pl-6 text-gray-700">
+        <li><strong>Trip.com（ほとんどの旅行者におすすめ）</strong> — 予約手数料なし。12306システムの空席状況をリアルタイムで取得でき、別途12306アカウントも不要です。パスポート番号で予約し、同じパスポートで乗車します。支払いはVisa、Mastercard、Apple Payに対応。</li>
+        <li><strong>12306（公式 — 英語サイト／アプリ）</strong> — 中国鉄路（China Railway）の直販チャネルです。価格はTrip.comと同じ。運営者から直接購入するため、予約手数料がなく、注文を仲介業者に預ける必要もありません。外国人はパスポートで登録し、一度きりの本人確認を済ませたら、あとは通常どおり予約できます。支払いは海外発行の銀行カード、設定済みならAlipayやWeChat Payも利用可能。詳しい手順は次のセクションで。</li>
+        <li><strong>駅の窓口</strong> — 駅に行き、係員に行き先と出発時間を伝えます。その際、<em>実物の</em>パスポートが必要です（写真では不可）。価格はオンラインと同じ。英語対応は窓口ごとに保証されませんが、主要駅（北京南、上海虹橋、広州南）にはほぼ必ず英語を話す係員がいます。</li>
       </ol>
 
+      <p class="mb-12">
+        <a href="https://www.trip.com/t/nUumZWrKUV2" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition no-underline text-base">
+          👉 Trip.comで列車チケットを予約 →
+        </a>
+      </p>
+
       <hr class="my-10 border-gray-200" />
 
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">車内のコツ</h2>
+      <h2 id="passport" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🛂</span> パスポートで12306を利用 — ステップバイステップ
+      </h2>
 
-      <ul class="space-y-2 text-gray-700 mb-8">
-        <li>ワゴン販売で飲み物や軽食が買える。</li>
-        <li>一部の列車では座席下に電源あり（中国式プラグなので変換アダプターを持参）。</li>
-        <li>日よけブラインド完備。</li>
-        <li>駅構内と車内のアナウンスは中国語と英語の2ヶ国語。</li>
-      </ul>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">2023年後半まで、外国パスポートで12306を利用するには、事前に駅の窓口で本人確認を受ける必要がありました。しかし中国鉄路はこれを変更：現在はアプリやWebサイト内でオンライン本人確認が可能です。この変更こそ、短期旅行での直接予約を現実的なものにしました。</p>
 
-      <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 not-prose">
-        <p class="text-gray-700"><strong>重要：</strong>パスポートが切符代わり。駅入口、改札、車内でも確認されることがあるので、必ず携帯し、預け荷物に入れないこと。</p>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">英語サイト（<a href="https://www.12306.cn/en/index.html" target="_blank" rel="noopener" class="text-blue-600 hover:underline">12306.cn/en</a>）は外国人旅行者向けの専用フロントエンドです — 受け付けるのは<strong>外国パスポートのみ</strong>。中国の身分証番号を求められることはありません。</p>
+
+      <div class="my-10 not-prose">
+        <svg viewBox="0 0 680 200" class="w-full h-auto" role="img" aria-label="パスポートでの予約の流れ：登録、乗客を追加、本人確認、予約・支払い、パスポートで乗車">
+          <defs>
+            <marker id="hsrArrow" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto">
+              <path d="M0,0 L6,3 L0,6 Z" fill="#3b82f6"/>
+            </marker>
+          </defs>
+          <!-- connectors -->
+          <line x1="128" y1="70" x2="144" y2="70" stroke="#3b82f6" stroke-width="2" marker-end="url(#hsrArrow)"/>
+          <line x1="264" y1="70" x2="280" y2="70" stroke="#3b82f6" stroke-width="2" marker-end="url(#hsrArrow)"/>
+          <line x1="400" y1="70" x2="416" y2="70" stroke="#3b82f6" stroke-width="2" marker-end="url(#hsrArrow)"/>
+          <line x1="536" y1="70" x2="552" y2="70" stroke="#3b82f6" stroke-width="2" marker-end="url(#hsrArrow)"/>
+          <!-- node 1 -->
+          <rect x="10" y="40" width="118" height="120" rx="14" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+          <circle cx="69" cy="70" r="16" fill="#3b82f6"/>
+          <text x="69" y="75" text-anchor="middle" font-size="15" font-weight="bold" fill="#ffffff">1</text>
+          <text x="69" y="102" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e3a8a">登録</text>
+          <text x="69" y="120" text-anchor="middle" font-size="10" fill="#475569">12306.cn/en</text>
+          <text x="69" y="134" text-anchor="middle" font-size="10" fill="#475569">またはアプリ</text>
+          <!-- node 2 -->
+          <rect x="146" y="40" width="118" height="120" rx="14" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+          <circle cx="205" cy="70" r="16" fill="#3b82f6"/>
+          <text x="205" y="75" text-anchor="middle" font-size="15" font-weight="bold" fill="#ffffff">2</text>
+          <text x="205" y="102" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e3a8a">乗客を追加</text>
+          <text x="205" y="120" text-anchor="middle" font-size="10" fill="#475569">氏名＋</text>
+          <text x="205" y="134" text-anchor="middle" font-size="10" fill="#475569">パスポート番号</text>
+          <!-- node 3 -->
+          <rect x="282" y="40" width="118" height="120" rx="14" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+          <circle cx="341" cy="70" r="16" fill="#3b82f6"/>
+          <text x="341" y="75" text-anchor="middle" font-size="15" font-weight="bold" fill="#ffffff">3</text>
+          <text x="341" y="102" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e3a8a">本人確認</text>
+          <text x="341" y="120" text-anchor="middle" font-size="10" fill="#475569">自動、アップロード</text>
+          <text x="341" y="134" text-anchor="middle" font-size="10" fill="#475569">または窓口</text>
+          <!-- node 4 -->
+          <rect x="418" y="40" width="118" height="120" rx="14" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+          <circle cx="477" cy="70" r="16" fill="#3b82f6"/>
+          <text x="477" y="75" text-anchor="middle" font-size="15" font-weight="bold" fill="#ffffff">4</text>
+          <text x="477" y="102" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e3a8a">予約・支払い</text>
+          <text x="477" y="120" text-anchor="middle" font-size="10" fill="#475569">列車を選び</text>
+          <text x="477" y="134" text-anchor="middle" font-size="10" fill="#475569">カードで支払い</text>
+          <!-- node 5 -->
+          <rect x="554" y="40" width="118" height="120" rx="14" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+          <circle cx="613" cy="70" r="16" fill="#3b82f6"/>
+          <text x="613" y="75" text-anchor="middle" font-size="15" font-weight="bold" fill="#ffffff">5</text>
+          <text x="613" y="102" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e3a8a">乗車</text>
+          <text x="613" y="120" text-anchor="middle" font-size="10" fill="#475569">提示</text>
+          <text x="613" y="134" text-anchor="middle" font-size="10" fill="#475569">パスポート</text>
+        </svg>
+        <p class="text-sm text-gray-500 mt-3 text-center">パスポートこそ必要な唯一の身分証明です — アカウント作成からホームへの乗車まで。</p>
+      </div>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">5つのステップ：</p>
+
+      <div class="space-y-8 mb-12">
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">1️⃣ 登録</h4>
+          <p class="text-base leading-relaxed text-gray-700"><a href="https://www.12306.cn/en/index.html" target="_blank" rel="noopener" class="text-blue-600 hover:underline">12306.cn/en</a>にアクセスするか、12306アプリをダウンロードして言語を英語に切り替えます。メールアドレスで登録。登録時にパスポートをスキャンすると情報が自動入力され、はるかに便利です。アプリを推奨します。</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">2️⃣ 自分を乗客として追加</h4>
+          <p class="text-base leading-relaxed text-gray-700">「My Passengers」を開き、氏名とパスポート番号を入力します。本人確認に失敗するのはほとんどこのステップ — 入力前に下記の氏名ルールを必ず読んでください。</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">3️⃣ 本人確認</h4>
+          <p class="text-base leading-relaxed text-gray-700">システムはまず自動チェックを試みます。確認できない場合は、パスポートの情報ページの写真をアップロードして有人審査を受けましょう — 通常1～2日で結果が出ます。オンライン審査でも通らない場合は、紙のパスポートを持って駅の窓口へ。その場で数分で確認してもらえます。</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">4️⃣ 検索、予約、支払い</h4>
+          <p class="text-base leading-relaxed text-gray-700">乗客ステータスが「verified（確認済み）」になったら、日付、列車、座席クラスを選び、国際カードで支払います。同行者も同じ方法で追加します — それぞれ自分のパスポート情報と本人確認が必要です。</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">5️⃣ パスポートで乗車</h4>
+          <p class="text-base leading-relaxed text-gray-700">受け取る紙のチケットはありません。最右端の有人レーンを利用し、パスポートを係員に渡します（自動改札は中国の身分証のみ対応）。あとは自分の車両を探しましょう。</p>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-bold text-gray-900 mb-4">📝 本人確認の成否を左右する氏名ルール</h3>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">氏名はパスポートの機械可読欄に印字されているとおりに<strong>正確に</strong>入力します：</p>
+
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm mb-8 not-prose">
+        <table class="w-full text-left">
+          <thead class="bg-gray-900 text-white">
+            <tr>
+              <th class="px-6 py-4 font-semibold">入力する</th>
+              <th class="px-6 py-4 font-semibold">入力しない</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-100 text-gray-700">
+            <tr>
+              <td class="px-6 py-4 align-top">ラテン文字のみ（A–Z）</td>
+              <td class="px-6 py-4 align-top">漢字、アクセント記号、その他の非ラテン文字</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top">パスポートの順序どおり、姓→名の順で</td>
+              <td class="px-6 py-4 align-top">自然に見えるからと「名→姓」に並べ替える</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top">名前の各部分はスペース1つで区切る</td>
+              <td class="px-6 py-4 align-top">余分なスペース、自分で付けたハイフン、カンマ</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top">印字どおりのフルネーム</td>
+              <td class="px-6 py-4 align-top">Mr / Mrs / Miss / Dr. などの敬称 — 不要</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-12">印字された氏名が入力欄の上限（64文字）を超える場合は、最初から収まる分まで入力します。自動チェックが失敗するのは、1文字の不一致が原因であることがほとんどです。</p>
+
+      <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-12 not-prose">
+        <p class="text-gray-900 font-bold mb-3">🔑 意外と知られていない2つのルール</p>
+        <ul class="space-y-2 text-gray-700">
+          <li><strong>実名制のチケット：</strong>1人が同じ時間帯に購入できるのは1枚だけ。例えば、同じ日の10:00～12:00のチケットを所持している場合、11:00～13:00の別のチケットを購入しようとすると失敗します。</li>
+          <li><strong>電子チケット：</strong>パスポートこそがチケットです。出張報告用に駅の機械で旅程表を印刷できますが、その紙は<strong>乗車には無効</strong>です — パスポートを持参しましょう。</li>
+        </ul>
       </div>
 
       <hr class="my-10 border-gray-200" />
+
+      <h2 id="station" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🚉</span> 駅での流れ — ステップバイステップ
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">出発の30～40分前には到着しましょう。駅では次の順に進みます：</p>
+
+      <div class="space-y-8 mb-12">
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🛂 セキュリティチェック</h4>
+          <p class="text-base leading-relaxed text-gray-700">すべての荷物はX線検査機を通します。空港の保安検査に似ていますが、より速いです。液体、ノートPC、モバイルバッテリーを取り出す必要はありません。駅が異常に混んでいなければ、約2～3分で済みます。</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">📺 待合室</h4>
+          <p class="text-base leading-relaxed text-gray-700">大型の発車案内板で自分の改札番号を探します。主要駅では改札番号が中国語と英語の両方で表示され、列車のステータス（「定刻」「乗車中」「到着」）も確認できます。</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🎫 改札</h4>
+          <p class="text-base leading-relaxed text-gray-700">通常の自動改札は中国の身分証のみ対応です。外国パスポート保持者は、改札群の最左端か最右端にある有人レーン（「人工通道」と表示）を探しましょう。チェック開始は出発の約15分前。係員にパスポートを渡すと、スキャンして約10秒で通してくれます。</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚃 自分の車両を探す</h4>
+          <p class="text-base leading-relaxed text-gray-700">ホームでは、色付きの床マーカーを探します。各車両番号には色付きのドットがあり、階段のそばの大型スクリーンに自分の列車の色コードが表示されます。列車は特定の位置に特定のドアで停車するため、色を床マーカーと照合して立つ場所を確認しましょう。</p>
+        </div>
+      </div>
+
+      <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-12 not-prose">
+        <p class="text-gray-700 leading-relaxed"><strong>パスポートこそチケットです。</strong>駅に入ってから着席するまで、手に持っておきましょう。少なくとも2回は提示します — セキュリティチェックと改札。一部の路線では、出発後に係員が車内を巡回し、抜き打ちでパスポートチェックを行うこともあります。</p>
+      </div>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="changes" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">✏️</span> チケットの変更・キャンセル
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">ルールはTrip.comでも12306でも同じです：</p>
+
+      <ul class="space-y-3 mb-12 text-gray-700">
+        <li><strong>変更（改签）：</strong>同じ日の別の列車に変更 — 48時間以上前なら無料。日付を後の日に変更する場合は5%～40%の手数料（元の日付にどれだけ近いかによる）。12306の英語サイト／アプリまたは駅の窓口で手続きします。</li>
+        <li><strong>払い戻し：</strong>手続きチャネルは同じ。出発8日以上前なら無料、48時間～8日前は5%、24～48時間前は10%、24時間以内は20%。</li>
+        <li><strong>乗り遅れ：</strong>時間内に変更・キャンセルせずに列車を逃すと、チケット代金は全額没収です。猶予期間はありません。</li>
+      </ul>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="bring" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🧳</span> 持ち込みOK・NG品
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">このルールは、中国鉄路が公表している公式規定<em>《铁路旅客禁止、限制携带和托运物品目录》</em>（鉄道旅客の禁止・制限携帯品目録）に基づいています。</p>
+
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm mb-8 not-prose">
+        <table class="w-full text-left">
+          <thead class="bg-gray-900 text-white">
+            <tr>
+              <th class="px-6 py-4 font-semibold">品目</th>
+              <th class="px-6 py-4 font-semibold">制限</th>
+              <th class="px-6 py-4 font-semibold">備考</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-100 text-gray-700">
+            <tr>
+              <td class="px-6 py-4 align-top font-medium">モバイルバッテリー</td>
+              <td class="px-6 py-4 align-top whitespace-nowrap">≤ 100Wh（約 27,000 mAh）</td>
+              <td class="px-6 py-4 align-top text-sm">容量が本体に明記されている必要があります</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top font-medium">香水／化粧用スプレー</td>
+              <td class="px-6 py-4 align-top whitespace-nowrap">1本あたり ≤ 100ml</td>
+              <td class="px-6 py-4 align-top text-sm">加圧式でない、非引火性のもの</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top font-medium">エアゾール（ヘアスプレー、日焼け止め）</td>
+              <td class="px-6 py-4 align-top whitespace-nowrap">1本 ≤ 150ml、合計 ≤ 600ml</td>
+              <td class="px-6 py-4 align-top text-sm">一般的な旅行用サイズの缶</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top font-medium">マニキュア／除光液</td>
+              <td class="px-6 py-4 align-top whitespace-nowrap">合計 ≤ 50 ml</td>
+              <td class="px-6 py-4 align-top text-sm">必要な分だけ</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top font-medium">ライター</td>
+              <td class="px-6 py-4 align-top whitespace-nowrap">≤ 2個</td>
+              <td class="px-6 py-4 align-top text-sm">一般的な使い捨てライター</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top font-medium">酒類（メーカー密封瓶）</td>
+              <td class="px-6 py-4 align-top whitespace-nowrap">≤ 3,000 ml、アルコール度数24%～70%</td>
+              <td class="px-6 py-4 align-top text-sm">ラベル明記のメーカー密封品のみ。詰め替えは不可</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top font-medium">小型工具（はさみ、フルーツナイフ）</td>
+              <td class="px-6 py-4 align-top whitespace-nowrap">刃長 &lt; 60mm</td>
+              <td class="px-6 py-4 align-top text-sm">刃長60mm以上は一切持ち込み不可</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top font-medium">釣り竿、三脚、傘</td>
+              <td class="px-6 py-4 align-top whitespace-nowrap">伸長時 ≤ 130cm</td>
+              <td class="px-6 py-4 align-top text-sm">高速鉄道では収納して適切に梱包</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="text-lg font-semibold text-gray-900 mb-6">持ち込み禁止の品目：</p>
+
+      <div class="space-y-6 mb-12">
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚫 銃器、弾薬、爆発物</h4>
+          <p class="text-base leading-relaxed text-gray-700">いかなる種類も — 例外なし。</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚫 引火性液体</h4>
+          <p class="text-base leading-relaxed text-gray-700">ガソリン、灯油、アルコール度数70%超の酒類。</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚫 自己発熱食品</h4>
+          <p class="text-base leading-relaxed text-gray-700">自己発熱式の火鍋、自己発熱式のごはん — 蒸気で高速鉄道の煙感知器が作動する恐れがあります。外国人観光客が最も引っかかりやすい品目です。見つかると没収される可能性があります。</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚫 水素入り風船</h4>
+          <p class="text-base leading-relaxed text-gray-700">車内および駅構内で禁止。</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚫 腐食性物質、放射性物質、毒物</h4>
+          <p class="text-base leading-relaxed text-gray-700">強酸、強アルカリ、大量の漂白剤、その他すべての有毒物質が含まれます。</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚫 ロック機構付きの規制ナイフ</h4>
+          <p class="text-base leading-relaxed text-gray-700">刃長60mm以上でロック機構を持つもの。</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚫 刃長60mm以上の長い刃物</h4>
+          <p class="text-base leading-relaxed text-gray-700">包丁、カッターナイフ、マチェーテ — 一切持ち込み不可（刃長 &lt; 60mmの短い刃物は手荷物として持ち込み可）。</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚫 殴打武器</h4>
+          <p class="text-base leading-relaxed text-gray-700">バット、ハンマー、重量工具、その他武器として使えるもの。</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚫 自転車と電動キックボード</h4>
+          <p class="text-base leading-relaxed text-gray-700">完全に分解して丈夫な荷物に収納した場合を除く。</p>
+        </div>
+      </div>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="onboard" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🚄</span> 車内での過ごし方
+      </h2>
+
+      <div class="space-y-8 mb-12">
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">💺 座席</h4>
+          <p class="text-base leading-relaxed text-gray-700">二等座は3+2列で、飛行機のプレミアムエコノミーに似た感覚 — 身長約185cmまでなら問題ありません。一等座は2+2列で座席が広く足元もゆったり、3時間超の移動なら価値があります。ビジネスクラスは2+1列でフルリクライニングシート。</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🔌 電源コンセント</h4>
+          <p class="text-base leading-relaxed text-gray-700">多くのG系列（時速300～350km）では座席下に中国規格の2極コンセントがあります。一部の古いD系列（時速200～250km）では全座席にコンセントがないことも — <a href="/ja/life/packing-guide/" class="text-blue-600 hover:underline">予備にモバイルバッテリーを</a>持参しましょう。</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🍜 食事・飲み物</h4>
+          <p class="text-base leading-relaxed text-gray-700">ワゴン販売が1～2回通り、弁当（約¥40 / $5.50）、お菓子、カップ麺、飲み物を販売します。コーヒーはインスタントです。長距離路線には食堂車があり、品ぞろえはやや充実しています。</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚻 トイレ</h4>
+          <p class="text-base leading-relaxed text-gray-700">各車両の両端にあります。清潔さは路線や時間帯によって異なります。始発時はきれいですが、中盤以降はそうでもないことが多いです。手指消毒液とトイレットペーパーは自分で持参しましょう。</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">📢 車内放送</h4>
+          <p class="text-base leading-relaxed text-gray-700">駅名は中国語と英語で放送されます。ドア上部のディスプレイには次の停車駅、現在の速度、外気温が表示されます。英語音声は聞き取りにくいこともあるので、ディスプレイも確認しましょう。</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🌡️ 温度</h4>
+          <p class="text-base leading-relaxed text-gray-700">空調は年間を通じて約22～24°Cに設定されています。7月でも薄手のジャケットや長袖を推奨します。</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🧳 荷物の置き場所</h4>
+          <p class="text-base leading-relaxed text-gray-700">荷物棚には機内持ち込みサイズのバッグが収まります。大型スーツケース（24インチ以上）は各車両端のラックか座席下に置きましょう。途中停車駅では車両端の荷物に目を配ってください。</p>
+        </div>
+      </div>
 
           <div class="border-t border-gray-100 pt-6 mt-8">
       <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5 not-prose">
@@ -103,19 +385,23 @@ const description = '切符の予約、駅での流れ、乗車までを完全�
           <h3 class="text-sm font-bold text-gray-900">📚 関連ガイド</h3>
           <div class="flex flex-wrap gap-2">
             <a href="/ja/transport/transport-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
-              🚄 中国交通ガイド
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-            </a>
-            <a href="/ja/transport/airport-to-city/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
-              🛬 空港から市内へ
+              🚄 中国での移動方法
               <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
             </a>
             <a href="/ja/transport/didi/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
-              🚗 外国人がDiDiを使う方法
+              🚗 中国でDiDiを使う方法
               <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
             </a>
-            <a href="/ja/transport/metro-bus/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
-              🚇 中国主要都市の地下鉄・バスガイド
+            <a href="/ja/transport/flights-vs-rail/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              ✈️ 飛行機 vs 高速鉄道
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ja/payment/payment-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              💳 中国での支払い方法
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ja/life/sim-card-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              📱 ネット接続（SIM &amp; eSIM）
               <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
             </a>
           </div>
@@ -134,7 +420,49 @@ const description = '切符の予約、駅での流れ、乗車までを完全�
         <li>
           <a href="https://www.12306.cn/en/index.html" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
             <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
-            <span class="border-b border-transparent group-hover:border-brand-700">中国鉄路官方 - 12306</span>
+            <span class="border-b border-transparent group-hover:border-brand-700">中国鉄路12306 — 公式英語サイト（予約、外国パスポートの本人確認、変更・払い戻しルール）</span>
+            <svg class="w-3 h-3 text-gray-300 ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.12306.cn/en/faq.html" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+            <span class="border-b border-transparent group-hover:border-brand-700">中国鉄路12306 — 英語FAQ（実名制チケット、電子チケット、利用可能な身分証明書）</span>
+            <svg class="w-3 h-3 text-gray-300 ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.12306.cn/mormhweb/zxdt/202311/t20231127_40375.html" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+            <span class="border-b border-transparent group-hover:border-brand-700">中国鉄路12306 — 外国パスポートの本人確認に関するお知らせ（2023年11月27日）</span>
+            <svg class="w-3 h-3 text-gray-300 ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://kyfw.12306.cn/otn/gonggao/saleTicketMeans.html" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+            <span class="border-b border-transparent group-hover:border-brand-700">中国鉄路12306 — オンライン購入時の本人確認ルール</span>
+            <svg class="w-3 h-3 text-gray-300 ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://mobile.12306.cn/otsmobile/h5/otsbussiness/passportInstruction/passport-entry-instructions.html" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+            <span class="border-b border-transparent group-hover:border-brand-700">12306 パスポート氏名入力の手引き（ラテン文字、順序、スペース1つ、敬称なし、64文字制限）</span>
+            <svg class="w-3 h-3 text-gray-300 ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.12306.cn/mormhweb/zxdt/202206/t20220617_37625.html" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+            <span class="border-b border-transparent group-hover:border-brand-700">中国鉄路 — 禁止・制限携帯品目録（公式規定）</span>
+            <svg class="w-3 h-3 text-gray-300 ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.enghunan.gov.cn/hneng/Services/Live/Transportation/RailwayStations/index.html" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+            <span class="border-b border-transparent group-hover:border-brand-700">湖南省政府 — 外国人の鉄道チケット購入に関する英語ガイド</span>
             <svg class="w-3 h-3 text-gray-300 ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
           </a>
         </li>
@@ -142,5 +470,5 @@ const description = '切符の予約、駅での流れ、乗車までを完全�
     </div>
   </article>
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "HowTo", "name": "中国高速鉄道の予約と乗車ガイド：ステップバイステップ", "step": [{"@type": "HowToStep", "name": "手荷物検査", "text": "バッグをX線検査機に通す（空港より速い）。"}, {"@type": "HowToStep", "name": "待合ホール", "text": "大型モニターで改札番号を確認。"}, {"@type": "HowToStep", "name": "改札・乗車", "text": "改札でパスポートを提示してホームへ。"}, {"@type": "HowToStep", "name": "車両を探す", "text": "モニターの色コードに合わせて床マーカーで車両を探す。"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "HowTo", "name": "中国の高速鉄道の予約と乗り方：ステップバイステップガイド", "step": [{"@type": "HowToStep", "name": "チケットを予約", "text": "Trip.com（外国カード対応）または公式12306英語サイトでパスポートを使って予約。中国の身分証や電話番号は不要です。"}, {"@type": "HowToStep", "name": "パスポートの本人確認（12306のみ）", "text": "12306で登録し、自分を乗客として追加し、一度きりの本人確認を完了 — 自動、パスポート写真のアップロード、または駅の窓口で。"}, {"@type": "HowToStep", "name": "早めに到着", "text": "出発の30～40分前に駅に到着。"}, {"@type": "HowToStep", "name": "セキュリティチェックを通過", "text": "荷物をX線検査機に通す。液体やノートPCを取り出す必要はありません。"}, {"@type": "HowToStep", "name": "改札でパスポートを提示", "text": "有人レーン（改札群の最左端か最右端）を利用。係員にパスポートを渡す — 自動改札は中国の身分証のみ対応。"}, {"@type": "HowToStep", "name": "自分の車両を見つけて乗車", "text": "ホームのスクリーンに表示された色コードを床マーカーと照合し、乗車。車内チェックに備えてパスポートを手元に。"}]}</script>
 </Layout>

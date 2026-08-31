@@ -1,7 +1,7 @@
 ---
 import Layout from '@layouts/Layout.astro';
-const title = 'Как купить билет и поехать на скоростном поезде в Китае: пошаговая инструкция';
-const description = 'Пошаговая инструкция по покупке билетов, навигации на вокзале и поездке на скоростных поездах Китая.';
+const title = 'Как забронировать и проехать на высокоскоростном поезде Китая: пошаговый гайд';
+const description = 'Бронируй билеты на высокоскоростные поезда Китая по одному загранпаспорту — Trip.com или официальный англоязычный сайт 12306. Пошагово: бронирование, вокзал и поездка.';
 ---
 
 <Layout title={title} description={description} lang="ru">
@@ -17,110 +17,460 @@ const description = 'Пошаговая инструкция по покупке
     <header class="mb-12">
       <p class="text-sm text-gray-500 mb-3">🚄 Поезда</p>
       <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
-        Как купить билет и поехать на скоростном поезде в Китае
+        Как забронировать и проехать на высокоскоростном поезде Китая
       </h1>
-      <p class="text-xl text-gray-600 mb-6">Пошаговая инструкция по покупке билетов, навигации на вокзале и поездке на скоростных поездах Китая.</p>
+      <p class="text-xl text-gray-600 mb-6">Бронируй билеты по одному паспорту, разберись на вокзале и поезжай на самых быстрых поездах Китая — шаг за шагом.</p>
       <div class="flex items-center gap-4 text-sm text-gray-500">
-        <span>📅 Последнее обновление: июнь 2026</span>
-        <span>⏱️ 6 мин. чтения</span>
+        <span>📅 Последнее обновление: Август 2026</span>
+        <span>⏱️ 8 мин чтения</span>
       </div>
     </header>
 
     <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
       <h2 class="text-2xl font-bold text-blue-900 mb-4">🎯 Краткий ответ</h2>
       <p class="text-lg text-blue-800 leading-relaxed">
-        Билеты проще всего купить на <strong>Trip.com</strong> (удобно для иностранцев) или через <strong>12306</strong> (официальный сайт). Второй класс вполне комфортный. Приезжай за 30–40 минут — <strong>паспорт служит билетом</strong>, так что держи его под рукой. Посадка проходит легко: досмотр → зал ожидания → выход → платформа. На вокзалах всё продублировано на английском.
+        Ты можешь ездить на высокоскоростных поездах Китая, имея <strong>только загранпаспорт</strong> — не нужен ни китайский ID, ни китайский номер телефона, ни счёт в местном банке. Купить билет можно двумя способами: <a href="https://www.trip.com/t/nUumZWrKUV2" target="_blank" rel="noopener" class="text-blue-700 underline font-semibold">Trip.com</a> (оплата Visa или Mastercard, аккаунт 12306 не нужен) или официальный <strong>англоязычный сайт 12306</strong>, где иностранные паспорта проходят проверку онлайн с конца 2023 года. Приезжай за 30–40 минут. Твой паспорт <em>и есть</em> билет: ты покажешь его на досмотре, у выхода на посадку, а иногда ещё раз в вагоне.
       </p>
     </div>
 
     <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
       <h3 class="text-lg font-bold text-gray-900 mb-4">📋 В этом гайде</h3>
       <ul class="space-y-3">
-        <li><a href="#booking" class="text-blue-600 hover:underline">🎫 Покупка билета</a></li>
-        <li><a href="#classes" class="text-blue-600 hover:underline">💺 Классы билетов</a></li>
+        <li><a href="#booking" class="text-blue-600 hover:underline">🎫 Бронирование билета</a></li>
+        <li><a href="#passport" class="text-blue-600 hover:underline">🛂 Покупка на 12306 по паспорту</a></li>
         <li><a href="#station" class="text-blue-600 hover:underline">🚉 На вокзале</a></li>
-        <li><a href="#onboard" class="text-blue-600 hover:underline">🚄 В пути</a></li>
+        <li><a href="#changes" class="text-blue-600 hover:underline">✏️ Изменение или отмена билета</a></li>
+        <li><a href="#bring" class="text-blue-600 hover:underline">🧳 Что можно и нельзя провозить</a></li>
+        <li><a href="#onboard" class="text-blue-600 hover:underline">🚄 В поезде</a></li>
       </ul>
     </nav>
 
     <div class="prose prose-gray max-w-none">
 
-      <h2 id="booking" class="text-2xl font-bold text-gray-900 mb-4">🎫 Покупка билета</h2>
+      <h2 id="booking" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🎫</span> Как забронировать билет
+      </h2>
 
-      <p class="text-lg leading-relaxed text-gray-700 mb-6">У тебя три варианта:</p>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">Три варианта — от самого простого к самому замороченному:</p>
 
-      <ul class="space-y-2 text-gray-700 mb-8">
-        <li><strong>Trip.com (рекомендую):</strong> Получает данные о билетах напрямую из системы 12306. Отдельный аккаунт на 12306 не нужен. После покупки можно садиться в поезд просто по паспорту.</li>
-        <li><strong>12306 (официальный):</strong> Официальный канал, лучшая защита данных. Иностранцы могут зарегистрироваться по номеру паспорта.</li>
-        <li><strong>Касса на вокзале:</strong> Можно купить билет лично, но английский не гарантируют.</li>
-      </ul>
-
-      <p class="text-lg leading-relaxed text-gray-700 mb-6">Для большинства путешественников Trip.com — самый простой вариант. Небольшая комиссия за бронирование стоит того удобства.</p>
-
-      <hr class="my-10 border-gray-200" />
-
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">Классы билетов</h2>
-
-      <ul class="space-y-2 text-gray-700 mb-8">
-        <li><strong>Второй класс (二等座):</strong> Стандартный вариант. Удобные кресла, схема 3+2. Большинство выбирает именно его.</li>
-        <li><strong>Первый класс (一等座):</strong> Кресла шире, схема 2+2, больше места для ног. Стоит доплатить, если едешь больше 3 часов.</li>
-        <li><strong>Бизнес-класс (商务座):</strong> Полностью откидывающиеся кресла, приватность, бесплатное питание на дальних маршрутах. Дорого, но это целый опыт.</li>
-      </ul>
-
-      <hr class="my-10 border-gray-200" />
-
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">На вокзале</h2>
-
-      <p class="text-lg leading-relaxed text-gray-700 mb-6">Приезжай за 30–40 минут до отправления. Вот схема:</p>
-
-      <ol class="list-decimal pl-6 space-y-4 text-gray-700 mb-8">
-        <li><strong>Досмотр:</strong> Багаж проходит через рентген (как в аэропорту, но быстрее).</li>
-        <li><strong>Зал ожидания:</strong> Найди на большом табло номер выхода к твоему поезду. Следуй за указателями.</li>
-        <li><strong>Посадка:</strong> Предъяви паспорт на турникете. Используй дальний ручной проход, затем спускайся на платформу.</li>
-        <li><strong>Найди свой вагон:</strong> Посмотри на экраны у лестницы на платформу — там указан цветовой код твоего поезда. Совмести его с цветными маркерами на полу платформы, чтобы найти свой вагон.</li>
+      <ol class="space-y-3 mb-12 list-decimal pl-6 text-gray-700">
+        <li><strong>Trip.com (рекомендуем для большинства путешественников)</strong> — без комиссии за бронь, наличие мест подтягивается в реальном времени напрямую из системы 12306, отдельный аккаунт 12306 не нужен. Ты бронируешь по номеру паспорта и садишься в поезд по тому же паспорту. Оплата — Visa, Mastercard или Apple Pay.</li>
+        <li><strong>12306 (официальный — англоязычный сайт/приложение)</strong> — собственный канал продаж China Railway. Цены такие же, как на Trip.com; разница в том, что ты покупаешь напрямую у перевозчика — без комиссии и без посредника, который держит твой заказ. Иностранцы регистрируются по паспорту, проходят разовую проверку личности, а дальше бронируют как обычно. Оплата: международные банковские карты, а также Alipay или WeChat Pay, если они у тебя настроены. Полный разбор — в следующем разделе.</li>
+        <li><strong>Касса на вокзале</strong> — подойди к кассе любого вокзала, назови сотруднику пункт назначения и время отправления и возьми с собой <em>физический</em> паспорт (фотография не подойдёт). Цены такие же, как онлайн. Английский есть не в каждой кассе, но на самых загруженных вокзалах (Пекин-Южный, Шанхай Хунцяо, Гуанчжоу-Южный) почти всегда найдётся кто-то, кто говорит по-английски.</li>
       </ol>
 
+      <p class="mb-12">
+        <a href="https://www.trip.com/t/nUumZWrKUV2" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition no-underline text-base">
+          👉 Забронировать билеты на Trip.com →
+        </a>
+      </p>
+
       <hr class="my-10 border-gray-200" />
 
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">В пути</h2>
+      <h2 id="passport" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🛂</span> Покупка на 12306 по паспорту — шаг за шагом
+      </h2>
 
-      <ul class="space-y-2 text-gray-700 mb-8">
-        <li>Еду и напитки продают с тележки.</li>
-        <li>В некоторых поездах под сиденьями есть розетки (китайские — возьми переходник).</li>
-        <li>Для комфорта предусмотрены шторки на окнах.</li>
-        <li>Объявления на вокзалах и в поездах — на китайском и английском.</li>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">До конца 2023 года обладателю иностранного паспорта, который хотел купить билет на 12306, по сути приходилось сначала ехать в кассу вокзала, чтобы пройти проверку личности. China Railway это изменила: паспорта теперь проверяются онлайн — в приложении или на сайте. Именно это изменение делает бронирование напрямую реальным вариантом для короткой поездки.</p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">Англоязычный сайт (<a href="https://www.12306.cn/en/index.html" target="_blank" rel="noopener" class="text-blue-600 hover:underline">12306.cn/en</a>) — это отдельный интерфейс, созданный для иностранных путешественников: он принимает <strong>только иностранные паспорта</strong>, так что номер китайского удостоверения у тебя не спросят.</p>
+
+      <div class="my-10 not-prose">
+        <svg viewBox="0 0 680 200" class="w-full h-auto" role="img" aria-label="Порядок бронирования по паспорту: Регистрация, Добавить пассажира, Проверка личности, Бронь и оплата, Посадка">
+          <defs>
+            <marker id="hsrArrow" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto">
+              <path d="M0,0 L6,3 L0,6 Z" fill="#3b82f6"/>
+            </marker>
+          </defs>
+          <!-- connectors -->
+          <line x1="128" y1="70" x2="144" y2="70" stroke="#3b82f6" stroke-width="2" marker-end="url(#hsrArrow)"/>
+          <line x1="264" y1="70" x2="280" y2="70" stroke="#3b82f6" stroke-width="2" marker-end="url(#hsrArrow)"/>
+          <line x1="400" y1="70" x2="416" y2="70" stroke="#3b82f6" stroke-width="2" marker-end="url(#hsrArrow)"/>
+          <line x1="536" y1="70" x2="552" y2="70" stroke="#3b82f6" stroke-width="2" marker-end="url(#hsrArrow)"/>
+          <!-- node 1 -->
+          <rect x="10" y="40" width="118" height="120" rx="14" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+          <circle cx="69" cy="70" r="16" fill="#3b82f6"/>
+          <text x="69" y="75" text-anchor="middle" font-size="15" font-weight="bold" fill="#ffffff">1</text>
+          <text x="69" y="102" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e3a8a">Регистрация</text>
+          <text x="69" y="120" text-anchor="middle" font-size="10" fill="#475569">12306.cn/en</text>
+          <text x="69" y="134" text-anchor="middle" font-size="10" fill="#475569">или приложение</text>
+          <!-- node 2 -->
+          <rect x="146" y="40" width="118" height="120" rx="14" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+          <circle cx="205" cy="70" r="16" fill="#3b82f6"/>
+          <text x="205" y="75" text-anchor="middle" font-size="15" font-weight="bold" fill="#ffffff">2</text>
+          <text x="205" y="100" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e3a8a">Добавить</text>
+          <text x="205" y="114" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e3a8a">пассажира</text>
+          <text x="205" y="130" text-anchor="middle" font-size="10" fill="#475569">Имя и</text>
+          <text x="205" y="143" text-anchor="middle" font-size="10" fill="#475569">№ паспорта</text>
+          <!-- node 3 -->
+          <rect x="282" y="40" width="118" height="120" rx="14" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+          <circle cx="341" cy="70" r="16" fill="#3b82f6"/>
+          <text x="341" y="75" text-anchor="middle" font-size="15" font-weight="bold" fill="#ffffff">3</text>
+          <text x="341" y="100" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e3a8a">Проверка</text>
+          <text x="341" y="114" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e3a8a">личности</text>
+          <text x="341" y="130" text-anchor="middle" font-size="10" fill="#475569">Авто, загрузка</text>
+          <text x="341" y="143" text-anchor="middle" font-size="10" fill="#475569">или касса</text>
+          <!-- node 4 -->
+          <rect x="418" y="40" width="118" height="120" rx="14" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+          <circle cx="477" cy="70" r="16" fill="#3b82f6"/>
+          <text x="477" y="75" text-anchor="middle" font-size="15" font-weight="bold" fill="#ffffff">4</text>
+          <text x="477" y="102" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e3a8a">Бронь и оплата</text>
+          <text x="477" y="120" text-anchor="middle" font-size="10" fill="#475569">Выбор поезда,</text>
+          <text x="477" y="134" text-anchor="middle" font-size="10" fill="#475569">оплата картой</text>
+          <!-- node 5 -->
+          <rect x="554" y="40" width="118" height="120" rx="14" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+          <circle cx="613" cy="70" r="16" fill="#3b82f6"/>
+          <text x="613" y="75" text-anchor="middle" font-size="15" font-weight="bold" fill="#ffffff">5</text>
+          <text x="613" y="102" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e3a8a">Посадка</text>
+          <text x="613" y="120" text-anchor="middle" font-size="10" fill="#475569">Покажи</text>
+          <text x="613" y="134" text-anchor="middle" font-size="10" fill="#475569">паспорт</text>
+        </svg>
+        <p class="text-sm text-gray-500 mt-3 text-center">Твой паспорт — единственный документ, который нужен: от создания аккаунта до выхода на платформу.</p>
+      </div>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">Пять шагов:</p>
+
+      <div class="space-y-8 mb-12">
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">1️⃣ Регистрация</h4>
+          <p class="text-base leading-relaxed text-gray-700">Перейди на <a href="https://www.12306.cn/en/index.html" target="_blank" rel="noopener" class="text-blue-600 hover:underline">12306.cn/en</a> или скачай приложение 12306 и переключи язык на английский. Зарегистрируйся по электронной почте. При регистрации можно отсканировать паспорт, чтобы данные заполнились автоматически, — это гораздо удобнее. Рекомендуем приложение.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">2️⃣ Добавь себя как пассажира</h4>
+          <p class="text-base leading-relaxed text-gray-700">Открой «My Passengers» («Мои пассажиры») и введи имя и номер паспорта. На этом шаге чаще всего и проваливается проверка — сначала прочитай правило написания имени ниже, а потом что-то вводи.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">3️⃣ Подтверди личность</h4>
+          <p class="text-base leading-relaxed text-gray-700">Сначала система пробует автоматическую проверку. Если подтвердить не удаётся, загрузи фото страницы паспорта с данными для ручной проверки — обычно ответ приходит в течение дня-двух. Если онлайн-проверка тоже не проходит, зайди в любую кассу вокзала с физическим паспортом: сотрудник подтвердит личность на месте за пару минут.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">4️⃣ Поиск, бронь, оплата</h4>
+          <p class="text-base leading-relaxed text-gray-700">Как только статус пассажира станет «verified» («подтверждён»), выбери дату, поезд и класс места, затем оплати международной картой. Попутчиков добавь так же — каждому нужны свои паспортные данные и своя проверка.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">5️⃣ Садись в поезд по паспорту</h4>
+          <p class="text-base leading-relaxed text-gray-700">Бумажный билет получать не нужно. Используй крайний правый проход для ручной проверки, отдай паспорт сотруднику (автоматические турникеты читают только китайские удостоверения) и ищи свой вагон.</p>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-bold text-gray-900 mb-4">📝 Правило написания имени, от которого зависит успех проверки</h3>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">Вводи имя <strong>точно</strong> так, как оно напечатано на машиночитаемой странице паспорта:</p>
+
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm mb-8 not-prose">
+        <table class="w-full text-left">
+          <thead class="bg-gray-900 text-white">
+            <tr>
+              <th class="px-6 py-4 font-semibold">Как надо</th>
+              <th class="px-6 py-4 font-semibold">Как нельзя</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-100 text-gray-700">
+            <tr>
+              <td class="px-6 py-4 align-top">Только латиница (A–Z)</td>
+              <td class="px-6 py-4 align-top">Китайские иероглифы, знаки с диакритикой, не латинские алфавиты</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top">Сначала фамилия, затем имя — в порядке паспорта</td>
+              <td class="px-6 py-4 align-top">Менять порядок на «сначала имя», потому что так привычнее</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top">Один пробел между частями имени</td>
+              <td class="px-6 py-4 align-top">Лишние пробелы, самовольно добавленные дефисы или запятые</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top">Полное имя, как напечатано</td>
+              <td class="px-6 py-4 align-top">Обращения вроде Mr / Mrs / Miss / Dr. — они не нужны</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-12">Если напечатанное имя длиннее, чем позволяет поле (64 символа), введи с начала столько, сколько входит. Расхождение даже в один символ — самая частая причина, по которой автоматическая проверка не проходит.</p>
+
+      <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-12 not-prose">
+        <p class="text-gray-900 font-bold mb-3">🔑 Два правила, которые удивляют людей</p>
+        <ul class="space-y-2 text-gray-700">
+          <li><strong>Билеты по реальному имени:</strong> каждый человек может купить только один билет на один временной интервал. Например, если у тебя уже есть билет на 10:00–12:00 в какой-то день, попытка купить ещё один на 11:00–13:00 не пройдёт.</li>
+          <li><strong>Это электронный билет:</strong> твой паспорт <em>и есть</em> билет. Подтверждение поездки для отчётности можно распечатать в автомате на вокзале, но эта бумажка <strong>не</strong> действительна для посадки — бери паспорт.</li>
+        </ul>
+      </div>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="station" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🚉</span> На вокзале — шаг за шагом
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">Приезжай за 30–40 минут до отправления. Вот что будет происходить, по порядку:</p>
+
+      <div class="space-y-8 mb-12">
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🛂 Досмотр</h4>
+          <p class="text-base leading-relaxed text-gray-700">Каждая сумка проходит через рентген. Похоже на досмотр в аэропорту, но быстрее: жидкости, ноутбуки и повербанки доставать не нужно. Занимает около 2–3 минут, если вокзал не перегружен.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">📺 Зал ожидания</h4>
+          <p class="text-base leading-relaxed text-gray-700">Найди номер выхода на большом табло отправления. На всех крупных вокзалах номера выходов указаны по-китайски и по-английски, плюс статус поезда («По расписанию», «Посадка», «Прибыл»).</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🎫 Выход на посадку</h4>
+          <p class="text-base leading-relaxed text-gray-700">Обычные автоматические турникеты читают только китайские удостоверения. Как обладателю иностранного паспорта тебе нужен проход с ручной проверкой — обычно самый левый или самый правый в ряду турникетов, обозначенный «人工通道» (ручной проход). Проверка начинается примерно за 15 минут до отправления. Отдай паспорт сотруднику: его отсканируют и пропустят тебя примерно за 10 секунд.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚃 Найди свой вагон</h4>
+          <p class="text-base leading-relaxed text-gray-700">На платформе ищи цветные метки на полу. У каждого номера вагона своя цветная точка, а большой экран у лестницы показывает цветовой код твоего поезда. Совмести цвет с меткой на полу, чтобы знать, где стоять: поезда останавливаются так, что конкретные двери оказываются в конкретных местах.</p>
+        </div>
+      </div>
+
+      <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-12 not-prose">
+        <p class="text-gray-700 leading-relaxed"><strong>Твой паспорт — это твой билет.</strong> Держи его в руке с момента входа на вокзал и до того, как сядешь. Ты покажешь его минимум дважды — на досмотре и у выхода на посадку. На некоторых маршрутах после отправления по вагону проходит сотрудник для выборочной проверки паспортов.</p>
+      </div>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="changes" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">✏️</span> Изменение или отмена билета
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">Правила одинаковы, бронировал ты через Trip.com или через 12306:</p>
+
+      <ul class="space-y-3 mb-12 text-gray-700">
+        <li><strong>Изменение (改签):</strong> переход на другой поезд в тот же день — бесплатно, если сделано более чем за 48 часов. Перенос на другую дату стоит 5%–40% в зависимости от того, насколько близко новая дата к исходной. Оформляется через англоязычный сайт/приложение 12306 или в любой кассе вокзала.</li>
+        <li><strong>Возврат:</strong> те же каналы. Бесплатно более чем за 8 дней до отправления; 5% — от 48 ч до 8 дней; 10% — от 24 до 48 ч; 20% — менее чем за 24 ч.</li>
+        <li><strong>Неявка:</strong> опоздал на поезд и не успел изменить или отменить билет — стоимость сгорает полностью. Льготного периода нет.</li>
       </ul>
 
-      <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 not-prose">
-        <p class="text-gray-700"><strong>Важно:</strong> Твой паспорт — это и есть билет. Держи его под рукой: понадобится на входе в вокзал, на турникете и иногда в самом поезде. Не убирай его в чемодан.</p>
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="bring" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🧳</span> Что можно и нельзя провозить
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">Эти правила основаны на <em>Перечне запрещённых и ограниченных к провозу предметов для пассажиров железной дороги</em> (《铁路旅客禁止、限制携带和托运物品目录》) — официальном документе China Railway.</p>
+
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm mb-8 not-prose">
+        <table class="w-full text-left">
+          <thead class="bg-gray-900 text-white">
+            <tr>
+              <th class="px-6 py-4 font-semibold">Предмет</th>
+              <th class="px-6 py-4 font-semibold">Лимит</th>
+              <th class="px-6 py-4 font-semibold">Примечания</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-100 text-gray-700">
+            <tr>
+              <td class="px-6 py-4 align-top font-medium">Повербанк</td>
+              <td class="px-6 py-4 align-top whitespace-nowrap">≤ 100Wh (≈ 27,000 mAh)</td>
+              <td class="px-6 py-4 align-top text-sm">Ёмкость должна быть чётко указана на корпусе</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top font-medium">Духи / косметические спреи</td>
+              <td class="px-6 py-4 align-top whitespace-nowrap">Один флакон ≤ 100ml</td>
+              <td class="px-6 py-4 align-top text-sm">Неаэрозольные, негорючие</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top font-medium">Аэрозоли (лак для волос, солнцезащитный спрей)</td>
+              <td class="px-6 py-4 align-top whitespace-nowrap">≤ 150ml каждый, ≤ 600ml всего</td>
+              <td class="px-6 py-4 align-top text-sm">Стандартные дорожные баллончики</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top font-medium">Лак для ногтей / жидкость для снятия</td>
+              <td class="px-6 py-4 align-top whitespace-nowrap">≤ 50 ml всего</td>
+              <td class="px-6 py-4 align-top text-sm">Бери только то, что нужно</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top font-medium">Зажигалка</td>
+              <td class="px-6 py-4 align-top whitespace-nowrap">≤ 2</td>
+              <td class="px-6 py-4 align-top text-sm">Обычные одноразовые зажигалки</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top font-medium">Алкоголь (заводские запечатанные бутылки)</td>
+              <td class="px-6 py-4 align-top whitespace-nowrap">≤ 3,000 ml, 24%–70%</td>
+              <td class="px-6 py-4 align-top text-sm">Заводская укупорка с понятной этикеткой; переливать нельзя</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top font-medium">Мелкие инструменты (ножницы, фруктовый нож)</td>
+              <td class="px-6 py-4 align-top whitespace-nowrap">Лезвие &lt; 60mm</td>
+              <td class="px-6 py-4 align-top text-sm">Лезвие 60mm и длиннее провозить нельзя вообще</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top font-medium">Удочка, штатив, зонт</td>
+              <td class="px-6 py-4 align-top whitespace-nowrap">В разложенном виде ≤ 130cm</td>
+              <td class="px-6 py-4 align-top text-sm">На высокоскоростных поездах сложи и упакуй как следует</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="text-lg font-semibold text-gray-900 mb-6">Предметы, которые нельзя провозить в поезде вообще:</p>
+
+      <div class="space-y-6 mb-12">
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚫 Огнестрельное оружие, боеприпасы и взрывчатка</h4>
+          <p class="text-base leading-relaxed text-gray-700">Любые, без исключений.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚫 Легковоспламеняющиеся жидкости</h4>
+          <p class="text-base leading-relaxed text-gray-700">Бензин, керосин и алкоголь крепостью выше 70%.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚫 Еда с саморазогревом</h4>
+          <p class="text-base leading-relaxed text-gray-700">Саморазогревающийся хот-пот, саморазогревающийся рис: пар может сработать на датчики дыма в высокоскоростном поезде. На этом попадается больше иностранных туристов, чем на чём-либо ещё; если найдут — могут конфисковать.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚫 Шарики, наполненные водородом</h4>
+          <p class="text-base leading-relaxed text-gray-700">Нельзя ни в поезде, ни на территории вокзала.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚫 Едкие и радиоактивные вещества, яды</h4>
+          <p class="text-base leading-relaxed text-gray-700">Включая сильные кислоты, щёлочи, отбеливатель в больших количествах и любые токсичные вещества.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚫 Ограниченные к обороту ножи с фиксатором лезвия</h4>
+          <p class="text-base leading-relaxed text-gray-700">Лезвие 60mm и длиннее с фиксирующим механизмом.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚫 Длинные лезвия 60mm и длиннее</h4>
+          <p class="text-base leading-relaxed text-gray-700">Кухонные ножи, строительные ножи, мачете — провозить нельзя вообще (лезвия короче 60mm в ручной клади разрешены).</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚫 Тупое оружие</h4>
+          <p class="text-base leading-relaxed text-gray-700">Бейсбольные биты, молотки, тяжёлые инструменты и всё, что можно использовать как оружие.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚫 Велосипеды и электросамокаты</h4>
+          <p class="text-base leading-relaxed text-gray-700">Только если полностью разобраны и упакованы в жёсткий багаж.</p>
+        </div>
       </div>
 
       <hr class="my-10 border-gray-200" />
 
-      <h2 id="related" class="text-2xl font-bold text-gray-900 mb-6 mt-12">📚 Похожие гайды</h2>
+      <h2 id="onboard" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🚄</span> В поезде — что ожидать
+      </h2>
 
-      <div class="space-y-4 not-prose">
-        <a href="/ru/transport/transport-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>Как передвигаться по Китаю</strong> — полный транспортный гайд</a>
-        <a href="/ru/transport/airport-to-city/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🛬 <strong>Из аэропорта в город</strong> — что делать после прилёта</a>
-        <a href="/ru/transport/didi/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚗 <strong>Как иностранцу пользоваться DiDi в Китае</strong> — настройка каршеринга</a>
-        <a href="/ru/transport/metro-bus/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚇 <strong>Метро и автобусы в крупных городах Китая</strong> — ориентируемся в городе</a>
+      <div class="space-y-8 mb-12">
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">💺 Места</h4>
+          <p class="text-base leading-relaxed text-gray-700">Второй класс — это схема 3+2, как премиум-эконом в самолёте: нормально для большинства людей ростом до примерно 185cm. Первый класс — 2+2, места шире и больше места для ног: стоит того, если ехать больше 3 часов. Бизнес-класс — 2+1 с полностью раскладывающимися креслами.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🔌 Розетки</h4>
+          <p class="text-base leading-relaxed text-gray-700">На большинстве поездов серии G (300–350 km/h) под сиденьями есть китайские розетки с двумя штырьками. На некоторых более старых поездах серии D (200–250 km/h) розеток у каждого сиденья может не быть — возьми <a href="/ru/life/packing-guide/" class="text-blue-600 hover:underline">повербанк на всякий случай</a>.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🍜 Еда и напитки</h4>
+          <p class="text-base leading-relaxed text-gray-700">Тележка проезжает один-два раза, продавая боксы с едой (около ¥40 / $5.50), снеки, лапшу быстрого приготовления и напитки. Кофе растворимый. На длинных маршрутах есть вагон-ресторан с чуть большим выбором.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚻 Туалеты</h4>
+          <p class="text-base leading-relaxed text-gray-700">В обоих концах каждого вагона. Чистота зависит от маршрута и времени суток: в начале поездки обычно чисто, к середине — меньше. Возьми с собой антисептик для рук и туалетную бумагу.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">📢 Объявления</h4>
+          <p class="text-base leading-relaxed text-gray-700">Названия станций по-китайски и по-английски. Над дверьми на табло — следующая остановка, текущая скорость и температура за бортом. Английскую озвучку иногда трудно разобрать, так что смотри и на табло.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🌡️ Температура</h4>
+          <p class="text-base leading-relaxed text-gray-700">Кондиционер держит около 22–24°C круглый год. Даже в июле стоит взять лёгкую куртку или кофту с длинным рукавом.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🧳 Багаж</h4>
+          <p class="text-base leading-relaxed text-gray-700">На верхние полки влезает ручная кладь. Крупные чемоданы (24"+) ставь на полку в конце вагона или под сиденье. Следи за вещами в конце вагона на промежуточных остановках.</p>
+        </div>
       </div>
+
+          <div class="border-t border-gray-100 pt-6 mt-8">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5 not-prose">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h3 class="text-sm font-bold text-gray-900">📚 Читай дальше</h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="/ru/transport/transport-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🚄 Как передвигаться по Китаю
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ru/transport/didi/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🚗 Как пользоваться DiDi в Китае
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ru/transport/flights-vs-rail/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              ✈️ Самолёт или высокоскоростной поезд
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ru/payment/payment-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              💳 Как платить в Китае
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ru/life/sim-card-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              📱 Оставайся на связи (SIM &amp; eSIM)
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     </div>
 
+        <!-- Sources -->
     <div class="not-prose mt-12 pt-8 border-t border-gray-200">
-  <h3 class="text-base font-bold text-gray-900 mb-4 flex items-center gap-2">📚 Источники</h3>
-  <ul class="space-y-2">
-    <li>
-      <a href="https://www.12306.cn/en/index.html" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
-        <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>
-        China Railway Official — 12306 EN
-        <svg class="w-3 h-3 text-gray-300 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-      </a>
-    </li>
-  </ul>
-</div>
+      <h3 class="text-base font-bold text-gray-900 mb-4 flex items-center gap-2">
+        <span class="text-lg">📚</span> Источники
+      </h3>
+      <ul class="space-y-2">
+        <li>
+          <a href="https://www.12306.cn/en/index.html" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+            <span class="border-b border-transparent group-hover:border-brand-700">China Railway 12306 — Официальный англоязычный сайт (бронирование, проверка иностранных паспортов, правила изменения и возврата)</span>
+            <svg class="w-3 h-3 text-gray-300 ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.12306.cn/en/faq.html" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+            <span class="border-b border-transparent group-hover:border-brand-700">China Railway 12306 — Англоязычный FAQ (билеты по реальному имени, электронные билеты, принимаемые документы)</span>
+            <svg class="w-3 h-3 text-gray-300 ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.12306.cn/mormhweb/zxdt/202311/t20231127_40375.html" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+            <span class="border-b border-transparent group-hover:border-brand-700">China Railway 12306 — Уведомление о проверке личности по иностранным паспортам (27 ноября 2023 г.)</span>
+            <svg class="w-3 h-3 text-gray-300 ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://kyfw.12306.cn/otn/gonggao/saleTicketMeans.html" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+            <span class="border-b border-transparent group-hover:border-brand-700">China Railway 12306 — Правила проверки личности при онлайн-покупке билетов</span>
+            <svg class="w-3 h-3 text-gray-300 ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://mobile.12306.cn/otsmobile/h5/otsbussiness/passportInstruction/passport-entry-instructions.html" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+            <span class="border-b border-transparent group-hover:border-brand-700">12306 — Инструкция по вводу имени с паспорта (латиница, порядок, один пробел, без обращений, лимит 64 символа)</span>
+            <svg class="w-3 h-3 text-gray-300 ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.12306.cn/mormhweb/zxdt/202206/t20220617_37625.html" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+            <span class="border-b border-transparent group-hover:border-brand-700">China Railway — Перечень запрещённых и ограниченных к провозу предметов (официальный документ)</span>
+            <svg class="w-3 h-3 text-gray-300 ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.enghunan.gov.cn/hneng/Services/Live/Transportation/RailwayStations/index.html" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+            <span class="border-b border-transparent group-hover:border-brand-700">Правительство провинции Хунань — Англоязычный гайд по покупке билетов на поезд для иностранцев</span>
+            <svg class="w-3 h-3 text-gray-300 ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </li>
+      </ul>
+    </div>
   </article>
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "HowTo", "name": "Как купить билет и поехать на скоростном поезде в Китае: пошаговая инструкция", "step": [{"@type": "HowToStep", "name": "Досмотр:", "text": "Багаж проходит через рентген (как в аэропорту, но быстрее)."}, {"@type": "HowToStep", "name": "Зал ожидания:", "text": "Найди на большом табло номер выхода к твоему поезду. Следуй за указателями."}, {"@type": "HowToStep", "name": "Посадка:", "text": "Предъяви паспорт на турникете. Используй дальний ручной проход, затем спускайся на платформу."}, {"@type": "HowToStep", "name": "Найди свой вагон:", "text": "Посмотри на экраны у лестницы на платформу — там указан цветовой код твоего поезда. Совмести его с цветными маркерами на полу платформы, чтобы найти свой вагон."}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "HowTo", "name": "Как забронировать и проехать на высокоскоростном поезде Китая: пошаговый гайд", "step": [{"@type": "HowToStep", "name": "Забронируй билет", "text": "Бронируй на Trip.com (удобно для иностранных карт) или на официальном англоязычном сайте 12306 по загранпаспорту. Китайский ID и китайский номер телефона не требуются."}, {"@type": "HowToStep", "name": "Подтверди паспорт (только 12306)", "text": "На 12306 зарегистрируйся, добавь себя как пассажира и пройди разовую проверку личности — автоматически, загрузив фото паспорта, или в кассе вокзала."}, {"@type": "HowToStep", "name": "Приезжай заранее", "text": "Будь на вокзале за 30–40 минут до отправления."}, {"@type": "HowToStep", "name": "Пройди досмотр", "text": "Пропусти сумки через рентген. Жидкости и ноутбуки доставать не нужно."}, {"@type": "HowToStep", "name": "Покажи паспорт у выхода на посадку", "text": "Используй проход с ручной проверкой (крайний слева или справа в ряду турникетов). Отдай паспорт сотруднику — автоматические турникеты читают только китайские удостоверения."}, {"@type": "HowToStep", "name": "Найди свой вагон и садись", "text": "Совмести цветовой код на табло платформы с метками на полу, садись в поезд и держи паспорт под рукой для проверки в пути."}]}</script>
 </Layout>

@@ -1,0 +1,310 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'Vuelos domésticos vs tren de alta velocidad en China: ¿cuál deberías elegir?';
+const description = '¿Tren o avión para tu viaje a China? Una comparación honesta y basada en datos — además del truco del tren nocturno que te ahorra una noche entera de hotel.';
+---
+
+<Layout title={title} description={description} lang="es">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <nav class="mb-8 not-prose">
+      <a href="/es/transport/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Volver a Transporte
+      </a>
+    </nav>
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🚄 Transporte</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
+        Vuelos domésticos vs tren de alta velocidad en China: ¿cuál deberías elegir?
+      </h1>
+      <p class="text-xl text-gray-600 mb-6">¿Tren o avión para tu viaje a China? Aquí tienes la respuesta honesta y basada en datos — además del truco del tren nocturno que te ahorra una noche entera de hotel.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Última actualización: agosto 2026</span>
+        <span>⏱️ 9 min de lectura</span>
+      </div>
+    </header>
+
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-blue-900 mb-4">🎯 Respuesta rápida</h2>
+      <p class="text-lg text-blue-800 leading-relaxed">
+        Si el viaje en tren dura menos de 4,5 horas, <strong>toma el tren</strong>. Llegarás casi igual de rápido si cuentas el trasiego del aeropuerto, el precio no te va a dar sustos y te ahorras la "tasa" de llegar dos horas antes al aeropuerto. Los aviones solo salen ganando en las rutas largas — Pekín a Chengdu, Shanghái a Kunming — o cuando pillas una tarifa de última hora realmente barata. El caso clásico es Pekín–Shanghái: 4,5 horas en tren frente a unas 5,5 horas de puerta a puerta en avión, por aproximadamente el mismo dinero o menos. Y si tu presupuesto es más ajustado que tu agenda, hay una tercera opción que la mayoría de las guías omiten por completo: el tren cama nocturno, que de paso te ahorra la diferencia de tarifa <em>y</em> una noche de hotel. Más sobre esto más abajo.
+      </p>
+    </div>
+
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 En esta guía</h3>
+      <ul class="space-y-3">
+        <li><a href="#beijing-shanghai" class="text-blue-600 hover:underline">🚄 ¿Tren o avión en Pekín–Shanghái?</a></li>
+        <li><a href="#three-rules" class="text-blue-600 hover:underline">🧭 ¿Cómo decides? Tres reglas prácticas</a></li>
+        <li><a href="#when-fly" class="text-blue-600 hover:underline">✈️ ¿Cuándo tiene sentido volar?</a></li>
+        <li><a href="#hidden-cost" class="text-blue-600 hover:underline">💸 El coste oculto de volar</a></li>
+        <li><a href="#when-train" class="text-blue-600 hover:underline">🚆 ¿Cuándo deberías simplemente tomar el tren?</a></li>
+        <li><a href="#overnight-sleeper" class="text-blue-600 hover:underline">🛏️ ¿Quieres ahorrar? Toma un tren cama nocturno</a></li>
+      </ul>
+    </nav>
+
+    <div class="prose prose-gray max-w-none">
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">Aquí no necesitas un tutorial de reserva — para eso, consulta la <a href="/es/transport/high-speed-rail/" class="text-blue-600 hover:underline">guía del tren de alta velocidad</a> y la <a href="/es/transport/transport-guide/" class="text-blue-600 hover:underline">guía de transporte</a>. Lo que realmente necesitas es una respuesta: <em>para este viaje, ¿tren o avión?</em> Es lo primero que pregunta casi todo viajero primerizo, y la respuesta honesta es "depende — pero normalmente el tren".</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="beijing-shanghai" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🚄</span> ¿Tren o avión en Pekín–Shanghái? ¿Cuál gana de verdad?
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">El corredor más transitado del país lo demuestra todo por ti:</p>
+
+      <div class="overflow-x-auto mb-12 not-prose">
+        <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+          <thead>
+            <tr class="bg-gray-900 text-white">
+              <th class="px-6 py-4 font-bold">Factor</th>
+              <th class="px-6 py-4 font-bold">Tren de alta velocidad</th>
+              <th class="px-6 py-4 font-bold">Avión</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-100 text-gray-700">
+            <tr>
+              <td class="px-6 py-4 font-semibold">Tiempo de viaje</td>
+              <td class="px-6 py-4">4h28m–6h (trenes G más rápidos)</td>
+              <td class="px-6 py-4">~2h15m en el aire</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="px-6 py-4 font-semibold">Puerta a puerta</td>
+              <td class="px-6 py-4">~5h (la estación está en el centro de ambas ciudades)</td>
+              <td class="px-6 py-4">~5,5–6h (aeropuerto + 2h de antelación)</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 font-semibold">Precio (2.ª clase / turista)</td>
+              <td class="px-6 py-4">¥596–667, estable todo el año</td>
+              <td class="px-6 py-4">¥400–1,200, volátil; se duplica en fiestas</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="px-6 py-4 font-semibold">Ventana de reserva</td>
+              <td class="px-6 py-4">15 días de antelación; se agota en fiestas, por lo demás suele haber disponibilidad</td>
+              <td class="px-6 py-4">Hasta la salida</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 font-semibold">Nivel de complicación</td>
+              <td class="px-6 py-4">Bajo — el control de seguridad en horas valle tarda menos de 30 min</td>
+              <td class="px-6 py-4">Alto — 2h de antelación, tasas de equipaje en las aerolíneas low cost</td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="px-6 py-4 font-semibold">Fiabilidad</td>
+              <td class="px-6 py-4">Muy alta — los trenes casi nunca se cancelan</td>
+              <td class="px-6 py-4">Los retrasos por clima son habituales</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="three-rules" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🧭</span> ¿Cómo decides? Tres reglas prácticas
+      </h2>
+
+      <div class="space-y-8 mb-12">
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">1️⃣ Menos de 4,5 horas por ferrocarril → simplemente toma el tren</h4>
+          <p class="text-base leading-relaxed text-gray-700">Pekín–Shanghái (4,5h), Pekín–Xi'an (4,5h), Shanghái–Hangzhou (45 min — apenas merece la palabra "viaje"), Chengdu–Chongqing (1h). No hay debate real.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">2️⃣ Entre 4,5 y 6 horas → haz una pausa y compara</h4>
+          <p class="text-base leading-relaxed text-gray-700">Pekín–Wuhan cae justo aquí. El tren suele seguir ganando en tiempo total, pero echa un vistazo a ambas opciones — de vez en cuando un vuelo le gana por poco.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">3️⃣ Más de 6 horas por ferrocarril → el avión se gana el sueldo</h4>
+          <p class="text-base leading-relaxed text-gray-700">Pekín–Chengdu (7,5h en tren vs 3h en avión), Pekín–Cantón (8h en tren), Shanghái–Kunming (11h en tren). En ese punto el avión te devuelve medio día que preferirías dedicar a otra cosa.</p>
+        </div>
+      </div>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="when-fly" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">✈️</span> ¿Cuándo tiene sentido volar de verdad?
+      </h2>
+
+      <div class="space-y-8 mb-12">
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🌏 Los trayectos realmente largos</h4>
+          <p class="text-base leading-relaxed text-gray-700">Pekín–Urumqi (más de 12h por ferrocarril) o Shanghái–Kunming — un día entero en el tren simplemente no merece la pena.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">💰 Te cae encima una tarifa de última hora barata</h4>
+          <p class="text-base leading-relaxed text-gray-700">En rutas con varias aerolíneas (Pekín–Shanghái, Pekín–Cantón), la clase turista en horas valle puede bajar a ¥400–500, quedando discretamente por debajo de la segunda clase del tren.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🔗 Estás enlazando con una conexión internacional</h4>
+          <p class="text-base leading-relaxed text-gray-700">Volar a la ciudad hub para coger tu vuelo de salida suele tener más sentido que una larga tirada en tren antes.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">✈️ Quieres una ruta directa</h4>
+          <p class="text-base leading-relaxed text-gray-700">Los trenes llegan a la mayoría de las ciudades, pero a veces solo tras un transbordo o una larga tirada en K/T/Z. Si hay un vuelo sin escalas y la opción ferroviaria implica cambiar de tren a mitad de camino, el avión gana por pura cordura.</p>
+        </div>
+      </div>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="hidden-cost" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">💸</span> El coste oculto de volar (léelo antes de reservar)
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">Un billete de avión barato puede engañarte — el billete no es todo el precio. Tres cosas se acumulan en silencio:</p>
+
+      <div class="space-y-8 mb-12">
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚇 Los aeropuertos están lejos, incluso cuando tienen metro</h4>
+          <p class="text-base leading-relaxed text-gray-700">La mayoría de los aeropuertos de las grandes ciudades tienen ahora conexión ferroviaria (el express del aeropuerto de la Capital de Pekín cuesta ¥25, el de Pudong en Shanghái está en la línea 2 del metro además del maglev, y Cantón y Chengdu están en las líneas 3 y 18) — pero una línea de metro no acerca el aeropuerto. Sigue estando en las afueras de la ciudad: ¥25–50 y 40–70 minutos por trayecto, frente a una estación de tren en el centro, accesible por ¥3–6 en 20–30 minutos. Y en las ciudades de segunda y tercera línea, el aeropuerto a menudo no tiene conexión ferroviaria alguna — te toca un taxi o un traslado.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🧳 Comprueba si tu tarifa incluye equipaje facturado gratis</h4>
+          <p class="text-base leading-relaxed text-gray-700">No son solo las low cost (Spring Airlines, West Air, 9 Air, Lucky Air, China United) — aerolíneas de servicio completo como Juneyao, China Eastern y China Southern también venden tarifas promocionales sin equipaje facturado. Lee las condiciones de la tarifa antes de hacer clic; un "ahorro" de ¥50 puede evaporarse en una tasa de equipaje de ¥150.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">⏰ Los retrasos ocurren y se acumulan</h4>
+          <p class="text-base leading-relaxed text-gray-700">Las tormentas de verano y la niebla invernal apilan regularmente retrasos de 2–4 horas en las rutas domésticas. Un vuelo retrasado no solo te come la tarde — puede hacer que pierdas el último metro o tu conexión.</p>
+        </div>
+      </div>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-12">Súmalo todo antes de comparar: billete + traslado al aeropuerto + equipaje + riesgo de retraso. La mitad de las veces el tren nunca fue más caro — las cuentas solo lo parecían.</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="when-train" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🚆</span> ¿Cuándo deberías simplemente tomar el tren?
+      </h2>
+
+      <div class="space-y-8 mb-12">
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🏙️ Vas de centro a centro</h4>
+          <p class="text-base leading-relaxed text-gray-700">Los aeropuertos chinos están a 30–60 minutos de la ciudad; las estaciones de tren suelen estar justo en el centro. En Pekín–Shanghái, la estación de tren está a dos paradas de metro de la Ciudad Prohibida; el aeropuerto está a 50 minutos en el express.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🌧️ El tiempo se pone dramático</h4>
+          <p class="text-base leading-relaxed text-gray-700">La niebla invernal en Chengdu, la temporada de tifones en el sur — los trenes siguen funcionando cuando los aviones no.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🧳 Llevas maletas grandes</h4>
+          <p class="text-base leading-relaxed text-gray-700">Sin tasas de equipaje, sin olimpiadas del compartimento superior, solo estanterías al final de cada vagón.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">👨‍👩‍👧 Viajas con niños o familiares mayores</h4>
+          <p class="text-base leading-relaxed text-gray-700">Asientos más anchos, embarque más fácil y puedes caminar siempre que alguien necesite estirar las piernas.</p>
+        </div>
+      </div>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="overnight-sleeper" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🛏️</span> ¿Quieres ahorrar dinero? Toma un tren cama nocturno
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">Todo lo anterior ha tratado de llegar <em>rápido</em>. Pero si el presupuesto manda, hay una tercera opción que rara vez aparece en los consejos habituales: el tren cama nocturno en un tren clásico con literas.</p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">La misma idea que un vuelo nocturno, salvo que los trenes cama chinos son lo bastante baratos como para que las cuentas funcionen de verdad. Y no le des demasiadas vueltas a la letra: las tarifas de las literas de clase Z, T y K dependen todas de la distancia, así que en la misma ruta la litera dura cuesta casi lo mismo sea cual sea la letra — la diferencia real es el tiempo (la clase Z es la más rápida, luego la T, luego la K, aproximadamente 12–16 horas en el nocturno de Pekín–Shanghái). Así que la regla práctica es simple: entre las salidas nocturnas, toma el <strong>más rápido que salga por la tarde y llegue por la mañana</strong>. Subes, duermes y te despiertas en otra ciudad — habiendo ahorrado no solo en el propio billete sino en una noche de hotel que ya no necesitas. Una transacción, dos ahorros.</p>
+
+      <div class="space-y-8 mb-12">
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🛏️ Litera dura (硬卧) — la opción económica</h4>
+          <p class="text-base leading-relaxed text-gray-700">Compartimentos abiertos de seis literas, colchón firme, sin puerta y muchos ronquidos. En los nocturnos Z/T/K ronda los ¥400–500 — quedando por debajo de la segunda clase del tren <em>y</em> de una habitación de hotel a la vez. Esta es la que hace que las cuentas del mochilero cuadren de verdad.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🛋️ Litera blanda (软卧) — la mejora en comodidad</h4>
+          <p class="text-base leading-relaxed text-gray-700">Cuatro literas tras una puerta con cerradura, mejores almohadas y muchas menos molestias. Pero el precio sube rápido y en algunas rutas una litera blanda cuesta casi lo mismo que un billete de avión — así que consulta la tarifa antes de romantizarla. Es comodidad, no ahorro.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚄 Literas en tren bala (动卧)</h4>
+          <p class="text-base leading-relaxed text-gray-700">Algunos trenes D nocturnos funcionan con literas de verdad, así que mantienes el tren más nuevo y suave y aun así tienes cama, normalmente a un precio entre la litera dura y la blanda.</p>
+        </div>
+      </div>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-4">Unos cuantos consejos prácticos de mis propios viajes nocturnos:</p>
+
+      <div class="space-y-8 mb-12">
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">1️⃣ ¿Presupuesto ajustado? Elige la litera dura — y escoge tu litera con criterio</h4>
+          <p class="text-base leading-relaxed text-gray-700">La diferencia de precio entre las literas superior, media e inferior es de unos 15 yuanes por nivel, siendo la litera inferior la más cara y la más demandada. Si quieres sentarte en la cama, elige la litera inferior — ofrece más espacio, así que puedes apoyarte en la ventanilla cuando no duermes, y hay una pequeña mesa junto a la cama para comer. Sin embargo, la litera inferior es más propensa a los olores de los zapatos y del baño. Si valoras la limpieza, no quieres que desconocidos se sienten en tu cama o prefieres un ambiente más tranquilo, elige la litera media o la superior. La litera media ofrece más espacio que la superior, pero ninguna permite sentarse erguido directamente en la cama. No obstante, si eliges la superior o la media, no te preocupes: hay sillas plegables y mesas a lo largo del pasillo que puedes usar libremente.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">2️⃣ ¿Comodidad primero? Ve a por la litera blanda</h4>
+          <p class="text-base leading-relaxed text-gray-700">Cada compartimento de litera blanda tiene solo cuatro literas, con más espacio y un entorno más silencioso y cómodo. Las literas blandas cuestan unos 200 yuanes más que las duras.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">3️⃣ Lleva tapones, antifaz y zapatillas</h4>
+          <p class="text-base leading-relaxed text-gray-700">Los tapones y el antifaz son innegociables, porque el vagón nunca queda completamente a oscuras. También recomiendo llevar artículos de aseo y zapatillas en el equipaje de mano: harán que tu viaje nocturno sea más cómodo e higiénico.</p>
+        </div>
+      </div>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-12">¿Cuándo tiene sentido de verdad? Busca rutas con un <strong>trayecto nocturno de 10–15 horas</strong> en un tren de clase Z o T — Pekín–Shanghái, Pekín–Xi'an, Shanghái–Cantón. Más corto que eso, y un tren diurno te lleva igualmente a tiempo de cenar; más largo, y pierdes un día entero de todos modos, momento en el que el vuelo vuelve a parecer la opción sensata. Y cuando en la misma ruta existen dos opciones nocturnas, simplemente toma la más rápida — la tarifa es casi idéntica en ambos casos.</p>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="booking" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🎫</span> Dónde reservar billetes de tren y avión
+      </h2>
+
+      <div class="space-y-8 mb-12">
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚄 Trenes</h4>
+          <p class="text-base leading-relaxed text-gray-700">Trip.com (en inglés, con pequeña comisión) o la aplicación oficial de 12306. Los billetes salen a la venta 15 días antes y los buenos huecos se agotan rápido — las literas incluidas; se reservan igual, solo busca la ruta y filtra por "cama". Consulta nuestra <a href="/es/transport/high-speed-rail/" class="text-blue-600 hover:underline">guía del tren de alta velocidad</a> para el tutorial completo.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">✈️ Vuelos</h4>
+          <p class="text-base leading-relaxed text-gray-700">Trip.com es el punto de partida fácil — busca tus fechas, paga con tarjeta extranjera en un proceso de compra en inglés y las condiciones de la tarifa (incluido si el equipaje está incluido) se muestran antes de pagar. <a href="https://www.trip.com/t/yxIuEHgWsV2" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Busca vuelos en Trip.com</a></p>
+        </div>
+      </div>
+
+      <p class="mb-12">
+        <a href="https://www.trip.com/t/yxIuEHgWsV2" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition no-underline text-base">
+          ✈️ Busca vuelos en Trip.com →
+        </a>
+      </p>
+
+      <div class="border-t border-gray-100 pt-6 mt-8">
+        <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5 not-prose">
+          <div class="flex items-center justify-between gap-4 flex-wrap">
+            <h3 class="text-sm font-bold text-gray-900">📚 Próximas lecturas</h3>
+            <div class="flex flex-wrap gap-2">
+              <a href="/es/transport/high-speed-rail/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                🚄 Cómo reservar el tren de alta velocidad de China
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/es/transport/transport-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                🚆 Cómo moverse por China
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/es/transport/didi/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                🚕 Cómo usar DiDi
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/es/payment/china-travel-budget/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                💳 Coste del viaje a China 2026
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sources -->
+    <div class="not-prose mt-12 pt-8 border-t border-gray-200">
+      <h3 class="text-base font-bold text-gray-900 mb-4 flex items-center gap-2">
+        <span class="text-lg">📚</span> Fuentes
+      </h3>
+      <ul class="space-y-2">
+        <li>
+          <a href="https://www.12306.cn/en/index.html" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+            <span class="border-b border-transparent group-hover:border-brand-700">China Railway 12306 — sitio oficial en inglés (tarifas y horarios)</span>
+            <svg class="w-3 h-3 text-gray-300 ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </article>
+</Layout>

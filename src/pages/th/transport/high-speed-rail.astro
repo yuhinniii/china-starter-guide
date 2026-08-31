@@ -1,7 +1,7 @@
 ---
 import Layout from '@layouts/Layout.astro';
 const title = 'วิธีจองและนั่งรถไฟความเร็วสูงในจีน: คู่มือทีละขั้นตอน';
-const description = 'คู่มือการจองตั๋ว การเดินทางในสถานี และการนั่งรถไฟความเร็วสูงในจีนแบบทีละขั้นตอน';
+const description = 'จองตั๋วรถไฟความเร็วสูงในจีนด้วยพาสปอร์ตเพียงอย่างเดียว — Trip.com หรือเว็บไซต์ 12306 ภาษาอังกฤษอย่างเป็นทางการ คู่มือการจอง การใช้บริการที่สถานี และบนขบวนรถทีละขั้นตอน';
 ---
 
 <Layout title={title} description={description} lang="th">
@@ -19,17 +19,17 @@ const description = 'คู่มือการจองตั๋ว การ�
       <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
         วิธีจองและนั่งรถไฟความเร็วสูงในจีน
       </h1>
-      <p class="text-xl text-gray-600 mb-6">คู่มือการจองตั๋ว การเดินทางในสถานี และการนั่งรถไฟความเร็วสูงในจีนแบบทีละขั้นตอน</p>
+      <p class="text-xl text-gray-600 mb-6">จองตั๋วด้วยพาสปอร์ตเพียงอย่างเดียว หาทางในสถานี และนั่งรถไฟที่เร็วที่สุดของจีน — ทีละขั้นตอน</p>
       <div class="flex items-center gap-4 text-sm text-gray-500">
-        <span>📅 อัปเดตล่าสุด: มิถุนายน 2026</span>
-        <span>⏱️ 6 นาที</span>
+        <span>📅 อัปเดตล่าสุด: สิงหาคม 2026</span>
+        <span>⏱️ อ่าน 8 นาที</span>
       </div>
     </header>
 
     <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
       <h2 class="text-2xl font-bold text-blue-900 mb-4">🎯 คำตอบสั้นๆ</h2>
       <p class="text-lg text-blue-800 leading-relaxed">
-        จองตั๋วบน <strong>Trip.com</strong> (ง่ายที่สุดสำหรับชาวต่างชาติ) หรือ <strong>12306</strong> (ทางการ) ชั้นสองสบายพอใช้ได้ ถึงสถานีก่อนออกเดินทาง 30–40 นาที — <strong>พาสปอร์ตคือตั๋วของคุณ</strong> ดังนั้นเก็บไว้ให้พร้อม การขึ้นรถไฟราบรื่น: ตรวจความปลอดภัย → ห้องรอ → ประตูขึ้นรถ → ชานชาลา สถานีมีป้ายภาษาอังกฤษตลอด
+        คุณสามารถนั่งรถไฟความเร็วสูงของจีนได้ด้วย<strong>พาสปอร์ตเพียงอย่างเดียว</strong> — ไม่ต้องมีบัตรประชาชนจีน ไม่ต้องมีเบอร์โทรศัพท์จีน ไม่ต้องมีบัญชีธนาคารในประเทศ มีสองวิธีในการซื้อ: <a href="https://www.trip.com/t/nUumZWrKUV2" target="_blank" rel="noopener" class="text-blue-700 underline font-semibold">Trip.com</a> (จ่ายด้วย Visa หรือ Mastercard ไม่ต้องมีบัญชี 12306) หรือเว็บไซต์<strong>12306 ภาษาอังกฤษ</strong>อย่างเป็นทางการ ซึ่งพาสปอร์ตต่างชาติสามารถยืนยันตัวตนออนไลน์ได้ตั้งแต่ปลายปี 2023 ถึงสถานีก่อนเวลาออกเดินทาง 30–40 นาที พาสปอร์ตของคุณ <em>คือ</em> ตั๋วของคุณ: คุณต้องแสดงที่จุดตรวจความปลอดภัย ที่ประตูขึ้นรถ และบางครั้งบนขบวนรถ
       </p>
     </div>
 
@@ -37,90 +37,438 @@ const description = 'คู่มือการจองตั๋ว การ�
       <h3 class="text-lg font-bold text-gray-900 mb-4">📋 ในคู่มือนี้</h3>
       <ul class="space-y-3">
         <li><a href="#booking" class="text-blue-600 hover:underline">🎫 การจองตั๋ว</a></li>
-        <li><a href="#classes" class="text-blue-600 hover:underline">💺 ประเภทที่นั่ง</a></li>
+        <li><a href="#passport" class="text-blue-600 hover:underline">🛂 การซื้อบน 12306 ด้วยพาสปอร์ต</a></li>
         <li><a href="#station" class="text-blue-600 hover:underline">🚉 ที่สถานี</a></li>
-        <li><a href="#onboard" class="text-blue-600 hover:underline">🚄 เคล็ดลับบนรถไฟ</a></li>
+        <li><a href="#changes" class="text-blue-600 hover:underline">✏️ การเปลี่ยนหรือยกเลิก</a></li>
+        <li><a href="#bring" class="text-blue-600 hover:underline">🧳 สิ่งที่นำขึ้นรถได้และไม่ได้</a></li>
+        <li><a href="#onboard" class="text-blue-600 hover:underline">🚄 บนรถไฟ</a></li>
       </ul>
     </nav>
 
     <div class="prose prose-gray max-w-none">
 
-      <h2 id="booking" class="text-2xl font-bold text-gray-900 mb-4">🎫 การจองตั๋ว</h2>
+      <h2 id="booking" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🎫</span> วิธีจองตั๋วของคุณ
+      </h2>
 
-      <p class="text-lg leading-relaxed text-gray-700 mb-6">คุณมีสามตัวเลือก:</p>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">สามตัวเลือก ตั้งแต่ง่ายที่สุดไปจนถึงซับซ้อนที่สุด:</p>
 
-      <ul class="space-y-2 text-gray-700 mb-8">
-        <li><strong>Trip.com (แนะนำ):</strong> ดึงข้อมูลตั๋วจาก 12306 โดยตรง ไม่ต้องมีบัญชี 12306 แยกต่างหาก หลังจากจอง คุณสามารถขึ้นรถไฟด้วยพาสปอร์ตเพียงอย่างเดียว</li>
-        <li><strong>12306 (ทางการ):</strong> ช่องทางการขายอย่างเป็นทางการที่มีการปกป้องข้อมูลส่วนตัวที่ดีกว่า ชาวต่างชาติสามารถลงทะเบียนด้วยหมายเลขพาสปอร์ต</li>
-        <li><strong>เคาน์เตอร์ขายตั๋วที่สถานี:</strong> คุณสามารถซื้อตั๋วด้วยตนเองได้ แต่ไม่รับประกันว่ามีภาษาอังกฤษ</li>
-      </ul>
-
-      <p class="text-lg leading-relaxed text-gray-700 mb-6">สำหรับนักเดินทางส่วนใหญ่ Trip.com เป็นตัวเลือกที่ง่ายที่สุด ค่าธรรมเนียมการจองเล็กน้อยก็คุ้มค่ากับความสะดวกสบาย</p>
-
-      <hr class="my-10 border-gray-200" />
-
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">💺 ประเภทที่นั่ง</h2>
-
-      <ul class="space-y-2 text-gray-700 mb-8">
-        <li><strong>ชั้นสอง (二等座):</strong> ตัวเลือกมาตรฐาน ที่นั่งสบาย จัดแบบ 3+2 นี่คือสิ่งที่คนส่วนใหญ่เลือก</li>
-        <li><strong>ชั้นหนึ่ง (一等座):</strong> ที่นั่งกว้างขึ้น จัดแบบ 2+2 มีพื้นที่วางขามากกว่า คุ้มค่าที่จะอัปเกรดสำหรับการเดินทางเกิน 3 ชั่วโมง</li>
-        <li><strong>ชั้นธุรกิจ (商务座):</strong> ที่นั่งเอนได้เต็มที่ ความเป็นส่วนตัว มีอาหารฟรีในเส้นทางไกล แพงแต่เป็นประสบการณ์</li>
-      </ul>
-
-      <hr class="my-10 border-gray-200" />
-
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">🚉 ที่สถานี</h2>
-
-      <p class="text-lg leading-relaxed text-gray-700 mb-6">ถึงก่อนออกเดินทาง 30–40 นาที นี่คือขั้นตอน:</p>
-
-      <ol class="list-decimal pl-6 space-y-4 text-gray-700 mb-8">
-        <li><strong>ตรวจความปลอดภัย:</strong> กระเป๋าผ่านเครื่องเอ็กซ์เรย์ (เหมือนสนามบิน แต่เร็วกว่า)</li>
-        <li><strong>ห้องรอ:</strong> ตรวจสอบจอใหญ่เพื่อหาหมายเลขประตูขึ้นรถของขบวนคุณ เดินตามป้าย</li>
-        <li><strong>ขึ้นรถไฟ:</strong> แสดงพาสปอร์ตที่ประตูตั๋ว ใช้ช่องเคาน์เตอร์ manual ด้านไกล แล้วเดินลงไปที่ชานชาลา</li>
-        <li><strong>หาตู้โดยสารของคุณ:</strong> ตรวจสอบจอใกล้บันไดชานชาลาเพื่อหารหัสสีที่กำหนดให้กับขบวนรถของคุณ จับคู่สีนี้กับเครื่องหมายสีบนพื้นชานชาลาเพื่อหาตู้โดยสารที่ถูกต้อง</li>
+      <ol class="space-y-3 mb-12 list-decimal pl-6 text-gray-700">
+        <li><strong>Trip.com (แนะนำสำหรับนักเดินทางส่วนใหญ่)</strong> — ไม่มีค่าธรรมเนียมการจอง ดึงความพร้อมของตั๋วแบบเรียลไทม์จากระบบ 12306 โดยตรง และไม่ต้องมีบัญชี 12306 แยกต่างหาก คุณจองด้วยหมายเลขพาสปอร์ตและขึ้นรถด้วยพาสปอร์ตเล่มเดียวกัน จ่ายด้วย Visa, Mastercard หรือ Apple Pay</li>
+        <li><strong>12306 (ทางการ — เว็บไซต์/แอปภาษาอังกฤษ)</strong> — ช่องทางการขายของการรถไฟจีน ราคาเท่ากับ Trip.com เป๊ะ; ความต่างคือคุณซื้อตรงจากผู้ให้บริการ ไม่มีค่าธรรมเนียมการจอง และไม่มีคนกลางถือออเดอร์ของคุณ ชาวต่างชาติลงทะเบียนด้วยพาสปอร์ต ผ่านการตรวจยืนยันตัวตนครั้งเดียว จากนั้นจองได้ตามปกติ การชำระเงิน: บัตรธนาคารต่างประเทศ รวมถึง Alipay หรือ WeChat Pay หากคุณตั้งค่าไว้แล้ว รายละเอียดครบในหัวข้อถัดไป</li>
+        <li><strong>เคาน์เตอร์ขายตั๋วที่สถานี</strong> — เดินไปที่สถานีใดก็ได้ แจ้งพนักงานปลายทางและเวลาออกเดินทาง และนำพาสปอร์ต<em>ฉบับจริง</em>มาด้วย (รูปถ่ายใช้ไม่ได้) ราคาเท่ากับออนไลน์ ไม่รับประกันว่าทุกเคาน์เตอร์จะมีภาษาอังกฤษ แต่สถานีที่พลุกพล่านที่สุด (ปักกิ่งใต้ เซี่ยงไฮ้หงเฉียว กวางโจวใต้) เกือบจะมีคนที่พูดภาษาอังกฤษได้เสมอ</li>
       </ol>
 
+      <p class="mb-12">
+        <a href="https://www.trip.com/t/nUumZWrKUV2" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-3 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition no-underline text-base">
+          👉 จองตั๋วรถไฟบน Trip.com →
+        </a>
+      </p>
+
       <hr class="my-10 border-gray-200" />
 
-      <h2 class="text-2xl font-bold text-gray-900 mb-4">🚄 เคล็ดลับบนรถไฟ</h2>
+      <h2 id="passport" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🛂</span> การซื้อบน 12306 ด้วยพาสปอร์ต — ทีละขั้นตอน
+      </h2>
 
-      <ul class="space-y-2 text-gray-700 mb-8">
-        <li>มีอาหารและเครื่องดื่มขายบนรถเข็น</li>
-        <li>ปลั๊กไฟมีใต้ที่นั่งในบางขบวน (เต้ารับจีน — นำอะแดปเตอร์มาด้วย)</li>
-        <li>ม่านบังตาดึงลงได้เพื่อความสะดวกสบาย</li>
-        <li>ประกาศสถานีและบนรถไฟมีทั้งภาษาจีนและภาษาอังกฤษ</li>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">จนถึงปลายปี 2023 ชาวต่างชาติที่ถือพาสปอร์ตซึ่งต้องการซื้อตั๋วบน 12306 ต้องไปที่เคาน์เตอร์สถานีเพื่อยืนยันตัวตนก่อนเป็นหลัก การรถไฟจีนเปลี่ยนสิ่งนั้น: ตอนนี้สามารถตรวจสอบพาสปอร์ตออนไลน์ได้ทั้งในแอปและเว็บไซต์ การเปลี่ยนแปลงเพียงจุดเดียวนี้เองที่ทำให้การจองตรงเป็นไปได้จริงสำหรับการเดินทางระยะสั้น</p>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">เว็บไซต์ภาษาอังกฤษ (<a href="https://www.12306.cn/en/index.html" target="_blank" rel="noopener" class="text-blue-600 hover:underline">12306.cn/en</a>) เป็นส่วนติดต่อแยกต่างหากที่สร้างขึ้นสำหรับนักเดินทางชาวต่างชาติ — รับ<strong>เฉพาะพาสปอร์ตต่างประเทศ</strong> คุณจะไม่มีวันถูกถามเลขบัตรประชาชนจีน</p>
+
+      <div class="my-10 not-prose">
+        <svg viewBox="0 0 680 200" class="w-full h-auto" role="img" aria-label="ขั้นตอนการจองด้วยพาสปอร์ต: สมัครสมาชิก เพิ่มผู้โดยสาร ยืนยันตัวตน จองและชำระเงิน ขึ้นรถด้วยพาสปอร์ต">
+          <defs>
+            <marker id="hsrArrow" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto">
+              <path d="M0,0 L6,3 L0,6 Z" fill="#3b82f6"/>
+            </marker>
+          </defs>
+          <!-- connectors -->
+          <line x1="128" y1="70" x2="144" y2="70" stroke="#3b82f6" stroke-width="2" marker-end="url(#hsrArrow)"/>
+          <line x1="264" y1="70" x2="280" y2="70" stroke="#3b82f6" stroke-width="2" marker-end="url(#hsrArrow)"/>
+          <line x1="400" y1="70" x2="416" y2="70" stroke="#3b82f6" stroke-width="2" marker-end="url(#hsrArrow)"/>
+          <line x1="536" y1="70" x2="552" y2="70" stroke="#3b82f6" stroke-width="2" marker-end="url(#hsrArrow)"/>
+          <!-- node 1 -->
+          <rect x="10" y="40" width="118" height="120" rx="14" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+          <circle cx="69" cy="70" r="16" fill="#3b82f6"/>
+          <text x="69" y="75" text-anchor="middle" font-size="15" font-weight="bold" fill="#ffffff">1</text>
+          <text x="69" y="102" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e3a8a">สมัครสมาชิก</text>
+          <text x="69" y="120" text-anchor="middle" font-size="10" fill="#475569">12306.cn/en</text>
+          <text x="69" y="134" text-anchor="middle" font-size="10" fill="#475569">หรือในแอป</text>
+          <!-- node 2 -->
+          <rect x="146" y="40" width="118" height="120" rx="14" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+          <circle cx="205" cy="70" r="16" fill="#3b82f6"/>
+          <text x="205" y="75" text-anchor="middle" font-size="15" font-weight="bold" fill="#ffffff">2</text>
+          <text x="205" y="102" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e3a8a">เพิ่มผู้โดยสาร</text>
+          <text x="205" y="120" text-anchor="middle" font-size="10" fill="#475569">ชื่อ +</text>
+          <text x="205" y="134" text-anchor="middle" font-size="10" fill="#475569">เลขพาสปอร์ต</text>
+          <!-- node 3 -->
+          <rect x="282" y="40" width="118" height="120" rx="14" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+          <circle cx="341" cy="70" r="16" fill="#3b82f6"/>
+          <text x="341" y="75" text-anchor="middle" font-size="15" font-weight="bold" fill="#ffffff">3</text>
+          <text x="341" y="102" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e3a8a">ยืนยันตัวตน</text>
+          <text x="341" y="120" text-anchor="middle" font-size="10" fill="#475569">อัตโนมัติ อัปโหลด</text>
+          <text x="341" y="134" text-anchor="middle" font-size="10" fill="#475569">หรือเคาน์เตอร์</text>
+          <!-- node 4 -->
+          <rect x="418" y="40" width="118" height="120" rx="14" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+          <circle cx="477" cy="70" r="16" fill="#3b82f6"/>
+          <text x="477" y="75" text-anchor="middle" font-size="15" font-weight="bold" fill="#ffffff">4</text>
+          <text x="477" y="102" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e3a8a">จองและชำระเงิน</text>
+          <text x="477" y="120" text-anchor="middle" font-size="10" fill="#475569">เลือกรถไฟ</text>
+          <text x="477" y="134" text-anchor="middle" font-size="10" fill="#475569">จ่ายด้วยบัตร</text>
+          <!-- node 5 -->
+          <rect x="554" y="40" width="118" height="120" rx="14" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+          <circle cx="613" cy="70" r="16" fill="#3b82f6"/>
+          <text x="613" y="75" text-anchor="middle" font-size="15" font-weight="bold" fill="#ffffff">5</text>
+          <text x="613" y="102" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e3a8a">ขึ้นรถ</text>
+          <text x="613" y="120" text-anchor="middle" font-size="10" fill="#475569">แสดง</text>
+          <text x="613" y="134" text-anchor="middle" font-size="10" fill="#475569">พาสปอร์ต</text>
+        </svg>
+        <p class="text-sm text-gray-500 mt-3 text-center">พาสปอร์ตคือเอกสารประจำตัวเดียวที่คุณต้องใช้ — ตั้งแต่สร้างบัญชีจนถึงก้าวขึ้นชานชาลา</p>
+      </div>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">ห้าขั้นตอน:</p>
+
+      <div class="space-y-8 mb-12">
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">1️⃣ สมัครสมาชิก</h4>
+          <p class="text-base leading-relaxed text-gray-700">ไปที่ <a href="https://www.12306.cn/en/index.html" target="_blank" rel="noopener" class="text-blue-600 hover:underline">12306.cn/en</a> หรือดาวน์โหลดแอป 12306 แล้วเปลี่ยนภาษาเป็นภาษาอังกฤษ สมัครด้วยอีเมล ระหว่างการลงทะเบียนคุณสามารถสแกนพาสปอร์ตเพื่อกรอกข้อมูลอัตโนมัติ ซึ่งสะดวกกว่ามาก เราแนะนำให้ใช้แอป</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">2️⃣ เพิ่มตัวเองเป็นผู้โดยสาร</h4>
+          <p class="text-base leading-relaxed text-gray-700">เปิด "ผู้โดยสารของฉัน" แล้วกรอกชื่อและหมายเลขพาสปอร์ต ขั้นตอนนี้คือจุดที่การยืนยันส่วนใหญ่ล้มเหลว — อ่านกฎการกรอกชื่อด้านล่างก่อนจะพิมพ์อะไร</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">3️⃣ ยืนยันตัวตนของคุณ</h4>
+          <p class="text-base leading-relaxed text-gray-700">ระบบจะลองตรวจอัตโนมัติก่อน หากยืนยันตัวคุณไม่ได้ ให้อัปโหลดรูปหน้าข้อมูลพาสปอร์ตเพื่อตรวจสอบด้วยมือ — ปกติจะได้ผลภายในหนึ่งหรือสองวัน หากการตรวจสอบออนไลน์ยังไม่ผ่าน ให้ไปที่หน้าต่างจำหน่ายตั๋วของสถานีพร้อมพาสปอร์ตฉบับจริง พนักงานจะยืนยันตัวคุณทันทีภายในไม่กี่นาที</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">4️⃣ ค้นหา จอง ชำระเงิน</h4>
+          <p class="text-base leading-relaxed text-gray-700">เมื่อสถานะผู้โดยสารของคุณขึ้นว่า "ยืนยันแล้ว" เลือกวันที่ ขบวนรถ และชั้นที่นั่ง แล้วชำระด้วยบัตรต่างประเทศ เพิ่มเพื่อนร่วมเดินทางด้วยวิธีเดียวกัน — แต่ละคนต้องใช้รายละเอียดพาสปอร์ตของตนเองและการยืนยันตัวตนของตนเอง</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">5️⃣ ขึ้นรถด้วยพาสปอร์ตของคุณ</h4>
+          <p class="text-base leading-relaxed text-gray-700">ไม่มีตั๋วกระดาษให้ไปรับ ใช้ช่องทางขวาสุดสำหรับการตรวจด้วยมือ ยื่นพาสปอร์ตให้พนักงาน (ประตูอัตโนมัติอ่านได้เฉพาะบัตรประชาชนจีน) แล้วไปหาตู้โดยสารของคุณ</p>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-bold text-gray-900 mb-4">📝 กฎการกรอกชื่อที่กำหนดว่าการยืนยันจะผ่านหรือไม่</h3>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">กรอกชื่อให้<strong>ตรง</strong>กับที่พิมพ์บนหน้าข้อมูลแบบอ่านด้วยเครื่องของพาสปอร์ตทุกตัวอักษร:</p>
+
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm mb-8 not-prose">
+        <table class="w-full text-left">
+          <thead class="bg-gray-900 text-white">
+            <tr>
+              <th class="px-6 py-4 font-semibold">ทำ</th>
+              <th class="px-6 py-4 font-semibold">ไม่ทำ</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-100 text-gray-700">
+            <tr>
+              <td class="px-6 py-4 align-top">เฉพาะตัวอักษรละติน (A–Z)</td>
+              <td class="px-6 py-4 align-top">อักษรจีน เครื่องหมายเสริมเสียง หรืออักษรที่ไม่ใช่ละติน</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top">นามสกุลก่อน แล้วตามด้วยชื่อ ตามลำดับในพาสปอร์ต</td>
+              <td class="px-6 py-4 align-top">สลับเป็น "ชื่อขึ้นก่อน" เพราะดูเป็นธรรมชาติ</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top">เว้นวรรคหนึ่งครั้งระหว่างส่วนของชื่อ</td>
+              <td class="px-6 py-4 align-top">เว้นวรรคเกิน ยัติภังค์ที่คุณเติมเอง หรือเครื่องหมายจุลภาค</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top">ชื่อเต็มตามที่พิมพ์ไว้</td>
+              <td class="px-6 py-4 align-top">คำนำหน้าเช่น Mr / Mrs / Miss / Dr. — ไม่จำเป็น</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-12">หากชื่อที่พิมพ์ยาวเกินกว่าที่ช่องรับได้ (64 ตัวอักษร) ให้กรอกเท่าที่ใส่ได้ตั้งแต่ต้น ความไม่ตรงแม้เพียงหนึ่งตัวอักษรคือสาเหตุปกติที่ทำให้การตรวจอัตโนมัติตีกลับ</p>
+
+      <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-12 not-prose">
+        <p class="text-gray-900 font-bold mb-3">🔑 กฎสองข้อที่ทำให้คนแปลกใจ</p>
+        <ul class="space-y-2 text-gray-700">
+          <li><strong>ตั๋วระบุชื่อจริง:</strong> แต่ละคนซื้อได้เพียงหนึ่งใบต่อช่วงเวลา ตัวอย่างเช่น หากคุณถือตั๋วเวลา 10:00–12:00 ในวันใดวันหนึ่ง การพยายามซื้ออีกใบสำหรับ 11:00–13:00 จะล้มเหลว</li>
+          <li><strong>เป็นตั๋วอิเล็กทรอนิกส์:</strong> พาสปอร์ตของคุณ <em>คือ</em> ตั๋ว คุณสามารถพิมพ์สลิปกำหนดการเดินทางที่เครื่องในสถานีเพื่อใช้เป็นหลักฐานค่าใช้จ่ายได้ แต่สลิปนั้นใช้ขึ้นรถ<strong>ไม่ได้</strong> — ต้องนำพาสปอร์ตมา</li>
+        </ul>
+      </div>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="station" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🚉</span> ที่สถานี — ทีละขั้นตอน
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">ถึงก่อนออกเดินทาง 30–40 นาที นี่คือสิ่งที่เกิดขึ้นตามลำดับ:</p>
+
+      <div class="space-y-8 mb-12">
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🛂 การตรวจความปลอดภัย</h4>
+          <p class="text-base leading-relaxed text-gray-700">กระเป๋าทุกใบผ่านเครื่องเอ็กซ์เรย์ คล้ายการตรวจความปลอดภัยที่สนามบินแต่เร็วกว่า ไม่ต้องเอาของเหลว แล็ปท็อป หรือพาวเวอร์แบงก์ออก ใช้เวลาประมาณ 2–3 นาที เว้นแต่สถานีจะพลุกพล่านผิดปกติ</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">📺 ห้องรอ</h4>
+          <p class="text-base leading-relaxed text-gray-700">หาหมายเลขประตูขึ้นรถของคุณบนจอออกเดินทางขนาดใหญ่ สถานีหลักทุกแห่งแสดงหมายเลขประตูเป็นทั้งภาษาจีนและภาษาอังกฤษ พร้อมสถานะของขบวนรถ ("ตรงเวลา", "กำลังขึ้นรถ", "มาถึงแล้ว")</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🎫 ประตูตั๋ว</h4>
+          <p class="text-base leading-relaxed text-gray-700">ประตูอัตโนมัติทั่วไปอ่านได้เฉพาะบัตรประชาชนจีน ในฐานะผู้ถือพาสปอร์ตต่างประเทศ ให้มองหาช่องเคาน์เตอร์แบบใช้เจ้าหน้าที่ ปกติอยู่ซ้ายสุดหรือขวาสุดของกลุ่มประตู มีป้าย "人工通道" (ทางผ่านเจ้าหน้าที่) การตรวจเริ่มก่อนออกเดินทางประมาณ 15 นาที ยื่นพาสปอร์ตให้พนักงาน พวกเขาสแกนและโบกมือให้ผ่านไปภายในประมาณ 10 วินาที</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚃 หาตู้โดยสารของคุณ</h4>
+          <p class="text-base leading-relaxed text-gray-700">บนชานชาลา ให้มองหาเครื่องหมายสีบนพื้น หมายเลขตู้โดยสารแต่ละตู้มีจุดสี จอใหญ่ข้างบันไดแสดงรหัสสีของขบวนรถคุณ จับคู่สีกับเครื่องหมายบนพื้นเพื่อให้รู้ว่าต้องยืนตรงไหน เพราะรถไฟจะจอดโดยให้ประตูเฉพาะอยู่ตำแหน่งเฉพาะ</p>
+        </div>
+      </div>
+
+      <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-12 not-prose">
+        <p class="text-gray-700 leading-relaxed"><strong>พาสปอร์ตของคุณคือตั๋วของคุณ</strong> เก็บไว้ในมือตั้งแต่ก้าวเข้าสถานีจนถึงนั่งลง คุณจะแสดงอย่างน้อยสองครั้ง — ที่จุดตรวจความปลอดภัยและที่ประตูขึ้นรถ ในบางเส้นทาง พนักงานจะเดินตรวจตู้โดยสารหลังออกเดินทางเพื่อสุ่มตรวจพาสปอร์ต</p>
+      </div>
+
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="changes" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">✏️</span> การเปลี่ยนหรือยกเลิกตั๋วของคุณ
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">กฎเหมือนกันไม่ว่าคุณจะจองบน Trip.com หรือ 12306:</p>
+
+      <ul class="space-y-3 mb-12 text-gray-700">
+        <li><strong>เปลี่ยน (改签):</strong> เลื่อนไปขบวนอื่นในวันเดียวกัน — ฟรีถ้าทำล่วงหน้ามากกว่า 48 ชั่วโมง การเปลี่ยนเป็นวันที่ถัดไปคิด 5%–40% ขึ้นอยู่กับว่าวันใหม่ใกล้กับวันเดิมแค่ไหน ทำผ่านเว็บไซต์/แอป 12306 ภาษาอังกฤษหรือเคาน์เตอร์สถานีใดก็ได้</li>
+        <li><strong>คืนเงิน:</strong> ช่องทางเดียวกัน ฟรีหากคืนก่อนออกเดินทางมากกว่า 8 วัน; 5% จาก 48 ชม.–8 วัน; 10% จาก 24–48 ชม.; 20% ภายใน 24 ชม.</li>
+        <li><strong>ไม่ขึ้นรถ:</strong> พลาดขบวนรถโดยไม่เปลี่ยนหรือยกเลิกทันเวลา คุณจะเสียค่าตั๋วเต็มจำนวน ไม่มีระยะผ่อนผัน</li>
       </ul>
 
-      <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 not-prose">
-        <p class="text-gray-700"><strong>สำคัญ:</strong> พาสปอร์ตคือตั๋วของคุณ เก็บไว้ให้พร้อมสำหรับการตรวจที่ทางเข้าสถานี ประตูขึ้นรถ และบางครั้งบนรถไฟ อย่าใส่ไว้ในกระเป๋าที่โหลดใต้รถ</p>
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="bring" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🧳</span> สิ่งที่นำขึ้นรถได้และไม่ได้
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">กฎเหล่านี้อ้างอิงจาก<em>บัญชีรายการสิ่งของต้องห้ามและจำกัดสำหรับผู้โดยสารรถไฟ</em> (《铁路旅客禁止、限制携带和托运物品目录》) ซึ่งเป็นข้อกำหนดอย่างเป็นทางการที่เผยแพร่โดยการรถไฟจีน</p>
+
+      <div class="bg-white rounded-2xl overflow-hidden shadow-sm mb-8 not-prose">
+        <table class="w-full text-left">
+          <thead class="bg-gray-900 text-white">
+            <tr>
+              <th class="px-6 py-4 font-semibold">รายการ</th>
+              <th class="px-6 py-4 font-semibold">ขีดจำกัด</th>
+              <th class="px-6 py-4 font-semibold">หมายเหตุ</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-100 text-gray-700">
+            <tr>
+              <td class="px-6 py-4 align-top font-medium">พาวเวอร์แบงก์</td>
+              <td class="px-6 py-4 align-top whitespace-nowrap">≤ 100Wh (≈ 27,000 mAh)</td>
+              <td class="px-6 py-4 align-top text-sm">ต้องระบุความจุอย่างชัดเจนบนตัวเครื่อง</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top font-medium">น้ำหอม / สเปรย์เครื่องสำอาง</td>
+              <td class="px-6 py-4 align-top whitespace-nowrap">ภาชนะเดียว ≤ 100ml</td>
+              <td class="px-6 py-4 align-top text-sm">ชนิดไม่มีแรงดัน ไม่ติดไฟ</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top font-medium">สเปรย์ละออง (สเปรย์ผม ครีมกันแดด)</td>
+              <td class="px-6 py-4 align-top whitespace-nowrap">≤ 150ml ต่อกระป๋อง รวม ≤ 600ml</td>
+              <td class="px-6 py-4 align-top text-sm">กระป๋องขนาดเดินทางมาตรฐาน</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top font-medium">ยาทาเล็บ / น้ำยาล้างเล็บ</td>
+              <td class="px-6 py-4 align-top whitespace-nowrap">รวม ≤ 50 ml</td>
+              <td class="px-6 py-4 align-top text-sm">แพ็กเท่าที่จำเป็น</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top font-medium">ไฟแช็ก</td>
+              <td class="px-6 py-4 align-top whitespace-nowrap">≤ 2 อัน</td>
+              <td class="px-6 py-4 align-top text-sm">ไฟแช็กแบบใช้แล้วทิ้งมาตรฐาน</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top font-medium">แอลกอฮอล์ (ขวดจากโรงงานที่ปิดผนึก)</td>
+              <td class="px-6 py-4 align-top whitespace-nowrap">≤ 3,000 ml, 24%–70% แอลกอฮอล์</td>
+              <td class="px-6 py-4 align-top text-sm">ปิดผนึกจากโรงงานพร้อมฉลากชัดเจน ไม่รับเติม</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top font-medium">เครื่องมือขนาดเล็ก (กรรไกร มีดผลไม้)</td>
+              <td class="px-6 py-4 align-top whitespace-nowrap">ใบมีด &lt; 60mm</td>
+              <td class="px-6 py-4 align-top text-sm">ใบมีด 60mm ขึ้นไปห้ามนำขึ้นรถเด็ดขาด</td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 align-top font-medium">คันเบ็ด ขาตั้งกล้อง ร่ม</td>
+              <td class="px-6 py-4 align-top whitespace-nowrap">ยืดยาวสุด ≤ 130cm</td>
+              <td class="px-6 py-4 align-top text-sm">พับและจัดเก็บอย่างถูกต้องบนรถไฟหัวกระสุน</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="text-lg font-semibold text-gray-900 mb-6">สิ่งของที่ห้ามนำขึ้นรถไฟเด็ดขาด:</p>
+
+      <div class="space-y-6 mb-12">
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚫 ปืน กระสุน และวัตถุระเบิด</h4>
+          <p class="text-base leading-relaxed text-gray-700">ทุกชนิด — ไม่มีข้อยกเว้น</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚫 ของเหลวไวไฟ</h4>
+          <p class="text-base leading-relaxed text-gray-700">น้ำมันเบนซิน น้ำมันก๊าด และแอลกอฮอล์เกิน 70%</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚫 อาหารให้ความร้อนในตัว</h4>
+          <p class="text-base leading-relaxed text-gray-700">หม้อไฟสำเร็จรูปให้ความร้อนเอง ข้าวให้ความร้อนเอง — ไอน้ำสามารถกระตุ้นเครื่องตรวจจับควันบนรถไฟความเร็วสูง สิ่งนี้ทำให้นักท่องเที่ยวต่างชาติถูกจับได้มากกว่าอย่างอื่น หากพบอาจถูกริบ</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚫 ลูกโป่งที่เติมไฮโดรเจน</h4>
+          <p class="text-base leading-relaxed text-gray-700">ไม่อนุญาตบนรถไฟหรือในสถานี</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚫 สารกัดกร่อน วัสดุกัมมันตรังสี และสารพิษ</h4>
+          <p class="text-base leading-relaxed text-gray-700">รวมถึงกรดแก่ ด่าง น้ำยาฟอกขาวปริมาณมาก และสารพิษใดๆ</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚫 มีดที่ถูกจำกัดพร้อมกลไกล็อกใบมีด</h4>
+          <p class="text-base leading-relaxed text-gray-700">ใบมีด 60mm ขึ้นไปที่มีกลไกล็อกใบมีด</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚫 ใบมีดยาว 60mm ขึ้นไป</h4>
+          <p class="text-base leading-relaxed text-gray-700">มีดครัว มีดอเนกประสงค์ มีดพร้า — ห้ามนำขึ้นรถเด็ดขาด (ใบมีดสั้นกว่า &lt; 60mm อนุญาตในสัมภาระถือขึ้นเครื่องได้)</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚫 อาวุธไม่มีคม</h4>
+          <p class="text-base leading-relaxed text-gray-700">ไม้เบสบอล ค้อน เครื่องมือหนัก และสิ่งใดก็ตามที่ใช้เป็นอาวุธได้</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚫 จักรยานและสกู๊ตเตอร์ไฟฟ้า</h4>
+          <p class="text-base leading-relaxed text-gray-700">เว้นแต่ถอดประกอบทั้งหมดและบรรจุในกระเป๋าเดินทางแบบแข็ง</p>
+        </div>
       </div>
 
       <hr class="my-10 border-gray-200" />
 
-      <h2 id="related" class="text-2xl font-bold text-gray-900 mb-6 mt-12">📚 คู่มือที่เกี่ยวข้อง</h2>
+      <h2 id="onboard" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🚄</span> บนรถไฟ — สิ่งที่ควรคาดหวัง
+      </h2>
 
-      <div class="space-y-4 not-prose">
-        <a href="/th/transport/transport-guide/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚄 <strong>วิธีเดินทางในจีน</strong> — คู่มือการเดินทางฉบับสมบูรณ์</a>
-        <a href="/th/transport/airport-to-city/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🛬 <strong>จากสนามบินเข้าเมือง</strong> — สิ่งที่ต้องทำเมื่อคุณลงเครื่อง</a>
-        <a href="/th/transport/didi/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚗 <strong>วิธีใช้ DiDi ในจีนสำหรับชาวต่างชาติ</strong> — ตั้งค่าเรียกรถ</a>
-        <a href="/th/transport/metro-bus/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">🚇 <strong>คู่มือรถไฟฟ้าและรถบัสในเมืองใหญ่ของจีน</strong> — การเดินทางด้วยระบบขนส่งในเมือง</a>
+      <div class="space-y-8 mb-12">
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">💺 ที่นั่ง</h4>
+          <p class="text-base leading-relaxed text-gray-700">ชั้นสองจัดแบบ 3+2 คล้ายพรีเมียมอีโคโนมีของสายการบิน — สบายพอสำหรับคนส่วนใหญ่ถึงประมาณ 185cm ชั้นหนึ่งจัดแบบ 2+2 ที่นั่งกว้างกว่าและมีพื้นที่วางขามากกว่า คุ้มกับการเดินทางเกิน 3 ชั่วโมง ชั้นธุรกิจจัดแบบ 2+1 ที่นั่งเอนได้เต็มที่</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🔌 ปลั๊กไฟ</h4>
+          <p class="text-base leading-relaxed text-gray-700">รถไฟรุ่น G ส่วนใหญ่ (300–350 กม./ชม.) มีปลั๊กจีนสองขาใต้ที่นั่ง รถไฟรุ่น D รุ่นเก่าบางขบวน (200–250 กม./ชม.) อาจไม่มีปลั๊กทุกที่นั่ง — นำ<a href="/th/life/packing-guide/" class="text-blue-600 hover:underline">พาวเวอร์แบงก์สำรอง</a>ไปด้วย</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🍜 อาหารและเครื่องดื่ม</h4>
+          <p class="text-base leading-relaxed text-gray-700">รถเข็นจะผ่านมาหนึ่งถึงสองครั้ง ขายอาหารกล่อง (ประมาณ ¥40 / $5.50) ขนมขบเคี้ยว บะหมี่กึ่งสำเร็จรูป และเครื่องดื่ม กาแฟเป็นแบบชงสำเร็จรูป เส้นทางยาวมีตู้เสบียงพร้อมตัวเลือกที่ดีกว่าเล็กน้อย</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🚻 ห้องน้ำ</h4>
+          <p class="text-base leading-relaxed text-gray-700">อยู่ปลายทั้งสองด้านของแต่ละตู้โดยสาร ความสะอาดแตกต่างกันไปตามเส้นทางและช่วงเวลาของวัน ห้องที่ต้นทางเดินทางปกติสะอาด ส่วนกลางทางอาจน้อยกว่า นำเจลล้างมือและกระดาษชำระมาเอง</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">📢 ประกาศ</h4>
+          <p class="text-base leading-relaxed text-gray-700">ชื่อสถานีเป็นภาษาจีนและภาษาอังกฤษ จอแสดงผลเหนือประตูแสดงจุดจอดถัดไป ความเร็วปัจจุบัน และอุณหภูมิภายนอก เสียงประกาศภาษาอังกฤษบางครั้งฟังยาก ควรดูจอแสดงผลด้วย</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🌡️ อุณหภูมิ</h4>
+          <p class="text-base leading-relaxed text-gray-700">เครื่องปรับอากาศตั้งประมาณ 22–24°C ตลอดทั้งปี แม้ในเดือนกรกฎาคม แนะนำให้พกเสื้อแจ็คเก็ตบางหรือเสื้อแขนยาว</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">🧳 การเก็บสัมภาระ</h4>
+          <p class="text-base leading-relaxed text-gray-700">ชั้นวางเหนือศีรษะพอดีกับกระเป๋าขนาดถือขึ้นเครื่อง กระเป๋าเดินทางขนาดใหญ่ (24 นิ้วขึ้นไป) วางที่ชั้นวางปลายตู้โดยสารแต่ละตู้หรือใต้ที่นั่ง คอยสังเกตกระเป๋าที่ปลายตู้โดยสารเมื่อจอดสถานีระหว่างทาง</p>
+        </div>
       </div>
+
+          <div class="border-t border-gray-100 pt-6 mt-8">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5 not-prose">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h3 class="text-sm font-bold text-gray-900">📚 อ่านต่อ</h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="/th/transport/transport-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🚄 วิธีเดินทางในจีน
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/th/transport/didi/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🚗 วิธีใช้ DiDi ในจีน
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/th/transport/flights-vs-rail/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              ✈️ เครื่องบิน vs รถไฟความเร็วสูง
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/th/payment/payment-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              💳 วิธีชำระเงินในจีน
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/th/life/sim-card-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              📱 ต่ออินเทอร์เน็ต (SIM &amp; eSIM)
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     </div>
 
+        <!-- Sources -->
     <div class="not-prose mt-12 pt-8 border-t border-gray-200">
-  <h3 class="text-base font-bold text-gray-900 mb-4 flex items-center gap-2">📚 แหล่งอ้างอิง</h3>
-  <ul class="space-y-2">
-    <li>
-      <a href="https://www.12306.cn/en/index.html" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
-        <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>
-        China Railway Official - 12306 EN
-        <svg class="w-3 h-3 text-gray-300 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-      </a>
-    </li>
-  </ul>
-</div>
+      <h3 class="text-base font-bold text-gray-900 mb-4 flex items-center gap-2">
+        <span class="text-lg">📚</span> แหล่งอ้างอิง
+      </h3>
+      <ul class="space-y-2">
+        <li>
+          <a href="https://www.12306.cn/en/index.html" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+            <span class="border-b border-transparent group-hover:border-brand-700">China Railway 12306 — เว็บไซต์ภาษาอังกฤษอย่างเป็นทางการ (การจอง การยืนยันพาสปอร์ตต่างชาติ กฎการเปลี่ยนและคืนเงิน)</span>
+            <svg class="w-3 h-3 text-gray-300 ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.12306.cn/en/faq.html" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+            <span class="border-b border-transparent group-hover:border-brand-700">China Railway 12306 — คำถามที่พบบ่อยภาษาอังกฤษ (ตั๋วระบุชื่อจริง ตั๋วอิเล็กทรอนิกส์ เอกสารประจำตัวที่ยอมรับ)</span>
+            <svg class="w-3 h-3 text-gray-300 ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.12306.cn/mormhweb/zxdt/202311/t20231127_40375.html" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+            <span class="border-b border-transparent group-hover:border-brand-700">China Railway 12306 — ประกาศเรื่องการยืนยันตัวตนสำหรับพาสปอร์ตต่างชาติ (27 พ.ย. 2023)</span>
+            <svg class="w-3 h-3 text-gray-300 ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://kyfw.12306.cn/otn/gonggao/saleTicketMeans.html" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+            <span class="border-b border-transparent group-hover:border-brand-700">China Railway 12306 — กฎการยืนยันตัวตนสำหรับการซื้อตั๋วออนไลน์</span>
+            <svg class="w-3 h-3 text-gray-300 ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://mobile.12306.cn/otsmobile/h5/otsbussiness/passportInstruction/passport-entry-instructions.html" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+            <span class="border-b border-transparent group-hover:border-brand-700">คำแนะนำการกรอกชื่อพาสปอร์ตของ 12306 (ตัวอักษรละติน ลำดับ เว้นวรรคเดียว ไม่มีคำนำหน้า จำกัด 64 ตัวอักษร)</span>
+            <svg class="w-3 h-3 text-gray-300 ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.12306.cn/mormhweb/zxdt/202206/t20220617_37625.html" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+            <span class="border-b border-transparent group-hover:border-brand-700">China Railway — บัญชีรายการสิ่งของต้องห้ามและจำกัด (ข้อกำหนดอย่างเป็นทางการ)</span>
+            <svg class="w-3 h-3 text-gray-300 ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.enghunan.gov.cn/hneng/Services/Live/Transportation/RailwayStations/index.html" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+            <span class="border-b border-transparent group-hover:border-brand-700">รัฐบาลมณฑลหูหนาน — คู่มือภาษาอังกฤษสำหรับการซื้อตั๋วรถไฟในฐานะชาวต่างชาติ</span>
+            <svg class="w-3 h-3 text-gray-300 ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </li>
+      </ul>
+    </div>
   </article>
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "HowTo", "name": "วิธีจองและนั่งรถไฟความเร็วสูงในจีน: คู่มือทีละขั้นตอน", "step": [{"@type": "HowToStep", "name": "ตรวจความปลอดภัย:", "text": "กระเป๋าผ่านเครื่องเอ็กซ์เรย์ (เหมือนสนามบิน แต่เร็วกว่า)"}, {"@type": "HowToStep", "name": "ห้องรอ:", "text": "ตรวจสอบจอใหญ่เพื่อหาหมายเลขประตูขึ้นรถของขบวนคุณ เดินตามป้าย"}, {"@type": "HowToStep", "name": "ขึ้นรถไฟ:", "text": "แสดงพาสปอร์ตที่ประตูตั๋ว ใช้ช่องเคาน์เตอร์ manual ด้านไกล แล้วเดินลงไปที่ชานชาลา"}, {"@type": "HowToStep", "name": "หาตู้โดยสารของคุณ:", "text": "ตรวจสอบจอใกล้บันไดชานชาลาเพื่อหารหัสสีที่กำหนดให้กับขบวนรถของคุณ จับคู่สีนี้กับเครื่องหมายสีบนพื้นชานชาลาเพื่อหาตู้โดยสารที่ถูกต้อง"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "HowTo", "name": "วิธีจองและนั่งรถไฟความเร็วสูงในจีน: คู่มือทีละขั้นตอน", "step": [{"@type": "HowToStep", "name": "จองตั๋วของคุณ", "text": "จองบน Trip.com (รองรับบัตรต่างประเทศ) หรือเว็บไซต์ 12306 ภาษาอังกฤษอย่างเป็นทางการด้วยพาสปอร์ตของคุณ ไม่ต้องใช้บัตรประชาชนจีนหรือเบอร์โทรศัพท์จีน"}, {"@type": "HowToStep", "name": "ยืนยันพาสปอร์ตของคุณ (เฉพาะ 12306)", "text": "บน 12306 สมัครสมาชิก เพิ่มตัวเองเป็นผู้โดยสาร และทำการยืนยันตัวตนครั้งเดียว — แบบอัตโนมัติ อัปโหลดรูปพาสปอร์ต หรือที่เคาน์เตอร์สถานี"}, {"@type": "HowToStep", "name": "ถึงก่อนเวลา", "text": "ถึงสถานีก่อนออกเดินทาง 30–40 นาที"}, {"@type": "HowToStep", "name": "ผ่านการตรวจความปลอดภัย", "text": "วางกระเป๋าผ่านเครื่องเอ็กซ์เรย์ ไม่ต้องเอาของเหลวหรือแล็ปท็อปออก"}, {"@type": "HowToStep", "name": "แสดงพาสปอร์ตที่ประตูขึ้นรถ", "text": "ใช้ช่องเคาน์เตอร์แบบเจ้าหน้าที่ (ซ้ายสุดหรือขวาสุดของกลุ่มประตู) ยื่นพาสปอร์ตให้พนักงาน — ประตูอัตโนมัติอ่านได้เฉพาะบัตรประชาชนจีน"}, {"@type": "HowToStep", "name": "หาตู้โดยสารและขึ้นรถ", "text": "จับคู่รหัสสีบนจอชานชาลากับเครื่องหมายบนพื้น แล้วขึ้นรถและเก็บพาสปอร์ตไว้ใกล้มือเพื่อการตรวจบนขบวนรถ"}]}</script>
 </Layout>

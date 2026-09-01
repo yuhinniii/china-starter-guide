@@ -1,0 +1,236 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = '北京 or 上海？初めての中国、どちらを先に訪れるべきか';
+const description = '北京は王朝と宮殿の中国、上海はスカイラインと現代的な便利さの中国。両都市は新幹線で4.5時間——どちらを先に訪れるか、その選び方を解説します。';
+---
+
+<Layout title={title} description={description} lang="ja">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+
+    <!-- ============ 面包屑 ============ -->
+    <nav class="mb-8 not-prose">
+      <a href="/ja/cities/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        都市ガイドに戻る
+      </a>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🏙️ 都市ガイド</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">北京 or 上海？初めての中国、どちらを先に訪れるべきか</h1>
+      <p class="text-xl text-gray-600 mb-6">一方は王朝と宮殿の中国、もう一方はスカイラインと現代的な便利さの中国。両都市は新幹線で4.5時間——どちらを選ぶか、ここで決めましょう。</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500"><span>📅 最終更新：2026年9月</span><span>⏱️ 読了6分</span></div>
+    </header>
+
+    <!-- ============ 引言提示框(页面定位声明) ============ -->
+    <div class="bg-blue-50 border border-blue-100 rounded-2xl p-6 mb-12 not-prose">
+      <p class="text-gray-700"><strong>📄 このページの役割（と、そうでないもの）：</strong><a href="/ja/cities/beijing-guide/" class="text-blue-600 hover:underline">北京旅行ガイド</a>と<a href="/ja/cities/shanghai-guide/" class="text-blue-600 hover:underline">上海旅行ガイド</a>は、それぞれの都市の見どころ・レストラン・街歩きを網羅しています。このページは<strong>比較ページ</strong>です：二都市のどちらを選ぶかを決めるうえで本当に重要な違いだけを取り上げます。各都市の具体的な過ごし方は、それぞれのガイドへどうぞ。</p>
+    </div>
+
+    <!-- ============ QUICK ANSWER ============ -->
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-blue-900 mb-4">🎯 クイックアンサー</h2>
+      <p class="text-lg text-blue-800 leading-relaxed">北京は王朝・万里の長城・宮殿の中国——この国を形作った歴史そのもの。上海はスカイラインと未来的な建築の中国であり、中国全土で外国人にとって最もスムーズな都市——それが築いている未来です。7日以上あるなら両方行きましょう（新幹線で4.5時間）。一都市しか選べないなら、自分の好みで決めます：<strong>象徴的な名所を求めるなら北京、快適さ・グルメ・現代中国を求めるなら上海。</strong></p>
+    </div>
+
+    <!-- ============ IN THIS GUIDE ============ -->
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 このガイド</h3>
+      <ul class="space-y-3">
+        <li><a href="#different-in-kind" class="text-blue-600 hover:underline">🏛️ この二都市は「スタイル」ではなく「本質」が違う</a></li>
+        <li><a href="#the-4-5-hour-bridge" class="text-blue-600 hover:underline">🚄 4.5時間の橋：たいてい選ぶ必要はない</a></li>
+        <li><a href="#what-kind-of-china" class="text-blue-600 hover:underline">🎯 本当に見たいのは、どの中国？</a></li>
+        <li><a href="#which-is-cheaper" class="text-blue-600 hover:underline">💰 実際、どちらが安い？</a></li>
+        <li><a href="#when-to-go" class="text-blue-600 hover:underline">📅 いつ行くべき？</a></li>
+        <li><a href="#trip-rhythms" class="text-blue-600 hover:underline">👣 旅のリズムはどう違う？</a></li>
+        <li><a href="#food" class="text-blue-600 hover:underline">🍜 食はどう違う？</a></li>
+        <li><a href="#which-first" class="text-blue-600 hover:underline">🧭 では、どちらを先に？</a></li>
+      </ul>
+    </nav>
+
+    <div class="prose prose-lg max-w-none">
+
+      <!-- ============ 章节 1 ============ -->
+      <hr class="border-gray-200 my-12" />
+      <h2 id="different-in-kind" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🏛️</span> この二都市は「スタイル」ではなく「本質」が違う
+      </h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">北京と上海は、同じものの二つのバージョンではありません——中国の異なる時代を体現しており、そこに選択の面白さがあります。北京は権力の座であり、歴史の守り手：800年にわたる帝都の歴史、紫禁城、裏庭に万里の長城。上海は商業と文化の最前線：開港都市になってわずか180年、今日そこでは中国の未来が、一つの超高層ビルと一つのスペシャルティコーヒーショップを積み重ねながら建設されています。</p>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">そのように見えてしまえば、実用的な比較のほとんどは、その一つの違いから導き出されます。</p>
+
+      <!-- ============ 章节 2 ============ -->
+      <hr class="border-gray-200 my-12" />
+      <h2 id="the-4-5-hour-bridge" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🚄</span> 4.5時間の橋：たいてい選ぶ必要はない
+      </h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">どんな比較の前に、大きなポイントを押さえておきましょう：北京と上海は高速鉄道で4.5時間、G系列車が北京南駅と上海虹橋駅の間を15〜30分ごとに運行しています（2等車 ¥596〜667）。だから本当の質問は決して「どちらの都市？」ではなく「どちらの都市を<em>先に</em>、そして日数をどう配分するか？」です。1週間以上あるなら、定番の初訪ルート（北京3日 → 列車 → 上海3日）は、理由あって中国で最も人気のある旅程です。完全なプランは<a href="/ja/cities/city-select/" class="text-blue-600 hover:underline">中国に何日必要？</a>をご覧ください。</p>
+
+      <!-- ============ 章节 3 ============ -->
+      <hr class="border-gray-200 my-12" />
+      <h2 id="what-kind-of-china" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🎯</span> 本当に見たいのは、どの中国？
+      </h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">これこそが唯一本当に重要な問いであり、答えはきれいに分かれます：</p>
+      <div class="space-y-6 mb-12">
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">北京は「あなたが求めていた中国」を届ける。</h4>
+          <p class="text-base leading-relaxed text-gray-700">紫禁城、万里の長城、天壇、頤和園——世界に名高いランドマークの密度では、地球上のどの都市も敵いません。旅に一枚だけ外せない写真があるなら、ほぼ間違いなくここです。</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">上海は「あなたを驚かせる中国」を届ける。</h4>
+          <p class="text-base leading-relaxed text-gray-700">夕暮れの外灘、陸家嘴のスカイライン、武康路・安福路エリアの百年の通り——モダンで歩きやすく、夜はむしろ一層目を見張る美しさです。</p>
+        </div>
+      </div>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">あなたの頭の中の中国が、赤い壁と古い屋根なら、それは北京。ネオンとガラスの塔なら、上海。旅の大半の朝、目覚めたときに見たいイメージを選んでください。</p>
+
+      <!-- ============ 章节 4 ============ -->
+      <hr class="border-gray-200 my-12" />
+      <h2 id="which-is-cheaper" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">💰</span> 実際、どちらが安い？
+      </h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">価格はほぼ同じ——北京のほうがホテルと食事でわずかに安い程度で、その差が旅の決断を覆すことは決してありません。安いほうではなく行きたい都市を選びましょう。実際の数字は<a href="/ja/payment/china-travel-budget/" class="text-blue-600 hover:underline">2026年中国旅行費用</a>を参照。</p>
+
+      <!-- ============ 章节 5 ============ -->
+      <hr class="border-gray-200 my-12" />
+      <h2 id="when-to-go" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">📅</span> いつ行くべき？
+      </h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">ベストシーズンは、人が思うほどきれいに重なりません：</p>
+      <div class="space-y-6 mb-12">
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">北京のベストシーズンは4〜5月と9〜10月。</h4>
+          <p class="text-base leading-relaxed text-gray-700">それ以外は凍える（1月は−10°Cまで下がり、乾燥して灰色）か、夏は暑く霞がかかります。万里の長城は春と秋が段違いに快適です。</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">上海のベストシーズンは3〜5月と10〜11月。</h4>
+          <p class="text-base leading-relaxed text-gray-700">冬は北京より穏やか（めったに0°Cを下回らない）ですが湿気が多く、夏（6〜8月）は高温多湿で台風も心配です。</p>
+        </div>
+      </div>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">日付が決まっているなら、どちらの都市も一年中訪れられます——北京の寒暖差と上海の湿気に備えれば大丈夫。日程が自由なら4〜5月か9〜10月を狙えば、両都市とも快適に回れます。</p>
+
+      <!-- ============ 章节 6 ============ -->
+      <hr class="border-gray-200 my-12" />
+      <h2 id="trip-rhythms" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">👣</span> 旅のリズムはどう違う？
+      </h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">これは多くの人が思う以上に重要です：</p>
+      <div class="space-y-6 mb-12">
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">北京は広大で、見どころが分散している。</h4>
+          <p class="text-base leading-relaxed text-gray-700">街は巨大で、名所は互いに遠く、地下鉄で暮らすようなものです。「行く、見る、次へ移動、見る」というリズム——やりがいはありますが、疲れます。名所を焦らず回るなら3〜4日を計画しましょう。</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">上海はコンパクトで歩きやすい。</h4>
+          <p class="text-base leading-relaxed text-gray-700">主な名所は川沿いと旧市街に集まり、人民広場より西の界隈は散歩のためにあるような街です。ゆっくり朝のコーヒーを飲んでも、見るべきものは十分に回れます。2〜3日を計画しましょう。</p>
+        </div>
+      </div>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">チェックリスト式の計画的な観光が好きなら、北京のリズムが合います。ぶらぶら歩きとカフェ巡りが好きなら、上海が合います。</p>
+
+      <!-- ============ 章节 7 ============ -->
+      <hr class="border-gray-200 my-12" />
+      <h2 id="food" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🍜</span> 食はどう違う？
+      </h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">どちらの都市も本格的な国際美食都市——食べたいフレンチビストロも四川火鍋も、どちらでも地下鉄一本の距離にあります。だから「どちらの国際料理が上か」は実は問題になりません。違うのは、それぞれの都市が提供する地元の伝統です：</p>
+      <div class="space-y-6 mb-12">
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">北京は北方料理——宮廷風で、ボリューム満点。</h4>
+          <p class="text-base leading-relaxed text-gray-700">北京ダックが目玉ですが、テーブルはもっと奥が深い：羊肉の火鍋（涮羊肉）、ジャージャー麺（炸酱面）、ムスリム街の羊肉串、そして800年の帝都が生んだ宮廷料理の数々。力強く、塩味とソースが際立つ味わい。</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">上海は江南料理——甘く、繊細で、季節感がある。</h4>
+          <p class="text-base leading-relaxed text-gray-700">朝は小籠包と生煎、家庭の食卓は「濃油赤酱」（こってりとした油と濃い醤油）の定番、たとえば独特の甘みを持つ紅焼肉が中心。秋には上海蟹。北京より軽やかで繊細、そして季節の移り変わりとより深く結びついています。</p>
+        </div>
+      </div>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">食を優先する旅人は、味覚ではっきり二分されます：宮廷風の北方の味か、甘じょっぱい江南の食卓か。</p>
+
+      <!-- ============ 章节 8 ============ -->
+      <hr class="border-gray-200 my-12" />
+      <h2 id="which-first" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🧭</span> では、どちらを先に？
+      </h2>
+      <div class="space-y-6 mb-12">
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">北京から</h4>
+          <p class="text-base leading-relaxed text-gray-700">ヨーロッパや北米から飛ぶなら——周遊の往路の第一歩として自然で、朝の時差ボケは10時前に見たい名所の早朝観光とうまく噛み合います。最後に上海でくつろぎましょう。</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">上海から</h4>
+          <p class="text-base leading-relaxed text-gray-700">東南アジアから来る場合、あるいは中国に優しく入りたい場合——上海のほうが着地はソフトで、慣れてきたら北京の歴史へ「時間をさかのぼって」向かえます。</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">両方行くなら、この順で：</h4>
+          <p class="text-base leading-relaxed text-gray-700">北京（3日）→ 朝の高速鉄道（4.5時間）→ 上海（3日）。これは中国で最も人気のある初訪ルートで、見事に機能します——移動で失うのはわずか半日ほどです。</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ============ NEXT READS ============ -->
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose">
+      <div class="border-t border-gray-100 pt-6 mt-8">
+        <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5 not-prose">
+          <div class="flex items-center justify-between gap-4 flex-wrap">
+            <h3 class="text-sm font-bold text-gray-900">📚 関連ガイド</h3>
+            <div class="flex flex-wrap gap-2">
+              <a href="/ja/cities/beijing-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                🏛️ 北京旅行ガイド
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/ja/cities/shanghai-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                🌃 上海旅行ガイド
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/ja/transport/high-speed-rail/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                🚄 高速鉄道ガイド
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/ja/payment/china-travel-budget/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                💰 2026年中国旅行費用
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/ja/cities/city-select/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                🗓️ 中国に何日必要？
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ SOURCES ============ -->
+    <div class="not-prose mt-12 pt-8 border-t border-gray-200">
+      <h3 class="text-base font-bold text-gray-900 mb-4 flex items-center gap-2">
+        <span class="text-lg">📚</span> 出典
+      </h3>
+      <ul class="space-y-2">
+        <li>
+          <a href="https://english.beijing.gov.cn/travellinginbeijing/mustvisitsites" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+            <span class="border-b border-transparent group-hover:border-brand-700">北京市人民政府 — 英語版公式観光ポータル「Must-visit Sites」（故宮、万里の長城、天壇、頤和園）</span>
+            <svg class="w-3 h-3 text-gray-300 ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://english.shanghai.gov.cn/en-ScenicSpots/index.html" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+            <span class="border-b border-transparent group-hover:border-brand-700">上海市人民政府 — 英語版公式観光ポータル「Scenic Spots」（外灘、豫園、南京路、武康路）</span>
+            <svg class="w-3 h-3 text-gray-300 ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.12306.cn/en/index.html" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+            <span class="border-b border-transparent group-hover:border-brand-700">China Railway 12306（英語版）— 移動セクションで引用した北京〜上海間の列車時刻と二等座運賃</span>
+            <svg class="w-3 h-3 text-gray-300 ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </article>
+</Layout>

@@ -1,0 +1,236 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = '베이징 vs 상하이: 중국 첫 방문, 어느 도시부터 갈까?';
+const description = '베이징은 왕조와 황실 궁전의 중국, 상하이는 스카이라인과 현대적 편의의 중국입니다. 고속철로 4.5시간 거리——어느 도시를 먼저 방문할지 고르는 법을 설명합니다.';
+---
+
+<Layout title={title} description={description} lang="ko">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+
+    <!-- ============ 面包屑 ============ -->
+    <nav class="mb-8 not-prose">
+      <a href="/ko/cities/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        도시 가이드로 돌아가기
+      </a>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🏙️ 도시 가이드</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">베이징 vs 상하이: 중국 첫 방문, 어느 도시부터 갈까?</h1>
+      <p class="text-xl text-gray-600 mb-6">하나는 왕조와 황실 궁전의 중국, 다른 하나는 스카이라인과 현대적 편의의 중국. 고속철로 4.5시간 거리——이 글에서 선택하는 법을 알려드립니다.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500"><span>📅 최종 업데이트: 2026년 9월</span><span>⏱️ 6분</span></div>
+    </header>
+
+    <!-- ============ 引言提示框(页面定位声明) ============ -->
+    <div class="bg-blue-50 border border-blue-100 rounded-2xl p-6 mb-12 not-prose">
+      <p class="text-gray-700"><strong>📄 이 페이지의 역할(그리고 아닌 것):</strong> <a href="/ko/cities/beijing-guide/" class="text-blue-600 hover:underline">베이징 여행 가이드</a>와 <a href="/ko/cities/shanghai-guide/" class="text-blue-600 hover:underline">상하이 여행 가이드</a>는 각 도시의 모든 명소·레스토랑·동네를 자세히 다룹니다. 이 페이지는 <strong>비교 페이지</strong>입니다: 두 도시 사이에서 결정할 때 정말 중요한 차이점만 다룹니다. 각 도시에서 뭘 할지 궁금하다면 해당 가이드로 이동하세요.</p>
+    </div>
+
+    <!-- ============ QUICK ANSWER ============ -->
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-blue-900 mb-4">🎯 빠른 답변</h2>
+      <p class="text-lg text-blue-800 leading-relaxed">베이징은 왕조·만리장성·황실 궁전의 중국——이 나라를 만든 역사입니다. 상하이는 스카이라인과 미래지향적 건축의 중국이자, 중국에서 외국인이 가장 편하게 지낼 수 있는 도시——그것이 짓고 있는 미래입니다. 7일 이상 있다면 둘 다 가세요(고속철로 4.5시간 거리). 하나만 고를 수 있다면 성향으로 고르세요: <strong>상징적 명소를 찾는다면 베이징, 편의·음식·현대 중국을 찾는다면 상하이.</strong></p>
+    </div>
+
+    <!-- ============ IN THIS GUIDE ============ -->
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 목차</h3>
+      <ul class="space-y-3">
+        <li><a href="#different-in-kind" class="text-blue-600 hover:underline">🏛️ 두 도시는 스타일이 아니라 본질이 다르다</a></li>
+        <li><a href="#the-4-5-hour-bridge" class="text-blue-600 hover:underline">🚄 4.5시간의 다리: 보통 둘 중 하나를 고를 필요가 없다</a></li>
+        <li><a href="#what-kind-of-china" class="text-blue-600 hover:underline">🎯 당신이 정말 보고 싶은 중국은?</a></li>
+        <li><a href="#which-is-cheaper" class="text-blue-600 hover:underline">💰 정말로 어느 도시가 더 쌀까?</a></li>
+        <li><a href="#when-to-go" class="text-blue-600 hover:underline">📅 언제 가야 할까?</a></li>
+        <li><a href="#trip-rhythms" class="text-blue-600 hover:underline">👣 여행 리듬은 어떻게 다를까?</a></li>
+        <li><a href="#food" class="text-blue-600 hover:underline">🍜 음식은 어떻게 다를까?</a></li>
+        <li><a href="#which-first" class="text-blue-600 hover:underline">🧭 그럼, 어느 도시를 먼저?</a></li>
+      </ul>
+    </nav>
+
+    <div class="prose prose-lg max-w-none">
+
+      <!-- ============ 章节 1 ============ -->
+      <hr class="border-gray-200 my-12" />
+      <h2 id="different-in-kind" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🏛️</span> 두 도시는 스타일이 아니라 본질이 다르다
+      </h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">베이징과 상하이는 같은 것의 두 버전이 아닙니다——중국의 서로 다른 시대를 대표하며, 바로 그 점이 선택을 흥미롭게 만듭니다. 베이징은 권력의 자리이자 역사의 수호자: 800년의 황도 역사, 자금성, 뒷마당에 만리장성. 상하이는 상업과 문화의 최전선: 조계지가 된 지 겨우 180년, 오늘날 그곳에서 중국의 미래가 마천루 한 채와 스페셜티 커피숍 한 곳씩 쌓여가며 건설되고 있습니다.</p>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">일단 그렇게 보이기 시작하면, 실용적인 비교의 대부분은 그 한 가지 차이에서 나옵니다.</p>
+
+      <!-- ============ 章节 2 ============ -->
+      <hr class="border-gray-200 my-12" />
+      <h2 id="the-4-5-hour-bridge" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🚄</span> 4.5시간의 다리: 보통 둘 중 하나를 고를 필요가 없다
+      </h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">어떤 비교보다 먼저 큰 것을 기억하세요: 베이징과 상하이는 고속철로 4.5시간 거리로 연결되어 있으며, G계열 열차가 베이징남역과 상하이훙차오역 사이를 15~30분 간격으로 운행합니다(2등석 ¥596~667). 그래서 진짜 질문은 결코 "어느 도시?"가 아니라 "어느 도시를 <em>먼저</em>, 그리고 일정을 어떻게 나눌까?"입니다. 일주일 이상 있다면, 표준적인 첫 방문 루트(베이징 3일 → 열차 → 상하이 3일)는 이유가 있어 중국에서 가장 인기 있는 여정입니다. 전체 계획은 <a href="/ko/cities/city-select/" class="text-blue-600 hover:underline">중국에 며칠이 필요할까요?</a>를 보세요.</p>
+
+      <!-- ============ 章节 3 ============ -->
+      <hr class="border-gray-200 my-12" />
+      <h2 id="what-kind-of-china" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🎯</span> 당신이 정말 보고 싶은 중국은?
+      </h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">이것이 유일하게 정말 중요한 질문이며, 답은 깔끔하게 갈립니다:</p>
+      <div class="space-y-6 mb-12">
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">베이징은 "당신이 찾아온 중국"을 선사합니다.</h4>
+          <p class="text-base leading-relaxed text-gray-700">자금성, 만리장성, 천단, 이화원——세계적으로 유명한 랜드마크의 밀도에서 지구상 어떤 도시도 따라올 수 없습니다. 여행에 단 한 장의 양보할 수 없는 사진이 있다면, 거의 확실히 여기입니다.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">상하이는 "당신을 놀라게 하는 중국"을 선사합니다.</h4>
+          <p class="text-base leading-relaxed text-gray-700">황혼의 와이탄, 루자쭈이 스카이라인, 우캉루·안푸루 지역의 백년 된 거리——현대적이고 걸어 다니기 좋으며, 밤에는 오히려 더 눈부십니다.</p>
+        </div>
+      </div>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">머릿속의 중국이 붉은 벽과 오래된 지붕이라면, 그것은 베이징. 네온과 유리 타워라면, 그것은 상하이. 여행의 대부분의 아침에 눈을 뜨면 보고 싶은 이미지를 고르세요.</p>
+
+      <!-- ============ 章节 4 ============ -->
+      <hr class="border-gray-200 my-12" />
+      <h2 id="which-is-cheaper" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">💰</span> 정말로 어느 도시가 더 쌀까?
+      </h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">가격은 거의 같습니다——베이징이 호텔과 식사에서 아주 약간 쌀 뿐, 그 차이가 여행 결정을 바꾸지는 않습니다. 더 싼 곳이 아니라 가고 싶은 도시를 고르세요. 실제 숫자는 <a href="/ko/payment/china-travel-budget/" class="text-blue-600 hover:underline">2026년 중국 여행 비용</a>을 참고하세요.</p>
+
+      <!-- ============ 章节 5 ============ -->
+      <hr class="border-gray-200 my-12" />
+      <h2 id="when-to-go" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">📅</span> 언제 가야 할까?
+      </h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">두 도시의 최적기는 사람들이 생각하는 것처럼 겹치지 않습니다:</p>
+      <div class="space-y-6 mb-12">
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">베이징의 최적기는 4~5월과 9~10월입니다.</h4>
+          <p class="text-base leading-relaxed text-gray-700">나머지 기간은 얼어붙거나(1월엔 −10°C까지, 건조하고 회색빛) 여름엔 덥고 안개가 낍니다. 만리장성은 봄과 가을이 훨씬 즐겁습니다.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">상하이의 최적기는 3~5월과 10~11월입니다.</h4>
+          <p class="text-base leading-relaxed text-gray-700">겨울은 베이징보다 온화하지만(거의 0°C 아래로 내려가지 않음) 습하고, 여름(6~8월)은 덥고 습하며 태풍이 잦습니다.</p>
+        </div>
+      </div>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">날짜가 정해져 있다면 두 도시 모두 연중 방문 가능합니다——베이징의 극단적인 날씨와 상하이의 습도만 대비하세요. 날짜가 유연하다면 4~5월이나 9~10월을 노리면 두 도시 모두 편안하게 즐길 수 있습니다.</p>
+
+      <!-- ============ 章节 6 ============ -->
+      <hr class="border-gray-200 my-12" />
+      <h2 id="trip-rhythms" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">👣</span> 여행 리듬은 어떻게 다를까?
+      </h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">이것은 대부분의 사람들이 생각하는 것보다 중요합니다:</p>
+      <div class="space-y-6 mb-12">
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">베이징은 크고 넓게 퍼져 있습니다.</h4>
+          <p class="text-base leading-relaxed text-gray-700">도시가 거대하고 명소끼리 멀리 떨어져 있어 지하철에서 살게 됩니다. "가고, 보고, 이동하고, 또 보고"의 리듬——보람 있지만 지칩니다. 유명 명소를 서두르지 않고 돌려면 3~4일을 계획하세요.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">상하이는 컴팩트하고 걸어 다니기 좋습니다.</h4>
+          <p class="text-base leading-relaxed text-gray-700">주요 명소가 강가와 구시가지에 모여 있고, 인민광장 서쪽의 동네는 산책을 위해 만들어진 곳입니다. 아침에 여유롭게 커피 한 잔 해도 볼 것은 충분히 봅니다. 2~3일을 계획하세요.</p>
+        </div>
+      </div>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">체크리스트식의 계획적인 관광을 좋아한다면 베이징의 리듬이 맞고, 어슬렁거리며 카페에 들르는 걸 좋아한다면 상하이가 맞습니다.</p>
+
+      <!-- ============ 章节 7 ============ -->
+      <hr class="border-gray-200 my-12" />
+      <h2 id="food" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🍜</span> 음식은 어떻게 다를까?
+      </h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">두 도시 모두 제대로 된 국제 미식 도시입니다——먹고 싶은 프렌치 비스트로든 쓰촨 훠궈든 어느 도시에서나 지하철 한 정거장이면 닿습니다. 그래서 "어느 쪽 국제 음식이 더 낫나"는 사실 질문이 아닙니다. 다른 점은 각 도시가 내놓는 현지 전통입니다:</p>
+      <div class="space-y-6 mb-12">
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">베이징은 북방 요리——궁중풍이고 푸짐합니다.</h4>
+          <p class="text-base leading-relaxed text-gray-700">베이징 덕이 간판이지만, 식탁은 그보다 깊습니다: 양고기 훠궈(涮羊肉), 자장면(炸酱面), 후이족 거리의 양꼬치, 그리고 800년 황도가 만든 궁중 요리까지. 진하고, 짭짤하고, 소스가 강한 맛.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">상하이는 장난(江南) 요리——달콤하고 섬세하며 제철을 따릅니다.</h4>
+          <p class="text-base leading-relaxed text-gray-700">아침엔 샤오롱바오와 성지엔, 집밥 식탁은 "농유적장(濃油赤酱)"(진한 기름, 짙은 간장)의 대명사인 훙사오러우(붉은 조림 돼지고기)의 시그니처 단맛 위에 세워집니다. 가을엔 대게. 베이징보다 가볍고 섬세하며, 계절과 더 밀접하게 연결되어 있습니다.</p>
+        </div>
+      </div>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">먹는 것을 우선하는 여행자는 입맛에 따라 깔끔하게 나뉩니다: 궁중풍 북방의 맛, 아니면 달콤짭짤한 장난의 식탁.</p>
+
+      <!-- ============ 章节 8 ============ -->
+      <hr class="border-gray-200 my-12" />
+      <h2 id="which-first" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🧭</span> 그럼, 어느 도시를 먼저?
+      </h2>
+      <div class="space-y-6 mb-12">
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">베이징부터</h4>
+          <p class="text-base leading-relaxed text-gray-700">유럽이나 북미에서 비행기로 온다면——대부분의 왕복 여정의 자연스러운 첫 기착지이고, 이른 아침의 시차 적응은 오전 10시 전에 봐야 할 명소의 해돋이 관광과 잘 어울립니다. 마지막에 상하이에서 푹 쉬세요.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">상하이부터</h4>
+          <p class="text-base leading-relaxed text-gray-700">동남아시아에서 오거나, 중국에 부드럽게 적응하고 싶다면——상하이의 착륙이 더 안정적이고, 익숙해진 뒤에 베이징의 역사로 "시간을 거슬러" 갈 수 있습니다.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">둘 다 간다면, 이 순서로:</h4>
+          <p class="text-base leading-relaxed text-gray-700">베이징(3일) → 아침 고속철(4.5시간) → 상하이(3일). 이것은 중국에서 가장 인기 있는 첫 방문 루트이고, 아름답게 작동합니다——이동에 잃는 것은 고작 반나절입니다.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ============ NEXT READS ============ -->
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose">
+      <div class="border-t border-gray-100 pt-6 mt-8">
+        <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5 not-prose">
+          <div class="flex items-center justify-between gap-4 flex-wrap">
+            <h3 class="text-sm font-bold text-gray-900">📚 관련 가이드</h3>
+            <div class="flex flex-wrap gap-2">
+              <a href="/ko/cities/beijing-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                🏛️ 베이징 여행 가이드
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/ko/cities/shanghai-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                🌃 상하이 여행 가이드
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/ko/transport/high-speed-rail/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                🚄 고속철 가이드
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/ko/payment/china-travel-budget/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                💰 2026년 중국 여행 비용
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/ko/cities/city-select/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                🗓️ 중국에 며칠 필요할까?
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ SOURCES ============ -->
+    <div class="not-prose mt-12 pt-8 border-t border-gray-200">
+      <h3 class="text-base font-bold text-gray-900 mb-4 flex items-center gap-2">
+        <span class="text-lg">📚</span> 출처
+      </h3>
+      <ul class="space-y-2">
+        <li>
+          <a href="https://english.beijing.gov.cn/travellinginbeijing/mustvisitsites" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+            <span class="border-b border-transparent group-hover:border-brand-700">베이징시 인민정부 — 공식 영어 여행 포털 "Must-visit Sites"(자금성, 만리장성, 천단, 이화원)</span>
+            <svg class="w-3 h-3 text-gray-300 ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://english.shanghai.gov.cn/en-ScenicSpots/index.html" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+            <span class="border-b border-transparent group-hover:border-brand-700">상하이시 인민정부 — 공식 영어 여행 포털 "Scenic Spots"(와이탄, 위위안 정원, 난징루, 우캉루)</span>
+            <svg class="w-3 h-3 text-gray-300 ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.12306.cn/en/index.html" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+            <span class="border-b border-transparent group-hover:border-brand-700">China Railway 12306(영문) — 이동 섹션에서 인용한 베이징~상하이 열차 시각과 2등석 요금</span>
+            <svg class="w-3 h-3 text-gray-300 ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </article>
+</Layout>

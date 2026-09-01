@@ -1,0 +1,236 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'Пекин или Шанхай: какой китайский город посетить первым?';
+const description = 'Пекин — это Китай династий и императорских дворцов; Шанхай — это Китай небоскрёбов и современного комфорта. Между ними 4,5 часа на скоростном поезде — вот как выбрать, какой посетить первым.';
+---
+
+<Layout title={title} description={description} lang="ru">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+
+    <!-- ============ 面包屑 ============ -->
+    <nav class="mb-8 not-prose">
+      <a href="/ru/cities/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Назад к путеводителям по городам
+      </a>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🏙️ Путеводители по городам</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">Пекин или Шанхай: какой китайский город посетить первым?</h1>
+      <p class="text-xl text-gray-600 mb-6">Один — это Китай династий и императорских дворцов; другой — Китай небоскрёбов и современного комфорта. Между ними 4,5 часа на скоростном поезде — вот как выбрать.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500"><span>📅 Последнее обновление: сентябрь 2026</span><span>⏱️ 6 мин чтения</span></div>
+    </header>
+
+    <!-- ============ 引言提示框(页面定位声明) ============ -->
+    <div class="bg-blue-50 border border-blue-100 rounded-2xl p-6 mb-12 not-prose">
+      <p class="text-gray-700"><strong>📄 Что это за страница (и чем она не является):</strong> <a href="/ru/cities/beijing-guide/" class="text-blue-600 hover:underline">Путеводитель по Пекину</a> и <a href="/ru/cities/shanghai-guide/" class="text-blue-600 hover:underline">Путеводитель по Шанхаю</a> подробно описывают каждый город — каждую достопримечательность, ресторан, район. Эта страница — <strong>страница сравнения</strong>: на ней только различия, которые важны при выборе между ними. Что делать внутри каждого города — смотрите в его путеводителе.</p>
+    </div>
+
+    <!-- ============ QUICK ANSWER ============ -->
+    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-blue-900 mb-4">🎯 Быстрый ответ</h2>
+      <p class="text-lg text-blue-800 leading-relaxed">Пекин — это Китай династий, Великой стены и императорских дворцов — история, создавшая страну. Шанхай — это Китай небоскрёбов, футуристической архитектуры и самого комфортного для иностранцев города в стране — будущее, которое он строит. Если у вас есть 7+ дней, посетите оба (между ними 4,5 часа на скоростном поезде). Если времени хватит только на один, выбирайте по темпераменту: <strong>Пекин, если вы приехали за знаковыми достопримечательностями, Шанхай — если за комфортом, едой и современным Китаем.</strong></p>
+    </div>
+
+    <!-- ============ IN THIS GUIDE ============ -->
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 Содержание</h3>
+      <ul class="space-y-3">
+        <li><a href="#different-in-kind" class="text-blue-600 hover:underline">🏛️ Эти два города различаются по сути, а не только по стилю</a></li>
+        <li><a href="#the-4-5-hour-bridge" class="text-blue-600 hover:underline">🚄 Мост в 4,5 часа: обычно выбирать не приходится</a></li>
+        <li><a href="#what-kind-of-china" class="text-blue-600 hover:underline">🎯 Какой Китай вы на самом деле хотите увидеть?</a></li>
+        <li><a href="#which-is-cheaper" class="text-blue-600 hover:underline">💰 Какой город на самом деле дешевле?</a></li>
+        <li><a href="#when-to-go" class="text-blue-600 hover:underline">📅 Когда ехать?</a></li>
+        <li><a href="#trip-rhythms" class="text-blue-600 hover:underline">👣 Чем различается ритм поездки?</a></li>
+        <li><a href="#food" class="text-blue-600 hover:underline">🍜 Чем отличается еда?</a></li>
+        <li><a href="#which-first" class="text-blue-600 hover:underline">🧭 Итак, какой город посетить первым?</a></li>
+      </ul>
+    </nav>
+
+    <div class="prose prose-lg max-w-none">
+
+      <!-- ============ 章节 1 ============ -->
+      <hr class="border-gray-200 my-12" />
+      <h2 id="different-in-kind" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🏛️</span> Эти два города различаются по сути, а не только по стилю
+      </h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">Пекин и Шанхай — не две версии одного и того же; они олицетворяют разные эпохи Китая, и именно это делает выбор интересным. Пекин — средоточие власти и хранитель истории: 800 лет имперских столиц, Запретный город, Великая стена на заднем дворе. Шанхай — торговый и культурный форпост: чуть больше 180 лет с тех пор, как он стал договорным портом, и сегодня именно здесь строится будущее Китая — по одному небоскрёбу и по одной кофейне за раз.</p>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">Как только вы увидите их так, большинство практических сравнений вытекают из этого одного различия.</p>
+
+      <!-- ============ 章节 2 ============ -->
+      <hr class="border-gray-200 my-12" />
+      <h2 id="the-4-5-hour-bridge" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🚄</span> Мост в 4,5 часа: обычно выбирать не приходится
+      </h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">Прежде чем любые сравнения обретут смысл, отметьте главное: Пекин и Шанхай соединены поездкой в 4,5 часа на скоростном поезде, поезда серии G ходят каждые 15–30 минут между Южным Пекином и Шанхай-Хунцяо (¥596–667 во втором классе). Так что настоящий вопрос никогда не «какой город?» — а «какой город <em>первым</em>, и как распределить дни?» Если у вас есть неделя или больше, стандартный маршрут для первого раза (Пекин 3 дня → поезд → Шанхай 3 дня) — самый популярный маршрут в Китае, и не без причины. См. <a href="/ru/cities/city-select/" class="text-blue-600 hover:underline">Сколько дней нужно в Китае?</a> для полного плана.</p>
+
+      <!-- ============ 章节 3 ============ -->
+      <hr class="border-gray-200 my-12" />
+      <h2 id="what-kind-of-china" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🎯</span> Какой Китай вы на самом деле хотите увидеть?
+      </h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">Это единственный по-настоящему важный вопрос, и ответ делится чётко:</p>
+      <div class="space-y-6 mb-12">
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">Пекин даёт «Китай, за которым вы приехали».</h4>
+          <p class="text-base leading-relaxed text-gray-700">Запретный город, Великая стена, Храм Неба, Летний дворец — ни один город на Земле не обладает такой плотностью всемирно известных достопримечательностей. Если в вашей поездке есть одно обязательное фото, оно почти наверняка будет здесь.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">Шанхай даёт «Китай, который вас удивит».</h4>
+          <p class="text-base leading-relaxed text-gray-700">Банд в сумерках, горизонт Луцзяцзуй, вековые улицы района Вукан-роуд–Аньфу-роуд — современно, удобно для прогулок и, пожалуй, ещё более впечатляюще ночью.</p>
+        </div>
+      </div>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">Если ваш мысленный образ Китая — красные стены и древние крыши, это Пекин. Если неон и стеклянные башни — это Шанхай. Выберите образ, с которым хотите просыпаться большую часть поездки.</p>
+
+      <!-- ============ 章节 4 ============ -->
+      <hr class="border-gray-200 my-12" />
+      <h2 id="which-is-cheaper" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">💰</span> Какой город на самом деле дешевле?
+      </h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">Цены почти одинаковы — Пекин чуть дешевле по отелям и еде, но разница никогда не меняет решение о поездке. Выбирайте город, который хотите, а не тот, что дешевле; см. <a href="/ru/payment/china-travel-budget/" class="text-blue-600 hover:underline">Стоимость поездки в Китай 2026</a> для реальных цифр.</p>
+
+      <!-- ============ 章节 5 ============ -->
+      <hr class="border-gray-200 my-12" />
+      <h2 id="when-to-go" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">📅</span> Когда ехать?
+      </h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">Сезоны не совпадают так аккуратно, как принято считать:</p>
+      <div class="space-y-6 mb-12">
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">Лучшие периоды Пекина — апрель–май и сентябрь–октябрь.</h4>
+          <p class="text-base leading-relaxed text-gray-700">В остальное время либо морозно (до −10°C в январе, сухо и серо), либо жарко и туманно летом. Великая стена гораздо приятнее весной и осенью.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">Лучшие периоды Шанхая — март–май и октябрь–ноябрь.</h4>
+          <p class="text-base leading-relaxed text-gray-700">Зима мягче пекинской (редко ниже 0°C), но влажная; лето (июнь–август) — жаркое, влажное и с риском тайфунов.</p>
+        </div>
+      </div>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">Если даты фиксированы, оба города можно посещать круглый год — просто соберитесь на пекинские крайности и шанхайскую влажность. Если даты гибкие, цельтесь в апрель–май или сентябрь–октябрь — оба города будут комфортны.</p>
+
+      <!-- ============ 章节 6 ============ -->
+      <hr class="border-gray-200 my-12" />
+      <h2 id="trip-rhythms" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">👣</span> Чем различается ритм поездки?
+      </h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">Это важнее, чем думает большинство:</p>
+      <div class="space-y-6 mb-12">
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">Пекин — большой и раскидистый.</h4>
+          <p class="text-base leading-relaxed text-gray-700">Город огромен, достопримечательности далеко друг от друга, и вы будете жить в метро. Готовьтесь к ритму «поехать, посмотреть, переехать, посмотреть» — он вознаграждает, но утомляет. Планируйте 3–4 дня, чтобы без спешки охватить знаковые места.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">Шанхай — компактный и удобный для прогулок.</h4>
+          <p class="text-base leading-relaxed text-gray-700">Главные достопримечательности сосредоточены у реки и в старом городе, а кварталы к западу от Народной площади словно созданы для прогулок. Можно неторопливо выпить утренний кофе и всё равно многое увидеть. Планируйте 2–3 дня.</p>
+        </div>
+      </div>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">Если вы любите структурированный осмотр по чек-листу, вам подойдёт ритм Пекина. Если предпочитаете бродить и заходить в кофейни — вам подойдёт Шанхай.</p>
+
+      <!-- ============ 章节 7 ============ -->
+      <hr class="border-gray-200 my-12" />
+      <h2 id="food" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🍜</span> Чем отличается еда?
+      </h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">Оба города — полноценные международные гастрономические столицы: французское бистро или сычуаньский хого, которого вам захотелось, — в одной поездке на метро в любом из них, так что вопрос «где лучше международная кухня» на самом деле не стоит. Разница — в местной традиции, которую подаёт каждый город:</p>
+      <div class="space-y-6 mb-12">
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">Пекин — это северная кухня: имперская и сытная.</h4>
+          <p class="text-base leading-relaxed text-gray-700">Утка по-пекински — главный номер, но стол глубже: баранина в хого (涮羊肉), лапша чжацзян (炸酱面), шашлычки из баранины в Мусульманском квартале, плюс придворные блюда, порождённые 800 годами столичного статуса. Смелые, солёные, соусные вкусы.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">Шанхай — это кухня Цзяннани: сладкая, изысканная, сезонная.</h4>
+          <p class="text-base leading-relaxed text-gray-700">Сяолунбао и шэнцзянь на завтрак, а домашний стол строится на классике «нунъю чицзян» (浓油赤酱 — «густое масло, тёмный соус»), как свинина в красном соусе с её фирменной сладостью. Осенью — волосатый краб. Легче и деликатнее пекинской кухни и сильнее привязана к сезону.</p>
+        </div>
+      </div>
+      <p class="text-lg leading-relaxed text-gray-700 mb-8">Путешественники, для которых еда — приоритет, чётко делятся по вкусу: имперские северные вкусы или сладко-солёный стол Цзяннани.</p>
+
+      <!-- ============ 章节 8 ============ -->
+      <hr class="border-gray-200 my-12" />
+      <h2 id="which-first" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">🧭</span> Итак, какой город посетить первым?
+      </h2>
+      <div class="space-y-6 mb-12">
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">Начните с Пекина</h4>
+          <p class="text-base leading-relaxed text-gray-700">если вы прилетаете из Европы или Северной Америки — это естественная первая остановка в большинстве круговых маршрутов, а утренний джетлаг хорошо сочетается с осмотром достопримечательностей на рассвете, которые лучше посещать до 10 утра. Завершите в Шанхае, чтобы отдохнуть.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">Начните с Шанхая</h4>
+          <p class="text-base leading-relaxed text-gray-700">если вы летите из Юго-Восточной Азии или хотите мягко войти в Китай — здесь посадка мягче, и вы сможете проложить путь «назад во времени» к истории Пекина, освоившись.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-gray-900 mb-2">Посетите оба, в таком порядке:</h4>
+          <p class="text-base leading-relaxed text-gray-700">Пекин (3 дня) → скоростной поезд утром (4,5 ч) → Шанхай (3 дня). Это самый популярный маршрут для первой поездки в Китай, и он отлично работает — на переезд вы теряете едва ли полдня.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ============ NEXT READS ============ -->
+    <div class="bg-gray-50 rounded-2xl p-8 not-prose">
+      <div class="border-t border-gray-100 pt-6 mt-8">
+        <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5 not-prose">
+          <div class="flex items-center justify-between gap-4 flex-wrap">
+            <h3 class="text-sm font-bold text-gray-900">📚 Связанные руководства</h3>
+            <div class="flex flex-wrap gap-2">
+              <a href="/ru/cities/beijing-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                🏛️ Путеводитель по Пекину
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/ru/cities/shanghai-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                🌃 Путеводитель по Шанхаю
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/ru/transport/high-speed-rail/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                🚄 Путеводитель по скоростным поездам
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/ru/payment/china-travel-budget/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                💰 Стоимость поездки в Китай 2026
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+              <a href="/ru/cities/city-select/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+                🗓️ Сколько дней нужно?
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ SOURCES ============ -->
+    <div class="not-prose mt-12 pt-8 border-t border-gray-200">
+      <h3 class="text-base font-bold text-gray-900 mb-4 flex items-center gap-2">
+        <span class="text-lg">📚</span> Источники
+      </h3>
+      <ul class="space-y-2">
+        <li>
+          <a href="https://english.beijing.gov.cn/travellinginbeijing/mustvisitsites" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+            <span class="border-b border-transparent group-hover:border-brand-700">Правительство Пекина — официальный англоязычный туристический портал «Must-visit Sites» (Запретный город, Великая стена, Храм Неба, Летний дворец)</span>
+            <svg class="w-3 h-3 text-gray-300 ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://english.shanghai.gov.cn/en-ScenicSpots/index.html" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+            <span class="border-b border-transparent group-hover:border-brand-700">Правительство Шанхая — официальный англоязычный туристический портал «Scenic Spots» (Банд, сад Юйюань, улица Нанкин, дорога Вукан)</span>
+            <svg class="w-3 h-3 text-gray-300 ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.12306.cn/en/index.html" target="_blank" rel="noopener" class="group flex items-center gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <svg class="w-3 h-3 text-gray-400 group-hover:text-brand-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+            <span class="border-b border-transparent group-hover:border-brand-700">China Railway 12306 (англ.) — расписание поездов Пекин–Шанхай и тарифы второго класса, указанные в разделе о переезде</span>
+            <svg class="w-3 h-3 text-gray-300 ml-auto shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </article>
+</Layout>

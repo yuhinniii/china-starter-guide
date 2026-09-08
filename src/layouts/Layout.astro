@@ -7,6 +7,7 @@ const {
   title, 
   description = 'Your ultimate guide to traveling, living and working in China', 
   lang = 'en',
+  noAlternates = false,
   breadcrumbs = [],
   type = 'WebPage',
   publishedDate = '',
@@ -14,10 +15,12 @@ const {
   ogImage = 'https://chinastarterhub.com/images/og-default.png'
 } = Astro.props;
 
-const currentLang = isValidLang(lang) ? lang : defaultLocale;
-const dir = langDirections[currentLang];
+const currentLang = lang === 'de' || isValidLang(lang) ? lang : defaultLocale;
+const dir = langDirections[currentLang] || 'ltr';
 const t = getUI(currentLang);
-const base = `/${currentLang}`;
+const currentLabel = (langLabels as Record<string, string>)[currentLang] || 'Deutsch';
+// 单语特例页(de 等)不做语言切换, 站点链接基准回落默认语种, 避免指向不存在目录
+const base = noAlternates ? `/${defaultLocale}` : `/${currentLang}`;
 
 // 判断当前页面是否为内容文章页（导航页不显示作者行/作者卡）
 // 导航页：首页、about/contact/privacy/search/apps + 各子目录 index（/en/cities/ 这类）
@@ -30,10 +33,12 @@ const schemaType = isArticlePage ? 'Article' : type;
 
 // Build alternate-language URLs for the current page
 const currentPath = Astro.url.pathname;
-const alternateUrls = langs.map(l => {
-  const newPath = currentPath.replace(/^\/[a-z]{2}\//, `/${l}/`);
-  return { lang: l, label: langLabels[l], href: newPath };
-});
+const alternateUrls = noAlternates
+  ? []
+  : langs.map(l => {
+      const newPath = currentPath.replace(/^\/[a-z]{2}\//, `/${l}/`);
+      return { lang: l, label: langLabels[l], href: newPath };
+    });
 ---
 
 <html lang={currentLang} dir={dir}>
@@ -58,7 +63,9 @@ const alternateUrls = langs.map(l => {
     {alternateUrls.map(alt => (
       <link rel="alternate" hreflang={alt.lang} href={`https://chinastarterhub.com${alt.href}`} />
     ))}
-    <link rel="alternate" hreflang="x-default" href={`https://chinastarterhub.com${alternateUrls.find(a => a.lang === 'en')?.href || '/'}`} />
+    {!noAlternates && (
+      <link rel="alternate" hreflang="x-default" href={`https://chinastarterhub.com${alternateUrls.find(a => a.lang === 'en')?.href || '/'}`} />
+    )}
 
     <!-- Travelpayouts Drive -->
     <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1">
@@ -204,6 +211,7 @@ const alternateUrls = langs.map(l => {
           ))}
         </div>
         <div class="flex items-center gap-3">
+          {!noAlternates && (
           <!-- Language Switcher -->
           <div class="relative" id="lang-switcher">
             <button
@@ -214,7 +222,7 @@ const alternateUrls = langs.map(l => {
               aria-expanded="false"
               aria-label={t.language}
             >
-              <span>{langLabels[currentLang]}</span>
+              <span>{currentLabel}</span>
               <svg class="w-3 h-3 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
             <ul
@@ -236,6 +244,7 @@ const alternateUrls = langs.map(l => {
               ))}
             </ul>
           </div>
+          )}
           <!-- Mobile menu -->
           <button id="mobile-menu-btn" class="md:hidden text-gray-500 text-xl" aria-label="Menu">☰</button>
         </div>

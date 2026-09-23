@@ -1,0 +1,363 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'คู่มือพระราชวังต้องห้าม: ตั๋ว เส้นทาง และทุกสิ่งที่ควรรู้ก่อนไป';
+const description = 'วิธีจองตั๋วพระราชวังต้องห้าม เลือกระหว่างเส้นทาง 2 ชั่วโมง ครึ่งวัน และเต็มวันที่ทางพิพิธภัณฑ์แนะนำ และควรดูอะไรข้างในพิพิธภัณฑ์พระราชวัง — คู่มือเที่ยวฉบับสมบูรณ์สำหรับนักท่องเที่ยวต่างชาติ';
+---
+
+<Layout title={title} description={description} lang="th">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+
+    <!-- ============ BREADCRUMB ============ -->
+    <nav class="mb-8 not-prose">
+      <a href="/th/cities/beijing-guide/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        กลับไปที่คู่มือปักกิ่ง
+      </a>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🏛️ พระราชวังต้องห้าม · ปักกิ่ง</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">คู่มือพระราชวังต้องห้าม: ตั๋ว เส้นทาง และทุกสิ่งที่ควรรู้ก่อนไป</h1>
+      <p class="text-xl text-gray-600 mb-6">พิพิธภัณฑ์พระราชวังคือเหตุผลอันดับหนึ่งที่ทำให้คนส่วนใหญ่มาปักกิ่ง — นี่คือวิธีวางแผนการเข้าชมให้คุ้มค่ากับภาพในโปสการ์ดจริง ๆ</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 อัปเดตล่าสุด: กันยายน 2026</span>
+        <span>⏱️ อ่าน 7 นาที</span>
+      </div>
+    </header>
+
+    <!-- ============ HERO IMAGE ============ -->
+    <figure class="mb-12 not-prose">
+      <img
+        src="/images/forbidden-city/hero-aerial.jpg"
+        alt="ภาพมุมสูงของพระราชวังต้องห้ามมองไปทางเหนือข้ามหลังคากระเบื้องสีทองสู่สวนจิ่งซาน"
+        width="1200"
+        height="800"
+        loading="eager"
+        fetchpriority="high"
+        class="w-full h-auto object-cover rounded-2xl shadow-md"
+      />
+      <figcaption class="text-xs text-gray-500 text-center mt-2">พระราชวังต้องห้ามมองจากเขาจิ่งซาน — สถาปัตยกรรมราชวงศ์ 72 เฮกตาร์ในภาพเดียว</figcaption>
+    </figure>
+
+    <!-- ============ QUICK ANSWER ============ -->
+    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-red-900 mb-4">⚡ คำตอบด่วน</h2>
+      <p class="text-lg text-red-800 leading-relaxed">
+        วันนั้นซื้อตั๋วที่หน้างานไม่ได้ — พระราชวังต้องห้ามเปิดขายล่วงหน้า 7 วัน และในฤดูท่องเที่ยว (1 เม.ย.–31 ต.ค.) ตั๋วราคา <strong>¥60</strong> (นอกฤดู ¥40) จองออนไลน์ผ่าน<strong>เว็บไซต์ทางการของพิพิธภัณฑ์พระราชวัง</strong> (ชาวต่างชาติลงทะเบียนด้วยหนังสือเดินทางและจ่ายด้วยบัตรระหว่างประเทศ ไม่ต้องใช้แอปจ่ายเงินจีน) พิพิธภัณฑ์ปิดทุกวันจันทร์ (ยกเว้นวันหยุดราชการ) จองตอน <strong>20:00 น. ตามเวลาปักกิ่ง ของวันที่ครบ 7 วันก่อนวันเข้าชม</strong> — ช่วงสัปดาห์ทองตั๋วหมดภายในไม่กี่นาที
+      </p>
+    </div>
+
+    <!-- ============ IN THIS GUIDE ============ -->
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 สารบัญ</h3>
+      <ul class="space-y-3">
+        <li><a href="#worth-it" class="text-blue-600 hover:underline">🤔 พระราชวังต้องห้ามน่าไปไหม?</a></li>
+        <li><a href="#tickets" class="text-blue-600 hover:underline">🎫 ตั๋วพระราชวังต้องห้ามราคาเท่าไหร่?</a></li>
+        <li><a href="#guide" class="text-blue-600 hover:underline">🧑‍🏫 ควรมีไกด์หรือไม่?</a></li>
+        <li><a href="#routes" class="text-blue-600 hover:underline">🗺️ สามเส้นทางที่แนะนำ</a></li>
+        <li><a href="#practical-tips" class="text-blue-600 hover:underline">👟 เคล็ดลับปฏิบัติ</a></li>
+        <li><a href="#walking-through" class="text-blue-600 hover:underline">🏯 คุณกำลังเดินผ่านอะไรกันแน่</a></li>
+        <li><a href="#skip" class="text-blue-600 hover:underline">🚫 สามสิ่งที่ห้ามพลาด</a></li>
+      </ul>
+    </nav>
+
+    <!-- ============ SECTION 1: WORTH IT ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="worth-it" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🤔 พระราชวังต้องห้ามน่าไปไหม?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">คุ้มค่าแก่การไปมาก — ที่นี่เป็นมรดกโลกของยูเนสโก และเป็นหมู่พระตำหนักไม้ที่ใหญ่ที่สุดและสมบูรณ์ที่สุดในโลก เคยเป็นที่ประทับและศูนย์กลางอำนาจของจักรพรรดิ 24 พระองค์ในราชวงศ์หมิงและชิง เบื้องหลังกำแพงสีแดงและกระเบื้องสีเหลือง ท่ามกลางพระตำหนักที่ซ้อนชั้นกัน ซ่อนประวัติศาสตร์ราชวงศ์ 600 ปีไว้ — ตั้งแต่พระราชพิธีบรมราชาภิเษกจนถึงชีวิตในวังหลัง ทุกมุมนักท่องเที่ยวสัมผัสได้โดยตรงถึงความยิ่งใหญ่ของราชวงศ์จีนโบราณและภูมิปัญญาการก่อสร้างของยุคนั้น สำหรับนักท่องเที่ยวต่างชาติ มันไม่ใช่แค่ "อาคารเก่า" แต่เป็นประตูสู่ความเข้าใจประวัติศาสตร์และวัฒนธรรมจีน — เมื่อคุณเดินข้ามลานหน้าพระที่นั่งไท่เหอเตี้ยน ก็จะเข้าใจว่าทำไมคนจีนจึงมักพูดว่า "พระราชวังต้องห้าม" รวบรวมระเบียบและสุนทรียะของทั้งจักรวรรดิไว้</p>
+
+    <!-- ============ SECTION 2: TICKETS ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="tickets" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎫 ตั๋วพระราชวังต้องห้ามราคาเท่าไหร่? (ราคาทางการและวิธีจอง)</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">พระราชวังต้องห้ามเป็นหนึ่งในไม่กี่ที่ในจีนที่<em>การวางแผน</em>สำคัญพอ ๆ กับการเข้าชมเอง นี่คือทุกสิ่งที่คุณต้องรู้ โดยอ้างอิงจากกฎตั๋วทางการของพิพิธภัณฑ์</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">ต่อไปนี้มาจากนโยบายตั๋วทางการของพิพิธภัณฑ์พระราชวัง:</p>
+
+    <div class="overflow-x-auto mb-12 not-prose">
+      <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+        <thead>
+          <tr class="bg-gray-900 text-white">
+            <th class="px-6 py-4 font-bold">รายการ</th>
+            <th class="px-6 py-4 font-bold">ราคา</th>
+            <th class="px-6 py-4 font-bold">หมายเหตุ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4">ตั๋วเข้าประตูหลัก (ฤดูท่องเที่ยว 1 เม.ย.–31 ต.ค.)</td>
+            <td class="px-6 py-4 font-semibold">¥60</td>
+            <td class="px-6 py-4">รวมพระตำหนักหลักทั้งหมด ไม่รวมหอสมบัติและหอนาฬิกา</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4">ตั๋วเข้าประตูหลัก (นอกฤดู 1 พ.ย.–31 มี.ค.)</td>
+            <td class="px-6 py-4 font-semibold">¥40</td>
+            <td class="px-6 py-4"></td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4">หอสมบัติ (珍宝馆)</td>
+            <td class="px-6 py-4 font-semibold">¥10</td>
+            <td class="px-6 py-4">คุ้มค่า — จัดแสดงเครื่องทองชื่อดัง</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4">หอนาฬิกา (钟表馆)</td>
+            <td class="px-6 py-4 font-semibold">¥10</td>
+            <td class="px-6 py-4">ก็คุ้มค่าเช่นกัน</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4">ส่วนลดผู้สูงอายุ (นักท่องเที่ยวต่างชาติ อายุ 60 ปีขึ้นไป)</td>
+            <td class="px-6 py-4 font-semibold">¥30</td>
+            <td class="px-6 py-4">ทั้งสามรายการข้างต้นรวมอยู่ในตั๋วส่วนลดแล้ว</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4">ส่วนลดนักเรียน (ต่างชาติ อายุ 7–17 ปี; ระดับปริญญาตรีและต่ำกว่า)</td>
+            <td class="px-6 py-4 font-semibold">¥20</td>
+            <td class="px-6 py-4">สิทธิ์เดียวกัน; นำบัตรนักเรียนที่ยังใช้ได้มาด้วย</td>
+          </tr>
+          <tr>
+            <td class="px-6 py-4">เด็ก (ต่างชาติ อายุ 6 ปีและต่ำกว่า)</td>
+            <td class="px-6 py-4 font-semibold">ฟรี</td>
+            <td class="px-6 py-4">ไม่ต้องใช้ตั๋ว</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-8"><strong>กฎการจองที่ตัดสินว่าคุณจะได้เข้าไหม:</strong></p>
+    <ul class="space-y-3 mb-12 text-lg text-gray-700">
+      <li>📅 <strong>เวลาขาย:</strong> ตั๋วเปิดขาย<strong>7 วันก่อนวันเข้าชม เวลา 20:00 น.</strong> ตามเวลาปักกิ่ง ปกติหมดภายในไม่กี่นาที — ตั้งนาฬิกาปลุกไว้ด้วย</li>
+      <li>🚫 <strong>ไม่ขายตั๋ววันเดียว</strong> — พิพิธภัณฑ์ไม่ขายตั๋วที่หน้าประตู</li>
+      <li>🛒 <strong>จองที่ไหน:</strong>
+        <ul class="list-disc pl-8 mt-2 space-y-1">
+          <li><a href="https://bookingticket.dpm.org.cn/" target="_blank" rel="noopener" class="text-blue-600 hover:underline font-medium">เว็บไซต์ทางการของพิพิธภัณฑ์พระราชวัง</a> — ลงทะเบียนด้วยหนังสือเดินทางและจ่ายด้วยบัตรระหว่างประเทศ</li>
+          <li><a href="https://www.trip.com/t/h6LFHO1J2W2" target="_blank" rel="noopener" class="text-blue-600 hover:underline font-medium">แพ็กเกจทัวร์มีไกด์ของ Trip.com</a> — รวมตั๋ว + ไกด์พูดภาษาอังกฤษ ไม่ต้องแย่งกันจองตั๋ว</li>
+        </ul>
+      </li>
+      <li>📘 <strong>นำหนังสือเดินทางมาด้วย</strong> ลงทะเบียนด้วยเลขหนังสือเดินทางและแสดงเล่มเดียวกันที่ประตู</li>
+      <li>🚪 <strong>ทางเข้าและทางออก:</strong> เข้าได้ที่<strong>ประตูอู่เหมิน (午门, ด้านใต้)</strong> เท่านั้น ออกทาง<strong>ประตูเสินอู่เหมิน (神武门, ด้านเหนือ)</strong> หรือ<strong>ประตูตงหัวเหมิน (东华门)</strong></li>
+      <li>🈚 <strong>ปิดทุกวันจันทร์</strong> (ยกเว้นวันหยุดราชการ)</li>
+      <li>🕗 <strong>เวลาทำการ:</strong> 8:30–17:00 น. (ฤดูท่องเที่ยว เข้าชมรอบสุดท้าย 16:00 น.); 8:30–16:30 น. นอกฤดู</li>
+    </ul>
+
+    <!-- ============ SECTION 3: GUIDE ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="guide" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🧑‍🏫 ควรมีไกด์หรือไม่?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">ถ้าอยากเข้าใจประวัติศาสตร์ของพระราชวังต้องห้ามอย่างลึกซึ้ง ไม่ใช่แค่ถ่ายรูปแล้วติ๊กถูกในลิสต์ ฉันขอแนะนำอย่างยิ่งให้จ้างไกด์นำเที่ยว พระราชวังต้องห้ามเป็นพระราชวังของราชวงศ์หมิงและชิงของจีน มีประวัติยาวนานกว่า 600 ปี เป็นผลงานชิ้นเอกของสถาปัตยกรรมจีนโบราณและเป็นจุดสูงสุดของสถาปัตยกรรมพระราชวังจีนดั้งเดิม ทั้งมรดกทางสถาปัตยกรรมและความสำคัญทางประวัติศาสตร์ ล้วนต้องมีไกด์มืออาชีพมาอธิบายให้เราฟัง ไกด์จะทำให้พระราชวังต้องห้ามกลายเป็นบทเรียนประวัติศาสตร์ ไม่ใช่แค่การเดินชมที่สวยงาม</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">ถ้าเดินเอง คุณจะเห็นแค่สถาปัตยกรรมที่สวยงาม แต่พลาดเรื่องราวเบื้องหลังที่น่าสนใจยิ่งกว่า คุณจะเดินผ่านราวระเบียงหินอ่อนแกะสลักมังกร เต่าทองสัมฤทธิ์และนกกระเรียนหน้าพระตำหนักหลัก สัตว์มงคลสิบตัวที่เรียงกันบนหลังคาจุดหนึ่ง — แล้วก็คงไม่รู้ว่ามันหมายถึงอะไร และนั่นคือส่วนที่นักท่องเที่ยวส่วนใหญ่บอกกับตัวเองว่า "ค่อยกลับไปหาข้อมูลทีหลัง" แล้วก็ไม่เคยทำ</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12 not-prose">
+      <div class="bg-blue-50 border border-blue-100 rounded-2xl p-6">
+        <p class="text-gray-700"><strong>👉 อยากได้ไกด์?</strong> Trip.com รวมตั๋วกับไกด์พูดภาษาอังกฤษไว้ด้วยกัน ไม่ต้องแย่งกันจองตั๋ว <a href="https://www.trip.com/t/h6LFHO1J2W2" target="_blank" rel="noopener" class="text-blue-600 hover:underline font-medium">ดูทัวร์มีไกด์พระราชวังต้องห้าม →</a></p>
+      </div>
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <p class="text-gray-700"><strong>🙌 เดินเอง?</strong> จองตั๋วโดยตรงบนเว็บไซต์ทางการของพิพิธภัณฑ์พระราชวัง <a href="https://bookingticket.dpm.org.cn/" target="_blank" rel="noopener" class="text-blue-600 hover:underline font-medium">ไปที่ bookingticket.dpm.org.cn →</a></p>
+      </div>
+    </div>
+
+    <!-- ============ SECTION 4: ROUTES ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="routes" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🗺️ สามเส้นทางที่แนะนำ (จากแผนที่ผู้เข้าชมทางการของพิพิธภัณฑ์พระราชวัง)</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">พิพิธภัณฑ์พระราชวังเผยแพร่สามเส้นทางไว้ในแผนที่ผู้เข้าชม หนึ่งเส้นทางสำหรับช่วงเวลาที่พบบ่อยแต่ละแบบ ทั้งสามเส้นทางเริ่มที่<strong>ประตูอู่เหมิน (午门, ด้านใต้)</strong> — ทางเข้าเพียงแห่งเดียว — และสิ้นสุดที่<strong>ประตูเสินอู่เหมิน (神武门, ด้านเหนือ)</strong> ตรงข้ามสวนจิ่งซาน เลือกแบบที่ตรงกับเวลาที่คุณมี ส่วนที่เหลือของบทความถือว่าคุณอยู่บนเส้นทางใดเส้นทางหนึ่ง</p>
+
+    <!-- ===== ROUTE A: 2 HOURS ===== -->
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-6 items-start bg-white border border-gray-200 rounded-2xl p-6 mb-10 not-prose">
+      <div class="md:col-span-2 w-full flex flex-col gap-4">
+        <figure class="w-full">
+          <img src="/images/forbidden-city/route-2-hour.png" alt="แผนที่เส้นทาง 2 ชั่วโมงทางการของพระราชวังต้องห้าม แกนกลาง จุดแวะ 13 จุด จากประตูอู่เหมินด้านใต้ถึงประตูเสินอู่เหมินด้านเหนือ" class="w-full h-auto object-contain bg-gray-50 rounded-xl" loading="lazy" />
+          <figcaption class="text-xs text-gray-500 text-center mt-2">เส้นทาง A ทางการ · 2 ชั่วโมง · 13 จุด (เฉพาะแกนกลาง)</figcaption>
+        </figure>
+        <figure class="w-full">
+          <img
+            src="/images/forbidden-city/hall-of-supreme-harmony.jpg"
+            alt="ด้านหน้าพระที่นั่งไท่เหอเตี้ยน แสดงหลังคาซ้อนชั้นและฐานหินอ่อนสามชั้น"
+            width="1024"
+            height="768"
+            loading="lazy"
+            class="w-full h-auto object-cover rounded-2xl shadow-md"
+          />
+          <figcaption class="text-xs text-gray-500 text-center mt-2">ไท่เหอเตี้ยน (太和殿) — สิ่งก่อสร้างไม้ที่ใหญ่ที่สุดในจีน</figcaption>
+        </figure>
+      </div>
+      <div class="md:col-span-3">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">🏛️ เส้นทาง A — เฉพาะแกนกลาง</h3>
+        <p class="text-base leading-relaxed text-gray-700 mb-4">ฉบับย่อที่รวบที่สุด ถ้าคุณมาแค่เพื่อรูปสัญลักษณ์และพระตำหนักใหญ่หนึ่งหรือสองหลัง แค่นี้ก็พอ — ครอบคลุมแกนกลางทั้งหมดจากใต้จรดเหนือโดยไม่เบี่ยงเข้าไปในตำหนักข้างเลย เกือบทุกกรุ๊ปทัวร์เดินตามแกนนี้ ดังนั้นคาดว่าคนจะเยอะ ข้อดีคือคุณเดินผ่านพระราชพิธีราชวงศ์ 600 ปีในเวลาแค่สองชั่วโมง</p>
+        <p class="text-base font-semibold text-gray-900 mb-2">นี่คือลำดับ พร้อมเหตุผลว่าทำไมแต่ละจุดจึงควรหยุด:</p>
+        <ol class="space-y-2 list-decimal pl-5 text-base text-gray-700">
+          <li><strong>ประตูอู่เหมิน (午门)</strong> — ทางเข้า เงยหน้ามองหอสามชั้นขณะเดินผ่านอุโมงค์เตี้ย ๆ: ความอึดอัดนี้ตั้งใจไว้ ทุกคนที่เข้าเฝ้าจักรพรรดิจึงตัวเล็กเสมอ</li>
+          <li><strong>ประตูไท่เหอเหมิน (太和门)</strong> — ประตูที่ใหญ่ที่สุดในหมู่พระราชวัง มองสิงโตสัมฤทธิ์คู่นั้น: ตัวซ้าย (ตัวผู้ เท้าบนลูกแก้ว = ครองโลก) ตัวขวา (ตัวเมีย เท้าบนลูกสิงห์ = เลี้ยงดูครอบครัว)</li>
+          <li><strong>ไท่เหอเตี้ยน (太和殿)</strong> — สิ่งก่อสร้างไม้ที่ใหญ่ที่สุดในจีน จักรพรรดิขึ้นครองราชย์ที่นี่ เต่าทองและนกกระเรียนสัมฤทธิ์ด้านหน้าเป็นกระถางธูป ไม่ใช่ของประดับ</li>
+          <li><strong>หงอี้เก๋อ (弘义阁)</strong> — ศาลาเล็กฝั่งตะวันตก สร้างสำหรับพิธีในราชสำนักเล็ก ๆ แทบไม่มีนักท่องเที่ยว</li>
+          <li><strong>ถีเหรินเก๋อ (体仁阁)</strong> — ศาลาฝั่งตะวันออกที่คู่กัน รวมกับจุดที่ 4 แล้วล้อมลานใหญ่ไว้</li>
+          <li><strong>จงเหอเตี้ยน (中和殿)</strong> — เดินผ่านง่ายมาก แต่จักรพรรดิพักและซ้อมพิธีที่นี่ก่อนพระราชพิธีที่ไท่เหอ</li>
+          <li><strong>เป่าเหอเตี้ยน (保和殿)</strong> — ห้องจัดเลี้ยง และตั้งแต่ปี 1789 เป็นสถานที่สอบหลวงรอบสุดท้าย เดินไปด้านหลังเพื่อดูทางเดินหินสลัก "เมฆและมังกร": ช่างฝีมือ 12 คน ใช้เวลา 2 ปี</li>
+          <li><strong>ประตูเฉียนชิงเหมิน (乾清门)</strong> — ข้ามผ่านประตูนี้คือการเปลี่ยนจากความโอ่อ่าต่อสาธารณะสู่ชีวิตส่วนพระองค์</li>
+          <li><strong>เฉียนชิงกง (乾清宫)</strong> — ห้องบรรทมของจักรพรรดิสมัยหมิงถึงต้นชิง มองหาป้าย<strong>正大光明</strong>: ตั้งแต่ราชวงศ์ชิง พระนามรัชทายาทถูกผนึกไว้ในหีบหลังป้ายนั้น</li>
+          <li><strong>เจียวไท่เตี้ยน (交泰殿)</strong> — ศาลาสี่เหลี่ยมเล็ก ๆ ระหว่างสองตำหนัก ใช้ในพิธีสถาปนาพระมเหสีและเก็บพระราชลัญจกร</li>
+          <li><strong>คุนหนิงกง (坤宁宫)</strong> — ที่ประทับของพระมเหสีสมัยหมิงและชิง ต่อมาบางส่วนถูกดัดแปลงเป็นศาลาการทรงเจ้าแบบแมนจู — อาคารเดียว สองศาสนา</li>
+          <li><strong>สวนอวี้ฮวาหยวน (御花园)</strong> — ส่วนหลังสุดของหมู่พระราชวังและเป็นจุดสุดท้ายของคุณ เขาหินจำลองรูปภูเขา ต้นสนอายุกว่า 400 ปี</li>
+          <li><strong>ประตูเสินอู่เหมิน (神武门)</strong> — ทางออก ข้ามถนนเข้า<strong>สวนจิ่งซาน</strong> (¥2) เพื่อถ่ายรูปที่ดีที่สุดในปักกิ่ง</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- ===== ROUTE B: HALF DAY ===== -->
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-6 items-start bg-white border border-gray-200 rounded-2xl p-6 mb-10 not-prose">
+      <figure class="md:col-span-2 w-full">
+        <img src="/images/forbidden-city/route-half-day.png" alt="แผนที่เส้นทางครึ่งวันทางการของพระราชวังต้องห้าม มีจุดแวะ 14 จุด ครอบคลุมแกนกลางและตำหนักฝั่งตะวันตก" class="w-full h-auto object-contain bg-gray-50 rounded-xl" loading="lazy" />
+        <figcaption class="text-xs text-gray-500 text-center mt-2">เส้นทาง B ทางการ · ครึ่งวัน (ประมาณ 3–4 ชม.) · 14 จุด</figcaption>
+      </figure>
+      <div class="md:col-span-3">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">🏛️ เส้นทาง B — ครึ่งวัน (เพิ่มฝั่งตะวันตก)</h3>
+        <p class="text-base leading-relaxed text-gray-700 mb-4">เพิ่มหอเครื่องเคลือบ<strong>อู่หยิงเตี้ยน</strong>และ<strong>หกตำหนักตะวันตก</strong>เข้าไปในแกนกลาง สำหรับผู้มาเยือนครั้งแรกส่วนใหญ่ นี่คือปริมาณพระราชวังที่พอเหมาะ จุดที่ 1 และ 3–13 เหมือนเส้นทาง A — ย้อนกลับไปดูรายละเอียดได้ ที่นี่มีแค่จุดที่เฉพาะกับเส้นทางนี้:</p>
+        <ol class="space-y-2 list-decimal pl-5 text-base text-gray-700" start="2">
+          <li value="2"><strong>อู่หยิงเตี้ยน (武英殿)</strong> — เลี้ยวซ้ายหลังเข้า หอเครื่องเคลือบตั้งอยู่ในตำหนักที่เก่าแก่ที่สุดที่ยังหลงเหลือของหมู่พระราชวัง (ค.ศ. 1407) สงบ คนน้อย เป็นจุดเริ่มต้นที่ดี</li>
+          <li value="11"><strong>หกตำหนักตะวันตก (西六宫)</strong> (11–12) — ที่ประทับของพระสนมทางฝั่งตะวันตกของแกนกลาง ขนาดอาคารลดจากสถาปัตยกรรมระดับรัฐสู่ระดับบ้านเรือน คุณจึงเห็นได้ว่าชีวิตของสตรีในวังถูกจำกัดกรอบแค่ไหน</li>
+          <li value="14"><strong>ประตูเสินอู่เหมิน (神武门)</strong> (14) — ทางออกเดียวกับเส้นทาง A ออกไปก็ถึงสวนจิ่งซาน</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- ===== ROUTE C: FULL DAY ===== -->
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-6 items-start bg-white border border-gray-200 rounded-2xl p-6 mb-10 not-prose">
+      <figure class="md:col-span-2 w-full">
+        <img src="/images/forbidden-city/route-full-day.png" alt="แผนที่เส้นทางเต็มวันทางการของพระราชวังต้องห้าม มีจุดแวะ 17 จุด ครอบคลุมแกนกลางและหมู่ตำหนักฝั่งตะวันตกและตะวันออก" class="w-full h-auto object-contain bg-gray-50 rounded-xl" loading="lazy" />
+        <figcaption class="text-xs text-gray-500 text-center mt-2">เส้นทาง C ทางการ · เต็มวัน (ประมาณ 6 ชม.ขึ้นไป) · 17 จุด</figcaption>
+      </figure>
+      <div class="md:col-span-3">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">🏛️ เส้นทาง C — เต็มวัน (ทั้งสองปีก)</h3>
+        <p class="text-base leading-relaxed text-gray-700 mb-4">ครอบคลุมทั้งหมด เพิ่มหมู่ตำหนักฝั่งตะวันออกบนพื้นฐานของเส้นทาง B — นิทรรศการหมุนเวียนและพิพิธภัณฑ์หลักทุกแห่งภายในกำแพงวัง คุ้มค่าก็ต่อเมื่อคุณสนใจศิลปะหรือสถาปัตยกรรมจีนอย่างจริงจัง จุดที่ 4–13 เหมือนเส้นทาง A ที่นี่มีแค่จุดที่เฉพาะกับเส้นทางนี้:</p>
+        <ol class="space-y-2 list-decimal pl-5 text-base text-gray-700" start="2">
+          <li value="2"><strong>อู่หยิงเตี้ยน (武英殿)</strong> — ฝั่งตะวันตก หอเครื่องเคลือบ เหมือนเส้นทาง B; เป็นเหตุผลที่หนักแน่นที่สุดในการมาฝั่งนี้ของวัง</li>
+          <li value="3"><strong>เหวินฮวาเตี้ยน (文华殿)</strong> — ฝั่งตะวันออก คู่กับอู่หยิงเตี้ยน; หอภาพวาดและอักษรวิจิตร ถ้ามีเวลาเต็มวันแค่ดูหอเดียว ให้เลือกหอนี้</li>
+          <li value="14"><strong>หกตำหนักตะวันตก (西六宫)</strong> (14) — ที่ประทับพระสนม ฝั่งตะวันตก เหมือนเส้นทาง B</li>
+          <li value="15"><strong>หกตำหนักตะวันออก (东六宫)</strong> (15) — ที่ประทับพระสนม ฝั่งตะวันออก คู่กับปีกตะวันตก วันนี้ส่วนใหญ่เป็นห้องว่าง แต่สถาปัตยกรรมยังครบสมบูรณ์</li>
+          <li value="17"><strong>ประตูเสินอู่เหมิน (神武门)</strong> (17) — ทางออกเดียวกับเส้นทาง A ออกไปก็ถึงสวนจิ่งซาน</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Tip: Treasure Gallery / Clock Gallery -->
+    <div class="bg-yellow-50 border border-yellow-100 rounded-2xl p-6 mb-12">
+      <p class="text-gray-700"><strong>💡 เคล็ดลับ:</strong> ไม่ว่าเดินเส้นทางไหน <strong>หอสมบัติ (珍宝馆)</strong> และ <strong>หอนาฬิกา (钟表馆)</strong> ต่างก็คุ้มค่า ¥10 ต่อแห่ง — เดินเส้นทาง A หรือ B ก็แวะเบี่ยงจากแกนกลางไปได้ หรือถ้าเดินเส้นทาง C ก็รวมเข้าไปเลย คิดต่อหนึ่งหยวนแล้ว หอสมบัติคือพิพิธภัณฑ์ที่คุ้มที่สุดในจีน</p>
+    </div>
+
+    <!-- ============ SECTION 5: PRACTICAL TIPS ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="practical-tips" class="text-3xl font-bold text-gray-900 mb-6 mt-12">👟 เคล็ดลับปฏิบัติ</h2>
+    <ul class="space-y-3 mb-12 text-lg text-gray-700">
+      <li>โปรด<strong>ตั้งจุดหมายในแอปนำทาง</strong>เป็น "พิพิธภัณฑ์พระราชวัง — ประตูอู่เหมิน (午门)" นี่คือทางเข้าเพียงแห่งเดียวของพิพิธภัณฑ์พระราชวัง ถ้าตั้งแค่ "พิพิธภัณฑ์พระราชวัง" คุณอาจถูกนำไปผิดที่</li>
+      <li><strong>ครึ่งวันก็เพียงพอสำหรับคนส่วนใหญ่</strong> 3–4 ชั่วโมงครอบคลุมส่วนสำคัญ สายประวัติศาสตร์เดินสบาย ๆ ได้ 6–8 ชั่วโมง</li>
+      <li><strong>ใส่รองเท้าที่สบาย</strong> คุณจะเดินเกิน 10,000 ก้าว; แกนกลางไม่มีทางลัด</li>
+      <li><strong>ถ่ายรูปได้</strong>ทุกที่กลางแจ้ง บางห้องจัดแสดงจำกัดการใช้แฟลช</li>
+      <li><strong>รวมกับสวนจิ่งซาน</strong> (ค่าเข้า ¥2 เดิน 5 นาทีจากทางออกด้านเหนือ) เพื่อเก็บภาพมุมสูงของพระราชวังทั้งหลัง</li>
+    </ul>
+
+    <!-- ============ SECTION 6: WALKING THROUGH ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="walking-through" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏯 คุณกำลังเดินผ่านอะไรกันแน่</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">หมู่พระราชวังครอบคลุมพื้นที่ <strong>72 เฮกตาร์</strong> และมี<strong>อาคารที่ยังหลงเหลือ 980 หลัง</strong> เป็นหมู่สถาปัตยกรรมไม้ที่ใหญ่ที่สุดในโลก แค่ตัวเลขนี้ก็ยากจะจินตนาการ — เดินจากใต้ไปเหนือจะครอบคลุมระยะทางราว 1.6 กม. ผ่านประตูหลักเจ็ดบาน และข้ามความต่างระดับ 2 เมตรระหว่างตำหนักหน้าถึงสวนหลัง (การเตือนเรื่องฮวงจุ้ยแบบเงียบ ๆ ว่าจักรพรรดิปกครองทุกสิ่ง) นี่คือรายละเอียดที่ผู้มาเยือนครั้งแรกมักมองข้าม:</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-8 items-start mb-12 not-prose">
+      <!-- Left: key-point cards -->
+      <ul class="md:col-span-3 space-y-3">
+        <li class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <p class="text-base text-gray-800"><span class="mr-2">🟡</span><strong>กระเบื้องสีเหลืองและสัตว์มงคลบนหลังคา</strong> ทุกหลังคาเคลือบกระเบื้องสีเหลืองสำหรับราชวงศ์เท่านั้น — สงวนไว้ให้จักรพรรดิองค์เดียว ตามชายคามีสัตว์ในตำนานเรียงเป็นแถว มีเพียงไท่เหอเตี้ยนที่ได้ครบทั้งสิบตัว</p>
+        </li>
+        <li class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <p class="text-base text-gray-800"><span class="mr-2">🐉</span><strong>งานแกะสลัก "หมื่นมังกร"</strong> ราวระเบียงหินอ่อนใกล้ไท่เหอเตี้ยน — มังกรเก้าตัวคือระดับราชวงศ์ สิบตัวคือเฉพาะบัลลังก์มังกรเท่านั้น</p>
+        </li>
+        <li class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <p class="text-base text-gray-800"><span class="mr-2">🦁</span><strong>สิงโตหน้าประตูทุกบาน</strong> ตัวผู้ (เท้าบนลูกแก้ว ครองโลก) และตัวเมีย (เท้าบนลูกสิงห์ เลี้ยงดูครอบครัว) บางคู่อายุกว่า 600 ปี</p>
+        </li>
+        <li class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <p class="text-base text-gray-800"><span class="mr-2">☁️</span><strong>ทางเดินหินสลักเมฆและมังกร</strong> ชิ้นที่ประณีตที่สุดอยู่หลังเป่าเหอเตี้ยน ช่างฝีมือ 12 คนใช้เวลา 2 ปีจึงเสร็จ</p>
+        </li>
+        <li class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <p class="text-base text-gray-800"><span class="mr-2">🌳</span><strong>สวนหลวง (御花园)</strong> อยู่ด้านหลังสุดของหมู่พระราชวัง คนน้อยกว่าตำหนักหลัก เขาหินจำลองรูปภูเขา ต้นสนอายุกว่า 400 ปี</p>
+        </li>
+      </ul>
+      <!-- Right: arranged images -->
+      <div class="md:col-span-2 space-y-6">
+        <figure>
+          <img
+            src="/images/forbidden-city/roof-beasts.jpg"
+            alt="ภาพระยะใกล้ของกระเบื้องหลังคาสีเหลืองและแถวสัตว์มงคลในตำนานตรงมุมตำหนักแห่งหนึ่งของพระราชวังต้องห้าม"
+            width="944"
+            height="687"
+            loading="lazy"
+            class="w-full h-auto object-cover rounded-2xl shadow-md"
+          />
+          <figcaption class="text-xs text-gray-500 text-center mt-2">แถวสัตว์มงคลในตำนานตามมุมหลังคาแห่งหนึ่ง</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="/images/forbidden-city/corner-tower.jpg"
+            alt="หอเชิงมุมทิศตะวันออกเฉียงใต้ของพระราชวังต้องห้ามสะท้อนในคูน้ำ"
+            width="1200"
+            height="900"
+            loading="lazy"
+            class="w-full h-auto object-cover rounded-2xl shadow-md"
+          />
+          <figcaption class="text-xs text-gray-500 text-center mt-2">หอเชิงมุมทิศตะวันออกเฉียงใต้สะท้อนในคูน้ำ</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- ============ SECTION 7: THREE THINGS ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="skip" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🚫 สามสิ่งที่ห้ามพลาด</h2>
+    <ol class="space-y-3 mb-12 text-lg text-gray-700 list-decimal pl-6 flow-root">
+      <li><strong>ไท่เหอเตี้ยน (太和殿)</strong> — สิ่งก่อสร้างไม้ที่ใหญ่ที่สุดในจีน บัลลังก์ตั้งอยู่ตรงกลาง เต่าทองและนกกระเรียนสัมฤทธิ์ด้านหน้าเป็นกระถางธูป — ควันหมายถึงการชำระอากาศเชิงสัญลักษณ์ก่อนการเข้าเฝ้า</li>
+      <li><strong>หอสมบัติ (珍宝馆)</strong> — ตั๋ว ¥10 คุ้มค่าที่สุดในบรรดาพิพิธภัณฑ์ทั้งหมดของจีน สัตว์มงคลบนสันหลังคาเดิมของไท่เหอเตี้ยน อาวุธพิธีทองและหยกสมัยเฉียนหลง พระพุทธรูปปิดทองที่อัญเชิญกลับจากทิเบตในศตวรรษที่ 18 เผื่อเวลาไว้อย่างน้อย 45 นาที
+        <figure class="mt-4 md:float-right md:clear-right md:ml-8 md:w-[38%] not-prose">
+          <img
+            src="/images/forbidden-city/nine-dragon-wall.jpg"
+            alt="ภาพระยะใกล้ของมังกรเคลือบตัวหนึ่งบนกำแพงเก้ามังกรในเขตหอสมบัติของพระราชวังต้องห้าม"
+            width="442"
+            height="300"
+            loading="lazy"
+            class="w-full h-auto object-cover rounded-2xl shadow-md"
+          />
+          <figcaption class="text-xs text-gray-500 text-center mt-2">มังกรเคลือบตัวหนึ่งบนกำแพงเก้ามังกร ในเขตหอสมบัติ</figcaption>
+        </figure>
+      </li>
+
+      <li><strong>เฉียนชิงกง (乾清宫)</strong> — ที่ประทับของจักรพรรดิสมัยหมิงจนถึงต้นชิง ป้ายกลางเหนือบัลลังก์ (<strong>正大光明</strong> แปลว่า "สว่างไสวและเที่ยงตรง") เขียนด้วยฝีพระหัตถ์ของจักรพรรดิชิงแต่ละพระองค์ที่ขึ้นครองราชย์ใหม่ ป้าย "เจ้าชายสิบสามองค์" ที่ขนาบสองข้างเป็นคำจารึกสอนการปกครอง</li>
+    </ol>
+
+    <!-- ============ NEXT READS ============ -->
+    <div class="border-t border-gray-100 pt-8 mt-8 not-prose">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h3 class="text-sm font-bold text-gray-900">📚 คู่มือที่เกี่ยวข้อง</h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="/th/cities/beijing-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🏙️ คู่มือเที่ยวปักกิ่ง
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/th/cities/city-select/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              📅 ควรเที่ยวจีนกี่วัน?
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/th/visa/visa-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🛂 คู่มือวีซ่าและเข้าประเทศจีน
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ SOURCES ============ -->
+    <section class="mt-10 pt-6 border-t border-gray-100">
+      <h3 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-4">แหล่งข้อมูล</h3>
+      <ol class="space-y-2 text-sm text-gray-500">
+        <li>1. <strong>นโยบายตั๋วทางการของพิพิธภัณฑ์พระราชวัง</strong> (故宫博物院票务政策) — <a href="https://intl.dpm.org.cn/visit.html" target="_blank" rel="noopener" class="text-blue-600 hover:underline">intl.dpm.org.cn</a></li>
+        <li>2. <strong>การจองตั๋วออนไลน์ของพิพิธภัณฑ์พระราชวัง</strong> (故宫博物院在线订票) — <a href="https://bookingticket.dpm.org.cn/" target="_blank" rel="noopener" class="text-blue-600 hover:underline">bookingticket.dpm.org.cn</a></li>
+        <li>3. <strong>รายงานของ CCTV เกี่ยวกับวันหยุดปี 2026 และการเปิดให้เข้าฟรีของพระราชวังต้องห้าม</strong> — <a href="https://news.cctv.com/2025/12/29/ARTInhrENbHw5LqaS0ZoU5vc251229.shtml" target="_blank" rel="noopener" class="text-blue-600 hover:underline">news.cctv.com</a></li>
+      </ol>
+    </section>
+
+  </article>
+</Layout>

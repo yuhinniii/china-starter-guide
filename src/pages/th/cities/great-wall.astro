@@ -1,0 +1,480 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'คู่มือกำแพงเมืองจีน: ควรไปด่านไหน';
+const description = 'เทียบกำแพงเมืองจีนทั้งหกด่าน — ปาต๋าหลิง มู่เถียนยวี่ จินซานหลิง ซือหมาถาย หวงฮวาเฉิง และจูยงกวน — ทั้งความแออัด ความยาก ค่าตั๋ว และทัวร์กลางคืน';
+---
+
+<Layout title={title} description={description} lang="th">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+
+    <!-- ============ BREADCRUMB ============ -->
+    <nav class="mb-8 not-prose">
+      <a href="/th/cities/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        กลับไปยังคู่มือเมือง
+      </a>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🧱 กำแพงเมืองจีน · ปักกิ่ง</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">กำแพงเมืองจีน: ควรไปด่านไหน?</h1>
+      <p class="text-xl text-gray-600 mb-6">ปาต๋าหลิง มู่เถียนยวี่ จินซานหลิง หรือซือหมาถาย — อะไรที่ทำให้ต่างกันจริง ๆ และด่านไหนเหมาะกับทริปที่คุณกำลังวางแผนอยู่</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 อัปเดตล่าสุด: กันยายน 2026</span>
+        <span>⏱️ อ่าน 12 นาที</span>
+      </div>
+    </header>
+
+    <!-- ============ HERO IMAGE ============ -->
+    <figure class="mb-12 not-prose">
+      <img
+        src="/images/great-wall/comparison-grid.webp"
+        alt="ภาพรวมกำแพงเมืองจีนหกด่านใกล้ปักกิ่ง: ปาต๋าหลิงในดอกไม้ฤดูใบไม้ผลิ มู่เถียนยวี่ในสีสันฤดูใบไม้ร่วง จินซานหลิงเหนือทะเลหมอก ซือหมาถายที่เปิดไฟกลางคืนเหนือกู่เป่ยสุ่ยเจิ้น หวงฮวาเฉิงที่ทอดลงสู่ทะเลสาบสีมรกต และด่านจูยงกวน"
+        width="1200"
+        height="534"
+        loading="eager"
+        fetchpriority="high"
+        class="w-full h-auto object-cover rounded-2xl shadow-md"
+      />
+      <figcaption class="text-xs text-gray-500 text-center mt-2">กำแพงเดียวกัน หกวันที่ต่างกัน จากซ้ายไปขวา บนลงล่าง: ปาต๋าหลิง มู่เถียนยวี่ จินซานหลิง ซือหมาถาย หวงฮวาเฉิง จูยงกวน</figcaption>
+    </figure>
+
+    <!-- ============ QUICK ANSWER ============ -->
+    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-red-900 mb-4">⚡ คำตอบสั้นๆ</h2>
+      <p class="text-lg text-red-800 leading-relaxed">
+        <strong>มู่เถียนยวี่</strong> เป็นตัวเลือกที่ลงตัวที่สุดสำหรับคนส่วนใหญ่ที่มาเที่ยวครั้งแรก — บูรณะครบถ้วนและอลังการ ขึ้นด้วยกระเช้า ลงด้วยรางเลื่อน แต่คนน้อยกว่าปาต๋าหลิงหลายเท่า <strong>ปาต๋าหลิง</strong> คือด่านที่ใช่ที่สุด — ด่านแรกที่เปิดให้นักท่องเที่ยว ย่านที่ประมุขรัฐต่าง ๆ มาเยือน และยิ่งใหญ่ที่สุดในบรรดาด่านที่บูรณะแล้ว ไต่ขึ้นถึงหอเหนือ 8 ที่ความสูง 888 ม. แต่ก็แออัดที่สุดเช่นกัน <strong>จินซานหลิง</strong> คือตัวเลือกของนักเดินป่าและช่างภาพ — เงียบกว่า บูรณะน้อยกว่า มีหอคอย 67 หอ และเปิดก่อนรุ่งสางเพื่อล่าทะเลหมอก <strong>ซือหมาถาย</strong> คือด่านที่บรรยากาศดีที่สุด — เปิดทัวร์กลางคืนตลอดปี และมีกู่เป่ยสุ่ยเจิ้นอยู่ที่เชิงกำแพง <strong>หวงฮวาเฉิง</strong> คือด่านที่แปลกที่สุด — ด่านเดียวที่กำแพงจมลงในน้ำ มีเรือและสะพานกระจก <strong>จูยงกวน</strong> คือด่านที่ใกล้และเงียบที่สุด — เป็นวงรอบในด่าน ไม่ใช่การไต่สันเขา และเป็นตัวเลือกที่ดีที่สุดสำหรับครึ่งวันหรือฤดูหนาว
+      </p>
+    </div>
+
+    <!-- ============ IN THIS GUIDE ============ -->
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 ในคู่มือนี้</h3>
+      <ul class="space-y-3">
+        <li><a href="#which-section" class="text-blue-600 hover:underline">🤔 ควรไปด่านไหน?</a></li>
+        <li><a href="#night" class="text-blue-600 hover:underline">🌙 ขึ้นกำแพงตอนกลางคืนได้ไหม?</a></li>
+        <li><a href="#badaling" class="text-blue-600 hover:underline">🏔️ ปาต๋าหลิง</a></li>
+        <li><a href="#mutianyu" class="text-blue-600 hover:underline">🌳 มู่เถียนยวี่</a></li>
+        <li><a href="#jinshanling" class="text-blue-600 hover:underline">☁️ จินซานหลิง</a></li>
+        <li><a href="#simatai" class="text-blue-600 hover:underline">🌃 ซือหมาถาย</a></li>
+        <li><a href="#huanghuacheng" class="text-blue-600 hover:underline">💧 หวงฮวาเฉิง</a></li>
+        <li><a href="#juyongguan" class="text-blue-600 hover:underline">🏯 จูยงกวน</a></li>
+        <li><a href="#tickets" class="text-blue-600 hover:underline">🎫 ตั๋วและการจอง</a></li>
+        <li><a href="#best-time" class="text-blue-600 hover:underline">📅 ช่วงเวลาที่ดีที่สุด</a></li>
+        <li><a href="#practical-tips" class="text-blue-600 hover:underline">👟 ต้องเตรียมอะไร?</a></li>
+        <li><a href="#history" class="text-blue-600 hover:underline">📜 อิฐราชวงศ์หมิง ไม่ใช่ฉิน</a></li>
+      </ul>
+    </nav>
+
+    <!-- ============ SECTION 1: WHICH SECTION ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="which-section" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🤔 ควรไปด่านไหน?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">จริง ๆ แล้วทุกด่านคือกำแพงเดียวกัน แต่ไม่มีสองด่านที่ให้วันเดียวกันกับคุณ สิ่งที่ต่างกันจริง ๆ ไม่ใช่ระยะทางหรือราคาตั๋ว แต่เป็น <strong>คนเยอะแค่ไหน ต้องออกแรงมากแค่ไหน และกำแพงกำลังทำอะไรอยู่ตอนที่คุณไปถึง</strong> — ทอดข้ามสันเขา จมลงในทะเลสาบ หรือส่องสว่างอยู่บนท้องฟ้ายามค่ำคืน ด่านด้านล่างเรียงตามโอกาสที่จะเหมาะกับการมาเที่ยวครั้งแรกหรือครั้งที่สอง</p>
+
+    <h3 class="text-xl font-bold text-gray-900 mb-4">เทียบกำแพงเมืองจีนทั้งหกด่าน</h3>
+
+    <div class="overflow-x-auto mb-8 not-prose">
+      <table class="w-full text-sm text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+        <thead>
+          <tr class="bg-gray-900 text-white">
+            <th class="px-3 py-3 font-bold align-bottom">ด่าน</th>
+            <th class="px-3 py-3 font-bold align-bottom">ระยะจากปักกิ่ง</th>
+            <th class="px-3 py-3 font-bold align-bottom">ความแออัด</th>
+            <th class="px-3 py-3 font-bold align-bottom">ความยาก</th>
+            <th class="px-3 py-3 font-bold align-bottom">ค่าเข้า</th>
+            <th class="px-3 py-3 font-bold align-bottom">เวลาที่ใช้</th>
+            <th class="px-3 py-3 font-bold align-bottom">เหมาะกับเด็ก?</th>
+            <th class="px-3 py-3 font-bold align-bottom">จุดเด่น</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="px-3 py-3 font-semibold">ปาต๋าหลิง</td>
+            <td class="px-3 py-3">70 กม. · รถไฟความเร็วสูง ~35 นาที</td>
+            <td class="px-3 py-3">มากสุด ๆ</td>
+            <td class="px-3 py-3">ง่าย</td>
+            <td class="px-3 py-3">¥40</td>
+            <td class="px-3 py-3">3–4 ชม.</td>
+            <td class="px-3 py-3">ได้ (กระเช้า)</td>
+            <td class="px-3 py-3">ความยิ่งใหญ่ — และโชว์ไฟกลางคืนที่ใหญ่ที่สุด</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-3 py-3 font-semibold">มู่เถียนยวี่</td>
+            <td class="px-3 py-3">70 กม. · ขับรถ ~1.5 ชม.</td>
+            <td class="px-3 py-3">ปานกลาง</td>
+            <td class="px-3 py-3">ง่าย–ปานกลาง</td>
+            <td class="px-3 py-3">¥45</td>
+            <td class="px-3 py-3">ครึ่งวัน</td>
+            <td class="px-3 py-3">ได้ (กระเช้า + รางเลื่อน)</td>
+            <td class="px-3 py-3">หอคอยที่บูรณะแล้ว 23 หอ แล้วนั่งรางเลื่อนลง</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-3 py-3 font-semibold">จินซานหลิง</td>
+            <td class="px-3 py-3">130 กม. · ขับรถ ~2.5 ชม.</td>
+            <td class="px-3 py-3">น้อย</td>
+            <td class="px-3 py-3">หนัก</td>
+            <td class="px-3 py-3">¥65</td>
+            <td class="px-3 py-3">ทั้งวัน</td>
+            <td class="px-3 py-3">ไม่เหมาะ</td>
+            <td class="px-3 py-3">หอคอย 67 หอเรียงชิด ทะเลหมอกยามรุ่งอรุณ</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-3 py-3 font-semibold">ซือหมาถาย</td>
+            <td class="px-3 py-3">120 กม. · ขับรถ ~2.5 ชม.</td>
+            <td class="px-3 py-3">น้อย</td>
+            <td class="px-3 py-3">หนัก</td>
+            <td class="px-3 py-3">กลางวัน ¥40</td>
+            <td class="px-3 py-3">ครึ่งวัน–ทั้งวัน</td>
+            <td class="px-3 py-3">เด็กโต</td>
+            <td class="px-3 py-3">กำแพงที่ส่องไฟเหนือกู่เป่ยสุ่ยเจิ้นยามค่ำ</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-3 py-3 font-semibold">หวงฮวาเฉิง</td>
+            <td class="px-3 py-3">60 กม. · ขับรถ ~1.5 ชม.</td>
+            <td class="px-3 py-3">น้อย–ปานกลาง</td>
+            <td class="px-3 py-3">ปานกลาง</td>
+            <td class="px-3 py-3">¥58</td>
+            <td class="px-3 py-3">ครึ่งวัน</td>
+            <td class="px-3 py-3">ได้</td>
+            <td class="px-3 py-3">กำแพงที่เดินลงไปในทะเลสาบตรง ๆ</td>
+          </tr>
+          <tr>
+            <td class="px-3 py-3 font-semibold">จูยงกวน</td>
+            <td class="px-3 py-3">60 กม. · ขับรถ ~1 ชม.</td>
+            <td class="px-3 py-3">น้อย</td>
+            <td class="px-3 py-3">ปานกลาง</td>
+            <td class="px-3 py-3">¥45 (เม.ย.–ต.ค.)</td>
+            <td class="px-3 py-3">ครึ่งวัน</td>
+            <td class="px-3 py-3">ได้</td>
+            <td class="px-3 py-3">「ด่านที่ 1 ใต้หล้า」 — และรถไฟทะเลดอกไม้</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">ราคาข้างต้นเป็นตั๋วผู้ใหญ่ในฤดูท่องเที่ยว นักเรียนมักจ่ายครึ่งราคา และเด็กที่สูงต่ำกว่า 1.2 ม. โดยทั่วไปเข้าฟรี ราคาเปลี่ยนตามฤดูและด่าน — โปรดตรวจสอบก่อนออกเดินทาง</p>
+
+    <!-- ============ SECTION 2: NIGHT ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="night" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🌙 ขึ้นกำแพงตอนกลางคืนได้ไหม?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">สิ่งที่แยกด่านเหล่านี้ออกจากกันไม่ใช่ระยะทางหรือราคา แต่เป็นคำถามจริง ๆ สามข้อ: <strong>ขึ้นได้โดยไม่ต้องปีนไหม มีรถรับส่งจากลานจอดไหม และเปิดหลังมืดไหม</strong> นี่คือภาพทั้งหมด</p>
+
+    <div class="overflow-x-auto mb-8 not-prose">
+      <table class="w-full text-sm text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+        <thead>
+          <tr class="bg-gray-900 text-white">
+            <th class="px-3 py-3 font-bold align-bottom">ด่าน</th>
+            <th class="px-3 py-3 font-bold align-bottom">ทัวร์กลางคืน</th>
+            <th class="px-3 py-3 font-bold align-bottom">วิธีขึ้น</th>
+            <th class="px-3 py-3 font-bold align-bottom">รถรับส่ง / ต่อรถ</th>
+            <th class="px-3 py-3 font-bold align-bottom">ไฮไลต์พิเศษ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="px-3 py-3 font-semibold">ปาต๋าหลิง</td>
+            <td class="px-3 py-3">✅ ทุกคืน 30 เม.ย.–6 ต.ค. (เข้า 18:30–21:00)</td>
+            <td class="px-3 py-3">กระเช้าหรือกระเช้าพื้นดิน ¥100 ต่อเที่ยว</td>
+            <td class="px-3 py-3">รถรับส่งในพื้นที่ฟรี; 「รถบัสกำแพงเมืองจีน」 ไป-กลับ ¥80</td>
+            <td class="px-3 py-3">ไฟส่องกำแพงจากหอเหนือ 4 ถึงหอใต้ 4</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-3 py-3 font-semibold">มู่เถียนยวี่</td>
+            <td class="px-3 py-3">✅ เปิดตามฤดู (ฤดูร้อน; วันชาติ)</td>
+            <td class="px-3 py-3">ขึ้นกระเช้า ลงรางเลื่อน</td>
+            <td class="px-3 py-3">รถรับส่งไป-กลับ ¥15</td>
+            <td class="px-3 py-3">ล่องรางเลื่อน</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-3 py-3 font-semibold">จินซานหลิง</td>
+            <td class="px-3 py-3">❌</td>
+            <td class="px-3 py-3">กระเช้า ¥40 ต่อเที่ยว / ¥60 ไป-กลับ</td>
+            <td class="px-3 py-3">รถรับส่งเที่ยวเดียว ~¥80</td>
+            <td class="px-3 py-3">ทะเลหมอกยามพระอาทิตย์ขึ้น</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-3 py-3 font-semibold">ซือหมาถาย</td>
+            <td class="px-3 py-3">✅ ตลอดปี (18:00–21:30)</td>
+            <td class="px-3 py-3">กระเช้า — บังคับหลังมืด</td>
+            <td class="px-3 py-3">—</td>
+            <td class="px-3 py-3">กู่เป่ยสุ่ยเจิ้นที่เชิงกำแพง</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-3 py-3 font-semibold">หวงฮวาเฉิง</td>
+            <td class="px-3 py-3">❌</td>
+            <td class="px-3 py-3"><strong>ไม่มีกระเช้า</strong> — ลงด้วยรางสไลด์แม่เหล็กตามทางเดินไม้</td>
+            <td class="px-3 py-3">รถบัสหรือรถส่วนตัว</td>
+            <td class="px-3 py-3">ล่องเรือในทะเลสาบ และสะพานกระจก</td>
+          </tr>
+          <tr>
+            <td class="px-3 py-3 font-semibold">จูยงกวน</td>
+            <td class="px-3 py-3">✅ คืนศุกร์–เสาร์ + วันหยุด ถึงต้น ต.ค.</td>
+            <td class="px-3 py-3"><strong>ไม่มีกระเช้า</strong> — ขึ้นและลงด้วยการเดิน</td>
+            <td class="px-3 py-3">—</td>
+            <td class="px-3 py-3">เทศกาลกลางคืนธีมหมิงในด่าน</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">มีข้อหนึ่งที่ควรเข้าใจให้ชัด: <strong>มีรถรับส่งไม่ได้แปลว่าไปง่าย</strong> ทุกด่านยกเว้นปาต๋าหลิง รถรับส่งรับช่วงแค่ช่วงท้าย — จากลานจอดถึงประตูด่าน — และคุณยังต้องหารถบัส รถยนต์ หรือทัวร์ไปถึงลานจอดนั้นก่อน ปาต๋าหลิงเป็นด่านเดียวที่มีสถานีรถไฟของตัวเอง: รถไฟความเร็วสูงสายปักกิ่ง–จางเจียโข่ววิ่งถึงสถานีปาต๋าหลิงฉางเฉิง ใช้เวลาราว 30–40 นาทีจากสถานีปักกิ่งเหนือ และสถานีอยู่ห่างทางขึ้นราว 800 ม. โดยมีรถรับส่งฟรีรับช่วงท้าย นั่นคือเหตุผลที่ด่านนี้ไปได้โดยไม่ต้องมีรถและไม่ต้องมีทัวร์ — และเป็นเหตุผลที่คนเยอะที่สุดด้วย</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">ค่าทัวร์กลางคืน (2026): ปาต๋าหลิง <strong>¥198</strong> วันธรรมดา / <strong>¥298</strong> ศุกร์–อาทิตย์และวันหยุด จองออนไลน์ล่วงหน้าเท่านั้น (ไม่มีเคาน์เตอร์หน้างาน) มู่เถียนยวี่ <strong>¥200</strong> รวมค่าเข้า รถรับส่ง และกระเช้า ซือหมาถาย <strong>¥200</strong> สำหรับทัวร์กลางคืนบวกระเช้าไป-กลับ (<strong>ไม่รวมตั๋วกู่เป่ยสุ่ยเจิ้น</strong>) จูยงกวน เริ่มที่ <strong>¥19.9</strong> สำหรับตั๋วราคาพิเศษจองล่วงหน้า ทุกรอบกลางคืนมีเวลาและจำนวนจำกัด จึงควรจองล่วงหน้า — รอบวันหยุดสุดสัปดาห์ที่ปาต๋าหลิงมักขายหมดล่วงหน้าสองสามวัน</p>
+
+    <!-- ============ SECTION 3: BADALING ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="badaling" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏔️ ปาต๋าหลิง: ด่านที่ยิ่งใหญ่ที่สุด — และแออัดที่สุด</h2>
+
+    <img
+      src="/images/great-wall/badaling.webp"
+      alt="กำแพงเมืองจีนด่านปาต๋าหลิงที่ทอดขึ้นตามไหล่เขาที่ปกคลุมด้วยดอกไม้ฤดูใบไม้ผลิทางเหนือของปักกิ่ง"
+      width="1200"
+      height="943"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">ทำไมคนไป</span> ปาต๋าหลิงเป็นด่านที่โด่งดังที่สุดในจีน และเป็นด่านที่พาประมุขรัฐต่างประเทศมาเยือน บูรณะครบถ้วน กว้าง และอลังการ กำแพงไต่ขึ้นตามสันเขาทั้งสองทางอย่างชัน — กว้างและยิ่งใหญ่ที่สุดในบรรดาด่านที่บูรณะแล้ว ขึ้นไปถึง<strong>หอเหนือ 8 ที่ความสูง 888 ม.</strong> ซึ่งมี<strong>ศิลาจารึก「ผู้ที่ไม่เคยมาถึงกำแพงเมืองจีน ไม่ใช่ชายชาตรี」</strong>ตั้งอยู่ คุณจะได้ความรู้สึกเต็ม ๆ ว่า「ฉันยืนอยู่บนกำแพงเมืองจีน」— และไม่มีด่านไหนให้กำแพงมากขนาดนี้ด้วยการเตรียมตัวน้อยขนาดนี้</p>
+      <p class="text-lg leading-relaxed text-gray-700 clear-both"><span class="block text-xl font-bold text-brand-700 mb-2">ข้อควรระวัง</span> ทุกคนรู้จักที่นี่ ในวันหยุดสุดสัปดาห์หรือวันหยุดนักขัตฤกษ์ ปาต๋าหลิงจะแออัดมาก และคุณอาจถูกฝูงชนพาไป เคล็ดลับคือเลือกเวลา: ไปถึงประตูด่านตอนเปิด (ราว 7 โมงเช้า) แล้วชั่วโมงแรกจะเป็นของคุณเกือบทั้งหมด</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">วิธีไป</span> ขึ้นรถไฟความเร็วสูงถึงสถานี<strong>ปาต๋าหลิงฉางเฉิง</strong> — ประมาณ <strong>20–25 นาทีจากชิงเหอ</strong> (¥16–25) หรือ <strong>30–40 นาทีจากสถานีปักกิ่งเหนือ</strong> (¥25–31) สถานีอยู่ห่างทางขึ้นราว <strong>800 ม.</strong> รถบัส <strong>877</strong> ซึ่งตอนนี้ออกจาก<strong>สถานีรถไฟใต้ดินเป่ยถู่เฉิง (สาย 8/10)</strong> เป็นตัวเลือกประหยัดที่ ¥12 <strong>จองตั๋วรถไฟล่วงหน้า</strong> — ที่นั่งบนสายปักกิ่ง–จางเจียโข่วหมดเร็วในวันหยุดสุดสัปดาห์และวันหยุดนักขัตฤกษ์ และเปิดขายล่วงหน้า <strong>15 วัน</strong> บน 12306 หรือ Trip.com ถ้าไม่อยากนั่งรถไฟ ลิงก์ Trip.com ด้านล่างก็ขาย<strong>รถรับส่งไป-กลับ</strong>ที่มีไกด์บนรถด้วย — จองเดี่ยวหรือรวมกับตั๋วเข้าได้ ถูกรถส่วนตัวและไปตรงโดยไม่ต้องต่อรถบัสสาธารณะ</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">ค่าใช้จ่าย</span> ค่าเข้า <strong>¥40</strong> ฤดูท่องเที่ยว / ¥35 นอกฤดู <strong>กระเช้าสายเหนือหรือกระเช้าพื้นดินสายใต้</strong> ¥100 ต่อเที่ยว ¥140 ไป-กลับ</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">กำแพงกลางคืน</span> ตั้งแต่<strong>30 เมษายนถึง 6 ตุลาคม</strong> ปาต๋าหลิงมีรอบกลางคืนทุกวัน — เข้า 18:30–21:00 เปิดไฟหอคอย 19:20 ออกสุดท้าย 22:00 กลางคืนเปิดเฉพาะช่วง<strong>หอเหนือ 4 ถึงหอใต้ 4</strong> (เนิน「ฮ่าวฮั่น」ที่หอเหนือ 8 ไม่เปิด) ตั๋ว <strong>¥198</strong> วันธรรมดา และ <strong>¥298</strong> ศุกร์–อาทิตย์และวันหยุดนักขัตฤกษ์ จำกัดราว 3,000 คนต่อคืน</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">เหมาะกับใคร</span> คนที่ต้องการกำแพง「ตัวจริง」— ด่านที่ประมุขรัฐมาเยือน โชว์ไฟกลางคืนที่ดีที่สุด และด่านที่ไปได้โดยไม่ต้องมีรถ — และรับความแออัดได้</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">ไม่ต้องต่อรถ</strong> — จองตั๋วปาต๋าหลิงกับรถบัสไป-กลับพร้อมกัน:</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/BjTXg5QDIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 จองตั๋วปาต๋าหลิง + รถบัสไป-กลับบน Trip.com</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 4: MUTIANYU ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="mutianyu" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🌳 มู่เถียนยวี่: ด่านที่ดีที่สุดสำหรับคนมาเที่ยวครั้งแรกไหม?</h2>
+
+    <img
+      src="/images/great-wall/mutianyu.webp"
+      alt="กำแพงเมืองจีนด่านมู่เถียนยวี่ที่ทอดผ่านไหล่เขาในสีสันฤดูใบไม้ร่วง มีนักท่องเที่ยวเดินอยู่บนกำแพง"
+      width="532"
+      height="355"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">ทำไมคนไป</span> นี่คือภาพที่คนส่วนใหญ่คิดถึงเมื่อนึกถึงวันสมบูรณ์แบบบนกำแพงเมืองจีน — บูรณะครบถ้วนและกว้างไกล มี<strong>หอคอย 23 หอ</strong>ทอดผ่านเขาที่เต็มไปด้วยป่า แต่คนแค่เศษเสี้ยวของปาต๋าหลิง ในวันธรรมดาจะรู้สึกเกือบเหมือนเหมาทั้งด่าน แรงดึงดูดอีกอย่างคือขาลง: <strong>รางเลื่อน</strong>(รถเลื่อนโลหะบนรางยาว) วิ่งจากกำแพงลงมาถึงหมู่บ้าน เปลี่ยนทริปประวัติศาสตร์ให้เป็นความทรงจำของเด็ก ๆ</p>
+      <p class="text-lg leading-relaxed text-gray-700 clear-both"><span class="block text-xl font-bold text-brand-700 mb-2">วิธีการ</span> รถรับส่งพาจากลานจอดไปถึงเชิงเขา แล้วกระเช้าขึ้นไปที่<strong>หอคอย 14</strong> จากนั้นเดินบนกำแพงตามใจ — หอคอย 20 เป็นจุดสูงสุดที่วิวดีที่สุด — แล้วเดินกลับหรือนั่งรางเลื่อนลง</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">วิธีไป</span> ไม่มีรถไฟความเร็วสูง รถรับส่งนักท่องเที่ยวออกจากตงจื๋อเหมินและเหอผิงซีเฉียว (ไป-กลับราว ¥80, 1.5 ชั่วโมง) หรือจองรถส่วนตัว — ตัวเลือกที่นักท่องเที่ยวต่างชาติเลือกมากที่สุด วิธีจองรถบัสที่ง่ายที่สุดคือผ่านลิงก์ Trip.com ด้านล่าง ซึ่งขายรถรับส่งตรง (มีไกด์พูดอังกฤษบนรถ) ทั้งแบบรวมตั๋วเข้าและแบบเดี่ยว — ถูกกว่ารถส่วนตัวและเร็วกว่าการนั่งรถไฟใต้ดินต่อรถบัสสองต่อมาก</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">ค่าใช้จ่าย</span> ค่าเข้า <strong>¥45</strong> รถรับส่งไป-กลับ ¥15 กระเช้า ¥100 ต่อเที่ยว / ¥140 ไป-กลับ รางเลื่อนราว ¥100</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">คืนฤดูร้อน</span> มู่เถียนยวี่ก็เปิดหลังมืดใน<strong>ช่วงฤดูเฉพาะ — ฤดูร้อน และอีกครั้งช่วงวันชาติ</strong> — 17:30–21:00 เปิด<strong>หอคอย 10–15</strong> <strong>แพ็กเกจกลางคืน (ราว ¥200)</strong> รวมค่าเข้า รถรับส่ง และกระเช้า หลังมืดรางเลื่อนไม่วิ่ง</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">เหมาะกับใคร</span> คนที่มาเที่ยวครั้งแรกส่วนใหญ่ เป็นด่านที่สมดุลที่สุดระหว่างวิว ความสะดวก และจำนวนคนที่รับได้</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">ตั๋ว รถบัสตรง หรือทั้งสองอย่าง</strong> — จองเป็นแพ็กเกจหรือแยกก็ได้:</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/0rEQW6TDIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 จองมู่เถียนยวี่บน Trip.com</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 5: JINSHANLING ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="jinshanling" class="text-3xl font-bold text-gray-900 mb-6 mt-12">☁️ จินซานหลิง: ขับรถ 2.5 ชั่วโมงคุ้มไหม?</h2>
+
+    <img
+      src="/images/great-wall/jinshanling.webp"
+      alt="หอคอยกำแพงเมืองจีนด่านจินซานหลิงที่โผล่พ้นทะเลหมอกยามรุ่งอรุณ"
+      width="922"
+      height="690"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">ทำไมคนไป</span> จินซานหลิงเป็นด่านที่เงียบที่สุดในบรรดาด่านคลาสสิก — เดินได้ยาวโดยแทบไม่เจอใครเลย <strong>บูรณะน้อยกว่ามู่เถียนยวี่หรือปาต๋าหลิง</strong> จึงได้เห็นอิฐหมิงของเดิมมากกว่าและคนน้อยกว่ามาก มี<strong>หอคอย 67 หอ</strong>และหอสัญญาณ 3 หออัดอยู่ในระยะราว 10.5 กม. จึงไม่เคยห่างจากหอถัดไป และเพราะเปิดก่อนรุ่งสาง จึงเป็นจุดหมายของ<strong>ทะเลหมอก</strong>และภาพพระอาทิตย์ขึ้นที่เต็มฟีดในฤดูใบไม้ร่วง</p>
+      <p class="text-lg leading-relaxed text-gray-700 clear-both"><span class="block text-xl font-bold text-brand-700 mb-2">พูดตรง ๆ</span> นี่คือการเดินป่าจริง ไม่ใช่การเดินเล่น — ขั้นบันไดชัน หินไม่เรียบ และมีช่วงโล่งไม่มีราวจับยาว ๆ อีกทั้งยังไกลที่สุด ราว 2.5 ชั่วโมงจากปักกิ่ง อยู่ในมณฑลเหอเป่ยเพื่อนบ้านแล้ว</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">วิธีไป</span> รถส่วนตัวหรือทัวร์ (ราว 2–2.5 ชม.) ในเดือนที่อากาศอบอุ่นมีรถบัสตรงตามฤดูจากตงจื๋อเหมิน หรือนั่งรถไฟถึงกู่เป่ยโข่วแล้วต่อแท็กซี่ Trip.com ยังมี<strong>รถรับส่ง (~¥80 ต่อเที่ยว)</strong> ซึ่งรวมแค่ค่าเดินทาง ตั๋วเข้าประตู ¥65 ซื้อแยกหรือเป็นแพ็กเกจก็ได้</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">ค่าใช้จ่าย</span> ค่าเข้า <strong>¥65</strong> ฤดูท่องเที่ยว / ¥55 นอกฤดู — ตั๋วที่ซื้อหน้างานใช้ได้<strong>สองครั้งภายใน 48 ชั่วโมง</strong> ซึ่งมีค่ามากถ้าอยากกลับมาดูพระอาทิตย์ขึ้น กระเช้า ¥40 ต่อเที่ยว / ¥60 ไป-กลับ ถึงหอเสี่ยวจินซาน</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">เหมาะกับใคร</span> ช่างภาพ นักเดินป่า และคนที่ไปด่านคลาสสิกมาหมดแล้วและอยากได้กำแพงที่ไม่มีคน</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">ตั๋วและรถรับส่งไป-กลับในการจองเดียว</strong> — หรือแยกกัน:</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/qU1ijvnDIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 จองจินซานหลิงบน Trip.com</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 6: SIMATAI ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="simatai" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🌃 ซือหมาถาย: กำแพงหลังมืดเป็นอย่างไร?</h2>
+
+    <img
+      src="/images/great-wall/simatai.webp"
+      alt="กำแพงเมืองจีนด่านซือหมาถายที่เปิดไฟกลางคืนบนสันเขาเหนือตรอกที่มีโคมไฟของกู่เป่ยสุ่ยเจิ้น"
+      width="1200"
+      height="900"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">ทำไมคนไป</span> ซือหมาถายคือกำแพงกลางคืนคลาสสิก — <strong>เปิดทัวร์กลางคืนตลอดปี</strong> และหอคอยที่เปิดไฟส่องสว่างอยู่เหนือ<strong>กู่เป่ยสุ่ยเจิ้น</strong> เมืองริมน้ำที่บูรณะขึ้นใหม่ที่เชิงกำแพง พักค้างคืนในเมือง เดินชมใต้โคมไฟ แล้วขึ้นไปบนกำแพงที่เปิดไฟหลังมืด กำแพงตอนกลางวันชันและดั้งเดิมกว่ามู่เถียนยวี่ ทอดผ่านสันเขาคม ๆ ทั้งสองทาง</p>
+      <p class="text-lg leading-relaxed text-gray-700 clear-both"><span class="block text-xl font-bold text-brand-700 mb-2">พูดตรง ๆ</span> เพราะมีเมืองอยู่ข้างล่าง ซือหมาถายจึงเป็นเหมือนแพ็กเกจมากกว่าการเดินป่าบนกำแพงล้วน ๆ: ตั๋วกลางวันและกลางคืนแยกกัน และ<strong>การเข้ากลางคืนต้องใช้กระเช้าไป-กลับ</strong> (หลังมืดขึ้นลงด้วยการเดินไม่ได้) นักท่องเที่ยวกลางวันต้องออกก่อนเย็น จึงอยู่ต่อจากกลางวันถึงกลางคืนไม่ได้</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">วิธีไป</span> รถส่วนตัวหรือทัวร์จากปักกิ่ง ราว 2–2.5 ชม. และคนส่วนใหญ่จับคู่กับค้างคืนที่<strong>กู่เป่ยสุ่ยเจิ้น</strong>ที่เชิงกำแพง ลิงก์ Trip.com ด้านล่างยังขาย<strong>รถบัสไป-กลับ</strong>ไปเมืองและกำแพง พร้อมตั๋วกลางคืนหรือจองเดี่ยว</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">ค่าใช้จ่าย</span> ค่าเข้ากลางวันราว <strong>¥40</strong> <strong>ทัวร์กลางคืนบวกระเช้าไป-กลับ ¥200/คน</strong> (เด็กสูง 1.2–1.5 ม. ¥110) — หลังมืดกระเช้าเป็นทางขึ้นเดียว แพ็กเกจกู่เป่ยสุ่ยเจิ้น + กำแพง + กระเช้า <strong>¥280</strong> และผู้เข้าพักในเมืองจ่าย <strong>¥120</strong> — จองล่วงหน้า</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">จับคู่กับกู่เป่ยสุ่ยเจิ้น</span> เมืองริมน้ำที่บูรณะขึ้นใหม่ตั้งอยู่ที่เชิงกำแพงพอดี และคนส่วนใหญ่เที่ยวสองที่นี้เป็นทริปเดียวกัน — ตรอกที่ประดับโคมไฟยามบ่ายแก่ แล้วขึ้นกำแพงที่เปิดไฟหลังมืด <strong>ตั๋วแยกกัน</strong> และทัวร์กลางคืนไม่รวมเมือง จึงต้องเผื่องบทั้งสองอย่าง</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">เหมาะกับใคร</span> คู่รักและช่างภาพที่ต้องการบรรยากาศ และคนที่อยากเห็นกำแพงที่เปิดไฟมากกว่ายืนในฝูงชนตอนกลางวัน</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">ตั๋วกลางคืนและรถบัสไป-กลับ เป็นแพ็กเกจ</strong> — หรือจองแค่รถ:</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/Ar0ZTnMNIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 จองซือหมาถายบน Trip.com</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 7: HUANGHUACHENG ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="huanghuacheng" class="text-3xl font-bold text-gray-900 mb-6 mt-12">💧 หวงฮวาเฉิง: ที่ที่กำแพงเดินลงไปในทะเลสาบ</h2>
+
+    <img
+      src="/images/great-wall/huanghuacheng.webp"
+      alt="กำแพงเมืองจีนด่านหวงฮวาเฉิงที่ทอดตามชายฝั่งอ่างเก็บน้ำสีมรกต มีเรือท่องเที่ยวอยู่บนน้ำ"
+      width="393"
+      height="674"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">ทำไมคนไป</span> นี่คือที่เดียวในจีนที่กำแพง<strong>ลงและขึ้นจากน้ำถึงสามครั้ง</strong> — เขื่อนที่สร้างในทศวรรษ 1970 ทำให้ระดับน้ำสูงขึ้นและท่วมช่วงที่ต่ำที่สุด เหลือหอคอยโผล่พ้นทะเลสาบสีมรกต รอบ ๆ มีสวนเกาลัดสมัยหมิง (ต้นอายุหลายร้อยปี) และทางเดินไม้ริมทะเลสาบที่เดินสบาย เขียว เงียบ และไม่เหมือนกำแพงในโปสการ์ดเลย</p>
+      <p class="text-lg leading-relaxed text-gray-700 clear-both"><span class="block text-xl font-bold text-brand-700 mb-2">พูดตรง ๆ</span> ช่วงที่จมน้ำนั้นสั้น — แค่ครึ่งวัน ไม่ต้องทั้งวัน — และวิวที่ดีที่สุดอยู่ใกล้ทางเข้า วันหยุดสุดสัปดาห์จึงดูแน่น ของเสริม (เรือ สะพานกระจก รางสไลด์) คิดเพิ่มทั้งหมด</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">ไฮไลต์</span> <strong>กำแพงใต้น้ำ</strong>(「มังกรดื่มน้ำ」) <strong>สะพานกระจก</strong> และ<strong>สวนเกาลัดสมัยหมิง</strong></p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">บนน้ำ</span> นี่เป็นด่านเดียวที่ได้ลงไปบนน้ำจริง ๆ — <strong>เรือท่องเที่ยวและเรือสำราญ</strong>แล่นข้ามทะเลสาบ (ราว <strong>¥25 ต่อเที่ยว / ¥45 ไป-กลับ</strong>) พร้อม<strong>ล่องกระจกเหนือเมฆ</strong>และ<strong>รางสไลด์แม่เหล็ก</strong>ลงตามทางเดินไม้เป็นของเสริม กิจกรรมทางน้ำทั้งหมดคิดเพิ่มจากค่าตั๋วเข้า</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">วิธีไป</span> จากใจกลางปักกิ่งราว 1–1.5 ชั่วโมงโดยรถหรือ DiDi การใช้ขนส่งสาธารณะยากกว่า (มีรถบัสจากตงจื๋อเหมินไปทางหวงฮวาเฉิง)</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">ค่าใช้จ่าย</span> ค่าเข้าราว <strong>¥58</strong> เรือ สะพานกระจก และรางสไลด์เป็นค่าใช้จ่ายเพิ่มทั้งหมด</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">เหมาะกับใคร</span> คนที่เคยเห็นกำแพงคลาสสิกแล้วและอยากได้อะไรที่ต่างจริง ๆ และครึ่งวันสบาย ๆ กับเด็ก</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">ตั๋ว รถบัส และเรือ ไปด้วยกัน</strong> — วิธีง่ายที่สุดในการเก็บกิจกรรมเสริมบนทะเลสาบ:</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/bU5SXQXDIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 จองหวงฮวาเฉิงบน Trip.com</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 8: JUYONGGUAN ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="juyongguan" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏯 จูยงกวน: ด่านครึ่งวันที่ดีที่สุดจากปักกิ่งไหม?</h2>
+
+    <img
+      src="/images/great-wall/juyongguan.webp"
+      alt="อาคารประตูด่านจูยงกวนกับหลังคากระเบื้องเขียว และกำแพงเมืองจีนที่ทอดตามสันเขาด้านหลัง"
+      width="530"
+      height="677"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">ทำไมคนไป</span> จูยงกวนเป็น<strong>ด่านที่ใกล้เมืองที่สุด</strong>(ต่ำกว่า 60 กม. ในฉางผิง) และเป็นด่านที่สร้างเป็นป้อมปราการ ไม่ใช่กำแพงบนสันเขา — คุณเดินเป็นวงรอบเต็มวงในหุบเขา ผ่านประตู<strong>「ด่านที่ 1 ใต้หล้า」</strong> ข้างในมี<strong>แท่นเมฆ</strong>สมัยหมิงและกลุ่มวัด เพราะใกล้และไม่ดังมาก จึงเป็นด่านที่เงียบที่สุดในบรรดาตัวเลือกง่าย ๆ และเปิดเช้าปิดค่ำ (ราว <strong>6:30–18:00</strong>) ตั้งแต่<strong>ปลายมีนาคมถึงกลางเมษายน</strong> ไหล่เขาจะเต็มไปด้วยดอกท้อป่าและดอกแอปริคอท และมี<strong>「รถไฟทะเลดอกไม้」</strong> — รถไฟชานเมืองสาย S2 — แล่นผ่านหุบเขาด้านล่าง เป็นภาพที่มีแค่ฤดูใบไม้ผลิ คุ้มค่ากับการอ้อมไป</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">วิธีไป</span> รถไฟใต้ดินสาย 8/13 ถึงหั่วอิง แล้วต่อรถบัส 879/919 ถึงจูยงกวน หรือราวหนึ่งชั่วโมงโดยรถหรือ DiDi</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">ค่าใช้จ่าย</span> ค่าเข้า <strong>¥45</strong> (เมษายน–ตุลาคม) / <strong>¥40</strong> (พฤศจิกายน–มีนาคม) เด็กที่สูงเกิน 1.2 ม. และนักเรียนจ่ายราคาลด</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">รอบกลางคืน</span> ใน<strong>คืนวันศุกร์และเสาร์ รวมทั้งวันหยุดนักขัตฤกษ์</strong>ถึงต้นตุลาคม (18:00–21:00) ด่านจัดงานกลางคืนแบบดื่มด่ำ — ทหารยามเดินขบวนบนเส้นทางไปรษณีย์เก่า วงดนตรีพื้นบ้านบนหอคอย กำแพงที่ประดับโคมไฟ และตลาดกลางคืนในด่าน</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">ไม่มีกระเช้า</span> จูยงกวนเป็นหนึ่งในสองด่านหลักที่<strong>ไม่มีลิฟต์ขึ้นเขา</strong> (อีกแห่งคือหวงฮวาเฉิง) และเป็นแห่งเดียวที่ไม่มีรางสไลด์ลงด้วย จึงขึ้นและลงด้วยการเดิน วงรอบสั้นและชันน้อยกว่ามู่เถียนยวี่หรือจินซานหลิง แต่เผื่อแรงไว้สำหรับการขึ้น</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">เหมาะกับใคร</span> ทริปครึ่งวัน เที่ยวฤดูหนาว คนรักประวัติศาสตร์ และคนที่อยากเห็นกำแพงโดยไม่ต้องออกเช้าหรือขับรถไกล</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">ตั๋วและรถรับส่งไป-กลับในการจองเดียว</strong> — ตัวเลือกครึ่งวันที่ง่ายที่สุด:</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/RM0EN5ONIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 จองจูยงกวนบน Trip.com</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 9: TICKETS ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="tickets" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎫 ต้องจองตั๋วล่วงหน้าไหม?</h2>
+    <ul class="list-disc pl-6 space-y-3 mb-12 text-lg text-gray-700">
+      <li>ปาต๋าหลิงควร<strong>จองล่วงหน้า</strong> — ในวันพีคตั๋วหมด และไม่มีเคาน์เตอร์ขายหน้างาน</li>
+      <li><strong>ตั๋วกลางคืนขายแยก</strong> และมีจำนวนจำกัดตามรอบเวลา ที่ปาต๋าหลิงขายออนไลน์เท่านั้น และวันหยุดสุดสัปดาห์มักหมดล่วงหน้าสองถึงสามวัน</li>
+      <li>นักท่องเที่ยวต่างชาติต้องใช้<strong>หนังสือเดินทาง</strong>ในการซื้อตั๋วและเข้าทุกด่าน</li>
+      <li>ฤดูท่องเที่ยวคือราว<strong>เมษายน–ตุลาคม</strong> ราคาในตารางข้างต้นเป็นราคาฤดูท่องเที่ยว</li>
+    </ul>
+
+    <div class="bg-yellow-50 border border-yellow-100 rounded-2xl p-6 mb-12">
+      <p class="text-gray-700"><strong>⏰ กฎข้อเดียวที่สำคัญจริง ๆ:</strong> ไปแต่เช้า คณะทัวร์มาถึงระหว่าง 9:30 ถึง 11:00 — ขึ้นไปอยู่บนกำแพงก่อน 9 โมงถ้าอยากเห็นแบบในรูป</p>
+    </div>
+
+    <!-- ============ SECTION 10: BEST TIME ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="best-time" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📅 ช่วงเวลาที่ดีที่สุด</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">ทุกด่านมีฤดูและมีชั่วโมงที่มันดูเหมือนอย่างที่คุณจินตนาการไว้ นี่คือช่วงที่ด่านทั้งหกนี้โด่งดังจริง ๆ</p>
+
+    <ul class="list-disc pl-6 space-y-3 mb-12 text-lg text-gray-700">
+      <li>🍂 <strong>ฤดูใบไม้ร่วงคือฤดูของช่างภาพ</strong> จินซานหลิงเปิดก่อนรุ่งสาง และเป็นจุดหมายของทะเลหมอกและภาพพระอาทิตย์ขึ้นที่เต็มฟีดในฤดูใบไม้ร่วง — และตั๋วฤดูท่องเที่ยวที่ซื้อหน้างานใช้ได้สองครั้งภายใน 48 ชั่วโมง</li>
+      <li>🌸 <strong>ปลายมีนาคมถึงกลางเมษายน</strong> นำดอกท้อป่าและดอกแอปริคอทมาสู่ไหล่เขาของจูยงกวน พร้อม「รถไฟทะเลดอกไม้」ที่วิ่งผ่านหุบเขาด้านล่างเฉพาะฤดูใบไม้ผลิ</li>
+      <li>🌙 <strong>ทัวร์กลางคืนจัด 30 เมษายนถึง 6 ตุลาคม</strong> ที่ปาต๋าหลิง ช่วงฤดูร้อนที่มู่เถียนยวี่ ตลอดปีที่ซือหมาถาย และคืนวันศุกร์–เสาร์ที่จูยงกวน</li>
+      <li>❄️ <strong>ฤดูหนาวเป็นฤดูที่เงียบที่สุด</strong> ตัวเลือกฤดูหนาวที่ดีที่สุดคือจูยงกวน — ใกล้ เปิดเช้าปิดค่ำ และเงียบที่สุดในบรรดาตัวเลือกง่าย ๆ</li>
+      <li>📅 <strong>ฤดูท่องเที่ยวคือราวเมษายน–ตุลาคม</strong> ราคาในตารางเปรียบเทียบเป็นราคาฤดูท่องเที่ยว และตั๋วนอกฤดูถูกกว่าเล็กน้อย (ปาต๋าหลิง ¥35 จินซานหลิง ¥55)</li>
+    </ul>
+
+    <!-- ============ SECTION 11: PRACTICAL TIPS ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="practical-tips" class="text-3xl font-bold text-gray-900 mb-6 mt-12">👟 ต้องเตรียมอะไรไปกำแพงเมืองจีน?</h2>
+    <ul class="list-disc pl-6 space-y-3 mb-12 text-lg text-gray-700">
+      <li>น้ำ 2–3 ลิตรต่อคน — บนกำแพงไม่มีร้านค้า</li>
+      <li>ฤดูร้อนพาครีมกันแดดและหมวก ฤดูหนาวใส่เสื้อกันลมที่อุ่น (บนกำแพงหนาวและลมแรงกว่าในเมืองเสมอ)</li>
+      <li>รองเท้าที่เหมาะ: รองเท้าผ้าใบพอสำหรับปาต๋าหลิง มู่เถียนยวี่ และจูยงกวน ส่วนจินซานหลิงกับซือหมาถายต้องใช้<strong>รองเท้าเดินป่า</strong></li>
+    </ul>
+
+    <!-- ============ SECTION 12: HISTORY ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="history" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📜 คุณกำลังเดินบนอะไรกันแน่? อิฐหมิง ไม่ใช่ฉิน</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">กำแพงเมืองจีนไม่ใช่กำแพงเดียว แต่เป็น<strong>ระบบหนึ่ง</strong> — หลายราชวงศ์สร้าง เชื่อม และสร้างใหม่กว่า 2,000 ปี สิ่งที่คุณเห็นวันนี้ส่วนใหญ่เป็น<strong>สิ่งก่อสร้างสมัยราชวงศ์หมิง (1368–1644)</strong> ส่วนกำแพงดินสมัยฉินและฮั่นที่เก่ากว่าได้ผุพังไปมาก เครือข่ายทั้งหมดตามการวัดของสำนักบริหารมรดกวัฒนธรรมแห่งชาติจีนในปี 2012 ยาว <strong>21,196 กม.</strong> — นับรวมทุกสาขาและคูน้ำ ไม่ใช่แค่กำแพงที่เป็นข่าว ส่วนที่บูรณะและเดินได้รวมกันราว 700 กม.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">รายละเอียดเล็ก ๆ ที่ควรรู้ขณะเดิน:</p>
+
+    <ul class="list-disc pl-6 space-y-3 mb-12 text-lg text-gray-700">
+      <li><strong>ด่านฝั่งตะวันออกถูกสร้างใหม่โดยขุนพลชื่อดัง</strong> ฉีจี้กวง ขุนพลสมัยหมิงที่จัดระบบกำแพงใหม่ในทศวรรษ 1560–70 เพิ่มหอคอยและช่องยิงที่คุณเห็นที่มู่เถียนยวี่ จินซานหลิง และปาต๋าหลิง</li>
+      <li><strong>ที่จินซานหลิง ลองดูอิฐ</strong> หลายก้อนมี<strong>รอยสลัก</strong> — ช่างก่อสร้างเดิมประทับตราเตาเผาและหน่วยของตนลงบนอิฐทุกก้อน เพื่อให้ตามรอยปัญหากลับไปถึงทีมได้ นี่คือการควบคุมคุณภาพสมัยหมิงที่สลักไว้ในศิลา</li>
+      <li><strong>ปูนก่อสร้างพิเศษกว่าที่คิด</strong> ส่วนที่บูรณะใช้สูตรเดิม — ผสมแป้งข้าวเหนียวลงในปูนขาว ส่วนหนึ่งที่ทำให้กำแพงเหล่านี้ยืนมาได้หลายศตวรรษ</li>
+      <li><strong>หอคอยใช้งานได้หลายอย่าง</strong> เก็บอาวุธและธัญพืช เป็นที่พักของทหารรักษาการณ์ และส่งสัญญาณ — กลางวันควัน กลางคืนไฟ นั่นคือเหตุผลที่หอคอยอยู่ห่างกันในระยะที่มองเห็นกันได้ตลอดแนวกำแพง</li>
+    </ul>
+
+    <!-- ============ NEXT READS ============ -->
+    <div class="border-t border-gray-100 pt-8 mt-8 not-prose">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h3 class="text-sm font-bold text-gray-900">📚 อ่านต่อ</h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="/th/cities/beijing-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🏙️ คู่มือเที่ยวปักกิ่ง
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/th/cities/forbidden-city/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🏛️ คู่มือพระราชวังต้องห้าม
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/th/cities/city-select/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              📅 ไปจีนควรใช้เวลากี่วัน?
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/th/transport/high-speed-rail/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🚄 วิธีจองและนั่งรถไฟความเร็วสูงจีน
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/th/payment/china-travel-budget/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              💰 ค่าใช้จ่ายทริปจีน 2026
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ SOURCES ============ -->
+    <section class="mt-10 pt-6 border-t border-gray-100">
+      <h3 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-4">แหล่งข้อมูล</h3>
+      <ol class="space-y-2 text-sm text-gray-500">
+        <li>1. <strong>กำแพงเมืองจีนด่านปาต๋าหลิง</strong> — <a href="https://english.visitbeijing.com.cn/article/4MX01cNAUre" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Beijing Micro-Getaway Guide: Must-Visit Attractions</a></li>
+        <li>2. <strong>ทัวร์กลางคืนทั้งสี่ด่าน</strong> — <a href="https://english.visitbeijing.com.cn/article/4RI8S685GDY" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Ecological Leisure | Badaling Night Great Wall</a>; <a href="https://english.visitbeijing.com.cn/article/4T3jh3BHGra" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Upgraded Juyongguan Night Great Wall</a>; <a href="https://english.visitbeijing.com.cn/article/4OStXw7yhMK" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Beijing&apos;s Golden Autumn Vibe, Double the Festival Joy</a>.</li>
+        <li>3. <strong>กำแพงเมืองจีนด่านมู่เถียนยวี่</strong> — <a href="https://en.mutianyugreatwall.com/article/4SHdMJjS04P" target="_blank" rel="noopener" class="text-blue-600 hover:underline">2026 night-tour guide</a></li>
+        <li>4. <strong>กำแพงเมืองจีนด่านจินซานหลิง</strong> — <a href="https://english.visitbeijing.com.cn/article/4JvnMW3ZbDx" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Two-day trip towards autumn foliage with one ticket</a></li>
+        <li>5. <strong>หวงฮวาเฉิง (กำแพงกลางน้ำ)</strong> — <a href="https://english.visitbeijing.com.cn/article/4Itpbe3Ye1z" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Beijing Huanghuacheng Lakeside Great Wall</a></li>
+        <li>6. <strong>กำแพงเมืองจีนด่านจูยงกวน</strong> — <a href="https://english.visitbeijing.com.cn/article/47OOq8YYqAs" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Juyongguan Great Wall (居庸关长城)</a></li>
+        <li>7. <strong>กำแพงเมืองจีนด่านซือหมาถาย</strong> — <a href="https://english.visitbeijing.com.cn/article/4OT1GKn1zoW" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Experience night scenery at Simatai Great Wall</a></li>
+        <li>8. <strong>การเดินทาง</strong> — <a href="https://english.visitbeijing.com.cn/article/47OLMubjite" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Come to Badaling Great Wall for moon appreciation</a>.</li>
+      </ol>
+      <p class="text-sm text-gray-500 mt-4"><em>ตัวเลขทั้งหมดข้างต้นเป็นราคาผู้ใหญ่ในฤดูท่องเที่ยว แหล่งข้อมูลคือพอร์ทัลท่องเที่ยวทางการปักกิ่ง (english.visitbeijing.com.cn) และเว็บไซต์ภาษาอังกฤษของแต่ละพื้นที่ ตรวจสอบเมื่อกันยายน 2026</em></p>
+    </section>
+
+  </article>
+</Layout>

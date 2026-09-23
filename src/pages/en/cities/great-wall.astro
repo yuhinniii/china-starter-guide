@@ -1,0 +1,480 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'Great Wall of China Guide: Which Section to Visit';
+const description = 'How the six Great Wall sections compare — Badaling, Mutianyu, Jinshanling, Simatai, Huanghuacheng and Juyongguan — on crowds, difficulty, tickets and night tours.';
+---
+
+<Layout title={title} description={description} lang="en">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+
+    <!-- ============ BREADCRUMB ============ -->
+    <nav class="mb-8 not-prose">
+      <a href="/en/cities/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Back to City Guides
+      </a>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🧱 Great Wall · Beijing</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">Great Wall of China: Which Section Should You Visit?</h1>
+      <p class="text-xl text-gray-600 mb-6">Badaling, Mutianyu, Jinshanling or Simatai — what actually separates them, and which one fits the trip you're planning.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Last updated: September 2026</span>
+        <span>⏱️ 12 min read</span>
+      </div>
+    </header>
+
+    <!-- ============ HERO IMAGE ============ -->
+    <figure class="mb-12 not-prose">
+      <img
+        src="/images/great-wall/comparison-grid.webp"
+        alt="Grid of six Great Wall sections near Beijing: Badaling in spring blossom, Mutianyu in autumn colour, Jinshanling above a sea of clouds, Simatai lit up at night above Gubei Water Town, Huanghuacheng running into a turquoise lake, and Juyongguan's fortress pass"
+        width="1200"
+        height="534"
+        loading="eager"
+        fetchpriority="high"
+        class="w-full h-auto object-cover rounded-2xl shadow-md"
+      />
+      <figcaption class="text-xs text-gray-500 text-center mt-2">Same wall, six different days. Left to right, top to bottom: Badaling, Mutianyu, Jinshanling, Simatai, Huanghuacheng, Juyongguan.</figcaption>
+    </figure>
+
+    <!-- ============ QUICK ANSWER ============ -->
+    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-red-900 mb-4">⚡ Quick Answer</h2>
+      <p class="text-lg text-red-800 leading-relaxed">
+        <strong>Mutianyu</strong> is the best all-round choice for most first-time visitors — fully restored and dramatic, with a cable car up and a toboggan down, at a fraction of Badaling's crowds. <strong>Badaling</strong> is the definitive one — the first section opened to tourists, the stretch visited by heads of state, and the most monumental of the restored stretches, climbing to the 888 m North Eighth Tower; it's also by far the busiest. <strong>Jinshanling</strong> is the hiker's and photographer's pick — quieter and less rebuilt, with 67 watchtowers and a pre-dawn opening for the sea of clouds. <strong>Simatai</strong> is the atmospheric one — year-round night tours, with Gubei Water Town right at its foot. <strong>Huanghuacheng</strong> is the oddity — the only section where the wall drops into open water, with boats and a glass bridge. <strong>Juyongguan</strong> is the closest and quietest pass — a fortress loop rather than a ridge climb, and the best half-day or winter bet.
+      </p>
+    </div>
+
+    <!-- ============ IN THIS GUIDE ============ -->
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 In This Guide</h3>
+      <ul class="space-y-3">
+        <li><a href="#which-section" class="text-blue-600 hover:underline">🤔 Which Section Should You Visit?</a></li>
+        <li><a href="#night" class="text-blue-600 hover:underline">🌙 Can You Visit the Great Wall at Night?</a></li>
+        <li><a href="#badaling" class="text-blue-600 hover:underline">🏔️ Badaling</a></li>
+        <li><a href="#mutianyu" class="text-blue-600 hover:underline">🌳 Mutianyu</a></li>
+        <li><a href="#jinshanling" class="text-blue-600 hover:underline">☁️ Jinshanling</a></li>
+        <li><a href="#simatai" class="text-blue-600 hover:underline">🌃 Simatai</a></li>
+        <li><a href="#huanghuacheng" class="text-blue-600 hover:underline">💧 Huanghuacheng</a></li>
+        <li><a href="#juyongguan" class="text-blue-600 hover:underline">🏯 Juyongguan</a></li>
+        <li><a href="#tickets" class="text-blue-600 hover:underline">🎫 Tickets &amp; Booking</a></li>
+        <li><a href="#best-time" class="text-blue-600 hover:underline">📅 Best Time to Go</a></li>
+        <li><a href="#practical-tips" class="text-blue-600 hover:underline">👟 What Should You Pack?</a></li>
+        <li><a href="#history" class="text-blue-600 hover:underline">📜 Ming Bricks, Not Qin</a></li>
+      </ul>
+    </nav>
+
+    <!-- ============ SECTION 1: WHICH SECTION ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="which-section" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🤔 Which Section Should You Visit?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">Every section is, technically, the same wall. But no two give you the same day. The differences that matter aren't the distance or the ticket price — they're <strong>how crowded it gets, how hard you have to work, and what the wall is actually doing when you get there</strong> (sweeping over ridges, dropping into a lake, or lit up against a night sky). The sections below are ordered by how likely they are to suit a first or second visit.</p>
+
+    <h3 class="text-xl font-bold text-gray-900 mb-4">How the Six Great Wall Sections Compare</h3>
+
+    <div class="overflow-x-auto mb-8 not-prose">
+      <table class="w-full text-sm text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+        <thead>
+          <tr class="bg-gray-900 text-white">
+            <th class="px-3 py-3 font-bold align-bottom">Section</th>
+            <th class="px-3 py-3 font-bold align-bottom">Distance from Beijing</th>
+            <th class="px-3 py-3 font-bold align-bottom">Crowds</th>
+            <th class="px-3 py-3 font-bold align-bottom">Difficulty</th>
+            <th class="px-3 py-3 font-bold align-bottom">Entry</th>
+            <th class="px-3 py-3 font-bold align-bottom">Time needed</th>
+            <th class="px-3 py-3 font-bold align-bottom">Good for kids?</th>
+            <th class="px-3 py-3 font-bold align-bottom">The standout moment</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="px-3 py-3 font-semibold">Badaling</td>
+            <td class="px-3 py-3">70 km · HSR ~35 min</td>
+            <td class="px-3 py-3">Extreme</td>
+            <td class="px-3 py-3">Easy</td>
+            <td class="px-3 py-3">¥40</td>
+            <td class="px-3 py-3">3–4 h</td>
+            <td class="px-3 py-3">Yes (ropeway)</td>
+            <td class="px-3 py-3">The sheer scale — and the biggest night show</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-3 py-3 font-semibold">Mutianyu</td>
+            <td class="px-3 py-3">70 km · ~1.5 h drive</td>
+            <td class="px-3 py-3">Moderate</td>
+            <td class="px-3 py-3">Easy–moderate</td>
+            <td class="px-3 py-3">¥45</td>
+            <td class="px-3 py-3">Half day</td>
+            <td class="px-3 py-3">Yes (cable car + toboggan)</td>
+            <td class="px-3 py-3">23 restored towers, then sledding down</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-3 py-3 font-semibold">Jinshanling</td>
+            <td class="px-3 py-3">130 km · ~2.5 h drive</td>
+            <td class="px-3 py-3">Low</td>
+            <td class="px-3 py-3">Strenuous</td>
+            <td class="px-3 py-3">¥65</td>
+            <td class="px-3 py-3">Full day</td>
+            <td class="px-3 py-3">No</td>
+            <td class="px-3 py-3">67 towers packed close, sea of clouds at dawn</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-3 py-3 font-semibold">Simatai</td>
+            <td class="px-3 py-3">120 km · ~2.5 h drive</td>
+            <td class="px-3 py-3">Low</td>
+            <td class="px-3 py-3">Strenuous</td>
+            <td class="px-3 py-3">¥40 day</td>
+            <td class="px-3 py-3">Half–full day</td>
+            <td class="px-3 py-3">Older kids</td>
+            <td class="px-3 py-3">The wall glowing above Gubei Water Town at night</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-3 py-3 font-semibold">Huanghuacheng</td>
+            <td class="px-3 py-3">60 km · ~1.5 h drive</td>
+            <td class="px-3 py-3">Low–moderate</td>
+            <td class="px-3 py-3">Moderate</td>
+            <td class="px-3 py-3">¥58</td>
+            <td class="px-3 py-3">Half day</td>
+            <td class="px-3 py-3">Yes</td>
+            <td class="px-3 py-3">The wall walking straight into a lake</td>
+          </tr>
+          <tr>
+            <td class="px-3 py-3 font-semibold">Juyongguan</td>
+            <td class="px-3 py-3">60 km · ~1 h drive</td>
+            <td class="px-3 py-3">Low</td>
+            <td class="px-3 py-3">Moderate</td>
+            <td class="px-3 py-3">¥45 (Apr–Oct)</td>
+            <td class="px-3 py-3">Half day</td>
+            <td class="px-3 py-3">Yes</td>
+            <td class="px-3 py-3">The "No. 1 Pass Under Heaven" — and spring blossom trains</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">Prices are peak-season adult tickets; students typically pay half and children under 1.2 m usually go free. Rates change by season and section — confirm before you go.</p>
+
+    <!-- ============ SECTION 2: NIGHT ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="night" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🌙 Can You Visit the Great Wall at Night?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">Distance and price separate these sections less than three practical questions do: <strong>can you get up without climbing, is there a shuttle from the car park, and does it open after dark?</strong> Here is the full picture.</p>
+
+    <div class="overflow-x-auto mb-8 not-prose">
+      <table class="w-full text-sm text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+        <thead>
+          <tr class="bg-gray-900 text-white">
+            <th class="px-3 py-3 font-bold align-bottom">Section</th>
+            <th class="px-3 py-3 font-bold align-bottom">Night tour</th>
+            <th class="px-3 py-3 font-bold align-bottom">Getting up</th>
+            <th class="px-3 py-3 font-bold align-bottom">Shuttle / transfer</th>
+            <th class="px-3 py-3 font-bold align-bottom">Signature extra</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="px-3 py-3 font-semibold">Badaling</td>
+            <td class="px-3 py-3">✅ Every night, 30 Apr–6 Oct (entry 18:30–21:00)</td>
+            <td class="px-3 py-3">Cable car or ground ropeway, ¥100 one-way</td>
+            <td class="px-3 py-3">Free park shuttle; "Great Wall Bus" ¥80 return</td>
+            <td class="px-3 py-3">The wall lit from North Tower 4 to South Tower 4</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-3 py-3 font-semibold">Mutianyu</td>
+            <td class="px-3 py-3">✅ Seasonal windows (summer; National Day)</td>
+            <td class="px-3 py-3">Cable car up, toboggan down</td>
+            <td class="px-3 py-3">Shuttle ¥15 return</td>
+            <td class="px-3 py-3">The toboggan run</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-3 py-3 font-semibold">Jinshanling</td>
+            <td class="px-3 py-3">❌</td>
+            <td class="px-3 py-3">Cable car ¥40 one-way / ¥60 return</td>
+            <td class="px-3 py-3">One-way transfer bus ~¥80</td>
+            <td class="px-3 py-3">Sea of clouds at sunrise</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-3 py-3 font-semibold">Simatai</td>
+            <td class="px-3 py-3">✅ Year-round (18:00–21:30)</td>
+            <td class="px-3 py-3">Cable car — compulsory after dark</td>
+            <td class="px-3 py-3">—</td>
+            <td class="px-3 py-3">Gubei Water Town, right at the foot</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-3 py-3 font-semibold">Huanghuacheng</td>
+            <td class="px-3 py-3">❌</td>
+            <td class="px-3 py-3"><strong>No cable car</strong> — magnetic slide down the boardwalk</td>
+            <td class="px-3 py-3">Coach or private transfer</td>
+            <td class="px-3 py-3">Boats on the lake, plus a glass bridge</td>
+          </tr>
+          <tr>
+            <td class="px-3 py-3 font-semibold">Juyongguan</td>
+            <td class="px-3 py-3">✅ Fri &amp; Sat nights + holidays, to early Oct</td>
+            <td class="px-3 py-3"><strong>No cable car</strong> — you walk up and down</td>
+            <td class="px-3 py-3">—</td>
+            <td class="px-3 py-3">A Ming-era night festival inside the pass</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">One distinction worth getting straight: <strong>a shuttle is not the same as easy access.</strong> At every section except Badaling, the shuttle covers only the last leg — from the car park to the gate — and you still need a bus, a car, or a tour to reach that car park in the first place. Badaling is the only section with its own railway station: the Beijing–Zhangjiakou high-speed line runs to Badaling Changcheng, roughly 30–40 minutes from Beijing North, and the station sits about 800 m from the climbing entrance with a free shuttle covering the last stretch. That's why it's the one you can visit with no car and no tour — and also why it draws the biggest crowds.</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">Night-tour tickets (2026): Badaling <strong>¥198</strong> weekday / <strong>¥298</strong> Fri–Sun and holidays, booked online in advance (no ticket window on site); Mutianyu <strong>¥200</strong> including entry, shuttle and cable car; Simatai <strong>¥200</strong> for the night tour plus round-trip cable car (<strong>Gubei Water Town ticket not included</strong>); Juyongguan early-bird from <strong>¥19.9</strong>. Every night session is timed-entry and capped, so book ahead — weekend slots at Badaling often sell out two or three days out.</p>
+
+    <!-- ============ SECTION 3: BADALING ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="badaling" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏔️ Badaling: The Most Monumental Stretch — and the Busiest</h2>
+
+    <img
+      src="/images/great-wall/badaling.webp"
+      alt="Badaling Great Wall climbing over hillsides covered in spring blossom north of Beijing"
+      width="1200"
+      height="943"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Why people go</span> Badaling is the most famous section in China and the one foreign heads of state are taken to. It's fully restored, wide, and dramatic, with the wall climbing steeply over the ridge in both directions — the widest and most monumental of the restored stretches, running up to the <strong>North Eighth Tower at 888 m</strong>, marked by the <strong>"He who has not been to the Great Wall is not a true man" stele</strong>. You get the full "I'm standing on the Great Wall" feeling — and no other section gives you this much wall for so little planning.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">What's the catch</span> Everyone knows this. On weekends or public holidays, Badaling gets very crowded, and you might be swept along by the crowd. The trick is timing: be at the gate when it opens (around 7 am), and you'll have the first hour largely to yourself.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Getting there</span> High-speed train to <strong>Badaling Changcheng</strong> station — about <strong>20–25 minutes from Qinghe</strong> (¥16–25) or <strong>30–40 minutes from Beijing North</strong> (¥25–31); the station sits roughly <strong>800 m</strong> from the climbing entrance. Bus <strong>877</strong>, now from <strong>North Tudicheng metro (Lines 8/10)</strong>, is the budget option at ¥12. <strong>Book the train early</strong> — seats on the Beijing–Zhangjiakou line sell out fast on weekends and holidays, and tickets open <strong>15 days ahead</strong> on 12306 or Trip.com. If you'd rather skip the train, the Trip.com listing below also sells a <strong>round-trip shuttle bus</strong> with an onboard guide — bookable on its own or bundled with admission — which costs less than a private car and runs direct, with none of the public-bus transfers.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Cost</span> Entry <strong>¥40</strong> peak / ¥35 off-season. The <strong>north-line cable car or the south-line ground ropeway</strong> is ¥100 one-way, ¥140 round trip.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Night wall</span> From <strong>30 April to 6 October</strong>, Badaling runs a night session every evening — entry 18:30–21:00, towers lit from 19:20, last exit 22:00. Only the stretch between <strong>North Tower 4 and South Tower 4</strong> is open at night (the "Good Man" slope at N8 is not). Tickets are <strong>¥198</strong> on weekdays and <strong>¥298</strong> Fri–Sun and public holidays, capped at around 3,000 people a night.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Best for</span> Anyone who wants the definitive Wall — the state-visit stretch, the best night show, and the section you can reach without a car — and can live with the crowds.</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">Skip the transfers</strong> — book Badaling tickets and the round-trip bus together:</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/BjTXg5QDIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 Book Badaling tickets + round-trip bus on Trip.com</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 4: MUTIANYU ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="mutianyu" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🌳 Mutianyu: Is It the Best Section for First-Timers?</h2>
+
+    <img
+      src="/images/great-wall/mutianyu.webp"
+      alt="Mutianyu Great Wall running through hillsides of autumn colour with visitors walking the ramparts"
+      width="532"
+      height="355"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Why people go</span> Mutianyu is what most people picture when they imagine a perfect Great Wall day — fully restored and sweeping, with <strong>23 watchtowers</strong> marching over forested hills, but with a fraction of Badaling's traffic. On weekdays it can feel almost private. The other draw is the descent: a <strong>toboggan</strong> (a metal sled on a long track) runs from the wall back down to the village, and it turns a history outing into a memory for kids.</p>
+      <p class="text-lg leading-relaxed text-gray-700 clear-both"><span class="block text-xl font-bold text-brand-700 mb-2">How it works</span> A shuttle bus takes you from the parking area to the base, then a cable car lifts you to <strong>tower 14</strong>. You walk the wall as far as you like — tower 20 is the high point with the best panorama — then either walk back or ride the toboggan down.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Getting there</span> No high-speed rail. Tourist shuttle buses leave from Dongzhimen and Heping Xiqiao (about ¥80 round trip, 1.5 hours), or book a private car — the most common choice for foreign visitors. The easiest way to book the bus is through the Trip.com listing below, which sells the direct shuttle (English-speaking guide on board) either bundled with admission or on its own — cheaper than a private car and far quicker than the metro-plus-two-buses route.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Cost</span> Entry <strong>¥45</strong>. Shuttle ¥15 round trip. Cable car ¥100 one-way / ¥140 round trip. Toboggan around ¥100.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Summer nights</span> Mutianyu also opens after dark in <strong>seasonal windows — summer, then again over the National Day holiday</strong> — 17:30–21:00, with watchtowers <strong>10–15</strong> open. The <strong>night package (around ¥200)</strong> covers entry, the shuttle, and the cable car; the toboggan does not run after dark.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Best for</span> Most first-time visitors. It's the best balance of scenery, comfort, and manageable crowds.</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">Ticket, direct bus, or both</strong> — book it as a package or on its own:</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/0rEQW6TDIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 Book Mutianyu on Trip.com</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 5: JINSHANLING ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="jinshanling" class="text-3xl font-bold text-gray-900 mb-6 mt-12">☁️ Jinshanling: Is the 2.5-Hour Drive Worth It?</h2>
+
+    <img
+      src="/images/great-wall/jinshanling.webp"
+      alt="Jinshanling Great Wall watchtowers rising out of a sea of clouds at dawn"
+      width="922"
+      height="690"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Why people go</span> Jinshanling is the quietest of the classics — you can walk for long stretches with almost nobody else around. It's <strong>less rebuilt than Mutianyu or Badaling</strong>, so you get more of the original Ming brickwork and far fewer crowds, with <strong>67 watchtowers</strong> and three beacon towers packed into about 10.5 km, so you're never far from the next one. Because it opens before dawn, it's the go-to for the <strong>sea of clouds</strong> and sunrise shots that fill your feed in autumn.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">The honest version</span> This is a real hike, not a stroll — steep stairs, uneven stone, and long exposed stretches without handrails. It's also the far one, about 2.5 hours from Beijing in neighbouring Hebei province.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Getting there</span> Private car or tour (about 2–2.5 h); a seasonal direct bus runs from Dongzhimen in the warmer months, or take a train to Gubeikou and a taxi onward. Trip.com also lists a <strong>shuttle transfer (~¥80 one-way)</strong> — that's the ride only; the gate ticket is ¥65, and you can buy the two separately or as a package.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Cost</span> Entry <strong>¥65</strong> peak / ¥55 off-season — and tickets bought on-site are valid for <strong>two entries within 48 hours</strong>, a real gift if you want to come back for sunrise. Cable car ¥40 one-way / ¥60 round trip, up to Small Jinshan Tower.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Best for</span> Photographers, hikers, and anyone who has already ticked off the classics and wants the wall with nobody on it.</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">Ticket and round-trip transfer in one booking</strong> — or split them:</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/qU1ijvnDIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 Book Jinshanling on Trip.com</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 6: SIMATAI ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="simatai" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🌃 Simatai: What's the Wall Like After Dark?</h2>
+
+    <img
+      src="/images/great-wall/simatai.webp"
+      alt="Simatai Great Wall lit up at night on the ridge above the lantern-lit lanes of Gubei Water Town"
+      width="1200"
+      height="900"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Why people go</span> Simatai is the classic night wall — it runs <strong>night tours year-round</strong>, and the lit towers glow above <strong>Gubei Water Town</strong>, a rebuilt canal town at its foot. Stay overnight in the town, wander it by lantern, then ride up to the illuminated wall after dark. The daytime wall is steeper and more original than Mutianyu's, running over sharp ridges in both directions.</p>
+      <p class="text-lg leading-relaxed text-gray-700 clear-both"><span class="block text-xl font-bold text-brand-700 mb-2">The honest version</span> Because of the town, Simatai is more of a package than a pure wall hike: day and night tickets are separate, and <strong>night entry requires the round-trip cable car</strong> (you can't hike up or down after dark). Day visitors must leave by late afternoon, so you can't simply stay on from day into night.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Getting there</span> Private car or tour from Beijing, about 2–2.5 h, and most people pair it with an overnight in <strong>Gubei Water Town</strong> at the foot of the wall. The Trip.com listing below also sells a <strong>round-trip bus</strong> to the town and the wall, with the night ticket or on its own.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Cost</span> Day entry around <strong>¥40</strong>. The <strong>night tour plus round-trip cable car is ¥200/person</strong> (children 1.2–1.5 m ¥110) — after dark, the cable car is the only way up. A Gubei Water Town + Wall + cable-car package is <strong>¥280</strong>, and overnight guests in the town pay <strong>¥120</strong> — book ahead.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Pair it with Gubei Water Town</span> The rebuilt canal town sits directly at the foot of the wall, and most people visit the two as a single trip — lantern-lit lanes in the late afternoon, then the lit wall after dark. The <strong>tickets are separate</strong> and the night tour does not include the town, so budget for both.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Best for</span> Couples and photographers who want atmosphere; anyone who'd rather see the wall lit up than stand in a daytime crowd.</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">Night ticket and round-trip bus, bundled</strong> — or book just the ride:</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/Ar0ZTnMNIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 Book Simatai on Trip.com</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 7: HUANGHUACHENG ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="huanghuacheng" class="text-3xl font-bold text-gray-900 mb-6 mt-12">💧 Huanghuacheng: Where the Wall Walks Into a Lake</h2>
+
+    <img
+      src="/images/great-wall/huanghuacheng.webp"
+      alt="Huanghuacheng Great Wall following the shore of a turquoise reservoir with a sightseeing boat on the water"
+      width="393"
+      height="674"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Why people go</span> This is the one place in China where the wall <strong>walks in and out of open water three times</strong> — a reservoir dam built in the 1970s raised the water level and drowned the lowest stretch, leaving towers rising out of a turquoise lake. Around it are a Ming-era chestnut grove (with trees several hundred years old) and an easy lakeside boardwalk. It's green, quiet, and nothing like the postcard wall.</p>
+      <p class="text-lg leading-relaxed text-gray-700 clear-both"><span class="block text-xl font-bold text-brand-700 mb-2">The honest version</span> The submerged stretch is short — this is a half-day, not a full one — and the best views are near the entrance, so weekends can feel busy. The extras (boat, glass bridge, slide) all cost more.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Key sights</span> The <strong>submerged wall</strong> ("dragon drinking at the water"), the <strong>glass bridge</strong>, and the <strong>Ming chestnut grove</strong>.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">On the water</span> This is the only section where you can get onto the water itself — <strong>sightseeing boats and painted pleasure boats</strong> cross the lake (around <strong>¥25 one-way / ¥45 return</strong>), with a <strong>cloud-top glass rafting ride</strong> and a <strong>magnetic slide</strong> down the boardwalk as further add-ons. All water activities require an additional fee on top of the admission price.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Getting there</span> About 1–1.5 hours by car or DiDi from central Beijing; harder by public transport (buses from Dongzhimen toward Huanghuacheng).</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Cost</span> Entry is around <strong>¥58</strong>; boats, the glass bridge, and the slides are all paid extras.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Best for</span> Anyone who has seen the classic wall and wants something genuinely different; a relaxed half-day with kids.</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">Ticket, bus and boat ride together</strong> — the easy way to cover the lake extras:</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/bU5SXQXDIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 Book Huanghuacheng on Trip.com</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 8: JUYONGGUAN ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="juyongguan" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏯 Juyongguan: The Best Half-Day Section From Beijing?</h2>
+
+    <img
+      src="/images/great-wall/juyongguan.webp"
+      alt="Juyongguan's fortress gate building with its green-tiled roof, and the Great Wall winding along the ridge behind"
+      width="530"
+      height="677"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Why people go</span> Juyongguan is <strong>the nearest section to the city</strong> (less than 60 km, in Changping) and the one built as a fortress pass rather than a ridge-top wall — you walk a complete loop in a valley, past the "<strong>No. 1 Pass Under Heaven</strong>" gate, with a Ming <strong>Cloud Platform (云台)</strong> and a temple complex inside. Because it's close and less famous, it's the quietest of the easy options, and it's open early and late (roughly <strong>6:30 am–6 pm</strong>). From <strong>late March to mid-April</strong>, the hillsides fill with mountain peach and apricot blossom and the "<strong>flower-sea train</strong>" — the S2 suburban railway — threads through the valley below, a spring-only photo worth the detour.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Getting there</span> Metro Line 8/13 to Huoying, then bus 879/919 to Juyongguan; or about an hour by car/DiDi.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Cost</span> Entry <strong>¥45</strong> (April–October) / <strong>¥40</strong> (November–March); children over 1.2 m and students pay the discounted rate.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Night session</span> On <strong>Friday and Saturday nights plus public holidays</strong> through early October (18:00–21:00), the pass runs an immersive night event — guards parading the old post road, folk bands up on the towers, lantern-lit ramparts, and a night market inside the compound.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">No cable car</span> Juyongguan is one of only two major sections with <strong>no uphill lift</strong> (Huanghuacheng is the other) — and the only one with no slide down either, so you walk up and back. The loop is shorter and gentler than Mutianyu's or Jinshanling's, but budget for the climb.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Best for</span> Half-day trips, winter visits, history fans, and anyone who wants the wall without an early start or a long drive.</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">Ticket and round-trip transport in one booking</strong> — the simplest half-day option:</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/RM0EN5ONIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 Book Juyongguan on Trip.com</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 9: TICKETS ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="tickets" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎫 Do You Need to Book Tickets in Advance?</h2>
+    <ul class="list-disc pl-6 space-y-3 mb-12 text-lg text-gray-700">
+      <li>Book <strong>in advance</strong> for Badaling — on peak days the gate sells out and there's no ticket window for walk-ups.</li>
+      <li><strong>Night tickets are sold separately</strong> and are capped, timed-entry; at Badaling, they're online-only and often sell out two to three days ahead on weekends.</li>
+      <li>Foreign visitors need their <strong>passport</strong> to buy and enter at every section.</li>
+      <li>Peak season runs roughly <strong>April–October</strong>; the prices in the table above are peak-season rates.</li>
+    </ul>
+
+    <div class="bg-yellow-50 border border-yellow-100 rounded-2xl p-6 mb-12">
+      <p class="text-gray-700"><strong>⏰ The one rule that matters:</strong> go early. Tour groups arrive between 9:30 and 11 am — be on the wall before 9 am for the version you see in photos.</p>
+    </div>
+
+    <!-- ============ SECTION 10: BEST TIME ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="best-time" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📅 Best Time to Go</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">Every section has a season and an hour where it looks the way you imagined it. These are the windows the six sections above are actually known for.</p>
+
+    <ul class="list-disc pl-6 space-y-3 mb-12 text-lg text-gray-700">
+      <li>🍂 <strong>Autumn is the photographer's season.</strong> Jinshanling opens before dawn and is the go-to for the sea of clouds and sunrise shots that fill your feed in autumn — and a peak-season ticket bought on-site is valid for two entries within 48 hours.</li>
+      <li>🌸 <strong>Late March to mid-April</strong> brings mountain peach and apricot blossom to Juyongguan's hillsides, plus the spring-only "flower-sea train" threading the valley below.</li>
+      <li>🌙 <strong>Night tours run 30 April to 6 October</strong> at Badaling, in seasonal summer windows at Mutianyu, year-round at Simatai, and on Friday and Saturday nights at Juyongguan.</li>
+      <li>❄️ <strong>Winter is the quiet season.</strong> Juyongguan is the best winter bet — close, open early and late, and the quietest of the easy options.</li>
+      <li>📅 <strong>Peak season runs roughly April–October</strong>; the prices in the comparison table are peak-season rates, and off-season tickets are a little cheaper (Badaling ¥35, Jinshanling ¥55).</li>
+    </ul>
+
+    <!-- ============ SECTION 11: PRACTICAL TIPS ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="practical-tips" class="text-3xl font-bold text-gray-900 mb-6 mt-12">👟 What Should You Pack for the Great Wall?</h2>
+    <ul class="list-disc pl-6 space-y-3 mb-12 text-lg text-gray-700">
+      <li>2–3 litres of water per person — there are no shops along the wall.</li>
+      <li>Sunscreen and a hat in summer; warm, windproof layers in winter (the wall is always colder and windier than the city).</li>
+      <li>Proper shoes: trainers are fine for Badaling, Mutianyu, and Juyongguan; <strong>hiking boots</strong> for Jinshanling and Simatai.</li>
+    </ul>
+
+    <!-- ============ SECTION 12: HISTORY ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="history" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📜 What Are You Actually Walking On? Ming Bricks, Not Qin</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">The Great Wall is not a single wall but <strong>a system</strong> — multiple dynasties built, connected, and rebuilt over 2,000+ years. Most of what you see today is <strong>Ming dynasty construction (1368–1644)</strong>; the older Qin and Han earthworks have largely eroded. The full network spans <strong>21,196 km</strong> as measured by China's State Administration of Cultural Heritage in 2012 — that counts every branch and trench, not just the headline wall. The walkable restored portions total about 700 km.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">A few details worth knowing as you walk:</p>
+
+    <ul class="list-disc pl-6 space-y-3 mb-12 text-lg text-gray-700">
+      <li><strong>The eastern sections were rebuilt by a famous general.</strong> Qi Jiguang, the Ming general who reorganised the wall in the 1560s–70s, added the dense watchtowers and crenellations you see at Mutianyu, Jinshanling, and Badaling.</li>
+      <li><strong>At Jinshanling, look at the bricks.</strong> Many carry <strong>carved marks</strong> — the original builders stamped their kiln and unit onto each brick so faults could be traced back to a team. It's Ming-era quality control, in stone.</li>
+      <li><strong>The mortar is stranger than it looks.</strong> Restored sections kept the original recipe — sticky-rice flour mixed into the lime mortar, part of why these walls have survived for centuries.</li>
+      <li><strong>The watchtowers were multi-purpose.</strong> They stored weapons and grain, housed the garrison, and sent signals — smoke by day, fire by night. That's why they sit within sight of one another along the whole wall.</li>
+    </ul>
+
+    <!-- ============ NEXT READS ============ -->
+    <div class="border-t border-gray-100 pt-8 mt-8 not-prose">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h3 class="text-sm font-bold text-gray-900">📚 Next Reads</h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="/en/cities/beijing-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🏙️ Beijing Travel Guide
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/en/cities/forbidden-city/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🏛️ Forbidden City Guide
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/en/cities/city-select/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              📅 How Many Days Do You Need in China?
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/en/transport/high-speed-rail/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🚄 How to Book and Ride China High-Speed Rail
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/en/payment/china-travel-budget/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              💰 Trip to China Cost 2026
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ SOURCES ============ -->
+    <section class="mt-10 pt-6 border-t border-gray-100">
+      <h3 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-4">Sources</h3>
+      <ol class="space-y-2 text-sm text-gray-500">
+        <li>1. <strong>Badaling Great Wall</strong> — <a href="https://english.visitbeijing.com.cn/article/4MX01cNAUre" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Beijing Micro-Getaway Guide: Must-Visit Attractions</a></li>
+        <li>2. <strong>Night tours across the four sections</strong> — <a href="https://english.visitbeijing.com.cn/article/4RI8S685GDY" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Ecological Leisure | Badaling Night Great Wall</a>; <a href="https://english.visitbeijing.com.cn/article/4T3jh3BHGra" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Upgraded Juyongguan Night Great Wall</a>; <a href="https://english.visitbeijing.com.cn/article/4OStXw7yhMK" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Beijing's Golden Autumn Vibe, Double the Festival Joy</a>.</li>
+        <li>3. <strong>Mutianyu Great Wall</strong> — <a href="https://en.mutianyugreatwall.com/article/4SHdMJjS04P" target="_blank" rel="noopener" class="text-blue-600 hover:underline">2026 night-tour guide</a></li>
+        <li>4. <strong>Jinshanling Great Wall</strong> — <a href="https://english.visitbeijing.com.cn/article/4JvnMW3ZbDx" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Two-day trip towards autumn foliage with one ticket</a></li>
+        <li>5. <strong>Huanghuacheng (Water Great Wall)</strong> — <a href="https://english.visitbeijing.com.cn/article/4Itpbe3Ye1z" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Beijing Huanghuacheng Lakeside Great Wall</a></li>
+        <li>6. <strong>Juyongguan Great Wall</strong> — <a href="https://english.visitbeijing.com.cn/article/47OOq8YYqAs" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Juyongguan Great Wall (居庸关长城)</a></li>
+        <li>7. <strong>Simatai Great Wall</strong> — <a href="https://english.visitbeijing.com.cn/article/4OT1GKn1zoW" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Experience night scenery at Simatai Great Wall</a></li>
+        <li>8. <strong>Getting there</strong> — <a href="https://english.visitbeijing.com.cn/article/47OLMubjite" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Come to Badaling Great Wall for moon appreciation</a>.</li>
+      </ol>
+      <p class="text-sm text-gray-500 mt-4"><em>All figures above are peak-season adult rates. Sources are the official Beijing tourism portal (english.visitbeijing.com.cn) and the scenic areas' own English sites, checked in September 2026.</em></p>
+    </section>
+
+  </article>
+</Layout>

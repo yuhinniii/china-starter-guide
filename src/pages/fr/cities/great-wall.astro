@@ -1,0 +1,480 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'Guide de la Grande Muraille de Chine : quelle section visiter';
+const description = 'Comparaison des six sections de la Grande Muraille — Badaling, Mutianyu, Jinshanling, Simatai, Huanghuacheng et Juyongguan — sur la foule, la difficulté, les billets et les visites nocturnes.';
+---
+
+<Layout title={title} description={description} lang="fr">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+
+    <!-- ============ BREADCRUMB ============ -->
+    <nav class="mb-8 not-prose">
+      <a href="/fr/cities/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Retour aux guides des villes
+      </a>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🧱 Grande Muraille · Pékin</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">Grande Muraille de Chine : quelle section visiter ?</h1>
+      <p class="text-xl text-gray-600 mb-6">Badaling, Mutianyu, Jinshanling ou Simatai — ce qui les distingue vraiment, et laquelle convient à votre voyage.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Dernière mise à jour : septembre 2026</span>
+        <span>⏱️ 12 min de lecture</span>
+      </div>
+    </header>
+
+    <!-- ============ HERO IMAGE ============ -->
+    <figure class="mb-12 not-prose">
+      <img
+        src="/images/great-wall/comparison-grid.webp"
+        alt="Mosaïque des six sections de la Grande Muraille près de Pékin : Badaling au printemps fleuri, Mutianyu aux couleurs d&apos;automne, Jinshanling au-dessus d&apos;une mer de nuages, Simatai illuminé la nuit au-dessus de Gubei Water Town, Huanghuacheng plongeant dans un lac turquoise, et la passe fortifiée de Juyongguan"
+        width="1200"
+        height="534"
+        loading="eager"
+        fetchpriority="high"
+        class="w-full h-auto object-cover rounded-2xl shadow-md"
+      />
+      <figcaption class="text-xs text-gray-500 text-center mt-2">Même muraille, six journées différentes. De gauche à droite, de haut en bas : Badaling, Mutianyu, Jinshanling, Simatai, Huanghuacheng, Juyongguan.</figcaption>
+    </figure>
+
+    <!-- ============ QUICK ANSWER ============ -->
+    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-red-900 mb-4">⚡ Réponse rapide</h2>
+      <p class="text-lg text-red-800 leading-relaxed">
+        <strong>Mutianyu</strong> est le meilleur choix tout terrain pour la plupart des primo-visiteurs — entièrement restaurée et spectaculaire, avec un téléphérique pour monter et une luge pour descendre, pour une fraction de l&apos;affluence de Badaling. <strong>Badaling</strong> est la section de référence — la première ouverte aux touristes, celle visitée par les chefs d&apos;État, et la plus monumentale des sections restaurées, grimpant jusqu&apos;à la huitième tour nord à 888 m ; c&apos;est aussi de loin la plus fréquentée. <strong>Jinshanling</strong> est le choix des randonneurs et des photographes — plus calme et moins reconstruite, avec 67 tours de guet et une ouverture avant l&apos;aube pour la mer de nuages. <strong>Simatai</strong> est la section d&apos;ambiance — des visites nocturnes toute l&apos;année, avec Gubei Water Town juste à ses pieds. <strong>Huanghuacheng</strong> est la curiosité — la seule section où la muraille plonge dans l&apos;eau libre, avec des bateaux et un pont de verre. <strong>Juyongguan</strong> est la passe la plus proche et la plus calme — une boucle fortifiée plutôt qu&apos;une ascension de crête, et le meilleur choix pour une demi-journée ou l&apos;hiver.
+      </p>
+    </div>
+
+    <!-- ============ IN THIS GUIDE ============ -->
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 Dans ce guide</h3>
+      <ul class="space-y-3">
+        <li><a href="#which-section" class="text-blue-600 hover:underline">🤔 Quelle section visiter ?</a></li>
+        <li><a href="#night" class="text-blue-600 hover:underline">🌙 Peut-on visiter la Grande Muraille la nuit ?</a></li>
+        <li><a href="#badaling" class="text-blue-600 hover:underline">🏔️ Badaling (八达岭)</a></li>
+        <li><a href="#mutianyu" class="text-blue-600 hover:underline">🌳 Mutianyu (慕田峪)</a></li>
+        <li><a href="#jinshanling" class="text-blue-600 hover:underline">☁️ Jinshanling (金山岭)</a></li>
+        <li><a href="#simatai" class="text-blue-600 hover:underline">🌃 Simatai (司马台)</a></li>
+        <li><a href="#huanghuacheng" class="text-blue-600 hover:underline">💧 Huanghuacheng (黄花城)</a></li>
+        <li><a href="#juyongguan" class="text-blue-600 hover:underline">🏯 Juyongguan (居庸关)</a></li>
+        <li><a href="#tickets" class="text-blue-600 hover:underline">🎫 Billets et réservation</a></li>
+        <li><a href="#best-time" class="text-blue-600 hover:underline">📅 Meilleure période</a></li>
+        <li><a href="#practical-tips" class="text-blue-600 hover:underline">👟 Que devez-vous emporter ?</a></li>
+        <li><a href="#history" class="text-blue-600 hover:underline">📜 Des briques Ming, pas des Qin</a></li>
+      </ul>
+    </nav>
+
+    <!-- ============ SECTION 1: WHICH SECTION ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="which-section" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🤔 Quelle section visiter ?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">Chaque section est, techniquement, la même muraille. Mais aucune ne vous offre la même journée. Ce qui compte vraiment, ce n&apos;est pas la distance ni le prix du billet — ce sont <strong>l&apos;affluence, l&apos;effort requis et ce que la muraille fait réellement quand vous y arrivez</strong> (franchit les crêtes, plonge dans un lac, ou brille sous un ciel nocturne). Les sections ci-dessous sont classées selon la probabilité qu&apos;elles conviennent à une première ou deuxième visite.</p>
+
+    <h3 class="text-xl font-bold text-gray-900 mb-4">Comparaison des six sections de la Grande Muraille</h3>
+
+    <div class="overflow-x-auto mb-8 not-prose">
+      <table class="w-full text-sm text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+        <thead>
+          <tr class="bg-gray-900 text-white">
+            <th class="px-3 py-3 font-bold align-bottom">Tronçon</th>
+            <th class="px-3 py-3 font-bold align-bottom">Distance de Pékin</th>
+            <th class="px-3 py-3 font-bold align-bottom">Affluence</th>
+            <th class="px-3 py-3 font-bold align-bottom">Difficulté</th>
+            <th class="px-3 py-3 font-bold align-bottom">Entrée</th>
+            <th class="px-3 py-3 font-bold align-bottom">Temps nécessaire</th>
+            <th class="px-3 py-3 font-bold align-bottom">Adapté aux enfants ?</th>
+            <th class="px-3 py-3 font-bold align-bottom">Le moment fort</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="px-3 py-3 font-semibold">Badaling (八达岭)</td>
+            <td class="px-3 py-3">70 km · TGV ~35 min</td>
+            <td class="px-3 py-3">Extrême</td>
+            <td class="px-3 py-3">Facile</td>
+            <td class="px-3 py-3">¥40</td>
+            <td class="px-3 py-3">3 à 4 h</td>
+            <td class="px-3 py-3">Oui (téléphérique)</td>
+            <td class="px-3 py-3">L&apos;échelle vertigineuse — et le plus grand spectacle nocturne</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-3 py-3 font-semibold">Mutianyu (慕田峪)</td>
+            <td class="px-3 py-3">70 km · ~1,5 h en voiture</td>
+            <td class="px-3 py-3">Modérée</td>
+            <td class="px-3 py-3">Facile à modérée</td>
+            <td class="px-3 py-3">¥45</td>
+            <td class="px-3 py-3">Demi-journée</td>
+            <td class="px-3 py-3">Oui (téléphérique + luge)</td>
+            <td class="px-3 py-3">23 tours restaurés, puis descente en luge</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-3 py-3 font-semibold">Jinshanling (金山岭)</td>
+            <td class="px-3 py-3">130 km · ~2,5 h en voiture</td>
+            <td class="px-3 py-3">Faible</td>
+            <td class="px-3 py-3">Difficile</td>
+            <td class="px-3 py-3">¥65</td>
+            <td class="px-3 py-3">Journée complète</td>
+            <td class="px-3 py-3">Non</td>
+            <td class="px-3 py-3">67 tours rapprochés, mer de nuages à l&apos;aube</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-3 py-3 font-semibold">Simatai (司马台)</td>
+            <td class="px-3 py-3">120 km · ~2,5 h en voiture</td>
+            <td class="px-3 py-3">Faible</td>
+            <td class="px-3 py-3">Difficile</td>
+            <td class="px-3 py-3">¥40 (jour)</td>
+            <td class="px-3 py-3">Demi-journée à journée complète</td>
+            <td class="px-3 py-3">Enfants plus grands</td>
+            <td class="px-3 py-3">La muraille illuminée au-dessus de Gubei Water Town la nuit</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-3 py-3 font-semibold">Huanghuacheng (黄花城)</td>
+            <td class="px-3 py-3">60 km · ~1,5 h en voiture</td>
+            <td class="px-3 py-3">Faible à modérée</td>
+            <td class="px-3 py-3">Modérée</td>
+            <td class="px-3 py-3">¥58</td>
+            <td class="px-3 py-3">Demi-journée</td>
+            <td class="px-3 py-3">Oui</td>
+            <td class="px-3 py-3">La muraille plongeant droit dans un lac</td>
+          </tr>
+          <tr>
+            <td class="px-3 py-3 font-semibold">Juyongguan (居庸关)</td>
+            <td class="px-3 py-3">60 km · ~1 h en voiture</td>
+            <td class="px-3 py-3">Faible</td>
+            <td class="px-3 py-3">Modérée</td>
+            <td class="px-3 py-3">¥45 (avr.–oct.)</td>
+            <td class="px-3 py-3">Demi-journée</td>
+            <td class="px-3 py-3">Oui</td>
+            <td class="px-3 py-3">La « Passe n° 1 sous le Ciel » — et le train des fleurs de printemps</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">Les prix sont des billets adultes en haute saison ; les étudiants paient généralement la moitié et les enfants de moins de 1,2 m entrent souvent gratuitement. Les tarifs varient selon la saison et la section — vérifiez avant de partir.</p>
+
+    <!-- ============ SECTION 2: NIGHT ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="night" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🌙 Peut-on visiter la Grande Muraille la nuit ?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">La distance et le prix séparent ces sections moins que trois questions pratiques : <strong>pouvez-vous monter sans grimper, y a-t-il une navette depuis le parking, et ouvre-t-elle après la tombée de la nuit ?</strong> Voici le tableau complet.</p>
+
+    <div class="overflow-x-auto mb-8 not-prose">
+      <table class="w-full text-sm text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+        <thead>
+          <tr class="bg-gray-900 text-white">
+            <th class="px-3 py-3 font-bold align-bottom">Tronçon</th>
+            <th class="px-3 py-3 font-bold align-bottom">Visite nocturne</th>
+            <th class="px-3 py-3 font-bold align-bottom">Pour monter</th>
+            <th class="px-3 py-3 font-bold align-bottom">Navette / transfert</th>
+            <th class="px-3 py-3 font-bold align-bottom">Extras signature</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="px-3 py-3 font-semibold">Badaling (八达岭)</td>
+            <td class="px-3 py-3">✅ Tous les soirs, 30 avr.–6 oct. (entrée 18:30–21:00)</td>
+            <td class="px-3 py-3">Téléphérique ou funiculaire au sol, ¥100 aller simple</td>
+            <td class="px-3 py-3">Navette gratuite du parc ; « Great Wall Bus » ¥80 aller-retour</td>
+            <td class="px-3 py-3">La muraille illuminée de la tour Nord 4 à la tour Sud 4</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-3 py-3 font-semibold">Mutianyu (慕田峪)</td>
+            <td class="px-3 py-3">✅ Fenêtres saisonnières (été ; Fête nationale)</td>
+            <td class="px-3 py-3">Téléphérique pour monter, luge pour descendre</td>
+            <td class="px-3 py-3">Navette ¥15 aller-retour</td>
+            <td class="px-3 py-3">La piste de luge</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-3 py-3 font-semibold">Jinshanling (金山岭)</td>
+            <td class="px-3 py-3">❌</td>
+            <td class="px-3 py-3">Téléphérique ¥40 aller simple / ¥60 aller-retour</td>
+            <td class="px-3 py-3">Bus de transfert aller simple ~¥80</td>
+            <td class="px-3 py-3">Mer de nuages au lever du soleil</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-3 py-3 font-semibold">Simatai (司马台)</td>
+            <td class="px-3 py-3">✅ Toute l&apos;année (18:00–21:30)</td>
+            <td class="px-3 py-3">Téléphérique — obligatoire après la tombée de la nuit</td>
+            <td class="px-3 py-3">—</td>
+            <td class="px-3 py-3">Gubei Water Town, juste au pied</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-3 py-3 font-semibold">Huanghuacheng (黄花城)</td>
+            <td class="px-3 py-3">❌</td>
+            <td class="px-3 py-3"><strong>Pas de téléphérique</strong> — toboggan magnétique descendant la promenade</td>
+            <td class="px-3 py-3">Car ou transfert privé</td>
+            <td class="px-3 py-3">Bateaux sur le lac, plus un pont de verre</td>
+          </tr>
+          <tr>
+            <td class="px-3 py-3 font-semibold">Juyongguan (居庸关)</td>
+            <td class="px-3 py-3">✅ Nuits de ven. et sam. + jours fériés, jusqu&apos;au début oct.</td>
+            <td class="px-3 py-3"><strong>Pas de téléphérique</strong> — vous montez et descendez à pied</td>
+            <td class="px-3 py-3">—</td>
+            <td class="px-3 py-3">Un festival nocturne de l&apos;époque Ming dans la passe</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">Une distinction à bien comprendre : <strong>une navette n&apos;est pas synonyme d&apos;accès facile.</strong> Dans toutes les sections sauf Badaling, la navette ne couvre que le dernier tronçon — du parking à la porte — et il vous faut encore un bus, une voiture ou une excursion pour atteindre ce parking. Badaling est la seule section dotée de sa propre gare : la ligne à grande vitesse Pékin–Zhangjiakou rejoint Badaling Changcheng, environ 30–40 minutes depuis Pékin Nord, et la gare se situe à environ 800 m de l&apos;entrée d&apos;escalade, avec une navette gratuite pour le dernier tronçon. C&apos;est pourquoi c&apos;est la seule que vous pouvez visiter sans voiture ni excursion — et aussi la plus fréquentée.</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">Billets de visite nocturne (2026) : Badaling <strong>¥198</strong> en semaine / <strong>¥298</strong> ven.–dim. et jours fériés, réservés en ligne à l&apos;avance (aucune billetterie sur place) ; Mutianyu <strong>¥200</strong> incluant entrée, navette et téléphérique ; Simatai <strong>¥200</strong> pour la visite nocturne plus le téléphérique aller-retour (<strong>billet Gubei Water Town non inclus</strong>) ; Juyongguan à partir de <strong>¥19,9</strong>. Chaque session nocturne est à entrée horaire et limitée, donc réservez à l&apos;avance — les créneaux de week-end à Badaling affichent souvent complet deux ou trois jours à l&apos;avance.</p>
+
+    <!-- ============ SECTION 3: BADALING ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="badaling" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏔️ Badaling (八达岭) : la section la plus monumentale — et la plus fréquentée</h2>
+
+    <img
+      src="/images/great-wall/badaling.webp"
+      alt="La Grande Muraille de Badaling grimpant sur des coteaux couverts de fleurs de printemps au nord de Pékin"
+      width="1200"
+      height="943"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Pourquoi y aller</span> Badaling est la section la plus célèbre de Chine et celle où l&apos;on emmène les chefs d&apos;État étrangers. Elle est entièrement restaurée, large et spectaculaire, avec la muraille grimpant raide sur la crête dans les deux sens — la plus large et la plus monumentale des sections restaurées, montant jusqu&apos;à la <strong>huitième tour nord à 888 m</strong>, marquée par la <strong>stèle « Quiconque n&apos;est pas allé à la Grande Muraille n&apos;est pas un homme véritable »</strong>. Vous ressentez pleinement le sentiment « Je suis debout sur la Grande Muraille » — et aucune autre section ne vous offre autant de muraille pour si peu de préparation.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Le piège</span> Tout le monde le sait. Les week-ends ou jours fériés, Badaling est très fréquentée, et vous pouvez être emporté par la foule. L&apos;astuce est le timing : soyez à la porte à l&apos;ouverture (vers 7 h), et vous aurez la première heure presque pour vous seul.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Comment y aller</span> Train à grande vitesse jusqu&apos;à la gare de <strong>Badaling Changcheng</strong> — environ <strong>20–25 minutes depuis Qinghe</strong> (¥16–25) ou <strong>30–40 minutes depuis Pékin Nord</strong> (¥25–31) ; la gare se situe à environ <strong>800 m</strong> de l&apos;entrée d&apos;escalade. Le bus <strong>877</strong>, désormais au départ du <strong>métro North Tudicheng (lignes 8/10)</strong>, est l&apos;option économique à ¥12. <strong>Réservez le train tôt</strong> — les places sur la ligne Pékin–Zhangjiakou partent vite les week-ends et jours fériés, et les billets ouvrent <strong>15 jours à l&apos;avance</strong> sur 12306 ou Trip.com. Si vous préférez éviter le train, l&apos;annonce Trip.com ci-dessous vend aussi un <strong>bus navette aller-retour</strong> avec guide à bord — réservable seul ou combiné à l&apos;entrée — qui coûte moins qu&apos;une voiture privée et roule en direct, sans correspondance de bus public.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Coût</span> Entrée <strong>¥40</strong> haute saison / ¥35 basse saison. Le <strong>téléphérique de la ligne nord ou le funiculaire au sol de la ligne sud</strong> est à ¥100 aller simple, ¥140 aller-retour.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Muraille de nuit</span> Du <strong>30 avril au 6 octobre</strong>, Badaling propose une session nocturne chaque soir — entrée 18:30–21:00, tours illuminés à partir de 19:20, dernière sortie 22:00. Seule la section entre la <strong>tour Nord 4 et la tour Sud 4</strong> est ouverte la nuit (la pente du « Bon Homme » à N8 ne l&apos;est pas). Les billets sont à <strong>¥198</strong> en semaine et <strong>¥298</strong> ven.–dim. et jours fériés, plafonnés à environ 3 000 personnes par nuit.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Idéal pour</span> Tous ceux qui veulent la muraille de référence — le tronçon de visite d&apos;État, le meilleur spectacle nocturne, et la section accessible sans voiture — et peuvent accepter la foule.</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">Évitez les transferts</strong> — réservez les billets Badaling et le bus aller-retour ensemble :</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/BjTXg5QDIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 Réserver les billets Badaling + le bus aller-retour sur Trip.com</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 4: MUTIANYU ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="mutianyu" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🌳 Mutianyu (慕田峪) : la meilleure section pour les primo-visiteurs ?</h2>
+
+    <img
+      src="/images/great-wall/mutianyu.webp"
+      alt="La Grande Muraille de Mutianyu serpentant à travers des coteaux aux couleurs d&apos;automne, des visiteurs marchant sur les remparts"
+      width="532"
+      height="355"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Pourquoi y aller</span> Mutianyu est ce que la plupart des gens imaginent quand ils pensent à une journée parfaite sur la Grande Muraille — entièrement restaurée et déployée, avec <strong>23 tours de guet</strong> marchant sur des collines boisées, mais avec une fraction de l&apos;affluence de Badaling. En semaine, elle peut sembler presque privée. L&apos;autre atout est la descente : une <strong>luge</strong> (un traîneau métallique sur une longue piste) descend de la muraille jusqu&apos;au village, transformant une sortie historique en souvenir pour les enfants.</p>
+      <p class="text-lg leading-relaxed text-gray-700 clear-both"><span class="block text-xl font-bold text-brand-700 mb-2">Comment ça marche</span> Un bus navette vous emmène de l&apos;aire de stationnement à la base, puis un téléphérique vous hisse jusqu&apos;à la <strong>tour 14</strong>. Vous parcourez la muraille à votre guise — la tour 20 est le point culminant avec le meilleur panorama — puis soit vous rebroussez chemin, soit vous prenez la luge pour descendre.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Comment y aller</span> Pas de TGV. Les bus navette touristiques partent de Dongzhimen et Heping Xiqiao (environ ¥80 aller-retour, 1,5 h), ou réservez une voiture privée — le choix le plus courant pour les visiteurs étrangers. Le plus simple pour réserver le bus passe par l&apos;annonce Trip.com ci-dessous, qui vend la navette directe (guide anglophone à bord) soit combinée à l&apos;entrée, soit seule — moins chère qu&apos;une voiture privée et bien plus rapide que l&apos;itinéraire métro + deux bus.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Coût</span> Entrée <strong>¥45</strong>. Navette ¥15 aller-retour. Téléphérique ¥100 aller simple / ¥140 aller-retour. Luge environ ¥100.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Nuits d&apos;été</span> Mutianyu ouvre aussi après la tombée de la nuit lors de <strong>fenêtres saisonnières — l&apos;été, puis à nouveau pendant la Fête nationale</strong> — 17:30–21:00, avec les tours de guet <strong>10–15</strong> ouverts. Le <strong>forfait nocturne (environ ¥200)</strong> couvre l&apos;entrée, la navette et le téléphérique ; la luge ne fonctionne pas après la tombée de la nuit.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Idéal pour</span> La plupart des primo-visiteurs. C&apos;est le meilleur équilibre entre paysage, confort et affluence gérable.</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">Billet, bus direct ou les deux</strong> — réservez en forfait ou séparément :</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/0rEQW6TDIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 Réserver Mutianyu sur Trip.com</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 5: JINSHANLING ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="jinshanling" class="text-3xl font-bold text-gray-900 mb-6 mt-12">☁️ Jinshanling (金山岭) : la route de 2,5 h en vaut-elle la peine ?</h2>
+
+    <img
+      src="/images/great-wall/jinshanling.webp"
+      alt="Les tours de guet de la Grande Muraille de Jinshanling émergeant d&apos;une mer de nuages à l&apos;aube"
+      width="922"
+      height="690"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Pourquoi y aller</span> Jinshanling est la plus calme des classiques — vous pouvez marcher de longs tronçons presque sans personne. Elle est <strong>moins reconstruite que Mutianyu ou Badaling</strong>, vous offrant plus de maçonnerie Ming d&apos;origine et bien moins de monde, avec <strong>67 tours de guet</strong> et trois tours de guet à signaux regroupés sur environ 10,5 km, si bien que vous n&apos;êtes jamais loin de la suivante. Comme elle ouvre avant l&apos;aube, c&apos;est l&apos;endroit idéal pour la <strong>mer de nuages</strong> et les photos de lever de soleil qui inondent votre fil d&apos;actualité en automne.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">La version honnête</span> C&apos;est une vraie randonnée, pas une promenade — des escaliers raides, des pierres irrégulières et de longs tronçons exposés sans main-courante. C&apos;est aussi la section lointaine, à environ 2,5 h de Pékin dans la province voisine du Hebei.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Comment y aller</span> Voiture privée ou excursion (environ 2–2,5 h) ; un bus direct saisonnier part de Dongzhimen durant les mois les plus chauds, ou prenez un train pour Gubeikou et un taxi ensuite. Trip.com propose aussi un <strong>transfert navette (~¥80 aller simple)</strong> — c&apos;est uniquement le trajet ; le billet d&apos;entrée est à ¥65, et vous pouvez acheter les deux séparément ou en forfait.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Coût</span> Entrée <strong>¥65</strong> haute saison / ¥55 basse saison — et les billets achetés sur place sont valables pour <strong>deux entrées dans les 48 heures</strong>, un vrai cadeau si vous voulez revenir pour le lever de soleil. Téléphérique ¥40 aller simple / ¥60 aller-retour, jusqu&apos;à la petite tour Jinshan.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Idéal pour</span> Photographes, randonneurs, et tous ceux qui ont déjà vu les classiques et veulent la muraille sans personne dessus.</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">Billet et transfert aller-retour en une réservation</strong> — ou séparez-les :</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/qU1ijvnDIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 Réserver Jinshanling sur Trip.com</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 6: SIMATAI ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="simatai" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🌃 Simatai : à quoi ressemble la muraille après la tombée de la nuit ?</h2>
+
+    <img
+      src="/images/great-wall/simatai.webp"
+      alt="La Grande Muraille de Simatai illuminée la nuit sur la crête au-dessus des ruelles éclairées aux lanternes de Gubei Water Town"
+      width="1200"
+      height="900"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Pourquoi y aller</span> Simatai est la muraille nocturne classique — elle propose des <strong>visites nocturnes toute l&apos;année</strong>, et les tours illuminées brillent au-dessus de <strong>Gubei Water Town</strong>, une ville canal reconstruite à ses pieds. Passez la nuit en ville, flânez aux lanternes, puis montez jusqu&apos;à la muraille illuminée après la tombée de la nuit. La muraille de jour est plus raide et plus originale que celle de Mutianyu, franchissant des crêtes aiguës dans les deux sens.</p>
+      <p class="text-lg leading-relaxed text-gray-700 clear-both"><span class="block text-xl font-bold text-brand-700 mb-2">La version honnête</span> À cause de la ville, Simatai est plus un forfait qu&apos;une randonnée pure sur la muraille : les billets jour et nuit sont séparés, et <strong>l&apos;entrée de nuit exige le téléphérique aller-retour</strong> (on ne peut ni monter ni descendre à pied après la tombée de la nuit). Les visiteurs de jour doivent partir en fin d&apos;après-midi, donc on ne peut pas simplement rester du jour à la nuit.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Comment y aller</span> Voiture privée ou excursion depuis Pékin, environ 2–2,5 h, et la plupart des gens l&apos;associent à une nuit à <strong>Gubei Water Town</strong> au pied de la muraille. L&apos;annonce Trip.com ci-dessous vend aussi un <strong>bus aller-retour</strong> pour la ville et la muraille, avec le billet de nuit ou seul.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Coût</span> Entrée de jour environ <strong>¥40</strong>. La <strong>visite nocturne plus le téléphérique aller-retour est à ¥200/personne</strong> (enfants 1,2–1,5 m ¥110) — après la tombée de la nuit, le téléphérique est le seul moyen de monter. Un forfait Gubei Water Town + muraille + téléphérique est à <strong>¥280</strong>, et les clients qui passent la nuit en ville paient <strong>¥120</strong> — réservez à l&apos;avance.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">À associer à Gubei Water Town</span> La ville canal reconstruite se trouve directement au pied de la muraille, et la plupart des gens visitent les deux comme un seul voyage — ruelles éclairées aux lanternes en fin d&apos;après-midi, puis la muraille illuminée après la tombée de la nuit. Les <strong>billets sont séparés</strong> et la visite nocturne n&apos;inclut pas la ville, donc prévoyez les deux.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Idéal pour</span> Les couples et les photographes en quête d&apos;ambiance ; tous ceux qui préfèrent voir la muraille illuminée plutôt que se tenir dans une foule diurne.</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">Billet nocturne et bus aller-retour, en forfait</strong> — ou réservez uniquement le trajet :</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/Ar0ZTnMNIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 Réserver Simatai sur Trip.com</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 7: HUANGHUACHENG ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="huanghuacheng" class="text-3xl font-bold text-gray-900 mb-6 mt-12">💧 Huanghuacheng (黄花城) : là où la muraille marche dans un lac</h2>
+
+    <img
+      src="/images/great-wall/huanghuacheng.webp"
+      alt="La Grande Muraille de Huanghuacheng suivant la rive d&apos;un réservoir turquoise avec un bateau de tourisme sur l&apos;eau"
+      width="393"
+      height="674"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Pourquoi y aller</span> C&apos;est le seul endroit en Chine où la muraille <strong>entre et sort de l&apos;eau libre à trois reprises</strong> — un barrage-réservoir construit dans les années 1970 a élevé le niveau d&apos;eau et noyé le tronçon le plus bas, laissant des tours émerger d&apos;un lac turquoise. Autour, on trouve un verger de châtaigniers de l&apos;époque Ming (avec des arbres centenaires) et une promenade facile au bord du lac. C&apos;est vert, calme, et rien à voir avec la muraille des cartes postales.</p>
+      <p class="text-lg leading-relaxed text-gray-700 clear-both"><span class="block text-xl font-bold text-brand-700 mb-2">La version honnête</span> Le tronçon submergé est court — c&apos;est une demi-journée, pas une journée entière — et les meilleures vues sont près de l&apos;entrée, si bien que les week-ends peuvent sembler animés. Les extras (bateau, pont de verre, toboggan) coûtent tous plus cher.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Sites clés</span> La <strong>muraille submergée</strong> (« le dragon qui boit à l&apos;eau »), le <strong>pont de verre</strong>, et le <strong>verger de châtaigniers de l&apos;époque Ming</strong>.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Sur l&apos;eau</span> C&apos;est la seule section où l&apos;on peut accéder à l&apos;eau elle-même — des <strong>bateaux de tourisme et des bateaux de plaisance peints</strong> traversent le lac (environ <strong>¥25 aller simple / ¥45 aller-retour</strong>), avec une <strong>descente en rafting de verre au sommet des nuages</strong> et un <strong>toboggan magnétique</strong> descendant la promenade en compléments. Toutes les activités nautiques nécessitent un supplément en plus du prix d&apos;entrée.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Comment y aller</span> Environ 1–1,5 h en voiture ou en DiDi depuis le centre de Pékin ; plus difficile en transport public (bus de Dongzhimen vers Huanghuacheng).</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Coût</span> L&apos;entrée est d&apos;environ <strong>¥58</strong> ; les bateaux, le pont de verre et les toboggans sont des suppléments payants.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Idéal pour</span> Tous ceux qui ont vu la muraille classique et veulent quelque chose de vraiment différent ; une demi-journée tranquille en famille.</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">Billet, bus et balade en bateau ensemble</strong> — la façon simple de couvrir les extras du lac :</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/bU5SXQXDIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 Réserver Huanghuacheng sur Trip.com</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 8: JUYONGGUAN ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="juyongguan" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏯 Juyongguan (居庸关) : la meilleure section d&apos;une demi-journée depuis Pékin ?</h2>
+
+    <img
+      src="/images/great-wall/juyongguan.webp"
+      alt="Le bâtiment de la porte fortifiée de Juyongguan avec son toit en tuiles vertes, et la Grande Muraille sinuant le long de la crête derrière"
+      width="530"
+      height="677"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Pourquoi y aller</span> Juyongguan est <strong>la section la plus proche de la ville</strong> (moins de 60 km, à Changping) et celle construite comme une passe fortifiée plutôt qu&apos;une muraille sur crête — vous parcourez une boucle complète dans une vallée, devant la porte de la <strong>« Passe n° 1 sous le Ciel »</strong>, avec une <strong>Plateforme des Nuages (云台)</strong> de la dynastie Ming et un complexe de temples à l&apos;intérieur. Comme elle est proche et moins célèbre, c&apos;est la plus calme des options faciles, et elle ouvre tôt et tard (environ <strong>6:30–18:00</strong>). Du <strong>fin mars à mi-avril</strong>, les coteaux se couvrent de pêchers de montagne et d&apos;abricotiers en fleurs et le <strong>« train de la mer de fleurs »</strong> — la ligne suburbaine S2 — serpente dans la vallée en contrebas, une photo de printemps réservée à la saison, qui vaut le détour.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Comment y aller</span> Métro ligne 8/13 jusqu&apos;à Huoying, puis bus 879/919 vers Juyongguan ; ou environ une heure en voiture/DiDi.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Coût</span> Entrée <strong>¥45</strong> (avril–octobre) / <strong>¥40</strong> (novembre–mars) ; les enfants de plus de 1,2 m et les étudiants paient le tarif réduit.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Session nocturne</span> Les <strong>nuits de vendredi et samedi plus les jours fériés</strong> jusqu&apos;au début octobre (18:00–21:00), la passe propose un événement nocturne immersif — gardes paradant sur l&apos;ancienne route postale, groupes folk montant sur les tours, remparts éclairés aux lanternes, et un marché de nuit à l&apos;intérieur de l&apos;enceinte.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Pas de téléphérique</span> Juyongguan est l&apos;une des deux seules grandes sections avec <strong>aucune remontée</strong> (Huanghuacheng est l&apos;autre) — et la seule sans toboggan descendant, donc vous montez et redescendez à pied. La boucle est plus courte et plus douce que celle de Mutianyu ou Jinshanling, mais prévoyez l&apos;ascension.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Idéal pour</span> Les voyages d&apos;une demi-journée, les visites d&apos;hiver, les amateurs d&apos;histoire, et tous ceux qui veulent la muraille sans départ matinal ni longue route.</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">Billet et transport aller-retour en une réservation</strong> — l&apos;option la plus simple pour une demi-journée :</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/RM0EN5ONIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 Réserver Juyongguan sur Trip.com</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 9: TICKETS ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="tickets" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎫 Faut-il réserver les billets à l&apos;avance ?</h2>
+    <ul class="list-disc pl-6 space-y-3 mb-12 text-lg text-gray-700">
+      <li>Réservez <strong>à l&apos;avance</strong> pour Badaling — les jours de pointe, la porte affiche complet et il n&apos;y a pas de billetterie pour les arrivants spontanés.</li>
+      <li><strong>Les billets nocturnes se vendent séparément</strong> et sont limités, à entrée horaire ; à Badaling, ils sont en ligne uniquement et affichent souvent complet deux à trois jours à l&apos;avance le week-end.</li>
+      <li>Les visiteurs étrangers ont besoin de leur <strong>passeport</strong> pour acheter et entrer dans chaque section.</li>
+      <li>La haute saison s&apos;étend approximativement de <strong>avril à octobre</strong> ; les prix du tableau ci-dessus sont des tarifs de haute saison.</li>
+    </ul>
+
+    <div class="bg-yellow-50 border border-yellow-100 rounded-2xl p-6 mb-12">
+      <p class="text-gray-700"><strong>⏰ La règle qui compte :</strong> partez tôt. Les groupes touristiques arrivent entre 9:30 et 11:00 — soyez sur la muraille avant 9 h pour la version que vous voyez en photo.</p>
+    </div>
+
+    <!-- ============ SECTION 10: BEST TIME ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="best-time" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📅 Meilleure période</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">Chaque section a une saison et une heure où elle ressemble à ce que vous imaginiez. Ce sont les fenêtres pour lesquelles les six sections ci-dessus sont réellement connues.</p>
+
+    <ul class="list-disc pl-6 space-y-3 mb-12 text-lg text-gray-700">
+      <li>🍂 <strong>L&apos;automne est la saison des photographes.</strong> Jinshanling ouvre avant l&apos;aube et est l&apos;endroit privilégié pour la mer de nuages et les photos de lever de soleil qui inondent votre fil d&apos;actualité en automne — et un billet de haute saison acheté sur place est valable pour deux entrées dans les 48 heures.</li>
+      <li>🌸 <strong>Fin mars à mi-avril</strong> apporte la floraison de pêcher de montagne et d&apos;abricotier sur les coteaux de Juyongguan, plus le « train de la mer de fleurs » réservé au printemps serpentant la vallée en contrebas.</li>
+      <li>🌙 <strong>Les visites nocturnes vont du 30 avril au 6 octobre</strong> à Badaling, lors de fenêtres estivales saisonnières à Mutianyu, toute l&apos;année à Simatai, et les vendredis et samedis soir à Juyongguan.</li>
+      <li>❄️ <strong>L&apos;hiver est la saison calme.</strong> Juyongguan est le meilleur pari d&apos;hiver — proche, ouvert tôt et tard, et la plus calme des options faciles.</li>
+      <li>📅 <strong>La haute saison s&apos;étend approximativement d&apos;avril à octobre</strong> ; les prix du tableau comparatif sont des tarifs de haute saison, et les billets de basse saison sont un peu moins chers (Badaling ¥35, Jinshanling ¥55).</li>
+    </ul>
+
+    <!-- ============ SECTION 11: PRACTICAL TIPS ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="practical-tips" class="text-3xl font-bold text-gray-900 mb-6 mt-12">👟 Que devez-vous emporter pour la Grande Muraille ?</h2>
+    <ul class="list-disc pl-6 space-y-3 mb-12 text-lg text-gray-700">
+      <li>2–3 litres d&apos;eau par personne — il n&apos;y a pas de magasins le long de la muraille.</li>
+      <li>Crème solaire et un chapeau en été ; couches chaudes et coupe-vent en hiver (la muraille est toujours plus froide et venteuse que la ville).</li>
+      <li>Chaussures appropriées : des baskets suffisent pour Badaling, Mutianyu et Juyongguan ; des <strong>bottes de randonnée</strong> pour Jinshanling et Simatai.</li>
+    </ul>
+
+    <!-- ============ SECTION 12: HISTORY ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="history" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📜 Sur quoi marchez-vous vraiment ? Des briques Ming, pas des Qin</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">La Grande Muraille n&apos;est pas une seule muraille mais <strong>un système</strong> — de multiples dynasties ont construit, relié et reconstruit sur plus de 2 000 ans. La plupart de ce que vous voyez aujourd&apos;hui est <strong>une construction de la dynastie Ming (1368–1644)</strong> ; les terrassements de terre Qin et Han, plus anciens, ont largement érodé. L&apos;ensemble du réseau s&apos;étend sur <strong>21 196 km</strong> tels que mesurés par l&apos;Administration d&apos;État du patrimoine culturel de Chine en 2012 — cela compte chaque branche et chaque tranchée, pas seulement la muraille principale. Les portions restaurées praticables totalisent environ 700 km.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">Quelques détails utiles à connaître en marchant :</p>
+
+    <ul class="list-disc pl-6 space-y-3 mb-12 text-lg text-gray-700">
+      <li><strong>Les sections orientales ont été reconstruites par un général célèbre.</strong> Qi Jiguang, le général Ming qui a réorganisé la muraille dans les années 1560–70, a ajouté les tours de guet denses et les créneaux que vous voyez à Mutianyu, Jinshanling et Badaling.</li>
+      <li><strong>À Jinshanling, regardez les briques.</strong> Beaucoup portent des <strong>marques gravées</strong> — les bâtisseurs d&apos;origine estampaient leur four et leur unité sur chaque brique afin que les défauts puissent être retracés jusqu&apos;à une équipe. C&apos;est un contrôle qualité de l&apos;époque Ming, dans la pierre.</li>
+      <li><strong>Le mortier est plus étrange qu&apos;il n&apos;y paraît.</strong> Les sections restaurées ont conservé la recette d&apos;origine — farine de riz gluant mélangée à la chaux, ce qui explique en partie pourquoi ces murailles ont survécu des siècles.</li>
+      <li><strong>Les tours de guet étaient polyvalentes.</strong> Elles stockaient armes et grain, hébergeaient la garnison, et envoyaient des signaux — fumée le jour, feu la nuit. Voilà pourquoi elles se voient les unes des autres le long de toute la muraille.</li>
+    </ul>
+
+    <!-- ============ NEXT READS ============ -->
+    <div class="border-t border-gray-100 pt-8 mt-8 not-prose">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h3 class="text-sm font-bold text-gray-900">📚 Guides associés</h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="/fr/cities/beijing-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🏙️ Guide de voyage de Pékin
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/fr/cities/forbidden-city/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🏛️ Guide de la Cité Interdite
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/fr/cities/city-select/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              📅 Combien de jours faut-il en Chine ?
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/fr/transport/high-speed-rail/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🚄 Comment réserver et prendre le TGV en Chine
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/fr/payment/china-travel-budget/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              💰 Coût d&apos;un voyage en Chine 2026
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ SOURCES ============ -->
+    <section class="mt-10 pt-6 border-t border-gray-100">
+      <h3 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-4">Sources</h3>
+      <ol class="space-y-2 text-sm text-gray-500">
+        <li>1. <strong>Grande Muraille de Badaling</strong> — <a href="https://english.visitbeijing.com.cn/article/4MX01cNAUre" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Beijing Micro-Getaway Guide: Must-Visit Attractions</a></li>
+        <li>2. <strong>Visites nocturnes dans les quatre sections</strong> — <a href="https://english.visitbeijing.com.cn/article/4RI8S685GDY" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Ecological Leisure | Badaling Night Great Wall</a>; <a href="https://english.visitbeijing.com.cn/article/4T3jh3BHGra" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Upgraded Juyongguan Night Great Wall</a>; <a href="https://english.visitbeijing.com.cn/article/4OStXw7yhMK" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Beijing's Golden Autumn Vibe, Double the Festival Joy</a>.</li>
+        <li>3. <strong>Grande Muraille de Mutianyu</strong> — <a href="https://en.mutianyugreatwall.com/article/4SHdMJjS04P" target="_blank" rel="noopener" class="text-blue-600 hover:underline">2026 night-tour guide</a></li>
+        <li>4. <strong>Grande Muraille de Jinshanling</strong> — <a href="https://english.visitbeijing.com.cn/article/4JvnMW3ZbDx" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Two-day trip towards autumn foliage with one ticket</a></li>
+        <li>5. <strong>Grande Muraille de Huanghuacheng (Water Great Wall)</strong> — <a href="https://english.visitbeijing.com.cn/article/4Itpbe3Ye1z" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Beijing Huanghuacheng Lakeside Great Wall</a></li>
+        <li>6. <strong>Grande Muraille de Juyongguan</strong> — <a href="https://english.visitbeijing.com.cn/article/47OOq8YYqAs" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Juyongguan Great Wall (居庸关长城)</a></li>
+        <li>7. <strong>Grande Muraille de Simatai</strong> — <a href="https://english.visitbeijing.com.cn/article/4OT1GKn1zoW" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Experience night scenery at Simatai Great Wall</a></li>
+        <li>8. <strong>Comment y aller</strong> — <a href="https://english.visitbeijing.com.cn/article/47OLMubjite" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Come to Badaling Great Wall for moon appreciation</a>.</li>
+      </ol>
+      <p class="text-sm text-gray-500 mt-4"><em>Tous les montants ci-dessus sont des tarifs adultes de haute saison. Les sources sont le portail officiel de tourisme de Pékin (english.visitbeijing.com.cn) et les sites anglophones propres aux zones touristiques, vérifiés en septembre 2026.</em></p>
+    </section>
+
+  </article>
+</Layout>

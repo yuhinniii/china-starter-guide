@@ -1,0 +1,480 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'Гид по Великой Китайской стене: какой участок выбрать';
+const description = 'Как соотносятся шесть участков Великой Китайской стены — Бадалин, Мутяньюй, Цзиньшаньлин, Сыматай, Хуанхуачэн и Цзюйюнгуань — по толпам, сложности, билетам и ночным экскурсиям.';
+---
+
+<Layout title={title} description={description} lang="ru">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+
+    <!-- ============ BREADCRUMB ============ -->
+    <nav class="mb-8 not-prose">
+      <a href="/ru/cities/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Назад к путеводителям по городам
+      </a>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🧱 Великая Китайская стена · Пекин</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">Великая Китайская стена: какой участок выбрать?</h1>
+      <p class="text-xl text-gray-600 mb-6">Бадалин, Мутяньюй, Цзиньшаньлин или Сыматай — в чём на самом деле разница и какой участок подойдёт для вашей поездки.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Последнее обновление: сентябрь 2026</span>
+        <span>⏱️ 12 мин чтения</span>
+      </div>
+    </header>
+
+    <!-- ============ HERO IMAGE ============ -->
+    <figure class="mb-12 not-prose">
+      <img
+        src="/images/great-wall/comparison-grid.webp"
+        alt="Коллаж из шести участков Великой Китайской стены под Пекином: Бадалин в весеннем цвету, Мутяньюй в осенних красках, Цзиньшаньлин над морем облаков, Сыматай с ночной подсветкой над Губэй-Шуйчжэнем, Хуанхуачэн, уходящий в бирюзовое озеро, и крепостной проход Цзюйюнгуань"
+        width="1200"
+        height="534"
+        loading="eager"
+        fetchpriority="high"
+        class="w-full h-auto object-cover rounded-2xl shadow-md"
+      />
+      <figcaption class="text-xs text-gray-500 text-center mt-2">Одна и та же стена — шесть разных дней. Слева направо, сверху вниз: Бадалин, Мутяньюй, Цзиньшаньлин, Сыматай, Хуанхуачэн, Цзюйюнгуань.</figcaption>
+    </figure>
+
+    <!-- ============ QUICK ANSWER ============ -->
+    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-red-900 mb-4">⚡ Краткий ответ</h2>
+      <p class="text-lg text-red-800 leading-relaxed">
+        <strong>Мутяньюй</strong> — лучший универсальный выбор для большинства, кто едет впервые: полностью отреставрирован и эффектен, наверх идёт канатная дорога, вниз — тобогган, а толп в разы меньше, чем в Бадалине. <strong>Бадалин</strong> — самый знаковый участок: первым открылся для туристов, его посещают главы государств, и он самый монументальный из отреставрированных, подъём ведёт к Северной восьмой башне на высоте 888 м; он же и самый людный. <strong>Цзиньшаньлин</strong> — выбор походников и фотографов: тише и меньше перестроен, 67 сторожевых башен и открытие до рассвета ради моря облаков. <strong>Сыматай</strong> — самый атмосферный: ночные экскурсии круглый год, а у подножия лежит Губэй-Шуйчжэнь. <strong>Хуанхуачэн</strong> — самое необычное место: единственный участок, где стена уходит прямо в воду, здесь есть лодки и стеклянный мост. <strong>Цзюйюнгуань</strong> — ближайший и самый тихий проход: не подъём по хребту, а крепостная петля, лучший вариант на полдня или зимой.
+      </p>
+    </div>
+
+    <!-- ============ IN THIS GUIDE ============ -->
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 В этом руководстве</h3>
+      <ul class="space-y-3">
+        <li><a href="#which-section" class="text-blue-600 hover:underline">🤔 Какой участок выбрать?</a></li>
+        <li><a href="#night" class="text-blue-600 hover:underline">🌙 Можно ли попасть на стену ночью?</a></li>
+        <li><a href="#badaling" class="text-blue-600 hover:underline">🏔️ Бадалин</a></li>
+        <li><a href="#mutianyu" class="text-blue-600 hover:underline">🌳 Мутяньюй</a></li>
+        <li><a href="#jinshanling" class="text-blue-600 hover:underline">☁️ Цзиньшаньлин</a></li>
+        <li><a href="#simatai" class="text-blue-600 hover:underline">🌃 Сыматай</a></li>
+        <li><a href="#huanghuacheng" class="text-blue-600 hover:underline">💧 Хуанхуачэн</a></li>
+        <li><a href="#juyongguan" class="text-blue-600 hover:underline">🏯 Цзюйюнгуань</a></li>
+        <li><a href="#tickets" class="text-blue-600 hover:underline">🎫 Билеты и бронирование</a></li>
+        <li><a href="#best-time" class="text-blue-600 hover:underline">📅 Лучшее время для поездки</a></li>
+        <li><a href="#practical-tips" class="text-blue-600 hover:underline">👟 Что взять с собой?</a></li>
+        <li><a href="#history" class="text-blue-600 hover:underline">📜 Кирпичи Мин, а не Цинь</a></li>
+      </ul>
+    </nav>
+
+    <!-- ============ SECTION 1: WHICH SECTION ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="which-section" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🤔 Какой участок выбрать?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">Строго говоря, все участки — одна и та же стена. Но двух одинаковых дней она не даёт. Важны вовсе не расстояние и не цена билета, а <strong>насколько людно, сколько сил придётся потратить и что стена делает, когда вы на неё подниметесь</strong> — уходит за хребты, спускается в озеро или светится на фоне ночного неба. Ниже участки идут в порядке того, насколько они подходят для первой или второй поездки.</p>
+
+    <h3 class="text-xl font-bold text-gray-900 mb-4">Сравнение шести участков Великой Китайской стены</h3>
+
+    <div class="overflow-x-auto mb-8 not-prose">
+      <table class="w-full text-sm text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+        <thead>
+          <tr class="bg-gray-900 text-white">
+            <th class="px-2 py-3 font-bold align-bottom">Участок</th>
+            <th class="px-2 py-3 font-bold align-bottom">Расстояние от Пекина</th>
+            <th class="px-2 py-3 font-bold align-bottom">Толпы</th>
+            <th class="px-2 py-3 font-bold align-bottom">Сложность</th>
+            <th class="px-2 py-3 font-bold align-bottom">Вход</th>
+            <th class="px-2 py-3 font-bold align-bottom">Сколько времени</th>
+            <th class="px-2 py-3 font-bold align-bottom">Подходит детям?</th>
+            <th class="px-2 py-3 font-bold align-bottom">Главный момент</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="px-2 py-3 font-semibold">Бадалин</td>
+            <td class="px-2 py-3">70 км · ВСМ ~35 мин</td>
+            <td class="px-2 py-3">Очень много</td>
+            <td class="px-2 py-3">Легко</td>
+            <td class="px-2 py-3">¥40</td>
+            <td class="px-2 py-3">3–4 ч</td>
+            <td class="px-2 py-3">Да (фуникулёр)</td>
+            <td class="px-2 py-3">Сам размах — и самое большое ночное шоу</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-2 py-3 font-semibold">Мутяньюй</td>
+            <td class="px-2 py-3">70 км · ~1,5 ч на машине</td>
+            <td class="px-2 py-3">Умеренно</td>
+            <td class="px-2 py-3">Легко–умеренно</td>
+            <td class="px-2 py-3">¥45</td>
+            <td class="px-2 py-3">Полдня</td>
+            <td class="px-2 py-3">Да (канатная дорога + тобогган)</td>
+            <td class="px-2 py-3">23 отреставрированные башни, затем спуск на тобоггане</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-2 py-3 font-semibold">Цзиньшаньлин</td>
+            <td class="px-2 py-3">130 км · ~2,5 ч на машине</td>
+            <td class="px-2 py-3">Мало</td>
+            <td class="px-2 py-3">Тяжело</td>
+            <td class="px-2 py-3">¥65</td>
+            <td class="px-2 py-3">Весь день</td>
+            <td class="px-2 py-3">Нет</td>
+            <td class="px-2 py-3">67 башен вплотную, море облаков на рассвете</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-2 py-3 font-semibold">Сыматай</td>
+            <td class="px-2 py-3">120 км · ~2,5 ч на машине</td>
+            <td class="px-2 py-3">Мало</td>
+            <td class="px-2 py-3">Тяжело</td>
+            <td class="px-2 py-3">¥40 днём</td>
+            <td class="px-2 py-3">Полдня–весь день</td>
+            <td class="px-2 py-3">Дети постарше</td>
+            <td class="px-2 py-3">Стена в огнях над Губэй-Шуйчжэнем ночью</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-2 py-3 font-semibold">Хуанхуачэн</td>
+            <td class="px-2 py-3">60 км · ~1,5 ч на машине</td>
+            <td class="px-2 py-3">Мало–умеренно</td>
+            <td class="px-2 py-3">Умеренно</td>
+            <td class="px-2 py-3">¥58</td>
+            <td class="px-2 py-3">Полдня</td>
+            <td class="px-2 py-3">Да</td>
+            <td class="px-2 py-3">Стена, уходящая прямо в озеро</td>
+          </tr>
+          <tr>
+            <td class="px-2 py-3 font-semibold">Цзюйюнгуань</td>
+            <td class="px-2 py-3">60 км · ~1 ч на машине</td>
+            <td class="px-2 py-3">Мало</td>
+            <td class="px-2 py-3">Умеренно</td>
+            <td class="px-2 py-3">¥45 (апр.–окт.)</td>
+            <td class="px-2 py-3">Полдня</td>
+            <td class="px-2 py-3">Да</td>
+            <td class="px-2 py-3">«Проход № 1 Поднебесной» — и весенние поезда цветения</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">Цены — взрослые билеты высокого сезона; студенты обычно платят половину, а дети ниже 1,2 м, как правило, проходят бесплатно. Тарифы различаются по сезонам и участкам — уточняйте перед поездкой.</p>
+
+    <!-- ============ SECTION 2: NIGHT ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="night" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🌙 Можно ли попасть на стену ночью?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">Расстояние и цена разделяют эти участки меньше, чем три практических вопроса: <strong>можно ли подняться без подъёма пешком, есть ли шаттл от парковки и открыто ли после наступления темноты?</strong> Вот полная картина.</p>
+
+    <div class="overflow-x-auto mb-8 not-prose">
+      <table class="w-full text-sm text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+        <thead>
+          <tr class="bg-gray-900 text-white">
+            <th class="px-3 py-3 font-bold align-bottom">Участок</th>
+            <th class="px-3 py-3 font-bold align-bottom">Ночная экскурсия</th>
+            <th class="px-3 py-3 font-bold align-bottom">Как подняться</th>
+            <th class="px-3 py-3 font-bold align-bottom">Шаттл / пересадка</th>
+            <th class="px-3 py-3 font-bold align-bottom">Фирменный бонус</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="px-3 py-3 font-semibold">Бадалин</td>
+            <td class="px-3 py-3">✅ Каждый вечер, 30 апр.–6 окт. (вход 18:30–21:00)</td>
+            <td class="px-3 py-3">Канатная дорога или фуникулёр, ¥100 в одну сторону</td>
+            <td class="px-3 py-3">Бесплатный шаттл по территории; «Great Wall Bus» ¥80 туда-обратно</td>
+            <td class="px-3 py-3">Подсветка стены от Северной башни 4 до Южной башни 4</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-3 py-3 font-semibold">Мутяньюй</td>
+            <td class="px-3 py-3">✅ Отдельными сезонами (лето; Национальный день)</td>
+            <td class="px-3 py-3">Наверх канатная дорога, вниз тобогган</td>
+            <td class="px-3 py-3">Шаттл ¥15 туда-обратно</td>
+            <td class="px-3 py-3">Спуск на тобоггане</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-3 py-3 font-semibold">Цзиньшаньлин</td>
+            <td class="px-3 py-3">❌</td>
+            <td class="px-3 py-3">Канатная дорога ¥40 в одну сторону / ¥60 туда-обратно</td>
+            <td class="px-3 py-3">Односторонний трансфер ~¥80</td>
+            <td class="px-3 py-3">Море облаков на рассвете</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-3 py-3 font-semibold">Сыматай</td>
+            <td class="px-3 py-3">✅ Круглый год (18:00–21:30)</td>
+            <td class="px-3 py-3">Канатная дорога — после темноты обязательна</td>
+            <td class="px-3 py-3">—</td>
+            <td class="px-3 py-3">Губэй-Шуйчжэнь прямо у подножия</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-3 py-3 font-semibold">Хуанхуачэн</td>
+            <td class="px-3 py-3">❌</td>
+            <td class="px-3 py-3"><strong>Канатной дороги нет</strong> — магнитный спуск по настилу</td>
+            <td class="px-3 py-3">Автобус или частный трансфер</td>
+            <td class="px-3 py-3">Лодки по озеру и стеклянный мост</td>
+          </tr>
+          <tr>
+            <td class="px-3 py-3 font-semibold">Цзюйюнгуань</td>
+            <td class="px-3 py-3">✅ Вечера пт и сб + праздники, до начала окт.</td>
+            <td class="px-3 py-3"><strong>Канатной дороги нет</strong> — подъём и спуск пешком</td>
+            <td class="px-3 py-3">—</td>
+            <td class="px-3 py-3">Ночной фестиваль эпохи Мин внутри прохода</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">Одно различие стоит усвоить сразу: <strong>шаттл — это не то же самое, что удобная дорога.</strong> На всех участках, кроме Бадалина, шаттл покрывает только последний отрезок — от парковки до ворот, — а до самой парковки всё равно нужно добраться на автобусе, машине или с экскурсией. Бадалин — единственный участок со своей железнодорожной станцией: высокоскоростная линия Пекин–Чжанцзякоу идёт до станции Бадалин Чанчэн, это примерно 30–40 минут от Северного вокзала Пекина, а станция находится примерно в 800 м от входа на подъём, последний отрезок закрывает бесплатный шаттл. Поэтому сюда можно приехать без машины и без экскурсии — и поэтому же здесь самые большие толпы.</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">Билеты на ночные экскурсии (2026): Бадалин <strong>¥198</strong> в будни / <strong>¥298</strong> с пятницы по воскресенье и в праздники, только онлайн и заранее (касс на месте нет); Мутяньюй <strong>¥200</strong> включая вход, шаттл и канатную дорогу; Сыматай <strong>¥200</strong> за ночную экскурсию плюс канатная дорога туда-обратно (<strong>билет в Губэй-Шуйчжэнь не входит</strong>); Цзюйюнгуань по раннему тарифу от <strong>¥19,9</strong>. Каждый ночной сеанс идёт по времени и с ограничением по числу людей, поэтому бронируйте заранее: на выходные в Бадалине всё часто уходит за два-три дня.</p>
+
+    <!-- ============ SECTION 3: BADALING ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="badaling" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏔️ Бадалин: самый монументальный участок — и самый людный</h2>
+
+    <img
+      src="/images/great-wall/badaling.webp"
+      alt="Бадалин — Великая Китайская стена поднимается по склонам в весеннем цвету к северу от Пекина"
+      width="1200"
+      height="943"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Зачем туда едут</span> Бадалин — самый известный участок в Китае и тот, куда возят глав иностранных государств. Он полностью отреставрирован, широк и эффектен: стена круто уходит по хребту в обе стороны — самый широкий и монументальный из восстановленных участков, подъём ведёт к <strong>Северной восьмой башне на высоте 888 м</strong>, рядом стоит <strong>стела «Кто не был на Великой стене — тот не настоящий мужчина»</strong>. Здесь вы получаете полное ощущение «я стою на Великой Китайской стене» — и никакой другой участок не даёт столько стены при столь малой подготовке.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">В чём подвох</span> Об этом знают все. В выходные и в праздники в Бадалине очень людно, и толпа может понести вас с собой. Секрет во времени: будьте у ворот к открытию (около 7 утра) — и первый час будет почти вашим.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Как добраться</span> На высокоскоростном поезде до станции <strong>Бадалин Чанчэн</strong> — около <strong>20–25 минут от Цинхэ</strong> (¥16–25) или <strong>30–40 минут от Северного вокзала Пекина</strong> (¥25–31); от станции до входа на подъём примерно <strong>800 м</strong>. Автобус <strong>877</strong>, теперь от станции метро <strong>Бэйтучэн (линии 8/10)</strong>, — экономный вариант за ¥12. <strong>Билеты на поезд берите заранее</strong>: места на линии Пекин–Чжанцзякоу быстро расходятся в выходные и праздники, продажа открывается за <strong>15 дней</strong> на 12306 или Trip.com. Если поезд не нужен, в объявлении Trip.com ниже продаётся и <strong>шаттл туда-обратно</strong> с гидом в салоне — можно взять отдельно или вместе с билетом; это дешевле частной машины и без пересадок с городскими автобусами.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Стоимость</span> Вход <strong>¥40</strong> в высокий сезон / ¥35 в низкий. <strong>Северная канатная дорога или южный фуникулёр</strong> — ¥100 в одну сторону, ¥140 туда-обратно.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Ночная стена</span> С <strong>30 апреля по 6 октября</strong> в Бадалине каждую ночь проходит ночной сеанс: вход 18:30–21:00, подсветка башен с 19:20, последний выход в 22:00. Ночью открыт только участок <strong>от Северной башни 4 до Южной башни 4</strong> (склон «Добрый молодец» у башни N8 — нет). Билеты <strong>¥198</strong> в будни и <strong>¥298</strong> с пятницы по воскресенье и в праздники, не более примерно 3 000 человек за ночь.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Кому подойдёт</span> Тем, кто хочет «ту самую» стену — участок государственных визитов, лучшее ночное шоу и место, куда можно добраться без машины, — и готов мириться с толпами.</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">Без пересадок</strong> — билеты в Бадалин и автобус туда-обратно вместе:</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/BjTXg5QDIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 Билеты в Бадалин и автобус туда-обратно на Trip.com</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 4: MUTIANYU ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="mutianyu" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🌳 Мутяньюй: лучший участок для первой поездки?</h2>
+
+    <img
+      src="/images/great-wall/mutianyu.webp"
+      alt="Мутяньюй — Великая Китайская стена идёт по осенним склонам, по стене гуляют туристы"
+      width="532"
+      height="355"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Зачем туда едут</span> Именно так большинство представляет идеальный день на Великой стене: полностью отреставрированный, просторный участок, <strong>23 сторожевые башни</strong> идут по лесистым холмам, а людей — лишь малая доля от Бадалина. В будни здесь почти никого. Второй магнит — спуск: <strong>тобогган</strong> (металлические сани на длинной трассе) идёт от стены вниз к деревне, превращая историческую прогулку в детское воспоминание.</p>
+      <p class="text-lg leading-relaxed text-gray-700 clear-both"><span class="block text-xl font-bold text-brand-700 mb-2">Как это устроено</span> Шаттл везёт от парковки к подножию, дальше канатная дорога поднимает к <strong>башне 14</strong>. По стене идёте сколько хотите — башня 20 это высшая точка с лучшей панорамой, — а потом либо возвращаетесь пешком, либо спускаетесь на тобоггане.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Как добраться</span> Высокоскоростного поезда нет. Туристические шаттлы отправляются от Дунчжимэнь и Хэпинсицяо (около ¥80 туда-обратно, 1,5 часа), либо берите частную машину — самый частый выбор иностранных гостей. Проще всего забронировать автобус через объявление Trip.com ниже: там продаётся прямой шаттл (гид говорит по-английски) — вместе с билетом или отдельно, дешевле частной машины и гораздо быстрее, чем метро плюс два автобуса.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Стоимость</span> Вход <strong>¥45</strong>. Шаттл ¥15 туда-обратно. Канатная дорога ¥100 в одну сторону / ¥140 туда-обратно. Тобогган около ¥100.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Летние вечера</span> Мутяньюй тоже открывается после темноты в <strong>отдельные сезоны — летом и снова на праздник Национального дня</strong> — 17:30–21:00, открыты башни <strong>10–15</strong>. <strong>Ночной пакет (около ¥200)</strong> включает вход, шаттл и канатную дорогу; после темноты тобогган не работает.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Кому подойдёт</span> Большинству, кто едет впервые. Лучший баланс между видами, комфортом и терпимым числом людей.</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">Билет, прямой автобус или всё вместе</strong> — пакетом или по отдельности:</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/0rEQW6TDIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 Забронировать Мутяньюй на Trip.com</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 5: JINSHANLING ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="jinshanling" class="text-3xl font-bold text-gray-900 mb-6 mt-12">☁️ Цзиньшаньлин: стоит ли ехать 2,5 часа?</h2>
+
+    <img
+      src="/images/great-wall/jinshanling.webp"
+      alt="Сторожевые башни Цзиньшаньлина поднимаются из моря облаков на рассвете"
+      width="922"
+      height="690"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Зачем туда едут</span> Цзиньшаньлин — самый тихий из классических участков: можно идти долго и почти никого не встретить. Он <strong>меньше перестроен, чем Мутяньюй или Бадалин</strong>, поэтому здесь больше подлинной минской кладки и куда меньше людей; на примерно 10,5 км плотно стоят <strong>67 сторожевых башен</strong> и три сигнальные башни — до следующей всегда недалеко. Поскольку он открывается до рассвета, именно сюда едут за <strong>морем облаков</strong> и рассветными кадрами, которые осенью заполняют ленты.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Честно говоря</span> Это настоящий поход, а не прогулка: крутые ступени, неровный камень и длинные открытые участки без перил. И он самый далёкий — около 2,5 часов от Пекина, уже в соседней провинции Хэбэй.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Как добраться</span> Частная машина или экскурсия (около 2–2,5 ч); в тёплые месяцы от Дунчжимэнь ходит сезонный прямой автобус, либо поезд до Губэйкоу и дальше на такси. На Trip.com есть также <strong>трансфер-шаттл (~¥80 в одну сторону)</strong> — это только дорога; билет на вход ¥65, их можно купить отдельно или пакетом.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Стоимость</span> Вход <strong>¥65</strong> в высокий сезон / ¥55 в низкий — билет, купленный на месте, действует на <strong>два входа в течение 48 часов</strong>, что очень кстати, если хотите вернуться на рассвет. Канатная дорога ¥40 в одну сторону / ¥60 туда-обратно, до Малой Цзиньшаньской башни.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Кому подойдёт</span> Фотографам, походникам и всем, кто уже прошёл классику и хочет стену без людей.</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">Билет и трансфер туда-обратно одной бронью</strong> — или по отдельности:</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/qU1ijvnDIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 Забронировать Цзиньшаньлин на Trip.com</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 6: SIMATAI ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="simatai" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🌃 Сыматай: какая стена после наступления темноты?</h2>
+
+    <img
+      src="/images/great-wall/simatai.webp"
+      alt="Сыматай с ночной подсветкой на хребте над освещёнными фонарями улицами Губэй-Шуйчжэня"
+      width="1200"
+      height="900"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Зачем туда едут</span> Сыматай — классическая ночная стена: <strong>ночные экскурсии идут круглый год</strong>, а подсвеченные башни светятся над <strong>Губэй-Шуйчжэнем</strong>, восстановленным городком на воде у подножия. Переночуйте в городке, побродите по нему с фонарём, а после темноты поднимитесь на освещённую стену. Днём Сыматай круче и более подлинный, чем Мутяньюй: стена уходит по острым хребтам в обе стороны.</p>
+      <p class="text-lg leading-relaxed text-gray-700 clear-both"><span class="block text-xl font-bold text-brand-700 mb-2">Честно говоря</span> Из-за городка Сыматай — скорее готовый пакет, чем просто поход по стене: дневной и ночной билеты продаются отдельно, и <strong>ночной вход возможен только с канатной дорогой туда-обратно</strong> (после темноты подниматься и спускаться пешком нельзя). Дневные посетители должны уйти к вечеру, так что остаться с дня на ночь не получится.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Как добраться</span> Частная машина или экскурсия из Пекина, около 2–2,5 ч; большинство совмещает поездку с ночёвкой в <strong>Губэй-Шуйчжэне</strong> у подножия стены. В объявлении Trip.com ниже продаётся <strong>автобус туда-обратно</strong> к городку и стене — с ночным билетом или отдельно.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Стоимость</span> Дневной вход около <strong>¥40</strong>. <strong>Ночная экскурсия плюс канатная дорога туда-обратно — ¥200 с человека</strong> (дети 1,2–1,5 м — ¥110): после темноты канатная дорога единственный способ подняться. Пакет «Губэй-Шуйчжэнь + стена + канатная дорога» — <strong>¥280</strong>, для тех, кто ночует в городке, — <strong>¥120</strong>. Бронируйте заранее.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">В паре с Губэй-Шуйчжэнем</span> Восстановленный городок на воде стоит прямо у подножия стены, и большинство едет сюда одной поездкой: днём улицы в фонарях, после темноты — освещённая стена. <strong>Билеты разные</strong>, в ночную экскурсию городок не входит, так что считайте обе суммы.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Кому подойдёт</span> Парам и фотографам, которым нужна атмосфера; тем, кто предпочтёт увидеть стену в огнях, а не стоять в дневной толпе.</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">Ночной билет и автобус туда-обратно одним пакетом</strong> — или только дорога:</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/Ar0ZTnMNIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 Забронировать Сыматай на Trip.com</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 7: HUANGHUACHENG ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="huanghuacheng" class="text-3xl font-bold text-gray-900 mb-6 mt-12">💧 Хуанхуачэн: где стена уходит в озеро</h2>
+
+    <img
+      src="/images/great-wall/huanghuacheng.webp"
+      alt="Хуанхуачэн — Великая Китайская стена идёт вдоль берега бирюзового водохранилища, по воде идёт прогулочный катер"
+      width="393"
+      height="674"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Зачем туда едут</span> Это единственное место в Китае, где стена <strong>трижды входит в воду и выходит из неё</strong>: построенная в 1970-х годах плотина подняла уровень и затопила самый низкий участок, и башни поднимаются прямо из бирюзового озера. Вокруг — минская каштановая роща (деревьям по несколько сотен лет) и удобный настил вдоль берега. Зелено, тихо и совсем не похоже на открыточную стену.</p>
+      <p class="text-lg leading-relaxed text-gray-700 clear-both"><span class="block text-xl font-bold text-brand-700 mb-2">Честно говоря</span> Затопленный отрезок короткий — хватит полдня, а не целого, — и лучшие виды рядом со входом, поэтому в выходные бывает людно. Дополнительные опции (лодка, стеклянный мост, спуск) стоят отдельно.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Главное</span> <strong>Затопленная стена</strong> («дракон, пьющий воду»), <strong>стеклянный мост</strong> и <strong>минская каштановая роща</strong>.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">На воде</span> Это единственный участок, где можно выйти на воду: <strong>прогулочные катера и расписные лодки</strong> ходят по озеру (около <strong>¥25 в одну сторону / ¥45 туда-обратно</strong>), плюс <strong>стеклянный сплав над облаками</strong> и <strong>магнитный спуск</strong> вдоль настила. Все водные развлечения оплачиваются отдельно от входного билета.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Как добраться</span> Около 1–1,5 часа на машине или DiDi из центра Пекина; общественным транспортом сложнее (автобусы от Дунчжимэнь в сторону Хуанхуачэна).</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Стоимость</span> Вход около <strong>¥58</strong>; лодки, стеклянный мост и спуски — за отдельную плату.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Кому подойдёт</span> Тем, кто уже видел классическую стену и хочет чего-то по-настоящему другого; спокойные полдня с детьми.</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">Билет, автобус и катер вместе</strong> — так проще всего взять всё на озере:</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/bU5SXQXDIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 Забронировать Хуанхуачэн на Trip.com</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 8: JUYONGGUAN ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="juyongguan" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏯 Цзюйюнгуань: лучший участок на полдня из Пекина?</h2>
+
+    <img
+      src="/images/great-wall/juyongguan.webp"
+      alt="Крепостные ворота Цзюйюнгуаня с зелёной черепичной крышей и Великая Китайская стена, уходящая по хребту позади"
+      width="530"
+      height="677"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Зачем туда едут</span> Цзюйюнгуань — <strong>ближайший к городу участок</strong> (меньше 60 км, в Чанпине) и единственный, построенный как крепостной проход, а не как стена на гребне: вы идёте полную петлю по долине, мимо ворот <strong>«Проход № 1 Поднебесной»</strong>, а внутри — минская <strong>Облачная платформа</strong> и комплекс храмов. Поскольку он близко и менее известен, это самый тихий из лёгких вариантов, и он открыт рано и поздно (примерно <strong>6:30–18:00</strong>). С <strong>конца марта до середины апреля</strong> склоны покрываются цветом горного персика и абрикоса, а по долине внизу идёт <strong>«поезд моря цветов»</strong> — пригородная линия S2; такой кадр бывает только весной и стоит крюка.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Как добраться</span> Метро линий 8/13 до Хоин, затем автобус 879/919 до Цзюйюнгуаня; или около часа на машине / DiDi.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Стоимость</span> Вход <strong>¥45</strong> (апрель–октябрь) / <strong>¥40</strong> (ноябрь–март); дети выше 1,2 м и студенты платят по льготному тарифу.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Ночной сеанс</span> По <strong>вечерам пятницы и субботы, а также в праздники</strong> до начала октября (18:00–21:00) в крепости проходит иммерсивное ночное действо: стража идёт по старой почтовой дороге, народные ансамбли на башнях, стены в свете фонарей и ночной рынок внутри.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Без канатной дороги</span> Цзюйюнгуань — один из двух крупных участков <strong>без подъёмника</strong> (второй — Хуанхуачэн) и единственный, где нет и спуска, так что вверх и вниз пешком. Петля короче и мягче, чем в Мутяньюе или Цзиньшаньлине, но силы на подъём закладывайте.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">Кому подойдёт</span> Для поездки на полдня, зимних визитов, любителей истории и всех, кому нужна стена без раннего подъёма и долгой дороги.</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">Билет и трансфер туда-обратно одной бронью</strong> — самый простой вариант на полдня:</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/RM0EN5ONIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 Забронировать Цзюйюнгуань на Trip.com</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 9: TICKETS ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="tickets" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎫 Нужно ли покупать билеты заранее?</h2>
+    <ul class="list-disc pl-6 space-y-3 mb-12 text-lg text-gray-700">
+      <li>Для Бадалина бронируйте <strong>заранее</strong> — в пиковые дни билеты заканчиваются, а касс для входа без брони нет.</li>
+      <li><strong>Ночные билеты продаются отдельно</strong>, по сеансам и с лимитом; в Бадалине они только онлайн и на выходные часто уходят за два-три дня.</li>
+      <li>Иностранным гостям для покупки и входа на любом участке нужен <strong>паспорт</strong>.</li>
+      <li>Высокий сезон — примерно <strong>апрель–октябрь</strong>; цены в таблице выше относятся к высокому сезону.</li>
+    </ul>
+
+    <div class="bg-yellow-50 border border-yellow-100 rounded-2xl p-6 mb-12">
+      <p class="text-gray-700"><strong>⏰ Единственное правило, которое действительно важно:</strong> приезжайте рано. Экскурсионные группы подходят между 9:30 и 11:00 — чтобы увидеть стену с фотографий, будьте на ней до 9 утра.</p>
+    </div>
+
+    <!-- ============ SECTION 10: BEST TIME ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="best-time" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📅 Лучшее время для поездки</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">У каждого участка есть свой сезон и свой час, когда он выглядит так, как вы его представляли. Ниже — периоды, которыми эти шесть участков действительно известны.</p>
+
+    <ul class="list-disc pl-6 space-y-3 mb-12 text-lg text-gray-700">
+      <li>🍂 <strong>Осень — сезон фотографов.</strong> Цзиньшаньлин открывается до рассвета, и именно оттуда осенью приходят море облаков и рассветные кадры — а билет высокого сезона, купленный на месте, действует на два входа в течение 48 часов.</li>
+      <li>🌸 <strong>С конца марта до середины апреля</strong> склоны Цзюйюнгуаня покрываются цветом горного персика и абрикоса, а в долине внизу идёт «поезд моря цветов», который ходит только весной.</li>
+      <li>🌙 <strong>Ночные экскурсии идут с 30 апреля по 6 октября</strong> в Бадалине, отдельными летними сезонами в Мутяньюе, круглый год в Сыматае и по вечерам пятницы и субботы в Цзюйюнгуане.</li>
+      <li>❄️ <strong>Зима — самый тихий сезон.</strong> Лучший зимний вариант — Цзюйюнгуань: близко, открыт рано и поздно и самый спокойный из лёгких участков.</li>
+      <li>📅 <strong>Высокий сезон — примерно апрель–октябрь</strong>; цены в таблице сравнения относятся к высокому сезону, а в низкий сезон билеты немного дешевле (Бадалин ¥35, Цзиньшаньлин ¥55).</li>
+    </ul>
+
+    <!-- ============ SECTION 11: PRACTICAL TIPS ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="practical-tips" class="text-3xl font-bold text-gray-900 mb-6 mt-12">👟 Что взять с собой на Великую стену?</h2>
+    <ul class="list-disc pl-6 space-y-3 mb-12 text-lg text-gray-700">
+      <li>2–3 литра воды на человека — на стене нет магазинов.</li>
+      <li>Летом — солнцезащитный крем и головной убор; зимой — тёплые ветрозащитные слои (на стене всегда холоднее и ветренее, чем в городе).</li>
+      <li>Правильная обувь: кроссовок хватит для Бадалина, Мутяньюя и Цзюйюнгуаня; для Цзиньшаньлиня и Сыматая нужны <strong>треккинговые ботинки</strong>.</li>
+    </ul>
+
+    <!-- ============ SECTION 12: HISTORY ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="history" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📜 По чему вы на самом деле идёте? Кирпичи Мин, а не Цинь</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">Великая Китайская стена — не одна стена, а <strong>система</strong>: несколько династий строили, соединяли и перестраивали её более 2 000 лет. То, что вы видите сегодня, — в основном <strong>постройки эпохи Мин (1368–1644)</strong>; более ранние земляные валы Цинь и Хань в значительной части разрушились. Вся сеть, по данным Государственного управления по охране культурного наследия Китая за 2012 год, насчитывает <strong>21 196 км</strong> — сюда входят все ответвления и рвы, а не только та стена, о которой пишут. Проходимые отреставрированные участки — около 700 км.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">Несколько деталей, которые стоит знать, пока идёте:</p>
+
+    <ul class="list-disc pl-6 space-y-3 mb-12 text-lg text-gray-700">
+      <li><strong>Восточные участки перестроил известный полководец.</strong> Ци Цзигуан, минский генерал, реорганизовавший стену в 1560–70-х годах, добавил те плотные сторожевые башни и зубцы, которые вы видите в Мутяньюе, Цзиньшаньлине и Бадалине.</li>
+      <li><strong>В Цзиньшаньлине присмотритесь к кирпичам.</strong> На многих есть <strong>вырезанные знаки</strong> — мастера ставили клеймо своей печи и подразделения на каждый кирпич, чтобы брак можно было отследить до конкретной бригады. Это минский контроль качества, застывший в камне.</li>
+      <li><strong>Раствор интереснее, чем кажется.</strong> На отреставрированных участках сохранили исходный рецепт: в известковый раствор добавляли клейкую рисовую муку — отчасти поэтому эти стены стоят века.</li>
+      <li><strong>Башни были многофункциональными.</strong> В них хранили оружие и зерно, размещался гарнизон и передавались сигналы — дымом днём, огнём ночью. Поэтому они и стоят в зоне видимости друг друга по всей стене.</li>
+    </ul>
+
+    <!-- ============ NEXT READS ============ -->
+    <div class="border-t border-gray-100 pt-8 mt-8 not-prose">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h3 class="text-sm font-bold text-gray-900">📚 Читайте также</h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="/ru/cities/beijing-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🏙️ Путеводитель по Пекину
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ru/cities/forbidden-city/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🏛️ Гид по Запретному городу
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ru/cities/city-select/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              📅 Сколько дней нужно в Китае?
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ru/transport/high-speed-rail/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🚄 Как купить билет и проехать на высокоскоростном поезде в Китае
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ru/payment/china-travel-budget/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              💰 Сколько стоит поездка в Китай в 2026 году
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ SOURCES ============ -->
+    <section class="mt-10 pt-6 border-t border-gray-100">
+      <h3 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-4">Источники</h3>
+      <ol class="space-y-2 text-sm text-gray-500">
+        <li>1. <strong>Великая Китайская стена в Бадалине</strong> — <a href="https://english.visitbeijing.com.cn/article/4MX01cNAUre" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Beijing Micro-Getaway Guide: Must-Visit Attractions</a></li>
+        <li>2. <strong>Ночные экскурсии на четырёх участках</strong> — <a href="https://english.visitbeijing.com.cn/article/4RI8S685GDY" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Ecological Leisure | Badaling Night Great Wall</a>; <a href="https://english.visitbeijing.com.cn/article/4T3jh3BHGra" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Upgraded Juyongguan Night Great Wall</a>; <a href="https://english.visitbeijing.com.cn/article/4OStXw7yhMK" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Beijing&apos;s Golden Autumn Vibe, Double the Festival Joy</a>.</li>
+        <li>3. <strong>Великая Китайская стена в Мутяньюе</strong> — <a href="https://en.mutianyugreatwall.com/article/4SHdMJjS04P" target="_blank" rel="noopener" class="text-blue-600 hover:underline">2026 night-tour guide</a></li>
+        <li>4. <strong>Великая Китайская стена в Цзиньшаньлине</strong> — <a href="https://english.visitbeijing.com.cn/article/4JvnMW3ZbDx" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Two-day trip towards autumn foliage with one ticket</a></li>
+        <li>5. <strong>Хуанхуачэн (стена у воды)</strong> — <a href="https://english.visitbeijing.com.cn/article/4Itpbe3Ye1z" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Beijing Huanghuacheng Lakeside Great Wall</a></li>
+        <li>6. <strong>Великая Китайская стена в Цзюйюнгуане</strong> — <a href="https://english.visitbeijing.com.cn/article/47OOq8YYqAs" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Juyongguan Great Wall (居庸关长城)</a></li>
+        <li>7. <strong>Великая Китайская стена в Сыматае</strong> — <a href="https://english.visitbeijing.com.cn/article/4OT1GKn1zoW" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Experience night scenery at Simatai Great Wall</a></li>
+        <li>8. <strong>Как добраться</strong> — <a href="https://english.visitbeijing.com.cn/article/47OLMubjite" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Come to Badaling Great Wall for moon appreciation</a>.</li>
+      </ol>
+      <p class="text-sm text-gray-500 mt-4"><em>Все суммы выше — взрослые тарифы высокого сезона. Источники: официальный туристический портал Пекина (english.visitbeijing.com.cn) и англоязычные сайты самих участков, проверено в сентябре 2026 года.</em></p>
+    </section>
+
+  </article>
+</Layout>

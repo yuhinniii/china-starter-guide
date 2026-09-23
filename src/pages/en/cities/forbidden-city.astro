@@ -1,0 +1,367 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'Forbidden City Guide: Tickets, Routes, and Everything to Know Before You Go';
+const description = 'How to get Forbidden City tickets, choose between the official 2-hour, half-day and full-day routes, and what to see inside the Palace Museum — a complete visitor guide for foreigners.';
+---
+
+<Layout title={title} description={description} lang="en">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+
+    <!-- ============ BREADCRUMB ============ -->
+    <nav class="mb-8 not-prose">
+      <a href="/en/cities/beijing-guide/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Back to Beijing Guide
+      </a>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🏛️ Forbidden City · Beijing</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">Forbidden City Guide: Tickets, Routes, and Everything to Know Before You Go</h1>
+      <p class="text-xl text-gray-600 mb-6">The Palace Museum is the single biggest reason most people come to Beijing — here's how to plan the visit so it actually lives up to the postcard.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Last updated: September 2026</span>
+        <span>⏱️ 7 min read</span>
+      </div>
+    </header>
+
+    <!-- ============ HERO IMAGE ============ -->
+    <figure class="mb-12 not-prose">
+      <img
+        src="/images/forbidden-city/hero-aerial.jpg"
+        alt="Aerial view of the Forbidden City looking north across the golden-glazed roof tops toward Jingshan Park"
+        width="1200"
+        height="800"
+        loading="eager"
+        fetchpriority="high"
+        class="w-full h-auto object-cover rounded-2xl shadow-md"
+      />
+      <figcaption class="text-xs text-gray-500 text-center mt-2">The Forbidden City viewed from Jingshan Hill — 72 hectares of imperial architecture in a single frame.</figcaption>
+    </figure>
+
+    <!-- ============ QUICK ANSWER ============ -->
+    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-red-900 mb-4">⚡ Quick Answer</h2>
+      <p class="text-lg text-red-800 leading-relaxed">
+        You cannot buy a ticket on the day — the Palace Museum sells out 7 days ahead, and in peak season (Apr 1–Oct 31) tickets are <strong>¥60</strong> (¥40 off-season). Book online through the <strong>official Palace Museum website</strong> (foreigners register with their passport and pay by international card — no Chinese payment app required). The museum is closed every Monday (except public holidays). Book at <strong>8 pm Beijing time, exactly 7 days before your visit</strong> — Golden Week slots disappear within minutes.
+      </p>
+    </div>
+
+    <!-- ============ IN THIS GUIDE ============ -->
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 In This Guide</h3>
+      <ul class="space-y-3">
+        <li><a href="#worth-it" class="text-blue-600 hover:underline">🤔 Is the Forbidden City Worth Visiting?</a></li>
+        <li><a href="#tickets" class="text-blue-600 hover:underline">🎫 How Much Are Forbidden City Tickets?</a></li>
+        <li><a href="#guide" class="text-blue-600 hover:underline">🧑‍🏫 With or Without a Guide?</a></li>
+        <li><a href="#routes" class="text-blue-600 hover:underline">🗺️ Three Recommended Routes</a></li>
+        <li><a href="#practical-tips" class="text-blue-600 hover:underline">👟 Practical Tips</a></li>
+        <li><a href="#walking-through" class="text-blue-600 hover:underline">🏯 What You're Actually Walking Through</a></li>
+        <li><a href="#skip" class="text-blue-600 hover:underline">🚫 Three Things You Should Not Skip</a></li>
+      </ul>
+    </nav>
+
+    <!-- ============ SECTION 1: WORTH IT ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="worth-it" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🤔 Is the Forbidden City Worth Visiting?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">It's well worth a visit — it is a UNESCO World Heritage Site and the world's largest and best-preserved complex of wooden palace architecture. It once served as the residence and center of power for 24 emperors of the Ming and Qing dynasties. Behind the red walls and yellow tiles, and among the tiered palaces, lie 600 years of imperial history — from coronation ceremonies to life in the harem. In every corner, visitors can directly experience the grandeur of ancient Chinese royalty and the architectural ingenuity of the era. For foreign visitors, it is not merely "an old building," but a gateway to understanding Chinese history and culture — as you walk across the plaza of the Hall of Supreme Harmony, you will understand why the Chinese often say that the "Forbidden City" embodies the order and aesthetics of an entire empire.</p>
+
+    <!-- ============ SECTION 2: TICKETS ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="tickets" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎫 How Much Are Forbidden City Tickets? (Official Prices and Booking)</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">The Forbidden City is one of the few places in China where the <em>planning</em> is almost as important as the visit itself. Here's everything you need to know, based on the museum's official ticketing rules.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">From the Palace Museum's official ticketing policy:</p>
+
+    <div class="overflow-x-auto mb-12 not-prose">
+      <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+        <thead>
+          <tr class="bg-gray-900 text-white">
+            <th class="px-6 py-4 font-bold">Item</th>
+            <th class="px-6 py-4 font-bold">Price</th>
+            <th class="px-6 py-4 font-bold">Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4">Main gate ticket (peak season, Apr 1–Oct 31)</td>
+            <td class="px-6 py-4 font-semibold">¥60</td>
+            <td class="px-6 py-4">Includes all main halls, excludes the Treasure Gallery and the Clock Gallery</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4">Main gate ticket (off-season, Nov 1–Mar 31)</td>
+            <td class="px-6 py-4 font-semibold">¥40</td>
+            <td class="px-6 py-4"></td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4">Treasure Gallery (珍宝馆)</td>
+            <td class="px-6 py-4 font-semibold">¥10</td>
+            <td class="px-6 py-4">Worth it — houses the famous gold artifacts</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4">Clock Gallery (钟表馆)</td>
+            <td class="px-6 py-4 font-semibold">¥10</td>
+            <td class="px-6 py-4">Also worth it</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4">Senior discount (foreign visitors, age 60+)</td>
+            <td class="px-6 py-4 font-semibold">¥30</td>
+            <td class="px-6 py-4">All three of the above bundled into the discounted ticket</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4">Student discount (foreign, age 7–17; undergraduates and below)</td>
+            <td class="px-6 py-4 font-semibold">¥20</td>
+            <td class="px-6 py-4">Same bundled access; bring a valid student ID</td>
+          </tr>
+          <tr>
+            <td class="px-6 py-4">Children (foreign, age 6 and under)</td>
+            <td class="px-6 py-4 font-semibold">Free</td>
+            <td class="px-6 py-4">No ticket required</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-8"><strong>Booking rules that will make or break your visit:</strong></p>
+    <ul class="space-y-3 mb-12 text-lg text-gray-700">
+      <li>📅 <strong>Sale time:</strong> Tickets go on sale <strong>7 days before your visit date at 20:00 (8 pm)</strong> Beijing time. They usually sell out within minutes — set an alarm.</li>
+      <li>🚫 <strong>No same-day tickets</strong> — the museum does not sell at the gate.</li>
+      <li>🛒 <strong>Where to book:</strong>
+        <ul class="list-disc pl-8 mt-2 space-y-1">
+          <li><a href="https://bookingticket.dpm.org.cn/" target="_blank" rel="noopener" class="text-blue-600 hover:underline font-medium">Official Palace Museum website</a> — register with your passport and pay by international card.</li>
+          <li><a href="https://www.trip.com/t/h6LFHO1J2W2" target="_blank" rel="noopener" class="text-blue-600 hover:underline font-medium">Trip.com guided-tour package</a> — bundles entry + English-speaking guide. Skip the booking race.</li>
+        </ul>
+      </li>
+      <li>📘 <strong>Bring your passport.</strong> Register with your passport number and show the same passport at the gate.</li>
+      <li>🚪 <strong>Entry and exit:</strong> Enter at the <strong>Meridian Gate (午门, south)</strong> only. Exit via <strong>Gate of Divine Prowess (神武门, north)</strong> or <strong>East Glorious Gate (东华门)</strong>.</li>
+      <li>🈚 <strong>Closed every Monday</strong> (except public holidays).</li>
+      <li>🕗 <strong>Hours:</strong> 8:30–17:00 (peak season, last entry 16:00); 8:30–16:30 off-season.</li>
+    </ul>
+
+    <!-- ============ SECTION 3: GUIDE ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="guide" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🧑‍🏫 With or Without a Guide?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">If you want a deeper understanding of the history of the Forbidden City rather than just taking photos and checking it off your list, I highly recommend hiring a tour guide. The Forbidden City was the imperial palace of the Ming and Qing dynasties in China and has a history spanning more than 600 years. It is a masterpiece of ancient Chinese architecture and represents the pinnacle of traditional Chinese palace architecture. From its architectural heritage to its historical significance, they all need a professional tour guide to explain it to us. The guide turns the Forbidden City into a history lesson, not just a beautiful walk.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">On your own, you'll only see the beautiful architecture but miss the even more fascinating stories behind it. You'll pass the marble balustrades carved with dragons, the bronze turtles and cranes in front of the main hall, the ten tiny beasts lined up on one particular roof — and probably not know what any of it means. That's the part most visitors tell themselves they'll research later, and never do.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12 not-prose">
+      <div class="bg-blue-50 border border-blue-100 rounded-2xl p-6">
+        <p class="text-gray-700"><strong>👉 Want a guide?</strong> Trip.com bundles entry with an English-speaking guide — skip the booking race. <a href="https://www.trip.com/t/h6LFHO1J2W2" target="_blank" rel="noopener" class="text-blue-600 hover:underline font-medium">Browse Forbidden City guided tours →</a></p>
+      </div>
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <p class="text-gray-700"><strong>🙌 On your own?</strong> Book your ticket directly on the official Palace Museum website. <a href="https://bookingticket.dpm.org.cn/" target="_blank" rel="noopener" class="text-blue-600 hover:underline font-medium">Go to bookingticket.dpm.org.cn →</a></p>
+      </div>
+    </div>
+
+    <!-- ============ SECTION 4: ROUTES ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="routes" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🗺️ Three Recommended Routes (From the Palace Museum's Official Visitor Map)</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">The Palace Museum publishes three routes inside its visitor map, one for each common time window. All three start at the <strong>Meridian Gate (午门, south)</strong> — the only entrance — and end at the <strong>Gate of Divine Prowess (神武门, north)</strong>, directly across from Jingshan Park. Pick the version that matches how much time you have; the rest of the article assumes you are on one of them.</p>
+
+    <!-- ===== ROUTE A: 2 HOURS ===== -->
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-6 items-start bg-white border border-gray-200 rounded-2xl p-6 mb-10 not-prose">
+      <div class="md:col-span-2 w-full flex flex-col gap-4">
+        <figure class="w-full">
+          <img src="/images/forbidden-city/route-2-hour.png" alt="Forbidden City official 2-hour route map, central axis, 13 numbered stops from Meridian Gate south to Gate of Divine Prowess north" class="w-full h-auto object-contain bg-gray-50 rounded-xl" loading="lazy" />
+          <figcaption class="text-xs text-gray-500 text-center mt-2">Official Route A · 2 Hours · 13 stops (central axis only)</figcaption>
+        </figure>
+        <figure class="w-full">
+          <img
+            src="/images/forbidden-city/hall-of-supreme-harmony.jpg"
+            alt="Front exterior of the Hall of Supreme Harmony showing the double-eaved roof and three-tier marble terrace"
+            width="1024"
+            height="768"
+            loading="lazy"
+            class="w-full h-auto object-cover rounded-2xl shadow-md"
+          />
+          <figcaption class="text-xs text-gray-500 text-center mt-2">太和殿 — the largest wooden structure in China</figcaption>
+        </figure>
+      </div>
+      <div class="md:col-span-3">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">🏛️ Route A — Central Axis Only</h3>
+        <p class="text-base leading-relaxed text-gray-700 mb-4">The quick essentials. If you only came for the iconic photos and one or two great rooms, this is enough — it covers the entire central axis from south to north without a single detour into the side palaces. Almost every tour group walks this same spine, so expect company; the upside is you walk right past 600 years of imperial ceremony in two hours flat.</p>
+        <p class="text-base font-semibold text-gray-900 mb-2">Here is the order, with the reason each stop earns its place:</p>
+        <ol class="space-y-2 list-decimal pl-5 text-base text-gray-700">
+          <li><strong>午门 Meridian Gate</strong> — entry. Look up at the three-tiered tower as you walk through the low tunnel: the squeeze was deliberate, and everyone entered the emperor's presence as a small person.</li>
+          <li><strong>太和门 Taihe Gate</strong> — the largest gate in the complex. Look at the bronze lions: left (male, paw on a ball = ruling the world), right (female, paw on a cub = raising the family).</li>
+          <li><strong>太和殿 Hall of Supreme Harmony</strong> — the largest wooden structure in China. Emperors were enthroned here; the bronze turtles and cranes out front were incense burners, not decoration.</li>
+          <li><strong>弘义阁 Hall of Righteousness</strong> — small west pavilion, built for minor court ceremonies. Almost no tourists.</li>
+          <li><strong>体仁阁 Hall of Benevolence</strong> — matching east pavilion; together with #4, frames the great plaza.</li>
+          <li><strong>中和殿 Hall of Central Harmony</strong> — easy to walk past, but the emperor rested and rehearsed here before the ceremonies at Taihe.</li>
+          <li><strong>保和殿 Hall of Preserving Harmony</strong> — banquet hall, and from 1789 the fixed venue for the final imperial exam. Walk behind it for the "cloud and dragon" stone ramp: 12 craftsmen, 2 years.</li>
+          <li><strong>乾清门 Gate of Heavenly Purity</strong> — crossing it marks the shift from public spectacle to private life.</li>
+          <li><strong>乾清宫 Palace of Heavenly Purity</strong> — the emperors' bedroom through Ming and early Qing. Look for the <strong>正大光明</strong> plaque: from the Qing dynasty, the heir's name was sealed in a box behind it.</li>
+          <li><strong>交泰殿 Hall of Union</strong> — small square hall between the two palaces, used for empress investitures and the imperial seals.</li>
+          <li><strong>坤宁宫 Palace of Earthly Tranquility</strong> — the empress's residence through Ming and Qing. Part was later converted to a Manchu shamanistic hall — one building, two religions.</li>
+          <li><strong>御花园 Imperial Garden</strong> — the back of the complex and your last stop. Rockeries shaped as mountains; pines over 400 years old.</li>
+          <li><strong>神武门 Gate of Divine Prowess</strong> — exit. Cross the road into <strong>Jingshan Park</strong> (¥2) for the single best photo in Beijing.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- ===== ROUTE B: HALF DAY ===== -->
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-6 items-start bg-white border border-gray-200 rounded-2xl p-6 mb-10 not-prose">
+      <figure class="md:col-span-2 w-full">
+        <img src="/images/forbidden-city/route-half-day.png" alt="Forbidden City official half-day route map with 14 numbered stops covering the central axis plus the west-side palaces" class="w-full h-auto object-contain bg-gray-50 rounded-xl" loading="lazy" />
+        <figcaption class="text-xs text-gray-500 text-center mt-2">Official Route B · Half-Day (~3–4 hrs) · 14 stops</figcaption>
+      </figure>
+      <div class="md:col-span-3">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">🏛️ Route B — Half-Day (Adds West Side)</h3>
+        <p class="text-base leading-relaxed text-gray-700 mb-4">Adds the <strong>Wuying Hall</strong> ceramics gallery and the <strong>Western Six Palaces</strong> to the central axis. For most first-time visitors this is the right amount of palace. Stops 1 and 3–13 are the same as Route A — refer back for details. Only the stops unique to this route:</p>
+        <ol class="space-y-2 list-decimal pl-5 text-base text-gray-700" start="2">
+          <li value="2"><strong>武英殿 Wuying Hall</strong> — turn left after entering. The ceramics gallery, in the oldest surviving hall of the complex (1407). Calm, uncrowded, a good place to start.</li>
+          <li value="11"><strong>西六宫 Western Six Palaces</strong> (11–12) — consort residences west of the central axis. The scale drops from state architecture to domestic; you finally see how enclosed imperial women's lives actually were.</li>
+          <li value="14"><strong>神武门 Gate of Divine Prowess</strong> (14) — same exit as Route A, into Jingshan Park.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- ===== ROUTE C: FULL DAY ===== -->
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-6 items-start bg-white border border-gray-200 rounded-2xl p-6 mb-10 not-prose">
+      <figure class="md:col-span-2 w-full">
+        <img src="/images/forbidden-city/route-full-day.png" alt="Forbidden City official full-day route map with 17 numbered stops covering central axis, west and east side palace complexes" class="w-full h-auto object-contain bg-gray-50 rounded-xl" loading="lazy" />
+        <figcaption class="text-xs text-gray-500 text-center mt-2">Official Route C · Full Day (~6+ hrs) · 17 stops</figcaption>
+      </figure>
+      <div class="md:col-span-3">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">🏛️ Route C — Full Day (Both Side Wings)</h3>
+        <p class="text-base leading-relaxed text-gray-700 mb-4">The full coverage. Adds the eastern palace complexes on top of Route B — the rotating exhibitions and every major museum inside the palace walls. Only worth doing if you have a serious interest in Chinese art or architecture. Stops 4–13 are the same as Route A. Only the stops unique to this route:</p>
+        <ol class="space-y-2 list-decimal pl-5 text-base text-gray-700" start="2">
+          <li value="2"><strong>武英殿 Wuying Hall</strong> — west side, ceramics gallery. Same as Route B; the strongest reason to come to this part of the palace.</li>
+          <li value="3"><strong>文华殿 Wenhua Hall</strong> — east-side mirror of Wuying; the painting and calligraphy gallery. If you have time for only one gallery on a full day, make it this one.</li>
+          <li value="14"><strong>西六宫 Western Six Palaces</strong> (14) — consort residences, west side. Same as Route B.</li>
+          <li value="15"><strong>东六宫 Eastern Six Palaces</strong> (15) — consort residences, east side. Mirrors the western wing; mostly empty shells today but architecture intact.</li>
+          <li value="17"><strong>神武门 Gate of Divine Prowess</strong> (17) — same exit as Route A, into Jingshan Park.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Tip: Treasure Gallery / Clock Gallery -->
+    <div class="bg-yellow-50 border border-yellow-100 rounded-2xl p-6 mb-12">
+      <p class="text-gray-700"><strong>💡 Tip:</strong> On any route, the <strong>Treasure Gallery (珍宝馆)</strong> and <strong>Clock Gallery (钟表馆)</strong> are worth their ¥10 each — pick them up as a side loop off the central axis on Routes A or B, or stretch into Route C. The Treasure Gallery is, per yuan, the best museum value in China.</p>
+    </div>
+
+    <!-- ============ SECTION 5: PRACTICAL TIPS ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="practical-tips" class="text-3xl font-bold text-gray-900 mb-6 mt-12">👟 Practical Tips</h2>
+    <ul class="space-y-3 mb-12 text-lg text-gray-700">
+      <li>Please <strong>set your navigation</strong> to "The Palace Museum — Wumen Gate (午门)." This is the only entrance to the Palace Museum; if you just set your destination to "The Palace Museum," you may be directed to the wrong location.</li>
+      <li><strong>Half-day is enough for most people.</strong> 3–4 hours covers the essentials. History buffs can easily spend 6–8 hours.</li>
+      <li><strong>Wear comfortable shoes.</strong> You'll walk 10,000+ steps; there are no shortcuts through the central axis.</li>
+      <li><strong>Photography is allowed</strong> outdoors everywhere. Flash photography is restricted in some gallery spaces.</li>
+      <li><strong>Combine with Jingshan Park</strong> (¥2 entry, 5-minute walk from the north exit) for the postcard view of the whole complex.</li>
+    </ul>
+
+    <!-- ============ SECTION 6: WALKING THROUGH ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="walking-through" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏯 What You Are Actually Walking Through</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">The complex covers <strong>72 hectares</strong> (180 acres) and contains <strong>980 surviving buildings</strong>, the largest wooden architectural ensemble in the world. That number alone is hard to absorb — walking from south to north, you'll cover about 1.6 km, pass through seven main gates, and cross an elevation drop of 2 meters between the front hall and the back garden (a quiet Feng Shui reminder that the emperor ruled all). Here are the details first-time visitors routinely miss:</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-8 items-start mb-12 not-prose">
+      <!-- Left: key-point cards -->
+      <ul class="md:col-span-3 space-y-3">
+        <li class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <p class="text-base text-gray-800"><span class="mr-2">🟡</span><strong>The yellow tiles & ridge beasts.</strong> Every roof is glazed in imperial yellow — reserved for the emperor alone. Along the eaves sits a line of mythical beasts; the Hall of Supreme Harmony alone gets the full set of ten.</p>
+        </li>
+        <li class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <p class="text-base text-gray-800"><span class="mr-2">🐉</span><strong>The "10,000 dragon" carvings.</strong> Marble balustrades near the Hall of Supreme Harmony — nine dragons = imperial, ten = the Dragon Throne alone.</p>
+        </li>
+        <li class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <p class="text-base text-gray-800"><span class="mr-2">🦁</span><strong>The lions under each gate.</strong> Male (paw on ball, ruling the world) and female (paw on cub, raising the family). Some pairs are 600+ years old.</p>
+        </li>
+        <li class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <p class="text-base text-gray-800"><span class="mr-2">☁️</span><strong>The cloud-and-dragon stone doorways.</strong> The most elaborate one, behind the Hall of Preserving Harmony, took 12 craftsmen 2 years to finish.</p>
+        </li>
+        <li class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <p class="text-base text-gray-800"><span class="mr-2">🌳</span><strong>The Imperial Garden (御花园).</strong> The back of the complex, less crowded than the main halls. Rockeries shaped as mountains; pines over 400 years old.</p>
+        </li>
+      </ul>
+      <!-- Right: arranged images -->
+      <div class="md:col-span-2 space-y-6">
+        <figure>
+          <img
+            src="/images/forbidden-city/roof-beasts.jpg"
+            alt="Close-up of the imperial yellow glazed roof tiles and the line of mythical ridge beasts on a Forbidden City palace corner"
+            width="944"
+            height="687"
+            loading="lazy"
+            class="w-full h-auto object-cover rounded-2xl shadow-md"
+          />
+          <figcaption class="text-xs text-gray-500 text-center mt-2">The row of mythical ridge beasts along one roof corner.</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="/images/forbidden-city/corner-tower.jpg"
+            alt="The Forbidden City's southeast corner tower reflected in the moat"
+            width="1200"
+            height="900"
+            loading="lazy"
+            class="w-full h-auto object-cover rounded-2xl shadow-md"
+          />
+          <figcaption class="text-xs text-gray-500 text-center mt-2">The southeast corner tower mirrored in the moat.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- ============ SECTION 7: THREE THINGS ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="skip" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🚫 Three Things You Should Not Skip</h2>
+    <ol class="space-y-3 mb-12 text-lg text-gray-700 list-decimal pl-6 flow-root">
+      <li><strong>The Hall of Supreme Harmony (太和殿)</strong> — the largest wooden structure in China. The throne sits in the middle. The bronze turtles and cranes in front of it were incense burners — the smoke was meant to purify the air symbolically before imperial audiences.</li>
+      <li><strong>The Treasure Gallery (珍宝馆)</strong> — the ¥10 ticket is the best value-for-money of any museum in China. Hall of Supreme Harmony's original roof ridge beasts, the Qianlong-era gold and jade ceremonial weapons, the gold-leaf Buddhas brought back from Tibet in the 18th century. Allow 45 minutes minimum.
+        <figure class="mt-4 md:float-right md:clear-right md:ml-8 md:w-[38%] not-prose">
+          <img
+            src="/images/forbidden-city/nine-dragon-wall.jpg"
+            alt="Close-up of one of the glazed dragons on the Nine Dragon Wall inside the Forbidden City Treasure Gallery complex"
+            width="442"
+            height="300"
+            loading="lazy"
+            class="w-full h-auto object-cover rounded-2xl shadow-md"
+          />
+          <figcaption class="text-xs text-gray-500 text-center mt-2">A glazed dragon on the Nine Dragon Wall, inside the Treasure Gallery complex.</figcaption>
+        </figure>
+      </li>
+
+      <li><strong>The Palace of Heavenly Purity (乾清宫)</strong> — the emperors' residence through the Ming and into the early Qing. The central plaque above the throne (<strong>正大光明</strong>, "bright and upright") was written personally by each new Qing emperor. The "thirteen princes" plaques on either side are engraved instructions for imperial conduct.</li>
+    </ol>
+
+    <!-- ============ NEXT READS ============ -->
+    <div class="border-t border-gray-100 pt-8 mt-8 not-prose">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h3 class="text-sm font-bold text-gray-900">📚 Next Reads</h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="/en/cities/beijing-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🏙️ Beijing Travel Guide
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/en/cities/great-wall/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🧱 Great Wall Guide
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/en/cities/city-select/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              📅 How Many Days Do You Need in China?
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/en/visa/visa-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🛂 China Visa & Entry Guide
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ SOURCES ============ -->
+    <section class="mt-10 pt-6 border-t border-gray-100">
+      <h3 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-4">Sources</h3>
+      <ol class="space-y-2 text-sm text-gray-500">
+        <li>1. <strong>Palace Museum Official Ticket Policy</strong> (故宫博物院票务政策) — <a href="https://intl.dpm.org.cn/visit.html" target="_blank" rel="noopener" class="text-blue-600 hover:underline">intl.dpm.org.cn</a></li>
+        <li>2. <strong>Palace Museum Online Booking</strong> (故宫博物院在线订票) — <a href="https://bookingticket.dpm.org.cn/" target="_blank" rel="noopener" class="text-blue-600 hover:underline">bookingticket.dpm.org.cn</a></li>
+        <li>3. <strong>CCTV report on 2026 holiday and Forbidden City free opening</strong> — <a href="https://news.cctv.com/2025/12/29/ARTInhrENbHw5LqaS0ZoU5vc251229.shtml" target="_blank" rel="noopener" class="text-blue-600 hover:underline">news.cctv.com</a></li>
+      </ol>
+    </section>
+
+  </article>
+</Layout>

@@ -1,0 +1,363 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = '故宮ガイド：チケット、見学ルート、訪問前に知っておきたいこと';
+const description = '故宮博物院のチケットの取り方、公式の2時間・半日・1日ルートの選び方、そして故宮博物院の中で何を見るか——外国人旅行者向けの完全ガイド。';
+---
+
+<Layout title={title} description={description} lang="ja">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+
+    <!-- ============ BREADCRUMB ============ -->
+    <nav class="mb-8 not-prose">
+      <a href="/ja/cities/beijing-guide/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        北京ガイドに戻る
+      </a>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🏛️ 故宮 · 北京</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">故宮ガイド：チケット、見学ルート、訪問前に知っておきたいこと</h1>
+      <p class="text-xl text-gray-600 mb-6">故宮博物院は、多くの人が北京を訪れる一番の理由です。ここでは、その訪問が絵はがき通りの期待に応えるものになるよう、計画の立て方を紹介します。</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 最終更新：2026年9月</span>
+        <span>⏱️ 7分（読了）</span>
+      </div>
+    </header>
+
+    <!-- ============ HERO IMAGE ============ -->
+    <figure class="mb-12 not-prose">
+      <img
+        src="/images/forbidden-city/hero-aerial.jpg"
+        alt="景山公園方面へ北を望む、金色の瑠璃瓦屋根越しの故宮の空撮"
+        width="1200"
+        height="800"
+        loading="eager"
+        fetchpriority="high"
+        class="w-full h-auto object-cover rounded-2xl shadow-md"
+      />
+      <figcaption class="text-xs text-gray-500 text-center mt-2">景山から見た故宮——72ヘクタールの宮殿建築が一枚の写真に。</figcaption>
+    </figure>
+
+    <!-- ============ QUICK ANSWER ============ -->
+    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-red-900 mb-4">⚡ クイックアンサー</h2>
+      <p class="text-lg text-red-800 leading-relaxed">
+        当日券はありません——故宮のチケットは7日前に発売され、繁忙期（4月1日〜10月31日）は<strong>¥60</strong>（閑散期は¥40）。<strong>故宮博物院の公式サイト</strong>からオンラインで予約してください（外国人はパスポートで登録し、国際カードで支払えます。中国の決済アプリは不要）。毎週月曜は休館です（祝日を除く）。<strong>見学日のちょうど7日前、北京時間の午後8時</strong>に予約を——ゴールデンウィークの枠は数分で消えます。
+      </p>
+    </div>
+
+    <!-- ============ IN THIS GUIDE ============ -->
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 このガイド</h3>
+      <ul class="space-y-3">
+        <li><a href="#worth-it" class="text-blue-600 hover:underline">🤔 故宮は行く価値がある？</a></li>
+        <li><a href="#tickets" class="text-blue-600 hover:underline">🎫 故宮のチケットはいくら？</a></li>
+        <li><a href="#guide" class="text-blue-600 hover:underline">🧑‍🏫 ガイドは付けるべき？</a></li>
+        <li><a href="#routes" class="text-blue-600 hover:underline">🗺️ おすすめの3ルート</a></li>
+        <li><a href="#practical-tips" class="text-blue-600 hover:underline">👟 実用アドバイス</a></li>
+        <li><a href="#walking-through" class="text-blue-600 hover:underline">🏯 実際に何の中を歩いているのか</a></li>
+        <li><a href="#skip" class="text-blue-600 hover:underline">🚫 見逃せない3つのもの</a></li>
+      </ul>
+    </nav>
+
+    <!-- ============ SECTION 1: WORTH IT ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="worth-it" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🤔 故宮は行く価値がある？</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">行く価値は十分あります——ユネスコ世界遺産であり、世界最大かつ最も保存状態の良い木造宮殿建築群です。かつては明清両王朝24人の皇帝の住まいであり、権力の中心でした。赤い壁と黄色い瓦、そして幾重にも重なる宮殿の奥には、戴冠式から後宮の暮らしまで、600年の帝国の歴史が息づいています。どの一角でも、訪れた人は古代中国の皇室の威容と、当時の建築技術の粋を直接感じ取ることができます。外国人旅行者にとって、それは単なる「古い建物」ではなく、中国の歴史と文化を理解する入口です——太和殿前の広場を歩けば、中国人がよく「故宮」が帝国全体の秩序と美意識を体現していると言う理由がわかるでしょう。</p>
+
+    <!-- ============ SECTION 2: TICKETS ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="tickets" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎫 故宮のチケットはいくら？（公式価格と予約方法）</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">故宮は、中国でも<em>事前準備</em>が訪問そのものと同じくらい重要な、数少ない場所のひとつです。ここでは、博物院の公式チケット規定にもとづいて、知っておくべきことをすべてまとめました。</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">故宮博物院の公式チケット規定より：</p>
+
+    <div class="overflow-x-auto mb-12 not-prose">
+      <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+        <thead>
+          <tr class="bg-gray-900 text-white">
+            <th class="px-6 py-4 font-bold">項目</th>
+            <th class="px-6 py-4 font-bold">価格</th>
+            <th class="px-6 py-4 font-bold">備考</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4">入場券（繁忙期、4月1日〜10月31日）</td>
+            <td class="px-6 py-4 font-semibold">¥60</td>
+            <td class="px-6 py-4">主要な宮殿をすべて含む。珍宝館と時計館は含まない</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4">入場券（閑散期、11月1日〜3月31日）</td>
+            <td class="px-6 py-4 font-semibold">¥40</td>
+            <td class="px-6 py-4"></td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4">珍宝館（珍宝馆）</td>
+            <td class="px-6 py-4 font-semibold">¥10</td>
+            <td class="px-6 py-4">行く価値あり——有名な金製品を収蔵</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4">時計館（钟表馆）</td>
+            <td class="px-6 py-4 font-semibold">¥10</td>
+            <td class="px-6 py-4">こちらも行く価値あり</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4">シニア割引（外国人、60歳以上）</td>
+            <td class="px-6 py-4 font-semibold">¥30</td>
+            <td class="px-6 py-4">上記3つすべてが割引チケットに含まれる</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4">学生割引（外国人、7〜17歳、学部生以下）</td>
+            <td class="px-6 py-4 font-semibold">¥20</td>
+            <td class="px-6 py-4">同じ内容が含まれる。有効な学生証を持参</td>
+          </tr>
+          <tr>
+            <td class="px-6 py-4">子ども（外国人、6歳以下）</td>
+            <td class="px-6 py-4 font-semibold">無料</td>
+            <td class="px-6 py-4">チケット不要</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-8"><strong>入場できるかどうかを左右する予約ルール：</strong></p>
+    <ul class="space-y-3 mb-12 text-lg text-gray-700">
+      <li>📅 <strong>販売時間：</strong>チケットは<strong>見学日の7日前の20:00（午後8時）</strong>（北京時間）に発売されます。通常は数分で完売するので、アラームを設定しましょう。</li>
+      <li>🚫 <strong>当日券はありません</strong>——窓口では販売していません。</li>
+      <li>🛒 <strong>予約先：</strong>
+        <ul class="list-disc pl-8 mt-2 space-y-1">
+          <li><a href="https://bookingticket.dpm.org.cn/" target="_blank" rel="noopener" class="text-blue-600 hover:underline font-medium">故宮博物院 公式サイト</a>——パスポートで登録し、国際カードで支払えます。</li>
+          <li><a href="https://www.trip.com/t/h6LFHO1J2W2" target="_blank" rel="noopener" class="text-blue-600 hover:underline font-medium">Trip.com ガイド付きツアー</a>——入場＋英語ガイド付き。予約競争を避けられます。</li>
+        </ul>
+      </li>
+      <li>📘 <strong>パスポートを持参。</strong>パスポート番号で登録し、入場時に同じパスポートを提示してください。</li>
+      <li>🚪 <strong>入場と退場：</strong>入場は南の<strong>午門</strong>のみ。退場は北の<strong>神武門</strong>または<strong>東華門</strong>から。</li>
+      <li>🈚 <strong>毎週月曜は休館</strong>（祝日を除く）。</li>
+      <li>🕗 <strong>開館時間：</strong>繁忙期8:30〜17:00（最終入場16:00）、閑散期8:30〜16:30。</li>
+    </ul>
+
+    <!-- ============ SECTION 3: GUIDE ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="guide" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🧑‍🏫 ガイドは付けるべき？</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">写真を撮ってチェックリストを埋めるだけでなく、故宮の歴史をもっと深く理解したいなら、ガイドを頼むことを強くおすすめします。故宮は明清両王朝の皇宮で、600年以上の歴史があります。中国古代建築の傑作であり、中国の伝統的な宮殿建築の頂点を代表するものです。建築遺産としても歴史的な意義としても、専門のガイドに説明してもらう必要があります。ガイドがいれば、故宮はただの美しい散歩ではなく、歴史の授業になります。</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">自分だけで回ると、美しい建築は見えても、その背後にあるもっと魅力的な物語を見逃してしまいます。龍が彫られた大理石の欄干、大殿前の銅の亀と鶴、ある屋根に並んだ10匹の小さな獣——それらが何を意味するのか、おそらくわからないまま通り過ぎるでしょう。そして、それが多くの観光客が「あとで調べよう」と思いながら、結局調べない部分なのです。</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12 not-prose">
+      <div class="bg-blue-50 border border-blue-100 rounded-2xl p-6">
+        <p class="text-gray-700"><strong>👉 ガイドが欲しい？</strong> Trip.com は入場と英語ガイドをセットにしています——予約競争を避けられます。<a href="https://www.trip.com/t/h6LFHO1J2W2" target="_blank" rel="noopener" class="text-blue-600 hover:underline font-medium">故宮のガイドツアーを見る →</a></p>
+      </div>
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <p class="text-gray-700"><strong>🙌 自分で回る？</strong> 故宮博物院の公式サイトで直接チケットを予約しましょう。<a href="https://bookingticket.dpm.org.cn/" target="_blank" rel="noopener" class="text-blue-600 hover:underline font-medium">bookingticket.dpm.org.cn へ →</a></p>
+      </div>
+    </div>
+
+    <!-- ============ SECTION 4: ROUTES ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="routes" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🗺️ おすすめの3ルート（故宮博物院の公式マップより）</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">故宮博物院は公式の見学マップに3つのルートを用意しています。よくある所要時間ごとに1つずつです。3つとも<strong>午門（南）</strong>——唯一の入口——から始まり、景山公園の真向かいにある<strong>神武門（北）</strong>で終わります。使える時間に合うものを選んでください。以下の本文は、そのいずれかを歩いている前提で書かれています。</p>
+
+    <!-- ===== ROUTE A: 2 HOURS ===== -->
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-6 items-start bg-white border border-gray-200 rounded-2xl p-6 mb-10 not-prose">
+      <div class="md:col-span-2 w-full flex flex-col gap-4">
+        <figure class="w-full">
+          <img src="/images/forbidden-city/route-2-hour.png" alt="故宮公式2時間ルートマップ：中軸線、南の午門から北の神武門までの13の番号付きスポット" class="w-full h-auto object-contain bg-gray-50 rounded-xl" loading="lazy" />
+          <figcaption class="text-xs text-gray-500 text-center mt-2">公式ルートA · 2時間 · 13スポット（中軸線のみ）</figcaption>
+        </figure>
+        <figure class="w-full">
+          <img
+            src="/images/forbidden-city/hall-of-supreme-harmony.jpg"
+            alt="太和殿の正面外観。重檐の屋根と三段の大理石基壇"
+            width="1024"
+            height="768"
+            loading="lazy"
+            class="w-full h-auto object-cover rounded-2xl shadow-md"
+          />
+          <figcaption class="text-xs text-gray-500 text-center mt-2">太和殿——中国最大の木造建築</figcaption>
+        </figure>
+      </div>
+      <div class="md:col-span-3">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">🏛️ ルートA——中軸線のみ</h3>
+        <p class="text-base leading-relaxed text-gray-700 mb-4">最短で要点を。象徴的な写真と1〜2の大殿だけが目的なら、これで十分です——南から北へ中軸線をすべてカバーし、左右の宮殿には一切寄り道しません。ほとんどすべてのツアーが同じ軸を歩くので、人は多いです。その代わり、600年の皇室の儀式をちょうど2時間で通り抜けられます。</p>
+        <p class="text-base font-semibold text-gray-900 mb-2">順番と、各スポットが選ばれる理由は次のとおりです：</p>
+        <ol class="space-y-2 list-decimal pl-5 text-base text-gray-700">
+          <li><strong>午門</strong>——入口。低いトンネルをくぐるとき、三層の城楼を見上げてください：この圧迫感は意図的なもので、誰もが皇帝の前では小さな存在として入っていきました。</li>
+          <li><strong>太和門</strong>——宮中最大の門。銅の獅子に注目：左（雄、玉を踏む＝天下を治める）、右（雌、子獅子を撫でる＝家族を育てる）。</li>
+          <li><strong>太和殿</strong>——中国最大の木造建築。皇帝はここで即位しました。前にある銅の亀と鶴は香炉で、飾りではありません。</li>
+          <li><strong>弘義閣</strong>——西側の小さな楼閣。小規模な儀式のために建てられました。観光客はほとんどいません。</li>
+          <li><strong>体仁閣</strong>——対になる東側の楼閣。4番とともに大広場を形づくります。</li>
+          <li><strong>中和殿</strong>——通り過ぎがちですが、皇帝は太和殿での式典の前にここで休み、作法を確認しました。</li>
+          <li><strong>保和殿</strong>——宴会場で、1789年以降は殿試（最終試験）の定会場でした。裏に回ると「雲龍」の石彫の坂道があります：12人の職人が2年がかり。</li>
+          <li><strong>乾清門</strong>——ここをくぐると、公の儀式から私的な日常に切り替わります。</li>
+          <li><strong>乾清宮</strong>——明から清初期にかけての皇帝の寝室。額<strong>正大光明</strong>に注目：清王朝以降、後継者の名前はその裏の箱に封印されていました。</li>
+          <li><strong>交泰殿</strong>——二つの宮殿の間にある小さな方形の殿。皇后の冊立や御璽の保管に使われました。</li>
+          <li><strong>坤寧宮</strong>——明清を通じて皇后の住まい。後に一部が満州のシャーマン祭祀の場に改められました——ひとつの建物、ふたつの信仰。</li>
+          <li><strong>御花園</strong>——宮殿の最奥で、最後のスポット。山の形に積まれた庭石。樹齢400年以上の松。</li>
+          <li><strong>神武門</strong>——出口。道を渡って<strong>景山公園</strong>（¥2）へ。北京で最高の一枚が撮れます。</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- ===== ROUTE B: HALF DAY ===== -->
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-6 items-start bg-white border border-gray-200 rounded-2xl p-6 mb-10 not-prose">
+      <figure class="md:col-span-2 w-full">
+        <img src="/images/forbidden-city/route-half-day.png" alt="故宮公式半日ルートマップ：中軸線と西側の宮殿を含む14の番号付きスポット" class="w-full h-auto object-contain bg-gray-50 rounded-xl" loading="lazy" />
+        <figcaption class="text-xs text-gray-500 text-center mt-2">公式ルートB · 半日（約3〜4時間） · 14スポット</figcaption>
+      </figure>
+      <div class="md:col-span-3">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">🏛️ ルートB——半日（西側を追加）</h3>
+        <p class="text-base leading-relaxed text-gray-700 mb-4">中軸線に<strong>武英殿</strong>の陶磁器館と<strong>西六宮</strong>を加えます。初めて訪れる人には、これがちょうどよい分量です。1番と3〜13番はルートAと同じ——詳細は上を参照してください。ここではこのルート独自のスポットだけを挙げます：</p>
+        <ol class="space-y-2 list-decimal pl-5 text-base text-gray-700" start="2">
+          <li value="2"><strong>武英殿</strong>——入場後すぐ左へ。陶磁器館は、宮中に現存する最古の殿（1407年）にあります。静かで混んでおらず、良いスタート地点です。</li>
+          <li value="11"><strong>西六宮</strong>（11〜12）——中軸線の西にある妃たちの住まい。規模が国家の建築から暮らしの場へと落ち、宮中の女性の生活がどれほど閉じられていたかがわかります。</li>
+          <li value="14"><strong>神武門</strong>（14）——ルートAと同じ出口で、景山公園へ。</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- ===== ROUTE C: FULL DAY ===== -->
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-6 items-start bg-white border border-gray-200 rounded-2xl p-6 mb-10 not-prose">
+      <figure class="md:col-span-2 w-full">
+        <img src="/images/forbidden-city/route-full-day.png" alt="故宮公式1日ルートマップ：中軸線と東西両側の宮殿群を含む17の番号付きスポット" class="w-full h-auto object-contain bg-gray-50 rounded-xl" loading="lazy" />
+        <figcaption class="text-xs text-gray-500 text-center mt-2">公式ルートC · 1日（約6時間以上） · 17スポット</figcaption>
+      </figure>
+      <div class="md:col-span-3">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">🏛️ ルートC——1日（東西両翼）</h3>
+        <p class="text-base leading-relaxed text-gray-700 mb-4">完全網羅。ルートBに東側の宮殿群を加えます——入れ替わり展示と、宮壁内の主要な展示館すべてを含みます。中国の美術や建築に強い関心がある場合のみ価値があります。4〜13番はルートAと同じ。ここではこのルート独自のスポットだけを挙げます：</p>
+        <ol class="space-y-2 list-decimal pl-5 text-base text-gray-700" start="2">
+          <li value="2"><strong>武英殿</strong>——西側、陶磁器館。ルートBと同じ。この一帯に来る最大の理由です。</li>
+          <li value="3"><strong>文華殿</strong>——武英殿と対をなす東側。書画館です。1日で展示館ひとつだけなら、ここを選びましょう。</li>
+          <li value="14"><strong>西六宮</strong>（14）——妃たちの住まい、西側。ルートBと同じ。</li>
+          <li value="15"><strong>東六宮</strong>（15）——妃たちの住まい、東側。西翼と対をなします。現在は空の殿が多いですが、建築は保たれています。</li>
+          <li value="17"><strong>神武門</strong>（17）——ルートAと同じ出口で、景山公園へ。</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Tip: Treasure Gallery / Clock Gallery -->
+    <div class="bg-yellow-50 border border-yellow-100 rounded-2xl p-6 mb-12">
+      <p class="text-gray-700"><strong>💡 ワンポイント：</strong>どのルートでも、<strong>珍宝館</strong>と<strong>時計館</strong>はそれぞれ¥10の価値があります——ルートAかBなら中軸線から少し外れて立ち寄り、ルートCなら無理なく組み込めます。珍宝館は1元あたりで見れば中国で最もコスパの良い展示館です。</p>
+    </div>
+
+    <!-- ============ SECTION 5: PRACTICAL TIPS ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="practical-tips" class="text-3xl font-bold text-gray-900 mb-6 mt-12">👟 実用アドバイス</h2>
+    <ul class="space-y-3 mb-12 text-lg text-gray-700">
+      <li>ナビの<strong>目的地</strong>を「故宮博物院—午門」に設定してください。ここが故宮博物院唯一の入口です。「故宮博物院」だけを設定すると、別の場所に案内されることがあります。</li>
+      <li><strong>多くの人には半日で十分です。</strong>3〜4時間で要点を回れます。歴史好きなら6〜8時間は平気で過ごせます。</li>
+      <li><strong>歩きやすい靴で。</strong>1万歩以上歩きます。中軸線に近道はありません。</li>
+      <li><strong>屋外はどこでも撮影できます。</strong>一部の展示室ではフラッシュ撮影が制限されています。</li>
+      <li><strong>景山公園と組み合わせて</strong>（入場¥2、北口から徒歩5分）宮殿全体の絵はがきのような眺めを。</li>
+    </ul>
+
+    <!-- ============ SECTION 6: WALKING THROUGH ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="walking-through" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏯 実際に何の中を歩いているのか</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8"><strong>72ヘクタール</strong>の敷地に<strong>980棟の現存建築</strong>を擁する、世界最大の木造建築群です。数字だけでは実感しにくいですが——南から北へ歩くと約1.6km、七つの主要な門をくぐり、前殿と後園の間に2メートルの高低差があります（皇帝がすべてを統べることを静かに示す風水のしるし）。初めての人がよく見落とすポイントは次のとおりです：</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-8 items-start mb-12 not-prose">
+      <!-- Left: key-point cards -->
+      <ul class="md:col-span-3 space-y-3">
+        <li class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <p class="text-base text-gray-800"><span class="mr-2">🟡</span><strong>黄色い瓦と棟の獣。</strong>すべての屋根は皇帝専用の黄色い瑠璃瓦で葺かれています。軒に沿って神獣が並び、太和殿だけが十匹すべてを備えています。</p>
+        </li>
+        <li class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <p class="text-base text-gray-800"><span class="mr-2">🐉</span><strong>「万龍」の彫刻。</strong>太和殿近くの大理石の欄干——九龍は皇室の格式、十龍は龍椅の場所だけに許されました。</p>
+        </li>
+        <li class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <p class="text-base text-gray-800"><span class="mr-2">🦁</span><strong>各門の下の獅子。</strong>雄（玉を踏む＝天下を治める）と雌（子獅子を撫でる＝家族を育てる）。なかには600年以上たつものも。</p>
+        </li>
+        <li class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <p class="text-base text-gray-800"><span class="mr-2">☁️</span><strong>雲龍の石彫。</strong>最も精巧なものは保和殿の後ろにあり、12人の職人が2年かけて仕上げました。</p>
+        </li>
+        <li class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <p class="text-base text-gray-800"><span class="mr-2">🌳</span><strong>御花園。</strong>宮殿の最奥で、主要な殿より空いています。山の形に積まれた庭石。樹齢400年以上の松。</p>
+        </li>
+      </ul>
+      <!-- Right: arranged images -->
+      <div class="md:col-span-2 space-y-6">
+        <figure>
+          <img
+            src="/images/forbidden-city/roof-beasts.jpg"
+            alt="故宮のとある殿角の黄色い瑠璃瓦と並ぶ神獣のクローズアップ"
+            width="944"
+            height="687"
+            loading="lazy"
+            class="w-full h-auto object-cover rounded-2xl shadow-md"
+          />
+          <figcaption class="text-xs text-gray-500 text-center mt-2">屋根の一角に並ぶ神獣の列。</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="/images/forbidden-city/corner-tower.jpg"
+            alt="堀に映る故宮の東南角楼"
+            width="1200"
+            height="900"
+            loading="lazy"
+            class="w-full h-auto object-cover rounded-2xl shadow-md"
+          />
+          <figcaption class="text-xs text-gray-500 text-center mt-2">堀に映る東南角楼。</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- ============ SECTION 7: THREE THINGS ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="skip" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🚫 見逃せない3つのもの</h2>
+    <ol class="space-y-3 mb-12 text-lg text-gray-700 list-decimal pl-6 flow-root">
+      <li><strong>太和殿</strong>——中国最大の木造建築。中央に玉座があります。前の銅の亀と鶴は香炉で、皇帝が謁見する前に香を焚き、空気を浄める象徴的な意味がありました。</li>
+      <li><strong>珍宝館</strong>——¥10のチケットは中国のどの博物館よりもコスパが高い。太和殿の元の棟の獣、乾隆時代の金と玉の儀礼用武器、18世紀にチベットから持ち帰られた金箔の仏像。最低45分は見ておきましょう。
+        <figure class="mt-4 md:float-right md:clear-right md:ml-8 md:w-[38%] not-prose">
+          <img
+            src="/images/forbidden-city/nine-dragon-wall.jpg"
+            alt="故宮珍宝館エリア内の九龍壁にある瑠璃の龍のクローズアップ"
+            width="442"
+            height="300"
+            loading="lazy"
+            class="w-full h-auto object-cover rounded-2xl shadow-md"
+          />
+          <figcaption class="text-xs text-gray-500 text-center mt-2">珍宝館エリア内、九龍壁の瑠璃の龍。</figcaption>
+        </figure>
+      </li>
+
+      <li><strong>乾清宮</strong>——明から清初期にかけての皇帝の住まい。玉座の上の中央の額（<strong>正大光明</strong>）は、新たに即位した清の皇帝が自ら書いたものです。両側の「十三皇子」の額は、皇帝の行いに関する戒めを刻んだものです。</li>
+    </ol>
+
+    <!-- ============ NEXT READS ============ -->
+    <div class="border-t border-gray-100 pt-8 mt-8 not-prose">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h3 class="text-sm font-bold text-gray-900">📚 関連ガイド</h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="/ja/cities/beijing-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🏙️ 北京旅行ガイド
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ja/cities/city-select/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              📅 中国旅行の必要日数
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ja/visa/visa-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🛂 中国ビザ・入国ガイド
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ SOURCES ============ -->
+    <section class="mt-10 pt-6 border-t border-gray-100">
+      <h3 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-4">出典</h3>
+      <ol class="space-y-2 text-sm text-gray-500">
+        <li>1. <strong>故宮博物院 公式チケット規定</strong>（故宫博物院票务政策）——<a href="https://intl.dpm.org.cn/visit.html" target="_blank" rel="noopener" class="text-blue-600 hover:underline">intl.dpm.org.cn</a></li>
+        <li>2. <strong>故宮博物院 オンライン予約</strong>（故宫博物院在线订票）——<a href="https://bookingticket.dpm.org.cn/" target="_blank" rel="noopener" class="text-blue-600 hover:underline">bookingticket.dpm.org.cn</a></li>
+        <li>3. <strong>2026年の休暇と故宮無料開放に関するCCTVの報道</strong>——<a href="https://news.cctv.com/2025/12/29/ARTInhrENbHw5LqaS0ZoU5vc251229.shtml" target="_blank" rel="noopener" class="text-blue-600 hover:underline">news.cctv.com</a></li>
+      </ol>
+    </section>
+
+  </article>
+</Layout>

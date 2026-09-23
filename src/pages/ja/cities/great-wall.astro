@@ -1,0 +1,480 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = '中国の万里の長城ガイド：どの区間に行くべきか';
+const description = '6つの万里の長城区間を比較——八達嶺、慕田峪、金山嶺、司馬台、黄花城、居庸関の混雑度、難易度、チケット、夜遊について。';
+---
+
+<Layout title={title} description={description} lang="ja">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+
+    <!-- ============ BREADCRUMB ============ -->
+    <nav class="mb-8 not-prose">
+      <a href="/ja/cities/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        都市ガイドに戻る
+      </a>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🧱 万里の長城 · 北京</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">中国の万里の長城：どの区間に行くべきか</h1>
+      <p class="text-xl text-gray-600 mb-6">八達嶺、慕田峪、金山嶺、それとも司馬台——実際の違いは何か、そしてあなたの旅程に合うのはどの区間か。</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 最終更新：2026年9月</span>
+        <span>⏱️ 読了時間：12分</span>
+      </div>
+    </header>
+
+    <!-- ============ HERO IMAGE ============ -->
+    <figure class="mb-12 not-prose">
+      <img
+        src="/images/great-wall/comparison-grid.webp"
+        alt="北京近郊の6つの万里の長城区間の全景：春の花の中の八達嶺、秋色の慕田峪、雲海の上の金山嶺、古北水鎮の夜景に灯る司馬台、碧い湖に沈む黄花城、そして居庸関の関城"
+        width="1200"
+        height="534"
+        loading="eager"
+        fetchpriority="high"
+        class="w-full h-auto object-cover rounded-2xl shadow-md"
+      />
+      <figcaption class="text-xs text-gray-500 text-center mt-2">同じ城壁、6つの異なる日。左上から右下へ：八達嶺、慕田峪、金山嶺、司馬台、黄花城、居庸関。</figcaption>
+    </figure>
+
+    <!-- ============ QUICK ANSWER ============ -->
+    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-red-900 mb-4">⚡ クイックアンサー</h2>
+      <p class="text-lg text-red-800 leading-relaxed">
+        <strong>慕田峪</strong> は、大多数の初めての訪問者にとって最もバランスの取れた選択肢です——完全に修復され、ダイナミックで、ケーブルカーで上り、ソリで下りられ、八達嶺の混雑のごく一部で済みます。<strong>八達嶺</strong> は決定的な一区間です——最初に観光客に開放された区間であり、各国首脳が訪れる区間でもあり、修復区間の中で最も壮大で、888 m の北8楼まで登ります；また圧倒的に最も混雑します。<strong>金山嶺</strong> はハイカーや写真家のお気に入りです——静かで修復が少なく、67 基の敵楼と雲海のための未明の開門があります。<strong>司馬台</strong> は雰囲気のある区間です——通年の夜間ツアーがあり、その足元に古北水鎮があります。<strong>黄花城</strong> は異色の存在です——城壁が開水面に沈む唯一の区間で、ボートとガラス橋があります。<strong>居庸関</strong> は最も近く、最も静かな関所です——尾根を登るのではなく関城のループであり、半日や冬に最適です。
+      </p>
+    </div>
+
+    <!-- ============ IN THIS GUIDE ============ -->
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 このガイドの内容</h3>
+      <ul class="space-y-3">
+        <li><a href="#which-section" class="text-blue-600 hover:underline">🤔 どの区間に行くべきか？</a></li>
+        <li><a href="#night" class="text-blue-600 hover:underline">🌙 万里の長城を夜に訪れられますか？</a></li>
+        <li><a href="#badaling" class="text-blue-600 hover:underline">🏔️ 八達嶺</a></li>
+        <li><a href="#mutianyu" class="text-blue-600 hover:underline">🌳 慕田峪</a></li>
+        <li><a href="#jinshanling" class="text-blue-600 hover:underline">☁️ 金山嶺</a></li>
+        <li><a href="#simatai" class="text-blue-600 hover:underline">🌃 司馬台</a></li>
+        <li><a href="#huanghuacheng" class="text-blue-600 hover:underline">💧 黄花城</a></li>
+        <li><a href="#juyongguan" class="text-blue-600 hover:underline">🏯 居庸関</a></li>
+        <li><a href="#tickets" class="text-blue-600 hover:underline">🎫 チケットと予約</a></li>
+        <li><a href="#best-time" class="text-blue-600 hover:underline">📅 行くのに最適な時期</a></li>
+        <li><a href="#practical-tips" class="text-blue-600 hover:underline">👟 何を持って行くべきか？</a></li>
+        <li><a href="#history" class="text-blue-600 hover:underline">📜 明のレンガ、秦ではなく</a></li>
+      </ul>
+    </nav>
+
+    <!-- ============ SECTION 1: WHICH SECTION ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="which-section" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🤔 どの区間に行くべきか？</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">厳密には、すべての区間が同じ城壁です。しかし、同じ一日を過ごせる区間は二つとしてありません。重要な違いは距離やチケット代ではなく、<strong>どれだけ混雑するか、どれだけ体力を使うか、そしてそこに着いたときに城壁が実際に何をしているか</strong>（尾根を渡る、湖に沈む、あるいは夜空に照らし出される）です。以下の区間は、初回または 2 回目の訪問に合う可能性の高さ順に並べています。</p>
+
+    <h3 class="text-xl font-bold text-gray-900 mb-4">6つの万里の長城区間を比較</h3>
+
+    <div class="overflow-x-auto mb-8 not-prose">
+      <table class="w-full text-sm text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+        <thead>
+          <tr class="bg-gray-900 text-white">
+            <th class="px-3 py-3 font-bold align-bottom">区間</th>
+            <th class="px-3 py-3 font-bold align-bottom">北京からの距離</th>
+            <th class="px-3 py-3 font-bold align-bottom">混雑度</th>
+            <th class="px-3 py-3 font-bold align-bottom">難易度</th>
+            <th class="px-3 py-3 font-bold align-bottom">入場料</th>
+            <th class="px-3 py-3 font-bold align-bottom">所要時間</th>
+            <th class="px-3 py-3 font-bold align-bottom">子ども向け？</th>
+            <th class="px-3 py-3 font-bold align-bottom">一番の見どころ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="px-3 py-3 font-semibold">八達嶺</td>
+            <td class="px-3 py-3">70 km・高速鉄道 約35分</td>
+            <td class="px-3 py-3">極めて多い</td>
+            <td class="px-3 py-3">易しい</td>
+            <td class="px-3 py-3">¥40</td>
+            <td class="px-3 py-3">3〜4時間</td>
+            <td class="px-3 py-3">あり（ロープウェイ）</td>
+            <td class="px-3 py-3">圧倒的なスケール——そして最大のナイトショー</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-3 py-3 font-semibold">慕田峪</td>
+            <td class="px-3 py-3">70 km・車で約1.5時間</td>
+            <td class="px-3 py-3">中程度</td>
+            <td class="px-3 py-3">易しい〜中程度</td>
+            <td class="px-3 py-3">¥45</td>
+            <td class="px-3 py-3">半日</td>
+            <td class="px-3 py-3">あり（ケーブルカー＋ソリ）</td>
+            <td class="px-3 py-3">23 基の修復敵楼、その後はソリで下山</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-3 py-3 font-semibold">金山嶺</td>
+            <td class="px-3 py-3">130 km・車で約2.5時間</td>
+            <td class="px-3 py-3">少ない</td>
+            <td class="px-3 py-3">厳しい</td>
+            <td class="px-3 py-3">¥65</td>
+            <td class="px-3 py-3">1日中</td>
+            <td class="px-3 py-3">なし</td>
+            <td class="px-3 py-3">67 基の敵楼が密集、夜明けの雲海</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-3 py-3 font-semibold">司馬台</td>
+            <td class="px-3 py-3">120 km・車で約2.5時間</td>
+            <td class="px-3 py-3">少ない</td>
+            <td class="px-3 py-3">厳しい</td>
+            <td class="px-3 py-3">昼 ¥40</td>
+            <td class="px-3 py-3">半日〜1日</td>
+            <td class="px-3 py-3">少し大きい子ども</td>
+            <td class="px-3 py-3">夜、古北水鎮の上空で光る長城</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-3 py-3 font-semibold">黄花城</td>
+            <td class="px-3 py-3">60 km・車で約1.5時間</td>
+            <td class="px-3 py-3">少ない〜中程度</td>
+            <td class="px-3 py-3">中程度</td>
+            <td class="px-3 py-3">¥58</td>
+            <td class="px-3 py-3">半日</td>
+            <td class="px-3 py-3">あり</td>
+            <td class="px-3 py-3">湖へまっすぐ入り込む長城</td>
+          </tr>
+          <tr>
+            <td class="px-3 py-3 font-semibold">居庸関</td>
+            <td class="px-3 py-3">60 km・車で約1時間</td>
+            <td class="px-3 py-3">少ない</td>
+            <td class="px-3 py-3">中程度</td>
+            <td class="px-3 py-3">¥45（4–10月）</td>
+            <td class="px-3 py-3">半日</td>
+            <td class="px-3 py-3">あり</td>
+            <td class="px-3 py-3">「天下第一関」——そして春の花見列車</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">料金は繁忙期の大人料金です；学生は通常半額、1.2 m 未満の子どもは通常無料です。区間や季節によって変動するため、出発前にご確認ください。</p>
+
+    <!-- ============ SECTION 2: NIGHT ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="night" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🌙 万里の長城を夜に訪れられますか？</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">距離や価格よりも、3 つの実用的な問いがこれらの区間を分けています：<strong>登らずに上がれますか、駐車場からシャトルはありますか、暗くなった後も開いていますか？</strong> 全体像は以下の通りです。</p>
+
+    <div class="overflow-x-auto mb-8 not-prose">
+      <table class="w-full text-sm text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+        <thead>
+          <tr class="bg-gray-900 text-white">
+            <th class="px-3 py-3 font-bold align-bottom">区間</th>
+            <th class="px-3 py-3 font-bold align-bottom">夜遊</th>
+            <th class="px-3 py-3 font-bold align-bottom">登城方法</th>
+            <th class="px-3 py-3 font-bold align-bottom">シャトル／送迎</th>
+            <th class="px-3 py-3 font-bold align-bottom">目玉の体験</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="px-3 py-3 font-semibold">八達嶺</td>
+            <td class="px-3 py-3">✅ 毎晩、4月30日–10月6日（入場は 18:30–21:00）</td>
+            <td class="px-3 py-3">ケーブルカーまたは地上ロープウェイ、片道 ¥100</td>
+            <td class="px-3 py-3">無料の園内シャトル；「長城バス」往復 ¥80</td>
+            <td class="px-3 py-3">北4楼から南4楼までの城壁のライトアップ</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-3 py-3 font-semibold">慕田峪</td>
+            <td class="px-3 py-3">✅ 季節限定（夏、および国慶節）</td>
+            <td class="px-3 py-3">ケーブルカーで上り、ソリで下り</td>
+            <td class="px-3 py-3">シャトル往復 ¥15</td>
+            <td class="px-3 py-3">ソリ滑り</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-3 py-3 font-semibold">金山嶺</td>
+            <td class="px-3 py-3">❌</td>
+            <td class="px-3 py-3">ケーブルカー片道 ¥40 / 往復 ¥60</td>
+            <td class="px-3 py-3">片道送迎バス 約¥80</td>
+            <td class="px-3 py-3">日の出の雲海</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-3 py-3 font-semibold">司馬台</td>
+            <td class="px-3 py-3">✅ 通年で営業（18:00–21:30）</td>
+            <td class="px-3 py-3">ケーブルカー——暗くなると必須</td>
+            <td class="px-3 py-3">—</td>
+            <td class="px-3 py-3">足元の古北水鎮</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-3 py-3 font-semibold">黄花城</td>
+            <td class="px-3 py-3">❌</td>
+            <td class="px-3 py-3"><strong>ケーブルカーなし</strong>——ボードウォークを磁気スライドで下る</td>
+            <td class="px-3 py-3">長距離バスまたは専用車</td>
+            <td class="px-3 py-3">湖の遊覧船、さらにガラス橋</td>
+          </tr>
+          <tr>
+            <td class="px-3 py-3 font-semibold">居庸関</td>
+            <td class="px-3 py-3">✅ 金土夜間および祝日、10月初旬まで</td>
+            <td class="px-3 py-3"><strong>ケーブルカーなし</strong>——上り下りとも徒歩</td>
+            <td class="px-3 py-3">—</td>
+            <td class="px-3 py-3">関城内の明王朝ナイトフェスティバル</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">一点、はっきりさせておくべきことがあります：<strong>シャトルがあるからといって、アクセスが楽とは限りません。</strong> 八達嶺以外のすべての区間では、シャトルは最後の区間——駐車場から門まで——しかカバーせず、その駐車場自体にはバスか車かツアーで最初に行く必要があります。八達嶺は唯一自前の駅を持つ区間です：北京–張家口高速鉄道が八達嶺長城駅に停まり、北京北駅から約 30–40 分、駅は登山入口から約 800 m にあり、最後の区間は無料シャトルで結ばれています。それが、車もツアーもなく訪れられる唯一の区間であり、同時に最も混雑する理由でもあります。</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">夜遊チケット（2026）：八達嶺は平日 <strong>¥198</strong> / 金土日および祝日 <strong>¥298</strong>、事前オンライン予約制（現地に窓口なし）；慕田峪は入場・シャトル・ケーブルカー込みで <strong>¥200</strong>；司馬台は夜遊＋往復ケーブルカーで <strong>¥200</strong>（<strong>古北水鎮のチケットは別</strong>）；居庸関は早割り <strong>¥19.9</strong> から。すべての夜間枠は時間指定・人数制限があるため、前もって予約を——八達嶺の週末枠はしばしば 2〜3 日前に売り切れます。</p>
+
+    <!-- ============ SECTION 3: BADALING ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="badaling" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏔️ 八達嶺：最も壮大な区間——そして最も混雑する</h2>
+
+    <img
+      src="/images/great-wall/badaling.webp"
+      alt="北京北部の春の花に覆われた丘陵を登る八達嶺長城"
+      width="1200"
+      height="943"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">なぜ行くのか</span> 八達嶺は中国で最も有名な区間であり、外国の首脳が案内される区間です。完全に修復され、広く、ドラマチックで、城壁は両方向の尾根を急勾配で登り——修復区間の中で最も幅広く壮大な、<strong>888 m の北8楼</strong>まで達し、<strong>「長城に至らざる者は好漢にあらず」の碑</strong>があります。完全な「長城の上に立っている」という感覚が得られ——これほど少ない計画でこれほど長い城壁を味わえる区間は他にありません。</p>
+      <p class="text-lg leading-relaxed text-gray-700 clear-both"><span class="block text-xl font-bold text-brand-700 mb-2">注意点</span> これは誰もが知っています。週末や祝日には八達嶺は非常に混雑し、群衆に流されることになります。コツは時間をずらすこと：開門時（午前 7 時頃）に門にいれば、最初の 1 時間はほぼ独り占めできます。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">アクセス</span> 高速鉄道で <strong>八達嶺長城駅</strong> へ——<strong>清河から約 20–25 分</strong>（¥16–25）または <strong>北京北駅から約 30–40 分</strong>（¥25–31）；駅は登山入口から約 <strong>800 m</strong> です。予算重視なら <strong>877 路</strong> バス、現在は <strong>北土城地下鉄駅（8/10 号線）</strong> 発で、運賃 ¥12。<strong>電車は早めに予約を</strong>——北京–張家口線の座席は週末や祝日にすぐ完売し、チケットは <strong>15 日前</strong> に 12306 または Trip.com で発売。電車を避けたい場合、以下の Trip.com のリンクでも <strong>往復送迎バス</strong>（車内にガイド同乗）を販売しており、単独でも入場券とセットでも予約可——専用車より安く、直通で、路線バスの乗り継ぎもありません。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">費用</span> 入場 <strong>¥40</strong> 繁忙期 / 閑散期 ¥35。<strong>北線ケーブルカーまたは南線地上ロープウェイ</strong>は片道 ¥100、往復 ¥140。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">夜の長城</span> <strong>4月30日から10月6日</strong> まで、八達嶺では毎晩夜の入場枠を実施——入場 18:30–21:00、19:20 から城壁のライトアップ、最終退場 22:00。夜間に公開されるのは <strong>北4楼から南4楼</strong> の区間のみ（北8楼の「好漢坡」は含まれません）。チケットは平日 <strong>¥198</strong>、金土日および祝日 <strong>¥298</strong>、1 晩あたり約 3,000 人に上限があります。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">おすすめ</span> 本物の長城を求める人——首脳来訪の区間、最高のナイトショー、そして車なしで行ける区間——であれば、混雑に耐えられればぴったりです。</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">乗り継ぎを省略</strong>——八達嶺のチケットと往復バスをまとめて予約：</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/BjTXg5QDIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 Trip.com で八達嶺のチケットと往復バスを予約</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 4: MUTIANYU ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="mutianyu" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🌳 慕田峪：初めての人に最適な区間か？</h2>
+
+    <img
+      src="/images/great-wall/mutianyu.webp"
+      alt="秋色の丘陵を抜ける慕田峪長城、城壁の上を歩く観光客"
+      width="532"
+      height="355"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">なぜ行くのか</span> 慕田峪は、多くの人が完璧な万里の長城の一日を思い描く姿です——完全に修復され、広がりがあり、<strong>23 基の敵楼</strong>が森の丘陵の上に連なり、八達嶺の混雑のほんの一部で済みます。平日はほぼ貸し切りのようです。もう一つの魅力は下山です：<strong>ソリ</strong>（長いレールの上を滑る金属製のそり）が城壁から村まで戻り、子どもにとって歴史の小旅行を思い出に変えます。</p>
+      <p class="text-lg leading-relaxed text-gray-700 clear-both"><span class="block text-xl font-bold text-brand-700 mb-2">楽しみ方</span> シャトルバスが駐車場から山麓へ、その後ケーブルカーが <strong>14 号敵楼</strong> まで運びます。城壁は好きなだけ歩けます——20 号敵楼が最高地点で最良の眺め——その後は戻って歩くか、ソリで下ります。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">アクセス</span> 高速鉄道はありません。観光シャトルバスは東直門と和平西橋から出発（往復約 ¥80、1.5 時間）、または専用車を手配——外国人旅行者に最も多い選択肢です。バスを予約する最も簡単な方法は以下の Trip.com のリンクで、直通シャトル（車内に英語ガイド）を入場券とセットでも単独でも販売——専用車より安く、地下鉄＋路線バス 2 本のルートよりずっと速いです。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">費用</span> 入場 <strong>¥45</strong>。シャトル往復 ¥15。ケーブルカー片道 ¥100 / 往復 ¥140。ソリは約 ¥100。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">夏の夜間</span> 慕田峪も暗くなった後に <strong>特定の期間——夏、そして再び国慶節休暇中</strong>——で開放され、17:30–21:00、<strong>10–15 号敵楼</strong> が公開されます。<strong>夜間パック（約 ¥200）</strong> には入場、シャトル、ケーブルカーが含まれ；ソリは暗くなると運行しません。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">おすすめ</span> 大多数の初めての訪問者。景観、快適さ、管理された混雑のバランスが最も取れた区間です。</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">チケット、直通バス、または両方</strong>——パックでも単独でも予約：</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/0rEQW6TDIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 Trip.com で慕田峪を予約</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 5: JINSHANLING ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="jinshanling" class="text-3xl font-bold text-gray-900 mb-6 mt-12">☁️ 金山嶺：2.5 時間の車旅は価値があるか？</h2>
+
+    <img
+      src="/images/great-wall/jinshanling.webp"
+      alt="夜明けの雲海から姿を現す金山嶺長城の敵楼"
+      width="922"
+      height="690"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">なぜ行くのか</span> 金山嶺は定番の中で最も静かです——長い区間をほとんど他に誰もいないまま歩けます。慕田峪や八達嶺より <strong>修復が少ない</strong> ため、初期の明王朝の煉瓦の多くが残り、人もずっと少なく、約 10.5 km に <strong>67 基の敵楼</strong> と 3 基の烽火台が密集し、次の敵楼まで遠くありません。夜明け前に開門するため、秋にフィードを埋め尽くす <strong>雲海</strong> と日の出の写真の定番です。</p>
+      <p class="text-lg leading-relaxed text-gray-700 clear-both"><span class="block text-xl font-bold text-brand-700 mb-2">正直なところ</span> これは本格的なハイキングであり、散歩ではありません——急な階段、でこぼこの石、手すりのない長い露出区間があります。また最も遠い区間で、北京から約 2.5 時間、隣の河北省にあります。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">アクセス</span> 専用車またはツアー（約 2–2.5 時間）；温暖な月数ヶ月は東直門から季節的な直通バスが運行、あるいは古北口まで電車で行ってからタクシーで先へ。Trip.com でも <strong>送迎（片道約 ¥80）</strong> を扱っています——それは移動のみ；入場券は ¥65 で、2 つを別売りでもパックでも購入可。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">費用</span> 入場 <strong>¥65</strong> 繁忙期 / 閑散期 ¥55——現地で買ったチケットは <strong>48 時間以内に 2 回</strong> の入場が有効で、日の出に戻りたい場合に実にありがたい。ケーブルカーは片道 ¥40 / 往復 ¥60、小金山楼まで。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">おすすめ</span> 写真家、ハイカー、そしてすでに定番を制覇し、誰もいない城壁を求める人。</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">チケットと往復送迎を一度の予約で</strong>——または分けて予約：</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/qU1ijvnDIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 Trip.com で金山嶺を予約</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 6: SIMATAI ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="simatai" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🌃 司馬台：暗くなった後の長城はどうなっている？</h2>
+
+    <img
+      src="/images/great-wall/simatai.webp"
+      alt="古北水鎮の提灯の灯る路地の上空に、夜の司馬台長城が灯されている"
+      width="1200"
+      height="900"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">なぜ行くのか</span> 司馬台は定番の夜の長城です——<strong>通年で夜間ツアー</strong>を実施し、灯された敵楼が足元の <strong>古北水鎮</strong>（そのふもとの再建された運河の町）の上空に輝きます。町で一泊し、提灯を手にぶらつき、そして暗くなってから灯された城壁へ登ります。昼間の城壁は慕田峪より急でオリジナル感があり、両方向の鋭い尾根を渡ります。</p>
+      <p class="text-lg leading-relaxed text-gray-700 clear-both"><span class="block text-xl font-bold text-brand-700 mb-2">正直なところ</span> 水鎮があるため、司馬台は純粋な城壁ハイクというよりパッケージです：昼と夜のチケットは別であり、<strong>夜の入場には往復ケーブルカーが必須</strong>です（暗くなると徒歩で上り下りできません）。昼の訪問者は夕方までに退出しなければならず、昼から夜へそのまま滞在することはできません。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">アクセス</span> 北京から専用車またはツアー、約 2–2.5 時間、多くの人が城壁のふもとにある <strong>古北水鎮</strong> に一泊を組み合わせます。以下の Trip.com のリンクでも、町と城壁への <strong>往復バス</strong> を、夜のチケットとセットでも単独でも販売しています。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">費用</span> 昼の入場は約 <strong>¥40</strong>。<strong>夜間ツアー＋往復ケーブルカーは ¥200 / 人</strong>（1.2–1.5 m の子ども ¥110）——暗くなるとケーブルカーが唯一の上り方です。古北水鎮＋長城＋ケーブルカーのパックは <strong>¥280</strong>、町に宿泊する人は <strong>¥120</strong>——前もって予約を。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">古北水鎮と組み合わせる</span> 再建された運河の町は城壁のふもとにあり、多くの人が 2 つを一つの旅として訪れます——午後の遅くに提灯の灯る路地、その後暗くなってから灯された城壁。 <strong>チケットは別々</strong> で、夜間ツアーに町は含まれないため、両方の予算を立ててください。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">おすすめ</span> 雰囲気を求めるカップルや写真家；昼間の群衆の中に立つのではなく、灯された長城を見たい人。</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">夜のチケットと往復バスをパックに</strong>——または移動のみを予約：</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/Ar0ZTnMNIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 Trip.com で司馬台を予約</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 7: HUANGHUACHENG ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="huanghuacheng" class="text-3xl font-bold text-gray-900 mb-6 mt-12">💧 黄花城：長城が湖に入り込む場所</h2>
+
+    <img
+      src="/images/great-wall/huanghuacheng.webp"
+      alt="碧い貯水池の岸辺に沿う黄花城長城、水面に遊覧船が浮かぶ"
+      width="393"
+      height="674"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">なぜ行くのか</span> ここは中国で城壁が <strong>三たび水面に出入りする</strong> 唯一の場所です——1970 年代に貯水池のダムが水位を上げ、最も低い区間を水没させ、敵楼が碧い湖から顔を出す結果となりました。その周りには明王朝の栗林（樹齢数百年の木も）と、手軽な湖畔のボードウォークがあります。緑豊かで静か、そして絵はがきの長城とは全く別物です。</p>
+      <p class="text-lg leading-relaxed text-gray-700 clear-both"><span class="block text-xl font-bold text-brand-700 mb-2">正直なところ</span> 水没区間は短い——これは半日で足り、1 日は不要——そして最良の眺めは入口近くにあるため、週末は混雑感があります。オプション（ボート、ガラス橋、スライド）はすべて別料金です。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">見どころ</span> <strong>水没した城壁</strong>（「龍が水を飲む」）、<strong>ガラス橋</strong>、そして <strong>明王朝の栗林</strong>。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">水上で</span> これは水辺に出られる唯一の区間です——<strong>観光船と絵描き船</strong>が湖を往復し（<strong>片道約 ¥25 / 往復約 ¥45</strong>）、さらに <strong>雲上ガラス流し</strong> とボードウォークを下る <strong>磁気スライド</strong> が追加オプションです。すべての水上アクティビティは入場料に加えて別途料金がかかります。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">アクセス</span> 北京市内から車または DiDi で約 1–1.5 時間；公共交通は難しく（東直門から黄花城方面のバス）。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">費用</span> 入場は約 <strong>¥58</strong>；ボート、ガラス橋、スライドはすべて有料の追加分です。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">おすすめ</span> すでに定番の長城を見て、本当に違うものを求める人；子どもと一緒にのんびり半日。</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">チケット、バス、ボート乗船をまとめて</strong>——湖上のオプションをカバーする簡単な方法：</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/bU5SXQXDIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 Trip.com で黄花城を予約</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 8: JUYONGGUAN ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="juyongguan" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏯 居庸関：北京からの最適な半日区間か？</h2>
+
+    <img
+      src="/images/great-wall/juyongguan.webp"
+      alt="緑の瓦屋根の関城門楼と、その背後に尾根沿いに巡る万里の長城の居庸関"
+      width="530"
+      height="677"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">なぜ行くのか</span> 居庸関は <strong>市街地に最も近い区間</strong>（60 km 未満、昌平区）であり、尾根の上ではなく関城として建設された区間——谷全体を巡る完全なループを歩き、<strong>「天下第一関」</strong> の門を抜け、中に明王朝の <strong>雲台</strong> と寺院群があります。近く、かつ有名でもないため、手軽な選択肢の中で最も静かで、朝早くから夜遅くまで開いています（およそ <strong>6:30–18:00</strong>）。<strong>3 月下旬から 4 月中旬</strong>、丘陵は山桃や杏の花でいっぱいになり、<strong>「花海列車」</strong>——S2 線の郊外鉄道——が下の谷を縫います。これは春だけの写真で、寄る価値があります。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">アクセス</span> 地下鉄 8/13 号線で霍営へ、その後 879/919 路バスで居庸関へ；または車／DiDi で約 1 時間。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">費用</span> 入場 <strong>¥45</strong>（4–10 月）/ <strong>¥40</strong>（11–3 月）；1.2 m 超の子どもと学生は割引料金。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">夜間枠</span> <strong>金曜および土曜の夜間と祝日</strong> は 10 月初旬まで（18:00–21:00）、関城では没入型の夜のイベントを開催——古い宿場道を練り歩く衛兵、敵楼の上の民俗楽団、提灯の灯る城壁、そして城内の夜市。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">ケーブルカーなし</span> 居庸関は <strong>上りのリフトがない</strong> 主要区間の 2 つしかないうちの 1 つです（もう 1 つは黄花城）——そして下りのスライドもない唯一の区間で、上り下りとも徒歩です。ループは慕田峪や金山嶺より短く穏やかですが、登る体力は確保してください。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">おすすめ</span> 半日旅行、冬の訪問、歴史ファン、そして早朝の出発や長距離ドライブなしで長城を見たい人。</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">チケットと往復移動を一度の予約で</strong>——最もシンプルな半日プラン：</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/RM0EN5ONIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 Trip.com で居庸関を予約</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 9: TICKETS ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="tickets" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎫 前もってチケットを予約する必要がありますか？</h2>
+    <ul class="list-disc pl-6 space-y-3 mb-12 text-lg text-gray-700">
+      <li>八達嶺は <strong>前もって予約</strong> を——ピーク時は門が完売し、当日窓口はありません。</li>
+      <li><strong>夜のチケットは別売</strong> で、人数制限・時間指定あり；八達嶺ではオンライン専用で、週末はしばしば 2〜3 日前に完売します。</li>
+      <li>外国の訪問者は各区間の購入と入場に <strong>パスポート</strong> が必要です。</li>
+      <li>繁忙期はおよそ <strong>4–10 月</strong>；上の表の価格は繁忙期料金です。</li>
+    </ul>
+
+    <div class="bg-yellow-50 border border-yellow-100 rounded-2xl p-6 mb-12">
+      <p class="text-gray-700"><strong>⏰ 最も重要なたった 1 つのルール：</strong> 早く行くこと。ツアー団体は 9:30 から 11 時の間に到着する——写真で見るような長城を求めるなら、午前 9 時前に城壁の上に立ってください。</p>
+    </div>
+
+    <!-- ============ SECTION 10: BEST TIME ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="best-time" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📅 行くのに最適な時期</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">すべての区間に、思い描いた姿になる季節と時間があります。以下は、上の 6 つの区間が実際に知られている期間です。</p>
+
+    <ul class="list-disc pl-6 space-y-3 mb-12 text-lg text-gray-700">
+      <li>🍂 <strong>秋は写真の季節です。</strong> 金山嶺は夜明け前に開門し、秋にフィードを埋め尽くす雲海と日の出の写真の定番——そして現地で買った繁忙期チケットは 48 時間以内に 2 回入場が有効です。</li>
+      <li>🌸 <strong>3 月下旬から 4 月中旬</strong> は居庸関の丘陵に山桃や杏の花を咲かせ、さらに春だけの「花海列車」が下の谷を縫います。</li>
+      <li>🌙 <strong>夜遊：</strong> 八達嶺は 4 月 30 日–10 月 6 日、慕田峪は夏の特定の期間、司馬台は通年、居庸関は金曜と土曜の夜間。</li>
+      <li>❄️ <strong>冬は最も静かな季節です。</strong> 冬に最もおすすめなのは居庸関——近く、早朝から夜遅くまで開き、手軽な選択肢の中で最も静かです。</li>
+      <li>📅 <strong>繁忙期はおよそ 4–10 月</strong>；比較表の価格は繁忙期料金で、閑散期のチケットはやや安くなります（八達嶺 ¥35、金山嶺 ¥55）。</li>
+    </ul>
+
+    <!-- ============ SECTION 11: PRACTICAL TIPS ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="practical-tips" class="text-3xl font-bold text-gray-900 mb-6 mt-12">👟 万里の長城に何を持って行くべきか？</h2>
+    <ul class="list-disc pl-6 space-y-3 mb-12 text-lg text-gray-700">
+      <li>1 人あたり 2–3 リットルの水——城壁には店がありません。</li>
+      <li>夏は日焼け止めと帽子；冬は暖かく風を防ぐ重ね着（長城はいつも市街地より寒く、風が強い）。</li>
+      <li>適切な靴：八達嶺、慕田峪、居庸関には運動靴で十分；金山嶺と司馬台には <strong>登山靴</strong> を。</li>
+    </ul>
+
+    <!-- ============ SECTION 12: HISTORY ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="history" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📜 実際に何の上を歩いているのか？ 明のレンガ、秦ではなく</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">万里の長城は 1 つの壁ではなく <strong>1 つの体系</strong> です——2,000 年以上にわたり、複数の王朝が築き、つなぎ、再建しました。今日見るほとんどは <strong>明王朝の建造物（1368–1644）</strong>；古い秦・漢の土塁は大部分が風化しました。全ネットワークは <strong>21,196 km</strong> に及び、2012 年に中国の国家文物局が測定——これには枝線や堀のすべてが含まれ、目玉の壁だけではありません。歩行可能な修復区間の合計は約 700 km です。</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">歩いているときに知っておくと良い細かい点がいくつかあります：</p>
+
+    <ul class="list-disc pl-6 space-y-3 mb-12 text-lg text-gray-700">
+      <li><strong>東部の区間は有名な将軍によって再建されました。</strong> 明王朝の将軍戚継光は 1560 年代から 70 年代に城壁を再編し、慕田峪、金山嶺、八達嶺に見られる密集した敵楼と狭間を追加しました。</li>
+      <li><strong>金山嶺では、煉瓦に注目してください。</strong> 多くに <strong>刻印</strong> があり——元の建造者は各煉瓦に窯と部隊の印を押し、欠陥を特定のチームに遡れるようにしました。これは石に刻まれた明王朝の品質管理です。</li>
+      <li><strong>モルタルは見た目以上に凝っています。</strong> 修復区間は本来の配合を維持——石灰モルタルに糯米（もち米）の粉を混ぜ、これが数世紀にわたりこれらの壁が残った理由の一部です。</li>
+      <li><strong>敵楼は多目的でした。</strong> 武器と穀物を保管し、守備隊を収容し、信号を送りました——昼は煙を、夜は火を。それが、城壁全体を通して互いの視界内に建っている理由です。</li>
+    </ul>
+
+    <!-- ============ NEXT READS ============ -->
+    <div class="border-t border-gray-100 pt-8 mt-8 not-prose">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h3 class="text-sm font-bold text-gray-900">📚 関連ガイド</h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="/ja/cities/beijing-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🏙️ 北京旅行ガイド
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ja/cities/forbidden-city/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🏛️ 故宮ガイド
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ja/cities/city-select/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              📅 中国滞在に必要な日数は？
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ja/transport/high-speed-rail/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🚄 中国高速鉄道の予約と乗車ガイド
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ja/payment/china-travel-budget/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              💰 2026年 中国旅行の費用
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ SOURCES ============ -->
+    <section class="mt-10 pt-6 border-t border-gray-100">
+      <h3 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-4">出典</h3>
+      <ol class="space-y-2 text-sm text-gray-500">
+        <li>1. <strong>八達嶺長城について</strong> —— <a href="https://english.visitbeijing.com.cn/article/4MX01cNAUre" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Beijing Micro-Getaway Guide: Must-Visit Attractions</a></li>
+        <li>2. <strong>4 つの区間の夜遊について</strong> —— <a href="https://english.visitbeijing.com.cn/article/4RI8S685GDY" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Ecological Leisure | Badaling Night Great Wall</a>；<a href="https://english.visitbeijing.com.cn/article/4T3jh3BHGra" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Upgraded Juyongguan Night Great Wall</a>；<a href="https://english.visitbeijing.com.cn/article/4OStXw7yhMK" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Beijing's Golden Autumn Vibe, Double the Festival Joy</a>。</li>
+        <li>3. <strong>慕田峪長城について</strong> —— <a href="https://en.mutianyugreatwall.com/article/4SHdMJjS04P" target="_blank" rel="noopener" class="text-blue-600 hover:underline">2026 night-tour guide</a></li>
+        <li>4. <strong>金山嶺長城について</strong> —— <a href="https://english.visitbeijing.com.cn/article/4JvnMW3ZbDx" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Two-day trip towards autumn foliage with one ticket</a></li>
+        <li>5. <strong>黄花城（水上の長城）について</strong> —— <a href="https://english.visitbeijing.com.cn/article/4Itpbe3Ye1z" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Beijing Huanghuacheng Lakeside Great Wall</a></li>
+        <li>6. <strong>居庸関長城について</strong> —— <a href="https://english.visitbeijing.com.cn/article/47OOq8YYqAs" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Juyongguan Great Wall (居庸关长城)</a></li>
+        <li>7. <strong>司馬台長城について</strong> —— <a href="https://english.visitbeijing.com.cn/article/4OT1GKn1zoW" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Experience night scenery at Simatai Great Wall</a></li>
+        <li>8. <strong>アクセスについて</strong> —— <a href="https://english.visitbeijing.com.cn/article/47OLMubjite" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Come to Badaling Great Wall for moon appreciation</a>。</li>
+      </ol>
+      <p class="text-sm text-gray-500 mt-4"><em>上記の数値はすべて繁忙期の大人料金です。出典は北京市公式英語観光ポータル（english.visitbeijing.com.cn）および各景勝地の公式英語サイトで、2026 年 9 月に確認しました。</em></p>
+    </section>
+
+  </article>
+</Layout>

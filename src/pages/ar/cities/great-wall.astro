@@ -1,0 +1,480 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'دليل سور الصين العظيم: أي قسم تزور؟';
+const description = 'كيف تقارن أقسام سور الصين العظيم الستة — بادالينغ، موتيانيو، جينشانلينغ، سيماتاي، هوانغهواچنغ وجويونغقوان — من حيث الازدحام والصعوبة والتذاكر والجولات الليلية.';
+---
+
+<Layout title={title} description={description} lang="ar">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+
+    <!-- ============ BREADCRUMB ============ -->
+    <nav class="mb-8 not-prose">
+      <a href="/ar/cities/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        العودة إلى أدلة المدن
+      </a>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🧱 سور الصين العظيم · بكين</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">سور الصين العظيم: أي قسم يجب أن تزور؟</h1>
+      <p class="text-xl text-gray-600 mb-6">بادالينغ، موتيانيو، جينشانلينغ أو سيماتاي — ما الذي يميزها فعليًا، وأيها يناسب رحلتك التي تخطط لها.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 آخر تحديث: سبتمبر 2026</span>
+        <span>⏱️ 12 دقيقة قراءة</span>
+      </div>
+    </header>
+
+    <!-- ============ HERO IMAGE ============ -->
+    <figure class="mb-12 not-prose">
+      <img
+        src="/images/great-wall/comparison-grid.webp"
+        alt="ستة أقسام من سور الصين العظيم قرب بكين: بادالينغ بين أزهار الربيع، موتيانيو بألوان الخريف، جينشانلينغ فوق بحر السحاب، سيماتاي متوهج ليلًا فوق بلدة جوبي المائية، هوانغهواچنغ ينزل إلى بحيرة فيروزية، وممر حصن جويونغقوان"
+        width="1200"
+        height="534"
+        loading="eager"
+        fetchpriority="high"
+        class="w-full h-auto object-cover rounded-2xl shadow-md"
+      />
+      <figcaption class="text-xs text-gray-500 text-center mt-2">نفس السور، ستة أيام مختلفة. من اليسار إلى اليمين، ومن الأعلى إلى الأسفل: بادالينغ، موتيانيو، جينشانلينغ، سيماتاي، هوانغهواچنغ، جويونغقوان.</figcaption>
+    </figure>
+
+    <!-- ============ QUICK ANSWER ============ -->
+    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-red-900 mb-4">⚡ إجابة سريعة</h2>
+      <p class="text-lg text-red-800 leading-relaxed">
+        <strong>موتيانيو</strong> هو الخيار الأفضل بشكل عام لمعظم الزوار لأول مرة — مُرمم بالكامل ودرامي، مع تلفريك للصعود وزلاجة للنزول، وبجزء بسيط من ازدحام بادالينغ. <strong>بادالينغ</strong> هو القسم المُعتَمَد — أول قسم فُتح للسياح، والامتداد الذي يزوره رؤساء الدول، وأعظم الأقسام المُرممة ضخامةً، صاعدًا إلى البرج الثامن الشمالي على ارتفاع 888 م، والموسوم بلوحة «من لم يبلغ سور الصين العظيم لم يكن رجلاً حقيقياً». <strong>جينشانلينغ</strong> هو خيار المشاة والمصورين — أكثر هدوءًا وأقل إعادة بناء، بـ67 برج مراقبة وفتح قبل الفجر لبحر السحاب. <strong>سيماتاي</strong> هو القسم ذو الأجواء — جولات ليلية طوال العام، مع بلدة جوبي المائية عند سفحه مباشرة. <strong>هوانغهواچنغ</strong> هو الغريب — القسم الوحيد الذي ينزل فيه السور إلى الماء المفتوح، مع قوارب وجسر زجاجي. <strong>جويونغقوان</strong> هو أقرب ممر وأهدأ — حلقة حصن لا صعود على حافة، وأفضل خيار لنصف يوم أو لفصل الشتاء.
+      </p>
+    </div>
+
+    <!-- ============ IN THIS GUIDE ============ -->
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 في هذا الدليل</h3>
+      <ul class="space-y-3">
+        <li><a href="#which-section" class="text-blue-600 hover:underline">🤔 أي قسم يجب أن تزور؟</a></li>
+        <li><a href="#night" class="text-blue-600 hover:underline">🌙 هل يمكنك زيارة سور الصين العظيم ليلاً؟</a></li>
+        <li><a href="#badaling" class="text-blue-600 hover:underline">🏔️ بادالينغ</a></li>
+        <li><a href="#mutianyu" class="text-blue-600 hover:underline">🌳 موتيانيو</a></li>
+        <li><a href="#jinshanling" class="text-blue-600 hover:underline">☁️ جينشانلينغ</a></li>
+        <li><a href="#simatai" class="text-blue-600 hover:underline">🌃 سيماتاي</a></li>
+        <li><a href="#huanghuacheng" class="text-blue-600 hover:underline">💧 هوانغهواچنغ</a></li>
+        <li><a href="#juyongguan" class="text-blue-600 hover:underline">🏯 جويونغقوان</a></li>
+        <li><a href="#tickets" class="text-blue-600 hover:underline">🎫 التذاكر والحجز</a></li>
+        <li><a href="#best-time" class="text-blue-600 hover:underline">📅 أفضل وقت للزيارة</a></li>
+        <li><a href="#practical-tips" class="text-blue-600 hover:underline">👟 ماذا يجب أن تحزم؟</a></li>
+        <li><a href="#history" class="text-blue-600 hover:underline">📜 طوب مينغ، لا طوب تشين</a></li>
+      </ul>
+    </nav>
+
+    <!-- ============ SECTION 1: WHICH SECTION ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="which-section" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🤔 أي قسم يجب أن تزور؟</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">كل قسم هو تقنيًا نفس السور. لكن لا قسمين يمنحانك نفس اليوم. الفروق التي تهم ليست المسافة أو سعر التذكرة — بل <strong>مدى الازدحام، ومدى الجهد الذي يجب أن تبذله، وما الذي يفعله السور فعليًا عند وصولك إليه</strong> (متسعًا فوق الحواف، أو نازلًا إلى بحيرة، أو متوهجًا أمام سماء الليل). الأقسام أدناه مرتبة حسب مدى ملاءمتها لزيارة أولى أو ثانية.</p>
+
+    <h3 class="text-xl font-bold text-gray-900 mb-4">كيف تقارن أقسام سور الصين العظيم الستة</h3>
+
+    <div class="overflow-x-auto mb-8 not-prose">
+      <table class="w-full text-sm text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+        <thead>
+          <tr class="bg-gray-900 text-white">
+            <th class="px-3 py-3 font-bold align-bottom">القسم</th>
+            <th class="px-3 py-3 font-bold align-bottom">البعد عن بكين</th>
+            <th class="px-3 py-3 font-bold align-bottom">الازدحام</th>
+            <th class="px-3 py-3 font-bold align-bottom">الصعوبة</th>
+            <th class="px-3 py-3 font-bold align-bottom">الدخول</th>
+            <th class="px-3 py-3 font-bold align-bottom">الوقت اللازم</th>
+            <th class="px-3 py-3 font-bold align-bottom">مناسب للأطفال؟</th>
+            <th class="px-3 py-3 font-bold align-bottom">اللحظة المميزة</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="px-3 py-3 font-semibold">بادالينغ</td>
+            <td class="px-3 py-3">70 كم · قطار فائق السرعة ~35 دقيقة</td>
+            <td class="px-3 py-3">شديد</td>
+            <td class="px-3 py-3">سهل</td>
+            <td class="px-3 py-3">¥40</td>
+            <td class="px-3 py-3">3–4 ساعات</td>
+            <td class="px-3 py-3">نعم (تلفريك)</td>
+            <td class="px-3 py-3">الضخامة المطلقة — وأكبر عرض ليلي</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-3 py-3 font-semibold">موتيانيو</td>
+            <td class="px-3 py-3">70 كم · ~1.5 ساعة بالسيارة</td>
+            <td class="px-3 py-3">متوسط</td>
+            <td class="px-3 py-3">سهل–متوسط</td>
+            <td class="px-3 py-3">¥45</td>
+            <td class="px-3 py-3">نصف يوم</td>
+            <td class="px-3 py-3">نعم (تلفريك + زلاجة)</td>
+            <td class="px-3 py-3">23 برجًا مرممًا، ثم الانزلاق للأسفل</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-3 py-3 font-semibold">جينشانلينغ</td>
+            <td class="px-3 py-3">130 كم · ~2.5 ساعة بالسيارة</td>
+            <td class="px-3 py-3">قليل</td>
+            <td class="px-3 py-3">شاق</td>
+            <td class="px-3 py-3">¥65</td>
+            <td class="px-3 py-3">يوم كامل</td>
+            <td class="px-3 py-3">لا</td>
+            <td class="px-3 py-3">67 برجًا متلاصقة، وبحر سحاب عند الفجر</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-3 py-3 font-semibold">سيماتاي</td>
+            <td class="px-3 py-3">120 كم · ~2.5 ساعة بالسيارة</td>
+            <td class="px-3 py-3">قليل</td>
+            <td class="px-3 py-3">شاق</td>
+            <td class="px-3 py-3">¥40 نهارًا</td>
+            <td class="px-3 py-3">نصف يوم–يوم كامل</td>
+            <td class="px-3 py-3">أطفال أكبر سنًا</td>
+            <td class="px-3 py-3">السور متوهج فوق بلدة جوبي المائية ليلاً</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-3 py-3 font-semibold">هوانغهواچنغ</td>
+            <td class="px-3 py-3">60 كم · ~1.5 ساعة بالسيارة</td>
+            <td class="px-3 py-3">قليل–متوسط</td>
+            <td class="px-3 py-3">متوسط</td>
+            <td class="px-3 py-3">¥58</td>
+            <td class="px-3 py-3">نصف يوم</td>
+            <td class="px-3 py-3">نعم</td>
+            <td class="px-3 py-3">السور يمشي مباشرة نحو بحيرة</td>
+          </tr>
+          <tr>
+            <td class="px-3 py-3 font-semibold">جويونغقوان</td>
+            <td class="px-3 py-3">60 كم · ~1 ساعة بالسيارة</td>
+            <td class="px-3 py-3">قليل</td>
+            <td class="px-3 py-3">متوسط</td>
+            <td class="px-3 py-3">¥45 (أبريل–أكتوبر)</td>
+            <td class="px-3 py-3">نصف يوم</td>
+            <td class="px-3 py-3">نعم</td>
+            <td class="px-3 py-3">«الممر رقم 1 تحت السماء» — وقِطارات أزهار الربيع</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">الأسعار هي تذاكر البالغين في موسم الذروة؛ عادةً يدفع الطلاب نصف المبلغ، ويذهب الأطفال دون 1.2 م مجانًا. تختلف الأسعار حسب الموسم والقسم — تحقق قبل ذهابك.</p>
+
+    <!-- ============ SECTION 2: NIGHT ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="night" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🌙 هل يمكنك زيارة سور الصين العظيم ليلاً؟</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">يفصل بين هذه الأقسام المسافة والسعر أقل مما تفعله ثلاثة أسئلة عملية: <strong>هل يمكنك الصعود دون تسلق، هل توجد حافلة مكوكية من موقف السيارات، وهل يفتح بعد حلول الظلام؟</strong> إليك الصورة الكاملة.</p>
+
+    <div class="overflow-x-auto mb-8 not-prose">
+      <table class="w-full text-sm text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+        <thead>
+          <tr class="bg-gray-900 text-white">
+            <th class="px-3 py-3 font-bold align-bottom">القسم</th>
+            <th class="px-3 py-3 font-bold align-bottom">جولة ليلية</th>
+            <th class="px-3 py-3 font-bold align-bottom">الصعود</th>
+            <th class="px-3 py-3 font-bold align-bottom">النقل المكوكي / المواصلات</th>
+            <th class="px-3 py-3 font-bold align-bottom">النشاط المميز</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="px-3 py-3 font-semibold">بادالينغ</td>
+            <td class="px-3 py-3">✅ كل ليلة، 30 أبريل–6 أكتوبر (الدخول 18:30–21:00)</td>
+            <td class="px-3 py-3">تلفريك أو حبل أرضي، ¥100 اتجاه واحد</td>
+            <td class="px-3 py-3">نقل مكوكي مجاني للمتنزه؛ «حافلة السور» ¥80 للعودة</td>
+            <td class="px-3 py-3">السور مضاء من البرج الشمالي 4 إلى البرج الجنوبي 4</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-3 py-3 font-semibold">موتيانيو</td>
+            <td class="px-3 py-3">✅ فترات موسمية (صيف؛ العيد الوطني)</td>
+            <td class="px-3 py-3">تلفريك للصعود، زلاجة للنزول</td>
+            <td class="px-3 py-3">نقل مكوكي ¥15 للعودة</td>
+            <td class="px-3 py-3">مسار الزلاجة</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-3 py-3 font-semibold">جينشانلينغ</td>
+            <td class="px-3 py-3">❌</td>
+            <td class="px-3 py-3">تلفريك ¥40 اتجاه واحد / ¥60 للعودة</td>
+            <td class="px-3 py-3">حافلة نقل ذهابًا ~¥80</td>
+            <td class="px-3 py-3">بحر السحاب عند شروق الشمس</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-3 py-3 font-semibold">سيماتاي</td>
+            <td class="px-3 py-3">✅ طوال العام (18:00–21:30)</td>
+            <td class="px-3 py-3">تلفريك — إلزامي بعد حلول الظلام</td>
+            <td class="px-3 py-3">—</td>
+            <td class="px-3 py-3">بلدة جوبي المائية، عند السفح مباشرة</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-3 py-3 font-semibold">هوانغهواچنغ</td>
+            <td class="px-3 py-3">❌</td>
+            <td class="px-3 py-3"><strong>لا يوجد تلفريك</strong> — منزلق مغناطيسي نزولًا على الممشى</td>
+            <td class="px-3 py-3">حافلة سياحية أو نقل خاص</td>
+            <td class="px-3 py-3">قوارب على البحيرة، بالإضافة إلى جسر زجاجي</td>
+          </tr>
+          <tr>
+            <td class="px-3 py-3 font-semibold">جويونغقوان</td>
+            <td class="px-3 py-3">✅ ليل الجمعة والسبت والعطلات، حتى أوائل أكتوبر</td>
+            <td class="px-3 py-3"><strong>لا يوجد تلفريك</strong> — تمشي صعودًا وهبوطًا</td>
+            <td class="px-3 py-3">—</td>
+            <td class="px-3 py-3">مهرجان ليلي من عهد مينغ داخل الممر</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">تمييز يستحق أن يُفهم جيدًا: <strong>النقل المكوكي ليس نفسه سهولة الوصول.</strong> في كل قسم عدا بادالينغ، يغطي النقل المكوكي آخر مسافة فقط — من موقف السيارات إلى البوابة — ولا يزال عليك حافلة أو سيارة أو جولة للوصول إلى موقف السيارات ذاته أولًا. بادالينغ هو القسم الوحيد الذي له محطة قطار خاصة به: خط بكين–تشانغتشياكو فائق السرعة يصل إلى بادالينغ تشانغتشنغ، حوالي 30–40 دقيقة من بكين الشمالية، وتبعد المحطة نحو 800 م عن مدخل التسلق مع نقل مكوكي مجاني يغطي آخر مسافة. لهذا هو القسم الذي يمكنك زيارته بلا سيارة وبلا جولة — ولهذا أيضًا يجذب أكبر الحشود.</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">تذاكر الجولات الليلية (2026): بادالينغ <strong>¥198</strong> أيام الأسبوع / <strong>¥298</strong> جمعة–أحد والعطلات، تُحجز عبر الإنترنت مسبقًا (لا توجد شباك تذاكر في الموقع)؛ موتيانيو <strong>¥200</strong> تشمل الدخول والنقل المكوكي والتلفريك؛ سيماتاي <strong>¥200</strong> للجولة الليلية مع رحلة التلفريك ذهابًا وإيابًا (<strong>تذكرة بلدة جوبي المائية غير مشمولة</strong>)؛ جويونغقوان من <strong>¥19.9</strong> مبكرًا. كل جلسة ليلية بدخول بموعد محدد ومحدودة العدد، لذا احجز مسبقًا — تمتلئ مواعيد عطلة نهاية الأسبوع في بادالينغ قبل يومين أو ثلاثة غالبًا.</p>
+
+    <!-- ============ SECTION 3: BADALING ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="badaling" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏔️ بادالينغ: أعظم امتداد — والأكثر ازدحامًا</h2>
+
+    <img
+      src="/images/great-wall/badaling.webp"
+      alt="سور الصين العظيم في بادالينغ يتسلق التلال المكسوة بأزهار الربيع شمال بكين"
+      width="1200"
+      height="943"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">لماذا يذهب الناس</span> بادالينغ هو أشهر قسم في الصين والقسم الذي يُصطحب إليه رؤساء الدول الأجانب. مُرمم بالكامل، وعريض، ودرامي، والسور يتسلق الحافة بحدة في كلا الاتجاهين — أوسع وأعظم الأقسام المُرممة ضخامةً، صاعدًا إلى <strong>البرج الثامن الشمالي على ارتفاع 888 م</strong>، والموسوم بلوحة <strong>«من لم يبلغ سور الصين العظيم لم يكن رجلاً حقيقياً»</strong>. تحصل على الإحساس الكامل «أنا واقف على سور الصين العظيم» — ولا قسم آخر يمنحك كل هذا السور بتخطيط بهذا القدر القليل.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">ما العقدة</span> الجميع يعرف هذا. في عطلة نهاية الأسبوع أو العطلات الرسمية، يصبح بادالينغ مزدحمًا جدًا، وقد تجرفك الحشود. الحيلة هي التوقيت: كن عند البوابة عند فتحها (حوالي 7 صباحًا)، وستكون الساعة الأولى لنفسك إلى حد كبير.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">الوصول إلى هناك</span> قطار فائق السرعة إلى محطة <strong>بادالينغ تشانغتشنغ</strong> — حوالي <strong>20–25 دقيقة من تشينغخه</strong> (¥16–25) أو <strong>30–40 دقيقة من بكين الشمالية</strong> (¥25–31)؛ وتبعد المحطة نحو <strong>800 م</strong> عن مدخل التسلق. الحافلة <strong>877</strong>، الآن من <strong>مترو توديتشنغ الشمالي (خطوط 8/10)</strong>، هي الخيار الاقتصادي بـ¥12. <strong>احجز القطار مبكرًا</strong> — تنفد المقاعد على خط بكين–تشانغتشياكو بسرعة في عطلة نهاية الأسبوع والعطلات، وتُفتح التذاكر <strong>قبل 15 يومًا</strong> على 12306 أو Trip.com. إذا فضلت تخطي القطار، فإن إعلان Trip.com أدناه يبيع أيضًا <strong>حافلة مكوكية ذهابًا وإيابًا</strong> مع مرشد على متنها — قابلة للحجز منفردة أو مع الدخول — وتكلف أقل من سيارة خاصة وتسير مباشرة، دون تحويلات الحافلات العامة.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">التكلفة</span> الدخول <strong>¥40</strong> موسم الذروة / ¥35 الموسم المنخفض. <strong>تلفريك الخط الشمالي أو الحبل الأرضي للخط الجنوبي</strong> بـ¥100 اتجاه واحد، ¥140 ذهابًا وإيابًا.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">السور ليلًا</span> من <strong>30 أبريل إلى 6 أكتوبر</strong>، يشغل بادالينغ جلسة ليلية كل مساء — الدخول 18:30–21:00، وتُضاء الأبراج من 19:20، وآخر خروج 22:00. يفتح ليلًا فقط الامتداد بين <strong>البرج الشمالي 4 والبرج الجنوبي 4</strong> (لا يفتح منحدر «الرجال الأشداء» عند N8). التذاكر بـ<strong>¥198</strong> أيام الأسبوع و<strong>¥298</strong> جمعة–أحد والعطلات الرسمية، ومحدودة بحوالي 3,000 شخص كل ليلة.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">الأفضل لـ</span> أي شخص يريد السور المعتَمد — امتداد الزيارات الرسمية، وأفضل عرض ليلي، والقسم الذي يمكنك الوصول إليه بلا سيارة — ويمكنه التعايش مع الحشود.</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">تخطَّ النقل المكوكي</strong> — احجز تذاكر بادالينغ والحافلة ذهابًا وإيابًا معًا:</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/BjTXg5QDIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 احجز تذاكر بادالينغ + الحافلة ذهابًا وإيابًا على Trip.com</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 4: MUTIANYU ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="mutianyu" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🌳 موتيانيو: هل هو أفضل قسم للمبتدئين؟</h2>
+
+    <img
+      src="/images/great-wall/mutianyu.webp"
+      alt="سور الصين العظيم في موتيانيو يمتد عبر تلال خريفية اللون مع زوار يمشون على الأسوار"
+      width="532"
+      height="355"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">لماذا يذهب الناس</span> موتيانيو هو ما يتخيله معظم الناس عندما يتخيلون يومًا مثاليًا على سور الصين العظيم — مُرمم بالكامل ومتسع، بـ<strong>23 برج مراقبة</strong> يمشي فوق التلال المغطاة بالأشجار، وبجزء بسيط من حركة بادالينغ. في أيام الأسبوع قد يبدو شبه خاص. والجذب الآخر هو النزول: <strong>زلاجة</strong> (مزلاج معدني على مسار طويل) تنطلق من السور إلى الأسفل نحو القرية، وتحول نزهة تاريخية إلى ذكرى للأطفال.</p>
+      <p class="text-lg leading-relaxed text-gray-700 clear-both"><span class="block text-xl font-bold text-brand-700 mb-2">كيف يعمل</span> تقلّك حافلة مكوكية من موقف السيارات إلى القاعدة، ثم يرفعك تلفريك إلى <strong>البرج 14</strong>. تمشي على السور بقدر ما شئت — البرج 20 هو النقطة الأعلى بأفضل بانوراما — ثم إما تعود مشيًا أو تركب الزلاجة للأسفل.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">الوصول إلى هناك</span> لا يوجد قطار فائق السرعة. تنطلق حافلات سياحية مكوكية من دونغتشيمن وهيبينغ شيتشياو (حوالي ¥80 ذهابًا وإيابًا، 1.5 ساعة)، أو احجز سيارة خاصة — الخيار الأكثر شيوعًا للزوار الأجانب. وأسهل طريقة لحجز الحافلة هي عبر إعلان Trip.com أدناه، الذي يبيع النقل المكوكي المباشر (مرشد يتحدث الإنجليزية على متنه) إما مدمجًا مع الدخول أو منفردًا — أرخص من سيارة خاصة وأسرع بكثير من طريق المترو زائد حافلتين.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">التكلفة</span> الدخول <strong>¥45</strong>. النقل المكوكي ¥15 ذهابًا وإيابًا. التلفريك ¥100 اتجاه واحد / ¥140 ذهابًا وإيابًا. الزلاجة حوالي ¥100.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">ليالٍ صيفية</span> يفتح موتيانيو أيضًا بعد حلول الظلام في <strong>فترات موسمية — صيف، ثم مجددًا خلال عطلة العيد الوطني</strong> — 17:30–21:00، مع أبراج المراقبة <strong>10–15</strong> مفتوحة. <strong>الباقة الليلية (حوالي ¥200)</strong> تشمل الدخول والنقل المكوكي والتلفريك؛ ولا تعمل الزلاجة بعد حلول الظلام.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">الأفضل لـ</span> معظم الزوار لأول مرة. إنه أفضل توازن بين المناظر والراحة والحشود المقدور عليها.</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">التذكرة، أو الحافلة المباشرة، أو كلاهما</strong> — احجزها كباقة أو منفردة:</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/0rEQW6TDIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 احجز موتيانيو على Trip.com</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 5: JINSHANLING ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="jinshanling" class="text-3xl font-bold text-gray-900 mb-6 mt-12">☁️ جينشانلينغ: هل تستحق رحلة الـ2.5 ساعة؟</h2>
+
+    <img
+      src="/images/great-wall/jinshanling.webp"
+      alt="أبراج مراقبة سور الصين العظيم في جينشانلينغ ترتفع من بحر سحاب عند الفجر"
+      width="922"
+      height="690"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">لماذا يذهب الناس</span> جينشانلينغ هو الأهدأ من الكلاسيكيات — يمكنك المشي لمسافات طويلة دون أحد تقريبًا حولك. إنه <strong>أقل إعادة بناء من موتيانيو أو بادالينغ</strong>، فتحصل على المزيد من طوب مينغ الأصلي وحشود أقل بكثير، بـ<strong>67 برج مراقبة</strong> وثلاثة أبراج إنذار متراصة في حوالي 10.5 كم، فلا تكون بعيدًا عن التالي أبدًا. ولأنه يفتح قبل الفجر، فهو الوجهة المفضلة لـ<strong>بحر السحاب</strong> ولقطات شروق الشمس التي تملأ صفحتك في الخريف.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">النسخة الصريحة</span> هذه رحلة مشي حقيقية، لا نزهة — درجات حادة، وحجارة غير مستوية، ومسافات طويلة مكشوفة بلا درابزين. وهو أيضًا الأبعد، حوالي 2.5 ساعة من بكين في مقاطعة خبي المجاورة.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">الوصول إلى هناك</span> سيارة خاصة أو جولة (حوالي 2–2.5 ساعة)؛ توجد حافلة مكوكية مباشرة موسمية من دونغتشيمن في الأشهر الأكثر دفئًا، أو خذ قطارًا إلى غوبيكو وتاكسيًا من هناك. يدرج Trip.com أيضًا <strong>نقلًا مكوكيًا (~¥80 ذهابًا)</strong> — هذا الركوب فقط؛ تذكرة البوابة ¥65، ويمكنك شراؤهما منفصلين أو كباقة.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">التكلفة</span> الدخول <strong>¥65</strong> موسم الذروة / ¥55 الموسم المنخفض — وتذاكر المشتراة في الموقع صالحة لـ<strong>دخولتين خلال 48 ساعة</strong>، هدية حقيقية إن أردت العودة لشروق الشمس. التلفريك ¥40 اتجاه واحد / ¥60 ذهابًا وإيابًا، حتى البرج الصغير لجينشان.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">الأفضل لـ</span> المصورين، والمشاة، وأي شخص رَشّح الكلاسيكيات ويريد السور بلا أحد عليه.</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">التذكرة والنقل المكوكي ذهابًا وإيابًا في حجز واحد</strong> — أو افصلهما:</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/qU1ijvnDIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 احجز جينشانلينغ على Trip.com</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 6: SIMATAI ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="simatai" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🌃 سيماتاي: كيف يبدو السور بعد حلول الظلام؟</h2>
+
+    <img
+      src="/images/great-wall/simatai.webp"
+      alt="سور الصين العظيم في سيماتاي مضاء ليلًا على الحافة فوق أزقة بلدة جوبي المائية المضاءة بالفوانيس"
+      width="1200"
+      height="900"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">لماذا يذهب الناس</span> سيماتاي هو السور الليلي الكلاسيكي — يشغل <strong>جولات ليلية طوال العام</strong>، وتتوهج الأبراج المضاءة فوق <strong>بلدة جوبي المائية</strong>، وهي مدينة قناة أُعيد بناؤها عند سفحه. ابقَ ليلة في المدينة، تجول فيها بالفوانيس، ثم اصعد إلى السور المضاء بعد حلول الظلام. السور نهارًا أكثر انحدارًا وأصالة من سور موتيانيو، ممتدًا فوق حواف حادة في كلا الاتجاهين.</p>
+      <p class="text-lg leading-relaxed text-gray-700 clear-both"><span class="block text-xl font-bold text-brand-700 mb-2">النسخة الصريحة</span> بسبب المدينة، سيماتاي أكبر من مجرد رحلة سور نقية: تذاكر النهار والليل منفصلة، و<strong>يتطلب الدخول الليلي رحلة التلفريك ذهابًا وإيابًا</strong> (لا يمكنك الصعود أو النزول مشيًا بعد حلول الظلام). ويجب على زوار النهار المغادرة بحلول بعد الظهر، فلا يمكنك البقاء ببساطة من النهار إلى الليل.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">الوصول إلى هناك</span> سيارة خاصة أو جولة من بكين، حوالي 2–2.5 ساعة، ويربط معظم الناس بينها وبين البقاء ليلة في <strong>بلدة جوبي المائية</strong> عند سفح السور. يبيع إعلان Trip.com أدناه أيضًا <strong>حافلة ذهابًا وإيابًا</strong> إلى المدينة والسور، مع التذكرة الليلية أو منفردة.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">التكلفة</span> الدخول نهارًا حوالي <strong>¥40</strong>. <strong>الجولة الليلية مع رحلة التلفريك ذهابًا وإيابًا بـ¥200/شخص</strong> (الأطفال 1.2–1.5 م ¥110) — بعد حلول الظلام، التلفريك هو الطريق الوحيد للصعود. باقة بلدة جوبي المائية + السور + التلفريك بـ<strong>¥280</strong>، والنزلاء ليلًا في المدينة يدفعون <strong>¥120</strong> — احجز مسبقًا.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">اجمعها مع بلدة جوبي المائية</span> تقع مدينة القناة المُعاد بناؤها مباشرة عند سفح السور، ويزور معظم الناس الاثنين كرحلة واحدة — أزقة مضاءة بالفوانيس في أواخر بعد الظهر، ثم السور المضاء بعد حلول الظلام. <strong>التذاكر منفصلة</strong> والجولة الليلية لا تشمل المدينة، لذا ضع ميزانية لكليهما.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">الأفضل لـ</span> الأزواج والمصورين الذين يريدون الأجواء؛ أي شخص يفضل رؤية السور مضاءً على الوقوف في حشد نهاري.</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">التذكرة الليلية والحافلة ذهابًا وإيابًا، مدمجة</strong> — أو احجز الركوب فقط:</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/Ar0ZTnMNIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 احجز سيماتاي على Trip.com</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 7: HUANGHUACHENG ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="huanghuacheng" class="text-3xl font-bold text-gray-900 mb-6 mt-12">💧 هوانغهواچنغ: حيث يمشي السور نحو بحيرة</h2>
+
+    <img
+      src="/images/great-wall/huanghuacheng.webp"
+      alt="سور الصين العظيم في هوانغهواچنغ يتبع شاطئ خزان فيروزي مع قارب رحلات على الماء"
+      width="393"
+      height="674"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">لماذا يذهب الناس</span> هذا هو المكان الوحيد في الصين حيث يمشي السور <strong>داخلًا وخارجًا من المياه المفتوحة ثلاث مرات</strong> — خُزان بُني في عقد 1970 رفع منسوب المياه وأغرق أدنى امتداد، تاركًا الأبراج ترتفع من بحيرة فيروزية. حوله بستان كستناء من عهد مينغ (بأشجار عمرها عدة مئات من السنين) وممشى بحيرة سهل. إنه أخضر، وهادئ، ولا يشبه السور في الصور.</p>
+      <p class="text-lg leading-relaxed text-gray-700 clear-both"><span class="block text-xl font-bold text-brand-700 mb-2">النسخة الصريحة</span> الامتداد المغمور قصير — هذا نصف يوم، لا يومًا كاملاً — وأفضل المناظر قرب المدخل، لذا قد يبدو مزدحمًا في عطلة نهاية الأسبوع. الإضافات (القارب، والجسر الزجاجي، والمنزلق) كلها بتكلفة أكبر.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">معالم رئيسية</span> <strong>السور المغمور</strong> («تنين يشرب عند الماء»)، و<strong>الجسر الزجاجي</strong>، و<strong>بستان كستناء مينغ</strong>.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">على الماء</span> هذا القسم الوحيد الذي يمكنك فيه النزول إلى الماء نفسه — <strong>قوارب سياحية وقوارب ترفيهية مرسومة</strong> تعبر البحيرة (حوالي <strong>¥25 اتجاه واحد / ¥45 للعودة</strong>)، مع <strong>ركوب زجاجي فوق السحاب</strong> و<strong>منزلق مغناطيسي</strong> نزولًا على الممشى كإضافات أخرى. تتطلب كل الأنشطة المائية رسومًا إضافية فوق سعر الدخول.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">الوصول إلى هناك</span> حوالي 1–1.5 ساعة بالسيارة أو ديدي من وسط بكين؛ أصعب بوسائل النقل العام (حافلات من دونغتشيمن باتجاه هوانغهواچنغ).</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">التكلفة</span> الدخول حوالي <strong>¥58</strong>؛ القوارب والجسر الزجاجي والمنزلقات كلها إضافات مدفوعة.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">الأفضل لـ</span> أي شخص رأى السور الكلاسيكي ويريد شيئًا مختلفًا حقًا؛ نصف يوم هادئ مع الأطفال.</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">التذكرة والحافلة ورحلة القارب معًا</strong> — الطريقة السهلة لتغطية إضافات البحيرة:</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/bU5SXQXDIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 احجز هوانغهواچنغ على Trip.com</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 8: JUYONGGUAN ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="juyongguan" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏯 جويونغقوان: أفضل قسم لنصف يوم من بكين؟</h2>
+
+    <img
+      src="/images/great-wall/juyongguan.webp"
+      alt="مبنى بوابة حصن جويونغقوان بسقفه المكسو بالقرميد الأخضر، وسور الصين العظيم يتعرج على الحافة خلفه"
+      width="530"
+      height="677"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">لماذا يذهب الناس</span> جويونغقوان هو <strong>أقرب قسم إلى المدينة</strong> (أقل من 60 كم، في تشانغبينغ) وهو المبني كممر حصن لا كسور على قمة حافة — تمشي حلقة كاملة في وادٍ، مرورًا ببوابة «<strong>الممر رقم 1 تحت السماء</strong>»، مع <strong>منصة السحاب (云台)</strong> ومجمع معبد بداخله. ولأنه قريب وأقل شهرة، فهو الأهدأ من الخيارات السهلة، وهو مفتوح مبكرًا ومتأخرًا (تقريبًا <strong>6:30 ص–18:00</strong>). ومن <strong>أواخر مارس إلى منتصف أبريل</strong>، تكتسي التلال بأزهار الخوخ الجبلي والمشمش، و«<strong>قطار بحر الأزهار</strong>» — السكة الحديدية الضاحية S2 — يمر عبر الوادي بالأسفل، وهي صورة ربيعية تستحق الانحراف.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">الوصول إلى هناك</span> مترو الخط 8/13 إلى هووينغ، ثم الحافلة 879/919 إلى جويونغقوان؛ أو حوالي ساعة بالسيارة/ديدي.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">التكلفة</span> الدخول <strong>¥45</strong> (أبريل–أكتوبر) / <strong>¥40</strong> (نوفمبر–مارس)؛ يدفع الأطفال فوق 1.2 م والطلاب السعر المخفّض.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">جلسة ليلية</span> في <strong>ليالي الجمعة والسبت بالإضافة إلى العطلات الرسمية</strong> حتى أوائل أكتوبر (18:00–21:00)، يشغل الممر حدثًا ليليًا غامرًا — حراس يستعرضون الطريق البريد القديم، وفرق شعبية فوق الأبراج، وأسوار مضاءة بالفوانيس، وسوق ليلية داخل المجمع.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">لا يوجد تلفريك</span> جويونغقوان هو أحد قسمين رئيسيين فقط بـ<strong>لا تلفريك للصعود</strong> (هوانغهواچنغ هو الآخر) — والوحيد بلا منزلق نزولًا أيضًا، فتمشي صعودًا ونزولًا. الحلقة أقصر وألطف من موتيانيو أو جينشانلينغ، لكن ضع في الحسبان التسلق.</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">الأفضل لـ</span> رحلات نصف يوم، وزيارات الشتاء، وعشاق التاريخ، وأي شخص يريد السور بلا بداية مبكرة أو قيادة طويلة.</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">التذكرة والنقل المكوكي ذهابًا وإيابًا في حجز واحد</strong> — أبسط خيار لنصف يوم:</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/RM0EN5ONIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 احجز جويونغقوان على Trip.com</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 9: TICKETS ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="tickets" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎫 هل تحتاج لحجز التذاكر مسبقًا؟</h2>
+    <ul class="list-disc pl-6 space-y-3 mb-12 text-lg text-gray-700">
+      <li>احجز <strong>مسبقًا</strong> لبادالينغ — في أيام الذروة تنفد تذاكر البوابة، ولا يوجد شباك تذاكر للحاضرين.</li>
+      <li><strong>تُباع التذاكر الليلية منفصلة</strong> وهي محدودة العدد وبدخول بموعد محدد؛ وفي بادالينغ تكون عبر الإنترنت فقط وغالبًا تنفد قبل يومين إلى ثلاثة في عطلة نهاية الأسبوع.</li>
+      <li>يحتاج الزوار الأجانب <strong>جواز سفرهم</strong> للشراء والدخول في كل قسم.</li>
+      <li>يمتد موسم الذروة تقريبًا <strong>أبريل–أكتوبر</strong>؛ والأسعار في الجدول أعلاه هي أسعار موسم الذروة.</li>
+    </ul>
+
+    <div class="bg-yellow-50 border border-yellow-100 rounded-2xl p-6 mb-12">
+      <p class="text-gray-700"><strong>⏰ القاعدة الوحيدة التي تهم:</strong> اذهب مبكرًا. تصل مجموعات الجولات بين 9:30 و11 صباحًا — كن على السور قبل 9 صباحًا لتجربة النسخة التي تراها في الصور.</p>
+    </div>
+
+    <!-- ============ SECTION 10: BEST TIME ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="best-time" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📅 أفضل وقت للزيارة</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">لكل قسم موسم وساعة حيث يبدو كما تخيلته. هذه هي النوافذ التي اشتهرت بها الأقسام الستة أعلاه فعليًا.</p>
+
+    <ul class="list-disc pl-6 space-y-3 mb-12 text-lg text-gray-700">
+      <li>🍂 <strong>الخريف هو موسم المصور.</strong> يفتح جينشانلينغ قبل الفجر وهو الوجهة المفضلة لبحر السحاب ولقطات شروق الشمس التي تملأ صفحتك في الخريف — وتذكرة موسم الذروة المشتراة في الموقع صالحة لدخولتين خلال 48 ساعة.</li>
+      <li>🌸 <strong>أواخر مارس إلى منتصف أبريل</strong> تجلب أزهار الخوخ الجبلي والمشمش إلى تلال جويونغقوان، بالإضافة إلى «قطار بحر الأزهار» الربيعي الذي يمر عبر الوادي بالأسفل.</li>
+      <li>🌙 <strong>تُقام الجولات الليلية من 30 أبريل إلى 6 أكتوبر</strong> في بادالينغ، وفي فترات صيفية موسمية في موتيانيو، طوال العام في سيماتاي، وليالي الجمعة والسبت في جويونغقوان.</li>
+      <li>❄️ <strong>الشتاء هو موسم الهدوء.</strong> جويونغقوان هو أفضل رهان شتوي — قريب، مفتوح مبكرًا ومتأخرًا، والأهدأ من الخيارات السهلة.</li>
+      <li>📅 <strong>يمتد موسم الذروة تقريبًا أبريل–أكتوبر</strong>؛ والأسعار في جدول المقارنة هي أسعار موسم الذروة، وتذاكر الموسم المنخفض أرخص قليلاً (بادالينغ ¥35، جينشانلينغ ¥55).</li>
+    </ul>
+
+    <!-- ============ SECTION 11: PRACTICAL TIPS ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="practical-tips" class="text-3xl font-bold text-gray-900 mb-6 mt-12">👟 ماذا يجب أن تحزم لسور الصين العظيم؟</h2>
+    <ul class="list-disc pl-6 space-y-3 mb-12 text-lg text-gray-700">
+      <li>2–3 لترات ماء للشخص — لا توجد متاجر على طول السور.</li>
+      <li>واقٍ من الشمس وقبعة في الصيف؛ طبقات دافئة مقاومة للريح في الشتاء (السور أبرد وأكثر عرضة للرياح من المدينة دائمًا).</li>
+      <li>أحذية مناسبة: الأحذية الرياضية تكفي لبادالينغ وموتيانيو وجويونغقوان؛ <strong>أحذية المشي</strong> لجينشانلينغ وسيماتاي.</li>
+    </ul>
+
+    <!-- ============ SECTION 12: HISTORY ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="history" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📜 ما الذي تمشي عليه فعليًا؟ طوب مينغ، لا طوب تشين</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">سور الصين العظيم ليس سورًا واحدًا بل <strong>منظومة</strong> — بنت أسر متعددة، وربطت، وأعادت البناء على مدار أكثر من 2,000 عام. معظم ما تراه اليوم هو <strong>بناء أسرة مينغ (1368–1644)</strong>؛ وتآكلت أعمال تشين وهان الترابية الأقدم إلى حد كبير. يمتد الشبكة الكاملة <strong>21,196 كم</strong> كما قاسته الإدارة الحكومية الصينية للتراث الثقافي في 2012 — وهذا يعد كل فرع وخندق، لا مجرد السور الرئيسي. تصل الأقسام المُرممة القابلة للمشي حوالي 700 كم.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">بضع تفاصيل تستحق المعرفة وأنت تمشي:</p>
+
+    <ul class="list-disc pl-6 space-y-3 mb-12 text-lg text-gray-700">
+      <li><strong>أُعيد بناء الأقسام الشرقية بواسطة جنرال شهير.</strong> تشي جيغوانغ، الجنرال من عهد مينغ الذي أعاد تنظيم السور في عقد 1560–70، أضاف أبراج المراقبة الكثيفة والشُرف التي تراها في موتيانيو وجينشانلينغ وبادالينغ.</li>
+      <li><strong>في جينشانلينغ، انظر إلى الطوب.</strong> يحمل الكثير منها <strong>علامات منقوشة</strong> — طُبع بنّاؤوه الأصليون فرنهم ووحدتهم على كل طوبة لتتبع العيوب إلى فريق. إنها مراقبة الجودة من عهد مينغ، في الحجر.</li>
+      <li><strong>المونة أغرب مما تبدو.</strong> احتفظت الأقسام المُرممة بالوصفة الأصلية — دقيق الأرز اللزج مخلوطًا في مونة الجير، وهو جزء من سبب بقاء هذه الأسوار لقرون.</li>
+      <li><strong>أبراج المراقبة كانت متعددة الأغراض.</strong> خزنت السلاح والحبوب، وأوت الحامية، وأرسلت الإشارات — دخانًا نهارًا، ونارًا ليلًا. ولهذا تجلس في مرأى بعضها على طول السور كله.</li>
+    </ul>
+
+    <!-- ============ NEXT READS ============ -->
+    <div class="border-t border-gray-100 pt-8 mt-8 not-prose">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h3 class="text-sm font-bold text-gray-900">📚 أدلة ذات صلة</h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="/ar/cities/beijing-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🏙️ دليل السفر إلى بكين
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ar/cities/forbidden-city/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🏛️ دليل المدينة المحرمة
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ar/cities/city-select/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              📅 كم يومًا تحتاج في الصين؟
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ar/transport/high-speed-rail/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🚄 كيف تحجز وتركب القطار فائق السرعة في الصين
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ar/payment/china-travel-budget/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              💰 تكلفة رحلة إلى الصين 2026
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ SOURCES ============ -->
+    <section class="mt-10 pt-6 border-t border-gray-100">
+      <h3 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-4">المصادر</h3>
+      <ol class="space-y-2 text-sm text-gray-500">
+        <li>1. <strong>سور الصين العظيم في بادالينغ</strong> — <a href="https://english.visitbeijing.com.cn/article/4MX01cNAUre" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Beijing Micro-Getaway Guide: Must-Visit Attractions</a></li>
+        <li>2. <strong>الجولات الليلية عبر الأقسام الأربعة</strong> — <a href="https://english.visitbeijing.com.cn/article/4RI8S685GDY" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Ecological Leisure | Badaling Night Great Wall</a>؛ <a href="https://english.visitbeijing.com.cn/article/4T3jh3BHGra" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Upgraded Juyongguan Night Great Wall</a>؛ <a href="https://english.visitbeijing.com.cn/article/4OStXw7yhMK" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Beijing's Golden Autumn Vibe, Double the Festival Joy</a>.</li>
+        <li>3. <strong>سور الصين العظيم في موتيانيو</strong> — <a href="https://en.mutianyugreatwall.com/article/4SHdMJjS04P" target="_blank" rel="noopener" class="text-blue-600 hover:underline">2026 night-tour guide</a></li>
+        <li>4. <strong>سور الصين العظيم في جينشانلينغ</strong> — <a href="https://english.visitbeijing.com.cn/article/4JvnMW3ZbDx" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Two-day trip towards autumn foliage with one ticket</a></li>
+        <li>5. <strong>هوانغهواچنغ (سور المياه العظيم)</strong> — <a href="https://english.visitbeijing.com.cn/article/4Itpbe3Ye1z" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Beijing Huanghuacheng Lakeside Great Wall</a></li>
+        <li>6. <strong>سور الصين العظيم في جويونغقوان</strong> — <a href="https://english.visitbeijing.com.cn/article/47OOq8YYqAs" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Juyongguan Great Wall (居庸关长城)</a></li>
+        <li>7. <strong>سور الصين العظيم في سيماتاي</strong> — <a href="https://english.visitbeijing.com.cn/article/4OT1GKn1zoW" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Experience night scenery at Simatai Great Wall</a></li>
+        <li>8. <strong>الوصول إلى هناك</strong> — <a href="https://english.visitbeijing.com.cn/article/47OLMubjite" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Come to Badaling Great Wall for moon appreciation</a>.</li>
+      </ol>
+      <p class="text-sm text-gray-500 mt-4"><em>جميع الأرقام أعلاه هي أسعار البالغين في موسم الذروة. المصادر هي البوابة الرسمية للسياحة في بكين (english.visitbeijing.com.cn) ومواقع الأقسام السياحية الإنجليزية الخاصة، تم التحقق منها في سبتمبر 2026.</em></p>
+    </section>
+
+  </article>
+</Layout>

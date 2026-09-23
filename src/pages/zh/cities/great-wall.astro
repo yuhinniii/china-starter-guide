@@ -1,0 +1,480 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = '长城攻略：该去哪一段？';
+const description = '六段长城怎么比——八达岭、慕田峪、金山岭、司马台、黄花城与居庸关，从人流、难度、门票到夜游，一次讲清。';
+---
+
+<Layout title={title} description={description} lang="zh">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+
+    <!-- ============ BREADCRUMB ============ -->
+    <nav class="mb-8 not-prose">
+      <a href="/zh/cities/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        返回城市指南
+      </a>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🧱 长城 · 北京</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">长城：该去哪一段？</h1>
+      <p class="text-xl text-gray-600 mb-6">八达岭、慕田峪、金山岭还是司马台——它们究竟差在哪，哪一段才适合你这趟行程。</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 最后更新：2026年9月</span>
+        <span>⏱️ 阅读时间：12分钟</span>
+      </div>
+    </header>
+
+    <!-- ============ HERO IMAGE ============ -->
+    <figure class="mb-12 not-prose">
+      <img
+        src="/images/great-wall/comparison-grid.webp"
+        alt="北京周边六段长城拼图：春日花海中的八达岭、秋色里的慕田峪、云海之上的金山岭、夜色中亮灯于古北水镇上方的司马台、探入碧绿湖水的黄花城，以及居庸关的关城"
+        width="1200"
+        height="534"
+        loading="eager"
+        fetchpriority="high"
+        class="w-full h-auto object-cover rounded-2xl shadow-md"
+      />
+      <figcaption class="text-xs text-gray-500 text-center mt-2">同一道墙，六种日子。从左到右、从上到下：八达岭、慕田峪、金山岭、司马台、黄花城、居庸关。</figcaption>
+    </figure>
+
+    <!-- ============ QUICK ANSWER ============ -->
+    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-red-900 mb-4">⚡ 快速答案</h2>
+      <p class="text-lg text-red-800 leading-relaxed">
+        <strong>慕田峪</strong>对大多数初次到访者来说是最稳妥的选择——修复完整、气势足，上山有缆车、下山有滑道，人流却只有八达岭的一小部分。<strong>八达岭</strong>是最具代表性的一段——最早对游客开放、各国元首到访的那一段，也是修复段中最雄伟的，可一路爬到888米的北八楼；但它也是人最多的。<strong>金山岭</strong>是徒步者和摄影师的首选——更安静、重修痕迹更少，67座敌楼密集分布，天亮前就开放，专为拍云海。<strong>司马台</strong>最有氛围——全年开放夜游，脚下就是古北水镇。<strong>黄花城</strong>最特别——唯一一段长城没入水中，有游船和玻璃桥。<strong>居庸关</strong>离城最近、也最清静——是关城环线而不是爬山脊，半日游或冬天去最合适。
+      </p>
+    </div>
+
+    <!-- ============ IN THIS GUIDE ============ -->
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 本指南内容</h3>
+      <ul class="space-y-3">
+        <li><a href="#which-section" class="text-blue-600 hover:underline">🤔 该去哪一段？</a></li>
+        <li><a href="#night" class="text-blue-600 hover:underline">🌙 长城能夜游吗？</a></li>
+        <li><a href="#badaling" class="text-blue-600 hover:underline">🏔️ 八达岭</a></li>
+        <li><a href="#mutianyu" class="text-blue-600 hover:underline">🌳 慕田峪</a></li>
+        <li><a href="#jinshanling" class="text-blue-600 hover:underline">☁️ 金山岭</a></li>
+        <li><a href="#simatai" class="text-blue-600 hover:underline">🌃 司马台</a></li>
+        <li><a href="#huanghuacheng" class="text-blue-600 hover:underline">💧 黄花城</a></li>
+        <li><a href="#juyongguan" class="text-blue-600 hover:underline">🏯 居庸关</a></li>
+        <li><a href="#tickets" class="text-blue-600 hover:underline">🎫 门票与预约</a></li>
+        <li><a href="#best-time" class="text-blue-600 hover:underline">📅 最佳时间</a></li>
+        <li><a href="#practical-tips" class="text-blue-600 hover:underline">👟 该带什么？</a></li>
+        <li><a href="#history" class="text-blue-600 hover:underline">📜 明砖，不是秦砖</a></li>
+      </ul>
+    </nav>
+
+    <!-- ============ SECTION 1: WHICH SECTION ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="which-section" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🤔 该去哪一段？</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">严格说，每一段都是同一道墙。但没有两段能给你同样的一天。真正要紧的差别不是距离或票价，而是<strong>人多不多、要费多大力气，以及你到的时候这段墙正在做什么</strong>——是翻过山脊、没入湖水，还是亮着灯映在夜空里。下面按「第一次或第二次来更可能合适」的顺序排列。</p>
+
+    <h3 class="text-xl font-bold text-gray-900 mb-4">六段长城横向对比</h3>
+
+    <div class="overflow-x-auto mb-8 not-prose">
+      <table class="w-full text-sm text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+        <thead>
+          <tr class="bg-gray-900 text-white">
+            <th class="px-3 py-3 font-bold align-bottom">关段</th>
+            <th class="px-3 py-3 font-bold align-bottom">距北京</th>
+            <th class="px-3 py-3 font-bold align-bottom">人流</th>
+            <th class="px-3 py-3 font-bold align-bottom">难度</th>
+            <th class="px-3 py-3 font-bold align-bottom">门票</th>
+            <th class="px-3 py-3 font-bold align-bottom">所需时间</th>
+            <th class="px-3 py-3 font-bold align-bottom">适合带孩子？</th>
+            <th class="px-3 py-3 font-bold align-bottom">最出彩的瞬间</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="px-3 py-3 font-semibold">八达岭</td>
+            <td class="px-3 py-3">70公里 · 高铁约35分钟</td>
+            <td class="px-3 py-3">极多</td>
+            <td class="px-3 py-3">轻松</td>
+            <td class="px-3 py-3">¥40</td>
+            <td class="px-3 py-3">3–4小时</td>
+            <td class="px-3 py-3">可以（地面缆车）</td>
+            <td class="px-3 py-3">磅礴的气势，以及规模最大的夜游灯光</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-3 py-3 font-semibold">慕田峪</td>
+            <td class="px-3 py-3">70公里 · 车程约1.5小时</td>
+            <td class="px-3 py-3">中等</td>
+            <td class="px-3 py-3">轻松至中等</td>
+            <td class="px-3 py-3">¥45</td>
+            <td class="px-3 py-3">半天</td>
+            <td class="px-3 py-3">可以（缆车 + 滑道）</td>
+            <td class="px-3 py-3">23座修复敌楼，然后滑道下山</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-3 py-3 font-semibold">金山岭</td>
+            <td class="px-3 py-3">130公里 · 车程约2.5小时</td>
+            <td class="px-3 py-3">少</td>
+            <td class="px-3 py-3">较费力</td>
+            <td class="px-3 py-3">¥65</td>
+            <td class="px-3 py-3">全天</td>
+            <td class="px-3 py-3">不适合</td>
+            <td class="px-3 py-3">67座敌楼密集相连，清晨云海</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-3 py-3 font-semibold">司马台</td>
+            <td class="px-3 py-3">120公里 · 车程约2.5小时</td>
+            <td class="px-3 py-3">少</td>
+            <td class="px-3 py-3">较费力</td>
+            <td class="px-3 py-3">白天¥40</td>
+            <td class="px-3 py-3">半天至全天</td>
+            <td class="px-3 py-3">大一点的孩子</td>
+            <td class="px-3 py-3">夜里亮灯的长城悬在古北水镇之上</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-3 py-3 font-semibold">黄花城</td>
+            <td class="px-3 py-3">60公里 · 车程约1.5小时</td>
+            <td class="px-3 py-3">较少</td>
+            <td class="px-3 py-3">中等</td>
+            <td class="px-3 py-3">¥58</td>
+            <td class="px-3 py-3">半天</td>
+            <td class="px-3 py-3">可以</td>
+            <td class="px-3 py-3">长城径直走进湖里</td>
+          </tr>
+          <tr>
+            <td class="px-3 py-3 font-semibold">居庸关</td>
+            <td class="px-3 py-3">60公里 · 车程约1小时</td>
+            <td class="px-3 py-3">少</td>
+            <td class="px-3 py-3">中等</td>
+            <td class="px-3 py-3">¥45（4–10月）</td>
+            <td class="px-3 py-3">半天</td>
+            <td class="px-3 py-3">可以</td>
+            <td class="px-3 py-3">「天下第一雄关」，以及春天的花海列车</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">以上为旺季成人票价；学生一般半价，1.2米以下儿童通常免票。各段各季价格会有变动，出发前请再确认。</p>
+
+    <!-- ============ SECTION 2: NIGHT ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="night" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🌙 长城能夜游吗？</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">比起距离和票价，真正区分这几段的是三个实际问题：<strong>能不能不爬就上去、停车场有没有接驳车、天黑后开不开</strong>。下面是完整情况。</p>
+
+    <div class="overflow-x-auto mb-8 not-prose">
+      <table class="w-full text-sm text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+        <thead>
+          <tr class="bg-gray-900 text-white">
+            <th class="px-3 py-3 font-bold align-bottom">关段</th>
+            <th class="px-3 py-3 font-bold align-bottom">夜游</th>
+            <th class="px-3 py-3 font-bold align-bottom">上山方式</th>
+            <th class="px-3 py-3 font-bold align-bottom">接驳 / 换乘</th>
+            <th class="px-3 py-3 font-bold align-bottom">招牌附加体验</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="px-3 py-3 font-semibold">八达岭</td>
+            <td class="px-3 py-3">✅ 每晚，4月30日–10月6日（入场18:30–21:00）</td>
+            <td class="px-3 py-3">缆车或地面缆车，单程¥100</td>
+            <td class="px-3 py-3">园区免费接驳车；「长城巴士」往返¥80</td>
+            <td class="px-3 py-3">北四楼至南四楼之间的城墙亮灯</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-3 py-3 font-semibold">慕田峪</td>
+            <td class="px-3 py-3">✅ 分季节开放（夏季；国庆）</td>
+            <td class="px-3 py-3">缆车上，滑道下</td>
+            <td class="px-3 py-3">接驳车往返¥15</td>
+            <td class="px-3 py-3">滑道</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-3 py-3 font-semibold">金山岭</td>
+            <td class="px-3 py-3">❌</td>
+            <td class="px-3 py-3">缆车单程¥40 / 往返¥60</td>
+            <td class="px-3 py-3">单程接驳巴士 约¥80</td>
+            <td class="px-3 py-3">日出云海</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-3 py-3 font-semibold">司马台</td>
+            <td class="px-3 py-3">✅ 全年（18:00–21:30）</td>
+            <td class="px-3 py-3">缆车——天黑后必须乘坐</td>
+            <td class="px-3 py-3">—</td>
+            <td class="px-3 py-3">脚下的古北水镇</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-3 py-3 font-semibold">黄花城</td>
+            <td class="px-3 py-3">❌</td>
+            <td class="px-3 py-3"><strong>无缆车</strong>——沿栈道乘磁滑道下山</td>
+            <td class="px-3 py-3">大巴或包车</td>
+            <td class="px-3 py-3">湖上游船，还有玻璃桥</td>
+          </tr>
+          <tr>
+            <td class="px-3 py-3 font-semibold">居庸关</td>
+            <td class="px-3 py-3">✅ 周五、周六夜场及节假日，至10月初</td>
+            <td class="px-3 py-3"><strong>无缆车</strong>——上下都靠走</td>
+            <td class="px-3 py-3">—</td>
+            <td class="px-3 py-3">关城内的明代主题夜游市集</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">有一点得先分清楚：<strong>有接驳车 ≠ 容易到达。</strong>除了八达岭，其余各段的接驳车只负责最后一段路——从停车场到关口——可你得先想办法到那个停车场，要么坐大巴、要么自驾、要么跟团。八达岭是唯一有自己火车站的一段：京张高铁直达八达岭长城站，从北京北站约30–40分钟，车站离登山入口约800米，最后一段有免费接驳车。这就是为什么它是你能不靠车、不跟团就去的一段——也正是它人最多的原因。</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">夜游票价（2026年）：八达岭平日 <strong>¥198</strong> / 周五至周日及节假日 <strong>¥298</strong>，需提前线上预订（现场无售票窗口）；慕田峪 <strong>¥200</strong>，含门票、接驳车和缆车；司马台夜游加往返缆车 <strong>¥200</strong>（<strong>不含古北水镇门票</strong>）；居庸关早鸟票 <strong>¥19.9</strong> 起。每场夜游都分时段、限人数，务必提前订——八达岭周末的场次常常提前两三天就卖光。</p>
+
+    <!-- ============ SECTION 3: BADALING ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="badaling" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏔️ 八达岭：最雄伟的一段，也最挤</h2>
+
+    <img
+      src="/images/great-wall/badaling.webp"
+      alt="八达岭长城在北京北部的山花间起伏"
+      width="1200"
+      height="943"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">为什么去</span> 八达岭是中国最有名的一段，也是接待外国元首的那一段。城墙修复完整、宽阔、气势不凡，向两侧陡峭地爬上脊线——是修复段中最宽、最雄伟的，一路到 <strong>888米的北八楼</strong>，那里立着<strong>「不到长城非好汉」碑</strong>。你能完整感受到「我站在长城上」的那一刻——也没有哪一段能让你花这么少的心思，看到这么长的城墙。</p>
+      <p class="text-lg leading-relaxed text-gray-700 clear-both"><span class="block text-xl font-bold text-brand-700 mb-2">要注意什么</span> 这一段人人都知道。周末或节假日，八达岭会非常挤，你可能被人流推着走。诀窍是错峰：开门时（约早7点）就到关口，第一个小时基本就归你了。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">怎么去</span> 乘高铁到 <strong>八达岭长城站</strong>——从<strong>清河出发约20–25分钟</strong>（¥16–25），或从<strong>北京北站约30–40分钟</strong>（¥25–31）；车站离登山入口约 <strong>800米</strong>。预算有限可坐 <strong>877路</strong>公交，现已改从<strong>北土城地铁站（8/10号线）</strong>发车，票价¥12。<strong>车票要早订</strong>——京张线周末和节假日的票很快售罄，提前 <strong>15天</strong>在12306或 Trip.com 开售。不想坐火车的话，下面的 Trip.com 链接也卖<strong>往返接驳巴士</strong>（车上有导游），可单订也可与门票打包，比包车便宜、直达，还省去公交倒车。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">费用</span> 门票旺季 <strong>¥40</strong> / 淡季¥35。<strong>北线缆车或南线地面缆车</strong>单程¥100，往返¥140。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">夜长城</span> 从<strong>4月30日到10月6日</strong>，八达岭每晚都有夜场——18:30–21:00入场，19:20亮灯，22:00最后离场。夜间只开放<strong>北四楼到南四楼</strong>这一段（北八楼的「好汉坡」不在其中）。票价平日 <strong>¥198</strong>，周五至周日及节假日 <strong>¥298</strong>，每晚限约3,000人。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">最适合</span> 想要「最正宗」长城的人——元首到访的那段、最好的夜游灯光，而且不用车就能到——只要你不怕人多。</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">省去换乘</strong>——八达岭门票和往返巴士一起订：</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/BjTXg5QDIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 在 Trip.com 预订八达岭门票 + 往返巴士</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 4: MUTIANYU ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="mutianyu" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🌳 慕田峪：最适合第一次爬长城吗？</h2>
+
+    <img
+      src="/images/great-wall/mutianyu.webp"
+      alt="慕田峪长城穿行于秋色山峦之间，游客在城墙上行走"
+      width="532"
+      height="355"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">为什么去</span> 大多数人想象中的完美长城一日，就是慕田峪——修复完整、视野开阔，<strong>23座敌楼</strong>排布在密林山峦之上，人流却只有八达岭的一小部分。工作日甚至会觉得像包场。另一个吸引力在下山：<strong>滑道</strong>（金属滑车沿长轨道滑行）从城墙一路滑回村里，把一趟历史之旅变成孩子记很久的事。</p>
+      <p class="text-lg leading-relaxed text-gray-700 clear-both"><span class="block text-xl font-bold text-brand-700 mb-2">怎么玩</span> 先坐接驳车从停车场到山脚，再乘缆车直上<strong>14号敌楼</strong>。之后想走多远走多远——20号敌楼是最高点，视野最好——最后原路走回或坐滑道下山。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">怎么去</span> 没有高铁。旅游专线从东直门和和平西桥发车（往返约¥80，1.5小时），或包车——这是外籍游客最常选的方式。最省事的订车方式是用下面的 Trip.com 链接，它卖直达接驳车（车上有英文导游），可与门票打包也可单订——比包车便宜，也比「地铁 + 两趟公交」快得多。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">费用</span> 门票 <strong>¥45</strong>。接驳车往返¥15。缆车单程¥100 / 往返¥140。滑道约¥100。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">夏日夜场</span> 慕田峪也在<strong>特定时段开放夜游——夏季，以及国庆假期</strong>——17:30–21:00，开放<strong>10–15号敌楼</strong>。<strong>夜游套票（约¥200）</strong>含门票、接驳车和缆车；天黑后滑道不运营。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">最适合</span> 大多数初次到访者。风景、舒适度和人流控制得最平衡的一段。</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">门票、直达巴士，或两者一起</strong>——可打包也可单订：</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/0rEQW6TDIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 在 Trip.com 预订慕田峪</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 5: JINSHANLING ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="jinshanling" class="text-3xl font-bold text-gray-900 mb-6 mt-12">☁️ 金山岭：开车2.5小时值不值？</h2>
+
+    <img
+      src="/images/great-wall/jinshanling.webp"
+      alt="清晨云海中矗立的金山岭长城敌楼"
+      width="922"
+      height="690"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">为什么去</span> 金山岭是经典几段里最安静的——常常走很长一段都碰不到人。它<strong>比慕田峪和八达岭重修得少</strong>，能看到更多明代原砖，人也少得多；约10.5公里内密集分布着<strong>67座敌楼</strong>和三座烽火台，永远走不远就是下一座。因为它天亮前就开放，秋天刷屏的<strong>云海</strong>和日出照片大多出自这里。</p>
+      <p class="text-lg leading-relaxed text-gray-700 clear-both"><span class="block text-xl font-bold text-brand-700 mb-2">说句实话</span> 这是正经徒步，不是散步——台阶陡、石面不平，还有很长一段没有扶手的暴露路段。而且它最远，约2.5小时车程，已在邻省河北。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">怎么去</span> 包车或跟团（约2–2.5小时）；天气暖的几个月有从东直门出发的季节性直达巴士，也可以坐火车到古北口再打车前往。Trip.com 上还有<strong>接驳车（单程约¥80）</strong>——那只含车费；门票¥65，两者可分开买也可打包。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">费用</span> 门票旺季 <strong>¥65</strong> / 淡季¥55——现场买的票<strong>48小时内可两次入园</strong>，若想第二天回来看日出，这非常实用。缆车单程¥40 / 往返¥60，可到小金山楼。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">最适合</span> 摄影师、徒步爱好者，以及已经去过经典几段、想找一段没人的墙的人。</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">门票与往返接送一次订好</strong>——或者分开订：</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/qU1ijvnDIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 在 Trip.com 预订金山岭</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 6: SIMATAI ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="simatai" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🌃 司马台：天黑后的长城什么样？</h2>
+
+    <img
+      src="/images/great-wall/simatai.webp"
+      alt="夜色中亮灯的司马台长城，悬在灯笼点亮的古北水镇街巷之上"
+      width="1200"
+      height="900"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">为什么去</span> 司马台是经典的夜长城——<strong>全年开放夜游</strong>，亮灯的敌楼悬在脚下的<strong>古北水镇</strong>之上，那是一座重新修复的水乡小镇。在水镇住一晚，提着灯笼逛一圈，天黑后再坐缆车上亮灯的长城。白天的司马台比慕田峪更陡、更原始，城墙向两侧越过尖锐的山脊。</p>
+      <p class="text-lg leading-relaxed text-gray-700 clear-both"><span class="block text-xl font-bold text-brand-700 mb-2">说句实话</span> 因为有了水镇，司马台更像一个打包产品，而不是单纯爬墙：白天和夜游的票是分开的，<strong>夜场必须坐往返缆车</strong>（天黑后不能徒步上下）。白天游客必须在傍晚前离场，所以没法从白天一直待到夜里。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">怎么去</span> 从北京包车或跟团前往，约2–2.5小时，多数人会连住一晚<strong>古北水镇</strong>，就在长城脚下。下面的 Trip.com 链接也卖到水镇和长城的<strong>往返巴士</strong>，可连夜游票一起订，也可单订车。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">费用</span> 白天门票约 <strong>¥40</strong>。<strong>夜游加往返缆车¥200/人</strong>（1.2–1.5米儿童¥110）——天黑后，缆车是唯一上山方式。古北水镇 + 长城 + 缆车套票 <strong>¥280</strong>，水镇住客 <strong>¥120</strong>——记得提前订。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">搭配古北水镇</span> 这座修复的水乡就在长城脚下，多数人把两者当成一趟行程——傍晚逛灯笼下的街巷，天黑后上亮灯的长城。<strong>两边门票分开</strong>，夜游票不含水镇，预算要按两项算。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">最适合</span> 想要氛围感的情侣和摄影师；以及与其白天在人堆里站着、不如看长城亮灯的人。</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">夜游票和往返巴士打包</strong>——也可以只订车：</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/Ar0ZTnMNIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 在 Trip.com 预订司马台</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 7: HUANGHUACHENG ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="huanghuacheng" class="text-3xl font-bold text-gray-900 mb-6 mt-12">💧 黄花城：长城走进湖里的地方</h2>
+
+    <img
+      src="/images/great-wall/huanghuacheng.webp"
+      alt="黄花城长城沿着碧绿水库的岸边延伸，水面上有一艘游船"
+      width="393"
+      height="674"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">为什么去</span> 这是中国唯一一处长城<strong>三进三出水面</strong>的地方——1970年代修水库大坝抬高了水位，淹掉最低的一段，只留敌楼从碧绿的湖中露出。周边是明代板栗园（树龄几百年）和一条轻松的湖边栈道。满眼绿意、安静，和明信片上的长城完全不是一回事。</p>
+      <p class="text-lg leading-relaxed text-gray-700 clear-both"><span class="block text-xl font-bold text-brand-700 mb-2">说句实话</span> 入水的那段其实不长——半天就够，不用一整天——最好的景致都靠近入口，所以周末会显得挤。附加项目（游船、玻璃桥、滑道）都要另收费。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">看点</span> <strong>水下长城</strong>（「巨龙饮水」）、<strong>玻璃桥</strong>，以及<strong>明代板栗园</strong>。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">水上项目</span> 这是唯一能下水的一段——<strong>观光船和画舫</strong>在湖上往返（<strong>单程约¥25 / 往返约¥45</strong>），另有<strong>云端玻璃漂流</strong>和沿栈道而下的<strong>磁滑道</strong>。所有水上项目都在门票之外另行收费。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">怎么去</span> 从北京市区开车或打滴滴约1–1.5小时；公共交通比较麻烦（东直门有开往黄花城的公交）。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">费用</span> 门票约 <strong>¥58</strong>；游船、玻璃桥、滑道均为额外收费项目。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">最适合</span> 已经看过经典长城、想看点真正不一样的人；以及带孩子轻松玩半天。</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">门票、车、船一起订</strong>——想玩湖上项目这样最省事：</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/bU5SXQXDIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 在 Trip.com 预订黄花城</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 8: JUYONGGUAN ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="juyongguan" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏯 居庸关：北京周边最适合半日游的一段？</h2>
+
+    <img
+      src="/images/great-wall/juyongguan.webp"
+      alt="居庸关的关城城楼，绿瓦屋顶，身后长城沿山脊蜿蜒"
+      width="530"
+      height="677"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <div class="space-y-8 mb-8">
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">为什么去</span> 居庸关是<strong>离市区最近的一段</strong>（不到60公里，在昌平），也是按关城建制修筑、而非建在山脊上的那一段——你在山谷里走一个完整的环线，穿过「<strong>天下第一雄关</strong>」，里面还有明代<strong>云台</strong>和一组寺庙建筑。因为近、名气又没那么大，它是几个轻松选项里最安静的，而且早晚都开（大约 <strong>6:30–18:00</strong>）。<strong>3月底到4月中</strong>，山坡上开满山桃和杏花，「<strong>花海列车</strong>」——S2线市郊铁路——从山下谷地穿过，这是只有春天才拍得到的画面，值得绕一趟。</p>
+      <p class="text-lg leading-relaxed text-gray-700 clear-both"><span class="block text-xl font-bold text-brand-700 mb-2">怎么去</span> 地铁8/13号线到霍营，换乘879/919路公交到居庸关；或开车 / 打车约1小时。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">费用</span> 门票 <strong>¥45</strong>（4–10月）/ <strong>¥40</strong>（11–3月）；1.2米以上儿童和学生为优惠价。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">夜场</span> <strong>周五、周六夜场及节假日</strong>至10月初（18:00–21:00），关城会办沉浸式夜游——古驿道上巡守的兵丁、敌楼上的民乐班子、灯笼点亮的城墙，以及关城内的夜市。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">没有缆车</span> 居庸关是仅有的两个<strong>没有上山缆车</strong>的主要段之一（另一个是黄花城）——也是唯一连下山滑道都没有的，上下都靠走。环线比慕田峪或金山岭短、也缓，但爬的体力还是要留出来。</p>
+      <p class="text-lg leading-relaxed text-gray-700"><span class="block text-xl font-bold text-brand-700 mb-2">最适合</span> 半日游、冬季出行、历史爱好者，以及不想早起、不想长途开车又想看长城的人。</p>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-3"><strong class="text-brand-700">门票与往返交通一次订好</strong>——最省事的半日游方案：</p>
+    <p class="mb-4"><a href="https://www.trip.com/t/RM0EN5ONIW2" class="inline-flex items-center gap-1.5 bg-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg hover:bg-red-700 transition no-underline" target="_blank" rel="noopener">🛒 在 Trip.com 预订居庸关</a></p>
+    <div class="clear-both"></div>
+
+    <!-- ============ SECTION 9: TICKETS ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="tickets" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎫 需要提前订票吗？</h2>
+    <ul class="list-disc pl-6 space-y-3 mb-12 text-lg text-gray-700">
+      <li>八达岭务必<strong>提前订</strong>——高峰期会售罄，现场没有临时购票窗口。</li>
+      <li><strong>夜游票单独售卖</strong>，限人数、分时段；八达岭的夜票只能线上买，周末经常提前两三天售罄。</li>
+      <li>外籍游客在各段购票和入园都需出示<strong>护照</strong>。</li>
+      <li>旺季大致为<strong>4–10月</strong>；上表中的价格为旺季票价。</li>
+    </ul>
+
+    <div class="bg-yellow-50 border border-yellow-100 rounded-2xl p-6 mb-12">
+      <p class="text-gray-700"><strong>⏰ 唯一要紧的一条规则：</strong>早点去。旅行团集中在9:30到11点之间到达——想看到照片里的那种长城，上午9点前就要站上去。</p>
+    </div>
+
+    <!-- ============ SECTION 10: BEST TIME ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="best-time" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📅 最佳时间</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">每一段都有那么一个季节、一个钟点，看起来正好是你想象的样子。以下是这六段各自真正出名的时段。</p>
+
+    <ul class="list-disc pl-6 space-y-3 mb-12 text-lg text-gray-700">
+      <li>🍂 <strong>秋天是摄影季。</strong>金山岭天亮前开放，秋天刷屏的云海和日出基本都出自这里——旺季现场买的票48小时内可两次入园。</li>
+      <li>🌸 <strong>3月底到4月中</strong>，居庸关山坡上山桃、杏花盛开，还有只在春天运行的「花海列车」穿过山下谷地。</li>
+      <li>🌙 <strong>夜游：</strong>八达岭为4月30日–10月6日，慕田峪为夏季特定时段，司马台全年，居庸关为周五、周六夜场。</li>
+      <li>❄️ <strong>冬天是最安静的季节。</strong>冬天最推荐居庸关——离得近、开得早关得晚，也是几个轻松选项里最清静的。</li>
+      <li>📅 <strong>旺季大致为4–10月</strong>；对比表中的价格是旺季票价，淡季会便宜一些（八达岭¥35，金山岭¥55）。</li>
+    </ul>
+
+    <!-- ============ SECTION 11: PRACTICAL TIPS ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="practical-tips" class="text-3xl font-bold text-gray-900 mb-6 mt-12">👟 爬长城该带什么？</h2>
+    <ul class="list-disc pl-6 space-y-3 mb-12 text-lg text-gray-700">
+      <li>每人2–3升水——城墙上没有商店。</li>
+      <li>夏天带防晒和帽子；冬天穿保暖防风的分层衣物（长城上永远比市区更冷、风更大）。</li>
+      <li>穿对鞋：八达岭、慕田峪、居庸关穿运动鞋即可；金山岭和司马台需要<strong>登山鞋</strong>。</li>
+    </ul>
+
+    <!-- ============ SECTION 12: HISTORY ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="history" class="text-3xl font-bold text-gray-900 mb-6 mt-12">📜 你脚下踩的到底是什么？是明砖，不是秦砖</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">长城不是一道墙，而是<strong>一套体系</strong>——两千多年里，多个朝代修筑、连接、重建。你今天看到的大部分是<strong>明代建筑（1368–1644）</strong>；更早的秦、汉夯土长城大多已经风化。据国家文物局2012年公布的数据，长城总长 <strong>21,196公里</strong>——这个数字把每一条支线、每一道壕沟都算了进去，不只是那条最出名的墙。其中可供游览的修复段总计约700公里。</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">走在墙上时，这几点值得知道：</p>
+
+    <ul class="list-disc pl-6 space-y-3 mb-12 text-lg text-gray-700">
+      <li><strong>东段长城是一位名将重修的。</strong>明代将领戚继光在1560–70年代主持整修长城，慕田峪、金山岭、八达岭上密集的敌楼和垛口就出自他手。</li>
+      <li><strong>在金山岭，留意那些砖。</strong>很多砖上<strong>刻着字</strong>——当年烧砖的窑口和部队会把标记印在砖上，出了问题好追责到具体班组。这是刻在石头上的明代质量管控。</li>
+      <li><strong>灰浆比看上去讲究得多。</strong>修复段沿用了原始配方——石灰灰浆里掺了糯米浆，这也是这些墙能挺过几百年的原因之一。</li>
+      <li><strong>敌楼是一楼多用。</strong>存放武器粮草、驻守士兵，还要传递信号——白天放烟、夜里举火。这就是为什么它们沿着长城彼此都在视线之内。</li>
+    </ul>
+
+    <!-- ============ NEXT READS ============ -->
+    <div class="border-t border-gray-100 pt-8 mt-8 not-prose">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h3 class="text-sm font-bold text-gray-900">📚 继续阅读</h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="/zh/cities/beijing-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🏙️ 北京旅行指南
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/zh/cities/forbidden-city/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🏛️ 故宫攻略
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/zh/cities/city-select/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              📅 中国旅行需要多少天？
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/zh/transport/high-speed-rail/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🚄 中国高铁预订与乘坐指南
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/zh/payment/china-travel-budget/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              💰 2026中国旅行花费
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ SOURCES ============ -->
+    <section class="mt-10 pt-6 border-t border-gray-100">
+      <h3 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-4">信息来源</h3>
+      <ol class="space-y-2 text-sm text-gray-500">
+        <li>1. <strong>八达岭长城</strong> —— <a href="https://english.visitbeijing.com.cn/article/4MX01cNAUre" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Beijing Micro-Getaway Guide: Must-Visit Attractions</a></li>
+        <li>2. <strong>四段长城夜游</strong> —— <a href="https://english.visitbeijing.com.cn/article/4RI8S685GDY" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Ecological Leisure | Badaling Night Great Wall</a>；<a href="https://english.visitbeijing.com.cn/article/4T3jh3BHGra" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Upgraded Juyongguan Night Great Wall</a>；<a href="https://english.visitbeijing.com.cn/article/4OStXw7yhMK" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Beijing&apos;s Golden Autumn Vibe, Double the Festival Joy</a>.</li>
+        <li>3. <strong>慕田峪长城</strong> —— <a href="https://en.mutianyugreatwall.com/article/4SHdMJjS04P" target="_blank" rel="noopener" class="text-blue-600 hover:underline">2026 night-tour guide</a></li>
+        <li>4. <strong>金山岭长城</strong> —— <a href="https://english.visitbeijing.com.cn/article/4JvnMW3ZbDx" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Two-day trip towards autumn foliage with one ticket</a></li>
+        <li>5. <strong>黄花城（水长城）</strong> —— <a href="https://english.visitbeijing.com.cn/article/4Itpbe3Ye1z" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Beijing Huanghuacheng Lakeside Great Wall</a></li>
+        <li>6. <strong>居庸关长城</strong> —— <a href="https://english.visitbeijing.com.cn/article/47OOq8YYqAs" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Juyongguan Great Wall (居庸关长城)</a></li>
+        <li>7. <strong>司马台长城</strong> —— <a href="https://english.visitbeijing.com.cn/article/4OT1GKn1zoW" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Experience night scenery at Simatai Great Wall</a></li>
+        <li>8. <strong>交通</strong> —— <a href="https://english.visitbeijing.com.cn/article/47OLMubjite" target="_blank" rel="noopener" class="text-blue-600 hover:underline">Come to Badaling Great Wall for moon appreciation</a>.</li>
+      </ol>
+      <p class="text-sm text-gray-500 mt-4"><em>以上均为旺季成人票价。来源为北京市官方英文旅游门户（english.visitbeijing.com.cn）及各景区英文官网，2026年9月核对。</em></p>
+    </section>
+
+  </article>
+</Layout>

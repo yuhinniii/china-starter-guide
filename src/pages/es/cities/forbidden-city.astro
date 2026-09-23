@@ -1,0 +1,363 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'Guía de la Ciudad Prohibida: Entradas, Rutas y Todo lo que Debes Saber';
+const description = 'Cómo conseguir entradas para la Ciudad Prohibida, elegir entre las rutas oficiales de 2 horas, medio día y día completo, y qué ver dentro del Museo del Palacio: una guía completa para visitantes extranjeros.';
+---
+
+<Layout title={title} description={description} lang="es">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+
+    <!-- ============ BREADCRUMB ============ -->
+    <nav class="mb-8 not-prose">
+      <a href="/es/cities/beijing-guide/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Volver a la guía de Pekín
+      </a>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🏛️ Ciudad Prohibida · Pekín</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">Guía de la Ciudad Prohibida: Entradas, Rutas y Todo lo que Debes Saber</h1>
+      <p class="text-xl text-gray-600 mb-6">El Museo del Palacio es el principal motivo por el que la mayoría viene a Pekín: aquí te contamos cómo planificar la visita para que esté a la altura de la postal.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Última actualización: septiembre 2026</span>
+        <span>⏱️ 7 min de lectura</span>
+      </div>
+    </header>
+
+    <!-- ============ HERO IMAGE ============ -->
+    <figure class="mb-12 not-prose">
+      <img
+        src="/images/forbidden-city/hero-aerial.jpg"
+        alt="Vista aérea de la Ciudad Prohibida hacia el norte, sobre los tejados de tejas vidriadas doradas, en dirección al Parque Jingshan"
+        width="1200"
+        height="800"
+        loading="eager"
+        fetchpriority="high"
+        class="w-full h-auto object-cover rounded-2xl shadow-md"
+      />
+      <figcaption class="text-xs text-gray-500 text-center mt-2">La Ciudad Prohibida vista desde la colina Jingshan: 72 hectáreas de arquitectura imperial en una sola imagen.</figcaption>
+    </figure>
+
+    <!-- ============ QUICK ANSWER ============ -->
+    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-red-900 mb-4">⚡ Respuesta rápida</h2>
+      <p class="text-lg text-red-800 leading-relaxed">
+        No puedes comprar la entrada el mismo día: el Museo del Palacio se agota 7 días antes, y en temporada alta (1 abr–31 oct) las entradas cuestan <strong>¥60</strong> (¥40 en temporada baja). Reserva online en la <strong>web oficial del Museo del Palacio</strong> (los extranjeros se registran con el pasaporte y pagan con tarjeta internacional, sin necesidad de ninguna app de pago china). El museo cierra todos los lunes (excepto festivos). Reserva a las <strong>20:00, hora de Pekín, exactamente 7 días antes de tu visita</strong>: las plazas de la Semana Dorada desaparecen en minutos.
+      </p>
+    </div>
+
+    <!-- ============ IN THIS GUIDE ============ -->
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 En Esta Guía</h3>
+      <ul class="space-y-3">
+        <li><a href="#worth-it" class="text-blue-600 hover:underline">🤔 ¿Vale la pena visitar la Ciudad Prohibida?</a></li>
+        <li><a href="#tickets" class="text-blue-600 hover:underline">🎫 ¿Cuánto cuestan las entradas de la Ciudad Prohibida?</a></li>
+        <li><a href="#guide" class="text-blue-600 hover:underline">🧑‍🏫 ¿Con guía o sin guía?</a></li>
+        <li><a href="#routes" class="text-blue-600 hover:underline">🗺️ Tres rutas recomendadas</a></li>
+        <li><a href="#practical-tips" class="text-blue-600 hover:underline">👟 Consejos prácticos</a></li>
+        <li><a href="#walking-through" class="text-blue-600 hover:underline">🏯 Qué estás recorriendo en realidad</a></li>
+        <li><a href="#skip" class="text-blue-600 hover:underline">🚫 Tres cosas que no deberías saltarte</a></li>
+      </ul>
+    </nav>
+
+    <!-- ============ SECTION 1: WORTH IT ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="worth-it" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🤔 ¿Vale la pena visitar la Ciudad Prohibida?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">Merece mucho la pena: es Patrimonio Mundial de la UNESCO y el conjunto de arquitectura palaciega de madera más grande y mejor conservado del mundo. Fue residencia y centro de poder de 24 emperadores de las dinastías Ming y Qing. Detrás de los muros rojos y las tejas amarillas, entre palacios escalonados, hay 600 años de historia imperial: desde las ceremonias de coronación hasta la vida en el harén. En cada rincón, el visitante puede sentir directamente la grandeza de la realeza china antigua y el ingenio constructivo de la época. Para el viajero extranjero no es solo "un edificio antiguo", sino una puerta para entender la historia y la cultura chinas: al cruzar la plaza del Salón de la Armonía Suprema entenderás por qué los chinos dicen que la "Ciudad Prohibida" encarna el orden y la estética de todo un imperio.</p>
+
+    <!-- ============ SECTION 2: TICKETS ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="tickets" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎫 ¿Cuánto cuestan las entradas de la Ciudad Prohibida? (Precios oficiales y reserva)</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">La Ciudad Prohibida es uno de los pocos lugares de China donde la <em>planificación</em> importa casi tanto como la visita en sí. Aquí tienes todo lo que necesitas saber, según las normas oficiales de venta de entradas del museo.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">Según la política oficial de entradas del Museo del Palacio:</p>
+
+    <div class="overflow-x-auto mb-12 not-prose">
+      <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+        <thead>
+          <tr class="bg-gray-900 text-white">
+            <th class="px-6 py-4 font-bold">Concepto</th>
+            <th class="px-6 py-4 font-bold">Precio</th>
+            <th class="px-6 py-4 font-bold">Notas</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4">Entrada general (temporada alta, 1 abr–31 oct)</td>
+            <td class="px-6 py-4 font-semibold">¥60</td>
+            <td class="px-6 py-4">Incluye todos los salones principales; no incluye la Galería de Tesoros ni la Galería de Relojes</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4">Entrada general (temporada baja, 1 nov–31 mar)</td>
+            <td class="px-6 py-4 font-semibold">¥40</td>
+            <td class="px-6 py-4"></td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4">Galería de Tesoros (珍宝馆)</td>
+            <td class="px-6 py-4 font-semibold">¥10</td>
+            <td class="px-6 py-4">Vale la pena: alberga las famosas piezas de oro</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4">Galería de Relojes (钟表馆)</td>
+            <td class="px-6 py-4 font-semibold">¥10</td>
+            <td class="px-6 py-4">También vale la pena</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4">Descuento para mayores (visitantes extranjeros, 60+)</td>
+            <td class="px-6 py-4 font-semibold">¥30</td>
+            <td class="px-6 py-4">Los tres conceptos anteriores incluidos en la entrada con descuento</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4">Descuento para estudiantes (extranjeros, 7–17 años; universitarios y niveles inferiores)</td>
+            <td class="px-6 py-4 font-semibold">¥20</td>
+            <td class="px-6 py-4">El mismo acceso incluido; lleva un carné de estudiante válido</td>
+          </tr>
+          <tr>
+            <td class="px-6 py-4">Niños (extranjeros, 6 años o menos)</td>
+            <td class="px-6 py-4 font-semibold">Gratis</td>
+            <td class="px-6 py-4">No requiere entrada</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-8"><strong>Las reglas de reserva que decidirán si entras o no:</strong></p>
+    <ul class="space-y-3 mb-12 text-lg text-gray-700">
+      <li>📅 <strong>Hora de venta:</strong> las entradas salen <strong>7 días antes de la fecha de visita, a las 20:00</strong>, hora de Pekín. Suelen agotarse en minutos: pon una alarma.</li>
+      <li>🚫 <strong>No hay entradas para el mismo día</strong>: el museo no vende en taquilla.</li>
+      <li>🛒 <strong>Dónde reservar:</strong>
+        <ul class="list-disc pl-8 mt-2 space-y-1">
+          <li><a href="https://bookingticket.dpm.org.cn/" target="_blank" rel="noopener" class="text-blue-600 hover:underline font-medium">Web oficial del Museo del Palacio</a>: regístrate con tu pasaporte y paga con tarjeta internacional.</li>
+          <li><a href="https://www.trip.com/t/h6LFHO1J2W2" target="_blank" rel="noopener" class="text-blue-600 hover:underline font-medium">Paquete con visita guiada de Trip.com</a>: incluye entrada + guía en inglés. Sáltate la carrera de la reserva.</li>
+        </ul>
+      </li>
+      <li>📘 <strong>Lleva tu pasaporte.</strong> Regístrate con el número de pasaporte y muestra el mismo pasaporte en la entrada.</li>
+      <li>🚪 <strong>Entrada y salida:</strong> entra solo por la <strong>Puerta Meridiana (午门, sur)</strong>. Sal por la <strong>Puerta del Poder Divino (神武门, norte)</strong> o la <strong>Puerta de la Gloria Oriental (东华门)</strong>.</li>
+      <li>🈚 <strong>Cierra todos los lunes</strong> (excepto festivos).</li>
+      <li>🕗 <strong>Horario:</strong> 8:30–17:00 (temporada alta, última entrada 16:00); 8:30–16:30 en temporada baja.</li>
+    </ul>
+
+    <!-- ============ SECTION 3: GUIDE ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="guide" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🧑‍🏫 ¿Con guía o sin guía?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">Si quieres entender de verdad la historia de la Ciudad Prohibida y no solo hacer fotos y marcarla en la lista, te recomiendo contratar a un guía. La Ciudad Prohibida fue el palacio imperial de las dinastías Ming y Qing y tiene más de 600 años de historia. Es una obra maestra de la arquitectura china antigua y representa la cima de la arquitectura palaciega tradicional china. Tanto su patrimonio arquitectónico como su significado histórico necesitan que un guía profesional nos los explique. Con guía, la Ciudad Prohibida se convierte en una lección de historia, no solo en un paseo bonito.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">Por tu cuenta solo verás la arquitectura bonita, pero te perderás las historias aún más fascinantes que hay detrás. Pasarás junto a las balaustradas de mármol talladas con dragones, las tortugas y grullas de bronce frente al salón principal, las diez pequeñas bestias alineadas en cierto tejado... y probablemente no sabrás qué significa nada de eso. Y esa es justo la parte que la mayoría de los visitantes se promete investigar luego, y nunca lo hace.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12 not-prose">
+      <div class="bg-blue-50 border border-blue-100 rounded-2xl p-6">
+        <p class="text-gray-700"><strong>👉 ¿Quieres guía?</strong> Trip.com combina la entrada con un guía en inglés: sáltate la carrera de la reserva. <a href="https://www.trip.com/t/h6LFHO1J2W2" target="_blank" rel="noopener" class="text-blue-600 hover:underline font-medium">Ver visitas guiadas de la Ciudad Prohibida →</a></p>
+      </div>
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <p class="text-gray-700"><strong>🙌 ¿Por tu cuenta?</strong> Reserva tu entrada directamente en la web oficial del Museo del Palacio. <a href="https://bookingticket.dpm.org.cn/" target="_blank" rel="noopener" class="text-blue-600 hover:underline font-medium">Ir a bookingticket.dpm.org.cn →</a></p>
+      </div>
+    </div>
+
+    <!-- ============ SECTION 4: ROUTES ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="routes" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🗺️ Tres rutas recomendadas (del mapa oficial de visitantes del Museo del Palacio)</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">El Museo del Palacio publica tres rutas en su mapa de visitantes, una para cada duración habitual. Las tres empiezan en la <strong>Puerta Meridiana (午门, sur)</strong> —la única entrada— y terminan en la <strong>Puerta del Poder Divino (神武门, norte)</strong>, justo enfrente del Parque Jingshan. Elige la que encaje con el tiempo que tengas; el resto del artículo da por hecho que sigues una de ellas.</p>
+
+    <!-- ===== ROUTE A: 2 HOURS ===== -->
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-6 items-start bg-white border border-gray-200 rounded-2xl p-6 mb-10 not-prose">
+      <div class="md:col-span-2 w-full flex flex-col gap-4">
+        <figure class="w-full">
+          <img src="/images/forbidden-city/route-2-hour.png" alt="Mapa oficial de la ruta de 2 horas de la Ciudad Prohibida: eje central, 13 paradas numeradas desde la Puerta Meridiana (sur) hasta la Puerta del Poder Divino (norte)" class="w-full h-auto object-contain bg-gray-50 rounded-xl" loading="lazy" />
+          <figcaption class="text-xs text-gray-500 text-center mt-2">Ruta oficial A · 2 horas · 13 paradas (solo el eje central)</figcaption>
+        </figure>
+        <figure class="w-full">
+          <img
+            src="/images/forbidden-city/hall-of-supreme-harmony.jpg"
+            alt="Exterior frontal del Salón de la Armonía Suprema, con tejado de doble alero y terraza de mármol de tres niveles"
+            width="1024"
+            height="768"
+            loading="lazy"
+            class="w-full h-auto object-cover rounded-2xl shadow-md"
+          />
+          <figcaption class="text-xs text-gray-500 text-center mt-2">太和殿 — la mayor estructura de madera de China</figcaption>
+        </figure>
+      </div>
+      <div class="md:col-span-3">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">🏛️ Ruta A — Solo el eje central</h3>
+        <p class="text-base leading-relaxed text-gray-700 mb-4">Lo esencial y rápido. Si solo vienes por las fotos icónicas y uno o dos grandes salones, con esto basta: cubre todo el eje central de sur a norte sin desviarse a los palacios laterales. Casi todos los grupos hacen este mismo recorrido, así que habrá gente; la ventaja es que pasas por 600 años de ceremonial imperial en dos horas exactas.</p>
+        <p class="text-base font-semibold text-gray-900 mb-2">Este es el orden, con el motivo por el que cada parada merece su sitio:</p>
+        <ol class="space-y-2 list-decimal pl-5 text-base text-gray-700">
+          <li><strong>午门 Puerta Meridiana</strong> — entrada. Mira hacia arriba, a la torre de tres niveles, mientras cruzas el túnel bajo: el estrechamiento era deliberado, y todos llegaban ante el emperador como alguien pequeño.</li>
+          <li><strong>太和门 Puerta Taihe</strong> — la puerta más grande del conjunto. Fíjate en los leones de bronce: izquierda (macho, pata sobre una bola = gobernar el mundo), derecha (hembra, pata sobre un cachorro = criar a la familia).</li>
+          <li><strong>太和殿 Salón de la Armonía Suprema</strong> — la mayor estructura de madera de China. Aquí se entronizaba a los emperadores; las tortugas y grullas de bronce de delante eran incensarios, no decoración.</li>
+          <li><strong>弘义阁 Pabellón de la Rectitud</strong> — pequeño pabellón del oeste, construido para ceremonias menores. Casi sin turistas.</li>
+          <li><strong>体仁阁 Pabellón de la Benevolencia</strong> — el pabellón simétrico del este; junto con el nº 4, enmarca la gran plaza.</li>
+          <li><strong>中和殿 Salón de la Armonía Central</strong> — fácil de pasar de largo, pero el emperador descansaba y ensayaba aquí antes de las ceremonias del Taihe.</li>
+          <li><strong>保和殿 Salón de la Armonía Preservada</strong> — salón de banquetes y, desde 1789, sede fija del examen imperial final. Pasa por detrás para ver la rampa de piedra "nube y dragón": 12 artesanos, 2 años.</li>
+          <li><strong>乾清门 Puerta de la Pureza Celestial</strong> — cruzarla marca el paso del espectáculo público a la vida privada.</li>
+          <li><strong>乾清宫 Palacio de la Pureza Celestial</strong> — el dormitorio de los emperadores durante los Ming y el Qing temprano. Busca la placa <strong>正大光明</strong>: desde la dinastía Qing, el nombre del heredero se guardaba sellado en una caja detrás de ella.</li>
+          <li><strong>交泰殿 Salón de la Unión</strong> — pequeño salón cuadrado entre los dos palacios, usado para investir emperatrices y guardar los sellos imperiales.</li>
+          <li><strong>坤宁宫 Palacio de la Tranquilidad Terrenal</strong> — residencia de la emperatriz durante Ming y Qing. Parte se convirtió después en sala chamánica manchú: un edificio, dos religiones.</li>
+          <li><strong>御花园 Jardín Imperial</strong> — la parte trasera del conjunto y tu última parada. Rocallas con forma de montaña; pinos de más de 400 años.</li>
+          <li><strong>神武门 Puerta del Poder Divino</strong> — salida. Cruza la calle hacia el <strong>Parque Jingshan</strong> (¥2) para la mejor foto de Pekín.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- ===== ROUTE B: HALF DAY ===== -->
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-6 items-start bg-white border border-gray-200 rounded-2xl p-6 mb-10 not-prose">
+      <figure class="md:col-span-2 w-full">
+        <img src="/images/forbidden-city/route-half-day.png" alt="Mapa oficial de la ruta de medio día de la Ciudad Prohibida: 14 paradas numeradas que cubren el eje central y los palacios del oeste" class="w-full h-auto object-contain bg-gray-50 rounded-xl" loading="lazy" />
+        <figcaption class="text-xs text-gray-500 text-center mt-2">Ruta oficial B · Medio día (~3–4 h) · 14 paradas</figcaption>
+      </figure>
+      <div class="md:col-span-3">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">🏛️ Ruta B — Medio día (añade el lado oeste)</h3>
+        <p class="text-base leading-relaxed text-gray-700 mb-4">Añade la galería de cerámica del <strong>Salón Wuying</strong> y los <strong>Seis Palacios Occidentales</strong> al eje central. Para la mayoría de quienes vienen por primera vez, esta es la dosis justa de palacio. Las paradas 1 y 3–13 son iguales que en la Ruta A: consulta arriba para los detalles. Solo las paradas propias de esta ruta:</p>
+        <ol class="space-y-2 list-decimal pl-5 text-base text-gray-700" start="2">
+          <li value="2"><strong>武英殿 Salón Wuying</strong> — gira a la izquierda al entrar. La galería de cerámica, en el salón más antiguo que se conserva del conjunto (1407). Tranquilo, sin aglomeraciones, un buen punto de partida.</li>
+          <li value="11"><strong>西六宫 Seis Palacios Occidentales</strong> (11–12) — residencias de las concubinas al oeste del eje central. La escala baja de la arquitectura de Estado a la doméstica; por fin ves lo encerrada que estaba en realidad la vida de las mujeres imperiales.</li>
+          <li value="14"><strong>神武门 Puerta del Poder Divino</strong> (14) — la misma salida que la Ruta A, hacia el Parque Jingshan.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- ===== ROUTE C: FULL DAY ===== -->
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-6 items-start bg-white border border-gray-200 rounded-2xl p-6 mb-10 not-prose">
+      <figure class="md:col-span-2 w-full">
+        <img src="/images/forbidden-city/route-full-day.png" alt="Mapa oficial de la ruta de día completo de la Ciudad Prohibida: 17 paradas numeradas que cubren el eje central y los complejos palaciegos del este y el oeste" class="w-full h-auto object-contain bg-gray-50 rounded-xl" loading="lazy" />
+        <figcaption class="text-xs text-gray-500 text-center mt-2">Ruta oficial C · Día completo (~6+ h) · 17 paradas</figcaption>
+      </figure>
+      <div class="md:col-span-3">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">🏛️ Ruta C — Día completo (ambas alas laterales)</h3>
+        <p class="text-base leading-relaxed text-gray-700 mb-4">La cobertura total. Añade los complejos palaciegos del este sobre la Ruta B: las exposiciones temporales y todos los museos importantes dentro de los muros. Solo vale la pena si te interesan de verdad el arte o la arquitectura chinos. Las paradas 4–13 son iguales que en la Ruta A. Solo las paradas propias de esta ruta:</p>
+        <ol class="space-y-2 list-decimal pl-5 text-base text-gray-700" start="2">
+          <li value="2"><strong>武英殿 Salón Wuying</strong> — lado oeste, galería de cerámica. Igual que en la Ruta B; el motivo más fuerte para venir a esta parte del palacio.</li>
+          <li value="3"><strong>文华殿 Salón Wenhua</strong> — el espejo oriental del Wuying; la galería de pintura y caligrafía. Si en un día completo solo tienes tiempo para una galería, que sea esta.</li>
+          <li value="14"><strong>西六宫 Seis Palacios Occidentales</strong> (14) — residencias de concubinas, lado oeste. Igual que en la Ruta B.</li>
+          <li value="15"><strong>东六宫 Seis Palacios Orientales</strong> (15) — residencias de concubinas, lado este. Reflejo del ala occidental; hoy son en su mayoría cascarones vacíos, pero la arquitectura está intacta.</li>
+          <li value="17"><strong>神武门 Puerta del Poder Divino</strong> (17) — la misma salida que la Ruta A, hacia el Parque Jingshan.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Tip: Treasure Gallery / Clock Gallery -->
+    <div class="bg-yellow-50 border border-yellow-100 rounded-2xl p-6 mb-12">
+      <p class="text-gray-700"><strong>💡 Consejo:</strong> en cualquier ruta, la <strong>Galería de Tesoros (珍宝馆)</strong> y la <strong>Galería de Relojes (钟表馆)</strong> valen sus ¥10 cada una: añádelas como un desvío del eje central en las Rutas A o B, o estíralas en la Ruta C. La Galería de Tesoros es, por yuan, el mejor museo de China.</p>
+    </div>
+
+    <!-- ============ SECTION 5: PRACTICAL TIPS ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="practical-tips" class="text-3xl font-bold text-gray-900 mb-6 mt-12">👟 Consejos prácticos</h2>
+    <ul class="space-y-3 mb-12 text-lg text-gray-700">
+      <li>Configura tu <strong>navegación</strong> con el destino "Museo del Palacio — Puerta Wumen (午门)". Es la única entrada del Museo del Palacio; si pones solo "Museo del Palacio", puede que te lleve a otro sitio.</li>
+      <li><strong>Para la mayoría, medio día es suficiente.</strong> 3–4 horas cubren lo esencial. Los aficionados a la historia pueden pasar 6–8 horas sin problema.</li>
+      <li><strong>Lleva calzado cómodo.</strong> Caminarás más de 10.000 pasos; no hay atajos por el eje central.</li>
+      <li><strong>Se puede fotografiar</strong> en el exterior en todas partes. El flash está restringido en algunas salas de exposiciones.</li>
+      <li><strong>Combínalo con el Parque Jingshan</strong> (entrada ¥2, a 5 minutos andando desde la salida norte) para la vista de postal de todo el conjunto.</li>
+    </ul>
+
+    <!-- ============ SECTION 6: WALKING THROUGH ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="walking-through" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏯 Qué estás recorriendo en realidad</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">El conjunto ocupa <strong>72 hectáreas</strong> y alberga <strong>980 edificios en pie</strong>, el mayor conjunto arquitectónico de madera del mundo. Solo esa cifra cuesta de asimilar: caminando de sur a norte recorrerás unos 1,6 km, cruzarás siete puertas principales y salvarás un desnivel de 2 metros entre el salón frontal y el jardín trasero (un recordatorio silencioso del feng shui: el emperador lo gobernaba todo). Aquí están los detalles que los primerizos suelen pasar por alto:</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-8 items-start mb-12 not-prose">
+      <!-- Left: key-point cards -->
+      <ul class="md:col-span-3 space-y-3">
+        <li class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <p class="text-base text-gray-800"><span class="mr-2">🟡</span><strong>Las tejas amarillas y las bestias del alero.</strong> Todos los tejados van vidriados en amarillo imperial, reservado en exclusiva al emperador. A lo largo del alero se alinea una serie de bestias míticas; solo el Salón de la Armonía Suprema luce la serie completa de diez.</p>
+        </li>
+        <li class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <p class="text-base text-gray-800"><span class="mr-2">🐉</span><strong>Las tallas de los "10.000 dragones".</strong> Balaustradas de mármol junto al Salón de la Armonía Suprema: nueve dragones = imperial, diez = solo el Trono del Dragón.</p>
+        </li>
+        <li class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <p class="text-base text-gray-800"><span class="mr-2">🦁</span><strong>Los leones bajo cada puerta.</strong> Macho (pata sobre la bola, gobernar el mundo) y hembra (pata sobre el cachorro, criar a la familia). Algunas parejas tienen más de 600 años.</p>
+        </li>
+        <li class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <p class="text-base text-gray-800"><span class="mr-2">☁️</span><strong>Las rampas de piedra con nube y dragón.</strong> La más elaborada, detrás del Salón de la Armonía Preservada, llevó a 12 artesanos 2 años terminarla.</p>
+        </li>
+        <li class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <p class="text-base text-gray-800"><span class="mr-2">🌳</span><strong>El Jardín Imperial (御花园).</strong> La parte trasera del conjunto, menos concurrida que los salones principales. Rocallas con forma de montaña; pinos de más de 400 años.</p>
+        </li>
+      </ul>
+      <!-- Right: arranged images -->
+      <div class="md:col-span-2 space-y-6">
+        <figure>
+          <img
+            src="/images/forbidden-city/roof-beasts.jpg"
+            alt="Primer plano de las tejas vidriadas amarillas imperiales y la hilera de bestias míticas del alero en una esquina de un palacio de la Ciudad Prohibida"
+            width="944"
+            height="687"
+            loading="lazy"
+            class="w-full h-auto object-cover rounded-2xl shadow-md"
+          />
+          <figcaption class="text-xs text-gray-500 text-center mt-2">La hilera de bestias míticas a lo largo de una esquina del tejado.</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="/images/forbidden-city/corner-tower.jpg"
+            alt="La torre de la esquina sureste de la Ciudad Prohibida reflejada en el foso"
+            width="1200"
+            height="900"
+            loading="lazy"
+            class="w-full h-auto object-cover rounded-2xl shadow-md"
+          />
+          <figcaption class="text-xs text-gray-500 text-center mt-2">La torre de la esquina sureste reflejada en el foso.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- ============ SECTION 7: THREE THINGS ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="skip" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🚫 Tres cosas que no deberías saltarte</h2>
+    <ol class="space-y-3 mb-12 text-lg text-gray-700 list-decimal pl-6 flow-root">
+      <li><strong>El Salón de la Armonía Suprema (太和殿)</strong> — la mayor estructura de madera de China. El trono está en el centro. Las tortugas y grullas de bronce de delante eran incensarios: el humo debía purificar simbólicamente el aire antes de las audiencias imperiales.</li>
+      <li><strong>La Galería de Tesoros (珍宝馆)</strong> — la entrada de ¥10 es la mejor relación calidad-precio de cualquier museo de China. Las bestias originales del alero del Salón de la Armonía Suprema, las armas ceremoniales de oro y jade de la época Qianlong, los budas de pan de oro traídos del Tíbet en el siglo XVIII. Calcula 45 minutos como mínimo.
+        <figure class="mt-4 md:float-right md:clear-right md:ml-8 md:w-[38%] not-prose">
+          <img
+            src="/images/forbidden-city/nine-dragon-wall.jpg"
+            alt="Primer plano de uno de los dragones vidriados del Muro de los Nueve Dragones, dentro del complejo de la Galería de Tesoros de la Ciudad Prohibida"
+            width="442"
+            height="300"
+            loading="lazy"
+            class="w-full h-auto object-cover rounded-2xl shadow-md"
+          />
+          <figcaption class="text-xs text-gray-500 text-center mt-2">Un dragón vidriado del Muro de los Nueve Dragones, dentro del complejo de la Galería de Tesoros.</figcaption>
+        </figure>
+      </li>
+
+      <li><strong>El Palacio de la Pureza Celestial (乾清宫)</strong> — residencia de los emperadores durante los Ming y el Qing temprano. La placa central sobre el trono (<strong>正大光明</strong>, "recto y luminoso") la escribía personalmente cada nuevo emperador Qing. Las placas de los "trece príncipes" a ambos lados son instrucciones grabadas sobre la conducta imperial.</li>
+    </ol>
+
+    <!-- ============ NEXT READS ============ -->
+    <div class="border-t border-gray-100 pt-8 mt-8 not-prose">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h3 class="text-sm font-bold text-gray-900">📚 Guías relacionadas</h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="/es/cities/beijing-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🏙️ Guía de viaje de Pekín
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/es/cities/city-select/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              📅 ¿Cuántos días necesitas en China?
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/es/visa/visa-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🛂 Guía de visado y entrada a China
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ SOURCES ============ -->
+    <section class="mt-10 pt-6 border-t border-gray-100">
+      <h3 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-4">Fuentes</h3>
+      <ol class="space-y-2 text-sm text-gray-500">
+        <li>1. <strong>Política oficial de entradas del Museo del Palacio</strong> (故宫博物院票务政策) — <a href="https://intl.dpm.org.cn/visit.html" target="_blank" rel="noopener" class="text-blue-600 hover:underline">intl.dpm.org.cn</a></li>
+        <li>2. <strong>Reserva online del Museo del Palacio</strong> (故宫博物院在线订票) — <a href="https://bookingticket.dpm.org.cn/" target="_blank" rel="noopener" class="text-blue-600 hover:underline">bookingticket.dpm.org.cn</a></li>
+        <li>3. <strong>Informe de CCTV sobre las vacaciones de 2026 y la apertura gratuita de la Ciudad Prohibida</strong> — <a href="https://news.cctv.com/2025/12/29/ARTInhrENbHw5LqaS0ZoU5vc251229.shtml" target="_blank" rel="noopener" class="text-blue-600 hover:underline">news.cctv.com</a></li>
+      </ol>
+    </section>
+
+  </article>
+</Layout>

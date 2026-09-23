@@ -1,0 +1,363 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'Гид по Запретному городу: билеты, маршруты и всё, что нужно знать перед визитом';
+const description = 'Как купить билеты в Запретный город, как выбрать между официальными маршрутами на 2 часа, полдня и целый день, и что смотреть внутри Музея Гугун — полный гид для иностранных туристов.';
+---
+
+<Layout title={title} description={description} lang="ru">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+
+    <!-- ============ BREADCRUMB ============ -->
+    <nav class="mb-8 not-prose">
+      <a href="/ru/cities/beijing-guide/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Назад к гиду по Пекину
+      </a>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🏛️ Запретный город · Пекин</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">Гид по Запретному городу: билеты, маршруты и всё, что нужно знать перед визитом</h1>
+      <p class="text-xl text-gray-600 mb-6">Музей Гугун — главная причина, по которой большинство людей приезжает в Пекин. Рассказываем, как спланировать визит, чтобы он оправдал открытку.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Последнее обновление: сентябрь 2026</span>
+        <span>⏱️ 7 мин чтения</span>
+      </div>
+    </header>
+
+    <!-- ============ HERO IMAGE ============ -->
+    <figure class="mb-12 not-prose">
+      <img
+        src="/images/forbidden-city/hero-aerial.jpg"
+        alt="Вид на Запретный город с воздуха на север, над золотыми черепичными крышами, в сторону парка Цзиншань"
+        width="1200"
+        height="800"
+        loading="eager"
+        fetchpriority="high"
+        class="w-full h-auto object-cover rounded-2xl shadow-md"
+      />
+      <figcaption class="text-xs text-gray-500 text-center mt-2">Запретный город с холма Цзиншань — 72 гектара императорской архитектуры в одном кадре.</figcaption>
+    </figure>
+
+    <!-- ============ QUICK ANSWER ============ -->
+    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-red-900 mb-4">⚡ Быстрый ответ</h2>
+      <p class="text-lg text-red-800 leading-relaxed">
+        В день визита билет не купить — билеты Музея Гугун распродаются за 7 дней, а в высокий сезон (1 апреля–31 октября) они стоят <strong>¥60</strong> (¥40 в низкий сезон). Забронируй онлайн на <strong>официальном сайте Музея Гугун</strong> (иностранцы регистрируются по паспорту и платят международной картой — китайское платёжное приложение не нужно). Музей закрыт каждый понедельник (кроме государственных праздников). Бронируй в <strong>20:00 по пекинскому времени ровно за 7 дней до визита</strong> — слоты на «золотую неделю» исчезают за минуты.
+      </p>
+    </div>
+
+    <!-- ============ IN THIS GUIDE ============ -->
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 Содержание</h3>
+      <ul class="space-y-3">
+        <li><a href="#worth-it" class="text-blue-600 hover:underline">🤔 Стоит ли идти в Запретный город?</a></li>
+        <li><a href="#tickets" class="text-blue-600 hover:underline">🎫 Сколько стоят билеты в Запретный город?</a></li>
+        <li><a href="#guide" class="text-blue-600 hover:underline">🧑‍🏫 С гидом или без?</a></li>
+        <li><a href="#routes" class="text-blue-600 hover:underline">🗺️ Три рекомендуемых маршрута</a></li>
+        <li><a href="#practical-tips" class="text-blue-600 hover:underline">👟 Практические советы</a></li>
+        <li><a href="#walking-through" class="text-blue-600 hover:underline">🏯 По чему ты на самом деле идёшь</a></li>
+        <li><a href="#skip" class="text-blue-600 hover:underline">🚫 Три вещи, которые нельзя пропустить</a></li>
+      </ul>
+    </nav>
+
+    <!-- ============ SECTION 1: WORTH IT ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="worth-it" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🤔 Стоит ли идти в Запретный город?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">Сходить определённо стоит — это объект Всемирного наследия ЮНЕСКО и крупнейший в мире, наиболее хорошо сохранившийся комплекс деревянной дворцовой архитектуры. Когда-то он был резиденцией и центром власти 24 императоров династий Мин и Цин. За красными стенами и жёлтой черепицей, среди многоярусных дворцов — 600 лет имперской истории: от церемоний восшествия на престол до жизни в гареме. В каждом уголке посетитель напрямую ощущает величие древней китайской императорской власти и изобретательность зодчих той эпохи. Для иностранного гостя это не просто «старое здание», а ворота к пониманию китайской истории и культуры: пройдя по площади перед Залом Высшей гармонии, ты поймёшь, почему китайцы часто говорят, что «Запретный город» воплощает порядок и эстетику целой империи.</p>
+
+    <!-- ============ SECTION 2: TICKETS ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="tickets" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎫 Сколько стоят билеты в Запретный город? (Официальные цены и бронирование)</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">Запретный город — одно из немногих мест в Китае, где <em>подготовка</em> почти так же важна, как сам визит. Вот всё, что нужно знать, по официальным правилам продажи билетов музея.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">По официальной политике продажи билетов Музея Гугун:</p>
+
+    <div class="overflow-x-auto mb-12 not-prose">
+      <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+        <thead>
+          <tr class="bg-gray-900 text-white">
+            <th class="px-6 py-4 font-bold">Пункт</th>
+            <th class="px-6 py-4 font-bold">Цена</th>
+            <th class="px-6 py-4 font-bold">Примечания</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4">Билет на главные ворота (высокий сезон, 1 апреля–31 октября)</td>
+            <td class="px-6 py-4 font-semibold">¥60</td>
+            <td class="px-6 py-4">Включает все главные залы, кроме Галереи сокровищ и Галереи часов</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4">Билет на главные ворота (низкий сезон, 1 ноября–31 марта)</td>
+            <td class="px-6 py-4 font-semibold">¥40</td>
+            <td class="px-6 py-4"></td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4">Галерея сокровищ (珍宝馆)</td>
+            <td class="px-6 py-4 font-semibold">¥10</td>
+            <td class="px-6 py-4">Стоит того — здесь хранятся знаменитые золотые артефакты</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4">Галерея часов (钟表馆)</td>
+            <td class="px-6 py-4 font-semibold">¥10</td>
+            <td class="px-6 py-4">Тоже стоит того</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4">Скидка для пожилых (иностранные посетители, 60+)</td>
+            <td class="px-6 py-4 font-semibold">¥30</td>
+            <td class="px-6 py-4">Все три пункта выше включены в льготный билет</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4">Скидка для студентов (иностранцы, 7–17 лет; бакалавриат и ниже)</td>
+            <td class="px-6 py-4 font-semibold">¥20</td>
+            <td class="px-6 py-4">Тот же набор; возьми действующий студенческий билет</td>
+          </tr>
+          <tr>
+            <td class="px-6 py-4">Дети (иностранцы, 6 лет и младше)</td>
+            <td class="px-6 py-4 font-semibold">Бесплатно</td>
+            <td class="px-6 py-4">Билет не нужен</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-8"><strong>Правила бронирования, от которых зависит, попадёшь ты внутрь или нет:</strong></p>
+    <ul class="space-y-3 mb-12 text-lg text-gray-700">
+      <li>📅 <strong>Время продажи:</strong> билеты появляются <strong>за 7 дней до даты визита в 20:00</strong> по пекинскому времени. Обычно их разбирают за минуты — поставь будильник.</li>
+      <li>🚫 <strong>Билетов на тот же день нет</strong> — в кассе у ворот не продают.</li>
+      <li>🛒 <strong>Где бронировать:</strong>
+        <ul class="list-disc pl-8 mt-2 space-y-1">
+          <li><a href="https://bookingticket.dpm.org.cn/" target="_blank" rel="noopener" class="text-blue-600 hover:underline font-medium">Официальный сайт Музея Гугун</a> — зарегистрируйся по паспорту и оплати международной картой.</li>
+          <li><a href="https://www.trip.com/t/h6LFHO1J2W2" target="_blank" rel="noopener" class="text-blue-600 hover:underline font-medium">Пакет с экскурсией от Trip.com</a> — вход + гид, говорящий по-английски. Обойди гонку за билетами.</li>
+        </ul>
+      </li>
+      <li>📘 <strong>Возьми паспорт.</strong> Зарегистрируйся по номеру паспорта и покажи тот же паспорт на входе.</li>
+      <li>🚪 <strong>Вход и выход:</strong> войти можно только через <strong>Ворота Меридиана (午门, юг)</strong>. Выход — через <strong>Ворота Божественной силы (神武门, север)</strong> или <strong>Восточные ворота славы (东华门)</strong>.</li>
+      <li>🈚 <strong>Закрыт каждый понедельник</strong> (кроме государственных праздников).</li>
+      <li>🕗 <strong>Часы работы:</strong> 8:30–17:00 (высокий сезон, последний вход в 16:00); 8:30–16:30 в низкий сезон.</li>
+    </ul>
+
+    <!-- ============ SECTION 3: GUIDE ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="guide" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🧑‍🏫 С гидом или без?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">Если хочешь глубже понять историю Запретного города, а не просто сделать фото и поставить галочку, очень советую взять гида. Запретный город был императорским дворцом династий Мин и Цин и имеет более чем 600-летнюю историю. Это шедевр древней китайской архитектуры и вершина традиционного китайского дворцового зодчества. И архитектурное наследие, и историческое значение требуют, чтобы их объяснил профессиональный гид. С гидом Запретный город превращается в урок истории, а не просто в красивую прогулку.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">Сам по себе ты увидишь только красивую архитектуру, но пропустишь ещё более интересные истории за ней. Ты пройдёшь мимо мраморных балюстрад с резными драконами, бронзовых черепах и журавлей перед главным залом, десяти крошечных зверей, выстроившихся на одной из крыш, — и, скорее всего, не узнаешь, что всё это значит. И именно эту часть большинство посетителей обещают себе изучить потом — и никогда не делают этого.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12 not-prose">
+      <div class="bg-blue-50 border border-blue-100 rounded-2xl p-6">
+        <p class="text-gray-700"><strong>👉 Нужен гид?</strong> Trip.com объединяет вход с гидом, говорящим по-английски, — обойди гонку за билетами. <a href="https://www.trip.com/t/h6LFHO1J2W2" target="_blank" rel="noopener" class="text-blue-600 hover:underline font-medium">Посмотреть экскурсии по Запретному городу →</a></p>
+      </div>
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <p class="text-gray-700"><strong>🙌 Сам по себе?</strong> Бронируй билет прямо на официальном сайте Музея Гугун. <a href="https://bookingticket.dpm.org.cn/" target="_blank" rel="noopener" class="text-blue-600 hover:underline font-medium">Перейти на bookingticket.dpm.org.cn →</a></p>
+      </div>
+    </div>
+
+    <!-- ============ SECTION 4: ROUTES ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="routes" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🗺️ Три рекомендуемых маршрута (из официальной карты посетителя Музея Гугун)</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">Музей Гугун публикует три маршрута на своей карте посетителя — по одному на каждый обычный отрезок времени. Все три начинаются у <strong>Ворот Меридиана (午门, юг)</strong> — единственного входа — и заканчиваются у <strong>Ворот Божественной силы (神武门, север)</strong>, прямо напротив парка Цзиншань. Выбери тот, что подходит по времени; остальная статья исходит из того, что ты идёшь по одному из них.</p>
+
+    <!-- ===== ROUTE A: 2 HOURS ===== -->
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-6 items-start bg-white border border-gray-200 rounded-2xl p-6 mb-10 not-prose">
+      <div class="md:col-span-2 w-full flex flex-col gap-4">
+        <figure class="w-full">
+          <img src="/images/forbidden-city/route-2-hour.png" alt="Официальная карта двухчасового маршрута по Запретному городу: центральная ось, 13 нумерованных остановок от Ворот Меридиана (юг) до Ворот Божественной силы (север)" class="w-full h-auto object-contain bg-gray-50 rounded-xl" loading="lazy" />
+          <figcaption class="text-xs text-gray-500 text-center mt-2">Официальный маршрут A · 2 часа · 13 остановок (только центральная ось)</figcaption>
+        </figure>
+        <figure class="w-full">
+          <img
+            src="/images/forbidden-city/hall-of-supreme-harmony.jpg"
+            alt="Фасад Зала Высшей гармонии: двускатная крыша и трёхъярусная мраморная терраса"
+            width="1024"
+            height="768"
+            loading="lazy"
+            class="w-full h-auto object-cover rounded-2xl shadow-md"
+          />
+          <figcaption class="text-xs text-gray-500 text-center mt-2">太和殿 — крупнейшее деревянное сооружение Китая</figcaption>
+        </figure>
+      </div>
+      <div class="md:col-span-3">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">🏛️ Маршрут A — только центральная ось</h3>
+        <p class="text-base leading-relaxed text-gray-700 mb-4">Быстрый минимум. Если ты пришёл только за культовыми фото и одним-двумя большими залами, этого достаточно: маршрут охватывает всю центральную ось с юга на север без единого отклонения в боковые дворцы. Почти каждая тургруппа идёт по этому же хребту, так что готовься к людям; зато ты пройдёшь мимо 600 лет императорских церемоний ровно за два часа.</p>
+        <p class="text-base font-semibold text-gray-900 mb-2">Вот порядок и причина, по которой каждая остановка его заслуживает:</p>
+        <ol class="space-y-2 list-decimal pl-5 text-base text-gray-700">
+          <li><strong>午门 Ворота Меридиана</strong> — вход. Подними взгляд на трёхъярусную башню, проходя через низкий тоннель: эта теснота была задумана, и каждый входил к императору маленьким человеком.</li>
+          <li><strong>太和门 Ворота Тайхэ</strong> — самые большие ворота комплекса. Посмотри на бронзовых львов: слева (самец, лапа на шаре = правит миром), справа (самка, лапа на львёнке = растит семью).</li>
+          <li><strong>太和殿 Зал Высшей гармонии</strong> — крупнейшее деревянное сооружение Китая. Здесь возводили на престол императоров; бронзовые черепахи и журавли перед ним были курильницами, а не украшением.</li>
+          <li><strong>弘义阁 Павильон Праведности</strong> — небольшой западный павильон, построенный для малых дворцовых церемоний. Туристов почти нет.</li>
+          <li><strong>体仁阁 Павильон Благожелательности</strong> — парный восточный павильон; вместе с №4 обрамляет большую площадь.</li>
+          <li><strong>中和殿 Зал Центральной гармонии</strong> — легко пройти мимо, но император отдыхал и репетировал здесь перед церемониями в Тайхэ.</li>
+          <li><strong>保和殿 Зал Сохранённой гармонии</strong> — банкетный зал, а с 1789 года — постоянное место финального императорского экзамена. Зайди за него, чтобы увидеть каменный пандус «облако и дракон»: 12 мастеров, 2 года.</li>
+          <li><strong>乾清门 Ворота Небесной чистоты</strong> — их пересечение означает переход от публичного зрелища к частной жизни.</li>
+          <li><strong>乾清宫 Дворец Небесной чистоты</strong> — спальня императоров при Мин и в раннем Цин. Найди табличку <strong>正大光明</strong>: с эпохи Цин имя наследника хранилось запечатанным в шкатулке за ней.</li>
+          <li><strong>交泰殿 Зал Единения</strong> — небольшой квадратный зал между двумя дворцами, использовался для возведения императриц и хранения императорских печатей.</li>
+          <li><strong>坤宁宫 Дворец Земного спокойствия</strong> — резиденция императрицы при Мин и Цин. Часть позже переделали в маньчжурский шаманский зал — одно здание, две религии.</li>
+          <li><strong>御花园 Императорский сад</strong> — тыл комплекса и твоя последняя остановка. Каменные горки в форме гор; сосны старше 400 лет.</li>
+          <li><strong>神武门 Ворота Божественной силы</strong> — выход. Перейди дорогу в <strong>парк Цзиншань</strong> (¥2) ради лучшего фото в Пекине.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- ===== ROUTE B: HALF DAY ===== -->
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-6 items-start bg-white border border-gray-200 rounded-2xl p-6 mb-10 not-prose">
+      <figure class="md:col-span-2 w-full">
+        <img src="/images/forbidden-city/route-half-day.png" alt="Официальная карта маршрута на полдня по Запретному городу: 14 нумерованных остановок, центральная ось и западные дворцы" class="w-full h-auto object-contain bg-gray-50 rounded-xl" loading="lazy" />
+        <figcaption class="text-xs text-gray-500 text-center mt-2">Официальный маршрут B · Полдня (~3–4 ч) · 14 остановок</figcaption>
+      </figure>
+      <div class="md:col-span-3">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">🏛️ Маршрут B — полдня (плюс западная часть)</h3>
+        <p class="text-base leading-relaxed text-gray-700 mb-4">Добавляет к центральной оси галерею керамики <strong>Зала Уин</strong> и <strong>Западные шесть дворцов</strong>. Для большинства, кто здесь впервые, это правильная порция дворца. Остановки 1 и 3–13 совпадают с маршрутом A — детали смотри выше. Только остановки, уникальные для этого маршрута:</p>
+        <ol class="space-y-2 list-decimal pl-5 text-base text-gray-700" start="2">
+          <li value="2"><strong>武英殿 Зал Уин</strong> — поверни налево после входа. Галерея керамики в самом старом сохранившемся зале комплекса (1407). Спокойно, немноголюдно, хорошее начало.</li>
+          <li value="11"><strong>西六宫 Западные шесть дворцов</strong> (11–12) — резиденции наложниц к западу от центральной оси. Масштаб падает с государственной архитектуры до бытовой; наконец видно, насколько замкнутой была жизнь женщин во дворце.</li>
+          <li value="14"><strong>神武门 Ворота Божественной силы</strong> (14) — тот же выход, что и на маршруте A, в парк Цзиншань.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- ===== ROUTE C: FULL DAY ===== -->
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-6 items-start bg-white border border-gray-200 rounded-2xl p-6 mb-10 not-prose">
+      <figure class="md:col-span-2 w-full">
+        <img src="/images/forbidden-city/route-full-day.png" alt="Официальная карта маршрута на целый день по Запретному городу: 17 нумерованных остановок, центральная ось и восточный и западный дворцовые комплексы" class="w-full h-auto object-contain bg-gray-50 rounded-xl" loading="lazy" />
+        <figcaption class="text-xs text-gray-500 text-center mt-2">Официальный маршрут C · Целый день (~6+ ч) · 17 остановок</figcaption>
+      </figure>
+      <div class="md:col-span-3">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">🏛️ Маршрут C — целый день (оба крыла)</h3>
+        <p class="text-base leading-relaxed text-gray-700 mb-4">Полный охват. Добавляет к маршруту B восточные дворцовые комплексы — сменные выставки и все крупные музеи внутри дворцовых стен. Стоит, только если серьёзно интересуешься китайским искусством или архитектурой. Остановки 4–13 совпадают с маршрутом A. Только остановки, уникальные для этого маршрута:</p>
+        <ol class="space-y-2 list-decimal pl-5 text-base text-gray-700" start="2">
+          <li value="2"><strong>武英殿 Зал Уин</strong> — западная часть, галерея керамики. Как на маршруте B; самая сильная причина прийти в эту часть дворца.</li>
+          <li value="3"><strong>文华殿 Зал Вэньхуа</strong> — восточное зеркало Уина; галерея живописи и каллиграфии. Если за целый день есть время только на одну галерею, выбери эту.</li>
+          <li value="14"><strong>西六宫 Западные шесть дворцов</strong> (14) — резиденции наложниц, западная часть. Как на маршруте B.</li>
+          <li value="15"><strong>东六宫 Восточные шесть дворцов</strong> (15) — резиденции наложниц, восточная часть. Зеркалят западное крыло; сегодня в основном пустые коробки, но архитектура цела.</li>
+          <li value="17"><strong>神武门 Ворота Божественной силы</strong> (17) — тот же выход, что и на маршруте A, в парк Цзиншань.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Tip: Treasure Gallery / Clock Gallery -->
+    <div class="bg-yellow-50 border border-yellow-100 rounded-2xl p-6 mb-12">
+      <p class="text-gray-700"><strong>💡 Совет:</strong> на любом маршруте <strong>Галерея сокровищ (珍宝馆)</strong> и <strong>Галерея часов (钟表馆)</strong> стоят своих ¥10 каждая — добавь их петлёй в сторону от центральной оси на маршрутах A или B либо растяни на маршрут C. Галерея сокровищ — по соотношению цены и впечатлений лучший музей Китая.</p>
+    </div>
+
+    <!-- ============ SECTION 5: PRACTICAL TIPS ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="practical-tips" class="text-3xl font-bold text-gray-900 mb-6 mt-12">👟 Практические советы</h2>
+    <ul class="space-y-3 mb-12 text-lg text-gray-700">
+      <li>Поставь в <strong>навигаторе</strong> пункт «Музей Гугун — ворота Умэнь (午门)». Это единственный вход в Музей Гугун; если указать просто «Музей Гугун», тебя могут направить не туда.</li>
+      <li><strong>Большинству хватит полдня.</strong> 3–4 часа покрывают главное. Любители истории легко проводят 6–8 часов.</li>
+      <li><strong>Надень удобную обувь.</strong> Ты пройдёшь больше 10 000 шагов; по центральной оси сокращённых путей нет.</li>
+      <li><strong>Фотографировать разрешено</strong> везде на улице. В некоторых выставочных залах вспышка ограничена.</li>
+      <li><strong>Совмести с парком Цзиншань</strong> (вход ¥2, 5 минут пешком от северного выхода) ради открыточного вида на весь комплекс.</li>
+    </ul>
+
+    <!-- ============ SECTION 6: WALKING THROUGH ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="walking-through" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏯 По чему ты на самом деле идёшь</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">Комплекс занимает <strong>72 гектара</strong> и насчитывает <strong>980 сохранившихся зданий</strong> — крупнейший деревянный архитектурный ансамбль в мире. Одно это число трудно осмыслить: с юга на север ты пройдёшь около 1,6 км, минешь семь главных ворот и преодолеешь перепад высоты в 2 метра между передним залом и задним садом (тихое напоминание фэншуй: император правил всем). Вот детали, которые впервые приехавшие обычно пропускают:</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-8 items-start mb-12 not-prose">
+      <!-- Left: key-point cards -->
+      <ul class="md:col-span-3 space-y-3">
+        <li class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <p class="text-base text-gray-800"><span class="mr-2">🟡</span><strong>Жёлтая черепица и звери на крышах.</strong> Все крыши покрыты императорской жёлтой глазурью — она предназначена только императору. Вдоль карнизов выстроен ряд мифических зверей; полный набор из десяти есть только у Зала Высшей гармонии.</p>
+        </li>
+        <li class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <p class="text-base text-gray-800"><span class="mr-2">🐉</span><strong>Резьба «10 000 драконов».</strong> Мраморные балюстрады у Зала Высшей гармонии: девять драконов = императорский уровень, десять = только у Драконьего трона.</p>
+        </li>
+        <li class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <p class="text-base text-gray-800"><span class="mr-2">🦁</span><strong>Львы под каждыми воротами.</strong> Самец (лапа на шаре, правит миром) и самка (лапа на львёнке, растит семью). Некоторым парам больше 600 лет.</p>
+        </li>
+        <li class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <p class="text-base text-gray-800"><span class="mr-2">☁️</span><strong>Каменные пандусы «облако и дракон».</strong> Самый замысловатый, за Залом Сохранённой гармонии, 12 мастеров делали 2 года.</p>
+        </li>
+        <li class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <p class="text-base text-gray-800"><span class="mr-2">🌳</span><strong>Императорский сад (御花园).</strong> Тыл комплекса, менее людный, чем главные залы. Каменные горки в форме гор; сосны старше 400 лет.</p>
+        </li>
+      </ul>
+      <!-- Right: arranged images -->
+      <div class="md:col-span-2 space-y-6">
+        <figure>
+          <img
+            src="/images/forbidden-city/roof-beasts.jpg"
+            alt="Крупный план императорской жёлтой глазурованной черепицы и ряда мифических зверей на углу крыши дворца Запретного города"
+            width="944"
+            height="687"
+            loading="lazy"
+            class="w-full h-auto object-cover rounded-2xl shadow-md"
+          />
+          <figcaption class="text-xs text-gray-500 text-center mt-2">Ряд мифических зверей вдоль угла крыши.</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="/images/forbidden-city/corner-tower.jpg"
+            alt="Юго-восточная угловая башня Запретного города, отражённая во рву"
+            width="1200"
+            height="900"
+            loading="lazy"
+            class="w-full h-auto object-cover rounded-2xl shadow-md"
+          />
+          <figcaption class="text-xs text-gray-500 text-center mt-2">Юго-восточная угловая башня, отражённая во рву.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- ============ SECTION 7: THREE THINGS ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="skip" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🚫 Три вещи, которые нельзя пропустить</h2>
+    <ol class="space-y-3 mb-12 text-lg text-gray-700 list-decimal pl-6 flow-root">
+      <li><strong>Зал Высшей гармонии (太和殿)</strong> — крупнейшее деревянное сооружение Китая. Трон стоит в центре. Бронзовые черепахи и журавли перед ним были курильницами: дым символически очищал воздух перед императорскими приёмами.</li>
+      <li><strong>Галерея сокровищ (珍宝馆)</strong> — билет за ¥10 — лучшее соотношение цены и впечатлений среди музеев Китая. Оригинальные звери с крыши Зала Высшей гармонии, золотое и нефритовое церемониальное оружие эпохи Цяньлун, золочёные будды, привезённые из Тибета в XVIII веке. Заложи минимум 45 минут.
+        <figure class="mt-4 md:float-right md:clear-right md:ml-8 md:w-[38%] not-prose">
+          <img
+            src="/images/forbidden-city/nine-dragon-wall.jpg"
+            alt="Крупный план одного из глазурованных драконов на Стене девяти драконов в комплексе Галереи сокровищ Запретного города"
+            width="442"
+            height="300"
+            loading="lazy"
+            class="w-full h-auto object-cover rounded-2xl shadow-md"
+          />
+          <figcaption class="text-xs text-gray-500 text-center mt-2">Глазурованный дракон на Стене девяти драконов в комплексе Галереи сокровищ.</figcaption>
+        </figure>
+      </li>
+
+      <li><strong>Дворец Небесной чистоты (乾清宫)</strong> — резиденция императоров при Мин и в начале Цин. Центральную табличку над троном (<strong>正大光明</strong>, «прямой и светлый») каждый новый император Цин писал лично. Таблички «тринадцати принцев» по бокам — вырезанные наставления о поведении императора.</li>
+    </ol>
+
+    <!-- ============ NEXT READS ============ -->
+    <div class="border-t border-gray-100 pt-8 mt-8 not-prose">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h3 class="text-sm font-bold text-gray-900">📚 Связанные руководства</h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="/ru/cities/beijing-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🏙️ Гид по Пекину
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ru/cities/city-select/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              📅 Сколько дней нужно в Китае?
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ru/visa/visa-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🛂 Гид по визе и въезду в Китай
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ SOURCES ============ -->
+    <section class="mt-10 pt-6 border-t border-gray-100">
+      <h3 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-4">Источники</h3>
+      <ol class="space-y-2 text-sm text-gray-500">
+        <li>1. <strong>Официальная политика продажи билетов Музея Гугун</strong> (故宫博物院票务政策) — <a href="https://intl.dpm.org.cn/visit.html" target="_blank" rel="noopener" class="text-blue-600 hover:underline">intl.dpm.org.cn</a></li>
+        <li>2. <strong>Онлайн-бронирование Музея Гугун</strong> (故宫博物院在线订票) — <a href="https://bookingticket.dpm.org.cn/" target="_blank" rel="noopener" class="text-blue-600 hover:underline">bookingticket.dpm.org.cn</a></li>
+        <li>3. <strong>Репортаж CCTV о праздниках 2026 года и бесплатном открытии Запретного города</strong> — <a href="https://news.cctv.com/2025/12/29/ARTInhrENbHw5LqaS0ZoU5vc251229.shtml" target="_blank" rel="noopener" class="text-blue-600 hover:underline">news.cctv.com</a></li>
+      </ol>
+    </section>
+
+  </article>
+</Layout>

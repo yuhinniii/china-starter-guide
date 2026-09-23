@@ -1,0 +1,363 @@
+---
+import Layout from '@layouts/Layout.astro';
+const title = 'دليل المدينة المحرمة: التذاكر والمسارات وكل ما تحتاج معرفته قبل الزيارة';
+const description = 'كيف تحصل على تذاكر المدينة المحرمة، وكيف تختار بين المسارات الرسمية: ساعتان، ونصف يوم، ويوم كامل، وماذا تشاهد داخل متحف القصر — دليل زائر كامل للأجانب.';
+---
+
+<Layout title={title} description={description} lang="ar">
+  <article class="max-w-4xl mx-auto px-6 py-12">
+
+    <!-- ============ BREADCRUMB ============ -->
+    <nav class="mb-8 not-prose">
+      <a href="/ar/cities/beijing-guide/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+        <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        العودة إلى دليل بكين
+      </a>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🏛️ المدينة المحرمة · بكين</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">دليل المدينة المحرمة: التذاكر والمسارات وكل ما تحتاج معرفته قبل الزيارة</h1>
+      <p class="text-xl text-gray-600 mb-6">متحف القصر هو السبب الأكبر الذي يجعل معظم الناس يأتون إلى بكين — وإليك كيف تخطط للزيارة بحيث تكون على قدر ما تراه في الصور.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 آخر تحديث: سبتمبر 2026</span>
+        <span>⏱️ 7 دقائق قراءة</span>
+      </div>
+    </header>
+
+    <!-- ============ HERO IMAGE ============ -->
+    <figure class="mb-12 not-prose">
+      <img
+        src="/images/forbidden-city/hero-aerial.jpg"
+        alt="صورة جوية للمدينة المحرمة باتجاه الشمال فوق أسطح القرميد المزجّج الذهبي نحو حديقة جينغشان"
+        width="1200"
+        height="800"
+        loading="eager"
+        fetchpriority="high"
+        class="w-full h-auto object-cover rounded-2xl shadow-md"
+      />
+      <figcaption class="text-xs text-gray-500 text-center mt-2">المدينة المحرمة كما تُرى من تلة جينغشان — 72 هكتارًا من العمارة الإمبراطورية في صورة واحدة.</figcaption>
+    </figure>
+
+    <!-- ============ QUICK ANSWER ============ -->
+    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-red-900 mb-4">⚡ إجابة سريعة</h2>
+      <p class="text-lg text-red-800 leading-relaxed">
+        لا يمكنك شراء التذكرة في اليوم نفسه — فتذاكر متحف القصر تنفد قبل 7 أيام، وفي موسم الذروة (1 أبريل–31 أكتوبر) يكون السعر <strong>¥60</strong> (¥40 في الموسم المنخفض). احجز عبر الإنترنت من خلال <strong>الموقع الرسمي لمتحف القصر</strong> (يسجّل الأجانب بجواز السفر ويدفعون ببطاقة دولية — دون الحاجة إلى أي تطبيق دفع صيني). المتحف مغلق كل يوم اثنين (عدا العطلات الرسمية). احجز في <strong>الساعة 8 مساءً بتوقيت بكين، قبل زيارتك بـ7 أيام بالضبط</strong> — فمواعيد الأسبوع الذهبي تختفي خلال دقائق.
+      </p>
+    </div>
+
+    <!-- ============ IN THIS GUIDE ============ -->
+    <nav class="bg-gray-50 rounded-2xl p-8 mb-12 not-prose">
+      <h3 class="text-lg font-bold text-gray-900 mb-4">📋 محتويات الدليل</h3>
+      <ul class="space-y-3">
+        <li><a href="#worth-it" class="text-blue-600 hover:underline">🤔 هل تستحق المدينة المحرمة الزيارة؟</a></li>
+        <li><a href="#tickets" class="text-blue-600 hover:underline">🎫 كم سعر تذاكر المدينة المحرمة؟</a></li>
+        <li><a href="#guide" class="text-blue-600 hover:underline">🧑‍🏫 مع مرشد أم بدونه؟</a></li>
+        <li><a href="#routes" class="text-blue-600 hover:underline">🗺️ ثلاثة مسارات موصى بها</a></li>
+        <li><a href="#practical-tips" class="text-blue-600 hover:underline">👟 نصائح عملية</a></li>
+        <li><a href="#walking-through" class="text-blue-600 hover:underline">🏯 ما الذي تمشي فيه فعلاً</a></li>
+        <li><a href="#skip" class="text-blue-600 hover:underline">🚫 ثلاثة أشياء لا تفوّتها</a></li>
+      </ul>
+    </nav>
+
+    <!-- ============ SECTION 1: WORTH IT ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="worth-it" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🤔 هل تستحق المدينة المحرمة الزيارة؟</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">تستحق الزيارة تمامًا — فهي موقع تراث عالمي لليونسكو، وأكبر وأفضل مجموعة محفوظة من العمارة القصرية الخشبية في العالم. كانت مقرّ إقامة ومركز سلطة 24 إمبراطورًا من أسرتَي مينغ وتشينغ. وخلف الجدران الحمراء والقمريدة الصفراء، وبين القصور المتدرجة، تمتدّ 600 عام من التاريخ الإمبراطوري — من مراسم التتويج إلى الحياة في الحرم. وفي كل زاوية يمكن للزائر أن يلمس مباشرة عظمة الحكم الإمبراطوري الصيني القديم وبراعة العمارة في ذلك العصر. وللزائر الأجنبي ليست مجرد «مبنى قديم»، بل بوابة لفهم التاريخ والثقافة الصينية — وعندما تعبر ساحة قاعة الانسجام الأعظم ستفهم لماذا يقول الصينيون غالبًا إن «المدينة المحرمة» تجسّد نظام إمبراطورية كاملة وجمالياتها.</p>
+
+    <!-- ============ SECTION 2: TICKETS ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="tickets" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🎫 كم سعر تذاكر المدينة المحرمة؟ (الأسعار الرسمية والحجز)</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">المدينة المحرمة من الأماكن القليلة في الصين التي يكون فيها <em>التخطيط</em> شبه مهم بمقدار الزيارة نفسها. وإليك كل ما تحتاج معرفته، وفق قواعد التذاكر الرسمية للمتحف.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">وفق سياسة التذاكر الرسمية لمتحف القصر:</p>
+
+    <div class="overflow-x-auto mb-12 not-prose">
+      <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+        <thead>
+          <tr class="bg-gray-900 text-white">
+            <th class="px-6 py-4 font-bold">البند</th>
+            <th class="px-6 py-4 font-bold">السعر</th>
+            <th class="px-6 py-4 font-bold">ملاحظات</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4">تذكرة البوابة الرئيسية (موسم الذروة، 1 أبريل–31 أكتوبر)</td>
+            <td class="px-6 py-4 font-semibold">¥60</td>
+            <td class="px-6 py-4">تشمل جميع القاعات الرئيسية، ولا تشمل قاعة الكنوز وقاعة الساعات</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4">تذكرة البوابة الرئيسية (الموسم المنخفض، 1 نوفمبر–31 مارس)</td>
+            <td class="px-6 py-4 font-semibold">¥40</td>
+            <td class="px-6 py-4"></td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4">قاعة الكنوز (珍宝馆)</td>
+            <td class="px-6 py-4 font-semibold">¥10</td>
+            <td class="px-6 py-4">تستحق العناء — تضم القطع الذهبية الشهيرة</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4">قاعة الساعات (钟表馆)</td>
+            <td class="px-6 py-4 font-semibold">¥10</td>
+            <td class="px-6 py-4">تستحق أيضًا</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4">خصم كبار السن (الزوار الأجانب، 60 عامًا وأكثر)</td>
+            <td class="px-6 py-4 font-semibold">¥30</td>
+            <td class="px-6 py-4">البنود الثلاثة أعلاه مشمولة في التذكرة المخفّضة</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4">خصم الطلاب (الأجانب، 7–17 عامًا؛ المرحلة الجامعية وما دونها)</td>
+            <td class="px-6 py-4 font-semibold">¥20</td>
+            <td class="px-6 py-4">نفس المشمولات؛ أحضر بطاقة طالب سارية</td>
+          </tr>
+          <tr>
+            <td class="px-6 py-4">الأطفال (الأجانب، 6 سنوات وما دون)</td>
+            <td class="px-6 py-4 font-semibold">مجاني</td>
+            <td class="px-6 py-4">لا تتطلب تذكرة</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-8"><strong>قواعد الحجز التي ستحدد إن كنت ستدخل أم لا:</strong></p>
+    <ul class="space-y-3 mb-12 text-lg text-gray-700">
+      <li>📅 <strong>وقت البيع:</strong> تُطرح التذاكر للبيع <strong>قبل 7 أيام من تاريخ زيارتك في الساعة 20:00 (8 مساءً)</strong> بتوقيت بكين. وعادةً تنفد خلال دقائق — فعّل المنبّه.</li>
+      <li>🚫 <strong>لا تذاكر في اليوم نفسه</strong> — فالمتحف لا يبيع عند البوابة.</li>
+      <li>🛒 <strong>أين تحجز:</strong>
+        <ul class="list-disc pl-8 mt-2 space-y-1">
+          <li><a href="https://bookingticket.dpm.org.cn/" target="_blank" rel="noopener" class="text-blue-600 hover:underline font-medium">الموقع الرسمي لمتحف القصر</a> — سجّل بجواز سفرك وادفع ببطاقة دولية.</li>
+          <li><a href="https://www.trip.com/t/h6LFHO1J2W2" target="_blank" rel="noopener" class="text-blue-600 hover:underline font-medium">باقة الجولة المرشدة من Trip.com</a> — تشمل الدخول + مرشدًا يتحدث الإنجليزية. تجنّب سباق الحجز.</li>
+        </ul>
+      </li>
+      <li>📘 <strong>أحضر جواز سفرك.</strong> سجّل برقم جواز السفر وأظهر الجواز نفسه عند البوابة.</li>
+      <li>🚪 <strong>الدخول والخروج:</strong> الدخول من <strong>بوابة ميريديان (午门، الجنوب)</strong> فقط. والخروج من <strong>بوابة القدرة الإلهية (神武门، الشمال)</strong> أو <strong>بوابة المجد الشرقية (东华门)</strong>.</li>
+      <li>🈚 <strong>مغلق كل يوم اثنين</strong> (عدا العطلات الرسمية).</li>
+      <li>🕗 <strong>ساعات العمل:</strong> 8:30–17:00 (موسم الذروة، آخر دخول 16:00)؛ و8:30–16:30 في الموسم المنخفض.</li>
+    </ul>
+
+    <!-- ============ SECTION 3: GUIDE ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="guide" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🧑‍🏫 مع مرشد أم بدونه؟</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">إذا أردت فهمًا أعمق لتاريخ المدينة المحرمة بدلًا من مجرد التقاط الصور وتأشير المكان في قائمتك، أنصحك بشدة بالاستعانة بمرشد. كانت المدينة المحرمة القصر الإمبراطوري لأسرتَي مينغ وتشينغ، ولها تاريخ يمتد أكثر من 600 عام. إنها تحفة من العمارة الصينية القديمة وتمثّل ذروة العمارة القصرية الصينية التقليدية. وسواء من حيث الإرث المعماري أو الأهمية التاريخية، يحتاج الأمر إلى مرشد محترف يشرحه لنا. بالمرشد تتحول المدينة المحرمة إلى درس في التاريخ، لا مجرد نزهة جميلة.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">وحدك، سترى العمارة الجميلة فقط وتفوتك القصص الأكثر إثارة خلفها. ستمرّ بالدرابزين الرخامي المنقوش بالتنانين، وبالسلاحف والكراكي البرونزية أمام القاعة الكبرى، وبعشر مخلوقات صغيرة مصطفة على سطح معيّن — وغالبًا لن تعرف معنى أيٍّ منها. وهذا بالضبط ما يَعِد به معظم الزوار أنفسهم بالبحث عنه لاحقًا، ثم لا يفعلون أبدًا.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12 not-prose">
+      <div class="bg-blue-50 border border-blue-100 rounded-2xl p-6">
+        <p class="text-gray-700"><strong>👉 تريد مرشدًا؟</strong> يجمع Trip.com بين الدخول ومرشد يتحدث الإنجليزية — فتجنّب سباق الحجز. <a href="https://www.trip.com/t/h6LFHO1J2W2" target="_blank" rel="noopener" class="text-blue-600 hover:underline font-medium">تصفّح جولات المدينة المحرمة المرشدة →</a></p>
+      </div>
+      <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+        <p class="text-gray-700"><strong>🙌 ستتولى الأمر وحدك؟</strong> احجز تذكرتك مباشرة من الموقع الرسمي لمتحف القصر. <a href="https://bookingticket.dpm.org.cn/" target="_blank" rel="noopener" class="text-blue-600 hover:underline font-medium">انتقل إلى bookingticket.dpm.org.cn →</a></p>
+      </div>
+    </div>
+
+    <!-- ============ SECTION 4: ROUTES ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="routes" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🗺️ ثلاثة مسارات موصى بها (من خريطة الزوار الرسمية لمتحف القصر)</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">ينشر متحف القصر ثلاثة مسارات في خريطة الزوار الخاصة به، لكل مدة زيارة شائعة مسار. وتبدأ الثلاثة من <strong>بوابة ميريديان (午门، الجنوب)</strong> — المدخل الوحيد — وتنتهي عند <strong>بوابة القدرة الإلهية (神武门، الشمال)</strong>، مقابل حديقة جينغشان مباشرة. اختر ما يناسب الوقت المتاح لديك؛ وبقية المقال تفترض أنك تسير في أحدها.</p>
+
+    <!-- ===== ROUTE A: 2 HOURS ===== -->
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-6 items-start bg-white border border-gray-200 rounded-2xl p-6 mb-10 not-prose">
+      <div class="md:col-span-2 w-full flex flex-col gap-4">
+        <figure class="w-full">
+          <img src="/images/forbidden-city/route-2-hour.png" alt="خريطة المسار الرسمي لساعتين في المدينة المحرمة: المحور المركزي، 13 محطة مرقّمة من بوابة ميريديان جنوبًا إلى بوابة القدرة الإلهية شمالًا" class="w-full h-auto object-contain bg-gray-50 rounded-xl" loading="lazy" />
+          <figcaption class="text-xs text-gray-500 text-center mt-2">المسار الرسمي A · ساعتان · 13 محطة (المحور المركزي فقط)</figcaption>
+        </figure>
+        <figure class="w-full">
+          <img
+            src="/images/forbidden-city/hall-of-supreme-harmony.jpg"
+            alt="الواجهة الأمامية لقاعة الانسجام الأعظم: سقف مزدوج الأفاريز ومصطبة رخامية من ثلاث طبقات"
+            width="1024"
+            height="768"
+            loading="lazy"
+            class="w-full h-auto object-cover rounded-2xl shadow-md"
+          />
+          <figcaption class="text-xs text-gray-500 text-center mt-2">太和殿 — أكبر مبنى خشبي في الصين</figcaption>
+        </figure>
+      </div>
+      <div class="md:col-span-3">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">🏛️ المسار A — المحور المركزي فقط</h3>
+        <p class="text-base leading-relaxed text-gray-700 mb-4">الأساسيات السريعة. إذا جئت فقط من أجل الصور الأيقونية وقاعة أو قاعتين كبيرتين، فهذا يكفي — يغطي المحور المركزي كاملًا من الجنوب إلى الشمال دون أي انحراف إلى القصور الجانبية. وكل مجموعات الجولات تقريبًا تسير في هذا المحور نفسه، فتوقّع الزحام؛ والميزة أنك تمرّ بـ600 عام من المراسم الإمبراطورية في ساعتين بالضبط.</p>
+        <p class="text-base font-semibold text-gray-900 mb-2">وهذا هو الترتيب، مع سبب استحقاق كل محطة لمكانها:</p>
+        <ol class="space-y-2 list-decimal pl-5 text-base text-gray-700">
+          <li><strong>午门 بوابة ميريديان</strong> — المدخل. ارفع بصرك إلى البرج الثلاثي أثناء مرورك في النفق المنخفض: هذا الضيق كان مقصودًا، فكل من يدخل على الإمبراطور يدخل إنسانًا صغيرًا.</li>
+          <li><strong>太和门 بوابة تايهه</strong> — أكبر بوابة في المجمع. تأمّل الأسدين البرونزيين: اليسار (ذكر، قدمه على كرة = يحكم العالم)، واليمين (أنثى، قدمها على شبل = ترعى الأسرة).</li>
+          <li><strong>太和殿 قاعة الانسجام الأعظم</strong> — أكبر مبنى خشبي في الصين. هنا جلس الأباطرة على العرش؛ والسلاحف والكراكي البرونزية في مقدمتها كانت مباخر، لا زينة.</li>
+          <li><strong>弘义阁 جناح الاستقامة</strong> — جناح صغير في الغرب، بُني لمراسم بلاطية ثانوية. ولا يكاد يوجد سياح.</li>
+          <li><strong>体仁阁 جناح الإحسان</strong> — الجناح الشرقي المتناظر؛ ومع المحطة رقم 4 يشكّلان الساحة الكبرى.</li>
+          <li><strong>中和殿 قاعة الانسجام الأوسط</strong> — يسهل تجاوزها، لكن الإمبراطور كان يستريح ويتدرّب هنا قبل المراسم في قاعة تايهه.</li>
+          <li><strong>保和殿 قاعة الانسجام المحفوظ</strong> — قاعة ولائم، ومنذ 1789 أصبحت المكان الثابت للامتحان الإمبراطوري النهائي. امضِ خلفها لترى منحدر الحجر «سحابة وتنين»: 12 حرفيًا، وعامين.</li>
+          <li><strong>乾清门 بوابة النقاء السماوي</strong> — عبورها يمثّل الانتقال من الاستعراض العلني إلى الحياة الخاصة.</li>
+          <li><strong>乾清宫 قصر النقاء السماوي</strong> — غرفة نوم الأباطرة في عهد مينغ وأوائل تشينغ. ابحث عن لوحة <strong>正大光明</strong>: فمنذ عهد تشينغ كان اسم ولي العهد يُختم في صندوق خلفها.</li>
+          <li><strong>交泰殿 قاعة الاتحاد</strong> — قاعة مربعة صغيرة بين القصرين، استُخدمت لتنصيب الإمبراطورات وحفظ الأختام الإمبراطورية.</li>
+          <li><strong>坤宁宫 قصر الطمأنينة الأرضية</strong> — مقرّ الإمبراطورة في عهدَي مينغ وتشينغ. وحُوّل جزء منه لاحقًا إلى قاعة شامانية مانشوية — مبنى واحد، وديانتان.</li>
+          <li><strong>御花园 الحديقة الإمبراطورية</strong> — أقصى المجمع من الخلف، ومحطتك الأخيرة. صخور مصفوفة على شكل جبال؛ وصنوبر عمره أكثر من 400 عام.</li>
+          <li><strong>神武门 بوابة القدرة الإلهية</strong> — المخرج. اعبر الطريق إلى <strong>حديقة جينغشان</strong> (¥2) لأفضل صورة في بكين.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- ===== ROUTE B: HALF DAY ===== -->
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-6 items-start bg-white border border-gray-200 rounded-2xl p-6 mb-10 not-prose">
+      <figure class="md:col-span-2 w-full">
+        <img src="/images/forbidden-city/route-half-day.png" alt="خريطة المسار الرسمي لنصف يوم في المدينة المحرمة: 14 محطة مرقّمة تغطي المحور المركزي وقصور الجهة الغربية" class="w-full h-auto object-contain bg-gray-50 rounded-xl" loading="lazy" />
+        <figcaption class="text-xs text-gray-500 text-center mt-2">المسار الرسمي B · نصف يوم (نحو 3–4 ساعات) · 14 محطة</figcaption>
+      </figure>
+      <div class="md:col-span-3">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">🏛️ المسار B — نصف يوم (يضيف الجهة الغربية)</h3>
+        <p class="text-base leading-relaxed text-gray-700 mb-4">يضيف قاعة الخزف في <strong>قاعة وويينغ</strong> و<strong>القصور الستة الغربية</strong> إلى المحور المركزي. ولمعظم من يزور المكان لأول مرة، هذه هي الجرعة المناسبة من القصر. المحطتان 1 و3–13 هي نفسها في المسار A — راجع ما سبق للتفاصيل. وهنا المحطات الخاصة بهذا المسار فقط:</p>
+        <ol class="space-y-2 list-decimal pl-5 text-base text-gray-700" start="2">
+          <li value="2"><strong>武英殿 قاعة وويينغ</strong> — انعطف يسارًا بعد الدخول. قاعة الخزف في أقدم قاعة باقية في المجمع (1407). هادئة وغير مزدحمة، وبداية جيدة.</li>
+          <li value="11"><strong>西六宫 القصور الستة الغربية</strong> (11–12) — مقرّ المحظيات غرب المحور المركزي. يهبط المقياس من عمارة الدولة إلى الحياة المنزلية؛ فترى أخيرًا كم كانت حياة نساء البلاط مغلقة.</li>
+          <li value="14"><strong>神武门 بوابة القدرة الإلهية</strong> (14) — المخرج نفسه كما في المسار A، نحو حديقة جينغشان.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- ===== ROUTE C: FULL DAY ===== -->
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-6 items-start bg-white border border-gray-200 rounded-2xl p-6 mb-10 not-prose">
+      <figure class="md:col-span-2 w-full">
+        <img src="/images/forbidden-city/route-full-day.png" alt="خريطة المسار الرسمي ليوم كامل في المدينة المحرمة: 17 محطة مرقّمة تغطي المحور المركزي ومجمعات القصور الشرقية والغربية" class="w-full h-auto object-contain bg-gray-50 rounded-xl" loading="lazy" />
+        <figcaption class="text-xs text-gray-500 text-center mt-2">المسار الرسمي C · يوم كامل (نحو 6 ساعات وأكثر) · 17 محطة</figcaption>
+      </figure>
+      <div class="md:col-span-3">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">🏛️ المسار C — يوم كامل (الجناحان الشرقي والغربي)</h3>
+        <p class="text-base leading-relaxed text-gray-700 mb-4">التغطية الكاملة. يضيف مجمعات القصور الشرقية فوق المسار B — المعارض المتغيّرة وكل المتاحف الكبرى داخل أسوار القصر. ولا يستحق العناء إلا إذا كان لديك اهتمام جاد بالفن أو العمارة الصينية. المحطات 4–13 هي نفسها في المسار A. وهنا المحطات الخاصة بهذا المسار فقط:</p>
+        <ol class="space-y-2 list-decimal pl-5 text-base text-gray-700" start="2">
+          <li value="2"><strong>武英殿 قاعة وويينغ</strong> — الجهة الغربية، قاعة الخزف. كما في المسار B؛ وأقوى سبب لزيارة هذا الجزء من القصر.</li>
+          <li value="3"><strong>文华殿 قاعة ونهوا</strong> — النظير الشرقي لقاعة وويينغ؛ قاعة الرسم والخط. وإذا كان لديك وقت لقاعة واحدة فقط في يوم كامل، فلتكن هذه.</li>
+          <li value="14"><strong>西六宫 القصور الستة الغربية</strong> (14) — مقرّ المحظيات، الجهة الغربية. كما في المسار B.</li>
+          <li value="15"><strong>东六宫 القصور الستة الشرقية</strong> (15) — مقرّ المحظيات، الجهة الشرقية. تناظر الجناح الغربي؛ وهي اليوم هياكل شبه فارغة لكن العمارة سليمة.</li>
+          <li value="17"><strong>神武门 بوابة القدرة الإلهية</strong> (17) — المخرج نفسه كما في المسار A، نحو حديقة جينغشان.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Tip: Treasure Gallery / Clock Gallery -->
+    <div class="bg-yellow-50 border border-yellow-100 rounded-2xl p-6 mb-12">
+      <p class="text-gray-700"><strong>💡 نصيحة:</strong> في أي مسار، تستحق <strong>قاعة الكنوز (珍宝馆)</strong> و<strong>قاعة الساعات (钟表馆)</strong> الـ¥10 لكل منهما — أضفهما كجولة جانبية بعيدًا عن المحور المركزي في المسارين A أو B، أو مدّها ضمن المسار C. وقاعة الكنوز، بحساب كل يوان، هي أفضل قيمة متحفية في الصين.</p>
+    </div>
+
+    <!-- ============ SECTION 5: PRACTICAL TIPS ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="practical-tips" class="text-3xl font-bold text-gray-900 mb-6 mt-12">👟 نصائح عملية</h2>
+    <ul class="space-y-3 mb-12 text-lg text-gray-700">
+      <li>اضبط <strong>الملاحة</strong> على «متحف القصر — بوابة وومِن (午门)». فهذا هو المدخل الوحيد لمتحف القصر؛ وإذا وضعت «متحف القصر» فقط، فقد يُوجَّه بك إلى مكان خاطئ.</li>
+      <li><strong>نصف يوم يكفي معظم الناس.</strong> 3–4 ساعات تغطي الأساسيات. ويمكن لعشّاق التاريخ أن يمضوا 6–8 ساعات بسهولة.</li>
+      <li><strong>انتعل حذاءً مريحًا.</strong> ستمشي أكثر من 10,000 خطوة؛ ولا توجد طرق مختصرة عبر المحور المركزي.</li>
+      <li><strong>التصوير مسموح</strong> في الخارج في كل مكان. ويُقيَّد استخدام الفلاش في بعض قاعات العرض.</li>
+      <li><strong>اجمعها مع حديقة جينغشان</strong> (دخول ¥2، على 5 دقائق سيرًا من المخرج الشمالي) للحصول على الإطلالة البطاقية للمجمع كله.</li>
+    </ul>
+
+    <!-- ============ SECTION 6: WALKING THROUGH ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="walking-through" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🏯 ما الذي تمشي فيه فعلاً</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">يمتدّ المجمع على <strong>72 هكتارًا</strong> ويضم <strong>980 مبنى قائمًا</strong>، وهو أكبر مجموعة معمارية خشبية في العالم. وهذا الرقم وحده يصعب استيعابه — فالسير من الجنوب إلى الشمال يقطع نحو 1.6 كم، ويمرّ بسبع بوابات رئيسية، ويجتاز فرق ارتفاع مترين بين القاعة الأمامية والحديقة الخلفية (تذكير هادئ بالفنغ شوي بأن الإمبراطور يحكم كل شيء). وهذه هي التفاصيل التي يفوّتها زوار المرة الأولى عادةً:</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-8 items-start mb-12 not-prose">
+      <!-- Left: key-point cards -->
+      <ul class="md:col-span-3 space-y-3">
+        <li class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <p class="text-base text-gray-800"><span class="mr-2">🟡</span><strong>البلاط الأصفر ووحوش السقف.</strong> كل سقف مزجّج بالأصفر الإمبراطوري — وهو مقصور على الإمبراطور وحده. وعلى امتداد الأفاريز ينتظم صفّ من المخلوقات الأسطورية؛ وقاعة الانسجام الأعظم وحدها تحمل المجموعة الكاملة من عشرة.</p>
+        </li>
+        <li class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <p class="text-base text-gray-800"><span class="mr-2">🐉</span><strong>نقوش «الـ10,000 تنين».</strong> درابزين رخامي قرب قاعة الانسجام الأعظم — تسعة تنانين = الإمبراطور، وعشرة = عرش التنين وحده.</p>
+        </li>
+        <li class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <p class="text-base text-gray-800"><span class="mr-2">🦁</span><strong>الأسود تحت كل بوابة.</strong> الذكر (قدمه على كرة، يحكم العالم) والأنثى (قدمها على شبل، ترعى الأسرة). وبعض الأزواج عمرها أكثر من 600 عام.</p>
+        </li>
+        <li class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <p class="text-base text-gray-800"><span class="mr-2">☁️</span><strong>منحدرات الحجر «سحابة وتنين».</strong> وأكثرها إتقانًا، خلف قاعة الانسجام المحفوظ، استغرق 12 حرفيًا وعامين لإنهائه.</p>
+        </li>
+        <li class="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <p class="text-base text-gray-800"><span class="mr-2">🌳</span><strong>الحديقة الإمبراطورية (御花园).</strong> الجزء الخلفي من المجمع، أقل ازدحامًا من القاعات الرئيسية. صخور مصفوفة على شكل جبال؛ وصنوبر عمره أكثر من 400 عام.</p>
+        </li>
+      </ul>
+      <!-- Right: arranged images -->
+      <div class="md:col-span-2 space-y-6">
+        <figure>
+          <img
+            src="/images/forbidden-city/roof-beasts.jpg"
+            alt="لقطة قريبة للبلاط المزجّج الأصفر الإمبراطوري وصفّ وحوش السقف الأسطورية على زاوية قصر في المدينة المحرمة"
+            width="944"
+            height="687"
+            loading="lazy"
+            class="w-full h-auto object-cover rounded-2xl shadow-md"
+          />
+          <figcaption class="text-xs text-gray-500 text-center mt-2">صفّ الوحوش الأسطورية على امتداد زاوية سقف.</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="/images/forbidden-city/corner-tower.jpg"
+            alt="برج الزاوية الجنوبية الشرقية للمدينة المحرمة منعكسًا في الخندق"
+            width="1200"
+            height="900"
+            loading="lazy"
+            class="w-full h-auto object-cover rounded-2xl shadow-md"
+          />
+          <figcaption class="text-xs text-gray-500 text-center mt-2">برج الزاوية الجنوبية الشرقية منعكسًا في الخندق.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- ============ SECTION 7: THREE THINGS ============ -->
+    <hr class="border-gray-200 my-12" />
+    <h2 id="skip" class="text-3xl font-bold text-gray-900 mb-6 mt-12">🚫 ثلاثة أشياء لا تفوّتها</h2>
+    <ol class="space-y-3 mb-12 text-lg text-gray-700 list-decimal pl-6 flow-root">
+      <li><strong>قاعة الانسجام الأعظم (太和殿)</strong> — أكبر مبنى خشبي في الصين. العرش في الوسط. والسلاحف والكراكي البرونزية أمامها كانت مباخر — وكان الدخان يطهّر الهواء رمزيًا قبل الاستقبالات الإمبراطورية.</li>
+      <li><strong>قاعة الكنوز (珍宝馆)</strong> — تذكرة الـ¥10 هي أفضل قيمة مقابل السعر في أي متحف بالصين. وحوش السقف الأصلية لقاعة الانسجام الأعظم، والأسلحة الاحتفالية من الذهب واليشب في عهد تشيان لونغ، وتماثيل بوذا المذهّبة التي أُحضرت من التبت في القرن الثامن عشر. خصّص 45 دقيقة على الأقل.
+        <figure class="mt-4 md:float-right md:clear-right md:ml-8 md:w-[38%] not-prose">
+          <img
+            src="/images/forbidden-city/nine-dragon-wall.jpg"
+            alt="لقطة قريبة لأحد التنانين المزجّجة على جدار التنانين التسعة داخل مجمع قاعة الكنوز في المدينة المحرمة"
+            width="442"
+            height="300"
+            loading="lazy"
+            class="w-full h-auto object-cover rounded-2xl shadow-md"
+          />
+          <figcaption class="text-xs text-gray-500 text-center mt-2">تنين مزجّج على جدار التنانين التسعة، داخل مجمع قاعة الكنوز.</figcaption>
+        </figure>
+      </li>
+
+      <li><strong>قصر النقاء السماوي (乾清宫)</strong> — مقرّ إقامة الأباطرة من عهد مينغ إلى أوائل تشينغ. واللوحة المركزية فوق العرش (<strong>正大光明</strong>، «مستقيم وبصير») كان يكتبها بنفسه كل إمبراطور تشينغ جديد. ولوحات «الأمراء الثلاثة عشر» على الجانبين نصائح منقوشة عن سلوك الإمبراطور.</li>
+    </ol>
+
+    <!-- ============ NEXT READS ============ -->
+    <div class="border-t border-gray-100 pt-8 mt-8 not-prose">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h3 class="text-sm font-bold text-gray-900">📚 أدلة ذات صلة</h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="/ar/cities/beijing-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🏙️ دليل السفر إلى بكين
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ar/cities/city-select/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              📅 كم يومًا تحتاج في الصين؟
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ar/visa/visa-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              🛂 دليل تأشيرة الصين والدخول
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ SOURCES ============ -->
+    <section class="mt-10 pt-6 border-t border-gray-100">
+      <h3 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-4">المصادر</h3>
+      <ol class="space-y-2 text-sm text-gray-500">
+        <li>1. <strong>سياسة التذاكر الرسمية لمتحف القصر</strong> (故宫博物院票务政策) — <a href="https://intl.dpm.org.cn/visit.html" target="_blank" rel="noopener" class="text-blue-600 hover:underline">intl.dpm.org.cn</a></li>
+        <li>2. <strong>الحجز الإلكتروني لمتحف القصر</strong> (故宫博物院在线订票) — <a href="https://bookingticket.dpm.org.cn/" target="_blank" rel="noopener" class="text-blue-600 hover:underline">bookingticket.dpm.org.cn</a></li>
+        <li>3. <strong>تقرير CCTV عن عطلة 2026 وفتح المدينة المحرمة مجانًا</strong> — <a href="https://news.cctv.com/2025/12/29/ARTInhrENbHw5LqaS0ZoU5vc251229.shtml" target="_blank" rel="noopener" class="text-blue-600 hover:underline">news.cctv.com</a></li>
+      </ol>
+    </section>
+
+  </article>
+</Layout>

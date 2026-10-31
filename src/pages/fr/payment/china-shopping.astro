@@ -1,0 +1,329 @@
+---
+import Layout from '@layouts/Layout.astro';
+import FAQPage from '../../../components/FAQPage.astro';
+
+const title = "Que acheter en Chine en 2026 : guide d'achats avec détaxe";
+const description = "Ce qui vaut vraiment le coup d'être acheté en Chine en 2026 — cosmétiques et soins chinois, marques guochao, électronique, thé, soie, porcelaine et jade — ainsi que où faire ses achats et comment obtenir la détaxe à l'exportation d'environ 9 %.";
+
+const faqs = [
+  {
+    question: "Qu'est-ce qui est réellement moins cher à acheter en Chine ?",
+    answer: "Les cosmétiques et soins chinois, l'électronique de marque chinoise (Huawei, Xiaomi, DJI), les lunettes IA et objets connectés, les marques de design guochao, ainsi que le thé, la soie, la porcelaine, le jade et le cloisonné. La mode internationale, les parfums et les appareils photo coûtent le même prix ou plus cher qu'à la maison."
+  },
+  {
+    question: "Les achats en Chine ouvrent-ils droit à une détaxe ?",
+    answer: "Oui, dans les magasins affichant le panneau Tax Free (退税商店). Dépenser au moins ¥200 dans un même magasin en une journée, conserver la facture de TVA, et récupérer environ 9 % à l'aéroport au moment du départ."
+  },
+  {
+    question: "Que ne faut-il pas acheter en Chine ?",
+    answer: "Les iPhone et MacBook d'Apple en sont l'exemple le plus clair — le prix en Chine est plus élevé et certaines fonctions sont supprimées, si bien que la détaxe ne comble pas l'écart. Tout ce que vous pouvez trouver chez vous pour le même prix est un achat inutile."
+  }
+];
+---
+
+<Layout title={title} description={description} lang="fr" type="Article">
+  <nav class="mb-8 not-prose">
+    <a href="/fr/payment/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+      <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+      </svg>
+      Retour au paiement
+    </a>
+  </nav>
+
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🛍️ Achats</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">Achats en Chine : ce qui vaut le coup en 2026</h1>
+      <p class="text-xl text-gray-600 mb-6">Les catégories où la Chine gagne vraiment sur le prix, celles où ce n'est pas le cas, et comment récupérer environ 9 % au départ.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Dernière mise à jour : octobre 2026</span>
+        <span>⏱️ 11 min de lecture</span>
+      </div>
+    </header>
+
+    <img
+      src="/images/china-shopping/tax-free-sticker.webp"
+      alt="Panneau bleu Tax Free (退税商店) posé sur le comptoir d'un magasin à côté d'un terminal de carte"
+      width="1080"
+      height="809"
+      class="w-full rounded-2xl mb-10 not-prose"
+    />
+
+    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-red-900 mb-4">⚡ Que vaut-il la peine d'acheter en Chine ?</h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>Réponse rapide :</strong> Privilégiez les catégories réellement moins chères en Chine ou difficiles à trouver chez vous — cosmétiques et soins chinois, électronique de marque chinoise (Huawei, Xiaomi, DJI), lunettes IA et objets connectés, thé, soie, porcelaine, jade, marques de design guochao et artisanat traditionnel. Évitez tout ce que vous pouvez acheter chez vous au même prix — y compris les produits Apple, qui ne sont pas moins chers en Chine. Achètez dans les magasins affichant le panneau <strong>Tax Free (退税商店)</strong> et demandez la <strong>facture de TVA (增值税发票)</strong>, et vous pourrez récupérer environ <strong>9 %</strong> au retour — voir notre <a href="/fr/payment/tax-refund/" class="text-red-700 underline">guide de la détaxe à l'exportation</a> pour les règles en vigueur.</p>
+      <p class="text-lg leading-relaxed text-gray-700">En résumé : choisissez quelques catégories qui sont exceptionnelles ici, achetez-les dans des magasins proposant la détaxe, et empochez environ 9 % au départ. Voici ce qui vaut vraiment le coup d'être acheté — et où le trouver.</p>
+    </div>
+
+    <div class="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-2xl p-6 mb-12 not-prose">
+      <p class="text-lg leading-relaxed text-yellow-900"><strong>La version honnête :</strong> les achats en Chine ne sont rentables que dans des créneaux précis. La plupart de ce que les touristes achètent ici — mode internationale, parfums, appareils photo — coûtent le même prix ou plus cher qu'à la maison, et la détaxe d'environ 9 % comble rarement l'écart. Les catégories où la Chine gagne vraiment sont celles où les marques sont chinoises, non importées. Deux autres frictions à anticiper : la détaxe exige une facture de TVA officielle (增值税发票), que les petits stands ne peuvent pas délivrer, et les marchés touristiques vendent de faux convaincants. Achetez dans les magasins de marque et aux comptoirs agréés, pas auprès des vendeurs de rue promettant une affaire.</p>
+    </div>
+
+    <h2 id="whats-worth-buying" class="text-3xl font-bold text-gray-900 mb-6 mt-14">Que vaut-il la peine d'acheter en Chine ?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">Il existe essentiellement cinq catégories où la Chine gagne vraiment sur le prix et le choix, et où les magasins proposant la détaxe sont assez nombreux pour que la démarche en vaille la peine. Tenez-vous-en à celles-ci et vous rentrerez avec de belles trouvailles.</p>
+
+    <h3 id="cosmetics-skincare" class="text-2xl font-bold text-gray-900 mb-5 mt-10">Cosmétiques &amp; Soins</h3>
+
+    <img
+      src="/images/china-shopping/maogeping-counter.webp"
+      alt="Comptoir de cosmétiques MAOGEPING dans un grand magasin chinois, entouré d'autres marques de beauté"
+      width="1080"
+      height="810"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Voici ce que la plupart des guides d'achats présentent à l'envers. L'avantage de prix en Chine revient aux marques chinoises, pas à Chanel. Un sérum Lancôme sur le comptoir d'un grand magasin chinois porte les droits d'importation, la taxe à la consommation de 15 % sur les cosmétiques haut de gamme, et la TVA de 13 % — les trois empilés dans le prix affiché. C'est pourquoi il coûte généralement plus cher ici qu'à Paris, et non moins. Le seul endroit où les marques internationales deviennent vraiment peu chères, c'est le duty-free : l'allocation hors taxes de Hainan (¥100 000 par an, 30 articles de cosmétiques par voyage) et les boutiques duty-free de l'aéroport, qui suppriment ces trois taxes.</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>Soins et maquillage chinois — là où votre argent compte vraiment</strong></p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4">Les marques locales fixent leurs prix pour le marché intérieur, ne portent aucune taxe d'importation et pratiquent de fortes remises pendant 618 et le Double 11. Plusieurs sont aujourd'hui réellement bonnes, pas seulement bon marché :</p>
+    <ul class="list-disc pl-6 space-y-2 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>Proya (珀莱雅)</strong> — l'essence double-anti (双抗精华) et le sérum rubis sont les deux que tout le monde achète ; environ ¥200–400 la bouteille.</li>
+      <li><strong>Winona (薇诺娜)</strong> — conçue pour les peaux sensibles et réactives. La crème hydratante est celle à ramener si votre peau déteste les avions.</li>
+      <li><strong>Comfy (可复美)</strong> et les gammes de Bloomage <strong>Bio-MESO (润百颜) / QUADI (夸迪)</strong> — collagène recombiné et acide hyaluronique, une catégorie où la Chine domine actuellement.</li>
+      <li><strong>Florasis (花西子)</strong> — étuis de rouge à lèvres sculptés et poudres compactes. L'emballage est le souvenir.</li>
+      <li><strong>MAOGEPING (毛戈平)</strong> — la crème illuminateur et les palettes de contouring ; c'est ce que les maquilleurs chinois utilisent vraiment sur les plateaux.</li>
+      <li><strong>To Summer (观夏)</strong> — parfums aux senteurs chinoises et fragrances d'intérieur, osmanthus, thé et cèdre. Rien de tel ne se vend à l'étranger.</li>
+    </ul>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Deux réserves. Les gammes de teintes sont conçues pour les carnations d'Asie de l'Est, si bien que les fonds de teint les plus foncés manquent souvent. Et les allégations d'éclaircissement recouvrent toute cette catégorie — lisez la liste des ingrédients, pas le devant de l'emballage.</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-4 clear-both"><strong>Marques internationales — achetez les formats et coffrets réservés à l'Asie, pas le prix affiché</strong></p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4">Si vous voulez La Mer ou SK-II, le calcul ne fonctionne qu'en duty-free. Ce qui vaut le coup d'être traqué en comptoir classique, c'est autre chose :</p>
+    <ul class="list-disc pl-6 space-y-2 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>Formats et coffrets réservés à l'Asie.</strong> versions de 100 ml et plus des best-sellers, kits de voyage et packs duo qui ne sont jamais expédiés en Europe ou aux États-Unis.</li>
+      <li><strong>Éditions limitées du Nouvel An lunaire et du 520.</strong> Chanel, Dior et Estée Lauder sortent tous un packaging pour le marché chinois chaque janvier et aux alentours du 20 mai. Même produit, flacon différent, jamais réédité.</li>
+      <li><strong>Échantillons cadeaux vraiment généreux.</strong> Les espaces beauté des grands magasins distribuent minis et échantillons de luxe à des seuils bien plus bas qu'en Europe, et le personnel des comptoirs ajoutera souvent davantage si vous achetez deux articles et le demandez. Le Sephora Chine fonctionne sur la même logique.</li>
+    </ul>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>Où acheter :</strong></p>
+    <ul class="list-disc pl-6 space-y-2 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>Marques chinoises :</strong> leurs propres boutiques et flagships Tmall, ainsi que les comptoirs des grands magasins dans les grandes villes.</li>
+      <li><strong>Espaces beauté des grands magasins</strong> — Wangfujing (王府井), Shin Kong Place (新光天地), Plaza 66 (恒隆广场), MixC (万象城). Idéal pour les testers pleine taille, les échantillons cadeaux et obtenir une facture de TVA (增值税发票) sur demande.</li>
+      <li><strong>Sephora (丝芙兰)</strong> — la gamme internationale plus un mur grandissant de marques chinoises.</li>
+      <li><strong>Duty-free :</strong> les boutiques hors taxes de Hainan et le duty-free aéroportuaire au départ. Le seul endroit où le prix des marques internationales bat vraiment celui de la maison.</li>
+    </ul>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>Le calcul d'impôt, pour que vous puissiez le vérifier vous-même :</strong> les cosmétiques relèvent de la tranche TVA standard de 13 %, et la détaxe au départ reverse environ 9 % du prix après frais — un achat de ¥1 000 rapporte environ ¥90, pas ¥130. Par ailleurs, tout article facturé ¥10/ml ou plus porte également la taxe à la consommation de 15 % sur les cosmétiques haut de gamme à l'importation. Cette majoration explique pourquoi le prix en comptoir paraît élevé, et pourquoi le duty-free le bat.</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h3 id="guochao" class="text-2xl font-bold text-gray-900 mb-5 mt-10">Guochao et marques locales au design affirmé</h3>
+
+    <img
+      src="/images/china-shopping/pop-mart-store.webp"
+      alt="Devanture Pop Mart dans un centre commercial chinois, encadrée par deux troncs d'arbres sculptés avec des figurines à collectionner"
+      width="940"
+      height="625"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">"Guochao" (国潮, la vague des marques locales) est le dernier ajout aux listes officielles « à acheter absolument » : lors de sa conférence de presse de septembre 2026, le ministère du Commerce a cité les produits intelligents de marque nationale et les labels au design affirmé comme une raison majeure pour laquelle les visiteurs étrangers font désormais leurs achats en Chine. Pensez aux marques phares de sportswear et de streetwear, à la maison de design et à la papeterie, et aux jouets de collection — les figurines type Pop Mart sont l'exemple le plus connu d'une marque née en Chine avec un fort marché de revente à l'étranger.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Où acheter : les boutiques de marque dans les principaux quartiers commerçants (Nanjing East Road (南京东路) et Jing'an (静安) à Shanghai, Wangfujing (王府井) à Pékin, etc.) et les flagship stores concept dans les grands centres commerciaux. Mêmes règles de détaxe que le reste — demandez la facture de TVA (增值税发票) à la caisse. Deux vérifications pratiques avant d'acheter : les tailles sont souvent plus petites que les coupes occidentales pour beaucoup de marques locales, et tout électronique intégrée au produit (spécifications de charge, régions d'application) peut différer de votre marché domestique.</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h3 id="electronics" class="text-2xl font-bold text-gray-900 mb-5 mt-10">Électronique chinoise (mais évitez Apple)</h3>
+
+    <img
+      src="/images/china-shopping/dji-store.webp"
+      alt="Intérieur du flagship store DJI avec des drones exposés sur des tables en bois clair sous une grande verrière"
+      width="1200"
+      height="800"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Les vraies bonnes affaires ici sont les flagships de marques chinoises — Huawei (Mate XT, Mate X, Pura 70 Ultra), Xiaomi (15 Ultra, série 14), OPPO Find X8 Ultra, série Vivo X100, drones et stabilisateurs DJI, série Honor Magic. Beaucoup ne se vendent pas à l'étranger ou sont nettement moins chers sur place. Les marques internationales comme Sony, Bose, GoPro et l'équipement Nintendo Switch sont aussi généralement éligibles à la détaxe et souvent légèrement moins chères qu'à l'étranger.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>Les étoiles montantes de 2026 :</strong> lunettes IA, objets connectés et téléphones pliants sont les catégories que le ministère du Commerce désigne désormais explicitement comme « achats incontournables » pour les étrangers. Les flagships pliants (le Huawei Mate XT, le Xiaomi MIX) sont fréquemment moins chers sur place que partout ailleurs, et les lunettes IA et bracelets connectés des marques chinoises ne sont souvent pas du tout lancés sur votre marché domestique. Les réserves restent les mêmes : vérifiez que les bandes de fréquences et la connectivité fonctionnent chez vous, et confirmez la garantie internationale par SKU avant d'acheter.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>Évitez Apple.</strong> L'iPhone du marché chinois est généralement légèrement plus cher qu'aux États-Unis, et la version chinoise ne propose pas non plus les appels audio FaceTime. Aucun avantage de détaxe ne compense cela. Il en va de même pour les MacBook et la plupart des appareils photo Canon/Nikon.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>Où acheter :</strong> les flagships de marque dans chaque grand centre commercial — Huawei, Xiaomi, OPPO, DJI et Dyson en ont tous, et ce sont le choix tout-en-un pour les visiteurs étrangers : le personnel parle généralement au moins un peu anglais, la facture de TVA (增值税发票) est délivrée sur place, et les modèles haut de gamme incluent une garantie internationale (vérifiez le SKU précis si cela compte pour vous). Demandez toujours la facture — sans elle, impossible de réclamer la détaxe.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>Une ville où le marché de l'électronique est en soi une attraction : le Huaqiangbei (华强北) de Shenzhen.</strong> Le plus grand quartier d'électronique au monde s'est réinventé en escale pour les acheteurs étrangers — il attirait des milliers de visiteurs internationaux par jour jusqu'en 2025, et les grandes marques tiennent désormais des flagships à l'intérieur même du marché (DJI inclus). C'est le rare bazar d'électronique qui fonctionne vraiment pour les voyageurs ne parlant pas chinois : signalétique multilingue, guichets de change et aide à la détaxe sont en place. Si Shenzhen se trouve sur votre itinéraire, le contraste à lui seul — une ville bâtie de rien en quarante ans, encore animée à minuit — vaut le détour. <a href="/fr/cities/shenzhen-guide/" class="text-brand-600 hover:underline">Voir notre guide de voyage de Shenzhen</a> pour l'intégrer à votre itinéraire.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>Vérifiez rapidement avant de payer un appareil</strong></p>
+    <ul class="list-disc pl-6 space-y-2 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>Bandes de réseau</strong> — un téléphone vendu pour le marché chinois peut ne pas couvrir les bandes 4G/5G utilisées par votre opérateur chez vous. Consultez la fiche technique du modèle et comparez avant de vous engager.</li>
+      <li><strong>Applications et écosystème</strong> — les téléphones du marché chinois fonctionnent souvent sans services Google. Si vous dépendez des applications Google, vérifiez que l'appareil embarque l'écosystème dont vous avez besoin, ou achetez une version internationale / globale.</li>
+      <li><strong>Garantie</strong> — la couverture internationale dépend du SKU, pas de la marque ; demandez donc quels marchés la garantie couvre réellement.</li>
+    </ul>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Rien de tout cela n'est rédhibitoire pour les grandes marques — c'est juste la différence entre un excellent achat et un presse-papiers une fois rentré chez soi.</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h3 id="tea-silk-porcelain-jade" class="text-2xl font-bold text-gray-900 mb-5 mt-10">Thé, soie, porcelaine, jade</h3>
+
+    <img
+      src="/images/china-shopping/jingdezhen-porcelain.webp"
+      alt="Bols, tasses et théières en porcelaine peinte à la main disposés sur des étagères sombres à Jingdezhen"
+      width="474"
+      height="316"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Les achats véritablement « Made in China » que les voyageurs rapportent depuis des siècles. Les villes d'origine offrent le meilleur choix aux meilleurs prix :</p>
+    <ul class="list-disc pl-6 space-y-3 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>Thé (茶叶) :</strong> Hangzhou pour le Longjing (龙井), Anxi (Fujian) pour le Tieguanyin (铁观音), Yunnan pour le Pu'er (普洱). Un bon thé en vrac coûte ¥100–500 ; dès que le total d'un magasin dépasse ¥200 (le seuil de détaxe), la demande s'applique. Vérifiez qu'un magasin propose la détaxe avant d'acheter — beaucoup de stands de thé ne le font pas.</li>
+      <li><strong>Soie (丝绸) :</strong> Hangzhou, Suzhou. Vraies écharpes en soie à partir de ~¥100 ; couettes et robes montent au-delà. Cherchez l'étiquette « 100 % Silk (真丝) ».</li>
+      <li><strong>Porcelaine (瓷器) :</strong> Jingdezhen (景德镇) est la capitale historique, avec une grande variété de pièces peintes à la main à explorer. Guangzhou est un autre pôle.</li>
+      <li><strong>Jade (玉器) :</strong> acheter du jade suppose de juger les quatre qualités — grain, translucidité, couleur, sculpture (种水色工) — et le métier contrefait les quatre. Achetez dans une grande chaîne — Caibai (菜百), Lao Feng Xiang (老凤祥), Chow Tai Fook (周大福) — où vous pouvez demander un certificat NGTC et une facture de TVA (增值税发票). Évitez les vendeurs de rue, les lots « tirage au sort » et tout magasin où un guide vous entraîne.</li>
+    </ul>
+
+    <img
+      src="/images/china-shopping/jade-counter.webp"
+      alt="Bracelets, pendentifs et colliers de jade sur des présentoirs noirs dans une vitrine de bijouterie"
+      width="1080"
+      height="720"
+      loading="lazy"
+      class="w-full rounded-2xl mb-6 not-prose"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>Note de détaxe :</strong> la soie, la porcelaine, le jade et le baijiu relèvent de la catégorie TVA standard de 13 %, donc l'habituel ~9 % s'applique. <strong>Le thé</strong> (produit alimentaire / agricole) relève de la catégorie TVA à 9 %, vous empochez donc ~6 % à la place. Les règles complètes et la procédure de demande figurent dans le <a href="/fr/payment/tax-refund/" class="text-brand-600 hover:underline">guide de la détaxe à l'exportation</a>.</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h3 id="spirits-crafts" class="text-2xl font-bold text-gray-900 mb-5 mt-10">Spiritueux, émaux cloisonnés, artisanat traditionnel</h3>
+    <ul class="list-disc pl-6 space-y-3 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>Baijiu (白酒) :</strong> Maotai (茅台 ; à partir de ¥1 500), Wuliangye (五粮液), Luzhou Laojiao (泸州老窖) — objets de collection, cadeaux et standards de cérémonie. La douane autorise 1,5 L par adulte.</li>
+      <li><strong>Cloisonné (景泰蓝) :</strong> spécialité de Pékin, ¥100–500, d'excellents cadeaux.</li>
+    </ul>
+
+    <h2 id="where-to-buy" class="text-3xl font-bold text-gray-900 mb-6 mt-14">Où devez-vous l'acheter ?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4">La plupart des achats emblématiques de Chine se fabriquent en un ou deux endroits, et c'est là que le choix et les prix sont les meilleurs. Si votre itinéraire est déjà fixé, voici ce que chaque étape offre :</p>
+    <p class="text-base text-gray-500 mb-4">Quelle ville chinoise convient le mieux à quel type d'achat</p>
+    <div class="overflow-x-auto mb-8 not-prose">
+      <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+        <caption class="sr-only">Quelle ville chinoise convient le mieux à quel type d'achat — jade, soie, thé, porcelaine, électronique et couture sur mesure par ville</caption>
+        <thead>
+          <tr class="bg-gray-900 text-white">
+            <th class="px-6 py-4 font-bold">Ville</th>
+            <th class="px-6 py-4 font-bold">La spécialité locale à rechercher</th>
+            <th class="px-6 py-4 font-bold">Où</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">Pékin</td>
+            <td class="px-6 py-4">Jade, cloisonné, Maotai</td>
+            <td class="px-6 py-4">Galeries joaillerie des grands magasins et joailliers de marque. Panjiayuan (潘家园) est fait pour regarder, pas pour acheter — voir notre <a href="/fr/cities/beijing-guide/" class="text-brand-600 hover:underline">guide de Pékin</a></td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">Shanghai</td>
+            <td class="px-6 py-4">Couture sur mesure, flagships guochao, cosmétiques</td>
+            <td class="px-6 py-4">Nanjing East Road (南京东路) et Jing'an (静安) ; voir notre <a href="/fr/cities/shanghai-guide/" class="text-brand-600 hover:underline">guide de Shanghai</a></td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">Shenzhen</td>
+            <td class="px-6 py-4">Électronique — le marché est l'attraction</td>
+            <td class="px-6 py-4">Huaqiangbei (华强北) ; voir notre <a href="/fr/cities/shenzhen-guide/" class="text-brand-600 hover:underline">guide de Shenzhen</a></td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">Hangzhou</td>
+            <td class="px-6 py-4">Thé Longjing (龙井), soie</td>
+            <td class="px-6 py-4">Maisons de thé au bord du West Lake (西湖) ; marchés de soie dans la vieille ville</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">Suzhou</td>
+            <td class="px-6 py-4">Soie, broderie de Suzhou (苏绣)</td>
+            <td class="px-6 py-4">Boutiques du quartier Guanqianjie (观前街) ; cherchez l'étiquette « 100 % Silk (真丝) »</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">Jingdezhen</td>
+            <td class="px-6 py-4">Porcelaine — la capitale historique</td>
+            <td class="px-6 py-4">Marchés de poterie de rue</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">Yunnan</td>
+            <td class="px-6 py-4">Thé Pu'er</td>
+            <td class="px-6 py-4">Maisons de thé spécialisées à Kunming et Dali</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Règle générale : achetez à la source et vous obtenez une meilleure qualité pour le même prix — et le seuil de détaxe de ¥200 dans un même magasin est plus facile à atteindre là où la catégorie est l'industrie locale. Si un guide de ville n'est pas encore lié ci-dessus, il arrive ; la logique de l'achat local tient quoi qu'il arrive.</p>
+
+    <h2 id="tax-refund-shops" class="text-3xl font-bold text-gray-900 mb-6 mt-14">Où se trouvent les magasins de détaxe de Chine ?</h2>
+
+    <img
+      src="/images/china-shopping/airport-tax-refund.webp"
+      alt="Guichet de détaxe à l'aéroport en Chine avec l'enseigne CZBANK et un panneau Welcome"
+      width="585"
+      height="439"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Entrez dans n'importe quel grand centre commercial à Pékin, Shanghai, Shenzhen, Guangzhou, Chengdu, Hangzhou ou Suzhou, et environ la moitié des magasins affichent un panneau « Tax Free » (退税商店) près de l'entrée ou de la caisse. En pratique, les catégories les plus systématiquement signalées sont exactement celles que vous devinez : cosmétiques, électronique, mode, thé, soie, porcelaine, jade et artisanat.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Ce qui n'affiche généralement <em>pas</em> le panneau : supérettes, supermarchés, vendeurs en ligne uniquement (Taobao / JD / Pinduoduo), vendeurs de rue, marchés de contrefaçons et la plupart des petits commerces indépendants. Les marchés nocturnes sont parfaits pour les encas et l'ambiance, mais pas pour les articles coûteux éligibles à la détaxe.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Pour trouver un magasin précis près de vous, cherchez le mini-programme Alipay ou WeChat « Departure Tax Refund » (离境退税) — il affiche sur une carte les magasins éligibles à proximité, ainsi que les horaires actuels et les modes de détaxe pris en charge.</p>
+
+    <h2 id="customs-limits" class="text-3xl font-bold text-gray-900 mb-6 mt-14">Quelles sont les limites douanières de Chine ?</h2>
+    <ul class="list-disc pl-6 space-y-3 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>Alcool :</strong> 1,5 litre (spiritueux) hors taxes ; au-delà, déclarez.</li>
+      <li><strong>Tabac :</strong> 400 cigarettes (2 cartouches) hors taxes.</li>
+      <li><strong>Marchandises générales :</strong> l'allocation hors taxes de ¥5 000 pour usage personnel est le seuil général — vérifiez les règles en vigueur avant de vous lancer.</li>
+    </ul>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="faq" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">❓ Questions fréquentes</h2>
+    <div class="space-y-6 mb-8 not-prose">
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">Qu'est-ce qui est réellement moins cher à acheter en Chine ?</h3>
+        <p class="text-gray-700">Les cosmétiques et soins chinois, l'électronique de marque chinoise (Huawei, Xiaomi, DJI), les lunettes IA et objets connectés, les marques de design guochao, ainsi que le thé, la soie, la porcelaine, le jade et le cloisonné. La mode internationale, les parfums et les appareils photo coûtent le même prix ou plus cher qu'à la maison.</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">Les achats en Chine ouvrent-ils droit à une détaxe ?</h3>
+        <p class="text-gray-700">Oui, dans les magasins affichant le panneau Tax Free (退税商店). Dépenser au moins ¥200 dans un même magasin en une journée, conserver la facture de TVA, et récupérer environ 9 % à l'aéroport au moment du départ.</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">Que ne faut-il pas acheter en Chine ?</h3>
+        <p class="text-gray-700">Les iPhone et MacBook d'Apple en sont l'exemple le plus clair — le prix en Chine est plus élevé et certaines fonctions sont supprimées, si bien que la détaxe ne comble pas l'écart. Tout ce que vous pouvez trouver chez vous pour le même prix est un achat inutile.</p>
+      </div>
+    </div>
+
+    <div class="not-prose mt-12 pt-8 border-t border-gray-200">
+      <h3 class="text-base font-bold text-gray-900 mb-4 flex items-center gap-2">📚 Sources</h3>
+      <ul class="space-y-3">
+        <li>
+          <a href="https://www.mofcom.gov.cn/xwfbzt/2026/swbzklxxwfbh2026n9y3r/index.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">Conférence de presse du ministère du Commerce, 3 septembre 2026 — marques guochao et produits intelligents entrant dans les listes d'« achats incontournables » étrangers ; couture sur mesure de Shanghai à plus de 50 % de clients étrangers</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.globaltimes.cn/page/202512/1350012.shtml" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">Global Times — les demandes de détaxe à l'exportation bondissent de 285 % sur les 11 premiers mois (12 252 magasins de détaxe dans tout le pays)</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="border-t border-gray-100 pt-6 mt-8">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5 not-prose">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h3 class="text-sm font-bold text-gray-900">📚 Lectures Suivantes</h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="/fr/payment/tax-refund/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              Détaxe à l'exportation en Chine
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/fr/payment/payment-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              Comment payer en Chine
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/fr/payment/china-travel-budget/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              Coût d'un voyage en Chine 2026
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/fr/visa/customs-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              Réglementation douanière de Chine
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <FAQPage items={faqs} />
+</Layout>

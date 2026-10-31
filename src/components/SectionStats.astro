@@ -1,0 +1,26 @@
+---
+interface Props {
+  stats: { value: string; label: string; color: string }[];
+}
+const { stats } = Astro.props;
+
+// 类名必须是字面量，Tailwind 才能扫描到；不要用字符串拼接生成颜色类。
+const PALETTE: Record<string, { bg: string; border: string; text: string }> = {
+  blue: { bg: 'bg-blue-50', border: 'border-blue-200', text: 'text-blue-800' },
+  indigo: { bg: 'bg-indigo-50', border: 'border-indigo-200', text: 'text-indigo-800' },
+  emerald: { bg: 'bg-emerald-50', border: 'border-emerald-200', text: 'text-emerald-800' },
+  amber: { bg: 'bg-amber-50', border: 'border-amber-200', text: 'text-amber-800' },
+};
+---
+
+<div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-12 not-prose">
+  {stats.map(({ value, label, color }) => {
+    const c = PALETTE[color];
+    return (
+      <div class={`${c.bg} border ${c.border} rounded-xl p-4 text-center`}>
+        <p class={`text-xl sm:text-2xl font-extrabold ${c.text} whitespace-nowrap`}>{value}</p>
+        <p class={`text-xs font-semibold ${c.text} uppercase tracking-wide mt-1`}>{label}</p>
+      </div>
+    );
+  })}
+</div>

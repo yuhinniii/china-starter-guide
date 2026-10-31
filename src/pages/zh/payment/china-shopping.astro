@@ -1,0 +1,329 @@
+---
+import Layout from '@layouts/Layout.astro';
+import FAQPage from '../../../components/FAQPage.astro';
+
+const title = "2026 年中国值得买什么：退税购物指南";
+const description = "2026 年在中国真正值得买的——国产护肤彩妆、国潮品牌、电子产品、茶叶、丝绸、瓷器与玉器——外加去哪里买，以及如何拿回约 9% 的离境退税。";
+
+const faqs = [
+  {
+    question: "在中国买什么其实更便宜？",
+    answer: "国产化妆品与护肤、国产品牌电子产品（华为、小米、大疆）、AI 眼镜与智能穿戴、国潮设计师品牌，以及茶叶、丝绸、瓷器、玉器与景泰蓝。国际时尚、香水与相机，价格和家里一样甚至更贵。"
+  },
+  {
+    question: "在中国购物能退税吗？",
+    answer: "能，在悬挂退税商店标识的店铺。同一天在同一家店消费至少 ¥200，保留增值税发票，离境时在机场大约能拿回 9%。"
+  },
+  {
+    question: "在中国不该买什么？",
+    answer: "苹果 iPhone 和 MacBook 是最典型的例子——中国售价更高，部分功能还被砍掉，退税也补不上差价。任何你在家里花同样的钱就能买到的东西，买来都是浪费。"
+  }
+];
+---
+
+<Layout title={title} description={description} lang="zh" type="Article">
+  <nav class="mb-8 not-prose">
+    <a href="/zh/payment/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+      <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+      </svg>
+      返回支付指南
+    </a>
+  </nav>
+
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🛍️ 购物</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">中国购物：2026 年值得买什么</h1>
+      <p class="text-xl text-gray-600 mb-6">中国在价格上真正占优的品类、并不占优的品类，以及离境时如何拿回大约 9%。</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 最后更新：2026 年 10 月</span>
+        <span>⏱️ 阅读时长：11 分钟</span>
+      </div>
+    </header>
+
+    <img
+      src="/images/china-shopping/tax-free-sticker.webp"
+      alt="一块蓝色的退税商店标识，立在店铺柜台旁，旁边是一台刷卡终端"
+      width="1080"
+      height="809"
+      class="w-full rounded-2xl mb-10 not-prose"
+    />
+
+    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-red-900 mb-4">⚡ 在中国值得买什么？</h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>快速回答：</strong>只买在中国确实更便宜、或家里很难买到的品类——国产化妆品与护肤、国产品牌电子产品（华为、小米、大疆）、AI 眼镜与智能穿戴、茶叶、丝绸、瓷器、玉器、国潮设计师品牌，以及传统手工艺。跳过任何你在家里花同样的钱就能买到的东西——包括在中国并不便宜的苹果产品。在悬挂<strong>退税商店</strong>标识的店铺购物，并索要增值税发票，离境回国时大约能拿回<strong>9%</strong>——最新规则请看我们的<a href="/zh/payment/tax-refund/" class="text-red-700 underline">离境退税指南</a>。</p>
+      <p class="text-lg leading-relaxed text-gray-700">购物退税的精简版套路：挑几个在中国特别值得买的品类，在退税店买，离境时揣走约 9%。下面就是真正值得买的——以及去哪里找。</p>
+    </div>
+
+    <div class="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-2xl p-6 mb-12 not-prose">
+      <p class="text-lg leading-relaxed text-yellow-900"><strong>实话说：</strong>中国购物只在很窄的赛道里划算。游客在这里买的大多数东西——国际时尚、香水、相机——价格和家里一样甚至更高，约 9% 的退税很少能补上差价。中国真正占优的，是品牌国产、而非进口的那类。还有两处摩擦要预料：退税需要正式的增值税发票，小摊开不出来；旅游市场卖的假货足以乱真。去品牌店和授权专柜买，别信街头小贩的便宜货。</p>
+    </div>
+
+    <h2 id="whats-worth-buying" class="text-3xl font-bold text-gray-900 mb-6 mt-14">在中国值得买什么？</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">基本上有五大品类，无论价格还是选择，中国都确实占优，而且退税店足够密集，值得跑一趟手续。认准这几类，你就能满载而归。</p>
+
+    <h3 id="cosmetics-skincare" class="text-2xl font-bold text-gray-900 mb-5 mt-10">化妆品与护肤</h3>
+
+    <img
+      src="/images/china-shopping/maogeping-counter.webp"
+      alt="中国一家百货商场内的毛戈平化妆品专柜，四周环绕着其他美妆品牌"
+      width="1080"
+      height="810"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">下面这点，多数购物攻略都搞反了。<strong>在中国的价格优势属于中国品牌，而不属于香奈儿。</strong>兰蔻精华摆在中国的百货专柜上，要叠加进口关税、高端化妆品 15% 的消费税，以及 13% 的增值税——三层税都进了标价。所以它通常比在巴黎还贵，而不是更便宜。国际品牌真正便宜的地方只有免税：海南的离岛额度（每年 ¥100,000、每次 30 件化妆品），以及机场免税店，那三道税全免。</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>国产护肤与彩妆——钱真正花得值的地方</strong></p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4">本土品牌按国内市场定价，不背进口税，并在 618 和双 11 狠狠打折。有几个现在确实好用，而不只是便宜：</p>
+    <ul class="list-disc pl-6 space-y-2 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>珀莱雅</strong> —— 双抗精华和红宝石精华是人人都买的两款；一瓶大约 ¥200–400。</li>
+      <li><strong>薇诺娜</strong> —— 为敏感、易泛红肌肤而生。要是你的皮肤讨厌飞机，带一罐保湿霜回家最合适。</li>
+      <li><strong>可复美</strong>和华熙生物的<strong>润百颜 / 夸迪</strong> —— 重组胶原蛋白与玻尿酸产品线，这是中国目前领先的一个品类。</li>
+      <li><strong>花西子</strong> —— 雕花口红管与粉饼。包装本身就是纪念品。</li>
+      <li><strong>毛戈平</strong> —— 高光膏与修容盘；这是中国化妆师在片场真正在用的东西。</li>
+      <li><strong>观夏</strong> —— 中国香氛与家居香薰，桂花、茶与雪松。国外几乎买不到同款。</li>
+    </ul>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">两个提醒。色号是为东亚肤色调的，所以最深的粉底色号常常缺货。而且「美白」宣传铺天盖地地贴满这个品类——看成分表，别看盒子正面。</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-4 clear-both"><strong>国际品牌——买亚洲限定规格和赠品，而不是看标价</strong></p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4">如果你想要海蓝之谜或 SK-II，账只在免税时算得过来。在普通专柜值得淘的是别的东西：</p>
+    <ul class="list-disc pl-6 space-y-2 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>亚洲限定规格与套装。</strong>100ml 以上的明星单品、旅行套装，以及从不在欧洲或美国发售的 duo 组合包。</li>
+      <li><strong>春节和 520 限定。</strong>香奈儿、迪奥和雅诗兰黛每年一月和五月二十日前后都会推出中国市场包装。同款产品，不同瓶子，绝不再版。</li>
+      <li><strong>真正大方的满赠。</strong>百货美妆馆在远低于欧洲的门槛就送中样和豪华小样，买两件再开口，柜姐往往还会多给。丝芙兰中国也是同一套逻辑。</li>
+    </ul>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>去哪里买：</strong></p>
+    <ul class="list-disc pl-6 space-y-2 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>国产品牌：</strong>它们自己的门店与天猫旗舰店，外加大城市商场里的专柜。</li>
+      <li><strong>百货美妆馆</strong> —— 王府井、新光天地、恒隆广场、万象城。最适合要正装试用装、满赠，以及按需开具增值税发票。</li>
+      <li><strong>丝芙兰</strong> —— 国际线加一整面不断增长的国货墙。</li>
+      <li><strong>免税：</strong>海南离岛店与机场离境免税。唯一国际品牌价格真能压过家里的地方。</li>
+    </ul>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>退税算式，方便你自己核对：</strong>化妆品落在标准 13% 增值税档，离境退税在扣费后大约返还标价的 9%，而不是 13%——买 ¥1,000 实际到手约 ¥90，不是 ¥130。另外，凡是每毫升 ¥10 及以上定价的产品，在进口环节还要额外缴 15% 高端化妆品消费税。这笔附加费就是专柜价显得高的原因，也是免税更便宜的原因。</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h3 id="guochao" class="text-2xl font-bold text-gray-900 mb-5 mt-10">国潮与设计驱动的本土品牌</h3>
+
+    <img
+      src="/images/china-shopping/pop-mart-store.webp"
+      alt="中国一家商场里的泡泡玛特门店，两侧立着雕成树干的装饰，里面摆着收藏级玩偶"
+      width="940"
+      height="625"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">「国潮」（本土品牌浪潮）是最新被官方「必买」清单收编的一员：在 2026 年 9 月的发布会上，商务部点名国产智能产品与设计驱动品牌，是外国游客如今在中国购物的头号理由。想想旗舰运动与潮牌、设计师家居文具，以及收藏级设计师玩具——泡泡玛特式玩偶，正是一个诞生于中国、海外转售市场旺盛的最知名例子。</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">去哪里买：主流商圈的品牌店（上海的南京东路与静安、北京的王府井等），以及大商场里的旗舰概念店。退税规则和其他一切相同——在收银台索要增值税发票。购买前两个实用核查：许多本土品牌的尺码比西洋剪裁偏小；产品内嵌的任何电子部件（充电规格、App 区域）可能与你家乡市场不同。</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h3 id="electronics" class="text-2xl font-bold text-gray-900 mb-5 mt-10">中国电子产品（但别买苹果）</h3>
+
+    <img
+      src="/images/china-shopping/dji-store.webp"
+      alt="大疆旗舰店内部，浅木桌上摆着无人机，上方是巨大的天窗"
+      width="1200"
+      height="800"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">真正的赢家是国产品牌旗舰——华为（Mate XT、Mate X、Pura 70 Ultra）、小米（15 Ultra、14 系列）、OPPO Find X8 Ultra、Vivo X100 系列、大疆无人机与云台、荣耀 Magic 系列。很多不在国外卖，或在国内明显更便宜。索尼、Bose、GoPro、任天堂 Switch 这类国际品牌，通常也能退税，且往往比国外略便宜。</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>2026 年的新贵：</strong>AI 眼镜、智能穿戴与折叠屏，是商务部现在明确点名的外国「必买」。折叠旗舰（华为 Mate XT、小米 MIX）在国内常比全球任何地方都便宜，而中国品牌的 AI 眼镜与智能手环，在你家乡市场往往根本还没上市。提醒照旧：确认频段/连接规格在家乡能用，买之前按 SKU 确认国际保修。</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>别买苹果。</strong>中国市场的 iPhone 通常比美国略贵，而且国行还少了 FaceTime 音频通话。没有退税优势来抵消这一点。MacBook 和大多数佳能/尼康相机也是同理。</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>去哪里买：</strong>各大商场里的品牌旗舰店——华为、小米、OPPO、大疆和戴森都开得有，对外国游客是一站式首选：店员通常多少会点英文，增值税发票当场开具，高端机型带国际保修（若在意，核实具体 SKU）。一定要索要发票——没有它你就退不了税。</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>有一个城市，电子市场本身就是景点：深圳的华强北。</strong>这座全球最大的电子街区，已变身成外国购物者的打卡地——整个 2025 年每天吸引数千国际访客，大品牌现在直接把旗舰店开进了市场里（大疆也在其中）。对不会中文的旅行者来说，它是少见的真能用的电子集市：多语种标识、货币兑换柜台和退税支持一应俱全。如果深圳在你路线附近，光是那份反差——一座四十年从零建起、半夜仍人声鼎沸的城市——就值得一看。<a href="/zh/cities/shenzhen-guide/" class="text-brand-600 hover:underline">查看我们的深圳旅行指南</a>，了解怎么把它排进行程。</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>掏钱前对每个 gadget 的快速自查</strong></p>
+    <ul class="list-disc pl-6 space-y-2 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>网络频段</strong> —— 为中国市场卖的手机，可能不带家乡运营商用的 4G/5G 频段。先调出该机型的参数表比对再下手。</li>
+      <li><strong>App 与生态</strong> —— 中国市场手机常常没有 Google 服务。如果你离不开 Google 应用，确认设备预装了你需要的生态，否则买国际/全球版。</li>
+      <li><strong>保修</strong> —— 国际保修是按 SKU 而非按品牌，所以问清保修到底覆盖哪些市场。</li>
+    </ul>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">对这些大品牌来说，这都不算致命——只是你到家后，一笔好买卖和一个摆设的区别。</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h3 id="tea-silk-porcelain-jade" class="text-2xl font-bold text-gray-900 mb-5 mt-10">茶叶、丝绸、瓷器、玉器</h3>
+
+    <img
+      src="/images/china-shopping/jingdezhen-porcelain.webp"
+      alt="景德镇深色展架上摆放的手绘瓷碗、瓷杯与瓷壶"
+      width="474"
+      height="316"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">旅行者几个世纪来一直带回家、真正「中国制造」的买品。源产地城市选择最好、价格最低：</p>
+    <ul class="list-disc pl-6 space-y-3 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>茶叶：</strong>杭州的龙井、福建安溪的铁观音、云南的普洱。好散茶约 ¥100–500；一旦某家店总额过了 ¥200（退税门槛），就能申请。买之前先问店家退不退税——很多茶摊不退。</li>
+      <li><strong>丝绸：</strong>杭州、苏州。真丝围巾从约 ¥100 起；被子和袍子往上加。认准「100% 真丝」标签。</li>
+      <li><strong>瓷器：</strong>景德镇是历史之都，手绘工作室作品底蕴深厚，值得慢慢挑。广州是另一处集散地。</li>
+      <li><strong>玉器：</strong>买玉要看四种品质——种、水、色、工——而这一行四样都能造假。去大连锁买——菜百、老凤祥、周大福——在那里可以索要 NGTC 证书和增值税发票。避开街头小贩、「抽奖」奖品，以及任何导游带进去的店。</li>
+    </ul>
+
+    <img
+      src="/images/china-shopping/jade-counter.webp"
+      alt="珠宝店柜内黑色展架上摆放的玉镯、玉坠与珠串项链"
+      width="1080"
+      height="720"
+      loading="lazy"
+      class="w-full rounded-2xl mb-6 not-prose"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>退税提示：</strong>丝绸、瓷器、玉器与白酒落在标准 13% 增值税档，所以照例大约退回 9%。<strong>茶叶</strong>（食品/农产品）落在 9% 增值税档，所以你到手约 6%。完整规则与申领流程见<a href="/zh/payment/tax-refund/" class="text-brand-600 hover:underline">离境退税指南</a>。</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h3 id="spirits-crafts" class="text-2xl font-bold text-gray-900 mb-5 mt-10">白酒、景泰蓝与传统工艺</h3>
+    <ul class="list-disc pl-6 space-y-3 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>白酒：</strong>茅台（¥1,500 起）、五粮液、泸州老窖——收藏品、礼品与宴席标配。海关允许每位成人 1.5L。</li>
+      <li><strong>景泰蓝：</strong>北京特产，¥100–500，送礼佳品。</li>
+    </ul>
+
+    <h2 id="where-to-buy" class="text-3xl font-bold text-gray-900 mb-6 mt-14">该去哪里买？</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4">中国多数招牌买品都产自一两处地方，那里选择和价格也最好。如果你的行程已经定好，下面按站点告诉你各自适合买什么：</p>
+    <p class="text-base text-gray-500 mb-4">中国哪座城市最适合买什么</p>
+    <div class="overflow-x-auto mb-8 not-prose">
+      <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+        <caption class="sr-only">中国哪座城市最适合买什么——按城市分的玉器、丝绸、茶叶、瓷器、电子产品与定制裁缝</caption>
+        <thead>
+          <tr class="bg-gray-900 text-white">
+            <th class="px-6 py-4 font-bold">城市</th>
+            <th class="px-6 py-4 font-bold">值得留意的本地特产</th>
+            <th class="px-6 py-4 font-bold">哪里买</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">北京</td>
+            <td class="px-6 py-4">玉器、景泰蓝、茅台</td>
+            <td class="px-6 py-4">百货珠宝馆与品牌珠宝店。潘家园只适合逛、不适合买——见我们的<a href="/zh/cities/beijing-guide/" class="text-brand-600 hover:underline">北京指南</a></td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">上海</td>
+            <td class="px-6 py-4">定制西装、国潮旗舰店、化妆品</td>
+            <td class="px-6 py-4">南京东路与静安；见我们的<a href="/zh/cities/shanghai-guide/" class="text-brand-600 hover:underline">上海指南</a></td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">深圳</td>
+            <td class="px-6 py-4">电子产品——市场本身就是看点</td>
+            <td class="px-6 py-4">华强北；见我们的<a href="/zh/cities/shenzhen-guide/" class="text-brand-600 hover:underline">深圳指南</a></td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">杭州</td>
+            <td class="px-6 py-4">龙井茶、丝绸</td>
+            <td class="px-6 py-4">西湖边的茶馆；老城区的丝绸市场</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">苏州</td>
+            <td class="px-6 py-4">丝绸、苏绣</td>
+            <td class="px-6 py-4">观前街一带的店铺；认准「100% 真丝」标签</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">景德镇</td>
+            <td class="px-6 py-4">瓷器——历史之都</td>
+            <td class="px-6 py-4">陶瓷街市</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">云南</td>
+            <td class="px-6 py-4">普洱</td>
+            <td class="px-6 py-4">昆明和大理的茶叶专卖店</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">一条经验法则：在源产地买，同样的钱能拿到更好的品质——而当这个品类正是当地产业时，单店 ¥200 的退税门槛也更容易跨过。如果上面还没链到某座城市的指南，它正在路上；「本地买」的逻辑无论如何都成立。</p>
+
+    <h2 id="tax-refund-shops" class="text-3xl font-bold text-gray-900 mb-6 mt-14">中国的退税商店都在哪里？</h2>
+
+    <img
+      src="/images/china-shopping/airport-tax-refund.webp"
+      alt="中国机场离境退税柜台，带有 CZBANK 标识与一块 Welcome 牌"
+      width="585"
+      height="439"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">走进北京、上海、深圳、广州、成都、杭州或苏州的任何一家大商场，大约一半的店铺会在入口或收银台附近挂着退税商店标识。实际上，最常被挂出标识的品类，恰好就是你想得到的那些：化妆品、电子产品、时尚、茶叶、丝绸、瓷器、玉器与工艺品。</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">通常<em>不</em>挂标识的：便利店、超市、只在线上卖的（淘宝 / 京东 / 拼多多）、街头小贩、假货市场，以及大多数独立小店。夜市适合吃吃喝喝和感受气氛，但不是买可退税大件的地方。</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">想找你附近的某家店，在支付宝或微信小程序里搜索「离境退税」——它会在地图上标出附近的退税店，外加当前营业时间与支持的退税方式。</p>
+
+    <h2 id="customs-limits" class="text-3xl font-bold text-gray-900 mb-6 mt-14">中国的海关限额是多少？</h2>
+    <ul class="list-disc pl-6 space-y-3 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>酒类：</strong>1.5 升（烈酒）免税；超出需申报。</li>
+      <li><strong>烟草：</strong>400 支香烟（2 条）免税。</li>
+      <li><strong>一般物品：</strong>个人自用 ¥5,000 免税额度是通用门槛——挥霍前先查现行规则。</li>
+    </ul>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="faq" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">❓ 常见问题</h2>
+    <div class="space-y-6 mb-8 not-prose">
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">在中国买什么其实更便宜？</h3>
+        <p class="text-gray-700">国产化妆品与护肤、国产品牌电子产品（华为、小米、大疆）、AI 眼镜与智能穿戴、国潮设计师品牌，以及茶叶、丝绸、瓷器、玉器与景泰蓝。国际时尚、香水与相机，价格和家里一样甚至更贵。</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">在中国购物能退税吗？</h3>
+        <p class="text-gray-700">能，在悬挂退税商店标识的店铺。同一天在同一家店消费至少 ¥200，保留增值税发票，离境时在机场大约能拿回 9%。</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">在中国不该买什么？</h3>
+        <p class="text-gray-700">苹果 iPhone 和 MacBook 是最典型的例子——中国售价更高，部分功能还被砍掉，退税也补不上差价。任何你在家里花同样的钱就能买到的东西，买来都是浪费。</p>
+      </div>
+    </div>
+
+    <div class="not-prose mt-12 pt-8 border-t border-gray-200">
+      <h3 class="text-base font-bold text-gray-900 mb-4 flex items-center gap-2">📚 参考来源</h3>
+      <ul class="space-y-3">
+        <li>
+          <a href="https://www.mofcom.gov.cn/xwfbzt/2026/swbzklxxwfbh2026n9y3r/index.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">商务部新闻发布会，2026 年 9 月 3 日——国潮品牌与智能产品进入外国「必买」清单；上海定制业务外国人客户占比超 50%</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.globaltimes.cn/page/202512/1350012.shtml" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">环球时报——前 11 个月离境退税申领激增 285%（全国 12,252 家退税店）</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="border-t border-gray-100 pt-6 mt-8">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5 not-prose">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h3 class="text-sm font-bold text-gray-900">📚 继续阅读</h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="/zh/payment/tax-refund/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              中国离境退税
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/zh/payment/payment-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              在中国怎么付钱
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/zh/payment/china-travel-budget/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              2026 年中国旅行花费
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/zh/visa/customs-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              中国海关规定
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <FAQPage items={faqs} />
+</Layout>

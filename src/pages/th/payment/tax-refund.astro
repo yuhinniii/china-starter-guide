@@ -1,0 +1,308 @@
+---
+import Layout from '@layouts/Layout.astro';
+import FAQPage from '../../../components/FAQPage.astro';
+
+const title = "คืนภาษีตอนออกเดินทางจีนปี 2026: วิธีรับคืน 9%";
+const description = "คืนภาษีตอนออกเดินทางจีนปี 2026: เกณฑ์ ¥200 เอกสารสามฉบับที่คุณต้องมี กำหนด 90 วัน และการตรวจศุลกากรสนามบินทำงานอย่างไรจริงๆ";
+
+const faqs = [
+  {
+    question: "ฉันต้องใช้จ่ายเท่าไหร่ถึงจะเคลมคืนภาษีในจีนได้?",
+    answer: "อย่างน้อย ¥200 ที่ร้านคืนภาษีร้านเดียวในหนึ่งวัน ขอใบสมัครคืนภาษี (离境退税申请单) และใบกำกับภาษี VAT ทั่วไป (增值税普通发票) ที่แคชเชียร์ และเก็บทั้งสองไว้ — ไม่มีมันการคืนภาษีทำไม่ได้"
+  },
+  {
+    question: "ฉันต้องใช้พาสปอร์ตเพื่อเคลมคืนภาษีไหม?",
+    answer: "ต้อง และต้องเป็นพาสปอร์ตตัวจริงที่คุณใช้เข้าจีน ใบสมัครคืนภาษีเขียนขึ้นด้วยประเภทและเลขที่พาสปอร์ตของคุณ และศุลกากรตรวจเอกสารกับตัวบุคคลที่ยืนอยู่ รูปถ่ายในโทรศัพท์และสำเนาไม่รับ"
+  },
+  {
+    question: "เงินของฉันกลับคืนจริงๆ เท่าไหร่?",
+    answer: "ประมาณ 9% สำหรับสินค้าส่วนใหญ่และประมาณ 6% สำหรับรายการอัตราลด อัตราตามข้อกฎหมายคือ 11% และ 8% หักประมาณ 2% ที่หน่วยงานคืนภาษีเรียกเก็บ สำหรับการซื้อ ¥10,000 จะได้ประมาณ ¥900 ไม่ใช่ ¥1,100"
+  },
+  {
+    question: "ฉันรับคืนภาษีเป็นเงินสดที่สนามบินได้ไหม?",
+    answer: "ได้ สูงสุด ¥20,000 ต่อการเคลมที่เคาน์เตอร์คืนภาษีภายในเขตออกเดินทาง ส่วนที่เกินกว่านั้นจ่ายด้วยการโอนเงินผ่านธนาคาร ร้านค้าและจุดคืนภาษีระดับเมืองบางแห่งก็จ่ายทันทีภายใต้โครงการคืนภาษีทันทีตอนซื้อ (即买即退)"
+  },
+  {
+    question: "ฉันต้องนำสินค้ามาด้วยที่สนามบินไหม?",
+    answer: "สำหรับการเคลมที่ถูกตรวจแบบสุ่ม ต้อง การเคลมที่มียอดขายต่ำกว่า ¥10,000 ถูกสุ่มตั้งแต่กรกฎาคม 2026; ถ้าอันของคุณไม่ถูกสุ่มคุณข้ามการตรวจได้ เก็บสินค้าที่เข้าเงื่อนไขคืนภาษีไว้ในกระเป๋าถือหรือบนสุดของกระเป๋าโหลดจนกว่าคุณจะผ่านศุลกากร"
+  }
+];
+---
+
+<Layout title={title} description={description} lang="th" type="Article">
+  <nav class="mb-8 not-prose">
+    <a href="/th/payment/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+      <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+      </svg>
+      กลับไปหน้าการชำระเงิน
+    </a>
+  </nav>
+
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">💳 การชำระเงิน</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">คืนภาษีตอนออกเดินทางจีน: วิธีรับคืน ~9% ตอนออกเดินทาง</h1>
+      <p class="text-xl text-gray-600 mb-6">เกณฑ์ ¥200 เอกสารสามฉบับที่คุณต้องมี และวิธีผ่านการคืนภาษีในสนามบินโดยไม่เสียบ่ายทั้งหมด</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 อัปเดตล่าสุด: ตุลาคม 2026</span>
+        <span>⏱️ 8 นาที</span>
+      </div>
+    </header>
+
+    <img
+      src="/images/tax-refund/tax-refund-flow.webp"
+      alt="แผนภาพการคืนภาษีตอนออกเดินทางจีน: ซื้อที่ร้าน tax-free รับใบสมัครคืนภาษีและใบกำกับภาษี VAT การตรวจสอบศุลกากร แล้วรับภาษีคืน"
+      width="1080"
+      height="606"
+      class="w-full rounded-2xl mb-10 not-prose"
+    />
+
+    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-red-900 mb-4">⚡ นักท่องเที่ยวรับคืนภาษีในจีนได้ไหม?</h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>คำตอบสั้นๆ:</strong> ได้ จ่ายอย่างน้อย <strong>¥200</strong> ที่ร้านเดียวที่แสดงป้าย <strong>Tax Free (退税商店)</strong> และคุณสามารถเคลมประมาณ <strong>9% กลับ</strong> สำหรับสินค้าส่วนใหญ่ตอนออกจีน หรือประมาณ <strong>6%</strong> สำหรับรายการอัตราลด คุณต้องการสามอย่าง: <strong>ใบสมัครคืนภาษี</strong> (离境退税申请单), <strong>ใบกำกับภาษีมูลค่าเพิ่มแบบทั่วไป</strong> (增值税普通发票), และ<strong>พาสปอร์ต</strong>ของคุณ — ตัวจริงที่คุณใช้เข้า เคลมที่สนามบินตอนออก หรือทันทีที่เคาน์เตอร์คืนภาษีทันทีตอนซื้อ (即买即退) ในเมือง สินค้าต้องออกจีนภายใน <strong>90 วัน</strong> ของการซื้อ ดู <a href="/th/payment/china-shopping/" class="text-red-700 underline">คู่มือช้อปปิ้งจีน</a> ของเราสำหรับสิ่งที่คุ้มค่าซื้อจริงๆ</p>
+      <p class="text-lg leading-relaxed text-gray-700">การคืนภาษีนำไปใช้กับสิ่งของส่วนตัวที่คุณนำกลับบ้าน: เครื่องสำอาง อิเล็กทรอนิกส์ เสื้อผ้า ชา ไหม เครื่องปั้นดินเผา หยก งานคราฟต์ ไม่นำไปใช้กับสิ่งที่คุณบริโภคในจีน กับบริการ หรือกับสินค้าในรายการห้ามและจำกัด</p>
+    </div>
+
+    <div class="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-2xl p-6 mb-12 not-prose">
+      <p class="text-lg leading-relaxed text-yellow-900"><strong>ความจริงที่แท้จริง:</strong> นี่คือการคืนภาษี ไม่ใช่ส่วนลด — คุณจ่ายราคารวมภาษีเต็มที่แคชเชียร์และได้ส่วนหนึ่งคืนทีหลัง สำหรับเสื้อตัวและแม่เหล็กติดตู้เย็นมันไม่คุ้มค่าคิว: คุณต้องมี ¥200 ที่ร้านเดียวในหนึ่งวันก่อนที่จะเคลมได้ นาฬิกา 90 วันเริ่มนับตอนซื้อ และหน่วยงานเก็บประมาณ 2% ของที่คุณควรได้ สำหรับโน้ตบุ๊ก นาฬิกา รองเท้าหรือกระเป๋า มันคือ 9% ที่ง่ายที่สุดในการเดินทาง — ตราบใดที่คุณไม่โหลดกระเป๋าก่อนที่ศุลกากรจะดูสินค้า</p>
+    </div>
+
+    <h2 id="rules" class="text-3xl font-bold text-gray-900 mb-6 mt-14">กฎคืนภาษีตอนออกเดินทางของจีนคืออะไร?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4">โครงการนี้เรียกว่า <em>lí jìng tuì shuì</em> (离境退税) — แปลตรงตัวว่า "คืนภาษีตอนออกจากประเทศ" มันคืน VAT ที่คุณจ่ายสำหรับสินค้าที่ซื้อที่ร้าน tax-free ที่จดทะเบียน เมื่อสินค้านั้นออกจีนพร้อมคุณ อัตราหลักดูผูกใจกว้าง; สิ่งที่คุณเก็บจริงๆ ต่ำกว่านั้นเล็กน้อย</p>
+    <p class="text-base text-gray-500 mb-4">กฎคืนภาษีตอนออกเดินทางของจีนในภาพรวม 2026</p>
+    <div class="overflow-x-auto mb-8 not-prose">
+      <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+        <caption class="sr-only">กฎคืนภาษีตอนออกเดินทางของจีนในปี 2026 — การใช้จ่ายขั้นต่ำ อัตราคืนภาษี คุณสมบัติ เอกสารประจำตัว กำหนดเวลา วงเงินเงินสด การดำเนินการไร้กระดาษ และคืนภาษีทันทีตอนซื้อ</caption>
+        <thead>
+          <tr class="bg-gray-900 text-white">
+            <th class="px-6 py-4 font-bold">กฎ</th>
+            <th class="px-6 py-4 font-bold">รายละเอียด</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">การใช้จ่ายขั้นต่ำ</td>
+            <td class="px-6 py-4">¥200 ที่ร้านเดียว ในหนึ่งวัน ไม่ใช่ ¥200 ตลอดทริปช้อปปิ้ง — ร้านเดียว</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">อัตราคืนภาษี</td>
+            <td class="px-6 py-4">11% สำหรับสินค้าในช่วง VAT 13% 8% สำหรับช่วง 9% หลังหักค่าธรรมเนียม ~2% ของหน่วยงาน คุณเก็บประมาณ <strong>9%</strong> หรือ <strong>6%</strong></td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">ใครมีสิทธิ์</td>
+            <td class="px-6 py-4">ผู้ไม่มีถิ่นที่อยู่ที่อยู่ในจีนแผ่นดินใหญ่ 183 วันหรือน้อยกว่า: ผู้ถือพาสปอร์ตต่างชาติ รวมถึงผู้พักอาศัยฮ่องกง มาเก๊า และไต้หวัน</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">เอกสารประจำตัว</td>
+            <td class="px-6 py-4"><strong>พาสปอร์ตของคุณ</strong> — เล่มเดียวที่คุณใช้เข้า ใบคืนภาษีเขียนขึ้นด้วยประเภทและเลขที่ และถูกตรวจที่ทุกเคาน์เตอร์</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">กำหนดเวลา</td>
+            <td class="px-6 py-4">ออกจีนภายใน <strong>90 วัน</strong> นับจากวันซื้อ ถ้าคุณรับเงินล่วงหน้าด้วยคืนภาษีทันทีตอนซื้อ (即买即退) คุณมี 28 วัน</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">วงเงินเงินสด</td>
+            <td class="px-6 py-4">เงินสดสูงสุด ¥20,000 ต่อการเคลมที่สนามบิน ส่วนที่เกินกว่านั้น โอนผ่านธนาคาร</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">เอกสารตั้งแต่กรกฎาคม 2026</td>
+            <td class="px-6 py-4">ดิจิทัลเต็มรูปแบบ ศุลกากรและหน่วยงานคืนภาษีดึงใบสมัครและใบกำกับของคุณจากระบบ — แต่เก็บกระดาษไว้ดีกว่า เพราะเคาน์เตอร์ยังขออยู่</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">การตรวจแบบสุ่มตั้งแต่กรกฎาคม 2026</td>
+            <td class="px-6 py-4">การเคลมที่มียอดขายต่ำกว่า ¥10,000 ถูกสุ่มสำหรับการตรวจสินค้าตัวจริง ถ้าอันของคุณไม่ถูกสุ่ม คุณข้ามการตรวจสินค้าที่สนามบินไปเลย</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">คืนภาษีทันทีตอนซื้อ</td>
+            <td class="px-6 py-4">"即买即退" — รับที่ร้านหรือจุดคืนภาษีระดับเมืองโดยใช้การอนุมัติบัตรเครดิต การเคลมข้ามเมือง (ซื้อเมืองหนึ่ง บินออกอีกเมือง) ใช้ได้ทั่วประเทศตั้งแต่ 1 กันยายน 2026</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <img
+      src="/images/tax-refund/refund-application-form.webp"
+      alt="ใบสมัครคืนภาษีสำหรับนักท่องเที่ยวต่างชาติ แสดงช่องประเภทและเลขที่พาสปอร์ต เลขที่ใบกำกับ สินค้า อัตราคืนภาษี 11% และช่องการตรวจสอบศุลกากร"
+      width="1080"
+      height="607"
+      loading="lazy"
+      class="w-full rounded-2xl mb-4 not-prose"
+    />
+    <p class="text-sm text-gray-500 mb-8">ใบสมัครคืนภาษีคือที่ที่เลขที่พาสปอร์ตของคุณไป ทุกอย่างหลังจุดนี้ — ศุลกากร หน่วยงาน ธนาคาร — อ้างอิงเลขที่นั้น</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="how-much" class="text-3xl font-bold text-gray-900 mb-6 mt-14">เงินของคุณกลับคืนจริงๆ เท่าไหร่?</h2>
+
+    <img
+      src="/images/tax-refund/vat-invoice.webp"
+      alt="ใบกำกับภาษีมูลค่าเพิ่มแบบทั่วไปจีนแสดงบรรทัดรายการ คอลัมน์อัตราภาษี 13% และจำนวนรวมพร้อมภาษีด้านล่าง"
+      width="1000"
+      height="635"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">11% และ 8% ในกฎคืออัตราตามข้อกฎหมาย <em>nominal</em> ที่กำหนดโดยนโยบาย ไม่ใช่สิ่งที่เข้าบัญชีคุณ หน่วยงานคืนภาษีหักค่าธรรมเนียมจัดการประมาณ 2% ของจำนวนใบกำกับจากยอดบน ซึ่งเป็นเหตุว่าทำไมทุกคู่มือจึงบอก "ประมาณ 9%"</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">คำนวณในบรรทัดเดียว โน้ตบุ๊ก ¥10,000 ที่ซื้อที่ร้าน tax-free อยู่ในช่วง VAT 13%: ภาษีคืนตามชื่อ 11% คือ ¥1,100 หักค่าธรรมเนียมหน่วยงานประมาณ ¥200 — คุณได้ประมาณ <strong>¥900</strong> กลับ สินค้า ¥1,000 คืนประมาณ ¥90 ต่ำกว่าเกณฑ์ ¥200 ต่อร้านต่อวัน คำตอบคือ ¥0</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">สินค้าอัตราลดทำงานต่างกัน ชาเช่น เป็นตัวอย่าง อยู่ในช่วง VAT 9%: อัตราตามชื่อคือ 8% และคุณเก็บประมาณ 6% ถ้าของที่คุณซื้อหนักไปทางชาและเบาไปทางอิเล็กทรอนิกส์ วางงบคืนภาษีที่ 6% ไม่ใช่ 9%</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">ขีดจำกัดเชิงโครงสร้างหนึ่งที่ควรรู้ก่อนวางแผนทริปช้อปปิ้งรอบนี้: การคืนภาษีคืน VAT และ VAT ไม่เคยเป็นเหตุผลหลักที่สินค้าหรูนำเข้าราคาแพงในจีน ถ้ากระเป๋าแพงกว่าที่นี่กว่าปารีส 9% กลับแทบไม่ปิดช่องว่าง ที่การคืนภาษีเปลี่ยนคณิตศาสตร์จริงๆ คือสินค้าทำในจีนและสิ่งที่คุณจะซื้ออยู่แล้ว — ดู <a href="/th/payment/china-shopping/" class="text-brand-600 hover:underline">คู่มือช้อปปิ้ง</a> สำหรับหมวดไหนที่เป็นเช่นนั้น</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6 clear-both"><strong>ใบกำกับคือส่วนที่คนทำผิด</strong> คุณต้องการ<em>ใบกำกับภาษีมูลค่าเพิ่มแบบทั่วไป</em> (增值税普通发票) ที่ออกด้วยรายละเอียดของคุณ ไม่ใช่ใบเสร็จแคชเชียร์ ไม่ใช่โน้ตเขียนมือ และไม่ใช่รูปถ่ายใบหนึ่ง แผงเล็กๆ มักออกให้ไม่ได้เลย ซึ่งเป็นเหตุผลที่แท้จริงที่ของราคาถูกในตลาดไม่เคยเข้าเงื่อนไขคืนภาษี</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="how-to-claim" class="text-3xl font-bold text-gray-900 mb-6 mt-14">คุณเคลมคืนภาษีที่สนามบินอย่างไร?</h2>
+
+    <img
+      src="/images/tax-refund/customs-verification.webp"
+      alt="เคาน์เตอร์การตรวจสอบศุลกากรที่ทางออกสนามบินจีน ป้าย 离境退税 海关验核 / การตรวจสอบศุลกากรคืนภาษีตอนออกเดินทาง มีนักท่องเที่ยวต่อคิว"
+      width="600"
+      height="398"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>เส้นทาง A — สนามบิน เส้นทางที่พบบ่อยที่สุด</strong> สามจุด ตามลำดับนี้: ร้าน ศุลกากร เคาน์เตอร์คืนภาษี ทำทั้งหมด<em>ก่อน</em>ที่คุณจะโหลดกระเป๋า</p>
+
+    <ol class="list-decimal pl-6 space-y-3 text-lg leading-relaxed text-gray-700 mb-6 clear-both">
+      <li><strong>ที่ร้าน — เก็บเอกสาร</strong> ขอใบสมัครคืนภาษี (离境退税申请单) และใบกำกับภาษีมูลค่าเพิ่มแบบทั่วไป (增值税普通发票) ร้านกรอกใบด้วยประเภทพาสปอร์ต เลขที่พาสปอร์ต และวันที่เข้า ดังนั้นยื่นพาสปอร์ตตัวจริง — เขาต้องอ่านเลขที่จากนั้น ตรวจสอบว่าเลขที่พาสปอร์ตในใบตรงกับพาสปอร์ตของคุณ ตัวต่อตัว; ตัวเลขที่พิมพ์ผิดทำให้คุณถูกปฏิเสธที่สนามบิน และคุณจะไม่อยู่เมืองนั้นอีกเพื่อแก้</li>
+      <li><strong>ที่สนามบิน ก่อนเช็คอิน — การตรวจสอบศุลกากร (海关验核)</strong> นำสินค้า พาสปอร์ต ใบสมัคร และใบกำกับไปที่โต๊ะศุลกากร ตั้งแต่กรกฎาคม 2026 การเคลมที่มียอดขายต่ำกว่า ¥10,000 ถูกตรวจแบบสุ่ม: ถ้าอันของคุณไม่ถูกสุ่ม คุณข้ามขั้นตอนนี้และไปที่เคาน์เตอร์คืนภาษีได้เลย ถ้าถูกสุ่ม เจ้าหน้าที่ต้องการเห็นสินค้าตัวจริง ดังนั้นอย่าใส่ในโหลด</li>
+      <li><strong>ที่เคาน์เตอร์คืนภาษี ภายในเขตออกเดินทาง — รับเงิน</strong> แสดงพาสปอร์ตเล่มเดียวกันที่เคาน์เตอร์หน่วยงานคืนภาษี (退税代理机构) เงินสดสูงสุด ¥20,000 โอนผ่านธนาคารสำหรับส่วนที่เกิน การคืนภาษีออกเป็นหยวน ดังนั้นใช้มันในโซนหลังผ่านหรือยอมรับอัตราแลกเปลี่ยนที่ธนาคารให้คุณ</li>
+    </ol>
+
+    <img
+      src="/images/tax-refund/instant-refund-point.webp"
+      alt="ป้ายสำหรับจุดคืนภาษีทันทีปักกิ่ง — TAX REFUND (离境退税), บริการคืนภาษีทันที (即买即退集中退付点), บริการเบ็ดเสร็จปักกิ่ง"
+      width="800"
+      height="503"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>เส้นทาง B — คืนภาษีทันทีตอนซื้อ (即买即退)</strong> ถ้าร้านเสนอ หรือคุณอยู่ใกล้จุดคืนภาษีระดับเมือง คุณรับเงินก่อนออกเมือง ร้านจ่ายคุณทันทีและรับการอนุมัติบัตรเครดิตเป็นหลักประกันว่าสินค้าออกจีนจริง; การอนุมัติถูกปล่อยเมื่อศุลกากรยืนยันการออก มันทำงานข้ามเมืองได้แล้ว — ซื้อที่เฉิงตู บินออกเซี่ยงไฮ้ — และจุดคืนภาษีรวมทำงานแล้วในกวางโจว ฉงชิ่ง และเฉิงตู โดยปักกิ่งมีบริการเบ็ดเสร็จระดับเมืองภายใต้ตราของตนเอง</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">สองเงามาพร้อมเงินล่วงหน้า คุณต้องออกจีนภายใน <strong>28 วัน</strong> นับจากรับมัน และสินค้าต้องยังไม่ได้ใช้และยังอยู่ในครอบครองของคุณตอนออก ฝ่าฝืนเงาใดเงาหนึ่งและการอนุมัติบัตรจะถูกหักแทนที่จะปล่อย — ซึ่งเป็นวิธีที่แพงที่สุดวิธีเดียวที่ทำคืนภาษีพลาด</p>
+
+
+    <div class="clear-both"></div>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="duty-free-vs-refund" class="text-3xl font-bold text-gray-900 mb-6 mt-14">Duty-free หรือคืนภาษี — อันไหนนำไปใช้กับคุณ?</h2>
+
+    <img
+      src="/images/tax-refund/duty-free-store.webp"
+      alt="หน้าร้าน cdf China Duty Free ภายในอาคารผู้โดยสาร มีป้าย 免税店 DUTY FREE เหนือเคาน์เตอร์เครื่องประดับแก้ว"
+      width="640"
+      height="480"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">จีนมีสามวิธีแยกกันในการซื้อโดยไม่จ่ายภาษีเต็ม และนักท่องเที่ยวสับสนตลอดเวลา วิธีไหนนำไปใช้ขึ้นอยู่กับที่คุณอยู่และวิธีที่คุณออก — ไม่ใช่กับสิ่งที่คุณซื้อ</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>1. การคืนภาษีตอนออกเดินทาง (退税商店) — สิ่งที่คู่มือนี้เกี่ยวด้วย</strong> คุณซื้อสินค้าธรรมดารวมภาษีที่ร้านที่จดทะเบียนในเมือง แล้วเคลม VAT ประมาณ 9% กลับตอนออก คุณจ่ายก่อน คุณถูกคืนทีหลัง</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>2. duty-free สนามบิน (机场免税店) — สำหรับแบรนด์ระดับนานาชาติที่ประตู</strong> ร้านในโซนผู้โดยสารขาออก ขายโดยไม่มีภาษีนำเข้าและ VAT ที่แคชเชียร์ จึงไม่มีอะไรให้เคลมทีหลัง; ส่วนลดอยู่ในราคาชั้นแล้ว เลือกแบรนด์ระดับนานาชาติได้ดีกว่าร้านเมืองส่วนใหญ่ แย่กว่าสำหรับแบรนด์จีน</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>3. duty-free ออฟชอร์ไหหลำ (海南离岛免税) — โครงการเฉพาะเกาะ</strong> ไม่ใช่สิ่งเดียวกับการคืนภาษี และไม่เฉพาะนักช้อปจีน: ใครก็ตามที่ออกไหหลำด้วยเครื่องบิน รถไฟ หรือเรือข้ามฟาก รวมถึงพาสปอร์ตต่างชาติ สามารถซื้อ duty-free ที่นั่นภายใต้โควตารายปี ถ้าทริปของคุณจบด้วยการบินออกไหหลำ คุณกำลังออกเกาะและออกประเทศพร้อมกัน และสองโครงการทับซ้อนในวิธีที่กฎปรับมากกว่าหนึ่งครั้ง — ถามที่เคาน์เตอร์ว่าใช้อะไรกับเส้นทางที่แม่นยำของคุณ คู่มือการเข้าไหหลำของเรา <a href="/th/cities/hainan-visa-free/" class="text-brand-600 hover:underline">ครอบคลุมด้านไร้วีซ่าของทริปนั้น</a></p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6 clear-both"><strong>ความต่างในทางปฏิบัติ:</strong> duty-free คือส่วนลดที่แคชเชียร์โดยไม่มีเอกสาร และการคืนภาษีคือเงินคืนทีหลังพร้อมสามเอกสารและคิว ถ้าร้านเสนอทั้งสอง duty-free มักชนะสำหรับแบรนด์ระดับนานาชาติและการคืนภาษีมักชนะสำหรับแบรนด์จีน</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="worth-it" class="text-3xl font-bold text-gray-900 mb-6 mt-14">เอกสารคืนภาษีคุ้มค่าจริงๆ ไหม?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">สำหรับนักท่องเที่ยวส่วนใหญ่ ใช่ — แต่เฉพาะกับการซื้อที่ถูกต้อง นักท่องเที่ยวต่างชาติใช้จ่าย ¥263.6 พันล้านในจีนระหว่างมกราคมถึงกรกฎาคม 2026 เพิ่มขึ้น 27.8% เทียบรายปี และจำนวนนักเดินทางที่ยื่นคืนภาษีตอนออกเดินทางเพิ่มมากกว่าสามเท่าในช่วงเดียวกัน ยอดขายที่ครอบคลุมโดยโครงการคืนภาษีเพิ่มขึ้น 69% ในครึ่งแรกของ 2026 ซึ่งบอกคุณว่าคิวที่สนามบินไม่ได้หดตัว</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">จุดคุ้มทุนเรียบง่าย ต่ำกว่า ¥200 ที่ร้านเดียวในหนึ่งวัน ไม่มีอะไรให้เคลม ระหว่าง ¥200 และประมาณ ¥1,000 การคืนภาษีน้อย — ต่ำกว่า ¥90 — จึงคุ้มค่าทำเฉพาะถ้าคุณอยู่ที่สนามบินแล้วมีเวลาว่าง สูงกว่า ¥1,000 คือเงินจริง และสูงกว่า ¥5,000 คุ้มค่ากับการวางแผนการออกรอบ: เคลมก่อนเช็คอิน เก็บสินค้าในกระเป๋าถือ และเหลือเวลาเพิ่ม 30 นาทีสำหรับโต๊ะศุลกากร</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">อีกเรื่องหนึ่งที่ต้องวางงบ: การคืนภาษีจ่ายเป็นหยวน ถ้าคุณกำลังกลับบ้านและจะไม่กลับมา เงินสดนั้นมีประโยชน์เฉพาะฝั่งในสนามบิน ใช้มันกับมื้อสุดท้าย หรือยอมรับอัตราแลกเปลี่ยนที่ธนาคารเสนอในการโอน</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="faq" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">❓ คำถามที่พบบ่อย</h2>
+    <div class="space-y-6 mb-8 not-prose">
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">ฉันต้องใช้จ่ายเท่าไหร่ถึงจะเคลมคืนภาษีในจีนได้?</h3>
+        <p class="text-gray-700">อย่างน้อย ¥200 ที่ร้านคืนภาษีร้านเดียวในหนึ่งวัน ขอใบสมัครคืนภาษี (离境退税申请单) และใบกำกับภาษี VAT ทั่วไป (增值税普通发票) ที่แคชเชียร์ และเก็บทั้งสองไว้ — ไม่มีมันการคืนภาษีทำไม่ได้</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">ฉันต้องใช้พาสปอร์ตเพื่อเคลมคืนภาษีไหม?</h3>
+        <p class="text-gray-700">ต้อง และต้องเป็นพาสปอร์ตตัวจริงที่คุณใช้เข้าจีน ใบสมัครคืนภาษีเขียนขึ้นด้วยประเภทและเลขที่พาสปอร์ตของคุณ และศุลกากรตรวจเอกสารกับตัวบุคคลที่ยืนอยู่ รูปถ่ายในโทรศัพท์และสำเนาไม่รับ</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">เงินของฉันกลับคืนจริงๆ เท่าไหร่?</h3>
+        <p class="text-gray-700">ประมาณ 9% สำหรับสินค้าส่วนใหญ่และประมาณ 6% สำหรับรายการอัตราลด อัตราตามข้อกฎหมายคือ 11% และ 8% หักประมาณ 2% ที่หน่วยงานคืนภาษีเรียกเก็บ สำหรับการซื้อ ¥10,000 จะได้ประมาณ ¥900 ไม่ใช่ ¥1,100</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">ฉันรับคืนภาษีเป็นเงินสดที่สนามบินได้ไหม?</h3>
+        <p class="text-gray-700">ได้ สูงสุด ¥20,000 ต่อการเคลมที่เคาน์เตอร์คืนภาษีภายในเขตออกเดินทาง ส่วนที่เกินกว่านั้นจ่ายด้วยการโอนเงินผ่านธนาคาร ร้านค้าและจุดคืนภาษีระดับเมืองบางแห่งก็จ่ายทันทีภายใต้โครงการคืนภาษีทันทีตอนซื้อ (即买即退)</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">ฉันต้องนำสินค้ามาด้วยที่สนามบินไหม?</h3>
+        <p class="text-gray-700">สำหรับการเคลมที่ถูกตรวจแบบสุ่ม ต้อง การเคลมที่มียอดขายต่ำกว่า ¥10,000 ถูกสุ่มตั้งแต่กรกฎาคม 2026; ถ้าอันของคุณไม่ถูกสุ่มคุณข้ามการตรวจได้ เก็บสินค้าที่เข้าเงื่อนไขคืนภาษีไว้ในกระเป๋าถือหรือบนสุดของกระเป๋าโหลดจนกว่าคุณจะผ่านศุลกากร</p>
+      </div>
+    </div>
+
+    <div class="not-prose mt-12 pt-8 border-t border-gray-200">
+      <h3 class="text-base font-bold text-gray-900 mb-4 flex items-center gap-2">📚 แหล่งอ้างอิง</h3>
+      <ul class="space-y-3">
+        <li>
+          <a href="https://taxfree.mofcom.gov.cn/taxfreeEnPc/index.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">กระทรวงพาณิชย์ — แพลตฟอร์มบริการสำหรับคืนภาษีตอนออกเดินทาง (แพลตฟอร์มภาษาอังกฤษทางการ: ค้นหาร้าน tax-free จุดคืนภาษี คู่มือหลายภาษา)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://karachi.mofcom.gov.cn/jmxw/art/2026/art_4c238850af4e41d48ec7478a8b8fbec0.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">ช้อปปิ้งในจีน: นโยบายคืนภาษีอธิบาย — คู่มือ MOFCOM สองภาษา (เกณฑ์ ¥200 อัตรา 11% / 8% เอกสารประจำตัว วิธีคืนภาษี)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://scyxs.mofcom.gov.cn/zcfg/art/2026/art_9845ac0b49454fd598320a52125ba23a.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">MOFCOM และห้าหน่วยงานอื่น ประกาศฉบับที่ 74 ปี 2026 (18 พฤษภาคม 2026) — ครอบคลุมร้านกว้างขึ้น การตรวจแบบสุ่มต่ำกว่า ¥10,000 การดำเนินการไร้กระดาษ</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.gov.cn/zhengce/zhengceku/202607/content_7075798.htm" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">สำนักงานบริหารภาษีแห่งรัฐ (กรกฎาคม 2026) — คืนภาษีทันทีตอนซื้อครอบคลุมทั่วประเทศข้ามภูมิภาคตั้งแต่ 1 กันยายน 2026; ยื่นไร้กระดาษ นำร่องร้านออนไลน์ QR code คืนภาษีระดับชาติ</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://shanghai.chinatax.gov.cn/xwdt/ztzl/zcgll/ljts/zchb/201911/t449153.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">สำนักงานสรรพากรเซี่ยงไฮ้ — "นโยบายคืนภาษีตอนออกเดินทางสำหรับนักท่องเที่ยวต่างชาติ" (สองภาษา; อัตรา 11% / 8% ค่าธรรมเนียมหน่วยงาน 2% วงเงินเงินสด ¥20,000)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.globaltimes.cn/page/202512/1350012.shtml" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">Global Times — การเคลมคืนภาษีพุ่ง 285% ใน 11 เดือนแรก (ร้านคืนภาษี 12,252 ร้านทั่วประเทศ 7,000+ เสนอคืนภาษีทันทีตอนซื้อ)</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="border-t border-gray-100 pt-6 mt-8">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5 not-prose">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h3 class="text-sm font-bold text-gray-900">📚 อ่านต่อ</h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="/th/payment/china-shopping/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              สิ่งที่คุ้มค่าซื้อในจีน
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/th/payment/payment-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              วิธีจ่ายเงินในจีน
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/th/visa/customs-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              กฎระเบียบศุลกากรจีน
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/th/visa/visa-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              คู่มือวีซ่าและการเข้าจีน
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <FAQPage items={faqs} />
+</Layout>

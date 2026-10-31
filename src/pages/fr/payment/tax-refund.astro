@@ -1,0 +1,308 @@
+---
+import Layout from '@layouts/Layout.astro';
+import FAQPage from '../../../components/FAQPage.astro';
+
+const title = "Détaxe à l'exportation en Chine 2026 : comment récupérer 9 %";
+const description = "La détaxe à l'exportation en Chine en 2026 : le seuil de ¥200, les trois documents nécessaires, la limite de 90 jours et comment se déroule concrètement le contrôle douanier à l'aéroport.";
+
+const faqs = [
+  {
+    question: "Combien dois-je dépenser pour obtenir une détaxe en Chine ?",
+    answer: "Au moins ¥200 dans un seul magasin de détaxe en une seule journée. Demandez le formulaire de demande de détaxe (离境退税申请单) et une facture générale de TVA (增值税普通发票) à la caisse, et conservez les deux — la détaxe ne peut pas être traitée sans eux."
+  },
+  {
+    question: "Ai-je besoin de mon passeport pour obtenir la détaxe ?",
+    answer: "Oui, et il doit s'agir du passeport physique sur lequel vous êtes entré en Chine. Le formulaire de demande de détaxe est rempli avec le type et le numéro de votre passeport, et la douane vérifie le document face à la personne devant elle. Les photos de téléphone et les photocopies ne sont pas acceptées."
+  },
+  {
+    question: "Quelle part de mon argent revient vraiment ?",
+    answer: "Environ 9 % sur la plupart des biens et environ 6 % sur les articles à taux réduit. Les taux nominaux sont de 11 % et 8 %, moins environ 2 % prélevés par l'agence de détaxe. Sur un achat de ¥10 000, cela fait environ ¥900, pas ¥1 100."
+  },
+  {
+    question: "Puis-je obtenir la détaxe en espèces à l'aéroport ?",
+    answer: "Oui, jusqu'à ¥20 000 par demande au guichet de détaxe situé dans la zone d'embarquement. Au-delà, le paiement se fait par virement bancaire. Certains magasins et points de détaxe urbains paient aussi sur place dans le cadre de la détaxe immédiate (即买即退)."
+  },
+  {
+    question: "Dois-je avoir les marchandises avec moi à l'aéroport ?",
+    answer: "Pour les demandes contrôlées, oui. Les demandes d'une valeur de vente inférieure à ¥10 000 sont tirées au sort depuis juillet 2026 ; si la vôtre ne l'est pas, vous évitez le contrôle. Conservez les articles éligibles à la détaxe dans votre bagage à main ou au-dessus de votre valise en soute jusqu'à être passé la douane."
+  }
+];
+---
+
+<Layout title={title} description={description} lang="fr" type="Article">
+  <nav class="mb-8 not-prose">
+    <a href="/fr/payment/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+      <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+      </svg>
+      Retour au paiement
+    </a>
+  </nav>
+
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">💳 Paiement</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">La détaxe à l'exportation en Chine : comment récupérer ~9 % au départ</h1>
+      <p class="text-xl text-gray-600 mb-6">Le seuil de ¥200, les trois documents nécessaires et comment faire traiter une détaxe à l'aéroport sans y perdre un après-midi.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Dernière mise à jour : octobre 2026</span>
+        <span>⏱️ 8 min de lecture</span>
+      </div>
+    </header>
+
+    <img
+      src="/images/tax-refund/tax-refund-flow.webp"
+      alt="Organigramme du processus de détaxe à l'exportation en Chine : acheter dans une boutique tax-free, obtenir le formulaire de demande de détaxe et la facture de TVA, vérification douanière, puis percevoir la détaxe"
+      width="1080"
+      height="606"
+      class="w-full rounded-2xl mb-10 not-prose"
+    />
+
+    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-red-900 mb-4">⚡ Les touristes peuvent-ils obtenir une détaxe en Chine ?</h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>Réponse rapide :</strong> Oui. Dépenser au moins <strong>¥200</strong> dans un seul magasin affichant le panneau <strong>Tax Free (退税商店)</strong>, et vous pouvez réclamer environ <strong>9 %</strong> sur la plupart des biens au départ de Chine, ou environ <strong>6 %</strong> sur les articles à taux réduit. Vous avez besoin de trois choses : le <strong>formulaire de demande de détaxe</strong> (离境退税申请单), une <strong>facture générale de TVA</strong> (增值税普通发票) et votre <strong>passeport</strong> — le physique sur lequel vous êtes entré. Réclamez à l'aéroport en sortant, ou sur place à un comptoir de détaxe immédiate (即买即退) en ville. Les marchandises doivent quitter la Chine dans les <strong>90 jours</strong> suivant l'achat. Voir notre <a href="/fr/payment/china-shopping/" class="text-red-700 underline">guide d'achats en Chine</a> pour ce qui vaut vraiment le coup d'être acheté.</p>
+      <p class="text-lg leading-relaxed text-gray-700">La détaxe s'applique aux articles personnels que vous rapportez : cosmétiques, électronique, vêtements, thé, soie, porcelaine, jade, artisanat. Elle ne s'applique pas aux biens consommés en Chine, aux services ni aux marchandises figurant sur la liste des interdictions et restrictions.</p>
+    </div>
+
+    <div class="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-2xl p-6 mb-12 not-prose">
+      <p class="text-lg leading-relaxed text-yellow-900"><strong>La version honnête :</strong> c'est un remboursement, pas une remise — vous payez le plein prix toutes taxes comprises à la caisse et récupérez une partie plus tard. Pour un T-shirt et un aimant de frigo, la file ne vaut pas le coup : il vous faut ¥200 dans un même magasin en une journée avant de pouvoir réclamer quoi que ce soit, le délai de 90 jours démarre à l'achat, et l'agence garde environ 2 % de ce qui vous est dû. Pour un ordinateur portable, une montre, une paire de chaussures ou un sac à main, c'est les 9 % les plus faciles du voyage — à condition de ne pas mettre la valise en soute avant que la douane n'ait vu les marchandises.</p>
+    </div>
+
+    <h2 id="rules" class="text-3xl font-bold text-gray-900 mb-6 mt-14">Quelles sont les règles de détaxe à l'exportation en Chine ?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4">Le dispositif s'appelle <em>lí jìng tuì shuì</em> (离境退税) — littéralement « détaxe à la sortie du pays ». Il rembourse la TVA payée sur les biens achetés dans les boutiques tax-free agréées, une fois ces biens sortis de Chine avec vous. Le taux affiché paraît généreux ; ce que vous empochez réellement est un peu plus bas.</p>
+    <p class="text-base text-gray-500 mb-4">Les règles de détaxe à l'exportation en Chine en un coup d'œil, 2026</p>
+    <div class="overflow-x-auto mb-8 not-prose">
+      <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+        <caption class="sr-only">Les règles de détaxe à l'exportation en Chine en 2026 — dépense minimale, taux de remboursement, éligibilité, pièce d'identité, délai, limite en espèces, traitement sans papier et détaxe immédiate</caption>
+        <thead>
+          <tr class="bg-gray-900 text-white">
+            <th class="px-6 py-4 font-bold">Règle</th>
+            <th class="px-6 py-4 font-bold">Détails</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">Dépense minimale</td>
+            <td class="px-6 py-4">¥200 dans un magasin, en une journée. Pas ¥200 sur tout un voyage — un seul magasin.</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">Taux de remboursement</td>
+            <td class="px-6 py-4">11 % sur les biens relevant de la TVA à 13 %, 8 % sur ceux à 9 %. Après les ~2 % de frais de l'agence, vous empochez environ <strong>9 %</strong> ou <strong>6 %</strong>.</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">Qui est éligible</td>
+            <td class="px-6 py-4">Les non-résidents présents en Chine continentale 183 jours ou moins : titulaires d'un passeport étranger, ainsi que résidents de Hong Kong, Macao et Taiwan.</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">Pièce d'identité</td>
+            <td class="px-6 py-4"><strong>Votre passeport</strong> — le même sur lequel vous êtes entré. Le formulaire de détaxe est rempli avec son type et son numéro, et il est vérifié à chaque guichet.</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">Délai</td>
+            <td class="px-6 py-4">Quittez la Chine dans les <strong>90 jours</strong> suivant la date d'achat. Si vous avez pris l'argent d'avance avec la détaxe immédiate (即买即退), vous disposez de 28 jours.</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">Limite en espèces</td>
+            <td class="px-6 py-4">Jusqu'à ¥20 000 en espèces par demande à l'aéroport. Au-delà, virement bancaire.</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">Démarches depuis juillet 2026</td>
+            <td class="px-6 py-4">Entièrement numérique. La douane et l'agence de détaxe récupèrent votre formulaire de demande et votre facture depuis le système — mais conservez le papier quand même, car les guichets le demandent encore.</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">Contrôles aléatoires depuis juillet 2026</td>
+            <td class="px-6 py-4">Les demandes d'une valeur de vente inférieure à ¥10 000 sont tirées au sort pour un contrôle physique. Si la vôtre ne l'est pas, vous évitez totalement le contrôle des marchandises à l'aéroport.</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">Détaxe immédiate</td>
+            <td class="px-6 py-4">« 即买即退 » — percevez en magasin ou dans un point de détaxe urbain contre une autorisation de carte de crédit. Les demandes inter-villes (achat dans une ville, départ d'une autre) fonctionnent dans tout le pays depuis le 1er septembre 2026.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <img
+      src="/images/tax-refund/refund-application-form.webp"
+      alt="Formulaire de demande de détaxe pour visiteurs étrangers, montrant les champs type et numéro de passeport, numéros de facture, marchandises, taux de remboursement 11 % et case de vérification douanière"
+      width="1080"
+      height="607"
+      loading="lazy"
+      class="w-full rounded-2xl mb-4 not-prose"
+    />
+    <p class="text-sm text-gray-500 mb-8">Le formulaire de demande de détaxe est l'endroit où figure votre numéro de passeport. Tout ce qui suit — douane, agence, banque — est indexé sur ce numéro.</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="how-much" class="text-3xl font-bold text-gray-900 mb-6 mt-14">Quelle part de votre argent revient vraiment ?</h2>
+
+    <img
+      src="/images/tax-refund/vat-invoice.webp"
+      alt="Facture générale de TVA chinoise montrant les lignes d'articles, la colonne de taux de TVA 13 % et le montant total hors et avec taxes en bas"
+      width="1000"
+      height="635"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Les 11 % et 8 % des règles sont les taux <em>nominaux</em> fixés par la politique, pas ce qui atterrit sur votre compte. L'agence de détaxe prélève des frais de manutention d'environ 2 % du montant de la facture en priorité, c'est pourquoi chaque guide parle d'« environ 9 % ».</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Calculons sur une seule ligne. Un ordinateur portable de ¥10 000, acheté dans une boutique tax-free, relève de la TVA à 13 % : remboursement nominal 11 %, soit ¥1 100, moins environ ¥200 de frais d'agence — vous récupérez environ <strong>¥900</strong>. Un article de ¥1 000 rembourse environ ¥90. Sous le seuil de ¥200 par magasin par jour, le résultat est de ¥0.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Les biens à taux réduit se comportent différemment. Le thé, par exemple, relève de la TVA à 9 % : le taux nominal est de 8 % et vous empochez environ 6 %. Si votre butin penche vers le thé et peu vers l'électronique, budgétisez la détaxe à 6 %, pas 9 %.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Une limite structurelle à connaître avant de planifier un voyage d'achats là-dessus : la détaxe rembourse la TVA, et la TVA n'a jamais été la raison principale pour laquelle les produits de luxe importés sont chers en Chine. Si un sac à main coûte plus cher ici qu'à Paris, 9 % de retour comble rarement l'écart. Là où la détaxe change vraiment le calcul, ce sont les biens fabriqués en Chine et tout ce que vous achetiez de toute façon — voir le <a href="/fr/payment/china-shopping/" class="text-brand-600 hover:underline">guide d'achats</a> pour les catégories concernées.</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6 clear-both"><strong>La facture est ce que les gens se trompent.</strong> Vous avez besoin d'une <em>facture générale de TVA</em> (增值税发票) établie à vos nom et coordonnées, pas un ticket de caisse, pas une note manuscrite, et pas une photo de l'un d'eux. Les petits stands ne peuvent souvent pas en délivrer du tout, ce qui explique vraiment pourquoi une bonne affaire de marché n'est jamais éligible à la détaxe.</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="how-to-claim" class="text-3xl font-bold text-gray-900 mb-6 mt-14">Comment réclamer la détaxe à l'aéroport ?</h2>
+
+    <img
+      src="/images/tax-refund/customs-verification.webp"
+      alt="Guichet de vérification douanière à la sortie d'un aéroport chinois, signalé 离境退税 海关验核 / Détaxe à l'exportation — Vérification douanière, avec des voyageurs faisant la queue"
+      width="600"
+      height="398"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>Itinéraire A — l'aéroport, encore le chemin le plus courant.</strong> Trois étapes, dans cet ordre : le magasin, la douane, le guichet de détaxe. Faites tout <em>avant</em> d'enregistrer votre bagage.</p>
+
+    <ol class="list-decimal pl-6 space-y-3 text-lg leading-relaxed text-gray-700 mb-6 clear-both">
+      <li><strong>Au magasin — récupérez les papiers.</strong> Demandez le formulaire de demande de détaxe (离境退税申请单) et la facture générale de TVA (增值税普通发票). Le magasin remplit le formulaire avec le type de votre passeport, son numéro et votre date d'entrée, donc remettez le passeport physique — ils doivent lire le numéro dessus. Vérifiez que le numéro de passeport sur le formulaire correspond au vôtre, caractère pour caractère ; un chiffre mal saisi vous fera refouler à l'aéroport, et vous ne serez plus dans cette ville pour corriger.</li>
+      <li><strong>À l'aéroport, avant l'enregistrement — vérification douanière (海关验核).</strong> Apportez les marchandises, votre passeport, le formulaire et la facture au guichet de la douane. Depuis juillet 2026, les demandes d'une valeur de vente inférieure à ¥10 000 sont contrôlées aléatoirement : si la vôtre ne l'est pas, vous pouvez sauter cette étape et aller directement au guichet de détaxe. Si elle l'est, l'agent veut voir les marchandises elles-mêmes, ne les mettez donc pas en soute.</li>
+      <li><strong>Au guichet de détaxe, dans la zone d'embarquement — percevez l'argent.</strong> Présentez le même passeport au guichet de l'agence de détaxe (退税代理机构). Espèces jusqu'à ¥20 000, virement bancaire au-delà. La détaxe est versée en yuans, donc dépensez-la côté piste ou acceptez le taux de conversion de votre banque.</li>
+    </ol>
+
+    <img
+      src="/images/tax-refund/instant-refund-point.webp"
+      alt="Panneau d'un point de détaxe immédiate à Pékin — TAX REFUND (离境退税), Service de détaxe immédiate (即买即退集中退付点), Service guichet unique de Pékin"
+      width="800"
+      height="503"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>Itinéraire B — détaxe immédiate (即买即退).</strong> Si le magasin l'offre, ou si vous êtes près d'un point de détaxe urbain, vous percevez l'argent avant de quitter la ville. Le magasin vous paie immédiatement et prend une autorisation de carte de crédit comme garantie que les marchandises quittent bien la Chine ; l'autorisation est levée dès que la douane confirme la sortie. Cela fonctionne entre villes désormais — achetez à Chengdu, partez de Shanghai — et des points de détaxe consolidés existent déjà à Guangzhou, Chongqing et Chengdu, Pékin proposant un service urbain guichet unique sous sa propre enseigne.</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Deux conditions accompagnent l'argent perçu d'avance. Vous devez quitter la Chine dans les <strong>28 jours</strong> suivant sa réception, et les marchandises doivent être inutilisées et encore en votre possession à la sortie. Enfreignez l'une ou l'autre et l'autorisation de carte est débitée au lieu d'être levée — ce qui est la façon la plus coûteuse de se tromper sur une détaxe.</p>
+
+
+    <div class="clear-both"></div>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="duty-free-vs-refund" class="text-3xl font-bold text-gray-900 mb-6 mt-14">Duty-free ou détaxe — laquelle vous concerne ?</h2>
+
+    <img
+      src="/images/tax-refund/duty-free-store.webp"
+      alt="Devanture cdf China Duty Free dans un terminal d'aéroport, avec enseigne 免税店 DUTY FREE au-dessus des comptoirs de joaillerie en vitrine"
+      width="640"
+      height="480"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">La Chine propose trois moyens distincts d'acheter sans payer la pleine taxe, et les voyageurs les confondent constamment. Lequel s'applique dépend de votre lieu et de votre mode de départ — pas de ce que vous achetez.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>1. Détaxe à l'exportation (退税商店) — de quoi traite ce guide.</strong> Vous achetez des biens ordinaires toutes taxes comprises dans une boutique agréée en ville, puis réclamez environ 9 % de la TVA au départ. Vous payez d'abord, vous êtes remboursé ensuite.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>2. Duty-free aéroportuaire (机场免税店) — pour les marques internationales à la porte.</strong> Les boutiques côté piste vendent sans droits d'importation ni TVA à la caisse, il n'y a donc rien à réclamer ensuite ; la remise est déjà dans le prix en rayon. Meilleur choix de marques internationales que la plupart des boutiques de ville, moins bon pour les marques chinoises.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>3. Duty-free hors taxes de Hainan (海南离岛免税) — un dispositif propre à l'île.</strong> Ce n'est pas la même chose que la détaxe, et pas réservé aux acheteurs chinois : toute personne quittant Hainan en avion, train ou ferry, passeports étrangers inclus, peut y acheter hors taxes dans le cadre d'une allocation annuelle. Si votre voyage se termine par un départ en avion de Hainan, vous quittez l'île et le pays d'un coup, et les deux dispositifs se chevauchent de façons que les règles ont ajustées plus d'une fois — renseignez-vous au guichet sur ce qui s'applique à votre itinéraire exact. Notre <a href="/fr/cities/hainan-visa-free/" class="text-brand-600 hover:underline">guide d'entrée à Hainan</a> couvre la partie sans visa de ce voyage.</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6 clear-both"><strong>La différence pratique :</strong> le duty-free est une remise à la caisse sans paperasse, et la détaxe est un remboursement ultérieur avec trois documents et une file. Si un magasin vous offre les deux, le duty-free l'emporte généralement sur les marques internationales et la détaxe sur les marques chinoises.</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="worth-it" class="text-3xl font-bold text-gray-900 mb-6 mt-14">La paperasse de la détaxe en vaut-elle vraiment la peine ?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Pour la plupart des visiteurs, oui — mais seulement sur les bons achats. Les visiteurs étrangers ont dépensé ¥263,6 milliards en Chine entre janvier et juillet 2026, en hausse de 27,8 % sur un an, et le nombre de voyageurs déposant des détaxes à l'exportation a plus que triplé sur la même période. Les ventes couvertes par le dispositif de détaxe ont augmenté de 69 % au premier semestre 2026, ce qui indique que la file à l'aéroport ne réduit pas.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Le seuil de rentabilité est simple. En dessous de ¥200 dans un seul magasin en une journée, rien à réclamer. Entre ¥200 et environ ¥1 000, la détaxe est faible — moins de ¥90 — aussi ne vaut-elle le coup que si vous êtes déjà à l'aéroport avec du temps libre. Au-dessus de ¥1 000, c'est de l'argent réel, et au-dessus de ¥5 000, il vaut mieux organiser votre départ autour : réclamez avant l'enregistrement, gardez les marchandises dans votre bagage à main, et prévoyez 30 minutes supplémentaires pour le guichet de la douane.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Une autre chose à budgéter : la détaxe est versée en yuans. Si vous rentrez chez vous et ne reviendrez pas, cet argent n'est utile que côté piste. Dépensez-le au dernier repas, ou acceptez le taux de change proposé par votre banque sur le virement.</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="faq" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">❓ Questions fréquentes</h2>
+    <div class="space-y-6 mb-8 not-prose">
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">Combien dois-je dépenser pour obtenir une détaxe en Chine ?</h3>
+        <p class="text-gray-700">Au moins ¥200 dans un seul magasin de détaxe en une seule journée. Demandez le formulaire de demande de détaxe (离境退税申请单) et une facture générale de TVA (增值税普通发票) à la caisse, et conservez les deux — la détaxe ne peut pas être traitée sans eux.</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">Ai-je besoin de mon passeport pour obtenir la détaxe ?</h3>
+        <p class="text-gray-700">Oui, et il doit s'agir du passeport physique sur lequel vous êtes entré en Chine. Le formulaire de demande de détaxe est rempli avec le type et le numéro de votre passeport, et la douane vérifie le document face à la personne devant elle. Les photos de téléphone et les photocopies ne sont pas acceptées.</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">Quelle part de mon argent revient vraiment ?</h3>
+        <p class="text-gray-700">Environ 9 % sur la plupart des biens et environ 6 % sur les articles à taux réduit. Les taux nominaux sont de 11 % et 8 %, moins environ 2 % prélevés par l'agence de détaxe. Sur un achat de ¥10 000, cela fait environ ¥900, pas ¥1 100.</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">Puis-je obtenir la détaxe en espèces à l'aéroport ?</h3>
+        <p class="text-gray-700">Oui, jusqu'à ¥20 000 par demande au guichet de détaxe situé dans la zone d'embarquement. Au-delà, le paiement se fait par virement bancaire. Certains magasins et points de détaxe urbains paient aussi sur place dans le cadre de la détaxe immédiate (即买即退).</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">Dois-je avoir les marchandises avec moi à l'aéroport ?</h3>
+        <p class="text-gray-700">Pour les demandes contrôlées, oui. Les demandes d'une valeur de vente inférieure à ¥10 000 sont tirées au sort depuis juillet 2026 ; si la vôtre ne l'est pas, vous évitez le contrôle. Conservez les articles éligibles à la détaxe dans votre bagage à main ou au-dessus de votre valise en soute jusqu'à être passé la douane.</p>
+      </div>
+    </div>
+
+    <div class="not-prose mt-12 pt-8 border-t border-gray-200">
+      <h3 class="text-base font-bold text-gray-900 mb-4 flex items-center gap-2">📚 Sources</h3>
+      <ul class="space-y-3">
+        <li>
+          <a href="https://taxfree.mofcom.gov.cn/taxfreeEnPc/index.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">Ministère du Commerce — Plateforme de service pour la détaxe à l'exportation (plateforme officielle en anglais : recherche de magasins tax-free, points de détaxe, guide multilingue)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://karachi.mofcom.gov.cn/jmxw/art/2026/art_4c238850af4e41d48ec7478a8b8fbec0.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">Faire ses achats en Chine : politique de détaxe expliquée — guide bilingue du MOFCOM (seuil de ¥200, taux 11 % / 8 %, pièce d'identité, modes de remboursement)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://scyxs.mofcom.gov.cn/zcfg/art/2026/art_9845ac0b49454fd598320a52125ba23a.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">MOFCOM et cinq autres ministères, avis n° 74 de 2026 (18 mai 2026) — couverture élargie des magasins, contrôles aléatoires sous ¥10 000, traitement sans papier</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.gov.cn/zhengce/zhengceku/202607/content_7075798.htm" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">Administration de la fiscalité de l'État (juillet 2026) — la détaxe immédiate s'étend à l'échelle nationale entre régions à partir du 1er septembre 2026 ; dépôt sans papier, pilote de boutique en ligne, code QR de détaxe national</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://shanghai.chinatax.gov.cn/xwdt/ztzl/zcgll/ljts/zchb/201911/t449153.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">Bureau des impôts de Shanghai — « Politique de détaxe à l'exportation pour visiteurs étrangers » (bilingue ; taux 11 % / 8 %, frais d'agence 2 %, limite de ¥20 000 en espèces)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.globaltimes.cn/page/202512/1350012.shtml" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">Global Times — les demandes de détaxe bondissent de 285 % sur les 11 premiers mois (12 252 magasins de détaxe dans tout le pays, 7 000+ proposant la détaxe immédiate)</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="border-t border-gray-100 pt-6 mt-8">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5 not-prose">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h3 class="text-sm font-bold text-gray-900">📚 Lectures Suivantes</h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="/fr/payment/china-shopping/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              Que acheter en Chine
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/fr/payment/payment-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              Comment payer en Chine
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/fr/visa/customs-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              Réglementation douanière de Chine
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/fr/visa/visa-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              Guide du visa et de l'entrée en Chine
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <FAQPage items={faqs} />
+</Layout>

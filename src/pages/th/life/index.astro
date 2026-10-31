@@ -2,6 +2,29 @@
 import Layout from '@layouts/Layout.astro';
 const title = 'ชีวิตในจีน — เคล็ดลับการเดินทาง';
 const description = 'เชื่อมต่อ ปลอดภัย และใช้ประโยชน์สูงสุดจากการเดินทางของคุณ';
+import SectionStats from '../../../components/SectionStats.astro';
+import ArticleGroups from '../../../components/ArticleGroups.astro';
+import { STATS, GROUPS, ITEMS, COUNT, COUNT_SINGULAR, type Lang } from '../../../data/life';
+
+const lang: Lang = 'th';
+
+const stats = STATS.map((s) => ({ value: s.value, color: s.color, label: s.label[lang] }));
+
+const groups = GROUPS.map((g, gi) => {
+  const items = ITEMS.filter((i) => i.group === gi);
+  return {
+    color: g.color,
+    title: g.name[lang],
+    countText: (items.length === 1 ? COUNT_SINGULAR[lang] : COUNT[lang]).replace('{n}', String(items.length)),
+    items: items.map((i) => ({
+      href: `/${lang}/life/${i.slug}/`,
+      tag: i.tag[lang],
+      title: i.title[lang],
+      desc: i.desc[lang],
+    })),
+  };
+});
+
 ---
 
 <Layout title={title} description={description} lang="th">
@@ -14,142 +37,10 @@ const description = 'เชื่อมต่อ ปลอดภัย และ
     </header>
 
     <!-- Quick Stats -->
-    <div class="grid grid-cols-2 md:grid-cols-5 gap-3 mb-12 not-prose">
-      <div class="bg-purple-50 border border-purple-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-purple-800">3</p>
-        <p class="text-xs font-semibold text-purple-800 uppercase tracking-wide mt-1">อินเทอร์เน็ตและแอป</p>
-      </div>
-      <div class="bg-cyan-50 border border-cyan-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-cyan-800">3</p>
-        <p class="text-xs font-semibold text-cyan-800 uppercase tracking-wide mt-1">สุขภาพและการแพทย์</p>
-      </div>
-      <div class="bg-red-50 border border-red-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-red-800">3</p>
-        <p class="text-xs font-semibold text-red-800 uppercase tracking-wide mt-1">ความปลอดภัยและเหตุฉุกเฉิน</p>
-      </div>
-      <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-yellow-800">3</p>
-        <p class="text-xs font-semibold text-yellow-800 uppercase tracking-wide mt-1">วัฒนธรรมและสิ่งจำเป็น</p>
-      </div>
-      <div class="bg-teal-50 border border-teal-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-teal-800">1</p>
-        <p class="text-xs font-semibold text-teal-800 uppercase tracking-wide mt-1">ที่พัก</p>
-      </div>
-    </div>
+    <SectionStats stats={stats} />
 
     <!-- Category Sections -->
-    <div class="space-y-8 mb-16 not-prose">
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-purple-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-purple-800">การสื่อสารและอินเทอร์เน็ต</h2>
-          <span class="text-xs font-medium text-purple-800 opacity-60">3 บทความ</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/th/life/sim-card-guide/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-purple-800">📶 อินเทอร์เน็ต</span>
-            <p class="text-base font-bold text-gray-900 mt-1">SIM Card และ eSIM ที่ดีที่สุดสำหรับนักท่องเที่ยว</p>
-            <p class="text-sm text-gray-600 mt-0.5">เปรียบเทียบผู้ให้บริการ eSIM, SIM Card ที่สนามบิน และแพ็กเกจข้อมูล</p>
-          </a>
-          <a href="/th/life/vpn-guide/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-purple-800">🔒 VPN</span>
-            <p class="text-base font-bold text-gray-900 mt-1">VPN ที่ดีที่สุดสำหรับการเดินทางในจีน</p>
-            <p class="text-sm text-gray-600 mt-0.5">อะไรใช้ได้ วิธีตั้งค่า และทำไมต้องติดตั้งก่อนเดินทาง</p>
-          </a>
-          <a href="/th/life/essential-apps/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-purple-800">📱 แอป</span>
-            <p class="text-base font-bold text-gray-900 mt-1">10 แอปจำเป็นสำหรับการเดินทางในจีน</p>
-            <p class="text-sm text-gray-600 mt-0.5">การชำระเงิน การเดินทาง การแปลภาษา และการสำรวจ</p>
-          </a>
-        </div>
-      </div>
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-cyan-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-cyan-800">สุขภาพและการแพทย์</h2>
-          <span class="text-xs font-medium text-cyan-800 opacity-60">3 บทความ</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/th/life/seeing-a-doctor/" class="block bg-cyan-50 border border-cyan-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-cyan-800">⚕️ การแพทย์</span>
-            <p class="text-base font-bold text-gray-900 mt-1">การพบแพทย์ในจีน</p>
-            <p class="text-sm text-gray-600 mt-0.5">ร้านขายยา คลินิก หรือโรงพยาบาล — เลือกอย่างไรดี</p>
-          </a>
-          <a href="/th/life/top-hospitals/" class="block bg-cyan-50 border border-cyan-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-cyan-800">🏥 โรงพยาบาล</span>
-            <p class="text-base font-bold text-gray-900 mt-1">โรงพยาบาลชั้นนำที่มีแผนกนานาชาติ</p>
-            <p class="text-sm text-gray-600 mt-0.5">โรงพยาบาลที่ดีที่สุดที่มีเจ้าหน้าที่พูดภาษาอังกฤษ แยกตามเมือง</p>
-          </a>
-          <a href="/th/life/travel-insurance/" class="block bg-cyan-50 border border-cyan-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-cyan-800">🛡️ ประกันภัย</span>
-            <p class="text-base font-bold text-gray-900 mt-1">ประกันการเดินทางสำหรับจีน</p>
-            <p class="text-sm text-gray-600 mt-0.5">สิ่งที่คุณต้องรู้เกี่ยวกับประกันการเดินทาง</p>
-          </a>
-        </div>
-      </div>
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-red-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-red-800">ความปลอดภัยและเหตุฉุกเฉิน</h2>
-          <span class="text-xs font-medium text-red-800 opacity-60">3 บทความ</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/th/life/is-china-safe/" class="block bg-red-50 border border-red-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-red-800">🛡️ ความปลอดภัย</span>
-            <p class="text-base font-bold text-gray-900 mt-1">การเดินทางไปจีนปลอดภัยไหม?</p>
-            <p class="text-sm text-gray-600 mt-0.5">มุมมองจริงเกี่ยวกับความปลอดภัย อาชญากรรม และสิ่งที่ควรระวัง</p>
-          </a>
-          <a href="/th/life/common-scams/" class="block bg-red-50 border border-red-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-red-800">⚠️ กลลวง</span>
-            <p class="text-base font-bold text-gray-900 mt-1">กลลวงทั่วไปในจีนและวิธีหลีกเลี่ยง</p>
-            <p class="text-sm text-gray-600 mt-0.5">สังเกตและหลีกเลี่ยงกับดักนักท่องเที่ยวที่พบบ่อย</p>
-          </a>
-          <a href="/th/life/emergency-numbers/" class="block bg-red-50 border border-red-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-red-800">🆘 ฉุกเฉิน</span>
-            <p class="text-base font-bold text-gray-900 mt-1">เบอร์โทรฉุกเฉินและวิธีปฏิบัติ</p>
-            <p class="text-sm text-gray-600 mt-0.5">เบอร์ติดต่อสำคัญและการตอบสนองเหตุฉุกเฉินทีละขั้นตอน</p>
-          </a>
-        </div>
-      </div>
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-yellow-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-yellow-800">วัฒนธรรมและสิ่งจำเป็น</h2>
-          <span class="text-xs font-medium text-yellow-800 opacity-60">3 บทความ</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/th/life/packing-guide/" class="block bg-yellow-50 border border-yellow-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-yellow-800">🧳 แพ็คกระเป๋า</span>
-            <p class="text-base font-bold text-gray-900 mt-1">สิ่งที่ต้องแพ็คไปจีน</p>
-            <p class="text-sm text-gray-600 mt-0.5">รายการแพ็คของที่ใช้งานได้จริงสำหรับทุกฤดูกาล</p>
-          </a>
-          <a href="/th/life/cultural-taboos/" class="block bg-yellow-50 border border-yellow-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-yellow-800">🙏 มารยาท</span>
-            <p class="text-base font-bold text-gray-900 mt-1">ข้อควรปฏิบัติและไม่ควรปฏิบัติในจีน</p>
-            <p class="text-sm text-gray-600 mt-0.5">คู่มือมารยาทสำหรับนักท่องเที่ยวต่างชาติ</p>
-          </a>
-          <a href="/th/life/chinese-phrases/" class="block bg-yellow-50 border border-yellow-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-yellow-800">🈶 ภาษา</span>
-            <p class="text-base font-bold text-gray-900 mt-1">วลีภาษาจีนที่จำเป็นสำหรับนักท่องเที่ยว</p>
-            <p class="text-sm text-gray-600 mt-0.5">ภาษาจีนเพื่อเอาตัวรอดสำหรับนักเดินทาง</p>
-          </a>
-        </div>
-      </div>
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-teal-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-teal-800">ที่พัก</h2>
-          <span class="text-xs font-medium text-teal-800 opacity-60">1 บทความ</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/th/life/china-hotels-guide/" class="block bg-teal-50 border border-teal-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-teal-800">🏨 โรงแรม</span>
-            <p class="text-base font-bold text-gray-900 mt-1">วิธีจองโรงแรมในจีนสำหรับชาวต่างชาติ</p>
-            <p class="text-sm text-gray-600 mt-0.5">จองโรงแรมในจีนในฐานะชาวต่างชาติ — Trip.com นโยบายราคา โยบายแขกต่างชาติ การเช็คอิน และควรพักที่ไหน</p>
-          </a>
-        </div>
-      </div>
-    </div>
+    <ArticleGroups groups={groups} />
 
         <!-- Next Step -->
     <div class="border-t border-gray-100 pt-8 mb-4">

@@ -1,0 +1,329 @@
+---
+import Layout from '@layouts/Layout.astro';
+import FAQPage from '../../../components/FAQPage.astro';
+
+const title = "中国で買うべきもの2026：税還付付きショッピングガイド";
+const description = "2026年に中国で本当に買う価値があるもの — 中国のスキンケア・化粧品、国潮ラベル、電子機器、お茶、シルク、陶磁器、翡翠 — そしてどこで買い、出国時の約9%の税還付を受ける方法。";
+
+const faqs = [
+  {
+    question: "中国で実際に安く買えるのは何？",
+    answer: "中国の化粧品・スキンケア、中国ブランドの電子機器(Huawei、Xiaomi、DJI)、AI メガネやスマートウェアラブル、国潮デザイナーラベル、そしてお茶、シルク、陶磁器、翡翠、景泰藍。海外のファッション、香水、カメラは自国と同じかそれ以上の値段です。"
+  },
+  {
+    question: "中国での買い物には税還付がつく？",
+    answer: "はい、Tax Free(退税商店)の看板を掲げる店で。一店で一日に最低¥200を使い、VAT invoiceを保管し、帰国時に空港で約9%を還付してもらえます。"
+  },
+  {
+    question: "中国で買うべきではないのは何？",
+    answer: "Apple の iPhone や MacBook が最も分かりやすい例です — 中国価格は高く、一部機能が削られているため、税還付では差を埋められません。自国で同じ値段で手に入るものは、無駄な買い物です。"
+  }
+];
+---
+
+<Layout title={title} description={description} lang="ja" type="Article">
+  <nav class="mb-8 not-prose">
+    <a href="/ja/payment/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+      <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+      </svg>
+      支払い関連に戻る
+    </a>
+  </nav>
+
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🛍️ 買い物</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">中国のショッピング：2026年に買う価値があるもの</h1>
+      <p class="text-xl text-gray-600 mb-6">中国が本当に価格で優位な分野、そうでない分野、そして帰国時に約9%を還付してもらう方法。</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 最終更新：2026年10月</span>
+        <span>⏱️ 読了時間：約11分</span>
+      </div>
+    </header>
+
+    <img
+      src="/images/china-shopping/tax-free-sticker.webp"
+      alt="カード端末の脇にある店のカウンターに置かれた、青い Tax Free(退税商店)の看板"
+      width="1080"
+      height="809"
+      class="w-full rounded-2xl mb-10 not-prose"
+    />
+
+    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-red-900 mb-4">⚡ 中国で買う価値があるものは？</h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>ざっくり答えると：</strong> 中国で本当に安い、あるいは自国では手に入りにくい品目に絞りましょう — 中国の化粧品・スキンケア、中国ブランドの電子機器(Huawei、Xiaomi、DJI)、AI メガネやスマートウェラブル、お茶、シルク、陶磁器、翡翠、国潮(グオチャオ)系デザイナーラベル、そして伝統工芸品です。自国と同じ値段で買えるもの — Apple 製品など中国で安くないものを含めて — は避けましょう。<strong>Tax Free(退税商店)</strong>の看板を掲げる店で買い、VAT invoice(增值税发票)を求めてください。そうすれば帰国時に約<strong>9%を還付</strong>してもらえます — 最新の規定は当サイトの<a href="/ja/payment/tax-refund/" class="text-red-700 underline">出国税還付ガイド</a>をご覧ください。</p>
+      <p class="text-lg leading-relaxed text-gray-700">買い物の簡潔な手順はこうです：ここでしか魅力がない数品目を選び、税還付対象の店で買い、帰国時に約9%を受け取る。実際に買う価値があるもの、そしてそれがどこで見つかるかを以下に紹介します。</p>
+    </div>
+
+    <div class="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-2xl p-6 mb-12 not-prose">
+      <p class="text-lg leading-relaxed text-yellow-900"><strong>正直な話：</strong> 中国での買い物が報われるのは限られた分野だけです。観光客がここで買うものの大部分 — 海外ブランドのファッション、香水、カメラ — は自国と同じかそれ以上の値段で、約9%の還付では差を埋めにくいです。中国が本当に優位なのは、輸入品ではなく中国ブランドの分野です。覚悟しておくべきもう二つの摩擦：還付には正式な VAT invoice(增值税发票)が必要で、小さな露店では発行できません。また観光市場では精巧な偽物が売られています。値切りを約束する街の露店ではなく、ブランド店や正規カウンターで買いましょう。</p>
+    </div>
+
+    <h2 id="whats-worth-buying" class="text-3xl font-bold text-gray-900 mb-6 mt-14">中国で買う価値があるものは？</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">中国が価格と品揃えの両面で本当に優位なのは、本質的に5つの分野です。そこでは税還付店も密集しており、書類の手間に見合う還付が得られます。この分野に絞れば、満足のいく戦利品を持ち帰れるでしょう。</p>
+
+    <h3 id="cosmetics-skincare" class="text-2xl font-bold text-gray-900 mb-5 mt-10">化粧品 &amp; スキンケア</h3>
+
+    <img
+      src="/images/china-shopping/maogeping-counter.webp"
+      alt="中国のデパート店内にある MAOGEPING の化粧品カウンター。周囲には他の美容ブランドが並ぶ"
+      width="1080"
+      height="810"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">ここを勘違いする買い物ガイドが多いのですが、<strong>中国の価格優位は中国ブランドにあり、Chanel にはありません</strong>。中国のデパートのカウンターにある Lancôme の美容液には、輸入関税、高級化粧品への15%の消費税、そして13%の VAT が、すべて店頭価格に積み上げられています。だからこそ、ここではパリより高くなるのが普通で、安くはなりません。海外ブランドが本当に安くなるのは免税の場所だけです：海南の離島免税枠(年額¥100,000、旅行あたり化粧品30点まで)と、空港の免税店。そこでは3つの税がすべて除かれます。</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>中国のスキンケアと化粧品 — 本当にお得なのはここ</strong></p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4">国産ブランドは国内市場向けに価格設定され、輸入税がかからず、618 と Double 11 の時期に大幅に値下げします。いくつかは今や、単に安いだけでなく本当に良い品質です：</p>
+    <ul class="list-disc pl-6 space-y-2 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>Proya(珀莱雅)</strong> — ダブル抗エッセンス(双抗精华)とルビーセラムが、誰もが買う二品；一本あたり約¥200〜400。</li>
+      <li><strong>Winona(薇诺娜)</strong> — 敏感肌・反応性の肌に向けて作られた。肌が飛行機を嫌うなら、持ち帰るならこの保湿クリーム。</li>
+      <li><strong>Comfy(可复美)</strong> と Bloomage の <strong>Bio-MESO(润百颜)/ QUADI(夸迪)</strong> — 組換えコラーゲンとヒアルロン酸系。中国が現在リードする分野。</li>
+      <li><strong>Florasis(花西子)</strong> — 彫刻入りリップケースとプレストパウダー。パッケージ自体が土産物。</li>
+      <li><strong>MAOGEPING(毛戈平)</strong> — ハイライトクリームとコントアーパレット；中国のメイクアップアーティストが現場で実際に使っているもの。</li>
+      <li><strong>To Summer(观夏)</strong> — 中国の香りの香水とルームフレグランス、金木犀とお茶と杉。海外にはこれに匹敵するものは売られていない。</li>
+    </ul>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">二つの注意点があります。色の展開は東アジアの肌色に合わせて作られているため、最も濃いファンデーションの色がないことがよくあります。また、美白のうたい文句がこのカテゴリー全体にあふれています — 箱の表ではなく、成分表を読みましょう。</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-4 clear-both"><strong>海外ブランド — 店頭価格ではなく、アジア限定サイズと特典を狙う</strong></p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4">La Mer や SK-II を求めるなら、割り算が合うのは免税の場合だけです。通常のカウンターで探す価値があるのは別のものです：</p>
+    <ul class="list-disc pl-6 space-y-2 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>アジア限定サイズとセット。</strong> ベストセラーの100ml超えバージョン、トラベルキット、欧州や米国には出荷されないデュオパック。</li>
+      <li><strong>旧正月と520限定版。</strong> Chanel、Dior、Estée Lauder はすべて、毎年1月と5月20日頃に中国市場向けのパッケージを発売します。同じ製品、違うボトル、再販なし。</li>
+      <li><strong>実際に太っ腹な購入特典。</strong> デパートの化粧品フロアは、欧州よりはるかに低い購入額の段階でミニサイズや豪華サンプルを配り、2点買って頼めば店員がさらに追加してくれることも。Sephora China も同じ理屈で動きます。</li>
+    </ul>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>どこで買うか：</strong></p>
+    <ul class="list-disc pl-6 space-y-2 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>中国ブランド：</strong> 各ブランドの直営店と Tmall 旗艦店、さらに大都市のモール内カウンター。</li>
+      <li><strong>デパートの化粧品フロア</strong> — Wangfujing(王府井)、Shin Kong Place(新光天地)、Plaza 66(恒隆广场)、MixC(万象城)。フルサイズのテスター、購入特典、そして求めれば VAT invoice(增值税发票)を記入してもらえるのに最適。</li>
+      <li><strong>Sephora(丝芙兰)</strong> — 海外ブランドの品揃えに加え、中国ラベルの壁が広がりつつある。</li>
+      <li><strong>免税：</strong> 海南の離島免税店と、出国時の空港免税店。海外ブランドの価格が自国を実際に下回る唯一の場所。</li>
+    </ul>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>ご自身で確認できるよう、税の計算：</strong> 化粧品は標準的な13%の VAT 区分に属し、出国還付は手数料差し引き後に店頭価格の約9%を戻します — ¥1,000の購入では約¥90が戻り、¥130ではありません。別途、¥10/ml 以上の価格の品には、輸入段階で15%の高級化粧品消費税もかかります。この上乗せ税が、カウンター価格が高く見える理由であり、免税がそれを下回る理由です。</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h3 id="guochao" class="text-2xl font-bold text-gray-900 mb-5 mt-10">国潮(グオチャオ)&amp; デザイン主導の地元ブランド</h3>
+
+    <img
+      src="/images/china-shopping/pop-mart-store.webp"
+      alt="中国のモールにある Pop Mart の店頭。彫刻を施した二本の木を枠に、収集用フィギュアが飾られている"
+      width="940"
+      height="625"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">「Guochao(国潮、国産ブランドの波)」は、公式の「買うべきもの」リストに加わった最新の項目です：2026年9月の記者会見で、商務部は「外国人が今中国で買い物をする主な理由」の筆頭として、国内ブランドのスマート製品とデザイン主導のラベルを挙げました。旗艦スポーツウェアやストリートウェアのラベル、デザイナーのインテリア雑貨や文房具、そして収集用デザイナートイ — Pop Mart 風のフィギュアは、海外での再販市場が活発な中国発ブランドの最も有名な例です。</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">どこで買うか：主要なショッピング街のブランド店(上海の Nanjing East Road(南京东路)や Jing'an(静安)、北京の Wangfujing(王府井)など)や、大きなモールの旗艦コンセプトストア。他のすべてと同じ還付ルール — レジで VAT invoice(增值税发票)を求めましょう。買う前の二つの実用的な確認：多くの地元ラベルは西洋のカットよりサイズが小さめで、製品内蔵の電子機器(充電仕様、アプリの対応地域)が自国の市場と異なる場合があります。</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h3 id="electronics" class="text-2xl font-bold text-gray-900 mb-5 mt-10">中国の電子機器(ただし Apple は避ける)</h3>
+
+    <img
+      src="/images/china-shopping/dji-store.webp"
+      alt="大きな天窓の下、明るい木のテーブルにドローンを並べた DJI の旗艦店の店内"
+      width="1200"
+      height="800"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">本当のお得なのは中国ブランドの旗艦機です — Huawei(Mate XT、Mate X、Pura 70 Ultra)、Xiaomi(15 Ultra、14 シリーズ)、OPPO Find X8 Ultra、Vivo X100 シリーズ、DJI のドローンとジンバル、Honor Magic シリーズ。多くは海外では売っていないか、国内の方が明らかに安く価格設定されています。Sony、Bose、GoPro、Nintendo Switch 関連機器などの海外ブランドも、通常は税還付の対象で、海外よりわずかに安いことが多いです。</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>2026年の新星：</strong> AI メガネ、スマートウェラブル、折りたたみスマホは、商務部が今、外国人の「買うべきもの」として明確に挙げる分野です。折りたたみ旗艦(Huawei Mate XT、Xiaomi MIX)は、他のどこよりも国内の方が安いことが多く、中国ブランドの AI メガネやスマートバンドは自国市場でそもそも発売されていないこともよくあります。注意点は同じです：自国で使えるバンド／通信仕様であることを確認し、買う前に SKU ごとの国際保証を確認しましょう。</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>Apple は避けましょう。</strong> 中国市場向けの iPhone は通常、米国よりわずかに高く、中国版は FaceTime の音声通話も欠けています。これを補う税還付のメリットはありません。MacBook や大半の Canon／Nikon カメラも同様です。</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>どこで買うか：</strong> 主要なモールにはどこにでもブランド旗艦店があります — Huawei、Xiaomi、OPPO、DJI、Dyson はすべて出店しており、外国人旅行者にとって一箇所で済む選択肢です：スタッフはたいてい最低限の英語を話し、VAT invoice(增值税发票)はその場で発行され、ハイエンドモデルには国際保証が付きます(重要なら具体的な SKU を確認を)。常にインボイスを求めましょう — なければ税還付を受けられません。</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>電子機器市場そのものが見どころになる都市：深圳の Huaqiangbei(华强北)。</strong> 世界最大の電子機器街は、外国人買い物客の立ち寄り先として生まれ変わりました — 2025年を通じて一日あたり数千人の外国人客を惹きつけ、大手ブランド(DJI を含む)も今や市場内に旗艦店を構えています。中国語が話せない旅行者にも実際に役立つ、珍しい電子機器市場です：多言語の案内表示、両替カウンター、税還付サポートがすべて整っています。深圳がご予定のルートの近くにあるなら、その対照だけでも見る価値があります — 40年で無から築かれ、真夜中もまだ活気づいている街。<a href="/ja/cities/shenzhen-guide/" class="text-brand-600 hover:underline">深圳旅行ガイド</a>で旅程への組み込み方をご覧ください。</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>ガジェットを購入する前の簡易自己チェック</strong></p>
+    <ul class="list-disc pl-6 space-y-2 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>通信バンド</strong> — 中国市場向けに売られているスマホは、自国のキャリアが使う 4G／5G バンドに対応していない場合があります。購入を決める前に、機種の仕様表を開いて比較しましょう。</li>
+      <li><strong>アプリ &amp; エコシステム</strong> — 中国市場向けのスマホは、Google サービスなしで動くことが多いです。Google アプリ中心の生活なら、必要なアプリ環境が入った端末か確認するか、国際／グローバル版を買いましょう。</li>
+      <li><strong>保証</strong> — 国際カバーはブランドごとではなく SKU ごとなので、実際にどの市場の保証が効くかを確認しましょう。</li>
+    </ul>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">これらは大手ブランドにとって決定的な欠点ではありません — 自国に着いてから、素晴らしい買い物になるか、文鎮(使い物にならない端末)になるかの違いにすぎません。</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h3 id="tea-silk-porcelain-jade" class="text-2xl font-bold text-gray-900 mb-5 mt-10">お茶、シルク、陶磁器、翡翠</h3>
+
+    <img
+      src="/images/china-shopping/jingdezhen-porcelain.webp"
+      alt="景徳鎮の暗い陳列棚に並べられた、手描きの陶磁器の鉢、茶碗、急須"
+      width="474"
+      height="316"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">何世紀も旅行者が本当に「中国製」として持ち帰ってきた品々です。産地の都市が、最も良い品揃えを最も良い価格で提供します：</p>
+    <ul class="list-disc pl-6 space-y-3 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>Tea(茶叶)：</strong> Longjing(龙井)なら杭州、Tieguanyin(铁观音)なら Anxi(Fujian)、Pu'er(普洱)なら Yunnan。良質な茶葉は¥100〜500；一店の合計が¥200(還付のしきい値)を超えれば還付の対象になります。買う前にその店が還付に対応しているか確認を — 多くの茶屋は非対応です。</li>
+      <li><strong>Silk(丝绸)：</strong> Hangzhou、Suzhou。本物のシルクスカーフは約¥100から；掛け布団やガウンはそれ以上に。「100% Silk(真丝)」のラベルを探しましょう。</li>
+      <li><strong>Porcelain(瓷器)：</strong> Jingdezhen(景德镇)は歴史ある中心地で、手描きの工房作品が豊富にあり、選りすぐる価値があります。Guangzhou ももう一つの拠点です。</li>
+      <li><strong>Jade(玉器)：</strong> 翡翠を買うとは、四つの品質 — 質感、透明度、色、彫り(种水色工)— を見極めることを意味し、業界はこの四つすべてを偽ります。大規模チェーン — Caibai(菜百)、Lao Feng Xiang(老凤祥)、Chow Tai Fook(周大福)— で買いましょう。そこなら NGTC 証明書と VAT invoice(增值税发票)を求められます。街の露天商、「抽選」の景品、ガイドが連れて行く店は避けてください。</li>
+    </ul>
+
+    <img
+      src="/images/china-shopping/jade-counter.webp"
+      alt="宝石店のガラスケース内、黒い陳列台の上の翡翠のブレスレット、ペンダント、ビーズネックレス"
+      width="1080"
+      height="720"
+      loading="lazy"
+      class="w-full rounded-2xl mb-6 not-prose"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>還付の注意：</strong> シルク、陶磁器、翡翠、白酒(baijiu)は標準的な13%の VAT 区分に属するため、いつもの約9%が戻ります。<strong>Tea</strong>(食品／農産物)は9%の VAT 区分に入るため、代わりに約6%を受け取ります。詳しい規定と申請手順は、<a href="/ja/payment/tax-refund/" class="text-brand-600 hover:underline">出国税還付ガイド</a>にあります。</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h3 id="spirits-crafts" class="text-2xl font-bold text-gray-900 mb-5 mt-10">酒類、景泰藍(七宝焼)、伝統工芸</h3>
+    <ul class="list-disc pl-6 space-y-3 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>Baijiu(白酒)：</strong> Maotai(茅台；¥1,500〜)、Wuliangye(五粮液)、Luzhou Laojiao(泸州老窖)— 収集品、贈答品、儀礼の定番。税関は大人1人あたり1.5Lを許可。</li>
+      <li><strong>Cloisonné(景泰蓝)：</strong> 北京の特産、¥100〜500、贈り物に最適。</li>
+    </ul>
+
+    <h2 id="where-to-buy" class="text-3xl font-bold text-gray-900 mb-6 mt-14">どこで買うべき？</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4">中国の代表的な買い物相手は一、二箇所で作られており、そこが品揃えと価格の最も良い場所です。旅程がすでに決まっているなら、各滞在地に何が向いているかは以下の通りです：</p>
+    <p class="text-base text-gray-500 mb-4">どの中国の都市がどの品に最適か</p>
+    <div class="overflow-x-auto mb-8 not-prose">
+      <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+        <caption class="sr-only">どの中国の都市がどの品に最適か — 都市別の翡翠、シルク、お茶、陶磁器、電子機器、オーダーメイド仕立て</caption>
+        <thead>
+          <tr class="bg-gray-900 text-white">
+            <th class="px-6 py-4 font-bold">都市</th>
+            <th class="px-6 py-4 font-bold">探すべき地元の特産品</th>
+            <th class="px-6 py-4 font-bold">場所</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">北京</td>
+            <td class="px-6 py-4">翡翠、景泰藍、茅台</td>
+            <td class="px-6 py-4">デパートの宝飾フロアとブランド宝飾店。Panjiayuan(潘家园)は見て回るための場所で、買うためではありません — <a href="/ja/cities/beijing-guide/" class="text-brand-600 hover:underline">北京ガイド</a>を参照</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">上海</td>
+            <td class="px-6 py-4">オーダーメイド仕立て、国潮旗艦店、化粧品</td>
+            <td class="px-6 py-4">Nanjing East Road(南京东路)と Jing'an(静安)；<a href="/ja/cities/shanghai-guide/" class="text-brand-600 hover:underline">上海ガイド</a>を参照</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">深圳</td>
+            <td class="px-6 py-4">電子機器 — 市場そのものが見どころ</td>
+            <td class="px-6 py-4">Huaqiangbei(华强北)；<a href="/ja/cities/shenzhen-guide/" class="text-brand-600 hover:underline">深圳ガイド</a>を参照</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">杭州</td>
+            <td class="px-6 py-4">Longjing tea(龙井)、シルク</td>
+            <td class="px-6 py-4">West Lake(西湖)沿いの茶館；旧市街のシルク市場</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">蘇州</td>
+            <td class="px-6 py-4">シルク、蘇州刺繍(苏绣)</td>
+            <td class="px-6 py-4">Guanqianjie(观前街)周辺の店；「100% Silk(真丝)」のラベルを探して</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">景徳鎮</td>
+            <td class="px-6 py-4">陶磁器 — 歴史ある中心地</td>
+            <td class="px-6 py-4">陶器の露店市場</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">雲南</td>
+            <td class="px-6 py-4">普洱茶</td>
+            <td class="px-6 py-4">昆明と大理の専門茶店</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">一つの目安：産地で買えば、同じ値段でより良い品質が手に入ります — そして一店あたり¥200の税還付しきい値は、その品目が地元産業である場所ほど越えやすくなります。上にまだ都市ガイドへのリンクがなくても、準備中です；地元で買うという理屈はどこでも変わりません。</p>
+
+    <h2 id="tax-refund-shops" class="text-3xl font-bold text-gray-900 mb-6 mt-14">中国の税還付店はどこにある？</h2>
+
+    <img
+      src="/images/china-shopping/airport-tax-refund.webp"
+      alt="CZBANK のブランド表示と Welcome の看板がある、中国の空港の出国税還付カウンター"
+      width="585"
+      height="439"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">北京、上海、深圳、広州、成都、杭州、蘇州の主要なモールに入れば、店の約半数が入り口やレジ近くに「Tax Free」(退税商店)の看板を掲げています。実際に最も確実に目印が付くのは、まさに予想通りの分野です：化粧品、電子機器、ファッション、お茶、シルク、陶磁器、翡翠、工芸品。</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">通常、この看板がないもの：コンビニ、スーパー、ネット専門販売(Taobao／JD／Pinduoduo)、街の露店、偽物市場、そして大半の小さな独立店。夜市は軽食と雰囲気には最適ですが、還付対象の高額品を買う場所<em>ではありません</em>。</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">近くの特定の店を見つけるには、Alipay または WeChat のミニプログラム「Departure Tax Refund」(离境退税)を検索しましょう — 地図上に還付対象の近隣店舗や、現在の営業時間、対応する還付方法が表示されます。</p>
+
+    <h2 id="customs-limits" class="text-3xl font-bold text-gray-900 mb-6 mt-14">中国の税関の制限は？</h2>
+    <ul class="list-disc pl-6 space-y-3 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>酒類：</strong> 1.5リットル(蒸留酒)が免税；それ以上は申告。</li>
+      <li><strong>たばこ：</strong> 400本(2カートン)が免税。</li>
+      <li><strong>一般物品：</strong> 個人使用の¥5,000免税枠が一般的なしきい値 — 散財する前に最新の規定を確認を。</li>
+    </ul>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="faq" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">❓ Frequently Asked Questions</h2>
+    <div class="space-y-6 mb-8 not-prose">
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">中国で実際に安く買えるのは何？</h3>
+        <p class="text-gray-700">中国の化粧品・スキンケア、中国ブランドの電子機器(Huawei、Xiaomi、DJI)、AI メガネやスマートウェラブル、国潮デザイナーラベル、そしてお茶、シルク、陶磁器、翡翠、景泰藍。海外のファッション、香水、カメラは自国と同じかそれ以上の値段です。</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">中国での買い物には税還付がつく？</h3>
+        <p class="text-gray-700">はい、Tax Free(退税商店)の看板を掲げる店で。一店で一日に最低¥200を使い、VAT invoiceを保管し、帰国時に空港で約9%を還付してもらえます。</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">中国で買うべきではないのは何？</h3>
+        <p class="text-gray-700">Apple の iPhone や MacBook が最も分かりやすい例です — 中国価格は高く、一部機能が削られているため、税還付では差を埋められません。自国で同じ値段で手に入るものは、無駄な買い物です。</p>
+      </div>
+    </div>
+
+    <div class="not-prose mt-12 pt-8 border-t border-gray-200">
+      <h3 class="text-base font-bold text-gray-900 mb-4 flex items-center gap-2">📚 Sources</h3>
+      <ul class="space-y-3">
+        <li>
+          <a href="https://www.mofcom.gov.cn/xwfbzt/2026/swbzklxxwfbh2026n9y3r/index.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">商務部記者会見、2026年9月3日 — 国潮ブランドとスマート製品が外国人の「買うべきもの」リストに；上海のオーダーメイドは顧客の50%以上が外国人</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.globaltimes.cn/page/202512/1350012.shtml" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">Global Times — 離境退税の申請が最初の11か月で285%急増(全国で12,252店の税還付店)</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="border-t border-gray-100 pt-6 mt-8">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5 not-prose">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h3 class="text-sm font-bold text-gray-900">📚 Next Reads</h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="/ja/payment/tax-refund/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              中国の出国税還付
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ja/payment/payment-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              中国での支払い方法
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ja/payment/china-travel-budget/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              中国旅行の費用2026
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ja/visa/customs-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              中国税関規制
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <FAQPage items={faqs} />
+</Layout>

@@ -2,6 +2,29 @@
 import Layout from '@layouts/Layout.astro';
 const title = '중국 여행 준비 — 입국 & 설정 가이드';
 const description = '중국 여행 전 준비해야 할 모든 것.';
+import SectionStats from '../../../components/SectionStats.astro';
+import ArticleGroups from '../../../components/ArticleGroups.astro';
+import { STATS, GROUPS, ITEMS, COUNT, COUNT_SINGULAR, type Lang } from '../../../data/visa';
+
+const lang: Lang = 'ko';
+
+const stats = STATS.map((s) => ({ value: s.value, color: s.color, label: s.label[lang] }));
+
+const groups = GROUPS.map((g, gi) => {
+  const items = ITEMS.filter((i) => i.group === gi);
+  return {
+    color: g.color,
+    title: g.name[lang],
+    countText: (items.length === 1 ? COUNT_SINGULAR[lang] : COUNT[lang]).replace('{n}', String(items.length)),
+    items: items.map((i) => ({
+      href: `/${lang}/visa/${i.slug}/`,
+      tag: i.tag[lang],
+      title: i.title[lang],
+      desc: i.desc[lang],
+    })),
+  };
+});
+
 ---
 
 <Layout title={title} description={description} lang="ko">
@@ -80,79 +103,10 @@ const description = '중국 여행 전 준비해야 할 모든 것.';
     
 
 <!-- Quick Stats -->
-    <div class="grid grid-cols-2 gap-3 mb-12 not-prose">
-      <div class="bg-green-50 border border-green-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-green-800">5</p>
-        <p class="text-xs font-semibold text-green-800 uppercase tracking-wide mt-1">비자 및 입국</p>
-      </div>
-      <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-amber-800">4</p>
-        <p class="text-xs font-semibold text-amber-800 uppercase tracking-wide mt-1">출국 전</p>
-      </div>
-    </div>
+    <SectionStats stats={stats} />
 
     <!-- Category Sections -->
-    <div class="space-y-8 mb-16 not-prose">
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-green-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-green-800">비자 및 입국</h2>
-          <span class="text-xs font-medium text-green-800 opacity-60">5개 문서</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/ko/visa/visa-guide/" class="block bg-green-50 border border-green-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-green-800">📖 개요</span>
-            <p class="text-base font-bold text-gray-900 mt-1">중국 비자 종류 완벽 가이드</p>
-            <p class="text-sm text-gray-600 mt-0.5">모든 비자 옵션 설명 — 무비자, 환승, L비자 비교.</p>
-          </a>
-          <a href="/ko/visa/visa-free/" class="block bg-green-50 border border-green-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-green-800">📋 목록</span>
-            <p class="text-base font-bold text-gray-900 mt-1">중국 무비자 국가 목록</p>
-            <p class="text-sm text-gray-600 mt-0.5">50개국이 최대 30일간 비자 없이 입국 가능합니다.</p>
-          </a>
-          <a href="/ko/visa/transit-240/" class="block bg-green-50 border border-green-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-green-800">✈️ 환승</span>
-            <p class="text-base font-bold text-gray-900 mt-1">240시간 무비자 환승</p>
-            <p class="text-sm text-gray-600 mt-0.5">57개국 대상 — 비자 없이 최대 10일 체류 가능.</p>
-          </a>
-          <a href="/ko/visa/mutual-agreement/" class="block bg-green-50 border border-green-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-green-800">🤝 상호 협정</span>
-            <p class="text-base font-bold text-gray-900 mt-1">상호 무비자 협정</p>
-            <p class="text-sm text-gray-600 mt-0.5">29개국이 중국과 상호 비자 면제 협정을 체결했습니다.</p>
-          </a>
-          <a href="/ko/visa/apply-l-visa/" class="block bg-green-50 border border-green-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-green-800">📝 신청</span>
-            <p class="text-base font-bold text-gray-900 mt-1">중국 관광 비자 신청 방법</p>
-            <p class="text-sm text-gray-600 mt-0.5">단계별 가이드 — 서류, COVA 신청서, 수수료, 팁.</p>
-          </a>
-        </div>
-      </div>
-      
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-amber-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-amber-800">출국 전</h2>
-          <span class="text-xs font-medium text-amber-800 opacity-60">4개 문서</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/ko/visa/customs-guide/" class="block bg-amber-50 border border-amber-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-amber-800">🛃 규정</span>
-            <p class="text-base font-bold text-gray-900 mt-1">중국 세관 규정</p>
-            <p class="text-sm text-gray-600 mt-0.5">면세 한도, 금지 품목, 신고해야 할 물품.</p>
-          </a>
-          <a href="/ko/visa/arrival-card/" class="block bg-amber-50 border border-amber-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-amber-800">📄 입국 카드</span>
-            <p class="text-base font-bold text-gray-900 mt-1">온라인 입국 카드 제출하기</p>
-            <p class="text-sm text-gray-600 mt-0.5">출국 전 NIA 입국 카드 작성 방법 — 스크린샷과 함께 단계별 안내.</p>
-          </a>
-          <a href="/ko/visa/first-time-china/" class="block bg-amber-50 border border-amber-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-amber-800">🌟 첫 방문</span>
-            <p class="text-base font-bold text-gray-900 mt-1">첫 중국 방문</p>
-            <p class="text-sm text-gray-600 mt-0.5">전체 타임라인 — 비자, 디지털 설정, 준비물, 도착, 첫 24시간.</p>
-          </a>
-        </div>
-      </div>
-    </div>
+    <ArticleGroups groups={groups} />
 
     <!-- 다음 단계 -->
     <div class="border-t border-gray-100 pt-8 mb-4">

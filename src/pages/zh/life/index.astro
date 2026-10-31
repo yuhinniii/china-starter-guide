@@ -2,6 +2,29 @@
 import Layout from '@layouts/Layout.astro';
 const title = '中国生活指南 — 旅行贴士与攻略';
 const description = '来中国旅行必备的生活指南：看病就医、SIM 卡和网络、安全贴士、常用 App 和紧急联系方式，让你的旅途更安心。';
+import SectionStats from '../../../components/SectionStats.astro';
+import ArticleGroups from '../../../components/ArticleGroups.astro';
+import { STATS, GROUPS, ITEMS, COUNT, COUNT_SINGULAR, type Lang } from '../../../data/life';
+
+const lang: Lang = 'zh';
+
+const stats = STATS.map((s) => ({ value: s.value, color: s.color, label: s.label[lang] }));
+
+const groups = GROUPS.map((g, gi) => {
+  const items = ITEMS.filter((i) => i.group === gi);
+  return {
+    color: g.color,
+    title: g.name[lang],
+    countText: (items.length === 1 ? COUNT_SINGULAR[lang] : COUNT[lang]).replace('{n}', String(items.length)),
+    items: items.map((i) => ({
+      href: `/${lang}/life/${i.slug}/`,
+      tag: i.tag[lang],
+      title: i.title[lang],
+      desc: i.desc[lang],
+    })),
+  };
+});
+
 ---
 
 <Layout title={title} description={description} lang="zh">
@@ -14,142 +37,10 @@ const description = '来中国旅行必备的生活指南：看病就医、SIM �
     </header>
 
     <!-- Quick Stats -->
-    <div class="grid grid-cols-2 md:grid-cols-5 gap-3 mb-12 not-prose">
-      <div class="bg-purple-50 border border-purple-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-purple-800">3</p>
-        <p class="text-xs font-semibold text-purple-800 uppercase tracking-wide mt-1">网络与 App</p>
-      </div>
-      <div class="bg-cyan-50 border border-cyan-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-cyan-800">3</p>
-        <p class="text-xs font-semibold text-cyan-800 uppercase tracking-wide mt-1">健康与医疗</p>
-      </div>
-      <div class="bg-red-50 border border-red-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-red-800">3</p>
-        <p class="text-xs font-semibold text-red-800 uppercase tracking-wide mt-1">安全与应急</p>
-      </div>
-      <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-yellow-800">3</p>
-        <p class="text-xs font-semibold text-yellow-800 uppercase tracking-wide mt-1">文化与必备</p>
-      </div>
-      <div class="bg-teal-50 border border-teal-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-teal-800">1</p>
-        <p class="text-xs font-semibold text-teal-800 uppercase tracking-wide mt-1">住宿</p>
-      </div>
-    </div>
+    <SectionStats stats={stats} />
 
     <!-- Category Sections -->
-    <div class="space-y-8 mb-16 not-prose">
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-purple-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-purple-800">通信与网络</h2>
-          <span class="text-xs font-medium text-purple-800 opacity-60">3 篇</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/zh/life/sim-card-guide/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-purple-800">📶 上网</span>
-            <p class="text-base font-bold text-gray-900 mt-1">SIM 卡与 eSIM 选卡攻略</p>
-            <p class="text-sm text-gray-600 mt-0.5">对比 eSIM 运营商、机场购卡和数据套餐。</p>
-          </a>
-          <a href="/zh/life/vpn-guide/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-purple-800">🔒 VPN</span>
-            <p class="text-base font-bold text-gray-900 mt-1">中国旅行 VPN 推荐</p>
-            <p class="text-sm text-gray-600 mt-0.5">哪些能用、怎么设置、为什么出发前就要准备好。</p>
-          </a>
-          <a href="/zh/life/essential-apps/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-purple-800">📱 App</span>
-            <p class="text-base font-bold text-gray-900 mt-1">中国旅行必备 10 个 App</p>
-            <p class="text-sm text-gray-600 mt-0.5">支付、出行、翻译、探索一应俱全。</p>
-          </a>
-        </div>
-      </div>
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-cyan-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-cyan-800">健康与医疗</h2>
-          <span class="text-xs font-medium text-cyan-800 opacity-60">3 篇</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/zh/life/seeing-a-doctor/" class="block bg-cyan-50 border border-cyan-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-cyan-800">⚕️ 就医</span>
-            <p class="text-base font-bold text-gray-900 mt-1">在中国看病指南</p>
-            <p class="text-sm text-gray-600 mt-0.5">药店、诊所还是医院？教你如何选择。</p>
-          </a>
-          <a href="/zh/life/top-hospitals/" class="block bg-cyan-50 border border-cyan-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-cyan-800">🏥 医院</span>
-            <p class="text-base font-bold text-gray-900 mt-1">优质国际部医院推荐</p>
-            <p class="text-sm text-gray-600 mt-0.5">配备英文医护人员的优质医院，按城市分类。</p>
-          </a>
-          <a href="/zh/life/travel-insurance/" class="block bg-cyan-50 border border-cyan-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-cyan-800">🛡️ 保险</span>
-            <p class="text-base font-bold text-gray-900 mt-1">中国旅行保险须知</p>
-            <p class="text-sm text-gray-600 mt-0.5">关于旅行保险你需要知道的事。</p>
-          </a>
-        </div>
-      </div>
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-red-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-red-800">安全与应急</h2>
-          <span class="text-xs font-medium text-red-800 opacity-60">3 篇</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/zh/life/is-china-safe/" class="block bg-red-50 border border-red-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-red-800">🛡️ 安全</span>
-            <p class="text-base font-bold text-gray-900 mt-1">去中国旅行安全吗？</p>
-            <p class="text-sm text-gray-600 mt-0.5">关于安全、犯罪率和注意事项的实话实说。</p>
-          </a>
-          <a href="/zh/life/common-scams/" class="block bg-red-50 border border-red-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-red-800">⚠️ 骗局</span>
-            <p class="text-base font-bold text-gray-900 mt-1">中国常见骗局与防范</p>
-            <p class="text-sm text-gray-600 mt-0.5">识别并避开最常见的旅游陷阱。</p>
-          </a>
-          <a href="/zh/life/emergency-numbers/" class="block bg-red-50 border border-red-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-red-800">🆘 紧急</span>
-            <p class="text-base font-bold text-gray-900 mt-1">紧急联系电话与应对指南</p>
-            <p class="text-sm text-gray-600 mt-0.5">必备联系方式和分步应急处理指南。</p>
-          </a>
-        </div>
-      </div>
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-yellow-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-yellow-800">文化与必备</h2>
-          <span class="text-xs font-medium text-yellow-800 opacity-60">4 篇</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/zh/life/packing-guide/" class="block bg-yellow-50 border border-yellow-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-yellow-800">🧳 打包</span>
-            <p class="text-base font-bold text-gray-900 mt-1">去中国该带什么</p>
-            <p class="text-sm text-gray-600 mt-0.5">适合四季的实用打包清单。</p>
-          </a>
-          <a href="/zh/life/cultural-taboos/" class="block bg-yellow-50 border border-yellow-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-yellow-800">🙏 礼仪</span>
-            <p class="text-base font-bold text-gray-900 mt-1">中国文化礼仪须知</p>
-            <p class="text-sm text-gray-600 mt-0.5">外国游客必读的文化礼仪指南。</p>
-          </a>
-          <a href="/zh/life/chinese-phrases/" class="block bg-yellow-50 border border-yellow-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-yellow-800">🈶 语言</span>
-            <p class="text-base font-bold text-gray-900 mt-1">旅行必备中文用语</p>
-            <p class="text-sm text-gray-600 mt-0.5">游客实用中文短语。</p>
-          </a>
-        </div>
-      </div>
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-teal-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-teal-800">住宿</h2>
-          <span class="text-xs font-medium text-teal-800 opacity-60">1 篇</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/zh/life/china-hotels-guide/" class="block bg-teal-50 border border-teal-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-teal-800">🏨 酒店</span>
-            <p class="text-base font-bold text-gray-900 mt-1">外国人如何在中国预订酒店</p>
-            <p class="text-sm text-gray-600 mt-0.5">外国人在中国订酒店——Trip.com、酒店价格、接待外宾政策、入住流程，以及住哪里。</p>
-          </a>
-        </div>
-      </div>
-    </div>
+    <ArticleGroups groups={groups} />
 
         <!-- Next Step -->
     <div class="border-t border-gray-100 pt-8 mb-4">

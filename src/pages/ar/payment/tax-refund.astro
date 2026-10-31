@@ -1,0 +1,308 @@
+---
+import Layout from '@layouts/Layout.astro';
+import FAQPage from '../../../components/FAQPage.astro';
+
+const title = "استرداد ضريبة مغادرة الصين 2026: كيف تحصل على 9% عائداً";
+const description = "استرداد ضريبة مغادرة الصين في 2026: عتبة ¥200، والوثائق الثلاث التي تحتاجها، وحد 90 يومًا، وكيفية عمل فحص الجمارك في المطار فعلياً.";
+
+const faqs = [
+  {
+    question: "كم أحتاج أن أنفق للمطالبة باسترداد الضريبة في الصين؟",
+    answer: "ما لا يقل عن ¥200 في متجر استرداد ضريبة واحد في يوم واحد. اطلب استمارة طلب الاسترداد (离境退税申请单) وفاتورة ضريبة القيمة المضافة العادية (增值税普通发票) عند الصندوق، واحتفظ بهما معاً — فلا يمكن إنجاز الاسترداد بدونهما."
+  },
+  {
+    question: "هل أحتاج جواز سفري للمطالبة بالاسترداد؟",
+    answer: "نعم، ويجب أن يكون جواز السفر الفعلي الذي دخلت به الصين. تُكتب استمارة طلب الاسترداد بنوع جواز سفرك ورقمه، وتتحقق الجمارك من الوثيقة مقابل الشخص أمامها. ولا تُقبل صور الهاتف والنسخ المصورة."
+  },
+  {
+    question: "كم مقدار المال الذي يعود إليك فعلاً؟",
+    answer: "نحو 9% على معظم السلع ونحو 6% على السلع ذات المعدل المخفض. والنسب الاسمية هي 11% و8%، ناقصاً نحو 2% تتقاضاها وكالة الاسترداد. وعلى عملية شراء بـ ¥10,000 يعود إليك نحو ¥900، لا ¥1,100."
+  },
+  {
+    question: "هل يمكنني الحصول على الاسترداد نقداً في المطار؟",
+    answer: "نعم، حتى ¥20,000 لكل طلب في كاونتر الاسترداد داخل منطقة المغادرة. وأي مبلغ أعلى يُدفع بتحويل بنكي. وبعض المتاجر ونقاط الاسترداد في المدن تدفع أيضاً في الموقع ضمن نظام الاسترداد الفوري عند الشراء (即买即退)."
+  },
+  {
+    question: "هل أحتاج إحضار السلع معي في المطار؟",
+    answer: "للطلبات المفحوصة عشوائياً، نعم. تُسحب الطلبات التي تقل قيمة مبيعاتها عن ¥10,000 عشوائياً منذ يوليو 2026؛ فإذا لم يُسحب طلبك تتجاوز الفحص. احتفظ بالسلع المؤهلة للاسترداد في حقيبتك المحمولة أو فوق حقيبتك المسجلة حتى تتجاوز الجمارك."
+  }
+];
+---
+
+<Layout title={title} description={description} lang="ar" type="Article">
+  <nav class="mb-8 not-prose">
+    <a href="/ar/payment/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+      <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+      </svg>
+      العودة إلى الدفع
+    </a>
+  </nav>
+
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">💳 الدفع</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">استرداد ضريبة مغادرة الصين: كيف تحصل على ~9% عائداً عند المغادرة</h1>
+      <p class="text-xl text-gray-600 mb-6">عتبة ¥200، والوثائق الثلاث التي تحتاجها، وكيفية إتمام الاسترداد عبر المطار دون تضييع وقت طويل.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 آخر تحديث: أكتوبر 2026</span>
+        <span>⏱️ 8 دقائق</span>
+      </div>
+    </header>
+
+    <img
+      src="/images/tax-refund/tax-refund-flow.webp"
+      alt="مخطط انسيابي لعملية استرداد ضريبة مغادرة الصين: الشراء من متجر معفى من الضرائب، والحصول على استمارة طلب الاسترداد وفاتورة ضريبة القيمة المضافة، ثم التحقق الجمركي، ثم جمع الاسترداد"
+      width="1080"
+      height="606"
+      class="w-full rounded-2xl mb-10 not-prose"
+    />
+
+    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-red-900 mb-4">⚡ هل يمكن للسياح استرداد الضريبة في الصين؟</h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>إجابة سريعة:</strong> نعم. أنفق ما لا يقل عن <strong>¥200</strong> في متجر واحد يعرض لافتة <strong>Tax Free (退税商店)</strong>، ويمكنك المطالبة بنحو <strong>9% عائداً</strong> على معظم السلع عند مغادرة الصين، أو نحو <strong>6%</strong> على السلع ذات المعدل المخفض. تحتاج ثلاثة أمور: <strong>استمارة طلب الاسترداد</strong> (离境退税申请单)، و<strong>فاتورة ضريبة القيمة المضافة العادية</strong> (增值税普通发票)، و<strong>جواز سفرك</strong> — الفعلي الذي دخلت به. طالِب عند المطار عند الخروج، أو في الموقع في كاونتر الاسترداد الفوري عند الشراء (即买即退) في المدينة. ويجب أن تغادر السلع الصين خلال <strong>90 يومًا</strong> من الشراء. راجع <a href="/ar/payment/china-shopping/" class="text-red-700 underline">دليل التسوق في الصين</a> لمعرفة ما الذي يستحق الشراء فعلاً.</p>
+      <p class="text-lg leading-relaxed text-gray-700">ينطبق الاسترداد على الأغراض الشخصية التي تأخذها إلى بلدك: مستحضرات التجميل، والإلكترونيات، والملابس، والشاي، والحرير، والخزف، واليشم، والحرف. ولا ينطبق على أي شيء تستهلكه في الصين، أو على الخدمات، أو على السلع المدرجة في قائمة المحظورات والمقيدات.</p>
+    </div>
+
+    <div class="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-2xl p-6 mb-12 not-prose">
+      <p class="text-lg leading-relaxed text-yellow-900"><strong>النسخة الصريحة:</strong> هذا إعادة مبلغ، لا خصم — تدفع السعر الكامل شاملاً الضريبة عند الصندوق وتسترد جزءاً منه لاحقاً. فعلى قميص ومغناطيس ثلاجة لا يستحق الانتظار في الطابور: تحتاج ¥200 في متجر واحد في يوم واحد قبل أن يصبح أي شيء قابلاً للمطالبة، وبداية الساعة لـ 90 يوماً تبدأ عند الشراء، وتحتفظ الوكالة بنحو 2% مما تستحقه. أما على حاسوب محمول، أو ساعة، أو زوج أحذية، أو حقيبة يد، فهو أسهل 9% في السفر — ما دمت لا تسجّل الحقيبة قبل أن تنظر الجمارك في السلع.</p>
+    </div>
+
+    <h2 id="rules" class="text-3xl font-bold text-gray-900 mb-6 mt-14">ما هي قواعد استرداد ضريبة مغادرة الصين؟</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4">يُسمى النظام <em>lí jìng tuì shuì</em> (离境退税) — حرفياً «استرداد الضريبة عند مغادرة البلاد». فيعيد ضريبة القيمة المضافة التي دفعتها على سلع اشتريتها من متاجر معفاة مسجلة، متى غادرت تلك السلع الصين معك. ويبدو المعدل الرئيسي سخياً؛ لكن ما تحصل عليه فعلياً أقل قليلاً.</p>
+    <p class="text-base text-gray-500 mb-4">قواعد استرداد ضريبة مغادرة الصين في لمحة، 2026</p>
+    <div class="overflow-x-auto mb-8 not-prose">
+      <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+        <caption class="sr-only">قواعد استرداد ضريبة مغادرة الصين في 2026 — الحد الأدنى للإنفاق، ومعدلات الاسترداد، والأهلية، ووثيقة الهوية، والمهلة الزمنية، وحد النقد، والمعالجة بلا ورق، والاسترداد الفوري عند الشراء</caption>
+        <thead>
+          <tr class="bg-gray-900 text-white">
+            <th class="px-6 py-4 font-bold">القاعدة</th>
+            <th class="px-6 py-4 font-bold">التفاصيل</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">الحد الأدنى للإنفاق</td>
+            <td class="px-6 py-4">¥200 في متجر واحد، في يوم واحد. ليس ¥200 عبر رحلة تسوق — متجر واحد.</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">معدل الاسترداد</td>
+            <td class="px-6 py-4">11% على السلع في شريحة ضريبة القيمة المضافة 13%، و8% على شريحة 9%. بعد رسوم الوكالة ~2% تجني نحو <strong>9%</strong> أو <strong>6%</strong>.</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">من يستحق</td>
+            <td class="px-6 py-4">غير المقيمين الذين أمضوا في الصين القارية 183 يومًا أو أقل: حاملو جوازات السفر الأجنبية، بالإضافة إلى سكان هونغ كونغ وماكاو وتايوان.</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">وثيقة الهوية</td>
+            <td class="px-6 py-4"><strong>جواز سفرك</strong> — نفس الذي دخلت به. تُكتب استمارة الاسترداد بنوعه ورقمه، وتُفحص عند كل كاونتر.</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">المهلة الزمنية</td>
+            <td class="px-6 py-4">غادر الصين خلال <strong>90 يومًا</strong> من تاريخ الشراء. وإذا أخذت المال مقدماً مع الاسترداد الفوري عند الشراء (即买即退)، فلديك 28 يومًا.</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">حد النقد</td>
+            <td class="px-6 py-4">حتى ¥20,000 نقداً لكل طلب في المطار. فوق ذلك، حوالة بنكية.</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">الأوراق منذ يوليو 2026</td>
+            <td class="px-6 py-4">رقمية بالكامل. تستخرج الجمارك والوكالة استمارتك والفاتورة من النظام — لكن احتفظ بالورقة على أي حال، لأن الكوات لا تزال تطلبها.</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">الفحوص العشوائية منذ يوليو 2026</td>
+            <td class="px-6 py-4">تُسحب الطلبات التي تقل قيمة مبيعاتها عن ¥10,000 عشوائياً لفحص مادي. وإذا لم يُسحب طلبك، تتجاوز فحص السلع في المطار تماماً.</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">الاسترداد الفوري عند الشراء</td>
+            <td class="px-6 py-4">"即买即退" — تُحصّل في المتجر أو نقطة استرداد بالمدينة مقابل تفويض بطاقة ائتمان. وتعمل المطالبات عبر المدن (الشراء في مدينة والمغادرة من أخرى) على مستوى البلاد منذ 1 سبتمبر 2026.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <img
+      src="/images/tax-refund/refund-application-form.webp"
+      alt="استمارة طلب الاسترداد لزوار ما وراء البحار، تظهر حقول نوع جواز السفر ورقمه، وأرقام الفواتير، والسلع، ومعدل الاسترداد 11% وصندوق التحقق الجمركي"
+      width="1080"
+      height="607"
+      loading="lazy"
+      class="w-full rounded-2xl mb-4 not-prose"
+    />
+    <p class="text-sm text-gray-500 mb-8">استمارة طلب الاسترداد هي المكان الذي يُدوَّن فيه رقم جواز سفرك. وكل ما بعد هذه النقطة — الجمارك، والوكالة، والبنك — مرتبط بذلك الرقم.</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="how-much" class="text-3xl font-bold text-gray-900 mb-6 mt-14">كم مقدار المال الذي يعود إليك فعلاً؟</h2>
+
+    <img
+      src="/images/tax-refund/vat-invoice.webp"
+      alt="فاتورة ضريبة القيمة المضافة العادية الصينية تظهر بنود الأصناف، وعمود نسبة الضريبة 13% والمبلغ الإجمالي شاملاً الضريبة في الأسفل"
+      width="1000"
+      height="635"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">إن نسبتي 11% و8% في القواعد هما المعدلان <em>الاسميان</em> اللذان تضعهما السياسة، لا ما يصل إلى حسابك. وتقتطع وكالة الاسترداد رسوم معالجة بنحو 2% من مبلغ الفاتورة من الأعلى، ولهذا يقول كل دليل «نحو 9%».</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">احسبها في بند واحد. حاسوب محمول بـ ¥10,000، مشترى من متجر معفى، يقع في شريحة ضريبة القيمة المضافة 13%: الاسترداد الاسمي 11%، أي ¥1,100، ناقصاً نحو ¥200 من رسوم الوكالة — فيعود إليك نحو <strong>¥900</strong>. ويسترد صنف بـ ¥1,000 نحو ¥90. وتحت عتبة ¥200 لكل متجر في يوم واحد، تكون الإجابة ¥0.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">تتصرف السلع ذات المعدل المخفض بشكل مختلف. الشاي مثلاً يقع في شريحة ضريبة القيمة المضافة 9%: المعدل الاسمي 8% وتجني نحو 6%. فإذا كان غنيمتك ثقيلة بالشاي وخفيفة بالإلكترونيات، ضع الاسترداد عند 6%، لا 9%.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">حد بنيوي يستحق المعرفة قبل أن تخطط لرحلة تسوق حول هذا: الاسترداد يعيد ضريبة القيمة المضافة، وضريبة القيمة المضافة لم تكن يوماً السبب الرئيسي لغلاء السلع الفاخرة المستوردة في الصين. فإذا كان حقيبة يد أغلى هنا مما في باريس، فنادراً ما يسد 9% عائداً الفجوة. والمكان الذي يغيّر فيه الاسترداد الحساب فعلياً هو السلع المصنوعة في الصين وأي شيء كنت ستشتريه على أي حال — راجع <a href="/ar/payment/china-shopping/" class="text-brand-600 hover:underline">دليل التسوق</a> لمعرفة أي الفئات هي.</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6 clear-both"><strong>الفاتورة هي الجزء الذي يخطئه الناس.</strong> تحتاج فاتورة <em>ضريبة القيمة المضافة العادية</em> (增值税普通发票) محررة ببياناتك، لا إيصال صندوق، ولا ملاحظة مكتوبة بخط اليد، ولا صورة منها. وكثير من الأكشاك الصغيرة لا تستطيع إصدارها أصلاً، وهو السبب الحقيقي لعدم أهلية صفقات السوق للاسترداد أبداً.</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="how-to-claim" class="text-3xl font-bold text-gray-900 mb-6 mt-14">كيف تطالب بالاسترداد في المطار؟</h2>
+
+    <img
+      src="/images/tax-refund/customs-verification.webp"
+      alt="كاونتر التحقق الجمركي عند مخرج مطار صيني، موقّع 离境退税 海关验核 / Departure Tax Refund Customs Verification، مع مسافرين في طابور"
+      width="600"
+      height="398"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>المسار أ — المطار، لا يزال الطريق الأكثر شيوعاً.</strong> ثلاث محطات، بهذا الترتيب: المتجر، الجمارك، كاونتر الاسترداد. افعل كل ذلك <em>قبل</em> تسجيل حقيبتك.</p>
+
+    <ol class="list-decimal pl-6 space-y-3 text-lg leading-relaxed text-gray-700 mb-6 clear-both">
+      <li><strong>في المتجر — اجمع الأوراق.</strong> اطلب استمارة طلب الاسترداد (离境退税申请单) وفاتورة ضريبة القيمة المضافة العادية (增值税普通发票). يملأ المتجر الاستمارة بنوع جواز سفرك ورقمه وتاريخ الدخول، لذا سلّم جواز السفر الفعلي — فهم بحاجة إلى قراءة الرقم منه. وتحقق من أن رقم جواز السفر على الاستمارة يطابق جوازك، حرفاً بحرف؛ فرقم مكتوب خطأً يُرجعك عند المطار، ولن تكون في تلك المدينة لإصلاحه.</li>
+      <li><strong>في المطار، قبل تسجيل الدخول — التحقق الجمركي (海关验核).</strong> خذ السلع، وجواز سفرك، والاستمارة، والفاتورة إلى مكتب الجمارك. ومنذ يوليو 2026، تُفحص الطلبات التي تقل قيمة مبيعاتها عن ¥10,000 عشوائياً: فإذا لم يُسحب طلبك، يمكنك تخطي هذه الخطوة والتوجه مباشرة إلى كاونتر الاسترداد. وإذا سُحب، يريد الموظف رؤية السلع نفسها، فلا تحزمها في الحقيبة المسجلة.</li>
+      <li><strong>في كاونتر الاسترداد، داخل منطقة المغادرة — اجمع المال.</strong> أظهر نفس جواز السفر في كاونتر وكالة الاسترداد (退税代理机构). نقداً حتى ¥20,000، وتحويل بنكي فوق ذلك. ويُصرف الاسترداد باليوان، فإما أن تنفقه في منطقة المغادرة أو تقبل بسعر التحويل الذي يمنحك إياه بنكك.</li>
+    </ol>
+
+    <img
+      src="/images/tax-refund/instant-refund-point.webp"
+      alt="لافتة لنقطة استرداد فوري في بكين — TAX REFUND (离境退税)، Instant Refund Service (即买即退集中退付点)، خدمة بكين المتكاملة"
+      width="800"
+      height="503"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>المسار ب — الاسترداد الفوري عند الشراء (即买即退).</strong> إذا كان المتجر يقدمه، أو كنت قرب نقطة استرداد في المدينة، فتجمع المال قبل مغادرة البلدة. يدفع المتجر لك فوراً ويأخذ تفويض بطاقة ائتمان كضمان بأن السلع تغادر الصين فعلاً؛ فيُطلق التفويض بمجرد أن تؤكد الجمارك الخروج. ويعمل عبر المدن الآن — اشترِ في Chengdu وغادر من Shanghai — وتعمل نقاط الاسترداد الموحدة بالفعل في Guangzhou وChongqing وChengdu، مع تشغيل بكين لخدمة مدينة متكاملة تحت علامتها الخاصة.</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">يأتي مع المال المقدم شرطان. يجب أن تغادر الصين خلال <strong>28 يومًا</strong> من أخذه، ويجب أن تكون السلع غير مستخدمة لا تزال في حوزتك عند الخروج. وكسر أي منهما يؤدي إلى احتساب تفويض البطاقة بدلاً من إطلاقه — وهي أغلى طريقة على الإطلاق لإفساد استرداد ضريبة.</p>
+
+
+    <div class="clear-both"></div>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="duty-free-vs-refund" class="text-3xl font-bold text-gray-900 mb-6 mt-14">معفاة من الرسوم أم استرداد ضريبة — أيهما ينطبق عليك؟</h2>
+
+    <img
+      src="/images/tax-refund/duty-free-store.webp"
+      alt="واجهة متجر cdf China Duty Free داخل صالة مطار، بلافتة 免税店 DUTY FREE فوق كوات مجوهرات زجاجية"
+      width="640"
+      height="480"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">للصين ثلاث طرق منفصلة للشراء دون دفع الضريبة كاملة، ويربكها المسافرون باستمرار. وأيها ينطبق يعتمد على مكانك وكيفية مغادرتك — لا على ما تشتريه.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>1. استرداد ضريبة المغادرة (退税商店) — وهو ما يدور حوله هذا الدليل.</strong> تشتري سلعاً عادية شاملة الضريبة من متجر مسجل في المدينة، ثم تطالب بنحو 9% من ضريبة القيمة المضافة عند الخروج. تدفع أولاً، وتُسترد لاحقاً.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>2. المعفاة من الرسوم في المطار (机场免税店) — للعلامات الدولية عند البوابة.</strong> تبيع المتاجر الموجودة بعد نقطة التفتيش دون رسوم الاستيراد وضريبة القيمة المضافة عند الصندوق، فلا شيء تطالب به لاحقاً؛ والخصم موجود أصلاً في سعر الرف. وتشكيلة أفضل من العلامات الدولية من معظم متاجر المدينة، وأسوأ في العلامات الصينية.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>3. المعفاة من الرسوم البحرية في هاينان (海南离岛免税) — نظام فريد للجزيرة.</strong> ليس نفس الاسترداد، وليس للصينيين فقط: أي شخص يغادر هاينان بالطائرة أو القطار أو العبارة، بما في ذلك جوازات السفر الأجنبية، يمكنه الشراء معفى من الرسوم هنا ضمن بدل سنوي. وإذا انتهت رحلتك بالمغادرة جواً من هاينان فأنت تغادر الجزيرة والبلاد معاً، ويتداخل النظامان بطرق عدّلت القواعد أكثر من مرة — اسأل في الكاونتر عما ينطبق على مسارك الدقيق. ويغطي <a href="/ar/cities/hainan-visa-free/" class="text-brand-600 hover:underline">دليل الدخول إلى هاينان</a> الجانب المعفي من التأشيرة من تلك الرحلة.</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6 clear-both"><strong>الفرق العملي:</strong> المعفاة من الرسوم خصم عند الصندوق دون أوراق، والاسترداد مال يعود لاحقاً مع ثلاث وثائق وطابور. وإذا عرض عليك متجر كليهما، فعادةً ما تفوز المعفاة من الرسوم في العلامات الدولية، ويفوز الاسترداد في العلامات الصينية.</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="worth-it" class="text-3xl font-bold text-gray-900 mb-6 mt-14">هل تستحق أوراق الاسترداد فعلاً؟</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">بالنسبة لمعظم الزوار، نعم — ولكن فقط على المشتريات الصحيحة. أنفق الزوار الأجانب ¥263.6 مليار في الصين بين يناير ويوليو 2026، بزيادة 27.8% على أساس سنوي، وتضاعف عدد المسافرين الذين يقدّمون استرداد ضريبة المغادرة أكثر من ثلاثة أمثاله خلال الفترة نفسها. وارتفعت المبيعات المشمولة بنظام الاسترداد 69% في النصف الأول من 2026، مما يدلّك على أن الطابور في المطار لا يتقلص.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">نقطة التعادل بسيطة. تحت ¥200 في متجر واحد في يوم واحد، لا شيء تطالب به. وبين ¥200 ونحو ¥1,000 يكون الاسترداد صغيراً — أقل من ¥90 — لذا يستحق القيام به فقط إذا كنت في المطار أصلاً مع وقت متسع. وفوق ¥1,000 يكون مالاً حقيقياً، وفوق ¥5,000 يستحق التخطيط للمغادرة حوله: طالِب قبل تسجيل الدخول، واحتفظ بالسلع في حقيبتك المحمولة، واترك 30 دقيقة إضافية لمكتب الجمارك.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">شيء آخر تضعه في الميزانية: يُصرف الاسترداد باليوان. فإذا كنت في طريق العودة ولن تعود، فذلك النقد مفيد فقط في منطقة المغادرة. أنفقه على الوجبة الأخيرة، أو اقبل بسعر الصرف الذي يمنحك إياه بنكك في التحويل.</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="faq" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">❓ الأسئلة الشائعة</h2>
+    <div class="space-y-6 mb-8 not-prose">
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">كم أحتاج أن أنفق للمطالبة باسترداد الضريبة في الصين؟</h3>
+        <p class="text-gray-700">ما لا يقل عن ¥200 في متجر استرداد ضريبة واحد في يوم واحد. اطلب استمارة طلب الاسترداد (离境退税申请单) وفاتورة ضريبة القيمة المضافة العادية (增值税普通发票) عند الصندوق، واحتفظ بهما معاً — فلا يمكن إنجاز الاسترداد بدونهما.</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">هل أحتاج جواز سفري للمطالبة بالاسترداد؟</h3>
+        <p class="text-gray-700">نعم، ويجب أن يكون جواز السفر الفعلي الذي دخلت به الصين. تُكتب استمارة الطلب بنوع جواز سفرك ورقمه، وتتحقق الجمارك من الوثيقة مقابل الشخص أمامها. ولا تُقبل صور الهاتف والنسخ المصورة.</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">كم مقدار المال الذي يعود إليك فعلاً؟</h3>
+        <p class="text-gray-700">نحو 9% على معظم السلع ونحو 6% على السلع ذات المعدل المخفض. والنسب الاسمية هي 11% و8%، ناقصاً نحو 2% تتقاضاها وكالة الاسترداد. وعلى عملية شراء بـ ¥10,000 يعود إليك نحو ¥900، لا ¥1,100.</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">هل يمكنني الحصول على الاسترداد نقداً في المطار؟</h3>
+        <p class="text-gray-700">نعم، حتى ¥20,000 لكل طلب في كاونتر الاسترداد داخل منطقة المغادرة. وأي مبلغ أعلى يُدفع بتحويل بنكي. وبعض المتاجر ونقاط الاسترداد في المدن تدفع أيضاً في الموقع ضمن نظام الاسترداد الفوري عند الشراء (即买即退).</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">هل أحتاج إحضار السلع معي في المطار؟</h3>
+        <p class="text-gray-700">للطلبات المفحوصة عشوائياً، نعم. تُسحب الطلبات التي تقل قيمة مبيعاتها عن ¥10,000 عشوائياً منذ يوليو 2026؛ فإذا لم يُسحب طلبك تتجاوز الفحص. احتفظ بالسلع المؤهلة للاسترداد في حقيبتك المحمولة أو فوق حقيبتك المسجلة حتى تتجاوز الجمارك.</p>
+      </div>
+    </div>
+
+    <div class="not-prose mt-12 pt-8 border-t border-gray-200">
+      <h3 class="text-base font-bold text-gray-900 mb-4 flex items-center gap-2">📚 المصادر</h3>
+      <ul class="space-y-3">
+        <li>
+          <a href="https://taxfree.mofcom.gov.cn/taxfreeEnPc/index.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">وزارة التجارة — منصة خدمة استرداد ضريبة المغادرة (المنصة الرسمية بالإنجليزية: البحث عن المتاجر المعفاة، ونقاط الاسترداد، ودليل متعدد اللغات)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://karachi.mofcom.gov.cn/jmxw/art/2026/art_4c238850af4e41d48ec7478a8b8fbec0.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">التسوق في الصين: شرح سياسة استرداد الضريبة — دليل MOFCOM ثنائي اللغة (عتبة ¥200، ومعدلات 11% / 8%، ووثيقة الهوية، وطرق الاسترداد)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://scyxs.mofcom.gov.cn/zcfg/art/2026/art_9845ac0b49454fd598320a52125ba23a.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">وزارة التجارة وخمسة أقسام أخرى، الإشعار رقم 74 لعام 2026 (18 مايو 2026) — تغطية متجر أوسع، وفحوص عشوائية تحت ¥10,000، ومعالجة بلا ورق</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.gov.cn/zhengce/zhengceku/202607/content_7075798.htm" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">الإدارة الوطنية للضرائب (يوليو 2026) — الاسترداد الفوري عند الشراء يمتد على مستوى المناطق من 1 سبتمبر 2026؛ وتقديم بلا ورق، و pilot للمتجر الإلكتروني، ورمز QR وطني للاسترداد</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://shanghai.chinatax.gov.cn/xwdt/ztzl/zcgll/ljts/zchb/201911/t449153.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">مصلحة الضرائب في شنغهاي — «سياسة استرداد ضريبة المغادرة لزوار ما وراء البحار» (ثنائية اللغة؛ معدلات 11% / 8%، ورسوم الوكالة 2%، وحد النقد ¥20,000)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.globaltimes.cn/page/202512/1350012.shtml" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">Global Times — قفزت طلبات الاسترداد 285% في الأشهر الـ11 الأولى (12,252 متجر استرداد ضريبة على مستوى البلاد، وأكثر من 7,000 تقدم الاسترداد الفوري عند الشراء)</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="border-t border-gray-100 pt-6 mt-8">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5 not-prose">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h3 class="text-sm font-bold text-gray-900">📚 القراءات التالية</h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="/ar/payment/china-shopping/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              ماذا تشتري في الصين
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ar/payment/payment-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              كيفية الدفع في الصين
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ar/visa/customs-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              لوائح الجمارك الصينية
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ar/visa/visa-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              دليل التأشيرة والدخول إلى الصين
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <FAQPage items={faqs} />
+</Layout>

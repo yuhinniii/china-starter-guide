@@ -1,0 +1,55 @@
+---
+interface Props {
+  groups: {
+    color: string;
+    title: string;
+    countText: string;
+    items: { href: string; tag: string; title: string; desc: string }[];
+  }[];
+}
+const { groups } = Astro.props;
+
+// 类名必须是字面量，Tailwind 才能扫描到。
+const PALETTE: Record<string, { bar: string; text: string; card: string }> = {
+  blue: { bar: 'bg-blue-500', text: 'text-blue-800', card: 'bg-blue-50 border-blue-200' },
+  indigo: { bar: 'bg-indigo-500', text: 'text-indigo-800', card: 'bg-indigo-50 border-indigo-200' },
+  emerald: { bar: 'bg-emerald-500', text: 'text-emerald-800', card: 'bg-emerald-50 border-emerald-200' },
+  amber: { bar: 'bg-amber-500', text: 'text-amber-800', card: 'bg-amber-50 border-amber-200' },
+  purple: { bar: 'bg-purple-500', text: 'text-purple-800', card: 'bg-purple-50 border-purple-200' },
+  red: { bar: 'bg-red-500', text: 'text-red-800', card: 'bg-red-50 border-red-200' },
+  cyan: { bar: 'bg-cyan-500', text: 'text-cyan-800', card: 'bg-cyan-50 border-cyan-200' },
+  yellow: { bar: 'bg-yellow-500', text: 'text-yellow-800', card: 'bg-yellow-50 border-yellow-200' },
+  teal: { bar: 'bg-teal-500', text: 'text-teal-800', card: 'bg-teal-50 border-teal-200' },
+  sky: { bar: 'bg-sky-500', text: 'text-sky-800', card: 'bg-sky-50 border-sky-200' },
+  gray: { bar: 'bg-gray-500', text: 'text-gray-800', card: 'bg-gray-50 border-gray-200' },
+  green: { bar: 'bg-green-500', text: 'text-green-800', card: 'bg-green-50 border-green-200' },
+  orange: { bar: 'bg-orange-500', text: 'text-orange-800', card: 'bg-orange-50 border-orange-200' },
+};
+---
+
+<div class="space-y-8 mb-16 not-prose">
+  {groups.map(({ color, title, countText, items }) => {
+    const c = PALETTE[color];
+    return (
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class={`w-1 h-7 ${c.bar} rounded-full`}></div>
+          <h2 class={`text-lg font-bold ${c.text}`}>{title}</h2>
+          <span class={`text-xs font-medium ${c.text} opacity-60`}>{countText}</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+          {items.map((item) => (
+            <a
+              href={item.href}
+              class={`block ${c.card} border rounded-xl p-4 hover:shadow-md transition no-underline`}
+            >
+              <span class={`text-xs font-semibold ${c.text}`}>{item.tag}</span>
+              <p class="text-base font-bold text-gray-900 mt-1">{item.title}</p>
+              <p class="text-sm text-gray-600 mt-0.5">{item.desc}</p>
+            </a>
+          ))}
+        </div>
+      </div>
+    );
+  })}
+</div>

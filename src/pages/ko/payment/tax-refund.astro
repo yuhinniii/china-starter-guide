@@ -1,0 +1,308 @@
+---
+import Layout from '@layouts/Layout.astro';
+import FAQPage from '../../../components/FAQPage.astro';
+
+const title = "중국 출국 세금 환급 2026: 9% 돌려받는 방법";
+const description = "2026년 중국의 출국 세금 환급: ¥200 기준액, 필요한 서류 세 가지, 90일 기한, 그리고 공항 세관 확인이 실제로 어떻게 작동하는지.";
+
+const faqs = [
+  {
+    question: "중국에서 세금 환급을 받으려면 얼마를 써야 하나요?",
+    answer: "단일 환급 매장에서 단 하루에 최소 ¥200. 계산대에서 환급 신청서(离境退税申请单)와 증치세 일반 영수증(增值税普通发票)을 요청하고 둘 다 보관하세요 — 없으면 환급이 처리되지 않습니다."
+  },
+  {
+    question: "환급을 받으려면 여권이 필요한가요?",
+    answer: "네, 그리고 중국 입국 시 사용한 실물 여권이어야 합니다. 환급 신청서는 여권 종류와 번호로 작성되고, 세관이 그 문서를 앞에 있는 사람과 대조합니다. 휴대폰 사진과 복사본은 받지 않습니다."
+  },
+  {
+    question: "실제로 돌아오는 돈은 얼마인가요?",
+    answer: "대부분 품목은 약 9%, 경감 세율 품목은 약 6%. 명목 세율은 11%와 8%이며, 환급 대행사가 약 2%를 공제합니다. ¥10,000 구매 시 약 ¥900이지, ¥1,100이 아닙니다."
+  },
+  {
+    question: "공항에서 현금으로 환급받을 수 있나요?",
+    answer: "네, 출국장 내 환급 카운터에서 청구 건당 최대 ¥20,000까지 현금. 그 이상은 계좌 이체. 일부 매장과 도시 환급 포인트도 구매 즉시 환급(即买即退) 방식으로 그자리에서 지급합니다."
+  },
+  {
+    question: "공항에서 물건을 지니고 있어야 하나요?",
+    answer: "표본 검사 대상이면, 네. 2026년 7월부터 판매액 ¥10,000 미만 청구는 무작위로 뽑힙니다. 뽑히지 않으면 검사를 건너뛰세요. 환급 대상 물건은 세관을 지날 때까지 기내용 가방이나 checked 가방 맨 위에 두세요."
+  }
+];
+---
+
+<Layout title={title} description={description} lang="ko" type="Article">
+  <nav class="mb-8 not-prose">
+    <a href="/ko/payment/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+      <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+      </svg>
+      결제로 돌아가기
+    </a>
+  </nav>
+
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">💳 결제</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">중국 출국 세금 환급: 떠날 때 약 9%를 돌려받는 방법</h1>
+      <p class="text-xl text-gray-600 mb-6">¥200 기준액, 필요한 서류 세 가지, 그리고 오후를 날리지 않고 공항에서 환급을 처리하는 방법.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 최종 업데이트: 2026년 10월</span>
+        <span>⏱️ 8분 소요</span>
+      </div>
+    </header>
+
+    <img
+      src="/images/tax-refund/tax-refund-flow.webp"
+      alt="중국 출국 세금 환급 절차 순서도: 면세 매장에서 구매, 환급 신청서와 VAT 영수증 수령, 세관 확인, then 환급 수령"
+      width="1080"
+      height="606"
+      class="w-full rounded-2xl mb-10 not-prose"
+    />
+
+    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-red-900 mb-4">⚡ 관광객도 중국에서 세금 환급을 받을 수 있나요?</h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>한 줄 요약:</strong> 네. <strong>Tax Free (退税商店)</strong> 표지가 있는 단일 매장에서 최소 <strong>¥200</strong>을 쓰면, 중국을 떠날 때 대부분 품목에서 약 <strong>9%</strong>를, 경감 세율 품목에서는 약 <strong>6%</strong>를 환급받을 수 있습니다. 세 가지가 필요합니다. <strong>환급 신청서</strong>(离境退税申请单), <strong>증치세 일반 영수증</strong>(增值税普通发票), 그리고 <strong>여권</strong> — 입국 시 사용한 실물 여권. 출국길 공항에서 청구하거나, 시내의 구매 즉시 환급(即买即退) 카운터에서 그자리에 받으세요. 물건은 구매 후 <strong>90일</strong> 이내에 중국을 떠나야 합니다. 실제로 사볼 만한 것은 <a href="/ko/payment/china-shopping/" class="text-red-700 underline">중국 쇼핑 가이드</a>를 참고하세요.</p>
+      <p class="text-lg leading-relaxed text-gray-700">환급은 집에 가져가는 개인 물품 — 화장품, 전자제품, 의류, 차, 비단, 도자기, 옥, 공예품 — 에 적용됩니다. 중국에서 소비하는 것, 서비스, 금지·제한 품목의 물건에는 적용되지 않습니다.</p>
+    </div>
+
+    <div class="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-2xl p-6 mb-12 not-prose">
+      <p class="text-lg leading-relaxed text-yellow-900"><strong>솔직한 이야기:</strong> 이건 할인이 아니라 환급입니다 — 계산대에서 세금 포함 전액을 내고, 나중에 일부를 돌려받습니다. 티셔츠와 냉장고 자석에는 줄 서는 게 아깝습니다. 어떤 매장에서든 청구하려면 하루에 ¥200이 필요하고, 90일 시계는 구매 시점부터 돌아가며, 대행사는 받을 돈의 약 2%를 가져갑니다. 노트북, 시계, 신발 한 켤레, 핸드백에서는 여행 중 가장 쉬운 9%입니다 — 단, 세관이 물건을 확인하기 전에 가방을 부치지 않아야 합니다.</p>
+    </div>
+
+    <h2 id="rules" class="text-3xl font-bold text-gray-900 mb-6 mt-14">중국의 출국 세금 환급 규정은?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4">이 제도는 <em>lí jìng tuì shuì</em> (离境退税) — 말 그대로 "출국 시 세금 환급"입니다. 등록된 면세 매장에서 산 물건에 붙은 VAT를, 그 물건이 당신과 함께 중국을 떠날 때 환급합니다. 명목 세율은 후하 병져 보이지만, 실제로 챙는 돈은 조금 적습니다.</p>
+    <p class="text-base text-gray-500 mb-4">2026년 중국의 출국 세금 환급 규정 한눈에</p>
+    <div class="overflow-x-auto mb-8 not-prose">
+      <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+        <caption class="sr-only">2026년 중국의 출국 세금 환급 규정 — 최소 소비액, 환급률, 자격, 신분증, 기한, 현금 한도, 무서류 처리, 구매 즉시 환급</caption>
+        <thead>
+          <tr class="bg-gray-900 text-white">
+            <th class="px-6 py-4 font-bold">규정</th>
+            <th class="px-6 py-4 font-bold">세부 내용</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">최소 소비액</td>
+            <td class="px-6 py-4">하루에 한 매장에서 ¥200. 쇼핑 여행 전체가 ¥200이 아니라, 한 매장입니다.</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">환급률</td>
+            <td class="px-6 py-4">13% VAT 구간은 11%, 9% 구간은 8%. 대행사의 약 2% 수수료 후에는 약 <strong>9%</strong> 또는 <strong>6%</strong>를 챙깁니다.</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">대상</td>
+            <td class="px-6 py-4">본토 중국에 183일 이하 체류한 비거주자: 외국 여권 소지자, 그리고 홍콩·마카오·대만 거주자.</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">신분증</td>
+            <td class="px-6 py-4"><strong>여권</strong> — 입국 시 사용한 그 여권. 환급 신청서는 그 종류와 번호로 작성되고, 모든 카운터에서 대조됩니다.</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">기한</td>
+            <td class="px-6 py-4">구매일로부터 <strong>90일</strong> 이내에 중국을 떠나세요. 구매 즉시 환급(即买即退)으로 미리 받았다면 28일입니다.</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">현금 한도</td>
+            <td class="px-6 py-4">공항에서 청구 건당 최대 ¥20,000 현금. 그 이상은 계좌 이체.</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">2026년 7월 이후 서류</td>
+            <td class="px-6 py-4">완전 디지털. 세관과 환급 대행사가 시스템에서 신청서와 영수증을 불러오지만, 카운터가 여전히 요구하므로 종이는 그래도 보관하세요.</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">2026년 7월 이후 표본 검사</td>
+            <td class="px-6 py-4">판매액 ¥10,000 미만 청구는 실물 확인을 위해 무작위로 뽑힙니다. 뽑히지 않으면 공항에서 물건 검사를 통째로 건너뜁니다.</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">구매 즉시 환급</td>
+            <td class="px-6 py-4">"即买即退" — 매장이나 도시 환급 포인트에서 신용카드 승인을 조건으로 수령. 도시 간 청구(한 도시에서 사고 다른 도시에서 출국)는 2026년 9월 1일부터 전국적으로 작동합니다.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <img
+      src="/images/tax-refund/refund-application-form.webp"
+      alt="해외 방문객용 환급 신청서, 여권 종류와 번호란, 영수증 번호, 물품, 11% 환급률, 세관 확인란 표시"
+      width="1080"
+      height="607"
+      loading="lazy"
+      class="w-full rounded-2xl mb-4 not-prose"
+    />
+    <p class="text-sm text-gray-500 mb-8">환급 신청서는 여권 번호가 적히는 곳입니다. 이 지점 이후的一切 — 세관, 대행사, 은행 — 은 그 번호를 키로 삼습니다.</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="how-much" class="text-3xl font-bold text-gray-900 mb-6 mt-14">실제로 돌아오는 돈은 얼마인가요?</h2>
+
+    <img
+      src="/images/tax-refund/vat-invoice.webp"
+      alt="항목 라인, 13% 세율 열, 하단의 합계와 세액이 표시된 중국 증치세 일반 영수증"
+      width="1000"
+      height="635"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">규정의 11%와 8%는 정책이 정한 <em>명목</em> 세율이며, 계좌에 들어오는 금액이 아닙니다. 환급 대행사는 영수증 금액의 약 2%를 수수료로 먼저 공제하기 때문에, 모든 가이드가 "약 9%"라고 말하는 것입니다.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">단일 라인으로 계산하세요. 면세 매장에서 산 ¥10,000 노트북은 13% VAT 구간에 속합니다. 명목 환급 11%면 ¥1,100, 여기서 약 ¥200의 대행사 수수료를 빼면 실제로는 약 <strong>¥900</strong>을 받습니다. ¥1,000 물건은 약 ¥90 환급. 매장·일별 ¥200 기준 미만이면 답은 ¥0입니다.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">경감 세율 품목은 다르게 움직입니다. 예를 들어 차는 9% VAT 구간에 속합니다. 명목 세율은 8%이고 실제로는 약 6%를 챙깁니다. 보따리가 차에 무겁고 전자제품에 가볍다면 환급을 9%가 아니라 6%로 잡으세요.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">이걸로 쇼핑 여행을 계획하기 전 알아둘 구조적 한계 하나: 환급은 VAT를 돌려주는 것이고, VAT가 수입 명품이 중국에서 비싼 주된 이유는 아니었습니다. 핸드백이 파리보다 비싸다면 9% 환급으로 격차를 메우기 어렵습니다. 환급이 진짜로 계산을 바꾸는 곳은 중국산 물건과 어차피 사려던 물건입니다 — 해당 품목은 <a href="/ko/payment/china-shopping/" class="text-brand-600 hover:underline">쇼핑 가이드</a>를 보세요.</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6 clear-both"><strong>영수증이 사람들이 틀리는 부분입니다.</strong> 본인 정보로 발급된 <em>증치세 일반 영수증</em> (增值税普通发票)이 필요합니다. 계산대 영수증도, 손으로 쓴 메모도, 그 사진도 아니고. 작은 노점은 아예 발급하지 못하는 경우가 많고, 그것이 시장 바겐품이 환급 대상이 되지 않는 진짜 이유입니다.</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="how-to-claim" class="text-3xl font-bold text-gray-900 mb-6 mt-14">공항에서 환급을 어떻게 청구하나요?</h2>
+
+    <img
+      src="/images/tax-refund/customs-verification.webp"
+      alt="중국 공항 출구의 세관 확인 카운터, 离境退税 海关验核 / Departure Tax Refund Customs Verification 표지, 줄 선 여행객"
+      width="600"
+      height="398"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>경로 A — 공항, 여전히 가장 흔한 경로.</strong> 세 정거장, 이 순서대로: 매장, 세관, 환급 카운터. 모두를 가방을 부치기 <em>전에</em> 하세요.</p>
+
+    <ol class="list-decimal pl-6 space-y-3 text-lg leading-relaxed text-gray-700 mb-6 clear-both">
+      <li><strong>매장에서 — 서류를 받으세요.</strong> 환급 신청서(离境退税申请单)와 증치세 일반 영수증(增值税普通发票)을 요청하세요. 매장은 여권 종류, 여권 번호, 입국 날짜로 신청서를 작성하므로 실물 여권을 내주세요 — 번호를 직접 읽어야 합니다. 신청서의 여권 번호가 여권과 문자 하나까지 일치하는지 확인하세요. 잘못 입력된 숫자 하나면 공항에서 돌려보내지고, 그 도시에선 이미 떠난 뒤라 고칠 수 없습니다.</li>
+      <li><strong>탑승 수속 전 공항에서 — 세관 확인 (海关验核).</strong> 물건, 여권, 신청서, 영수증을 세관 데스크로 가져가세요. 2026년 7월부터 판매액 ¥10,000 미만 청구는 무작위 표본 검사입니다. 뽑히지 않으면 이 단계를 건너뛰고 바로 환급 카운터로 갈 수 있습니다. 뽑히면 담당자가 물건 자체를 보길 원하므로, hold에 싣지 마세요.</li>
+      <li><strong>출국장 내 환급 카운터에서 — 돈을 받으세요.</strong> 같은 여권을 환급 대행사 카운터(退税代理机构)에 제시하세요. ¥20,000까지 현금, 그 이상은 계좌 이체. 환급은 위안화로 지급되므로, airside에서 쓰든 은행이 주는 환율을 받아들이든 하세요.</li>
+    </ol>
+
+    <img
+      src="/images/tax-refund/instant-refund-point.webp"
+      alt="베이징 즉시 환급 포인트 표지 — TAX REFUND (离境退税), Instant Refund Service (即买即退集中退付点), Beijing One-Stop Service"
+      width="800"
+      height="503"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>경로 B — 구매 즉시 환급(即买即退).</strong> 매장이 제공하거나 시내 환급 포인트 근처에 있다면, 떠나기 전에 돈을 받습니다. 매장은 즉시 지급하고, 물건이 실제로 중국을 떠난다는 담보로 신용카드 승인을 잡습니다. 출국이 확인되면 승인이 해제됩니다. 이제 도시를 넘나들 수 있습니다 — 청두에서 사고 상하이에서 출국해도 되고, 광저우·충칭·청두에는 이미 통합 환급 포인트가 있으며, 베이징은 자체 브랜드로 원스톱 시내 서비스를 운영합니다.</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">선수금에는 두 가지 조건이 따릅니다. 받은 후 <strong>28일</strong> 이내에 중국을 떠나야 하고, 출국 시 물건은 미사용이며 여전히 본인 소유여야 합니다. 둘 중 하나라도 어기면 카드 승인이 해제되는 게 아니라 청구되어 — 세금 환급을 그르치는 가장 비싼 방법입니다.</p>
+
+
+    <div class="clear-both"></div>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="duty-free-vs-refund" class="text-3xl font-bold text-gray-900 mb-6 mt-14">면세일까 환급일까 — 어느 쪽이 당신에게 적용되나요?</h2>
+
+    <img
+      src="/images/tax-refund/duty-free-store.webp"
+      alt="공항 터미널 내 cdf 중국 면세점, 유리 보석 카운터 위 免税店 DUTY FREE 표지"
+      width="640"
+      height="480"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">중국에는 세금을 다 내지 않고 사는 별도의 방법이 세 가지 있고, 여행객은 이를 끊임없이 혼동합니다. 어느 쪽이 적용되는지는 어디에 있느냐와 어떻게 떠나느냐에 달렸지, 무엇을 사느냐에 달리지 않습니다.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>1. 출국 세금 환급 (退税商店) — 이 가이드의 주제.</strong> 시내 등록 매장에서 평범한 세금 포함 물건을 사고, 나갈 때 VAT의 약 9%를 청구합니다. 먼저 내고, 나중에 환급받습니다.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>2. 공항 면세점 (机场免税店) — 게이트에서 수입 브랜드.</strong> airside 매장은 계산대에서 수입 관세와 VAT 없이 팝니다. 따라서 나중에 청구할 것이 없습니다. 선반 가격에 할인이 이미 들어가 있습니다. 수입 라벨 선택은 대부분 시내 매장보다 좋고, 중국 브랜드는 더 부족합니다.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>3. 하이난 외자 면세 (海南离岛免税) — 섬 고유 제도.</strong> 환급과 같은 것이 아니고, 중국 쇼핑객만을 위한 것도 아닙니다. 비행기·기차·페리로 하이난을 떠나는任何人, 외국 여권 포함, 연간 한도 내에서 면세로 살 수 있습니다. 여행이 하이난 출국으로 끝나면 섬과 나라를 한꺼번에 떠나는 셈이고, 두 제도는 규정이 여러 차례 조정할 만큼 겹칩니다 — 정확한 경로에 무엇이 적용되는지 카운터에서 물어보세요. <a href="/ko/cities/hainan-visa-free/" class="text-brand-600 hover:underline">하이난 입국 가이드</a>에서 그 여행의 무비자 측면을 다룹니다.</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6 clear-both"><strong>실질적 차이:</strong> 면세는 서류 없이 계산대에서 하는 할인이고, 환급은 세 가지 서류와 줄 서기 뒤에 나중에 돌아오는 돈입니다. 매장이 둘 다 제공한다면, 면세는 수입 브랜드에, 환급은 중국 브랜드에 보통 유리합니다.</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="worth-it" class="text-3xl font-bold text-gray-900 mb-6 mt-14">환급 서류가 정말 가치 있나요?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">대부분 방문객에게는, 네 — 단 올바른 구매에서만. 외국 방문객은 2026년 1~7월 중국에서 ¥2,636억을 썼는데 전년 대비 27.8% 증가했고, 출국 세금 환급을 신고한 여행객 수는 같은 기간 3배 넘게 늘었습니다. 환급 제도 적용 매출은 2026년 상반기에 69% 증가해, 공항 줄이 줄어들지 않고 있음을 보여줍니다.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">손익분기점은 단순합니다. 단일 매장·단일 일자 ¥200 미만이면 청구할 것이 없습니다. ¥200~약 ¥1,000 사이면 환급이 작아 — ¥90 미만 — 시간 여유가 있는 공항에 있을 때만 할 가치가 있습니다. ¥1,000 초과면 진짜 돈이고, ¥5,000 초과면 출국을 계획할 가치가 있습니다. 탑승 수속 전에 청구하고, 물건은 기내용에 두고, 세관 데스크에 30분을 더 잡으세요.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">더 잡아둘 것 하나: 환급은 위안화로 지급됩니다. 돌아가는 길이고 다시는 안 올 거라면, 그 현금은 airside에서만 쓸모 있습니다. 마지막 식사에 쓰거나, 이체 시 은행이 주는 환율을 받아들이세요.</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="faq" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">❓ 자주 묻는 질문</h2>
+    <div class="space-y-6 mb-8 not-prose">
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">중국에서 세금 환급을 받으려면 얼마를 써야 하나요?</h3>
+        <p class="text-gray-700">단일 환급 매장에서 단 하루에 최소 ¥200. 계산대에서 환급 신청서(离境退税申请单)와 증치세 일반 영수증(增值税普通发票)을 요청하고 둘 다 보관하세요 — 없으면 환급이 처리되지 않습니다.</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">환급을 받으려면 여권이 필요한가요?</h3>
+        <p class="text-gray-700">네, 그리고 중국 입국 시 사용한 실물 여권이어야 합니다. 신청서는 여권 종류와 번호로 작성되고, 세관이 그 문서를 앞에 있는 사람과 대조합니다. 휴대폰 사진과 복사본은 받지 않습니다.</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">실제로 돌아오는 돈은 얼마인가요?</h3>
+        <p class="text-gray-700">대부분 품목은 약 9%, 경감 세율 품목은 약 6%. 명목 세율은 11%와 8%이며, 환급 대행사가 약 2%를 공제합니다. ¥10,000 구매 시 약 ¥900이지, ¥1,100이 아닙니다.</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">공항에서 현금으로 환급받을 수 있나요?</h3>
+        <p class="text-gray-700">네, 출국장 내 환급 카운터에서 청구 건당 최대 ¥20,000까지 현금. 그 이상은 계좌 이체. 일부 매장과 도시 환급 포인트도 구매 즉시 환급(即买即退) 방식으로 그자리에서 지급합니다.</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">공항에서 물건을 지니고 있어야 하나요?</h3>
+        <p class="text-gray-700">표본 검사 대상이면, 네. 2026년 7월부터 판매액 ¥10,000 미만 청구는 무작위로 뽑힙니다. 뽑히지 않으면 검사를 건너뜁니다. 환급 대상 물건은 세관을 지날 때까지 기내용 가방이나 checked 가방 맨 위에 두세요.</p>
+      </div>
+    </div>
+
+    <div class="not-prose mt-12 pt-8 border-t border-gray-200">
+      <h3 class="text-base font-bold text-gray-900 mb-4 flex items-center gap-2">📚 출처</h3>
+      <ul class="space-y-3">
+        <li>
+          <a href="https://taxfree.mofcom.gov.cn/taxfreeEnPc/index.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">상무부 — 출국 세금 환급 서비스 플랫폼 (공식 영문 플랫폼: 면세 매장 조회, 환급 포인트, 다국어 가이드)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://karachi.mofcom.gov.cn/jmxw/art/2026/art_4c238850af4e41d48ec7478a8b8fbec0.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">중국 쇼핑: 세금 환급 정책 설명 — 양언어 MOFCOM 가이드 (¥200 기준액, 11% / 8% 세율, 신분증, 환급 방식)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://scyxs.mofcom.gov.cn/zcfg/art/2026/art_9845ac0b49454fd598320a52125ba23a.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">상무부 등 6개 부처, 2026년 제74호 공고 (2026년 5월 18일) — 매장 범위 확대, ¥10,000 미만 표본 검사, 무서류 처리</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.gov.cn/zhengce/zhengceku/202607/content_7075798.htm" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">국가세무총국 (2026년 7월) — 구매 즉시 환급이 2026년 9월 1일부터 지역을 넘나들며 전국 시행; 무서류 신고, 온라인 매장 시범, 전국 환급 QR 코드</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://shanghai.chinatax.gov.cn/xwdt/ztzl/zcgll/ljts/zchb/201911/t449153.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">상하이 세무국 — "해외 방문객 출국 세금 환급 정책" (양언어; 11% / 8% 세율, 2% 대행 수수료, ¥20,000 현금 한도)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.globaltimes.cn/page/202512/1350012.shtml" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">Global Times — 첫 11개월간 환급 청구 285% 급증 (전국 12,252개 환급 매장, 7,000개 이상이 구매 즉시 환급 제공)</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="border-t border-gray-100 pt-6 mt-8">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5 not-prose">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h3 class="text-sm font-bold text-gray-900">📚 다음 읽을거리</h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="/ko/payment/china-shopping/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              중국에서 살 만한 것
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ko/payment/payment-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              중국에서 결제하는 방법
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ko/visa/customs-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              중국 세관 규정
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ko/visa/visa-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              중국 비자 및 입국 가이드
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <FAQPage items={faqs} />
+</Layout>

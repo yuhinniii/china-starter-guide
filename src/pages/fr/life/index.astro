@@ -2,6 +2,29 @@
 import Layout from '@layouts/Layout.astro';
 const title = 'Vie en Chine — Conseils de voyage et guides';
 const description = 'Restez connecté, restez en sécurité et profitez au maximum de votre voyage.';
+import SectionStats from '../../../components/SectionStats.astro';
+import ArticleGroups from '../../../components/ArticleGroups.astro';
+import { STATS, GROUPS, ITEMS, COUNT, COUNT_SINGULAR, type Lang } from '../../../data/life';
+
+const lang: Lang = 'fr';
+
+const stats = STATS.map((s) => ({ value: s.value, color: s.color, label: s.label[lang] }));
+
+const groups = GROUPS.map((g, gi) => {
+  const items = ITEMS.filter((i) => i.group === gi);
+  return {
+    color: g.color,
+    title: g.name[lang],
+    countText: (items.length === 1 ? COUNT_SINGULAR[lang] : COUNT[lang]).replace('{n}', String(items.length)),
+    items: items.map((i) => ({
+      href: `/${lang}/life/${i.slug}/`,
+      tag: i.tag[lang],
+      title: i.title[lang],
+      desc: i.desc[lang],
+    })),
+  };
+});
+
 ---
 
 <Layout title={title} description={description} lang="fr">
@@ -14,142 +37,10 @@ const description = 'Restez connecté, restez en sécurité et profitez au maxim
     </header>
 
     <!-- Quick Stats -->
-    <div class="grid grid-cols-2 md:grid-cols-5 gap-3 mb-12 not-prose">
-      <div class="bg-purple-50 border border-purple-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-purple-800">3</p>
-        <p class="text-xs font-semibold text-purple-800 uppercase tracking-wide mt-1">Internet & Applications</p>
-      </div>
-      <div class="bg-cyan-50 border border-cyan-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-cyan-800">3</p>
-        <p class="text-xs font-semibold text-cyan-800 uppercase tracking-wide mt-1">Santé & Médical</p>
-      </div>
-      <div class="bg-red-50 border border-red-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-red-800">3</p>
-        <p class="text-xs font-semibold text-red-800 uppercase tracking-wide mt-1">Sécurité & Urgences</p>
-      </div>
-      <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-yellow-800">3</p>
-        <p class="text-xs font-semibold text-yellow-800 uppercase tracking-wide mt-1">Culture & Essentiels</p>
-      </div>
-      <div class="bg-teal-50 border border-teal-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-teal-800">1</p>
-        <p class="text-xs font-semibold text-teal-800 uppercase tracking-wide mt-1">Hébergement</p>
-      </div>
-    </div>
+    <SectionStats stats={stats} />
 
     <!-- Category Sections -->
-    <div class="space-y-8 mb-16 not-prose">
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-purple-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-purple-800">Communication & Internet</h2>
-          <span class="text-xs font-medium text-purple-800 opacity-60">3 articles</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/fr/life/sim-card-guide/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-purple-800">📶 Internet</span>
-            <p class="text-base font-bold text-gray-900 mt-1">Meilleure carte SIM et eSIM pour touristes</p>
-            <p class="text-sm text-gray-600 mt-0.5">Comparez les fournisseurs d'eSIM, les cartes SIM d'aéroport et les forfaits data.</p>
-          </a>
-          <a href="/fr/life/vpn-guide/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-purple-800">🔒 VPN</span>
-            <p class="text-base font-bold text-gray-900 mt-1">Meilleurs VPN pour voyager en Chine</p>
-            <p class="text-sm text-gray-600 mt-0.5">Ce qui fonctionne, comment les configurer et pourquoi avant votre arrivée.</p>
-          </a>
-          <a href="/fr/life/essential-apps/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-purple-800">📱 Applications</span>
-            <p class="text-base font-bold text-gray-900 mt-1">10 applications essentielles pour voyager en Chine</p>
-            <p class="text-sm text-gray-600 mt-0.5">Paiement, transport, traduction et découverte.</p>
-          </a>
-        </div>
-      </div>
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-cyan-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-cyan-800">Santé & Médical</h2>
-          <span class="text-xs font-medium text-cyan-800 opacity-60">3 articles</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/fr/life/seeing-a-doctor/" class="block bg-cyan-50 border border-cyan-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-cyan-800">⚕️ Médical</span>
-            <p class="text-base font-bold text-gray-900 mt-1">Consulter un médecin en Chine</p>
-            <p class="text-sm text-gray-600 mt-0.5">Pharmacie, clinique ou hôpital — comment choisir.</p>
-          </a>
-          <a href="/fr/life/top-hospitals/" class="block bg-cyan-50 border border-cyan-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-cyan-800">🏥 Hôpitaux</span>
-            <p class="text-base font-bold text-gray-900 mt-1">Meilleurs hôpitaux avec services internationaux</p>
-            <p class="text-sm text-gray-600 mt-0.5">Les meilleurs hôpitaux avec personnel anglophone, par ville.</p>
-          </a>
-          <a href="/fr/life/travel-insurance/" class="block bg-cyan-50 border border-cyan-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-cyan-800">🛡️ Assurance</span>
-            <p class="text-base font-bold text-gray-900 mt-1">Assurance voyage pour la Chine</p>
-            <p class="text-sm text-gray-600 mt-0.5">Ce que vous devez savoir sur l'assurance voyage.</p>
-          </a>
-        </div>
-      </div>
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-red-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-red-800">Sécurité & Urgences</h2>
-          <span class="text-xs font-medium text-red-800 opacity-60">3 articles</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/fr/life/is-china-safe/" class="block bg-red-50 border border-red-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-red-800">🛡️ Sécurité</span>
-            <p class="text-base font-bold text-gray-900 mt-1">Est-il sûr de voyager en Chine ?</p>
-            <p class="text-sm text-gray-600 mt-0.5">Un avis honnête sur la sécurité, la criminalité et les précautions.</p>
-          </a>
-          <a href="/fr/life/common-scams/" class="block bg-red-50 border border-red-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-red-800">⚠️ Arnaques</span>
-            <p class="text-base font-bold text-gray-900 mt-1">Arnaques courantes en Chine et comment les éviter</p>
-            <p class="text-sm text-gray-600 mt-0.5">Repérez et évitez les pièges à touristes les plus fréquents.</p>
-          </a>
-          <a href="/fr/life/emergency-numbers/" class="block bg-red-50 border border-red-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-red-800">🆘 Urgence</span>
-            <p class="text-base font-bold text-gray-900 mt-1">Numéros d'urgence et conduite à tenir</p>
-            <p class="text-sm text-gray-600 mt-0.5">Contacts essentiels et procédure d'urgence étape par étape.</p>
-          </a>
-        </div>
-      </div>
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-yellow-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-yellow-800">Culture & Essentiels</h2>
-          <span class="text-xs font-medium text-yellow-800 opacity-60">4 articles</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/fr/life/packing-guide/" class="block bg-yellow-50 border border-yellow-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-yellow-800">🧳 Bagages</span>
-            <p class="text-base font-bold text-gray-900 mt-1">Que mettre dans sa valise pour la Chine</p>
-            <p class="text-sm text-gray-600 mt-0.5">Liste de bagages pratique pour chaque saison.</p>
-          </a>
-          <a href="/fr/life/cultural-taboos/" class="block bg-yellow-50 border border-yellow-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-yellow-800">🙏 Étiquette</span>
-            <p class="text-base font-bold text-gray-900 mt-1">Us et Coutumes en Chine</p>
-            <p class="text-sm text-gray-600 mt-0.5">Guide des bonnes manières pour les visiteurs.</p>
-          </a>
-          <a href="/fr/life/chinese-phrases/" class="block bg-yellow-50 border border-yellow-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-yellow-800">🈶 Langue</span>
-            <p class="text-base font-bold text-gray-900 mt-1">Phrases chinoises essentielles pour les touristes</p>
-            <p class="text-sm text-gray-600 mt-0.5">Chinois de survie pour voyageurs.</p>
-          </a>
-        </div>
-      </div>
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-teal-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-teal-800">Hébergement</h2>
-          <span class="text-xs font-medium text-teal-800 opacity-60">1 article</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/fr/life/china-hotels-guide/" class="block bg-teal-50 border border-teal-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-teal-800">🏨 Hôtels</span>
-            <p class="text-base font-bold text-gray-900 mt-1">Comment réserver un hôtel en Chine pour les étrangers</p>
-            <p class="text-sm text-gray-600 mt-0.5">Réservez un hôtel en Chine en tant qu</p>
-          </a>
-        </div>
-      </div>
-    </div>
+    <ArticleGroups groups={groups} />
 
         <!-- Next Step -->
     <div class="border-t border-gray-100 pt-8 mb-4">

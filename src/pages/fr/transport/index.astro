@@ -2,6 +2,29 @@
 import Layout from '@layouts/Layout.astro';
 const title = 'Guide de transport — Se déplacer en Chine';
 const description = 'Trains, avions, métro et VTC — tout ce dont vous avez besoin.';
+import SectionStats from '../../../components/SectionStats.astro';
+import ArticleGroups from '../../../components/ArticleGroups.astro';
+import { STATS, GROUPS, ITEMS, COUNT, COUNT_SINGULAR, type Lang } from '../../../data/transport';
+
+const lang: Lang = 'fr';
+
+const stats = STATS.map((s) => ({ value: s.value, color: s.color, label: s.label[lang] }));
+
+const groups = GROUPS.map((g, gi) => {
+  const items = ITEMS.filter((i) => i.group === gi);
+  return {
+    color: g.color,
+    title: g.name[lang],
+    countText: (items.length === 1 ? COUNT_SINGULAR[lang] : COUNT[lang]).replace('{n}', String(items.length)),
+    items: items.map((i) => ({
+      href: `/${lang}/transport/${i.slug}/`,
+      tag: i.tag[lang],
+      title: i.title[lang],
+      desc: i.desc[lang],
+    })),
+  };
+});
+
 ---
 
 <Layout title={title} description={description} lang="fr">
@@ -14,94 +37,10 @@ const description = 'Trains, avions, métro et VTC — tout ce dont vous avez be
     </header>
 
     <!-- Quick Stats -->
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-12 not-prose">
-      <div class="bg-sky-50 border border-sky-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-sky-800">1</p>
-        <p class="text-xs font-semibold text-sky-800 uppercase tracking-wide mt-1">Guide TGV</p>
-      </div>
-      <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-emerald-800">1</p>
-        <p class="text-xs font-semibold text-emerald-800 uppercase tracking-wide mt-1">Transferts aéroport</p>
-      </div>
-      <div class="bg-purple-50 border border-purple-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-purple-800">3</p>
-        <p class="text-xs font-semibold text-purple-800 uppercase tracking-wide mt-1">Transport urbain</p>
-      </div>
-      <div class="bg-gray-50 border border-gray-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-gray-800">1</p>
-        <p class="text-xs font-semibold text-gray-800 uppercase tracking-wide mt-1">Guide VTC</p>
-      </div>
-    </div>
+    <SectionStats stats={stats} />
 
     <!-- Category Sections -->
-    <div class="space-y-8 mb-16 not-prose">
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-sky-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-sky-800">Se déplacer en Chine</h2>
-          <span class="text-xs font-medium text-sky-800 opacity-60">1 article</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/fr/transport/transport-guide/" class="block bg-sky-50 border border-sky-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-sky-800">📖 Aperçu</span>
-            <p class="text-base font-bold text-gray-900 mt-1">Comment se déplacer en Chine</p>
-            <p class="text-sm text-gray-600 mt-0.5">Aperçu complet de toutes les options de transport — trains, avions, métro et plus.</p>
-          </a>
-        </div>
-      </div>
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-emerald-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-emerald-800">Arrivée en Chine</h2>
-          <span class="text-xs font-medium text-emerald-800 opacity-60">1 article</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/fr/transport/airport-to-city/" class="block bg-emerald-50 border border-emerald-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-emerald-800">🛬 Guide</span>
-            <p class="text-base font-bold text-gray-900 mt-1">De l'aéroport au centre-ville</p>
-            <p class="text-sm text-gray-600 mt-0.5">Options de transport dans les principaux aéroports — Pékin, Shanghai, Canton et plus.</p>
-          </a>
-        </div>
-      </div>
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-purple-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-purple-800">Transport urbain</h2>
-          <span class="text-xs font-medium text-purple-800 opacity-60">3 articles</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/fr/transport/high-speed-rail/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-purple-800">🚄 Guide</span>
-            <p class="text-base font-bold text-gray-900 mt-1">Comment réserver et prendre le TGV chinois</p>
-            <p class="text-sm text-gray-600 mt-0.5">Tout savoir sur la réservation et l'utilisation du plus grand réseau de TGV au monde.</p>
-          </a>
-          <a href="/fr/transport/flights-vs-rail/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-purple-800">✈️ Guide</span>
-            <p class="text-base font-bold text-gray-900 mt-1">Avion vs TGV</p>
-            <p class="text-sm text-gray-600 mt-0.5">Train ou avion pour votre voyage en Chine ? Une comparaison chiffrée.</p>
-          </a>
-          <a href="/fr/transport/metro-bus/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-purple-800">🚇 Guide</span>
-            <p class="text-base font-bold text-gray-900 mt-1">Guide du métro et du bus dans les grandes villes</p>
-            <p class="text-sm text-gray-600 mt-0.5">Naviguez dans les transports en commun à Pékin, Shanghai, Canton et Shenzhen.</p>
-          </a>
-        </div>
-      </div>
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-gray-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-gray-800">VTC (Ride-Hailing)</h2>
-          <span class="text-xs font-medium text-gray-800 opacity-60">1 article</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/fr/transport/didi/" class="block bg-gray-50 border border-gray-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-gray-800">🚕 Tutoriel</span>
-            <p class="text-base font-bold text-gray-900 mt-1">Comment utiliser Didi en Chine en tant qu'étranger</p>
-            <p class="text-sm text-gray-600 mt-0.5">Guide étape par étape pour utiliser DiDi, le Uber chinois — avec captures d'écran.</p>
-          </a>
-        </div>
-      </div>
-    </div>
+    <ArticleGroups groups={groups} />
 
         <!-- Next Step -->
     <div class="border-t border-gray-100 pt-8 mb-4">

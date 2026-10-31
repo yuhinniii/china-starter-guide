@@ -1,0 +1,308 @@
+---
+import Layout from '@layouts/Layout.astro';
+import FAQPage from '../../../components/FAQPage.astro';
+
+const title = "Возврат НДС при выезде из Китая в 2026 году: как получить 9 %";
+const description = "Возврат НДС при выезде из Китая в 2026 году: порог ¥200, три нужных документа, лимит 90 дней и как на самом деле работает таможенная проверка в аэропорту.";
+
+const faqs = [
+  {
+    question: "Сколько нужно потратить, чтобы получить возврат налога в Китае?",
+    answer: "Минимум ¥200 в одном магазине с возвратом налога в один день. Запросите в кассе заявление на возврат (离境退税申请单) и обычный счёт-фактуру НДС (增值税普通发票) и сохраните оба — без них возврат не оформить."
+  },
+  {
+    question: "Нужен ли паспорт для получения возврата?",
+    answer: "Да, и это должен быть физический паспорт, на котором вы въехали в Китай. Заявление заполняется с типом и номером вашего паспорта, а таможня сверяет документ с человеком перед собой. Фотографии в телефоне и ксерокопии не принимаются."
+  },
+  {
+    question: "Сколько денег на самом деле возвращается?",
+    answer: "Около 9 % на большинстве товаров и около 6 % на товарах по сниженной ставке. Номинальные ставки — 11 % и 8 %, минус примерно 2 %, которые берёт агентство по возврату. При покупке за ¥10 000 это около ¥900, а не ¥1 100."
+  },
+  {
+    question: "Можно ли получить возврат наличными в аэропорту?",
+    answer: "Да, до ¥20 000 на одну заявку в кассе возврата в зоне вылета. Всё, что выше, выплачивается банковским переводом. Некоторые магазины и городские пункты возврата также платят на месте по схеме возврат при покупке (即买即退)."
+  },
+  {
+    question: "Нужны ли товары с собой в аэропорту?",
+    answer: "Для выборочно проверяемых заявок — да. Заявки с суммой покупки до ¥10 000 с июля 2026 года отбираются случайным образом; если вашу не выбрали, проверку можно пропустить. Держите товары с правом на возврат в ручной клади или сверху в чемодане, пока не пройдёте таможню."
+  }
+];
+---
+
+<Layout title={title} description={description} lang="ru" type="Article">
+  <nav class="mb-8 not-prose">
+    <a href="/ru/payment/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+      <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+      </svg>
+      Назад к платежам
+    </a>
+  </nav>
+
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">💳 Платежи</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">Возврат НДС при выезде из Китая: как получить ~9 % при отъезде</h1>
+      <p class="text-xl text-gray-600 mb-6">Порог ¥200, три нужных документа и как пройти возврат через аэропорт, не потеряв полдня.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Последнее обновление: октябрь 2026</span>
+        <span>⏱️ 8 мин. чтения</span>
+      </div>
+    </header>
+
+    <img
+      src="/images/tax-refund/tax-refund-flow.webp"
+      alt="Блок-схема возврата НДС при выезде из Китая: покупка в магазине Tax Free, получение заявления на возврат и VAT-счёта, таможенная проверка, затем получение возврата"
+      width="1080"
+      height="606"
+      class="w-full rounded-2xl mb-10 not-prose"
+    />
+
+    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-red-900 mb-4">⚡ Могут ли туристы получить возврат налога в Китае?</h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>Краткий ответ:</strong> Да. Потратьте минимум <strong>¥200</strong> в одном магазине с вывеской <strong>Tax Free (退税商店)</strong> и сможете получить примерно <strong>9 % обратно</strong> с большинства товаров при выезде из Китая или около <strong>6 %</strong> с товаров по сниженной ставке. Вам нужны три вещи: <strong>заявление на возврат</strong> (离境退税申请单), <strong>обычный счёт-фактура НДС</strong> (增值税普通发票) и ваш <strong>паспорт</strong> — физический, на котором вы въехали. Получите в аэропорту на выходе или на месте в пункте возврат при покупке (即买即退) в городе. Товары должны покинуть Китай в течение <strong>90 дней</strong> с покупки. См. наш <a href="/ru/payment/china-shopping/" class="text-red-700 underline">гайд по шопингу в Китае</a>, чтобы узнать, что на самом деле стоит покупать.</p>
+      <p class="text-lg leading-relaxed text-gray-700">Возврат распространяется на личные вещи, которые вы забираете домой: косметика, электроника, одежда, чай, шёлк, фарфор, нефрит, ремёсла. Он не распространяется на то, что вы потребляете в Китае, на услуги и на товары из списка запрещённых и ограниченных.</p>
+    </div>
+
+    <div class="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-2xl p-6 mb-12 not-prose">
+      <p class="text-lg leading-relaxed text-yellow-900"><strong>Честная версия:</strong> это скидка задним числом, а не скидка — вы платите полную цену с налогом на кассе и позже получаете часть обратно. На футболке и магните для холодильника очередь не стоит: нужно ¥200 в одном магазине в один день, чтобы что-то можно было заявить, 90-дневный срок начинает идти с покупки, а агентство забирает около 2 % от причитающегося. На ноутбуке, часах, паре обуви или сумке это самые простые 9 % в путешествии — если только вы не сдадите чемодан до таможенного осмотра товаров.</p>
+    </div>
+
+    <h2 id="rules" class="text-3xl font-bold text-gray-900 mb-6 mt-14">Каковы правила возврата НДС при выезде из Китая?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4">Схема называется <em>lí jìng tuì shuì</em> (离境退税) — буквально «возврат налога при выезде из страны». Она возвращает НДС, уплаченный за товары, купленные в зарегистрированных магазинах Tax Free, после того как эти товары покидают Китай вместе с вами. Заявленная ставка выглядит щедро; на руки вы получаете чуть меньше.</p>
+    <p class="text-base text-gray-500 mb-4">Правила возврата НДС при выезде из Китая в 2026 году вкратце</p>
+    <div class="overflow-x-auto mb-8 not-prose">
+      <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+        <caption class="sr-only">Правила возврата НДС при выезде из Китая в 2026 году — минимальная сумма, ставки возврата, право на участие, удостоверение личности, срок, лимит наличных, безбумажная обработка и возврат при покупке</caption>
+        <thead>
+          <tr class="bg-gray-900 text-white">
+            <th class="px-6 py-4 font-bold">Правило</th>
+            <th class="px-6 py-4 font-bold">Детали</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">Минимальная сумма</td>
+            <td class="px-6 py-4">¥200 в одном магазине, в один день. Не ¥200 за всю поездку по магазинам — один магазин.</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">Ставка возврата</td>
+            <td class="px-6 py-4">11 % на товары в категории НДС 13 %, 8 % — в категории 9 %. После сбора агентства ~2 % вы получаете на руки около <strong>9 %</strong> или <strong>6 %</strong>.</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">Кто имеет право</td>
+            <td class="px-6 py-4">Нерезиденты, находящиеся в материковом Китае 183 дня или менее: владельцы иностранных паспортов, а также жители Гонконга, Макао и Тайваня.</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">Удостоверение личности</td>
+            <td class="px-6 py-4"><strong>Ваш паспорт</strong> — тот же, на котором вы въехали. Заявление на возврат заполняется с его типом и номером, и его проверяют на каждой кассе.</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">Срок</td>
+            <td class="px-6 py-4">Покиньте Китай в течение <strong>90 дней</strong> с даты покупки. Если вы взяли деньги вперёд по схеме возврат при покупке (即买即退), у вас 28 дней.</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">Лимит наличных</td>
+            <td class="px-6 py-4">До ¥20 000 наличными на одну заявку в аэропорту. Выше — банковский перевод.</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">Оформление с июля 2026</td>
+            <td class="px-6 py-4">Полностью цифровое. Таможня и агентство возврата выгружают ваше заявление и счёт-фактуру из системы — но сохраните бумагу, потому что на кассах всё равно спрашивают.</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">Выборочные проверки с июля 2026</td>
+            <td class="px-6 py-4">Заявки с суммой покупки до ¥10 000 отбираются случайным образом для физической проверки. Если вашу не выбрали, проверку товаров в аэропорту можно пропустить полностью.</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">Возврат при покупке</td>
+            <td class="px-6 py-4">«即买即退» — получите в магазине или городском пункте возврата под авторизацию кредитной карты. Межгородские заявки (купили в одном городе, вылетаете из другого) работают по всей стране с 1 сентября 2026 года.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <img
+      src="/images/tax-refund/refund-application-form.webp"
+      alt="Заявление на возврат для зарубежных посетителей с полями типа и номера паспорта, номерами счетов-фактур, товарами, ставкой возврата 11 % и полем таможенной проверки"
+      width="1080"
+      height="607"
+      loading="lazy"
+      class="w-full rounded-2xl mb-4 not-prose"
+    />
+    <p class="text-sm text-gray-500 mb-8">В заявлении на возврат указывается номер вашего паспорта. Всё, что будет дальше, — таможня, агентство, банк — привязано к этому номеру.</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="how-much" class="text-3xl font-bold text-gray-900 mb-6 mt-14">Сколько денег на самом деле возвращается?</h2>
+
+    <img
+      src="/images/tax-refund/vat-invoice.webp"
+      alt="Обычный счёт-фактура НДС Китая с позициями товаров, колонкой ставки 13 % и итоговой суммой с налогом внизу"
+      width="1000"
+      height="635"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">11 % и 8 % в правилах — это <em>номинальные</em> ставки, установленные политикой, а не то, что приходит на ваш счёт. Агентство по возврату берёт комиссию за обработку примерно 2 % от суммы счёта сверху, поэтому каждый гайд и говорит «около 9 %».</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Посчитайте на одной строке. Ноутбук за ¥10 000, купленный в магазине Tax Free, попадает в категорию НДС 13 %: номинальный возврат 11 %, то есть ¥1 100, минус около ¥200 комиссии агентства — вы получаете примерно <strong>¥900</strong> обратно. Товар за ¥1 000 возвращает около ¥90. Ниже порога ¥200 на магазин в день — ответ ¥0.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Товары по сниженной ставке ведут себя иначе. Чай, например, попадает в категорию НДС 9 %: номинальная ставка 8 %, а на руки вы получаете около 6 %. Если ваша добыча тяжела на чай и легка на электронику, закладывайте возврат 6 %, а не 9 %.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Один структурный предел стоит узнать до того, как планировать шопинг-поездку вокруг этого: возврат возвращает НДС, а НДС никогда не был главной причиной, по которой импортная роскошь дорога в Китае. Если сумка стоит здесь дороже, чем в Париже, 9 % обратно редко перекрывает разницу. Там, где возврат действительно меняет арифметику, — товары китайского производства и всё, что вы и так собирались купить, — см. <a href="/ru/payment/china-shopping/" class="text-brand-600 hover:underline">гайд по шопингу</a>, какие категории к ним относятся.</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6 clear-both"><strong>Счёт-фактура — то, где ошибаются люди.</strong> Вам нужен <em>обычный счёт-фактура НДС</em> (增值税普通发票), оформленный на ваши данные, а не кассовый чек, не рукописная записка и не фото счёта. Мелкие ларьки часто вообще не могут его выписать — и это настоящая причина, почему рыночная находка никогда не подпадает под возврат.</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="how-to-claim" class="text-3xl font-bold text-gray-900 mb-6 mt-14">Как получить возврат в аэропорту?</h2>
+
+    <img
+      src="/images/tax-refund/customs-verification.webp"
+      alt="Стойка таможенной проверки (海关验核) при выезде из китайского аэропорта с табличкой 离境退税 海关验核 / Departure Tax Refund Customs Verification и очередью путешественников"
+      width="600"
+      height="398"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>Маршрут А — аэропорт, по-прежнему самый распространённый путь.</strong> Три остановки в таком порядке: магазин, таможня, касса возврата. Сделайте всё это <em>до</em> сдачи багажа.</p>
+
+    <ol class="list-decimal pl-6 space-y-3 text-lg leading-relaxed text-gray-700 mb-6 clear-both">
+      <li><strong>В магазине — соберите документы.</strong> Запросите заявление на возврат (离境退税申请单) и обычный счёт-фактуру НДС (增值税普通发票). Магазин заполняет заявление с типом вашего паспорта, номером паспорта и датой въезда, поэтому отдайте сам паспорт — им нужно прочитать номер. Проверьте, что номер паспорта в заявлении совпадает с вашим паспортом посимвольно; опечатка в цифре — и вас развернут в аэропорту, а в том городе вас уже не будет, чтобы это исправить.</li>
+      <li><strong>В аэропорту, до регистрации — таможенная проверка (海关验核).</strong> Возьмите товары, паспорт, заявление и счёт-фактуру к таможенному столу. С июля 2026 года заявки с суммой покупки до ¥10 000 проходят выборочную проверку случайным образом: если вашу не выбрали, этот шаг можно пропустить и сразу пойти к кассе возврата. Если выбрали, офицер хочет увидеть сами товары, поэтому не упаковывайте их в багаж.</li>
+      <li><strong>В кассе возврата, в зоне вылета — получите деньги.</strong> Предъявите тот же паспорт у стойки агентства возврата (退税代理机构). Наличными до ¥20 000, выше — банковским переводом. Возврат выплачивается в юанях, так что либо потратьте их в зоне вылета, либо согласитесь на курс, который даст ваш банк.</li>
+    </ol>
+
+    <img
+      src="/images/tax-refund/instant-refund-point.webp"
+      alt="Вывеска пекинского пункта мгновенного возврата — TAX REFUND (离境退税), Instant Refund Service (即买即退集中退付点), Beijing One-Stop Service"
+      width="800"
+      height="503"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>Маршрут Б — возврат при покупке (即买即退).</strong> Если магазин предлагает это или вы рядом с городским пунктом возврата, вы получаете деньги до отъезда из города. Магазин платит сразу и берёт авторизацию кредитной карты в качестве залога, что товары действительно покинут Китай; авторизация снимается, когда таможня подтверждает выезд. Теперь это работает между городами — купили в Чэнду, вылетаете из Шанхая — а объединённые пункты возврата уже работают в Гуанчжоу, Чунцине и Чэнду, причём Пекин запустил городскую службу «одного окна» под своим брендом.</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">С авансом связаны два условия. Вы должны покинуть Китай в течение <strong>28 дней</strong> с момента получения денег, и товары должны быть неиспользованными и оставаться у вас при выезде. Нарушите любое из них — и с карты спишут авторизацию вместо того, чтобы её снять, — это самый дорогой способ ошибиться с возвратом налога.</p>
+
+
+    <div class="clear-both"></div>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="duty-free-vs-refund" class="text-3xl font-bold text-gray-900 mb-6 mt-14">Duty-free или возврат налога — что подходит вам?</h2>
+
+    <img
+      src="/images/tax-refund/duty-free-store.webp"
+      alt="Витрина магазина cdf China Duty Free внутри терминала аэропорта с вывеской 免税店 DUTY FREE над стеклянными ювелирными витринами"
+      width="640"
+      height="480"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">В Китае три отдельных способа купить без полной уплаты налога, и путешественники постоянно их путают. Какой подходит, зависит от того, где вы находитесь и как уезжаете, — а не от того, что вы покупаете.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>1. Возврат НДС при выезде (退税商店) — о чём этот гайд.</strong> Вы покупаете обычные товары с налогом в зарегистрированном магазине в городе, а затем заявляете примерно 9 % НДС на выходе. Сначала платите, потом вам возвращают.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>2. Duty-free в аэропорту (机场免税店) — для международных брендов у выхода.</strong> Магазины в зоне вылета продают без ввозной пошлины и НДС на кассе, поэтому заявлять нечего; скидка уже в ценнике на полке. Выбор международных марок лучше, чем в большинстве городских магазинов, по китайским брендам — хуже.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>3. Хайнаньский офшорный duty-free (海南离岛免税) — схема, уникальная для острова.</strong> Это не то же, что возврат, и не только для китайских покупателей: любой, кто покидает Хайнань самолётом, поездом или паромом, включая иностранные паспорта, может купить duty-free там в рамках годовой квоты. Если ваша поездка заканчивается вылетом с Хайнаня, вы покидаете остров и страну одновременно, и две схемы пересекаются так, что правила меняли не раз, — спросите на кассе, что применяется к вашему маршруту. Наш <a href="/ru/cities/hainan-visa-free/" class="text-brand-600 hover:underline">гайд по въезду на Хайнань</a> охватывает визовую сторону этой поездки.</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6 clear-both"><strong>Практическая разница:</strong> duty-free — это скидка на кассе без бумажной волокиты, а возврат — деньги позже с тремя документами и очередью. Если магазин предлагает оба, duty-free обычно выигрывает на международных брендах, а возврат — на китайских.</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="worth-it" class="text-3xl font-bold text-gray-900 mb-6 mt-14">Стоит ли бумажной волокиты с возвратом?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Для большинства посетителей — да, но только на правильных покупках. Иностранные посетители потратили ¥263,6 млрд в Китае с января по июль 2026 года, на 27,8 % больше в годовом выражении, а число путешественников, подающих заявки на возврат НДС при выезде, более чем утроилось за тот же период. Объём продаж, охваченный схемой возврата, вырос на 69 % в первой половине 2026 года, что говорит: очередь в аэропорту не сокращается.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Точка безубыточности проста. Ниже ¥200 в одном магазине в один день заявлять нечего. Между ¥200 и примерно ¥1 000 возврат невелик — меньше ¥90, — поэтому стоит делать, только если вы уже в аэропорту со временем в запасе. Выше ¥1 000 это реальные деньги, а выше ¥5 000 стоит планировать вылет вокруг этого: заявите до регистрации, держите товары в ручной клади и оставьте 30 лишних минут на таможенный стол.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Ещё одно, на что стоит заложить: возврат выплачивается в юанях. Если вы в пути домой и не вернётесь, эти наличные пригодятся только в зоне вылета. Потратьте на последний ужин или согласитесь на курс, который даст ваш банк при переводе.</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="faq" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">❓ Часто задаваемые вопросы</h2>
+    <div class="space-y-6 mb-8 not-prose">
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">Сколько нужно потратить, чтобы получить возврат налога в Китае?</h3>
+        <p class="text-gray-700">Минимум ¥200 в одном магазине с возвратом налога в один день. Запросите в кассе заявление на возврат (离境退税申请单) и обычный счёт-фактуру НДС (增值税普通发票) и сохраните оба — без них возврат не оформить.</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">Нужен ли паспорт для получения возврата?</h3>
+        <p class="text-gray-700">Да, и это должен быть физический паспорт, на котором вы въехали в Китай. Заявление заполняется с типом и номером вашего паспорта, а таможня сверяет документ с человеком перед собой. Фотографии в телефоне и ксерокопии не принимаются.</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">Сколько денег на самом деле возвращается?</h3>
+        <p class="text-gray-700">Около 9 % на большинстве товаров и около 6 % на товарах по сниженной ставке. Номинальные ставки — 11 % и 8 %, минус примерно 2 %, которые берёт агентство по возврату. При покупке за ¥10 000 это около ¥900, а не ¥1 100.</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">Можно ли получить возврат наличными в аэропорту?</h3>
+        <p class="text-gray-700">Да, до ¥20 000 на одну заявку в кассе возврата в зоне вылета. Всё, что выше, выплачивается банковским переводом. Некоторые магазины и городские пункты возврата также платят на месте по схеме возврат при покупке (即买即退).</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">Нужны ли товары с собой в аэропорту?</h3>
+        <p class="text-gray-700">Для выборочно проверяемых заявок — да. Заявки с суммой покупки до ¥10 000 с июля 2026 года отбираются случайным образом; если вашу не выбрали, проверку можно пропустить. Держите товары с правом на возврат в ручной клади или сверху в чемодане, пока не пройдёте таможню.</p>
+      </div>
+    </div>
+
+    <div class="not-prose mt-12 pt-8 border-t border-gray-200">
+      <h3 class="text-base font-bold text-gray-900 mb-4 flex items-center gap-2">📚 Источники</h3>
+      <ul class="space-y-3">
+        <li>
+          <a href="https://taxfree.mofcom.gov.cn/taxfreeEnPc/index.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">Министерство коммерции — Сервисная платформа по возврату НДС при выезде (официальная англоязычная платформа: поиск магазинов Tax Free, пункты возврата, многоязычный гайд)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://karachi.mofcom.gov.cn/jmxw/art/2026/art_4c238850af4e41d48ec7478a8b8fbec0.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">Shopping in China: Tax Refund Policy Explained — двуязычный гайд MOFCOM (порог ¥200, ставки 11 % / 8 %, удостоверение личности, способы возврата)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://scyxs.mofcom.gov.cn/zcfg/art/2026/art_9845ac0b49454fd598320a52125ba23a.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">Министерство коммерции и ещё пять ведомств, уведомление № 74 от 2026 года (18 мая 2026 г.) — расширение охвата магазинов, выборочные проверки до ¥10 000, безбумажная обработка</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.gov.cn/zhengce/zhengceku/202607/content_7075798.htm" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">Государственное налоговое управление (июль 2026) — возврат при покупке распространяется по всей стране межрегионально с 1 сентября 2026 года; безбумажная подача, пилот онлайн-магазинов, национальный QR-код возврата</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://shanghai.chinatax.gov.cn/xwdt/ztzl/zcgll/ljts/zchb/201911/t449153.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">Налоговое управление Шанхая — «Политика возврата НДС при выезде для зарубежных посетителей» (двуязычный; ставки 11 % / 8 %, сбор агентства 2 %, лимит наличных ¥20 000)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.globaltimes.cn/page/202512/1350012.shtml" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">Global Times — заявки на возврат выросли на 285 % за первые 11 месяцев (12 252 магазина с возвратом по стране, 7 000+ предлагают возврат при покупке)</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="border-t border-gray-100 pt-6 mt-8">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5 not-prose">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h3 class="text-sm font-bold text-gray-900">📚 Далее читать</h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="/ru/payment/china-shopping/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              Что купить в Китае
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ru/payment/payment-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              Как платить в Китае
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ru/visa/customs-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              Таможенные правила Китая
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ru/visa/visa-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              Виза и въезд в Китай: гайд
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <FAQPage items={faqs} />
+</Layout>

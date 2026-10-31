@@ -1,0 +1,308 @@
+---
+import Layout from '@layouts/Layout.astro';
+import FAQPage from '../../../components/FAQPage.astro';
+
+const title = "Devolución de impuestos a la salida en China 2026: cómo recuperar 9 %";
+const description = "La devolución de impuestos a la salida en China en 2026: el umbral de ¥200, los tres documentos que necesitas, el límite de 90 días y cómo funciona realmente la verificación aduanera en el aeropuerto.";
+
+const faqs = [
+  {
+    question: "¿Cuánto tengo que gastar para solicitar la devolución de impuestos en China?",
+    answer: "Al menos ¥200 en una sola tienda con devolución de impuestos en un solo día. Pide el formulario de solicitud de devolución (离境退税申请单) y una factura general de IVA (增值税普通发票) en caja, y conserva ambos: la devolución no se puede tramitar sin ellos."
+  },
+  {
+    question: "¿Necesito mi pasaporte para solicitar la devolución?",
+    answer: "Sí, y tiene que ser el pasaporte físico con el que entraste en China. El formulario de solicitud se rellena con el tipo y número de tu pasaporte, y aduanas comprueba el documento contra la persona que tiene delante. No se aceptan fotos ni fotocopias."
+  },
+  {
+    question: "¿Cuánto dinero mío vuelve realmente?",
+    answer: "Unos 9 % en la mayoría de los bienes y unos 6 % en los bienes de tipo reducido. Las tasas nominales son 11 % y 8 %, menos aproximadamente 2 % que cobra la agencia de devolución. En una compra de ¥10.000 eso son unos ¥900, no ¥1.100."
+  },
+  {
+    question: "¿Puedo recibir la devolución en efectivo en el aeropuerto?",
+    answer: "Sí, hasta ¥20.000 por solicitud en el mostrador de devolución dentro de la zona de salida. Cualquier cantidad superior se paga por transferencia bancaria. Algunas tiendas y puntos de devolución en la ciudad también pagan en el acto bajo el esquema de devolución en el momento de la compra (即买即退)."
+  },
+  {
+    question: "¿Necesito llevar los bienes conmigo en el aeropuerto?",
+    answer: "Para las solicitudes seleccionadas al azar, sí. Las solicitudes por debajo de ¥10.000 en valor de venta se eligen al azar desde julio de 2026; si la tuya no sale elegida, te saltas la inspección. Mantén los artículos con derecho a devolución en tu equipaje de mano o en la parte superior de la maleta facturada hasta haber pasado aduanas."
+  }
+];
+---
+
+<Layout title={title} description={description} lang="es" type="Article">
+  <nav class="mb-8 not-prose">
+    <a href="/es/payment/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+      <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+      </svg>
+      Volver a Pagos
+    </a>
+  </nav>
+
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">💳 Pagos</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">La devolución de impuestos a la salida en China: cómo recuperar unos 9 % al salir</h1>
+      <p class="text-xl text-gray-600 mb-6">El umbral de ¥200, los tres documentos que necesitas y cómo tramitar una devolución por el aeropuerto sin perder una tarde.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Última actualización: octubre 2026</span>
+        <span>⏱️ 8 min de lectura</span>
+      </div>
+    </header>
+
+    <img
+      src="/images/tax-refund/tax-refund-flow.webp"
+      alt="Diagrama de flujo de la devolución de impuestos a la salida en China: compra en una tienda libre de impuestos, obtén el formulario de solicitud de devolución y la factura de IVA, verificación aduanera y luego cobra la devolución"
+      width="1080"
+      height="606"
+      class="w-full rounded-2xl mb-10 not-prose"
+    />
+
+    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-red-900 mb-4">⚡ ¿Pueden los turistas obtener una devolución de impuestos en China?</h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>Respuesta rápida:</strong> Sí. Gasta al menos <strong>¥200</strong> en una sola tienda que exhiba el cartel <strong>Tax Free (退税商店)</strong> y podrás reclamar aproximadamente <strong>9 %</strong> en la mayoría de los bienes al salir de China, o unos <strong>6 %</strong> en los bienes de tipo reducido. Necesitas tres cosas: el <strong>formulario de solicitud de devolución</strong> (离境退税申请单), una <strong>factura general de IVA</strong> (增值税普通发票) y tu <strong>pasaporte</strong>: el físico con el que entraste. Reclama en el aeropuerto a la salida, o en el acto en un mostrador de devolución en el momento de la compra (即买即退) en la ciudad. Los bienes deben salir de China en un plazo de <strong>90 días</strong> desde la compra. Consulta nuestra <a href="/es/payment/china-shopping/" class="text-red-700 underline">guía de compras en China</a> para saber qué merece realmente la pena comprar.</p>
+      <p class="text-lg leading-relaxed text-gray-700">La devolución se aplica a artículos personales que te llevas a casa: cosmética, electrónica, ropa, té, seda, porcelana, jade y artesanía. No se aplica a nada que consumas en China, a servicios, ni a bienes en la lista de prohibidos y restringidos.</p>
+    </div>
+
+    <div class="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-2xl p-6 mb-12 not-prose">
+      <p class="text-lg leading-relaxed text-yellow-900"><strong>La versión sincera:</strong> esto es un reembolso, no un descuento: pagas el precio completo con impuestos incluidos en caja y recuperas parte de él más tarde. En una camiseta y un imán de nevera no vale la cola: necesitas ¥200 en una tienda en un día antes de que algo sea reembolsable, el reloj de 90 días empieza en la compra, y la agencia se queda con unos 2 % de lo que se te debe. En un portátil, un reloj, un par de zapatos o un bolso, es el 9 % más fácil del viaje, siempre que no factures la bolsa antes de que aduanas haya visto los bienes.</p>
+    </div>
+
+    <h2 id="rules" class="text-3xl font-bold text-gray-900 mb-6 mt-14">¿Cuáles son las normas de devolución de impuestos a la salida en China?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4">El esquema se llama <em>lí jìng tuì shuì</em> (离境退税) —literalmente «devolución de impuestos al salir del país». Devuelve el IVA que pagaste por bienes comprados en tiendas registradas libres de impuestos, una vez que esos bienes salen de China contigo. La tasa principal parece generosa; lo que realmente te quedas es un poco menos.</p>
+    <p class="text-base text-gray-500 mb-4">Las normas de devolución de impuestos a la salida en China de un vistazo, 2026</p>
+    <div class="overflow-x-auto mb-8 not-prose">
+      <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+        <caption class="sr-only">Las normas de devolución de impuestos a la salida en China en 2026 — gasto mínimo, tasas de devolución, elegibilidad, documento de identidad, plazo, límite en efectivo, tramitación sin papel y devolución en el momento de la compra</caption>
+        <thead>
+          <tr class="bg-gray-900 text-white">
+            <th class="px-6 py-4 font-bold">Norma</th>
+            <th class="px-6 py-4 font-bold">Detalles</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">Gasto mínimo</td>
+            <td class="px-6 py-4">¥200 en una tienda, en un día. No ¥200 repartidos en un viaje de compras: una tienda.</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">Tasa de devolución</td>
+            <td class="px-6 py-4">11 % en bienes del tramo de IVA del 13 %, 8 % en el del 9 %. Tras la comisión de la agencia de ~2 %, te quedas con unos <strong>9 %</strong> o <strong>6 %</strong>.</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">Quién califica</td>
+            <td class="px-6 py-4">No residentes que hayan estado en China continental 183 días o menos: titulares de pasaporte extranjero, además de residentes de Hong Kong, Macao y Taiwán.</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">Documento de identidad</td>
+            <td class="px-6 py-4"><strong>Tu pasaporte</strong>: el mismo con el que entraste. El formulario de devolución se rellena con su tipo y número, y se comprueba en cada mostrador.</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">Plazo</td>
+            <td class="px-6 py-4">Sal de China en un plazo de <strong>90 días</strong> desde la fecha de compra. Si tomaste el dinero por adelantado con devolución en el momento de la compra (即买即退), tienes 28 días.</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">Límite en efectivo</td>
+            <td class="px-6 py-4">Hasta ¥20.000 en efectivo por solicitud en el aeropuerto. Por encima, transferencia bancaria.</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">Trámites desde julio de 2026</td>
+            <td class="px-6 py-4">Totalmente digital. Aduanas y la agencia de devolución obtienen tu formulario de solicitud y tu factura del sistema, pero conserva el papel igualmente, porque los mostradores aún lo piden.</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">Controles al azar desde julio de 2026</td>
+            <td class="px-6 py-4">Las solicitudes por debajo de ¥10.000 en valor de venta se eligen al azar para una comprobación física. Si la tuya no sale elegida, te saltas por completo la inspección de bienes en el aeropuerto.</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">Devolución en el momento de la compra</td>
+            <td class="px-6 py-4">«即买即退»: cobra en la tienda o en un punto de devolución de la ciudad contra una autorización de tarjeta de crédito. Las solicitudes entre ciudades (comprar en una ciudad, salir por otra) funcionan en todo el país desde el 1 de septiembre de 2026.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <img
+      src="/images/tax-refund/refund-application-form.webp"
+      alt="Formulario de solicitud de devolución para visitantes extranjeros, con campos de tipo y número de pasaporte, números de factura, bienes, tasa de devolución del 11 % y el cuadro de verificación aduanera"
+      width="1080"
+      height="607"
+      loading="lazy"
+      class="w-full rounded-2xl mb-4 not-prose"
+    />
+    <p class="text-sm text-gray-500 mb-8">El formulario de solicitud de devolución es donde va tu número de pasaporte. Todo lo que viene después —aduanas, la agencia, el banco— se clava a ese número.</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="how-much" class="text-3xl font-bold text-gray-900 mb-6 mt-14">¿Cuánto de tu dinero vuelve realmente?</h2>
+
+    <img
+      src="/images/tax-refund/vat-invoice.webp"
+      alt="Factura general de IVA china que muestra líneas de artículos, columna de tasa de impuesto del 13 % y monto total más impuesto al final"
+      width="1000"
+      height="635"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">El 11 % y el 8 % de las normas son las tasas <em>nominales</em> fijadas por la política, no lo que entra en tu cuenta. La agencia de devolución cobra una comisión de manejo de aproximadamente 2 % del monto de la factura por encima, por eso todas las guías dicen «unos 9 %».</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Hazlo en una sola línea. Un portátil de ¥10.000, comprado en una tienda libre de impuestos, está en el tramo de IVA del 13 %: devolución nominal 11 %, es decir ¥1.100, menos unos ¥200 de comisión de agencia, lo que te devuelve aproximadamente <strong>¥900</strong>. Un artículo de ¥1.000 devuelve unos ¥90. Por debajo del umbral de ¥200 por tienda por día, la respuesta es ¥0.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Los bienes de tipo reducido se comportan de otro modo. El té, por ejemplo, está en el tramo de IVA del 9 %: la tasa nominal es 8 % y te quedas alrededor de 6 %. Si tu carga es mucho té y poca electrónica, presupuesta la devolución al 6 %, no al 9 %.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Un límite estructural que conviene conocer antes de planear un viaje de compras en torno a esto: la devolución devuelve el IVA, y el IVA nunca fue la razón principal por la que los bienes de lujo importados son caros en China. Si un bolso cuesta más aquí que en París, un 9 % de vuelta rara vez cubre la diferencia. Donde la devolución cambia de verdad la aritmética es en los bienes fabricados en China y en cualquier cosa que ibas a comprar de todos modos; consulta la <a href="/es/payment/china-shopping/" class="text-brand-600 hover:underline">guía de compras</a> para saber qué categorías son esas.</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6 clear-both"><strong>La factura es la parte que la gente se equivoca.</strong> Necesitas una <em>factura general de IVA</em> (增值税普通发票) a tu nombre, no un ticket de caja, ni una nota escrita a mano, ni una foto de una. Los puestos pequeños a menudo no pueden emitir ninguna, que es la verdadera razón por la que una ganga de mercado nunca tiene derecho a devolución.</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="how-to-claim" class="text-3xl font-bold text-gray-900 mb-6 mt-14">¿Cómo solicitas la devolución en el aeropuerto?</h2>
+
+    <img
+      src="/images/tax-refund/customs-verification.webp"
+      alt="Mostrador de verificación aduanera en la salida de un aeropuerto chino, señalizado 离境退税 海关验核 / Departure Tax Refund Customs Verification, con viajeros en cola"
+      width="600"
+      height="398"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>Ruta A — el aeropuerto, todavía el camino más común.</strong> Tres paradas, en este orden: la tienda, aduanas, el mostrador de devolución. Haz todo esto <em>antes</em> de facturar tu maleta.</p>
+
+    <ol class="list-decimal pl-6 space-y-3 text-lg leading-relaxed text-gray-700 mb-6 clear-both">
+      <li><strong>En la tienda — recoge el papeleo.</strong> Pide el formulario de solicitud de devolución (离境退税申请单) y la factura general de IVA (增值税普通发票). La tienda rellena el formulario con el tipo de pasaporte, el número de pasaporte y la fecha de entrada, así que entrega el pasaporte físico: necesitan leer el número de él. Comprueba que el número de pasaporte del formulario coincide con tu pasaporte, carácter a carácter; un dígito mal escrito te hace rechazar en el aeropuerto, y ya no estarás en esa ciudad para arreglarlo.</li>
+      <li><strong>En el aeropuerto, antes de facturar — verificación aduanera (海关验核).</strong> Lleva los bienes, tu pasaporte, el formulario y la factura al mostrador de aduanas. Desde julio de 2026, las solicitudes por debajo de ¥10.000 en valor de venta se comprueban al azar: si la tuya no sale elegida, puedes saltarte este paso e ir directo al mostrador de devolución. Si sale elegida, el funcionario quiere ver los bienes en sí, así que no los metas en el equipaje facturado.</li>
+      <li><strong>En el mostrador de devolución, dentro de la zona de salida — cobra el dinero.</strong> Muestra el mismo pasaporte en el mostrador de la agencia de devolución (退税代理机构). Efectivo hasta ¥20.000, transferencia bancaria por encima. La devolución se emite en yuanes, así que o gastalos en la zona airside o acepta la conversión que te da tu banco.</li>
+    </ol>
+
+    <img
+      src="/images/tax-refund/instant-refund-point.webp"
+      alt="Cartel de un punto de devolución inmediata de Pekín — TAX REFUND (离境退税), Servicio de Devolución Inmediata (即买即退集中退付点), Servicio Integral de Pekín"
+      width="800"
+      height="503"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>Ruta B — devolución en el momento de la compra (即买即退).</strong> Si la tienda lo ofrece, o estás cerca de un punto de devolución en la ciudad, cobras el dinero antes de salir de la ciudad. La tienda te paga de inmediato y toma una autorización de tarjeta de crédito como garantía de que los bienes salen realmente de China; la autorización se libera una vez que aduanas confirma la salida. Ya funciona entre ciudades: compra en Chengdu, sal de Shanghái, y los puntos de devolución consolidados ya operan en Guangzhou, Chongqing y Chengdu, con Pekín ofreciendo un servicio integral de ciudad bajo su propia marca.</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">El dinero por adelantado trae dos condiciones. Debes salir de China en un plazo de <strong>28 días</strong> desde que lo recibes, y los bienes tienen que estar sin usar y en tu poder cuando salgas. Rompe cualquiera de las dos y la autorización de tarjeta se cobra en lugar de liberarse: que es la forma más cara de errar en una devolución de impuestos.</p>
+
+
+    <div class="clear-both"></div>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="duty-free-vs-refund" class="text-3xl font-bold text-gray-900 mb-6 mt-14">¿Duty-free o devolución de impuestos: cuál te corresponde?</h2>
+
+    <img
+      src="/images/tax-refund/duty-free-store.webp"
+      alt="Fachada de la tienda cdf China Duty Free dentro de una terminal de aeropuerto, con cartelería 免税店 DUTY FREE sobre mostradores de joyería de cristal"
+      width="640"
+      height="480"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">China tiene tres formas separadas de comprar sin pagar el impuesto completo, y los viajeros las confunden constantemente. Cuál te corresponde depende de dónde estés y cómo salgas, no de qué compres.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>1. Devolución de impuestos a la salida (退税商店) — de lo que trata esta guía.</strong> Compras bienes ordinarios con impuestos incluidos en una tienda registrada en la ciudad, y luego reclamas aproximadamente 9 % del IVA a la salida. Pagas primero, te devuelven después.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>2. Duty-free del aeropuerto (机场免税店) — para marcas internacionales en la puerta.</strong> Las tiendas airside venden sin arancel de importación ni IVA en caja, así que no hay nada que reclamar después; el descuento ya está en el precio del estante. Mejor selección de marcas internacionales que la mayoría de las tiendas de la ciudad, peor en marcas chinas.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>3. Duty-free offshore de Hainan (海南离岛免税) — un esquema exclusivo de la isla.</strong> No es lo mismo que la devolución, y no solo para compradores chinos: cualquiera que salga de Hainan en avión, tren o ferry, pasaportes extranjeros incluidos, puede comprar duty-free allí bajo una franquicia anual. Si tu viaje termina saliendo de Hainan, sales de la isla y del país de una vez, y los dos esquemas se solapan de formas que las normas han ajustado más de una vez: pregunta en el mostrador qué aplica a tu ruta exacta. Nuestra <a href="/es/cities/hainan-visa-free/" class="text-brand-600 hover:underline">guía de entrada a Hainan</a> cubre el lado de la visa libre del viaje.</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6 clear-both"><strong>La diferencia práctica:</strong> el duty-free es un descuento en caja sin papeleo, y la devolución es dinero que vuelve más tarde con tres documentos y una cola. Si una tienda te ofrece ambos, el duty-free suele ganar en marcas internacionales y la devolución suele ganar en marcas chinas.</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="worth-it" class="text-3xl font-bold text-gray-900 mb-6 mt-14">¿Valen realmente la pena los trámites de devolución?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Para la mayoría de los visitantes, sí, pero solo en las compras adecuadas. Los visitantes extranjeros gastaron ¥263.600 millones en China entre enero y julio de 2026, un 27,8 % más interanual, y el número de viajeros que presentan devoluciones de impuestos a la salida se multiplicó por más de tres en el mismo periodo. Las ventas cubiertas por el esquema de devolución subieron 69 % en la primera mitad de 2026, lo que te dice que la cola del aeropuerto no se reduce.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">El punto de equilibrio es simple. Por debajo de ¥200 en una sola tienda en un solo día, no hay nada que reclamar. Entre ¥200 y aproximadamente ¥1.000 la devolución es pequeña, menos de ¥90, así que solo vale la pena si ya estás en el aeropuerto con tiempo de sobra. Por encima de ¥1.000 ya es dinero de verdad, y por encima de ¥5.000 merece planear tu salida en torno a ello: reclama antes de facturar, mantén los bienes en tu equipaje de mano y deja 30 minutos extra para el mostrador de aduanas.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Una cosa más que presupuestar: la devolución se paga en yuanes. Si estás de camino a casa y no volverás, ese efectivo solo sirve airside. Gástalo en la última comida, o acepta el tipo de cambio que te ofrece tu banco en la transferencia.</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="faq" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">❓ Preguntas frecuentes</h2>
+    <div class="space-y-6 mb-8 not-prose">
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">¿Cuánto tengo que gastar para solicitar la devolución de impuestos en China?</h3>
+        <p class="text-gray-700">Al menos ¥200 en una sola tienda con devolución de impuestos en un solo día. Pide el formulario de solicitud de devolución (离境退税申请单) y una factura general de IVA (增值税普通发票) en caja, y conserva ambos: la devolución no se puede tramitar sin ellos.</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">¿Necesito mi pasaporte para solicitar la devolución?</h3>
+        <p class="text-gray-700">Sí, y tiene que ser el pasaporte físico con el que entraste en China. El formulario de solicitud se rellena con el tipo y número de tu pasaporte, y aduanas comprueba el documento contra la persona que tiene delante. No se aceptan fotos ni fotocopias.</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">¿Cuánto dinero mío vuelve realmente?</h3>
+        <p class="text-gray-700">Unos 9 % en la mayoría de los bienes y unos 6 % en los bienes de tipo reducido. Las tasas nominales son 11 % y 8 %, menos aproximadamente 2 % que cobra la agencia de devolución. En una compra de ¥10.000 eso son unos ¥900, no ¥1.100.</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">¿Puedo recibir la devolución en efectivo en el aeropuerto?</h3>
+        <p class="text-gray-700">Sí, hasta ¥20.000 por solicitud en el mostrador de devolución dentro de la zona de salida. Cualquier cantidad superior se paga por transferencia bancaria. Algunas tiendas y puntos de devolución en la ciudad también pagan en el acto bajo el esquema de devolución en el momento de la compra (即买即退).</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">¿Necesito llevar los bienes conmigo en el aeropuerto?</h3>
+        <p class="text-gray-700">Para las solicitudes seleccionadas al azar, sí. Las solicitudes por debajo de ¥10.000 en valor de venta se eligen al azar desde julio de 2026; si la tuya no sale elegida, te saltas la inspección. Mantén los artículos con derecho a devolución en tu equipaje de mano o en la parte superior de la maleta facturada hasta haber pasado aduanas.</p>
+      </div>
+    </div>
+
+    <div class="not-prose mt-12 pt-8 border-t border-gray-200">
+      <h3 class="text-base font-bold text-gray-900 mb-4 flex items-center gap-2">📚 Fuentes</h3>
+      <ul class="space-y-3">
+        <li>
+          <a href="https://taxfree.mofcom.gov.cn/taxfreeEnPc/index.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">Ministerio de Comercio — Plataforma de Servicios para la Devolución de Impuestos a la Salida (plataforma oficial en inglés: búsqueda de tiendas libres de impuestos, puntos de devolución, guía multilingüe)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://karachi.mofcom.gov.cn/jmxw/art/2026/art_4c238850af4e41d48ec7478a8b8fbec0.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">Compras en China: política de devolución de impuestos explicada — guía bilingüe del MOFCOM (umbral de ¥200, tasas 11 % / 8 %, documento de identidad, métodos de devolución)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://scyxs.mofcom.gov.cn/zcfg/art/2026/art_9845ac0b49454fd598320a52125ba23a.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">MOFCOM y otros cinco departamentos, aviso n.º 74 de 2026 (18 de mayo de 2026) — mayor cobertura de tiendas, controles al azar por debajo de ¥10.000, tramitación sin papel</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.gov.cn/zhengce/zhengceku/202607/content_7075798.htm" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">Administración Estatal de Impuestos (julio de 2026) — la devolución en el momento de la compra se extiende a todo el país entre regiones desde el 1 de septiembre de 2026; tramitación sin papel, piloto de tienda online, código QR nacional de devolución</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://shanghai.chinatax.gov.cn/xwdt/ztzl/zcgll/ljts/zchb/201911/t449153.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">Oficina de Impuestos de Shanghái — «Política de Devolución de Impuestos a la Salida para Visitantes Extranjeros» (bilingüe; tasas 11 % / 8 %, comisión de agencia 2 %, límite en efectivo de ¥20.000)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.globaltimes.cn/page/202512/1350012.shtml" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">Global Times — las solicitudes de devolución suben 285 % en los primeros 11 meses (12.252 tiendas con devolución de impuestos en todo el país, más de 7.000 ofrecen devolución en el momento de la compra)</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="border-t border-gray-100 pt-6 mt-8">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5 not-prose">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h3 class="text-sm font-bold text-gray-900">📚 Siguientes Lecturas</h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="/es/payment/china-shopping/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              Qué comprar en China
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/es/payment/payment-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              Cómo pagar en China
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/es/visa/customs-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              Normativa de aduanas de China
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/es/visa/visa-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              Guía de visa y entrada a China
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <FAQPage items={faqs} />
+</Layout>

@@ -2,6 +2,29 @@
 import Layout from '@layouts/Layout.astro';
 const title = 'Guías de Ciudades de China — Destinos de Viaje';
 const description = 'Encuentra la ciudad ideal para tu viaje a China.';
+import SectionStats from '../../../components/SectionStats.astro';
+import ArticleGroups from '../../../components/ArticleGroups.astro';
+import { STATS, GROUPS, ITEMS, COUNT, COUNT_SINGULAR, type Lang } from '../../../data/cities';
+
+const lang: Lang = 'es';
+
+const stats = STATS.map((s) => ({ value: s.value, color: s.color, label: s.label[lang] }));
+
+const groups = GROUPS.map((g, gi) => {
+  const items = ITEMS.filter((i) => i.group === gi);
+  return {
+    color: g.color,
+    title: g.name[lang],
+    countText: (items.length === 1 ? COUNT_SINGULAR[lang] : COUNT[lang]).replace('{n}', String(items.length)),
+    items: items.map((i) => ({
+      href: `/${lang}/cities/${i.slug}/`,
+      tag: i.tag[lang],
+      title: i.title[lang],
+      desc: i.desc[lang],
+    })),
+  };
+});
+
 ---
 
 <Layout title={title} description={description} lang="es">
@@ -14,121 +37,10 @@ const description = 'Encuentra la ciudad ideal para tu viaje a China.';
     </header>
 
     <!-- Quick Stats -->
-    <div class="grid grid-cols-2 gap-3 mb-12 not-prose">
-      <div class="bg-purple-50 border border-purple-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-purple-800">9</p>
-        <p class="text-xs font-semibold text-purple-800 uppercase tracking-wide mt-1">Guías de Ciudades</p>
-      </div>
-      <div class="bg-red-50 border border-red-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-red-800">2</p>
-        <p class="text-xs font-semibold text-red-800 uppercase tracking-wide mt-1">Herramientas de Planificación</p>
-      </div>
-    </div>
+    <SectionStats stats={stats} />
 
     <!-- Category Sections -->
-    <div class="space-y-8 mb-16 not-prose">
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-purple-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-purple-800">Planificando tu Viaje</h2>
-          <span class="text-xs font-medium text-purple-800 opacity-60">2 artículos</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/es/cities/city-select/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-purple-800">🧭 Planificación</span>
-            <p class="text-base font-bold text-gray-900 mt-1">¿Cuántos Días Necesitas en China?</p>
-            <p class="text-sm text-gray-600 mt-0.5">Planifica el itinerario perfecto — desde 3 días intensos hasta una aventura de 3 semanas.</p>
-          </a>
-          <a href="/es/cities/beijing-vs-shanghai/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-purple-800">⚖️ Pekín vs Shanghái</span>
-            <p class="text-base font-bold text-gray-900 mt-1">Pekín vs Shanghái: ¿Qué ciudad visitar primero?</p>
-            <p class="text-sm text-gray-600 mt-0.5">¿Dinastías o rascacielos? La comparación honesta para elegir tu primera ciudad china.</p>
-          </a>
-        </div>
-      </div>
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-red-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-red-800">Historia y Cultura</h2>
-          <span class="text-xs font-medium text-red-800 opacity-60">4 artículos</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/es/cities/beijing-guide/" class="block bg-red-50 border border-red-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-red-800">🏛️ Pekín</span>
-            <p class="text-base font-bold text-gray-900 mt-1">Guía de Viaje de Pekín: Qué Ver, Comer y Saber</p>
-            <p class="text-sm text-gray-600 mt-0.5">Ciudad Prohibida, Gran Muralla, hutongs, pato laqueado y consejos esenciales.</p>
-          </a>
-          <a href="/es/cities/forbidden-city/" class="block bg-red-50 border border-red-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-red-800">🏯 Ciudad Prohibida</span>
-            <p class="text-base font-bold text-gray-900 mt-1">Guía de la Ciudad Prohibida: Entradas, Rutas y Qué Ver</p>
-            <p class="text-sm text-gray-600 mt-0.5">Cómo reservar entradas, las tres rutas oficiales, horarios y los palacios que valen la pena.</p>
-          </a>
-          <a href="/es/cities/great-wall/" class="block bg-red-50 border border-red-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-red-800">🧱 Gran Muralla</span>
-            <p class="text-base font-bold text-gray-900 mt-1">Guía de la Gran Muralla de China: Qué sección visitar</p>
-            <p class="text-sm text-gray-600 mt-0.5">Compara las seis secciones: Badaling, Mutianyu, Jinshanling, Simatai, Huanghuacheng y Juyongguan.</p>
-          </a>
-          <a href="/es/cities/xi-an-guide/" class="block bg-red-50 border border-red-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-red-800">🐎 Xi'an</span>
-            <p class="text-base font-bold text-gray-900 mt-1">Guía de Viaje de Xi'an: Qué Ver, Comer y Saber</p>
-            <p class="text-sm text-gray-600 mt-0.5">Guerreros de Terracota, la muralla mejor conservada de China y un barrio musulmán de la Ruta de la Seda.</p>
-          </a>
-
-        </div>
-      </div>
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-blue-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-blue-800">Moderno y Urbano</h2>
-          <span class="text-xs font-medium text-blue-800 opacity-60">2 artículos</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/es/cities/shanghai-guide/" class="block bg-blue-50 border border-blue-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-blue-800">🌆 Shanghái</span>
-            <p class="text-base font-bold text-gray-900 mt-1">Guía de Viaje de Shanghái: La Ciudad Más Amigable para Extranjeros</p>
-            <p class="text-sm text-gray-600 mt-0.5">El Bund, Shanghai Tower, Wukang Road-Anfu Road y gastronomía de clase mundial.</p>
-          </a>
-          <a href="/es/cities/shenzhen-guide/" class="block bg-blue-50 border border-blue-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-blue-800">🏙️ Shenzhen</span>
-            <p class="text-base font-bold text-gray-900 mt-1">Guía de Viaje de Shenzhen: Centro Tecnológico Junto a Hong Kong</p>
-            <p class="text-sm text-gray-600 mt-0.5">El Silicon Valley de China, ciclismo costero y un tren de 15 minutos a Hong Kong.</p>
-          </a>
-        </div>
-      </div>
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-emerald-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-emerald-800">Naturaleza y Paisajes</h2>
-          <span class="text-xs font-medium text-emerald-800 opacity-60">1 artículo</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/es/cities/hainan-visa-free/" class="block bg-emerald-50 border border-emerald-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-emerald-800">🏝️ Hainan</span>
-            <p class="text-base font-bold text-gray-900 mt-1">Guía de Viaje de Hainan — 30 Días Sin Visa</p>
-            <p class="text-sm text-gray-600 mt-0.5">Playas tropicales, selva tropical y entrada sin visa para 61 países.</p>
-          </a>
-        </div>
-      </div>
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-orange-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-orange-800">Comida y Estilo de Vida</h2>
-          <span class="text-xs font-medium text-orange-800 opacity-60">2 artículos</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/es/cities/guangzhou-guide/" class="block bg-orange-50 border border-orange-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-orange-800">🥟 Cantón</span>
-            <p class="text-base font-bold text-gray-900 mt-1">Guía de Viaje de Cantón: La Capital Gastronómica de China</p>
-            <p class="text-sm text-gray-600 mt-0.5">Dim sum, Canton Tower, Isla Shamian y puerta de entrada al sur de China.</p>
-          </a>
-          <a href="/es/cities/chengdu-guide/" class="block bg-orange-50 border border-orange-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-orange-800">🐼 Chengdú</span>
-            <p class="text-base font-bold text-gray-900 mt-1">Guía de Viaje de Chengdú: Pandas, Comida Picante y Vida Tranquila</p>
-            <p class="text-sm text-gray-600 mt-0.5">Pandas gigantes, hotpot sichuanés, casas de té y puerta de entrada a Jiuzhaigou.</p>
-          </a>
-        </div>
-      </div>
-    </div>
+    <ArticleGroups groups={groups} />
 
         <!-- Next Step -->
     <div class="border-t border-gray-100 pt-8 mb-4">

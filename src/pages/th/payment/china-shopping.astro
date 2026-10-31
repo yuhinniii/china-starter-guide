@@ -1,0 +1,329 @@
+---
+import Layout from '@layouts/Layout.astro';
+import FAQPage from '../../../components/FAQPage.astro';
+
+const title = "สิ่งที่คุ้มค่าซื้อในจีนปี 2026: คู่มือช้อปปิ้งรับคืนภาษี";
+const description = "อะไรที่คุ้มค่าซื้อจริงๆ ในจีนในปี 2026 — สกินแคร์และเครื่องสำอางจีน แบรนด์กว๋อเฉา อิเล็กทรอนิกส์ ชา ไหม เครื่องปั้นดินเผา และหยก — รวมถึงที่ไหนควรช้อปและวิธีเคลมภาษีคืน ~9% ตอนออกเดินทาง";
+
+const faqs = [
+  {
+    question: "อะไรที่ซื้อในจีนแล้วประหยัดกว่าจริงๆ?",
+    answer: "สกินแคร์และเครื่องสำอางจีน อิเล็กทรอนิกส์แบรนด์จีน (Huawei, Xiaomi, DJI) แว่นตา AI และอุปกรณ์สวมใส่อัจฉริยะ แบรนด์ดีไซเนอร์กว๋อเฉา รวมถึงชา ไหม เครื่องปั้นดินเผา หยก และเครื่องลายคราม แฟชั่น น้ำหอม และกล้องนำเข้าต่างประเทศมีราคาเท่ากันหรือแพงกว่าที่บ้าน"
+  },
+  {
+    question: "การช้อปปิ้งในจีนมีภาษีคืนไหม?",
+    answer: "มี ที่ร้านที่แสดงป้าย Tax Free (退税商店) จ่ายอย่างน้อย ¥200 ที่ร้านเดียวในหนึ่งวัน เก็บใบกำกับภาษี VAT ไว้ และรับคืนประมาณ 9% ที่สนามบินตอนออกเดินทาง"
+  },
+  {
+    question: "อะไรที่ไม่ควรซื้อในจีน?",
+    answer: "Apple iPhone และ MacBook คือตัวอย่างที่ชัดเจนที่สุด — ราคาในจีนสูงกว่าและตัดฟีเจอร์บางอย่างไป จึงทำให้ภาษีคืนไม่พอปิดช่องว่างนั้น สิ่งที่คุณหาซื้อได้ที่บ้านในราคาเท่ากันคือการซื้อที่สูญเปล่า"
+  }
+];
+---
+
+<Layout title={title} description={description} lang="th" type="Article">
+  <nav class="mb-8 not-prose">
+    <a href="/th/payment/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+      <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+      </svg>
+      กลับไปหน้าการชำระเงิน
+    </a>
+  </nav>
+
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🛍️ ช้อปปิ้ง</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">ช้อปปิ้งจีน: สิ่งที่คุ้มค่าซื้อในปี 2026</h1>
+      <p class="text-xl text-gray-600 mb-6">หมวดหมู่ที่จีนชนะขาดลอยเรื่องราคา จุดที่ไม่ชนะ และวิธีรับคืนประมาณ 9% ตอนออกเดินทาง</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 อัปเดตล่าสุด: ตุลาคม 2026</span>
+        <span>⏱️ 11 นาที</span>
+      </div>
+    </header>
+
+    <img
+      src="/images/china-shopping/tax-free-sticker.webp"
+      alt="ป้าย Tax Free (退税商店) สีน้ำเงินตั้งอยู่บนเคาน์เตอร์ร้านค้าข้างเครื่องรูดบัตร"
+      width="1080"
+      height="809"
+      class="w-full rounded-2xl mb-10 not-prose"
+    />
+
+    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-red-900 mb-4">⚡ อะไรที่คุ้มค่าซื้อในจีน?</h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>คำตอบสั้นๆ:</strong> ยึดติดกับหมวดหมู่ที่ถูกกว่าในจีนจริงๆ หรือหาซื้อที่บ้านยาก — สกินแคร์และเครื่องสำอางจีน อิเล็กทรอนิกส์แบรนด์จีน (Huawei, Xiaomi, DJI) แว่นตา AI และอุปกรณ์สวมใส่อัจฉริยะ ชา ไหม เครื่องปั้นดินเผา หยก แบรนด์ดีไซเนอร์กว๋อเฉา และงานหัตถกรรมดั้งเดิม ข้ามสิ่งที่คุณซื้อที่บ้านได้ในราคาเท่ากัน — รวมถึงสินค้า Apple ซึ่งไม่ถูกกว่าในจีน ช้อปที่ร้านที่แสดงป้าย <strong>Tax Free (退税商店)</strong> และขอใบกำกับภาษี VAT (增值税发票) แล้วคุณจะรับคืนประมาณ <strong>9% กลับ</strong> ตอนบินกลับบ้าน — ดู <a href="/th/payment/tax-refund/" class="text-red-700 underline">คู่มือคืนภาษีตอนออกเดินทาง</a> ของเราสำหรับกฎปัจจุบัน</p>
+      <p class="text-lg leading-relaxed text-gray-700">เวอร์ชันสั้นของคู่มือช้อปปิ้งทริปนี้: เลือกหมวดหมู่ที่ดีเยี่ยมเฉพาะที่นี่ ซื้อที่ร้านคืนภาษี แล้วเก็บประมาณ 9% ตอนออกเดินทาง นี่คือสิ่งที่คุ้มค่าซื้อจริงๆ — และที่ไหนที่จะหาเจอ</p>
+    </div>
+
+    <div class="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-2xl p-6 mb-12 not-prose">
+      <p class="text-lg leading-relaxed text-yellow-900"><strong>ความจริงที่แท้จริง:</strong> การช้อปปิ้งจีนคุ้มค่าแค่ในเส้นทางแคบๆ ส่วนใหญ่สิ่งที่นักท่องเที่ยวซื้อที่นี่ — แฟชั่น น้ำหอม กล้องนำเข้า — มีราคาเท่ากันหรือแพงกว่าที่บ้าน และภาษีคืน ~9% แทบไม่ปิดช่องว่างนั้น หมวดหมู่ที่จีนชนะจริงๆ คือหมวดที่แบรนด์เป็นจีน ไม่ใช่นำเข้า อุปสรรคอื่นอีกสองอย่างที่ต้องเจอ: การคืนภาษีต้องใช้ใบกำกับภาษี VAT (增值税发票) อย่างเป็นทางการ ซึ่งแผงเล็กๆ ออกไม่ได้ และตลาดนักท่องเที่ยวขายของปลอมที่ดูเนียน ซื้อจากร้านแบรนด์และเคาน์เตอร์ที่ได้รับอนุญาต ไม่ใช่จากพ่อค้าแม่ค้าข้างถนนที่สัญญาว่าลดราคา</p>
+    </div>
+
+    <h2 id="whats-worth-buying" class="text-3xl font-bold text-gray-900 mb-6 mt-14">อะไรที่คุ้มค่าซื้อในจีน?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">มีโดยพื้นฐานห้าหมวดหมู่ที่จีนชนะทั้งเรื่องราคาและตัวเลือก และที่ร้านคืนภาษีมีหนาแน่นพอให้การทำเอกสารคืนภาษีคุ้มค่า ยึดติดกับเหล่านี้แล้วคุณจะได้ของดีกลับบ้าน</p>
+
+    <h3 id="cosmetics-skincare" class="text-2xl font-bold text-gray-900 mb-5 mt-10">เครื่องสำอาง &amp; สกินแคร์</h3>
+
+    <img
+      src="/images/china-shopping/maogeping-counter.webp"
+      alt="เคาน์เตอร์เครื่องสำอาง MAOGEPING ภายในห้างสรรพสินค้าจีน ล้อมรอบด้วยแบรนด์ความงามอื่นๆ"
+      width="1080"
+      height="810"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">นี่คือส่วนที่คู่มือช้อปปิ้งส่วนใหญ่เข้าใจผิด <strong>ข้อได้เปรียบเรื่องราคาในจีนเป็นของแบรนด์จีน ไม่ใช่ Chanel</strong> เซรั่ม Lancôme ที่เคาน์เตอร์ห้างจีนมีทั้งภาษีนำเข้า ภาษีการบริโภค 15% สำหรับเครื่องสำอางระดับสูง และ VAT 13% — ทั้งสามอย่างบวกทับกันในราคาป้าย นี่คือเหตุว่าทำไมมันมักจะแพงกว่าในปารีสที่นี่ ไม่ใช่ถูกกว่า ที่เดียวที่แบรนด์ต่างประเทศถูกจริงๆ คือร้าน duty-free: โควต้าออฟชอร์ของไหหลำ (¥100,000 ต่อปี 30 ชิ้นเครื่องสำอางต่อทริป) และร้าน duty-free ในสนามบิน ซึ่งตัดทั้งสามภาษีนี้ออก</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>สกินแคร์และเมกอัพจีน — ที่ที่เงินของคุณคุ้มค่าจริงๆ</strong></p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4">แบรนด์บ้านเกิดตั้งราคาสำหรับตลาดในประเทศ ไม่มีภาษีนำเข้า และลดราคาแรงช่วง 618 และ Double 11 หลายแบรนด์ตอนนี้ดีจริงๆ ไม่ใช่แค่ถูก:</p>
+    <ul class="list-disc pl-6 space-y-2 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>Proya (珀莱雅)</strong> — เอสเซนส์ดับเบิลแอนตี้ (双抗精华) และเซรั่มรูบี้คือสองอย่างที่ทุกคนซื้อ; ราคาขวดละประมาณ ¥200–400</li>
+      <li><strong>Winona (薇诺娜)</strong> — ทำขึ้นสำหรับผิวแพ้ง่ายไวต่อสิ่งกระตุ้น ครีมบำรุงคือชิ้นที่ควรซื้อกลับบ้านถ้าผิวคุณเกลียดเครื่องบิน</li>
+      <li><strong>Comfy (可复美)</strong> และ <strong>Bio-MESO (润百颜) / QUADI (夸迪)</strong> ของ Bloomage — ไลน์คอลลาเจนรีคอมบิแนนต์และกรดไฮยาลูโรนิก หมวดที่จีนนำอยู่ในปัจจุบัน</li>
+      <li><strong>Florasis (花西子)</strong> — กล่องลิปสติกแกะสลักและแป้งอัดแข็ง บรรจุภัณฑ์คือของที่ระลึก</li>
+      <li><strong>MAOGEPING (毛戈平)</strong> — ครีมไฮไลท์และพาเลตต์ไลน์กราม; นี่คือสิ่งที่ช่างแต่งหน้าจีนใช้จริงในกองถ่าย</li>
+      <li><strong>To Summer (观夏)</strong> — น้ำหอมและน้ำหอมห้องจีน ดอกเข็ม ชา และสน ไม่มีอะไรเหมือนมันขายต่างประเทศ</li>
+    </ul>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">ข้อควรระวังสองประการ ช่วงเฉดสีถูกสร้างสำหรับโทนสีผิวเอเชียตะวันออก จึงมักขาดเฉดรองพื้นเข้มที่สุด และคำกล่าวอ้างเรื่องผิวขาวกระจ่างถูกปะปนไปทั้งหมวดนี้ — อ่านรายการส่วนผสม ไม่ใช่หน้ากล่อง</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-4 clear-both"><strong>แบรนด์ต่างประเทศ — ซื้อไซส์และของแถมที่มีเฉพาะเอเชีย ไม่ใช่ราคาป้าย</strong></p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4">ถ้าคุณอยากได้ La Mer หรือ SK-II คณิตศาสตร์ทำงานได้แค่ duty-free สิ่งที่คุ้มค่าไล่หาที่เคาน์เตอร์ปกติคืออย่างอื่น:</p>
+    <ul class="list-disc pl-6 space-y-2 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>ไซส์และเซ็ตที่มีเฉพาะเอเชีย</strong> — เวอร์ชัน 100ml+ ของสินค้าขายดี ชุดเดินทาง และแพ็กคู่ที่ไม่เคยส่งไปยุโรปหรือสหรัฐ</li>
+      <li><strong>ลิมิเต็ดอิดิชันตรุษจีนและ 520</strong> — Chanel, Dior, และ Estée Lauder ต่างก็ปล่อยบรรจุภัณฑ์ตลาดจีนทุกเดือนมกราคมและราวๆ 20 พฤษภาคม สินค้าเดียวกัน ขวดต่างกัน ไม่เคยผลิตซ้ำ</li>
+      <li><strong>ของแถมที่สมบูรณ์แบบจริงๆ</strong> — ห้างบิวตี้ฮอลล์แจกไซส์จิ๋วและตัวอย่างพรีเมียมที่จุดขั้นต่ำต่ำกว่าในยุโรปมาก และพนักงานเคาน์เตอร์มักเพิ่มให้ถ้าคุณซื้อสองชิ้นและขอ Sephora China ทำงานตามหลักเดียวกัน</li>
+    </ul>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>ที่ไหนควรช้อป:</strong></p>
+    <ul class="list-disc pl-6 space-y-2 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>แบรนด์จีน:</strong> ร้านของตัวเองและร้านแฟล็กชิพ Tmall รวมถึงเคาน์เตอร์ห้างในเมืองใหญ่</li>
+      <li><strong>บิวตี้ฮอลล์ห้างสรรพสินค้า</strong> — Wangfujing (王府井), Shin Kong Place (新光天地), Plaza 66 (恒隆广场), MixC (万象城) เหมาะสำหรับตัวทดสอบไซส์เต็ม ของแถมเมื่อซื้อ และการขอออกใบกำกับภาษี VAT (增值税发票)</li>
+      <li><strong>Sephora (丝芙兰)</strong> — กลุ่มสินค้าระดับนานาชาติบวกกำแพงแบรนด์จีนที่เติบโตขึ้น</li>
+      <li><strong>Duty-free:</strong> ร้านออฟชอร์ของไหหลำและ duty-free สนามบินตอนออกเดินทาง ที่เดียวที่ราคาแบรนด์ต่างประเทศชนะบ้านจริงๆ</li>
+    </ul>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>คณิตศาสตร์ภาษี เพื่อให้คุณตรวจสอบได้เอง:</strong> เครื่องสำอางอยู่ในช่วง VAT 13% มาตรฐาน และการคืนภาษีตอนออกเดินทางคืนประมาณ 9% ของราคาป้ายหลังหักค่าธรรมเนียม — การซื้อ ¥1,000 ได้กำไรคืนประมาณ ¥90 ไม่ใช่ ¥130 แยกต่างหาก สิ่งที่ราคาตั้ง ¥10/ml ขึ้นไปยังมีภาษีการบริโภคเครื่องสำอางระดับสูง 15% ในขั้นตอนนำเข้า ค่าธรรมเนียมนั้นคือเหตุว่าทำไมราคาเคาน์เตอร์ดูสูง และทำไม duty-free ถูกกว่า</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h3 id="guochao" class="text-2xl font-bold text-gray-900 mb-5 mt-10">กว๋อเฉา &amp; แบรนด์ท้องถิ่นที่นำโดยดีไซน์</h3>
+
+    <img
+      src="/images/china-shopping/pop-mart-store.webp"
+      alt="หน้าร้าน Pop Mart ในห้างจีน กรอบด้วยตอไม้แกะสลักสองต้นพร้อมหุ่นสะสม"
+      width="940"
+      height="625"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">"กว๋อเฉา" (国潮, คลื่นแบรนด์บ้านเกิด) เป็นการเพิ่มล่าสุดในรายการ "ต้องซื้อ" อย่างเป็นทางการ: ในงานแถลงข่าวเดือนกันยายน 2026 กระทรวงพาณิชย์ระบุว่าผลิตภัณฑ์อัจฉริยะแบรนด์ในประเทศและแบรนด์ที่นำโดยดีไซน์เป็นเหตุผลหลักที่นักท่องเที่ยวต่างชาติช้อปในจีนตอนนี้ ลองนึกถึงแบรนด์กีฬาแฟล็กชิพและสตรีทแวร์ แบรนด์เครื่องใช้ในบ้านและเครื่องเขียนดีไซเนอร์ และของเล่นดีไซเนอร์สะสม — หุ่นสไตล์ Pop Mart คือตัวอย่างที่เป็นที่รู้จักมากที่สุดของแบรนด์เกิดในจีนที่มีตลาดขายต่อต่างประเทศแข็งแกร่ง</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">ที่ไหนควรช้อป: ร้านแบรนด์ในย่านช้อปปิ้งหลัก (ถนนหนานจิงตะวันออก (南京东路) และ Jing'an (静安) ของเซี่ยงไฮ้, Wangfujing (王府井) ของปักกิ่ง และอื่นๆ) และร้านคอนเซปต์แฟล็กชิพในห้างใหญ่ กฎคืนภาษีเหมือนอย่างอื่น — ขอใบกำกับภาษี VAT (增值税发票) ที่แคชเชียร์ การตรวจสอบสองอย่างก่อนซื้อ: ไซส์เล็กกว่าตัดแบบตะวันตกในแบรนด์ท้องถิ่นหลายแบรนด์ และอิเล็กทรอนิกส์ใดๆ ภายในผลิตภัณฑ์ (สเปกชาร์จ, ภูมิภาคแอป) อาจต่างจากตลาดบ้านคุณ</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h3 id="electronics" class="text-2xl font-bold text-gray-900 mb-5 mt-10">อิเล็กทรอนิกส์จีน (แต่ข้าม Apple)</h3>
+
+    <img
+      src="/images/china-shopping/dji-store.webp"
+      alt="ภายในร้านแฟล็กชิพ DJI โดรนจัดแสดงบนโต๊ะไม้สีอ่อนใต้ไสก์ไลท์ขนาดใหญ่"
+      width="1200"
+      height="800"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">ของที่คุ้มจริงๆ ที่นี่คือแฟล็กชิพแบรนด์จีน — Huawei (Mate XT, Mate X, Pura 70 Ultra), Xiaomi (15 Ultra, 14 series), OPPO Find X8 Ultra, Vivo X100 series, โดรนและกิมบอล DJI, ซีรีส์ Honor Magic หลายแบรนด์ไม่ขายต่างประเทศหรือตั้งราคาต่ำกว่าในประเทศอย่างเห็นได้ชัด แบรนด์ต่างประเทศอย่าง Sony, Bose, GoPro, และอุปกรณ์ Nintendo Switch ก็มักเข้าเงื่อนไขคืนภาษีและมักถูกกว่าต่างประเทศเล็กน้อย</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>ดาวรุ่งปี 2026:</strong> แว่นตา AI อุปกรณ์สวมใส่อัจฉริยะ และโทรศัพท์พับได้คือหมวดที่กระทรวงพาณิชย์ระบุอย่างชัดเจนว่าเป็น "ต้องซื้อ" ของชาวต่างชาติ แฟล็กชิพพับได้ (Huawei Mate XT, Xiaomi MIX) มักถูกในประเทศกว่าที่ไหนก็ได้ และแว่นตา AI และสมาร์ทแบนด์จากแบรนด์จีนมักยังไม่เปิดตัวในตลาดบ้านคุณเลย ข้อควรระวังเหมือนเดิม: ตรวจสอบว่าสเปกแบนด์/การเชื่อมต่อทำงานที่บ้าน และยืนยันการรับประกันระหว่างประเทศต่อ SKU ก่อนซื้อ</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>ข้าม Apple</strong> iPhone ตลาดจีนมักแพงกว่าในสหรัฐเล็กน้อย และเวอร์ชันจีนยังขาดการโทร FaceTime audio ไม่มีข้อได้เปรียบคืนภาษีมาชดเชยสิ่งนี้ เช่นเดียวกันกับ MacBook และกล้อง Canon/Nikon ส่วนใหญ่</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>ที่ไหนควรช้อป:</strong> ร้านแฟล็กชิพแบรนด์ในทุกห้างใหญ่ — Huawei, Xiaomi, OPPO, DJI, และ Dyson ต่างก็มี และนี่คือตัวเลือกจุดเดียวสำหรับนักท่องเที่ยวต่างชาติ: พนักงานมักพูดภาษาอังกฤษได้บ้าง ใบกำกับภาษี VAT (增值税发票) ออกให้ทันที และรุ่นระดับสูงมีการรับประกันระหว่างประเทศ (ตรวจสอบ SKU เฉพาะถ้ามันสำคัญกับคุณ) อย่าลืมขอใบกำกับ — ไม่มีมันคุณเคลมคืนภาษีไม่ได้</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>หนึ่งเมืองที่ตลาดอิเล็กทรอนิกส์เองคือจุดเด่น: Huaqiangbei (华强北) ของเซินเจิ้น</strong> ย่านอิเล็กทรอนิกส์ใหญ่ที่สุดในโลกได้ปรับตัวเป็นจุดแวะสำหรับนักช้อปต่างชาติ — มันดึงดูดนักท่องเที่ยวต่างชาติหลายพันคนต่อวันตลอดปี 2025 และแบรนด์ใหญ่ตอนนี้มีร้านแฟล็กชิพภายในตลาดเลย (รวมถึง DJI) นี่คือตลาดอิเล็กทรอนิกส์หายากที่ใช้ได้จริงสำหรับนักเดินทางที่ไม่พูดจีน: ป้ายหลายภาษา เคาน์เตอร์แลกเปลี่ยนเงินตรา และการสนับสนุนคืนภาษีพร้อมหมด ถ้าเซินเจิ้นอยู่ใกล้เส้นทางคุณ การผ่านความแตกต่างเพียงอย่างเดียว — เมืองที่สร้างจากศูนย์ในสี่สิบปี ยังคึกคักเที่ยงคืน — ก็คุ้มที่จะดู <a href="/th/cities/shenzhen-guide/" class="text-brand-600 hover:underline">ดูคู่มือเที่ยวเซินเจิ้นของเรา</a> สำหรับวิธีใส่ลงในกำหนดการ</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>ตรวจสอบด่วนก่อนจ่ายเงินสำหรับแกเจ็ตใดๆ</strong></p>
+    <ul class="list-disc pl-6 space-y-2 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>แบนด์เครือข่าย</strong> — โทรศัพท์ที่ขายสำหรับตลาดจีนอาจไม่มีแบนด์ 4G/5G ที่ผู้ให้บริการของคุณใช้ที่บ้าน ดึงแผ่นสเปกรุ่นขึ้นมาเปรียบเทียบก่อนตัดสินใจ</li>
+      <li><strong>แอป &amp; ระบบนิเวศ</strong> — โทรศัพท์ตลาดจีนมักทำงานโดยไม่มีบริการ Google ถ้าคุณพึ่งพาแอป Google ให้ยืนยันว่าอุปกรณ์มาพร้อมระบบนิเวศแอปที่คุณต้องการ หรือซื้อเวอร์ชันระหว่างประเทศ/โกลบอล</li>
+      <li><strong>การรับประกัน</strong> — ความคุ้มครองระหว่างประเทศเป็นราย SKU ไม่ใช่รายแบรนด์ ดังนั้นถามว่าการรับประกันครอบคลุมตลาดไหนบ้าง</li>
+    </ul>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">ไม่มีอันนี้เป็นจุดหักเหกับแบรนด์ใหญ่ — มันแค่ความต่างระหว่างของที่ซื้อดีกับของที่ไร้ค่าเมื่อคุณกลับบ้าน</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h3 id="tea-silk-porcelain-jade" class="text-2xl font-bold text-gray-900 mb-5 mt-10">ชา, ไหม, เครื่องปั้นดินเผา, หยก</h3>
+
+    <img
+      src="/images/china-shopping/jingdezhen-porcelain.webp"
+      alt="ชามถ้วยและกาน้ำชาเครื่องปั้นดินเผาวาดมือจัดเรียงบนชั้นจัดแสดงสีเข้มในจิ่งเต๋อเจิ้น"
+      width="474"
+      height="316"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">ของที่ "Made in China" จริงๆ ที่นักเดินทางพากลับบ้านมานับศตวรรษ เมืองต้นทางมีตัวเลือกดีที่สุดในราคาดีที่สุด:</p>
+    <ul class="list-disc pl-6 space-y-3 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>ชา (茶叶):</strong> Hangzhou สำหรับ Longjing (龙井), Anxi (Fujian) สำหรับ Tieguanyin (铁观音), Yunnan สำหรับ Pu'er (普洱) ใบชาร่วนดีราคา ¥100–500; เมื่อยอดร้านเดียวเกิน ¥200 (เกณฑ์คืนภาษี) การเคลมจึงใช้ได้ ตรวจสอบว่าร้านให้คืนภาษีหรือไม่ก่อนซื้อ — แผงชาหลายแห่งไม่ให้</li>
+      <li><strong>ไหม (丝绸):</strong> Hangzhou, Suzhou ผ้าพันคอไหมแท้เริ่ม ~¥100; ผ้าห่มและเสื้อคลุมราคาสูงขึ้นจากนั้น หาป้าย "100% Silk (真丝)"</li>
+      <li><strong>เครื่องปั้นดินเผา (瓷器):</strong> Jingdezhen (景德镇) คือเมืองหลวงประวัติศาสตร์ มีงานสตูดิววาดมือมากมายให้คัดเลือก Guangzhou เป็นศูนย์กลางอีกแห่ง</li>
+      <li><strong>หยก (玉器):</strong> การซื้อหยกคือการตัดสินคุณภาพสี่ประการ — เนื้อ ความใส สี การแกะสลัก (种水色工) — และวงการปลอมทั้งสี่อย่าง ซื้อจากเชนใหญ่ — Caibai (菜百), Lao Feng Xiang (老凤祥), Chow Tai Fook (周大福) — ที่คุณสามารถขอใบรับรอง NGTC และใบกำกับภาษี VAT (增值税发票) ข้ามพ่อค้าข้างถนน รางวัล "จับสลาก" และร้านใดก็ตามที่ไกด์พาคุณเข้าไป</li>
+    </ul>
+
+    <img
+      src="/images/china-shopping/jade-counter.webp"
+      alt="กำไลข้อมือหยก พระเครื่อง และสร้อยลูกปัดบนฐานจัดแสดงสีดำภายในตู้เครื่องประดับร้านจิวเวลรี่"
+      width="1080"
+      height="720"
+      loading="lazy"
+      class="w-full rounded-2xl mb-6 not-prose"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>หมายเหตุคืนภาษี:</strong> ไหม เครื่องปั้นดินเผา หยก และบายจิ๋วอยู่ในช่วง VAT 13% มาตรฐาน จึงใช้ ~9% กลับตามปกติ <strong>ชา</strong> (ผลิตภัณฑ์อาหาร/เกษตร) ตกอยู่ในช่วง VAT 9% จึงเก็บ ~6% แทน กฎฉบับเต็มและกระบวนการเคลมอยู่ใน <a href="/th/payment/tax-refund/" class="text-brand-600 hover:underline">คู่มือคืนภาษีตอนออกเดินทาง</a></p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h3 id="spirits-crafts" class="text-2xl font-bold text-gray-900 mb-5 mt-10">สุรา, เครื่องลายคราม, งานหัตถกรรมดั้งเดิม</h3>
+    <ul class="list-disc pl-6 space-y-3 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>บายจิ๋ว (白酒):</strong> Maotai (茅台; เริ่มต้น ¥1,500), Wuliangye (五粮液), Luzhou Laojiao (泸州老窖) — ของสะสม ของขวัญ และมาตรฐานพิธีการ ศุลกากรอนุญาต 1.5 ลิตรต่อผู้ใหญ่หนึ่งคน</li>
+      <li><strong>เครื่องลายคราม (景泰蓝):</strong> ของพิเศษปักกิ่ง ¥100–500 ของขวัญดีเยี่ยม</li>
+    </ul>
+
+    <h2 id="where-to-buy" class="text-3xl font-bold text-gray-900 mb-6 mt-14">คุณควรซื้อที่ไหน?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4">ของที่ระลึกเอกลักษณ์ส่วนใหญ่ของจีนทำในที่หนึ่งหรือสองแห่ง และนั่นคือที่ที่ตัวเลือกและราคาดีที่สุด ถ้ากำหนดการของคุณตั้งแล้ว นี่คือสิ่งที่แต่ละจุดดีสำหรับ:</p>
+    <p class="text-base text-gray-500 mb-4">เมืองจีนใดเหมาะสำหรับการซื้อประเภทใด</p>
+    <div class="overflow-x-auto mb-8 not-prose">
+      <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+        <caption class="sr-only">เมืองจีนใดเหมาะสำหรับการซื้อประเภทใด — หยก ไหม ชา เครื่องปั้นดินเผา อิเล็กทรอนิกส์ และการตัดเสื้อตามสั่งรายเมือง</caption>
+        <thead>
+          <tr class="bg-gray-900 text-white">
+            <th class="px-6 py-4 font-bold">เมือง</th>
+            <th class="px-6 py-4 font-bold">ของพื้นเมืองที่ควรมองหา</th>
+            <th class="px-6 py-4 font-bold">ที่ไหน</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">ปักกิ่ง</td>
+            <td class="px-6 py-4">หยก เครื่องลายคราม Maotai</td>
+            <td class="px-6 py-4">ฮอลล์เครื่องประดับห้างและช่างเพชรแบรนด์ ตลาด Panjiayuan (潘家园) สำหรับดูไม่ใช่ซื้อ — ดู <a href="/th/cities/beijing-guide/" class="text-brand-600 hover:underline">คู่มือปักกิ่ง</a></td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">เซี่ยงไฮ้</td>
+            <td class="px-6 py-4">การตัดเสื้อตามสั่ง ร้านแฟล็กชิพกว๋อเฉา เครื่องสำอาง</td>
+            <td class="px-6 py-4">ถนนหนานจิงตะวันออก (南京东路) และ Jing'an (静安); ดู <a href="/th/cities/shanghai-guide/" class="text-brand-600 hover:underline">คู่มือเซี่ยงไฮ้</a></td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">เซินเจิ้น</td>
+            <td class="px-6 py-4">อิเล็กทรอนิกส์ — ตลาดคือจุดเด่น</td>
+            <td class="px-6 py-4">Huaqiangbei (华强北); ดู <a href="/th/cities/shenzhen-guide/" class="text-brand-600 hover:underline">คู่มือเซินเจิ้น</a></td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">หางโจว</td>
+            <td class="px-6 py-4">ชา Longjing (龙井) ไหม</td>
+            <td class="px-6 py-4">ร้านชาโดยรอบทะเลสาบตะวันตก (西湖); ตลาดไหมในเมืองเก่า</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">ซูโจว</td>
+            <td class="px-6 py-4">ไหม ผ้าปักซูโจว (苏绣)</td>
+            <td class="px-6 py-4">ร้านแถว Guanqianjie (观前街); หาป้าย "100% Silk (真丝)"</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">จิ่งเต๋อเจิ้น</td>
+            <td class="px-6 py-4">เครื่องปั้นดินเผา — เมืองหลวงประวัติศาสตร์</td>
+            <td class="px-6 py-4">ตลาดถนนเครื่องปั้นดินเผา</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">ยูนนาน</td>
+            <td class="px-6 py-4">ชา Pu'er</td>
+            <td class="px-6 py-4">ร้านชาเฉพาะทางในคุนหมิงและต้าลี่</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">กฎง่ายๆ ข้อหนึ่ง: ซื้อที่ต้นทางและคุณได้คุณภาพดีขึ้นในราคาเท่ากัน — และเกณฑ์คืนภาษี ¥200 ที่ร้านเดียวข้ามได้ง่ายขึ้นในที่ที่หมวดนั้นคืออุตสาหกรรมท้องถิ่น ถ้าคู่มือเมืองยังไม่ได้ลิงก์ข้างบน มันกำลังตามมา; ตรรกะซื้อของท้องถิ่นยังคงอยู่ไม่ว่าไรก็ตาม</p>
+
+    <h2 id="tax-refund-shops" class="text-3xl font-bold text-gray-900 mb-6 mt-14">ร้านคืนภาษีของจีนอยู่ที่ไหน?</h2>
+
+    <img
+      src="/images/china-shopping/airport-tax-refund.webp"
+      alt="เคาน์เตอร์คืนภาษีตอนออกเดินทางสนามบินในจีนมีตราสินค้า CZBANK และป้าย Welcome"
+      width="585"
+      height="439"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">เดินเข้าห้างใหญ่ใดๆ ในปักกิ่ง เซี่ยงไฮ้ เซินเจิ้น กวางโจว เฉิงตู หางโจว หรือซูโจว และราวครึ่งหนึ่งของร้านแสดงป้าย "Tax Free" (退税商店) ใกล้ทางเข้าหรือแคชเชียร์ ในทางปฏิบัติ หมวดที่ถูกทำเครื่องหมายน่าเชื่อถือที่สุดคือหมวดที่คุณเดาได้พอดี: เครื่องสำอาง อิเล็กทรอนิกส์ แฟชั่น ชา ไหม เครื่องปั้นดินเผา หยก และงานคราฟต์</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">สิ่งที่โดยปกติ<em>ไม่</em>มีป้าย: ร้านสะดวกซื้อ ซูเปอร์มาร์เก็ต ผู้ขายออนไลน์เท่านั้น (Taobao / JD / Pinduoduo) พ่อค้าข้างถนน ตลาดของปลอม และร้านเล็กอิสระส่วนใหญ่ ตลาดกลางคืนดีสำหรับขนมและบรรยากาศ แต่ไม่ใช่ที่สำหรับของราคาสูงที่เข้าเงื่อนไขคืนภาษี</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">เพื่อหาร้านเฉพาะใกล้คุณ ค้นหา Alipay หรือ WeChat mini-program "Departure Tax Refund" (离境退税) — มันแสดงร้านที่เข้าเงื่อนไขคืนภาษีใกล้เคียงบนแผนที่ พร้อมเวลาเปิดปัจจุบันและวิธีคืนภาษีที่รองรับ</p>
+
+    <h2 id="customs-limits" class="text-3xl font-bold text-gray-900 mb-6 mt-14">ขีดจำกัดศุลกากรของจีนคืออะไร?</h2>
+    <ul class="list-disc pl-6 space-y-3 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>แอลกอฮอล์:</strong> 1.5 ลิตร (สุรา) ปลอดภาษี; เกินกว่านั้น ให้แจ้ง</li>
+      <li><strong>ยาสูบ:</strong> 400 มวน (2 ซอง) ปลอดภาษี</li>
+      <li><strong>สินค้าทั่วไป:</strong> โควตาปลอดภาษี ¥5,000 สำหรับใช้ส่วนตัวคือเกณฑ์ทั่วไป — ตรวจสอบกฎปัจจุบันก่อนใช้จ่ายอย่างฟุ่มเฟือย</li>
+    </ul>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="faq" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">❓ คำถามที่พบบ่อย</h2>
+    <div class="space-y-6 mb-8 not-prose">
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">อะไรที่ซื้อในจีนแล้วประหยัดกว่าจริงๆ?</h3>
+        <p class="text-gray-700">สกินแคร์และเครื่องสำอางจีน อิเล็กทรอนิกส์แบรนด์จีน (Huawei, Xiaomi, DJI) แว่นตา AI และอุปกรณ์สวมใส่อัจฉริยะ แบรนด์ดีไซเนอร์กว๋อเฉา รวมถึงชา ไหม เครื่องปั้นดินเผา หยก และเครื่องลายคราม แฟชั่น น้ำหอม และกล้องนำเข้าต่างประเทศมีราคาเท่ากันหรือแพงกว่าที่บ้าน</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">การช้อปปิ้งในจีนมีภาษีคืนไหม?</h3>
+        <p class="text-gray-700">มี ที่ร้านที่แสดงป้าย Tax Free (退税商店) จ่ายอย่างน้อย ¥200 ที่ร้านเดียวในหนึ่งวัน เก็บใบกำกับภาษี VAT ไว้ และรับคืนประมาณ 9% ที่สนามบินตอนออกเดินทาง</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">อะไรที่ไม่ควรซื้อในจีน?</h3>
+        <p class="text-gray-700">Apple iPhone และ MacBook คือตัวอย่างที่ชัดเจนที่สุด — ราคาในจีนสูงกว่าและตัดฟีเจอร์บางอย่างไป จึงทำให้ภาษีคืนไม่พอปิดช่องว่างนั้น สิ่งที่คุณหาซื้อได้ที่บ้านในราคาเท่ากันคือการซื้อที่สูญเปล่า</p>
+      </div>
+    </div>
+
+    <div class="not-prose mt-12 pt-8 border-t border-gray-200">
+      <h3 class="text-base font-bold text-gray-900 mb-4 flex items-center gap-2">📚 แหล่งอ้างอิง</h3>
+      <ul class="space-y-3">
+        <li>
+          <a href="https://www.mofcom.gov.cn/xwfbzt/2026/swbzklxxwfbh2026n9y3r/index.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">งานแถลงข่าวกระทรวงพาณิชย์ 3 กันยายน 2026 — แบรนด์กว๋อเฉาและผลิตภัณฑ์อัจฉริยะเข้าสู่รายการ "ต้องซื้อ" ของชาวต่างชาติ; การตัดเสื้อตามสั่งเซี่ยงไฮ้มีลูกค้าต่างชาติเกิน 50%</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.globaltimes.cn/page/202512/1350012.shtml" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">Global Times — การเคลมคืนภาษีตอนออกเดินทางพุ่ง 285% ใน 11 เดือนแรก (ร้านคืนภาษี 12,252 ร้านทั่วประเทศ)</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="border-t border-gray-100 pt-6 mt-8">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5 not-prose">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h3 class="text-sm font-bold text-gray-900">📚 อ่านต่อ</h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="/th/payment/tax-refund/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              คืนภาษีตอนออกเดินทางจีน
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/th/payment/payment-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              วิธีจ่ายเงินในจีน
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/th/payment/china-travel-budget/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              ค่าใช้จ่ายเที่ยวจีน 2026
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/th/visa/customs-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              กฎระเบียบศุลกากรจีน
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <FAQPage items={faqs} />
+</Layout>

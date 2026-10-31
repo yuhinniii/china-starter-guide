@@ -1,0 +1,329 @@
+---
+import Layout from '@layouts/Layout.astro';
+import FAQPage from '../../../components/FAQPage.astro';
+
+const title = "ماذا تشتري في الصين 2026: دليل التسوق مع استرداد الضريبة";
+const description = "ما الذي يستحق حقاً شراءه في الصين في 2026 — مستحضرات التجميل والعناية بالبشرة الصينية، وعلامات guochao، والإلكترونيات، والشاي، والحرير، والخزف، واليشم — بالإضافة إلى أين تتسوق وكيف تطالب بنحو 9% استرداد ضريبة عند المغادرة.";
+
+const faqs = [
+  {
+    question: "ما الذي يعد فعلاً أرخص في الشراء من الصين؟",
+    answer: "مستحضرات التجميل والعناية بالبشرة الصينية، والأجهزة الإلكترونية ذات العلامات الصينية (Huawei وXiaomi وDJI)، ونظارات الذكاء الاصطناعي والأجهزة القابلة للارتداء الذكية، وعلامات guochao المصممة، بالإضافة إلى الشاي، والحرير، والخزف، واليشم، والكلويسونيه. أما الأزياء العالمية، والعطور، والكاميرات، فهي بنفس السعر أو أعلى مما في بلدك."
+  },
+  {
+    question: "هل يشمل التسوق في الصين استرداد الضريبة؟",
+    answer: "نعم، في المتاجر التي تعرض لافتة Tax Free (退税商店). أنفق ما لا يقل عن ¥200 في متجر واحد في يوم واحد، واحتفظ بفاتورة ضريبة القيمة المضافة، واستردّ نحو 9% عند المطار عند المغادرة."
+  },
+  {
+    question: "بماذا أنصحك بعدم الشراء من الصين؟",
+    answer: "هواتف Apple iPhones وأجهزة MacBooks هي المثال الأوضح — سعر الصين أعلى وبعض الميزات محذوفة، لذا فإن استرداد الضريبة لا يسد الفجوة. أي شيء يمكنك إيجاده في بلدك بنفس المال هو عملية شراء مهدرة."
+  }
+];
+---
+
+<Layout title={title} description={description} lang="ar" type="Article">
+  <nav class="mb-8 not-prose">
+    <a href="/ar/payment/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+      <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+      </svg>
+      العودة إلى الدفع
+    </a>
+  </nav>
+
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🛍️ التسوق</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">التسوق في الصين: ما الذي يستحق الشراء في 2026</h1>
+      <p class="text-xl text-gray-600 mb-6">الفئات التي تتفوق فيها الصين حقاً من حيث السعر، وتلك التي لا تتفوق، وكيفية استرداد نحو 9% عند المغادرة.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 آخر تحديث: أكتوبر 2026</span>
+        <span>⏱️ 11 دقائق</span>
+      </div>
+    </header>
+
+    <img
+      src="/images/china-shopping/tax-free-sticker.webp"
+      alt="لافتة زرقاء باللغة الصينية Tax Free (退税商店) موضوعة على منضدة متجر بجانب جهاز بطاقات"
+      width="1080"
+      height="809"
+      class="w-full rounded-2xl mb-10 not-prose"
+    />
+
+    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-red-900 mb-4">⚡ ما الذي يستحق الشراء في الصين؟</h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>إجابة سريعة:</strong> التزم بالفئات التي تكون أرخص فعلاً في الصين أو يصعب العثور عليها في بلدك — مستحضرات التجميل والعناية بالبشرة الصينية، والأجهزة الإلكترونية ذات العلامات الصينية (Huawei وXiaomi وDJI)، ونظارات الذكاء الاصطناعي والأجهزة القابلة للارتداء الذكية، والشاي، والحرير، والخزف، واليشم، وعلامات guochao المصممة، والحرف التقليدية. وتجنّب أي شيء يمكنك شراؤه في بلدك بنفس السعر — بما في ذلك منتجات Apple، التي ليست أرخص في الصين. تسوّق في المتاجر التي تعرض لافتة <strong>Tax Free (退税商店)</strong> واطلب فاتورة ضريبة القيمة المضافة (增值税发票)، ويمكنك استرداد نحو <strong>9% عائداً</strong> عند عودتك بالطائرة — راجع <a href="/ar/payment/tax-refund/" class="text-red-700 underline">دليل استرداد الضريبة عند المغادرة</a> للاطلاع على القواعد الحالية.</p>
+      <p class="text-lg leading-relaxed text-gray-700">النسخة المختصرة من خطة التسوق أثناء الرحلة: اختر بضعة فئات مميزة حقاً هنا، اشترها من متاجر استرداد الضريبة، واقتطع نحو 9% عند المغادرة. إليك ما يستحق الشراء فعلاً — وأين تجده.</p>
+    </div>
+
+    <div class="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-2xl p-6 mb-12 not-prose">
+      <p class="text-lg leading-relaxed text-yellow-900"><strong>النسخة الصريحة:</strong> التسوق في الصين يؤتي ثماره فقط في مسارات ضيقة. فمعظم ما يشتريه السياح هنا — الأزياء العالمية، والعطور، والكاميرات — له نفس السعر أو أعلى مما في بلدانهم، ونادراً ما يغلق الاسترداد البالغ ~9% الفجوة. والفئات التي تتفوق فيها الصين فعلاً هي التي تحمل علامات صينية، لا مستوردة. وهناك احتكاكان آخران يجب توقعهما: الاسترداد يتطلب فاتورة ضريبة قيمة مضافة رسمية (增值税发票) لا تستطيع الأكشاك الصغيرة إصدارها، وأسواق السياح تبيع مقلدات مقنعة. اشترِ من متاجر العلامات التجارية والكوات المصرحة، لا من الباعة المتجولين الذين يعدونك بصفقة.</p>
+    </div>
+
+    <h2 id="whats-worth-buying" class="text-3xl font-bold text-gray-900 mb-6 mt-14">ما الذي يستحق الشراء في الصين؟</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">هناك أساساً خمس فئات تتفوق فيها الصين فعلاً من حيث السعر والتشكيلة معاً، حيث تكون متاجر استرداد الضريبة كثيفة بما يكفي لجعل الاسترداد يستحق عناء الأوراق. التزم بهذه الفئات وستعود إلى بلدك بحصيلة ممتازة.</p>
+
+    <h3 id="cosmetics-skincare" class="text-2xl font-bold text-gray-900 mb-5 mt-10">مستحضرات التجميل والعناية بالبشرة</h3>
+
+    <img
+      src="/images/china-shopping/maogeping-counter.webp"
+      alt="كاونتر مستحضرات تجميل MAOGEPING داخل متجر صيني كبير، محاط بعلامات تجميل أخرى"
+      width="1080"
+      height="810"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">إليك الجزء الذي تخطئ معظم أدلة التسوق في فهمه. <strong>تكمن ميزة السعر في الصين للعلامات الصينية، لا لـ Chanel.</strong> فعبوة سيروم من Lancôme على كاونتر متجر صيني كبير تحمل رسوم الاستيراد، وضريبة الاستهلاك بنسبة 15% على مستحضرات التجميل الفاخرة، وضريبة القيمة المضافة 13% — وكلها مكدّسة في السعر المعلن. ولهذا السبب تكلف عادة أكثر هنا مما في باريس، لا أقل. والمكان الوحيد الذي تصبح فيه العلامات الدولية رخيصة فعلاً هو المعفاة من الرسوم: بدل الإعفاء البحري في هاينان (¥100,000 في السنة، 30 صنفاً من مستحضرات التجميل لكل رحلة) ومتاجر الإعفاء من الرسوم في المطار، التي تزيل الضرائب الثلاث جميعها.</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>مستحضرات التجميل والعناية بالبشرة الصينية — حيث يذهب مالك أبعد فعلاً</strong></p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4">تحدّد العلامات المحلية أسعارها للسوق المحلي، فلا تحمل ضريبة استيراد، وتخفض الأسعار بقوة خلال 618 وDouble 11. وعدة علامات منها باتت جيدة فعلاً الآن، لا رخيصة فحسب:</p>
+    <ul class="list-disc pl-6 space-y-2 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>Proya (珀莱雅)</strong> — جوهر مكافحة الشيخوخة المزدوجة (双抗精华) وسيروم الياقوت هما الاثنان اللذان يشتريهما الجميع؛ بنحو ¥200–400 للزجاجة.</li>
+      <li><strong>Winona (薇诺娜)</strong> — مصممة للبشرة الحساسة سريعة التفاعل. وكريم الترطيب هو ما تأخذه معك إلى بلدك إذا كانت بشرتك تكره الطائرات.</li>
+      <li><strong>Comfy (可复美)</strong> وخطا <strong>Bio-MESO (润百颜) / QUADI (夸迪)</strong> من Bloomage — خطوط الكولاجين المُعاد تركيبها وحمض الهيالورونيك، وهي فئة تتصدرها الصين حالياً.</li>
+      <li><strong>Florasis (花西子)</strong> — علب أحمر الشفاه المنقوشة والبودرة المضغوطة. والتغليف هو التذكار.</li>
+      <li><strong>MAOGEPING (毛戈平)</strong> — كريم الإبراز ولوحات التظليل؛ هذا ما يستخدمه خبراء التجميل الصينيون فعلاً على مواقع التصوير.</li>
+      <li><strong>To Summer (观夏)</strong> — عطر صيني الرائحة ومعطرات المنزل، بأزهار الأوسمانthus والشاي والأرز. لا يُباع شيء شبيهاً به في الخارج.</li>
+    </ul>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">تحفظان اثنتان. فدرجات اللون مصممة لدرجات البشرة الشرق آسيوية، لذا غالباً ما تغيب أعمق درجات كريم الأساس. وتنتشر ادعاءات التفتيح على هذه الفئة بأكملها — اقرأ قائمة المكونات، لا واجهة العلبة.</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-4 clear-both"><strong>العلامات الدولية — اشترِ أحجام وإصدارات آسيا الحصرية والهدايا، لا السعر المعلن</strong></p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4">إذا أردت La Mer أو SK-II، فالمعادلة لا تعمل إلا في المعفاة من الرسوم. ومما يستحق الصيد على الكاونتر العادي شيء آخر:</p>
+    <ul class="list-disc pl-6 space-y-2 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>أحجام ومجموعات حصرية لآسيا.</strong> إصدارات أعلى من 100مل من الأكثر مبيعاً، ومجموعات السفر، وحزم المزدوج التي لا تُشحن أبداً إلى أوروبا أو الولايات المتحدة.</li>
+      <li><strong>إصدارات رأس السنة القمرية و520 المحدودة.</strong> تطرح Chanel وDior وEstée Lauder جميعها تغليفاً خاصاً بسوق الصين كل يناير وحول 20 مايو. نفس المنتج، وقارورة مختلفة، ولا يُعاد طرحها.</li>
+      <li><strong>الهدايا مع الشراء السخية فعلاً.</strong> توزّع قاعات التجميل في المتاجر الكبرى عينات صغيرة وتجريبية بعتبات أقل بكثير مما في أوروبا، وكثيراً ما يضيف موظفو الكاونتر المزيد إذا اشتريت صنفين وسألت. وSephora الصين تعمل بنفس المنطق.</li>
+    </ul>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>أين تتسوق:</strong></p>
+    <ul class="list-disc pl-6 space-y-2 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>العلامات الصينية:</strong> متاجرها الخاصة ومتاجر Tmall الرسمية، بالإضافة إلى كاونترات المولات في المدن الكبرى.</li>
+      <li><strong>قاعات التجميل في المتاجر الكبرى</strong> — Wangfujing (王府井) وShin Kong Place (新光天地) وPlaza 66 (恒隆广场) وMixC (万象城). الأفضل للعينات بحجمها الكامل، والهدايا مع الشراء، وكتابة فاتورة ضريبة القيمة المضافة (增值税发票) عند الطلب.</li>
+      <li><strong>Sephora (丝芙兰)</strong> — التشكيلة الدولية بالإضافة إلى جدار متنامٍ من العلامات الصينية.</li>
+      <li><strong>المعفاة من الرسوم:</strong> متاجر الإعفاء البحرية في هاينان ومتاجر الإعفاء من الرسوم في المطار عند المغادرة. المكان الوحيد الذي يهزم فيه سعر العلامة الدولية سعر البلد الأم.</li>
+    </ul>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>حساب الضريبة، لتتحقق بنفسك:</strong> تقع مستحضرات التجميل في الشريحة القياسية لضريبة القيمة المضافة 13%، ويُرجع الاسترداد عند المغادرة نحو 9% من السعر المعلن بعد الرسوم — فعملية شراء بـ ¥1,000 تعطيك نحو ¥90 عائداً، لا ¥130. وعلى حدة، فأي سلعة يبلغ سعرها ¥10/ml فأعلى تحمل أيضاً ضريبة الاستهلاك على مستحضرات التجميل الفاخرة بنسبة 15% في مرحلة الاستيراد. وهذه الرسوم الإضافية هي سبب ارتفاع سعر الكاونتر، وسبب تفوق المعفاة من الرسوم عليه.</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h3 id="guochao" class="text-2xl font-bold text-gray-900 mb-5 mt-10">Guochao والعلامات المحلية ذات التصميم الرائد</h3>
+
+    <img
+      src="/images/china-shopping/pop-mart-store.webp"
+      alt="واجهة متجر Pop Mart في مول صيني، يتوسطها جذعان شجريان منحوتان بتماثيل قابلة للجمع"
+      width="940"
+      height="625"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">"Guochao" (国潮، موجة العلامات المحلية) هي أحدث إضافة لقوائم "يجب شراؤها" الرسمية: في مؤتمرها الصحفي في سبتمبر 2026 ذكرت وزارة التجارة المنتجات الذكية ذات العلامات المحلية والعلامات ذات التصميم الرائد كسبب رئيسي لما يتسوق به الزوار الأجانب الآن في الصين. افكر في علامات الملابس الرياضية والشارعية الرائدة، وأدوات وتجهيزات المنزل المصممة، ولعب المصممين القابلة للجمع — وتماثيل بأسلوب Pop Mart هي المثال الأشهر لعلامة صينية المنشأ بسوق إعادة بيع خارجي قوي.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">أين تتسوق: متاجر العلامات في الأحياء التجارية الرئيسية (طريق Nanjing East Road (南京东路) في شنغهاي وJing'an (静安)، وWangfujing (王府井) في بكين، وما إلى ذلك) ومتاجر المفهوم الرائدة في المولات الكبرى. نفس قواعد الاسترداد كبقية السلع — اطلب فاتورة ضريبة القيمة المضافة (增值税发票) عند الصندوق. وفحصان عمليان قبل الشراء: المقاسات أصغر من القصات الغربية في كثير من العلامات المحلية، وأي إلكترونيات داخل المنتج (مواصفات الشحن، مناطق التطبيق) قد تختلف عن سوق بلدك.</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h3 id="electronics" class="text-2xl font-bold text-gray-900 mb-5 mt-10">الإلكترونيات الصينية (لكن تخطَّ Apple)</h3>
+
+    <img
+      src="/images/china-shopping/dji-store.webp"
+      alt="داخل متجر DJI الرائد بطائرات مسيرة معروضة على طاولات خشب فاتح تحت سقف زجاجي كبير"
+      width="1200"
+      height="800"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">الفوز الحقيقي هنا هو في رؤوس العلامات الصينية — Huawei (Mate XT وMate X وPura 70 Ultra) وXiaomi (15 Ultra و14 series) وOPPO Find X8 Ultra وسلسلة Vivo X100 وطائرات DJI المسيرة والجيمبال وسلسلة Honor Magic. وكثير منها لا يُباع في الخارج أو يُسعَّر بوضوح أقل محلياً. وتتأهل أيضاً العلامات الدولية مثل Sony وBose وGoPro وأجهزة Nintendo Switch لاسترداد الضريبة غالباً، وأرخص قليلاً من الخارج في أغلب الأحيان.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>النجوم الصاعدة لعام 2026:</strong> نظارات الذكاء الاصطناعي، والأجهزة القابلة للارتداء الذكية، والهواتف القابلة للطي، هي الفئات التي تبرزها وزارة التجارة الآن صراحةً كـ"مشتريات يجب" للأجانب. وتُباع رؤوس الطي (Huawei Mate XT وXiaomi MIX) أرخص محلياً في أغلب الأحيان من أي مكان آخر، وكثيراً ما لا تكون نظارات الذكاء الاصطناعي والأساور الذكية من العلامات الصينية قد أُطلقت في سوق بلدك أصلاً. وتبقى التحفظات ذاتها: تحقق من أن مواصفات النطاق/الاتصال تعمل في بلدك، وأكّد ضماناً دولياً لكل SKU قبل الشراء.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>تخطَّ Apple.</strong> هاتف iPhone للسوق الصيني أغلى عادةً قليلاً من الولايات المتحدة، والنسخة الصينية تفتقر أيضاً إلى مكالمات FaceTime الصوتية. ولا توجد ميزة استرداد الضريبة للتعويض عن ذلك. والأمر نفسه ينطبق على أجهزة MacBooks ومعظم كاميرات Canon/Nikon.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>أين تتسوق:</strong> متاجر العلامات الرائدة في كل مول كبير — تديرها Huawei وXiaomi وOPPO وDJI وDyson جميعها، وهي الخيار المتكامل للزوار الأجانب: يتحدث الموظفون عادةً بعض الإنجليزية، وتُصدر فاتورة ضريبة القيمة المضافة (增值税发票) في الموقع، وتحمل الطرز الفاخرة ضماناً دولياً (تحقق من SKU المحدد إذا كان ذلك يهمك). اسأل دائماً عن الفاتورة — فبدونها لا يمكنك المطالبة باسترداد الضريبة.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>مدينة واحدة يكون فيها سوق الإلكترونيات بحد ذاته هو الجذب: Huaqiangbei (华强北) في شنتشن.</strong> أعاد أكبر حي إلكترونيات في العالم اختراع نفسه كمحطة للمتسوقين الأجانب — فقد كان يجتذب آلاف الزوار الدوليين يومياً طوال 2025، وتحتفظ العلامات الكبرى الآن بمتاجر رائدة داخل السوق نفسه (بما فيها DJI). وهو سوق إلكترونيات نادر يعمل فعلاً للمسافرين الذين لا يتحدثون الصينية: لافتات متعددة اللغات، وعدادات صرف العملة، ودعم استرداد الضريبة كلها متوفرة. وإذا كانت شنتشن قريبة من مسارك بأي حال، فوحده التناقض — مدينة بنيت من العدم في أربعين عاماً، ولا تزال ت humming عند منتصف الليل — يستحق نظرة. <a href="/ar/cities/shenzhen-guide/" class="text-brand-600 hover:underline">راجع دليل السفر في شنتشن</a> لمعرفة كيفية إدراجها في جدولك.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>فحص سريع قبل دفع ثمن أي جهاز</strong></p>
+    <ul class="list-disc pl-6 space-y-2 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>نطاقات الشبكة</strong> — قد لا يحمل هاتف مباع للسوق الصيني نطاقات 4G/5G التي يستخدمها مشغلك في بلدك. افتح ورقة مواصفات الطراز وقارن قبل الالتزام.</li>
+      <li><strong>التطبيقات والنظام البيئي</strong> — غالباً ما تعمل هواتف السوق الصيني دون خدمات Google. وإذا كنت تعيش على تطبيقات Google، فتأكد من أن الجهاز يأتي بالنظام البيئي الذي تحتاجه، أو اشتر نسخة دولية/عالمية.</li>
+      <li><strong>الضمان</strong> — التغطية الدولية لكل SKU، لا لكل علامة، لذا اسأل عن الأسواق التي يغطيها الضمان فعلاً.</li>
+    </ul>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">لا شيء من هذا عائقاً حقيقياً في العلامات الكبرى — إنه فقط الفرق بين شراء ممتاز وآخر لا يساوي شيئاً عند عودتك إلى بلدك.</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h3 id="tea-silk-porcelain-jade" class="text-2xl font-bold text-gray-900 mb-5 mt-10">الشاي، والحرير، والخزف، واليشم</h3>
+
+    <img
+      src="/images/china-shopping/jingdezhen-porcelain.webp"
+      alt="أطباق وأكواب وإبريق شاي مرسومة يدوياً مرتبة على رفوف عرض داكنة في Jingdezhen"
+      width="474"
+      height="316"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">المشتريات "صنعت في الصين" حقاً والتي يجلبها المسافرون معهم منذ قرون. ومدن المنشأ هي الأفضل تشكيلةً وأسعاراً:</p>
+    <ul class="list-disc pl-6 space-y-3 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>Tea (茶叶):</strong> Hangzhou لـ Longjing (龙井) وAnxi (Fujian) لـ Tieguanyin (铁观音) وYunnan لـ Pu'er (普洱). يبلغ الشاي السائب الجيد ¥100–500؛ وبمجرد أن يتجاوز إجمالي متجر واحد ¥200 (عتبة الاسترداد) يُطبَّق الطلب. تحقق مما إذا كان المتجر يقدم الاسترداد قبل الشراء — فكثير من أكشاك الشاي لا يفعل.</li>
+      <li><strong>Silk (丝绸):</strong> Hangzhou وSuzhou. أوشحة الحرير الحقيقي من ~¥100؛ واللحف والأردية تزيد من هناك. ابحث عن بطاقة "100% Silk (真丝)".</li>
+      <li><strong>Porcelain (瓷器):</strong> Jingdezhen (景德镇) هي العاصمة التاريخية، بوفرة من الأعمال المرسومة يدوياً في الاستوديوهات للاختيار منها. وGuangzhou مركز آخر.</li>
+      <li><strong>Jade (玉器):</strong> شراء اليشم يعني الحكم على الأربع صفات — الحبيبات، والشفافية، واللون، والنحت (种水色工) — والتجارة تزوّر الأربع جميعها. اشترِ من سلسلة كبيرة — Caibai (菜百) وLao Feng Xiang (老凤祥) وChow Tai Fook (周大福) — حيث يمكنك طلب شهادة NGTC وفاتورة ضريبة القيمة المضافة (增值税发票). وتجنّب بائعي الشارع، وجوائز "اليانصيب المحظوظ"، وأي متجر يدخلك إليه مرشد.</li>
+    </ul>
+
+    <img
+      src="/images/china-shopping/jade-counter.webp"
+      alt="أساور وحليقات ويشم وأعناق خرزية على حوامل عرض سوداء داخل خزانة مجوهرات في متجر"
+      width="1080"
+      height="720"
+      loading="lazy"
+      class="w-full rounded-2xl mb-6 not-prose"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>ملاحظة الاسترداد:</strong> يقع الحرير، والخزف، واليشم، والبايجيو في فئة ضريبة القيمة المضافة القياسية 13%، فينطبق العائد المعتاد ~9%. أما <strong>الشاي</strong> (منتج غذاء/زراعي) فيقع في فئة ضريبة القيمة المضافة 9%، فتجني نحو 6% بدلاً من ذلك. والقواعد الكاملة وعملية الطلب موجودة في <a href="/ar/payment/tax-refund/" class="text-brand-600 hover:underline">دليل استرداد الضريبة عند المغادرة</a>.</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h3 id="spirits-crafts" class="text-2xl font-bold text-gray-900 mb-5 mt-10">المشروبات الروحية، والكلويسونيه، والحرف التقليدية</h3>
+    <ul class="list-disc pl-6 space-y-3 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>Baijiu (白酒):</strong> Maotai (茅台؛ من ¥1,500) وWuliangye (五粮液) وLuzhou Laojiao (泸州老窖) — قطع للجمع، وهدايا، ومعايير للمناسبات. والجمارك تسمح بـ 1.5 لتر للبالغ.</li>
+      <li><strong>Cloisonné (景泰蓝):</strong> تخصص بكين، ¥100–500، هدايا ممتازة.</li>
+    </ul>
+
+    <h2 id="where-to-buy" class="text-3xl font-bold text-gray-900 mb-6 mt-14">أين يجب أن تشتريها؟</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4">معظم مشتريات الصين المميزة تصنع في مكان أو اثنين، وهناك تكون التشكيلة والأسعار الأفضل. وإذا كان جدولك محدداً مسبقاً، فإليك ما يصلح لكل محطة:</p>
+    <p class="text-base text-gray-500 mb-4">أي مدينة صينية الأفضل لأي نوع من الشراء</p>
+    <div class="overflow-x-auto mb-8 not-prose">
+      <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+        <caption class="sr-only">أي مدينة صينية الأفضل لأي نوع من الشراء — اليشم، والحرير، والشاي، والخزف، والإلكترونيات، والتفصيل حسب المدينة</caption>
+        <thead>
+          <tr class="bg-gray-900 text-white">
+            <th class="px-6 py-4 font-bold">المدينة</th>
+            <th class="px-6 py-4 font-bold">التخصص المحلي للبحث عنه</th>
+            <th class="px-6 py-4 font-bold">المكان</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">بكين</td>
+            <td class="px-6 py-4">اليشم، والكلويسونيه، وMaotai</td>
+            <td class="px-6 py-4">قاعات مجوهرات المتاجر الكبرى وصائغو العلامات. وPanjiayuan (潘家园) للتصفح لا للشراء — راجع <a href="/ar/cities/beijing-guide/" class="text-brand-600 hover:underline">دليل بكين</a></td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">شنغهاي</td>
+            <td class="px-6 py-4">التفصيل حسب الطلب، ومتاجر guochao الرائدة، ومستحضرات التجميل</td>
+            <td class="px-6 py-4">طريق Nanjing East Road (南京东路) وJing'an (静安)؛ راجع <a href="/ar/cities/shanghai-guide/" class="text-brand-600 hover:underline">دليل شنغهاي</a></td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">شنتشن</td>
+            <td class="px-6 py-4">الإلكترونيات — السوق بحد ذاته هو الجذب</td>
+            <td class="px-6 py-4">Huaqiangbei (华强北)؛ راجع <a href="/ar/cities/shenzhen-guide/" class="text-brand-600 hover:underline">دليل شنتشن</a></td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">Hangzhou</td>
+            <td class="px-6 py-4">شاي Longjing (龙井)، والحرير</td>
+            <td class="px-6 py-4">منازل الشاي قرب West Lake (西湖)؛ أسواق الحرير في المدينة القديمة</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">Suzhou</td>
+            <td class="px-6 py-4">الحرير، وتطريز Suzhou (苏绣)</td>
+            <td class="px-6 py-4">محلات منطقة Guanqianjie (观前街)؛ ابحث عن بطاقة "100% Silk (真丝)"</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">Jingdezhen</td>
+            <td class="px-6 py-4">الخزف — العاصمة التاريخية</td>
+            <td class="px-6 py-4">أسواق شارع الفخار</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">Yunnan</td>
+            <td class="px-6 py-4">شاي Pu'er</td>
+            <td class="px-6 py-4">متاجر شاي متخصصة في Kunming وDali</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">قاعدة عامة: اشترِ من منشأ السلعة تحصل على جودة أفضل بنفس المال — وعتبة استرداد الضريبة ¥200 في متجر واحد أسهل في تجاوزها حيث تكون الفئة هي الصناعة المحلية. وإذا لم يكن دليل المدينة موصولاً أعلاه بعد، فهو في الطريق؛ ومنطق الشراء المحلي صحيح بغض النظر عن ذلك.</p>
+
+    <h2 id="tax-refund-shops" class="text-3xl font-bold text-gray-900 mb-6 mt-14">أين توجد متاجر استرداد الضريبة في الصين؟</h2>
+
+    <img
+      src="/images/china-shopping/airport-tax-refund.webp"
+      alt="كاونتر استرداد ضريبة المغادرة في مطار صيني بعلامة CZBANK ولافتة ترحيب"
+      width="585"
+      height="439"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">ادخل أي مول كبير في بكين أو شنغهاي أو شنتشن أو Guangzhou أو Chengdu أو Hangzhou أو Suzhou، وستجد نحو نصف المتاجر تعرض لافتة "Tax Free" (退税商店) قرب المدخل أو الصندوق. وفي الواقع، الفئات التي تحمل العلامة بأكبر قدر من الموثوقية هي تماماً ما تتوقعه: مستحضرات التجميل، والإلكترونيات، والأزياء، والشاي، والحرير، والخزف، واليشم، والحرف.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">ما لا يحمل <em>عادةً</em> اللافتة: المتاجر الصغيرة، والسوبرماركت، والبائعون عبر الإنترنت فقط (Taobao / JD / Pinduoduo)، وباعة الشوارع، وأسواق البضائع المقلدة، ومعظم المتاجر الصغيرة المستقلة. وأسواق الليل رائعة للوجبات الخفيفة والأجواء، لكنها ليست مكاناً للبنود الكبيرة المؤهلة للاسترداد.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">للعثور على متجر محدد قربك، ابحث في البرنامج المصغّر "Departure Tax Refund" (离境退税) على Alipay أو WeChat — فهو يعرض المتاجر المؤهلة للاسترداد قربك على الخريطة، بالإضافة إلى ساعات العمل الحالية وطرق الاسترداد المدعومة.</p>
+
+    <h2 id="customs-limits" class="text-3xl font-bold text-gray-900 mb-6 mt-14">ما هي حدود الجمارك في الصين؟</h2>
+    <ul class="list-disc pl-6 space-y-3 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>الكحول:</strong> 1.5 لتر (مشروبات روحية) معفاة من الرسوم؛ فوق ذلك، أقرّ بها.</li>
+      <li><strong>التبغ:</strong> 400 سيجارة (علبتان) معفاة من الرسوم.</li>
+      <li><strong>السلع العامة:</strong> عتبة الإعفاء البالغة ¥5,000 للاستخدام الشخصي هي الحد العام — تحقق من القواعد الحالية قبل الإسراف.</li>
+    </ul>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="faq" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">❓ الأسئلة الشائعة</h2>
+    <div class="space-y-6 mb-8 not-prose">
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">ما الذي يعد فعلاً أرخص في الشراء من الصين؟</h3>
+        <p class="text-gray-700">مستحضرات التجميل والعناية بالبشرة الصينية، والأجهزة الإلكترونية ذات العلامات الصينية (Huawei وXiaomi وDJI)، ونظارات الذكاء الاصطناعي والأجهزة القابلة للارتداء الذكية، وعلامات guochao المصممة، بالإضافة إلى الشاي، والحرير، والخزف، واليشم، والكلويسونيه. أما الأزياء العالمية، والعطور، والكاميرات، فهي بنفس السعر أو أعلى مما في بلدك.</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">هل يشمل التسوق في الصين استرداد الضريبة؟</h3>
+        <p class="text-gray-700">نعم، في المتاجر التي تعرض لافتة Tax Free (退税商店). أنفق ما لا يقل عن ¥200 في متجر واحد في يوم واحد، واحتفظ بفاتورة ضريبة القيمة المضافة، واستردّ نحو 9% عند المطار عند المغادرة.</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">بماذا أنصحك بعدم الشراء من الصين؟</h3>
+        <p class="text-gray-700">هواتف Apple iPhones وأجهزة MacBooks هي المثال الأوضح — سعر الصين أعلى وبعض الميزات محذوفة، لذا فإن استرداد الضريبة لا يسد الفجوة. أي شيء يمكنك إيجاده في بلدك بنفس المال هو عملية شراء مهدرة.</p>
+      </div>
+    </div>
+
+    <div class="not-prose mt-12 pt-8 border-t border-gray-200">
+      <h3 class="text-base font-bold text-gray-900 mb-4 flex items-center gap-2">📚 المصادر</h3>
+      <ul class="space-y-3">
+        <li>
+          <a href="https://www.mofcom.gov.cn/xwfbzt/2026/swbzklxxwfbh2026n9y3r/index.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">المؤتمر الصحفي لوزارة التجارة، 3 سبتمبر 2026 — دخول علامات guochao والمنتجات الذكية قوائم "يجب شراؤها" الأجنبية؛ وتفصيل شنغهاي بأكثر من 50% عملاء أجانب</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.globaltimes.cn/page/202512/1350012.shtml" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">Global Times — قفزت طلبات استرداد ضريبة المغادرة 285% في الأشهر الـ11 الأولى (12,252 متجر استرداد ضريبة على مستوى البلاد)</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="border-t border-gray-100 pt-6 mt-8">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5 not-prose">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h3 class="text-sm font-bold text-gray-900">📚 القراءات التالية</h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="/ar/payment/tax-refund/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              استرداد ضريبة مغادرة الصين
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ar/payment/payment-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              كيفية الدفع في الصين
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ar/payment/china-travel-budget/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              تكلفة رحلة إلى الصين 2026
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ar/visa/customs-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              لوائح الجمارك الصينية
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <FAQPage items={faqs} />
+</Layout>

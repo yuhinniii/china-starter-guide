@@ -1,0 +1,308 @@
+---
+import Layout from '@layouts/Layout.astro';
+import FAQPage from '../../../components/FAQPage.astro';
+
+const title = "中国の出国税還付2026：9%を取り戻す方法";
+const description = "2026年の中国の出国税還付：¥200のしきい値、必要な3つの書類、90日の限度、そして空港の税関確認が実際にどう働くか。";
+
+const faqs = [
+  {
+    question: "中国で税還付を受けるにはいくら使う必要がある？",
+    answer: "一日のうちに一つの税還付店で最低¥200。レジで還付申請書(离境退税申请单)と 増値税普通発票(增值税普通发票)を求め、両方を保管しましょう — これがなければ還付は処理されません。"
+  },
+  {
+    question: "還付を受けるのにパスポートは必要？",
+    answer: "はい、しかも中国に入国した際に使った現物のパスポートでなければなりません。還付申請書にはパスポートの種類と番号が記載され、税関は目の前の人と書類を照合します。スマホの写真やコピーは受け付けられません。"
+  },
+  {
+    question: "実際にいくら戻ってくる？",
+    answer: "大部分の品物で約9%、軽減税率の品物で約6%。名目上の税率は11%と8%で、還付代理店に約2%の手数料が引かれます。¥10,000の購入なら約¥900で、¥1,100ではありません。"
+  },
+  {
+    question: "空港で現金で還付を受けられる？",
+    answer: "はい、出国エリア内の還付カウンターで申請あたり最大¥20,000まで。それ以上は銀行振込で支払われます。一部の店や市内還付窓口でも、購入時還付(即买即退)の仕組みのもと即時支払があります。"
+  },
+  {
+    question: "空港で商品を手元に置いておく必要はある？",
+    answer: "抜き打ち検査の対象なら、はい。2026年7月以降、売上価値が¥10,000未満の申請は無作為に抽出されます；ご自身の分が抽出されなければ検査をスキップできます。税還付対象の品は、税関を通過するまで、手荷物か預け荷物の上に置いておきましょう。"
+  }
+];
+---
+
+<Layout title={title} description={description} lang="ja" type="Article">
+  <nav class="mb-8 not-prose">
+    <a href="/ja/payment/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+      <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+      </svg>
+      支払い関連に戻る
+    </a>
+  </nav>
+
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">💳 支払い</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">中国の出国税還付：帰国時に約9%を取り戻す方法</h1>
+      <p class="text-xl text-gray-600 mb-6">¥200のしきい値、必要な3つの書類、そして午後を無駄にせずに空港で還付を通す方法。</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 最終更新：2026年10月</span>
+        <span>⏱️ 読了時間：約8分</span>
+      </div>
+    </header>
+
+    <img
+      src="/images/tax-refund/tax-refund-flow.webp"
+      alt="中国の出国税還付の流れのフローチャート：税免除店で購入、還付申請書と VAT invoice を取得、税関確認、その後還付を受取る"
+      width="1080"
+      height="606"
+      class="w-full rounded-2xl mb-10 not-prose"
+    />
+
+    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-red-900 mb-4">⚡ 観光客は中国で税還付を受けられる？</h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>ざっくり答えると：</strong> はい。<strong>Tax Free(退税商店)</strong>の看板を掲げる一店で最低<strong>¥200</strong>を使えば、中国を出国する際に大部分の品物で約<strong>9%を還付</strong>でき、軽減税率の品物なら約<strong>6%</strong>です。必要なのは3つ：<strong>還付申請書</strong>(离境退税申请单)、<strong>増値税普通発票</strong>(增值税普通发票)、そして<strong>パスポート</strong> — 入国時に使った現物です。空港の出国時、あるいは市内の購入時還付(即买即退)カウンターで即時にお受け取りを。商品は購入から<strong>90日</strong>以内に中国を出る必要があります。実際に買う価値があるものは、当サイトの<a href="/ja/payment/china-shopping/">中国ショッピングガイド</a>をご覧ください。</p>
+      <p class="text-lg leading-relaxed text-gray-700">還付の対象となるのは持ち帰る個人用品です：化粧品、電子機器、衣料、お茶、シルク、陶磁器、翡翠、工芸品。中国で消費するもの、サービス、および禁止・制限リストにある商品には適用されません。</p>
+    </div>
+
+    <div class="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-2xl p-6 mb-12 not-prose">
+      <p class="text-lg leading-relaxed text-yellow-900"><strong>正直な話：</strong> これは割引ではなく還付です — レジでは税込の全額を払い、後でその一部が戻ってきます。Tシャツや冷蔵庫のマグネットでは並ぶ価値はありません：還付対象になるには一店で一日に¥200必要で、90日のカウントは購入時から始まり、代理店は受取分の約2%を差し引きます。ノートパソコン、時計、靴、ハンドバッグなら、旅行で最も簡単に得られる9%です — ただし、税関が商品を確認する前に荷物を預けない限り。</p>
+    </div>
+
+    <h2 id="rules" class="text-3xl font-bold text-gray-900 mb-6 mt-14">中国の出国税還付の規則は？</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4">この制度は<em>lí jìng tuì shuì</em>(离境退税)と呼ばれ、「国を出て税を還付する」を文字どおり意味します。登録された税免除店で買った商品があなたとともに中国を出たとき、支払った VAT を還付します。表向きの税率は寛大に見えますが、実際に受け取るのは少し低くなります。</p>
+    <p class="text-base text-gray-500 mb-4">2026年の中国の出国税還付の規則一覧</p>
+    <div class="overflow-x-auto mb-8 not-prose">
+      <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+        <caption class="sr-only">2026年の中国の出国税還付の規則 — 最低支出、還付率、対象資格、身分証明書、期限、現金限度、ペーパーレス処理、購入時還付</caption>
+        <thead>
+          <tr class="bg-gray-900 text-white">
+            <th class="px-6 py-4 font-bold">規則</th>
+            <th class="px-6 py-4 font-bold">詳細</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">最低支出</td>
+            <td class="px-6 py-4">一店で、一日のうちに¥200。買い物全体で¥200ではなく、一店です。</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">還付率</td>
+            <td class="px-6 py-4">13%の VAT 区分の品物は11%、9%区分は8%。代理店の約2%の手数料を引くと、約<strong>9%</strong>または<strong>6%</strong>を受け取ります。</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">対象者</td>
+            <td class="px-6 py-4">中国本土に183日以下の滞在の非居住者：外国のパスポート保持者、および香港・マカオ・台湾の住民。</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">身分証明書</td>
+            <td class="px-6 py-4"><strong>パスポート</strong> — 入国時に使った同じパスポート。還付申請書にはその種類と番号が記載され、各カウンターで確認されます。</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">期限</td>
+            <td class="px-6 py-4">購入日から<strong>90日</strong>以内に中国を出国。購入時還付(即买即退)で前払いした場合は28日です。</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">現金限度</td>
+            <td class="px-6 py-4">空港での申請あたり現金最大¥20,000。それ以上は銀行振込。</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">2026年7月以降の書類</td>
+            <td class="px-6 py-4">完全にデジタル化。税関と還付代理店はシステムから申請書とインボイスを取得します — ただし、カウンターではまだ求められるため、紙も保管してください。</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">2026年7月以降の抜き打ち検査</td>
+            <td class="px-6 py-4">売上価値が¥10,000未満の申請は無作為に抽出され、実物確認されます。抽出されなければ、空港での商品検査を完全にスキップできます。</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">購入時還付</td>
+            <td class="px-6 py-4">「即买即退」 — 店または市内還付窓口で、クレジットカードの承認を担保に受け取り。都市をまたいだ申請(ある都市で買い、別の都市から出国)は、2026年9月1日から全国で可能です。</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <img
+      src="/images/tax-refund/refund-application-form.webp"
+      alt="海外旅行者向け還付申請書。パスポートの種類と番号欄、インボイス番号、商品、11%の還付率、税関確認欄を表示"
+      width="1080"
+      height="607"
+      loading="lazy"
+      class="w-full rounded-2xl mb-4 not-prose"
+    />
+    <p class="text-sm text-gray-500 mb-8">還付申請書にはパスポート番号を記入します。この先のすべて — 税関、代理店、銀行 — はその番号を鍵としています。</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="how-much" class="text-3xl font-bold text-gray-900 mb-6 mt-14">実際にいくら戻ってくる？</h2>
+
+    <img
+      src="/images/tax-refund/vat-invoice.webp"
+      alt="中国の増値税普通発票。品目行、13%の税率列、および下部の税込合計金額を表示"
+      width="1000"
+      height="635"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">規則の11%と8%は政策で定められた<em>名目上</em>の税率であり、口座に入る額ではありません。還付代理店はインボイス額の約2%を頭から手数料として差し引くため、どのガイドも「約9%」と言います。</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">一行で計算しましょう。税免除店で買った¥10,000のノートパソコンは13%の VAT 区分に属し、名目上の還付は11%つまり¥1,100、そこから代理店手数料の約¥200を引くと — 約<strong>¥900</strong>が戻ります。¥1,000の品なら約¥90の還付。一店一日あたり¥200のしきい値未満なら、還付は¥0です。</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">軽減税率の品物は挙動が異なります。例えばお茶は9%の VAT 区分に属し、名目上の税率は8%で約6%を受け取ります。荷物がお茶が多く電子機器が少なければ、還付は9%ではなく6%で見積もりましょう。</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">このことで買い物旅行を計画する前に知っておく価値のある一つの構造的限界：還付は VAT を戻すもので、VAT が中国で輸入奢侈品が高い主な理由だったことはありません。ハンドバッグがパリより高いなら、9%の還付では差を埋めにくいです。還付が本当に計算を変えるのは中国製の品物と、そもそも買うつもりだったものです — 該当する分野は<a href="/ja/payment/china-shopping/">ショッピングガイド</a>をご覧ください。</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6 clear-both"><strong>インボイスこそ、人が間違える部分です。</strong> 必要なのは、あなたの情報で発行された<em>増値税普通発票</em>(增值税普通发票)であり、レシートでも、手書きのメモでも、その写真でもありません。小さな露店はそもそも発行できないことが多く、それが市場の掘り出し物が還付対象にならない本当の理由です。</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="how-to-claim" class="text-3xl font-bold text-gray-900 mb-6 mt-14">空港で還付をどう申請する？</h2>
+
+    <img
+      src="/images/tax-refund/customs-verification.webp"
+      alt="中国の空港の出口にある税関確認カウンター。离境退税 海关验核／Departure Tax Refund Customs Verification の看板があり、旅行者が並んでいる"
+      width="600"
+      height="398"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>ルートA — 空港、依然として最も一般的な道。</strong> 3つの場所を、この順で：店、税関、還付カウンター。すべてを、荷物を預ける<em>前</em>に行ってください。</p>
+
+    <ol class="list-decimal pl-6 space-y-3 text-lg leading-relaxed text-gray-700 mb-6 clear-both">
+      <li><strong>店で — 書類を集める。</strong> 還付申請書(离境退税申请单)と 増値税普通発票(增值税普通发票)を求めましょう。店はパスポートの種類、パスポート番号、入国日を申請書に記入するため、現物のパスポートを渡してください — 番号を読み取る必要があります。申請書のパスポート番号があなたのパスポートと一字一句一致することを確認しましょう；タイプミスされた数字があると空港で退けられ、その都市にはもう修正に戻れません。</li>
+      <li><strong>空港で、チェックイン前 — 税関確認(海关验核)。</strong> 商品、パスポート、申請書、インボイスを税関のカウンターへ持参。2026年7月以降、売上価値が¥10,000未満の申請は無作為に抜き打ち検査されます：抽出されなければ、このステップを飛ばして還付カウンターへ直行できます。抽出された場合、係員は商品そのものを見たいため、預け荷物に入れないでください。</li>
+      <li><strong>出国エリア内の還付カウンターで — お金を受け取る。</strong> 還付代理店のカウンター(退税代理机构)で同じパスポートを提示。現金は最大¥20,000、それ以上は銀行振込。還付は人民元で支払われるため、制限エリア内で使うか、銀行の提示するレートを受け入れてください。</li>
+    </ol>
+
+    <img
+      src="/images/tax-refund/instant-refund-point.webp"
+      alt="北京の即時還付窓口の看板 — TAX REFUND(离境退税)、Instant Refund Service(即买即退集中退付点)、Beijing One-Stop Service"
+      width="800"
+      height="503"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>ルートB — 購入時還付(即买即退)。</strong> 店が対応しているか、市内還付窓口の近くにいれば、街を出る前に受け取れます。店は即時に支払い、商品が実際に中国を出ることを担保にクレジットカードの承認を取ります；承認は税関が出国を確認すると解除されます。今は都市をまたいで利用できます — 成都で買い、上海から出国 — また、広州・重慶・成都ですでに集約還付窓口が運用されており、北京は独自のブランドでワンストップの市内サービスを展開しています。</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">前払いのお金には二つの条件がつきます。受け取ってから<strong>28日</strong>以内に中国を出国し、商品は未使用で出国時にまだ手中にある必要があります。どちらかを破ると、カードの承認は解除ではなく請求されます — 税還付を誤る最も高価な方法です。</p>
+
+
+    <div class="clear-both"></div>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="duty-free-vs-refund" class="text-3xl font-bold text-gray-900 mb-6 mt-14">免税か税還付か — あなたにはどちらが当てはまる？</h2>
+
+    <img
+      src="/images/tax-refund/duty-free-store.webp"
+      alt="空港ターミナル内の cdf China Duty Free の店頭。ガラスの宝石カウンターの上に 免税店 DUTY FREE の看板"
+      width="640"
+      height="480"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">中国には、全額の税を払わずに買う3つの別々の方法があり、旅行者は絶えず混同しています。どれが当てはまるかは、どこにいてどう出国するか — 買うものではなく — に依存します。</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>1. 出国税還付(退税商店)— 本ガイドの話題。</strong> 街の登録店で普通の税込商品を買い、出国時に VAT の約9%を還付してもらいます。先に払い、後で還付されます。</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>2. 空港免税店(机场免税店)— ゲートでの国際ブランド向け。</strong> 制限エリア内の店は、レジで輸入関税と VAT なしで販売するため、後で還付するものは何もありません；割引はすでに棚の価格に入っています。大半の市内店より国際ラベルの品揃えは良いですが、中国ブランドは劣ります。</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>3. 海南離島免税(海南离岛免税)— 島独自の制度。</strong> 還付とは別物で、中国人旅行者だけのものでもありません：飛行機・鉄道・フェリーで海南を出る人なら、外国パスポート保持者も含め、年間枠のもとで免税購入できます。海南からのフライトで旅行が終わるなら、島と国を一度に出ることになり、2つの制度は規則が何度も調整した方法で重なります — ご自身の正確なルートに何が当てはまるかはカウンターで確認を。その旅のビザなし側面は、当サイトの<a href="/ja/cities/hainan-visa-free/">海南入国ガイド</a>で扱っています。</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6 clear-both"><strong>実用的な違い：</strong> 免税は書類なしのレジでの割引であり、還付は3つの書類と並ぶことでの後日の返金です。店が両方を提供するなら、国際ブランドでは免税が、中国ブランドでは還付が通常優ります。</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="worth-it" class="text-3xl font-bold text-gray-900 mb-6 mt-14">還付の書類は本当に価値がある？</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">大半の旅行者にとっては、はい — ただし正しい購入に限ります。外国人旅行者は2026年1月から7月に中国で¥263.6 billionを支出し、前年比27.8%増、出国税還付を申請する旅行者数は同期間で3倍以上に増えました。還付制度の対象になった売上は2026年上半期に69%増で、空港の行列が縮むことはないと教えてくれます。</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">損益分岐点は単純です。一店一日あたり¥200未満なら還付は何もありません。¥200から約¥1,000の間は還付はわずか — ¥90未満 — なので、空港にいて時間の余裕がある場合にのみ価値があります。¥1,000以上なら本物のお金で、¥5,000以上なら出国をそれに合わせて計画する価値があります：チェックイン前に申請し、商品は手荷物に入れ、税関のカウンターに30分余分に取っておきましょう。</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">もう一つ予算に入れるべきこと：還付は人民元で支払われます。帰国の途についてもう戻らないなら、その現金は制限エリア内でしか役立ちません。最後の食事に使うか、銀行が振込で提示するレートを受け入れてください。</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="faq" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">❓ Frequently Asked Questions</h2>
+    <div class="space-y-6 mb-8 not-prose">
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">中国で税還付を受けるにはいくら使う必要がある？</h3>
+        <p class="text-gray-700">一日のうちに一つの税還付店で最低¥200。レジで還付申請書(离境退税申请单)と 増値税普通発票(增值税普通发票)を求め、両方を保管しましょう — これがなければ還付は処理されません。</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">還付を受けるのにパスポートは必要？</h3>
+        <p class="text-gray-700">はい、しかも中国に入国した際に使った現物のパスポートでなければなりません。申請書にはパスポートの種類と番号が記載され、税関は目の前の人と書類を照合します。スマホの写真やコピーは受け付けられません。</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">実際にいくら戻ってくる？</h3>
+        <p class="text-gray-700">大部分の品物で約9%、軽減税率の品物で約6%。名目上の税率は11%と8%で、還付代理店に約2%の手数料が引かれます。¥10,000の購入なら約¥900で、¥1,100ではありません。</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">空港で現金で還付を受けられる？</h3>
+        <p class="text-gray-700">はい、出国エリア内の還付カウンターで申請あたり最大¥20,000まで。それ以上は銀行振込で支払われます。一部の店や市内還付窓口でも、購入時還付(即买即退)の仕組みのもと即時支払があります。</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">空港で商品を手元に置いておく必要はある？</h3>
+        <p class="text-gray-700">抜き打ち検査の対象なら、はい。2026年7月以降、売上価値が¥10,000未満の申請は無作為に抽出されます；ご自身の分が抽出されなければ検査をスキップできます。税還付対象の品は、税関を通過するまで、手荷物か預け荷物の上に置いておきましょう。</p>
+      </div>
+    </div>
+
+    <div class="not-prose mt-12 pt-8 border-t border-gray-200">
+      <h3 class="text-base font-bold text-gray-900 mb-4 flex items-center gap-2">📚 Sources</h3>
+      <ul class="space-y-3">
+        <li>
+          <a href="https://taxfree.mofcom.gov.cn/taxfreeEnPc/index.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">商務部 — 出国税還付のサービスプラットフォーム(公式英語プラットフォーム：免税店検索、還付窓口、多言語ガイド)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://karachi.mofcom.gov.cn/jmxw/art/2026/art_4c238850af4e41d48ec7478a8b8fbec0.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">中国でのショッピング：税還付政策解説 — バイリンガル MOFCOM ガイド(¥200しきい値、11%／8%の税率、身分証明書、還付方法)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://scyxs.mofcom.gov.cn/zcfg/art/2026/art_9845ac0b49454fd598320a52125ba23a.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">商務部ほか5部門、2026年第74号通知(2026年5月18日)— 店舗対象の拡大、¥10,000未満の抜き打ち検査、ペーパーレス処理</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.gov.cn/zhengce/zhengceku/202607/content_7075798.htm" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">国家税務総局(2026年7月)— 購入時還付が2026年9月1日から地域をまたいで全国に拡大；ペーパーレス申請、オンライン店舗の試行、全国還付 QR コード</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://shanghai.chinatax.gov.cn/xwdt/ztzl/zcgll/ljts/zchb/201911/t449153.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">上海市税務局 — 「海外旅行者向け出国税還付政策」(バイリンガル；11%／8%の税率、2%の代理店手数料、¥20,000の現金限度)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.globaltimes.cn/page/202512/1350012.shtml" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">Global Times — 還付申請が最初の11か月で285%急増(全国で12,252店の税還付店、7,000以上が購入時還付に対応)</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="border-t border-gray-100 pt-6 mt-8">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5 not-prose">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h3 class="text-sm font-bold text-gray-900">📚 Next Reads</h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="/ja/payment/china-shopping/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              中国で買うべきもの
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ja/payment/payment-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              中国での支払い方法
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ja/visa/customs-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              中国税関規制
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ja/visa/visa-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              中国ビザ &amp; 入国ガイド
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <FAQPage items={faqs} />
+</Layout>

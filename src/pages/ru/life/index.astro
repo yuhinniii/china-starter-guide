@@ -2,6 +2,29 @@
 import Layout from '@layouts/Layout.astro';
 const title = 'Жизнь в Китае — Советы и Гайды для Путешественников';
 const description = 'Оставайся на связи, будь в безопасности и получи максимум от поездки.';
+import SectionStats from '../../../components/SectionStats.astro';
+import ArticleGroups from '../../../components/ArticleGroups.astro';
+import { STATS, GROUPS, ITEMS, COUNT, COUNT_SINGULAR, type Lang } from '../../../data/life';
+
+const lang: Lang = 'ru';
+
+const stats = STATS.map((s) => ({ value: s.value, color: s.color, label: s.label[lang] }));
+
+const groups = GROUPS.map((g, gi) => {
+  const items = ITEMS.filter((i) => i.group === gi);
+  return {
+    color: g.color,
+    title: g.name[lang],
+    countText: (items.length === 1 ? COUNT_SINGULAR[lang] : COUNT[lang]).replace('{n}', String(items.length)),
+    items: items.map((i) => ({
+      href: `/${lang}/life/${i.slug}/`,
+      tag: i.tag[lang],
+      title: i.title[lang],
+      desc: i.desc[lang],
+    })),
+  };
+});
+
 ---
 
 <Layout title={title} description={description} lang="ru">
@@ -14,142 +37,10 @@ const description = 'Оставайся на связи, будь в безоп�
     </header>
 
     <!-- Quick Stats -->
-    <div class="grid grid-cols-2 md:grid-cols-5 gap-3 mb-12 not-prose">
-      <div class="bg-purple-50 border border-purple-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-purple-800">3</p>
-        <p class="text-xs font-semibold text-purple-800 uppercase tracking-wide mt-1">Интернет и приложения</p>
-      </div>
-      <div class="bg-cyan-50 border border-cyan-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-cyan-800">3</p>
-        <p class="text-xs font-semibold text-cyan-800 uppercase tracking-wide mt-1">Здоровье и медицина</p>
-      </div>
-      <div class="bg-red-50 border border-red-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-red-800">3</p>
-        <p class="text-xs font-semibold text-red-800 uppercase tracking-wide mt-1">Безопасность и ЧС</p>
-      </div>
-      <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-yellow-800">3</p>
-        <p class="text-xs font-semibold text-yellow-800 uppercase tracking-wide mt-1">Культура и необходимое</p>
-      </div>
-      <div class="bg-teal-50 border border-teal-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-teal-800">1</p>
-        <p class="text-xs font-semibold text-teal-800 uppercase tracking-wide mt-1">Проживание</p>
-      </div>
-    </div>
+    <SectionStats stats={stats} />
 
     <!-- Category Sections -->
-    <div class="space-y-8 mb-16 not-prose">
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-purple-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-purple-800">Связь и интернет</h2>
-          <span class="text-xs font-medium text-purple-800 opacity-60">3 статьи</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/ru/life/sim-card-guide/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-purple-800">📶 Интернет</span>
-            <p class="text-base font-bold text-gray-900 mt-1">Лучшая SIM-карта и eSIM для туристов</p>
-            <p class="text-sm text-gray-600 mt-0.5">Сравни eSIM-провайдеров, SIM-карты в аэропорту и тарифы.</p>
-          </a>
-          <a href="/ru/life/vpn-guide/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-purple-800">🔒 VPN</span>
-            <p class="text-base font-bold text-gray-900 mt-1">Лучшие VPN для поездки в Китай</p>
-            <p class="text-sm text-gray-600 mt-0.5">Что работает, как настроить и почему — до прилёта.</p>
-          </a>
-          <a href="/ru/life/essential-apps/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-purple-800">📱 Приложения</span>
-            <p class="text-base font-bold text-gray-900 mt-1">10 обязательных приложений для Китая</p>
-            <p class="text-sm text-gray-600 mt-0.5">Оплата, транспорт, перевод и поиск.</p>
-          </a>
-        </div>
-      </div>
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-cyan-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-cyan-800">Здоровье и медицина</h2>
-          <span class="text-xs font-medium text-cyan-800 opacity-60">3 статьи</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/ru/life/seeing-a-doctor/" class="block bg-cyan-50 border border-cyan-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-cyan-800">⚕️ Медицина</span>
-            <p class="text-base font-bold text-gray-900 mt-1">Поход к врачу в Китае</p>
-            <p class="text-sm text-gray-600 mt-0.5">Аптека, клиника или больница — как выбрать.</p>
-          </a>
-          <a href="/ru/life/top-hospitals/" class="block bg-cyan-50 border border-cyan-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-cyan-800">🏥 Больницы</span>
-            <p class="text-base font-bold text-gray-900 mt-1">Лучшие больницы с международными отделениями</p>
-            <p class="text-sm text-gray-600 mt-0.5">Лучшие больницы с англоговорящим персоналом по городам.</p>
-          </a>
-          <a href="/ru/life/travel-insurance/" class="block bg-cyan-50 border border-cyan-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-cyan-800">🛡️ Страховка</span>
-            <p class="text-base font-bold text-gray-900 mt-1">Туристическая страховка для Китая</p>
-            <p class="text-sm text-gray-600 mt-0.5">Всё, что нужно знать о страховке.</p>
-          </a>
-        </div>
-      </div>
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-red-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-red-800">Безопасность и ЧС</h2>
-          <span class="text-xs font-medium text-red-800 opacity-60">3 статьи</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/ru/life/is-china-safe/" class="block bg-red-50 border border-red-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-red-800">🛡️ Безопасность</span>
-            <p class="text-base font-bold text-gray-900 mt-1">Безопасно ли путешествовать в Китай?</p>
-            <p class="text-sm text-gray-600 mt-0.5">Честный взгляд на безопасность, преступность и что остерегаться.</p>
-          </a>
-          <a href="/ru/life/common-scams/" class="block bg-red-50 border border-red-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-red-800">⚠️ Мошенничество</span>
-            <p class="text-base font-bold text-gray-900 mt-1">Распространённые схемы обмана и как их избежать</p>
-            <p class="text-sm text-gray-600 mt-0.5">Распознавай и избегай типичные туристические ловушки.</p>
-          </a>
-          <a href="/ru/life/emergency-numbers/" class="block bg-red-50 border border-red-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-red-800">🆘 Экстренные номера</span>
-            <p class="text-base font-bold text-gray-900 mt-1">Экстренные номера и что делать</p>
-            <p class="text-sm text-gray-600 mt-0.5">Важные контакты и пошаговые действия в ЧС.</p>
-          </a>
-        </div>
-      </div>
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-yellow-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-yellow-800">Культура и необходимое</h2>
-          <span class="text-xs font-medium text-yellow-800 opacity-60">4 статьи</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/ru/life/packing-guide/" class="block bg-yellow-50 border border-yellow-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-yellow-800">🧳 Упаковка</span>
-            <p class="text-base font-bold text-gray-900 mt-1">Что взять с собой в Китай</p>
-            <p class="text-sm text-gray-600 mt-0.5">Практичный список упаковки на любой сезон.</p>
-          </a>
-          <a href="/ru/life/cultural-taboos/" class="block bg-yellow-50 border border-yellow-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-yellow-800">🙏 Этикет</span>
-            <p class="text-base font-bold text-gray-900 mt-1">Культурные «можно» и «нельзя» в Китае</p>
-            <p class="text-sm text-gray-600 mt-0.5">Гид по этикету для иностранных гостей.</p>
-          </a>
-          <a href="/ru/life/chinese-phrases/" class="block bg-yellow-50 border border-yellow-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-yellow-800">🈶 Язык</span>
-            <p class="text-base font-bold text-gray-900 mt-1">Основные китайские фразы для туристов</p>
-            <p class="text-sm text-gray-600 mt-0.5">Разговорник выживания для путешественников.</p>
-          </a>
-        </div>
-      </div>
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-teal-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-teal-800">Проживание</h2>
-          <span class="text-xs font-medium text-teal-800 opacity-60">1 статья</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/ru/life/china-hotels-guide/" class="block bg-teal-50 border border-teal-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-teal-800">🏨 Отели</span>
-            <p class="text-base font-bold text-gray-900 mt-1">Как бронировать отели в Китае иностранцу</p>
-            <p class="text-sm text-gray-600 mt-0.5">Бронируйте отели в Китае как иностранец — Trip.com, цены на отели, политика в отношении иностранцев, заселение и где остановиться.</p>
-          </a>
-        </div>
-      </div>
-    </div>
+    <ArticleGroups groups={groups} />
 
         <!-- Next Step -->
     <div class="border-t border-gray-100 pt-8 mb-4">

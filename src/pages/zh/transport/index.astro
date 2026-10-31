@@ -2,6 +2,29 @@
 import Layout from '@layouts/Layout.astro';
 const title = '中国交通指南 —— 出行攻略';
 const description = '火车、飞机、地铁和网约车——你需要的一切都在这里。';
+import SectionStats from '../../../components/SectionStats.astro';
+import ArticleGroups from '../../../components/ArticleGroups.astro';
+import { STATS, GROUPS, ITEMS, COUNT, COUNT_SINGULAR, type Lang } from '../../../data/transport';
+
+const lang: Lang = 'zh';
+
+const stats = STATS.map((s) => ({ value: s.value, color: s.color, label: s.label[lang] }));
+
+const groups = GROUPS.map((g, gi) => {
+  const items = ITEMS.filter((i) => i.group === gi);
+  return {
+    color: g.color,
+    title: g.name[lang],
+    countText: (items.length === 1 ? COUNT_SINGULAR[lang] : COUNT[lang]).replace('{n}', String(items.length)),
+    items: items.map((i) => ({
+      href: `/${lang}/transport/${i.slug}/`,
+      tag: i.tag[lang],
+      title: i.title[lang],
+      desc: i.desc[lang],
+    })),
+  };
+});
+
 ---
 
 <Layout title={title} description={description} lang="zh">
@@ -14,94 +37,10 @@ const description = '火车、飞机、地铁和网约车——你需要的一�
     </header>
 
     <!-- Quick Stats -->
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-12 not-prose">
-      <div class="bg-sky-50 border border-sky-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-sky-800">1</p>
-        <p class="text-xs font-semibold text-sky-800 uppercase tracking-wide mt-1">高铁指南</p>
-      </div>
-      <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-emerald-800">1</p>
-        <p class="text-xs font-semibold text-emerald-800 uppercase tracking-wide mt-1">机场交通</p>
-      </div>
-      <div class="bg-purple-50 border border-purple-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-purple-800">3</p>
-        <p class="text-xs font-semibold text-purple-800 uppercase tracking-wide mt-1">市内交通</p>
-      </div>
-      <div class="bg-gray-50 border border-gray-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-gray-800">1</p>
-        <p class="text-xs font-semibold text-gray-800 uppercase tracking-wide mt-1">网约车指南</p>
-      </div>
-    </div>
+    <SectionStats stats={stats} />
 
     <!-- Category Sections -->
-    <div class="space-y-8 mb-16 not-prose">
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-sky-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-sky-800">出行概览</h2>
-          <span class="text-xs font-medium text-sky-800 opacity-60">1 篇文章</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/zh/transport/transport-guide/" class="block bg-sky-50 border border-sky-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-sky-800">📖 概览</span>
-            <p class="text-base font-bold text-gray-900 mt-1">在中国怎么出行</p>
-            <p class="text-sm text-gray-600 mt-0.5">所有交通方式的完整介绍——高铁、飞机、地铁等。</p>
-          </a>
-        </div>
-      </div>
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-emerald-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-emerald-800">抵达中国</h2>
-          <span class="text-xs font-medium text-emerald-800 opacity-60">1 篇文章</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/zh/transport/airport-to-city/" class="block bg-emerald-50 border border-emerald-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-emerald-800">🛬 指南</span>
-            <p class="text-base font-bold text-gray-900 mt-1">从机场到市区</p>
-            <p class="text-sm text-gray-600 mt-0.5">各大机场的交通选择——北京、上海、广州等。</p>
-          </a>
-        </div>
-      </div>
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-purple-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-purple-800">市内交通</h2>
-          <span class="text-xs font-medium text-purple-800 opacity-60">3 篇文章</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/zh/transport/high-speed-rail/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-purple-800">🚄 指南</span>
-            <p class="text-base font-bold text-gray-900 mt-1">如何购票和乘坐中国高铁</p>
-            <p class="text-sm text-gray-600 mt-0.5">关于订票和乘坐全球最大高铁网络的所有信息。</p>
-          </a>
-          <a href="/zh/transport/flights-vs-rail/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-purple-800">✈️ 指南</span>
-            <p class="text-base font-bold text-gray-900 mt-1">高铁 vs 航班</p>
-            <p class="text-sm text-gray-600 mt-0.5">火车还是飞机？一个用数据说话的对比。</p>
-          </a>
-          <a href="/zh/transport/metro-bus/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-purple-800">🚇 指南</span>
-            <p class="text-base font-bold text-gray-900 mt-1">主要城市地铁和公交指南</p>
-            <p class="text-sm text-gray-600 mt-0.5">在北京、上海、广州、深圳乘坐公共交通。</p>
-          </a>
-        </div>
-      </div>
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-gray-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-gray-800">网约车</h2>
-          <span class="text-xs font-medium text-gray-800 opacity-60">1 篇文章</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/zh/transport/didi/" class="block bg-gray-50 border border-gray-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-gray-800">🚕 教程</span>
-            <p class="text-base font-bold text-gray-900 mt-1">外国人如何使用滴滴</p>
-            <p class="text-sm text-gray-600 mt-0.5">使用滴滴（中国版 Uber）的详细指南——含截图。</p>
-          </a>
-        </div>
-      </div>
-    </div>
+    <ArticleGroups groups={groups} />
 
         <!-- Next Step -->
     <div class="border-t border-gray-100 pt-8 mb-4">

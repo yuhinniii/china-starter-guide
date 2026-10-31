@@ -2,6 +2,29 @@
 import Layout from '@layouts/Layout.astro';
 const title = '중국 생활 — 여행 팁 & 가이드';
 const description = '연결 유지, 안전하게, 그리고 여행을 최대한 즐기세요.';
+import SectionStats from '../../../components/SectionStats.astro';
+import ArticleGroups from '../../../components/ArticleGroups.astro';
+import { STATS, GROUPS, ITEMS, COUNT, COUNT_SINGULAR, type Lang } from '../../../data/life';
+
+const lang: Lang = 'ko';
+
+const stats = STATS.map((s) => ({ value: s.value, color: s.color, label: s.label[lang] }));
+
+const groups = GROUPS.map((g, gi) => {
+  const items = ITEMS.filter((i) => i.group === gi);
+  return {
+    color: g.color,
+    title: g.name[lang],
+    countText: (items.length === 1 ? COUNT_SINGULAR[lang] : COUNT[lang]).replace('{n}', String(items.length)),
+    items: items.map((i) => ({
+      href: `/${lang}/life/${i.slug}/`,
+      tag: i.tag[lang],
+      title: i.title[lang],
+      desc: i.desc[lang],
+    })),
+  };
+});
+
 ---
 
 <Layout title={title} description={description} lang="ko">
@@ -14,142 +37,10 @@ const description = '연결 유지, 안전하게, 그리고 여행을 최대한 
     </header>
 
     <!-- Quick Stats -->
-    <div class="grid grid-cols-2 md:grid-cols-5 gap-3 mb-12 not-prose">
-      <div class="bg-purple-50 border border-purple-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-purple-800">3</p>
-        <p class="text-xs font-semibold text-purple-800 uppercase tracking-wide mt-1">인터넷 & 앱</p>
-      </div>
-      <div class="bg-cyan-50 border border-cyan-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-cyan-800">3</p>
-        <p class="text-xs font-semibold text-cyan-800 uppercase tracking-wide mt-1">건강 & 의료</p>
-      </div>
-      <div class="bg-red-50 border border-red-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-red-800">3</p>
-        <p class="text-xs font-semibold text-red-800 uppercase tracking-wide mt-1">안전 & 비상</p>
-      </div>
-      <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-yellow-800">3</p>
-        <p class="text-xs font-semibold text-yellow-800 uppercase tracking-wide mt-1">문화 & 필수 정보</p>
-      </div>
-      <div class="bg-teal-50 border border-teal-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-teal-800">1</p>
-        <p class="text-xs font-semibold text-teal-800 uppercase tracking-wide mt-1">숙박</p>
-      </div>
-    </div>
+    <SectionStats stats={stats} />
 
     <!-- Category Sections -->
-    <div class="space-y-8 mb-16 not-prose">
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-purple-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-purple-800">통신 & 인터넷</h2>
-          <span class="text-xs font-medium text-purple-800 opacity-60">3개 문서</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/ko/life/sim-card-guide/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-purple-800">📶 인터넷</span>
-            <p class="text-base font-bold text-gray-900 mt-1">관광객을 위한 최고의 SIM 카드 & eSIM</p>
-            <p class="text-sm text-gray-600 mt-0.5">eSIM 제공업체, 공항 SIM 카드, 데이터 요금제 비교.</p>
-          </a>
-          <a href="/ko/life/vpn-guide/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-purple-800">🔒 VPN</span>
-            <p class="text-base font-bold text-gray-900 mt-1">중국 여행을 위한 최고의 VPN</p>
-            <p class="text-sm text-gray-600 mt-0.5">어떤 VPN이 작동하는지, 설정 방법, 도착 전에 준비해야 하는 이유.</p>
-          </a>
-          <a href="/ko/life/essential-apps/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-purple-800">📱 앱</span>
-            <p class="text-base font-bold text-gray-900 mt-1">중국 여행 필수 앱 10선</p>
-            <p class="text-sm text-gray-600 mt-0.5">결제, 교통, 번역, 탐색.</p>
-          </a>
-        </div>
-      </div>
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-cyan-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-cyan-800">건강 & 의료</h2>
-          <span class="text-xs font-medium text-cyan-800 opacity-60">3개 문서</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/ko/life/seeing-a-doctor/" class="block bg-cyan-50 border border-cyan-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-cyan-800">⚕️ 의료</span>
-            <p class="text-base font-bold text-gray-900 mt-1">중국에서 병원 방문하기</p>
-            <p class="text-sm text-gray-600 mt-0.5">약국, 의원, 병원 — 어떻게 선택할까요.</p>
-          </a>
-          <a href="/ko/life/top-hospitals/" class="block bg-cyan-50 border border-cyan-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-cyan-800">🏥 병원</span>
-            <p class="text-base font-bold text-gray-900 mt-1">국제 진료과가 있는 주요 병원</p>
-            <p class="text-sm text-gray-600 mt-0.5">도시별 영어 구사 직원이 있는 최고의 병원.</p>
-          </a>
-          <a href="/ko/life/travel-insurance/" class="block bg-cyan-50 border border-cyan-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-cyan-800">🛡️ 보험</span>
-            <p class="text-base font-bold text-gray-900 mt-1">중국 여행 보험</p>
-            <p class="text-sm text-gray-600 mt-0.5">여행 보험에 대해 알아야 할 사항.</p>
-          </a>
-        </div>
-      </div>
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-red-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-red-800">안전 & 비상</h2>
-          <span class="text-xs font-medium text-red-800 opacity-60">3개 문서</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/ko/life/is-china-safe/" class="block bg-red-50 border border-red-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-red-800">🛡️ 안전</span>
-            <p class="text-base font-bold text-gray-900 mt-1">중국 여행은 안전한가요?</p>
-            <p class="text-sm text-gray-600 mt-0.5">안전, 범죄, 주의할 점에 대한 솔직한 평가.</p>
-          </a>
-          <a href="/ko/life/common-scams/" class="block bg-red-50 border border-red-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-red-800">⚠️ 사기</span>
-            <p class="text-base font-bold text-gray-900 mt-1">중국에서 흔한 사기와 예방 방법</p>
-            <p class="text-sm text-gray-600 mt-0.5">가장 흔한 관광객 대상 사기를 식별하고 피하는 방법.</p>
-          </a>
-          <a href="/ko/life/emergency-numbers/" class="block bg-red-50 border border-red-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-red-800">🆘 비상</span>
-            <p class="text-base font-bold text-gray-900 mt-1">비상 연락처 & 대처 방법</p>
-            <p class="text-sm text-gray-600 mt-0.5">필수 연락처와 단계별 비상 대응.</p>
-          </a>
-        </div>
-      </div>
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-yellow-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-yellow-800">문화 & 필수 정보</h2>
-          <span class="text-xs font-medium text-yellow-800 opacity-60">4개 문서</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/ko/life/packing-guide/" class="block bg-yellow-50 border border-yellow-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-yellow-800">🧳 짐 싸기</span>
-            <p class="text-base font-bold text-gray-900 mt-1">중국에 가져갈 물건</p>
-            <p class="text-sm text-gray-600 mt-0.5">계절별 실용적인 짐 싸기 목록.</p>
-          </a>
-          <a href="/ko/life/cultural-taboos/" class="block bg-yellow-50 border border-yellow-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-yellow-800">🙏 에티켓</span>
-            <p class="text-base font-bold text-gray-900 mt-1">중국 문화의 에티켓과 금기사항</p>
-            <p class="text-sm text-gray-600 mt-0.5">외국인 방문객을 위한 예절 가이드입니다.</p>
-          </a>
-          <a href="/ko/life/chinese-phrases/" class="block bg-yellow-50 border border-yellow-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-yellow-800">🈶 언어</span>
-            <p class="text-base font-bold text-gray-900 mt-1">관광객을 위한 필수 중국어 회화</p>
-            <p class="text-sm text-gray-600 mt-0.5">여행자를 위한 생존 중국어.</p>
-          </a>
-        </div>
-      </div>
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-teal-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-teal-800">숙박</h2>
-          <span class="text-xs font-medium text-teal-800 opacity-60">1개 문서</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/ko/life/china-hotels-guide/" class="block bg-teal-50 border border-teal-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-teal-800">🏨 호텔</span>
-            <p class="text-base font-bold text-gray-900 mt-1">외국인을 위한 중국 호텔 예약 방법</p>
-            <p class="text-sm text-gray-600 mt-0.5">외국인이 중국에서 호텔 예약하기 — Trip.com, 호텔 요금, 외국인 정책, 체크인, 추천 지역.</p>
-          </a>
-        </div>
-      </div>
-    </div>
+    <ArticleGroups groups={groups} />
 
         <!-- Next Step -->
     <div class="border-t border-gray-100 pt-8 mb-4">

@@ -1,0 +1,308 @@
+---
+import Layout from '@layouts/Layout.astro';
+import FAQPage from '../../../components/FAQPage.astro';
+
+const title = "2026 年中国离境退税：如何拿回 9%";
+const description = "2026 年中国的离境退税：¥200 门槛、需要的三份文件、90 天时限，以及机场海关验核到底怎么走。";
+
+const faqs = [
+  {
+    question: "在中国申领退税需要花多少钱？",
+    answer: "至少要在单家退税店、单日内消费 ¥200。在收银台索要离境退税申请单和增值税普通发票，两份都要留好——没有它们就办不了退税。"
+  },
+  {
+    question: "申领退税需要护照吗？",
+    answer: "需要，而且必须是你入境中国时用的那本实体护照。退税申请单上会写你的护照类型与号码，海关会对着本人核验证件。手机照片和复印件都不接受。"
+  },
+  {
+    question: "实际能拿回多少钱？",
+    answer: "多数商品约 9%，低税率商品约 6%。名义税率是 11% 和 8%，再减去退税机构收的大约 2%。买 ¥10,000 实际到手约 ¥900，不是 ¥1,100。"
+  },
+  {
+    question: "在机场可以领现金退税吗？",
+    answer: "可以，在出境区内的退税柜台，单次最多领 ¥20,000 现金。超出部分走银行转账。部分商店和城市退税点也按即买即退当场付款。"
+  },
+  {
+    question: "在机场需要把商品带在身上吗？",
+    answer: "被抽查到的申领，需要。自 2026 年 7 月起，销售额低于 ¥10,000 的申领改为随机抽验；没抽中你就跳过查验。在过海关之前，把可退税商品放在随身行李或托运行李最上面。"
+  }
+];
+---
+
+<Layout title={title} description={description} lang="zh" type="Article">
+  <nav class="mb-8 not-prose">
+    <a href="/zh/payment/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+      <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+      </svg>
+      返回支付指南
+    </a>
+  </nav>
+
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">💳 支付</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">中国的离境退税：离境时如何拿回约 9%</h1>
+      <p class="text-xl text-gray-600 mb-6">¥200 门槛、需要的三份文件，以及如何不耽误半天就走完机场退税流程。</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 最后更新：2026 年 10 月</span>
+        <span>⏱️ 阅读时长：8 分钟</span>
+      </div>
+    </header>
+
+    <img
+      src="/images/tax-refund/tax-refund-flow.webp"
+      alt="中国离境退税流程示意图：在退税店购物，拿到退税申请单与增值税发票，海关验核，然后领取退税"
+      width="1080"
+      height="606"
+      class="w-full rounded-2xl mb-10 not-prose"
+    />
+
+    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-red-900 mb-4">⚡ 游客在中国能退税吗？</h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>快速回答：</strong>能。在悬挂<strong>退税商店</strong>标识的单家店铺，单日消费至少 <strong>¥200</strong>，离境中国时多数商品大约能拿回 <strong>9%</strong>，低税率商品约 <strong>6%</strong>。你需要三样东西：<strong>离境退税申请单</strong>、<strong>增值税普通发票</strong>，以及你的<strong>护照</strong>——就是入境时用的那本实体护照。在出境时于机场申领，或在市内即买即退柜台当场领。商品须在购买后 <strong>90 天</strong>内带出中国。想了解什么真正值得买，请看我们的<a href="/zh/payment/china-shopping/" class="text-red-700 underline">中国购物指南</a>。</p>
+      <p class="text-lg leading-relaxed text-gray-700">退税适用于你带回家自用的物品：化妆品、电子产品、服装、茶叶、丝绸、瓷器、玉器、工艺品。在中国境内消费掉的东西、服务，以及禁止和限制清单上的商品，都不适用。</p>
+    </div>
+
+    <div class="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-2xl p-6 mb-12 not-prose">
+      <p class="text-lg leading-relaxed text-yellow-900"><strong>实话说：</strong>这是返款，不是折扣——你在收银台付全价（含税），之后再把一部分拿回来。买一件 T 恤和一个冰箱贴，不值得排那个队：你必须单店单日凑够 ¥200 才能申领，90 天时限从购买日起算，机构还要抽走你应得的大约 2%。买笔记本、手表、一双鞋或一个包，这是旅途中最轻松的 9%——只要别在海关看货之前就把行李托运。</p>
+    </div>
+
+    <h2 id="rules" class="text-3xl font-bold text-gray-900 mb-6 mt-14">中国的离境退税规则是什么？</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4">这项政策叫<em>lí jìng tuì shuì</em>（离境退税）——字面意思就是「离境时退还税款」。它退的是你在注册退税店买的商品所缴的增值税，前提是这些商品随你一同离境。名义税率看着慷慨；你真正到手要少一些。</p>
+    <p class="text-base text-gray-500 mb-4">2026 年中国离境退税规则一览</p>
+    <div class="overflow-x-auto mb-8 not-prose">
+      <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+        <caption class="sr-only">2026 年中国离境退税规则——最低消费、退税税率、适用对象、身份证件、时限、现金上限、无纸化办理与即买即退</caption>
+        <thead>
+          <tr class="bg-gray-900 text-white">
+            <th class="px-6 py-4 font-bold">规则</th>
+            <th class="px-6 py-4 font-bold">详情</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">最低消费</td>
+            <td class="px-6 py-4">单店、单日 ¥200。不是整趟购物凑 ¥200——是单家店。</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">退税税率</td>
+            <td class="px-6 py-4">13% 增值税档商品 11%，9% 档 8%。扣掉机构约 2% 的费用后，你到手约 <strong>9%</strong> 或 <strong>6%</strong>。</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">适用对象</td>
+            <td class="px-6 py-4">在中国大陆停留 183 天或更短的非居民：外国护照持有者，以及香港、澳门、台湾居民。</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">身份证件</td>
+            <td class="px-6 py-4"><strong>你的护照</strong>——就是入境时用的那本。退税单上会写它的类型与号码，每个柜台都要核对。</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">时限</td>
+            <td class="px-6 py-4">在购买日后 <strong>90 天</strong>内离境。如果你用即买即退提前拿了钱，期限是 28 天。</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">现金上限</td>
+            <td class="px-6 py-4">机场单次最多 ¥20,000 现金。超出部分走银行转账。</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">2026 年 7 月起的手续</td>
+            <td class="px-6 py-4">全面数字化。海关与退税机构从系统里调取你的申请单和发票——但还是把纸质单留着，因为柜台仍会索要。</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">2026 年 7 月起的抽查</td>
+            <td class="px-6 py-4">销售额低于 ¥10,000 的申领改为随机抽验，进行实物核对。没抽中，你就直接跳过机场的验货环节。</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">即买即退</td>
+            <td class="px-6 py-4">「即买即退」——凭信用卡授权，在商店或市内退税点领取。跨城申领（一城买、另一城飞）自 2026 年 9 月 1 日起已全国通行。</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <img
+      src="/images/tax-refund/refund-application-form.webp"
+      alt="境外旅客退税申请单，显示护照类型与号码栏、发票号码、商品、11% 退税税率，以及海关验核栏"
+      width="1080"
+      height="607"
+      loading="lazy"
+      class="w-full rounded-2xl mb-4 not-prose"
+    />
+    <p class="text-sm text-gray-500 mb-8">退税申请单就是填你护照号码的地方。此后的每一步——海关、机构、银行——都按这个号码对应。</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="how-much" class="text-3xl font-bold text-gray-900 mb-6 mt-14">你实际能拿回多少钱？</h2>
+
+    <img
+      src="/images/tax-refund/vat-invoice.webp"
+      alt="一张中国增值税普通发票，显示商品行、13% 税率列，以及底部价税合计"
+      width="1000"
+      height="635"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">规则里的 11% 和 8% 是政策定的<em>名义</em>税率，不是进你账户的数。退税机构要从发票金额里先抽走约 2% 的手续费，所以每家攻略都说「大约 9%」。</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">按单行算。一台在退税店买的 ¥10,000 笔记本，落在 13% 增值税档：名义退 11%，即 ¥1,100，减去约 ¥200 机构费——你实拿大约 <strong>¥900</strong>。一件 ¥1,000 的商品退约 ¥90。单店单日没过 ¥200 门槛，结果就是 ¥0。</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">低税率商品算法不同。比如茶叶落在 9% 增值税档：名义税率 8%，你到手约 6%。如果你的战利品茶叶重、电子产品轻，就按 6% 而非 9% 来算退税预算。</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">在围绕退税规划购物之前，有一点结构性限制值得知道：退的是增值税，而增值税从来不是进口奢侈品牌在中国昂贵的主因。如果一个包在这里比巴黎贵，退 9% 很难补上差价。退税真正改变账面的，是国产商品和你本来就要买的东西——哪些品类属于这类，请看<a href="/zh/payment/china-shopping/" class="text-brand-600 hover:underline">购物指南</a>。</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6 clear-both"><strong>发票是大家最容易出错的地方。</strong>你要的是开有你信息的<em>增值税普通发票</em>，不是收银小票，不是手写便条，也不是拍张照。小摊往往根本开不出来，这才是市场 bargain 永远无法退税的真正原因。</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="how-to-claim" class="text-3xl font-bold text-gray-900 mb-6 mt-14">在机场怎么申领退税？</h2>
+
+    <img
+      src="/images/tax-refund/customs-verification.webp"
+      alt="中国机场出境处的海关验核柜台，标着「离境退税 海关验核 / Departure Tax Refund Customs Verification」，旅客正在排队"
+      width="600"
+      height="398"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>路线 A——机场，至今最常见的路径。</strong>三个站点，按这个顺序：商店、海关、退税柜台。全部在<em>托运行李之前</em>完成。</p>
+
+    <ol class="list-decimal pl-6 space-y-3 text-lg leading-relaxed text-gray-700 mb-6 clear-both">
+      <li><strong>在商店——拿到单据。</strong>索要离境退税申请单和增值税普通发票。店家会按你的护照类型、护照号码和入境日期填单，所以把实体护照递过去——他们要照着读号码。核对申请单上的护照号码与你的护照一字不差；填错一位数字，你在机场会被拒，而那时你已经不在那座城市，没法补救。</li>
+      <li><strong>在机场、值机之前——海关验核。</strong>带着商品、护照、申请单和发票去海关台。自 2026 年 7 月起，销售额低于 ¥10,000 的申领改为随机抽验：没抽中，你可以跳过这一步直接去退税柜台。抽中了，关员要看商品本身，所以别把它们装进托运箱。</li>
+      <li><strong>在出境区内的退税柜台——领钱。</strong>在同一家退税机构柜台（退税代理机构）出示同一本护照。现金最多 ¥20,000，超出走银行转账。退税以人民币发放，所以要么在隔离区花掉，要么接受你银行给的汇率。</li>
+    </ol>
+
+    <img
+      src="/images/tax-refund/instant-refund-point.webp"
+      alt="北京一处即买即退服务点的标识牌，牌上印着 TAX REFUND、Instant Refund Service、Beijing One-Stop Service"
+      width="800"
+      height="503"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>路线 B——即买即退。</strong>如果商店提供，或者你就在市内退税点附近，可以离城之前就把钱领了。商店当场付款，并收取信用卡授权作为商品确会离境的担保；海关确认出境后，授权才解除。现在它已经跨城通用——在成都买、从上海飞都行——广州、重庆、成都也已设了集中退税点，北京则以自己的品牌做一站式城市服务。</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">提前拿到钱附两个条件。你必须在拿钱后 <strong>28 天</strong>内离境，且商品在出境时仍须未使用、在你手上。任意一条没满足，被扣的就是信用卡授权而非解除——这是把退税搞砸最贵的一种方式。</p>
+
+
+    <div class="clear-both"></div>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="duty-free-vs-refund" class="text-3xl font-bold text-gray-900 mb-6 mt-14">免税还是退税——哪个适合你？</h2>
+
+    <img
+      src="/images/tax-refund/duty-free-store.webp"
+      alt="机场航站楼内的 cdf 中国免税店，玻璃珠宝柜台上方挂着「免税店 DUTY FREE」标识"
+      width="640"
+      height="480"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">中国有三种互不相干的免税购买方式，旅客经常把它们搞混。哪个适用，取决于你在哪里、怎么离境——而不是买什么。</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>1. 离境退税（退税商店）——本指南讲的就是它。</strong>你在市内注册商店买普通、含税商品，离境时再申领大约 9% 的增值税。先付钱，后退款。</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>2. 机场免税店（机场免税店）——给闸口前的国际品牌。</strong>隔离区内的店铺在收银台就不收进口关税和增值税，所以事后无税可退；折扣已经落在货架价里。国际品牌选择比多数市内店更全，国产品牌则更弱。</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>3. 海南离岛免税（海南离岛免税）——只属于这座岛的政策。</strong>它和退税不是一回事，且不只面向中国游客：任何人——外国护照也包括——只要坐飞机、火车或轮渡离开海南，都能在年度额度内买免税品。如果你的行程以飞离海南收尾，你是一下子离开这座岛也离开这个国家，两套政策重叠的方式，规则已不止一次调整过——到柜台问清你的具体路线适用什么。我们的<a href="/zh/cities/hainan-visa-free/" class="text-brand-600 hover:underline">海南入境指南</a>覆盖了那趟行程的免签一面。</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6 clear-both"><strong>实际差别：</strong>免税是收银台上的折扣、没有手续，退税是日后返款、要三份文件加一个排队。如果一家店两种都给你，国际品牌通常免税更划算，国产品牌通常退税更划算。</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="worth-it" class="text-3xl font-bold text-gray-900 mb-6 mt-14">退税手续到底值不值？</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">对大多数游客，值——但只在买对东西时。2026 年 1 至 7 月，外国游客在中国消费了 2636 亿元，同比增长 27.8%；同期提交离境退税的旅客数量翻了三倍以上。受退税政策覆盖的销售额在 2026 年上半年增长 69%，这说明机场的队伍不会缩短。</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">盈亏平衡很简单。单店单日低于 ¥200，没有可申领的。¥200 到大约 ¥1,000 之间，退税额很小——不到 ¥90——只有你已经在机场、时间富余才值得办。超过 ¥1,000 就是真金白银，超过 ¥5,000 就值得为离境做规划：值机前申领，商品放随身行李，给海关台多留 30 分钟。</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">还有一笔要算进预算：退税以人民币发放。如果你正在回家、不会再来，这笔现金只在隔离区有用。花在最后一餐上，或接受银行转账给你的汇率。</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="faq" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">❓ 常见问题</h2>
+    <div class="space-y-6 mb-8 not-prose">
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">在中国申领退税需要花多少钱？</h3>
+        <p class="text-gray-700">至少要在单家退税店、单日内消费 ¥200。在收银台索要离境退税申请单和增值税普通发票，两份都要留好——没有它们就办不了退税。</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">申领退税需要护照吗？</h3>
+        <p class="text-gray-700">需要，而且必须是你入境中国时用的那本实体护照。申请单上会写你的护照类型与号码，海关会对着本人核验证件。手机照片和复印件都不接受。</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">实际能拿回多少钱？</h3>
+        <p class="text-gray-700">多数商品约 9%，低税率商品约 6%。名义税率是 11% 和 8%，再减去退税机构收的大约 2%。买 ¥10,000 实际到手约 ¥900，不是 ¥1,100。</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">在机场可以领现金退税吗？</h3>
+        <p class="text-gray-700">可以，在出境区内的退税柜台，单次最多领 ¥20,000 现金。超出部分走银行转账。部分商店和城市退税点也按即买即退当场付款。</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">在机场需要把商品带在身上吗？</h3>
+        <p class="text-gray-700">被抽查到的申领，需要。自 2026 年 7 月起，销售额低于 ¥10,000 的申领改为随机抽验；没抽中你就跳过查验。在过海关之前，把可退税商品放在随身行李或托运行李最上面。</p>
+      </div>
+    </div>
+
+    <div class="not-prose mt-12 pt-8 border-t border-gray-200">
+      <h3 class="text-base font-bold text-gray-900 mb-4 flex items-center gap-2">📚 参考来源</h3>
+      <ul class="space-y-3">
+        <li>
+          <a href="https://taxfree.mofcom.gov.cn/taxfreeEnPc/index.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">商务部——离境退税服务平台（官方英文平台：退税店查询、退税点、多语种指南）</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://karachi.mofcom.gov.cn/jmxw/art/2026/art_4c238850af4e41d48ec7478a8b8fbec0.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">在中国购物：退税政策详解——中英双语商务部指南（¥200 门槛、11% / 8% 税率、身份证件、退税方式）</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://scyxs.mofcom.gov.cn/zcfg/art/2026/art_9845ac0b49454fd598320a52125ba23a.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">商务部等六部门，2026 年第 74 号通知（2026 年 5 月 18 日）——门店覆盖面更广、¥10,000 以下抽查、无纸化办理</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.gov.cn/zhengce/zhengceku/202607/content_7075798.htm" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">国家税务总局（2026 年 7 月）——即买即退自 2026 年 9 月 1 日起跨地区全国通行；无纸化申报、线上店试点、全国统一退税二维码</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://shanghai.chinatax.gov.cn/xwdt/ztzl/zcgll/ljts/zchb/201911/t449153.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">上海市税务局——「境外旅客离境退税政策」（双语；11% / 8% 税率、2% 机构费、¥20,000 现金上限）</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.globaltimes.cn/page/202512/1350012.shtml" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">环球时报——前 11 个月退税申领激增 285%（全国 12,252 家退税店，7,000 多家提供即买即退）</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="border-t border-gray-100 pt-6 mt-8">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5 not-prose">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h3 class="text-sm font-bold text-gray-900">📚 继续阅读</h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="/zh/payment/china-shopping/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              在中国买什么
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/zh/payment/payment-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              在中国怎么付钱
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/zh/visa/customs-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              中国海关规定
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/zh/visa/visa-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              中国签证与入境指南
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <FAQPage items={faqs} />
+</Layout>

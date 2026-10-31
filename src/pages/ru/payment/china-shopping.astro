@@ -1,0 +1,329 @@
+---
+import Layout from '@layouts/Layout.astro';
+import FAQPage from '../../../components/FAQPage.astro';
+
+const title = "Что купить в Китае в 2026 году: гайд по шопингу с возвратом налога";
+const description = "Что на самом деле стоит купить в Китае в 2026 году — китайская косметика и декоративная косметика, бренды guochao, электроника, чай, шёлк, фарфор и нефрит — а также где делать покупки и как получить возврат НДС при выезде ~9 %.";
+
+const faqs = [
+  {
+    question: "Что на самом деле дешевле купить в Китае?",
+    answer: "Китайская косметика и средства по уходу, электроника китайских брендов (Huawei, Xiaomi, DJI), очки с ИИ и умные носимые гаджеты, дизайнерские бренды guochao, а также чай, шёлк, фарфор, нефрит и перегородчатая эмаль. Международная мода, парфюм и фотоаппараты стоят столько же или дороже, чем у вас дома."
+  },
+  {
+    question: "Предусмотрен ли при шопинге в Китае возврат налога?",
+    answer: "Да, в магазинах с вывеской Tax Free (退税商店). Потратьте минимум ¥200 в одном магазине за один день, сохраните VAT invoice (增值税发票) и получите примерно 9 % обратно в аэропорту при вылете."
+  },
+  {
+    question: "Что не стоит покупать в Китае?",
+    answer: "Нагляднее всего — iPhone и MacBook от Apple: в Китае они дороже, а часть функций отрезана, поэтому возврат налога не перекрывает разницу. Любая покупка, которую можно найти дома за те же деньги, — зря потраченные средства."
+  }
+];
+---
+
+<Layout title={title} description={description} lang="ru" type="Article">
+  <nav class="mb-8 not-prose">
+    <a href="/ru/payment/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+      <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+      </svg>
+      Назад к платежам
+    </a>
+  </nav>
+
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">🛍️ Шопинг</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">Шопинг в Китае: что стоит купить в 2026 году</h1>
+      <p class="text-xl text-gray-600 mb-6">Категории, где Китай действительно выигрывает по цене, те, где не выигрывает, и как получить примерно 9 % обратно при отъезде.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Последнее обновление: октябрь 2026</span>
+        <span>⏱️ 11 мин. чтения</span>
+      </div>
+    </header>
+
+    <img
+      src="/images/china-shopping/tax-free-sticker.webp"
+      alt="Синяя вывеска Tax Free (退税商店) на прилавке магазина рядом с терминалом для карт"
+      width="1080"
+      height="809"
+      class="w-full rounded-2xl mb-10 not-prose"
+    />
+
+    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-red-900 mb-4">⚡ Что стоит покупать в Китае?</h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>Краткий ответ:</strong> придерживайтесь категорий, которые в Китае действительно дешевле или которые трудно найти дома, — китайской косметики и средств по уходу, электроники китайских брендов (Huawei, Xiaomi, DJI), очков с ИИ и умных носимых гаджетов, чая, шёлка, фарфора, нефрита, дизайнерских брендов guochao и традиционных ремёсел. Пропускайте всё, что можно купить дома по той же цене, — включая продукцию Apple, которая в Китае не дешевле. Делайте покупки в магазинах с вывеской <strong>Tax Free (退税商店)</strong> и запрашивайте VAT invoice (增值税发票), и при отлёте вы сможете получить примерно <strong>9 % обратно</strong> — см. наш <a href="/ru/payment/tax-refund/" class="text-red-700 underline">гайд по возврату НДС при выезде</a> с актуальными правилами.</p>
+      <p class="text-lg leading-relaxed text-gray-700">Кратко о стратегии шопинга в поездке: выберите несколько категорий, которые здесь по-настоящему хороши, купите их в магазинах с возвратом налога и заберите около 9 % при отъезде. Вот что на самом деле стоит покупать — и где это найти.</p>
+    </div>
+
+    <div class="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-2xl p-6 mb-12 not-prose">
+      <p class="text-lg leading-relaxed text-yellow-900"><strong>Честная версия:</strong> шопинг в Китае окупается лишь в узких нишах. Большую часть того, что туристы покупают здесь, — международную моду, парфюм, фотоаппараты — стоит столько же или дороже, чем дома, а возврат ~9 % редко перекрывает разницу. Категории, где Китай действительно выигрывает, — это те, где бренды китайские, а не импортные. Ещё две сложности, которых стоит ожидать: для возврата нужен официальный VAT invoice (增值税发票), который мелкие ларьки выписать не могут, а на туристических рынках продают убедительные подделки. Покупайте в фирменных магазинах и лицензированных отделах, а не у уличных торговцев, обещающих выгоду.</p>
+    </div>
+
+    <h2 id="whats-worth-buying" class="text-3xl font-bold text-gray-900 mb-6 mt-14">Что стоит покупать в Китае?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-8">По сути есть пять категорий, где Китай действительно выигрывает и по цене, и по выбору, и где магазины с возвратом налога расположены достаточно плотно, чтобы возврат стоил бумажной волокиты. Придерживайтесь их — и вы вернётесь с отличной добычей.</p>
+
+    <h3 id="cosmetics-skincare" class="text-2xl font-bold text-gray-900 mb-5 mt-10">Косметика и средства по уходу</h3>
+
+    <img
+      src="/images/china-shopping/maogeping-counter.webp"
+      alt="Прилавок косметики MAOGEPING в китайском универмаге, в окружении других бьюти-брендов"
+      width="1080"
+      height="810"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Вот в чём большинство шопинг-гайдов ошибаются. <strong>Ценовое преимущество в Китае принадлежит китайским брендам, а не Chanel.</strong> Сыворотка Lancôme на прилавке китайского универмага несёт ввозную пошлину, 15 % налог на потребление дорогой косметики и 13 % НДС — всё это накручено в ценник. Поэтому она здесь обычно стоит дороже, чем в Париже, а не дешевле. Единственное место, где международные бренды становятся по-настоящему дешёвыми, — это duty-free: хайнаньская офшорная квота (¥100 000 в год, 30 предметов косметики за поездку) и магазины duty-free в аэропорту, которые снимают все три налога.</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>Китайская косметика и декоративная косметика — где ваши деньги действительно работают лучше</strong></p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4">Отечественные бренды устанавливают цены для внутреннего рынка, не платят импортного налога и сильно снижают цены во время распродаж 618 и Двойного 11. Некоторые из них теперь по-настоящему хороши, а не просто дешёвые:</p>
+    <ul class="list-disc pl-6 space-y-2 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>Proya (珀莱雅)</strong> — двойная анти-сыворотка (双抗精华) и рубиновая сыворотка — две, что покупают все; примерно ¥200–400 за флакон.</li>
+      <li><strong>Winona (薇诺娜)</strong> — создана для чувствительной, реактивной кожи. Увлажняющий крем стоит взять с собой, если ваша кожа не переносит перелёты.</li>
+      <li><strong>Comfy (可复美)</strong> и линейки Bloomage <strong>Bio-MESO (润百颜) / QUADI (夸迪)</strong> — рекомбинантный коллаген и гиалуроновая кислота, категория, где Китай сейчас лидирует.</li>
+      <li><strong>Florasis (花西子)</strong> — выточенные футляры для помад и прессованная пудра. Упаковка здесь и есть сувенир.</li>
+      <li><strong>MAOGEPING (毛戈平)</strong> — крем-хайлайтер и палетки для контуринга; именно им китайские визажисты пользуются на съёмках.</li>
+      <li><strong>To Summer (观夏)</strong> — китайские ароматы-парфюм и домашние ароматы, османтус, чай и кедр. Ничего подобного за рубежом не продаётся.</li>
+    </ul>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Две оговорки. Шкалы оттенков рассчитаны на восточноазиатский тон кожи, поэтому самые тёмные оттенки тонального крема часто отсутствуют. И заявления об осветлении наклеены на всю эту категорию — читайте список ингредиентов, а не лицевую сторону коробки.</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-4 clear-both"><strong>Международные бренды — охотьтесь за размерами и подарками, доступными только в Азии, а не за ценником</strong></p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4">Если хотите La Mer или SK-II, математика работает только в duty-free. То, что стоит искать на обычном прилавке, — это другое:</p>
+    <ul class="list-disc pl-6 space-y-2 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>Размеры и наборы только для Азии.</strong> Версии бестселлеров объёмом 100 мл и более, дорожные наборы и дуплеты, которые никогда не поставляются в Европу или США.</li>
+      <li><strong>Лимитированные издания к Лунному Новому году и 20 мая.</strong> Chanel, Dior и Estée Lauder выпускают китайскую упаковку каждый январь и около 20 мая. Тот же продукт, другой флакон, больше не переиздаётся.</li>
+      <li><strong>Подарок при покупке, который действительно щедрый.</strong> Бьюти-залы универмагов раздают миниатюры и делюкс-сэмплы при порогах гораздо ниже, чем в Европе, а продавцы часто добавят ещё, если купите две вещи и попросите. Sephora (丝芙兰) в Китае работает по той же логике.</li>
+    </ul>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>Где покупать:</strong></p>
+    <ul class="list-disc pl-6 space-y-2 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>Китайские бренды:</strong> их собственные магазины и флагманские магазины на Tmall, а также прилавки в универмагах крупных городов.</li>
+      <li><strong>Бьюти-залы универмагов</strong> — Wangfujing (王府井), Shin Kong Place (新光天地), Plaza 66 (恒隆广场), MixC (万象城). Лучше всего для полноразмерных тестеров, подарков при покупке и оформления VAT invoice (增值税发票) по запросу.</li>
+      <li><strong>Sephora (丝芙兰)</strong> — международный ассортимент плюс растущая стена китайских брендов.</li>
+      <li><strong>Duty-free:</strong> хайнаньские офшорные магазины и duty-free в аэропорту при вылете. Единственное место, где цена международных брендов действительно ниже, чем дома.</li>
+    </ul>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>Налоговая математика, чтобы вы могли проверить сами:</strong> косметика входит в стандартную ставку НДС 13 %, а возврат при выезде возвращает примерно 9 % от ценника после вычета сборов — покупка за ¥1 000 даёт около ¥90 обратно, а не ¥130. Отдельно: всё, что стоит ¥10/мл и выше, также несёт 15 % налог на потребление дорогой косметики на этапе импорта. Эта наценка — причина, по которой цена на прилавке кажется высокой, и почему duty-free бьёт её.</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h3 id="guochao" class="text-2xl font-bold text-gray-900 mb-5 mt-10">Guochao и дизайнерские местные бренды</h3>
+
+    <img
+      src="/images/china-shopping/pop-mart-store.webp"
+      alt="Витрина Pop Mart в китайском торговом центре, обрамлённая двумя вылепленными стволами деревьев с коллекционными фигурками"
+      width="940"
+      height="625"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">"Guochao" (国潮, волна отечественных брендов) — самое свежее дополнение к официальным спискам «что стоит купить»: на пресс-конференции в сентябре 2026 года Министерство коммерции назвало умные товары отечественных брендов и дизайнерские бренды главной причиной, по которой иностранные посетители теперь делают покупки в Китае. Подумайте о флагманских спортивных и уличных брендах, дизайнерской посуде и канцелярии, коллекционных дизайнерских игрушках — фигурки в стиле Pop Mart — самый известный пример родившегося в Китае бренда с сильным зарубежным рынком перепродажи.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Где покупать: флагманские магазины в главных торговых районах (Nanjing East Road (南京东路) и Jing'an (静安) в Шанхае, Wangfujing (王府井) в Пекине и т. д.) и концепт-сторы в крупных ТЦ. Те же правила возврата, что и для всего остального — запрашивайте VAT invoice (增值税发票) на кассе. Две практические проверки перед покупкой: размеры у многих местных брендов меньше западных кроев, а любая электроника внутри товара (характеристики зарядки, регионы приложения) может отличаться от вашего домашнего рынка.</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h3 id="electronics" class="text-2xl font-bold text-gray-900 mb-5 mt-10">Китайская электроника (но без Apple)</h3>
+
+    <img
+      src="/images/china-shopping/dji-store.webp"
+      alt="Интерьер флагманского магазина DJI с дронами на светлых деревянных столах под большим фонарём остекления"
+      width="1200"
+      height="800"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Настоящие находки здесь — флагманы китайских брендов: Huawei (Mate XT, Mate X, Pura 70 Ultra), Xiaomi (15 Ultra, серия 14), OPPO Find X8 Ultra, серия Vivo X100, дроны и стабилизаторы DJI, серия Honor Magic. Многие не продаются за рубежом или заметно дешевле внутри страны. Международные бренды, такие как Sony, Bose, GoPro и Nintendo Switch, тоже обычно подпадают под возврат налога и часто чуть дешевле, чем за рубежом.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>Восходящие звёзды 2026 года:</strong> очки с ИИ, умные носимые гаджеты и складные телефоны — категории, на которые Министерство коммерции теперь прямо указывает как на заграничные «обязательные покупки». Складные флагманы (Huawei Mate XT, Xiaomi MIX) часто дешевле внутри страны, чем где бы то ни было, а очки с ИИ и умные браслеты китайских брендов зачастую вообще не вышли на ваш домашний рынок. Оговорки те же: проверьте, что полосы связи и характеристики работают дома, и уточните международную гарантию по каждому SKU перед покупкой.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>Пропустите Apple.</strong> iPhone для китайского рынка обычно чуть дороже, чем в США, а китайская версия также лишена звонков FaceTime по аудио. Никакого преимущества в возврате налога это не компенсирует. То же самое относится к MacBook и большинству фотоаппаратов Canon/Nikon.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>Где покупать:</strong> флагманские магазины брендов в каждом крупном ТЦ — Huawei, Xiaomi, OPPO, DJI и Dyson все их держат, и это универсальный выбор для иностранных посетителей: персонал обычно говорит хотя бы немного по-английски, VAT invoice (增值税发票) выписывается на месте, а модели высокого класса имеют международную гарантию (проверьте конкретный SKU, если это важно). Всегда запрашивайте чек — без него возврат налога не получить.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>Город, где сами электронные рынки — достопримечательность: Huaqiangbei (华强北) в Шэньчжэне.</strong> Крупнейший в мире район электроники переизобрёл себя как точку притяжения для иностранных покупателей — через него в 2025 году проходили тысячи иностранных посетителей в день, а крупные бренды теперь держат флагманские магазины прямо внутри рынка (включая DJI). Это редкий электронный базар, который реально работает для путешественников, не говорящих по-китайски: многоязычная навигация, обмен валюты и поддержка возврата налога — всё организовано. Если Шэньчжэнь хоть как-то по пути, то уже ради контраста — город, выросший из ничего за сорок лет и до сих пор гудящий в полночь — стоит заглянуть. <a href="/ru/cities/shenzhen-guide/" class="text-brand-600 hover:underline">См. наш гайд по Шэньчжэню</a>, чтобы вписать его в маршрут.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>Быстрая самопроверка перед оплатой любого гаджета</strong></p>
+    <ul class="list-disc pl-6 space-y-2 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>Полосы связи</strong> — телефон, продаваемый для китайского рынка, может не поддерживать 4G/5G-полосы вашего оператора дома. Откройте спецификацию модели и сравните перед покупкой.</li>
+      <li><strong>Приложения и экосистема</strong> — телефоны для китайского рынка часто работают без сервисов Google. Если вы живёте в приложениях Google, убедитесь, что устройство поставляется с нужной экосистемой, или купите международную или глобальную версию.</li>
+      <li><strong>Гарантия</strong> — международное покрытие привязано к SKU, а не к бренду, поэтому спросите, какие рынки гарантия на самом деле покрывает.</li>
+    </ul>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Ничего из этого не является препятствием для крупных брендов — это лишь разница между отличной покупкой и пресс-папье, когда вы вернётесь домой.</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h3 id="tea-silk-porcelain-jade" class="text-2xl font-bold text-gray-900 mb-5 mt-10">Чай, шёлк, фарфор, нефрит</h3>
+
+    <img
+      src="/images/china-shopping/jingdezhen-porcelain.webp"
+      alt="Расписанные вручную фарфоровые пиалы, чашки и чайники на тёмных стеллажах в Цзиндэчжэне"
+      width="474"
+      height="316"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Покупки, по-настоящему «Сделано в Китае», которые путешественники привозят домой веками. Города-источники предлагают лучший выбор по лучшим ценам:</p>
+    <ul class="list-disc pl-6 space-y-3 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>Чай (茶叶):</strong> Ханчжоу для Longjing (龙井), Аньси (Фуцзянь) для Tieguanyin (铁观音), Юньнань для Pu'er (普洱). Хороший рассыпной чай стоит ¥100–500; как только общая сумма в одном магазине превышает ¥200 (порог возврата), возврат применяется. Проверьте, даёт ли магазин возврат, до покупки — многие чайные ларьки этого не делают.</li>
+      <li><strong>Шёлк (丝绸):</strong> Ханчжоу, Сучжоу. Настоящие шёлковые платки от ~¥100; одеяла и халаты — дороже. Ищите маркировку «100% Silk (真丝)».</li>
+      <li><strong>Фарфор (瓷器):</strong> Jingdezhen (景德镇) — историческая столица, с глубокой росписью студийной работы на выбор. Гуанчжоу — ещё один центр.</li>
+      <li><strong>Нефрит (玉器):</strong> покупка нефрита — это оценка четырёх качеств: зерно, прозрачность, цвет, резьба (种水色工), и в торговле подделывают все четыре. Покупайте в крупной сети — Caibai (菜百), Lao Feng Xiang (老凤祥), Chow Tai Fook (周大福), — где можно запросить сертификат NGTC и VAT invoice (增值税发票). Пропустите уличных продавцов, призы «в лотерею» и любой магазин, в который вас заводит гид.</li>
+    </ul>
+
+    <img
+      src="/images/china-shopping/jade-counter.webp"
+      alt="Нефритовые браслеты, подвески и бусы на чёрных стойках в витрине ювелирного магазина"
+      width="1080"
+      height="720"
+      loading="lazy"
+      class="w-full rounded-2xl mb-6 not-prose"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>Примечание по возврату:</strong> шёлк, фарфор, нефрит и байцзю входят в стандартную категорию НДС 13 %, поэтому действует обычный возврат ~9 %. <strong>Чай</strong> (пищевой и сельскохозяйственный продукт) попадает в категорию НДС 9 %, поэтому вы получаете ~6 %. Полные правила и процесс заявки — в <a href="/ru/payment/tax-refund/" class="text-brand-600 hover:underline">гайде по возврату НДС при выезде</a>.</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h3 id="spirits-crafts" class="text-2xl font-bold text-gray-900 mb-5 mt-10">Крепкий алкоголь, перегородчатая эмаль, традиционные ремёсла</h3>
+    <ul class="list-disc pl-6 space-y-3 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>Байцзю (白酒):</strong> Maotai (茅台; от ¥1 500), Wuliangye (五粮液), Luzhou Laojiao (泸州老窖) — коллекционное, подарочное и церемониальное. Таможня разрешает 1,5 л на взрослого.</li>
+      <li><strong>Перегородчатая эмаль (景泰蓝):</strong> специалитет Пекина, ¥100–500, отличные подарки.</li>
+    </ul>
+
+    <h2 id="where-to-buy" class="text-3xl font-bold text-gray-900 mb-6 mt-14">Где стоит это покупать?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4">Большинство фирменных покупок в Китае делается в одном-двух местах, и там выбор и цены лучше всего. Если маршрут уже определён, вот что стоит искать в каждой остановке:</p>
+    <p class="text-base text-gray-500 mb-4">Какой китайский город лучше всего подходит для какой покупки</p>
+    <div class="overflow-x-auto mb-8 not-prose">
+      <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+        <caption class="sr-only">Какой китайский город лучше всего подходит для какой покупки — нефрит, шёлк, чай, фарфор, электроника и индивидуальный пошив по городам</caption>
+        <thead>
+          <tr class="bg-gray-900 text-white">
+            <th class="px-6 py-4 font-bold">Город</th>
+            <th class="px-6 py-4 font-bold">Местная специализация, которую стоит искать</th>
+            <th class="px-6 py-4 font-bold">Где</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">Пекин</td>
+            <td class="px-6 py-4">Нефрит, перегородчатая эмаль, Maotai</td>
+            <td class="px-6 py-4">Ювелирные залы универмагов и фирменные ювелиры. Panjiayuan (潘家园) — для осмотра, а не для покупки — см. наш <a href="/ru/cities/beijing-guide/" class="text-brand-600 hover:underline">гайд по Пекину</a></td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">Шанхай</td>
+            <td class="px-6 py-4">Индивидуальный пошив, флагманы guochao, косметика</td>
+            <td class="px-6 py-4">Nanjing East Road (南京东路) и Jing'an (静安); см. наш <a href="/ru/cities/shanghai-guide/" class="text-brand-600 hover:underline">гайд по Шанхаю</a></td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">Шэньчжэнь</td>
+            <td class="px-6 py-4">Электроника — рынок сам по себе достопримечательность</td>
+            <td class="px-6 py-4">Huaqiangbei (华强北); см. наш <a href="/ru/cities/shenzhen-guide/" class="text-brand-600 hover:underline">гайд по Шэньчжэню</a></td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">Ханчжоу</td>
+            <td class="px-6 py-4">Чай Longjing (龙井), шёлк</td>
+            <td class="px-6 py-4">Чайные дома у Западного озера (西湖); рынки шёлка в старом городе</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">Сучжоу</td>
+            <td class="px-6 py-4">Шёлк, вышивка Сучжоу (苏绣)</td>
+            <td class="px-6 py-4">Магазины района Guanqianjie (观前街); ищите маркировку «100% Silk (真丝)»</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">Цзиндэчжэнь</td>
+            <td class="px-6 py-4">Фарфор — историческая столица</td>
+            <td class="px-6 py-4">Рынки на улице гончаров</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">Юньнань</td>
+            <td class="px-6 py-4">Чай Pu'er</td>
+            <td class="px-6 py-4">Специализированные чайные магазины в Куньмине и Дали</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Правило большого пальца: покупайте в источнике и получите лучшее качество за те же деньги — и порог возврата налога ¥200 в одном магазине легче преодолеть там, где категория — местная отрасль. Если гайд по городу ещё не указан выше, он в пути; логика «покупай местное» работает в любом случае.</p>
+
+    <h2 id="tax-refund-shops" class="text-3xl font-bold text-gray-900 mb-6 mt-14">Где находятся магазины с возвратом налога в Китае?</h2>
+
+    <img
+      src="/images/china-shopping/airport-tax-refund.webp"
+      alt="Стойка возврата налога при вылете в аэропорту Китая с брендингом CZBANK и табличкой Welcome"
+      width="585"
+      height="439"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Зайдите в любой крупный ТЦ в Пекине, Шанхае, Шэньчжэне, Гуанчжоу, Чэнду, Ханчжоу или Сучжоу — и примерно в половине магазинов у входа или у кассы висит вывеска «Tax Free» (退税商店). На практике чаще всего отмечены именно те категории, что вы и ожидаете: косметика, электроника, мода, чай, шёлк, фарфор, нефрит и ремёсла.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Что обычно <em>не</em> несёт вывеску: магазины у дома, супермаркеты, продавцы только онлайн (Taobao / JD / Pinduoduo), уличные торговцы, рынки подделок и большинство мелких независимых магазинов. Ночные рынки отличны для закусок и атмосферы, но не для крупных вещей с возвратом налога.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Чтобы найти конкретный магазин рядом, поищите в мини-программе Alipay или WeChat «Возврат налога при выезде» (离境退税) — она показывает на карте ближайшие магазины с возвратом, а также текущее время работы и поддерживаемые способы возврата.</p>
+
+    <h2 id="customs-limits" class="text-3xl font-bold text-gray-900 mb-6 mt-14">Каковы таможенные лимиты Китая?</h2>
+    <ul class="list-disc pl-6 space-y-3 text-lg leading-relaxed text-gray-700 mb-6">
+      <li><strong>Алкоголь:</strong> 1,5 л (крепкий) без пошлины; свыше — декларировать.</li>
+      <li><strong>Табак:</strong> 400 сигарет (2 блока) без пошлины.</li>
+      <li><strong>Общие товары:</strong> лимит беспошлинного ввоза ¥5 000 на личное пользование — общий порог; проверьте актуальные правила перед крупными тратами.</li>
+    </ul>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="faq" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">❓ Часто задаваемые вопросы</h2>
+    <div class="space-y-6 mb-8 not-prose">
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">Что на самом деле дешевле купить в Китае?</h3>
+        <p class="text-gray-700">Китайская косметика и средства по уходу, электроника китайских брендов (Huawei, Xiaomi, DJI), очки с ИИ и умные носимые гаджеты, дизайнерские бренды guochao, а также чай, шёлк, фарфор, нефрит и перегородчатая эмаль. Международная мода, парфюм и фотоаппараты стоят столько же или дороже, чем у вас дома.</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">Предусмотрен ли при шопинге в Китае возврат налога?</h3>
+        <p class="text-gray-700">Да, в магазинах с вывеской Tax Free (退税商店). Потратьте минимум ¥200 в одном магазине за один день, сохраните VAT invoice (增值税发票) и получите примерно 9 % обратно в аэропорту при вылете.</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">Что не стоит покупать в Китае?</h3>
+        <p class="text-gray-700">Нагляднее всего — iPhone и MacBook от Apple: в Китае они дороже, а часть функций отрезана, поэтому возврат налога не перекрывает разницу. Любая покупка, которую можно найти дома за те же деньги, — зря потраченные средства.</p>
+      </div>
+    </div>
+
+    <div class="not-prose mt-12 pt-8 border-t border-gray-200">
+      <h3 class="text-base font-bold text-gray-900 mb-4 flex items-center gap-2">📚 Источники</h3>
+      <ul class="space-y-3">
+        <li>
+          <a href="https://www.mofcom.gov.cn/xwfbzt/2026/swbzklxxwfbh2026n9y3r/index.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">Пресс-конференция Министерства коммерции, 3 сентября 2026 года — бренды guochao и умные товары попадают в заграничные списки «обязательно купить»; индивидуальный пошив в Шанхае у 50 % и более иностранных клиентов</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.globaltimes.cn/page/202512/1350012.shtml" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">Global Times — заявки на возврат налога при выезде выросли на 285 % за первые 11 месяцев (12 252 магазина с возвратом по всей стране)</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="border-t border-gray-100 pt-6 mt-8">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5 not-prose">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h3 class="text-sm font-bold text-gray-900">📚 Далее читать</h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="/ru/payment/tax-refund/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              Возврат НДС при выезде из Китая
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ru/payment/payment-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              Как платить в Китае
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ru/payment/china-travel-budget/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              Стоимость поездки в Китай 2026
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/ru/visa/customs-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              Таможенные правила Китая
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <FAQPage items={faqs} />
+</Layout>

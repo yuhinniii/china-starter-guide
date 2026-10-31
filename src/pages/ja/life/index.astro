@@ -2,6 +2,29 @@
 import Layout from '@layouts/Layout.astro';
 const title = '中国での生活 — 旅行のヒントとガイド';
 const description = 'つながりを保ち、安全に過ごし、旅を最大限に楽しもう。';
+import SectionStats from '../../../components/SectionStats.astro';
+import ArticleGroups from '../../../components/ArticleGroups.astro';
+import { STATS, GROUPS, ITEMS, COUNT, COUNT_SINGULAR, type Lang } from '../../../data/life';
+
+const lang: Lang = 'ja';
+
+const stats = STATS.map((s) => ({ value: s.value, color: s.color, label: s.label[lang] }));
+
+const groups = GROUPS.map((g, gi) => {
+  const items = ITEMS.filter((i) => i.group === gi);
+  return {
+    color: g.color,
+    title: g.name[lang],
+    countText: (items.length === 1 ? COUNT_SINGULAR[lang] : COUNT[lang]).replace('{n}', String(items.length)),
+    items: items.map((i) => ({
+      href: `/${lang}/life/${i.slug}/`,
+      tag: i.tag[lang],
+      title: i.title[lang],
+      desc: i.desc[lang],
+    })),
+  };
+});
+
 ---
 
 <Layout title={title} description={description} lang="ja">
@@ -14,142 +37,10 @@ const description = 'つながりを保ち、安全に過ごし、旅を最大�
     </header>
 
     <!-- Quick Stats -->
-    <div class="grid grid-cols-2 md:grid-cols-5 gap-3 mb-12 not-prose">
-      <div class="bg-purple-50 border border-purple-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-purple-800">3</p>
-        <p class="text-xs font-semibold text-purple-800 uppercase tracking-wide mt-1">インターネット・アプリ</p>
-      </div>
-      <div class="bg-cyan-50 border border-cyan-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-cyan-800">3</p>
-        <p class="text-xs font-semibold text-cyan-800 uppercase tracking-wide mt-1">健康・医療</p>
-      </div>
-      <div class="bg-red-50 border border-red-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-red-800">3</p>
-        <p class="text-xs font-semibold text-red-800 uppercase tracking-wide mt-1">安全・緊急時</p>
-      </div>
-      <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-yellow-800">3</p>
-        <p class="text-xs font-semibold text-yellow-800 uppercase tracking-wide mt-1">文化・必需品</p>
-      </div>
-      <div class="bg-teal-50 border border-teal-200 rounded-xl p-4 text-center">
-        <p class="text-2xl font-extrabold text-teal-800">1</p>
-        <p class="text-xs font-semibold text-teal-800 uppercase tracking-wide mt-1">宿泊・ホテル</p>
-      </div>
-    </div>
+    <SectionStats stats={stats} />
 
     <!-- Category Sections -->
-    <div class="space-y-8 mb-16 not-prose">
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-purple-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-purple-800">通信・インターネット</h2>
-          <span class="text-xs font-medium text-purple-800 opacity-60">3記事</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/ja/life/sim-card-guide/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-purple-800">📶 インターネット</span>
-            <p class="text-base font-bold text-gray-900 mt-1">観光客に最適なSIMカード・eSIM</p>
-            <p class="text-sm text-gray-600 mt-0.5">eSIMプロバイダー、空港SIMカード、データプランを比較。</p>
-          </a>
-          <a href="/ja/life/vpn-guide/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-purple-800">🔒 VPN</span>
-            <p class="text-base font-bold text-gray-900 mt-1">中国旅行に最適なVPN</p>
-            <p class="text-sm text-gray-600 mt-0.5">使えるVPN、設定方法、到着前に準備すべき理由。</p>
-          </a>
-          <a href="/ja/life/essential-apps/" class="block bg-purple-50 border border-purple-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-purple-800">📱 アプリ</span>
-            <p class="text-base font-bold text-gray-900 mt-1">中国旅行に必須の10アプリ</p>
-            <p class="text-sm text-gray-600 mt-0.5">支払い、交通、翻訳、情報収集。</p>
-          </a>
-        </div>
-      </div>
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-cyan-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-cyan-800">健康・医療</h2>
-          <span class="text-xs font-medium text-cyan-800 opacity-60">3記事</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/ja/life/seeing-a-doctor/" class="block bg-cyan-50 border border-cyan-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-cyan-800">⚕️ 医療</span>
-            <p class="text-base font-bold text-gray-900 mt-1">中国で医者にかかる</p>
-            <p class="text-sm text-gray-600 mt-0.5">薬局、クリニック、病院 — 選び方。</p>
-          </a>
-          <a href="/ja/life/top-hospitals/" class="block bg-cyan-50 border border-cyan-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-cyan-800">🏥 病院</span>
-            <p class="text-base font-bold text-gray-900 mt-1">国際部がある主要病院</p>
-            <p class="text-sm text-gray-600 mt-0.5">英語対応スタッフがいる病院を都市別に紹介。</p>
-          </a>
-          <a href="/ja/life/travel-insurance/" class="block bg-cyan-50 border border-cyan-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-cyan-800">🛡️ 保険</span>
-            <p class="text-base font-bold text-gray-900 mt-1">中国旅行保険</p>
-            <p class="text-sm text-gray-600 mt-0.5">旅行保険について知っておくべきこと。</p>
-          </a>
-        </div>
-      </div>
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-red-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-red-800">安全・緊急時</h2>
-          <span class="text-xs font-medium text-red-800 opacity-60">3記事</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/ja/life/is-china-safe/" class="block bg-red-50 border border-red-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-red-800">🛡️ 安全性</span>
-            <p class="text-base font-bold text-gray-900 mt-1">中国旅行は安全？</p>
-            <p class="text-sm text-gray-600 mt-0.5">安全性、犯罪、注意点について正直な解説。</p>
-          </a>
-          <a href="/ja/life/common-scams/" class="block bg-red-50 border border-red-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-red-800">⚠️ 詐欺</span>
-            <p class="text-base font-bold text-gray-900 mt-1">中国でよくある詐欺とその回避方法</p>
-            <p class="text-sm text-gray-600 mt-0.5">よくある観光客向け詐欺を見抜き、回避する方法。</p>
-          </a>
-          <a href="/ja/life/emergency-numbers/" class="block bg-red-50 border border-red-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-red-800">🆘 緊急</span>
-            <p class="text-base font-bold text-gray-900 mt-1">緊急連絡先と対応方法</p>
-            <p class="text-sm text-gray-600 mt-0.5">重要な連絡先と緊急時の対応手順。</p>
-          </a>
-        </div>
-      </div>
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-yellow-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-yellow-800">文化・必需品</h2>
-          <span class="text-xs font-medium text-yellow-800 opacity-60">3記事</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/ja/life/packing-guide/" class="block bg-yellow-50 border border-yellow-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-yellow-800">🧳 荷造り</span>
-            <p class="text-base font-bold text-gray-900 mt-1">中国に持っていくべきもの</p>
-            <p class="text-sm text-gray-600 mt-0.5">季節ごとの実用的な荷造りリスト。</p>
-          </a>
-          <a href="/ja/life/cultural-taboos/" class="block bg-yellow-50 border border-yellow-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-yellow-800">🙏 エチケット</span>
-            <p class="text-base font-bold text-gray-900 mt-1">中国での文化的なDo's and Don'ts</p>
-            <p class="text-sm text-gray-600 mt-0.5">観光客のためのエチケットガイド。</p>
-          </a>
-          <a href="/ja/life/chinese-phrases/" class="block bg-yellow-50 border border-yellow-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-yellow-800">🈶 言語</span>
-            <p class="text-base font-bold text-gray-900 mt-1">観光客のための必須中国語フレーズ</p>
-            <p class="text-sm text-gray-600 mt-0.5">旅行者のためのサバイバル中国語。</p>
-          </a>
-        </div>
-      </div>
-      <div>
-        <div class="flex items-center gap-3 mb-3">
-          <div class="w-1 h-7 bg-teal-500 rounded-full"></div>
-          <h2 class="text-lg font-bold text-teal-800">宿泊・ホテル</h2>
-          <span class="text-xs font-medium text-teal-800 opacity-60">1記事</span>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <a href="/ja/life/china-hotels-guide/" class="block bg-teal-50 border border-teal-200 rounded-xl p-4 hover:shadow-md transition no-underline">
-            <span class="text-xs font-semibold text-teal-800">🏨 ホテル</span>
-            <p class="text-base font-bold text-gray-900 mt-1">外国人が中国でホテルを予約する方法</p>
-            <p class="text-sm text-gray-600 mt-0.5">外国人が中国でホテルを予約——Trip.com、ホテル料金、外国人受入れポリシー、チェックイン、おすすめ滞在エリア。</p>
-          </a>
-        </div>
-      </div>
-    </div>
+    <ArticleGroups groups={groups} />
 
         <!-- Next Step -->
     <div class="border-t border-gray-100 pt-8 mb-4">

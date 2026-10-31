@@ -1,0 +1,308 @@
+---
+import Layout from '@layouts/Layout.astro';
+import FAQPage from '../../../components/FAQPage.astro';
+
+const title = "China Departure Tax Refund 2026: How to Get 9% Back";
+const description = "China's departure tax refund in 2026: the ¥200 threshold, the three documents you need, the 90-day limit, and how the airport customs check actually works.";
+
+const faqs = [
+  {
+    question: "How much do I need to spend to claim a tax refund in China?",
+    answer: "At least ¥200 at a single tax-refund store in a single day. Ask for the refund application form (离境退税申请单) and a VAT general invoice (增值税普通发票) at the till, and keep both — the refund can't be processed without them."
+  },
+  {
+    question: "Do I need my passport to claim the refund?",
+    answer: "Yes, and it has to be the physical passport you entered China on. The refund application form is written up with your passport type and number, and customs checks the document against the person in front of them. Phone photos and photocopies are not accepted."
+  },
+  {
+    question: "How much of my money actually comes back?",
+    answer: "About 9% on most goods and about 6% on reduced-rate items. The nominal rates are 11% and 8%, minus roughly 2% charged by the refund agency. On a ¥10,000 purchase that's around ¥900, not ¥1,100."
+  },
+  {
+    question: "Can I get the refund in cash at the airport?",
+    answer: "Yes, up to ¥20,000 per claim at the refund counter inside the departure area. Anything above that is paid by bank transfer. Some stores and city refund points also pay on the spot under the refund-upon-purchase (即买即退) scheme."
+  },
+  {
+    question: "Do I need the goods with me at the airport?",
+    answer: "For spot-checked claims, yes. Claims under ¥10,000 in sales value are drawn at random since July 2026; if yours isn't drawn you skip the inspection. Keep refund-eligible items in your carry-on or on top of your checked bag until you're past customs."
+  }
+];
+---
+
+<Layout title={title} description={description} lang="en" type="Article">
+  <nav class="mb-8 not-prose">
+    <a href="/en/payment/" class="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-700 transition no-underline group">
+      <svg class="w-3.5 h-3.5 transition-transform group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+      </svg>
+      Back to Payment
+    </a>
+  </nav>
+
+  <article class="max-w-4xl mx-auto px-6 py-12">
+    <header class="mb-12">
+      <p class="text-sm text-gray-500 mb-3">💳 Payment</p>
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">China's Departure Tax Refund: How to Get ~9% Back When You Leave</h1>
+      <p class="text-xl text-gray-600 mb-6">The ¥200 threshold, the three documents you need, and how to walk a refund through the airport without losing an afternoon.</p>
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <span>📅 Last updated: October 2026</span>
+        <span>⏱️ 8 min read</span>
+      </div>
+    </header>
+
+    <img
+      src="/images/tax-refund/tax-refund-flow.webp"
+      alt="Flowchart of China's departure tax refund process: buy at a tax-free shop, get the refund application form and VAT invoice, customs verification, then collect the refund"
+      width="1080"
+      height="606"
+      class="w-full rounded-2xl mb-10 not-prose"
+    />
+
+    <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 rounded-r-2xl p-8 mb-12 not-prose">
+      <h2 class="text-2xl font-bold text-red-900 mb-4">⚡ Can tourists get a tax refund in China?</h2>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>Quick answer:</strong> Yes. Spend at least <strong>¥200</strong> at a single shop displaying the <strong>Tax Free (退税商店)</strong> sign, and you can claim roughly <strong>9% back</strong> on most goods when you leave China, or about <strong>6%</strong> on reduced-rate items. You need three things: the <strong>refund application form</strong> (离境退税申请单), a <strong>VAT general invoice</strong> (增值税普通发票), and your <strong>passport</strong> — the physical one you entered on. Claim at the airport on your way out, or on the spot at a refund-upon-purchase counter (即买即退) in the city. Goods must leave China within <strong>90 days</strong> of purchase. See our <a href="/en/payment/china-shopping/" class="text-red-700 underline">China shopping guide</a> for what's actually worth buying.</p>
+      <p class="text-lg leading-relaxed text-gray-700">The refund applies to personal items you're taking home: cosmetics, electronics, clothing, tea, silk, porcelain, jade, crafts. It does not apply to anything you consume in China, to services, or to goods on the prohibited-and-restricted list.</p>
+    </div>
+
+    <div class="bg-yellow-50 border-l-4 border-yellow-400 rounded-r-2xl p-6 mb-12 not-prose">
+      <p class="text-lg leading-relaxed text-yellow-900"><strong>The honest version:</strong> this is a rebate, not a discount — you pay the full tax-inclusive price at the till and get part of it back later. On a T-shirt and a fridge magnet it isn't worth the queue: you need ¥200 in one store on one day before anything is claimable, the 90-day clock starts at purchase, and the agency keeps about 2% of what you're owed. On a laptop, a watch, a pair of shoes or a handbag, it's the easiest 9% in travel — as long as you don't check the bag before customs has looked at the goods.</p>
+    </div>
+
+    <h2 id="rules" class="text-3xl font-bold text-gray-900 mb-6 mt-14">What are China's departure tax-refund rules?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4">The scheme is called <em>lí jìng tuì shuì</em> (离境退税) — literally "tax refund on leaving the country". It refunds the VAT you paid on goods bought at registered tax-free shops, once those goods leave China with you. The headline rate looks generous; what you actually pocket is a little lower.</p>
+    <p class="text-base text-gray-500 mb-4">China's departure tax-refund rules at a glance, 2026</p>
+    <div class="overflow-x-auto mb-8 not-prose">
+      <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+        <caption class="sr-only">China's departure tax-refund rules in 2026 — minimum spend, refund rates, eligibility, ID document, time limit, cash limit, paperless processing and refund-upon-purchase</caption>
+        <thead>
+          <tr class="bg-gray-900 text-white">
+            <th class="px-6 py-4 font-bold">Rule</th>
+            <th class="px-6 py-4 font-bold">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">Minimum spend</td>
+            <td class="px-6 py-4">¥200 in one store, on one day. Not ¥200 across a shopping trip — one store.</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">Refund rate</td>
+            <td class="px-6 py-4">11% on goods in the 13% VAT bracket, 8% on the 9% bracket. After the agency's ~2% fee you pocket about <strong>9%</strong> or <strong>6%</strong>.</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">Who qualifies</td>
+            <td class="px-6 py-4">Non-residents who have been in mainland China 183 days or less: foreign passport holders, plus residents of Hong Kong, Macao and Taiwan.</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">ID document</td>
+            <td class="px-6 py-4"><strong>Your passport</strong> — the same one you entered on. The refund form is written up with its type and number, and it gets checked at every counter.</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">Time limit</td>
+            <td class="px-6 py-4">Leave China within <strong>90 days</strong> of the purchase date. If you took the money up front with refund-upon-purchase (即买即退), you have 28 days.</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">Cash limit</td>
+            <td class="px-6 py-4">Up to ¥20,000 cash per claim at the airport. Above that, bank transfer.</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">Paperwork since July 2026</td>
+            <td class="px-6 py-4">Fully digital. Customs and the refund agency pull your application form and invoice from the system — but keep the paper anyway, because counters still ask.</td>
+          </tr>
+          <tr class="border-b border-gray-100 bg-gray-50">
+            <td class="px-6 py-4 font-semibold">Spot checks since July 2026</td>
+            <td class="px-6 py-4">Claims under ¥10,000 in sales value are drawn at random for a physical check. If yours isn't drawn, you skip the goods inspection at the airport entirely.</td>
+          </tr>
+          <tr class="border-b border-gray-100">
+            <td class="px-6 py-4 font-semibold">Refund-upon-purchase</td>
+            <td class="px-6 py-4">"即买即退" — collect at the store or a city refund point against a credit-card authorisation. Cross-city claims (buy in one city, fly out of another) have worked nationwide since 1 September 2026.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <img
+      src="/images/tax-refund/refund-application-form.webp"
+      alt="Refund Application Form for Overseas Visitors, showing passport type and number fields, invoice numbers, goods, 11% refund rate and the customs verification box"
+      width="1080"
+      height="607"
+      loading="lazy"
+      class="w-full rounded-2xl mb-4 not-prose"
+    />
+    <p class="text-sm text-gray-500 mb-8">The refund application form is where your passport number goes. Everything after this point — customs, the agency, the bank — is keyed to that number.</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="how-much" class="text-3xl font-bold text-gray-900 mb-6 mt-14">How much of your money actually comes back?</h2>
+
+    <img
+      src="/images/tax-refund/vat-invoice.webp"
+      alt="Chinese VAT general invoice showing item lines, 13% tax rate column and total amount plus tax at the bottom"
+      width="1000"
+      height="635"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">The 11% and 8% in the rules are the <em>nominal</em> rates set by policy, not what lands in your account. The refund agency takes a handling fee of roughly 2% of the invoice amount off the top, which is why every guide says "about 9%".</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Work it on a single line. A ¥10,000 laptop, bought at a tax-free store, sits in the 13% VAT bracket: nominal refund 11%, so ¥1,100, minus about ¥200 of agency fee — you get roughly <strong>¥900</strong> back. A ¥1,000 item refunds about ¥90. Under the ¥200 threshold per store per day, the answer is ¥0.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Reduced-rate goods behave differently. Tea, for example, sits in the 9% VAT bracket: the nominal rate is 8% and you pocket around 6%. If your haul is heavy on tea and light on electronics, budget the refund at 6%, not 9%.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">One structural limit worth knowing before you plan a shopping trip around this: the refund returns VAT, and VAT was never the main reason imported luxury goods are expensive in China. If a handbag costs more here than in Paris, 9% back rarely closes the gap. Where the refund genuinely changes the arithmetic is Chinese-made goods and anything you were buying anyway — see the <a href="/en/payment/china-shopping/" class="text-brand-600 hover:underline">shopping guide</a> for which categories those are.</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6 clear-both"><strong>The invoice is the part people get wrong.</strong> You need a <em>VAT general invoice</em> (增值税普通发票) made out with your details, not a till receipt, not a hand-written note, and not a photo of one. Small stalls often can't issue one at all, which is the real reason a market bargain is never refund-eligible.</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="how-to-claim" class="text-3xl font-bold text-gray-900 mb-6 mt-14">How do you claim the refund at the airport?</h2>
+
+    <img
+      src="/images/tax-refund/customs-verification.webp"
+      alt="Customs verification counter at a Chinese airport exit, signed 离境退税 海关验核 / Departure Tax Refund Customs Verification, with travellers queueing"
+      width="600"
+      height="398"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>Route A — the airport, still the most common path.</strong> Three stops, in this order: the shop, customs, the refund counter. Do all of it <em>before</em> you check your bag.</p>
+
+    <ol class="list-decimal pl-6 space-y-3 text-lg leading-relaxed text-gray-700 mb-6 clear-both">
+      <li><strong>At the store — collect the paperwork.</strong> Ask for the refund application form (离境退税申请单) and the VAT general invoice (增值税普通发票). The shop fills the form in with your passport type, passport number and entry date, so hand over the actual passport — they need to read the number off it. Check that the passport number on the form matches your passport, character for character; a mistyped digit gets you turned away at the airport, and you will not be in that city any more to fix it.</li>
+      <li><strong>At the airport, before check-in — customs verification (海关验核).</strong> Take the goods, your passport, the form and the invoice to the customs desk. Since July 2026, claims under ¥10,000 in sales value are spot-checked at random: if yours isn't drawn, you can skip this step and go straight to the refund counter. If it is drawn, the officer wants to see the goods themselves, so don't pack them in the hold.</li>
+      <li><strong>At the refund counter, inside the departure area — collect the money.</strong> Show the same passport at the refund agency counter (退税代理机构). Cash up to ¥20,000, bank transfer above that. The refund is issued in yuan, so either spend it airside or accept the conversion your bank gives you.</li>
+    </ol>
+
+    <img
+      src="/images/tax-refund/instant-refund-point.webp"
+      alt="Sign for a Beijing instant refund point — TAX REFUND (离境退税), Instant Refund Service (即买即退集中退付点), Beijing One-Stop Service"
+      width="800"
+      height="503"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>Route B — refund-upon-purchase (即买即退).</strong> If the shop offers it, or you're near a city refund point, you collect the money before you leave town. The store pays you immediately and takes a credit-card authorisation as security that the goods actually leave China; the authorisation is released once customs confirms the exit. It works across cities now — buy in Chengdu, fly out of Shanghai — and consolidated refund points already run in Guangzhou, Chongqing and Chengdu, with Beijing running a one-stop city service under its own branding.</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">Two conditions come with the up-front money. You must leave China within <strong>28 days</strong> of taking it, and the goods have to be unused and still in your possession when you exit. Break either one and the card authorisation is charged instead of released — which is the single most expensive way to get a tax refund wrong.</p>
+
+
+    <div class="clear-both"></div>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="duty-free-vs-refund" class="text-3xl font-bold text-gray-900 mb-6 mt-14">Duty-free or tax-refund — which one applies to you?</h2>
+
+    <img
+      src="/images/tax-refund/duty-free-store.webp"
+      alt="cdf China Duty Free storefront inside an airport terminal, with 免税店 DUTY FREE signage above glass jewellery counters"
+      width="640"
+      height="480"
+      loading="lazy"
+      class="w-full mb-6 md:float-left md:mr-6 md:mb-4 md:w-2/5 h-72 object-cover rounded-2xl"
+    />
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">China has three separate ways to buy without paying full tax, and travellers mix them up constantly. Which one applies depends on where you are and how you're leaving — not on what you're buying.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>1. Departure tax refund (退税商店) — what this guide is about.</strong> You buy ordinary, tax-inclusive goods at a registered shop in town, then claim roughly 9% of the VAT back on the way out. You pay first, you're refunded later.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-4"><strong>2. Airport duty-free (机场免税店) — for international brands at the gate.</strong> Shops airside sell without import duty and VAT at the till, so there's nothing to claim afterwards; the discount is already in the shelf price. Better selection of international labels than most city shops, worse on Chinese brands.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6"><strong>3. Hainan offshore duty-free (海南离岛免税) — a scheme unique to the island.</strong> Not the same thing as the refund, and not only for Chinese shoppers: anyone leaving Hainan by plane, train or ferry, foreign passports included, can buy duty-free there under an annual allowance. If your trip ends by flying out of Hainan you're leaving the island and the country at once, and the two schemes overlap in ways the rules have adjusted more than once — ask at the counter what applies to your exact route. Our <a href="/en/cities/hainan-visa-free/" class="text-brand-600 hover:underline">Hainan entry guide</a> covers the visa-free side of that trip.</p>
+
+    <p class="text-lg leading-relaxed text-gray-700 mb-6 clear-both"><strong>The practical difference:</strong> duty-free is a discount at the till with no paperwork, and the refund is money back later with three documents and a queue. If a shop offers you both, duty-free usually wins on international brands and the refund usually wins on Chinese ones.</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="worth-it" class="text-3xl font-bold text-gray-900 mb-6 mt-14">Is the refund paperwork actually worth it?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">For most visitors, yes — but only on the right purchases. Foreign visitors spent ¥263.6 billion in China between January and July 2026, up 27.8% year on year, and the number of travellers filing departure tax refunds more than tripled over the same period. Sales covered by the refund scheme rose 69% in the first half of 2026, which tells you the queue at the airport is not shrinking.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">The break-even is simple. Below ¥200 in a single store on a single day, there is nothing to claim. Between ¥200 and roughly ¥1,000 the refund is small — under ¥90 — so it's worth doing only if you're already at the airport with time to spare. Above ¥1,000 it's real money, and above ¥5,000 it's worth planning your departure around: claim before check-in, keep the goods in your carry-on, and leave 30 extra minutes for the customs desk.</p>
+    <p class="text-lg leading-relaxed text-gray-700 mb-6">One more thing to budget for: the refund is paid in yuan. If you're on your way home and won't be back, that cash is only useful airside. Spend it on the last meal, or accept the exchange rate your bank offers on the transfer.</p>
+
+    <hr class="border-gray-200 my-12" />
+
+    <h2 id="faq" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">❓ Frequently Asked Questions</h2>
+    <div class="space-y-6 mb-8 not-prose">
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">How much do I need to spend to claim a tax refund in China?</h3>
+        <p class="text-gray-700">At least ¥200 at a single tax-refund store in a single day. Ask for the refund application form (离境退税申请单) and a VAT general invoice (增值税普通发票) at the till, and keep both — the refund can't be processed without them.</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">Do I need my passport to claim the refund?</h3>
+        <p class="text-gray-700">Yes, and it has to be the physical passport you entered China on. The application form is written up with your passport type and number, and customs checks the document against the person in front of them. Phone photos and photocopies are not accepted.</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">How much of my money actually comes back?</h3>
+        <p class="text-gray-700">About 9% on most goods and about 6% on reduced-rate items. The nominal rates are 11% and 8%, minus roughly 2% charged by the refund agency. On a ¥10,000 purchase that's around ¥900, not ¥1,100.</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">Can I get the refund in cash at the airport?</h3>
+        <p class="text-gray-700">Yes, up to ¥20,000 per claim at the refund counter inside the departure area. Anything above that is paid by bank transfer. Some stores and city refund points also pay on the spot under the refund-upon-purchase (即买即退) scheme.</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-2xl p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-2">Do I need the goods with me at the airport?</h3>
+        <p class="text-gray-700">For spot-checked claims, yes. Claims under ¥10,000 in sales value are drawn at random since July 2026; if yours isn't drawn you skip the inspection. Keep refund-eligible items in your carry-on or on top of your checked bag until you're past customs.</p>
+      </div>
+    </div>
+
+    <div class="not-prose mt-12 pt-8 border-t border-gray-200">
+      <h3 class="text-base font-bold text-gray-900 mb-4 flex items-center gap-2">📚 Sources</h3>
+      <ul class="space-y-3">
+        <li>
+          <a href="https://taxfree.mofcom.gov.cn/taxfreeEnPc/index.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">Ministry of Commerce — Service Platform for Departure Tax Refund (official English platform: tax-free store lookup, refund points, multilingual guide)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://karachi.mofcom.gov.cn/jmxw/art/2026/art_4c238850af4e41d48ec7478a8b8fbec0.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">Shopping in China: Tax Refund Policy Explained — bilingual MOFCOM guide (¥200 threshold, 11% / 8% rates, ID document, refund methods)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://scyxs.mofcom.gov.cn/zcfg/art/2026/art_9845ac0b49454fd598320a52125ba23a.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">MOFCOM and five other departments, notice No. 74 of 2026 (18 May 2026) — wider store coverage, spot checks under ¥10,000, paperless processing</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.gov.cn/zhengce/zhengceku/202607/content_7075798.htm" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">State Taxation Administration (July 2026) — refund-upon-purchase goes nationwide across regions from 1 September 2026; paperless filing, online-store pilot, national refund QR code</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://shanghai.chinatax.gov.cn/xwdt/ztzl/zcgll/ljts/zchb/201911/t449153.html" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">Shanghai Tax Bureau — "Departure Tax Refund Policy for Overseas Visitors" (bilingual; 11% / 8% rates, 2% agency fee, ¥20,000 cash limit)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.globaltimes.cn/page/202512/1350012.shtml" target="_blank" rel="noopener" class="group flex gap-2 text-sm text-brand-600 hover:text-brand-700 no-underline">
+            <span class="border-b border-transparent group-hover:border-brand-700">Global Times — refund claims surge 285% in first 11 months (12,252 tax-refund shops nationwide, 7,000+ offering refund-upon-purchase)</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="border-t border-gray-100 pt-6 mt-8">
+      <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5 not-prose">
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <h3 class="text-sm font-bold text-gray-900">📚 Next Reads</h3>
+          <div class="flex flex-wrap gap-2">
+            <a href="/en/payment/china-shopping/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              What to Buy in China
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/en/payment/payment-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              How to Pay in China
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/en/visa/customs-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              China Customs Regulations
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+            <a href="/en/visa/visa-guide/" class="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 bg-white border border-gray-200 rounded-xl text-sm font-medium text-gray-900 hover:border-brand-300 hover:shadow-sm transition no-underline">
+              China Visa &amp; Entry Guide
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <FAQPage items={faqs} />
+</Layout>

@@ -41,6 +41,8 @@ function walkDir(dir, relativePath = '') {
       let urlPath = '/' + rel.replace(/index\.html$/, '').replace(/\\/g, '/');
       // 根路径 / 会被 301 到 /en/ 且带 noindex，不应出现在 sitemap 中
       if (urlPath === '/' || urlPath === '') continue;
+      // 跳过 /xx/index/ —— 这是 redirects 生成的跳转页，不是真实内容，不能进 sitemap
+      if (/\/index\/$/.test(urlPath)) continue;
       // Check exclusion
       if (EXCLUDE.some(e => urlPath.includes(e))) continue;
       entries.push({

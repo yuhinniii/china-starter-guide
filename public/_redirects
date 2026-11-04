@@ -7,3 +7,11 @@
 
 # Never serve Astro build artifacts under /pages/ (soft-404 source)
 /pages/*   /   301
+
+# Section hub index aliases: /en/visa/index -> /en/visa/
+# 真 301，替代原先 astro.config.mjs 里生成的 meta-refresh 跳转页
+/:lang/visa/index       /:lang/visa/       301
+/:lang/cities/index     /:lang/cities/     301
+/:lang/life/index       /:lang/life/       301
+/:lang/payment/index    /:lang/payment/    301
+/:lang/transport/index  /:lang/transport/  301

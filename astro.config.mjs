@@ -2,20 +2,12 @@ import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import mdx from '@astrojs/mdx';
 
-const langs = ['en', 'zh', 'ja', 'ko', 'fr', 'th', 'ru', 'es', 'ar'];
-const sections = ['visa', 'cities', 'life', 'payment', 'transport'];
-
-const indexRedirects = {};
-for (const lang of langs) {
-  for (const sec of sections) {
-    indexRedirects[`/${lang}/${sec}/index`] = `/${lang}/${sec}/`;
-  }
-}
-
 export default defineConfig({
   site: 'https://chinastarterhub.com',
   output: 'static',
-  redirects: indexRedirects,
+  // 注意：不要在这里配 redirects。/xx/index -> /xx/ 这类规则在 static 模式下
+  // Astro 只能生成「200 + meta refresh」的 HTML 跳转页，不是真 301，
+  // 还会被 sitemap 当成正常页面收录。真 301 统一写在 public/_redirects。
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'zh', 'ja', 'ko', 'fr', 'th', 'ru', 'es', 'ar'],

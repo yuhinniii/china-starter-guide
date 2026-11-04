@@ -1,0 +1,105 @@
+---
+/**
+ * 全局 404 页面。
+ *
+ * 静态输出为 dist/404.html，Cloudflare Pages 对任何未匹配的路径回退到这里，
+ * 并返回真正的 HTTP 404 状态码。没有这个文件时 Pages 会回退到 index.html
+ * 并返回 200，形成软 404（垃圾 URL 被搜索引擎当有效页面收录）。
+ *
+ * 站点只有一个 404 页面（Pages 只认根目录的 404.html），所以正文用英语为主，
+ * 语言入口用各语言自己的名称，便于任何语种的访客一眼找到自己的版本。
+ */
+import Layout from '@layouts/Layout.astro';
+import { langs, langLabels } from '../i18n/ui';
+
+const title = 'Page not found — China Starter Hub';
+const description =
+  'This page does not exist. Pick your language and continue browsing China Starter Hub.';
+
+// 只列已经上线的页面，避免 404 页自己造出死链
+const popular = [
+  { href: '/en/visa/visa-free/', label: 'Visa-free entry', note: 'Who can enter China without a visa' },
+  { href: '/en/payment/setup-alipay/', label: 'Set up Alipay', note: 'Pay with your phone instead of cash' },
+  { href: '/en/transport/high-speed-rail/', label: 'High-speed rail', note: 'Book a ticket and board the train' },
+  { href: '/en/cities/beijing-guide/', label: 'Beijing guide', note: 'Start with the capital' },
+];
+---
+
+<Layout title={title} description={description} lang="en" noAlternates noindex>
+  <div class="max-w-3xl mx-auto py-16 md:py-24 text-center">
+    <p class="text-7xl md:text-8xl font-extrabold text-brand-100 leading-none mb-6 select-none">
+      404
+    </p>
+
+    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-5">Page not found</h1>
+
+    <p class="text-lg text-gray-600 leading-relaxed mb-3">
+      The link is broken, or the page has moved somewhere else.
+    </p>
+    <p class="text-lg text-gray-600 leading-relaxed mb-12">
+      Nothing else on the site is missing — pick your language below and keep going.
+    </p>
+
+    <!-- Language entry -->
+    <div class="grid grid-cols-3 sm:grid-cols-5 gap-3 mb-14">
+      {langs.map((l) => (
+        <a
+          href={`/${l}/`}
+          data-lang={l}
+          class="group flex items-center justify-center py-4 rounded-xl border border-gray-200 no-underline transition-colors hover:border-brand-400 hover:bg-brand-50"
+        >
+          <span class="text-sm font-medium text-gray-800 group-hover:text-brand-700">
+            {langLabels[l]}
+          </span>
+        </a>
+      ))}
+    </div>
+
+    <!-- Popular pages -->
+    <div class="text-left">
+      <h2 class="text-xs font-semibold tracking-wider uppercase text-gray-400 mb-4">
+        Popular starting points
+      </h2>
+      <div class="grid sm:grid-cols-2 gap-3">
+        {popular.map((p) => (
+          <a
+            href={p.href}
+            class="block p-4 rounded-xl border border-gray-200 no-underline transition-colors hover:border-brand-400 hover:bg-brand-50"
+          >
+            <span class="block text-sm font-semibold text-gray-900 mb-1">{p.label}</span>
+            <span class="block text-sm text-gray-500 leading-snug">{p.note}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+
+    <a
+      href="/en/"
+      data-home
+      class="inline-block mt-12 px-6 py-3 rounded-xl bg-brand-600 text-white text-sm font-semibold no-underline transition-colors hover:bg-brand-700"
+    >
+      Back to homepage
+    </a>
+  </div>
+
+  <script is:inline>
+    // 浏览器语言优先：高亮对应语言入口，并把"回首页"指向该语言版本。
+    // 只做视觉提示，不自动跳转——走错页的访客不该被二次甩走。
+    (function () {
+      var supported = ['en', 'zh', 'ja', 'ko', 'fr', 'th', 'ru', 'es', 'ar'];
+      var prefs = navigator.languages || [navigator.language || 'en'];
+      var match = null;
+      for (var i = 0; i < prefs.length && !match; i++) {
+        var code = String(prefs[i] || '').toLowerCase().split('-')[0];
+        if (supported.indexOf(code) !== -1) match = code;
+      }
+      if (!match) return;
+      var entry = document.querySelector('[data-lang="' + match + '"]');
+      if (entry) {
+        entry.classList.add('border-brand-500', 'bg-brand-50', 'ring-2', 'ring-brand-200');
+      }
+      var home = document.querySelector('[data-home]');
+      if (home) home.setAttribute('href', '/' + match + '/');
+    })();
+  </script>
+</Layout>

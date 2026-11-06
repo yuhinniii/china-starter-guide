@@ -15,3 +15,10 @@
 /:lang/life/index       /:lang/life/       301
 /:lang/payment/index    /:lang/payment/    301
 /:lang/transport/index  /:lang/transport/  301
+
+# Retired placeholder pages: /{lang}/apps/ -> the real article in /life/
+# 原 /apps/ 是 2026-06 建站初期的占位页（339 字符，"coming soon"），零内链、
+# 与 /life/essential-apps/ 主题重复。源文件已改名为 _apps.astro 停止生成，
+# 保留 301 以承接任何外部旧链接，权重转移到正式文章。
+/:lang/apps/   /:lang/life/essential-apps/   301
+/:lang/apps    /:lang/life/essential-apps/   301

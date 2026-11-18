@@ -16,6 +16,36 @@
 /:lang/payment/index    /:lang/payment/    301
 /:lang/transport/index  /:lang/transport/  301
 
+# ---- 2026-06 改版遗留：三个旧目录合并后的 301 承接 ----
+# 旧 /medical/ 与 /tips/ 全部并入 /life/，旧 /prepare/visa/ 并入 /visa/。
+# 不补这些规则，Google 手里的旧 URL 会一直报 404（2026-11 GSC 报「未找到 404」）。
+# 顺序：具体规则在前，通配在后。
+
+# 旧板块首页
+/:lang/medical        /:lang/life/    301
+/:lang/medical/       /:lang/life/    301
+/:lang/tips           /:lang/life/    301
+/:lang/tips/          /:lang/life/    301
+/:lang/prepare        /:lang/visa/    301
+/:lang/prepare/       /:lang/visa/    301
+/:lang/prepare/visa   /:lang/visa/    301
+/:lang/prepare/visa/  /:lang/visa/    301
+
+# 旧子页（slug 未变，只是换了父目录）
+/:lang/medical/*      /:lang/life/:splat    301
+/:lang/tips/*         /:lang/life/:splat    301
+/:lang/prepare/visa/* /:lang/visa/:splat    301
+
+# 旧 life 下的两个索引页与已下线的 survival-kit
+/:lang/life/medical-index/  /:lang/life/    301
+/:lang/life/tips-index/     /:lang/life/    301
+/:lang/life/survival-kit    /:lang/life/    301
+/:lang/life/survival-kit/   /:lang/life/    301
+
+# 海南免签文章从 /visa/ 迁到 /cities/
+/:lang/visa/hainan-visa-free    /:lang/cities/hainan-visa-free/  301
+/:lang/visa/hainan-visa-free/   /:lang/cities/hainan-visa-free/  301
+
 # Retired placeholder pages: /{lang}/apps/ -> the real article in /life/
 # 原 /apps/ 是 2026-06 建站初期的占位页（339 字符，"coming soon"），零内链、
 # 与 /life/essential-apps/ 主题重复。源文件已改名为 _apps.astro 停止生成，

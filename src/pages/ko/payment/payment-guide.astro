@@ -1,7 +1,24 @@
 ---
 import Layout from '@layouts/Layout.astro';
-const title = '중국에서 결제하는 방법: 외국인 방문객 완벽 가이드';
-const description = '알리페이, 위챗페이, 현금, 또는 신용카드 — 2026년 중국에서 외국인을 위한 결제 옵션 완벽 개요.';
+import FAQPage from '../../../components/FAQPage.astro';
+
+const title = '【2026】중국 결제 수단 총정리｜알리페이·위챗페이·한국카드 결제 방법';
+const description = '2026년 최신 중국 결제 수단 완벽 가이드. 한국 신용카드·체크카드(트래블로그·트래블월렛)의 알리페이 등록법, 200위안 이하 수수료 면제, 현금 사용 팁까지 총정리.';
+
+const faqs = [
+  {
+    question: "중국 여행 시 한국 신용카드로 결제할 수 있나요?",
+    answer: "오프라인 매장에서 실물 카드를 직접 긁을 수 있는 곳은 대형 호텔이나 공항 정도로 매우 드뭅니다. 하지만 알리페이(Alipay) 또는 위챗페이에 한국 신용카드/체크카드(Visa, Mastercard, 트래블로그, 트래블월렛 등)를 등록하면 일반 식당, 편의점, 택시 등 전국 95% 이상의 장소에서 QR코드로 즉시 결제할 수 있습니다."
+  },
+  {
+    question: "알리페이에 해외 카드를 등록해 사용할 때 수수료가 드나요?",
+    answer: "건당 200위안(약 38,000원) 이하 결제 시에는 알리페이 수수료가 100% 면제됩니다. 단일 결제 금액이 200위안을 초과할 경우 3%의 가맹점 처리 수수료가 부과됩니다."
+  },
+  {
+    question: "중국에서 현금(위안화)은 전혀 안 받나요?",
+    answer: "중국 법률상 인민폐 현금 거부는 불법이므로 현금을 사용할 수는 있습니다. 다만 거스름돈이 부족한 가게가 많으므로, 알리페이를 메인 결제 수단으로 두고 비상용으로 300~500위안 정도의 소액 지폐만 소지하는 것을 권장합니다."
+  }
+];
 ---
 
 <Layout title={title} description={description} lang="ko">
@@ -178,7 +195,24 @@ const description = '알리페이, 위챗페이, 현금, 또는 신용카드 —
           <p class="text-gray-700 mb-3">작은 판매자, 비상시, 또는 앱이 말썽을 부릴 때를 대비해 항상 500~1000위안을 작은 지폐로 가지고 다니세요.</p>
         </div>
       </div>
+
+      <hr class="my-12 border-gray-200" />
+
+      <h2 id="faq" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">❓</span> 자주 묻는 질문 (FAQ)
+      </h2>
+
+      <div class="space-y-6 mb-12 not-prose">
+        {faqs.map(faq => (
+          <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">{faq.question}</h3>
+            <p class="text-gray-700 leading-relaxed">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
     </div>
+
+    <FAQPage items={faqs} />
 
     <div class="border-t border-gray-100 pt-6 mt-8">
       <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5 not-prose">

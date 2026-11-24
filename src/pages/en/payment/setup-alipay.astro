@@ -1,7 +1,28 @@
 ---
 import Layout from '@layouts/Layout.astro';
+import FAQPage from '../../../components/FAQPage.astro';
+
 const title = 'How to Set Up Alipay as a Foreigner (2026): Step-by-Step Guide';
 const description = 'Step-by-step guide to setting up Alipay as a foreigner in China. Download, register with international number, verify identity, and link your foreign credit card.';
+
+const faqs = [
+  {
+    question: "Do I need a Chinese bank account to use Alipay?",
+    answer: "No. Foreign tourists can use Alipay simply by linking an international credit or debit card (Visa, Mastercard, JCB, Diners) and verifying identity with a foreign passport. No Chinese bank card is needed."
+  },
+  {
+    question: "Are there transaction fees when paying with a foreign card on Alipay?",
+    answer: "Transactions of 200 RMB (~$28 USD) or less are 100% fee-free. For single transactions exceeding 200 RMB, Alipay charges a 3% service fee. You can split bills into transactions under 200 RMB when merchants allow."
+  },
+  {
+    question: "Can I use Alipay to ride the subway and public buses?",
+    answer: "Yes. Tap 'Transport' (出行) on the Alipay home screen, switch to the city you are in, and activate the local transit QR code. You can scan it directly at metro turnstiles and on buses without buying paper tickets."
+  },
+  {
+    question: "What should I do if my foreign card gets declined on Alipay?",
+    answer: "Call your home bank before your trip to authorize international transactions in China. Make sure your card supports 3D Secure SMS or app confirmation. It is strongly advised to add at least two different cards (e.g., one Visa and one Mastercard) as backups."
+  }
+];
 ---
 
 <Layout title={title} description={description} lang="en">
@@ -128,7 +149,24 @@ const description = 'Step-by-step guide to setting up Alipay as a foreigner in C
       <p class="text-lg leading-relaxed text-gray-700 mb-6">
         For metro and bus travel, you can also set up the <strong>transport QR code</strong> inside Alipay directly. Need help? Check the full payment overview for more details.
       </p>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="faq" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">❓</span> Frequently Asked Questions (FAQ)
+      </h2>
+
+      <div class="space-y-6 mb-12 not-prose">
+        {faqs.map(faq => (
+          <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">{faq.question}</h3>
+            <p class="text-gray-700 leading-relaxed">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
     </div>
+
+    <FAQPage items={faqs} />
 
                 <div class="border-t border-gray-100 pt-6 mt-8">
       <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5 not-prose">

@@ -141,5 +141,6 @@ index += `</sitemapindex>
 `;
 
 fs.writeFileSync(path.join(DIST, 'sitemap-index.xml'), index, 'utf8');
-console.log(`✅ sitemap-index.xml — ${Object.keys(LOCALES).length} locale sitemaps`);
+fs.writeFileSync(path.join(DIST, 'sitemap.xml'), index, 'utf8');
+console.log(`✅ sitemap-index.xml & sitemap.xml — ${Object.keys(LOCALES).length} locale sitemaps`);
 console.log(`\nTotal unique pages: ${contentMap.size}`);

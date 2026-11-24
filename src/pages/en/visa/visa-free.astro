@@ -1,7 +1,28 @@
 ---
 import Layout from '@layouts/Layout.astro';
+import FAQPage from '../../../components/FAQPage.astro';
+
 const title = 'China Visa-Free Countries List (2026) — China Starter Hub';
 const description = 'Official list of countries eligible for visa-free entry to China — unilateral (50 countries) and mutual agreements (29 countries).';
+
+const faqs = [
+  {
+    question: "How long can eligible passport holders stay in China visa-free?",
+    answer: "Citizens from eligible unilateral visa-free countries can stay for up to 30 days per entry for tourism, business, family visits, or transit."
+  },
+  {
+    question: "What documents must I show at Chinese border inspection under visa-free entry?",
+    answer: "You must present an ordinary passport valid for at least 6 months, a confirmed return or onward flight ticket departing China within 30 days, and your initial hotel accommodation details."
+  },
+  {
+    question: "What is the difference between 30-day visa-free entry and the 240-hour transit scheme?",
+    answer: "The 30-day visa-free policy allows direct round-trip travel to China (e.g., France to Beijing and back to France). The 240-hour transit without visa (TWOV) strictly requires onward transit to a third country or region (e.g., USA -> Shanghai -> Japan)."
+  },
+  {
+    question: "Can I leave China and re-enter on another 30-day visa-free stay?",
+    answer: "Yes. While there is no official cap on the total number of entries, legitimate tourism or business itineraries are expected. Frequent back-to-back entries without clear purpose may invite extra scrutiny from border officers."
+  }
+];
 ---
 
 <Layout title={title} description={description} lang="en">
@@ -126,9 +147,26 @@ const description = 'Official list of countries eligible for visa-free entry to 
           <p class="text-sm text-gray-500">61 countries qualify — includes US, Mexico, Philippines, and others not on the mainland list.</p>
         </a>
       </div>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="faq" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">❓</span> Frequently Asked Questions (FAQ)
+      </h2>
+
+      <div class="space-y-6 mb-12 not-prose">
+        {faqs.map(faq => (
+          <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">{faq.question}</h3>
+            <p class="text-gray-700 leading-relaxed">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
     </div>
 
-        <!-- Sources -->
+    <FAQPage items={faqs} />
+
+    <!-- Sources -->
     <div class="not-prose mt-12 pt-8 border-t border-gray-200">
       <h3 class="text-base font-bold text-gray-900 mb-4 flex items-center gap-2">
         <span class="text-lg">📚</span> Sources

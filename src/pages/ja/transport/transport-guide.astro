@@ -1,7 +1,24 @@
 ---
 import Layout from '@layouts/Layout.astro';
-const title = '中国の移動方法：完全交通ガイド';
-const description = '高速鉄道、地下鉄、DiDi、タクシー、シェア自転車 — 状況に応じた最適な交通手段の選び方。';
+import FAQPage from '../../../components/FAQPage.astro';
+
+const title = '【2026最新】中国旅行の交通完全ガイド｜高速鉄道・地下鉄・DiDiの乗り方と支払い';
+const description = '中国旅行・出張者向けの交通完全ガイド。高速鉄道（高鉄）の予約から地下鉄のQRコード乗車、DiDi配車アプリの使い方まで徹底解説。Alipay・クレカ決済対応で現金不要！';
+
+const faqs = [
+  {
+    question: "日本のパスポートで中国の高速鉄道（高鉄）に乗れますか？",
+    answer: "はい、パスポートのみで乗車可能です。事前にTrip.comや12306で購入しておけば、紙の切符を発券することなく、駅の有人改札またはパスポートリーダーで自動改札を通過できます。"
+  },
+  {
+    question: "中国の地下鉄やバスはどうやって支払いますか？",
+    answer: "Alipay（支付宝）アプリ内の「出行（Transport）」から都市ごとのQRコードを有効化するだけで、改札にスマホをかざしてそのまま乗車できます。事前の交通カード購入や現金は一切不要です。"
+  },
+  {
+    question: "タクシーやDiDi（配車アプリ）で日本のクレジットカードは使えますか？",
+    answer: "使えます。Alipayアプリ内のDiDiミニアプリに日本のクレジットカード（Visa/Mastercard/JCBなど）を登録しておけば、車内での現金のやり取りなしで自動決済されます。"
+  }
+];
 ---
 
 <Layout title={title} description={description} lang="ja">
@@ -102,7 +119,22 @@ const description = '高速鉄道、地下鉄、DiDi、タクシー、シェア�
         <a href="/ja/payment/setup-alipay/" class="block bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg hover:border-blue-300 transition">💳 <strong>外国人向けAlipay設定ガイド</strong> — 1つのアプリですべての交通費を支払う</a>
       </div>
 
+      <hr class="my-10 border-gray-200" />
+
+      <h2 id="faq" class="text-2xl font-bold text-gray-900 mb-6">❓ よくある質問（FAQ）</h2>
+
+      <div class="space-y-4 mb-12 not-prose">
+        {faqs.map(faq => (
+          <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">{faq.question}</h3>
+            <p class="text-gray-700 leading-relaxed">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
+
     </div>
+
+    <FAQPage items={faqs} />
 
     <div class="not-prose mt-12 pt-8 border-t border-gray-200">
   <h3 class="text-base font-bold text-gray-900 mb-4 flex items-center gap-2">📚 Sources</h3>

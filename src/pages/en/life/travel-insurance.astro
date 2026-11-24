@@ -1,7 +1,24 @@
 ---
 import Layout from '@layouts/Layout.astro';
-const title = "Travel Insurance for China: What to Look For";
-const description = "Why you need travel insurance for China, what it should cover, and recommended providers verified for China coverage.";
+import FAQPage from '../../../components/FAQPage.astro';
+
+const title = "Best Travel Insurance for China (2026): Top Providers & Coverage Guide";
+const description = "Compare the best travel insurance for China in 2026 (SafetyWing, World Nomads, AXA). Minimum medical limits, emergency evacuation, and hospital direct-billing advice.";
+
+const faqs = [
+  {
+    question: "Is travel insurance mandatory for tourists entering China?",
+    answer: "For standard tourist entry (including unilateral visa-free and 240-hour transit), travel insurance is not legally mandatory, but immigration officers may ask about it, and unexpected medical treatment can be costly. For certain long-stay or visa-applied categories, proof of insurance is required."
+  },
+  {
+    question: "How much medical coverage should I get for a trip to China?",
+    answer: "We strongly recommend at least $100,000 USD in emergency medical expenses and $250,000+ for emergency medical evacuation/repatriation, especially if your itinerary includes high-altitude regions like Yunnan, Tibet, or Western Sichuan."
+  },
+  {
+    question: "Do Chinese hospitals accept direct billing from foreign travel insurance?",
+    answer: "International departments and VIP clinics of Grade 3A hospitals in Beijing, Shanghai, and Guangzhou frequently support direct billing with major global insurers (such as AXA or Allianz). Standard local hospital wings require you to pay upfront (via Alipay/WeChat or cash) and submit official VAT fapiao receipts for reimbursement."
+  }
+];
 ---
 
 <Layout title={title} description={description} lang="en">
@@ -108,7 +125,24 @@ const description = "Why you need travel insurance for China, what it should cov
       <div class="bg-yellow-50 border-l-4 border-yellow-400 p-5 rounded-r-xl mb-8 not-prose">
         <p class="text-yellow-900"><strong>Note:</strong> Brand names above are plain text for now. Affiliate links will be added once the affiliate program is set up, turning each brand name into a clickable link.</p>
       </div>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="faq" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">❓</span> Frequently Asked Questions (FAQ)
+      </h2>
+
+      <div class="space-y-6 mb-12 not-prose">
+        {faqs.map(faq => (
+          <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">{faq.question}</h3>
+            <p class="text-gray-700 leading-relaxed">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
     </div>
+
+    <FAQPage items={faqs} />
 
                 <div class="border-t border-gray-100 pt-6 mt-8">
       <div class="bg-gradient-to-r from-brand-50 to-blue-50 border border-brand-100 rounded-xl p-5 not-prose">

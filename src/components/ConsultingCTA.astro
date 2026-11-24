@@ -1,0 +1,67 @@
+---
+interface Props {
+  lang?: string;
+}
+
+const { lang = 'en' } = Astro.props;
+const contactUrl = `/${lang}/contact/`;
+
+const texts: Record<string, { title: string; desc: string; b1: string; b2: string; b3: string; button: string }> = {
+  en: {
+    title: "Need Personal Help Planning Your China Trip?",
+    desc: "Unsure about high-speed rail bookings, route pacing, foreign-friendly hotels, or payment setup? We help independent travelers review itineraries and answer questions 1-on-1.",
+    b1: "Custom Route & Pacing Check",
+    b2: "Hotel & Transit Guidance",
+    b3: "1-on-1 Pre-Trip Advice",
+    button: "Get in Touch / Request Help"
+  },
+  zh: {
+    title: "需要一对一中国自由行定制建议？",
+    desc: "对高铁抢票、路线节奏、外宾涉外酒店或移动支付有疑问？我们为自由行游客提供 1v1 行程梳理与出行建议。",
+    b1: "定制路线与节奏优化",
+    b2: "酒店与交通点对点指导",
+    b3: "行前一对一答疑",
+    button: "联系我们获取定制支持"
+  }
+};
+
+const t = texts[lang] || texts.en;
+---
+
+<div class="my-12 bg-gradient-to-br from-brand-50 via-white to-blue-50 border border-brand-200/80 rounded-2xl p-6 md:p-8 shadow-sm not-prose">
+  <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+    <div class="space-y-3 max-w-xl">
+      <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-brand-100 text-brand-800">
+        <span>✨ 1-on-1 Travel Consulting</span>
+      </div>
+      <h3 class="text-xl md:text-2xl font-bold text-gray-900 leading-snug">
+        {t.title}
+      </h3>
+      <p class="text-sm md:text-base text-gray-600 leading-relaxed">
+        {t.desc}
+      </p>
+      <div class="flex flex-wrap gap-2 pt-1 text-xs text-gray-700 font-medium">
+        <span class="inline-flex items-center gap-1 bg-white px-2.5 py-1 rounded-lg border border-gray-200">
+          🗺️ {t.b1}
+        </span>
+        <span class="inline-flex items-center gap-1 bg-white px-2.5 py-1 rounded-lg border border-gray-200">
+          🏨 {t.b2}
+        </span>
+        <span class="inline-flex items-center gap-1 bg-white px-2.5 py-1 rounded-lg border border-gray-200">
+          💬 {t.b3}
+        </span>
+      </div>
+    </div>
+    <div class="flex-shrink-0">
+      <a
+        href={contactUrl}
+        class="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-brand-600 hover:bg-brand-700 text-white font-semibold rounded-xl text-sm md:text-base shadow-sm hover:shadow transition no-underline"
+      >
+        <span>{t.button}</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>

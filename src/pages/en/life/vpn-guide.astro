@@ -1,7 +1,28 @@
 ---
 import Layout from '@layouts/Layout.astro';
-const title = "Best VPNs for Traveling in China";
-const description = "The best VPNs for China — what works, what doesn't, and how to set up your VPN before you arrive.";
+import FAQPage from '../../../components/FAQPage.astro';
+
+const title = "Best VPNs for Traveling in China (2026 Tested)";
+const description = "The best VPNs for China in 2026 — what works, what doesn't, troubleshooting tips, and how to stay connected to Google, WhatsApp & Instagram.";
+
+const faqs = [
+  {
+    question: "Is it legal for foreign tourists to use a VPN in China?",
+    answer: "Yes in practice. While China restricts unauthorized commercial VPN operations within its borders, foreign tourists, business travelers, and expats use personal VPNs daily. There is no record of standard foreign tourists being fined simply for using a personal VPN to access foreign email or social media."
+  },
+  {
+    question: "Can I download and install a VPN after arriving in China?",
+    answer: "Almost certainly no. VPN official websites and Google Play are blocked inside mainland China, and China's local Apple App Store does not list VPN apps. You must purchase, download, and log into your VPN before you arrive in China."
+  },
+  {
+    question: "Why does my VPN keep disconnecting in China?",
+    answer: "China's Great Firewall periodically throttles recognized VPN server IP addresses. To fix this, change your connection protocol (e.g., Lightway or obfuscated protocols) and switch between nearby Asian servers such as Hong Kong, Japan, or Singapore."
+  },
+  {
+    question: "Do I need a VPN if I have an international roaming eSIM?",
+    answer: "On cellular data, international travel eSIMs (like Airalo) bypass the Great Firewall automatically without a VPN. However, whenever you switch to hotel Wi-Fi or airport Wi-Fi, a VPN is required to access blocked sites."
+  }
+];
 ---
 
 <Layout title={title} description={description} lang="en">
@@ -211,8 +232,23 @@ const description = "The best VPNs for China — what works, what doesn't, and h
 
       <p class="text-lg leading-relaxed text-gray-700 mb-12">Stick with a paid provider. The cost is low ($5–$13/month) compared to the headache of being stuck without internet access during your trip.</p>
 
-      <!-- AFFILIATE: VPN 提供商联盟计划汇总 — ExpressVPN, NordVPN, Surfshark -->
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="faq" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">❓</span> Frequently Asked Questions (FAQ)
+      </h2>
+
+      <div class="space-y-6 mb-12 not-prose">
+        {faqs.map(faq => (
+          <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">{faq.question}</h3>
+            <p class="text-gray-700 leading-relaxed">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
     </div>
+
+    <FAQPage items={faqs} />
 
         <div class="bg-gray-50 rounded-2xl p-8 not-prose">
           <div class="border-t border-gray-100 pt-6 mt-8">

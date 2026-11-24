@@ -4,6 +4,7 @@
 
 # Sitemap access
 /sitemap-index.xml   /sitemap-index.xml  200
+/sitemap.xml         /sitemap-index.xml  301
 
 # Never serve Astro build artifacts under /pages/ (soft-404 source)
 /pages/*   /   301

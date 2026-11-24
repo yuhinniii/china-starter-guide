@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /*/search/
+Disallow: /search/
 
 Sitemap: https://chinastarterhub.com/sitemap-index.xml
+Sitemap: https://chinastarterhub.com/sitemap.xml

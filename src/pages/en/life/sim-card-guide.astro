@@ -1,7 +1,28 @@
 ---
 import Layout from '@layouts/Layout.astro';
-const title = "Best SIM Card & eSIM for Tourists in China";
-const description = "Compare eSIM and physical SIM options for China — Airalo, Holafly, China Mobile, and more.";
+import FAQPage from '../../../components/FAQPage.astro';
+
+const title = "Best SIM Card & eSIM for Tourists in China (2026)";
+const description = "Compare tourist eSIM and physical SIM options for China (Airalo, Holafly, China Mobile) — plus why eSIMs bypass the Great Firewall without a VPN.";
+
+const faqs = [
+  {
+    question: "Do tourist eSIMs work without a VPN in China?",
+    answer: "Yes! Most international travel eSIMs (such as Airalo, Nomad, and Holafly) route their mobile data through foreign roaming servers (usually Hong Kong or Singapore). This means you can access Google, WhatsApp, Instagram, YouTube, and X directly without installing or turning on a VPN."
+  },
+  {
+    question: "Do I need a Chinese phone number as a tourist?",
+    answer: "In most cases, no. Modern apps like Alipay, WeChat, DiDi (rides), and Trip.com can register with international phone numbers (+1, +44, +61, etc.). You only need a local +86 Chinese number if you are opening a mainland bank account or renting an apartment long-term."
+  },
+  {
+    question: "Is eSIM better than buying a physical SIM at China airports?",
+    answer: "For short-term trips (1–4 weeks), eSIM is far more convenient: you buy it online, keep your primary SIM active for home bank SMS, and get instant unblocked internet upon landing without passport queues at the airport."
+  },
+  {
+    question: "What is the best backup if my hotel Wi-Fi is blocked?",
+    answer: "Hotel Wi-Fi in China is routed through the local mainland network and is strictly firewalled. Having a travel eSIM allows you to hot-spot your laptop or switch data on whenever hotel Wi-Fi blocks essential Western services."
+  }
+];
 ---
 
 <Layout title={title} description={description} lang="en">
@@ -127,17 +148,41 @@ const description = "Compare eSIM and physical SIM options for China — Airalo,
       <hr class="border-gray-200 my-12" />
 
             <h2 id="vpn" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
-        <span class="text-4xl">🔒</span> What About a VPN?
+        <span class="text-4xl">🔒</span> Do You Still Need a VPN with an eSIM?
       </h2>
 
-      <p class="text-lg leading-relaxed text-gray-700 mb-6">If you purchase a SIM card package, you may encounter issues with using Western software such as Google, WhatsApp, and Instagram. Therefore, you will need to use a VPN to access these applications — and you must complete the setup <strong>before</strong> arriving in China, as VPN websites may be inaccessible within China.</p>
+      <div class="bg-emerald-50 border-l-4 border-emerald-500 rounded-r-xl p-5 mb-6 not-prose">
+        <p class="text-emerald-900 font-semibold mb-1">💡 The Big Advantage of Travel eSIMs:</p>
+        <p class="text-emerald-800 text-sm leading-relaxed">
+          Because foreign travel eSIMs (Airalo, Nomad, Holafly) route their cellular traffic through roaming gateways outside mainland China, <strong>they naturally bypass the Great Firewall</strong>. You can open Google Maps, Instagram, WhatsApp, and Gmail immediately without any VPN app turned on.
+        </p>
+      </div>
 
-      <p class="text-lg leading-relaxed text-gray-700 mb-12">We've got a full guide covering which VPNs work in China, how to set them up, and tips to keep you connected:</p>
+      <p class="text-lg leading-relaxed text-gray-700 mb-6">
+        However, if you connect to <strong>hotel Wi-Fi</strong>, cafe networks, or use a <strong>local Chinese physical SIM card</strong>, your traffic is routed through China's domestic network where Western services are blocked. For those moments, you will still need a working VPN installed before you arrive.
+      </p>
 
       <div class="bg-blue-50 border border-blue-100 rounded-2xl p-6 mb-12 not-prose">
-        <p class="text-gray-700"><strong>📖 Full guide:</strong> <a href="/en/life/vpn-guide/" class="text-blue-600 hover:underline">Best VPNs for Traveling in China</a></p>
+        <p class="text-gray-700"><strong>📖 Full guide:</strong> <a href="/en/life/vpn-guide/" class="text-blue-600 hover:underline">Best VPNs for Traveling in China — Tested & Working</a></p>
+      </div>
+
+      <hr class="border-gray-200 my-12" />
+
+      <h2 id="faq" class="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+        <span class="text-4xl">❓</span> Frequently Asked Questions (FAQ)
+      </h2>
+
+      <div class="space-y-6 mb-12 not-prose">
+        {faqs.map(faq => (
+          <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6">
+            <h3 class="text-lg font-bold text-gray-900 mb-2">{faq.question}</h3>
+            <p class="text-gray-700 leading-relaxed">{faq.answer}</p>
+          </div>
+        ))}
       </div>
     </div>
+
+    <FAQPage items={faqs} />
 
         <div class="bg-gray-50 rounded-2xl p-8 not-prose">
           <div class="border-t border-gray-100 pt-6 mt-8">
